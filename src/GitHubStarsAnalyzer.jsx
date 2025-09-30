@@ -225,7 +225,7 @@ const GitHubStarsAnalyzer = () => {
       repo.topics.forEach(topic => {
         let normalized = topic.toLowerCase().trim();
 
-        // Apply abbreviation mapping
+        // Apply abbreviation mapping FIRST
         const abbreviations = {
           'ai': 'artificial-intelligence',
           'ml': 'machine-learning',
@@ -241,20 +241,45 @@ const GitHubStarsAnalyzer = () => {
           'cli': 'command-line',
           'cicd': 'ci-cd',
           'k8s': 'kubernetes',
-          'iot': 'internet-of-things'
+          'iot': 'internet-of-things',
+          'api': 'api',
+          'rest-api': 'rest-api',
+          'graphql': 'graphql'
         };
 
+        // Check exact match first
         if (abbreviations[normalized]) {
           normalized = abbreviations[normalized];
-        }
-
-        // Singularize for grouping
-        if (normalized.endsWith('ies')) {
-          normalized = normalized.slice(0, -3) + 'y';
-        } else if (normalized.endsWith('es') && !normalized.endsWith('ess')) {
-          normalized = normalized.slice(0, -2);
-        } else if (normalized.endsWith('s') && !normalized.endsWith('ss') && !normalized.endsWith('us')) {
-          normalized = normalized.slice(0, -1);
+        } else {
+          // Singularize for grouping (improved rules)
+          // Handle -ies -> -y (e.g., libraries -> library)
+          if (normalized.endsWith('ies') && normalized.length > 4) {
+            normalized = normalized.slice(0, -3) + 'y';
+          }
+          // Handle -es (but not -ess, -ness, -less)
+          else if (normalized.endsWith('es') && !normalized.endsWith('ess') &&
+                   !normalized.endsWith('ness') && !normalized.endsWith('less') &&
+                   normalized.length > 3) {
+            // Check if it's a real plural (e.g., "boxes" -> "box", but not "redis" stays "redis")
+            const possibleSingular = normalized.slice(0, -2);
+            // Only remove 'es' if the stem ends with s, x, z, ch, sh
+            if (possibleSingular.endsWith('s') || possibleSingular.endsWith('x') ||
+                possibleSingular.endsWith('z') || possibleSingular.endsWith('ch') ||
+                possibleSingular.endsWith('sh')) {
+              normalized = possibleSingular;
+            }
+          }
+          // Handle regular plurals -s (but not -ss, -us, -as)
+          else if (normalized.endsWith('s') && !normalized.endsWith('ss') &&
+                   !normalized.endsWith('us') && !normalized.endsWith('as') &&
+                   !normalized.endsWith('is') && normalized.length > 3) {
+            // Don't singularize words that are commonly not plurals
+            const nonPlurals = ['redis', 'postgres', 'canvas', 'cors', 'sass', 'less', 'css',
+                               'express', 'cypress', 'aws', 'ios', 'macos', 'devops', 'kubernetes'];
+            if (!nonPlurals.includes(normalized)) {
+              normalized = normalized.slice(0, -1);
+            }
+          }
         }
 
         uniqueNormalized.add(normalized);
@@ -303,6 +328,13 @@ const GitHubStarsAnalyzer = () => {
         variations: Array.from(topicVariations[topic] || [topic]),
         count: topicCounts[topic]
       }));
+
+    // Debug logging
+    console.log('Topic Normalization Debug:');
+    console.log('Total unique normalized topics:', Object.keys(topicCounts).length);
+    console.log('Top 20 topics with variations:', topTopicsForFilter.map(t =>
+      `${t.display} (${t.count}) - variations: [${t.variations.join(', ')}]`
+    ));
 
     setSummary({
       totalRepos,
@@ -407,20 +439,36 @@ const GitHubStarsAnalyzer = () => {
               'cli': 'command-line',
               'cicd': 'ci-cd',
               'k8s': 'kubernetes',
-              'iot': 'internet-of-things'
+              'iot': 'internet-of-things',
+              'api': 'api',
+              'rest-api': 'rest-api',
+              'graphql': 'graphql'
             };
 
             if (abbreviations[normalized]) {
               normalized = abbreviations[normalized];
-            }
-
-            // Singularize
-            if (normalized.endsWith('ies')) {
-              normalized = normalized.slice(0, -3) + 'y';
-            } else if (normalized.endsWith('es') && !normalized.endsWith('ess')) {
-              normalized = normalized.slice(0, -2);
-            } else if (normalized.endsWith('s') && !normalized.endsWith('ss') && !normalized.endsWith('us')) {
-              normalized = normalized.slice(0, -1);
+            } else {
+              // Improved singularization
+              if (normalized.endsWith('ies') && normalized.length > 4) {
+                normalized = normalized.slice(0, -3) + 'y';
+              } else if (normalized.endsWith('es') && !normalized.endsWith('ess') &&
+                         !normalized.endsWith('ness') && !normalized.endsWith('less') &&
+                         normalized.length > 3) {
+                const possibleSingular = normalized.slice(0, -2);
+                if (possibleSingular.endsWith('s') || possibleSingular.endsWith('x') ||
+                    possibleSingular.endsWith('z') || possibleSingular.endsWith('ch') ||
+                    possibleSingular.endsWith('sh')) {
+                  normalized = possibleSingular;
+                }
+              } else if (normalized.endsWith('s') && !normalized.endsWith('ss') &&
+                         !normalized.endsWith('us') && !normalized.endsWith('as') &&
+                         !normalized.endsWith('is') && normalized.length > 3) {
+                const nonPlurals = ['redis', 'postgres', 'canvas', 'cors', 'sass', 'less', 'css',
+                                   'express', 'cypress', 'aws', 'ios', 'macos', 'devops', 'kubernetes'];
+                if (!nonPlurals.includes(normalized)) {
+                  normalized = normalized.slice(0, -1);
+                }
+              }
             }
 
             return topNormalizedTopics.includes(normalized);
