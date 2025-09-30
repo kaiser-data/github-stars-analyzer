@@ -13,7 +13,15 @@ import {
   Award,
   TrendingUp,
   Filter,
-  X
+  X,
+  Flame,
+  Zap,
+  Sparkles,
+  Moon,
+  ChevronDown,
+  ChevronUp,
+  Loader,
+  BarChart3
 } from 'lucide-react';
 
 const GitHubStarsAnalyzer = () => {
@@ -30,6 +38,12 @@ const GitHubStarsAnalyzer = () => {
   const [filterLanguage, setFilterLanguage] = useState('all');
   const [filterTopic, setFilterTopic] = useState('all');
   const [viewMode, setViewMode] = useState('all');
+
+  // State for trend analysis
+  const [repoTrends, setRepoTrends] = useState({});
+  const [loadingTrends, setLoadingTrends] = useState(new Set());
+  const [trendsFetched, setTrendsFetched] = useState(new Set());
+  const [expandedTrends, setExpandedTrends] = useState(new Set());
 
   const fetchStarredRepos = async () => {
     if (!username.trim()) {
@@ -514,6 +528,18 @@ const GitHubStarsAnalyzer = () => {
             aVal = a.open_issues_count;
             bVal = b.open_issues_count;
             break;
+          case 'last30days':
+            aVal = repoTrends[a.id]?.last30Days?.count || 0;
+            bVal = repoTrends[b.id]?.last30Days?.count || 0;
+            break;
+          case 'last90days':
+            aVal = repoTrends[a.id]?.last90Days?.count || 0;
+            bVal = repoTrends[b.id]?.last90Days?.count || 0;
+            break;
+          case 'momentum':
+            aVal = repoTrends[a.id]?.momentumPercent || 0;
+            bVal = repoTrends[b.id]?.momentumPercent || 0;
+            break;
           default:
             aVal = a.stargazers_count;
             bVal = b.stargazers_count;
@@ -544,6 +570,138 @@ const GitHubStarsAnalyzer = () => {
     setFilterLanguage('all');
     setFilterTopic('all');
     setViewMode('all');
+  };
+
+  // Fetch star history for a repository
+  const fetchStarHistory = async (owner, repoName, repoId) => {
+    // Check if already loading or fetched
+    if (loadingTrends.has(repoId) || trendsFetched.has(repoId)) {
+      return;
+    }
+
+    setLoadingTrends(prev => new Set([...prev, repoId]));
+
+    try {
+      const headers = {
+        'Accept': 'application/vnd.github.star+json'
+      };
+
+      if (token.trim()) {
+        headers['Authorization'] = `token ${token}`;
+      }
+
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repoName}/stargazers?per_page=100`,
+        { headers }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch star history: ${response.status}`);
+      }
+
+      const stargazers = await response.json();
+      const trends = calculateTrends(stargazers);
+
+      setRepoTrends(prev => ({
+        ...prev,
+        [repoId]: {
+          ...trends,
+          fetchedAt: new Date().toISOString()
+        }
+      }));
+
+      setTrendsFetched(prev => new Set([...prev, repoId]));
+    } catch (err) {
+      console.error(`Error fetching trends for ${owner}/${repoName}:`, err);
+    } finally {
+      setLoadingTrends(prev => {
+        const newSet = new Set(prev);
+        newSet.delete(repoId);
+        return newSet;
+      });
+    }
+  };
+
+  // Calculate trends from stargazer data
+  const calculateTrends = (stargazers) => {
+    const now = new Date();
+    const periods = {
+      last30Days: 30,
+      last90Days: 90,
+      last180Days: 180,
+      last365Days: 365
+    };
+
+    const trends = {};
+
+    Object.entries(periods).forEach(([key, days]) => {
+      const cutoff = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+      const count = stargazers.filter(s => new Date(s.starred_at) > cutoff).length;
+      const rate = Math.round((count / days) * 30); // Monthly rate
+
+      trends[key] = { count, rate };
+    });
+
+    // Calculate trend classification based on 30-day stars
+    const monthlyStars = trends.last30Days.count;
+    let trendEmoji = '💤';
+    let trendLabel = 'Quiet';
+
+    if (monthlyStars > 100) {
+      trendEmoji = '🔥';
+      trendLabel = 'Hot';
+    } else if (monthlyStars >= 10) {
+      trendEmoji = '⚡';
+      trendLabel = 'Rising';
+    } else if (monthlyStars >= 1) {
+      trendEmoji = '✨';
+      trendLabel = 'Steady';
+    }
+
+    trends.trend = `${trendEmoji} ${trendLabel}`;
+
+    // Calculate momentum
+    const rate30 = trends.last30Days.rate;
+    const rate90 = trends.last90Days.rate;
+    const diff = ((rate30 - rate90) / (rate90 || 1)) * 100;
+
+    let momentum = '➡️ Stable';
+    if (diff > 20) {
+      momentum = '📈 Accelerating';
+    } else if (diff < -20) {
+      momentum = '📉 Slowing';
+    }
+
+    trends.momentum = momentum;
+    trends.momentumPercent = Math.round(diff);
+
+    return trends;
+  };
+
+  // Fetch trends for top repos
+  const fetchTopTrends = async () => {
+    const topRepos = getSortedAndFilteredRepos().slice(0, 20);
+
+    for (const repo of topRepos) {
+      if (!trendsFetched.has(repo.id)) {
+        await fetchStarHistory(repo.owner, repo.name, repo.id);
+        // Small delay to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+    }
+  };
+
+  // Toggle trend expansion
+  const toggleTrendExpansion = (repoId) => {
+    setExpandedTrends(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(repoId)) {
+        newSet.delete(repoId);
+      } else {
+        newSet.add(repoId);
+      }
+      return newSet;
+    });
   };
 
   return (
@@ -719,6 +877,38 @@ const GitHubStarsAnalyzer = () => {
               Repository Rankings
             </h2>
 
+            {/* Fetch Trends Button */}
+            <div className="bg-blue-900 bg-opacity-30 border border-blue-500 rounded-lg p-4 mb-6">
+              <div className="flex items-center justify-between flex-wrap gap-4">
+                <div className="flex items-center">
+                  <BarChart3 className="w-5 h-5 mr-3 text-blue-400" />
+                  <div>
+                    <p className="text-white font-medium">Recent Trend Analysis</p>
+                    <p className="text-sm text-gray-300">
+                      Fetch star history for the last 30/90/180/365 days
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={fetchTopTrends}
+                  disabled={loadingTrends.size > 0}
+                  className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg font-medium transition-colors"
+                >
+                  {loadingTrends.size > 0 ? (
+                    <>
+                      <Loader className="w-4 h-4 mr-2 animate-spin" />
+                      Loading {loadingTrends.size} repos...
+                    </>
+                  ) : (
+                    <>
+                      <TrendingUp className="w-4 h-4 mr-2" />
+                      Load Top 20 Trends
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
             {/* View Mode Tabs */}
             <div className="bg-gray-800 rounded-lg p-4 mb-6">
               <div className="flex flex-wrap gap-2">
@@ -803,6 +993,9 @@ const GitHubStarsAnalyzer = () => {
                         <option value="updated">Recently Updated</option>
                         <option value="name">Name</option>
                         <option value="issues">Open Issues</option>
+                        <option value="last30days">Last 30 Days ⚡</option>
+                        <option value="last90days">Last 3 Months</option>
+                        <option value="momentum">Momentum 📈</option>
                       </select>
                     </div>
 
@@ -965,7 +1158,7 @@ const GitHubStarsAnalyzer = () => {
                   </div>
 
                   {repo.topics.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {repo.topics.map(topic => (
                         <span
                           key={topic}
@@ -976,6 +1169,102 @@ const GitHubStarsAnalyzer = () => {
                       ))}
                     </div>
                   )}
+
+                  {/* Trends Section */}
+                  <div className="mt-4 pt-4 border-t border-gray-600">
+                    {!trendsFetched.has(repo.id) && !loadingTrends.has(repo.id) && (
+                      <button
+                        onClick={() => fetchStarHistory(repo.owner, repo.name, repo.id)}
+                        className="flex items-center px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        <TrendingUp className="w-4 h-4 mr-2" />
+                        Show Recent Trends
+                      </button>
+                    )}
+
+                    {loadingTrends.has(repo.id) && (
+                      <div className="flex items-center text-blue-400 text-sm">
+                        <Loader className="w-4 h-4 mr-2 animate-spin" />
+                        Loading trend data...
+                      </div>
+                    )}
+
+                    {trendsFetched.has(repo.id) && repoTrends[repo.id] && (
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                          <button
+                            onClick={() => toggleTrendExpansion(repo.id)}
+                            className="flex items-center text-white hover:text-blue-400 transition-colors"
+                          >
+                            <TrendingUp className="w-4 h-4 mr-2" />
+                            <span className="font-semibold">Recent Activity</span>
+                            {expandedTrends.has(repo.id) ? (
+                              <ChevronUp className="w-4 h-4 ml-2" />
+                            ) : (
+                              <ChevronDown className="w-4 h-4 ml-2" />
+                            )}
+                          </button>
+                          <div className="flex items-center gap-3">
+                            <span className="text-lg">{repoTrends[repo.id].trend}</span>
+                            <span className="text-sm text-gray-400">|</span>
+                            <span className="text-lg">{repoTrends[repo.id].momentum}</span>
+                          </div>
+                        </div>
+
+                        {expandedTrends.has(repo.id) && (
+                          <div className="bg-gray-800 rounded-lg p-4 space-y-2">
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                              <div>
+                                <p className="text-gray-400">Last 30 days</p>
+                                <p className="text-white font-semibold">
+                                  +{repoTrends[repo.id].last30Days.count} stars
+                                </p>
+                                <p className="text-xs text-gray-500">
+                                  (~{repoTrends[repo.id].last30Days.rate}/month)
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-gray-400">Last 3 months</p>
+                                <p className="text-white font-semibold">
+                                  +{repoTrends[repo.id].last90Days.count} stars
+                                </p>
+                                <p className="text-xs text-gray-500">
+                                  (~{repoTrends[repo.id].last90Days.rate}/month)
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-gray-400">Last 6 months</p>
+                                <p className="text-white font-semibold">
+                                  +{repoTrends[repo.id].last180Days.count} stars
+                                </p>
+                                <p className="text-xs text-gray-500">
+                                  (~{repoTrends[repo.id].last180Days.rate}/month)
+                                </p>
+                              </div>
+                              <div>
+                                <p className="text-gray-400">Last year</p>
+                                <p className="text-white font-semibold">
+                                  +{repoTrends[repo.id].last365Days.count} stars
+                                </p>
+                                <p className="text-xs text-gray-500">
+                                  (~{repoTrends[repo.id].last365Days.rate}/month)
+                                </p>
+                              </div>
+                            </div>
+                            <a
+                              href={`https://star-history.com/#${repo.full_name}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center text-blue-400 hover:text-blue-300 text-sm mt-3"
+                            >
+                              <BarChart3 className="w-4 h-4 mr-2" />
+                              View Detailed History →
+                            </a>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
                 );
               })}
