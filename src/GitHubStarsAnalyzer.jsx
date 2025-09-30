@@ -7,7 +7,13 @@ import {
   ExternalLink,
   Download,
   AlertCircle,
-  Github
+  Github,
+  Trophy,
+  Medal,
+  Award,
+  TrendingUp,
+  Filter,
+  X
 } from 'lucide-react';
 
 const GitHubStarsAnalyzer = () => {
@@ -17,6 +23,13 @@ const GitHubStarsAnalyzer = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [summary, setSummary] = useState(null);
+
+  // New state for sorting and filtering
+  const [sortBy, setSortBy] = useState('stars');
+  const [sortOrder, setSortOrder] = useState('desc');
+  const [filterLanguage, setFilterLanguage] = useState('all');
+  const [filterTopic, setFilterTopic] = useState('all');
+  const [viewMode, setViewMode] = useState('all');
 
   const fetchStarredRepos = async () => {
     if (!username.trim()) {
@@ -145,13 +158,19 @@ const GitHubStarsAnalyzer = () => {
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
       .slice(0, 5);
 
+    // Get all unique languages and topics for filter dropdowns
+    const allLanguages = Object.keys(languageCounts).sort();
+    const allTopics = Object.keys(topicCounts).sort();
+
     setSummary({
       totalRepos,
       totalStars,
       avgStars,
       topLanguages,
       topTopics,
-      mostStarred
+      mostStarred,
+      allLanguages,
+      allTopics
     });
   };
 
@@ -195,6 +214,92 @@ const GitHubStarsAnalyzer = () => {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
+  };
+
+  // Sorting and filtering function
+  const getSortedAndFilteredRepos = () => {
+    let filtered = [...repos];
+
+    // Apply view mode filters
+    if (viewMode === 'top-starred') {
+      filtered = filtered.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 20);
+    } else if (viewMode === 'top-forked') {
+      filtered = filtered.sort((a, b) => b.forks_count - a.forks_count).slice(0, 20);
+    } else if (viewMode === 'top-watchers') {
+      filtered = filtered.sort((a, b) => b.watchers_count - a.watchers_count).slice(0, 20);
+    } else if (viewMode === 'recent') {
+      filtered = filtered.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at)).slice(0, 20);
+    }
+
+    // Apply language filter
+    if (filterLanguage !== 'all') {
+      filtered = filtered.filter(r => r.language === filterLanguage);
+    }
+
+    // Apply topic filter
+    if (filterTopic !== 'all') {
+      filtered = filtered.filter(r => r.topics.includes(filterTopic));
+    }
+
+    // Apply sorting (only if in 'all' view mode)
+    if (viewMode === 'all') {
+      filtered.sort((a, b) => {
+        let aVal, bVal;
+        switch (sortBy) {
+          case 'stars':
+            aVal = a.stargazers_count;
+            bVal = b.stargazers_count;
+            break;
+          case 'forks':
+            aVal = a.forks_count;
+            bVal = b.forks_count;
+            break;
+          case 'watchers':
+            aVal = a.watchers_count;
+            bVal = b.watchers_count;
+            break;
+          case 'updated':
+            aVal = new Date(a.updated_at);
+            bVal = new Date(b.updated_at);
+            break;
+          case 'name':
+            aVal = a.name.toLowerCase();
+            bVal = b.name.toLowerCase();
+            break;
+          case 'issues':
+            aVal = a.open_issues_count;
+            bVal = b.open_issues_count;
+            break;
+          default:
+            aVal = a.stargazers_count;
+            bVal = b.stargazers_count;
+        }
+
+        if (typeof aVal === 'string') {
+          return sortOrder === 'desc' ? bVal.localeCompare(aVal) : aVal.localeCompare(bVal);
+        }
+        return sortOrder === 'desc' ? bVal - aVal : aVal - bVal;
+      });
+    }
+
+    return filtered;
+  };
+
+  // Get ranking badge
+  const getRankBadge = (index) => {
+    if (index === 0) return { icon: '🥇', color: 'text-yellow-400', label: '#1', name: 'Gold' };
+    if (index === 1) return { icon: '🥈', color: 'text-gray-300', label: '#2', name: 'Silver' };
+    if (index === 2) return { icon: '🥉', color: 'text-orange-400', label: '#3', name: 'Bronze' };
+    return { icon: '', color: 'text-gray-400', label: `#${index + 1}`, name: '' };
+  };
+
+  // Reset filters
+  const resetFilters = () => {
+    setSortBy('stars');
+    setSortOrder('desc');
+    setFilterLanguage('all');
+    setFilterTopic('all');
+    setViewMode('all');
   };
 
   return (
@@ -361,15 +466,213 @@ const GitHubStarsAnalyzer = () => {
         {/* Repository List */}
         {repos.length > 0 && (
           <div>
-            <h2 className="text-2xl font-bold mb-4">
-              All Repositories ({repos.length})
+            <h2 className="text-2xl font-bold mb-6 flex items-center">
+              <Trophy className="w-6 h-6 mr-2 text-yellow-400" />
+              Repository Rankings
             </h2>
+
+            {/* View Mode Tabs */}
+            <div className="bg-gray-800 rounded-lg p-4 mb-6">
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setViewMode('all')}
+                  className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                    viewMode === 'all'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  All Repos
+                </button>
+                <button
+                  onClick={() => setViewMode('top-starred')}
+                  className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+                    viewMode === 'top-starred'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  <Star className="w-4 h-4 mr-1" />
+                  Most Starred
+                </button>
+                <button
+                  onClick={() => setViewMode('top-forked')}
+                  className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+                    viewMode === 'top-forked'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  <GitFork className="w-4 h-4 mr-1" />
+                  Most Forked
+                </button>
+                <button
+                  onClick={() => setViewMode('top-watchers')}
+                  className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+                    viewMode === 'top-watchers'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  <Eye className="w-4 h-4 mr-1" />
+                  Most Active
+                </button>
+                <button
+                  onClick={() => setViewMode('recent')}
+                  className={`px-4 py-2 rounded-lg font-medium transition-colors flex items-center ${
+                    viewMode === 'recent'
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  }`}
+                >
+                  <TrendingUp className="w-4 h-4 mr-1" />
+                  Recently Updated
+                </button>
+              </div>
+            </div>
+
+            {/* Sort & Filter Controls */}
+            <div className="bg-gray-800 rounded-lg shadow-2xl p-6 mb-6">
+              <div className="flex items-center mb-4">
+                <Filter className="w-5 h-5 mr-2 text-blue-400" />
+                <h3 className="text-xl font-bold text-white">Sort & Filter</h3>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                {/* Sort By */}
+                {viewMode === 'all' && (
+                  <>
+                    <div>
+                      <label className="block text-sm text-gray-400 mb-2">Sort By</label>
+                      <select
+                        value={sortBy}
+                        onChange={(e) => setSortBy(e.target.value)}
+                        className="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+                      >
+                        <option value="stars">Stars</option>
+                        <option value="forks">Forks</option>
+                        <option value="watchers">Watchers</option>
+                        <option value="updated">Recently Updated</option>
+                        <option value="name">Name</option>
+                        <option value="issues">Open Issues</option>
+                      </select>
+                    </div>
+
+                    {/* Sort Order */}
+                    <div>
+                      <label className="block text-sm text-gray-400 mb-2">Order</label>
+                      <select
+                        value={sortOrder}
+                        onChange={(e) => setSortOrder(e.target.value)}
+                        className="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+                      >
+                        <option value="desc">Descending</option>
+                        <option value="asc">Ascending</option>
+                      </select>
+                    </div>
+                  </>
+                )}
+
+                {/* Filter Language */}
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Language</label>
+                  <select
+                    value={filterLanguage}
+                    onChange={(e) => setFilterLanguage(e.target.value)}
+                    className="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+                  >
+                    <option value="all">All Languages</option>
+                    {summary?.allLanguages.map((lang) => (
+                      <option key={lang} value={lang}>
+                        {lang}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Filter Topic */}
+                <div>
+                  <label className="block text-sm text-gray-400 mb-2">Topic</label>
+                  <select
+                    value={filterTopic}
+                    onChange={(e) => setFilterTopic(e.target.value)}
+                    className="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
+                  >
+                    <option value="all">All Topics</option>
+                    {summary?.allTopics.map((topic) => (
+                      <option key={topic} value={topic}>
+                        {topic}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              {/* Active Filters Display */}
+              {(filterLanguage !== 'all' || filterTopic !== 'all') && (
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <span className="text-gray-400 text-sm">Active filters:</span>
+                  {filterLanguage !== 'all' && (
+                    <span className="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm flex items-center gap-2">
+                      {filterLanguage}
+                      <button
+                        onClick={() => setFilterLanguage('all')}
+                        className="hover:text-white"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </span>
+                  )}
+                  {filterTopic !== 'all' && (
+                    <span className="bg-blue-900/50 text-blue-200 px-3 py-1 rounded-full text-sm flex items-center gap-2">
+                      {filterTopic}
+                      <button onClick={() => setFilterTopic('all')} className="hover:text-white">
+                        <X className="w-3 h-3" />
+                      </button>
+                    </span>
+                  )}
+                  <button
+                    onClick={resetFilters}
+                    className="text-red-400 text-sm hover:text-red-300 underline"
+                  >
+                    Reset All
+                  </button>
+                </div>
+              )}
+
+              {/* Results Counter */}
+              <div className="mt-4 text-gray-400 text-sm">
+                Showing <span className="text-white font-semibold">{getSortedAndFilteredRepos().length}</span> of{' '}
+                <span className="text-white font-semibold">{repos.length}</span> repositories
+              </div>
+            </div>
+
+            {/* Repository Cards with Rankings */}
             <div className="grid grid-cols-1 gap-4">
-              {repos.map(repo => (
+              {getSortedAndFilteredRepos().map((repo, index) => {
+                const rankBadge = getRankBadge(index);
+                return (
                 <div
                   key={repo.id}
-                  className="bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-colors"
+                  className={`bg-gray-700 rounded-lg p-6 hover:bg-gray-600 transition-all ${
+                    index < 3 ? 'border-2 border-yellow-500/30' : ''
+                  }`}
                 >
+                  {/* Ranking Badge */}
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-3">
+                      <span className={`text-3xl font-bold ${rankBadge.color}`}>
+                        {rankBadge.icon} {rankBadge.label}
+                      </span>
+                      {index < 3 && (
+                        <span className="bg-yellow-900/30 text-yellow-300 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
+                          <Award className="w-3 h-3" />
+                          Top {index + 1}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">
                       <a
@@ -422,7 +725,8 @@ const GitHubStarsAnalyzer = () => {
                     </div>
                   )}
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}
