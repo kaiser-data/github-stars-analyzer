@@ -127,6 +127,85 @@ const GitHubStarsAnalyzer = () => {
     }
   };
 
+  // Topic normalization helper
+  const normalizeTopics = (topics) => {
+    const topicMap = {};
+    const normalizedTopics = new Set();
+
+    // Common abbreviation mappings and normalizations
+    const abbreviations = {
+      'ai': 'artificial-intelligence',
+      'ml': 'machine-learning',
+      'dl': 'deep-learning',
+      'nlp': 'natural-language-processing',
+      'cv': 'computer-vision',
+      'api': 'api',
+      'rest': 'rest-api',
+      'graphql': 'graphql',
+      'db': 'database',
+      'js': 'javascript',
+      'ts': 'typescript',
+      'py': 'python',
+      'css': 'css',
+      'html': 'html',
+      'ui': 'user-interface',
+      'ux': 'user-experience',
+      'cli': 'command-line',
+      'devops': 'devops',
+      'cicd': 'ci-cd',
+      'k8s': 'kubernetes',
+      'aws': 'aws',
+      'gcp': 'google-cloud',
+      'iot': 'internet-of-things',
+      'ci': 'continuous-integration',
+      'cd': 'continuous-deployment'
+    };
+
+    // Pluralization rules
+    const singularize = (word) => {
+      if (word.endsWith('ies')) return word.slice(0, -3) + 'y';
+      if (word.endsWith('es')) return word.slice(0, -2);
+      if (word.endsWith('s') && !word.endsWith('ss')) return word.slice(0, -1);
+      return word;
+    };
+
+    topics.forEach(topic => {
+      let normalized = topic.toLowerCase().trim();
+
+      // Check if it's a known abbreviation
+      if (abbreviations[normalized]) {
+        normalized = abbreviations[normalized];
+      }
+
+      // Try to match singular/plural variations
+      const singular = singularize(normalized);
+
+      // If we've seen the singular form, use that
+      if (topicMap[singular]) {
+        topicMap[singular].push(topic);
+      } else if (topicMap[normalized]) {
+        topicMap[normalized].push(topic);
+      } else {
+        // Check if a plural/singular version already exists
+        let found = false;
+        for (let existing in topicMap) {
+          if (singularize(existing) === singular || existing === singular) {
+            topicMap[existing].push(topic);
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          topicMap[singular] = [topic];
+        }
+      }
+
+      normalizedTopics.add(topicMap[singular] ? singular : normalized);
+    });
+
+    return { topicMap, normalizedTopics: Array.from(normalizedTopics) };
+  };
+
   const generateSummary = (reposData) => {
     const totalRepos = reposData.length;
     const totalStars = reposData.reduce((sum, repo) => sum + repo.stargazers_count, 0);
@@ -134,13 +213,62 @@ const GitHubStarsAnalyzer = () => {
 
     const languageCounts = {};
     const topicCounts = {};
+    const topicVariations = {}; // Maps normalized topic -> array of original variations
 
     reposData.forEach(repo => {
       if (repo.language !== 'Unknown') {
         languageCounts[repo.language] = (languageCounts[repo.language] || 0) + 1;
       }
+
+      // Normalize topics for counting
+      const uniqueNormalized = new Set();
       repo.topics.forEach(topic => {
-        topicCounts[topic] = (topicCounts[topic] || 0) + 1;
+        let normalized = topic.toLowerCase().trim();
+
+        // Apply abbreviation mapping
+        const abbreviations = {
+          'ai': 'artificial-intelligence',
+          'ml': 'machine-learning',
+          'dl': 'deep-learning',
+          'nlp': 'natural-language-processing',
+          'cv': 'computer-vision',
+          'db': 'database',
+          'js': 'javascript',
+          'ts': 'typescript',
+          'py': 'python',
+          'ui': 'user-interface',
+          'ux': 'user-experience',
+          'cli': 'command-line',
+          'cicd': 'ci-cd',
+          'k8s': 'kubernetes',
+          'iot': 'internet-of-things'
+        };
+
+        if (abbreviations[normalized]) {
+          normalized = abbreviations[normalized];
+        }
+
+        // Singularize for grouping
+        if (normalized.endsWith('ies')) {
+          normalized = normalized.slice(0, -3) + 'y';
+        } else if (normalized.endsWith('es') && !normalized.endsWith('ess')) {
+          normalized = normalized.slice(0, -2);
+        } else if (normalized.endsWith('s') && !normalized.endsWith('ss') && !normalized.endsWith('us')) {
+          normalized = normalized.slice(0, -1);
+        }
+
+        uniqueNormalized.add(normalized);
+
+        // Track variations
+        if (!topicVariations[normalized]) {
+          topicVariations[normalized] = new Set();
+        }
+        topicVariations[normalized].add(topic);
+      });
+
+      // Count each normalized topic once per repo
+      uniqueNormalized.forEach(normalized => {
+        topicCounts[normalized] = (topicCounts[normalized] || 0) + 1;
       });
     });
 
@@ -152,7 +280,11 @@ const GitHubStarsAnalyzer = () => {
     const topTopics = Object.entries(topicCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 10)
-      .map(([topic, count]) => ({ topic, count }));
+      .map(([topic, count]) => ({
+        topic,
+        count,
+        variations: Array.from(topicVariations[topic] || [topic])
+      }));
 
     const mostStarred = [...reposData]
       .sort((a, b) => b.stargazers_count - a.stargazers_count)
@@ -161,11 +293,16 @@ const GitHubStarsAnalyzer = () => {
     // Get all unique languages and topics for filter dropdowns
     const allLanguages = Object.keys(languageCounts).sort();
 
-    // Get top 20 topics only for the filter dropdown
+    // Get top 20 topics only for the filter dropdown with their variations
     const topTopicsForFilter = Object.entries(topicCounts)
       .sort((a, b) => b[1] - a[1])
       .slice(0, 20)
-      .map(([topic]) => topic);
+      .map(([topic]) => ({
+        normalized: topic,
+        display: topic,
+        variations: Array.from(topicVariations[topic] || [topic]),
+        count: topicCounts[topic]
+      }));
 
     setSummary({
       totalRepos,
@@ -175,7 +312,8 @@ const GitHubStarsAnalyzer = () => {
       topTopics,
       mostStarred,
       allLanguages,
-      allTopics: topTopicsForFilter
+      allTopics: topTopicsForFilter,
+      topicVariations // Store for filtering
     });
   };
 
@@ -241,16 +379,61 @@ const GitHubStarsAnalyzer = () => {
       filtered = filtered.filter(r => r.language === filterLanguage);
     }
 
-    // Apply topic filter
+    // Apply topic filter with normalization
     if (filterTopic !== 'all') {
       if (filterTopic === 'others') {
         // Filter for repos with topics not in the top 20
-        const topTopicsList = summary?.allTopics || [];
-        filtered = filtered.filter(r =>
-          r.topics.length > 0 && !r.topics.some(t => topTopicsList.includes(t))
-        );
+        const topNormalizedTopics = (summary?.allTopics || []).map(t => t.normalized);
+        filtered = filtered.filter(r => {
+          if (r.topics.length === 0) return false;
+
+          // Check if any of the repo's topics normalize to a top 20 topic
+          return !r.topics.some(topic => {
+            let normalized = topic.toLowerCase().trim();
+
+            // Apply same normalization as in generateSummary
+            const abbreviations = {
+              'ai': 'artificial-intelligence',
+              'ml': 'machine-learning',
+              'dl': 'deep-learning',
+              'nlp': 'natural-language-processing',
+              'cv': 'computer-vision',
+              'db': 'database',
+              'js': 'javascript',
+              'ts': 'typescript',
+              'py': 'python',
+              'ui': 'user-interface',
+              'ux': 'user-experience',
+              'cli': 'command-line',
+              'cicd': 'ci-cd',
+              'k8s': 'kubernetes',
+              'iot': 'internet-of-things'
+            };
+
+            if (abbreviations[normalized]) {
+              normalized = abbreviations[normalized];
+            }
+
+            // Singularize
+            if (normalized.endsWith('ies')) {
+              normalized = normalized.slice(0, -3) + 'y';
+            } else if (normalized.endsWith('es') && !normalized.endsWith('ess')) {
+              normalized = normalized.slice(0, -2);
+            } else if (normalized.endsWith('s') && !normalized.endsWith('ss') && !normalized.endsWith('us')) {
+              normalized = normalized.slice(0, -1);
+            }
+
+            return topNormalizedTopics.includes(normalized);
+          });
+        });
       } else {
-        filtered = filtered.filter(r => r.topics.includes(filterTopic));
+        // Filter for repos that have any variation of the selected topic
+        const selectedTopicData = (summary?.allTopics || []).find(t => t.normalized === filterTopic);
+        const variations = selectedTopicData?.variations || [filterTopic];
+
+        filtered = filtered.filter(r =>
+          r.topics.some(topic => variations.includes(topic))
+        );
       }
     }
 
@@ -438,15 +621,19 @@ const GitHubStarsAnalyzer = () => {
 
               {/* Popular Topics */}
               <div className="bg-gray-700 rounded-lg p-6">
-                <h3 className="text-xl font-bold mb-4">Popular Topics</h3>
+                <h3 className="text-xl font-bold mb-4">Popular Topics (Normalized)</h3>
                 {summary.topTopics.length > 0 ? (
                   <div className="flex flex-wrap gap-2">
-                    {summary.topTopics.map(topic => (
+                    {summary.topTopics.map(topicData => (
                       <span
-                        key={topic.topic}
+                        key={topicData.topic}
                         className="px-3 py-1 bg-blue-600 bg-opacity-30 border border-blue-500 rounded-full text-sm"
+                        title={`Variations: ${topicData.variations.join(', ')}`}
                       >
-                        {topic.topic} ({topic.count})
+                        {topicData.topic} ({topicData.count})
+                        {topicData.variations.length > 1 && (
+                          <span className="text-xs text-blue-300"> [{topicData.variations.length}]</span>
+                        )}
                       </span>
                     ))}
                   </div>
@@ -605,16 +792,19 @@ const GitHubStarsAnalyzer = () => {
 
                 {/* Filter Topic */}
                 <div>
-                  <label className="block text-sm text-gray-400 mb-2">Topic (Top 20)</label>
+                  <label className="block text-sm text-gray-400 mb-2">
+                    Topic (Top 20, normalized)
+                  </label>
                   <select
                     value={filterTopic}
                     onChange={(e) => setFilterTopic(e.target.value)}
                     className="w-full px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
                   >
                     <option value="all">All Topics</option>
-                    {summary?.allTopics.map((topic) => (
-                      <option key={topic} value={topic}>
-                        {topic}
+                    {summary?.allTopics.map((topicData) => (
+                      <option key={topicData.normalized} value={topicData.normalized}>
+                        {topicData.display} ({topicData.count})
+                        {topicData.variations.length > 1 && ` [${topicData.variations.length} variants]`}
                       </option>
                     ))}
                     <option value="others">Others (not in top 20)</option>
