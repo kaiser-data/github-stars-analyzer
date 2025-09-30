@@ -590,17 +590,29 @@ const GitHubStarsAnalyzer = () => {
         headers['Authorization'] = `token ${token}`;
       }
 
+      console.log(`Fetching star history for ${owner}/${repoName}...`);
+
       const response = await fetch(
         `https://api.github.com/repos/${owner}/${repoName}/stargazers?per_page=100`,
         { headers }
       );
 
       if (!response.ok) {
+        const errorText = await response.text();
+        console.error(`API Error ${response.status}:`, errorText);
         throw new Error(`Failed to fetch star history: ${response.status}`);
       }
 
       const stargazers = await response.json();
+      console.log(`Received ${stargazers.length} stargazers for ${owner}/${repoName}`);
+
+      // Log first few starred_at dates for debugging
+      if (stargazers.length > 0) {
+        console.log('Sample starred_at dates:', stargazers.slice(0, 3).map(s => s.starred_at));
+      }
+
       const trends = calculateTrends(stargazers);
+      console.log(`Calculated trends for ${owner}/${repoName}:`, trends);
 
       setRepoTrends(prev => ({
         ...prev,
@@ -613,6 +625,7 @@ const GitHubStarsAnalyzer = () => {
       setTrendsFetched(prev => new Set([...prev, repoId]));
     } catch (err) {
       console.error(`Error fetching trends for ${owner}/${repoName}:`, err);
+      setError(`Failed to fetch trends for ${owner}/${repoName}: ${err.message}`);
     } finally {
       setLoadingTrends(prev => {
         const newSet = new Set(prev);
@@ -634,10 +647,21 @@ const GitHubStarsAnalyzer = () => {
 
     const trends = {};
 
+    console.log('Calculating trends...');
+    console.log('Current date:', now.toISOString());
+    console.log('Total stargazers received:', stargazers.length);
+
     Object.entries(periods).forEach(([key, days]) => {
       const cutoff = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
-      const count = stargazers.filter(s => new Date(s.starred_at) > cutoff).length;
+      console.log(`${key} cutoff date:`, cutoff.toISOString());
+
+      const count = stargazers.filter(s => {
+        const starDate = new Date(s.starred_at);
+        return starDate > cutoff;
+      }).length;
+
       const rate = Math.round((count / days) * 30); // Monthly rate
+      console.log(`${key}: ${count} stars, ${rate}/month`);
 
       trends[key] = { count, rate };
     });
@@ -675,6 +699,7 @@ const GitHubStarsAnalyzer = () => {
     trends.momentum = momentum;
     trends.momentumPercent = Math.round(diff);
 
+    console.log('Final trends:', trends);
     return trends;
   };
 
