@@ -573,7 +573,7 @@ const GitHubStarsAnalyzer = () => {
   };
 
   // Fetch star history for a repository
-  const fetchStarHistory = async (owner, repoName, repoId) => {
+  const fetchStarHistory = async (owner, repoName, repoId, totalStars) => {
     // Check if already loading or fetched
     if (loadingTrends.has(repoId) || trendsFetched.has(repoId)) {
       return;
@@ -590,10 +590,16 @@ const GitHubStarsAnalyzer = () => {
         headers['Authorization'] = `token ${token}`;
       }
 
-      console.log(`Fetching star history for ${owner}/${repoName}...`);
+      console.log(`Fetching star history for ${owner}/${repoName} (${totalStars} total stars)...`);
+
+      // Calculate the last page to get most recent stars
+      const perPage = 100;
+      const lastPage = Math.max(1, Math.ceil(totalStars / perPage));
+
+      console.log(`Fetching page ${lastPage} to get most recent stars...`);
 
       const response = await fetch(
-        `https://api.github.com/repos/${owner}/${repoName}/stargazers?per_page=100`,
+        `https://api.github.com/repos/${owner}/${repoName}/stargazers?per_page=${perPage}&page=${lastPage}`,
         { headers }
       );
 
@@ -604,11 +610,12 @@ const GitHubStarsAnalyzer = () => {
       }
 
       const stargazers = await response.json();
-      console.log(`Received ${stargazers.length} stargazers for ${owner}/${repoName}`);
+      console.log(`Received ${stargazers.length} recent stargazers for ${owner}/${repoName}`);
 
-      // Log first few starred_at dates for debugging
+      // Log first and last starred_at dates for debugging
       if (stargazers.length > 0) {
-        console.log('Sample starred_at dates:', stargazers.slice(0, 3).map(s => s.starred_at));
+        console.log('Oldest in this batch:', stargazers[0]?.starred_at);
+        console.log('Newest in this batch:', stargazers[stargazers.length - 1]?.starred_at);
       }
 
       const trends = calculateTrends(stargazers);
@@ -709,7 +716,7 @@ const GitHubStarsAnalyzer = () => {
 
     for (const repo of topRepos) {
       if (!trendsFetched.has(repo.id)) {
-        await fetchStarHistory(repo.owner, repo.name, repo.id);
+        await fetchStarHistory(repo.owner, repo.name, repo.id, repo.stargazers_count);
         // Small delay to avoid rate limiting
         await new Promise(resolve => setTimeout(resolve, 100));
       }
@@ -1199,11 +1206,11 @@ const GitHubStarsAnalyzer = () => {
                   <div className="mt-4 pt-4 border-t border-gray-600">
                     {!trendsFetched.has(repo.id) && !loadingTrends.has(repo.id) && (
                       <button
-                        onClick={() => fetchStarHistory(repo.owner, repo.name, repo.id)}
+                        onClick={() => fetchStarHistory(repo.owner, repo.name, repo.id, repo.stargazers_count)}
                         className="flex items-center px-3 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm font-medium transition-colors"
                       >
                         <TrendingUp className="w-4 h-4 mr-2" />
-                        Show Recent Trends
+                        Show Recent Trends (Last Year)
                       </button>
                     )}
 
