@@ -160,7 +160,12 @@ const GitHubStarsAnalyzer = () => {
 
     // Get all unique languages and topics for filter dropdowns
     const allLanguages = Object.keys(languageCounts).sort();
-    const allTopics = Object.keys(topicCounts).sort();
+
+    // Get top 20 topics only for the filter dropdown
+    const topTopicsForFilter = Object.entries(topicCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 20)
+      .map(([topic]) => topic);
 
     setSummary({
       totalRepos,
@@ -170,7 +175,7 @@ const GitHubStarsAnalyzer = () => {
       topTopics,
       mostStarred,
       allLanguages,
-      allTopics
+      allTopics: topTopicsForFilter
     });
   };
 
@@ -238,7 +243,15 @@ const GitHubStarsAnalyzer = () => {
 
     // Apply topic filter
     if (filterTopic !== 'all') {
-      filtered = filtered.filter(r => r.topics.includes(filterTopic));
+      if (filterTopic === 'others') {
+        // Filter for repos with topics not in the top 20
+        const topTopicsList = summary?.allTopics || [];
+        filtered = filtered.filter(r =>
+          r.topics.length > 0 && !r.topics.some(t => topTopicsList.includes(t))
+        );
+      } else {
+        filtered = filtered.filter(r => r.topics.includes(filterTopic));
+      }
     }
 
     // Apply sorting (only if in 'all' view mode)
@@ -592,7 +605,7 @@ const GitHubStarsAnalyzer = () => {
 
                 {/* Filter Topic */}
                 <div>
-                  <label className="block text-sm text-gray-400 mb-2">Topic</label>
+                  <label className="block text-sm text-gray-400 mb-2">Topic (Top 20)</label>
                   <select
                     value={filterTopic}
                     onChange={(e) => setFilterTopic(e.target.value)}
@@ -604,6 +617,7 @@ const GitHubStarsAnalyzer = () => {
                         {topic}
                       </option>
                     ))}
+                    <option value="others">Others (not in top 20)</option>
                   </select>
                 </div>
               </div>
