@@ -4,9 +4,14 @@
   "description": "Analyze GitHub starred repositories with comprehensive analytics",
   "private": true,
   "dependencies": {
+    "dexie": "^4.4.2",
+    "graphology": "^0.26.0",
+    "graphology-communities-louvain": "^2.0.2",
+    "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "lucide-react": "^0.263.1"
+    "react-router-dom": "^7.14.2",
+    "sigma": "^3.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",

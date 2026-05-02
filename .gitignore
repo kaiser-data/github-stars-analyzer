@@ -12,6 +12,16 @@ dist
 dist-ssr
 *.local
 
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Generated data
+src/data/raw-*.json
+src/data/classified-*.json
+src/data/.cache/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
