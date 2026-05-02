@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { useGraph } from './GraphProvider';
 import { QUERIES } from './queries';
 
-function ResultTable({ rows }) {
+function ResultTable({ rows, onSelect }) {
   if (!rows || rows.length === 0) {
     return <div className="text-gray-500 text-sm">No results.</div>;
   }
@@ -18,30 +18,37 @@ function ResultTable({ rows }) {
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, i) => (
-            <tr key={i} className="border-b border-gray-800 hover:bg-gray-800/50">
-              {headers.map((h) => {
-                const v = row[h];
-                let display = v;
-                if (Array.isArray(v)) display = v.join(', ');
-                else if (typeof v === 'number') display = v.toLocaleString();
-                return (
-                  <td key={h} className="py-2 pr-4 text-gray-200">
-                    {h === 'full_name' && typeof v === 'string' ? (
-                      <a href={`https://github.com/${v}`} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300">{v}</a>
-                    ) : display}
-                  </td>
-                );
-              })}
-            </tr>
-          ))}
+          {rows.map((row, i) => {
+            const fullName = typeof row.full_name === 'string' ? row.full_name : null;
+            return (
+              <tr
+                key={i}
+                className={`border-b border-gray-800 hover:bg-gray-800/50 ${fullName && onSelect ? 'cursor-pointer' : ''}`}
+                onClick={() => fullName && onSelect && onSelect(fullName)}
+              >
+                {headers.map((h) => {
+                  const v = row[h];
+                  let display = v;
+                  if (Array.isArray(v)) display = v.join(', ');
+                  else if (typeof v === 'number') display = v.toLocaleString();
+                  return (
+                    <td key={h} className="py-2 pr-4 text-gray-200">
+                      {h === 'full_name' && typeof v === 'string' ? (
+                        <span className="text-blue-400 hover:text-blue-300">{v}</span>
+                      ) : display}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
   );
 }
 
-export default function InsightFeed() {
+export default function InsightFeed({ onSelect }) {
   const { status, graph } = useGraph();
   const [activeKey, setActiveKey] = useState('whereDevsWork');
 
@@ -75,7 +82,8 @@ export default function InsightFeed() {
       <div className="lg:col-span-3 bg-gray-800 rounded-lg p-5">
         <h2 className="text-xl font-bold text-white">{QUERIES[activeKey].title}</h2>
         <p className="text-sm text-gray-400 mt-1 mb-4">{QUERIES[activeKey].description}</p>
-        <ResultTable rows={result} />
+        <ResultTable rows={result} onSelect={onSelect} />
+        <div className="text-xs text-gray-500 mt-3">Click a row with a repo name to open detail panel.</div>
       </div>
     </div>
   );

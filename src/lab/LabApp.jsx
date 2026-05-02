@@ -3,9 +3,12 @@ import { GraphProvider, useGraph } from './GraphProvider';
 import MapView from './MapView';
 import InsightFeed from './InsightFeed';
 import Comparator from './Comparator';
+import RepoDetail from './RepoDetail';
+import AllRepos from './AllRepos';
 
 const TABS = [
   { key: 'insights', label: 'Insights' },
+  { key: 'all', label: 'Browse' },
   { key: 'map', label: 'Map' },
   { key: 'compare', label: 'Compare' },
 ];
@@ -36,6 +39,9 @@ function StatusBanner() {
 
 function LabContent() {
   const [tab, setTab] = useState('insights');
+  const [selected, setSelected] = useState(null);
+  const select = (fullName) => setSelected(fullName);
+
   return (
     <div>
       <StatusBanner />
@@ -52,9 +58,11 @@ function LabContent() {
           </button>
         ))}
       </div>
-      {tab === 'insights' && <InsightFeed />}
-      {tab === 'map' && <MapView />}
+      {tab === 'insights' && <InsightFeed onSelect={select} />}
+      {tab === 'all' && <AllRepos onSelect={select} />}
+      {tab === 'map' && <MapView onSelectNode={(n) => select(n.full_name)} />}
       {tab === 'compare' && <Comparator />}
+      {selected && <RepoDetail repoFullName={selected} onClose={() => setSelected(null)} />}
     </div>
   );
 }
