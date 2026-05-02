@@ -68,8 +68,13 @@ function buildGraph(classified, enriched) {
     });
   }
 
-  // Compute edges: SHARED_TOPIC, SHARED_AUTHOR, SHARED_LANGUAGE
-  // Stored as one undirected edge per pair with composite weight + reasons.
+  // Compute edges via k-NN backbone: every repo gets edges to its top-K most
+  // similar peers regardless of absolute weight. Strong edges (≥STRONG) are
+  // always kept on top of that. Guarantees connectivity on sparse samples; weak
+  // edges still carry low weight so PageRank/Louvain naturally discount them.
+  const K = 4;
+  const STRONG = 1.0;
+
   const repos = classified.repos;
   const topicSets = new Map();
   const authorSets = new Map();
@@ -79,7 +84,10 @@ function buildGraph(classified, enriched) {
     authorSets.set(r.id, new Set(authors));
   }
 
-  let edgeCount = 0;
+  // Pass 1: compute all candidate pair scores in one O(n²) sweep.
+  const partnersOf = new Map();
+  for (const r of repos) partnersOf.set(r.id, []);
+
   for (let i = 0; i < repos.length; i += 1) {
     for (let j = i + 1; j < repos.length; j += 1) {
       const a = repos[i];
@@ -88,14 +96,14 @@ function buildGraph(classified, enriched) {
       let weight = 0;
 
       const topicSim = jaccard(topicSets.get(a.id), topicSets.get(b.id));
-      if (topicSim > 0.15) {
+      if (topicSim > 0) {
         weight += topicSim * 1.0;
         reasons.push({ kind: 'topic', score: topicSim });
       }
 
       const authorSim = jaccard(authorSets.get(a.id), authorSets.get(b.id));
       if (authorSim > 0) {
-        weight += authorSim * 2.0; // shared contributors weigh more
+        weight += authorSim * 2.0;
         reasons.push({ kind: 'author', score: authorSim });
       }
 
@@ -109,16 +117,64 @@ function buildGraph(classified, enriched) {
         reasons.push({ kind: 'owner', score: 1, owner: a.owner });
       }
 
-      if (weight > 0.18) {
-        g.addEdge(`repo:${a.id}`, `repo:${b.id}`, {
-          weight,
-          reasons,
-          shared_topics: [...topicSets.get(a.id)].filter((t) => topicSets.get(b.id).has(t)),
-          shared_authors: [...authorSets.get(a.id)].filter((u) => authorSets.get(b.id).has(u)),
-        });
-        edgeCount += 1;
-      }
+      if (weight === 0) continue;
+
+      const score = {
+        a, b, weight, reasons,
+        sharedTopics: [...topicSets.get(a.id)].filter((t) => topicSets.get(b.id).has(t)),
+        sharedAuthors: [...authorSets.get(a.id)].filter((u) => authorSets.get(b.id).has(u)),
+      };
+      partnersOf.get(a.id).push(score);
+      partnersOf.get(b.id).push(score);
     }
+  }
+
+  // Pass 2: keep top-K per node + every above-STRONG edge.
+  const keepKeys = new Set();
+  const keyFor = (s) => (s.a.id < s.b.id ? `${s.a.id}-${s.b.id}` : `${s.b.id}-${s.a.id}`);
+  for (const partners of partnersOf.values()) {
+    partners.sort((x, y) => y.weight - x.weight);
+    for (const s of partners.slice(0, K)) keepKeys.add(keyFor(s));
+    for (const s of partners) if (s.weight >= STRONG) keepKeys.add(keyFor(s));
+  }
+
+  // Pass 3: actually add the edges (dedup via canonical key).
+  const added = new Set();
+  let edgeCount = 0;
+  for (const partners of partnersOf.values()) {
+    for (const s of partners) {
+      const key = keyFor(s);
+      if (!keepKeys.has(key) || added.has(key)) continue;
+      added.add(key);
+      g.addEdge(`repo:${s.a.id}`, `repo:${s.b.id}`, {
+        weight: s.weight,
+        reasons: s.reasons,
+        shared_topics: s.sharedTopics,
+        shared_authors: s.sharedAuthors,
+      });
+      edgeCount += 1;
+    }
+  }
+
+  // Pass 4: fallback for repos with zero signal at all (no topics/authors/lang/owner-overlap).
+  // Attach each orphan to the highest-star repo sharing its lifecycle_stage so the graph
+  // stays connected and the Louvain communities still have a sensible bucket for them.
+  const stagePivots = new Map();
+  for (const r of repos) {
+    const cur = stagePivots.get(r.lifecycle_stage);
+    if (!cur || r.stars > cur.stars) stagePivots.set(r.lifecycle_stage, r);
+  }
+  for (const r of repos) {
+    if (g.degree(`repo:${r.id}`) > 0) continue;
+    const pivot = stagePivots.get(r.lifecycle_stage);
+    if (!pivot || pivot.id === r.id) continue;
+    g.addEdge(`repo:${r.id}`, `repo:${pivot.id}`, {
+      weight: 0.05,
+      reasons: [{ kind: 'lifecycle_fallback', score: 1, stage: r.lifecycle_stage }],
+      shared_topics: [],
+      shared_authors: [],
+    });
+    edgeCount += 1;
   }
 
   // Louvain community detection on weighted edges
