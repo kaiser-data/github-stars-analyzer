@@ -7,6 +7,7 @@ import Comparator from './Comparator';
 import RepoDetail from './RepoDetail';
 import AllRepos from './AllRepos';
 import TopicMap from './TopicMap';
+import HealthHistogram from './HealthHistogram';
 
 const TABS = [
   { key: 'insights', label: 'Insights' },
@@ -79,6 +80,7 @@ function LabContent() {
   return (
     <div>
       <StatusBanner />
+      <HealthHistogram />
       <div className="flex flex-wrap gap-2 mb-5">
         {TABS.map((t) => (
           <button
@@ -94,7 +96,7 @@ function LabContent() {
       </div>
       {tab === 'insights' && <InsightFeed onSelect={select} />}
       {tab === 'all' && <AllRepos onSelect={select} />}
-      {tab === 'map' && <MapView onSelectNode={(n) => select(n.full_name)} />}
+      {tab === 'map' && <MapView onSelectNode={(n) => select(n ? n.full_name : null)} focusedRepoName={selected} />}
       {tab === 'topics' && <TopicMap onSelect={select} />}
       {tab === 'compare' && <Comparator initialA={compareA} initialB={compareB} />}
       {selected && <RepoDetail repoFullName={selected} onClose={closeDetail} onCompareWith={goCompare} />}

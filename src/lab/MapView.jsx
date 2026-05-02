@@ -68,13 +68,34 @@ function forceLayout(graph, iterations = 100) {
   return positions;
 }
 
-export default function MapView({ onSelectNode }) {
+export default function MapView({ onSelectNode, focusedRepoName }) {
   const containerRef = useRef(null);
   const sigmaRef = useRef(null);
   const focusRef = useRef(null); // stays in sync with reducers without re-init
   const { status, graph, stats, error } = useGraph();
   const [hovered, setHovered] = useState(null);
   const [focused, setFocused] = useState(null);
+
+  // External focus driven by URL param — when prop changes, find the node
+  // and apply focus without re-creating the sigma instance.
+  useEffect(() => {
+    if (status !== 'ready' || !graph || !sigmaRef.current) return;
+    if (!focusedRepoName) {
+      if (focusRef.current) {
+        focusRef.current = null;
+        setFocused(null);
+        sigmaRef.current.refresh();
+      }
+      return;
+    }
+    let nodeId = null;
+    graph.forEachNode((n, a) => { if (a.kind === 'repo' && a.full_name === focusedRepoName) nodeId = n; });
+    if (nodeId && nodeId !== focusRef.current?.id) {
+      focusRef.current = { id: nodeId, neighbors: new Set(graph.neighbors(nodeId)) };
+      setFocused(focusedRepoName);
+      sigmaRef.current.refresh();
+    }
+  }, [focusedRepoName, status, graph]);
 
   useEffect(() => {
     if (status !== 'ready' || !graph || !containerRef.current) return;
@@ -135,6 +156,7 @@ export default function MapView({ onSelectNode }) {
       focusRef.current = null;
       setFocused(null);
       renderer.refresh();
+      if (onSelectNode) onSelectNode(null);
     });
 
     sigmaRef.current = renderer;
