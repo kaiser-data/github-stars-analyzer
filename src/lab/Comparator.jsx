@@ -40,7 +40,7 @@ function MetricRow({ label, a, b, fmt = (x) => x }) {
   );
 }
 
-export default function Comparator() {
+export default function Comparator({ initialA, initialB }) {
   const { status, graph } = useGraph();
   const repoOptions = useMemo(() => {
     if (status !== 'ready') return [];
@@ -49,8 +49,12 @@ export default function Comparator() {
     return out.sort();
   }, [status, graph]);
 
-  const [a, setA] = useState('');
-  const [b, setB] = useState('');
+  const [a, setA] = useState(initialA ?? '');
+  const [b, setB] = useState(initialB ?? '');
+
+  // React when caller swaps in new repos via URL params
+  React.useEffect(() => { if (initialA) setA(initialA); }, [initialA]);
+  React.useEffect(() => { if (initialB) setB(initialB); }, [initialB]);
   const result = useMemo(() => {
     if (status !== 'ready' || !a || !b || a === b) return null;
     return compareRepos(graph, a, b);

@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { GraphProvider, useGraph } from './GraphProvider';
 import MapView from './MapView';
 import InsightFeed from './InsightFeed';
 import Comparator from './Comparator';
 import RepoDetail from './RepoDetail';
 import AllRepos from './AllRepos';
+import TopicMap from './TopicMap';
 
 const TABS = [
   { key: 'insights', label: 'Insights' },
   { key: 'all', label: 'Browse' },
   { key: 'map', label: 'Map' },
+  { key: 'topics', label: 'Topics' },
   { key: 'compare', label: 'Compare' },
 ];
 
@@ -38,14 +41,45 @@ function StatusBanner() {
 }
 
 function LabContent() {
-  const [tab, setTab] = useState('insights');
-  const [selected, setSelected] = useState(null);
-  const select = (fullName) => setSelected(fullName);
+  const [params, setParams] = useSearchParams();
+  const tab = params.get('tab') ?? 'insights';
+  const selected = params.get('repo');
+  const compareA = params.get('a');
+  const compareB = params.get('b');
+
+  const setTab = useCallback((next) => {
+    setParams((prev) => {
+      const p = new URLSearchParams(prev);
+      p.set('tab', next);
+      return p;
+    });
+  }, [setParams]);
+
+  const select = useCallback((fullName) => {
+    setParams((prev) => {
+      const p = new URLSearchParams(prev);
+      if (fullName) p.set('repo', fullName); else p.delete('repo');
+      return p;
+    });
+  }, [setParams]);
+
+  const closeDetail = useCallback(() => select(null), [select]);
+
+  const goCompare = useCallback((a, b) => {
+    setParams((prev) => {
+      const p = new URLSearchParams(prev);
+      p.set('tab', 'compare');
+      if (a) p.set('a', a);
+      if (b) p.set('b', b);
+      p.delete('repo');
+      return p;
+    });
+  }, [setParams]);
 
   return (
     <div>
       <StatusBanner />
-      <div className="flex gap-2 mb-5">
+      <div className="flex flex-wrap gap-2 mb-5">
         {TABS.map((t) => (
           <button
             key={t.key}
@@ -61,8 +95,9 @@ function LabContent() {
       {tab === 'insights' && <InsightFeed onSelect={select} />}
       {tab === 'all' && <AllRepos onSelect={select} />}
       {tab === 'map' && <MapView onSelectNode={(n) => select(n.full_name)} />}
-      {tab === 'compare' && <Comparator />}
-      {selected && <RepoDetail repoFullName={selected} onClose={() => setSelected(null)} />}
+      {tab === 'topics' && <TopicMap onSelect={select} />}
+      {tab === 'compare' && <Comparator initialA={compareA} initialB={compareB} />}
+      {selected && <RepoDetail repoFullName={selected} onClose={closeDetail} onCompareWith={goCompare} />}
     </div>
   );
 }

@@ -52,8 +52,9 @@ function findNeighbors(graph, nodeId, limit = 8) {
   return neighbors.sort((a, b) => b.weight - a.weight).slice(0, limit);
 }
 
-export default function RepoDetail({ repoFullName, onClose }) {
+export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
   const { graph } = useGraph();
+  const [compareTarget, setCompareTarget] = React.useState('');
   if (!repoFullName) return null;
 
   let nodeId = null;
@@ -70,6 +71,10 @@ export default function RepoDetail({ repoFullName, onClose }) {
   const topAuthors = (attrs.authors_90d ?? []).slice(0, 5);
   const recentRelease = attrs.releases_total > 0 ? `${attrs.releases_total} releases` : 'no releases';
   const readmeExcerpt = (attrs.readme_text ?? '').slice(0, 1200);
+
+  const otherRepoNames = [];
+  graph.forEachNode((n, a) => { if (a.kind === 'repo' && a.full_name !== repoFullName) otherRepoNames.push(a.full_name); });
+  otherRepoNames.sort();
 
   return (
     <div className="fixed inset-y-0 right-0 w-full md:w-[600px] bg-gray-900 border-l border-gray-700 shadow-2xl overflow-y-auto z-50">
@@ -201,6 +206,27 @@ export default function RepoDetail({ repoFullName, onClose }) {
                   )}
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {onCompareWith && (
+          <div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Find shortest path to…</div>
+            <div className="flex gap-2">
+              <select
+                value={compareTarget}
+                onChange={(e) => setCompareTarget(e.target.value)}
+                className="flex-1 px-3 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 text-sm"
+              >
+                <option value="">Pick a repo to compare…</option>
+                {otherRepoNames.map((n) => <option key={n} value={n}>{n}</option>)}
+              </select>
+              <button
+                onClick={() => compareTarget && onCompareWith(repoFullName, compareTarget)}
+                disabled={!compareTarget}
+                className="px-3 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg text-sm font-medium text-white"
+              >Compare</button>
             </div>
           </div>
         )}
