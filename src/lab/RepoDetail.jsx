@@ -108,6 +108,9 @@ export default function RepoDetail({ repoFullName, onClose }) {
           <MetricCell label="Open issues" value={attrs.open_issues?.toLocaleString()} />
           <MetricCell label="Closed issues" value={attrs.closed_issues?.toLocaleString()} />
           <MetricCell label="Releases" value={attrs.releases_total} />
+          <MetricCell label="PageRank" value={Number(((attrs.pagerank ?? 0) * 1000).toFixed(2))} />
+          <MetricCell label="Degree" value={attrs.degree ?? 0} />
+          <MetricCell label="Community" value={attrs.community ?? 0} />
         </div>
 
         {attrs.language && (

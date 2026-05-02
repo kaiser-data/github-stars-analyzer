@@ -40,6 +40,7 @@ export default function AllRepos({ onSelect }) {
         case 'commits90': return b.commits_90d - a.commits_90d;
         case 'age': return a.age_days - b.age_days;
         case 'pushed': return a.days_since_push - b.days_since_push;
+        case 'pagerank': return (b.pagerank ?? 0) - (a.pagerank ?? 0);
         case 'stars':
         default: return b.stars - a.stars;
       }
@@ -72,6 +73,7 @@ export default function AllRepos({ onSelect }) {
           className="px-3 py-2 bg-gray-900 text-white rounded-lg border border-gray-700"
         >
           <option value="stars">Sort: stars</option>
+          <option value="pagerank">Sort: PageRank (graph-central)</option>
           <option value="health">Sort: health score</option>
           <option value="authors90">Sort: authors 90d</option>
           <option value="commits90">Sort: commits 90d</option>

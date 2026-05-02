@@ -102,16 +102,16 @@ export const QUERIES = {
   },
 
   hiddenClusterLeaders: {
-    title: 'Cluster leaders (high degree, central in their community)',
-    description: 'Repos most connected to others in your stars — likely the hubs of your interests.',
+    title: 'Cluster leaders (PageRank-central in your graph)',
+    description: 'Repos most structurally important in your starred network. PageRank weights connections through other influential repos higher than raw degree.',
     run: (graph) => {
       return repoNodes(graph)
-        .map((r) => ({ ...r, _degree: graph.degree(`repo:${r.id}`) }))
-        .sort((a, b) => b._degree - a._degree)
+        .sort((a, b) => (b.pagerank ?? 0) - (a.pagerank ?? 0))
         .slice(0, 15)
         .map((r) => ({
           full_name: r.full_name,
-          degree: r._degree,
+          pagerank: Number(((r.pagerank ?? 0) * 1000).toFixed(2)),
+          degree: graph.degree(`repo:${r.id}`),
           community: r.community,
           stage: r.lifecycle_stage,
           stars: r.stars,

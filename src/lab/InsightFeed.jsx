@@ -2,6 +2,32 @@ import React, { useMemo, useState } from 'react';
 import { useGraph } from './GraphProvider';
 import { QUERIES } from './queries';
 
+function downloadBlob(content, filename, mime) {
+  const blob = new Blob([content], { type: mime });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function rowsToCsv(rows) {
+  if (!rows || rows.length === 0) return '';
+  const headers = Object.keys(rows[0]);
+  const escape = (v) => {
+    if (v == null) return '';
+    if (Array.isArray(v)) v = v.join('; ');
+    const s = String(v);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const lines = [headers.join(',')];
+  for (const row of rows) lines.push(headers.map((h) => escape(row[h])).join(','));
+  return lines.join('\n');
+}
+
 function ResultTable({ rows, onSelect }) {
   if (!rows || rows.length === 0) {
     return <div className="text-gray-500 text-sm">No results.</div>;
@@ -80,8 +106,24 @@ export default function InsightFeed({ onSelect }) {
         </div>
       </div>
       <div className="lg:col-span-3 bg-gray-800 rounded-lg p-5">
-        <h2 className="text-xl font-bold text-white">{QUERIES[activeKey].title}</h2>
-        <p className="text-sm text-gray-400 mt-1 mb-4">{QUERIES[activeKey].description}</p>
+        <div className="flex items-start justify-between gap-3 mb-4">
+          <div>
+            <h2 className="text-xl font-bold text-white">{QUERIES[activeKey].title}</h2>
+            <p className="text-sm text-gray-400 mt-1">{QUERIES[activeKey].description}</p>
+          </div>
+          {result && result.length > 0 && (
+            <div className="flex gap-2 flex-shrink-0">
+              <button
+                onClick={() => downloadBlob(JSON.stringify(result, null, 2), `${activeKey}.json`, 'application/json')}
+                className="px-3 py-1.5 bg-gray-700 hover:bg-gray-600 text-xs rounded font-medium"
+              >Export JSON</button>
+              <button
+                onClick={() => downloadBlob(rowsToCsv(result), `${activeKey}.csv`, 'text/csv')}
+                className="px-3 py-1.5 bg-gray-700 hover:bg-gray-600 text-xs rounded font-medium"
+              >Export CSV</button>
+            </div>
+          )}
+        </div>
         <ResultTable rows={result} onSelect={onSelect} />
         <div className="text-xs text-gray-500 mt-3">Click a row with a repo name to open detail panel.</div>
       </div>

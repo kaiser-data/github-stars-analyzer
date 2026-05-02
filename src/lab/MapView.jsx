@@ -71,8 +71,10 @@ function forceLayout(graph, iterations = 100) {
 export default function MapView({ onSelectNode }) {
   const containerRef = useRef(null);
   const sigmaRef = useRef(null);
+  const focusRef = useRef(null); // stays in sync with reducers without re-init
   const { status, graph, stats, error } = useGraph();
   const [hovered, setHovered] = useState(null);
+  const [focused, setFocused] = useState(null);
 
   useEffect(() => {
     if (status !== 'ready' || !graph || !containerRef.current) return;
@@ -101,6 +103,21 @@ export default function MapView({ onSelectNode }) {
       labelColor: { color: '#e5e7eb' },
       defaultEdgeColor: 'rgba(148,163,184,0.25)',
       renderEdgeLabels: false,
+      nodeReducer: (node, data) => {
+        const focus = focusRef.current;
+        if (!focus) return data;
+        if (node === focus.id) return { ...data, zIndex: 2, size: data.size * 1.4 };
+        if (focus.neighbors.has(node)) return { ...data, zIndex: 1 };
+        return { ...data, color: '#374151', label: '', size: data.size * 0.6 };
+      },
+      edgeReducer: (edge, data) => {
+        const focus = focusRef.current;
+        if (!focus) return data;
+        const ext = graph.extremities(edge);
+        const incident = ext[0] === focus.id || ext[1] === focus.id;
+        if (incident) return { ...data, color: 'rgba(96,165,250,0.7)', size: data.size * 1.5 };
+        return { ...data, hidden: true };
+      },
     });
 
     renderer.on('enterNode', ({ node }) => {
@@ -108,13 +125,23 @@ export default function MapView({ onSelectNode }) {
     });
     renderer.on('leaveNode', () => setHovered(null));
     renderer.on('clickNode', ({ node }) => {
+      const neighbors = new Set(graph.neighbors(node));
+      focusRef.current = { id: node, neighbors };
+      setFocused(graph.getNodeAttributes(node).full_name);
+      renderer.refresh();
       if (onSelectNode) onSelectNode(graph.getNodeAttributes(node));
+    });
+    renderer.on('clickStage', () => {
+      focusRef.current = null;
+      setFocused(null);
+      renderer.refresh();
     });
 
     sigmaRef.current = renderer;
     return () => {
       renderer.kill();
       sigmaRef.current = null;
+      focusRef.current = null;
     };
   }, [status, graph, onSelectNode]);
 
@@ -125,7 +152,10 @@ export default function MapView({ onSelectNode }) {
     <div className="relative">
       <div className="absolute top-3 left-3 z-10 bg-gray-900/80 border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300">
         <div>{stats.nodeCount} repos · {stats.edgeCount} edges · {stats.communityCount} communities</div>
-        <div className="text-gray-500 mt-1">Color = community · Size = stars · Hover for detail</div>
+        <div className="text-gray-500 mt-1">Color = community · Size = stars · Click to focus, click background to clear</div>
+        {focused && (
+          <div className="mt-1 text-blue-300">Focused: {focused}</div>
+        )}
       </div>
       {hovered && (
         <div className="absolute top-3 right-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-4 text-sm text-gray-100 max-w-md">

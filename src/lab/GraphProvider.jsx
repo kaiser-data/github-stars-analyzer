@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import Graph from 'graphology';
 import louvain from 'graphology-communities-louvain';
+import pagerank from 'graphology-metrics/centrality/pagerank.js';
 
 const GraphContext = createContext(null);
 
@@ -137,6 +138,14 @@ function buildGraph(classified, enriched) {
   g.forEachNode((n) => {
     g.setNodeAttribute(n, 'degree', g.degree(n));
   });
+
+  // PageRank — structural importance, weighted by edge weight
+  if (edgeCount > 0) {
+    pagerank.assign(g, { getEdgeWeight: 'weight', alpha: 0.85, maxIterations: 100, tolerance: 1e-6 });
+    // assigns under attribute name 'pagerank' by default
+  } else {
+    g.forEachNode((n) => g.setNodeAttribute(n, 'pagerank', 0));
+  }
 
   return { graph: g, stats: { nodeCount: g.order, edgeCount, communityCount } };
 }
