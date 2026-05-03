@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Sigma from 'sigma';
+import forceAtlas2 from 'graphology-layout-forceatlas2';
+import randomLayout from 'graphology-layout/random';
 import { useGraph } from './GraphProvider';
 
 // Deterministic palette for community colors (overrides per-stage color in map view).
@@ -9,63 +11,25 @@ const COMMUNITY_PALETTE = [
   '#14b8a6', '#eab308', '#22c55e', '#0ea5e9', '#d946ef',
 ];
 
-function forceLayout(graph, iterations = 100) {
-  // Simple Fruchterman-Reingold-ish layout; good enough for ~100 nodes.
-  const nodes = graph.nodes();
-  const k = 1.0;
-  const positions = {};
-  for (const n of nodes) {
-    positions[n] = {
-      x: (Math.random() - 0.5) * 10,
-      y: (Math.random() - 0.5) * 10,
-      vx: 0,
-      vy: 0,
-    };
-  }
-
-  for (let it = 0; it < iterations; it += 1) {
-    const temperature = 1.0 * (1 - it / iterations);
-    // Repulsive forces
-    for (let i = 0; i < nodes.length; i += 1) {
-      for (let j = i + 1; j < nodes.length; j += 1) {
-        const a = positions[nodes[i]];
-        const b = positions[nodes[j]];
-        const dx = a.x - b.x;
-        const dy = a.y - b.y;
-        const dist = Math.sqrt(dx * dx + dy * dy) + 0.01;
-        const repel = (k * k) / dist;
-        a.vx += (dx / dist) * repel;
-        a.vy += (dy / dist) * repel;
-        b.vx -= (dx / dist) * repel;
-        b.vy -= (dy / dist) * repel;
-      }
-    }
-    // Attractive forces along edges
-    graph.forEachEdge((edge, attrs, source, target) => {
-      const a = positions[source];
-      const b = positions[target];
-      const dx = a.x - b.x;
-      const dy = a.y - b.y;
-      const dist = Math.sqrt(dx * dx + dy * dy) + 0.01;
-      const w = attrs.weight ?? 1;
-      const attract = (dist * dist) / k * Math.min(2, w);
-      a.vx -= (dx / dist) * attract;
-      a.vy -= (dy / dist) * attract;
-      b.vx += (dx / dist) * attract;
-      b.vy += (dy / dist) * attract;
-    });
-    // Apply velocity capped by temperature
-    for (const n of nodes) {
-      const p = positions[n];
-      const v = Math.sqrt(p.vx * p.vx + p.vy * p.vy) + 0.001;
-      const move = Math.min(v, temperature * 5);
-      p.x += (p.vx / v) * move;
-      p.y += (p.vy / v) * move;
-      p.vx = 0;
-      p.vy = 0;
-    }
-  }
-  return positions;
+function applyLayout(graph) {
+  // ForceAtlas2 with Barnes-Hut: O(n log n) per iteration vs O(n²) for naive FR.
+  // Same family of algorithms (cluster-revealing force-directed); FA2 is what
+  // Gephi uses as default. Result quality is at least as good, often clearer.
+  randomLayout.assign(graph, { scale: 100 });
+  forceAtlas2.assign(graph, {
+    iterations: 200,
+    settings: {
+      barnesHutOptimize: true,
+      barnesHutTheta: 0.6,
+      gravity: 1,
+      scalingRatio: 10,
+      strongGravityMode: false,
+      slowDown: 5,
+      adjustSizes: false,
+      edgeWeightInfluence: 1,
+    },
+    getEdgeWeight: 'weight',
+  });
 }
 
 export default function MapView({ onSelectNode, focusedRepoName }) {
@@ -100,12 +64,10 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   useEffect(() => {
     if (status !== 'ready' || !graph || !containerRef.current) return;
 
-    const positions = forceLayout(graph, 200);
+    applyLayout(graph);
     graph.forEachNode((n, a) => {
       const community = a.community ?? 0;
       graph.mergeNodeAttributes(n, {
-        x: positions[n].x,
-        y: positions[n].y,
         size: a.size ?? 5,
         color: COMMUNITY_PALETTE[community % COMMUNITY_PALETTE.length],
         label: a.full_name,

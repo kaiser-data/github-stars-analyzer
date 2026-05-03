@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Graph from 'graphology';
 import louvain from 'graphology-communities-louvain';
 import Sigma from 'sigma';
+import forceAtlas2 from 'graphology-layout-forceatlas2';
+import randomLayout from 'graphology-layout/random';
 import { useGraph, STAGE_COLOR } from './GraphProvider';
 
 const COMMUNITY_PALETTE = [
@@ -67,53 +69,21 @@ function buildTopicGraph(repos, minRepoFreq = 2) {
   return g;
 }
 
-function forceLayout(graph, iterations = 200) {
-  const nodes = graph.nodes();
-  const k = 1.0;
-  const positions = {};
-  for (const n of nodes) {
-    positions[n] = { x: (Math.random() - 0.5) * 12, y: (Math.random() - 0.5) * 12, vx: 0, vy: 0 };
-  }
-  for (let it = 0; it < iterations; it += 1) {
-    const temperature = 1.0 * (1 - it / iterations);
-    for (let i = 0; i < nodes.length; i += 1) {
-      for (let j = i + 1; j < nodes.length; j += 1) {
-        const a = positions[nodes[i]];
-        const b = positions[nodes[j]];
-        const dx = a.x - b.x;
-        const dy = a.y - b.y;
-        const dist = Math.sqrt(dx * dx + dy * dy) + 0.01;
-        const repel = (k * k) / dist;
-        a.vx += (dx / dist) * repel;
-        a.vy += (dy / dist) * repel;
-        b.vx -= (dx / dist) * repel;
-        b.vy -= (dy / dist) * repel;
-      }
-    }
-    graph.forEachEdge((edge, attrs, source, target) => {
-      const a = positions[source];
-      const b = positions[target];
-      const dx = a.x - b.x;
-      const dy = a.y - b.y;
-      const dist = Math.sqrt(dx * dx + dy * dy) + 0.01;
-      const w = attrs.weight ?? 1;
-      const attract = (dist * dist) / k * Math.min(3, w);
-      a.vx -= (dx / dist) * attract;
-      a.vy -= (dy / dist) * attract;
-      b.vx += (dx / dist) * attract;
-      b.vy += (dy / dist) * attract;
-    });
-    for (const n of nodes) {
-      const p = positions[n];
-      const v = Math.sqrt(p.vx * p.vx + p.vy * p.vy) + 0.001;
-      const move = Math.min(v, temperature * 5);
-      p.x += (p.vx / v) * move;
-      p.y += (p.vy / v) * move;
-      p.vx = 0;
-      p.vy = 0;
-    }
-  }
-  return positions;
+function applyLayout(graph) {
+  randomLayout.assign(graph, { scale: 100 });
+  forceAtlas2.assign(graph, {
+    iterations: 200,
+    settings: {
+      barnesHutOptimize: true,
+      barnesHutTheta: 0.6,
+      gravity: 1,
+      scalingRatio: 8,
+      strongGravityMode: false,
+      slowDown: 5,
+      edgeWeightInfluence: 1,
+    },
+    getEdgeWeight: 'weight',
+  });
 }
 
 function ReposByTopic({ topic, repos, onSelect }) {
@@ -176,11 +146,9 @@ export default function TopicMap({ onSelect }) {
       return;
     }
 
-    const positions = forceLayout(topicGraph, 250);
+    applyLayout(topicGraph);
     topicGraph.forEachNode((n, a) => {
       topicGraph.mergeNodeAttributes(n, {
-        x: positions[n].x,
-        y: positions[n].y,
         size: a.size,
         color: COMMUNITY_PALETTE[(a.community ?? 0) % COMMUNITY_PALETTE.length],
       });
