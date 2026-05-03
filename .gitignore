@@ -21,6 +21,7 @@ dist-ssr
 src/data/raw-*.json
 src/data/classified-*.json
 src/data/.cache/
+public/data/classified.json
 
 # Editor directories and files
 .vscode/*

@@ -213,15 +213,24 @@ export function GraphProvider({ children }) {
     let cancelled = false;
     (async () => {
       try {
-        const classifiedRes = await fetch('/data/classified-100.json');
-        if (!classifiedRes.ok) throw new Error(`classified-100.json: ${classifiedRes.status}`);
-        const classified = await classifiedRes.json();
+        // Try the size-agnostic filename first (latest snapshot), fall back to the
+        // committed 100-repo demo dataset.
+        let classified = null;
+        for (const path of ['/data/classified.json', '/data/classified-100.json']) {
+          try {
+            const r = await fetch(path);
+            if (r.ok) { classified = await r.json(); break; }
+          } catch { /* try next */ }
+        }
+        if (!classified) throw new Error('No classified data found');
 
         let enriched = null;
-        try {
-          const r = await fetch('/data/enriched-100.json');
-          if (r.ok) enriched = await r.json();
-        } catch { /* enrichment optional */ }
+        for (const path of ['/data/enriched.json', '/data/enriched-100.json']) {
+          try {
+            const r = await fetch(path);
+            if (r.ok) { enriched = await r.json(); break; }
+          } catch { /* enrichment optional */ }
+        }
 
         const { graph, stats } = buildGraph(classified, enriched);
         if (!cancelled) {

@@ -7,7 +7,12 @@ import louvain from 'graphology-communities-louvain';
 import pagerank from 'graphology-metrics/centrality/pagerank.js';
 import { bidirectional } from 'graphology-shortest-path';
 
-const data = JSON.parse(readFileSync('public/data/classified-100.json', 'utf8'));
+import { existsSync } from 'node:fs';
+const SOURCE = existsSync('public/data/classified.json')
+  ? 'public/data/classified.json'
+  : 'public/data/classified-100.json';
+console.log(`Source: ${SOURCE}`);
+const data = JSON.parse(readFileSync(SOURCE, 'utf8'));
 
 let pass = 0;
 let fail = 0;
@@ -17,7 +22,7 @@ function ok(label, cond, detail = '') {
 }
 
 console.log('== Dataset sanity ==');
-ok('100 repos in dataset', data.repos.length === 100, `got ${data.repos.length}`);
+ok('dataset is non-empty', data.repos.length > 0, `${data.repos.length} repos`);
 ok('all repos have id', data.repos.every((r) => Number.isFinite(r.id)));
 ok('all repos have lifecycle_stage', data.repos.every((r) => typeof r.lifecycle_stage === 'string'));
 ok('all repos have health_score 0-100', data.repos.every((r) => r.health_score >= 0 && r.health_score <= 100));
@@ -99,7 +104,7 @@ for (const r of data.repos) {
 
 let isolated = 0;
 g.forEachNode((n) => { if (g.degree(n) === 0) isolated += 1; });
-ok('graph has 100 nodes', g.order === 100, `got ${g.order}`);
+ok('graph order matches dataset', g.order === data.repos.length, `got ${g.order}`);
 ok('graph has edges', edgeCount > 0, `${edgeCount} edges`);
 ok('zero isolated nodes (k-NN backbone)', isolated === 0, `${isolated} isolated`);
 ok('average degree ≥ K=4', (2 * edgeCount) / g.order >= 4, `avg deg ${((2 * edgeCount) / g.order).toFixed(1)}`);
