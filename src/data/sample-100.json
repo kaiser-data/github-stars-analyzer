@@ -1,0 +1,1007 @@
+{
+  "username": "kaiser-data",
+  "total": 100,
+  "generatedAt": "2026-05-02T00:25:22.654Z",
+  "repos": [
+    {
+      "id": 132750724,
+      "full_name": "codecrafters-io/build-your-own-x",
+      "owner": "codecrafters-io",
+      "name": "build-your-own-x",
+      "stargazers_count": 498501,
+      "starred_at": "2025-07-12T22:51:02Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 21737465,
+      "full_name": "sindresorhus/awesome",
+      "owner": "sindresorhus",
+      "name": "awesome",
+      "stargazers_count": 461120,
+      "starred_at": "2025-10-03T00:17:21Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 28457823,
+      "full_name": "freeCodeCamp/freeCodeCamp",
+      "owner": "freeCodeCamp",
+      "name": "freeCodeCamp",
+      "stargazers_count": 444002,
+      "starred_at": "2025-10-20T09:29:05Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 54346799,
+      "full_name": "public-apis/public-apis",
+      "owner": "public-apis",
+      "name": "public-apis",
+      "stargazers_count": 429990,
+      "starred_at": "2025-10-30T07:22:26Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 13491895,
+      "full_name": "EbookFoundation/free-programming-books",
+      "owner": "EbookFoundation",
+      "name": "free-programming-books",
+      "stargazers_count": 387475,
+      "starred_at": "2025-10-19T21:37:10Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1103012935,
+      "full_name": "openclaw/openclaw",
+      "owner": "openclaw",
+      "name": "openclaw",
+      "stargazers_count": 367185,
+      "starred_at": "2026-01-27T16:46:33Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 85077558,
+      "full_name": "nilbuild/developer-roadmap",
+      "owner": "nilbuild",
+      "name": "developer-roadmap",
+      "stargazers_count": 354002,
+      "starred_at": "2025-08-13T13:52:13Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 83222441,
+      "full_name": "donnemartin/system-design-primer",
+      "owner": "donnemartin",
+      "name": "system-design-primer",
+      "stargazers_count": 346609,
+      "starred_at": "2025-10-19T20:19:35Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 60493101,
+      "full_name": "jwasham/coding-interview-university",
+      "owner": "jwasham",
+      "name": "coding-interview-university",
+      "stargazers_count": 343877,
+      "starred_at": "2025-09-30T19:33:16Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 36633370,
+      "full_name": "awesome-selfhosted/awesome-selfhosted",
+      "owner": "awesome-selfhosted",
+      "name": "awesome-selfhosted",
+      "stargazers_count": 289472,
+      "starred_at": "2026-02-18T00:03:41Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 88011908,
+      "full_name": "practical-tutorials/project-based-learning",
+      "owner": "practical-tutorials",
+      "name": "project-based-learning",
+      "stargazers_count": 264590,
+      "starred_at": "2025-09-28T22:18:03Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 2325298,
+      "full_name": "torvalds/linux",
+      "owner": "torvalds",
+      "name": "linux",
+      "stargazers_count": 231613,
+      "starred_at": "2025-09-30T16:35:37Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 63476337,
+      "full_name": "TheAlgorithms/Python",
+      "owner": "TheAlgorithms",
+      "name": "Python",
+      "stargazers_count": 220597,
+      "starred_at": "2025-09-24T14:46:13Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 19415064,
+      "full_name": "ossu/computer-science",
+      "owner": "ossu",
+      "name": "computer-science",
+      "stargazers_count": 203495,
+      "starred_at": "2025-10-20T09:38:51Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1197021090,
+      "full_name": "ultraworkers/claw-code",
+      "owner": "ultraworkers",
+      "name": "claw-code",
+      "stargazers_count": 189548,
+      "starred_at": "2026-04-04T17:55:29Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 193215554,
+      "full_name": "n8n-io/n8n",
+      "owner": "n8n-io",
+      "name": "n8n",
+      "stargazers_count": 186400,
+      "starred_at": "2025-03-19T00:56:26Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 41881900,
+      "full_name": "microsoft/vscode",
+      "owner": "microsoft",
+      "name": "vscode",
+      "stargazers_count": 184458,
+      "starred_at": "2025-10-06T00:47:33Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1136590548,
+      "full_name": "affaan-m/everything-claude-code",
+      "owner": "affaan-m",
+      "name": "everything-claude-code",
+      "stargazers_count": 171525,
+      "starred_at": "2026-02-24T23:31:51Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 658928958,
+      "full_name": "ollama/ollama",
+      "owner": "ollama",
+      "name": "ollama",
+      "stargazers_count": 170508,
+      "starred_at": "2025-03-17T19:47:35Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 574523116,
+      "full_name": "f/prompts.chat",
+      "owner": "f",
+      "name": "prompts.chat",
+      "stargazers_count": 161336,
+      "starred_at": "2025-09-28T01:49:46Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 155220641,
+      "full_name": "huggingface/transformers",
+      "owner": "huggingface",
+      "name": "transformers",
+      "stargazers_count": 160152,
+      "starred_at": "2025-09-30T03:04:08Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 307260205,
+      "full_name": "yt-dlp/yt-dlp",
+      "owner": "yt-dlp",
+      "name": "yt-dlp",
+      "stargazers_count": 160085,
+      "starred_at": "2025-10-21T10:18:02Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 808144141,
+      "full_name": "DigitalPlatDev/FreeDomain",
+      "owner": "DigitalPlatDev",
+      "name": "FreeDomain",
+      "stargazers_count": 159656,
+      "starred_at": "2025-08-28T21:06:27Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 975734319,
+      "full_name": "anomalyco/opencode",
+      "owner": "anomalyco",
+      "name": "opencode",
+      "stargazers_count": 153099,
+      "starred_at": "2026-03-16T21:00:56Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 626805178,
+      "full_name": "langgenius/dify",
+      "owner": "langgenius",
+      "name": "dify",
+      "stargazers_count": 139831,
+      "starred_at": "2025-06-07T17:54:24Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 111583593,
+      "full_name": "Genymobile/scrcpy",
+      "owner": "Genymobile",
+      "name": "scrcpy",
+      "stargazers_count": 139312,
+      "starred_at": "2025-06-22T07:40:34Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 62607227,
+      "full_name": "yangshun/tech-interview-handbook",
+      "owner": "yangshun",
+      "name": "tech-interview-handbook",
+      "stargazers_count": 139260,
+      "starred_at": "2025-09-30T19:30:59Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 943398999,
+      "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "owner": "x1xhlol",
+      "name": "system-prompts-and-models-of-ai-tools",
+      "stargazers_count": 136515,
+      "starred_at": "2025-07-07T09:01:12Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 552661142,
+      "full_name": "langchain-ai/langchain",
+      "owner": "langchain-ai",
+      "name": "langchain",
+      "stargazers_count": 135599,
+      "starred_at": "2026-04-05T08:09:20Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 701547123,
+      "full_name": "open-webui/open-webui",
+      "owner": "open-webui",
+      "name": "open-webui",
+      "stargazers_count": 135123,
+      "starred_at": "2025-03-17T19:27:41Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1024554267,
+      "full_name": "NousResearch/hermes-agent",
+      "owner": "NousResearch",
+      "name": "hermes-agent",
+      "stargazers_count": 128270,
+      "starred_at": "2026-03-01T09:33:14Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1061953414,
+      "full_name": "anthropics/skills",
+      "owner": "anthropics",
+      "name": "skills",
+      "stargazers_count": 126933,
+      "starred_at": "2025-11-07T09:01:30Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 937253475,
+      "full_name": "anthropics/claude-code",
+      "owner": "anthropics",
+      "name": "claude-code",
+      "stargazers_count": 119723,
+      "starred_at": "2025-04-17T18:32:39Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 888092115,
+      "full_name": "microsoft/markitdown",
+      "owner": "microsoft",
+      "name": "markitdown",
+      "stargazers_count": 119250,
+      "starred_at": "2025-05-23T03:24:21Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 787076358,
+      "full_name": "firecrawl/firecrawl",
+      "owner": "firecrawl",
+      "name": "firecrawl",
+      "stargazers_count": 113867,
+      "starred_at": "2025-12-19T16:23:36Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 589831718,
+      "full_name": "Comfy-Org/ComfyUI",
+      "owner": "Comfy-Org",
+      "name": "ComfyUI",
+      "stargazers_count": 110968,
+      "starred_at": "2025-09-30T03:41:20Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 655806940,
+      "full_name": "microsoft/generative-ai-for-beginners",
+      "owner": "microsoft",
+      "name": "generative-ai-for-beginners",
+      "stargazers_count": 110085,
+      "starred_at": "2025-09-28T09:39:10Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 23088740,
+      "full_name": "axios/axios",
+      "owner": "axios",
+      "name": "axios",
+      "stargazers_count": 109041,
+      "starred_at": "2026-03-31T10:27:08Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 20929025,
+      "full_name": "microsoft/TypeScript",
+      "owner": "microsoft",
+      "name": "TypeScript",
+      "stargazers_count": 108712,
+      "starred_at": "2025-10-06T00:48:02Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 793375104,
+      "full_name": "Shubhamsaboo/awesome-llm-apps",
+      "owner": "Shubhamsaboo",
+      "name": "awesome-llm-apps",
+      "stargazers_count": 108330,
+      "starred_at": "2025-08-25T02:21:23Z",
+      "archived": false,
+      "stratum": "top-stars"
+    },
+    {
+      "id": 1088558237,
+      "full_name": "Orchestra-Research/AI-Research-SKILLs",
+      "owner": "Orchestra-Research",
+      "name": "AI-Research-SKILLs",
+      "stargazers_count": 7689,
+      "starred_at": "2026-05-01T20:49:11Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 748030359,
+      "full_name": "FalkorDB/GraphRAG-SDK",
+      "owner": "FalkorDB",
+      "name": "GraphRAG-SDK",
+      "stargazers_count": 773,
+      "starred_at": "2026-05-01T17:23:16Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 780174294,
+      "full_name": "StarlightSearch/EmbedAnything",
+      "owner": "StarlightSearch",
+      "name": "EmbedAnything",
+      "stargazers_count": 1123,
+      "starred_at": "2026-05-01T09:22:28Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1180979069,
+      "full_name": "growthxai/output",
+      "owner": "growthxai",
+      "name": "output",
+      "stargazers_count": 274,
+      "starred_at": "2026-04-29T12:11:51Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1217105927,
+      "full_name": "Einsia/OpenChronicle",
+      "owner": "Einsia",
+      "name": "OpenChronicle",
+      "stargazers_count": 1978,
+      "starred_at": "2026-04-28T20:44:54Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1202937420,
+      "full_name": "MinishLab/semble",
+      "owner": "MinishLab",
+      "name": "semble",
+      "stargazers_count": 364,
+      "starred_at": "2026-04-28T12:25:48Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1031912724,
+      "full_name": "farion1231/cc-switch",
+      "owner": "farion1231",
+      "name": "cc-switch",
+      "stargazers_count": 57171,
+      "starred_at": "2026-04-28T12:20:05Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 959473422,
+      "full_name": "The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge",
+      "owner": "The-Pocket",
+      "name": "PocketFlow-Tutorial-Codebase-Knowledge",
+      "stargazers_count": 12265,
+      "starred_at": "2026-04-27T10:49:20Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1201173969,
+      "full_name": "JuliusBrussee/caveman",
+      "owner": "JuliusBrussee",
+      "name": "caveman",
+      "stargazers_count": 52019,
+      "starred_at": "2026-04-27T10:04:42Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 126696700,
+      "full_name": "marp-team/marp",
+      "owner": "marp-team",
+      "name": "marp",
+      "stargazers_count": 11573,
+      "starred_at": "2026-04-27T09:58:56Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1015667599,
+      "full_name": "steel-dev/cli",
+      "owner": "steel-dev",
+      "name": "cli",
+      "stargazers_count": 21,
+      "starred_at": "2026-04-27T09:55:47Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1075381375,
+      "full_name": "getpaseo/paseo",
+      "owner": "getpaseo",
+      "name": "paseo",
+      "stargazers_count": 5138,
+      "starred_at": "2026-04-25T17:13:56Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1214645274,
+      "full_name": "russellromney/honker",
+      "owner": "russellromney",
+      "name": "honker",
+      "stargazers_count": 923,
+      "starred_at": "2026-04-25T17:09:04Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1028159967,
+      "full_name": "InsForge/InsForge",
+      "owner": "InsForge",
+      "name": "InsForge",
+      "stargazers_count": 7985,
+      "starred_at": "2026-04-25T11:38:02Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1211361116,
+      "full_name": "Manavarya09/design-extract",
+      "owner": "Manavarya09",
+      "name": "design-extract",
+      "stargazers_count": 1854,
+      "starred_at": "2026-04-24T23:04:02Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 925434317,
+      "full_name": "kreuzberg-dev/kreuzberg",
+      "owner": "kreuzberg-dev",
+      "name": "kreuzberg",
+      "stargazers_count": 8184,
+      "starred_at": "2026-04-24T20:46:18Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 867004514,
+      "full_name": "tile-ai/tilelang",
+      "owner": "tile-ai",
+      "name": "tilelang",
+      "stargazers_count": 5979,
+      "starred_at": "2026-04-24T19:08:09Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1217671020,
+      "full_name": "deepseek-ai/TileKernels",
+      "owner": "deepseek-ai",
+      "name": "TileKernels",
+      "stargazers_count": 1392,
+      "starred_at": "2026-04-24T19:08:01Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 23625378,
+      "full_name": "pyvisa/pyvisa-py",
+      "owner": "pyvisa",
+      "name": "pyvisa-py",
+      "stargazers_count": 344,
+      "starred_at": "2026-04-24T15:41:33Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 59573221,
+      "full_name": "sobolevn/awesome-cryptography",
+      "owner": "sobolevn",
+      "name": "awesome-cryptography",
+      "stargazers_count": 6902,
+      "starred_at": "2026-04-24T15:21:19Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 846698999,
+      "full_name": "aaif-goose/goose",
+      "owner": "aaif-goose",
+      "name": "goose",
+      "stargazers_count": 43654,
+      "starred_at": "2026-04-24T08:51:34Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1031738741,
+      "full_name": "TurixAI/TuriX-CUA",
+      "owner": "TurixAI",
+      "name": "TuriX-CUA",
+      "stargazers_count": 2807,
+      "starred_at": "2026-04-23T19:10:51Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1085876386,
+      "full_name": "microsoft/fara",
+      "owner": "microsoft",
+      "name": "fara",
+      "stargazers_count": 5015,
+      "starred_at": "2026-04-23T19:10:50Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 978331188,
+      "full_name": "microsoft/magentic-ui",
+      "owner": "microsoft",
+      "name": "magentic-ui",
+      "stargazers_count": 9802,
+      "starred_at": "2026-04-23T19:10:47Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 870189331,
+      "full_name": "simular-ai/Agent-S",
+      "owner": "simular-ai",
+      "name": "Agent-S",
+      "stargazers_count": 11018,
+      "starred_at": "2026-04-23T19:10:44Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 336179614,
+      "full_name": "aaronwangy/Data-Science-Cheatsheet",
+      "owner": "aaronwangy",
+      "name": "Data-Science-Cheatsheet",
+      "stargazers_count": 5400,
+      "starred_at": "2026-04-23T10:54:44Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1027340108,
+      "full_name": "FalkorDB/QueryWeaver",
+      "owner": "FalkorDB",
+      "name": "QueryWeaver",
+      "stargazers_count": 986,
+      "starred_at": "2026-04-22T18:18:57Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 642497346,
+      "full_name": "langfuse/langfuse",
+      "owner": "langfuse",
+      "name": "langfuse",
+      "stargazers_count": 26437,
+      "starred_at": "2026-04-20T23:10:22Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1099328966,
+      "full_name": "Piebald-AI/claude-code-system-prompts",
+      "owner": "Piebald-AI",
+      "name": "claude-code-system-prompts",
+      "stargazers_count": 9816,
+      "starred_at": "2026-04-19T22:18:08Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 1135110862,
+      "full_name": "Camb-ai/MAMBA-BENCHMARK",
+      "owner": "Camb-ai",
+      "name": "MAMBA-BENCHMARK",
+      "stargazers_count": 10,
+      "starred_at": "2026-04-18T14:08:55Z",
+      "archived": false,
+      "stratum": "recent"
+    },
+    {
+      "id": 2136524,
+      "full_name": "lmfit/lmfit-py",
+      "owner": "lmfit",
+      "name": "lmfit-py",
+      "stargazers_count": 1220,
+      "starred_at": "2026-02-26T00:39:17Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 945530209,
+      "full_name": "bytebase/dbhub",
+      "owner": "bytebase",
+      "name": "dbhub",
+      "stargazers_count": 2672,
+      "starred_at": "2025-10-05T14:56:40Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1189384516,
+      "full_name": "repowise-dev/repowise",
+      "owner": "repowise-dev",
+      "name": "repowise",
+      "stargazers_count": 1340,
+      "starred_at": "2026-04-11T20:05:34Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 20989983,
+      "full_name": "evolus/pencil",
+      "owner": "evolus",
+      "name": "pencil",
+      "stargazers_count": 9750,
+      "starred_at": "2026-03-03T01:39:06Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 741100585,
+      "full_name": "langchain-ai/langgraphjs",
+      "owner": "langchain-ai",
+      "name": "langgraphjs",
+      "stargazers_count": 2858,
+      "starred_at": "2025-10-04T20:36:18Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 946895816,
+      "full_name": "TanStack/db",
+      "owner": "TanStack",
+      "name": "db",
+      "stargazers_count": 3736,
+      "starred_at": "2025-10-01T23:22:50Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 821414566,
+      "full_name": "langgenius/dify-plugin-daemon",
+      "owner": "langgenius",
+      "name": "dify-plugin-daemon",
+      "stargazers_count": 425,
+      "starred_at": "2025-10-21T11:44:19Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 633262635,
+      "full_name": "onyx-dot-app/onyx",
+      "owner": "onyx-dot-app",
+      "name": "onyx",
+      "stargazers_count": 28841,
+      "starred_at": "2026-03-26T19:53:57Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1120449210,
+      "full_name": "eyeblech/cinecli",
+      "owner": "eyeblech",
+      "name": "cinecli",
+      "stargazers_count": 765,
+      "starred_at": "2025-12-24T06:35:31Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1048320382,
+      "full_name": "ValueCell-ai/valuecell",
+      "owner": "ValueCell-ai",
+      "name": "valuecell",
+      "stargazers_count": 10532,
+      "starred_at": "2025-11-18T08:38:56Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 176982014,
+      "full_name": "NVIDIA/Megatron-LM",
+      "owner": "NVIDIA",
+      "name": "Megatron-LM",
+      "stargazers_count": 16205,
+      "starred_at": "2025-10-17T12:31:48Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1209889782,
+      "full_name": "getagentseal/codeburn",
+      "owner": "getagentseal",
+      "name": "codeburn",
+      "stargazers_count": 4830,
+      "starred_at": "2026-04-15T07:40:58Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 876064934,
+      "full_name": "patchy631/ai-engineering-hub",
+      "owner": "patchy631",
+      "name": "ai-engineering-hub",
+      "stargazers_count": 34503,
+      "starred_at": "2025-03-12T15:19:21Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 933889283,
+      "full_name": "AstraBert/PapersChat",
+      "owner": "AstraBert",
+      "name": "PapersChat",
+      "stargazers_count": 153,
+      "starred_at": "2025-04-30T10:02:51Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 45676563,
+      "full_name": "joubertredrat/awesome-devops",
+      "owner": "joubertredrat",
+      "name": "awesome-devops",
+      "stargazers_count": 829,
+      "starred_at": "2026-03-19T19:53:14Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 914855243,
+      "full_name": "opencloud-eu/opencloud",
+      "owner": "opencloud-eu",
+      "name": "opencloud",
+      "stargazers_count": 5384,
+      "starred_at": "2025-06-09T08:00:30Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 7910045,
+      "full_name": "badges/shields",
+      "owner": "badges",
+      "name": "shields",
+      "stargazers_count": 26531,
+      "starred_at": "2025-10-02T14:42:25Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 70459317,
+      "full_name": "BruceDone/awesome-crawler",
+      "owner": "BruceDone",
+      "name": "awesome-crawler",
+      "stargazers_count": 7184,
+      "starred_at": "2026-03-01T19:44:12Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1034478597,
+      "full_name": "firecrawl/open-lovable",
+      "owner": "firecrawl",
+      "name": "open-lovable",
+      "stargazers_count": 26113,
+      "starred_at": "2025-08-27T23:45:19Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 534023067,
+      "full_name": "BishopFox/cloudfox",
+      "owner": "BishopFox",
+      "name": "cloudfox",
+      "stargazers_count": 2368,
+      "starred_at": "2025-11-11T15:37:41Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 662766482,
+      "full_name": "The-PR-Agent/pr-agent",
+      "owner": "The-PR-Agent",
+      "name": "pr-agent",
+      "stargazers_count": 11062,
+      "starred_at": "2025-11-05T11:32:16Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 600368121,
+      "full_name": "SYSTRAN/faster-whisper",
+      "owner": "SYSTRAN",
+      "name": "faster-whisper",
+      "stargazers_count": 22552,
+      "starred_at": "2026-04-11T16:50:53Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 188660663,
+      "full_name": "CorentinJ/Real-Time-Voice-Cloning",
+      "owner": "CorentinJ",
+      "name": "Real-Time-Voice-Cloning",
+      "stargazers_count": 59707,
+      "starred_at": "2025-11-22T19:44:31Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1169398190,
+      "full_name": "AstraBert/squite",
+      "owner": "AstraBert",
+      "name": "squite",
+      "stargazers_count": 10,
+      "starred_at": "2026-03-22T14:49:32Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 1048969440,
+      "full_name": "AstraBert/vivadb",
+      "owner": "AstraBert",
+      "name": "vivadb",
+      "stargazers_count": 8,
+      "starred_at": "2025-09-16T18:23:24Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 326233423,
+      "full_name": "chiphuyen/ml-interviews-book",
+      "owner": "chiphuyen",
+      "name": "ml-interviews-book",
+      "stargazers_count": 4616,
+      "starred_at": "2025-04-26T23:51:26Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 6838921,
+      "full_name": "prometheus/prometheus",
+      "owner": "prometheus",
+      "name": "prometheus",
+      "stargazers_count": 63863,
+      "starred_at": "2025-03-26T19:45:05Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 995029641,
+      "full_name": "ruvnet/ruflo",
+      "owner": "ruvnet",
+      "name": "ruflo",
+      "stargazers_count": 35126,
+      "starred_at": "2025-07-27T12:07:10Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 984177711,
+      "full_name": "oakstack/askg",
+      "owner": "oakstack",
+      "name": "askg",
+      "stargazers_count": 8,
+      "starred_at": "2025-09-02T11:10:28Z",
+      "archived": false,
+      "stratum": "random-middle"
+    },
+    {
+      "id": 883366163,
+      "full_name": "SylphAI-Inc/LLM-engineer-handbook",
+      "owner": "SylphAI-Inc",
+      "name": "LLM-engineer-handbook",
+      "stargazers_count": 4901,
+      "starred_at": "2025-05-04T17:28:40Z",
+      "archived": false,
+      "stratum": "random-middle"
+    }
+  ]
+}
