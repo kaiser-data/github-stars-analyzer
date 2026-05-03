@@ -7,12 +7,14 @@ import { rest, logRate } from './lib/github.mjs';
 const args = process.argv.slice(2);
 const username = args.find((a) => !a.startsWith('--')) ?? 'kaiser-data';
 const totalArg = args.find((a) => a.startsWith('--total='));
-const TOTAL = totalArg ? Number(totalArg.split('=')[1]) : 100;
-const TOP_BY_STARS = Math.round(TOTAL * 0.4);
-const RECENT = Math.round(TOTAL * 0.3);
-const RANDOM_MIDDLE = TOTAL - TOP_BY_STARS - RECENT;
+const ALL = args.includes('--all');
+const TOTAL = ALL ? Infinity : (totalArg ? Number(totalArg.split('=')[1]) : 100);
+const TOP_BY_STARS = ALL ? 0 : Math.round(TOTAL * 0.4);
+const RECENT = ALL ? 0 : Math.round(TOTAL * 0.3);
+const RANDOM_MIDDLE = ALL ? 0 : TOTAL - TOP_BY_STARS - RECENT;
 
-console.error(`Sampling ${TOTAL} stars from ${username} (top=${TOP_BY_STARS}, recent=${RECENT}, random=${RANDOM_MIDDLE})`);
+if (ALL) console.error(`Sampling ALL non-archived stars from ${username}`);
+else console.error(`Sampling ${TOTAL} stars from ${username} (top=${TOP_BY_STARS}, recent=${RECENT}, random=${RANDOM_MIDDLE})`);
 
 async function fetchAllStarred() {
   const all = [];
@@ -50,6 +52,7 @@ async function fetchAllStarred() {
 function pickStratified(all) {
   // Filter out archived to keep the spike clean.
   const candidates = all.filter((r) => !r.archived);
+  if (ALL) return candidates.map((r) => ({ ...r, stratum: 'all' }));
   if (candidates.length <= TOTAL) return candidates;
 
   const byStars = [...candidates].sort((a, b) => b.stargazers_count - a.stargazers_count);
@@ -86,6 +89,6 @@ const counts = sample.reduce((acc, r) => ((acc[r.stratum] = (acc[r.stratum] ?? 0
 console.error(`  by stratum: ${JSON.stringify(counts)}`);
 
 mkdirSync('src/data', { recursive: true });
-const out = `src/data/sample-${TOTAL}.json`;
+const out = ALL ? `src/data/sample-all.json` : `src/data/sample-${TOTAL}.json`;
 writeFileSync(out, JSON.stringify({ username, total: sample.length, generatedAt: new Date().toISOString(), repos: sample }, null, 2));
 console.error(`Wrote ${out}`);

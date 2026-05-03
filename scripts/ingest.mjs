@@ -8,8 +8,11 @@ import { graphql, logRate, sleep } from './lib/github.mjs';
 const args = process.argv.slice(2);
 const sampleArg = args.find((a) => a.startsWith('--sample='));
 const SAMPLE_PATH = sampleArg ? sampleArg.split('=')[1] : 'src/data/sample-100.json';
+const maxAgeArg = args.find((a) => a.startsWith('--max-age='));
+const MAX_AGE_DAYS = maxAgeArg ? Number(maxAgeArg.split('=')[1]) : Infinity;
 const CACHE_DIR = 'src/data/.cache';
 const README_MAX_BYTES = 16_000;
+const DAY_MS = 24 * 60 * 60 * 1000;
 
 mkdirSync(CACHE_DIR, { recursive: true });
 
@@ -153,6 +156,7 @@ function projectRepo(repo, sampleEntry) {
 const results = [];
 const failures = [];
 let lastRateLog = 0;
+let staleRefreshed = 0;
 
 for (let i = 0; i < sample.repos.length; i += 1) {
   const entry = sample.repos[i];
@@ -160,9 +164,18 @@ for (let i = 0; i < sample.repos.length; i += 1) {
   const prefix = `[${i + 1}/${sample.repos.length}] ${entry.full_name}`;
 
   if (existsSync(cachePath)) {
-    results.push(JSON.parse(readFileSync(cachePath, 'utf8')));
-    if (i % 20 === 0) console.error(`${prefix} (cached)`);
-    continue;
+    const cached = JSON.parse(readFileSync(cachePath, 'utf8'));
+    const ageDays = cached.fetched_at
+      ? (Date.now() - Date.parse(cached.fetched_at)) / DAY_MS
+      : Infinity;
+    if (ageDays < MAX_AGE_DAYS) {
+      results.push(cached);
+      if (i % 50 === 0) console.error(`${prefix} (cached, age=${ageDays.toFixed(1)}d)`);
+      continue;
+    }
+    // Stale → fall through and refetch. The new fetch will overwrite the cache file.
+    staleRefreshed += 1;
+    console.error(`${prefix} (stale, ${ageDays.toFixed(1)}d > ${MAX_AGE_DAYS}d, refetching)`);
   }
 
   try {
@@ -208,7 +221,7 @@ writeFileSync(out, JSON.stringify({
   generatedAt: new Date().toISOString(),
   repos: results,
 }, null, 2));
-console.error(`Wrote ${out} (${results.length} repos, ${failures.length} failures)`);
+console.error(`Wrote ${out} (${results.length} repos, ${staleRefreshed} refreshed, ${failures.length} failures)`);
 if (failures.length) {
   console.error('Failures:');
   for (const f of failures) console.error(`  ${f.full_name}: ${f.error}`);
