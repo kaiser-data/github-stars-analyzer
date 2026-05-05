@@ -7,15 +7,15 @@
     "dexie": "^4.4.2",
     "graphology": "^0.26.0",
     "graphology-communities-louvain": "^2.0.2",
-    "graphology-layout": "^0.6.1",
-    "graphology-layout-forceatlas2": "^0.10.1",
     "graphology-metrics": "^2.4.0",
     "graphology-shortest-path": "^2.1.0",
     "lucide-react": "^0.263.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-force-graph-3d": "^1.29.1",
     "react-router-dom": "^7.14.2",
-    "sigma": "^3.0.3"
+    "three": "^0.184.0",
+    "three-spritetext": "^1.10.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",

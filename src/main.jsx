@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom'
 import GitHubStarsAnalyzer from './GitHubStarsAnalyzer'
-import LabApp from './lab/LabApp'
 import './index.css'
+
+// Lazy-load the lab — Three.js + force-graph-3d is ~1.3 MB. Don't pay
+// the cost on /, only when the user actually visits /lab.
+const LabApp = lazy(() => import('./lab/LabApp'))
 
 function NavBar() {
   const { pathname } = useLocation()
@@ -30,7 +33,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <NavBar />
       <Routes>
         <Route path="/" element={<GitHubStarsAnalyzer />} />
-        <Route path="/lab/*" element={<LabApp />} />
+        <Route path="/lab/*" element={
+          <Suspense fallback={<div className="min-h-screen bg-gray-900 text-gray-400 flex items-center justify-center">Loading lab…</div>}>
+            <LabApp />
+          </Suspense>
+        } />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
