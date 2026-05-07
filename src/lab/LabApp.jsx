@@ -43,7 +43,7 @@ function StatusBanner() {
 
 function LabContent() {
   const [params, setParams] = useSearchParams();
-  const tab = params.get('tab') ?? 'insights';
+  const tab = params.get('tab') ?? 'map';
   const selected = params.get('repo');
   const compareA = params.get('a');
   const compareB = params.get('b');

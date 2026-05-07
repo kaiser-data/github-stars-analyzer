@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
 import * as THREE from 'three';
 import SpriteText from 'three-spritetext';
+import { forceManyBody, forceLink } from 'd3-force-3d';
 import { useGraph } from './GraphProvider';
 
 const COMMUNITY_PALETTE = [
@@ -55,8 +56,8 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
         className="w-full mb-2 px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded text-white font-medium"
       >Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
-      <Row label="Spread"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
-      <Row label="Link length"><input type="range" min={20} max={300} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Display</div>
       <Row label="Label density">
         <input type="range" min={1} max={12} step={0.5} value={settings.labelDensity}
@@ -80,7 +81,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   const [highlightNodes, setHighlightNodes] = useState(new Set());
   const [settings, setSettings] = useState({
     charge: -120, linkDistance: 60, alwaysLabels: false, drag: false, autoRotate: false,
-    labelDensity: 5, // val threshold — lower = more labels visible
+    labelDensity: 5,
   });
 
   useEffect(() => {
@@ -100,14 +101,9 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
 
   useEffect(() => {
     if (!fgRef.current) return;
-    const fg = fgRef.current;
-    if (fg.d3Force) {
-      const charge = fg.d3Force('charge');
-      if (charge) charge.strength(settings.charge);
-      const link = fg.d3Force('link');
-      if (link) link.distance(settings.linkDistance);
-      fg.d3ReheatSimulation?.();
-    }
+    fgRef.current.d3Force('charge')?.strength(settings.charge);
+    fgRef.current.d3Force('link')?.distance(settings.linkDistance);
+    fgRef.current.d3ReheatSimulation?.();
   }, [settings.charge, settings.linkDistance, data]);
 
   // Re-run nodeThreeObject when label settings change (forces label refresh)
@@ -171,39 +167,18 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   if (status === 'error') return <div className="text-red-400 p-6">Failed: {error}</div>;
 
   const nodeThreeObject = (node) => {
-    const showLabel = settings.alwaysLabels || node.val >= settings.labelDensity;
-    const isHighlight = highlightNodes.size === 0 || highlightNodes.has(node.id);
-    if (!showLabel || !isHighlight) return new THREE.Object3D();
-    const [owner, repoName] = node.full_name.split('/');
-    const truncated = (repoName ?? node.full_name).length > 22
-      ? (repoName ?? node.full_name).slice(0, 22) + '…'
-      : (repoName ?? node.full_name);
-
-    const r = Math.cbrt(node.val) * 1.6;
-    const group = new THREE.Group();
-
-    // Primary label: repo name (big, bright)
-    const primary = new SpriteText(truncated);
-    primary.color = '#f1f5f9';
-    primary.backgroundColor = 'rgba(15,23,42,0.85)';
-    primary.padding = 3;
-    primary.borderRadius = 4;
-    primary.textHeight = 5;
-    primary.position.set(0, r + 5, 0);
-    group.add(primary);
-
-    // Secondary label: owner (small, dim) — only for hubs and only if owner adds info
-    if (owner && (node.val > 10 || settings.alwaysLabels)) {
-      const ownerLabel = new SpriteText(owner);
-      ownerLabel.color = '#94a3b8';
-      ownerLabel.backgroundColor = 'rgba(15,23,42,0.6)';
-      ownerLabel.padding = 2;
-      ownerLabel.borderRadius = 3;
-      ownerLabel.textHeight = 2.5;
-      ownerLabel.position.set(0, r + 9.5, 0);
-      group.add(ownerLabel);
-    }
-    return group;
+    if (!settings.alwaysLabels && node.val < settings.labelDensity) return null;
+    if (highlightNodes.size > 0 && !highlightNodes.has(node.id)) return null;
+    const name = node.full_name.split('/')[1] ?? node.full_name;
+    const label = name.length > 22 ? name.slice(0, 22) + '…' : name;
+    const sprite = new SpriteText(label);
+    sprite.color = '#f1f5f9';
+    sprite.backgroundColor = 'rgba(15,23,42,0.85)';
+    sprite.padding = 3;
+    sprite.borderRadius = 4;
+    sprite.textHeight = 5;
+    sprite.position.set(0, Math.cbrt(node.val) * 1.6 + 5, 0);
+    return sprite;
   };
 
   return (
@@ -228,7 +203,10 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
         </div>
       )}
       <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(circle at 30% 20%, #1e293b 0%, #020617 70%)', borderRadius: 12, overflow: 'hidden' }}>
-        <ForceGraph3D
+        {data.nodes.length === 0 && (
+          <div className="flex items-center justify-center h-full text-gray-500">Building graph…</div>
+        )}
+        {data.nodes.length > 0 && <ForceGraph3D
           ref={fgRef}
           width={size.w}
           height={size.h}
@@ -258,13 +236,13 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
           linkDirectionalParticleWidth={2.5}
           d3AlphaDecay={0.02}
           d3VelocityDecay={0.35}
-          cooldownTicks={150}
-          warmupTicks={50}
+          cooldownTicks={100}
+          warmupTicks={20}
           enableNodeDrag={settings.drag}
           onNodeClick={(node) => onSelectNode && onSelectNode({ full_name: node.full_name })}
           onBackgroundClick={() => onSelectNode && onSelectNode(null)}
           onNodeHover={(node) => setHovered(node || null)}
-        />
+        />}
       </div>
     </div>
   );

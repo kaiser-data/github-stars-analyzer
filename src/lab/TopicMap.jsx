@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { forceManyBody, forceLink } from 'd3-force-3d';
 import Graph from 'graphology';
 import louvain from 'graphology-communities-louvain';
 import ForceGraph3D from 'react-force-graph-3d';
@@ -114,8 +115,8 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
         className="w-full mb-2 px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded text-white font-medium"
       >Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
-      <Row label="Spread"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
-      <Row label="Link length"><input type="range" min={20} max={300} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Display</div>
       <Row label="Label density">
         <input type="range" min={1} max={10} step={0.5} value={settings.labelDensity}
@@ -162,14 +163,9 @@ export default function TopicMap({ onSelect }) {
 
   useEffect(() => {
     if (!fgRef.current) return;
-    const fg = fgRef.current;
-    if (fg.d3Force) {
-      const charge = fg.d3Force('charge');
-      if (charge) charge.strength(settings.charge);
-      const link = fg.d3Force('link');
-      if (link) link.distance(settings.linkDistance);
-      fg.d3ReheatSimulation?.();
-    }
+    fgRef.current.d3Force('charge')?.strength(settings.charge);
+    fgRef.current.d3Force('link')?.distance(settings.linkDistance);
+    fgRef.current.d3ReheatSimulation?.();
   }, [settings.charge, settings.linkDistance, fgData]);
 
   const recenter = () => {
@@ -297,8 +293,8 @@ export default function TopicMap({ onSelect }) {
                 linkDirectionalParticleWidth={2.5}
                 d3AlphaDecay={0.025}
                 d3VelocityDecay={0.4}
-                cooldownTicks={120}
-                warmupTicks={40}
+                cooldownTicks={100}
+                warmupTicks={20}
                 enableNodeDrag={settings.drag}
                 onNodeClick={(n) => setSelected(n.id === selected ? null : n.id)}
                 onBackgroundClick={() => setSelected(null)}

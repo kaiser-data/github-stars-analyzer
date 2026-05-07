@@ -84,73 +84,56 @@ function buildGraph(classified, enriched) {
     authorSets.set(r.id, new Set(authors));
   }
 
-  // Pass 1: compute all candidate pair scores in one O(n²) sweep.
-  const partnersOf = new Map();
-  for (const r of repos) partnersOf.set(r.id, []);
+  // Pass 1: O(n²) weight sweep — store only [j_index, weight] tuples.
+  // Deferring sharedTopics/sharedAuthors to pass 3 avoids allocating those
+  // arrays for all ~530K candidate pairs (only ~4K are kept).
+  const pairsOf = repos.map(() => /** @type {[number,number][]} */ ([]));
 
   for (let i = 0; i < repos.length; i += 1) {
+    const a = repos[i];
+    const aTopic = topicSets.get(a.id);
+    const aAuthor = authorSets.get(a.id);
     for (let j = i + 1; j < repos.length; j += 1) {
-      const a = repos[i];
       const b = repos[j];
-      const reasons = [];
-      let weight = 0;
-
-      const topicSim = jaccard(topicSets.get(a.id), topicSets.get(b.id));
-      if (topicSim > 0) {
-        weight += topicSim * 1.0;
-        reasons.push({ kind: 'topic', score: topicSim });
-      }
-
-      const authorSim = jaccard(authorSets.get(a.id), authorSets.get(b.id));
-      if (authorSim > 0) {
-        weight += authorSim * 2.0;
-        reasons.push({ kind: 'author', score: authorSim });
-      }
-
-      if (a.primary_language && a.primary_language === b.primary_language) {
-        weight += 0.05;
-        reasons.push({ kind: 'language', score: 1, language: a.primary_language });
-      }
-
-      if (a.owner === b.owner) {
-        weight += 0.5;
-        reasons.push({ kind: 'owner', score: 1, owner: a.owner });
-      }
-
-      if (weight === 0) continue;
-
-      const score = {
-        a, b, weight, reasons,
-        sharedTopics: [...topicSets.get(a.id)].filter((t) => topicSets.get(b.id).has(t)),
-        sharedAuthors: [...authorSets.get(a.id)].filter((u) => authorSets.get(b.id).has(u)),
-      };
-      partnersOf.get(a.id).push(score);
-      partnersOf.get(b.id).push(score);
+      let w = jaccard(aTopic, topicSets.get(b.id));
+      w += jaccard(aAuthor, authorSets.get(b.id)) * 2;
+      if (a.primary_language && a.primary_language === b.primary_language) w += 0.05;
+      if (a.owner === b.owner) w += 0.5;
+      if (w === 0) continue;
+      pairsOf[i].push([j, w]);
+      pairsOf[j].push([i, w]);
     }
   }
 
-  // Pass 2: keep top-K per node + every above-STRONG edge.
-  const keepKeys = new Set();
-  const keyFor = (s) => (s.a.id < s.b.id ? `${s.a.id}-${s.b.id}` : `${s.b.id}-${s.a.id}`);
-  for (const partners of partnersOf.values()) {
-    partners.sort((x, y) => y.weight - x.weight);
-    for (const s of partners.slice(0, K)) keepKeys.add(keyFor(s));
-    for (const s of partners) if (s.weight >= STRONG) keepKeys.add(keyFor(s));
+  // Pass 2: keep top-K per node + every above-STRONG edge (using array indices).
+  const keepEdges = new Set(); // "min_i-max_i" index keys
+  for (let i = 0; i < repos.length; i += 1) {
+    const pairs = pairsOf[i];
+    if (!pairs.length) continue;
+    pairs.sort((x, y) => y[1] - x[1]);
+    for (let k = 0; k < Math.min(K, pairs.length); k += 1) {
+      const j = pairs[k][0];
+      keepEdges.add(i < j ? `${i}-${j}` : `${j}-${i}`);
+    }
+    for (const [j, w] of pairs) {
+      if (w < STRONG) break; // sorted desc — stop early
+      keepEdges.add(i < j ? `${i}-${j}` : `${j}-${i}`);
+    }
   }
 
-  // Pass 3: actually add the edges (dedup via canonical key).
-  const added = new Set();
+  // Pass 3: add kept edges — compute shared arrays only for the ~4K survivors.
   let edgeCount = 0;
-  for (const partners of partnersOf.values()) {
-    for (const s of partners) {
-      const key = keyFor(s);
-      if (!keepKeys.has(key) || added.has(key)) continue;
-      added.add(key);
-      g.addEdge(`repo:${s.a.id}`, `repo:${s.b.id}`, {
-        weight: s.weight,
-        reasons: s.reasons,
-        shared_topics: s.sharedTopics,
-        shared_authors: s.sharedAuthors,
+  for (let i = 0; i < repos.length; i += 1) {
+    for (const [j, w] of pairsOf[i]) {
+      if (j <= i) continue; // process each pair exactly once from the lower-index side
+      if (!keepEdges.has(`${i}-${j}`)) continue;
+      const a = repos[i], b = repos[j];
+      const aTopic = topicSets.get(a.id), bTopic = topicSets.get(b.id);
+      const aAuthor = authorSets.get(a.id), bAuthor = authorSets.get(b.id);
+      g.addEdge(`repo:${a.id}`, `repo:${b.id}`, {
+        weight: w,
+        shared_topics: [...aTopic].filter((t) => bTopic.has(t)),
+        shared_authors: [...aAuthor].filter((u) => bAuthor.has(u)),
       });
       edgeCount += 1;
     }
@@ -231,6 +214,11 @@ export function GraphProvider({ children }) {
             if (r.ok) { enriched = await r.json(); break; }
           } catch { /* enrichment optional */ }
         }
+
+        // Yield to the browser before the O(n²) graph build so the loading
+        // state renders before we block the main thread.
+        await new Promise((resolve) => setTimeout(resolve, 0));
+        if (cancelled) return;
 
         const { graph, stats } = buildGraph(classified, enriched);
         if (!cancelled) {
