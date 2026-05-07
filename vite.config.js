@@ -10,12 +10,14 @@ function patchThreeForcegraph() {
   return {
     name: 'patch-three-forcegraph-layout-guard',
     transform(code, id) {
+      // Match both the npm source file (prod Rollup) and the dev pre-bundle chunk
       if (!id.includes('three-forcegraph') && !id.includes('chunk-YH5VU6GS')) return;
-      const patched = code.replace(
-        'state.layout[isD3Sim ? "tick" : "step"]()',
-        'state.layout && state.layout[isD3Sim ? "tick" : "step"]()'
-      );
-      if (patched === code) return; // no match — chunk name changed, skip silently
+      if (!code.includes('state.layout[isD3Sim')) return;
+      // Source uses single quotes; pre-bundled chunk uses double quotes — handle both
+      const patched = code
+        .replace("state.layout[isD3Sim ? 'tick' : 'step']()", "state.layout && state.layout[isD3Sim ? 'tick' : 'step']()")
+        .replace('state.layout[isD3Sim ? "tick" : "step"]()', 'state.layout && state.layout[isD3Sim ? "tick" : "step"]()');
+      if (patched === code) return;
       return { code: patched, map: null };
     },
   };
