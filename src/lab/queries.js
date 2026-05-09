@@ -3,11 +3,8 @@
 
 const STAGE_RANK = { Hot: 6, Rising: 5, Classic: 4, Mature: 3, Declining: 2, Abandoned: 1 };
 
-function repoNodes(graph) {
-  const out = [];
-  graph.forEachNode((n, a) => { if (a.kind === 'repo') out.push(a); });
-  return out;
-}
+// nodes is now the pre-computed array from graph.json
+function repoNodes(nodes) { return nodes; }
 
 export const QUERIES = {
   whereDevsWork: {
@@ -170,20 +167,17 @@ export const QUERIES = {
   },
 };
 
-export function compareRepos(graph, fullNameA, fullNameB) {
-  let nodeA, nodeB;
-  graph.forEachNode((n, a) => {
-    if (a.kind === 'repo' && a.full_name === fullNameA) nodeA = n;
-    if (a.kind === 'repo' && a.full_name === fullNameB) nodeB = n;
-  });
-  if (!nodeA || !nodeB) return null;
-  const a = graph.getNodeAttributes(nodeA);
-  const b = graph.getNodeAttributes(nodeB);
-  const edge = graph.hasEdge(nodeA, nodeB) ? graph.getEdgeAttributes(nodeA, nodeB) : null;
+export function compareRepos(nodes, links, fullNameA, fullNameB) {
+  const a = nodes.find(n => n.full_name === fullNameA);
+  const b = nodes.find(n => n.full_name === fullNameB);
+  if (!a || !b) return null;
+  const edge = links.find(l => {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    return (s === a.id && t === b.id) || (s === b.id && t === a.id);
+  }) ?? null;
   return {
-    a,
-    b,
-    edge,
+    a, b, edge,
     same_community: a.community === b.community,
     diff: {
       stars: a.stars - b.stars,

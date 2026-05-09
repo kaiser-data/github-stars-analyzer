@@ -4,6 +4,7 @@
   "description": "Analyze GitHub starred repositories with comprehensive analytics",
   "private": true,
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
     "dexie": "^4.4.2",
     "graphology": "^0.26.0",
     "graphology-communities-louvain": "^2.0.2",
@@ -32,6 +33,7 @@
     "refresh:sample": "node --env-file=.env scripts/sample.mjs ${USERNAME:-kaiser-data} --all",
     "refresh:ingest": "node --env-file=.env scripts/ingest.mjs --sample=src/data/sample-all.json --max-age=${MAX_AGE:-7}",
     "refresh:classify": "node scripts/classify.mjs --in=src/data/raw-all.json && cp src/data/classified-all.json public/data/classified.json && echo 'wrote public/data/classified.json'",
-    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify"
+    "precompute": "node scripts/precompute.mjs",
+    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run precompute"
   }
 }

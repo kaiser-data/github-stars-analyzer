@@ -133,7 +133,7 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
 export default function TopicMap({ onSelect }) {
   const containerRef = useRef(null);
   const fgRef = useRef(null);
-  const { status, classified } = useGraph();
+  const { status, nodes: classified } = useGraph();
   const [hovered, setHovered] = useState(null);
   const [selected, setSelected] = useState(null);
   const [minFreq, setMinFreq] = useState(2);
@@ -156,7 +156,7 @@ export default function TopicMap({ onSelect }) {
 
   const topicGraph = useMemo(() => {
     if (status !== 'ready' || !classified) return null;
-    return buildTopicGraph(classified.repos, minFreq);
+    return buildTopicGraph(classified ?? [], minFreq);
   }, [status, classified, minFreq]);
 
   const fgData = useMemo(() => topicGraph ? topicGraphToFG(topicGraph) : { nodes: [], links: [] }, [topicGraph]);
@@ -306,7 +306,7 @@ export default function TopicMap({ onSelect }) {
       </div>
       <div className="lg:col-span-1">
         {selected ? (
-          <ReposByTopic topic={selected} repos={classified.repos} onSelect={onSelect} />
+          <ReposByTopic topic={selected} repos={classified ?? []} onSelect={onSelect} />
         ) : (
           <div className="bg-gray-800 rounded-lg p-4 border border-gray-700 text-sm text-gray-400">
             Click a topic to see repos using it. Bigger nodes = more repos. Edges = topics that appear together.

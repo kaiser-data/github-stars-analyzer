@@ -75,15 +75,15 @@ function ResultTable({ rows, onSelect }) {
 }
 
 export default function InsightFeed({ onSelect }) {
-  const { status, graph } = useGraph();
+  const { status, nodes = [] } = useGraph();
   const [activeKey, setActiveKey] = useState('whereDevsWork');
 
   const result = useMemo(() => {
     if (status !== 'ready') return null;
     const q = QUERIES[activeKey];
     if (!q) return null;
-    return q.run(graph);
-  }, [status, graph, activeKey]);
+    return q.run(nodes);
+  }, [status, nodes, activeKey]);
 
   if (status !== 'ready') return <div className="text-gray-400 p-4">Waiting for graph…</div>;
 

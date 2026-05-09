@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { GraphProvider, useGraph } from './GraphProvider';
 import MapView from './MapView';
@@ -10,12 +10,84 @@ import TopicMap from './TopicMap';
 import HealthHistogram from './HealthHistogram';
 
 const TABS = [
-  { key: 'insights', label: 'Insights' },
-  { key: 'all', label: 'Browse' },
   { key: 'map', label: 'Map' },
   { key: 'topics', label: 'Topics' },
+  { key: 'insights', label: 'Insights' },
+  { key: 'all', label: 'Browse' },
   { key: 'compare', label: 'Compare' },
+  { key: 'ask', label: 'Ask AI' },
 ];
+
+function AskView() {
+  const [q, setQ] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [answer, setAnswer] = useState('');
+  const [error, setError] = useState('');
+
+  const SUGGESTIONS = [
+    'Which communities are most active right now?',
+    'What are my most influential starred repos?',
+    'Which repos should I pay more attention to?',
+    'What patterns do you see in how I star repos?',
+    'Which repos are at risk of being abandoned?',
+  ];
+
+  async function ask(question) {
+    setLoading(true); setAnswer(''); setError('');
+    try {
+      const res = await fetch('/api/ask', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question }),
+      });
+      const data = await res.json();
+      if (data.error) setError(data.error);
+      else setAnswer(data.answer);
+    } catch (e) {
+      setError(e.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div className="max-w-3xl">
+      <h2 className="text-xl font-bold text-white mb-1">Ask about your stars</h2>
+      <p className="text-gray-400 text-sm mb-5">Questions are answered using the knowledge graph of your {1031} starred repos — communities, PageRank, lifecycle, connections.</p>
+
+      <div className="flex gap-2 mb-4">
+        <input
+          value={q}
+          onChange={(e) => setQ(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && q.trim() && ask(q)}
+          placeholder="Ask anything about your starred repos…"
+          className="flex-1 px-4 py-2.5 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
+        />
+        <button
+          onClick={() => q.trim() && ask(q)}
+          disabled={loading || !q.trim()}
+          className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg font-medium text-white transition-colors"
+        >{loading ? '…' : 'Ask'}</button>
+      </div>
+
+      <div className="flex flex-wrap gap-2 mb-6">
+        {SUGGESTIONS.map((s) => (
+          <button key={s} onClick={() => { setQ(s); ask(s); }}
+            className="px-3 py-1.5 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-full text-xs text-gray-300 transition-colors">
+            {s}
+          </button>
+        ))}
+      </div>
+
+      {error && <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>}
+      {answer && (
+        <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
+          <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}</div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 function StatusBanner() {
   const { status, stats, hasEnrichment, error } = useGraph();
@@ -99,6 +171,7 @@ function LabContent() {
       {tab === 'map' && <MapView onSelectNode={(n) => select(n ? n.full_name : null)} focusedRepoName={selected} />}
       {tab === 'topics' && <TopicMap onSelect={select} />}
       {tab === 'compare' && <Comparator initialA={compareA} initialB={compareB} />}
+      {tab === 'ask' && <AskView />}
       {selected && <RepoDetail repoFullName={selected} onClose={closeDetail} onCompareWith={goCompare} />}
     </div>
   );

@@ -4,17 +4,12 @@ import { useGraph, STAGE_COLOR } from './GraphProvider';
 const ALL_STAGES = ['Hot', 'Rising', 'Classic', 'Mature', 'Declining', 'Abandoned'];
 
 export default function AllRepos({ onSelect }) {
-  const { status, graph } = useGraph();
+  const { status, nodes = [] } = useGraph();
   const [q, setQ] = useState('');
   const [stages, setStages] = useState(new Set(ALL_STAGES));
   const [sortKey, setSortKey] = useState('stars');
 
-  const repos = useMemo(() => {
-    if (status !== 'ready') return [];
-    const out = [];
-    graph.forEachNode((n, a) => { if (a.kind === 'repo') out.push(a); });
-    return out;
-  }, [status, graph]);
+  const repos = useMemo(() => (status === 'ready' ? nodes : []), [status, nodes]);
 
   const filtered = useMemo(() => {
     const ql = q.trim().toLowerCase();

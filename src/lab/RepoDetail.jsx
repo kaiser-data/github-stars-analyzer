@@ -34,47 +34,33 @@ function MetricCell({ label, value }) {
   );
 }
 
-function findNeighbors(graph, nodeId, limit = 8) {
-  if (!graph.hasNode(nodeId)) return [];
+function findNeighbors(nodes, links, nodeId, limit = 8) {
+  const nodeById = new Map(nodes.map(n => [n.id, n]));
   const neighbors = [];
-  graph.forEachEdge(nodeId, (edge, attrs, source, target) => {
-    const otherId = source === nodeId ? target : source;
-    const other = graph.getNodeAttributes(otherId);
-    neighbors.push({
-      full_name: other.full_name,
-      weight: attrs.weight,
-      shared_authors: attrs.shared_authors ?? [],
-      shared_topics: attrs.shared_topics ?? [],
-      lifecycle_stage: other.lifecycle_stage,
-      stars: other.stars,
-    });
-  });
+  for (const l of links) {
+    const s = typeof l.source === 'object' ? l.source.id : l.source;
+    const t = typeof l.target === 'object' ? l.target.id : l.target;
+    const otherId = s === nodeId ? t : t === nodeId ? s : null;
+    if (!otherId) continue;
+    const other = nodeById.get(otherId);
+    if (!other) continue;
+    neighbors.push({ full_name: other.full_name, weight: l.weight, shared_authors: l.shared_authors ?? [], shared_topics: l.shared_topics ?? [], lifecycle_stage: other.lifecycle_stage, stars: other.stars });
+  }
   return neighbors.sort((a, b) => b.weight - a.weight).slice(0, limit);
 }
 
 export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
-  const { graph } = useGraph();
+  const { nodes = [], links = [] } = useGraph();
   const [compareTarget, setCompareTarget] = React.useState('');
   if (!repoFullName) return null;
 
-  let nodeId = null;
-  let attrs = null;
-  graph.forEachNode((n, a) => {
-    if (a.kind === 'repo' && a.full_name === repoFullName) {
-      nodeId = n;
-      attrs = a;
-    }
-  });
+  const attrs = nodes.find(n => n.full_name === repoFullName);
   if (!attrs) return null;
 
-  const neighbors = findNeighbors(graph, nodeId);
-  const topAuthors = (attrs.authors_90d ?? []).slice(0, 5);
+  const neighbors = findNeighbors(nodes, links, attrs.id);
   const recentRelease = attrs.releases_total > 0 ? `${attrs.releases_total} releases` : 'no releases';
-  const readmeExcerpt = (attrs.readme_text ?? '').slice(0, 1200);
 
-  const otherRepoNames = [];
-  graph.forEachNode((n, a) => { if (a.kind === 'repo' && a.full_name !== repoFullName) otherRepoNames.push(a.full_name); });
-  otherRepoNames.sort();
+  const otherRepoNames = nodes.filter(n => n.full_name !== repoFullName).map(n => n.full_name).sort();
 
   return (
     <div className="fixed inset-y-0 right-0 w-full md:w-[600px] bg-gray-900 border-l border-gray-700 shadow-2xl overflow-y-auto z-50">
@@ -164,24 +150,6 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
           </div>
         )}
 
-        {topAuthors.length > 0 && (
-          <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Top contributors (last 90d)</div>
-            <div className="space-y-1">
-              {topAuthors.map((a) => (
-                <div key={a.login} className="flex items-center justify-between text-sm">
-                  <a
-                    href={`https://github.com/${a.login}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-200 hover:text-blue-300"
-                  >{a.login}</a>
-                  <span className="text-gray-500">{a.commits} commits</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {neighbors.length > 0 && (
           <div>
@@ -231,15 +199,6 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
           </div>
         )}
 
-        {readmeExcerpt && (
-          <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">README excerpt</div>
-            <pre className="bg-gray-950 rounded p-3 text-xs text-gray-300 whitespace-pre-wrap font-mono overflow-x-auto">
-              {readmeExcerpt}
-              {(attrs.readme_text ?? '').length > 1200 ? '\n…' : ''}
-            </pre>
-          </div>
-        )}
       </div>
     </div>
   );

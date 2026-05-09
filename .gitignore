@@ -21,7 +21,7 @@ dist-ssr
 src/data/raw-*.json
 src/data/classified-*.json
 src/data/.cache/
-# public/data/classified.json is committed so Netlify can serve it
+# public/data/classified.json and graph.json are committed so Netlify can serve them
 
 # Editor directories and files
 .vscode/*
