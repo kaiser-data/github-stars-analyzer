@@ -1,219 +1,147 @@
 # GitHub Stars Analyzer
 
-A React web application that fetches and analyzes a user's GitHub starred repositories with comprehensive analytics, real-time trend analysis, and export capabilities.
+A 3D knowledge graph of your GitHub starred repositories — communities, relationships, lifecycle, and AI-powered exploration.
 
-## Features
+**Live:** [your-netlify-url.netlify.app](https://your-netlify-url.netlify.app)
 
-- **Complete Data Fetching**: Retrieves all starred repositories (up to 1000) using GitHub API pagination
-- **Recent Trend Analysis**: Real star history data for the last 30 days
-  - Accurate counts (no approximations) using GitHub GraphQL API
-  - Works for repos with 0 to 500k+ stars (no 40k limit!)
-  - Trend classification: Hot 🔥, Rising ⚡, Steady ✨, Quiet 💤
-  - Percentage growth display
-  - Fast fetching (only last 30 days of data)
-- **Comprehensive Analytics**:
-  - Total repositories, stars, and average stars per repo
-  - Top 5 programming languages by frequency
-  - Top 10 most common topics with intelligent normalization
-  - Semantic grouping (e.g., agent/ai-agent/agentic-ai → ai-agent, chatgpt/gpt/openai → openai)
-  - Top 5 most-starred repositories
-- **Advanced Sorting & Filtering**:
-  - Sort by stars, forks, recent activity, or trends
-  - Filter by programming language
-  - Multi-select topic filtering (choose multiple topics from top 30)
-  - Smart topic normalization to group related terms
-  - View modes: All, Most Starred, Most Forked, Recently Updated
-- **Flexible Layout Views**:
-  - Grid view: 2-3 columns on widescreen
-  - List view: Single column with full details
-  - Compact view: 3-4 columns for maximum density
-- **Detailed Repository View**: Cards showing all repo details with working links
-  - Creation date and last updated date
-  - Star count and fork count
-  - Programming language and colorful glowing topic badges
-  - Repository owner/author information
-  - Top 5 contributors with avatars (on-demand loading)
-- **Export Capabilities**: Download data as JSON or CSV
-- **Rate Limit Handling**: Smart error messages and token authentication support
-- **Responsive Design**: Works on desktop and mobile devices
+---
 
-## Quick Start
+## What it does
+
+Fetches all your GitHub stars, builds a knowledge graph from shared topics, authors, and ownership, then lets you explore it in 3D:
+
+- **Map** — interactive 3D force graph, nodes colored by community, sized by stars + PageRank
+- **Topics** — co-occurrence graph of tags across your starred repos
+- **Insights** — named queries: where devs actually work, hidden gems, rising stars
+- **Browse** — searchable, filterable list of all repos
+- **Compare** — side-by-side metrics + shortest graph path between two repos
+- **Ask AI** — natural language questions answered using the knowledge graph as context
+
+---
+
+## Architecture
+
+```
+GitHub API
+    ↓
+scripts/ingest.mjs       # fetch raw repo + author data
+scripts/classify.mjs     # lifecycle stage + health score (no LLM)
+scripts/precompute.mjs   # kNN graph + Louvain communities + PageRank
+                         # + 300-tick force simulation → positions
+    ↓
+public/data/
+  graph.json             # 1.2 MB — nodes/links ready for the browser
+  graph-context.json     # compact community summary for LLM context
+
+Browser (React + Three.js)
+  → loads graph.json, renders immediately (zero graph math in browser)
+  → ForceGraph3D with pre-computed node positions
+
+Netlify Function /api/ask
+  → loads graph-context.json, calls Claude claude-sonnet-4-6
+```
+
+---
+
+## Quick start
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
+cp .env.example .env          # add GITHUB_TOKEN
+npm run refresh               # fetch → classify → precompute
 npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
 ```
 
-## Usage
+Open http://localhost:5173
 
-1. Enter a GitHub username
-2. **Add a personal access token** (see below - required for trend analysis)
-3. Click "Analyze Stars"
-4. View analytics and repository list
-5. Click "Show Recent Trends" on individual repos or "Load Trends for Top 20"
-6. Export data using JSON or CSV buttons
+---
 
-## GitHub Token (Strongly Recommended)
+## Data pipeline
 
-**⚠️ A GitHub token is required for trend analysis features to work properly.**
-
-### Why You Need a Token:
-- **Without Token**: Limited to 60 requests/hour - insufficient for fetching star history
-- **With Token**: 5,000 requests/hour - full access to all features including trend analysis
-
-### How to Create a Token:
-
-#### Option 1: Fine-Grained Personal Access Token (Recommended)
-1. Go to: https://github.com/settings/tokens?type=beta
-2. Click "Generate new token"
-3. Add description: "GitHub Stars Analyzer"
-4. Set expiration (e.g., 90 days)
-5. Under "Repository access", select: "Public Repositories (read-only)"
-6. Click "Generate token"
-7. Copy the token (starts with `github_pat_`)
-8. Paste into the application
-
-#### Option 2: Classic Personal Access Token
-1. Go to: https://github.com/settings/tokens/new
-2. Add description: "GitHub Stars Analyzer"
-3. Select scope: `public_repo` (read-only access)
-4. Set expiration (e.g., 90 days)
-5. Click "Generate token"
-6. Copy the token (starts with `ghp_`)
-7. Paste into the application
-
-**Security Notes**:
-- Token is only stored in browser session memory, never saved permanently
-- The app only reads public repository data
-- You can revoke the token anytime at: https://github.com/settings/tokens
-
-## Tech Stack
-
-- React 18 with Hooks
-- Tailwind CSS for styling
-- Lucide React for icons
-- Vite for build tooling
-- GitHub GraphQL API for trend analysis
-- GitHub REST API v3 for repository data
-
-## How Trend Analysis Works
-
-The app uses GitHub's GraphQL API to fetch **accurate** star history data:
-
-- **GraphQL Advantages**:
-  - No 40k star limit (unlike REST API)
-  - Fetches stars in DESC order (most recent first)
-  - Accurate counts for any repository size (0 to 500k+ stars)
-
-- **Optimization Strategy**:
-  - Only fetches stars from the last 30 days
-  - Early termination when reaching 30-day threshold
-  - Fast performance (minimal API calls)
-  - Real values (no approximations)
-
-This approach provides accurate trend data while minimizing API calls and respecting rate limits.
-
-## Data Collected
-
-### Per Repository:
-- **Basic info**: name, owner, description, URLs
-- **Statistics**: total stars, forks, open issues
-- **Metadata**: programming language, topics, license
-- **Timestamps**: created date, last updated date, last push date
-- **Trend Data** (when enabled):
-  - Stars gained in last 30 days (accurate count)
-  - Percentage growth relative to total stars
-  - Trend classification (Hot 🔥/Rising ⚡/Steady ✨/Quiet 💤)
-
-## Project Structure
-
-```
-github-stars-analyzer/
-├── src/
-│   ├── GitHubStarsAnalyzer.jsx  # Main component
-│   ├── main.jsx                  # React entry point
-│   └── index.css                 # Tailwind imports
-├── index.html                    # HTML template
-├── package.json                  # Dependencies
-├── vite.config.js               # Vite configuration
-├── tailwind.config.js           # Tailwind configuration
-└── postcss.config.js            # PostCSS configuration
+```bash
+npm run refresh               # full pipeline (sample → ingest → classify → precompute)
+npm run precompute            # rebuild graph.json from existing classified.json
 ```
 
-## Testing Suggestions
+`refresh` requires `GITHUB_TOKEN` in `.env`. The precompute step runs entirely offline.
 
-- Try "torvalds" for a user with many starred repos
-- Try "sindresorhus" for repos with diverse languages and topics
-- Test with your own GitHub username
-- Click "Load Trends for Top 20" to see trend analysis in action
-- Test individual "Show Recent Trends" buttons on different sized repos
-- Verify export buttons download correctly (JSON and CSV)
-- Check responsive layout on mobile devices
-- Test sorting by different criteria (stars, trends, momentum)
-- Test filtering by language and topic
-- Test error handling with invalid usernames
+### What each script does
 
-## Browser Support
+| Script | Input | Output |
+|--------|-------|--------|
+| `scripts/sample.mjs` | GitHub username | `src/data/sample-all.json` (star list) |
+| `scripts/ingest.mjs` | sample + `--max-age` | `src/data/raw-all.json` (full repo data) |
+| `scripts/classify.mjs` | raw JSON | `classified-all.json` (lifecycle + health) |
+| `scripts/precompute.mjs` | classified JSON | `graph.json` + `graph-context.json` |
 
-Modern browsers with ES6+ support:
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+---
 
-## Contributing
+## Ask AI setup
 
-Contributions are welcome! Feel free to:
-- Submit bug reports and feature requests
-- Create pull requests with improvements
-- Share your feedback and suggestions
+The **Ask AI** tab calls a Netlify Function that uses Claude to answer questions about your stars.
 
-For major changes, please open an issue first to discuss what you would like to change.
+1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
+2. In Netlify: **Site settings → Environment variables → Add**
+   - Key: `ANTHROPIC_API_KEY`
+   - Value: your key
+3. Redeploy
 
-## Acknowledgments
+Without the key the tab shows a configuration error; all other tabs work normally.
 
-This project uses and is inspired by:
-- **[GitHub REST API](https://docs.github.com/en/rest)** - For fetching starred repositories and repository data
-- **[GitHub GraphQL API](https://docs.github.com/en/graphql)** - For accurate star history and trend analysis
-- **[Star History](https://star-history.com/)** - Inspiration for visualizing repository star trends
+---
 
-Special thanks to the GitHub team for providing comprehensive APIs that make this project possible.
+## Deploy to Netlify
+
+1. Push to GitHub
+2. Connect repo in Netlify — auto-detects `netlify.toml`
+3. Build command: `npm run build` · Publish: `dist`
+4. Add `ANTHROPIC_API_KEY` environment variable (optional, for Ask AI)
+
+`graph.json` is committed so Netlify serves it without running the data pipeline at build time. Re-run `npm run refresh` locally when you want fresh data, then push.
+
+---
+
+## Tech stack
+
+| Layer | Libraries |
+|-------|-----------|
+| UI | React 18, Tailwind CSS, Lucide |
+| 3D graph | react-force-graph-3d, Three.js, d3-force-3d |
+| Graph algorithms | graphology, graphology-communities-louvain, graphology-metrics |
+| Data pipeline | Node.js ESM scripts, GitHub REST API |
+| LLM | Anthropic SDK (Claude claude-sonnet-4-6) |
+| Hosting | Netlify (static + Functions) |
+
+---
+
+## Project structure
+
+```
+scripts/
+  ingest.mjs          fetch repo data from GitHub
+  classify.mjs        lifecycle + health scoring
+  precompute.mjs      graph build, simulation, LLM context
+
+public/data/
+  classified.json     raw classified data (committed)
+  graph.json          pre-computed graph (committed)
+  graph-context.json  LLM grounding context (committed)
+
+src/lab/
+  GraphProvider.jsx   loads graph.json, provides nodes/links via context
+  MapView.jsx         3D force graph
+  TopicMap.jsx        topic co-occurrence graph
+  InsightFeed.jsx     named analytical queries
+  AllRepos.jsx        searchable repo list
+  Comparator.jsx      side-by-side comparison + path finding
+  LabApp.jsx          tab routing + Ask AI UI
+
+netlify/functions/
+  ask.mjs             POST /api/ask → Claude
+```
+
+---
 
 ## License
 
-MIT License
-
-Copyright (c) 2024 Martin Kaiser
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-## Contact
-
-Martin Kaiser - [martinkaiser.bln@gmail.com](mailto:martinkaiser.bln@gmail.com)
-
-Project Link: [https://github.com/kaiser-data/github-stars-analyzer](https://github.com/kaiser-data/github-stars-analyzer)
+MIT © Martin Kaiser
