@@ -4,18 +4,17 @@ import { useGraph, STAGE_COLOR } from './GraphProvider';
 const STAGE_ORDER = ['Hot', 'Rising', 'Classic', 'Mature', 'Declining', 'Abandoned'];
 
 export default function HealthHistogram() {
-  const { status, graph } = useGraph();
+  const { status, nodes = [] } = useGraph();
   if (status !== 'ready') return null;
 
   const stats = new Map();
-  graph.forEachNode((n, a) => {
-    if (a.kind !== 'repo') return;
-    const stage = a.lifecycle_stage;
+  for (const n of nodes) {
+    const stage = n.lifecycle_stage;
     if (!stats.has(stage)) stats.set(stage, { count: 0, healthSum: 0 });
     const s = stats.get(stage);
     s.count += 1;
-    s.healthSum += a.health_score ?? 0;
-  });
+    s.healthSum += n.health_score ?? 0;
+  }
 
   const total = [...stats.values()].reduce((s, v) => s + v.count, 0);
   if (total === 0) return null;
@@ -37,10 +36,7 @@ export default function HealthHistogram() {
                   <span className="text-gray-400">{s.count} · h{avg}</span>
                 </div>
                 <div className="h-1.5 bg-gray-700 rounded-full mt-1 overflow-hidden">
-                  <div
-                    style={{ width: `${pct}%`, backgroundColor: STAGE_COLOR[stage] }}
-                    className="h-full"
-                  />
+                  <div style={{ width: `${pct}%`, backgroundColor: STAGE_COLOR[stage] }} className="h-full" />
                 </div>
               </div>
             </div>
