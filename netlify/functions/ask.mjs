@@ -18,6 +18,9 @@ import { join } from 'node:path';
 const LLM_API_KEY  = process.env.LLM_API_KEY  || process.env.ZAI_API_KEY;
 const LLM_BASE_URL = (process.env.LLM_BASE_URL || process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4').replace(/\/+$/, '');
 const LLM_MODEL    = process.env.LLM_MODEL    || process.env.ZAI_MODEL || 'glm-4.6';
+// Reasoning models (e.g. glm-5.1) spend part of the token budget on hidden
+// thinking, so give the visible answer headroom. Tunable per-model via env.
+const LLM_MAX_TOKENS = Number(process.env.LLM_MAX_TOKENS) || 2048;
 
 // Map a base URL host to a friendly provider label (display only).
 const PROVIDER_HOSTS = [
@@ -134,7 +137,7 @@ export default async function handler(req) {
       },
       body: JSON.stringify({
         model: LLM_MODEL,
-        max_tokens: 1024,
+        max_tokens: LLM_MAX_TOKENS,
         stream: true,
         messages: [
           { role: 'system', content: buildSystemPrompt(ctx) },
