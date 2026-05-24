@@ -38,7 +38,8 @@ Browser (React + Three.js)
   → ForceGraph3D with pre-computed node positions
 
 Netlify Function /api/ask
-  → loads graph-context.json, calls Z.AI GLM-4.6 (OpenAI-compatible)
+  → loads graph-context.json, calls any OpenAI-compatible LLM endpoint
+    (default: Z.AI GLM-4.6 Coding Plan)
 ```
 
 ---
@@ -78,19 +79,32 @@ npm run precompute            # rebuild graph.json from existing classified.json
 
 ## Ask AI setup
 
-The **Ask AI** tab calls a Netlify Function that uses [Z.AI's GLM-4.6](https://docs.z.ai/guides/llm/glm-4.6) (OpenAI-compatible) to answer questions about your stars.
+The **Ask AI** tab calls a provider-agnostic Netlify Function that talks to any **OpenAI-compatible** chat-completions endpoint. Three env vars configure it:
 
-1. Get an API key from [z.ai/manage-apikey/apikey-list](https://z.ai/manage-apikey/apikey-list)
-2. In Netlify: **Site settings → Environment variables → Add**
-   - Key: `ZAI_API_KEY`
-   - Value: your key
-   - Optional: `ZAI_MODEL` (defaults to `glm-4.6`)
-   - Optional: `ZAI_BASE_URL` (defaults to the GLM Coding Plan endpoint `https://api.z.ai/api/coding/paas/v4`; use `https://api.z.ai/api/paas/v4` for pay-as-you-go billing)
-3. Redeploy
+| Var            | Required | Default                                      |
+|----------------|----------|----------------------------------------------|
+| `LLM_API_KEY`  | yes      | —                                            |
+| `LLM_BASE_URL` | no       | `https://api.z.ai/api/coding/paas/v4`        |
+| `LLM_MODEL`    | no       | `glm-4.6`                                    |
 
-> The default endpoint targets the **GLM Coding Plan** (subscription). Pay-as-you-go keys hit `/api/paas/v4` instead and return "insufficient balance" against a coding-plan account — set `ZAI_BASE_URL` accordingly.
+In Netlify: **Site settings → Environment variables → Add**, then redeploy. Locally, drop them into `.env` (see `.env.example`). Legacy `ZAI_API_KEY` / `ZAI_BASE_URL` / `ZAI_MODEL` are still honored as fallbacks.
 
-Without the key the tab shows a configuration error; all other tabs work normally.
+### Provider recipes
+
+| Provider                | `LLM_BASE_URL`                                | Example `LLM_MODEL`                                  |
+|-------------------------|-----------------------------------------------|------------------------------------------------------|
+| **Z.AI Coding Plan**    | `https://api.z.ai/api/coding/paas/v4`         | `glm-4.6`                                            |
+| Z.AI pay-as-you-go      | `https://api.z.ai/api/paas/v4`                | `glm-4.6`                                            |
+| OpenAI                  | `https://api.openai.com/v1`                   | `gpt-4o-mini`                                        |
+| Groq                    | `https://api.groq.com/openai/v1`              | `llama-3.3-70b-versatile`                            |
+| Together                | `https://api.together.xyz/v1`                 | `meta-llama/Llama-3.3-70B-Instruct-Turbo`            |
+| DeepSeek                | `https://api.deepseek.com/v1`                 | `deepseek-chat`                                      |
+| Mistral                 | `https://api.mistral.ai/v1`                   | `mistral-small-latest`                               |
+| OpenRouter (→ anything) | `https://openrouter.ai/api/v1`                | `anthropic/claude-sonnet-4-5`                        |
+| Fireworks               | `https://api.fireworks.ai/inference/v1`       | `accounts/fireworks/models/llama-v3p3-70b-instruct`  |
+| Local Ollama            | `http://localhost:11434/v1`                   | `llama3.2`                                           |
+
+Without `LLM_API_KEY` the tab shows a configuration notice; every other tab works normally. Billing / quota errors are detected generically and surfaced as a friendly notice rather than a stack trace.
 
 ---
 
@@ -99,7 +113,7 @@ Without the key the tab shows a configuration error; all other tabs work normall
 1. Push to GitHub
 2. Connect repo in Netlify — auto-detects `netlify.toml`
 3. Build command: `npm run build` · Publish: `dist`
-4. Add `ZAI_API_KEY` environment variable (optional, for Ask AI)
+4. Add `LLM_API_KEY` (and optionally `LLM_BASE_URL` / `LLM_MODEL`) environment variables for Ask AI
 
 `graph.json` is committed so Netlify serves it without running the data pipeline at build time. Re-run `npm run refresh` locally when you want fresh data, then push.
 
@@ -113,7 +127,7 @@ Without the key the tab shows a configuration error; all other tabs work normall
 | 3D graph | react-force-graph-3d, Three.js, d3-force-3d |
 | Graph algorithms | graphology, graphology-communities-louvain, graphology-metrics |
 | Data pipeline | Node.js ESM scripts, GitHub REST API |
-| LLM | Z.AI GLM-4.6 (OpenAI-compatible REST) |
+| LLM | Any OpenAI-compatible API (default: Z.AI GLM-4.6 Coding Plan) |
 | Hosting | Netlify (static + Functions) |
 
 ---

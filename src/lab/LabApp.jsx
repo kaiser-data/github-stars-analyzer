@@ -25,6 +25,7 @@ function AskView() {
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState('');
   const [errorCode, setErrorCode] = useState('');
+  const [meta, setMeta] = useState(null); // { model, provider }
 
   const SUGGESTION_GROUPS = [
     {
@@ -73,7 +74,7 @@ function AskView() {
   ];
 
   async function ask(question) {
-    setLoading(true); setAnswer(''); setError(''); setErrorCode('');
+    setLoading(true); setAnswer(''); setError(''); setErrorCode(''); setMeta(null);
     try {
       const res = await fetch('/api/ask', {
         method: 'POST',
@@ -81,8 +82,14 @@ function AskView() {
         body: JSON.stringify({ question }),
       });
       const data = await res.json();
-      if (data.error) { setError(data.error); setErrorCode(data.code || ''); }
-      else setAnswer(data.answer);
+      if (data.error) {
+        setError(data.error);
+        setErrorCode(data.code || '');
+        if (data.provider) setMeta({ provider: data.provider });
+      } else {
+        setAnswer(data.answer);
+        if (data.model || data.provider) setMeta({ model: data.model, provider: data.provider });
+      }
     } catch (e) {
       setError(e.message);
     } finally {
@@ -126,21 +133,32 @@ function AskView() {
         ))}
       </div>
 
-      {error && errorCode === 'zai_no_balance' && (
+      {error && errorCode === 'billing' && (
         <div className="bg-amber-900/30 border border-amber-600/60 rounded-lg p-4 text-amber-200 text-sm">
-          <div className="font-semibold mb-1">Z.AI account needs credit</div>
-          <p>The Ask AI feature is configured but the Z.AI account has no balance.{' '}
-            <a href="https://z.ai/manage-apikey/apikey-list" target="_blank" rel="noreferrer" className="underline hover:text-amber-100">
-              Add credit or a resource package
-            </a>{' '}and try again. Every other tab works without it.</p>
+          <div className="font-semibold mb-1">{meta?.provider ?? 'LLM provider'} reports a billing or quota issue</div>
+          <p>Add credit / upgrade the plan with your provider, then try again. Every other tab works without it.</p>
+          <p className="mt-2 text-xs text-amber-300/80 font-mono break-words">{error}</p>
         </div>
       )}
-      {error && errorCode !== 'zai_no_balance' && (
+      {error && errorCode === 'no_key' && (
+        <div className="bg-amber-900/30 border border-amber-600/60 rounded-lg p-4 text-amber-200 text-sm">
+          <div className="font-semibold mb-1">Ask AI is not configured</div>
+          <p>Set <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_API_KEY</code> in your environment (and optionally <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_BASE_URL</code> / <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_MODEL</code>) to enable this tab.</p>
+        </div>
+      )}
+      {error && errorCode !== 'billing' && errorCode !== 'no_key' && (
         <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>
       )}
       {answer && (
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
           <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}</div>
+          {(meta?.model || meta?.provider) && (
+            <div className="mt-4 pt-3 border-t border-gray-700/60 text-[11px] text-gray-500">
+              {meta.model && <span className="font-mono">{meta.model}</span>}
+              {meta.model && meta.provider && <span> · </span>}
+              {meta.provider && <span>via {meta.provider}</span>}
+            </div>
+          )}
         </div>
       )}
     </div>

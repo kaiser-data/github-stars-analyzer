@@ -1,28 +1,55 @@
 // Netlify Function: POST /api/ask
 // Body: { question: string, context?: { community?: number, repoName?: string } }
-// Env:  ZAI_API_KEY  (optional: ZAI_MODEL, defaults to glm-4.6)
 //
-// Loads graph-context.json (pre-computed by scripts/precompute.mjs) and uses it
-// as grounding for the LLM so answers are specific to the user's starred repos.
+// Provider-agnostic LLM caller. Talks to any OpenAI-compatible chat-completions
+// endpoint (Z.AI, OpenAI, Groq, Together, DeepSeek, Mistral, OpenRouter,
+// Ollama/vLLM, …). Configured by three env vars:
 //
-// Z.AI's model API is OpenAI-compatible — we call /chat/completions directly
-// with fetch to avoid an extra SDK dependency.
+//   LLM_API_KEY   — bearer token (required)
+//   LLM_BASE_URL  — endpoint root, e.g. https://api.openai.com/v1
+//   LLM_MODEL     — model id, e.g. gpt-4o-mini
+//
+// Defaults target the Z.AI GLM Coding Plan. Legacy ZAI_* env vars are honored
+// as fallbacks for backward compatibility.
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-// GLM Coding Plan endpoint (subscription-based, OpenAI-compatible). The
-// pay-as-you-go /api/paas/v4 path bills against a separate balance and returns
-// "insufficient balance" for coding-plan keys. Override via ZAI_BASE_URL.
-const ZAI_BASE_URL = process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4';
-const ZAI_MODEL = process.env.ZAI_MODEL || 'glm-4.6';
+const LLM_API_KEY  = process.env.LLM_API_KEY  || process.env.ZAI_API_KEY;
+const LLM_BASE_URL = (process.env.LLM_BASE_URL || process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4').replace(/\/+$/, '');
+const LLM_MODEL    = process.env.LLM_MODEL    || process.env.ZAI_MODEL || 'glm-4.6';
+
+// Map a base URL host to a friendly provider label (display only).
+const PROVIDER_HOSTS = [
+  [/(^|\.)z\.ai$/i,             'Z.AI'],
+  [/(^|\.)openai\.com$/i,        'OpenAI'],
+  [/(^|\.)anthropic\.com$/i,     'Anthropic'],
+  [/(^|\.)groq\.com$/i,          'Groq'],
+  [/(^|\.)together\.(ai|xyz)$/i, 'Together'],
+  [/(^|\.)openrouter\.ai$/i,     'OpenRouter'],
+  [/(^|\.)deepseek\.com$/i,      'DeepSeek'],
+  [/(^|\.)mistral\.ai$/i,        'Mistral'],
+  [/(^|\.)fireworks\.ai$/i,      'Fireworks'],
+  [/(^|\.)perplexity\.ai$/i,     'Perplexity'],
+  [/^(localhost|127\.0\.0\.1)/i, 'Local'],
+];
+function providerLabel(baseUrl) {
+  try {
+    const host = new URL(baseUrl).host;
+    for (const [re, name] of PROVIDER_HOSTS) if (re.test(host)) return name;
+    return host;
+  } catch { return 'LLM'; }
+}
+const PROVIDER = providerLabel(LLM_BASE_URL);
+
+// Generic billing / quota / credit indicators across providers.
+const BILLING_RE = /(insufficient\s+(balance|credit|funds|quota)|no\s+(balance|credit|funds|quota|resource)|quota\s+exceeded|out\s+of\s+(credit|quota|funds)|payment\s+required|please\s+recharge|billing|credit.*deplet|account.*suspend)/i;
 
 // Graph context is a static file bundled with the deploy — load once.
 let graphContext = null;
 function getContext() {
   if (graphContext) return graphContext;
   try {
-    // In Netlify Functions, process.cwd() is the site root
     const raw = readFileSync(join(process.cwd(), 'public/data/graph-context.json'), 'utf8');
     graphContext = JSON.parse(raw);
   } catch {
@@ -63,30 +90,50 @@ Be concise and insightful — focus on what's non-obvious.
 If asked about a specific repo, relate it to its community and neighbors.`;
 }
 
-export default async function handler(req) {
-  if (req.method !== 'POST') {
-    return new Response('Method not allowed', { status: 405 });
+// Extract a human-readable message from a (possibly JSON) error body.
+function extractErrorMessage(raw) {
+  try {
+    const j = JSON.parse(raw);
+    return j?.error?.message
+      ?? j?.error?.error?.message
+      ?? j?.message
+      ?? j?.detail
+      ?? (typeof j?.error === 'string' ? j.error : null)
+      ?? raw;
+  } catch {
+    return raw;
   }
+}
+
+function jsonResponse(body, status = 200, extraHeaders = {}) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', ...extraHeaders },
+  });
+}
+
+export default async function handler(req) {
+  if (req.method !== 'POST') return new Response('Method not allowed', { status: 405 });
 
   const { question } = await req.json();
   if (!question?.trim()) {
-    return new Response(JSON.stringify({ error: 'question is required' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
+    return jsonResponse({ error: 'question is required' }, 400);
   }
 
-  if (!process.env.ZAI_API_KEY) {
-    return new Response(JSON.stringify({ error: 'ZAI_API_KEY not configured' }), { status: 503, headers: { 'Content-Type': 'application/json' } });
+  if (!LLM_API_KEY) {
+    return jsonResponse({ error: 'LLM_API_KEY (or ZAI_API_KEY) not configured', code: 'no_key' }, 503);
   }
 
   try {
     const ctx = getContext();
-    const res = await fetch(`${ZAI_BASE_URL}/chat/completions`, {
+    const res = await fetch(`${LLM_BASE_URL}/chat/completions`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.ZAI_API_KEY}`,
+        'Authorization': `Bearer ${LLM_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: ZAI_MODEL,
+        model: LLM_MODEL,
         max_tokens: 1024,
         messages: [
           { role: 'system', content: buildSystemPrompt(ctx) },
@@ -96,35 +143,34 @@ export default async function handler(req) {
     });
 
     if (!res.ok) {
-      const errText = await res.text();
-      // Z.AI returns 429 + code "1113" when the account has no balance/resource
-      // package — surface that as a clear, actionable billing message.
-      let parsed;
-      try { parsed = JSON.parse(errText); } catch { /* not JSON */ }
-      if (parsed?.error?.code === '1113') {
-        return new Response(
-          JSON.stringify({
-            error: 'Z.AI account has no balance. Add credit or a resource package at https://z.ai/manage-apikey/apikey-list, then try again.',
-            code: 'zai_no_balance',
-          }),
-          { status: 402, headers: { 'Content-Type': 'application/json' } },
-        );
+      const raw = await res.text();
+      const msg = extractErrorMessage(raw).slice(0, 400);
+      // Treat 402/403 + matching keyword, or 429 + billing keyword, as a
+      // billing/quota issue rather than rate-limiting.
+      const isBilling = res.status === 402
+        || (res.status === 403 && BILLING_RE.test(msg))
+        || (res.status === 429 && BILLING_RE.test(msg))
+        || (res.status === 400 && BILLING_RE.test(msg));
+      if (isBilling) {
+        return jsonResponse({
+          error: `${PROVIDER} reports a billing/quota issue: ${msg}`,
+          code: 'billing',
+          provider: PROVIDER,
+        }, 402);
       }
-      return new Response(
-        JSON.stringify({ error: `Z.AI ${res.status}: ${(parsed?.error?.message ?? errText).slice(0, 300)}` }),
-        { status: 502, headers: { 'Content-Type': 'application/json' } },
-      );
+      return jsonResponse({
+        error: `${PROVIDER} ${res.status}: ${msg}`,
+        code: 'upstream_error',
+        provider: PROVIDER,
+      }, 502);
     }
 
     const data = await res.json();
     const answer = data?.choices?.[0]?.message?.content ?? '';
 
-    return new Response(
-      JSON.stringify({ answer, model: ZAI_MODEL }),
-      { status: 200, headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } },
-    );
+    return jsonResponse({ answer, model: LLM_MODEL, provider: PROVIDER });
   } catch (err) {
-    return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: { 'Content-Type': 'application/json' } });
+    return jsonResponse({ error: err.message, code: 'fetch_error', provider: PROVIDER }, 500);
   }
 }
 
