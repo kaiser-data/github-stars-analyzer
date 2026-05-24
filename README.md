@@ -38,7 +38,7 @@ Browser (React + Three.js)
   → ForceGraph3D with pre-computed node positions
 
 Netlify Function /api/ask
-  → loads graph-context.json, calls Claude claude-sonnet-4-6
+  → loads graph-context.json, calls Z.AI GLM-4.6 (OpenAI-compatible)
 ```
 
 ---
@@ -78,13 +78,17 @@ npm run precompute            # rebuild graph.json from existing classified.json
 
 ## Ask AI setup
 
-The **Ask AI** tab calls a Netlify Function that uses Claude to answer questions about your stars.
+The **Ask AI** tab calls a Netlify Function that uses [Z.AI's GLM-4.6](https://docs.z.ai/guides/llm/glm-4.6) (OpenAI-compatible) to answer questions about your stars.
 
-1. Get an API key from [console.anthropic.com](https://console.anthropic.com)
+1. Get an API key from [z.ai/manage-apikey/apikey-list](https://z.ai/manage-apikey/apikey-list)
 2. In Netlify: **Site settings → Environment variables → Add**
-   - Key: `ANTHROPIC_API_KEY`
+   - Key: `ZAI_API_KEY`
    - Value: your key
+   - Optional: `ZAI_MODEL` (defaults to `glm-4.6`)
+   - Optional: `ZAI_BASE_URL` (defaults to the GLM Coding Plan endpoint `https://api.z.ai/api/coding/paas/v4`; use `https://api.z.ai/api/paas/v4` for pay-as-you-go billing)
 3. Redeploy
+
+> The default endpoint targets the **GLM Coding Plan** (subscription). Pay-as-you-go keys hit `/api/paas/v4` instead and return "insufficient balance" against a coding-plan account — set `ZAI_BASE_URL` accordingly.
 
 Without the key the tab shows a configuration error; all other tabs work normally.
 
@@ -95,7 +99,7 @@ Without the key the tab shows a configuration error; all other tabs work normall
 1. Push to GitHub
 2. Connect repo in Netlify — auto-detects `netlify.toml`
 3. Build command: `npm run build` · Publish: `dist`
-4. Add `ANTHROPIC_API_KEY` environment variable (optional, for Ask AI)
+4. Add `ZAI_API_KEY` environment variable (optional, for Ask AI)
 
 `graph.json` is committed so Netlify serves it without running the data pipeline at build time. Re-run `npm run refresh` locally when you want fresh data, then push.
 
@@ -109,7 +113,7 @@ Without the key the tab shows a configuration error; all other tabs work normall
 | 3D graph | react-force-graph-3d, Three.js, d3-force-3d |
 | Graph algorithms | graphology, graphology-communities-louvain, graphology-metrics |
 | Data pipeline | Node.js ESM scripts, GitHub REST API |
-| LLM | Anthropic SDK (Claude claude-sonnet-4-6) |
+| LLM | Z.AI GLM-4.6 (OpenAI-compatible REST) |
 | Hosting | Netlify (static + Functions) |
 
 ---

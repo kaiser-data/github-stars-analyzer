@@ -4,7 +4,6 @@
   "description": "Analyze GitHub starred repositories with comprehensive analytics",
   "private": true,
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.95.1",
     "dexie": "^4.4.2",
     "graphology": "^0.26.0",
     "graphology-communities-louvain": "^2.0.2",

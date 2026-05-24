@@ -1,15 +1,21 @@
 // Netlify Function: POST /api/ask
 // Body: { question: string, context?: { community?: number, repoName?: string } }
-// Env:  ANTHROPIC_API_KEY
+// Env:  ZAI_API_KEY  (optional: ZAI_MODEL, defaults to glm-4.6)
 //
 // Loads graph-context.json (pre-computed by scripts/precompute.mjs) and uses it
 // as grounding for the LLM so answers are specific to the user's starred repos.
+//
+// Z.AI's model API is OpenAI-compatible — we call /chat/completions directly
+// with fetch to avoid an extra SDK dependency.
 
-import Anthropic from '@anthropic-ai/sdk';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+// GLM Coding Plan endpoint (subscription-based, OpenAI-compatible). The
+// pay-as-you-go /api/paas/v4 path bills against a separate balance and returns
+// "insufficient balance" for coding-plan keys. Override via ZAI_BASE_URL.
+const ZAI_BASE_URL = process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4';
+const ZAI_MODEL = process.env.ZAI_MODEL || 'glm-4.6';
 
 // Graph context is a static file bundled with the deploy — load once.
 let graphContext = null;
@@ -67,21 +73,54 @@ export default async function handler(req) {
     return new Response(JSON.stringify({ error: 'question is required' }), { status: 400, headers: { 'Content-Type': 'application/json' } });
   }
 
-  if (!process.env.ANTHROPIC_API_KEY) {
-    return new Response(JSON.stringify({ error: 'ANTHROPIC_API_KEY not configured' }), { status: 503, headers: { 'Content-Type': 'application/json' } });
+  if (!process.env.ZAI_API_KEY) {
+    return new Response(JSON.stringify({ error: 'ZAI_API_KEY not configured' }), { status: 503, headers: { 'Content-Type': 'application/json' } });
   }
 
   try {
     const ctx = getContext();
-    const msg = await client.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 1024,
-      system: buildSystemPrompt(ctx),
-      messages: [{ role: 'user', content: question }],
+    const res = await fetch(`${ZAI_BASE_URL}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${process.env.ZAI_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: ZAI_MODEL,
+        max_tokens: 1024,
+        messages: [
+          { role: 'system', content: buildSystemPrompt(ctx) },
+          { role: 'user', content: question },
+        ],
+      }),
     });
 
+    if (!res.ok) {
+      const errText = await res.text();
+      // Z.AI returns 429 + code "1113" when the account has no balance/resource
+      // package — surface that as a clear, actionable billing message.
+      let parsed;
+      try { parsed = JSON.parse(errText); } catch { /* not JSON */ }
+      if (parsed?.error?.code === '1113') {
+        return new Response(
+          JSON.stringify({
+            error: 'Z.AI account has no balance. Add credit or a resource package at https://z.ai/manage-apikey/apikey-list, then try again.',
+            code: 'zai_no_balance',
+          }),
+          { status: 402, headers: { 'Content-Type': 'application/json' } },
+        );
+      }
+      return new Response(
+        JSON.stringify({ error: `Z.AI ${res.status}: ${(parsed?.error?.message ?? errText).slice(0, 300)}` }),
+        { status: 502, headers: { 'Content-Type': 'application/json' } },
+      );
+    }
+
+    const data = await res.json();
+    const answer = data?.choices?.[0]?.message?.content ?? '';
+
     return new Response(
-      JSON.stringify({ answer: msg.content[0].text }),
+      JSON.stringify({ answer, model: ZAI_MODEL }),
       { status: 200, headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' } },
     );
   } catch (err) {

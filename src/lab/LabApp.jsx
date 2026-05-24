@@ -19,21 +19,61 @@ const TABS = [
 ];
 
 function AskView() {
+  const { stats } = useGraph();
   const [q, setQ] = useState('');
   const [loading, setLoading] = useState(false);
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState('');
+  const [errorCode, setErrorCode] = useState('');
 
-  const SUGGESTIONS = [
-    'Which communities are most active right now?',
-    'What are my most influential starred repos?',
-    'Which repos should I pay more attention to?',
-    'What patterns do you see in how I star repos?',
-    'Which repos are at risk of being abandoned?',
+  const SUGGESTION_GROUPS = [
+    {
+      label: 'Overview',
+      items: [
+        'Summarize the major themes across my starred repos.',
+        'What are my most influential starred repos by PageRank?',
+        'Which communities dominate my stars, and what do they share?',
+      ],
+    },
+    {
+      label: 'Communities & topics',
+      items: [
+        'Which two communities are most similar to each other, and why?',
+        'Are there topics that span multiple communities — bridges between clusters?',
+        'What technology stack does each major community represent?',
+        'Which community looks most "frontier" or experimental right now?',
+      ],
+    },
+    {
+      label: 'Lifecycle & risk',
+      items: [
+        'Which repos are at risk of being abandoned but still get attention?',
+        'Which mature projects in my stars are still actively maintained?',
+        'Show me rising stars — repos gaining momentum I might be underrating.',
+        'Which repos have I starred that look like one-time experiments?',
+      ],
+    },
+    {
+      label: 'Hidden gems & gaps',
+      items: [
+        'Which low-star repos punch above their weight by graph centrality?',
+        'What kinds of tools am I underexposed to given the rest of my stars?',
+        'Are there obvious duplicates — multiple repos solving the same problem?',
+        'Which authors do I follow heavily without realizing it?',
+      ],
+    },
+    {
+      label: 'Personal pattern',
+      items: [
+        'What does my star history say about my interests as a developer?',
+        'Where do the developers behind my favorite repos actually work?',
+        'If I had to delete half my stars, which clusters would I drop first?',
+      ],
+    },
   ];
 
   async function ask(question) {
-    setLoading(true); setAnswer(''); setError('');
+    setLoading(true); setAnswer(''); setError(''); setErrorCode('');
     try {
       const res = await fetch('/api/ask', {
         method: 'POST',
@@ -41,7 +81,7 @@ function AskView() {
         body: JSON.stringify({ question }),
       });
       const data = await res.json();
-      if (data.error) setError(data.error);
+      if (data.error) { setError(data.error); setErrorCode(data.code || ''); }
       else setAnswer(data.answer);
     } catch (e) {
       setError(e.message);
@@ -53,7 +93,7 @@ function AskView() {
   return (
     <div className="max-w-3xl">
       <h2 className="text-xl font-bold text-white mb-1">Ask about your stars</h2>
-      <p className="text-gray-400 text-sm mb-5">Questions are answered using the knowledge graph of your {1031} starred repos — communities, PageRank, lifecycle, connections.</p>
+      <p className="text-gray-400 text-sm mb-5">Questions are answered using the knowledge graph of your {stats?.nodeCount ?? '…'} starred repos — communities, PageRank, lifecycle, connections.</p>
 
       <div className="flex gap-2 mb-4">
         <input
@@ -70,16 +110,34 @@ function AskView() {
         >{loading ? '…' : 'Ask'}</button>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-6">
-        {SUGGESTIONS.map((s) => (
-          <button key={s} onClick={() => { setQ(s); ask(s); }}
-            className="px-3 py-1.5 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-full text-xs text-gray-300 transition-colors">
-            {s}
-          </button>
+      <div className="space-y-3 mb-6">
+        {SUGGESTION_GROUPS.map((group) => (
+          <div key={group.label}>
+            <div className="text-[11px] uppercase tracking-wider text-gray-500 mb-1.5">{group.label}</div>
+            <div className="flex flex-wrap gap-2">
+              {group.items.map((s) => (
+                <button key={s} onClick={() => { setQ(s); ask(s); }}
+                  className="px-3 py-1.5 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-full text-xs text-gray-300 transition-colors">
+                  {s}
+                </button>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
 
-      {error && <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>}
+      {error && errorCode === 'zai_no_balance' && (
+        <div className="bg-amber-900/30 border border-amber-600/60 rounded-lg p-4 text-amber-200 text-sm">
+          <div className="font-semibold mb-1">Z.AI account needs credit</div>
+          <p>The Ask AI feature is configured but the Z.AI account has no balance.{' '}
+            <a href="https://z.ai/manage-apikey/apikey-list" target="_blank" rel="noreferrer" className="underline hover:text-amber-100">
+              Add credit or a resource package
+            </a>{' '}and try again. Every other tab works without it.</p>
+        </div>
+      )}
+      {error && errorCode !== 'zai_no_balance' && (
+        <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>
+      )}
       {answer && (
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
           <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}</div>
