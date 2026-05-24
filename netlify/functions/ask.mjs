@@ -135,6 +135,7 @@ export default async function handler(req) {
       body: JSON.stringify({
         model: LLM_MODEL,
         max_tokens: 1024,
+        stream: true,
         messages: [
           { role: 'system', content: buildSystemPrompt(ctx) },
           { role: 'user', content: question },
@@ -142,8 +143,8 @@ export default async function handler(req) {
       }),
     });
 
-    if (!res.ok) {
-      const raw = await res.text();
+    if (!res.ok || !res.body) {
+      const raw = await res.text().catch(() => '');
       const msg = extractErrorMessage(raw).slice(0, 400);
       // Treat 402/403 + matching keyword, or 429 + billing keyword, as a
       // billing/quota issue rather than rate-limiting.
@@ -159,19 +160,85 @@ export default async function handler(req) {
         }, 402);
       }
       return jsonResponse({
-        error: `${PROVIDER} ${res.status}: ${msg}`,
+        error: `${PROVIDER} ${res.status}: ${msg || 'no response body'}`,
         code: 'upstream_error',
         provider: PROVIDER,
       }, 502);
     }
 
-    const data = await res.json();
-    const answer = data?.choices?.[0]?.message?.content ?? '';
-
-    return jsonResponse({ answer, model: LLM_MODEL, provider: PROVIDER });
+    // Proxy the upstream OpenAI-style SSE as our own SSE stream. We forward only
+    // visible answer tokens (delta.content) and emit `:` heartbeat comments
+    // during the model's reasoning phase so the gateway never sees an idle
+    // connection (the cause of the "Inactivity Timeout" 504).
+    const stream = streamCompletion(res.body);
+    return new Response(stream, {
+      status: 200,
+      headers: {
+        'Content-Type': 'text/event-stream; charset=utf-8',
+        'Cache-Control': 'no-cache, no-transform',
+        'Connection': 'keep-alive',
+        'Access-Control-Allow-Origin': '*',
+        'X-LLM-Model': LLM_MODEL,
+        'X-LLM-Provider': PROVIDER,
+      },
+    });
   } catch (err) {
     return jsonResponse({ error: err.message, code: 'fetch_error', provider: PROVIDER }, 500);
   }
+}
+
+// Transform an upstream OpenAI-compatible SSE body into our own SSE stream.
+// Emits: `data: {"v":"<token>"}` for content, `:` heartbeats during reasoning,
+// `data: {"done":true}` at the end, `data: {"error":...}` on mid-stream failure.
+function streamCompletion(upstreamBody) {
+  const encoder = new TextEncoder();
+  const decoder = new TextDecoder();
+  const send = (ctrl, obj) => ctrl.enqueue(encoder.encode(`data: ${JSON.stringify(obj)}\n\n`));
+  const heartbeat = (ctrl) => ctrl.enqueue(encoder.encode(`: keep-alive\n\n`));
+
+  return new ReadableStream({
+    async start(ctrl) {
+      // Immediate flush so headers + first byte reach the client right away.
+      heartbeat(ctrl);
+      const reader = upstreamBody.getReader();
+      let buffer = '';
+      let sawContent = false;
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+
+          // SSE frames are separated by blank lines.
+          let sep;
+          while ((sep = buffer.indexOf('\n\n')) !== -1) {
+            const frame = buffer.slice(0, sep);
+            buffer = buffer.slice(sep + 2);
+            for (const line of frame.split('\n')) {
+              if (!line.startsWith('data:')) continue;
+              const payload = line.slice(5).trim();
+              if (!payload || payload === '[DONE]') continue;
+              let json;
+              try { json = JSON.parse(payload); } catch { continue; }
+              const delta = json?.choices?.[0]?.delta ?? {};
+              if (typeof delta.content === 'string' && delta.content.length) {
+                sawContent = true;
+                send(ctrl, { v: delta.content });
+              } else if (delta.reasoning_content || (!sawContent && json?.choices)) {
+                // Still thinking — keep the pipe warm.
+                heartbeat(ctrl);
+              }
+            }
+          }
+        }
+        send(ctrl, { done: true });
+      } catch (err) {
+        send(ctrl, { error: err.message, code: 'stream_error' });
+      } finally {
+        ctrl.close();
+      }
+    },
+  });
 }
 
 export const config = { path: '/api/ask' };

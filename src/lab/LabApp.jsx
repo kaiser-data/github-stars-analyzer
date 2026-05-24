@@ -75,24 +75,78 @@ function AskView() {
 
   async function ask(question) {
     setLoading(true); setAnswer(''); setError(''); setErrorCode(''); setMeta(null);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 90_000);
     try {
       const res = await fetch('/api/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question }),
+        signal: controller.signal,
       });
-      const data = await res.json();
+
+      const contentType = res.headers.get('content-type') || '';
+
+      // Streaming success path: Server-Sent Events of answer tokens.
+      if (contentType.includes('text/event-stream')) {
+        setMeta({
+          model: res.headers.get('x-llm-model') || undefined,
+          provider: res.headers.get('x-llm-provider') || undefined,
+        });
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+        let acc = '';
+        let streamErr = null;
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          let sep;
+          while ((sep = buffer.indexOf('\n\n')) !== -1) {
+            const frame = buffer.slice(0, sep);
+            buffer = buffer.slice(sep + 2);
+            for (const line of frame.split('\n')) {
+              if (!line.startsWith('data:')) continue; // ignore `:` heartbeats
+              const payload = line.slice(5).trim();
+              if (!payload) continue;
+              let json;
+              try { json = JSON.parse(payload); } catch { continue; }
+              if (json.v) { acc += json.v; setAnswer(acc); }
+              else if (json.error) { streamErr = json.error; }
+            }
+          }
+        }
+        if (streamErr && !acc) { setError(streamErr); setErrorCode('stream_error'); }
+        return;
+      }
+
+      // Non-stream path: JSON error (no key, billing, upstream, etc.).
+      let data;
+      try {
+        data = await res.json();
+      } catch {
+        setError(`Server returned an unexpected response (HTTP ${res.status}). The model may have taken too long — try a shorter question.`);
+        setErrorCode('bad_response');
+        return;
+      }
       if (data.error) {
         setError(data.error);
         setErrorCode(data.code || '');
         if (data.provider) setMeta({ provider: data.provider });
-      } else {
+      } else if (data.answer) {
         setAnswer(data.answer);
         if (data.model || data.provider) setMeta({ model: data.model, provider: data.provider });
       }
     } catch (e) {
-      setError(e.message);
+      if (e.name === 'AbortError') {
+        setError('The request timed out. Try a shorter or more specific question.');
+        setErrorCode('timeout');
+      } else {
+        setError(e.message);
+      }
     } finally {
+      clearTimeout(timeout);
       setLoading(false);
     }
   }
@@ -149,10 +203,16 @@ function AskView() {
       {error && errorCode !== 'billing' && errorCode !== 'no_key' && (
         <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>
       )}
+      {loading && !answer && !error && (
+        <div className="bg-gray-800 border border-gray-700 rounded-lg p-5 text-gray-400 text-sm flex items-center gap-2">
+          <span className="inline-block w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+          {meta?.provider ? `${meta.provider} is thinking…` : 'Thinking…'}
+        </div>
+      )}
       {answer && (
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
-          <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}</div>
-          {(meta?.model || meta?.provider) && (
+          <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}{loading && <span className="inline-block w-1.5 h-4 ml-0.5 -mb-0.5 bg-blue-400 animate-pulse" />}</div>
+          {!loading && (meta?.model || meta?.provider) && (
             <div className="mt-4 pt-3 border-t border-gray-700/60 text-[11px] text-gray-500">
               {meta.model && <span className="font-mono">{meta.model}</span>}
               {meta.model && meta.provider && <span> · </span>}
