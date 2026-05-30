@@ -14,6 +14,7 @@
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { buildSystemPrompt } from '../../scripts/lib/ask-prompt.mjs';
 
 const LLM_API_KEY  = process.env.LLM_API_KEY  || process.env.ZAI_API_KEY;
 const LLM_BASE_URL = (process.env.LLM_BASE_URL || process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4').replace(/\/+$/, '');
@@ -59,38 +60,6 @@ function getContext() {
     graphContext = { summary: { total_repos: 0 }, communities: [], most_influential: [] };
   }
   return graphContext;
-}
-
-function buildSystemPrompt(ctx) {
-  const { summary, communities, most_influential } = ctx;
-
-  const commSummary = communities.slice(0, 12).map(c =>
-    `  Community ${c.id} (${c.size} repos, main language: ${c.top_language ?? 'mixed'}): topics [${c.top_topics.slice(0,5).join(', ')}], top repos: ${c.top_repos.slice(0,3).join(', ')}`
-  ).join('\n');
-
-  const influential = most_influential.slice(0, 15).map(r =>
-    `  ${r.full_name} (★${r.stars?.toLocaleString()}, ${r.lifecycle_stage}, community ${r.community})`
-  ).join('\n');
-
-  return `You are an expert analyst of a developer's GitHub starred repositories.
-You have access to a pre-computed knowledge graph of their ${summary.total_repos} starred repos.
-
-GRAPH OVERVIEW:
-- Total repos: ${summary.total_repos}
-- Communities detected: ${communities.length}
-- Lifecycle distribution: ${JSON.stringify(summary.lifecycle_distribution)}
-- Top languages: ${summary.top_languages?.slice(0,5).map(l => `${l.lang} (${l.count})`).join(', ')}
-
-COMMUNITIES (clusters of related repos by shared topics/authors):
-${commSummary}
-
-MOST INFLUENTIAL REPOS (by PageRank in the knowledge graph):
-${influential}
-
-Use this knowledge graph to give specific, grounded answers about the user's starred repos.
-Reference actual repo names, communities, and patterns you observe.
-Be concise and insightful — focus on what's non-obvious.
-If asked about a specific repo, relate it to its community and neighbors.`;
 }
 
 // Extract a human-readable message from a (possibly JSON) error body.

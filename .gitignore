@@ -23,6 +23,9 @@ src/data/classified-*.json
 src/data/.cache/
 # public/data/classified.json and graph.json are committed so Netlify can serve them
 
+# Graphify — keep the report + viewer + graph, drop the AST cache (rebuildable)
+graphify-out/cache/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -33,3 +36,5 @@ src/data/.cache/
 *.njsproj
 *.sln
 *.sw?
+# Local Netlify folder
+.netlify

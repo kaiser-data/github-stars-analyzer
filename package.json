@@ -33,6 +33,7 @@
     "refresh:ingest": "node --env-file=.env scripts/ingest.mjs --sample=src/data/sample-all.json --max-age=${MAX_AGE:-7}",
     "refresh:classify": "node scripts/classify.mjs --in=src/data/raw-all.json && cp src/data/classified-all.json public/data/classified.json && echo 'wrote public/data/classified.json'",
     "precompute": "node scripts/precompute.mjs",
+    "precompute:questions": "node --env-file=.env scripts/precompute-questions.mjs",
     "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run precompute"
   }
 }

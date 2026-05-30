@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { GraphProvider, useGraph } from './GraphProvider';
 import MapView from './MapView';
@@ -25,7 +25,30 @@ function AskView() {
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState('');
   const [errorCode, setErrorCode] = useState('');
-  const [meta, setMeta] = useState(null); // { model, provider }
+  const [meta, setMeta] = useState(null); // { model, provider, cached, generated_at }
+  // Map<question, {answer, model, provider, generated_at}> from /data/questions.json
+  const [cache, setCache] = useState(null);
+
+  useEffect(() => {
+    let aborted = false;
+    fetch('/data/questions.json')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (aborted || !data?.items) return;
+        const m = new Map();
+        for (const it of data.items) {
+          if (it.answer) m.set(it.question, {
+            answer: it.answer,
+            model: data.model,
+            provider: data.provider,
+            generated_at: data.generated_at,
+          });
+        }
+        setCache(m);
+      })
+      .catch(() => { /* cache is optional */ });
+    return () => { aborted = true; };
+  }, []);
 
   const SUGGESTION_GROUPS = [
     {
@@ -72,6 +95,19 @@ function AskView() {
       ],
     },
   ];
+
+  // Show a precomputed answer instantly if we have one; otherwise hit /api/ask.
+  function askMaybeCached(question) {
+    const hit = cache?.get(question);
+    if (hit) {
+      setAnswer(hit.answer);
+      setError(''); setErrorCode('');
+      setMeta({ model: hit.model, provider: hit.provider, cached: true, generated_at: hit.generated_at });
+      setLoading(false);
+      return;
+    }
+    return ask(question);
+  }
 
   async function ask(question) {
     setLoading(true); setAnswer(''); setError(''); setErrorCode(''); setMeta(null);
@@ -160,12 +196,12 @@ function AskView() {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && q.trim() && ask(q)}
+          onKeyDown={(e) => e.key === 'Enter' && q.trim() && askMaybeCached(q)}
           placeholder="Ask anything about your starred repos…"
           className="flex-1 px-4 py-2.5 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500"
         />
         <button
-          onClick={() => q.trim() && ask(q)}
+          onClick={() => q.trim() && askMaybeCached(q)}
           disabled={loading || !q.trim()}
           className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg font-medium text-white transition-colors"
         >{loading ? '…' : 'Ask'}</button>
@@ -176,12 +212,20 @@ function AskView() {
           <div key={group.label}>
             <div className="text-[11px] uppercase tracking-wider text-gray-500 mb-1.5">{group.label}</div>
             <div className="flex flex-wrap gap-2">
-              {group.items.map((s) => (
-                <button key={s} onClick={() => { setQ(s); ask(s); }}
-                  className="px-3 py-1.5 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-full text-xs text-gray-300 transition-colors">
-                  {s}
-                </button>
-              ))}
+              {group.items.map((s) => {
+                const isCached = cache?.has(s);
+                return (
+                  <button key={s} onClick={() => { setQ(s); askMaybeCached(s); }}
+                    title={isCached ? 'Instant answer — precomputed' : undefined}
+                    className={`px-3 py-1.5 border rounded-full text-xs transition-colors ${
+                      isCached
+                        ? 'bg-blue-900/30 hover:bg-blue-900/50 border-blue-700/60 text-blue-200'
+                        : 'bg-gray-800 hover:bg-gray-700 border-gray-700 text-gray-300'
+                    }`}>
+                    {isCached && <span className="mr-1 text-blue-400">✦</span>}{s}
+                  </button>
+                );
+              })}
             </div>
           </div>
         ))}
@@ -212,11 +256,21 @@ function AskView() {
       {answer && (
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
           <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}{loading && <span className="inline-block w-1.5 h-4 ml-0.5 -mb-0.5 bg-blue-400 animate-pulse" />}</div>
-          {!loading && (meta?.model || meta?.provider) && (
-            <div className="mt-4 pt-3 border-t border-gray-700/60 text-[11px] text-gray-500">
+          {!loading && (meta?.model || meta?.provider || meta?.cached) && (
+            <div className="mt-4 pt-3 border-t border-gray-700/60 text-[11px] text-gray-500 flex items-center gap-2 flex-wrap">
+              {meta.cached && (
+                <span className="text-blue-400">✦ instant · cached {meta.generated_at ? new Date(meta.generated_at).toLocaleDateString() : ''}</span>
+              )}
+              {meta.cached && (meta.model || meta.provider) && <span>·</span>}
               {meta.model && <span className="font-mono">{meta.model}</span>}
-              {meta.model && meta.provider && <span> · </span>}
+              {meta.model && meta.provider && <span>·</span>}
               {meta.provider && <span>via {meta.provider}</span>}
+              {meta.cached && (
+                <button onClick={() => q && ask(q)}
+                  className="ml-auto text-blue-400 hover:text-blue-300 underline">
+                  ask fresh
+                </button>
+              )}
             </div>
           )}
         </div>
