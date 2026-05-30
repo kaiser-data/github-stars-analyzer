@@ -1,13 +1,25 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { Suspense, lazy, useCallback, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { GraphProvider, useGraph } from './GraphProvider';
-import MapView from './MapView';
 import InsightFeed from './InsightFeed';
 import Comparator from './Comparator';
 import RepoDetail from './RepoDetail';
 import AllRepos from './AllRepos';
-import TopicMap from './TopicMap';
 import HealthHistogram from './HealthHistogram';
+
+// Lazy: both pull in react-force-graph-3d + three (~1.36 MB chunk).
+// Loaded only when the user actually opens the Map or Topics tab.
+const MapView = lazy(() => import('./MapView'));
+const TopicMap = lazy(() => import('./TopicMap'));
+
+function GraphTabFallback({ label = 'graph' }) {
+  return (
+    <div className="bg-gray-800/40 border border-gray-700 rounded-lg p-6 text-gray-400 text-sm flex items-center gap-3">
+      <span className="inline-block w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+      Loading 3D {label}…
+    </div>
+  );
+}
 
 const TABS = [
   { key: 'map', label: 'Map' },
@@ -358,8 +370,16 @@ function LabContent() {
       </div>
       {tab === 'insights' && <InsightFeed onSelect={select} />}
       {tab === 'all' && <AllRepos onSelect={select} />}
-      {tab === 'map' && <MapView onSelectNode={(n) => select(n ? n.full_name : null)} focusedRepoName={selected} />}
-      {tab === 'topics' && <TopicMap onSelect={select} />}
+      {tab === 'map' && (
+        <Suspense fallback={<GraphTabFallback label="map" />}>
+          <MapView onSelectNode={(n) => select(n ? n.full_name : null)} focusedRepoName={selected} />
+        </Suspense>
+      )}
+      {tab === 'topics' && (
+        <Suspense fallback={<GraphTabFallback label="topic graph" />}>
+          <TopicMap onSelect={select} />
+        </Suspense>
+      )}
       {tab === 'compare' && <Comparator initialA={compareA} initialB={compareB} />}
       {tab === 'ask' && <AskView />}
       {selected && <RepoDetail repoFullName={selected} onClose={closeDetail} onCompareWith={goCompare} />}
