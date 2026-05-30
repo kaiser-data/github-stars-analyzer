@@ -23,6 +23,18 @@ function patchThreeForcegraph() {
   };
 }
 
+// Heavy 3D / force-graph deps split off LabApp so the initial route can
+// stream + parse the React shell first; the 3D chunk loads in parallel.
+const THREE_CHUNK = new Set([
+  'three',
+  'three-spritetext',
+  'three-forcegraph',
+  'three-render-objects',
+  '3d-force-graph',
+  'react-force-graph-3d',
+  'd3-force-3d',
+]);
+
 export default defineConfig({
   plugins: [react(), patchThreeForcegraph()],
   resolve: {
@@ -38,5 +50,20 @@ export default defineConfig({
       'three-render-objects',
       '3d-force-graph',
     ],
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes('node_modules')) return;
+          // Match the package name (the segment after the last "node_modules/",
+          // accounting for scoped packages like @foo/bar).
+          const m = id.match(/node_modules\/(?:(@[^/]+)\/)?([^/]+)/);
+          if (!m) return;
+          const pkg = m[1] ? `${m[1]}/${m[2]}` : m[2];
+          if (THREE_CHUNK.has(pkg)) return 'three';
+        },
+      },
+    },
   },
 })

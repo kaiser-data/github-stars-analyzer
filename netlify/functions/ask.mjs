@@ -23,6 +23,44 @@ const LLM_MODEL    = process.env.LLM_MODEL    || process.env.ZAI_MODEL || 'glm-4
 // thinking, so give the visible answer headroom. Tunable per-model via env.
 const LLM_MAX_TOKENS = Number(process.env.LLM_MAX_TOKENS) || 2048;
 
+// Soft per-IP rate guard. In-memory (best-effort — Netlify Function instances
+// are stateless across cold starts, so this caps per-instance bursts rather
+// than absolute traffic). Stops one tab / one script from quickly burning the
+// LLM plan. Disable by setting RATE_LIMIT_RPM=0.
+const RATE_LIMIT_RPM = Number.isFinite(Number(process.env.RATE_LIMIT_RPM))
+  ? Number(process.env.RATE_LIMIT_RPM)
+  : 20;
+const RATE_WINDOW_MS = 60_000;
+const rateLog = new Map(); // ip -> number[] of recent request timestamps
+function clientIp(req) {
+  const h = req.headers;
+  return (
+    h.get('x-nf-client-connection-ip') ||
+    (h.get('x-forwarded-for') || '').split(',')[0].trim() ||
+    'unknown'
+  );
+}
+function rateCheck(ip) {
+  if (RATE_LIMIT_RPM <= 0) return { allowed: true };
+  const now = Date.now();
+  const cutoff = now - RATE_WINDOW_MS;
+  const arr = (rateLog.get(ip) || []).filter((t) => t > cutoff);
+  if (arr.length >= RATE_LIMIT_RPM) {
+    const retryMs = arr[0] + RATE_WINDOW_MS - now;
+    return { allowed: false, retryAfter: Math.max(1, Math.ceil(retryMs / 1000)) };
+  }
+  arr.push(now);
+  rateLog.set(ip, arr);
+  // Opportunistic cleanup so the map doesn't grow unbounded.
+  if (rateLog.size > 1000) {
+    for (const [k, v] of rateLog) {
+      const fresh = v.filter((t) => t > cutoff);
+      if (fresh.length) rateLog.set(k, fresh); else rateLog.delete(k);
+    }
+  }
+  return { allowed: true };
+}
+
 // Map a base URL host to a friendly provider label (display only).
 const PROVIDER_HOSTS = [
   [/(^|\.)z\.ai$/i,             'Z.AI'],
@@ -90,6 +128,15 @@ export default async function handler(req) {
   const { question } = await req.json();
   if (!question?.trim()) {
     return jsonResponse({ error: 'question is required' }, 400);
+  }
+
+  const rl = rateCheck(clientIp(req));
+  if (!rl.allowed) {
+    return jsonResponse(
+      { error: `Rate limit: max ${RATE_LIMIT_RPM} requests/min. Try again in ${rl.retryAfter}s.`, code: 'rate_limited' },
+      429,
+      { 'Retry-After': String(rl.retryAfter) },
+    );
   }
 
   if (!LLM_API_KEY) {
