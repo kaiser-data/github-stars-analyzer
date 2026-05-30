@@ -9,7 +9,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 14,
+      "community": 13,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "vite.config.js",
       "source_location": "L1",
       "id": "vite_config_js",
-      "community": 10,
+      "community": 8,
       "norm_label": "vite.config.js"
     },
     {
@@ -27,8 +27,17 @@
       "source_file": "vite.config.js",
       "source_location": "L9",
       "id": "github_stars_analyzer_vite_config_patchthreeforcegraph",
-      "community": 10,
+      "community": 8,
       "norm_label": "patchthreeforcegraph()"
+    },
+    {
+      "label": "manualChunks()",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L57",
+      "id": "github_stars_analyzer_vite_config_manualchunks",
+      "community": 8,
+      "norm_label": "manualchunks()"
     },
     {
       "label": "postcss.config.js",
@@ -36,7 +45,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 15,
+      "community": 14,
       "norm_label": "postcss.config.js"
     },
     {
@@ -45,35 +54,80 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L1",
       "id": "netlify_functions_ask_mjs",
-      "community": 6,
+      "community": 1,
       "norm_label": "ask.mjs"
+    },
+    {
+      "label": "clientIp()",
+      "file_type": "code",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L35",
+      "id": "functions_ask_clientip",
+      "community": 1,
+      "norm_label": "clientip()"
+    },
+    {
+      "label": "rateCheck()",
+      "file_type": "code",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L43",
+      "id": "functions_ask_ratecheck",
+      "community": 1,
+      "norm_label": "ratecheck()"
+    },
+    {
+      "label": "providerLabel()",
+      "file_type": "code",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L78",
+      "id": "functions_ask_providerlabel",
+      "community": 1,
+      "norm_label": "providerlabel()"
     },
     {
       "label": "getContext()",
       "file_type": "code",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L22",
+      "source_location": "L92",
       "id": "functions_ask_getcontext",
-      "community": 6,
+      "community": 1,
       "norm_label": "getcontext()"
     },
     {
-      "label": "buildSystemPrompt()",
+      "label": "extractErrorMessage()",
       "file_type": "code",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L34",
-      "id": "functions_ask_buildsystemprompt",
-      "community": 6,
-      "norm_label": "buildsystemprompt()"
+      "source_location": "L104",
+      "id": "functions_ask_extracterrormessage",
+      "community": 1,
+      "norm_label": "extracterrormessage()"
+    },
+    {
+      "label": "jsonResponse()",
+      "file_type": "code",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L118",
+      "id": "functions_ask_jsonresponse",
+      "community": 1,
+      "norm_label": "jsonresponse()"
     },
     {
       "label": "handler()",
       "file_type": "code",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L66",
+      "source_location": "L125",
       "id": "functions_ask_handler",
-      "community": 6,
+      "community": 1,
       "norm_label": "handler()"
+    },
+    {
+      "label": "streamCompletion()",
+      "file_type": "code",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L212",
+      "id": "functions_ask_streamcompletion",
+      "community": 1,
+      "norm_label": "streamcompletion()"
     },
     {
       "label": "sample.mjs",
@@ -81,7 +135,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L1",
       "id": "scripts_sample_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "sample.mjs"
     },
     {
@@ -90,7 +144,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L19",
       "id": "scripts_sample_fetchallstarred",
-      "community": 1,
+      "community": 2,
       "norm_label": "fetchallstarred()"
     },
     {
@@ -99,7 +153,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L52",
       "id": "scripts_sample_pickstratified",
-      "community": 1,
+      "community": 2,
       "norm_label": "pickstratified()"
     },
     {
@@ -108,7 +162,7 @@
       "source_file": "scripts/precompute.mjs",
       "source_location": "L1",
       "id": "scripts_precompute_mjs",
-      "community": 11,
+      "community": 10,
       "norm_label": "precompute.mjs"
     },
     {
@@ -117,7 +171,7 @@
       "source_file": "scripts/precompute.mjs",
       "source_location": "L30",
       "id": "scripts_precompute_jaccard",
-      "community": 11,
+      "community": 10,
       "norm_label": "jaccard()"
     },
     {
@@ -126,7 +180,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L1",
       "id": "scripts_ingest_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "ingest.mjs"
     },
     {
@@ -135,7 +189,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L83",
       "id": "scripts_ingest_pickreadme",
-      "community": 1,
+      "community": 2,
       "norm_label": "pickreadme()"
     },
     {
@@ -144,7 +198,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L93",
       "id": "scripts_ingest_projectrepo",
-      "community": 1,
+      "community": 2,
       "norm_label": "projectrepo()"
     },
     {
@@ -184,12 +238,39 @@
       "norm_label": "keyfor()"
     },
     {
+      "label": "precompute-questions.mjs",
+      "file_type": "code",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L1",
+      "id": "scripts_precompute_questions_mjs",
+      "community": 1,
+      "norm_label": "precompute-questions.mjs"
+    },
+    {
+      "label": "providerOf()",
+      "file_type": "code",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L38",
+      "id": "scripts_precompute_questions_providerof",
+      "community": 1,
+      "norm_label": "providerof()"
+    },
+    {
+      "label": "ask()",
+      "file_type": "code",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L47",
+      "id": "scripts_precompute_questions_ask",
+      "community": 1,
+      "norm_label": "ask()"
+    },
+    {
       "label": "classify.mjs",
       "file_type": "code",
       "source_file": "scripts/classify.mjs",
       "source_location": "L1",
       "id": "scripts_classify_mjs",
-      "community": 2,
+      "community": 3,
       "norm_label": "classify.mjs"
     },
     {
@@ -198,7 +279,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L15",
       "id": "scripts_classify_daysago",
-      "community": 2,
+      "community": 3,
       "norm_label": "daysago()"
     },
     {
@@ -207,7 +288,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L20",
       "id": "scripts_classify_busfactor",
-      "community": 2,
+      "community": 3,
       "norm_label": "busfactor()"
     },
     {
@@ -216,7 +297,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L35",
       "id": "scripts_classify_lifecyclestage",
-      "community": 2,
+      "community": 3,
       "norm_label": "lifecyclestage()"
     },
     {
@@ -225,7 +306,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L67",
       "id": "scripts_classify_healthscore",
-      "community": 2,
+      "community": 3,
       "norm_label": "healthscore()"
     },
     {
@@ -234,8 +315,26 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L94",
       "id": "scripts_classify_momentum",
-      "community": 2,
+      "community": 3,
       "norm_label": "momentum()"
+    },
+    {
+      "label": "ask-prompt.mjs",
+      "file_type": "code",
+      "source_file": "scripts/lib/ask-prompt.mjs",
+      "source_location": "L1",
+      "id": "scripts_lib_ask_prompt_mjs",
+      "community": 1,
+      "norm_label": "ask-prompt.mjs"
+    },
+    {
+      "label": "buildSystemPrompt()",
+      "file_type": "code",
+      "source_file": "scripts/lib/ask-prompt.mjs",
+      "source_location": "L6",
+      "id": "lib_ask_prompt_buildsystemprompt",
+      "community": 1,
+      "norm_label": "buildsystemprompt()"
     },
     {
       "label": "github.mjs",
@@ -243,7 +342,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L1",
       "id": "scripts_lib_github_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "github.mjs"
     },
     {
@@ -252,7 +351,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L6",
       "id": "lib_github_gettoken",
-      "community": 1,
+      "community": 2,
       "norm_label": "gettoken()"
     },
     {
@@ -261,7 +360,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L12",
       "id": "lib_github_authheader",
-      "community": 1,
+      "community": 2,
       "norm_label": "authheader()"
     },
     {
@@ -270,7 +369,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L18",
       "id": "lib_github_rest",
-      "community": 1,
+      "community": 2,
       "norm_label": "rest()"
     },
     {
@@ -279,7 +378,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L34",
       "id": "lib_github_graphql",
-      "community": 1,
+      "community": 2,
       "norm_label": "graphql()"
     },
     {
@@ -288,7 +387,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L54",
       "id": "lib_github_lograte",
-      "community": 1,
+      "community": 2,
       "norm_label": "lograte()"
     },
     {
@@ -297,7 +396,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L64",
       "id": "lib_github_sleep",
-      "community": 1,
+      "community": 2,
       "norm_label": "sleep()"
     },
     {
@@ -306,7 +405,7 @@
       "source_file": "src/GitHubStarsAnalyzer.jsx",
       "source_location": "L1",
       "id": "src_githubstarsanalyzer_jsx",
-      "community": 12,
+      "community": 11,
       "norm_label": "githubstarsanalyzer.jsx"
     },
     {
@@ -315,7 +414,7 @@
       "source_file": "src/GitHubStarsAnalyzer.jsx",
       "source_location": "L29",
       "id": "src_githubstarsanalyzer_githubstarsanalyzer",
-      "community": 12,
+      "community": 11,
       "norm_label": "githubstarsanalyzer()"
     },
     {
@@ -324,7 +423,7 @@
       "source_file": "src/main.jsx",
       "source_location": "L1",
       "id": "src_main_jsx",
-      "community": 13,
+      "community": 12,
       "norm_label": "main.jsx"
     },
     {
@@ -333,7 +432,7 @@
       "source_file": "src/main.jsx",
       "source_location": "L8",
       "id": "src_main_navbar",
-      "community": 13,
+      "community": 12,
       "norm_label": "navbar()"
     },
     {
@@ -342,7 +441,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L1",
       "id": "src_lab_topicmap_jsx",
-      "community": 3,
+      "community": 4,
       "norm_label": "topicmap.jsx"
     },
     {
@@ -351,7 +450,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L16",
       "id": "lab_topicmap_buildtopicgraph",
-      "community": 3,
+      "community": 4,
       "norm_label": "buildtopicgraph()"
     },
     {
@@ -360,7 +459,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L54",
       "id": "lab_topicmap_topicgraphtofg",
-      "community": 3,
+      "community": 4,
       "norm_label": "topicgraphtofg()"
     },
     {
@@ -369,7 +468,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L72",
       "id": "lab_topicmap_reposbytopic",
-      "community": 3,
+      "community": 4,
       "norm_label": "reposbytopic()"
     },
     {
@@ -378,7 +477,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L103",
       "id": "lab_topicmap_controlpanel",
-      "community": 3,
+      "community": 4,
       "norm_label": "controlpanel()"
     },
     {
@@ -387,7 +486,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L133",
       "id": "lab_topicmap_topicmap",
-      "community": 3,
+      "community": 4,
       "norm_label": "topicmap()"
     },
     {
@@ -423,7 +522,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L1",
       "id": "src_lab_repodetail_jsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "repodetail.jsx"
     },
     {
@@ -432,7 +531,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L4",
       "id": "lab_repodetail_stagebadge",
-      "community": 4,
+      "community": 5,
       "norm_label": "stagebadge()"
     },
     {
@@ -441,7 +540,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L15",
       "id": "lab_repodetail_healthbar",
-      "community": 4,
+      "community": 5,
       "norm_label": "healthbar()"
     },
     {
@@ -450,7 +549,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L28",
       "id": "lab_repodetail_metriccell",
-      "community": 4,
+      "community": 5,
       "norm_label": "metriccell()"
     },
     {
@@ -459,7 +558,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L37",
       "id": "lab_repodetail_findneighbors",
-      "community": 4,
+      "community": 5,
       "norm_label": "findneighbors()"
     },
     {
@@ -468,7 +567,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L52",
       "id": "lab_repodetail_repodetail",
-      "community": 4,
+      "community": 5,
       "norm_label": "repodetail()"
     },
     {
@@ -477,7 +576,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L1",
       "id": "src_lab_comparator_jsx",
-      "community": 8,
+      "community": 0,
       "norm_label": "comparator.jsx"
     },
     {
@@ -486,7 +585,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L5",
       "id": "lab_comparator_findpath",
-      "community": 8,
+      "community": 0,
       "norm_label": "findpath()"
     },
     {
@@ -495,7 +594,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L45",
       "id": "lab_comparator_metricrow",
-      "community": 8,
+      "community": 0,
       "norm_label": "metricrow()"
     },
     {
@@ -504,7 +603,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L55",
       "id": "lab_comparator_comparator",
-      "community": 8,
+      "community": 0,
       "norm_label": "comparator()"
     },
     {
@@ -549,7 +648,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L1",
       "id": "src_lab_insightfeed_jsx",
-      "community": 5,
+      "community": 6,
       "norm_label": "insightfeed.jsx"
     },
     {
@@ -558,7 +657,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L5",
       "id": "lab_insightfeed_downloadblob",
-      "community": 5,
+      "community": 6,
       "norm_label": "downloadblob()"
     },
     {
@@ -567,7 +666,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L17",
       "id": "lab_insightfeed_rowstocsv",
-      "community": 5,
+      "community": 6,
       "norm_label": "rowstocsv()"
     },
     {
@@ -576,7 +675,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L31",
       "id": "lab_insightfeed_resulttable",
-      "community": 5,
+      "community": 6,
       "norm_label": "resulttable()"
     },
     {
@@ -585,7 +684,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L77",
       "id": "lab_insightfeed_insightfeed",
-      "community": 5,
+      "community": 6,
       "norm_label": "insightfeed()"
     },
     {
@@ -598,10 +697,19 @@
       "norm_label": "labapp.jsx"
     },
     {
+      "label": "GraphTabFallback()",
+      "file_type": "code",
+      "source_file": "src/lab/LabApp.jsx",
+      "source_location": "L15",
+      "id": "lab_labapp_graphtabfallback",
+      "community": 0,
+      "norm_label": "graphtabfallback()"
+    },
+    {
       "label": "AskView()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L21",
+      "source_location": "L33",
       "id": "lab_labapp_askview",
       "community": 0,
       "norm_label": "askview()"
@@ -610,7 +718,7 @@
       "label": "StatusBanner()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L150",
+      "source_location": "L294",
       "id": "lab_labapp_statusbanner",
       "community": 0,
       "norm_label": "statusbanner()"
@@ -619,7 +727,7 @@
       "label": "LabContent()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L174",
+      "source_location": "L318",
       "id": "lab_labapp_labcontent",
       "community": 0,
       "norm_label": "labcontent()"
@@ -628,7 +736,7 @@
       "label": "LabApp()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L238",
+      "source_location": "L390",
       "id": "lab_labapp_labapp",
       "community": 0,
       "norm_label": "labapp()"
@@ -704,8 +812,68 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_src": "vite_config_js",
+      "_tgt": "github_stars_analyzer_vite_config_manualchunks",
+      "source": "vite_config_js",
+      "target": "github_stars_analyzer_vite_config_manualchunks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L22",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "scripts_lib_ask_prompt_mjs",
+      "source": "netlify_functions_ask_mjs",
+      "target": "scripts_lib_ask_prompt_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "functions_ask_clientip",
+      "source": "netlify_functions_ask_mjs",
+      "target": "functions_ask_clientip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "functions_ask_ratecheck",
+      "source": "netlify_functions_ask_mjs",
+      "target": "functions_ask_ratecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "functions_ask_providerlabel",
+      "source": "netlify_functions_ask_mjs",
+      "target": "functions_ask_providerlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L92",
       "weight": 1.0,
       "_src": "netlify_functions_ask_mjs",
       "_tgt": "functions_ask_getcontext",
@@ -717,19 +885,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L34",
+      "source_location": "L104",
       "weight": 1.0,
       "_src": "netlify_functions_ask_mjs",
-      "_tgt": "functions_ask_buildsystemprompt",
+      "_tgt": "functions_ask_extracterrormessage",
       "source": "netlify_functions_ask_mjs",
-      "target": "functions_ask_buildsystemprompt",
+      "target": "functions_ask_extracterrormessage",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L66",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "functions_ask_jsonresponse",
+      "source": "netlify_functions_ask_mjs",
+      "target": "functions_ask_jsonresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L125",
       "weight": 1.0,
       "_src": "netlify_functions_ask_mjs",
       "_tgt": "functions_ask_handler",
@@ -738,10 +918,46 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L212",
+      "weight": 1.0,
+      "_src": "netlify_functions_ask_mjs",
+      "_tgt": "functions_ask_streamcompletion",
+      "source": "netlify_functions_ask_mjs",
+      "target": "functions_ask_streamcompletion",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L81",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "functions_ask_handler",
+      "_tgt": "functions_ask_clientip",
+      "source": "functions_ask_clientip",
+      "target": "functions_ask_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "functions_ask_handler",
+      "_tgt": "functions_ask_ratecheck",
+      "source": "functions_ask_ratecheck",
+      "target": "functions_ask_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L147",
       "weight": 1.0,
       "_src": "functions_ask_handler",
       "_tgt": "functions_ask_getcontext",
@@ -753,13 +969,49 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L92",
+      "source_location": "L167",
       "weight": 1.0,
       "_src": "functions_ask_handler",
-      "_tgt": "functions_ask_buildsystemprompt",
-      "source": "functions_ask_buildsystemprompt",
+      "_tgt": "functions_ask_extracterrormessage",
+      "source": "functions_ask_extracterrormessage",
       "target": "functions_ask_handler",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "functions_ask_handler",
+      "_tgt": "functions_ask_jsonresponse",
+      "source": "functions_ask_jsonresponse",
+      "target": "functions_ask_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L192",
+      "weight": 1.0,
+      "_src": "functions_ask_handler",
+      "_tgt": "functions_ask_streamcompletion",
+      "source": "functions_ask_handler",
+      "target": "functions_ask_streamcompletion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_src": "functions_ask_handler",
+      "_tgt": "lib_ask_prompt_buildsystemprompt",
+      "source": "functions_ask_handler",
+      "target": "lib_ask_prompt_buildsystemprompt"
     },
     {
       "relation": "imports_from",
@@ -918,6 +1170,42 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "scripts_precompute_questions_mjs",
+      "_tgt": "scripts_lib_ask_prompt_mjs",
+      "source": "scripts_precompute_questions_mjs",
+      "target": "scripts_lib_ask_prompt_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_src": "scripts_precompute_questions_mjs",
+      "_tgt": "scripts_precompute_questions_providerof",
+      "source": "scripts_precompute_questions_mjs",
+      "target": "scripts_precompute_questions_providerof",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/precompute-questions.mjs",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "scripts_precompute_questions_mjs",
+      "_tgt": "scripts_precompute_questions_ask",
+      "source": "scripts_precompute_questions_mjs",
+      "target": "scripts_precompute_questions_ask",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/classify.mjs",
@@ -1011,6 +1299,18 @@
       "_tgt": "scripts_classify_daysago",
       "source": "scripts_classify_daysago",
       "target": "scripts_classify_momentum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/ask-prompt.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "scripts_lib_ask_prompt_mjs",
+      "_tgt": "lib_ask_prompt_buildsystemprompt",
+      "source": "scripts_lib_ask_prompt_mjs",
+      "target": "lib_ask_prompt_buildsystemprompt",
       "confidence_score": 1.0
     },
     {
@@ -1485,7 +1785,19 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L21",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "src_lab_labapp_jsx",
+      "_tgt": "lab_labapp_graphtabfallback",
+      "source": "src_lab_labapp_jsx",
+      "target": "lab_labapp_graphtabfallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lab/LabApp.jsx",
+      "source_location": "L33",
       "weight": 1.0,
       "_src": "src_lab_labapp_jsx",
       "_tgt": "lab_labapp_askview",
@@ -1497,7 +1809,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L150",
+      "source_location": "L294",
       "weight": 1.0,
       "_src": "src_lab_labapp_jsx",
       "_tgt": "lab_labapp_statusbanner",
@@ -1509,7 +1821,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L174",
+      "source_location": "L318",
       "weight": 1.0,
       "_src": "src_lab_labapp_jsx",
       "_tgt": "lab_labapp_labcontent",
@@ -1521,7 +1833,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L238",
+      "source_location": "L390",
       "weight": 1.0,
       "_src": "src_lab_labapp_jsx",
       "_tgt": "lab_labapp_labapp",
