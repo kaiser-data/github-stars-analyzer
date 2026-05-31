@@ -25,6 +25,7 @@ GENERATORS = [
     "llm_evaluation.py",
     "rag_tooling.py",
     "mcp_tooling.py",
+    "openclaw_ecosystem.py",
 ]
 
 def run_generators():
