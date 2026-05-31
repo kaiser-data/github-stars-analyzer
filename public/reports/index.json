@@ -1,6 +1,6 @@
 {
   "generated": "2026-05-31",
-  "count": 6,
+  "count": 7,
   "reports": [
     {
       "slug": "mcp-tooling",
@@ -42,6 +42,47 @@
       "snapshot": "2026-05-24T19:57:47.245Z",
       "generated": "2026-05-31",
       "generator": "scripts/reports/mcp_tooling.py"
+    },
+    {
+      "slug": "agent-orchestration",
+      "title": "AI Agent Orchestration \u2014 Landscape Report",
+      "file": "agent-orchestration.md",
+      "category": "AI / Agents",
+      "summary": "30 agent-orchestration tools (974,076\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
+      "tool_count": 30,
+      "total_stars": 974076,
+      "categories": {
+        "Code-first": 10,
+        "Visual": 4,
+        "Coding-agent": 9,
+        "Agent OS": 1,
+        "Infra": 2
+      },
+      "top_tools": [
+        {
+          "name": "n8n-io/n8n",
+          "stars": 189534
+        },
+        {
+          "name": "langgenius/dify",
+          "stars": 142465
+        },
+        {
+          "name": "TauricResearch/TradingAgents",
+          "stars": 79218
+        },
+        {
+          "name": "bytedance/deer-flow",
+          "stars": 69408
+        },
+        {
+          "name": "code-yeongyu/oh-my-openagent",
+          "stars": 59264
+        }
+      ],
+      "snapshot": "2026-05-24T19:57:47.245Z",
+      "generated": "2026-05-31",
+      "generator": "scripts/reports/agent_orchestration.py"
     },
     {
       "slug": "openclaw-ecosystem",

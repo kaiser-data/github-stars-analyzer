@@ -27,6 +27,7 @@ GENERATORS = [
     "mcp_tooling.py",
     "openclaw_ecosystem.py",
     "token_savings.py",
+    "agent_orchestration.py",
 ]
 
 def run_generators():
