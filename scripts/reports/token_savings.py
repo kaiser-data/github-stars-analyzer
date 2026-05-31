@@ -26,41 +26,59 @@ OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 
 # ---- Curated taxonomy --------------------------------------------------------
-# full_name -> (scope, mechanism, claimed_saving, note)
+# Primary axis = WORKLOAD (what you're spending tokens on), because that's what
+# decides which saver is relevant. full_name -> (workload, mechanism, claim, note)
+WORKLOADS = [
+    "Coding agents & codebases",
+    "Generation & structured prompting",
+    "Retrieval, RAG & documents",
+    "Long-running agents & memory",
+    "Model & inference level",
+    "Methodology / cross-cutting",
+]
 TAXONOMY = {
-    # ===== CODING (coding agents / codebase context) =====
-    "rtk-ai/rtk": ("Coding", "Wire-level proxy", "60–90% on dev cmds",
+    # ===== Coding agents & codebases =====
+    "rtk-ai/rtk": ("Coding agents & codebases", "Wire-level proxy", "60–90% on dev cmds",
         "CLI proxy that intercepts common dev commands; integration-free 'install once, save everywhere'."),
-    "colbymchenry/codegraph": ("Coding", "Code index/graph", "~70%",
+    "colbymchenry/codegraph": ("Coding agents & codebases", "Code index/graph", "~70%",
         "Pre-indexed code knowledge graph for Claude Code/Codex/Cursor/OpenCode/Hermes — query instead of read."),
-    "mksglu/context-mode": ("Coding", "Tool-output sandbox", "98% on tool output",
+    "mksglu/context-mode": ("Coding agents & codebases", "Tool-output sandbox", "98% on tool output",
         "Sandboxes/truncates tool output in the context window; 15 platforms."),
-    "MinishLab/semble": ("Coding", "Semantic code search", "~98% vs grep+read",
+    "MinishLab/semble": ("Coding agents & codebases", "Semantic code search", "~98% vs grep+read",
         "Fast, accurate code search for agents — replaces the grep+read pattern that dominates coding context."),
-    "getagentseal/codeburn": ("Coding", "Measurement / observability", "— (measures)",
+    "getagentseal/codeburn": ("Coding agents & codebases", "Measurement / observability", "— (measures)",
         "TUI dashboard showing where your Claude Code/Codex/Cursor tokens go. Measure before you optimize."),
-    "yvgude/lean-ctx": ("Coding", "Context layer", "qualitative",
+    "yvgude/lean-ctx": ("Coding agents & codebases", "Context layer", "qualitative",
         "Cognitive context layer: 51+ MCP tools, multiple read modes, surgical reads (also in the MCP report)."),
-    "JuliusBrussee/caveman": ("Coding", "Prompt-style skill", "~65%",
+    "JuliusBrussee/caveman": ("Coding agents & codebases", "Prompt-style skill", "~65%",
         "Claude Code skill that trims tokens by emitting terse 'caveman' output — cheap to try, trades readability."),
-    "HKUDS/FastCode": ("Coding", "Code understanding", "qualitative",
+    "HKUDS/FastCode": ("Coding agents & codebases", "Code understanding", "qualitative",
         "Accelerates/streamlines code understanding — but low health and stale; verify first."),
 
-    # ===== GENERAL (formats, data, model/inference, knowledge) =====
-    "toon-format/toon": ("General", "Compact data format", "~30–50% on structured data",
-        "Token-Oriented Object Notation — schema-aware, human-readable replacement for JSON in prompts."),
-    "bytebase/dbhub": ("General", "Token-efficient DB access", "qualitative",
-        "Zero-dependency, token-efficient database MCP server (Postgres/MySQL/SQL Server/…)."),
-    "thedotmack/claude-mem": ("General", "Session compression", "qualitative",
-        "Compresses & persists session context across runs (also in the Memory report)."),
-    "vllm-project/llm-compressor": ("General", "Model weight compression", "n/a (inference, not prompt)",
-        "Compresses model *weights* for cheaper inference — different layer than prompt-token savings; included for contrast."),
-    "deepseek-ai/DeepSeek-OCR": ("General", "Optical context compression", "research",
-        "'Contexts Optical Compression' — renders context to images to fit more in window; low health & stale."),
-    "iternal-technologies-partners/blockify-agentic-data-optimization": ("General", "Data optimization (RAG)", "qualitative",
-        "Replaces naive chunking with dense 'blocks' for enterprise RAG; declining/low health."),
-    "davidkimai/Context-Engineering": ("General", "Methodology / guide", "— (educational)",
-        "A guide to filling the context window with just the right info — concepts, not a tool; stale."),
+    # ===== Generation & structured prompting =====
+    "toon-format/toon": ("Generation & structured prompting", "Compact data format", "~30–50% on structured data",
+        "Token-Oriented Object Notation — schema-aware, human-readable replacement for JSON when you feed data "
+        "into prompts or ask for structured output. Cross-cutting, but lives at the generation/prompt layer."),
+
+    # ===== Retrieval, RAG & documents =====
+    "bytebase/dbhub": ("Retrieval, RAG & documents", "Token-efficient DB access", "qualitative",
+        "Zero-dependency, token-efficient database MCP server (Postgres/MySQL/SQL Server/…) — keeps query results lean."),
+    "iternal-technologies-partners/blockify-agentic-data-optimization": ("Retrieval, RAG & documents", "Data optimization (RAG)", "qualitative",
+        "Replaces naive chunking with dense 'blocks' so retrieved context is smaller; declining/low health."),
+    "deepseek-ai/DeepSeek-OCR": ("Retrieval, RAG & documents", "Optical context compression", "research",
+        "'Contexts Optical Compression' — renders document context to images to fit more in window; low health & stale."),
+
+    # ===== Long-running agents & memory =====
+    "thedotmack/claude-mem": ("Long-running agents & memory", "Session compression", "qualitative",
+        "Compresses & persists session context across runs so long projects don't re-pay for history (also in the Memory report)."),
+
+    # ===== Model & inference level (not prompt tokens) =====
+    "vllm-project/llm-compressor": ("Model & inference level", "Model weight compression", "n/a (inference, not prompt)",
+        "Compresses model *weights* for cheaper/faster inference — a different layer than prompt-token savings; included for contrast."),
+
+    # ===== Methodology / cross-cutting =====
+    "davidkimai/Context-Engineering": ("Methodology / cross-cutting", "Methodology / guide", "— (educational)",
+        "A guide to filling the context window with just the right info — concepts that apply to every workload above; stale."),
 }
 
 # ---- Load --------------------------------------------------------------------
@@ -131,33 +149,41 @@ A(">")
 A(f"> Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d')} by "
   f"`scripts/reports/token_savings.py` (regenerate any time — no API cost).")
 A("")
-A("> **Read this first:** these tools cut tokens at *different layers* (codebase reads, "
-  "tool output, data format, the wire, model weights). They mostly **compose** rather than "
-  "compete. All **% figures are the projects' own claims** on the May-2026 snapshot — not "
-  "independently benchmarked here.")
+A("> **Read this first:** the right token-saver depends on **what you're spending tokens "
+  "on** — reading code, generating structured output, retrieving documents, or carrying "
+  "long-session memory. So this report is organized **by workload**, not by tool type. "
+  "Tools at different layers mostly **compose** rather than compete. All **% figures are "
+  "the projects' own claims** on the May-2026 snapshot — not independently benchmarked here.")
 A("")
 
 present = [n for n in sel_names if n in by_name]
 total_stars = sum(by_name[n]["stars"] for n in present)
-coding = [n for n in present if scope_of(n) == "Coding"]
-general = [n for n in present if scope_of(n) == "General"]
+by_workload = {w: [n for n in present if scope_of(n) == w] for w in WORKLOADS}
+coding = by_workload["Coding agents & codebases"]
 
 # --- Executive summary
 A("## Executive summary")
 A("")
 A(f"- **{len(present)} token-savings tools** in your stars (**{fmt_int(total_stars)}★**), "
-  f"split into **{len(coding)} coding-focused** and **{len(general)} general-purpose**.")
-A(f"- **Coding is where the tokens are.** For coding agents the biggest sink is "
-  f"*reading the codebase* — so the highest-leverage tools index/search code "
-  f"(`semble`, `codegraph`) or tame tool output (`context-mode`).")
+  f"organized by workload:")
+for w in WORKLOADS:
+    m = by_workload[w]
+    if m:
+        A(f"  - **{w}** ({len(m)}): "
+          + ", ".join(f"`{x.split('/')[-1]}`" for x in sorted(m, key=lambda x: -by_name[x]['stars'])))
+A(f"- **Your collection skews hard to coding** — {len(coding)} of {len(present)} tools. The "
+  f"big coding sink is *reading the codebase*, so the highest-leverage picks index/search "
+  f"code (`semble`, `codegraph`) or tame tool output (`context-mode`).")
+A(f"- **Different workload, different layer:** generation savings live in the *prompt/format* "
+  f"(`toon`); retrieval savings in *what you fetch* (`dbhub`, `blockify`); long agents in "
+  f"*session memory* (`claude-mem`); and model-level compression (`llm-compressor`) is a "
+  f"separate concern entirely (cheaper inference, not fewer prompt tokens).")
 A(f"- **The one integration-free win:** `rtk` (a CLI proxy) claims 60–90% with no per-agent "
-  f"setup — the best 'install once' option, and the most-starred ({fmt_int(by_name['rtk-ai/rtk']['stars'])}★).")
-A(f"- **General tooling works at the format/data layer** (`toon` compact serialization, "
-  f"`dbhub` efficient DB access) and **composes** with the coding tools above.")
+  f"setup — and it's the most-starred here ({fmt_int(by_name['rtk-ai/rtk']['stars'])}★).")
 A(f"- **Measure first:** `codeburn` shows where tokens actually go before you optimize.")
 A("")
 
-# --- Quick comparison tables per scope
+# --- Comparison tables, one per workload
 def comp_table(names, header):
     A(f"### {header}")
     A("")
@@ -165,32 +191,44 @@ def comp_table(names, header):
     A("|---|---|---|---|---|---|")
     for n in sorted(names, key=lambda x: -by_name[x]["stars"]):
         r = by_name[n]
-        scope, mech, claim, _ = TAXONOMY[n]
+        _, mech, claim, _note = TAXONOMY[n]
         A(f"| [{n}]({r['url']}) | {fmt_int(r['stars'])} | {r.get('health_score','—')} | "
           f"{activity_label(r)} | {mech} | {claim} |")
     A("")
 
-A("## Comparison")
+A("## Comparison by workload")
 A("")
-comp_table(coding, "Coding-agent / codebase token savings")
-comp_table(general, "General / other token savings")
+for w in WORKLOADS:
+    if by_workload[w]:
+        comp_table(by_workload[w], w)
 
 # --- Deep dives
 A("## Details")
 A("")
-for scope, names, blurb in [
-    ("Coding", coding, "Token savings aimed at coding agents (Claude Code, Codex, Cursor, "
-        "OpenCode, Hermes) and codebase context — the largest token sink for most users."),
-    ("General", general, "Token / context savings that aren't coding-specific: data formats, "
-        "DB access, session compression, model-weight & research approaches."),
-]:
-    A(f"### {scope}")
+workload_blurb = {
+    "Coding agents & codebases": "Claude Code, Codex, Cursor, OpenCode, Hermes — the biggest "
+        "token sink for most users, dominated by reading/searching source and tool output.",
+    "Generation & structured prompting": "When you feed data into prompts or ask for "
+        "structured output — savings come from a tighter serialization format.",
+    "Retrieval, RAG & documents": "When tokens go to fetched context — keep what you retrieve "
+        "small and dense.",
+    "Long-running agents & memory": "Multi-session work where re-sending history is the cost — "
+        "compress and persist instead.",
+    "Model & inference level": "A different layer: shrink the *model* for cheaper inference "
+        "(doesn't reduce your prompt tokens).",
+    "Methodology / cross-cutting": "Principles that apply across every workload above.",
+}
+for w in WORKLOADS:
+    names = by_workload[w]
+    if not names:
+        continue
+    A(f"### {w}")
     A("")
-    A(f"_{blurb}_")
+    A(f"_{workload_blurb[w]}_")
     A("")
     for n in sorted(names, key=lambda x: -by_name[x]["stars"]):
         r = by_name[n]
-        scope2, mech, claim, note = TAXONOMY[n]
+        _, mech, claim, note = TAXONOMY[n]
         topics = ", ".join((r.get("topics") or [])[:6]) or "—"
         A(f"- **[{n}]({r['url']})** · {fmt_int(r['stars'])}★ · {r.get('primary_language') or '—'} · "
           f"{r.get('lifecycle_stage','—')} · health {r.get('health_score','—')} · _{mech}_ · **{claim}**  ")
@@ -240,7 +278,7 @@ risky = [n for n in present
          or (by_name[n].get("days_since_push") or 0) > 45
          or by_name[n].get("lifecycle_stage") in ("Declining", "Abandoned")]
 if risky:
-    A("| Tool | Scope | Health | Lifecycle | Last push |")
+    A("| Tool | Workload | Health | Lifecycle | Last push |")
     A("|---|---|---|---|---|")
     for n in sorted(risky, key=lambda x: by_name[x].get("health_score") or 0):
         r = by_name[n]
@@ -310,8 +348,8 @@ A("- **% savings are vendor-claimed**, measured on the projects' own workloads �
 A("- **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and "
   "may lag GitHub. Re-run after a fresh `classified.json` to refresh.")
 A("")
-A(f"<sub>Tools covered: {len(present)} ({len(coding)} coding / {len(general)} general) · "
-  f"Snapshot: {gen}</sub>")
+A(f"<sub>Tools covered: {len(present)} across {sum(1 for w in WORKLOADS if by_workload[w])} "
+  f"workloads · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:
     f.write("\n".join(lines) + "\n")
@@ -323,13 +361,18 @@ meta = {
     "title": TITLE,
     "file": f"{SLUG}.md",
     "category": "AI / Efficiency",
-    "summary": (f"{len(present)} token-savings tools ({fmt_int(total_stars)}★), split "
-                f"{len(coding)} coding (code search/index, tool-output sandbox, CLI proxy) vs "
-                f"{len(general)} general (compact formats, DB access, session/model "
-                "compression). Includes a stacking guide and risk flags."),
+    "summary": (f"{len(present)} token-savings tools ({fmt_int(total_stars)}★), organized by "
+                "workload — coding agents/codebases, generation/prompting, retrieval/RAG, "
+                "long-running memory, and model-level. Includes a stacking guide and risk flags."),
     "tool_count": len(present),
     "total_stars": total_stars,
-    "categories": {"Coding": len(coding), "General": len(general)},
+    "categories": {
+        "Coding": len(by_workload["Coding agents & codebases"]),
+        "Generation": len(by_workload["Generation & structured prompting"]),
+        "Retrieval": len(by_workload["Retrieval, RAG & documents"]),
+        "Memory": len(by_workload["Long-running agents & memory"]),
+        "Model-level": len(by_workload["Model & inference level"]),
+    },
     "top_tools": [{"name": n, "stars": by_name[n]["stars"]} for n in top],
     "snapshot": gen,
     "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -340,7 +383,8 @@ with open(META_OUT, "w") as f:
 
 print(f"Wrote {OUT}")
 print(f"Wrote {META_OUT}")
-print(f"  tools: {len(present)} / {len(sel_names)}  (coding: {len(coding)}, general: {len(general)})")
+print(f"  tools: {len(present)} / {len(sel_names)}  "
+      + " | ".join(f"{w.split()[0]}:{len(by_workload[w])}" for w in WORKLOADS if by_workload[w]))
 missing = [n for n in sel_names if n not in by_name]
 if missing:
     print("  WARNING missing:", missing)

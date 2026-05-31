@@ -3,12 +3,15 @@
   "title": "Token-Savings & Context-Efficiency Tooling",
   "file": "token-savings.md",
   "category": "AI / Efficiency",
-  "summary": "15 token-savings tools (311,195\u2605), split 8 coding (code search/index, tool-output sandbox, CLI proxy) vs 7 general (compact formats, DB access, session/model compression). Includes a stacking guide and risk flags.",
+  "summary": "15 token-savings tools (311,195\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
   "tool_count": 15,
   "total_stars": 311195,
   "categories": {
     "Coding": 8,
-    "General": 7
+    "Generation": 1,
+    "Retrieval": 3,
+    "Memory": 1,
+    "Model-level": 1
   },
   "top_tools": [
     {

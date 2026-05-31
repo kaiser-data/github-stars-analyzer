@@ -4,19 +4,25 @@
 >
 > Generated 2026-05-31 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
-> **Read this first:** these tools cut tokens at *different layers* (codebase reads, tool output, data format, the wire, model weights). They mostly **compose** rather than compete. All **% figures are the projects' own claims** on the May-2026 snapshot — not independently benchmarked here.
+> **Read this first:** the right token-saver depends on **what you're spending tokens on** — reading code, generating structured output, retrieving documents, or carrying long-session memory. So this report is organized **by workload**, not by tool type. Tools at different layers mostly **compose** rather than compete. All **% figures are the projects' own claims** on the May-2026 snapshot — not independently benchmarked here.
 
 ## Executive summary
 
-- **15 token-savings tools** in your stars (**311,195★**), split into **8 coding-focused** and **7 general-purpose**.
-- **Coding is where the tokens are.** For coding agents the biggest sink is *reading the codebase* — so the highest-leverage tools index/search code (`semble`, `codegraph`) or tame tool output (`context-mode`).
-- **The one integration-free win:** `rtk` (a CLI proxy) claims 60–90% with no per-agent setup — the best 'install once' option, and the most-starred (53,585★).
-- **General tooling works at the format/data layer** (`toon` compact serialization, `dbhub` efficient DB access) and **composes** with the coding tools above.
+- **15 token-savings tools** in your stars (**311,195★**), organized by workload:
+  - **Coding agents & codebases** (8): `caveman`, `rtk`, `codegraph`, `context-mode`, `codeburn`, `semble`, `FastCode`, `lean-ctx`
+  - **Generation & structured prompting** (1): `toon`
+  - **Retrieval, RAG & documents** (3): `DeepSeek-OCR`, `dbhub`, `blockify-agentic-data-optimization`
+  - **Long-running agents & memory** (1): `claude-mem`
+  - **Model & inference level** (1): `llm-compressor`
+  - **Methodology / cross-cutting** (1): `Context-Engineering`
+- **Your collection skews hard to coding** — 8 of 15 tools. The big coding sink is *reading the codebase*, so the highest-leverage picks index/search code (`semble`, `codegraph`) or tame tool output (`context-mode`).
+- **Different workload, different layer:** generation savings live in the *prompt/format* (`toon`); retrieval savings in *what you fetch* (`dbhub`, `blockify`); long agents in *session memory* (`claude-mem`); and model-level compression (`llm-compressor`) is a separate concern entirely (cheaper inference, not fewer prompt tokens).
+- **The one integration-free win:** `rtk` (a CLI proxy) claims 60–90% with no per-agent setup — and it's the most-starred here (53,585★).
 - **Measure first:** `codeburn` shows where tokens actually go before you optimize.
 
-## Comparison
+## Comparison by workload
 
-### Coding-agent / codebase token savings
+### Coding agents & codebases
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
@@ -29,23 +35,43 @@
 | [HKUDS/FastCode](https://github.com/HKUDS/FastCode) | 2,169 | 48 | slowing | Code understanding | qualitative |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | 2,146 | 79 | very active | Context layer | qualitative |
 
-### General / other token savings
+### Generation & structured prompting
+
+| Tool | ★ | Health | Activity | Mechanism | Claimed saving |
+|---|---|---|---|---|---|
+| [toon-format/toon](https://github.com/toon-format/toon) | 24,362 | 74 | very active | Compact data format | ~30–50% on structured data |
+
+### Retrieval, RAG & documents
+
+| Tool | ★ | Health | Activity | Mechanism | Claimed saving |
+|---|---|---|---|---|---|
+| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | 23,165 | 21 | slowing | Optical context compression | research |
+| [bytebase/dbhub](https://github.com/bytebase/dbhub) | 2,824 | 57 | active | Token-efficient DB access | qualitative |
+| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 196 | 41 | active | Data optimization (RAG) | qualitative |
+
+### Long-running agents & memory
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 77,829 | 79 | very active | Session compression | qualitative |
-| [toon-format/toon](https://github.com/toon-format/toon) | 24,362 | 74 | very active | Compact data format | ~30–50% on structured data |
-| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | 23,165 | 21 | slowing | Optical context compression | research |
-| [davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering) | 9,007 | 38 | slowing | Methodology / guide | — (educational) |
+
+### Model & inference level
+
+| Tool | ★ | Health | Activity | Mechanism | Claimed saving |
+|---|---|---|---|---|---|
 | [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | 3,280 | 84 | very active | Model weight compression | n/a (inference, not prompt) |
-| [bytebase/dbhub](https://github.com/bytebase/dbhub) | 2,824 | 57 | active | Token-efficient DB access | qualitative |
-| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 196 | 41 | active | Data optimization (RAG) | qualitative |
+
+### Methodology / cross-cutting
+
+| Tool | ★ | Health | Activity | Mechanism | Claimed saving |
+|---|---|---|---|---|---|
+| [davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering) | 9,007 | 38 | slowing | Methodology / guide | — (educational) |
 
 ## Details
 
-### Coding
+### Coding agents & codebases
 
-_Token savings aimed at coding agents (Claude Code, Codex, Cursor, OpenCode, Hermes) and codebase context — the largest token sink for most users._
+_Claude Code, Codex, Cursor, OpenCode, Hermes — the biggest token sink for most users, dominated by reading/searching source and tool output._
 
 - **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 64,286★ · JavaScript · Hot · health 74 · _Prompt-style skill_ · **~65%**  
   Claude Code skill that trims tokens by emitting terse 'caveman' output — cheap to try, trades readability.  
@@ -72,30 +98,50 @@ _Token savings aimed at coding agents (Claude Code, Codex, Cursor, OpenCode, Her
   Cognitive context layer: 51+ MCP tools, multiple read modes, surgical reads (also in the MCP report).  
   <sub>topics: ai, cursor, llm, mcp, rust, token-optimization</sub>
 
-### General
+### Generation & structured prompting
 
-_Token / context savings that aren't coding-specific: data formats, DB access, session compression, model-weight & research approaches._
+_When you feed data into prompts or ask for structured output — savings come from a tighter serialization format._
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 77,829★ · TypeScript · Rising · health 79 · _Session compression_ · **qualitative**  
-  Compresses & persists session context across runs (also in the Memory report).  
-  <sub>topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, claude</sub>
 - **[toon-format/toon](https://github.com/toon-format/toon)** · 24,362★ · TypeScript · Hot · health 74 · _Compact data format_ · **~30–50% on structured data**  
-  Token-Oriented Object Notation — schema-aware, human-readable replacement for JSON in prompts.  
+  Token-Oriented Object Notation — schema-aware, human-readable replacement for JSON when you feed data into prompts or ask for structured output. Cross-cutting, but lives at the generation/prompt layer.  
   <sub>topics: data-format, llm, serialization, tokenization</sub>
+
+### Retrieval, RAG & documents
+
+_When tokens go to fetched context — keep what you retrieve small and dense._
+
 - **[deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)** · 23,165★ · Python · Declining · health 21 · _Optical context compression_ · **research**  
-  'Contexts Optical Compression' — renders context to images to fit more in window; low health & stale.  
+  'Contexts Optical Compression' — renders document context to images to fit more in window; low health & stale.  
   <sub>topics: —</sub>
-- **[davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering)** · 9,007★ · Python · Declining · health 38 · _Methodology / guide_ · **— (educational)**  
-  A guide to filling the context window with just the right info — concepts, not a tool; stale.  
-  <sub>topics: —</sub>
-- **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** · 3,280★ · Python · Hot · health 84 · _Model weight compression_ · **n/a (inference, not prompt)**  
-  Compresses model *weights* for cheaper inference — different layer than prompt-token savings; included for contrast.  
-  <sub>topics: compression, quantization</sub>
 - **[bytebase/dbhub](https://github.com/bytebase/dbhub)** · 2,824★ · TypeScript · Hot · health 57 · _Token-efficient DB access_ · **qualitative**  
-  Zero-dependency, token-efficient database MCP server (Postgres/MySQL/SQL Server/…).  
+  Zero-dependency, token-efficient database MCP server (Postgres/MySQL/SQL Server/…) — keeps query results lean.  
   <sub>topics: ai, anthropic, claude, database, mcp, mcp-server</sub>
 - **[iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization)** · 196★ · Python · Declining · health 41 · _Data optimization (RAG)_ · **qualitative**  
-  Replaces naive chunking with dense 'blocks' for enterprise RAG; declining/low health.  
+  Replaces naive chunking with dense 'blocks' so retrieved context is smaller; declining/low health.  
+  <sub>topics: —</sub>
+
+### Long-running agents & memory
+
+_Multi-session work where re-sending history is the cost — compress and persist instead._
+
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 77,829★ · TypeScript · Rising · health 79 · _Session compression_ · **qualitative**  
+  Compresses & persists session context across runs so long projects don't re-pay for history (also in the Memory report).  
+  <sub>topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, claude</sub>
+
+### Model & inference level
+
+_A different layer: shrink the *model* for cheaper inference (doesn't reduce your prompt tokens)._
+
+- **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** · 3,280★ · Python · Hot · health 84 · _Model weight compression_ · **n/a (inference, not prompt)**  
+  Compresses model *weights* for cheaper/faster inference — a different layer than prompt-token savings; included for contrast.  
+  <sub>topics: compression, quantization</sub>
+
+### Methodology / cross-cutting
+
+_Principles that apply across every workload above._
+
+- **[davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering)** · 9,007★ · Python · Declining · health 38 · _Methodology / guide_ · **— (educational)**  
+  A guide to filling the context window with just the right info — concepts that apply to every workload above; stale.  
   <sub>topics: —</sub>
 
 ## How to stack them
@@ -127,12 +173,12 @@ Because they hit different layers, a strong setup combines several:
 
 Low health and/or stale — verify before relying on:
 
-| Tool | Scope | Health | Lifecycle | Last push |
+| Tool | Workload | Health | Lifecycle | Last push |
 |---|---|---|---|---|
-| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | General | 21 | Declining | 3mo ago |
-| [davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering) | General | 38 | Declining | 2mo ago |
-| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | General | 41 | Declining | 1mo ago |
-| [HKUDS/FastCode](https://github.com/HKUDS/FastCode) | Coding | 48 | Rising | 2mo ago |
+| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | Retrieval, RAG & documents | 21 | Declining | 3mo ago |
+| [davidkimai/Context-Engineering](https://github.com/davidkimai/Context-Engineering) | Methodology / cross-cutting | 38 | Declining | 2mo ago |
+| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | Retrieval, RAG & documents | 41 | Declining | 1mo ago |
+| [HKUDS/FastCode](https://github.com/HKUDS/FastCode) | Coding agents & codebases | 48 | Rising | 2mo ago |
 
 ## Graph analysis — how they relate
 
@@ -168,4 +214,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 (8 coding / 7 general) · Snapshot: 2026-05-24T19:57:47.245Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-05-24T19:57:47.245Z</sub>
