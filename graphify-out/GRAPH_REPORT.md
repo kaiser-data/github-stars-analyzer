@@ -1,7 +1,7 @@
 # Graph Report - github-stars-analyzer  (2026-05-31)
 
 ## Corpus Check
-- 31 files · ~59,712 words
+- 31 files · ~59,713 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
