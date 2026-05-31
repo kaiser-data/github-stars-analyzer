@@ -24,6 +24,7 @@ GENERATORS = [
     "memory_frameworks.py",
     "llm_evaluation.py",
     "rag_tooling.py",
+    "mcp_tooling.py",
 ]
 
 def run_generators():
