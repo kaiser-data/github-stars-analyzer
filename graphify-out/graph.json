@@ -412,7 +412,7 @@
       "label": "run_generators()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "reports_build_index_run_generators",
       "community": 13,
       "norm_label": "run_generators()"
@@ -421,7 +421,7 @@
       "label": "build()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "reports_build_index_build",
       "community": 13,
       "norm_label": "build()"
@@ -517,12 +517,57 @@
       "norm_label": "activity_label()"
     },
     {
+      "label": "mcp_tooling.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L1",
+      "id": "scripts_reports_mcp_tooling_py",
+      "community": 9,
+      "norm_label": "mcp_tooling.py"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L101",
+      "id": "reports_mcp_tooling_node_for",
+      "community": 9,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L106",
+      "id": "reports_mcp_tooling_fmt_int",
+      "community": 9,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L112",
+      "id": "reports_mcp_tooling_days_to_human",
+      "community": 9,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L122",
+      "id": "reports_mcp_tooling_activity_label",
+      "community": 9,
+      "norm_label": "activity_label()"
+    },
+    {
       "label": "rag_tooling.py",
       "file_type": "code",
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L1",
       "id": "scripts_reports_rag_tooling_py",
-      "community": 9,
+      "community": 10,
       "norm_label": "rag_tooling.py"
     },
     {
@@ -531,7 +576,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L96",
       "id": "reports_rag_tooling_node_for",
-      "community": 9,
+      "community": 10,
       "norm_label": "node_for()"
     },
     {
@@ -540,7 +585,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L101",
       "id": "reports_rag_tooling_fmt_int",
-      "community": 9,
+      "community": 10,
       "norm_label": "fmt_int()"
     },
     {
@@ -549,7 +594,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L107",
       "id": "reports_rag_tooling_days_to_human",
-      "community": 9,
+      "community": 10,
       "norm_label": "days_to_human()"
     },
     {
@@ -558,7 +603,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L117",
       "id": "reports_rag_tooling_activity_label",
-      "community": 9,
+      "community": 10,
       "norm_label": "activity_label()"
     },
     {
@@ -855,7 +900,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L1",
       "id": "src_lab_insightfeed_jsx",
-      "community": 10,
+      "community": 0,
       "norm_label": "insightfeed.jsx"
     },
     {
@@ -864,7 +909,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L5",
       "id": "lab_insightfeed_downloadblob",
-      "community": 10,
+      "community": 0,
       "norm_label": "downloadblob()"
     },
     {
@@ -873,7 +918,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L17",
       "id": "lab_insightfeed_rowstocsv",
-      "community": 10,
+      "community": 0,
       "norm_label": "rowstocsv()"
     },
     {
@@ -882,7 +927,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L31",
       "id": "lab_insightfeed_resulttable",
-      "community": 10,
+      "community": 0,
       "norm_label": "resulttable()"
     },
     {
@@ -891,7 +936,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L77",
       "id": "lab_insightfeed_insightfeed",
-      "community": 10,
+      "community": 0,
       "norm_label": "insightfeed()"
     },
     {
@@ -1629,7 +1674,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_run_generators",
@@ -1641,7 +1686,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_build",
@@ -1743,6 +1788,54 @@
       "_tgt": "reports_llm_evaluation_activity_label",
       "source": "scripts_reports_llm_evaluation_py",
       "target": "reports_llm_evaluation_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_src": "scripts_reports_mcp_tooling_py",
+      "_tgt": "reports_mcp_tooling_node_for",
+      "source": "scripts_reports_mcp_tooling_py",
+      "target": "reports_mcp_tooling_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_src": "scripts_reports_mcp_tooling_py",
+      "_tgt": "reports_mcp_tooling_fmt_int",
+      "source": "scripts_reports_mcp_tooling_py",
+      "target": "reports_mcp_tooling_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_src": "scripts_reports_mcp_tooling_py",
+      "_tgt": "reports_mcp_tooling_days_to_human",
+      "source": "scripts_reports_mcp_tooling_py",
+      "target": "reports_mcp_tooling_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_src": "scripts_reports_mcp_tooling_py",
+      "_tgt": "reports_mcp_tooling_activity_label",
+      "source": "scripts_reports_mcp_tooling_py",
+      "target": "reports_mcp_tooling_activity_label",
       "confidence_score": 1.0
     },
     {
