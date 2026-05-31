@@ -26,6 +26,7 @@ GENERATORS = [
     "rag_tooling.py",
     "mcp_tooling.py",
     "openclaw_ecosystem.py",
+    "token_savings.py",
 ]
 
 def run_generators():

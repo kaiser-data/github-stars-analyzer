@@ -1,0 +1,38 @@
+{
+  "slug": "token-savings",
+  "title": "Token-Savings & Context-Efficiency Tooling",
+  "file": "token-savings.md",
+  "category": "AI / Efficiency",
+  "summary": "15 token-savings tools (311,195\u2605), split 8 coding (code search/index, tool-output sandbox, CLI proxy) vs 7 general (compact formats, DB access, session/model compression). Includes a stacking guide and risk flags.",
+  "tool_count": 15,
+  "total_stars": 311195,
+  "categories": {
+    "Coding": 8,
+    "General": 7
+  },
+  "top_tools": [
+    {
+      "name": "thedotmack/claude-mem",
+      "stars": 77829
+    },
+    {
+      "name": "JuliusBrussee/caveman",
+      "stars": 64286
+    },
+    {
+      "name": "rtk-ai/rtk",
+      "stars": 53585
+    },
+    {
+      "name": "toon-format/toon",
+      "stars": 24362
+    },
+    {
+      "name": "deepseek-ai/DeepSeek-OCR",
+      "stars": 23165
+    }
+  ],
+  "snapshot": "2026-05-24T19:57:47.245Z",
+  "generated": "2026-05-31",
+  "generator": "scripts/reports/token_savings.py"
+}
