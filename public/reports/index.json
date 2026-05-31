@@ -1,0 +1,127 @@
+{
+  "generated": "2026-05-31",
+  "count": 3,
+  "reports": [
+    {
+      "slug": "rag-tooling",
+      "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
+      "file": "rag-tooling.md",
+      "category": "AI / RAG",
+      "summary": "27 RAG tools (567,212\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
+      "tool_count": 27,
+      "total_stars": 567212,
+      "categories": {
+        "RAG framework / engine": 10,
+        "Vector DB / search": 7,
+        "Ingestion / parsing / chunking": 4,
+        "Embeddings / rerankers": 3,
+        "Novel retrieval approach": 3
+      },
+      "top_tools": [
+        {
+          "name": "infiniflow/ragflow",
+          "stars": 81143
+        },
+        {
+          "name": "PaddlePaddle/PaddleOCR",
+          "stars": 78454
+        },
+        {
+          "name": "run-llama/llama_index",
+          "stars": 49640
+        },
+        {
+          "name": "facebookresearch/faiss",
+          "stars": 40116
+        },
+        {
+          "name": "HKUDS/LightRAG",
+          "stars": 35669
+        }
+      ],
+      "snapshot": "2026-05-24T19:57:47.245Z",
+      "generated": "2026-05-31",
+      "generator": "scripts/reports/rag_tooling.py"
+    },
+    {
+      "slug": "memory-frameworks-for-llm-agents",
+      "title": "Memory Frameworks for LLMs & Agents \u2014 Comparative Report",
+      "file": "memory-frameworks-for-llm-agents.md",
+      "category": "AI / Agents",
+      "summary": "21 LLM/agent memory frameworks (323,585\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
+      "tool_count": 21,
+      "total_stars": 323585,
+      "categories": {
+        "General memory layer": 12,
+        "Coding-agent memory": 4,
+        "Knowledge-graph memory": 4,
+        "LLM framework w/ memory": 1
+      },
+      "top_tools": [
+        {
+          "name": "thedotmack/claude-mem",
+          "stars": 77829
+        },
+        {
+          "name": "mem0ai/mem0",
+          "stars": 56594
+        },
+        {
+          "name": "MemPalace/mempalace",
+          "stars": 52767
+        },
+        {
+          "name": "getzep/graphiti",
+          "stars": 26478
+        },
+        {
+          "name": "gastownhall/beads",
+          "stars": 24064
+        }
+      ],
+      "snapshot": "2026-05-24T19:57:47.245Z",
+      "generated": "2026-05-31",
+      "generator": "scripts/reports/memory_frameworks.py"
+    },
+    {
+      "slug": "llm-evaluation-tooling",
+      "title": "LLM Evaluation Tooling \u2014 Landscape Report",
+      "file": "llm-evaluation-tooling.md",
+      "category": "AI / Evaluation",
+      "summary": "18 LLM evaluation tools (113,734\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+      "tool_count": 18,
+      "total_stars": 113734,
+      "categories": {
+        "Observability + eval platform": 5,
+        "Evaluation framework": 4,
+        "Benchmark / leaderboard": 5,
+        "Safety / red-team": 4
+      },
+      "top_tools": [
+        {
+          "name": "langfuse/langfuse",
+          "stars": 27824
+        },
+        {
+          "name": "mlflow/mlflow",
+          "stars": 26085
+        },
+        {
+          "name": "comet-ml/opik",
+          "stars": 19366
+        },
+        {
+          "name": "confident-ai/deepeval",
+          "stars": 15669
+        },
+        {
+          "name": "NVIDIA/garak",
+          "stars": 7896
+        }
+      ],
+      "snapshot": "2026-05-24T19:57:47.245Z",
+      "generated": "2026-05-31",
+      "generator": "scripts/reports/llm_evaluation.py"
+    }
+  ]
+}

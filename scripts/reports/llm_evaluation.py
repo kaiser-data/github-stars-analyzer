@@ -352,6 +352,27 @@ A(f"<sub>Tools covered: {len(present)} · Snapshot: {gen}</sub>")
 with open(OUT, "w") as f:
     f.write("\n".join(lines) + "\n")
 
+# --- Sidecar meta (consumed by build_reports_index.py) ------------------------
+_top = sorted(present, key=lambda x: -by_name[x]["stars"])[:5]
+meta = {
+    "slug": "llm-evaluation-tooling",
+    "title": "LLM Evaluation Tooling — Landscape Report",
+    "file": "llm-evaluation-tooling.md",
+    "category": "AI / Evaluation",
+    "summary": (f"{len(present)} LLM evaluation tools ({fmt_int(total_stars)}★): "
+                "observability+eval platforms, eval frameworks, benchmarks/leaderboards, "
+                "and safety/red-team — framed online vs. offline."),
+    "tool_count": len(present),
+    "total_stars": total_stars,
+    "categories": {c: len(cats.get(c, [])) for c in order},
+    "top_tools": [{"name": n, "stars": by_name[n]["stars"]} for n in _top],
+    "snapshot": gen,
+    "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    "generator": "scripts/reports/llm_evaluation.py",
+}
+with open(os.path.join(ROOT, "reports/llm-evaluation-tooling.meta.json"), "w") as f:
+    json.dump(meta, f, indent=2)
+
 print(f"Wrote {OUT}")
 print(f"  tools: {len(present)} / {len(sel_names)} curated")
 missing = [n for n in sel_names if n not in by_name]

@@ -347,6 +347,29 @@ A(f"<sub>Frameworks covered: {len(present)} · Snapshot: {gen}</sub>")
 with open(OUT, "w") as f:
     f.write("\n".join(lines) + "\n")
 
+# --- Sidecar meta (consumed by build_reports_index.py) ------------------------
+_order = ["General memory layer", "Coding-agent memory", "Knowledge-graph memory", "LLM framework w/ memory"]
+_cats = {c: sum(1 for n in present if TAXONOMY[n][0] == c) for c in _order}
+_top = sorted(present, key=lambda x: -by_name[x]["stars"])[:5]
+meta = {
+    "slug": "memory-frameworks-for-llm-agents",
+    "title": "Memory Frameworks for LLMs & Agents — Comparative Report",
+    "file": "memory-frameworks-for-llm-agents.md",
+    "category": "AI / Agents",
+    "summary": (f"{len(present)} LLM/agent memory frameworks ({fmt_int(total_stars)}★) across "
+                "general memory layers, coding-agent memory, knowledge-graph memory, and "
+                "framework-bundled memory — plus storage substrates."),
+    "tool_count": len(present),
+    "total_stars": total_stars,
+    "categories": _cats,
+    "top_tools": [{"name": n, "stars": by_name[n]["stars"]} for n in _top],
+    "snapshot": gen,
+    "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    "generator": "scripts/reports/memory_frameworks.py",
+}
+with open(os.path.join(ROOT, "reports/memory-frameworks-for-llm-agents.meta.json"), "w") as f:
+    json.dump(meta, f, indent=2)
+
 print(f"Wrote {OUT}")
 print(f"  frameworks: {len(present)} | substrate: {sum(1 for n in SUBSTRATE if n in by_name)}")
 missing = [n for n in sel_names if n not in by_name]

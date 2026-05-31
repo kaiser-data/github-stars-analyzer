@@ -11,6 +11,8 @@ import HealthHistogram from './HealthHistogram';
 // Loaded only when the user actually opens the Map or Topics tab.
 const MapView = lazy(() => import('./MapView'));
 const TopicMap = lazy(() => import('./TopicMap'));
+// Lazy: pulls in react-markdown + remark-gfm; only loaded on the Reports tab.
+const ReportsView = lazy(() => import('./ReportsView'));
 
 function GraphTabFallback({ label = 'graph' }) {
   return (
@@ -21,12 +23,22 @@ function GraphTabFallback({ label = 'graph' }) {
   );
 }
 
+function TabFallback({ label = 'content' }) {
+  return (
+    <div className="bg-gray-800/40 border border-gray-700 rounded-lg p-6 text-gray-400 text-sm flex items-center gap-3">
+      <span className="inline-block w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+      Loading {label}…
+    </div>
+  );
+}
+
 const TABS = [
   { key: 'map', label: 'Map' },
   { key: 'topics', label: 'Topics' },
   { key: 'insights', label: 'Insights' },
   { key: 'all', label: 'Browse' },
   { key: 'compare', label: 'Compare' },
+  { key: 'reports', label: 'Reports' },
   { key: 'ask', label: 'Ask AI' },
 ];
 
@@ -381,6 +393,11 @@ function LabContent() {
         </Suspense>
       )}
       {tab === 'compare' && <Comparator initialA={compareA} initialB={compareB} />}
+      {tab === 'reports' && (
+        <Suspense fallback={<TabFallback label="reports" />}>
+          <ReportsView />
+        </Suspense>
+      )}
       {tab === 'ask' && <AskView />}
       {selected && <RepoDetail repoFullName={selected} onClose={closeDetail} onCompareWith={goCompare} />}
     </div>
