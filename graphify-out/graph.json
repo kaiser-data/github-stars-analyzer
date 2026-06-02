@@ -270,7 +270,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L1",
       "id": "scripts_classify_mjs",
-      "community": 6,
+      "community": 7,
       "norm_label": "classify.mjs"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L15",
       "id": "scripts_classify_daysago",
-      "community": 6,
+      "community": 7,
       "norm_label": "daysago()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L20",
       "id": "scripts_classify_busfactor",
-      "community": 6,
+      "community": 7,
       "norm_label": "busfactor()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L35",
       "id": "scripts_classify_lifecyclestage",
-      "community": 6,
+      "community": 7,
       "norm_label": "lifecyclestage()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L67",
       "id": "scripts_classify_healthscore",
-      "community": 6,
+      "community": 7,
       "norm_label": "healthscore()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L94",
       "id": "scripts_classify_momentum",
-      "community": 6,
+      "community": 7,
       "norm_label": "momentum()"
     },
     {
@@ -412,7 +412,7 @@
       "label": "run_generators()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "reports_build_index_run_generators",
       "community": 15,
       "norm_label": "run_generators()"
@@ -421,7 +421,7 @@
       "label": "build()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L43",
+      "source_location": "L44",
       "id": "reports_build_index_build",
       "community": 15,
       "norm_label": "build()"
@@ -515,6 +515,87 @@
       "id": "reports_llm_evaluation_activity_label",
       "community": 10,
       "norm_label": "activity_label()"
+    },
+    {
+      "label": "hermes_vs_openclaw.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L1",
+      "id": "scripts_reports_hermes_vs_openclaw_py",
+      "community": 4,
+      "norm_label": "hermes_vs_openclaw.py"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L55",
+      "id": "reports_hermes_vs_openclaw_node_for",
+      "community": 4,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L60",
+      "id": "reports_hermes_vs_openclaw_fmt_int",
+      "community": 4,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L66",
+      "id": "reports_hermes_vs_openclaw_days_to_human",
+      "community": 4,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L76",
+      "id": "reports_hermes_vs_openclaw_activity_label",
+      "community": 4,
+      "norm_label": "activity_label()"
+    },
+    {
+      "label": "mom()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L89",
+      "id": "reports_hermes_vs_openclaw_mom",
+      "community": 4,
+      "norm_label": "mom()"
+    },
+    {
+      "label": "winner()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L93",
+      "id": "reports_hermes_vs_openclaw_winner",
+      "community": 4,
+      "norm_label": "winner()"
+    },
+    {
+      "label": "row()",
+      "file_type": "code",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L134",
+      "id": "reports_hermes_vs_openclaw_row",
+      "community": 4,
+      "norm_label": "row()"
+    },
+    {
+      "label": "Return ('A'|'B'|'=') for which repo wins a metric.",
+      "file_type": "rationale",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L94",
+      "id": "reports_hermes_vs_openclaw_rationale_94",
+      "community": 4,
+      "norm_label": "return ('a'|'b'|'=') for which repo wins a metric."
     },
     {
       "label": "openclaw_ecosystem.py",
@@ -666,7 +747,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L1",
       "id": "scripts_reports_agent_orchestration_py",
-      "community": 5,
+      "community": 6,
       "norm_label": "agent_orchestration.py"
     },
     {
@@ -675,7 +756,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L107",
       "id": "reports_agent_orchestration_node_for",
-      "community": 5,
+      "community": 6,
       "norm_label": "node_for()"
     },
     {
@@ -684,7 +765,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L112",
       "id": "reports_agent_orchestration_fmt_int",
-      "community": 5,
+      "community": 6,
       "norm_label": "fmt_int()"
     },
     {
@@ -693,7 +774,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L118",
       "id": "reports_agent_orchestration_days_to_human",
-      "community": 5,
+      "community": 6,
       "norm_label": "days_to_human()"
     },
     {
@@ -702,7 +783,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L128",
       "id": "reports_agent_orchestration_activity_label",
-      "community": 5,
+      "community": 6,
       "norm_label": "activity_label()"
     },
     {
@@ -711,7 +792,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L141",
       "id": "reports_agent_orchestration_approach_of",
-      "community": 5,
+      "community": 6,
       "norm_label": "approach_of()"
     },
     {
@@ -720,7 +801,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L206",
       "id": "reports_agent_orchestration_comp_table",
-      "community": 5,
+      "community": 6,
       "norm_label": "comp_table()"
     },
     {
@@ -765,7 +846,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L1",
       "id": "src_lab_topicmap_jsx",
-      "community": 7,
+      "community": 0,
       "norm_label": "topicmap.jsx"
     },
     {
@@ -774,7 +855,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L16",
       "id": "lab_topicmap_buildtopicgraph",
-      "community": 7,
+      "community": 0,
       "norm_label": "buildtopicgraph()"
     },
     {
@@ -783,7 +864,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L54",
       "id": "lab_topicmap_topicgraphtofg",
-      "community": 7,
+      "community": 0,
       "norm_label": "topicgraphtofg()"
     },
     {
@@ -792,7 +873,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L72",
       "id": "lab_topicmap_reposbytopic",
-      "community": 7,
+      "community": 0,
       "norm_label": "reposbytopic()"
     },
     {
@@ -801,7 +882,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L103",
       "id": "lab_topicmap_controlpanel",
-      "community": 7,
+      "community": 0,
       "norm_label": "controlpanel()"
     },
     {
@@ -810,7 +891,7 @@
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L133",
       "id": "lab_topicmap_topicmap",
-      "community": 7,
+      "community": 0,
       "norm_label": "topicmap()"
     },
     {
@@ -900,7 +981,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L1",
       "id": "src_lab_comparator_jsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "comparator.jsx"
     },
     {
@@ -909,7 +990,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L5",
       "id": "lab_comparator_findpath",
-      "community": 4,
+      "community": 5,
       "norm_label": "findpath()"
     },
     {
@@ -918,7 +999,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L45",
       "id": "lab_comparator_metricrow",
-      "community": 4,
+      "community": 5,
       "norm_label": "metricrow()"
     },
     {
@@ -927,7 +1008,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L55",
       "id": "lab_comparator_comparator",
-      "community": 4,
+      "community": 5,
       "norm_label": "comparator()"
     },
     {
@@ -954,7 +1035,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L1",
       "id": "src_lab_reportsview_jsx",
-      "community": 4,
+      "community": 5,
       "norm_label": "reportsview.jsx"
     },
     {
@@ -963,7 +1044,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L8",
       "id": "lab_reportsview_fmt",
-      "community": 4,
+      "community": 5,
       "norm_label": "fmt()"
     },
     {
@@ -972,7 +1053,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L40",
       "id": "lab_reportsview_reportcard",
-      "community": 4,
+      "community": 5,
       "norm_label": "reportcard()"
     },
     {
@@ -981,7 +1062,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L78",
       "id": "lab_reportsview_reportreader",
-      "community": 4,
+      "community": 5,
       "norm_label": "reportreader()"
     },
     {
@@ -990,7 +1071,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L126",
       "id": "lab_reportsview_reportsview",
-      "community": 4,
+      "community": 5,
       "norm_label": "reportsview()"
     },
     {
@@ -1803,7 +1884,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_run_generators",
@@ -1815,7 +1896,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_build",
@@ -1917,6 +1998,102 @@
       "_tgt": "reports_llm_evaluation_activity_label",
       "source": "scripts_reports_llm_evaluation_py",
       "target": "reports_llm_evaluation_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_node_for",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_fmt_int",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_days_to_human",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_activity_label",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_mom",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_mom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_winner",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_winner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_src": "scripts_reports_hermes_vs_openclaw_py",
+      "_tgt": "reports_hermes_vs_openclaw_row",
+      "source": "scripts_reports_hermes_vs_openclaw_py",
+      "target": "reports_hermes_vs_openclaw_row",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/hermes_vs_openclaw.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_src": "reports_hermes_vs_openclaw_rationale_94",
+      "_tgt": "reports_hermes_vs_openclaw_winner",
+      "source": "reports_hermes_vs_openclaw_winner",
+      "target": "reports_hermes_vs_openclaw_rationale_94",
       "confidence_score": 1.0
     },
     {

@@ -1,12 +1,12 @@
-# Graph Report - github-stars-analyzer  (2026-05-31)
+# Graph Report - github-stars-analyzer  (2026-06-02)
 
 ## Corpus Check
-- 32 files · ~67,548 words
+- 33 files · ~71,306 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 130 nodes · 132 edges · 10 communities detected
-- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.8)
+- 139 nodes · 140 edges · 10 communities detected
+- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 14 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -36,20 +36,20 @@
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [INFERRED]
   netlify/functions/ask.mjs → scripts/lib/ask-prompt.mjs
-- `TopicMap()` --calls--> `useGraph()`  [INFERRED]
-  src/lab/TopicMap.jsx → src/lab/GraphProvider.jsx
 - `Comparator()` --calls--> `useGraph()`  [INFERRED]
   src/lab/Comparator.jsx → src/lab/GraphProvider.jsx
 - `InsightFeed()` --calls--> `useGraph()`  [INFERRED]
   src/lab/InsightFeed.jsx → src/lab/GraphProvider.jsx
+- `TopicMap()` --calls--> `useGraph()`  [INFERRED]
+  src/lab/TopicMap.jsx → src/lab/GraphProvider.jsx
 - `MapView()` --calls--> `useGraph()`  [INFERRED]
   src/lab/MapView.jsx → src/lab/GraphProvider.jsx
 
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.12
-Nodes (6): AllRepos(), useGraph(), HealthHistogram(), AskView(), StatusBanner(), MapView()
+Cohesion: 0.09
+Nodes (7): AllRepos(), useGraph(), HealthHistogram(), AskView(), StatusBanner(), MapView(), TopicMap()
 
 ### Community 1 - "Community 1"
 Cohesion: 0.22
@@ -64,20 +64,20 @@ Cohesion: 0.2
 Nodes (2): best_in(), ok()
 
 ### Community 4 - "Community 4"
+Cohesion: 0.22
+Nodes (2): Return ('A'|'B'|'=') for which repo wins a metric., winner()
+
+### Community 5 - "Community 5"
 Cohesion: 0.25
 Nodes (4): Comparator(), MetricRow(), fmt(), ReportCard()
 
-### Community 5 - "Community 5"
+### Community 6 - "Community 6"
 Cohesion: 0.38
 Nodes (3): activity_label(), comp_table(), fmt_int()
 
-### Community 6 - "Community 6"
+### Community 7 - "Community 7"
 Cohesion: 0.53
 Nodes (4): daysAgo(), healthScore(), lifecycleStage(), momentum()
-
-### Community 7 - "Community 7"
-Cohesion: 0.33
-Nodes (1): TopicMap()
 
 ### Community 8 - "Community 8"
 Cohesion: 0.4
@@ -88,9 +88,11 @@ Cohesion: 0.4
 Nodes (1): InsightFeed()
 
 ## Knowledge Gaps
+- **1 isolated node(s):** `Return ('A'|'B'|'=') for which repo wins a metric.`
+  These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 3`** (10 nodes): `activity_label()`, `best_in()`, `days_to_human()`, `fmt_int()`, `node_for()`, `openclaw_ecosystem.py`, `jaccard()`, `keyFor()`, `test-graph.mjs`, `ok()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 7`** (6 nodes): `buildTopicGraph()`, `ControlPanel()`, `ReposByTopic()`, `topicGraphToFG()`, `TopicMap()`, `TopicMap.jsx`
+- **Thin community `Community 4`** (9 nodes): `activity_label()`, `days_to_human()`, `fmt_int()`, `mom()`, `node_for()`, `Return ('A'|'B'|'=') for which repo wins a metric.`, `row()`, `winner()`, `hermes_vs_openclaw.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 8`** (6 nodes): `findNeighbors()`, `HealthBar()`, `MetricCell()`, `RepoDetail()`, `StageBadge()`, `RepoDetail.jsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -100,15 +102,15 @@ Nodes (1): InsightFeed()
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `useGraph()` connect `Community 0` to `Community 8`, `Community 4`, `Community 13`, `Community 7`?**
-  _High betweenness centrality (0.092) - this node is a cross-community bridge._
-- **Why does `Comparator()` connect `Community 4` to `Community 0`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
-- **Why does `TopicMap()` connect `Community 7` to `Community 0`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+- **Why does `useGraph()` connect `Community 0` to `Community 8`, `Community 13`, `Community 5`?**
+  _High betweenness centrality (0.080) - this node is a cross-community bridge._
+- **Why does `Comparator()` connect `Community 5` to `Community 0`?**
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `useGraph()` (e.g. with `TopicMap()` and `MapView()`) actually correct?**
   _`useGraph()` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `fetchAllStarred()` (e.g. with `rest()` and `logRate()`) actually correct?**
   _`fetchAllStarred()` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `Return ('A'|'B'|'=') for which repo wins a metric.` to the rest of the system?**
+  _1 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.12 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09 - nodes in this community are weakly interconnected._
