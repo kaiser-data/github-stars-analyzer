@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,071 starred repos (snapshot `2026-05-24T19:57:47.245Z`), cross-referenced with the repo-similarity graph (1,071 nodes / 3,486 edges, 23 communities).
 >
-> Generated 2026-05-31 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
+> Generated 2026-06-02 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
 > **Orchestration** = coordinating multiple agents / tools / steps toward a goal: routing, planning, parallelism, hand-offs, state and recovery. The tools below differ mostly in **how you express that coordination** — in code, on a visual canvas, across coding agents, or as durable production infra.
 

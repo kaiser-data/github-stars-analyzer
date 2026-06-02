@@ -28,6 +28,7 @@ GENERATORS = [
     "openclaw_ecosystem.py",
     "token_savings.py",
     "agent_orchestration.py",
+    "hermes_vs_openclaw.py",
 ]
 
 def run_generators():

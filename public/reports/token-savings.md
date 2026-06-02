@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,071 starred repos (snapshot `2026-05-24T19:57:47.245Z`), cross-referenced with the repo-similarity graph (1,071 nodes / 3,486 edges, 23 communities).
 >
-> Generated 2026-05-31 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
+> Generated 2026-06-02 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
 > **Read this first:** the right token-saver depends on **what you're spending tokens on** — reading code, generating structured output, retrieving documents, or carrying long-session memory. So this report is organized **by workload**, not by tool type. Tools at different layers mostly **compose** rather than compete. All **% figures are the projects' own claims** on the May-2026 snapshot — not independently benchmarked here.
 
