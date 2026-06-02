@@ -61,6 +61,50 @@ KIND_LABEL = {
     "coding":  "Coding agent",
 }
 
+# Per-claw use-case fit — grounded in each repo's own description/topics.
+# `shines`: the scenario it's genuinely best at; `skip`: when to look elsewhere.
+SHINES = {
+    "openclaw/openclaw": {
+        "shines": "Your **default daily driver** — own-your-data personal assistant on any OS, with the deepest plugin/skill/router/memory ecosystem to extend in TypeScript.",
+        "skip": "you're wary of a single-maintainer core (bus 1), or you prefer Python/Rust."},
+    "zeroclaw-labs/zeroclaw": {
+        "shines": "**Production self-host where quality matters** — 'deploy anywhere, swap anything' infra, fully autonomous, top health & resilience. The connoisseur's pick.",
+        "skip": "you depend on OpenClaw's accessory ecosystem or want a TS codebase."},
+    "NousResearch/hermes-agent": {
+        "shines": "**Python-first builders** who want an agent that *learns/grows over time*, broad model interop, and NousResearch's research lineage.",
+        "skip": "you want TS or the OpenClaw plug-in ecosystem (it has neither)."},
+    "sipeed/picoclaw": {
+        "shines": "**Edge / embedded / SBC** deployments — a tiny, fast, single Go binary to automate mundane tasks cheaply, anywhere.",
+        "skip": "you need a rich plugin ecosystem or heavy multi-agent orchestration."},
+    "HKUDS/nanobot": {
+        "shines": "**Embedding a lightweight agent into your own tools/chats/workflows** — small Python surface, quick to wire in.",
+        "skip": "you want a full assistant *platform* or strong maintainer resilience (bus 2)."},
+    "code-yeongyu/oh-my-openagent": {
+        "shines": "**Serious software engineering on big codebases** — a TUI/IDE 'pickaxe' agent harness for complex SWE and multi-tool orchestration.",
+        "skip": "you want a general life/personal assistant rather than a coding harness."},
+    "elizaOS/eliza": {
+        "shines": "**Always-on autonomous social agents** — Discord/Telegram/Slack bots, crypto/web3 agents, swarms, on a mature plugin framework.",
+        "skip": "you want a personal CLI/desktop assistant, not deployed autonomous bots."},
+    "nearai/ironclaw": {
+        "shines": "**Privacy/security-first** agent-OS — sandboxed CodeAct via WASM; good when the agent runs untrusted code and isolation matters.",
+        "skip": "you want plug-and-play or the largest community/ecosystem."},
+    "NVIDIA/NemoClaw": {
+        "shines": "**Enterprise GPU / managed inference** — run OpenClaw *or* Hermes more securely inside NVIDIA OpenShell.",
+        "skip": "you're not on NVIDIA infra or want a simple self-host."},
+    "RightNow-AI/openfang": {
+        "shines": "**MCP-native Agent-OS** — pick it if Model Context Protocol tooling is your backbone (Rust).",
+        "skip": "bus factor 1 + ~20d-stale pushes concern you, or you want TS."},
+    "nanocoai/nanoclaw": {
+        "shines": "**Containerized assistant with chat connectors** — WhatsApp/Telegram/Slack/Discord/Gmail, memory + scheduled jobs, on Anthropic's Agents SDK, sandboxed for safety.",
+        "skip": "you want top health or the full OpenClaw ecosystem."},
+    "ultraworkers/claw-code": {
+        "shines": "**Bleeding-edge fast coding agent** (Rust, built on oh-my-codex) — if you chase the newest and tolerate churn.",
+        "skip": "you need stability — health 58, **0 releases**, very young. Treat as experimental."},
+    "nullclaw/nullclaw": {
+        "shines": "**Absolute minimal footprint** — the fastest/smallest autonomous infra, written in Zig, for the performance-obsessed self-hoster.",
+        "skip": "you want ecosystem, plugins, or a larger community (7.6k★, bus 1)."},
+}
+
 # ---- Load --------------------------------------------------------------------
 with open(CLASSIFIED) as f:
     cl = json.load(f)
@@ -280,6 +324,22 @@ for n in ranked[:5]:
     c = score_components(r)
     P(f"| {n} | {c['health']:.2f} | {c['adoption']:.2f} | {c['resilience']:.2f} | "
       f"{c['maturity']:.2f} | {c['momentum']:.2f} | **{composite(r):.3f}** |")
+P("")
+
+# ---- Where each claw shines (per-claw use-case fit)
+P("## Where each claw shines")
+P("")
+P("These claws are **not interchangeable** — they target different jobs. Use this to match a "
+  "claw to *your* scenario; the score above only ranks general fitness.")
+P("")
+P("| Claw | Type | Lang | Shines at | Skip if… |")
+P("|---|---|---|---|---|")
+for n in ranked:
+    r = by_name[n]
+    s = SHINES.get(n, {})
+    dagger = "" if CANDIDATES[n]["named"] else " †"
+    P(f"| [{n.split('/')[-1]}]({r['url']}){dagger} | {KIND_LABEL[CANDIDATES[n]['kind']]} | "
+      f"{r.get('primary_language') or '—'} | {s.get('shines','—')} | {s.get('skip','—')} |")
 P("")
 
 # ---- The one thing the score can't measure
