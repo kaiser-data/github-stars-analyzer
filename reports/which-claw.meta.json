@@ -3,13 +3,13 @@
   "title": "Which Claw Should I Use? \u2014 A Decision Report",
   "file": "which-claw.md",
   "category": "AI / Comparison",
-  "summary": "Decision report ranking 9 standalone OpenClaw-family claws (agents/runtimes) on a transparent composite (health, freshness, momentum, resilience, adoption). Winner: zeroclaw-labs/zeroclaw. Includes use-case routing (security, coding, edge, stability).",
-  "tool_count": 9,
-  "total_stars": 718635,
+  "summary": "Decision report ranking 13 standalone OpenClaw-family claws (agents/runtimes) on a transparent composite (health, freshness, momentum, resilience, adoption). Winner: zeroclaw-labs/zeroclaw. Includes use-case routing (security, coding, edge, stability).",
+  "tool_count": 13,
+  "total_stars": 1018634,
   "categories": {
-    "General assistant": 5,
+    "General assistant": 8,
     "Secure runtime": 3,
-    "Coding agent": 1
+    "Coding agent": 2
   },
   "top_tools": [
     {
@@ -17,20 +17,20 @@
       "stars": 31707
     },
     {
-      "name": "openclaw/openclaw",
-      "stars": 376269
+      "name": "NousResearch/hermes-agent",
+      "stars": 177229
     },
     {
-      "name": "ultraworkers/claw-code",
-      "stars": 193162
+      "name": "openclaw/openclaw",
+      "stars": 376269
     },
     {
       "name": "sipeed/picoclaw",
       "stars": 29267
     },
     {
-      "name": "NVIDIA/NemoClaw",
-      "stars": 20834
+      "name": "HKUDS/nanobot",
+      "stars": 43539
     }
   ],
   "snapshot": "2026-06-02T21:59:05.644Z",

@@ -29,21 +29,30 @@ TITLE = "Which Claw Should I Use? — A Decision Report"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 
-# The standalone "claw" agents / runtimes / agent-OSes you'd pick *between*.
-# Accessories (skills, routers, memory, dashboards, specialized agents) are
-# intentionally excluded — they complement a claw, they aren't a claw choice.
+# The standalone "claws" you'd pick *between* — agents / runtimes / agent-OSes
+# you'd run *as* your assistant. This includes functional claws that aren't
+# literally named "claw" (Hermes, nanobot, eliza, …): the name is cosmetic, the
+# role is what matters. Accessories (skills, routers, memory, dashboards,
+# one-task specialized agents) are intentionally excluded.
 # `kind`: general = full personal-assistant; secure = security-hardened runtime;
 #         coding = coding-focused agent.
+# `named`: True if it literally carries the claw/fang branding.
 CANDIDATES = {
-    "openclaw/openclaw":        {"kind": "general", "note": "the reference claw; biggest ecosystem"},
-    "ultraworkers/claw-code":   {"kind": "coding",  "note": "coding-focused claw (Rust)"},
-    "zeroclaw-labs/zeroclaw":   {"kind": "general", "note": "fastest/smallest, fully autonomous (Rust)"},
-    "sipeed/picoclaw":          {"kind": "general", "note": "tiny footprint, runs on edge/SBCs (Go)"},
-    "nanocoai/nanoclaw":        {"kind": "secure",  "note": "containerized, chat-connector secure alt (TS)"},
-    "NVIDIA/NemoClaw":          {"kind": "secure",  "note": "runs in NVIDIA OpenShell, managed inference"},
-    "nearai/ironclaw":          {"kind": "secure",  "note": "privacy/security agent-OS, WASM/CodeAct (Rust)"},
-    "RightNow-AI/openfang":     {"kind": "general", "note": "MCP-native open 'Agent OS' (Rust)"},
-    "nullclaw/nullclaw":        {"kind": "general", "note": "minimal claw written in Zig"},
+    # --- literally branded claws ---
+    "openclaw/openclaw":        {"kind": "general", "named": True,  "note": "the reference claw; biggest ecosystem"},
+    "ultraworkers/claw-code":   {"kind": "coding",  "named": True,  "note": "coding-focused claw (Rust)"},
+    "zeroclaw-labs/zeroclaw":   {"kind": "general", "named": True,  "note": "fastest/smallest, fully autonomous (Rust)"},
+    "sipeed/picoclaw":          {"kind": "general", "named": True,  "note": "tiny footprint, runs on edge/SBCs (Go)"},
+    "nanocoai/nanoclaw":        {"kind": "secure",  "named": True,  "note": "containerized, chat-connector secure alt (TS)"},
+    "NVIDIA/NemoClaw":          {"kind": "secure",  "named": True,  "note": "runs in NVIDIA OpenShell, managed inference"},
+    "nearai/ironclaw":          {"kind": "secure",  "named": True,  "note": "privacy/security agent-OS, WASM/CodeAct (Rust)"},
+    "RightNow-AI/openfang":     {"kind": "general", "named": True,  "note": "MCP-native open 'Agent OS' (Rust)"},
+    "nullclaw/nullclaw":        {"kind": "general", "named": True,  "note": "minimal claw written in Zig"},
+    # --- functional claws (same role, not claw-named) ---
+    "NousResearch/hermes-agent": {"kind": "general", "named": False, "note": "'the agent that grows with you' — Python, NousResearch"},
+    "HKUDS/nanobot":             {"kind": "general", "named": False, "note": "lightweight agent for tools/chats/workflows (Python)"},
+    "elizaOS/eliza":             {"kind": "general", "named": False, "note": "agentic OS, always-on autonomous agents (TS)"},
+    "code-yeongyu/oh-my-openagent": {"kind": "coding", "named": False, "note": "agent harness (ex oh-my-opencode), TS"},
 }
 
 KIND_LABEL = {
@@ -97,12 +106,17 @@ def activity_label(r):
 
 import math
 
-def freshness(r):
-    """0..1 from days_since_push: 0d→1.0, decays to ~0 by ~120d."""
+AGE_CAP = 730.0  # ~2y: beyond this, extra age doesn't add track-record credit
+
+def staleness_factor(r):
+    """Multiplicative gate: 1.0 up to 60d since push, decaying to a 0.6 floor.
+    Freshness isn't a weighted criterion (it's saturated — most claws pushed
+    today); instead it gates the score so an abandoned-but-otherwise-good repo
+    can't win."""
     dsp = r.get("days_since_push")
-    if dsp is None:
-        return 0.0
-    return max(0.0, 1.0 - (dsp / 120.0))
+    if dsp is None or dsp <= 60:
+        return 1.0
+    return max(0.6, 1.0 - (dsp - 60) / 240.0)
 
 # ---- Scoring -----------------------------------------------------------------
 present = [n for n in CANDIDATES if n in by_name]
@@ -111,29 +125,34 @@ missing = [n for n in CANDIDATES if n not in by_name]
 max_stars = max(by_name[n]["stars"] for n in present) or 1
 max_mom = max((mom(by_name[n]) or 0) for n in present) or 1
 max_bus = max((by_name[n].get("bus_factor") or 0) for n in present) or 1
+max_rel = max((by_name[n].get("releases_total") or 0) for n in present) or 1
 
 WEIGHTS = {
-    "health":    0.30,   # maintained, healthy
-    "freshness": 0.20,   # recent activity
-    "momentum":  0.20,   # growth right now
-    "busfactor": 0.15,   # resilience to a maintainer leaving
-    "adoption":  0.15,   # battle-tested by a large base (log-scaled)
+    "health":     0.25,   # maintenance quality (dataset composite)
+    "adoption":   0.25,   # battle-tested / community / docs (log-scaled stars)
+    "resilience": 0.20,   # bus factor — survives a maintainer leaving
+    "maturity":   0.15,   # proven track record: release cadence + age
+    "momentum":   0.15,   # trajectory / mindshare (log-scaled to tame spikes)
 }
 
 def score_components(r):
     health = (r.get("health_score") or 0) / 100.0
-    fresh = freshness(r)
-    m = (mom(r) or 0) / max_mom
-    bus = (r.get("bus_factor") or 0) / max_bus
     adopt = math.log10((r.get("stars") or 1) + 1) / math.log10(max_stars + 1)
+    resil = (r.get("bus_factor") or 0) / max_bus
+    rel_norm = math.log10((r.get("releases_total") or 0) + 1) / math.log10(max_rel + 1)
+    age_norm = min(r.get("age_days") or 0, AGE_CAP) / AGE_CAP
+    maturity = 0.6 * rel_norm + 0.4 * age_norm
+    # log-scale momentum so a viral star-spike becomes a "tier", not a landslide
+    momentum = math.log10((mom(r) or 0) + 1) / math.log10(max_mom + 1)
     return {
-        "health": health, "freshness": fresh, "momentum": m,
-        "busfactor": bus, "adoption": adopt,
+        "health": health, "adoption": adopt, "resilience": resil,
+        "maturity": maturity, "momentum": momentum,
     }
 
 def composite(r):
     c = score_components(r)
-    return sum(WEIGHTS[k] * c[k] for k in WEIGHTS)
+    base = sum(WEIGHTS[k] * c[k] for k in WEIGHTS)
+    return base * staleness_factor(r)
 
 ranked = sorted(present, key=lambda n: -composite(by_name[n]))
 
@@ -152,9 +171,11 @@ P(f"> Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d')} by "
   f"`scripts/reports/which_claw.py` (regenerate any time — no API cost).")
 P("")
 P("> **Scope.** This ranks the standalone **claws** — agents/runtimes you'd run *as* your "
-  "assistant. The accessory ecosystem (skills, routers, memory, observability, dashboards) is "
-  "covered separately in the **OpenClaw Ecosystem** report; those *complement* a claw rather "
-  "than replace it.")
+  "assistant. \"Claw\" here is a **role, not a name**: functional claws that aren't literally "
+  "branded *claw* (Hermes, nanobot, eliza, oh-my-openagent) are ranked alongside the named ones "
+  "and tagged **†**. The accessory ecosystem (skills, routers, memory, observability, "
+  "dashboards) is covered separately in the **OpenClaw Ecosystem** report; those *complement* a "
+  "claw rather than replace it.")
 P("")
 
 # ---- Verdict
@@ -200,33 +221,65 @@ P("## The ranking")
 P("")
 P("Composite = "
   + " + ".join(f"{int(w*100)}% {k}" for k, w in WEIGHTS.items())
-  + ". All inputs are precomputed dataset metrics; adoption is log-scaled so a 10× star lead "
-  "doesn't swamp everything else.")
+  + ". Adoption & momentum are **log-scaled** (so a 10× star lead or a viral spike becomes a "
+  "*tier*, not a landslide); maturity blends release cadence + age; a **staleness gate** "
+  "discounts anything >60 days since last push. Freshness is *not* a weighted term — almost "
+  "every claw was pushed today, so it doesn't discriminate, and health already encodes recency.")
+P("")
+P("`†` = functional claw (same role, not literally named *claw*).")
 P("")
 P("| # | Claw | Type | Score | ★ Stars | Health | Momentum (★/30d) | Last push | Bus factor | Lang |")
 P("|---|---|---|---|---|---|---|---|---|---|")
 for i, n in enumerate(ranked, 1):
     r = by_name[n]
     medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, str(i))
-    P(f"| {medal} | [{n}]({r['url']}) | {KIND_LABEL[CANDIDATES[n]['kind']]} | "
+    dagger = "" if CANDIDATES[n]["named"] else " †"
+    P(f"| {medal} | [{n}]({r['url']}){dagger} | {KIND_LABEL[CANDIDATES[n]['kind']]} | "
       f"**{composite(r):.3f}** | {fmt_int(r['stars'])} | {r.get('health_score','—')} | "
       f"{fmt_int(mom(r)) if mom(r) is not None else '—'} | "
       f"{days_to_human(r.get('days_since_push'))} ago | {r.get('bus_factor','—')} | "
       f"{r.get('primary_language') or '—'} |")
 P("")
 
+# ---- Where do the functional (non-named) claws land?
+HERMES = "NousResearch/hermes-agent"
+if HERMES in ranked:
+    h_rank = ranked.index(HERMES) + 1
+    hr = by_name[HERMES]
+    funcs = [(ranked.index(n) + 1, n) for n in ranked if not CANDIDATES[n]["named"]]
+    above = ranked[h_rank - 2] if h_rank >= 2 else None
+    rel = "leads" if h_rank < (ranked.index(HUB) + 1) else "trails"
+    P(f"**Where's Hermes?** [`{HERMES}`]({hr['url']}) lands **#{h_rank}** "
+      f"(composite {composite(hr):.3f}) — the **strongest functional claw** and it {rel} "
+      f"OpenClaw (#{ranked.index(HUB)+1}). Health {hr.get('health_score')}, bus factor "
+      f"{hr.get('bus_factor')} (vs OpenClaw's {by_name[HUB].get('bus_factor')} — more resilient), "
+      f"{fmt_int(hr['stars'])}★, very active.")
+    if above:
+        ar = by_name[above]
+        P(f"It sits just behind [`{above}`]({ar['url']}), which edges it on health "
+          f"({ar.get('health_score')} vs {hr.get('health_score')}) and resilience "
+          f"(bus {ar.get('bus_factor')} vs {hr.get('bus_factor')}). ")
+    P(f"The catch: Hermes carries **none** of the OpenClaw accessory ecosystem and is "
+      f"**Python-first** — so it's the natural pick if you'd rather extend in Python than "
+      f"TypeScript, or value NousResearch's lineage over ecosystem lock-in. See the dedicated "
+      f"**Hermes vs OpenClaw** report for the full head-to-head.")
+    P("")
+    P("Other functional claws (†): "
+      + ", ".join(f"`{n.split('/')[-1]}` #{rk}" for rk, n in funcs if n != HERMES) + ".")
+    P("")
+
 # ---- Score breakdown for the top few
 P("### How the top picks score (component view)")
 P("")
 P("Each column is 0–1 (higher = better); the bar shows the weighted composite.")
 P("")
-P("| Claw | Health | Fresh | Momentum | Bus | Adoption | Composite |")
+P("| Claw | Health | Adoption | Resilience | Maturity | Momentum | Composite |")
 P("|---|---|---|---|---|---|---|")
 for n in ranked[:5]:
     r = by_name[n]
     c = score_components(r)
-    P(f"| {n} | {c['health']:.2f} | {c['freshness']:.2f} | {c['momentum']:.2f} | "
-      f"{c['busfactor']:.2f} | {c['adoption']:.2f} | **{composite(r):.3f}** |")
+    P(f"| {n} | {c['health']:.2f} | {c['adoption']:.2f} | {c['resilience']:.2f} | "
+      f"{c['maturity']:.2f} | {c['momentum']:.2f} | **{composite(r):.3f}** |")
 P("")
 
 # ---- The one thing the score can't measure
@@ -321,7 +374,14 @@ P("- **Candidate set:** standalone claw agents/runtimes/agent-OSes only. Accesso
   "design — see the OpenClaw Ecosystem report for those.")
 P(f"- **Composite weights:** "
   + ", ".join(f"{k} {int(w*100)}%" for k, w in WEIGHTS.items())
-  + ". Adoption is log-scaled. Freshness decays linearly to ~0 by 120 days since last push.")
+  + ". Adoption & momentum are log-scaled; maturity = 60% release-cadence + 40% age "
+  f"(age capped at {int(AGE_CAP)}d). A staleness gate multiplies the score down (floor 0.6) "
+  "beyond 60 days since last push. Freshness is deliberately *not* a weighted term (saturated; "
+  "redundant with health).")
+P("- **Why these weights:** this is an *adoption* decision, so battle-testing (adoption) and "
+  "survivability (resilience, maturity) are weighted as heavily as raw health, and hype "
+  "(momentum) is capped at 15% and log-scaled — a 2-month-old repo riding a star spike "
+  "shouldn't outrank a seasoned, multi-maintainer project.")
 P("- **Snapshot-bound.** Claws move weekly; momentum especially can flip fast. Re-run after a "
   "fresh `npm run refresh`.")
 if missing:
