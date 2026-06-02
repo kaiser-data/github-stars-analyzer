@@ -1,12 +1,29 @@
 # Recommended to Star — Gaps in Your Collection
 
-> **Status (live-checked via `gh api` on 2026-06-02):** of the original 33 recommendations
-> you've now starred **32**. The dataset has been refreshed (`npm run refresh`) to **1,121
-> repos**, so these now appear in the in-app reports. Only **1 original rec** remains, plus a
-> fresh round of gaps in **categories the reports didn't cover yet**.
+> **Status (re-checked via `gh api` on 2026-06-02):** across both rounds of recommendations
+> (33 + 17 = 50), you've now starred **47**. Only **3 remain** (below). Every previously-empty
+> category — Voice, local runners, structured output — is now covered.
 >
 > ⚠️ This file leans on external knowledge (training cutoff early 2026), unlike the
-> dataset-derived reports.
+> dataset-derived reports. New stars below aren't in the in-app reports until the next
+> `npm run refresh`.
+
+## ✅ Only 3 left
+
+- [ ] [sourcegraph/cody](https://github.com/sourcegraph/cody) — **Coding agents** — context-aware coding assistant.
+- [ ] [Mozilla-Ocho/llamafile](https://github.com/Mozilla-Ocho/llamafile) — **Local runner** — single-file portable LLM executables.
+- [ ] [FlagOpen/FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding) — **Embeddings** — BGE embedding/reranker models.
+
+```
+sourcegraph/cody
+Mozilla-Ocho/llamafile
+FlagOpen/FlagEmbedding
+```
+
+---
+
+<details>
+<summary>History (earlier rounds — now mostly starred)</summary>
 
 ## 🟢 Original list — 1 left
 
@@ -74,3 +91,5 @@ FlagOpen/FlagEmbedding
 3. **Structured output is thin** — you have `outlines` but not the two most-used in practice (`instructor`, `baml`).
 
 <sub>Original 33: 32 starred / 1 left · New round: 17 candidates · live-checked via `gh api` on 2026-06-02.</sub>
+
+</details>
