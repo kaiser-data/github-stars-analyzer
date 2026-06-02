@@ -30,6 +30,7 @@ GENERATORS = [
     "agent_orchestration.py",
     "hermes_vs_openclaw.py",
     "which_claw.py",
+    "blockchain_claws.py",
 ]
 
 def run_generators():
