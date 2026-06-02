@@ -1,6 +1,6 @@
 # Which Claw for the Blockchain World? — Claws & Skills for On-Chain / DeFi
 
-> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`).
+> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`).
 >
 > Generated 2026-06-02 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
 
@@ -83,4 +83,4 @@ Claw + skills, assembled by goal:
 - **A claw orchestrates; it doesn't custody.** Keep signing/keys in a sandboxed, least-privilege layer (see ironclaw/nanoclaw) — never hand raw keys to a general assistant.
 - Fit ratings are editorial (based on each repo's own topics/description); stars/health/bus factor are precomputed dataset metrics.
 
-<sub>Snapshot: 2026-06-02T21:59:05.644Z · regenerate via scripts/reports/blockchain_claws.py</sub>
+<sub>Snapshot: 2026-06-02T22:59:34.535Z · regenerate via scripts/reports/blockchain_claws.py</sub>

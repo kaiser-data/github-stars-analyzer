@@ -1,0 +1,49 @@
+{
+  "slug": "blockchain-essentials",
+  "title": "Blockchain Repos You Need to Know \u2014 A Field Guide",
+  "file": "blockchain-essentials.md",
+  "category": "AI / Comparison",
+  "summary": "A layered field guide to the 37 essential blockchain/web3/DeFi repos in the dataset \u2014 languages, toolchains, libraries, clients, DeFi protocols, ZK, Solana \u2014 plus the hottest AI\u00d7crypto trends (x402 agentic payments, autonomous trading) and a where-to-start learning path.",
+  "tool_count": 37,
+  "total_stars": 411904,
+  "categories": {
+    "Languages & compilers": 2,
+    "Dev toolkits": 2,
+    "Contract libraries & standards": 3,
+    "Security & analysis": 2,
+    "Client libraries (TS/JS)": 4,
+    "Execution clients (nodes)": 3,
+    "Oracles, AA & wallets": 3,
+    "Indexing & on-chain data": 2,
+    "DeFi protocol references": 3,
+    "Solana": 3,
+    "Zero-knowledge": 3,
+    "\ud83d\udd25 Agentic payments (x402)": 3,
+    "\ud83d\udd25 AI \u00d7 finance / trading": 4
+  },
+  "top_tools": [
+    {
+      "name": "TauricResearch/TradingAgents",
+      "stars": 82281
+    },
+    {
+      "name": "OpenBB-finance/OpenBB",
+      "stars": 68435
+    },
+    {
+      "name": "ethereum/go-ethereum",
+      "stars": 51073
+    },
+    {
+      "name": "OpenZeppelin/openzeppelin-contracts",
+      "stars": 27117
+    },
+    {
+      "name": "argotorg/solidity",
+      "stars": 25644
+    }
+  ],
+  "snapshot": "2026-06-02T22:59:34.535Z",
+  "generated": "2026-06-02",
+  "generator": "scripts/reports/blockchain_essentials.py"
+}

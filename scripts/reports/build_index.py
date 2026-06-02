@@ -31,6 +31,7 @@ GENERATORS = [
     "hermes_vs_openclaw.py",
     "which_claw.py",
     "blockchain_claws.py",
+    "blockchain_essentials.py",
 ]
 
 def run_generators():

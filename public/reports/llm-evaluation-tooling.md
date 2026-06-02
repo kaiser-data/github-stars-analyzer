@@ -1,6 +1,6 @@
 # LLM Evaluation Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`), cross-referenced with the repo-similarity graph (1,172 nodes / 3,814 edges, 27 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
 
@@ -151,24 +151,25 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 24 tools span **9 of the graph's 25 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
+**Community clustering.** These 24 tools span **10 of the graph's 27 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
 
-- **Community 2** (11): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `confident-ai/deepeval`, `rhesis-ai/rhesis`, `promptfoo/promptfoo`, `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`, `confident-ai/deepteam`, `cvs-health/uqlm`
-- **Community 1** (3): `LiveBench/LiveBench`, `pinchbench/skill`, `huggingface/lighteval`
-- **Community 5** (2): `langchain-ai/openevals`, `langchain-ai/agentevals`
-- **Community 9** (2): `openai/evals`, `KRLabsOrg/LettuceDetect`
-- **Community 7** (2): `Arize-ai/phoenix`, `truera/trulens`
+- **Community 10** (8): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `confident-ai/deepeval`, `rhesis-ai/rhesis`, `promptfoo/promptfoo`, `confident-ai/deepteam`
+- **Community 11** (3): `Arize-ai/phoenix`, `truera/trulens`, `finos-labs/Open-Financial-LLMs-Leaderboard`
+- **Community 13** (3): `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`, `cvs-health/uqlm`
+- **Community 3** (2): `langchain-ai/openevals`, `langchain-ai/agentevals`
+- **Community 2** (2): `LiveBench/LiveBench`, `pinchbench/skill`
+- **Community 7** (2): `vllm-project/guidellm`, `huggingface/lighteval`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — how 'hub-like' each tool is within your starred ecosystem:
 
-- `huggingface/lighteval` — PageRank 0.0031
-- `NVIDIA/garak` — PageRank 0.0022
-- `comet-ml/opik` — PageRank 0.0019
-- `openai/evals` — PageRank 0.0018
-- `langfuse/langfuse` — PageRank 0.0014
+- `huggingface/lighteval` — PageRank 0.0022
+- `NVIDIA/garak` — PageRank 0.0021
+- `openai/evals` — PageRank 0.0017
+- `comet-ml/opik` — PageRank 0.0015
 - `langchain-ai/agentevals` — PageRank 0.0013
-- `confident-ai/deepeval` — PageRank 0.0012
-- `langchain-ai/openevals` — PageRank 0.0012
+- `langchain-ai/openevals` — PageRank 0.0011
+- `confident-ai/deepeval` — PageRank 0.0011
+- `langfuse/langfuse` — PageRank 0.0010
 
 **Direct links between eval tools** (similarity edges where both endpoints are in this report):
 
@@ -250,4 +251,4 @@ Several widely-used evaluation tools are **not** in this dataset — worth knowi
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 24 · Snapshot: 2026-06-02T21:59:05.644Z</sub>
+<sub>Tools covered: 24 · Snapshot: 2026-06-02T22:59:34.535Z</sub>

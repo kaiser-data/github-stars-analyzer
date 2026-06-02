@@ -1,6 +1,6 @@
 # Memory Frameworks for LLMs & Agents — Comparative Report
 
-> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`), cross-referenced with the repo-similarity graph (1,172 nodes / 3,814 edges, 27 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
@@ -126,20 +126,19 @@ _Broader LLMOps toolkits that ship memory as one module._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** The 21 frameworks fall into **11 of the graph's 25 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
+**Community clustering.** The 21 frameworks fall into **7 of the graph's 27 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
 
-- **Community 12** (6): `mem0ai/mem0`, `MemoriLabs/Memori`, `memvid/memvid`, `plastic-labs/honcho`, `memodb-io/Acontext`, `MemPalace/mempalace`
-- **Community 3** (3): `letta-ai/letta`, `campfirein/byterover-cli`, `zmedelis/bosquet`
-- **Community 19** (2): `topoteretes/cognee`, `trustgraph-ai/trustgraph`
-- **Community 6** (2): `getzep/graphiti`, `gastownhall/beads`
-- **Community 5** (2): `ActiveMemory/ctx`, `semantica-agi/semantica`
+- **Community 8** (8): `mem0ai/mem0`, `topoteretes/cognee`, `MemoriLabs/Memori`, `memvid/memvid`, `plastic-labs/honcho`, `memodb-io/Acontext`, `MemPalace/mempalace`, `thedotmack/claude-mem`
+- **Community 6** (5): `letta-ai/letta`, `getzep/graphiti`, `gastownhall/beads`, `needle-ai/needle-mcp`, `zmedelis/bosquet`
+- **Community 3** (3): `ActiveMemory/ctx`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`
+- **Community 9** (2): `campfirein/byterover-cli`, `andrewyng/context-hub`
 
 **Centrality (PageRank in the full 1,071-repo graph).** Higher = more connected to the rest of your starred ecosystem (a proxy for how 'hub-like' the project is):
 
-- `MemPalace/mempalace` — PageRank 0.0023
+- `MemPalace/mempalace` — PageRank 0.0022
 - `getzep/graphiti` — PageRank 0.0020
-- `letta-ai/letta` — PageRank 0.0020
-- `ActiveMemory/ctx` — PageRank 0.0019
+- `letta-ai/letta` — PageRank 0.0019
+- `ActiveMemory/ctx` — PageRank 0.0018
 - `needle-ai/needle-mcp` — PageRank 0.0009
 - `plastic-labs/honcho` — PageRank 0.0009
 - `campfirein/byterover-cli` — PageRank 0.0008
@@ -218,4 +217,4 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 - **Metrics** (health, momentum, lifecycle, bus_factor) are precomputed by the analyzer pipeline at snapshot time and may lag GitHub's current state.
 - **The market is young**: many of these launched in the last 12 months; star counts and activity shift fast. Re-run this script after a fresh `classified.json` to refresh.
 
-<sub>Frameworks covered: 21 · Snapshot: 2026-06-02T21:59:05.644Z</sub>
+<sub>Frameworks covered: 21 · Snapshot: 2026-06-02T22:59:34.535Z</sub>

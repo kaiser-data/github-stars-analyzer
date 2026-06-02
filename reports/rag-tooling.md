@@ -1,6 +1,6 @@
 # RAG (Retrieval-Augmented Generation) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`), cross-referenced with the repo-similarity graph (1,172 nodes / 3,814 edges, 27 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
@@ -59,7 +59,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector DB / search | C | NOASSERTION | 4,497 | Mature | 84 | very active | 0d ago | 2.9y | 9 |
 | [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,158 | Mature | 56 | active | 5d ago | 2.1y | 2 |
 | [chonkie-inc/chonkie](https://github.com/chonkie-inc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,120 | Hot | 78 | very active | 1d ago | 1.2y | 6 |
-| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,651 | Mature | 62 | active | 14d ago | 2.0y | 4 |
+| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,651 | Mature | 62 | active | 15d ago | 2.0y | 4 |
 | [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 2,019 | Mature | 72 | very active | 4d ago | 2.6y | 4 |
 | [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 930 | Mature | 77 | very active | 0d ago | 2.4y | 4 |
 | [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 664 | Mature | 68 | slowing | 2mo ago | 1.5y | 1 |
@@ -196,28 +196,28 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 31 tools span **13 of the graph's 25 communities**.
+**Community clustering.** These 31 tools span **11 of the graph's 27 communities**.
 
-- **Community 12** (8): `infiniflow/ragflow`, `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `airweave-ai/airweave`, `Bessouat40/RAGLight`, `neuml/txtai`, `VectifyAI/PageIndex`
-- **Community 11** (6): `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `alibaba/zvec`, `milvus-io/milvus`, `lancedb/lancedb`
-- **Community 9** (3): `facebookresearch/faiss`, `marqo-ai/marqo`, `PaddlePaddle/PaddleOCR`
-- **Community 15** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
-- **Community 19** (2): `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`
-- **Community 7** (2): `Unstructured-IO/unstructured`, `superlinked/sie`
-- **Community 6** (2): `chonkie-inc/chonkie`, `chonkie-inc/chonkiejs`
+- **Community 8** (8): `infiniflow/ragflow`, `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `airweave-ai/airweave`, `Bessouat40/RAGLight`, `neuml/txtai`, `VectifyAI/PageIndex`
+- **Community 4** (6): `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `alibaba/zvec`, `milvus-io/milvus`, `lancedb/lancedb`
+- **Community 3** (3): `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `illuin-tech/colpali`
+- **Community 6** (3): `chroma-core/chroma`, `chonkie-inc/chonkie`, `chonkie-inc/chonkiejs`
+- **Community 11** (3): `marqo-ai/marqo`, `Unstructured-IO/unstructured`, `superlinked/sie`
+- **Community 18** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
+- **Community 16** (2): `facebookresearch/faiss`, `PaddlePaddle/PaddleOCR`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' RAG tools in your ecosystem:
 
 - `VectifyAI/PageIndex` — PageRank 0.0029
-- `neuml/txtai` — PageRank 0.0020
-- `huggingface/sentence-transformers` — PageRank 0.0017
+- `neuml/txtai` — PageRank 0.0019
 - `FalkorDB/GraphRAG-SDK` — PageRank 0.0016
 - `weaviate/weaviate` — PageRank 0.0015
-- `HKUDS/LightRAG` — PageRank 0.0015
+- `HKUDS/LightRAG` — PageRank 0.0014
 - `FalkorDB/FalkorDB` — PageRank 0.0013
-- `lancedb/lancedb` — PageRank 0.0013
-- `microsoft/graphrag` — PageRank 0.0013
-- `run-llama/llama_index` — PageRank 0.0011
+- `lancedb/lancedb` — PageRank 0.0012
+- `microsoft/graphrag` — PageRank 0.0012
+- `run-llama/llama_index` — PageRank 0.0010
+- `deepset-ai/haystack` — PageRank 0.0010
 
 **Direct links between RAG tools** (top similarity edges where both endpoints are in this report):
 
@@ -305,4 +305,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 31 · Snapshot: 2026-06-02T21:59:05.644Z</sub>
+<sub>Tools covered: 31 · Snapshot: 2026-06-02T22:59:34.535Z</sub>

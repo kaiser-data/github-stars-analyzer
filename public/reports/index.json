@@ -1,6 +1,6 @@
 {
   "generated": "2026-06-02",
-  "count": 10,
+  "count": 11,
   "reports": [
     {
       "slug": "agent-orchestration",
@@ -39,9 +39,58 @@
           "stars": 70299
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/agent_orchestration.py"
+    },
+    {
+      "slug": "blockchain-essentials",
+      "title": "Blockchain Repos You Need to Know \u2014 A Field Guide",
+      "file": "blockchain-essentials.md",
+      "category": "AI / Comparison",
+      "summary": "A layered field guide to the 37 essential blockchain/web3/DeFi repos in the dataset \u2014 languages, toolchains, libraries, clients, DeFi protocols, ZK, Solana \u2014 plus the hottest AI\u00d7crypto trends (x402 agentic payments, autonomous trading) and a where-to-start learning path.",
+      "tool_count": 37,
+      "total_stars": 411904,
+      "categories": {
+        "Languages & compilers": 2,
+        "Dev toolkits": 2,
+        "Contract libraries & standards": 3,
+        "Security & analysis": 2,
+        "Client libraries (TS/JS)": 4,
+        "Execution clients (nodes)": 3,
+        "Oracles, AA & wallets": 3,
+        "Indexing & on-chain data": 2,
+        "DeFi protocol references": 3,
+        "Solana": 3,
+        "Zero-knowledge": 3,
+        "\ud83d\udd25 Agentic payments (x402)": 3,
+        "\ud83d\udd25 AI \u00d7 finance / trading": 4
+      },
+      "top_tools": [
+        {
+          "name": "TauricResearch/TradingAgents",
+          "stars": 82281
+        },
+        {
+          "name": "OpenBB-finance/OpenBB",
+          "stars": 68435
+        },
+        {
+          "name": "ethereum/go-ethereum",
+          "stars": 51073
+        },
+        {
+          "name": "OpenZeppelin/openzeppelin-contracts",
+          "stars": 27117
+        },
+        {
+          "name": "argotorg/solidity",
+          "stars": 25644
+        }
+      ],
+      "snapshot": "2026-06-02T22:59:34.535Z",
+      "generated": "2026-06-02",
+      "generator": "scripts/reports/blockchain_essentials.py"
     },
     {
       "slug": "mcp-tooling",
@@ -80,7 +129,7 @@
           "stars": 30374
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/mcp_tooling.py"
     },
@@ -121,7 +170,7 @@
           "stars": 40189
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/rag_tooling.py"
     },
@@ -162,7 +211,7 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
@@ -202,7 +251,7 @@
           "stars": 18595
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/llm_evaluation.py"
     },
@@ -242,7 +291,7 @@
           "stars": 24284
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/memory_frameworks.py"
     },
@@ -284,7 +333,7 @@
           "stars": 82281
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/blockchain_claws.py"
     },
@@ -325,7 +374,7 @@
           "stars": 24452
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/token_savings.py"
     },
@@ -364,7 +413,7 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/which_claw.py"
     },
@@ -402,7 +451,7 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T21:59:05.644Z",
+      "snapshot": "2026-06-02T22:59:34.535Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }

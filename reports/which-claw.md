@@ -1,6 +1,6 @@
 # Which Claw Should I Use? — A Decision Report
 
-> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph.
+> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`), cross-referenced with the repo-similarity graph.
 >
 > Generated 2026-06-02 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
 
@@ -26,19 +26,19 @@ Composite = 25% health + 25% adoption + 20% resilience + 15% maturity + 15% mome
 
 | # | Claw | Type | Score | ★ Stars | Health | Momentum (★/30d) | Last push | Bus factor | Lang |
 |---|---|---|---|---|---|---|---|---|---|
-| 🥇 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.856** | 31,707 | 98 | 21,708 | 0d ago | 5 | Rust |
-| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.765** | 177,229 | 84 | 42,200 | 0d ago | 3 | Python |
-| 🥉 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.731** | 376,269 | 79 | 148,147 | 0d ago | 1 | TypeScript |
-| 4 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.718** | 29,267 | 90 | 18,540 | 0d ago | 3 | Go |
-| 5 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.675** | 43,539 | 83 | 26,851 | 0d ago | 2 | Python |
-| 6 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.671** | 60,730 | 78 | 25,047 | 0d ago | 1 | TypeScript |
+| 🥇 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.856** | 31,707 | 98 | 21,700 | 0d ago | 5 | Rust |
+| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.765** | 177,229 | 84 | 42,194 | 0d ago | 3 | Python |
+| 🥉 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.731** | 376,269 | 79 | 148,114 | 0d ago | 1 | TypeScript |
+| 4 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.718** | 29,267 | 90 | 18,534 | 0d ago | 3 | Go |
+| 5 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.675** | 43,539 | 83 | 26,842 | 0d ago | 2 | Python |
+| 6 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.671** | 60,730 | 78 | 25,041 | 0d ago | 1 | TypeScript |
 | 7 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.669** | 18,501 | 80 | 1,700 | 0d ago | 1 | TypeScript |
-| 8 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.636** | 12,393 | 79 | 7,770 | 0d ago | 2 | Rust |
-| 9 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.623** | 20,834 | 73 | 19,728 | 0d ago | 3 | TypeScript |
-| 10 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.617** | 17,706 | 78 | 8,677 | 20d ago | 1 | Rust |
-| 11 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.602** | 29,644 | 70 | 18,185 | 2d ago | 2 | TypeScript |
-| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.577** | 193,162 | 58 | 227,992 | 5d ago | 1 | Rust |
-| 13 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.577** | 7,653 | 78 | 5,413 | 4d ago | 1 | Zig |
+| 8 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.636** | 12,393 | 79 | 7,767 | 0d ago | 2 | Rust |
+| 9 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.623** | 20,834 | 73 | 19,718 | 0d ago | 3 | TypeScript |
+| 10 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.617** | 17,706 | 78 | 8,673 | 20d ago | 1 | Rust |
+| 11 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.602** | 29,644 | 70 | 18,179 | 2d ago | 2 | TypeScript |
+| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.577** | 193,162 | 58 | 227,841 | 5d ago | 1 | Rust |
+| 13 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.577** | 7,653 | 78 | 5,411 | 4d ago | 1 | Zig |
 
 **Where's Hermes?** [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) lands **#2** (composite 0.765) — the **strongest functional claw** and it leads OpenClaw (#3). Health 84, bus factor 3 (vs OpenClaw's 1 — more resilient), 177,229★, very active.
 It sits just behind [`zeroclaw-labs/zeroclaw`](https://github.com/zeroclaw-labs/zeroclaw), which edges it on health (98 vs 84) and resilience (bus 5 vs 3). 
@@ -105,9 +105,9 @@ Ignoring fit and weights entirely: a claw is **dominated** if another claw match
 
 ### Graph signal: centrality, clustering & the *real* network effect
 
-In the repo-similarity graph (1,138 nodes / 3,716 edges), the claws **don't form one cluster** — they scatter across **7 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
+In the repo-similarity graph (1,138 nodes / 3,814 edges), the claws **don't form one cluster** — they scatter across **7 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
 
-- **Centrality (PageRank).** Most hub-like claws: `nanobot` (0.0021), `NemoClaw` (0.0019), `oh-my-openagent` (0.0017). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
+- **Centrality (PageRank).** Most hub-like claws: `nanobot` (0.0020), `NemoClaw` (0.0018), `oh-my-openagent` (0.0016). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
 - **Closest claw pair:** `nanobot` ⇄ `hermes-agent` (w=0.66) — near-substitutes. The `zeroclaw` ⇄ `openclaw` edge (w=0.19) confirms they compete for the same slot.
 - **The honest network-effect caveat.** The similarity graph measures shared topics/authors, **not** 'plugs-into' dependency — so it does *not* by itself prove OpenClaw lock-in. The one direct graph signal that does is **`openclaw` ⇄ `clawhub` (its official skill directory) at w=0.71** — the strongest accessory tie of any claw. The broader lock-in argument below rests on real-world integration, which the graph under-counts, not over-counts.
 
@@ -149,7 +149,7 @@ These claws are **not interchangeable** — they target different jobs. Use this
 | **Largest ecosystem & accessory support** | [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | the hub every skill/router/memory tool you've starred targets; TS + crypto-friendly |
 | **Code quality / least bus-factor risk** | [`zeroclaw-labs/zeroclaw`](https://github.com/zeroclaw-labs/zeroclaw) | highest bus factor (5) — most resilient to a maintainer leaving |
 | **Best health score** | [`zeroclaw-labs/zeroclaw`](https://github.com/zeroclaw-labs/zeroclaw) | health 98 — cleanest maintenance signals |
-| **Fastest-growing right now** | [`ultraworkers/claw-code`](https://github.com/ultraworkers/claw-code) | ~227,992 est. stars/30d |
+| **Fastest-growing right now** | [`ultraworkers/claw-code`](https://github.com/ultraworkers/claw-code) | ~227,841 est. stars/30d |
 | **Security / sandboxed execution** | [`nearai/ironclaw`](https://github.com/nearai/ironclaw) | hardened/containerized runtime |
 | **Coding agent** | [`code-yeongyu/oh-my-openagent`](https://github.com/code-yeongyu/oh-my-openagent) | purpose-built for code |
 | **Tiny / edge / self-host cheap** | `sipeed/picoclaw` · `nullclaw/nullclaw` | minimal footprints (Go / Zig) |
@@ -174,4 +174,4 @@ These claws are **not interchangeable** — they target different jobs. Use this
 - **Why these weights:** this is an *adoption* decision, so battle-testing (adoption) and survivability (resilience, maturity) are weighted as heavily as raw health, and hype (momentum) is capped at 15% and log-scaled — a 2-month-old repo riding a star spike shouldn't outrank a seasoned, multi-maintainer project.
 - **Snapshot-bound.** Claws move weekly; momentum especially can flip fast. Re-run after a fresh `npm run refresh`.
 
-<sub>Claws ranked: 13 · Snapshot: 2026-06-02T21:59:05.644Z · regenerate via scripts/reports/which_claw.py</sub>
+<sub>Claws ranked: 13 · Snapshot: 2026-06-02T22:59:34.535Z · regenerate via scripts/reports/which_claw.py</sub>
