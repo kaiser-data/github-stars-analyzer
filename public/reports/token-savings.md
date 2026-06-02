@@ -1,6 +1,6 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 1,121 starred repos (snapshot `2026-06-02T21:41:26.385Z`), cross-referenced with the repo-similarity graph (1,121 nodes / 3,653 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
@@ -184,13 +184,13 @@ Low health and/or stale — verify before relying on:
 
 **Community clustering.** These 15 tools span **8 of the graph's 25 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
-- **Community 4** (6): `rtk-ai/rtk`, `colbymchenry/codegraph`, `mksglu/context-mode`, `getagentseal/codeburn`, `JuliusBrussee/caveman`, `thedotmack/claude-mem`
-- **Community 14** (2): `MinishLab/semble`, `bytebase/dbhub`
+- **Community 7** (6): `rtk-ai/rtk`, `colbymchenry/codegraph`, `mksglu/context-mode`, `getagentseal/codeburn`, `JuliusBrussee/caveman`, `thedotmack/claude-mem`
+- **Community 16** (2): `MinishLab/semble`, `bytebase/dbhub`
 - **Community 1** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `davidkimai/Context-Engineering`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
 
-- `yvgude/lean-ctx` — PageRank 0.0020
+- `yvgude/lean-ctx` — PageRank 0.0019
 - `HKUDS/FastCode` — PageRank 0.0017
 - `mksglu/context-mode` — PageRank 0.0011
 - `vllm-project/llm-compressor` — PageRank 0.0010
@@ -211,4 +211,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-06-02T21:41:26.385Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-06-02T21:59:05.644Z</sub>

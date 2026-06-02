@@ -1,24 +1,19 @@
 # Recommended to Star — Gaps in Your Collection
 
-> **Status (re-checked via `gh api` on 2026-06-02):** across both rounds of recommendations
-> (33 + 17 = 50), you've now starred **47**. Only **3 remain** (below). Every previously-empty
-> category — Voice, local runners, structured output — is now covered.
->
-> ⚠️ This file leans on external knowledge (training cutoff early 2026), unlike the
-> dataset-derived reports. New stars below aren't in the in-app reports until the next
-> `npm run refresh`.
+> **Status (re-checked via `gh api` on 2026-06-02, post-refresh):** across both rounds of
+> recommendations (33 + 17 = 50), you've now starred **49**. Only **1 remains** (below).
+> Every previously-empty category — Voice, local runners, structured output, embeddings — is
+> now covered. Dataset refreshed to **1,138 repos**; all 49 are in the in-app reports.
 
-## ✅ Only 3 left
+## ✅ Only 1 left
 
 - [ ] [sourcegraph/cody](https://github.com/sourcegraph/cody) — **Coding agents** — context-aware coding assistant.
-- [ ] [Mozilla-Ocho/llamafile](https://github.com/Mozilla-Ocho/llamafile) — **Local runner** — single-file portable LLM executables.
-- [ ] [FlagOpen/FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding) — **Embeddings** — BGE embedding/reranker models.
 
 ```
 sourcegraph/cody
-Mozilla-Ocho/llamafile
-FlagOpen/FlagEmbedding
 ```
+
+_(`Mozilla-Ocho/llamafile` and `FlagOpen/FlagEmbedding` were starred since the last check ✓)_
 
 ---
 

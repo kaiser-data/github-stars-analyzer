@@ -39,7 +39,7 @@
           "stars": 70299
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/agent_orchestration.py"
     },
@@ -80,7 +80,7 @@
           "stars": 30374
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/mcp_tooling.py"
     },
@@ -121,7 +121,7 @@
           "stars": 40189
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/rag_tooling.py"
     },
@@ -162,7 +162,7 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
@@ -202,7 +202,7 @@
           "stars": 18595
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/llm_evaluation.py"
     },
@@ -242,7 +242,7 @@
           "stars": 24284
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/memory_frameworks.py"
     },
@@ -283,7 +283,7 @@
           "stars": 24452
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/token_savings.py"
     },
@@ -321,7 +321,7 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T21:41:26.385Z",
+      "snapshot": "2026-06-02T21:59:05.644Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }

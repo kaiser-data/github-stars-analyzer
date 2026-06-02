@@ -1,6 +1,6 @@
 # MCP (Model Context Protocol) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,121 starred repos (snapshot `2026-06-02T21:41:26.385Z`), cross-referenced with the repo-similarity graph (1,121 nodes / 3,653 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
@@ -249,28 +249,28 @@ A maturity signal — major vendors shipping **first-party** MCP servers in your
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 37 projects span **11 of the graph's 25 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
+**Community clustering.** These 37 projects span **12 of the graph's 25 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
 
-- **Community 14** (8): `bytebase/dbhub`, `github/github-mcp-server`, `getsentry/sentry-mcp`, `SonarSource/sonarqube-mcp-server`, `czlonkowski/n8n-mcp`, `storybookjs/mcp`, `upstash/context7`, `hustcc/mcp-mermaid`
-- **Community 4** (6): `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `browserbase/mcp-server-browserbase`, `neo4j/mcp`, `mksglu/context-mode`, `blazickjp/arxiv-mcp-server`
-- **Community 5** (5): `tadata-org/fastapi_mcp`, `Kochava-Studios/witsy`, `googleapis/mcp-toolbox`, `brightdata/brightdata-mcp`, `oraios/serena`
-- **Community 0** (5): `hangwin/mcp-chrome`, `shaneholloman/mcp-knowledge-graph`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`
-- **Community 1** (4): `reading-plus-ai/mcp-server-data-exploration`, `VectifyAI/pageindex-mcp`, `Coding-Solo/godot-mcp`, `punkpeye/awesome-mcp-servers`
-- **Community 7** (3): `Klavis-AI/klavis`, `aipotheosis-labs/gate22`, `mobile-next/mobile-mcp`
-- **Community 9** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
+- **Community 16** (11): `tadata-org/fastapi_mcp`, `bytebase/dbhub`, `github/github-mcp-server`, `getsentry/sentry-mcp`, `SonarSource/sonarqube-mcp-server`, `czlonkowski/n8n-mcp`, `upstash/context7`, `VectifyAI/pageindex-mcp`, `hustcc/mcp-mermaid`, `Coding-Solo/godot-mcp`, `punkpeye/awesome-mcp-servers`
+- **Community 7** (5): `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `browserbase/mcp-server-browserbase`, `mksglu/context-mode`, `blazickjp/arxiv-mcp-server`
+- **Community 12** (5): `Kochava-Studios/witsy`, `Klavis-AI/klavis`, `aipotheosis-labs/gate22`, `googleapis/mcp-toolbox`, `oraios/serena`
+- **Community 11** (4): `shaneholloman/mcp-knowledge-graph`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`
+- **Community 2** (3): `hangwin/mcp-chrome`, `CoderGamester/mcp-unity`, `mobile-next/mobile-mcp`
+- **Community 6** (2): `PrefectHQ/fastmcp`, `storybookjs/mcp`
+- **Community 8** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' MCP projects in your ecosystem:
 
-- `modelcontextprotocol/typescript-sdk` — PageRank 0.0041
-- `browserbase/mcp-server-browserbase` — PageRank 0.0026
-- `microsoft/mcp-for-beginners` — PageRank 0.0025
-- `modelcontextprotocol/inspector` — PageRank 0.0024
+- `microsoft/mcp-for-beginners` — PageRank 0.0029
+- `browserbase/mcp-server-browserbase` — PageRank 0.0025
 - `github/github-mcp-server` — PageRank 0.0021
-- `yvgude/lean-ctx` — PageRank 0.0020
-- `upstash/context7` — PageRank 0.0017
+- `yvgude/lean-ctx` — PageRank 0.0019
+- `czlonkowski/n8n-mcp` — PageRank 0.0018
 - `hustcc/mcp-mermaid` — PageRank 0.0016
-- `modelcontextprotocol/servers` — PageRank 0.0016
-- `czlonkowski/n8n-mcp` — PageRank 0.0016
+- `upstash/context7` — PageRank 0.0016
+- `modelcontextprotocol/typescript-sdk` — PageRank 0.0014
+- `modelcontextprotocol/inspector` — PageRank 0.0014
+- `punkpeye/awesome-mcp-servers` — PageRank 0.0013
 
 **Direct links between MCP projects** (top similarity edges where both endpoints are in this report):
 
@@ -289,7 +289,7 @@ A maturity signal — major vendors shipping **first-party** MCP servers in your
 - `mksglu/context-mode` ⇄ `mcp-use/mcp-use` (w=0.298) — topics: claude-code, mcp, skills, openclaw; authors: github-actions[bot]
 - `yvgude/lean-ctx` ⇄ `oraios/serena` (w=0.272) — topics: ai, claude-code, ai-coding, mcp-server; authors: dependabot[bot]
 - `SonarSource/sonarqube-mcp-server` ⇄ `github/github-mcp-server` (w=0.270) — topics: mcp, mcp-server; authors: github-actions[bot]
-- …and 14 more.
+- …and 13 more.
 
 ## Maintenance & risk signal
 
@@ -358,4 +358,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state. MCP moves *very* fast — treat ages/stars as a May-2026 snapshot.
 - Re-run after a fresh `classified.json` to refresh.
 
-<sub>Projects covered: 37 (23 servers) · Snapshot: 2026-06-02T21:41:26.385Z</sub>
+<sub>Projects covered: 37 (23 servers) · Snapshot: 2026-06-02T21:59:05.644Z</sub>

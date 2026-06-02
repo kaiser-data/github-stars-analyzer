@@ -1,6 +1,6 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 1,121 starred repos (snapshot `2026-06-02T21:41:26.385Z`), cross-referenced with the repo-similarity graph (1,121 nodes / 3,653 edges, 25 communities).
+> Derived from **kaiser-data**'s 1,138 starred repos (snapshot `2026-06-02T21:59:05.644Z`), cross-referenced with the repo-similarity graph (1,138 nodes / 3,716 edges, 25 communities).
 >
 > Generated 2026-06-02 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
@@ -259,28 +259,27 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 38 tools span **12 of the graph's 25 communities**.
+**Community clustering.** These 38 tools span **11 of the graph's 25 communities**.
 
-- **Community 5** (12): `langchain-ai/langgraph`, `google/adk-python`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `assafelovic/gpt-researcher`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `langflow-ai/langflow`, `bytedance/deer-flow`, `elizaOS/eliza`, `veegee82/agent-workflow-protocol`
-- **Community 7** (7): `agentscope-ai/agentscope`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `n8n-io/n8n`, `vercel-labs/coding-agent-template`, `inngest/agent-kit`
-- **Community 4** (5): `code-yeongyu/oh-my-openagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `ComposioHQ/agent-orchestrator`, `getpaseo/paseo`
-- **Community 9** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 10** (2): `FoundationAgents/MetaGPT`, `TauricResearch/TradingAgents`
-- **Community 8** (2): `camel-ai/camel`, `eigent-ai/eigent`
-- **Community 15** (2): `ruvnet/ruflo`, `flyteorg/flyte`
+- **Community 12** (10): `langchain-ai/langgraph`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `langflow-ai/langflow`, `bytedance/deer-flow`, `elizaOS/eliza`, `veegee82/agent-workflow-protocol`
+- **Community 3** (9): `google/adk-python`, `agentscope-ai/agentscope`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `FoundationAgents/MetaGPT`, `vercel-labs/coding-agent-template`, `inngest/agent-kit`, `TauricResearch/TradingAgents`
+- **Community 7** (5): `code-yeongyu/oh-my-openagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `ComposioHQ/agent-orchestrator`, `getpaseo/paseo`
+- **Community 9** (4): `openai/openai-agents-python`, `camel-ai/camel`, `eigent-ai/eigent`, `flyteorg/flyte`
+- **Community 8** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
+- **Community 1** (2): `huggingface/smolagents`, `sentient-agi/ROMA`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
-- `langchain-ai/langgraph` — PageRank 0.0032
-- `agno-agi/agno` — PageRank 0.0031
-- `huggingface/smolagents` — PageRank 0.0023
-- `inngest/agent-kit` — PageRank 0.0023
-- `openai/openai-agents-python` — PageRank 0.0022
+- `huggingface/smolagents` — PageRank 0.0032
+- `langchain-ai/langgraph` — PageRank 0.0031
+- `agno-agi/agno` — PageRank 0.0030
+- `microsoft/semantic-kernel` — PageRank 0.0023
+- `openai/openai-agents-python` — PageRank 0.0021
 - `liquidos-ai/AutoAgents` — PageRank 0.0020
-- `microsoft/semantic-kernel` — PageRank 0.0019
+- `inngest/agent-kit` — PageRank 0.0019
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0017
-- `crewAIInc/crewAI` — PageRank 0.0015
 - `langgenius/dify` — PageRank 0.0015
+- `crewAIInc/crewAI` — PageRank 0.0015
 
 **Direct links between orchestration tools** (top similarity edges where both endpoints are in this report):
 
@@ -358,4 +357,4 @@ Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, La
 - **Selection**: scan for orchestration / multi-agent / swarm / workflow / agent-framework signals, then manual curation by approach. RAG frameworks, eval/observability platforms, and single-purpose agents were routed to their own reports or excluded; only tools whose *primary* job is coordinating agents/steps appear here.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-06-02T21:41:26.385Z</sub>
+<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-06-02T21:59:05.644Z</sub>
