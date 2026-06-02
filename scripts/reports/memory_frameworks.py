@@ -26,6 +26,7 @@ OUT = os.path.join(ROOT, "reports/memory-frameworks-for-llm-agents.md")
 TAXONOMY = {
     # Tier 1 — General-purpose agent memory frameworks / platforms
     "mem0ai/mem0": ("General memory layer", "Universal, LLM-agnostic memory API; extract+store+retrieve facts across sessions."),
+    "letta-ai/letta": ("General memory layer", "Ex-MemGPT — the project that coined 'agent memory'; self-editing memory + a stateful agent server."),
     "topoteretes/cognee": ("General memory layer", "'Memory control plane' — ECL (extract-cognify-load) pipelines into a knowledge graph + vector store."),
     "getzep/graphiti": ("General memory layer", "Temporal knowledge graph engine behind Zep; bi-temporal edges, real-time incremental updates."),
     "MemoriLabs/Memori": ("General memory layer", "Agent-native memory infra; turns execution & conversations into structured recall."),

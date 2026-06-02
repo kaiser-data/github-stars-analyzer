@@ -3,57 +3,16 @@
   "count": 8,
   "reports": [
     {
-      "slug": "mcp-tooling",
-      "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
-      "file": "mcp-tooling.md",
-      "category": "AI / MCP",
-      "summary": "34 MCP projects (400,473\u2605): SDKs/frameworks, clients, gateways, and 23 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
-      "tool_count": 34,
-      "total_stars": 400473,
-      "categories": {
-        "SDK/framework": 3,
-        "Client/host": 2,
-        "Gateway": 3,
-        "Servers": 23,
-        "Learning": 3
-      },
-      "top_tools": [
-        {
-          "name": "punkpeye/awesome-mcp-servers",
-          "stars": 87798
-        },
-        {
-          "name": "upstash/context7",
-          "stars": 56002
-        },
-        {
-          "name": "microsoft/playwright-mcp",
-          "stars": 32957
-        },
-        {
-          "name": "github/github-mcp-server",
-          "stars": 30138
-        },
-        {
-          "name": "PrefectHQ/fastmcp",
-          "stars": 25293
-        }
-      ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
-      "generated": "2026-06-02",
-      "generator": "scripts/reports/mcp_tooling.py"
-    },
-    {
       "slug": "agent-orchestration",
       "title": "AI Agent Orchestration \u2014 Landscape Report",
       "file": "agent-orchestration.md",
       "category": "AI / Agents",
-      "summary": "30 agent-orchestration tools (974,076\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
-      "tool_count": 30,
-      "total_stars": 974076,
+      "summary": "38 agent-orchestration tools (1,459,773\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
+      "tool_count": 38,
+      "total_stars": 1459773,
       "categories": {
-        "Code-first": 10,
-        "Visual": 4,
+        "Code-first": 16,
+        "Visual": 5,
         "Coding-agent": 9,
         "Agent OS": 1,
         "Infra": 2
@@ -61,37 +20,119 @@
       "top_tools": [
         {
           "name": "n8n-io/n8n",
-          "stars": 189534
+          "stars": 190785
+        },
+        {
+          "name": "langflow-ai/langflow",
+          "stars": 149111
         },
         {
           "name": "langgenius/dify",
-          "stars": 142465
+          "stars": 143556
         },
         {
           "name": "TauricResearch/TradingAgents",
-          "stars": 79218
+          "stars": 82281
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 69408
-        },
-        {
-          "name": "code-yeongyu/oh-my-openagent",
-          "stars": 59264
+          "stars": 70299
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/agent_orchestration.py"
+    },
+    {
+      "slug": "mcp-tooling",
+      "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
+      "file": "mcp-tooling.md",
+      "category": "AI / MCP",
+      "summary": "37 MCP projects (513,954\u2605): SDKs/frameworks, clients, gateways, and 23 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
+      "tool_count": 37,
+      "total_stars": 513954,
+      "categories": {
+        "SDK/framework": 5,
+        "Client/host": 3,
+        "Gateway": 3,
+        "Servers": 23,
+        "Learning": 3
+      },
+      "top_tools": [
+        {
+          "name": "punkpeye/awesome-mcp-servers",
+          "stars": 88381
+        },
+        {
+          "name": "modelcontextprotocol/servers",
+          "stars": 86635
+        },
+        {
+          "name": "upstash/context7",
+          "stars": 56601
+        },
+        {
+          "name": "microsoft/playwright-mcp",
+          "stars": 33359
+        },
+        {
+          "name": "github/github-mcp-server",
+          "stars": 30374
+        }
+      ],
+      "snapshot": "2026-06-02T21:41:26.385Z",
+      "generated": "2026-06-02",
+      "generator": "scripts/reports/mcp_tooling.py"
+    },
+    {
+      "slug": "rag-tooling",
+      "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
+      "file": "rag-tooling.md",
+      "category": "AI / RAG",
+      "summary": "31 RAG tools (665,550\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
+      "tool_count": 31,
+      "total_stars": 665550,
+      "categories": {
+        "RAG framework / engine": 12,
+        "Vector DB / search": 10,
+        "Ingestion / parsing / chunking": 4,
+        "Embeddings / rerankers": 3,
+        "Novel retrieval approach": 2
+      },
+      "top_tools": [
+        {
+          "name": "infiniflow/ragflow",
+          "stars": 81757
+        },
+        {
+          "name": "PaddlePaddle/PaddleOCR",
+          "stars": 79331
+        },
+        {
+          "name": "run-llama/llama_index",
+          "stars": 49861
+        },
+        {
+          "name": "milvus-io/milvus",
+          "stars": 44597
+        },
+        {
+          "name": "facebookresearch/faiss",
+          "stars": 40189
+        }
+      ],
+      "snapshot": "2026-06-02T21:41:26.385Z",
+      "generated": "2026-06-02",
+      "generator": "scripts/reports/rag_tooling.py"
     },
     {
       "slug": "openclaw-ecosystem",
       "title": "OpenClaw Ecosystem \u2014 What to Use Now",
       "file": "openclaw-ecosystem.md",
       "category": "AI / OpenClaw",
-      "summary": "29 OpenClaw (\ud83e\udd9e) ecosystem projects (968,104\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
-      "tool_count": 29,
-      "total_stars": 968104,
+      "summary": "28 OpenClaw (\ud83e\udd9e) ecosystem projects (991,383\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
+      "tool_count": 28,
+      "total_stars": 991383,
       "categories": {
         "Alternatives": 5,
         "Hosting": 3,
@@ -102,78 +143,77 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 374391
+          "stars": 376269
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 165496
+          "stars": 177229
         },
         {
           "name": "farion1231/cc-switch",
-          "stars": 79649
+          "stars": 89233
         },
         {
           "name": "CherryHQ/cherry-studio",
-          "stars": 46219
+          "stars": 46782
         },
         {
           "name": "HKUDS/nanobot",
-          "stars": 43074
+          "stars": 43539
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
     {
-      "slug": "rag-tooling",
-      "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
-      "file": "rag-tooling.md",
-      "category": "AI / RAG",
-      "summary": "27 RAG tools (567,212\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
-      "tool_count": 27,
-      "total_stars": 567212,
+      "slug": "llm-evaluation-tooling",
+      "title": "LLM Evaluation Tooling \u2014 Landscape Report",
+      "file": "llm-evaluation-tooling.md",
+      "category": "AI / Evaluation",
+      "summary": "24 LLM evaluation tools (183,927\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+      "tool_count": 24,
+      "total_stars": 183927,
       "categories": {
-        "RAG framework / engine": 10,
-        "Vector DB / search": 7,
-        "Ingestion / parsing / chunking": 4,
-        "Embeddings / rerankers": 3,
-        "Novel retrieval approach": 3
+        "Observability + eval platform": 5,
+        "Evaluation framework": 8,
+        "Benchmark / leaderboard": 7,
+        "Safety / red-team": 4
       },
       "top_tools": [
         {
-          "name": "infiniflow/ragflow",
-          "stars": 81143
+          "name": "langfuse/langfuse",
+          "stars": 28386
         },
         {
-          "name": "PaddlePaddle/PaddleOCR",
-          "stars": 78454
+          "name": "mlflow/mlflow",
+          "stars": 26258
         },
         {
-          "name": "run-llama/llama_index",
-          "stars": 49640
+          "name": "promptfoo/promptfoo",
+          "stars": 21810
         },
         {
-          "name": "facebookresearch/faiss",
-          "stars": 40116
+          "name": "comet-ml/opik",
+          "stars": 19424
         },
         {
-          "name": "HKUDS/LightRAG",
-          "stars": 35669
+          "name": "openai/evals",
+          "stars": 18595
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
-      "generator": "scripts/reports/rag_tooling.py"
+      "generator": "scripts/reports/llm_evaluation.py"
     },
     {
       "slug": "memory-frameworks-for-llm-agents",
       "title": "Memory Frameworks for LLMs & Agents \u2014 Comparative Report",
       "file": "memory-frameworks-for-llm-agents.md",
       "category": "AI / Agents",
-      "summary": "21 LLM/agent memory frameworks (323,585\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
+      "summary": "21 LLM/agent memory frameworks (348,478\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
       "tool_count": 21,
-      "total_stars": 323585,
+      "total_stars": 348478,
       "categories": {
         "General memory layer": 12,
         "Coding-agent memory": 4,
@@ -183,77 +223,37 @@
       "top_tools": [
         {
           "name": "thedotmack/claude-mem",
-          "stars": 77829
+          "stars": 80248
         },
         {
           "name": "mem0ai/mem0",
-          "stars": 56594
+          "stars": 57427
         },
         {
           "name": "MemPalace/mempalace",
-          "stars": 52767
+          "stars": 53319
         },
         {
           "name": "getzep/graphiti",
-          "stars": 26478
+          "stars": 26920
         },
         {
           "name": "gastownhall/beads",
-          "stars": 24064
+          "stars": 24284
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/memory_frameworks.py"
-    },
-    {
-      "slug": "llm-evaluation-tooling",
-      "title": "LLM Evaluation Tooling \u2014 Landscape Report",
-      "file": "llm-evaluation-tooling.md",
-      "category": "AI / Evaluation",
-      "summary": "18 LLM evaluation tools (113,734\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
-      "tool_count": 18,
-      "total_stars": 113734,
-      "categories": {
-        "Observability + eval platform": 5,
-        "Evaluation framework": 4,
-        "Benchmark / leaderboard": 5,
-        "Safety / red-team": 4
-      },
-      "top_tools": [
-        {
-          "name": "langfuse/langfuse",
-          "stars": 27824
-        },
-        {
-          "name": "mlflow/mlflow",
-          "stars": 26085
-        },
-        {
-          "name": "comet-ml/opik",
-          "stars": 19366
-        },
-        {
-          "name": "confident-ai/deepeval",
-          "stars": 15669
-        },
-        {
-          "name": "NVIDIA/garak",
-          "stars": 7896
-        }
-      ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
-      "generated": "2026-06-02",
-      "generator": "scripts/reports/llm_evaluation.py"
     },
     {
       "slug": "token-savings",
       "title": "Token-Savings & Context-Efficiency Tooling",
       "file": "token-savings.md",
       "category": "AI / Efficiency",
-      "summary": "15 token-savings tools (311,195\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
+      "summary": "15 token-savings tools (340,115\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
       "tool_count": 15,
-      "total_stars": 311195,
+      "total_stars": 340115,
       "categories": {
         "Coding": 8,
         "Generation": 1,
@@ -264,26 +264,26 @@
       "top_tools": [
         {
           "name": "thedotmack/claude-mem",
-          "stars": 77829
+          "stars": 80248
         },
         {
           "name": "JuliusBrussee/caveman",
-          "stars": 64286
+          "stars": 67913
         },
         {
           "name": "rtk-ai/rtk",
-          "stars": 53585
+          "stars": 57924
+        },
+        {
+          "name": "colbymchenry/codegraph",
+          "stars": 37874
         },
         {
           "name": "toon-format/toon",
-          "stars": 24362
-        },
-        {
-          "name": "deepseek-ai/DeepSeek-OCR",
-          "stars": 23165
+          "stars": 24452
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/token_savings.py"
     },
@@ -292,9 +292,9 @@
       "title": "Hermes Agent vs OpenClaw \u2014 Head-to-Head",
       "file": "hermes-vs-openclaw.md",
       "category": "AI / Comparison",
-      "summary": "Head-to-head: OpenClaw (374,391\u2605) vs Hermes Agent (165,496\u2605) on adoption, velocity, health, maintenance & ecosystem, plus the broader field of personal-assistant agents. Verdict: default OpenClaw; Hermes if Python-first.",
+      "summary": "Head-to-head: OpenClaw (376,269\u2605) vs Hermes Agent (177,229\u2605) on adoption, velocity, health, maintenance & ecosystem, plus the broader field of personal-assistant agents. Verdict: default OpenClaw; Hermes if Python-first.",
       "tool_count": 10,
-      "total_stars": 820948,
+      "total_stars": 838017,
       "categories": {
         "Principals": 2,
         "Field": 8
@@ -302,26 +302,26 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 374391
+          "stars": 376269
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 165496
+          "stars": 177229
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 69408
+          "stars": 70299
         },
         {
           "name": "code-yeongyu/oh-my-openagent",
-          "stars": 59264
+          "stars": 60730
         },
         {
           "name": "HKUDS/nanobot",
-          "stars": 43074
+          "stars": 43539
         }
       ],
-      "snapshot": "2026-05-24T19:57:47.245Z",
+      "snapshot": "2026-06-02T21:41:26.385Z",
       "generated": "2026-06-02",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }

@@ -48,12 +48,21 @@ TAXONOMY = {
     "strands-agents/sdk-python": ("Code-first agent frameworks", "Model-driven agents in a few lines; very high health (96) and bus factor 7."),
     "i-am-bee/beeai-framework": ("Code-first agent frameworks", "Production-ready agents in both Python and TypeScript."),
     "liquidos-ai/AutoAgents": ("Code-first agent frameworks", "Rust multi-agent framework to build, deploy & coordinate agents."),
+    "crewAIInc/crewAI": ("Code-first agent frameworks", "Role-based 'crew' multi-agent framework — agents with roles, goals & tools collaborate."),
+    "microsoft/autogen": ("Code-first agent frameworks", "Microsoft's conversational multi-agent framework; agents talk to solve tasks."),
+    "huggingface/smolagents": ("Code-first agent frameworks", "Minimalist code-agent framework — agents that write & run Python to act."),
+    "agno-agi/agno": ("Code-first agent frameworks", "Fast multimodal agent framework (ex-phidata) with memory/tools/teams."),
+    "FoundationAgents/MetaGPT": ("Code-first agent frameworks", "Multi-agent 'software company' — assigns SOPs/roles (PM, architect, engineer)."),
+    "camel-ai/camel": ("Code-first agent frameworks", "Large multi-agent 'society' framework for studying agent cooperation at scale."),
+    "stanfordnlp/dspy": ("Code-first agent frameworks", "Programmatic prompt/pipeline optimization — compile agent behavior instead of hand-prompting."),
+    "assafelovic/gpt-researcher": ("Vertical / domain systems", "Autonomous research agent that plans, searches & writes cited reports."),
 
     # ===== Visual / low-code workflow platforms =====
     "n8n-io/n8n": ("Visual / low-code platforms", "Fair-code workflow automation with native AI nodes — the giant (189k★, health 100)."),
     "langgenius/dify": ("Visual / low-code platforms", "Production-ready platform for agentic workflow development (health 100)."),
     "FlowiseAI/Flowise": ("Visual / low-code platforms", "Build AI agents visually; popular drag-and-drop builder."),
     "simstudioai/sim": ("Visual / low-code platforms", "Build, deploy & orchestrate agents — 'central intelligence layer for your AI workforce'."),
+    "langflow-ai/langflow": ("Visual / low-code platforms", "Popular drag-and-drop builder for agents & flows; visual graph of components."),
 
     # ===== Coding-agent orchestration (coordinate multiple coding agents) =====
     "bytedance/deer-flow": ("Coding-agent orchestration", "Long-horizon SuperAgent harness that researches, codes & creates with sandboxes (bf6)."),
@@ -83,11 +92,9 @@ TAXONOMY = {
 }
 
 # Canonical orchestration tools NOT in this user's stars (honest landscape context).
-NOTABLY_ABSENT = [
-    ("crewAIInc/crewAI", "the popular role-based multi-agent 'crew' framework"),
-    ("microsoft/autogen", "Microsoft's research multi-agent conversation framework"),
-    ("langflow-ai/langflow", "popular visual agent/flow builder"),
-]
+# (crewAI / autogen / langflow were here previously — now starred and moved into the
+# taxonomy above.)
+NOTABLY_ABSENT = []
 
 # ---- Load --------------------------------------------------------------------
 with open(CLASSIFIED) as f:
@@ -323,14 +330,22 @@ if risky:
     A("")
 
 # --- Notably absent
-A("## Notably absent from your stars")
-A("")
-A("Major orchestration tools **not** in this dataset — worth knowing before treating the "
-  "above as complete:")
-A("")
-for name, what in NOTABLY_ABSENT:
-    A(f"- **{name}** — {what}")
-A("")
+if NOTABLY_ABSENT:
+    A("## Notably absent from your stars")
+    A("")
+    A("Major orchestration tools **not** in this dataset — worth knowing before treating the "
+      "above as complete:")
+    A("")
+    for name, what in NOTABLY_ABSENT:
+        A(f"- **{name}** — {what}")
+    A("")
+else:
+    A("## Coverage")
+    A("")
+    A("Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, "
+      "LangGraph, langflow, semantic-kernel, ADK, agentscope, …) — no major gaps left in "
+      "this category.")
+    A("")
 
 # --- Methodology
 A("## Methodology & caveats")

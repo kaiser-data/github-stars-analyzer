@@ -67,6 +67,11 @@ TAXONOMY = {
     "yvgude/lean-ctx": ("Server · code intelligence", "Cognitive context layer — 51+ MCP tools, multiple read modes for agentic systems."),
     "shaneholloman/mcp-knowledge-graph": ("Server · code intelligence", "Persistent memory for Claude via a local knowledge graph (also in the memory report)."),
 
+    # ===== Official protocol repos (SDKs / reference servers / tooling) =====
+    "modelcontextprotocol/servers": ("SDK / framework", "Official reference-server monorepo — canonical examples for filesystem, git, fetch, etc."),
+    "modelcontextprotocol/typescript-sdk": ("SDK / framework", "Official TypeScript SDK for building MCP servers & clients."),
+    "modelcontextprotocol/inspector": ("Client / host", "Official visual debugger/inspector for testing MCP servers."),
+
     # Docs / research / knowledge servers
     "blazickjp/arxiv-mcp-server": ("Server · docs/research", "Search & analyze arXiv papers through MCP."),
     "VectifyAI/pageindex-mcp": ("Server · docs/research", "MCP front-end to PageIndex's vectorless reasoning-based RAG."),

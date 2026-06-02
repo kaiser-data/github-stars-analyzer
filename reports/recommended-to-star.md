@@ -1,73 +1,76 @@
 # Recommended to Star — Gaps in Your Collection
 
-> **What this is:** popular AI/LLM frameworks that were missing from your stars, with **live
-> status checked against GitHub** (`gh api user/starred/...`) on 2026-06-02.
+> **Status (live-checked via `gh api` on 2026-06-02):** of the original 33 recommendations
+> you've now starred **32**. The dataset has been refreshed (`npm run refresh`) to **1,121
+> repos**, so these now appear in the in-app reports. Only **1 original rec** remains, plus a
+> fresh round of gaps in **categories the reports didn't cover yet**.
 >
-> ✅ **You've since starred 20 of the 33** — including 7 of the 8 Tier-1 must-haves. Nice.
-> **13 remain** (below).
->
-> ⚠️ Unlike your other reports, this one leans on external knowledge (training cutoff early
-> 2026) rather than your dataset. Note also: your `public/data/classified.json` is still the
-> **May-24 snapshot**, so these new stars won't appear in the in-app reports until you run
-> `npm run refresh`.
+> ⚠️ This file leans on external knowledge (training cutoff early 2026), unlike the
+> dataset-derived reports.
 
-## 🟢 Still to star (13)
+## 🟢 Original list — 1 left
 
-### 🔴 Highest priority (2 leftover must-haves)
-- [ ] [cline/cline](https://github.com/cline/cline) — **Coding agents** — dominant agentic VS Code extension.
-- [ ] [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) — **LLM evaluation** — leading prompt/eval + red-team CLI.
+- [ ] [sourcegraph/cody](https://github.com/sourcegraph/cody) — **Coding agents** — context-aware coding assistant.
 
-### Coding agents
-- [ ] [princeton-nlp/SWE-agent](https://github.com/princeton-nlp/SWE-agent) — resolves real GitHub issues (SWE-bench).
-- [ ] [sourcegraph/cody](https://github.com/sourcegraph/cody) — context-aware coding assistant.
+_(The other 32 — llama.cpp, graphrag, aider, cline, milvus, letta, dspy, promptfoo, crewAI,
+autogen, langflow, smolagents, agno, MetaGPT, camel, gpt-researcher, openai/evals,
+lm-evaluation-harness, phoenix, lighteval, trulens, lancedb, txtai, marqo, mcp servers/sdk/inspector,
+text-generation-inference, guidance, lmdeploy, SWE-agent, helicone — are now starred ✓)_
 
-### RAG / vector DB
-- [ ] [lancedb/lancedb](https://github.com/lancedb/lancedb) — embedded, serverless vector DB.
-- [ ] [neuml/txtai](https://github.com/neuml/txtai) — all-in-one embeddings DB + RAG.
-- [ ] [marqo-ai/marqo](https://github.com/marqo-ai/marqo) — end-to-end vector search incl. inference.
+## 🟠 New round — gaps in uncovered categories (17, live-checked)
 
-### MCP
-- [ ] [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) — official reference-servers monorepo.
-- [ ] [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) — official TS SDK.
-- [ ] [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) — official MCP debugging tool.
+You already hold the **leader** in each new category (`LLaMA-Factory`, `unsloth`, `axolotl`,
+`outlines`, `guardrails-ai`, `browser-use`, `docling`, `Portkey`). These are the secondary
+picks still missing:
 
-### Inference / serving
-- [ ] [guidance-ai/guidance](https://github.com/guidance-ai/guidance) — constrained/structured generation; you have nothing like it.
-- [ ] [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) — high-perf inference & serving toolkit.
+### 🔴 Empty categories (highest value — you have *nothing* here)
+- [ ] [openai/whisper](https://github.com/openai/whisper) — **Voice/STT** — the reference speech-to-text model.
+- [ ] [m-bain/whisperX](https://github.com/m-bain/whisperX) — **Voice/STT** — fast Whisper + word-level timestamps & diarization.
+- [ ] [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) — **Voice/STT** — low-latency realtime transcription.
+- [ ] [janhq/jan](https://github.com/janhq/jan) — **Local runner** — offline ChatGPT-style desktop app.
+- [ ] [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) — **Local runner** — run LLMs locally, cross-platform.
+- [ ] [Mozilla-Ocho/llamafile](https://github.com/Mozilla-Ocho/llamafile) — **Local runner** — single-file portable LLM executables.
+- [ ] [vanna-ai/vanna](https://github.com/vanna-ai/vanna) — **Text-to-SQL** — RAG-based natural-language → SQL.
 
-### Observability
-- [ ] [helicone/helicone](https://github.com/helicone/helicone) — OSS LLM observability/gateway.
+### Secondary picks in covered categories
+- [ ] [huggingface/trl](https://github.com/huggingface/trl) — **Fine-tuning** — RLHF/DPO/SFT trainers (the HF building block).
+- [ ] [huggingface/peft](https://github.com/huggingface/peft) — **Fine-tuning** — parameter-efficient fine-tuning (LoRA, etc.).
+- [ ] [jxnl/instructor](https://github.com/jxnl/instructor) — **Structured output** — Pydantic-typed LLM outputs; very popular.
+- [ ] [BoundaryML/baml](https://github.com/BoundaryML/baml) — **Structured output** — a DSL for reliable structured generation.
+- [ ] [NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) — **Guardrails** — programmable conversational rails.
+- [ ] [protectai/llm-guard](https://github.com/protectai/llm-guard) — **Guardrails** — input/output security scanners.
+- [ ] [Skyvern-AI/skyvern](https://github.com/Skyvern-AI/skyvern) — **Browser/CUA** — automate browser workflows with LLMs+vision.
+- [ ] [microsoft/OmniParser](https://github.com/microsoft/OmniParser) — **Browser/CUA** — screen parsing for GUI agents.
+- [ ] [jina-ai/reader](https://github.com/jina-ai/reader) — **Doc extraction** — URL → LLM-clean markdown.
+- [ ] [FlagOpen/FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding) — **Embeddings** — BGE embedding/reranker models.
 
 ### Quick-star list (copy/paste)
 
 ```
-cline/cline
-promptfoo/promptfoo
-princeton-nlp/SWE-agent
 sourcegraph/cody
-lancedb/lancedb
-neuml/txtai
-marqo-ai/marqo
-modelcontextprotocol/servers
-modelcontextprotocol/typescript-sdk
-modelcontextprotocol/inspector
-guidance-ai/guidance
-InternLM/lmdeploy
-helicone/helicone
+openai/whisper
+m-bain/whisperX
+KoljaB/RealtimeSTT
+janhq/jan
+nomic-ai/gpt4all
+Mozilla-Ocho/llamafile
+vanna-ai/vanna
+huggingface/trl
+huggingface/peft
+jxnl/instructor
+BoundaryML/baml
+NVIDIA/NeMo-Guardrails
+protectai/llm-guard
+Skyvern-AI/skyvern
+microsoft/OmniParser
+jina-ai/reader
+FlagOpen/FlagEmbedding
 ```
 
-## ✅ Already starred (20, verified 2026-06-02)
+## Biggest themes worth your attention
 
-`ggml-org/llama.cpp` · `microsoft/graphrag` · `Aider-AI/aider` · `milvus-io/milvus` ·
-`letta-ai/letta` · `stanfordnlp/dspy` · `crewAIInc/crewAI` · `microsoft/autogen` ·
-`langflow-ai/langflow` · `huggingface/smolagents` · `agno-agi/agno` · `geekan/MetaGPT` ·
-`camel-ai/camel` · `assafelovic/gpt-researcher` · `openai/evals` ·
-`EleutherAI/lm-evaluation-harness` · `Arize-ai/phoenix` · `huggingface/lighteval` ·
-`truera/trulens` · `huggingface/text-generation-inference`
+1. **Voice / speech is entirely empty** — no Whisper, no TTS/STT anything. If audio matters, start with `openai/whisper`.
+2. **No local desktop runner** — you have the engines (Ollama, llama.cpp, vLLM) but no end-user desktop app (`jan`, `gpt4all`, `llamafile`).
+3. **Structured output is thin** — you have `outlines` but not the two most-used in practice (`instructor`, `baml`).
 
-## Deliberately excluded
-
-- **Already yours under a different org:** `ragas` (`vibrantlabsai/ragas`), `fastmcp` (`prefecthq/fastmcp`), `goose` (`aaif-goose/goose`), OpenHands, transformers, sglang, BitNet, Continue, mcp python-sdk.
-- **Historically important but largely superseded:** `Significant-Gravitas/AutoGPT`, `yoheinakajima/babyagi`, `TransformerOptimus/SuperAGI`, `OpenBMB/ChatDev`.
-
-<sub>33 recommendations · 20 starred / 13 remaining · live-checked via `gh api` on 2026-06-02 · knowledge cutoff early 2026.</sub>
+<sub>Original 33: 32 starred / 1 left · New round: 17 candidates · live-checked via `gh api` on 2026-06-02.</sub>

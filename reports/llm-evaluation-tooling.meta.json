@@ -3,38 +3,38 @@
   "title": "LLM Evaluation Tooling \u2014 Landscape Report",
   "file": "llm-evaluation-tooling.md",
   "category": "AI / Evaluation",
-  "summary": "18 LLM evaluation tools (113,734\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
-  "tool_count": 18,
-  "total_stars": 113734,
+  "summary": "24 LLM evaluation tools (183,927\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+  "tool_count": 24,
+  "total_stars": 183927,
   "categories": {
     "Observability + eval platform": 5,
-    "Evaluation framework": 4,
-    "Benchmark / leaderboard": 5,
+    "Evaluation framework": 8,
+    "Benchmark / leaderboard": 7,
     "Safety / red-team": 4
   },
   "top_tools": [
     {
       "name": "langfuse/langfuse",
-      "stars": 27824
+      "stars": 28386
     },
     {
       "name": "mlflow/mlflow",
-      "stars": 26085
+      "stars": 26258
+    },
+    {
+      "name": "promptfoo/promptfoo",
+      "stars": 21810
     },
     {
       "name": "comet-ml/opik",
-      "stars": 19366
+      "stars": 19424
     },
     {
-      "name": "confident-ai/deepeval",
-      "stars": 15669
-    },
-    {
-      "name": "NVIDIA/garak",
-      "stars": 7896
+      "name": "openai/evals",
+      "stars": 18595
     }
   ],
-  "snapshot": "2026-05-24T19:57:47.245Z",
+  "snapshot": "2026-06-02T21:41:26.385Z",
   "generated": "2026-06-02",
   "generator": "scripts/reports/llm_evaluation.py"
 }

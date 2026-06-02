@@ -37,6 +37,10 @@ TAXONOMY = {
     "langchain-ai/openevals": ("Evaluation framework", "Readymade evaluators (prebuilt prompts + scorers) for LLM apps."),
     "langchain-ai/agentevals": ("Evaluation framework", "Evaluators specialized for agent *trajectories* (tool-call sequences, not just final output)."),
     "rhesis-ai/rhesis": ("Evaluation framework", "Testing platform that lets engineers + PMs + domain experts generate and run test suites."),
+    "promptfoo/promptfoo": ("Evaluation framework", "Declarative prompt/eval testing + red-teaming CLI; config-driven test matrices in CI."),
+    "openai/evals": ("Evaluation framework", "OpenAI's eval registry/framework — write & share evals against a standard harness."),
+    "Arize-ai/phoenix": ("Evaluation framework", "Open-source LLM tracing + eval; notebook-friendly, OTel-based."),
+    "truera/trulens": ("Evaluation framework", "Feedback-function evaluation — programmatic scorers for groundedness/relevance."),
 
     # Benchmarks & leaderboards (fixed task sets, model ranking)
     "LiveBench/LiveBench": ("Benchmark / leaderboard", "Challenging, contamination-free benchmark refreshed over time to resist training-set leakage."),
@@ -44,6 +48,8 @@ TAXONOMY = {
     "vllm-project/guidellm": ("Benchmark / leaderboard", "Performance/inference benchmark: evaluate LLM *deployments* for real-world throughput/latency."),
     "finos-labs/Open-Financial-LLMs-Leaderboard": ("Benchmark / leaderboard", "Domain leaderboard ranking LLMs on financial tasks."),
     "jszheng21/RACE": ("Benchmark / leaderboard", "Multi-dimensional code-generation benchmark (Readability, Maintainability, Correctness, Efficiency)."),
+    "EleutherAI/lm-evaluation-harness": ("Benchmark / leaderboard", "The de-facto academic harness — 100+ standardized benchmarks behind the HF leaderboard."),
+    "huggingface/lighteval": ("Benchmark / leaderboard", "Hugging Face's lightweight, all-in-one eval suite for fast benchmark runs."),
 
     # Safety / red-teaming / hallucination detection
     "NVIDIA/garak": ("Safety / red-team", "LLM vulnerability scanner — probes for jailbreaks, prompt injection, toxicity, data leakage."),
@@ -53,15 +59,11 @@ TAXONOMY = {
 }
 
 # Canonical tools NOT in this user's stars — for honest landscape context.
+# (promptfoo / openai-evals / lm-evaluation-harness / phoenix / lighteval / trulens were
+# here previously — now starred and moved into the taxonomy above.)
 NOTABLY_ABSENT = [
-    ("explodinggradients/ragas", "the standard RAG evaluation metric library"),
-    ("promptfoo/promptfoo", "popular CLI for prompt/eval testing & red-teaming"),
-    ("openai/evals", "OpenAI's eval registry/framework"),
-    ("EleutherAI/lm-evaluation-harness", "de-facto academic benchmark harness"),
-    ("Arize-ai/phoenix", "open-source LLM tracing & eval"),
-    ("huggingface/lighteval", "HF's lightweight eval suite"),
+    ("explodinggradients/ragas", "the standard RAG eval metric library (you hold the fork `vibrantlabsai/ragas`)"),
     ("stanford-crfm/helm", "holistic benchmark from Stanford"),
-    ("truera/trulens", "feedback-function evaluation"),
 ]
 
 # ---- Load data ---------------------------------------------------------------

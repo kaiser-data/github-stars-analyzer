@@ -48,6 +48,11 @@ TAXONOMY = {
     "alibaba/zvec": ("Vector DB / search", "Lightweight, lightning-fast in-process vector database."),
     "facebookresearch/faiss": ("Vector DB / search", "Foundational dense-vector similarity-search library; the index under many DBs."),
     "FalkorDB/FalkorDB": ("Vector DB / search", "Fast graph database (GraphBLAS) — substrate for graph-shaped retrieval."),
+    "milvus-io/milvus": ("Vector DB / search", "Largest-scale OSS vector database — distributed, billion-vector ANN search."),
+    "lancedb/lancedb": ("Vector DB / search", "Embedded, serverless vector DB (columnar/Lance format); zero-ops local RAG."),
+    "microsoft/graphrag": ("RAG framework / engine", "Microsoft's reference GraphRAG — LLM-built entity graph + community summaries over a corpus."),
+    "neuml/txtai": ("RAG framework / engine", "All-in-one embeddings DB + RAG + workflows in one package."),
+    "marqo-ai/marqo": ("Vector DB / search", "End-to-end vector search that bundles embedding inference (text + image)."),
 
     # Ingestion / parsing / chunking
     "Unstructured-IO/unstructured": ("Ingestion / parsing / chunking", "ETL that turns PDFs/docs/HTML into clean, chunk-ready structured elements."),
@@ -76,7 +81,7 @@ ADJACENT = [
 ]
 
 # Themes that cut across categories
-GRAPHRAG = ["HKUDS/LightRAG", "FalkorDB/GraphRAG-SDK", "FalkorDB/FalkorDB"]
+GRAPHRAG = ["microsoft/graphrag", "HKUDS/LightRAG", "FalkorDB/GraphRAG-SDK", "FalkorDB/FalkorDB"]
 
 # ---- Load --------------------------------------------------------------------
 with open(CLASSIFIED) as f:
