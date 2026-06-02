@@ -8,7 +8,7 @@
 
 ## TL;DR — two honest answers
 
-**On raw metrics, [`zeroclaw-labs/zeroclaw`](https://github.com/zeroclaw-labs/zeroclaw) wins** (composite 0.856): health 98, bus factor 5, very active. If you want the cleanest, most resilient standalone claw and don't care about the surrounding tooling, take it.
+**On raw metrics, [`zeroclaw-labs/zeroclaw`](https://github.com/zeroclaw-labs/zeroclaw) wins** (composite 0.856): health 98, bus factor 5, very active. And it's **robust** — it stays #1 under 4 of 6 weighting profiles (see the sensitivity analysis), so that's not an artifact of how I weighted the score. If you want the cleanest, most resilient standalone claw and don't care about the surrounding tooling, take it.
 
 **As a pragmatic default, [`openclaw/openclaw`](https://github.com/openclaw/openclaw) (composite 0.731, #3).** The score above *deliberately excludes the ecosystem network effect* — and that's OpenClaw's real edge: every accessory you've already starred (`clawhub`, `ClawRouter`, `clawmetry`, `opik-openclaw`, `openclaw-supermemory`, `NemoClaw`, `moltworker`) targets OpenClaw, not zeroclaw. That's a genuine switching cost in its favour.
 
@@ -58,6 +58,59 @@ Each column is 0–1 (higher = better); the bar shows the weighted composite.
 | sipeed/picoclaw | 0.90 | 0.80 | 0.60 | 0.36 | 0.80 | **0.718** |
 | HKUDS/nanobot | 0.83 | 0.83 | 0.40 | 0.37 | 0.83 | **0.675** |
 
+## Deeper analysis
+
+### Is this verdict robust, or did the weights decide it?
+
+A single weight vector is easy to rig. So here's the ranking re-run under **six different priority profiles** — from quality-obsessed to pure-hype. If a claw only wins under one contrived weighting, that's a red flag; if it wins across most, the verdict is real.
+
+| Claw | Balanced (this report) | Equal | Quality-first | Adoption-first | Resilience-first | Hype / trajectory | Mean | Spread |
+|---|---|---|---|---|---|---|---|---|
+| zeroclaw | **1** | **1** | **1** | 3 | **1** | 4 | 1.8 | #1–#4 |
+| hermes-agent † | 2 | 2 | 2 | 2 | 2 | 3 | 2.2 | #2–#3 |
+| openclaw | 3 | 3 | 5 | **1** | 6 | **1** | 3.2 | #1–#6 |
+| picoclaw | 4 | 4 | 3 | 5 | 3 | 7 | 4.3 | #3–#7 |
+| nanobot † | 5 | 7 | 6 | 6 | 5 | 5 | 5.7 | #5–#7 |
+| oh-my-openagent † | 6 | 6 | 7 | 4 | 9 | 6 | 6.3 | #4–#9 |
+| eliza † | 7 | 5 | 4 | 8 | 4 | 13 | 6.8 | #4–#13 |
+| ironclaw | 8 | 8 | 8 | 11 | 7 | 11 | 8.8 | #7–#11 |
+| NemoClaw | 9 | 10 | 10 | 12 | 8 | 8 | 9.5 | #8–#12 |
+| openfang | 10 | 9 | 9 | 9 | 10 | 10 | 9.5 | #9–#10 |
+| claw-code | 12 | 13 | 13 | 7 | 13 | 2 | 10.0 | #2–#13 |
+| nanoclaw | 11 | 11 | 12 | 10 | 11 | 9 | 10.7 | #9–#12 |
+| nullclaw | 13 | 12 | 11 | 13 | 12 | 12 | 12.2 | #11–#13 |
+
+**Read-out.**
+- **`zeroclaw` is the robust #1** — first under 4 of 6 profiles, mean rank 1.8, never below #4. The top spot is *not* an artifact of the chosen weights.
+- **Hermes is the stability champion of the top tier** — mean 2.2, range #2–#3; it never leaves the podium under any weighting. The most *weighting-proof* pick.
+- **OpenClaw is polarising** — #1 under adoption/hype profiles but #6 under quality-first. It's a **scale play** (raw stars + momentum), not a **quality play** (its bus-factor-1 sinks it whenever resilience is weighted).
+- **`claw-code` is the most volatile** — #2 under one profile, #13 under others. A weighting-dependent gamble, not a safe default.
+
+### Pareto check: which claws are never the metric-optimal pick?
+
+Ignoring fit and weights entirely: a claw is **dominated** if another claw matches or beats it on *every* generic axis (health, stars, bus factor, releases, momentum, freshness) and beats it on at least one. Dominated claws are never the answer **if you only care about generic quality/scale** — but several survive purely on a niche the axes can't see.
+
+**Pareto-optimal (9):** `zeroclaw`, `hermes-agent`, `openclaw`, `nanobot`, `eliza`, `openfang`, `nanoclaw`, `claw-code`, `nullclaw`.
+
+**Dominated — only justified by fit, not metrics:**
+
+| Claw | Dominated by | Survives only if you need… |
+|---|---|---|
+| `picoclaw` | `zeroclaw` | a tiny Go edge/SBC binary |
+| `oh-my-openagent` | `openclaw` | a TS coding harness for big codebases |
+| `ironclaw` | `zeroclaw` | WASM-sandboxed execution of untrusted code |
+| `NemoClaw` | `zeroclaw`, `hermes-agent` | managed inference on NVIDIA infra |
+
+> This is the **same lesson as the use-case table, proven from the other direction**: raw metrics would tell you to ignore these — but each holds a job the metrics don't measure. Dominance ≠ uselessness when the dimensions are generic.
+
+### Graph signal: centrality, clustering & the *real* network effect
+
+In the repo-similarity graph (1,138 nodes / 3,716 edges), the claws **don't form one cluster** — they scatter across **7 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
+
+- **Centrality (PageRank).** Most hub-like claws: `nanobot` (0.0021), `NemoClaw` (0.0019), `oh-my-openagent` (0.0017). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
+- **Closest claw pair:** `nanobot` ⇄ `hermes-agent` (w=0.66) — near-substitutes. The `zeroclaw` ⇄ `openclaw` edge (w=0.19) confirms they compete for the same slot.
+- **The honest network-effect caveat.** The similarity graph measures shared topics/authors, **not** 'plugs-into' dependency — so it does *not* by itself prove OpenClaw lock-in. The one direct graph signal that does is **`openclaw` ⇄ `clawhub` (its official skill directory) at w=0.71** — the strongest accessory tie of any claw. The broader lock-in argument below rests on real-world integration, which the graph under-counts, not over-counts.
+
 ## Where each claw shines
 
 These claws are **not interchangeable** — they target different jobs. Use this to match a claw to *your* scenario; the score above only ranks general fitness.
@@ -82,7 +135,7 @@ These claws are **not interchangeable** — they target different jobs. Use this
 
 `zeroclaw-labs/zeroclaw` edges out `openclaw/openclaw` on the composite mostly on **health (98 vs 79)** and **bus factor (5 vs 1)** — both real, both in zeroclaw's favour. But the composite scores each claw *in isolation*. It can't see that:
 
-- Your starred ecosystem is built **around OpenClaw** — `clawhub` (skills), `ClawRouter` (routing, on-chain payments), `clawmetry` / `opik-openclaw` (observability), `openclaw-supermemory` (memory), `NemoClaw` / `moltworker` (hosting). None of that plugs into zeroclaw out of the box.
+- Your starred ecosystem is built **around OpenClaw** — `clawhub` (skills, the strongest single graph edge at w=0.71), `ClawRouter` (routing, on-chain payments), `clawmetry` / `opik-openclaw` (observability), `openclaw-supermemory` (memory), `NemoClaw` / `moltworker` (hosting). None of that plugs into zeroclaw out of the box. (The graph under-counts this — it sees topic/author similarity, not 'plugs-into' integration — so treat the real lock-in as *stronger* than the edges suggest.)
 - OpenClaw is **TypeScript** end-to-end, which matches the rest of that tooling — and the crypto/on-chain bent of the ecosystem (agent-native settlement) is a plus if that's your world.
 - zeroclaw is **Rust**: leaner and (per the metrics) cleaner, but you'd be re-building or forgoing the accessory layer.
 

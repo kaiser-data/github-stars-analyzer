@@ -292,7 +292,7 @@
       "title": "Which Claw Should I Use? \u2014 A Decision Report",
       "file": "which-claw.md",
       "category": "AI / Comparison",
-      "summary": "Decision report ranking 13 standalone OpenClaw-family claws (agents/runtimes) on a transparent composite (health, freshness, momentum, resilience, adoption). Winner: zeroclaw-labs/zeroclaw. Includes use-case routing (security, coding, edge, stability).",
+      "summary": "Decision report ranking 13 standalone OpenClaw-family claws (incl. functional ones like Hermes) on a transparent composite (health, adoption, resilience, maturity, momentum). Winner: zeroclaw \u2014 robust across 6 weight profiles. Adds weight-sensitivity, Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table.",
       "tool_count": 13,
       "total_stars": 1018634,
       "categories": {

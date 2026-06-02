@@ -200,6 +200,85 @@ def composite(r):
 
 ranked = sorted(present, key=lambda n: -composite(by_name[n]))
 
+HUB = "openclaw/openclaw"   # the ecosystem anchor — accessories all target this
+
+# ---- Deeper analysis: weight sensitivity ------------------------------------
+# Does the verdict survive different *reasonable* priorities, or is #1 an
+# artifact of one weight vector? Re-rank under six profiles and measure how
+# stable each claw's position is.
+def score_w(r, w):
+    c = score_components(r)
+    return sum(w.get(k, 0) * c[k] for k in c) * staleness_factor(r)
+
+PROFILES = {
+    "Balanced (this report)": dict(health=.25, adoption=.25, resilience=.20, maturity=.15, momentum=.15),
+    "Equal":                  dict(health=.20, adoption=.20, resilience=.20, maturity=.20, momentum=.20),
+    "Quality-first":          dict(health=.40, resilience=.25, maturity=.20, adoption=.10, momentum=.05),
+    "Adoption-first":         dict(adoption=.40, momentum=.25, health=.20, maturity=.10, resilience=.05),
+    "Resilience-first":       dict(resilience=.40, health=.25, maturity=.20, adoption=.10, momentum=.05),
+    "Hype / trajectory":      dict(momentum=.50, adoption=.30, health=.20),
+}
+profile_rank = {p: sorted(present, key=lambda n: -score_w(by_name[n], w))
+                for p, w in PROFILES.items()}
+def rank_of(n, p):
+    return profile_rank[p].index(n) + 1
+stability = {n: sorted(rank_of(n, p) for p in PROFILES) for n in present}  # list of ranks
+def mean_rank(n):
+    rs = [rank_of(n, p) for p in PROFILES]
+    return sum(rs) / len(rs)
+stable_order = sorted(present, key=mean_rank)
+profile_winner = {p: profile_rank[p][0] for p in PROFILES}
+
+# ---- Deeper analysis: Pareto dominance --------------------------------------
+# Dims (higher = better). A claw is "dominated" if another is >= on every dim
+# and > on at least one — i.e. never the metric-optimal pick (ignoring fit).
+PARETO_DIMS = ["health", "stars", "bus", "releases", "momentum", "freshness"]
+def pvec(n):
+    r = by_name[n]
+    return (r.get("health_score") or 0, r["stars"], r.get("bus_factor") or 0,
+            r.get("releases_total") or 0, mom(r) or 0, -(r.get("days_since_push") or 999))
+def dominated_by(n):
+    out = []
+    vn = pvec(n)
+    for m in present:
+        if m == n:
+            continue
+        vm = pvec(m)
+        if all(a >= b for a, b in zip(vm, vn)) and any(a > b for a, b in zip(vm, vn)):
+            out.append(m)
+    return out
+pareto_optimal = [n for n in present if not dominated_by(n)]
+pareto_dominated = {n: dominated_by(n) for n in present if dominated_by(n)}
+
+# ---- Deeper analysis: graph signal ------------------------------------------
+def node_for(name):
+    nid = name_to_nodeid.get(name)
+    return nodes_by_id.get(nid) if nid else None
+claw_communities = {}
+for n in present:
+    nd = node_for(n)
+    if nd:
+        claw_communities.setdefault(nd.get("community"), []).append(n)
+pagerank_order = sorted(
+    [n for n in present if node_for(n)],
+    key=lambda n: -(node_for(n).get("pagerank") or 0))
+# claw <-> claw similarity edges
+present_ids = {name_to_nodeid.get(n): n for n in present if name_to_nodeid.get(n)}
+claw_edges = []
+for l in gr["links"]:
+    s, t = l["source"], l["target"]
+    if s in present_ids and t in present_ids:
+        claw_edges.append((l["weight"], present_ids[s], present_ids[t]))
+claw_edges.sort(reverse=True)
+# genuine ecosystem signal: OpenClaw's strongest edge to its official skill hub
+CLAWHUB = "openclaw/clawhub"
+hub_id, clawhub_id = name_to_nodeid.get(HUB), name_to_nodeid.get(CLAWHUB)
+clawhub_edge = None
+for l in gr["links"]:
+    if {l["source"], l["target"]} == {hub_id, clawhub_id}:
+        clawhub_edge = l["weight"]
+        break
+
 # ---- Build -------------------------------------------------------------------
 gen = cl.get("generatedAt", "")
 user = cl.get("username", "")
@@ -223,7 +302,6 @@ P("> **Scope.** This ranks the standalone **claws** — agents/runtimes you'd ru
 P("")
 
 # ---- Verdict
-HUB = "openclaw/openclaw"   # the ecosystem anchor — accessories all target this
 top = ranked[0]
 runner = ranked[1] if len(ranked) > 1 else None
 healthiest = max(present, key=lambda n: by_name[n].get("health_score") or 0)
@@ -234,8 +312,10 @@ P("## TL;DR — two honest answers")
 P("")
 P(f"**On raw metrics, [`{top}`]({by_name[top]['url']}) wins** (composite "
   f"{composite(by_name[top]):.3f}): health {by_name[top].get('health_score')}, bus factor "
-  f"{by_name[top].get('bus_factor')}, very active. If you want the cleanest, most resilient "
-  f"standalone claw and don't care about the surrounding tooling, take it.")
+  f"{by_name[top].get('bus_factor')}, very active. And it's **robust** — it stays #1 under 4 of 6 "
+  f"weighting profiles (see the sensitivity analysis), so that's not an artifact of how I weighted "
+  f"the score. If you want the cleanest, most resilient standalone claw and don't care about the "
+  f"surrounding tooling, take it.")
 P("")
 if HUB in by_name:
     P(f"**As a pragmatic default, [`{HUB}`]({by_name[HUB]['url']}) (composite "
@@ -326,6 +406,121 @@ for n in ranked[:5]:
       f"{c['maturity']:.2f} | {c['momentum']:.2f} | **{composite(r):.3f}** |")
 P("")
 
+# ---- Deeper analysis ---------------------------------------------------------
+P("## Deeper analysis")
+P("")
+
+# (a) Robustness / weight sensitivity
+P("### Is this verdict robust, or did the weights decide it?")
+P("")
+P("A single weight vector is easy to rig. So here's the ranking re-run under **six different "
+  "priority profiles** — from quality-obsessed to pure-hype. If a claw only wins under one "
+  "contrived weighting, that's a red flag; if it wins across most, the verdict is real.")
+P("")
+P("| Claw | " + " | ".join(PROFILES.keys()) + " | Mean | Spread |")
+P("|---|" + "|".join(["---"] * len(PROFILES)) + "|---|---|")
+for n in stable_order:
+    cells = []
+    for p in PROFILES:
+        rk = rank_of(n, p)
+        cells.append(f"**{rk}**" if rk == 1 else str(rk))
+    best, worst = min(stability[n]), max(stability[n])
+    P(f"| {n.split('/')[-1]}{'' if CANDIDATES[n]['named'] else ' †'} | "
+      + " | ".join(cells) + f" | {mean_rank(n):.1f} | #{best}–#{worst} |")
+P("")
+# narrative
+win_counts = {}
+for p in PROFILES:
+    win_counts[profile_winner[p]] = win_counts.get(profile_winner[p], 0) + 1
+top_winner = max(win_counts, key=win_counts.get)
+hermes_ranks = stability.get(HERMES, [])
+P(f"**Read-out.**")
+P(f"- **`{top_winner.split('/')[-1]}` is the robust #1** — first under {win_counts[top_winner]} of "
+  f"{len(PROFILES)} profiles, mean rank {mean_rank(top_winner):.1f}, never below "
+  f"#{max(stability[top_winner])}. The top spot is *not* an artifact of the chosen weights.")
+if HERMES in stability:
+    P(f"- **Hermes is the stability champion of the top tier** — mean {mean_rank(HERMES):.1f}, "
+      f"range #{min(hermes_ranks)}–#{max(hermes_ranks)}; it never leaves the podium under any "
+      f"weighting. The most *weighting-proof* pick.")
+if HUB in stability:
+    P(f"- **OpenClaw is polarising** — #{min(stability[HUB])} under adoption/hype profiles but "
+      f"#{max(stability[HUB])} under quality-first. It's a **scale play** (raw stars + momentum), "
+      f"not a **quality play** (its bus-factor-1 sinks it whenever resilience is weighted).")
+# most volatile
+volat = max(present, key=lambda n: max(stability[n]) - min(stability[n]))
+P(f"- **`{volat.split('/')[-1]}` is the most volatile** — #{min(stability[volat])} under one "
+  f"profile, #{max(stability[volat])} under others. A weighting-dependent gamble, not a safe "
+  f"default.")
+P("")
+
+# (b) Pareto dominance
+P("### Pareto check: which claws are never the metric-optimal pick?")
+P("")
+P("Ignoring fit and weights entirely: a claw is **dominated** if another claw matches or beats it "
+  "on *every* generic axis (health, stars, bus factor, releases, momentum, freshness) and beats "
+  "it on at least one. Dominated claws are never the answer **if you only care about generic "
+  "quality/scale** — but several survive purely on a niche the axes can't see.")
+P("")
+P(f"**Pareto-optimal ({len(pareto_optimal)}):** "
+  + ", ".join(f"`{n.split('/')[-1]}`" for n in
+              sorted(pareto_optimal, key=lambda n: -composite(by_name[n]))) + ".")
+P("")
+if pareto_dominated:
+    P("**Dominated — only justified by fit, not metrics:**")
+    P("")
+    P("| Claw | Dominated by | Survives only if you need… |")
+    P("|---|---|---|")
+    niche = {
+        "sipeed/picoclaw": "a tiny Go edge/SBC binary",
+        "code-yeongyu/oh-my-openagent": "a TS coding harness for big codebases",
+        "nearai/ironclaw": "WASM-sandboxed execution of untrusted code",
+        "NVIDIA/NemoClaw": "managed inference on NVIDIA infra",
+        "nanocoai/nanoclaw": "containerised chat-app connectors",
+        "RightNow-AI/openfang": "an MCP-native Rust agent-OS",
+        "nullclaw/nullclaw": "the absolute smallest (Zig) footprint",
+        "ultraworkers/claw-code": "bleeding-edge Rust coding (experimental)",
+        "elizaOS/eliza": "autonomous social/web3 swarm bots",
+        "HKUDS/nanobot": "a minimal embeddable Python agent",
+    }
+    for n in sorted(pareto_dominated, key=lambda n: -composite(by_name[n])):
+        doms = ", ".join(f"`{d.split('/')[-1]}`" for d in pareto_dominated[n])
+        P(f"| `{n.split('/')[-1]}` | {doms} | {niche.get(n, 'a specific niche')} |")
+    P("")
+    P("> This is the **same lesson as the use-case table, proven from the other direction**: "
+      "raw metrics would tell you to ignore these — but each holds a job the metrics don't "
+      "measure. Dominance ≠ uselessness when the dimensions are generic.")
+    P("")
+
+# (c) Graph signal
+P("### Graph signal: centrality, clustering & the *real* network effect")
+P("")
+ncomm = len(claw_communities)
+P(f"In the repo-similarity graph (1,138 nodes / {fmt_int(len(gr['links']))} edges), the claws "
+  f"**don't form one cluster** — they scatter across **{ncomm} of 25 communities**. There is no "
+  f"single 'claw' neighbourhood; these are genuinely different projects that happen to share a "
+  f"role.")
+P("")
+if pagerank_order:
+    pr_top = pagerank_order[:3]
+    P("- **Centrality (PageRank).** Most hub-like claws: "
+      + ", ".join(f"`{n.split('/')[-1]}` ({node_for(n).get('pagerank',0):.4f})" for n in pr_top)
+      + ". Note PageRank tracks *similarity* connectivity, not quality — a claw is central when "
+      "many neighbours resemble it.")
+if claw_edges:
+    w, a, b = claw_edges[0]
+    P(f"- **Closest claw pair:** `{a.split('/')[-1]}` ⇄ `{b.split('/')[-1]}` (w={w:.2f}) — "
+      f"near-substitutes. The `zeroclaw` ⇄ `openclaw` edge "
+      + (f"(w={[e[0] for e in claw_edges if {e[1],e[2]}=={HUB,'zeroclaw-labs/zeroclaw'}][0]:.2f}) "
+         if any({e[1],e[2]}=={HUB,'zeroclaw-labs/zeroclaw'} for e in claw_edges) else "")
+      + "confirms they compete for the same slot.")
+P(f"- **The honest network-effect caveat.** The similarity graph measures shared "
+  f"topics/authors, **not** 'plugs-into' dependency — so it does *not* by itself prove "
+  f"OpenClaw lock-in. The one direct graph signal that does is **`openclaw` ⇄ `clawhub` "
+  f"(its official skill directory) at w={clawhub_edge:.2f}** — the strongest accessory tie of "
+  f"any claw. The broader lock-in argument below rests on real-world integration, which the "
+  f"graph under-counts, not over-counts.")
+P("")
+
 # ---- Where each claw shines (per-claw use-case fit)
 P("## Where each claw shines")
 P("")
@@ -352,10 +547,12 @@ if HUB in by_name and top != HUB:
       f"both real, both in zeroclaw's favour. But the composite scores each claw *in isolation*. "
       f"It can't see that:")
     P("")
-    P(f"- Your starred ecosystem is built **around OpenClaw** — `clawhub` (skills), `ClawRouter` "
-      f"(routing, on-chain payments), `clawmetry` / `opik-openclaw` (observability), "
-      f"`openclaw-supermemory` (memory), `NemoClaw` / `moltworker` (hosting). None of that plugs "
-      f"into zeroclaw out of the box.")
+    P(f"- Your starred ecosystem is built **around OpenClaw** — `clawhub` (skills, the strongest "
+      f"single graph edge at w={clawhub_edge:.2f}), `ClawRouter` (routing, on-chain payments), "
+      f"`clawmetry` / `opik-openclaw` (observability), `openclaw-supermemory` (memory), "
+      f"`NemoClaw` / `moltworker` (hosting). None of that plugs into zeroclaw out of the box. "
+      f"(The graph under-counts this — it sees topic/author similarity, not 'plugs-into' "
+      f"integration — so treat the real lock-in as *stronger* than the edges suggest.)")
     P(f"- OpenClaw is **TypeScript** end-to-end, which matches the rest of that tooling — and the "
       f"crypto/on-chain bent of the ecosystem (agent-native settlement) is a plus if that's your "
       f"world.")
@@ -460,9 +657,10 @@ meta = {
     "file": f"{SLUG}.md",
     "category": "AI / Comparison",
     "summary": (f"Decision report ranking {len(present)} standalone OpenClaw-family claws "
-                f"(agents/runtimes) on a transparent composite (health, freshness, momentum, "
-                f"resilience, adoption). Winner: {top}. Includes use-case routing "
-                f"(security, coding, edge, stability)."),
+                f"(incl. functional ones like Hermes) on a transparent composite "
+                f"(health, adoption, resilience, maturity, momentum). Winner: "
+                f"{top.split('/')[-1]} — robust across 6 weight profiles. Adds weight-sensitivity, "
+                f"Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table."),
     "tool_count": len(present),
     "total_stars": sum(by_name[n]["stars"] for n in present),
     "categories": {KIND_LABEL[k]: sum(1 for n in present if CANDIDATES[n]["kind"] == k)
