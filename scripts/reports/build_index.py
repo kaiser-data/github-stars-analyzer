@@ -33,6 +33,7 @@ GENERATORS = [
     "blockchain_claws.py",
     "blockchain_essentials.py",
     "voice_agents.py",
+    "local_vs_infra_stack.py",
 ]
 
 def run_generators():
