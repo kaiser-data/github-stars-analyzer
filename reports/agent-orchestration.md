@@ -1,8 +1,8 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 1,172 starred repos (snapshot `2026-06-02T22:59:34.535Z`), cross-referenced with the repo-similarity graph (1,172 nodes / 3,814 edges, 27 communities).
+> Derived from **kaiser-data**'s 1,185 starred repos (snapshot `2026-06-04T15:28:30.136Z`), cross-referenced with the repo-similarity graph (1,185 nodes / 3,849 edges, 26 communities).
 >
-> Generated 2026-06-02 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
+> Generated 2026-06-04 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
 > **Orchestration** = coordinating multiple agents / tools / steps toward a goal: routing, planning, parallelism, hand-offs, state and recovery. The tools below differ mostly in **how you express that coordination** — in code, on a visual canvas, across coding agents, or as durable production infra.
 
@@ -42,7 +42,7 @@
 | [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 52,682 | Python | 80 | very active | Mature | 1 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | 40,470 | Python | 98 | very active | Classic | 5 |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 34,792 | Python | 83 | very active | Classic | 2 |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 33,674 | Python | 83 | very active | Mature | 2 |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 33,674 | Python | 82 | very active | Mature | 2 |
 | [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28,032 | C# | 87 | very active | Classic | 3 |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | 27,666 | Python | 67 | active | Mature | 1 |
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 26,856 | Python | 89 | very active | Hot | 3 |
@@ -58,7 +58,7 @@
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 190,785 | TypeScript | 100 | very active | Classic | 9 |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 190,785 | TypeScript | 99 | very active | Classic | 9 |
 | [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | 149,111 | Python | 84 | very active | Classic | 2 |
 | [langgenius/dify](https://github.com/langgenius/dify) | 143,556 | TypeScript | 100 | very active | Classic | 6 |
 | [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 53,281 | TypeScript | 92 | very active | Classic | 4 |
@@ -70,10 +70,10 @@
 |---|---|---|---|---|---|---|
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 70,299 | Python | 81 | very active | Hot | 5 |
 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 60,730 | TypeScript | 78 | very active | Hot | 1 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 57,513 | TypeScript | 77 | very active | Hot | 1 |
-| [wshobson/agents](https://github.com/wshobson/agents) | 36,276 | Python | 70 | very active | Hot | 2 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 57,513 | TypeScript | 76 | very active | Hot | 1 |
+| [wshobson/agents](https://github.com/wshobson/agents) | 36,276 | Python | 69 | very active | Hot | 2 |
 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 35,609 | TypeScript | 80 | very active | Hot | 1 |
-| [eigent-ai/eigent](https://github.com/eigent-ai/eigent) | 14,191 | TypeScript | 80 | very active | Hot | 2 |
+| [eigent-ai/eigent](https://github.com/eigent-ai/eigent) | 14,191 | TypeScript | 79 | very active | Hot | 2 |
 | [ComposioHQ/agent-orchestrator](https://github.com/ComposioHQ/agent-orchestrator) | 7,379 | TypeScript | 79 | very active | Hot | 2 |
 | [getpaseo/paseo](https://github.com/getpaseo/paseo) | 7,174 | TypeScript | 73 | very active | Hot | 1 |
 | [vercel-labs/coding-agent-template](https://github.com/vercel-labs/coding-agent-template) | 1,724 | TypeScript | 30 | active | Declining | 0 |
@@ -95,8 +95,8 @@
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 82,281 | Python | 72 | very active | Hot | 1 |
-| [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | 27,463 | Python | 75 | very active | Classic | 1 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 82,281 | Python | 71 | very active | Hot | 1 |
+| [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | 27,463 | Python | 74 | very active | Classic | 1 |
 
 ### Protocols & meta-frameworks
 
@@ -127,7 +127,7 @@ _SDKs you write agents in — maximum control over routing, state and hand-offs;
 - **[stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)** · 34,792★ · Python · Classic · health 83  
   Programmatic prompt/pipeline optimization — compile agent behavior instead of hand-prompting.  
   <sub>topics: —</sub>
-- **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** · 33,674★ · Python · Mature · health 83  
+- **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** · 33,674★ · Python · Mature · health 82  
   Graph-based agent runtime — explicit nodes/edges/state; the de-facto control-flow framework.  
   <sub>topics: agents, ai, ai-agents, chatgpt, deepagents, enterprise</sub>
 - **[microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)** · 28,032★ · C# · Classic · health 87  
@@ -165,7 +165,7 @@ _SDKs you write agents in — maximum control over routing, state and hand-offs;
 
 _Drag-and-drop canvases — fastest to a working flow, accessible to non-engineers, less granular control._
 
-- **[n8n-io/n8n](https://github.com/n8n-io/n8n)** · 190,785★ · TypeScript · Classic · health 100  
+- **[n8n-io/n8n](https://github.com/n8n-io/n8n)** · 190,785★ · TypeScript · Classic · health 99  
   Fair-code workflow automation with native AI nodes — the giant (189k★, health 100).  
   <sub>topics: automation, ipaas, n8n, workflow, typescript, self-hosted</sub>
 - **[langflow-ai/langflow](https://github.com/langflow-ai/langflow)** · 149,111★ · Python · Classic · health 84  
@@ -191,16 +191,16 @@ _Coordinate *swarms of coding agents* (Claude Code, Codex, Cursor…) on a codeb
 - **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 60,730★ · TypeScript · Hot · health 78  
   'omo' — agent harness (formerly oh-my-opencode) for coding workflows.  
   <sub>topics: opencode, ai, anthropic, claude, claude-skills, cursor</sub>
-- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 57,513★ · TypeScript · Hot · health 77  
+- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 57,513★ · TypeScript · Hot · health 76  
   Agent-orchestration platform for Claude — multi-agent swarms coordinating autonomous coding.  
   <sub>topics: claude-code, swarm, agentic-ai, agentic-framework, agentic-rag, agentic-workflow</sub>
-- **[wshobson/agents](https://github.com/wshobson/agents)** · 36,276★ · Python · Hot · health 70  
+- **[wshobson/agents](https://github.com/wshobson/agents)** · 36,276★ · Python · Hot · health 69  
   Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor, OpenCode, Gemini).  
   <sub>topics: agents, anthropic, automation, workflows, orchestration, agent-skills</sub>
 - **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · 35,609★ · TypeScript · Hot · health 80  
   Teams-first multi-agent orchestration for Claude Code.  
   <sub>topics: agentic-coding, ai-agents, claude, claude-code, oh-my-opencode, opencode</sub>
-- **[eigent-ai/eigent](https://github.com/eigent-ai/eigent)** · 14,191★ · TypeScript · Hot · health 80  
+- **[eigent-ai/eigent](https://github.com/eigent-ai/eigent)** · 14,191★ · TypeScript · Hot · health 79  
   Open-source cowork desktop — local/free multi-agent productivity workspace.  
   <sub>topics: agent-framework, agent-skills, agentic-ai, agentic-workflow, claude-cowork, claude-cowork-alternative</sub>
 - **[ComposioHQ/agent-orchestrator](https://github.com/ComposioHQ/agent-orchestrator)** · 7,379★ · TypeScript · Hot · health 79  
@@ -236,10 +236,10 @@ _Fault-tolerant execution — retries, checkpointing, deterministic routing for 
 
 _Reference multi-agent architectures for a specific domain._
 
-- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 82,281★ · Python · Hot · health 72  
+- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 82,281★ · Python · Hot · health 71  
   Multi-agent LLM framework for financial trading — a vertical reference architecture (79k★).  
   <sub>topics: agent, finance, llm, multiagent, trading</sub>
-- **[assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)** · 27,463★ · Python · Classic · health 75  
+- **[assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)** · 27,463★ · Python · Classic · health 74  
   Autonomous research agent that plans, searches & writes cited reports.  
   <sub>topics: ai, python, agent, automation, research, search</sub>
 
@@ -259,27 +259,26 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 38 tools span **13 of the graph's 27 communities**.
+**Community clustering.** These 38 tools span **14 of the graph's 26 communities**.
 
-- **Community 6** (9): `google/adk-python`, `agentscope-ai/agentscope`, `VoltAgent/voltagent`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `n8n-io/n8n`, `inngest/agent-kit`, `veegee82/agent-workflow-protocol`
-- **Community 8** (8): `langchain-ai/langgraph`, `i-am-bee/beeai-framework`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `langflow-ai/langflow`, `bytedance/deer-flow`, `elizaOS/eliza`
-- **Community 11** (4): `code-yeongyu/oh-my-openagent`, `wshobson/agents`, `ComposioHQ/agent-orchestrator`, `getpaseo/paseo`
-- **Community 12** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 9** (3): `FoundationAgents/MetaGPT`, `vercel-labs/coding-agent-template`, `TauricResearch/TradingAgents`
-- **Community 16** (3): `camel-ai/camel`, `eigent-ai/eigent`, `flyteorg/flyte`
-- **Community 5** (2): `assafelovic/gpt-researcher`, `Yeachan-Heo/oh-my-claudecode`
+- **Community 13** (12): `langchain-ai/langgraph`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `FoundationAgents/MetaGPT`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `langflow-ai/langflow`, `bytedance/deer-flow`, `vercel-labs/coding-agent-template`, `elizaOS/eliza`, `TauricResearch/TradingAgents`
+- **Community 12** (8): `google/adk-python`, `agentscope-ai/agentscope`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `n8n-io/n8n`, `inngest/agent-kit`, `veegee82/agent-workflow-protocol`
+- **Community 15** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
+- **Community 10** (3): `wshobson/agents`, `ComposioHQ/agent-orchestrator`, `getpaseo/paseo`
+- **Community 3** (2): `camel-ai/camel`, `eigent-ai/eigent`
+- **Community 8** (2): `ruvnet/ruflo`, `flyteorg/flyte`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
-- `langchain-ai/langgraph` — PageRank 0.0030
-- `agno-agi/agno` — PageRank 0.0029
-- `huggingface/smolagents` — PageRank 0.0020
-- `microsoft/semantic-kernel` — PageRank 0.0019
+- `langchain-ai/langgraph` — PageRank 0.0029
+- `agno-agi/agno` — PageRank 0.0028
 - `openai/openai-agents-python` — PageRank 0.0019
+- `microsoft/semantic-kernel` — PageRank 0.0019
 - `liquidos-ai/AutoAgents` — PageRank 0.0019
-- `inngest/agent-kit` — PageRank 0.0019
+- `inngest/agent-kit` — PageRank 0.0018
+- `huggingface/smolagents` — PageRank 0.0018
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0016
-- `langgenius/dify` — PageRank 0.0015
+- `langgenius/dify` — PageRank 0.0014
 - `crewAIInc/crewAI` — PageRank 0.0014
 
 **Direct links between orchestration tools** (top similarity edges where both endpoints are in this report):
@@ -307,8 +306,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 
 | Tool | Approach | Health | Lifecycle | Activity | Bus factor |
 |---|---|---|---|---|---|
-| n8n-io/n8n | Visual / low-code platforms | 100 | Classic | very active | 9 |
 | langgenius/dify | Visual / low-code platforms | 100 | Classic | very active | 6 |
+| n8n-io/n8n | Visual / low-code platforms | 99 | Classic | very active | 9 |
 | google/adk-python | Code-first agent frameworks | 98 | Hot | very active | 5 |
 | microsoft/agent-framework | Code-first agent frameworks | 98 | Hot | very active | 6 |
 | agno-agi/agno | Code-first agent frameworks | 98 | Classic | very active | 5 |
@@ -317,25 +316,25 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 | microsoft/semantic-kernel | Code-first agent frameworks | 87 | Classic | very active | 3 |
 | flyteorg/flyte | Durable / production infra | 87 | Classic | very active | 3 |
 | langflow-ai/langflow | Visual / low-code platforms | 84 | Classic | very active | 2 |
-| langchain-ai/langgraph | Code-first agent frameworks | 83 | Mature | very active | 2 |
 | stanfordnlp/dspy | Code-first agent frameworks | 83 | Classic | very active | 2 |
+| langchain-ai/langgraph | Code-first agent frameworks | 82 | Mature | very active | 2 |
 | camel-ai/camel | Code-first agent frameworks | 82 | Classic | very active | 2 |
 | VoltAgent/voltagent | Code-first agent frameworks | 81 | Hot | very active | 2 |
 | bytedance/deer-flow | Coding-agent orchestration | 81 | Hot | very active | 5 |
 | agentscope-ai/agentscope | Code-first agent frameworks | 80 | Mature | very active | 2 |
 | crewAIInc/crewAI | Code-first agent frameworks | 80 | Mature | very active | 1 |
 | Yeachan-Heo/oh-my-claudecode | Coding-agent orchestration | 80 | Hot | very active | 1 |
-| eigent-ai/eigent | Coding-agent orchestration | 80 | Hot | very active | 2 |
 | elizaOS/eliza | Agent OS / long-horizon harness | 80 | Hot | very active | 1 |
+| eigent-ai/eigent | Coding-agent orchestration | 79 | Hot | very active | 2 |
 | ComposioHQ/agent-orchestrator | Coding-agent orchestration | 79 | Hot | very active | 2 |
 | simstudioai/sim | Visual / low-code platforms | 78 | Hot | very active | 1 |
 | code-yeongyu/oh-my-openagent | Coding-agent orchestration | 78 | Hot | very active | 1 |
-| ruvnet/ruflo | Coding-agent orchestration | 77 | Hot | very active | 1 |
-| assafelovic/gpt-researcher | Vertical / domain systems | 75 | Classic | very active | 1 |
+| ruvnet/ruflo | Coding-agent orchestration | 76 | Hot | very active | 1 |
+| assafelovic/gpt-researcher | Vertical / domain systems | 74 | Classic | very active | 1 |
 | getpaseo/paseo | Coding-agent orchestration | 73 | Hot | very active | 1 |
 | i-am-bee/beeai-framework | Code-first agent frameworks | 72 | Mature | very active | 1 |
-| TauricResearch/TradingAgents | Vertical / domain systems | 72 | Hot | very active | 1 |
-| wshobson/agents | Coding-agent orchestration | 70 | Hot | very active | 2 |
+| TauricResearch/TradingAgents | Vertical / domain systems | 71 | Hot | very active | 1 |
+| wshobson/agents | Coding-agent orchestration | 69 | Hot | very active | 2 |
 | TinyAGI/tinyagi | Protocols & meta-frameworks | 69 | Rising | slowing | 1 |
 | liquidos-ai/AutoAgents | Code-first agent frameworks | 68 | Hot | very active | 1 |
 | huggingface/smolagents | Code-first agent frameworks | 67 | Mature | active | 1 |
@@ -358,4 +357,4 @@ Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, La
 - **Selection**: scan for orchestration / multi-agent / swarm / workflow / agent-framework signals, then manual curation by approach. RAG frameworks, eval/observability platforms, and single-purpose agents were routed to their own reports or excluded; only tools whose *primary* job is coordinating agents/steps appear here.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-06-02T22:59:34.535Z</sub>
+<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-06-04T15:28:30.136Z</sub>

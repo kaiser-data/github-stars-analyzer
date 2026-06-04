@@ -32,6 +32,7 @@ GENERATORS = [
     "which_claw.py",
     "blockchain_claws.py",
     "blockchain_essentials.py",
+    "voice_agents.py",
 ]
 
 def run_generators():

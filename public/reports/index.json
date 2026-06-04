@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-02",
-  "count": 11,
+  "generated": "2026-06-04",
+  "count": 12,
   "reports": [
     {
       "slug": "agent-orchestration",
@@ -39,8 +39,8 @@
           "stars": 70299
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/agent_orchestration.py"
     },
     {
@@ -88,8 +88,8 @@
           "stars": 25644
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/blockchain_essentials.py"
     },
     {
@@ -129,8 +129,8 @@
           "stars": 30374
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/mcp_tooling.py"
     },
     {
@@ -170,8 +170,8 @@
           "stars": 40189
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/rag_tooling.py"
     },
     {
@@ -211,9 +211,51 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/openclaw_ecosystem.py"
+    },
+    {
+      "slug": "voice-agents",
+      "title": "Voice AI Agents \u2014 Landscape Report",
+      "file": "voice-agents.md",
+      "category": "AI / Voice",
+      "summary": "28 voice-AI projects (566,033\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+      "tool_count": 28,
+      "total_stars": 566033,
+      "categories": {
+        "Realtime voice-agent framework": 4,
+        "Speech-to-text / ASR": 6,
+        "Text-to-speech / TTS": 9,
+        "Voice cloning / studio": 3,
+        "Speech-LLM / omni model": 1,
+        "Voice-capable runtime / serving": 5
+      },
+      "top_tools": [
+        {
+          "name": "openai/whisper",
+          "stars": 101278
+        },
+        {
+          "name": "CorentinJ/Real-Time-Voice-Cloning",
+          "stars": 59860
+        },
+        {
+          "name": "ggml-org/whisper.cpp",
+          "stars": 50441
+        },
+        {
+          "name": "mudler/LocalAI",
+          "stars": 46623
+        },
+        {
+          "name": "coqui-ai/TTS",
+          "stars": 45468
+        }
+      ],
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
+      "generator": "scripts/reports/voice_agents.py"
     },
     {
       "slug": "llm-evaluation-tooling",
@@ -251,8 +293,8 @@
           "stars": 18595
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/llm_evaluation.py"
     },
     {
@@ -291,8 +333,8 @@
           "stars": 24284
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/memory_frameworks.py"
     },
     {
@@ -333,8 +375,8 @@
           "stars": 82281
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/blockchain_claws.py"
     },
     {
@@ -374,8 +416,8 @@
           "stars": 24452
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/token_savings.py"
     },
     {
@@ -413,8 +455,8 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/which_claw.py"
     },
     {
@@ -451,8 +493,8 @@
           "stars": 43539
         }
       ],
-      "snapshot": "2026-06-02T22:59:34.535Z",
-      "generated": "2026-06-02",
+      "snapshot": "2026-06-04T15:28:30.136Z",
+      "generated": "2026-06-04",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }
   ]
