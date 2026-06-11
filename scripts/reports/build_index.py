@@ -34,6 +34,7 @@ GENERATORS = [
     "blockchain_essentials.py",
     "voice_agents.py",
     "local_vs_infra_stack.py",
+    "meeting_transcription.py",
 ]
 
 def run_generators():

@@ -9,7 +9,7 @@
       "source_file": "tailwind.config.js",
       "source_location": "L1",
       "id": "tailwind_config_js",
-      "community": 20,
+      "community": 25,
       "norm_label": "tailwind.config.js"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "vite.config.js",
       "source_location": "L1",
       "id": "vite_config_js",
-      "community": 14,
+      "community": 19,
       "norm_label": "vite.config.js"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "vite.config.js",
       "source_location": "L9",
       "id": "github_stars_analyzer_vite_config_patchthreeforcegraph",
-      "community": 14,
+      "community": 19,
       "norm_label": "patchthreeforcegraph()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "vite.config.js",
       "source_location": "L57",
       "id": "github_stars_analyzer_vite_config_manualchunks",
-      "community": 14,
+      "community": 19,
       "norm_label": "manualchunks()"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "postcss.config.js",
       "source_location": "L1",
       "id": "postcss_config_js",
-      "community": 21,
+      "community": 26,
       "norm_label": "postcss.config.js"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L1",
       "id": "netlify_functions_ask_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "ask.mjs"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L35",
       "id": "functions_ask_clientip",
-      "community": 1,
+      "community": 2,
       "norm_label": "clientip()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L43",
       "id": "functions_ask_ratecheck",
-      "community": 1,
+      "community": 2,
       "norm_label": "ratecheck()"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L78",
       "id": "functions_ask_providerlabel",
-      "community": 1,
+      "community": 2,
       "norm_label": "providerlabel()"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L92",
       "id": "functions_ask_getcontext",
-      "community": 1,
+      "community": 2,
       "norm_label": "getcontext()"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L104",
       "id": "functions_ask_extracterrormessage",
-      "community": 1,
+      "community": 2,
       "norm_label": "extracterrormessage()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L118",
       "id": "functions_ask_jsonresponse",
-      "community": 1,
+      "community": 2,
       "norm_label": "jsonresponse()"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L125",
       "id": "functions_ask_handler",
-      "community": 1,
+      "community": 2,
       "norm_label": "handler()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L212",
       "id": "functions_ask_streamcompletion",
-      "community": 1,
+      "community": 2,
       "norm_label": "streamcompletion()"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L1",
       "id": "scripts_sample_mjs",
-      "community": 2,
+      "community": 3,
       "norm_label": "sample.mjs"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L19",
       "id": "scripts_sample_fetchallstarred",
-      "community": 2,
+      "community": 3,
       "norm_label": "fetchallstarred()"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "scripts/sample.mjs",
       "source_location": "L52",
       "id": "scripts_sample_pickstratified",
-      "community": 2,
+      "community": 3,
       "norm_label": "pickstratified()"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "scripts/precompute.mjs",
       "source_location": "L1",
       "id": "scripts_precompute_mjs",
-      "community": 17,
+      "community": 22,
       "norm_label": "precompute.mjs"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "scripts/precompute.mjs",
       "source_location": "L30",
       "id": "scripts_precompute_jaccard",
-      "community": 17,
+      "community": 22,
       "norm_label": "jaccard()"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L1",
       "id": "scripts_ingest_mjs",
-      "community": 2,
+      "community": 3,
       "norm_label": "ingest.mjs"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L83",
       "id": "scripts_ingest_pickreadme",
-      "community": 2,
+      "community": 3,
       "norm_label": "pickreadme()"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "scripts/ingest.mjs",
       "source_location": "L93",
       "id": "scripts_ingest_projectrepo",
-      "community": 2,
+      "community": 3,
       "norm_label": "projectrepo()"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "scripts/test-graph.mjs",
       "source_location": "L1",
       "id": "scripts_test_graph_mjs",
-      "community": 3,
+      "community": 4,
       "norm_label": "test-graph.mjs"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "scripts/test-graph.mjs",
       "source_location": "L19",
       "id": "scripts_test_graph_ok",
-      "community": 3,
+      "community": 4,
       "norm_label": "ok()"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "scripts/test-graph.mjs",
       "source_location": "L36",
       "id": "scripts_test_graph_jaccard",
-      "community": 3,
+      "community": 4,
       "norm_label": "jaccard()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "scripts/test-graph.mjs",
       "source_location": "L74",
       "id": "scripts_test_graph_keyfor",
-      "community": 3,
+      "community": 4,
       "norm_label": "keyfor()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "scripts/precompute-questions.mjs",
       "source_location": "L1",
       "id": "scripts_precompute_questions_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "precompute-questions.mjs"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "scripts/precompute-questions.mjs",
       "source_location": "L38",
       "id": "scripts_precompute_questions_providerof",
-      "community": 1,
+      "community": 2,
       "norm_label": "providerof()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "scripts/precompute-questions.mjs",
       "source_location": "L47",
       "id": "scripts_precompute_questions_ask",
-      "community": 1,
+      "community": 2,
       "norm_label": "ask()"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L1",
       "id": "scripts_classify_mjs",
-      "community": 7,
+      "community": 8,
       "norm_label": "classify.mjs"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L15",
       "id": "scripts_classify_daysago",
-      "community": 7,
+      "community": 8,
       "norm_label": "daysago()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L20",
       "id": "scripts_classify_busfactor",
-      "community": 7,
+      "community": 8,
       "norm_label": "busfactor()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L35",
       "id": "scripts_classify_lifecyclestage",
-      "community": 7,
+      "community": 8,
       "norm_label": "lifecyclestage()"
     },
     {
@@ -306,7 +306,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L67",
       "id": "scripts_classify_healthscore",
-      "community": 7,
+      "community": 8,
       "norm_label": "healthscore()"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "scripts/classify.mjs",
       "source_location": "L94",
       "id": "scripts_classify_momentum",
-      "community": 7,
+      "community": 8,
       "norm_label": "momentum()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "scripts/lib/ask-prompt.mjs",
       "source_location": "L1",
       "id": "scripts_lib_ask_prompt_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "ask-prompt.mjs"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "scripts/lib/ask-prompt.mjs",
       "source_location": "L6",
       "id": "lib_ask_prompt_buildsystemprompt",
-      "community": 1,
+      "community": 2,
       "norm_label": "buildsystemprompt()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L1",
       "id": "scripts_lib_github_mjs",
-      "community": 2,
+      "community": 3,
       "norm_label": "github.mjs"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L6",
       "id": "lib_github_gettoken",
-      "community": 2,
+      "community": 3,
       "norm_label": "gettoken()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L12",
       "id": "lib_github_authheader",
-      "community": 2,
+      "community": 3,
       "norm_label": "authheader()"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L18",
       "id": "lib_github_rest",
-      "community": 2,
+      "community": 3,
       "norm_label": "rest()"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L34",
       "id": "lib_github_graphql",
-      "community": 2,
+      "community": 3,
       "norm_label": "graphql()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L54",
       "id": "lib_github_lograte",
-      "community": 2,
+      "community": 3,
       "norm_label": "lograte()"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "scripts/lib/github.mjs",
       "source_location": "L64",
       "id": "lib_github_sleep",
-      "community": 2,
+      "community": 3,
       "norm_label": "sleep()"
     },
     {
@@ -405,25 +405,25 @@
       "source_file": "scripts/reports/build_index.py",
       "source_location": "L1",
       "id": "scripts_reports_build_index_py",
-      "community": 15,
+      "community": 20,
       "norm_label": "build_index.py"
     },
     {
       "label": "run_generators()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L34",
+      "source_location": "L40",
       "id": "reports_build_index_run_generators",
-      "community": 15,
+      "community": 20,
       "norm_label": "run_generators()"
     },
     {
       "label": "build()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L44",
+      "source_location": "L50",
       "id": "reports_build_index_build",
-      "community": 15,
+      "community": 20,
       "norm_label": "build()"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "scripts/reports/memory_frameworks.py",
       "source_location": "L1",
       "id": "scripts_reports_memory_frameworks_py",
-      "community": 9,
+      "community": 10,
       "norm_label": "memory_frameworks.py"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "scripts/reports/memory_frameworks.py",
       "source_location": "L89",
       "id": "reports_memory_frameworks_node_for",
-      "community": 9,
+      "community": 10,
       "norm_label": "node_for()"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "scripts/reports/memory_frameworks.py",
       "source_location": "L94",
       "id": "reports_memory_frameworks_fmt_int",
-      "community": 9,
+      "community": 10,
       "norm_label": "fmt_int()"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "scripts/reports/memory_frameworks.py",
       "source_location": "L100",
       "id": "reports_memory_frameworks_days_to_human",
-      "community": 9,
+      "community": 10,
       "norm_label": "days_to_human()"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "scripts/reports/memory_frameworks.py",
       "source_location": "L110",
       "id": "reports_memory_frameworks_activity_label",
-      "community": 9,
+      "community": 10,
       "norm_label": "activity_label()"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "scripts/reports/llm_evaluation.py",
       "source_location": "L1",
       "id": "scripts_reports_llm_evaluation_py",
-      "community": 10,
+      "community": 11,
       "norm_label": "llm_evaluation.py"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "scripts/reports/llm_evaluation.py",
       "source_location": "L87",
       "id": "reports_llm_evaluation_node_for",
-      "community": 10,
+      "community": 11,
       "norm_label": "node_for()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "scripts/reports/llm_evaluation.py",
       "source_location": "L92",
       "id": "reports_llm_evaluation_fmt_int",
-      "community": 10,
+      "community": 11,
       "norm_label": "fmt_int()"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "scripts/reports/llm_evaluation.py",
       "source_location": "L98",
       "id": "reports_llm_evaluation_days_to_human",
-      "community": 10,
+      "community": 11,
       "norm_label": "days_to_human()"
     },
     {
@@ -513,7 +513,52 @@
       "source_file": "scripts/reports/llm_evaluation.py",
       "source_location": "L108",
       "id": "reports_llm_evaluation_activity_label",
-      "community": 10,
+      "community": 11,
+      "norm_label": "activity_label()"
+    },
+    {
+      "label": "meeting_transcription.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L1",
+      "id": "scripts_reports_meeting_transcription_py",
+      "community": 12,
+      "norm_label": "meeting_transcription.py"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L122",
+      "id": "reports_meeting_transcription_node_for",
+      "community": 12,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L127",
+      "id": "reports_meeting_transcription_fmt_int",
+      "community": 12,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L133",
+      "id": "reports_meeting_transcription_days_to_human",
+      "community": 12,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L143",
+      "id": "reports_meeting_transcription_activity_label",
+      "community": 12,
       "norm_label": "activity_label()"
     },
     {
@@ -522,7 +567,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L1",
       "id": "scripts_reports_hermes_vs_openclaw_py",
-      "community": 4,
+      "community": 5,
       "norm_label": "hermes_vs_openclaw.py"
     },
     {
@@ -531,7 +576,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L55",
       "id": "reports_hermes_vs_openclaw_node_for",
-      "community": 4,
+      "community": 5,
       "norm_label": "node_for()"
     },
     {
@@ -540,7 +585,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L60",
       "id": "reports_hermes_vs_openclaw_fmt_int",
-      "community": 4,
+      "community": 5,
       "norm_label": "fmt_int()"
     },
     {
@@ -549,7 +594,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L66",
       "id": "reports_hermes_vs_openclaw_days_to_human",
-      "community": 4,
+      "community": 5,
       "norm_label": "days_to_human()"
     },
     {
@@ -558,7 +603,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L76",
       "id": "reports_hermes_vs_openclaw_activity_label",
-      "community": 4,
+      "community": 5,
       "norm_label": "activity_label()"
     },
     {
@@ -567,7 +612,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L89",
       "id": "reports_hermes_vs_openclaw_mom",
-      "community": 4,
+      "community": 5,
       "norm_label": "mom()"
     },
     {
@@ -576,7 +621,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L93",
       "id": "reports_hermes_vs_openclaw_winner",
-      "community": 4,
+      "community": 5,
       "norm_label": "winner()"
     },
     {
@@ -585,7 +630,7 @@
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L134",
       "id": "reports_hermes_vs_openclaw_row",
-      "community": 4,
+      "community": 5,
       "norm_label": "row()"
     },
     {
@@ -593,9 +638,234 @@
       "file_type": "rationale",
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L94",
-      "community": 4,
+      "community": 5,
       "norm_label": "return ('a'|'b'|'=') for which repo wins a metric.",
       "id": "reports_hermes_vs_openclaw_rationale_94"
+    },
+    {
+      "label": "local_vs_infra_stack.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L1",
+      "id": "scripts_reports_local_vs_infra_stack_py",
+      "community": 13,
+      "norm_label": "local_vs_infra_stack.py"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L174",
+      "id": "reports_local_vs_infra_stack_node_for",
+      "community": 13,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L179",
+      "id": "reports_local_vs_infra_stack_fmt_int",
+      "community": 13,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L185",
+      "id": "reports_local_vs_infra_stack_days_to_human",
+      "community": 13,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L195",
+      "id": "reports_local_vs_infra_stack_activity_label",
+      "community": 13,
+      "norm_label": "activity_label()"
+    },
+    {
+      "label": "blockchain_claws.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L1",
+      "id": "scripts_reports_blockchain_claws_py",
+      "community": 18,
+      "norm_label": "blockchain_claws.py"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L130",
+      "id": "reports_blockchain_claws_fmt_int",
+      "community": 18,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "meta_bits()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L136",
+      "id": "reports_blockchain_claws_meta_bits",
+      "community": 18,
+      "norm_label": "meta_bits()"
+    },
+    {
+      "label": "yn()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L186",
+      "id": "reports_blockchain_claws_yn",
+      "community": 18,
+      "norm_label": "yn()"
+    },
+    {
+      "label": "which_claw.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L1",
+      "id": "scripts_reports_which_claw_py",
+      "community": 1,
+      "norm_label": "which_claw.py"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L119",
+      "id": "reports_which_claw_fmt_int",
+      "community": 1,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L125",
+      "id": "reports_which_claw_days_to_human",
+      "community": 1,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "mom()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L135",
+      "id": "reports_which_claw_mom",
+      "community": 1,
+      "norm_label": "mom()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L138",
+      "id": "reports_which_claw_activity_label",
+      "community": 1,
+      "norm_label": "activity_label()"
+    },
+    {
+      "label": "staleness_factor()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L155",
+      "id": "reports_which_claw_staleness_factor",
+      "community": 1,
+      "norm_label": "staleness_factor()"
+    },
+    {
+      "label": "score_components()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L182",
+      "id": "reports_which_claw_score_components",
+      "community": 1,
+      "norm_label": "score_components()"
+    },
+    {
+      "label": "composite()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L196",
+      "id": "reports_which_claw_composite",
+      "community": 1,
+      "norm_label": "composite()"
+    },
+    {
+      "label": "score_w()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L209",
+      "id": "reports_which_claw_score_w",
+      "community": 1,
+      "norm_label": "score_w()"
+    },
+    {
+      "label": "rank_of()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L223",
+      "id": "reports_which_claw_rank_of",
+      "community": 1,
+      "norm_label": "rank_of()"
+    },
+    {
+      "label": "mean_rank()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L226",
+      "id": "reports_which_claw_mean_rank",
+      "community": 1,
+      "norm_label": "mean_rank()"
+    },
+    {
+      "label": "pvec()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L236",
+      "id": "reports_which_claw_pvec",
+      "community": 1,
+      "norm_label": "pvec()"
+    },
+    {
+      "label": "dominated_by()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L240",
+      "id": "reports_which_claw_dominated_by",
+      "community": 1,
+      "norm_label": "dominated_by()"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L254",
+      "id": "reports_which_claw_node_for",
+      "community": 1,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "pick()",
+      "file_type": "code",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L571",
+      "id": "reports_which_claw_pick",
+      "community": 1,
+      "norm_label": "pick()"
+    },
+    {
+      "label": "Multiplicative gate: 1.0 up to 60d since push, decaying to a 0.6 floor.     Fres",
+      "file_type": "rationale",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L156",
+      "community": 1,
+      "norm_label": "multiplicative gate: 1.0 up to 60d since push, decaying to a 0.6 floor.     fres",
+      "id": "reports_which_claw_rationale_156"
     },
     {
       "label": "openclaw_ecosystem.py",
@@ -603,7 +873,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L1",
       "id": "scripts_reports_openclaw_ecosystem_py",
-      "community": 3,
+      "community": 4,
       "norm_label": "openclaw_ecosystem.py"
     },
     {
@@ -612,7 +882,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L94",
       "id": "reports_openclaw_ecosystem_node_for",
-      "community": 3,
+      "community": 4,
       "norm_label": "node_for()"
     },
     {
@@ -621,7 +891,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L99",
       "id": "reports_openclaw_ecosystem_fmt_int",
-      "community": 3,
+      "community": 4,
       "norm_label": "fmt_int()"
     },
     {
@@ -630,7 +900,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L105",
       "id": "reports_openclaw_ecosystem_days_to_human",
-      "community": 3,
+      "community": 4,
       "norm_label": "days_to_human()"
     },
     {
@@ -639,7 +909,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L115",
       "id": "reports_openclaw_ecosystem_activity_label",
-      "community": 3,
+      "community": 4,
       "norm_label": "activity_label()"
     },
     {
@@ -648,7 +918,7 @@
       "source_file": "scripts/reports/openclaw_ecosystem.py",
       "source_location": "L161",
       "id": "reports_openclaw_ecosystem_best_in",
-      "community": 3,
+      "community": 4,
       "norm_label": "best_in()"
     },
     {
@@ -657,7 +927,7 @@
       "source_file": "scripts/reports/mcp_tooling.py",
       "source_location": "L1",
       "id": "scripts_reports_mcp_tooling_py",
-      "community": 11,
+      "community": 14,
       "norm_label": "mcp_tooling.py"
     },
     {
@@ -666,7 +936,7 @@
       "source_file": "scripts/reports/mcp_tooling.py",
       "source_location": "L106",
       "id": "reports_mcp_tooling_node_for",
-      "community": 11,
+      "community": 14,
       "norm_label": "node_for()"
     },
     {
@@ -675,7 +945,7 @@
       "source_file": "scripts/reports/mcp_tooling.py",
       "source_location": "L111",
       "id": "reports_mcp_tooling_fmt_int",
-      "community": 11,
+      "community": 14,
       "norm_label": "fmt_int()"
     },
     {
@@ -684,7 +954,7 @@
       "source_file": "scripts/reports/mcp_tooling.py",
       "source_location": "L117",
       "id": "reports_mcp_tooling_days_to_human",
-      "community": 11,
+      "community": 14,
       "norm_label": "days_to_human()"
     },
     {
@@ -693,7 +963,7 @@
       "source_file": "scripts/reports/mcp_tooling.py",
       "source_location": "L127",
       "id": "reports_mcp_tooling_activity_label",
-      "community": 11,
+      "community": 14,
       "norm_label": "activity_label()"
     },
     {
@@ -702,7 +972,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L1",
       "id": "scripts_reports_rag_tooling_py",
-      "community": 12,
+      "community": 15,
       "norm_label": "rag_tooling.py"
     },
     {
@@ -711,7 +981,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L101",
       "id": "reports_rag_tooling_node_for",
-      "community": 12,
+      "community": 15,
       "norm_label": "node_for()"
     },
     {
@@ -720,7 +990,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L106",
       "id": "reports_rag_tooling_fmt_int",
-      "community": 12,
+      "community": 15,
       "norm_label": "fmt_int()"
     },
     {
@@ -729,7 +999,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L112",
       "id": "reports_rag_tooling_days_to_human",
-      "community": 12,
+      "community": 15,
       "norm_label": "days_to_human()"
     },
     {
@@ -738,7 +1008,7 @@
       "source_file": "scripts/reports/rag_tooling.py",
       "source_location": "L122",
       "id": "reports_rag_tooling_activity_label",
-      "community": 12,
+      "community": 15,
       "norm_label": "activity_label()"
     },
     {
@@ -747,7 +1017,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L1",
       "id": "scripts_reports_agent_orchestration_py",
-      "community": 6,
+      "community": 7,
       "norm_label": "agent_orchestration.py"
     },
     {
@@ -756,7 +1026,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L114",
       "id": "reports_agent_orchestration_node_for",
-      "community": 6,
+      "community": 7,
       "norm_label": "node_for()"
     },
     {
@@ -765,7 +1035,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L119",
       "id": "reports_agent_orchestration_fmt_int",
-      "community": 6,
+      "community": 7,
       "norm_label": "fmt_int()"
     },
     {
@@ -774,7 +1044,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L125",
       "id": "reports_agent_orchestration_days_to_human",
-      "community": 6,
+      "community": 7,
       "norm_label": "days_to_human()"
     },
     {
@@ -783,7 +1053,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L135",
       "id": "reports_agent_orchestration_activity_label",
-      "community": 6,
+      "community": 7,
       "norm_label": "activity_label()"
     },
     {
@@ -792,7 +1062,7 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L148",
       "id": "reports_agent_orchestration_approach_of",
-      "community": 6,
+      "community": 7,
       "norm_label": "approach_of()"
     },
     {
@@ -801,8 +1071,98 @@
       "source_file": "scripts/reports/agent_orchestration.py",
       "source_location": "L213",
       "id": "reports_agent_orchestration_comp_table",
-      "community": 6,
+      "community": 7,
       "norm_label": "comp_table()"
+    },
+    {
+      "label": "voice_agents.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L1",
+      "id": "scripts_reports_voice_agents_py",
+      "community": 16,
+      "norm_label": "voice_agents.py"
+    },
+    {
+      "label": "node_for()",
+      "file_type": "code",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L104",
+      "id": "reports_voice_agents_node_for",
+      "community": 16,
+      "norm_label": "node_for()"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L109",
+      "id": "reports_voice_agents_fmt_int",
+      "community": 16,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "days_to_human()",
+      "file_type": "code",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L115",
+      "id": "reports_voice_agents_days_to_human",
+      "community": 16,
+      "norm_label": "days_to_human()"
+    },
+    {
+      "label": "activity_label()",
+      "file_type": "code",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L125",
+      "id": "reports_voice_agents_activity_label",
+      "community": 16,
+      "norm_label": "activity_label()"
+    },
+    {
+      "label": "blockchain_essentials.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L1",
+      "id": "scripts_reports_blockchain_essentials_py",
+      "community": 17,
+      "norm_label": "blockchain_essentials.py"
+    },
+    {
+      "label": "fmt_int()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L114",
+      "id": "reports_blockchain_essentials_fmt_int",
+      "community": 17,
+      "norm_label": "fmt_int()"
+    },
+    {
+      "label": "mom()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L120",
+      "id": "reports_blockchain_essentials_mom",
+      "community": 17,
+      "norm_label": "mom()"
+    },
+    {
+      "label": "hotness()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L123",
+      "id": "reports_blockchain_essentials_hotness",
+      "community": 17,
+      "norm_label": "hotness()"
+    },
+    {
+      "label": "life_badge()",
+      "file_type": "code",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L131",
+      "id": "reports_blockchain_essentials_life_badge",
+      "community": 17,
+      "norm_label": "life_badge()"
     },
     {
       "label": "GitHubStarsAnalyzer.jsx",
@@ -810,7 +1170,7 @@
       "source_file": "src/GitHubStarsAnalyzer.jsx",
       "source_location": "L1",
       "id": "src_githubstarsanalyzer_jsx",
-      "community": 18,
+      "community": 23,
       "norm_label": "githubstarsanalyzer.jsx"
     },
     {
@@ -819,7 +1179,7 @@
       "source_file": "src/GitHubStarsAnalyzer.jsx",
       "source_location": "L29",
       "id": "src_githubstarsanalyzer_githubstarsanalyzer",
-      "community": 18,
+      "community": 23,
       "norm_label": "githubstarsanalyzer()"
     },
     {
@@ -828,7 +1188,7 @@
       "source_file": "src/main.jsx",
       "source_location": "L1",
       "id": "src_main_jsx",
-      "community": 19,
+      "community": 24,
       "norm_label": "main.jsx"
     },
     {
@@ -837,7 +1197,7 @@
       "source_file": "src/main.jsx",
       "source_location": "L8",
       "id": "src_main_navbar",
-      "community": 19,
+      "community": 24,
       "norm_label": "navbar()"
     },
     {
@@ -927,7 +1287,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L1",
       "id": "src_lab_repodetail_jsx",
-      "community": 8,
+      "community": 9,
       "norm_label": "repodetail.jsx"
     },
     {
@@ -936,7 +1296,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L4",
       "id": "lab_repodetail_stagebadge",
-      "community": 8,
+      "community": 9,
       "norm_label": "stagebadge()"
     },
     {
@@ -945,7 +1305,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L15",
       "id": "lab_repodetail_healthbar",
-      "community": 8,
+      "community": 9,
       "norm_label": "healthbar()"
     },
     {
@@ -954,7 +1314,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L28",
       "id": "lab_repodetail_metriccell",
-      "community": 8,
+      "community": 9,
       "norm_label": "metriccell()"
     },
     {
@@ -963,7 +1323,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L37",
       "id": "lab_repodetail_findneighbors",
-      "community": 8,
+      "community": 9,
       "norm_label": "findneighbors()"
     },
     {
@@ -972,7 +1332,7 @@
       "source_file": "src/lab/RepoDetail.jsx",
       "source_location": "L52",
       "id": "lab_repodetail_repodetail",
-      "community": 8,
+      "community": 9,
       "norm_label": "repodetail()"
     },
     {
@@ -981,7 +1341,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L1",
       "id": "src_lab_comparator_jsx",
-      "community": 5,
+      "community": 6,
       "norm_label": "comparator.jsx"
     },
     {
@@ -990,7 +1350,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L5",
       "id": "lab_comparator_findpath",
-      "community": 5,
+      "community": 6,
       "norm_label": "findpath()"
     },
     {
@@ -999,7 +1359,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L45",
       "id": "lab_comparator_metricrow",
-      "community": 5,
+      "community": 6,
       "norm_label": "metricrow()"
     },
     {
@@ -1008,7 +1368,7 @@
       "source_file": "src/lab/Comparator.jsx",
       "source_location": "L55",
       "id": "lab_comparator_comparator",
-      "community": 5,
+      "community": 6,
       "norm_label": "comparator()"
     },
     {
@@ -1035,7 +1395,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L1",
       "id": "src_lab_reportsview_jsx",
-      "community": 5,
+      "community": 6,
       "norm_label": "reportsview.jsx"
     },
     {
@@ -1044,7 +1404,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L8",
       "id": "lab_reportsview_fmt",
-      "community": 5,
+      "community": 6,
       "norm_label": "fmt()"
     },
     {
@@ -1053,7 +1413,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L40",
       "id": "lab_reportsview_reportcard",
-      "community": 5,
+      "community": 6,
       "norm_label": "reportcard()"
     },
     {
@@ -1062,7 +1422,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L78",
       "id": "lab_reportsview_reportreader",
-      "community": 5,
+      "community": 6,
       "norm_label": "reportreader()"
     },
     {
@@ -1071,7 +1431,7 @@
       "source_file": "src/lab/ReportsView.jsx",
       "source_location": "L126",
       "id": "lab_reportsview_reportsview",
-      "community": 5,
+      "community": 6,
       "norm_label": "reportsview()"
     },
     {
@@ -1098,7 +1458,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L1",
       "id": "src_lab_insightfeed_jsx",
-      "community": 13,
+      "community": 0,
       "norm_label": "insightfeed.jsx"
     },
     {
@@ -1107,7 +1467,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L5",
       "id": "lab_insightfeed_downloadblob",
-      "community": 13,
+      "community": 0,
       "norm_label": "downloadblob()"
     },
     {
@@ -1116,7 +1476,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L17",
       "id": "lab_insightfeed_rowstocsv",
-      "community": 13,
+      "community": 0,
       "norm_label": "rowstocsv()"
     },
     {
@@ -1125,7 +1485,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L31",
       "id": "lab_insightfeed_resulttable",
-      "community": 13,
+      "community": 0,
       "norm_label": "resulttable()"
     },
     {
@@ -1134,7 +1494,7 @@
       "source_file": "src/lab/InsightFeed.jsx",
       "source_location": "L77",
       "id": "lab_insightfeed_insightfeed",
-      "community": 13,
+      "community": 0,
       "norm_label": "insightfeed()"
     },
     {
@@ -1206,7 +1566,7 @@
       "source_file": "src/lab/queries.js",
       "source_location": "L1",
       "id": "src_lab_queries_js",
-      "community": 16,
+      "community": 21,
       "norm_label": "queries.js"
     },
     {
@@ -1215,7 +1575,7 @@
       "source_file": "src/lab/queries.js",
       "source_location": "L7",
       "id": "lab_queries_reponodes",
-      "community": 16,
+      "community": 21,
       "norm_label": "reponodes()"
     },
     {
@@ -1224,7 +1584,7 @@
       "source_file": "src/lab/queries.js",
       "source_location": "L170",
       "id": "lab_queries_comparerepos",
-      "community": 16,
+      "community": 21,
       "norm_label": "comparerepos()"
     },
     {
@@ -1884,7 +2244,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L34",
+      "source_location": "L40",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_run_generators",
@@ -1896,7 +2256,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L44",
+      "source_location": "L50",
       "weight": 1.0,
       "_src": "scripts_reports_build_index_py",
       "_tgt": "reports_build_index_build",
@@ -2003,6 +2363,54 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_src": "scripts_reports_meeting_transcription_py",
+      "_tgt": "reports_meeting_transcription_node_for",
+      "source": "scripts_reports_meeting_transcription_py",
+      "target": "reports_meeting_transcription_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_src": "scripts_reports_meeting_transcription_py",
+      "_tgt": "reports_meeting_transcription_fmt_int",
+      "source": "scripts_reports_meeting_transcription_py",
+      "target": "reports_meeting_transcription_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_src": "scripts_reports_meeting_transcription_py",
+      "_tgt": "reports_meeting_transcription_days_to_human",
+      "source": "scripts_reports_meeting_transcription_py",
+      "target": "reports_meeting_transcription_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_src": "scripts_reports_meeting_transcription_py",
+      "_tgt": "reports_meeting_transcription_activity_label",
+      "source": "scripts_reports_meeting_transcription_py",
+      "target": "reports_meeting_transcription_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/reports/hermes_vs_openclaw.py",
       "source_location": "L55",
       "weight": 1.0,
@@ -2094,6 +2502,378 @@
       "_tgt": "reports_hermes_vs_openclaw_winner",
       "source": "reports_hermes_vs_openclaw_winner",
       "target": "reports_hermes_vs_openclaw_rationale_94",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_src": "scripts_reports_local_vs_infra_stack_py",
+      "_tgt": "reports_local_vs_infra_stack_node_for",
+      "source": "scripts_reports_local_vs_infra_stack_py",
+      "target": "reports_local_vs_infra_stack_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_src": "scripts_reports_local_vs_infra_stack_py",
+      "_tgt": "reports_local_vs_infra_stack_fmt_int",
+      "source": "scripts_reports_local_vs_infra_stack_py",
+      "target": "reports_local_vs_infra_stack_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "_src": "scripts_reports_local_vs_infra_stack_py",
+      "_tgt": "reports_local_vs_infra_stack_days_to_human",
+      "source": "scripts_reports_local_vs_infra_stack_py",
+      "target": "reports_local_vs_infra_stack_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_src": "scripts_reports_local_vs_infra_stack_py",
+      "_tgt": "reports_local_vs_infra_stack_activity_label",
+      "source": "scripts_reports_local_vs_infra_stack_py",
+      "target": "reports_local_vs_infra_stack_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_claws_py",
+      "_tgt": "reports_blockchain_claws_fmt_int",
+      "source": "scripts_reports_blockchain_claws_py",
+      "target": "reports_blockchain_claws_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_claws_py",
+      "_tgt": "reports_blockchain_claws_meta_bits",
+      "source": "scripts_reports_blockchain_claws_py",
+      "target": "reports_blockchain_claws_meta_bits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_claws_py",
+      "_tgt": "reports_blockchain_claws_yn",
+      "source": "scripts_reports_blockchain_claws_py",
+      "target": "reports_blockchain_claws_yn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_claws.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_src": "reports_blockchain_claws_meta_bits",
+      "_tgt": "reports_blockchain_claws_fmt_int",
+      "source": "reports_blockchain_claws_fmt_int",
+      "target": "reports_blockchain_claws_meta_bits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_fmt_int",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_days_to_human",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_mom",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_mom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_activity_label",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_staleness_factor",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_staleness_factor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_score_components",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_score_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_composite",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_composite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_score_w",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_score_w",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_rank_of",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_rank_of",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_mean_rank",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_mean_rank",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_pvec",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_pvec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_dominated_by",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_dominated_by",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_node_for",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L571",
+      "weight": 1.0,
+      "_src": "scripts_reports_which_claw_py",
+      "_tgt": "reports_which_claw_pick",
+      "source": "scripts_reports_which_claw_py",
+      "target": "reports_which_claw_pick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_src": "reports_which_claw_score_components",
+      "_tgt": "reports_which_claw_mom",
+      "source": "reports_which_claw_mom",
+      "target": "reports_which_claw_score_components",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "_src": "reports_which_claw_pvec",
+      "_tgt": "reports_which_claw_mom",
+      "source": "reports_which_claw_mom",
+      "target": "reports_which_claw_pvec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_src": "reports_which_claw_composite",
+      "_tgt": "reports_which_claw_staleness_factor",
+      "source": "reports_which_claw_staleness_factor",
+      "target": "reports_which_claw_composite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_src": "reports_which_claw_score_w",
+      "_tgt": "reports_which_claw_staleness_factor",
+      "source": "reports_which_claw_staleness_factor",
+      "target": "reports_which_claw_score_w",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_src": "reports_which_claw_rationale_156",
+      "_tgt": "reports_which_claw_staleness_factor",
+      "source": "reports_which_claw_staleness_factor",
+      "target": "reports_which_claw_rationale_156",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_src": "reports_which_claw_composite",
+      "_tgt": "reports_which_claw_score_components",
+      "source": "reports_which_claw_score_components",
+      "target": "reports_which_claw_composite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_src": "reports_which_claw_score_w",
+      "_tgt": "reports_which_claw_score_components",
+      "source": "reports_which_claw_score_components",
+      "target": "reports_which_claw_score_w",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_src": "reports_which_claw_mean_rank",
+      "_tgt": "reports_which_claw_rank_of",
+      "source": "reports_which_claw_rank_of",
+      "target": "reports_which_claw_mean_rank",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L242",
+      "weight": 1.0,
+      "_src": "reports_which_claw_dominated_by",
+      "_tgt": "reports_which_claw_pvec",
+      "source": "reports_which_claw_pvec",
+      "target": "reports_which_claw_dominated_by",
       "confidence_score": 1.0
     },
     {
@@ -2346,6 +3126,114 @@
       "_tgt": "reports_agent_orchestration_activity_label",
       "source": "reports_agent_orchestration_activity_label",
       "target": "reports_agent_orchestration_comp_table",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_src": "scripts_reports_voice_agents_py",
+      "_tgt": "reports_voice_agents_node_for",
+      "source": "scripts_reports_voice_agents_py",
+      "target": "reports_voice_agents_node_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_src": "scripts_reports_voice_agents_py",
+      "_tgt": "reports_voice_agents_fmt_int",
+      "source": "scripts_reports_voice_agents_py",
+      "target": "reports_voice_agents_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_src": "scripts_reports_voice_agents_py",
+      "_tgt": "reports_voice_agents_days_to_human",
+      "source": "scripts_reports_voice_agents_py",
+      "target": "reports_voice_agents_days_to_human",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "_src": "scripts_reports_voice_agents_py",
+      "_tgt": "reports_voice_agents_activity_label",
+      "source": "scripts_reports_voice_agents_py",
+      "target": "reports_voice_agents_activity_label",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_essentials_py",
+      "_tgt": "reports_blockchain_essentials_fmt_int",
+      "source": "scripts_reports_blockchain_essentials_py",
+      "target": "reports_blockchain_essentials_fmt_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_essentials_py",
+      "_tgt": "reports_blockchain_essentials_mom",
+      "source": "scripts_reports_blockchain_essentials_py",
+      "target": "reports_blockchain_essentials_mom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_essentials_py",
+      "_tgt": "reports_blockchain_essentials_hotness",
+      "source": "scripts_reports_blockchain_essentials_py",
+      "target": "reports_blockchain_essentials_hotness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_src": "scripts_reports_blockchain_essentials_py",
+      "_tgt": "reports_blockchain_essentials_life_badge",
+      "source": "scripts_reports_blockchain_essentials_py",
+      "target": "reports_blockchain_essentials_life_badge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/blockchain_essentials.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_src": "reports_blockchain_essentials_hotness",
+      "_tgt": "reports_blockchain_essentials_mom",
+      "source": "reports_blockchain_essentials_mom",
+      "target": "reports_blockchain_essentials_hotness",
       "confidence_score": 1.0
     },
     {

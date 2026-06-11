@@ -1,0 +1,42 @@
+{
+  "slug": "meeting-transcription",
+  "title": "Meeting Transcription & Conversation Analysis \u2014 Field Guide",
+  "file": "meeting-transcription.md",
+  "category": "AI / Voice",
+  "summary": "32 meeting-transcription & conversation-analysis projects (423,557\u2605) across the pipeline: end-to-end notetakers, ASR engines, diarization, live streaming, servers, and transcript analytics \u2014 with a verdict per use case.",
+  "tool_count": 32,
+  "total_stars": 423557,
+  "categories": {
+    "Meeting assistant (end-to-end)": 8,
+    "ASR engine / model": 13,
+    "Diarization & alignment": 4,
+    "Streaming / live capture": 4,
+    "Transcription server / API": 2,
+    "Transcript analysis": 1
+  },
+  "top_tools": [
+    {
+      "name": "openai/whisper",
+      "stars": 102488
+    },
+    {
+      "name": "ggml-org/whisper.cpp",
+      "stars": 50646
+    },
+    {
+      "name": "SYSTRAN/faster-whisper",
+      "stars": 23549
+    },
+    {
+      "name": "m-bain/whisperX",
+      "stars": 22396
+    },
+    {
+      "name": "screenpipe/screenpipe",
+      "stars": 19259
+    }
+  ],
+  "snapshot": "2026-06-11T21:58:33.384Z",
+  "generated": "2026-06-11",
+  "generator": "scripts/reports/meeting_transcription.py"
+}
