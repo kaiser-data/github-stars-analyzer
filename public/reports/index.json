@@ -1,7 +1,52 @@
 {
-  "generated": "2026-06-11",
-  "count": 14,
+  "generated": "2026-06-13",
+  "count": 15,
   "reports": [
+    {
+      "slug": "claude-code-setups",
+      "title": "Claude Code Superpowers \u2014 Setup Strategies from Your Stars",
+      "file": "claude-code-setups.md",
+      "category": "AI / Agents",
+      "summary": "58 Claude-Code 'superpower' projects (4,132,599\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
+      "tool_count": 58,
+      "total_stars": 4132599,
+      "categories": {
+        "Harness / coding agent": 12,
+        "Skills framework": 7,
+        "Config / setup kit": 11,
+        "Memory / context": 7,
+        "Token-saver / compression": 7,
+        "Code-graph / retrieval": 5,
+        "MCP ecosystem": 3,
+        "Observability / evals": 4,
+        "Local runtime": 2
+      },
+      "top_tools": [
+        {
+          "name": "openclaw/openclaw",
+          "stars": 378215
+        },
+        {
+          "name": "obra/superpowers",
+          "stars": 224734
+        },
+        {
+          "name": "affaan-m/ECC",
+          "stars": 213434
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "stars": 190933
+        },
+        {
+          "name": "ollama/ollama",
+          "stars": 173893
+        }
+      ],
+      "snapshot": "2026-06-11T21:58:33.384Z",
+      "generated": "2026-06-13",
+      "generator": "scripts/reports/claude_code_setups.py"
+    },
     {
       "slug": "local-vs-infra-stack",
       "title": "Local vs High-Infra AI Stack \u2014 A Deployment-Tier Comparison",
@@ -47,7 +92,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/local_vs_infra_stack.py"
     },
     {
@@ -88,7 +133,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/agent_orchestration.py"
     },
     {
@@ -137,7 +182,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/blockchain_essentials.py"
     },
     {
@@ -178,7 +223,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/mcp_tooling.py"
     },
     {
@@ -220,7 +265,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/meeting_transcription.py"
     },
     {
@@ -261,7 +306,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/rag_tooling.py"
     },
     {
@@ -302,7 +347,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
     {
@@ -344,7 +389,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/voice_agents.py"
     },
     {
@@ -384,7 +429,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/llm_evaluation.py"
     },
     {
@@ -424,7 +469,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/memory_frameworks.py"
     },
     {
@@ -466,7 +511,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/blockchain_claws.py"
     },
     {
@@ -507,7 +552,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/token_savings.py"
     },
     {
@@ -546,7 +591,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/which_claw.py"
     },
     {
@@ -584,7 +629,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-11",
+      "generated": "2026-06-13",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }
   ]

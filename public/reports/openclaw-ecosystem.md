@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-11 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
+> Generated 2026-06-13 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
 > **What is OpenClaw?** A personal AI assistant (🦞, formerly *Clawdbot* / *Moltbot*) that runs on any OS/platform. It has spawned a fast-moving ecosystem of runtimes, skills, routers, memory layers, dashboards, and specialized agents — this report maps the parts in your stars and flags what's worth adopting **now**.
 

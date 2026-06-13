@@ -35,6 +35,7 @@ GENERATORS = [
     "voice_agents.py",
     "local_vs_infra_stack.py",
     "meeting_transcription.py",
+    "claude_code_setups.py",
 ]
 
 def run_generators():
