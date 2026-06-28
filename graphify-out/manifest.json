@@ -1,0 +1,512 @@
+{
+  ".claude/settings.local.json": {
+    "mtime": 1778235327.7668347,
+    "ast_hash": "7e55869d514f3e181af4570adedf7d77",
+    "semantic_hash": ""
+  },
+  "netlify/functions/ask.mjs": {
+    "mtime": 1780169874.8647978,
+    "ast_hash": "86e84bc9a091f9056c1c0fb54d3ecb1e",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1780222679.9488654,
+    "ast_hash": "1dc9767a53db41435632f78135e8c715",
+    "semantic_hash": ""
+  },
+  "postcss.config.js": {
+    "mtime": 1777673116.137399,
+    "ast_hash": "470cfd3ee10fbff840b377e769485f3e",
+    "semantic_hash": ""
+  },
+  "public/data/classified-100.json": {
+    "mtime": 1778191777.7970183,
+    "ast_hash": "a32c6d725a12738ef07daf98f35f8b23",
+    "semantic_hash": ""
+  },
+  "public/data/classified.json": {
+    "mtime": 1781215113.6163902,
+    "ast_hash": "238ab42cd56714167d004c06d6111691",
+    "semantic_hash": ""
+  },
+  "public/data/graph-context.json": {
+    "mtime": 1781215116.3922968,
+    "ast_hash": "c4093dd24391f20f0d763acb7cb2feff",
+    "semantic_hash": ""
+  },
+  "public/data/graph.json": {
+    "mtime": 1781215116.382537,
+    "ast_hash": "8543fddc75535ef3c17fd1057f48e2f6",
+    "semantic_hash": ""
+  },
+  "public/data/questions.json": {
+    "mtime": 1780169322.5157135,
+    "ast_hash": "9efa2fcaa33eb3bf56a2f48f296b5eee",
+    "semantic_hash": ""
+  },
+  "public/reports/index.json": {
+    "mtime": 1781345484.9901965,
+    "ast_hash": "392d7791254da17c1f0ad7cff98819a1",
+    "semantic_hash": ""
+  },
+  "reports/agent-orchestration.meta.json": {
+    "mtime": 1781345483.3258402,
+    "ast_hash": "d99ebbd9d619b3edf4f9149e61ee2b16",
+    "semantic_hash": ""
+  },
+  "reports/blockchain-claws.meta.json": {
+    "mtime": 1781345483.9053288,
+    "ast_hash": "790d9858a048c74ea1f3406b0e022598",
+    "semantic_hash": ""
+  },
+  "reports/blockchain-essentials.meta.json": {
+    "mtime": 1781345484.133604,
+    "ast_hash": "4ffe7e98ce9e5e700b815e0f56ef684d",
+    "semantic_hash": ""
+  },
+  "reports/claude-code-setups.meta.json": {
+    "mtime": 1781345484.9542003,
+    "ast_hash": "f8bd7b59fb38bc1f6256b7ffd1521ce6",
+    "semantic_hash": ""
+  },
+  "reports/hermes-vs-openclaw.meta.json": {
+    "mtime": 1781345483.524635,
+    "ast_hash": "b1ed18dd65b4dc6d9354b25e4dcd432f",
+    "semantic_hash": ""
+  },
+  "reports/llm-evaluation-tooling.meta.json": {
+    "mtime": 1781345482.2714932,
+    "ast_hash": "7c87d295353b95a006fccb3b99252b84",
+    "semantic_hash": ""
+  },
+  "reports/local-vs-infra-stack.meta.json": {
+    "mtime": 1781345484.5410314,
+    "ast_hash": "475530219d140fb611fa17c0997b641f",
+    "semantic_hash": ""
+  },
+  "reports/mcp-tooling.meta.json": {
+    "mtime": 1781345482.720316,
+    "ast_hash": "5e7a24940cb7baf016fa2394e063ebe8",
+    "semantic_hash": ""
+  },
+  "reports/meeting-transcription.meta.json": {
+    "mtime": 1781345484.7433093,
+    "ast_hash": "4cdfbcb23df10a2a2bcd64f0e2554120",
+    "semantic_hash": ""
+  },
+  "reports/memory-frameworks-for-llm-agents.meta.json": {
+    "mtime": 1781345482.0674531,
+    "ast_hash": "e04501b6e211f9945b77b0b3eb46ad28",
+    "semantic_hash": ""
+  },
+  "reports/openclaw-ecosystem.meta.json": {
+    "mtime": 1781345482.933986,
+    "ast_hash": "43aff367b4926e96a0355794af0a6852",
+    "semantic_hash": ""
+  },
+  "reports/rag-tooling.meta.json": {
+    "mtime": 1781345482.4750502,
+    "ast_hash": "04bae2c68340e5df671df5f39c8bfe97",
+    "semantic_hash": ""
+  },
+  "reports/voice-agents.meta.json": {
+    "mtime": 1781345484.3403912,
+    "ast_hash": "ba365ee2510fcc831e3b0919dd3840f8",
+    "semantic_hash": ""
+  },
+  "reports/which-claw.meta.json": {
+    "mtime": 1781345483.7292578,
+    "ast_hash": "bd312b7e55ece367c011a6b448a6c601",
+    "semantic_hash": ""
+  },
+  "scripts/classify.mjs": {
+    "mtime": 1778191777.9248064,
+    "ast_hash": "694daf3ccb7ed2c593c37a9634c6d6b3",
+    "semantic_hash": ""
+  },
+  "scripts/ingest.mjs": {
+    "mtime": 1778191777.925854,
+    "ast_hash": "33de6782ca0a54875424e723884a04de",
+    "semantic_hash": ""
+  },
+  "scripts/lib/ask-prompt.mjs": {
+    "mtime": 1780169071.2931032,
+    "ast_hash": "d3cf79ed626d0e6dceb24db55734bda0",
+    "semantic_hash": ""
+  },
+  "scripts/lib/github.mjs": {
+    "mtime": 1778191777.9274411,
+    "ast_hash": "48062c906f2735bd1851b58ad6de8e91",
+    "semantic_hash": ""
+  },
+  "scripts/precompute-questions.mjs": {
+    "mtime": 1780169176.587746,
+    "ast_hash": "cf21b5654144e05ec34a2e38e58dd95e",
+    "semantic_hash": ""
+  },
+  "scripts/precompute.mjs": {
+    "mtime": 1778235304.332569,
+    "ast_hash": "0f881fee3a7317e32ec9a7c9ea2cf2f6",
+    "semantic_hash": ""
+  },
+  "scripts/reports/agent_orchestration.py": {
+    "mtime": 1780436649.1955712,
+    "ast_hash": "f065d45bf6f3f3492fd513f487d9a5e5",
+    "semantic_hash": ""
+  },
+  "scripts/reports/blockchain_claws.py": {
+    "mtime": 1780440061.9740517,
+    "ast_hash": "c8da63fcc4244f773363ba26cae1a7c7",
+    "semantic_hash": ""
+  },
+  "scripts/reports/blockchain_essentials.py": {
+    "mtime": 1780441762.696779,
+    "ast_hash": "6d86b7a7d5af4d13315dfb79514d0463",
+    "semantic_hash": ""
+  },
+  "scripts/reports/build_index.py": {
+    "mtime": 1781345462.4418445,
+    "ast_hash": "25635eb8d91b9ebde3818fc897994627",
+    "semantic_hash": ""
+  },
+  "scripts/reports/claude_code_setups.py": {
+    "mtime": 1781345458.0878882,
+    "ast_hash": "99ee27b6ec389c1c5439bf0ac78802af",
+    "semantic_hash": ""
+  },
+  "scripts/reports/hermes_vs_openclaw.py": {
+    "mtime": 1780395384.207411,
+    "ast_hash": "b444bedb860e63fed3f29a93ea0c33fb",
+    "semantic_hash": ""
+  },
+  "scripts/reports/llm_evaluation.py": {
+    "mtime": 1780436695.8732774,
+    "ast_hash": "6e45d66478baae33395f8b599480e00d",
+    "semantic_hash": ""
+  },
+  "scripts/reports/local_vs_infra_stack.py": {
+    "mtime": 1780611237.5815513,
+    "ast_hash": "2599610920e3ed8fe2dd25fed6df640a",
+    "semantic_hash": ""
+  },
+  "scripts/reports/mcp_tooling.py": {
+    "mtime": 1780436731.0136268,
+    "ast_hash": "3828e8852bde35f6e78e8882cfdcbfd5",
+    "semantic_hash": ""
+  },
+  "scripts/reports/meeting_transcription.py": {
+    "mtime": 1781214680.3427637,
+    "ast_hash": "128e862282015f4b02ce53e96582e827",
+    "semantic_hash": ""
+  },
+  "scripts/reports/memory_frameworks.py": {
+    "mtime": 1780436724.4767025,
+    "ast_hash": "b67649ef9e8af77c98cde615549e1ed0",
+    "semantic_hash": ""
+  },
+  "scripts/reports/openclaw_ecosystem.py": {
+    "mtime": 1780229659.6844063,
+    "ast_hash": "c942e74d0f136ab8361249f08e459419",
+    "semantic_hash": ""
+  },
+  "scripts/reports/rag_tooling.py": {
+    "mtime": 1780436718.7512758,
+    "ast_hash": "551a7f19da07baccd08435e4dbb33076",
+    "semantic_hash": ""
+  },
+  "scripts/reports/voice_agents.py": {
+    "mtime": 1780587090.6347544,
+    "ast_hash": "87fc54511c53cc74bd1badf272ffb27f",
+    "semantic_hash": ""
+  },
+  "scripts/reports/which_claw.py": {
+    "mtime": 1780439504.1977878,
+    "ast_hash": "112cae4e0bef4c52d83dc5d069be9037",
+    "semantic_hash": ""
+  },
+  "scripts/sample.mjs": {
+    "mtime": 1778191777.9281082,
+    "ast_hash": "825bb8884a723ae47be056581d4caa60",
+    "semantic_hash": ""
+  },
+  "scripts/test-graph.mjs": {
+    "mtime": 1778191777.9290285,
+    "ast_hash": "94046867c7379c0be64559c587dc1eb0",
+    "semantic_hash": ""
+  },
+  "src/GitHubStarsAnalyzer.jsx": {
+    "mtime": 1777673116.1381843,
+    "ast_hash": "7b7736db91e854a941ed2e9f6fb81876",
+    "semantic_hash": ""
+  },
+  "src/data/sample-100.json": {
+    "mtime": 1778191777.9298174,
+    "ast_hash": "faa9af87e877d7b9dfaa30a20ed7d2c4",
+    "semantic_hash": ""
+  },
+  "src/data/sample-2000.json": {
+    "mtime": 1778191777.9344027,
+    "ast_hash": "cdd5e327e33c544a95805231ded25853",
+    "semantic_hash": ""
+  },
+  "src/data/sample-all.json": {
+    "mtime": 1781213772.1604164,
+    "ast_hash": "b5ca1cd6fa9452393a2cf68cccce5d2c",
+    "semantic_hash": ""
+  },
+  "src/data/slices/slice-1.json": {
+    "mtime": 1778191777.9405503,
+    "ast_hash": "f4bc00f5493fb1a84a8d9ad830137a9f",
+    "semantic_hash": ""
+  },
+  "src/data/slices/slice-2.json": {
+    "mtime": 1778191777.9433076,
+    "ast_hash": "9e22ab491aaaedbbd8d919386fa04d62",
+    "semantic_hash": ""
+  },
+  "src/data/slices/slice-3.json": {
+    "mtime": 1778191777.9472268,
+    "ast_hash": "f92aa379966d6e0116a71501a3020901",
+    "semantic_hash": ""
+  },
+  "src/data/slices/slice-4.json": {
+    "mtime": 1778191777.9497778,
+    "ast_hash": "c46172de7becdd7909c3fd306f78d580",
+    "semantic_hash": ""
+  },
+  "src/data/slices/slice-5.json": {
+    "mtime": 1778191777.952922,
+    "ast_hash": "9d5ba1d05b8a7a0e71e703359a8f41c7",
+    "semantic_hash": ""
+  },
+  "src/lab/AllRepos.jsx": {
+    "mtime": 1778238585.5106533,
+    "ast_hash": "b9642a42ee153bdd333a323e5f819370",
+    "semantic_hash": ""
+  },
+  "src/lab/Comparator.jsx": {
+    "mtime": 1778240837.7209303,
+    "ast_hash": "fe6890d83cfc1943c9c2528d8479d9cc",
+    "semantic_hash": ""
+  },
+  "src/lab/GraphProvider.jsx": {
+    "mtime": 1778235572.4728103,
+    "ast_hash": "f79fd98d7ebc54ced019d71886796554",
+    "semantic_hash": ""
+  },
+  "src/lab/HealthHistogram.jsx": {
+    "mtime": 1778288541.159356,
+    "ast_hash": "c2e664c7df660f6ab65e75b40db8095d",
+    "semantic_hash": ""
+  },
+  "src/lab/InsightFeed.jsx": {
+    "mtime": 1778238971.5425758,
+    "ast_hash": "3fd2c9b0c08cd842311d3d01f342aca5",
+    "semantic_hash": ""
+  },
+  "src/lab/LabApp.jsx": {
+    "mtime": 1780222655.0967815,
+    "ast_hash": "b959574d1a5f68c110276180322dde72",
+    "semantic_hash": ""
+  },
+  "src/lab/MapView.jsx": {
+    "mtime": 1778236364.514306,
+    "ast_hash": "05851535415b526bbf84fa22b478b9e5",
+    "semantic_hash": ""
+  },
+  "src/lab/RepoDetail.jsx": {
+    "mtime": 1778246241.3142707,
+    "ast_hash": "00218fc30ecc388e76b89a256d4709d2",
+    "semantic_hash": ""
+  },
+  "src/lab/ReportsView.jsx": {
+    "mtime": 1780222668.017396,
+    "ast_hash": "ac79fbcce6cc8eb9924cab9f9f1c7a94",
+    "semantic_hash": ""
+  },
+  "src/lab/TopicMap.jsx": {
+    "mtime": 1778240495.8456388,
+    "ast_hash": "55420b64cb0e41d93336b55996631d0f",
+    "semantic_hash": ""
+  },
+  "src/lab/queries.js": {
+    "mtime": 1778242223.3413115,
+    "ast_hash": "2d6bd1b6a4d5b07a94d288dc4acbe8d8",
+    "semantic_hash": ""
+  },
+  "src/main.jsx": {
+    "mtime": 1778191789.7228944,
+    "ast_hash": "c71c2b2a177ea71654313b8fe9d927c6",
+    "semantic_hash": ""
+  },
+  "tailwind.config.js": {
+    "mtime": 1777673116.138546,
+    "ast_hash": "7a94880d48d044d1b8b6c8760365675d",
+    "semantic_hash": ""
+  },
+  "vite.config.js": {
+    "mtime": 1780169887.9982417,
+    "ast_hash": "ab776a0cc1d62bc9c5cf6ca95e16471d",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1779655975.2525675,
+    "ast_hash": "2a6e9d42aca9421b8aac7b307073e1c1",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1777673116.1366036,
+    "ast_hash": "df3f8bb0d75d38b59c038edb4b54dd2f",
+    "semantic_hash": ""
+  },
+  "public/reports/agent-orchestration.md": {
+    "mtime": 1781345484.985039,
+    "ast_hash": "ace41fd02f5b4662f67fac886d169776",
+    "semantic_hash": ""
+  },
+  "public/reports/blockchain-claws.md": {
+    "mtime": 1781345484.9855063,
+    "ast_hash": "1e000d85022689f99de00b04e7279ce9",
+    "semantic_hash": ""
+  },
+  "public/reports/blockchain-essentials.md": {
+    "mtime": 1781345484.985914,
+    "ast_hash": "36656731c596432b9a23df9da703ef87",
+    "semantic_hash": ""
+  },
+  "public/reports/claude-code-setups.md": {
+    "mtime": 1781345484.9862437,
+    "ast_hash": "83706a50efc472801a409ded0b45549a",
+    "semantic_hash": ""
+  },
+  "public/reports/hermes-vs-openclaw.md": {
+    "mtime": 1781345484.986568,
+    "ast_hash": "24ab6ed9fa1b3650f5c241e58c55effc",
+    "semantic_hash": ""
+  },
+  "public/reports/llm-evaluation-tooling.md": {
+    "mtime": 1781345484.9868448,
+    "ast_hash": "75b75cd34550154b43cadac83dc91890",
+    "semantic_hash": ""
+  },
+  "public/reports/local-vs-infra-stack.md": {
+    "mtime": 1781345484.9872713,
+    "ast_hash": "a70a0221bf4315db7d6ab1f7e9177921",
+    "semantic_hash": ""
+  },
+  "public/reports/mcp-tooling.md": {
+    "mtime": 1781345484.9875364,
+    "ast_hash": "77d347f284f637bdaa7bd1b86b4d903f",
+    "semantic_hash": ""
+  },
+  "public/reports/meeting-transcription.md": {
+    "mtime": 1781345484.987804,
+    "ast_hash": "998482b04917dc2d33adab78d8a7cc35",
+    "semantic_hash": ""
+  },
+  "public/reports/memory-frameworks-for-llm-agents.md": {
+    "mtime": 1781345484.9880664,
+    "ast_hash": "efeb32bd680fb5fb697a6992446ca759",
+    "semantic_hash": ""
+  },
+  "public/reports/openclaw-ecosystem.md": {
+    "mtime": 1781345484.9883182,
+    "ast_hash": "2c9752fbceb52d94b8785fe00164bc28",
+    "semantic_hash": ""
+  },
+  "public/reports/rag-tooling.md": {
+    "mtime": 1781345484.9885714,
+    "ast_hash": "9f66c86e4dd82c4b7c5381bdd8ece337",
+    "semantic_hash": ""
+  },
+  "public/reports/voice-agents.md": {
+    "mtime": 1781345484.9891233,
+    "ast_hash": "3a63c971eabbc712c6be00f688266842",
+    "semantic_hash": ""
+  },
+  "public/reports/which-claw.md": {
+    "mtime": 1781345484.9893851,
+    "ast_hash": "df930acfdb17813c4c33749f706c2f95",
+    "semantic_hash": ""
+  },
+  "reports/agent-orchestration.md": {
+    "mtime": 1781345483.325327,
+    "ast_hash": "ace41fd02f5b4662f67fac886d169776",
+    "semantic_hash": ""
+  },
+  "reports/blockchain-claws.md": {
+    "mtime": 1781345483.9049656,
+    "ast_hash": "1e000d85022689f99de00b04e7279ce9",
+    "semantic_hash": ""
+  },
+  "reports/blockchain-essentials.md": {
+    "mtime": 1781345484.1331892,
+    "ast_hash": "36656731c596432b9a23df9da703ef87",
+    "semantic_hash": ""
+  },
+  "reports/claude-code-setups.md": {
+    "mtime": 1781345484.9538531,
+    "ast_hash": "83706a50efc472801a409ded0b45549a",
+    "semantic_hash": ""
+  },
+  "reports/hermes-vs-openclaw.md": {
+    "mtime": 1781345483.5242963,
+    "ast_hash": "24ab6ed9fa1b3650f5c241e58c55effc",
+    "semantic_hash": ""
+  },
+  "reports/llm-evaluation-tooling.md": {
+    "mtime": 1781345482.2711697,
+    "ast_hash": "75b75cd34550154b43cadac83dc91890",
+    "semantic_hash": ""
+  },
+  "reports/local-vs-infra-stack.md": {
+    "mtime": 1781345484.540668,
+    "ast_hash": "a70a0221bf4315db7d6ab1f7e9177921",
+    "semantic_hash": ""
+  },
+  "reports/mcp-tooling.md": {
+    "mtime": 1781345482.719979,
+    "ast_hash": "77d347f284f637bdaa7bd1b86b4d903f",
+    "semantic_hash": ""
+  },
+  "reports/meeting-transcription.md": {
+    "mtime": 1781345484.743034,
+    "ast_hash": "998482b04917dc2d33adab78d8a7cc35",
+    "semantic_hash": ""
+  },
+  "reports/memory-frameworks-for-llm-agents.md": {
+    "mtime": 1781345482.0667675,
+    "ast_hash": "efeb32bd680fb5fb697a6992446ca759",
+    "semantic_hash": ""
+  },
+  "reports/openclaw-ecosystem.md": {
+    "mtime": 1781345482.9332619,
+    "ast_hash": "2c9752fbceb52d94b8785fe00164bc28",
+    "semantic_hash": ""
+  },
+  "reports/rag-tooling.md": {
+    "mtime": 1781345482.4747567,
+    "ast_hash": "9f66c86e4dd82c4b7c5381bdd8ece337",
+    "semantic_hash": ""
+  },
+  "reports/recommended-blockchain-stars.md": {
+    "mtime": 1780440971.253066,
+    "ast_hash": "429100bae02dbb8289ee0fbe74773a2f",
+    "semantic_hash": ""
+  },
+  "reports/recommended-to-star.md": {
+    "mtime": 1780437606.1328018,
+    "ast_hash": "b5105f64ba70ba80295db9c627312b15",
+    "semantic_hash": ""
+  },
+  "reports/voice-agents.md": {
+    "mtime": 1781345484.3401031,
+    "ast_hash": "3a63c971eabbc712c6be00f688266842",
+    "semantic_hash": ""
+  },
+  "reports/which-claw.md": {
+    "mtime": 1781345483.728998,
+    "ast_hash": "df930acfdb17813c4c33749f706c2f95",
+    "semantic_hash": ""
+  }
+}
