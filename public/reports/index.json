@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-13",
-  "count": 15,
+  "generated": "2026-06-29",
+  "count": 16,
   "reports": [
     {
       "slug": "claude-code-setups",
@@ -44,8 +44,47 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/claude_code_setups.py"
+    },
+    {
+      "slug": "ai-engineer-stack",
+      "title": "The AI Engineer's Stack \u2014 What's Fundamental, Must-Have, and Trending",
+      "file": "ai-engineer-stack.md",
+      "category": "AI / Engineering",
+      "summary": "56 repos every AI engineer should know (3,929,420\u2605), sorted into Fundamental / Must-have / Trending \u2014 plus a map of what's already solved (integrate, don't build) vs. still frontier, and 9 buildable project ideas.",
+      "tool_count": 56,
+      "total_stars": 3929420,
+      "categories": {
+        "Fundamental": 13,
+        "Must-have": 20,
+        "Trending": 23
+      },
+      "top_tools": [
+        {
+          "name": "obra/superpowers",
+          "stars": 224734
+        },
+        {
+          "name": "ollama/ollama",
+          "stars": 173893
+        },
+        {
+          "name": "huggingface/transformers",
+          "stars": 161513
+        },
+        {
+          "name": "anthropics/skills",
+          "stars": 149487
+        },
+        {
+          "name": "langchain-ai/langchain",
+          "stars": 139060
+        }
+      ],
+      "snapshot": "2026-06-11T21:58:33.384Z",
+      "generated": "2026-06-29",
+      "generator": "scripts/reports/ai_engineer_stack.py"
     },
     {
       "slug": "local-vs-infra-stack",
@@ -92,7 +131,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/local_vs_infra_stack.py"
     },
     {
@@ -133,7 +172,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/agent_orchestration.py"
     },
     {
@@ -182,7 +221,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/blockchain_essentials.py"
     },
     {
@@ -223,7 +262,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/mcp_tooling.py"
     },
     {
@@ -265,7 +304,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/meeting_transcription.py"
     },
     {
@@ -306,7 +345,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/rag_tooling.py"
     },
     {
@@ -347,7 +386,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
     {
@@ -389,7 +428,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/voice_agents.py"
     },
     {
@@ -429,7 +468,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/llm_evaluation.py"
     },
     {
@@ -469,7 +508,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/memory_frameworks.py"
     },
     {
@@ -511,7 +550,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/blockchain_claws.py"
     },
     {
@@ -552,7 +591,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/token_savings.py"
     },
     {
@@ -591,7 +630,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/which_claw.py"
     },
     {
@@ -629,7 +668,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-13",
+      "generated": "2026-06-29",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }
   ]

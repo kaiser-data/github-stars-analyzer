@@ -36,6 +36,7 @@ GENERATORS = [
     "local_vs_infra_stack.py",
     "meeting_transcription.py",
     "claude_code_setups.py",
+    "ai_engineer_stack.py",
 ]
 
 def run_generators():

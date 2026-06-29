@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-06-29)
 
 ## Corpus Check
-- 101 files · ~1,937,026 words
+- 105 files · ~1,951,608 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 862 nodes · 973 edges · 62 communities (58 shown, 4 thin omitted)
+- 901 nodes · 1009 edges · 65 communities (60 shown, 5 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 13 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1a11c354`
+- Built from commit: `429983b7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -71,18 +71,21 @@
 - [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Community 57|Community 57]]
 - [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 19 edges
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 13 edges
-5. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
-6. `By category` - 11 edges
-7. `Meeting Transcription & Conversation Analysis — Field Guide` - 11 edges
-8. `RAG (Retrieval-Augmented Generation) Tooling — Landscape Report` - 11 edges
-9. `Voice AI Agents — Landscape Report` - 11 edges
-10. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
+5. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
+6. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
+7. `By category` - 11 edges
+8. `Meeting Transcription & Conversation Analysis — Field Guide` - 11 edges
+9. `RAG (Retrieval-Augmented Generation) Tooling — Landscape Report` - 11 edges
+10. `Voice AI Agents — Landscape Report` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [INFERRED]
@@ -99,7 +102,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (62 total, 4 thin omitted)
+## Communities (65 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -309,10 +312,18 @@ Nodes (8): Biggest themes worth your attention, 🔴 Empty categories (highest v
 Cohesion: 0.33
 Nodes (5): Coverage snapshot, Recommended to Star — Blockchain / DeFi Gaps, 🔴 Tier 1 — can't do serious EVM/DeFi work without these, 🟠 Tier 2 — DeFi protocol references, data & infra (high value for analysis), 🟡 Tier 3 — Solana, ZK & specialized (star if in scope)
 
+### Community 62 - "Community 62"
+Cohesion: 0.12
+Nodes (15): Adjacent (deliberately not in the core list), Fundamental (13), Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Must-have (20), Projects to build (with the repos) (+7 more)
+
+### Community 63 - "Community 63"
+Cohesion: 0.12
+Nodes (15): Adjacent (deliberately not in the core list), Fundamental (13), Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Must-have (20), Projects to build (with the repos) (+7 more)
+
 ## Knowledge Gaps
-- **535 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+530 more)
+- **559 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+554 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -322,7 +333,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 9 inferred relationships involving `useGraph()` (e.g. with `AllRepos()` and `Comparator()`) actually correct?**
   _`useGraph()` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _537 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _562 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060285563194077206 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**

@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-13 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-06-29 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
 > **What is MCP?** The Model Context Protocol is an open standard (Anthropic, late 2024) that lets LLM apps talk to external tools/data through a uniform interface — the 'USB-C port' for AI. **Servers** expose capabilities; **clients/hosts** (Claude Desktop, Cursor, editors) consume them; **gateways** govern them at scale.
 
