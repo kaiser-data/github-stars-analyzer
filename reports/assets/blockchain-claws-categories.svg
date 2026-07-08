@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="207" viewBox="0 0 680 207" role="img" aria-label="Tools per category">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="206" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Tools per category</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Autonomous trading agents</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">MCP infrastructure (wire any ch…</text>
+<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="76.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Agentic payments &amp; settlement</text>
+<path d="M244,94 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
+<text x="479.3" y="103.0" class="val" dominant-baseline="central">2</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">On-chain data &amp; explorer</text>
+<path d="M244,121 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
+<text x="364.7" y="130.0" class="val" dominant-baseline="central">1</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Valuation, market data &amp; quant</text>
+<path d="M244,148 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
+<text x="364.7" y="157.0" class="val" dominant-baseline="central">1</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Security &amp; crypto primitives</text>
+<path d="M244,175 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
+<text x="364.7" y="184.0" class="val" dominant-baseline="central">1</text>
+</svg>

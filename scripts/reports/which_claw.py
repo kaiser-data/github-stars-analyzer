@@ -9,7 +9,7 @@ accessory ecosystem (skills, routers, memory, observability, dashboards), which
 the OpenClaw Ecosystem report already covers.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -21,9 +21,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "which-claw"
 TITLE = "Which Claw Should I Use? — A Decision Report"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -116,37 +116,8 @@ name_to_nodeid = {n["full_name"]: n["id"] for n in gr["nodes"]}
 nodes_by_id = {n["id"]: n for n in gr["nodes"]}
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d // 30}mo"
-    return f"{d / 365:.1f}y"
-
 def mom(r):
     return (r.get("momentum") or {}).get("estimated_stars_30d")
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
 
 import math
 
@@ -251,9 +222,7 @@ pareto_optimal = [n for n in present if not dominated_by(n)]
 pareto_dominated = {n: dominated_by(n) for n in present if dominated_by(n)}
 
 # ---- Deeper analysis: graph signal ------------------------------------------
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 claw_communities = {}
 for n in present:
     nd = node_for(n)
@@ -359,7 +328,7 @@ for i, n in enumerate(ranked, 1):
     medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(i, str(i))
     dagger = "" if CANDIDATES[n]["named"] else " †"
     P(f"| {medal} | [{n}]({r['url']}){dagger} | {KIND_LABEL[CANDIDATES[n]['kind']]} | "
-      f"**{composite(r):.3f}** | {fmt_int(r['stars'])} | {r.get('health_score','—')} | "
+      f"**{composite(r):.3f}** | {fmt_stars(r)} | {r.get('health_score','—')} | "
       f"{fmt_int(mom(r)) if mom(r) is not None else '—'} | "
       f"{days_to_human(r.get('days_since_push'))} ago | {r.get('bus_factor','—')} | "
       f"{r.get('primary_language') or '—'} |")
@@ -624,7 +593,7 @@ P("")
 # ---- Methodology
 P("## Methodology & caveats")
 P("")
-P("- **Source:** `public/data/classified.json` + `public/data/graph.json`. No external calls; "
+P("- **Source:** `data/classified.json` + `public/data/graph.json`. No external calls; "
   "fully reproducible.")
 P("- **Candidate set:** standalone claw agents/runtimes/agent-OSes only. Accessories (skills, "
   "routers, memory, observability, dashboards, specialized one-task agents) are excluded by "

@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/mcp-tooling-top-tools.svg)
+
+![Tools per category](assets/mcp-tooling-categories.svg)
+
 
 > **What is MCP?** The Model Context Protocol is an open standard (Anthropic, late 2024) that lets LLM apps talk to external tools/data through a uniform interface — the 'USB-C port' for AI. **Servers** expose capabilities; **clients/hosts** (Claude Desktop, Cursor, editors) consume them; **gateways** govern them at scale.
 
@@ -31,7 +36,7 @@
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Learning / reference | — | MIT | 88,887 | Hot | 65 | very active | 0d ago | 1.5y | 7 |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | SDK / framework | TypeScript | NOASSERTION | 87,070 | Hot | 85 | very active | 4d ago | 1.6y | 17 |
 | [upstash/context7](https://github.com/upstash/context7) | Server · code intelligence | TypeScript | MIT | 57,189 | Hot | 85 | very active | 0d ago | 1.2y | 15 |
@@ -355,7 +360,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: word-boundary scan for `mcp` / 'model context protocol' across name/description/topics/README, then manual curation into roles + server domains. Many repos *mention* MCP support (agents, IDEs, gateways like litellm/Portkey) but aren't MCP-specific tools — those were excluded to keep the list about MCP itself.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state. MCP moves *very* fast — treat ages/stars as a May-2026 snapshot.
 - Re-run after a fresh `classified.json` to refresh.

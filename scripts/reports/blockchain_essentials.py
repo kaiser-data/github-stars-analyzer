@@ -6,7 +6,7 @@ organized by layer, with live metrics, a hottest-trends section, and a
 where-to-start learning path.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -18,9 +18,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "blockchain-essentials"
 TITLE = "Blockchain Repos You Need to Know — A Field Guide"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -111,12 +111,6 @@ by_name = {r["full_name"]: r for r in cl["repos"]}
 name_to_nodeid = {n["full_name"]: n["id"] for n in gr["nodes"]}
 nodes_by_id = {n["id"]: n for n in gr["nodes"]}
 
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
 def mom(r):
     return (r.get("momentum") or {}).get("estimated_stars_30d") or 0
 
@@ -202,7 +196,7 @@ for label, blurb, items in LAYERS:
     P("|---|---|---|---|---|---|")
     for n, role in sorted(present, key=lambda x: -by_name[x[0]]["stars"]):
         r = by_name[n]
-        P(f"| [{n.split('/')[-1]}]({r['url']}) | {fmt_int(r['stars'])} | {life_badge(r)} | "
+        P(f"| [{n.split('/')[-1]}]({r['url']}) | {fmt_stars(r)} | {life_badge(r)} | "
           f"{r.get('health_score','—')} | {r.get('primary_language') or '—'} | {role} |")
     P("")
 

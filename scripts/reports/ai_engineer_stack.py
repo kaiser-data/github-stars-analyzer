@@ -14,7 +14,7 @@ Plus the two questions an engineer actually needs answered:
   - And concrete project ideas pairing these repos.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -26,9 +26,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "ai-engineer-stack"
 TITLE = "The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -168,40 +168,9 @@ sel_node_ids = {name_to_nodeid[n] for n in sel_names if n in name_to_nodeid}
 inter_edges = [l for l in gr["links"]
                if l["source"] in sel_node_ids and l["target"] in sel_node_ids]
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 def trend_score(r):
     """Dataset-derived momentum signal."""
     s = 0.0
@@ -373,7 +342,7 @@ for n in sorted(present, key=lambda x: -by_name[x]["stars"]):
     A("| [{name}]({url}) | {tier} | {layer} | {lang} | {stars} | {lc} | {hs} | {act} | {push} | {age} |".format(
         name=n, url=r["url"], tier=TAXONOMY[n][0], layer=TAXONOMY[n][1],
         lang=r.get("primary_language") or "—",
-        stars=fmt_int(r["stars"]),
+        stars=fmt_stars(r),
         lc=r.get("lifecycle_stage") or "—",
         hs=r.get("health_score") if r.get("health_score") is not None else "—",
         act=activity_label(r),
@@ -438,7 +407,7 @@ A("")
 # --- Methodology
 A("## Methodology & caveats")
 A("")
-A("- **Source**: `public/data/classified.json` + `public/data/graph.json`, cross-checked "
+A("- **Source**: `data/classified.json` + `public/data/graph.json`, cross-checked "
   "against 2026 AI-engineering landscape reporting. No private calls; fully reproducible.")
 A("- **Tiers and the solved/frontier verdicts are opinionated** — a synthesis of dataset "
   "signal (stars, lifecycle, commit velocity) and the current state of the field, not a "

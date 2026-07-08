@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/llm-evaluation-tooling-top-tools.svg)
+
+![Tools per category](assets/llm-evaluation-tooling-categories.svg)
+
 
 ## Executive summary
 
@@ -20,7 +25,7 @@
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 28,929 | Classic | 89 | very active | 0d ago | 3.1y | 18 |
 | [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 26,442 | Classic | 87 | very active | 0d ago | 8.0y | 23 |
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 22,122 | Classic | 84 | very active | 0d ago | 3.1y | 15 |
@@ -247,7 +252,7 @@ Several widely-used evaluation tools are **not** in this dataset — worth knowi
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible via the generator script.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible via the generator script.
 - **Selection**: keyword scan (eval/benchmark/leaderboard/red-team/guardrail/observability/hallucination + LLM/agent signals) across name/description/topics/README, then manual curation. Adjacent-but-excluded: RAG engines, vector DBs, LLM gateways (e.g. `litellm`), and agent frameworks that merely *embed* an eval module.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.

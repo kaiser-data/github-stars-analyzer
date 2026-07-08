@@ -5,7 +5,7 @@ starred-repos dataset, split into CODING (coding-agent / codebase context) vs
 GENERAL (everything else), tagged by mechanism.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -17,9 +17,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "token-savings"
 TITLE = "Token-Savings & Context-Efficiency Tooling"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -96,40 +96,9 @@ sel_node_ids = {name_to_nodeid[n] for n in sel_names if n in name_to_nodeid}
 inter_edges = [l for l in gr["links"]
                if l["source"] in sel_node_ids and l["target"] in sel_node_ids]
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 def scope_of(n):
     return TAXONOMY[n][0]
 
@@ -192,7 +161,7 @@ def comp_table(names, header):
     for n in sorted(names, key=lambda x: -by_name[x]["stars"]):
         r = by_name[n]
         _, mech, claim, _note = TAXONOMY[n]
-        A(f"| [{n}]({r['url']}) | {fmt_int(r['stars'])} | {r.get('health_score','—')} | "
+        A(f"| [{n}]({r['url']}) | {fmt_stars(r)} | {r.get('health_score','—')} | "
           f"{activity_label(r)} | {mech} | {claim} |")
     A("")
 
@@ -338,7 +307,7 @@ A("")
 # --- Methodology
 A("## Methodology & caveats")
 A("")
-A("- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external "
+A("- **Source**: `data/classified.json` + `public/data/graph.json`. No external "
   "calls; fully reproducible.")
 A("- **Selection**: scan for token / context-window / compression signals (and explicit "
   "`NN% fewer/less` claims) across name/description/topics/README, then manual curation "

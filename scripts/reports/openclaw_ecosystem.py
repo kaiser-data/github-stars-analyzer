@@ -6,7 +6,7 @@ hosting/security runtimes, skills & directories, routing, memory, observability,
 desktop/orchestration UIs, and specialized agents built on OpenClaw.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -18,9 +18,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "openclaw-ecosystem"
 TITLE = "OpenClaw Ecosystem — What to Use Now"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -91,40 +91,9 @@ sel_node_ids = {name_to_nodeid[n] for n in sel_names if n in name_to_nodeid}
 inter_edges = [l for l in gr["links"]
                if l["source"] in sel_node_ids and l["target"] in sel_node_ids]
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 # ---- Build -------------------------------------------------------------------
 gen = cl.get("generatedAt", "")
 user = cl.get("username", "")
@@ -191,7 +160,7 @@ for layer, n in rec_rows:
     r = by_name.get(n)
     if not r:
         continue
-    A(f"| {layer} | [{n}]({r['url']}) | {fmt_int(r['stars'])} | "
+    A(f"| {layer} | [{n}]({r['url']}) | {fmt_stars(r)} | "
       f"{r.get('health_score','—')} | {TAXONOMY[n][1]} |")
 A("")
 A("**One-liner:** keep `openclaw/openclaw` as the core; run it via **nanoclaw** (security) "
@@ -215,7 +184,7 @@ for n in sorted(present, key=lambda x: -by_name[x]["stars"]):
       "{act} | {push} | {bf} |".format(
         name=n, url=r["url"], cat=TAXONOMY[n][0],
         lang=r.get("primary_language") or "—",
-        stars=fmt_int(r["stars"]),
+        stars=fmt_stars(r),
         lc=r.get("lifecycle_stage") or "—",
         hs=r.get("health_score") if r.get("health_score") is not None else "—",
         act=activity_label(r),
@@ -338,7 +307,7 @@ A("")
 # --- Methodology
 A("## Methodology & caveats")
 A("")
-A("- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external "
+A("- **Source**: `data/classified.json` + `public/data/graph.json`. No external "
   "calls; fully reproducible.")
 A("- **Selection**: scan for `openclaw` / `clawd*` / `moltbot` across "
   "name/description/topics/README, then manual curation. Repos that merely *mention* "

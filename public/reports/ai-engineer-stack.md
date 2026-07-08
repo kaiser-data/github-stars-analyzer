@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities) and the 2026 AI-engineering landscape.
 >
-> Generated 2026-06-29 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/ai-engineer-stack-top-tools.svg)
+
+![Tools per category](assets/ai-engineer-stack-categories.svg)
+
 
 ## The one thing to understand first
 
@@ -374,7 +379,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`, cross-checked against 2026 AI-engineering landscape reporting. No private calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`, cross-checked against 2026 AI-engineering landscape reporting. No private calls; fully reproducible.
 - **Tiers and the solved/frontier verdicts are opinionated** — a synthesis of dataset signal (stars, lifecycle, commit velocity) and the current state of the field, not a benchmark. Treat 'Trending' as *volatile by definition*.
 - **Selection** favors recognizable, broadly-applicable AI-engineering tooling. The coding-agent/harness ecosystem and voice stack are summarized here but detailed in the Claude-Code-setups and voice-agents reports respectively.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.

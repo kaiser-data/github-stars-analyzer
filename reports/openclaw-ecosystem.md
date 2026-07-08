@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/openclaw-ecosystem-top-tools.svg)
+
+![Tools per category](assets/openclaw-ecosystem-categories.svg)
+
 
 > **What is OpenClaw?** A personal AI assistant (🦞, formerly *Clawdbot* / *Moltbot*) that runs on any OS/platform. It has spawned a fast-moving ecosystem of runtimes, skills, routers, memory layers, dashboards, and specialized agents — this report maps the parts in your stars and flags what's worth adopting **now**.
 
@@ -247,7 +252,7 @@ Low health and/or not pushed recently — verify before wiring into anything you
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: scan for `openclaw` / `clawd*` / `moltbot` across name/description/topics/README, then manual curation. Repos that merely *mention* OpenClaw in passing (general agent harnesses, awesome-lists, unrelated tools) were excluded; memory/MCP-centric repos are covered in their own reports and only the OpenClaw-specific ones appear here.
 - **Metrics** (health, lifecycle, bus_factor, days_since_push) are precomputed at snapshot time. **OpenClaw moves extremely fast** — treat all ages/stars as a May-2026 snapshot and re-verify before adopting.
 - Re-run after a fresh `classified.json` to refresh.

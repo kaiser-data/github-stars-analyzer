@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph.
 >
-> Generated 2026-06-29 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/which-claw-top-tools.svg)
+
+![Tools per category](assets/which-claw-categories.svg)
+
 
 > **Scope.** This ranks the standalone **claws** — agents/runtimes you'd run *as* your assistant. "Claw" here is a **role, not a name**: functional claws that aren't literally branded *claw* (Hermes, nanobot, eliza, oh-my-openagent) are ranked alongside the named ones and tagged **†**. The accessory ecosystem (skills, routers, memory, observability, dashboards) is covered separately in the **OpenClaw Ecosystem** report; those *complement* a claw rather than replace it.
 
@@ -164,7 +169,7 @@ These claws are **not interchangeable** — they target different jobs. Use this
 
 ## Methodology & caveats
 
-- **Source:** `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source:** `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Candidate set:** standalone claw agents/runtimes/agent-OSes only. Accessories (skills, routers, memory, observability, dashboards, specialized one-task agents) are excluded by design — see the OpenClaw Ecosystem report for those.
 - **Composite weights:** health 25%, adoption 25%, resilience 20%, maturity 15%, momentum 15%. Adoption & momentum are log-scaled; maturity = 60% release-cadence + 40% age (age capped at 730d). A staleness gate multiplies the score down (floor 0.6) beyond 60 days since last push. Freshness is deliberately *not* a weighted term (saturated; redundant with health).
 - **Why these weights:** this is an *adoption* decision, so battle-testing (adoption) and survivability (resilience, maturity) are weighted as heavily as raw health, and hype (momentum) is capped at 15% and log-scaled — a 2-month-old repo riding a star spike shouldn't outrank a seasoned, multi-maintainer project.

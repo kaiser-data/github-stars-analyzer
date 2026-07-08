@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`).
 >
-> Generated 2026-06-29 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/blockchain-claws-top-tools.svg)
+
+![Tools per category](assets/blockchain-claws-categories.svg)
+
 
 > **Key idea.** No claw analyzes chains by itself — a claw is the *orchestrator*; it needs on-chain **skills/tools** wired in. So this report has two halves: which **claw** to run, and which **skills** are superb for which purpose. Both are drawn only from tools already in your stars.
 

@@ -8,7 +8,7 @@ High-infra — and assembles two concrete reference stacks: one fully local, one
 production-scale.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -20,9 +20,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "local-vs-infra-stack"
 TITLE = "Local vs High-Infra AI Stack — A Deployment-Tier Comparison"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -171,40 +171,9 @@ sel_node_ids = {name_to_nodeid[n] for n in sel_names if n in name_to_nodeid}
 inter_edges = [l for l in gr["links"]
                if l["source"] in sel_node_ids and l["target"] in sel_node_ids]
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 TIER_BADGE = {LOCAL: "🟢 Local", BOTH: "🟡 Both", INFRA: "🔴 Infra"}
 
 # ---- Build -------------------------------------------------------------------
@@ -314,7 +283,7 @@ for layer in layer_order:
         r = by_name[n]
         A("| [{name}]({url}) | {tier} | {stars} | {lang} | {lc} | {blurb} |".format(
             name=n, url=r["url"], tier=TIER_BADGE[TAXONOMY[n][1]],
-            stars=fmt_int(r["stars"]), lang=r.get("primary_language") or "—",
+            stars=fmt_stars(r), lang=r.get("primary_language") or "—",
             lc=r.get("lifecycle_stage") or "—", blurb=TAXONOMY[n][2]))
     A("")
 
@@ -354,7 +323,7 @@ for n in sorted(present, key=lambda x: (trank[TAXONOMY[x][1]], -by_name[x]["star
         name=n.split("/")[-1], url=r["url"], layer=TAXONOMY[n][0],
         tier=TIER_BADGE[TAXONOMY[n][1]].split()[1],
         lang=r.get("primary_language") or "—", lic=(r.get("license") or "—"),
-        stars=fmt_int(r["stars"]), lc=r.get("lifecycle_stage") or "—",
+        stars=fmt_stars(r), lc=r.get("lifecycle_stage") or "—",
         hs=r.get("health_score") if r.get("health_score") is not None else "—",
         act=activity_label(r), push=days_to_human(r.get("days_since_push")) + " ago",
         auth=r.get("unique_authors_90d") if r.get("unique_authors_90d") is not None else "—"))
@@ -439,7 +408,7 @@ A("")
 # --- Methodology
 A("## Methodology & caveats")
 A("")
-A("- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external "
+A("- **Source**: `data/classified.json` + `public/data/graph.json`. No external "
   "calls; fully reproducible.")
 A("- **Tiering** is an editorial judgment about each tool's *sweet spot*, not a hard limit — "
   "many 🟢 tools can be pushed onto servers and some 🔴 tools run (slowly) on a laptop. The "

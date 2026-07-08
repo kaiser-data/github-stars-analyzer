@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/voice-agents-top-tools.svg)
+
+![Tools per category](assets/voice-agents-categories.svg)
+
 
 ## Executive summary
 
@@ -36,7 +41,7 @@
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [openai/whisper](https://github.com/openai/whisper) | Speech-to-text / ASR | Python | MIT | 102,488 | Mature | 40 | active | 1mo ago | 3.7y | 2 |
 | [CorentinJ/Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning) | Voice cloning / studio | Python | NOASSERTION | 59,906 | Mature | 31 | slowing | 3mo ago | 7.1y | 0 |
 | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech-to-text / ASR | C++ | MIT | 50,646 | Classic | 94 | very active | 2d ago | 3.7y | 41 |
@@ -294,7 +299,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: keyword scan (voice / speech / tts / stt / asr / whisper / transcribe / diarization / vad / wake-word / realtime-voice / conversational) + manual curation into the voice-agent loop. General agent frameworks, chat UIs, and broad training/runtime tools were routed to adjacent reports or excluded (see above).
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.

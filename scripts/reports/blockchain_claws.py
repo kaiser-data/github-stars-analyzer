@@ -9,7 +9,7 @@ this report has two halves: (1) rate the claws on blockchain-fitness, (2) map
 the skills/tools in the stars to the job each is best at, then assemble stacks.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -21,9 +21,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "blockchain-claws"
 TITLE = "Which Claw for the Blockchain World? — Claws & Skills for On-Chain / DeFi"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -127,17 +127,11 @@ with open(CLASSIFIED) as f:
     cl = json.load(f)
 by_name = {r["full_name"]: r for r in cl["repos"]}
 
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
 def meta_bits(n):
     r = by_name.get(n)
     if not r:
         return "—", "—", "—", "—"
-    return (fmt_int(r["stars"]), r.get("primary_language") or "—",
+    return (fmt_stars(r), r.get("primary_language") or "—",
             r.get("health_score", "—"), r.get("bus_factor", "—"))
 
 FIT_BADGE = {"High": "🟢 High", "Medium": "🟡 Medium", "Low": "⚪ Low"}

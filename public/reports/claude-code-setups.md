@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/claude-code-setups-top-tools.svg)
+
+![Tools per category](assets/claude-code-setups-categories.svg)
+
 
 ## The big idea
 
@@ -59,7 +64,7 @@ A modern Claude Code setup is **layered**, and the 2026 superpower is *on-demand
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Tool | Layer | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | Harness / coding agent | TypeScript | NOASSERTION | 378,215 | Hot | 84 | very active | 0d ago | 6mo | 33 |
 | [obra/superpowers](https://github.com/obra/superpowers) | Skills framework | Shell | MIT | 224,734 | Hot | 71 | very active | 0d ago | 8mo | 9 |
 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | Skills framework | JavaScript | MIT | 213,434 | Hot | 100 | very active | 0d ago | 4mo | 44 |
@@ -463,7 +468,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: keyword scan (claude-code / skill / agent harness / mcp / memory / token / observability / code-graph / setup) across name+description+topics, then manual curation into the nine setup layers. General agent *application* frameworks, chat UIs, and broad platforms were routed to adjacent reports or excluded (see above).
 - **The three-strategy table is opinionated**, built only from repos in your stars — it is a starting point, not a benchmark. Validate model-tier and token-saver claims against your own `langfuse`/`codeburn` traces.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.

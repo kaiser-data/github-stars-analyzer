@@ -5,7 +5,7 @@ starred-repos dataset: eval/observability platforms, evaluation frameworks,
 benchmarks/leaderboards, and safety / red-teaming / hallucination detection.
 
 Inputs:
-  public/data/classified.json   (full repo metadata)
+  data/classified.json   (full repo metadata)
   public/data/graph.json        (repo-similarity graph: communities, pagerank, edges)
 
 Output:
@@ -17,9 +17,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 OUT = os.path.join(ROOT, "reports/llm-evaluation-tooling.md")
 
 # ---- Curated taxonomy (derived from scanning all 1071 repos) -----------------
@@ -84,40 +84,9 @@ for link in gr["links"]:
     if link["source"] in sel_node_ids and link["target"] in sel_node_ids:
         inter_edges.append(link)
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 # ---- Build report ------------------------------------------------------------
 gen = cl.get("generatedAt", "")
 user = cl.get("username", "")
@@ -170,7 +139,7 @@ A("Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; "
 A("")
 A("| Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | "
   "Activity | Last push | Age | Contrib(90d) |")
-A("|" + "---|" * 12)
+A("|" + "---|" * 11)
 for n in sorted(present, key=lambda x: -by_name[x]["stars"]):
     r = by_name[n]
     A("| [{name}]({url}) | {cat} | {lang} | {lic} | {stars} | {lc} | {hs} | "
@@ -178,7 +147,7 @@ for n in sorted(present, key=lambda x: -by_name[x]["stars"]):
         name=n, url=r["url"], cat=TAXONOMY[n][0],
         lang=r.get("primary_language") or "—",
         lic=(r.get("license") or "—"),
-        stars=fmt_int(r["stars"]),
+        stars=fmt_stars(r),
         lc=r.get("lifecycle_stage") or "—",
         hs=r.get("health_score") if r.get("health_score") is not None else "—",
         act=activity_label(r),
@@ -339,7 +308,7 @@ A("")
 # --- Methodology
 A("## Methodology & caveats")
 A("")
-A("- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external "
+A("- **Source**: `data/classified.json` + `public/data/graph.json`. No external "
   "calls; fully reproducible via the generator script.")
 A("- **Selection**: keyword scan (eval/benchmark/leaderboard/red-team/guardrail/"
   "observability/hallucination + LLM/agent signals) across name/description/topics/README, "

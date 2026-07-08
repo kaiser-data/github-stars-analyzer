@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/memory-frameworks-for-llm-agents-top-tools.svg)
+
+![Tools per category](assets/memory-frameworks-for-llm-agents-categories.svg)
+
 
 ## Executive summary
 
@@ -16,7 +21,7 @@
 Sorted by stars. `Health` and `Momentum` come from the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | JavaScript | Apache-2.0 | 81,818 | Hot | 80 | very active | 0d ago | 9mo | 18 |
 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 58,361 | Mature | 94 | very active | 0d ago | 3.0y | 30 |
 | [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 55,384 | Hot | 76 | very active | 1d ago | 2mo | 14 |
@@ -209,7 +214,7 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` (full metadata) + `public/data/graph.json` (similarity graph). No external calls; fully reproducible.
+- **Source**: `data/classified.json` (full metadata) + `public/data/graph.json` (similarity graph). No external calls; fully reproducible.
 - **Selection**: keyword scan across name/description/topics/README for memory + LLM/agent signals, then manual curation into the taxonomy in this script. Generic 'memory-efficient' infra (e.g. vLLM) and pure tutorials/awesome-lists were excluded.
 - **Metrics** (health, momentum, lifecycle, bus_factor) are precomputed by the analyzer pipeline at snapshot time and may lag GitHub's current state.
 - **The market is young**: many of these launched in the last 12 months; star counts and activity shift fast. Re-run this script after a fresh `classified.json` to refresh.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29",
+  "generated": "2026-07-08",
   "count": 16,
   "reports": [
     {
@@ -44,7 +44,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/claude_code_setups.py"
     },
     {
@@ -83,7 +83,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/ai_engineer_stack.py"
     },
     {
@@ -131,7 +131,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/local_vs_infra_stack.py"
     },
     {
@@ -172,7 +172,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/agent_orchestration.py"
     },
     {
@@ -221,7 +221,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/blockchain_essentials.py"
     },
     {
@@ -262,7 +262,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/mcp_tooling.py"
     },
     {
@@ -304,7 +304,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/meeting_transcription.py"
     },
     {
@@ -345,7 +345,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/rag_tooling.py"
     },
     {
@@ -386,7 +386,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/openclaw_ecosystem.py"
     },
     {
@@ -428,7 +428,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/voice_agents.py"
     },
     {
@@ -468,7 +468,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/llm_evaluation.py"
     },
     {
@@ -508,7 +508,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/memory_frameworks.py"
     },
     {
@@ -550,7 +550,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/blockchain_claws.py"
     },
     {
@@ -591,7 +591,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/token_savings.py"
     },
     {
@@ -630,7 +630,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/which_claw.py"
     },
     {
@@ -668,7 +668,7 @@
         }
       ],
       "snapshot": "2026-06-11T21:58:33.384Z",
-      "generated": "2026-06-29",
+      "generated": "2026-07-08",
       "generator": "scripts/reports/hermes_vs_openclaw.py"
     }
   ]

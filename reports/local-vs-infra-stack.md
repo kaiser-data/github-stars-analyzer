@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/local_vs_infra_stack.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/local_vs_infra_stack.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/local-vs-infra-stack-top-tools.svg)
+
+![Tools per category](assets/local-vs-infra-stack-categories.svg)
+
 
 ## Executive summary
 
@@ -281,7 +286,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Tiering** is an editorial judgment about each tool's *sweet spot*, not a hard limit — many 🟢 tools can be pushed onto servers and some 🔴 tools run (slowly) on a laptop. The tag reflects what the project is *optimized and typically used* for.
 - **Selection**: keyword scan (inference / serving / vllm / ollama / vector db / gateway / fine-tune / quantize) + manual curation into stack layers. Speech runtimes, pure eval frameworks, and broad agent toolkits were routed to adjacent reports.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.

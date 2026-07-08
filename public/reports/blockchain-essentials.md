@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges).
 >
-> Generated 2026-06-29 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/blockchain-essentials-top-tools.svg)
+
+![Tools per category](assets/blockchain-essentials-categories.svg)
+
 
 > **What this is.** The essential blockchain/web3/DeFi repos worth knowing, organized by **layer** (language → toolchain → libraries → clients → protocols → ZK → the AI×crypto edge), with live metrics. Start at the top of each layer and work down.
 

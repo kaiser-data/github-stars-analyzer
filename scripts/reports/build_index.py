@@ -15,9 +15,12 @@ import shutil
 import subprocess
 import sys
 
+from lib import svg_hbar
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 REPORTS_DIR = os.path.join(ROOT, "reports")
+ASSETS_DIR = os.path.join(REPORTS_DIR, "assets")
 PUBLIC_DIR = os.path.join(ROOT, "public/reports")
 
 GENERATORS = [
@@ -49,8 +52,48 @@ def run_generators():
         subprocess.run([sys.executable, path], check=True, cwd=ROOT,
                        stdout=subprocess.DEVNULL)
 
+def make_charts(meta):
+    """Render at-a-glance SVGs from a report's meta. Returns md image lines."""
+    imgs = []
+    top = [t for t in meta.get("top_tools") or [] if t.get("stars")]
+    if len(top) >= 3:
+        svg = svg_hbar("Top tools by stars", [(t["name"], t["stars"]) for t in top])
+        name = f"{meta['slug']}-top-tools.svg"
+        with open(os.path.join(ASSETS_DIR, name), "w") as f:
+            f.write(svg)
+        imgs.append(f"![Top tools by stars](assets/{name})")
+    cats = {k: v for k, v in (meta.get("categories") or {}).items() if v}
+    if len(cats) >= 3:
+        items = sorted(cats.items(), key=lambda x: -x[1])
+        svg = svg_hbar("Tools per category", items)
+        name = f"{meta['slug']}-categories.svg"
+        with open(os.path.join(ASSETS_DIR, name), "w") as f:
+            f.write(svg)
+        imgs.append(f"![Tools per category](assets/{name})")
+    return imgs
+
+
+def inject_charts(md_path, imgs):
+    """Insert chart images after the intro blockquote of a generated report."""
+    with open(md_path) as f:
+        lines = f.read().split("\n")
+    if not imgs or any("](assets/" in l for l in lines):
+        return
+    # skip the H1, then the first blockquote block; insert after its blank line
+    i = 0
+    while i < len(lines) and not lines[i].startswith(">"):
+        i += 1
+    while i < len(lines) and lines[i].startswith(">"):
+        i += 1
+    block = [""] + [x for img in imgs for x in (img, "")]
+    lines[i:i] = block
+    with open(md_path, "w") as f:
+        f.write("\n".join(lines))
+
+
 def build():
     os.makedirs(PUBLIC_DIR, exist_ok=True)
+    os.makedirs(ASSETS_DIR, exist_ok=True)
     metas = []
     for mp in sorted(glob.glob(os.path.join(REPORTS_DIR, "*.meta.json"))):
         with open(mp) as f:
@@ -59,8 +102,14 @@ def build():
         if not os.path.exists(md_src):
             print(f"  WARNING: {meta['file']} missing for {meta['slug']}, skipping")
             continue
+        inject_charts(md_src, make_charts(meta))
         shutil.copyfile(md_src, os.path.join(PUBLIC_DIR, meta["file"]))
         metas.append(meta)
+
+    # charts referenced by the markdown live in assets/ next to it
+    if os.path.isdir(ASSETS_DIR):
+        shutil.copytree(ASSETS_DIR, os.path.join(PUBLIC_DIR, "assets"),
+                        dirs_exist_ok=True)
 
     # Sort by tool_count desc so the biggest landscapes lead.
     metas.sort(key=lambda m: -m.get("tool_count", 0))
@@ -75,6 +124,9 @@ def build():
           f"+ {len(metas)} markdown files")
 
 if __name__ == "__main__":
+    print("Snapshotting dataset…")
+    subprocess.run([sys.executable, os.path.join(HERE, "snapshot.py")],
+                   check=True, cwd=ROOT)
     print("Regenerating reports…")
     run_generators()
     print("Building index…")

@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/meeting_transcription.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/meeting_transcription.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/meeting-transcription-top-tools.svg)
+
+![Tools per category](assets/meeting-transcription-categories.svg)
+
 
 ## TL;DR — which repo should you use?
 
@@ -48,7 +53,7 @@
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [openai/whisper](https://github.com/openai/whisper) | ASR engine / model | Python | MIT | 102,488 | Mature | 40 | active | 1mo ago | 3.7y | 2 |
 | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | ASR engine / model | C++ | MIT | 50,646 | Classic | 94 | very active | 2d ago | 3.7y | 41 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | ASR engine / model | Python | MIT | 23,549 | Declining | 24 | stale | 6mo ago | 3.3y | 0 |
@@ -321,7 +326,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Several of the d
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: gap analysis against the 2026 open-source transcription landscape (25 repos newly starred for this report) + keyword scan (transcribe / diarization / asr / speech-to-text / meeting / vad) + manual curation into the meeting pipeline. Voice-*agent* frameworks and TTS were routed to the voice-agents report.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.

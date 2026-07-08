@@ -2,7 +2,12 @@
 
 > Derived from **kaiser-data**'s 1,243 starred repos (snapshot `2026-06-11T21:58:33.384Z`), cross-referenced with the repo-similarity graph (1,243 nodes / 4,017 edges, 31 communities).
 >
-> Generated 2026-06-29 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-07-08 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/rag-tooling-top-tools.svg)
+
+![Tools per category](assets/rag-tooling-categories.svg)
+
 
 ## Executive summary
 
@@ -32,7 +37,7 @@
 Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activity` is derived from days-since-push + 90-day commits.
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|---|---|
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | RAG framework / engine | Python | Apache-2.0 | 82,476 | Mature | 96 | very active | 0d ago | 2.5y | 33 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Ingestion / parsing / chunking | Python | Apache-2.0 | 81,861 | Classic | 81 | very active | 0d ago | 6.1y | 22 |
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | RAG framework / engine | Python | MIT | 50,083 | Classic | 100 | very active | 0d ago | 3.6y | 49 |
@@ -298,7 +303,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 ## Methodology & caveats
 
-- **Source**: `public/data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
+- **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: keyword scan (rag / retrieval-augmented / graphrag / vector db / embedding / rerank / chunk / semantic-search) + manual curation into pipeline stages. Tutorials, general agent frameworks, and memory-layer projects were routed to adjacent reports or excluded (see above).
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.

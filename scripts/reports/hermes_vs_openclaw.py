@@ -5,7 +5,7 @@ within the broader field of personal-AI-assistant / agent-harness projects in
 the starred-repos dataset.
 
 Inputs:
-  public/data/classified.json
+  data/classified.json
   public/data/graph.json
 
 Output:
@@ -17,9 +17,9 @@ import json
 import os
 from datetime import datetime, timezone
 
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-CLASSIFIED = os.path.join(ROOT, "public/data/classified.json")
-GRAPH = os.path.join(ROOT, "public/data/graph.json")
 SLUG = "hermes-vs-openclaw"
 TITLE = "Hermes Agent vs OpenClaw — Head-to-Head"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
@@ -52,40 +52,9 @@ by_name = {r["full_name"]: r for r in cl["repos"]}
 nodes_by_id = {n["id"]: n for n in gr["nodes"]}
 name_to_nodeid = {n["full_name"]: n["id"] for n in gr["nodes"]}
 
-def node_for(name):
-    nid = name_to_nodeid.get(name)
-    return nodes_by_id.get(nid) if nid else None
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 # ---- Helpers -----------------------------------------------------------------
-def fmt_int(n):
-    try:
-        return f"{int(n):,}"
-    except Exception:
-        return str(n)
-
-def days_to_human(d):
-    if d is None:
-        return "?"
-    d = int(d)
-    if d < 30:
-        return f"{d}d"
-    if d < 365:
-        return f"{d//30}mo"
-    return f"{d/365:.1f}y"
-
-def activity_label(r):
-    dsp = r.get("days_since_push")
-    c90 = r.get("commits_90d") or 0
-    if dsp is None:
-        return "unknown"
-    if dsp <= 30 and c90 >= 20:
-        return "very active"
-    if dsp <= 60:
-        return "active"
-    if dsp <= 180:
-        return "slowing"
-    return "stale"
-
 def mom(r):
     m = r.get("momentum") or {}
     return m.get("estimated_stars_30d")
@@ -252,7 +221,7 @@ note = {
 field_present = [n for n in FIELD if n in by_name]
 for n in sorted(field_present, key=lambda x: -by_name[x]["stars"]):
     r = by_name[n]
-    P(f"| [{n}]({r['url']}) | {fmt_int(r['stars'])} | {r.get('primary_language') or '—'} | "
+    P(f"| [{n}]({r['url']}) | {fmt_stars(r)} | {r.get('primary_language') or '—'} | "
       f"{r.get('health_score','—')} | {r.get('lifecycle_stage','—')} | "
       f"{fmt_int(mom(r)) if mom(r) is not None else '—'} | {note.get(n,'')} |")
 P("")

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Top tools by stars</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">102,488</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">CorentinJ/Real-Time-Voice-Cloni…</text>
+<path d="M244,67 h197.1 q4,0 4,4 v10 q0,4 -4,4 h-197.1 z" class="bar"/>
+<text x="451.1" y="76.0" class="val" dominant-baseline="central">59,906</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
+<path d="M244,94 h166.0 q4,0 4,4 v10 q0,4 -4,4 h-166.0 z" class="bar"/>
+<text x="420.0" y="103.0" class="val" dominant-baseline="central">50,646</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">mudler/LocalAI</text>
+<path d="M244,121 h153.1 q4,0 4,4 v10 q0,4 -4,4 h-153.1 z" class="bar"/>
+<text x="407.1" y="130.0" class="val" dominant-baseline="central">46,792</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">coqui-ai/TTS</text>
+<path d="M244,148 h148.9 q4,0 4,4 v10 q0,4 -4,4 h-148.9 z" class="bar"/>
+<text x="402.9" y="157.0" class="val" dominant-baseline="central">45,540</text>
+</svg>
