@@ -1,0 +1,71 @@
+# Weekly data refresh: re-fetch starred repos, reclassify, rebuild the graph,
+# snapshot the dataset, regenerate all reports, and push. Netlify redeploys on
+# push, so the site picks the new data up automatically.
+#
+# Requires one repo secret:
+#   GH_STARS_TOKEN — a personal access token (no scopes needed; public data
+#   only). The workflow's built-in GITHUB_TOKEN is capped at 1,000 GraphQL
+#   points/hour, which is less than one ingest pass over ~1,250 repos; a PAT
+#   gets 5,000/hour.
+name: Weekly data refresh
+
+on:
+  schedule:
+    - cron: "0 5 * * 1" # Mondays 05:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check token
+        run: |
+          if [ -z "${{ secrets.GH_STARS_TOKEN }}" ]; then
+            echo "::error::GH_STARS_TOKEN secret is not set (PAT, no scopes needed)."
+            exit 1
+          fi
+
+      - run: npm ci
+
+      # The refresh scripts run with `node --env-file=.env`, which errors if
+      # the file is missing; the token itself comes from the job environment.
+      - name: Refresh dataset (sample → ingest → classify → precompute)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_STARS_TOKEN }}
+        run: |
+          touch .env
+          npm run refresh
+
+      - name: Snapshot + regenerate reports
+        run: python3 scripts/reports/build_index.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898270+github-actions[bot]@users.noreply.github.com"
+          git add data/ public/data/ public/reports/ reports/ src/data/sample-all.json
+          if git diff --cached --quiet; then
+            echo "No changes — dataset already current."
+          else
+            git commit -m "chore: weekly data refresh ($(date -u +%F))"
+            git push
+          fi
