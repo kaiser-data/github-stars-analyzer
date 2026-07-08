@@ -10,23 +10,13 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1780222679.9488654,
-    "ast_hash": "1dc9767a53db41435632f78135e8c715",
+    "mtime": 1783490736.1654525,
+    "ast_hash": "73c091dfaf41e0d3f97ad69637a059df",
     "semantic_hash": ""
   },
   "postcss.config.js": {
     "mtime": 1777673116.137399,
     "ast_hash": "470cfd3ee10fbff840b377e769485f3e",
-    "semantic_hash": ""
-  },
-  "public/data/classified-100.json": {
-    "mtime": 1778191777.7970183,
-    "ast_hash": "a32c6d725a12738ef07daf98f35f8b23",
-    "semantic_hash": ""
-  },
-  "public/data/classified.json": {
-    "mtime": 1781215113.6163902,
-    "ast_hash": "238ab42cd56714167d004c06d6111691",
     "semantic_hash": ""
   },
   "public/data/graph-context.json": {
@@ -45,78 +35,78 @@
     "semantic_hash": ""
   },
   "public/reports/index.json": {
-    "mtime": 1782748049.4587631,
-    "ast_hash": "d8f5f406f126d7bd4eea99adce6d802f",
+    "mtime": 1783521053.2485075,
+    "ast_hash": "a8ecf0f08c6acd76a798fbd8266a61c2",
     "semantic_hash": ""
   },
   "reports/agent-orchestration.meta.json": {
-    "mtime": 1782748048.3520308,
-    "ast_hash": "1bf1f4b31dbe122118ada578bd057e8d",
+    "mtime": 1783521051.3319037,
+    "ast_hash": "54f837e7a85b97826bce8d7be404da5e",
     "semantic_hash": ""
   },
   "reports/blockchain-claws.meta.json": {
-    "mtime": 1782748048.7108319,
-    "ast_hash": "ea3a5d6a6205c2a496dbefa923d55821",
+    "mtime": 1783521051.9453108,
+    "ast_hash": "9624f566b191d185ca28a0173b8f68db",
     "semantic_hash": ""
   },
   "reports/blockchain-essentials.meta.json": {
-    "mtime": 1782748048.829143,
-    "ast_hash": "542133087d3c139fde09bc76538f580b",
+    "mtime": 1783521052.1391258,
+    "ast_hash": "cabeb2780028af1b1b2d6dde08f101bf",
     "semantic_hash": ""
   },
   "reports/claude-code-setups.meta.json": {
-    "mtime": 1782748049.3174067,
-    "ast_hash": "5e6f31a6926d64d6db2b9b5f28903d2f",
+    "mtime": 1783521052.980351,
+    "ast_hash": "0a5f91cf619566ffc96e7a2c48a89c03",
     "semantic_hash": ""
   },
   "reports/hermes-vs-openclaw.meta.json": {
-    "mtime": 1782748048.47571,
-    "ast_hash": "1cb3cab0c392679e536cf5f29143c198",
+    "mtime": 1783521051.5433486,
+    "ast_hash": "bcebe9c6c93f81bb0b3532cabb436aa1",
     "semantic_hash": ""
   },
   "reports/llm-evaluation-tooling.meta.json": {
-    "mtime": 1782748047.7452576,
-    "ast_hash": "5dfc97c75a6709386e3e4c472fa14adf",
+    "mtime": 1783521050.2151492,
+    "ast_hash": "e5b2d66794c7dd8c083ca8c773d0ffac",
     "semantic_hash": ""
   },
   "reports/local-vs-infra-stack.meta.json": {
-    "mtime": 1782748049.0738852,
-    "ast_hash": "fb4171d4eff47af08a16a4777ed81abd",
+    "mtime": 1783521052.5458834,
+    "ast_hash": "55d8dfd18673a06dd8c603b6d25729a5",
     "semantic_hash": ""
   },
   "reports/mcp-tooling.meta.json": {
-    "mtime": 1782748047.9872055,
-    "ast_hash": "9d099a8ba2ea25857712e5af078bc6e7",
+    "mtime": 1783521050.634417,
+    "ast_hash": "3c84d00d6585e2c2fbf82b5626a28a36",
     "semantic_hash": ""
   },
   "reports/meeting-transcription.meta.json": {
-    "mtime": 1782748049.1953204,
-    "ast_hash": "808571667036f5079d92efa4b29d82e6",
+    "mtime": 1783521052.757343,
+    "ast_hash": "73a245cbd6d989ad5de92e89f704c8f7",
     "semantic_hash": ""
   },
   "reports/memory-frameworks-for-llm-agents.meta.json": {
-    "mtime": 1782748047.6187801,
-    "ast_hash": "016e0ccf18573e6a8b3d11e2de51d0b5",
+    "mtime": 1783521050.0091584,
+    "ast_hash": "c931d854a09b079674484d84ca26aee0",
     "semantic_hash": ""
   },
   "reports/openclaw-ecosystem.meta.json": {
-    "mtime": 1782748048.1091447,
-    "ast_hash": "e262daf968740c54d94aae6c19a0fa99",
+    "mtime": 1783521050.8786542,
+    "ast_hash": "c5083ed61a82b5cb4561331034f0de7a",
     "semantic_hash": ""
   },
   "reports/rag-tooling.meta.json": {
-    "mtime": 1782748047.8662214,
-    "ast_hash": "0fd483c0838904f74eeb6541a07c3cb7",
+    "mtime": 1783521050.4243,
+    "ast_hash": "b742df3192620065c065304b284ef9d5",
     "semantic_hash": ""
   },
   "reports/voice-agents.meta.json": {
-    "mtime": 1782748048.9504814,
-    "ast_hash": "f34606a2160b9c9d7380d20af923441b",
+    "mtime": 1783521052.345036,
+    "ast_hash": "9f6e39e85ac67a4420939b63da11b5f2",
     "semantic_hash": ""
   },
   "reports/which-claw.meta.json": {
-    "mtime": 1782748048.6009028,
-    "ast_hash": "b6028ab74aa553644b5c763bda262b38",
+    "mtime": 1783521051.7597964,
+    "ast_hash": "6d2620b1b8c7441414c79d6a8125570b",
     "semantic_hash": ""
   },
   "scripts/classify.mjs": {
@@ -145,83 +135,83 @@
     "semantic_hash": ""
   },
   "scripts/precompute.mjs": {
-    "mtime": 1778235304.332569,
-    "ast_hash": "0f881fee3a7317e32ec9a7c9ea2cf2f6",
+    "mtime": 1783490736.1389067,
+    "ast_hash": "244426e9751d8f9082eee2195cf33b39",
     "semantic_hash": ""
   },
   "scripts/reports/agent_orchestration.py": {
-    "mtime": 1780436649.1955712,
-    "ast_hash": "f065d45bf6f3f3492fd513f487d9a5e5",
+    "mtime": 1783520295.2951105,
+    "ast_hash": "63b688351f492bb30f382c738c4aefa6",
     "semantic_hash": ""
   },
   "scripts/reports/blockchain_claws.py": {
-    "mtime": 1780440061.9740517,
-    "ast_hash": "c8da63fcc4244f773363ba26cae1a7c7",
+    "mtime": 1783520330.4702942,
+    "ast_hash": "e73b7df4bf1378f0f74af3bddcbdf0f1",
     "semantic_hash": ""
   },
   "scripts/reports/blockchain_essentials.py": {
-    "mtime": 1780441762.696779,
-    "ast_hash": "6d86b7a7d5af4d13315dfb79514d0463",
+    "mtime": 1783520295.2965622,
+    "ast_hash": "6aac908fcda790cdbe6c04246faea0e3",
     "semantic_hash": ""
   },
   "scripts/reports/build_index.py": {
-    "mtime": 1782748008.4368007,
-    "ast_hash": "b5a03bb7db70428fd876f3062c2b74d5",
+    "mtime": 1783520645.6460803,
+    "ast_hash": "e109279d3118db0b0e2016bace9a0c27",
     "semantic_hash": ""
   },
   "scripts/reports/claude_code_setups.py": {
-    "mtime": 1781345458.0878882,
-    "ast_hash": "99ee27b6ec389c1c5439bf0ac78802af",
+    "mtime": 1783521012.6924472,
+    "ast_hash": "6adb6e744b9478aee4106a9005ce00ee",
     "semantic_hash": ""
   },
   "scripts/reports/hermes_vs_openclaw.py": {
-    "mtime": 1780395384.207411,
-    "ast_hash": "b444bedb860e63fed3f29a93ea0c33fb",
+    "mtime": 1783520295.2973027,
+    "ast_hash": "23daf6f1fc24a783fdffcc0b0fa0e03e",
     "semantic_hash": ""
   },
   "scripts/reports/llm_evaluation.py": {
-    "mtime": 1780436695.8732774,
-    "ast_hash": "6e45d66478baae33395f8b599480e00d",
+    "mtime": 1783521012.695168,
+    "ast_hash": "1a9cee941948dd697be7b77ca0696099",
     "semantic_hash": ""
   },
   "scripts/reports/local_vs_infra_stack.py": {
-    "mtime": 1780611237.5815513,
-    "ast_hash": "2599610920e3ed8fe2dd25fed6df640a",
+    "mtime": 1783520295.2981224,
+    "ast_hash": "0d906cf0a136ffa58c92a4669b0c3763",
     "semantic_hash": ""
   },
   "scripts/reports/mcp_tooling.py": {
-    "mtime": 1780436731.0136268,
-    "ast_hash": "3828e8852bde35f6e78e8882cfdcbfd5",
+    "mtime": 1783521012.6943526,
+    "ast_hash": "1cd8dca573bc7924221ae8c0d26ab576",
     "semantic_hash": ""
   },
   "scripts/reports/meeting_transcription.py": {
-    "mtime": 1781214680.3427637,
-    "ast_hash": "128e862282015f4b02ce53e96582e827",
+    "mtime": 1783521012.6960795,
+    "ast_hash": "875a197288e5c21c27d216a9ab0d400c",
     "semantic_hash": ""
   },
   "scripts/reports/memory_frameworks.py": {
-    "mtime": 1780436724.4767025,
-    "ast_hash": "b67649ef9e8af77c98cde615549e1ed0",
+    "mtime": 1783521012.698663,
+    "ast_hash": "e3067dfa71f1a920e9ec464440649841",
     "semantic_hash": ""
   },
   "scripts/reports/openclaw_ecosystem.py": {
-    "mtime": 1780229659.6844063,
-    "ast_hash": "c942e74d0f136ab8361249f08e459419",
+    "mtime": 1783520295.2992628,
+    "ast_hash": "c6037957a3d7302eb55b5180bee2172a",
     "semantic_hash": ""
   },
   "scripts/reports/rag_tooling.py": {
-    "mtime": 1780436718.7512758,
-    "ast_hash": "551a7f19da07baccd08435e4dbb33076",
+    "mtime": 1783521012.6978877,
+    "ast_hash": "3a5b51d7457de572eefd4752599c13f5",
     "semantic_hash": ""
   },
   "scripts/reports/voice_agents.py": {
-    "mtime": 1780587090.6347544,
-    "ast_hash": "87fc54511c53cc74bd1badf272ffb27f",
+    "mtime": 1783521012.699696,
+    "ast_hash": "be64e6be5ac39b9791d28df39d6c6871",
     "semantic_hash": ""
   },
   "scripts/reports/which_claw.py": {
-    "mtime": 1780439504.1977878,
-    "ast_hash": "112cae4e0bef4c52d83dc5d069be9037",
+    "mtime": 1783520330.4717717,
+    "ast_hash": "6d174aca184288a638239cd008b6a968",
     "semantic_hash": ""
   },
   "scripts/sample.mjs": {
@@ -230,8 +220,8 @@
     "semantic_hash": ""
   },
   "scripts/test-graph.mjs": {
-    "mtime": 1778191777.9290285,
-    "ast_hash": "94046867c7379c0be64559c587dc1eb0",
+    "mtime": 1783490736.1377974,
+    "ast_hash": "37a97ec7ff8d630227f6d3e46248d9e4",
     "semantic_hash": ""
   },
   "src/GitHubStarsAnalyzer.jsx": {
@@ -305,8 +295,8 @@
     "semantic_hash": ""
   },
   "src/lab/LabApp.jsx": {
-    "mtime": 1780222655.0967815,
-    "ast_hash": "b959574d1a5f68c110276180322dde72",
+    "mtime": 1783520841.6362982,
+    "ast_hash": "f988cc302d08edb6592b9727e0823681",
     "semantic_hash": ""
   },
   "src/lab/MapView.jsx": {
@@ -320,8 +310,8 @@
     "semantic_hash": ""
   },
   "src/lab/ReportsView.jsx": {
-    "mtime": 1780222668.017396,
-    "ast_hash": "ac79fbcce6cc8eb9924cab9f9f1c7a94",
+    "mtime": 1783520673.874304,
+    "ast_hash": "0aeb7255c286391288f27d84ac2f8e53",
     "semantic_hash": ""
   },
   "src/lab/TopicMap.jsx": {
@@ -355,138 +345,138 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1777673116.1366036,
-    "ast_hash": "df3f8bb0d75d38b59c038edb4b54dd2f",
+    "mtime": 1783490804.2295518,
+    "ast_hash": "39e77bfc41426cc1aede316259cdc5ef",
     "semantic_hash": ""
   },
   "public/reports/agent-orchestration.md": {
-    "mtime": 1782748049.4547489,
-    "ast_hash": "59303221454060ab08edd39423ca559f",
+    "mtime": 1783521053.2218711,
+    "ast_hash": "6cdef85fcc58ebeeb7245e62337974b2",
     "semantic_hash": ""
   },
   "public/reports/blockchain-claws.md": {
-    "mtime": 1782748049.4552615,
-    "ast_hash": "aa753ea342fdbf0be88cdccff17f626a",
+    "mtime": 1783521053.2238076,
+    "ast_hash": "5c99c23fb14fc4b44ff4eed5c583ec3f",
     "semantic_hash": ""
   },
   "public/reports/blockchain-essentials.md": {
-    "mtime": 1782748049.4557528,
-    "ast_hash": "187910496ad32525c5486ae8a063cb44",
+    "mtime": 1783521053.2247884,
+    "ast_hash": "131bc40df4a23510cdc802166790e140",
     "semantic_hash": ""
   },
   "public/reports/claude-code-setups.md": {
-    "mtime": 1782748049.456053,
-    "ast_hash": "2867960e94dd67bd6f2050c7918dceca",
+    "mtime": 1783521053.2260187,
+    "ast_hash": "2e88d5522efd8da7bc8b4ae920977eeb",
     "semantic_hash": ""
   },
   "public/reports/hermes-vs-openclaw.md": {
-    "mtime": 1782748049.4562094,
-    "ast_hash": "e64ed20932e2580bbcce9697ba6f30d6",
+    "mtime": 1783521053.2268455,
+    "ast_hash": "4066ebd62916e32ce6d75e7bc05aa761",
     "semantic_hash": ""
   },
   "public/reports/llm-evaluation-tooling.md": {
-    "mtime": 1782748049.4565108,
-    "ast_hash": "de07fdd04e96dcf2ca444d6bd60f29e4",
+    "mtime": 1783521053.2304063,
+    "ast_hash": "a7c4fa394c6ab3231debd2d389dc6469",
     "semantic_hash": ""
   },
   "public/reports/local-vs-infra-stack.md": {
-    "mtime": 1782748049.456808,
-    "ast_hash": "b3929c484d929f51b185c7b76baaf55f",
+    "mtime": 1783521053.2313964,
+    "ast_hash": "f6840ec8290f102e3b30f502289da51e",
     "semantic_hash": ""
   },
   "public/reports/mcp-tooling.md": {
-    "mtime": 1782748049.4569788,
-    "ast_hash": "441819503f746d07658bdb53a70f9db8",
+    "mtime": 1783521053.2322752,
+    "ast_hash": "4a93f133cbd3cdc7c9118a9bdfc4c2ee",
     "semantic_hash": ""
   },
   "public/reports/meeting-transcription.md": {
-    "mtime": 1782748049.4571352,
-    "ast_hash": "15b0eba5b3162ceccaf03a8d0a31b265",
+    "mtime": 1783521053.2332106,
+    "ast_hash": "2b9468375c6852d55296a59e7af303f2",
     "semantic_hash": ""
   },
   "public/reports/memory-frameworks-for-llm-agents.md": {
-    "mtime": 1782748049.4574108,
-    "ast_hash": "5b91fdd28c473f03ab73f4fd0d1a012a",
+    "mtime": 1783521053.2341976,
+    "ast_hash": "dca7d7c716f0e735755bf1c1c2b7300d",
     "semantic_hash": ""
   },
   "public/reports/openclaw-ecosystem.md": {
-    "mtime": 1782748049.4575813,
-    "ast_hash": "f2cea92f974b0d9b34f5d405d57185ea",
+    "mtime": 1783521053.235171,
+    "ast_hash": "96954511487ac828b510b9caf8a20d6d",
     "semantic_hash": ""
   },
   "public/reports/rag-tooling.md": {
-    "mtime": 1782748049.457759,
-    "ast_hash": "1841a5bd9041de9d4ac13a9174172790",
+    "mtime": 1783521053.236053,
+    "ast_hash": "2f9f8b48d7ffae35091e7176291d4891",
     "semantic_hash": ""
   },
   "public/reports/voice-agents.md": {
-    "mtime": 1782748049.4580982,
-    "ast_hash": "1c608368818e907a9ab29b0e6599108d",
+    "mtime": 1783521053.2377582,
+    "ast_hash": "e4adef32f5b3fdb75f1bf6eb2b7fb7df",
     "semantic_hash": ""
   },
   "public/reports/which-claw.md": {
-    "mtime": 1782748049.4582481,
-    "ast_hash": "c5442978883f8ef4f8fd6916fb7ec176",
+    "mtime": 1783521053.2388532,
+    "ast_hash": "e3ec5c48c843bd74b9c6c2a78fe3bf3f",
     "semantic_hash": ""
   },
   "reports/agent-orchestration.md": {
-    "mtime": 1782748048.3518424,
-    "ast_hash": "59303221454060ab08edd39423ca559f",
+    "mtime": 1783521053.2200775,
+    "ast_hash": "6cdef85fcc58ebeeb7245e62337974b2",
     "semantic_hash": ""
   },
   "reports/blockchain-claws.md": {
-    "mtime": 1782748048.7106411,
-    "ast_hash": "aa753ea342fdbf0be88cdccff17f626a",
+    "mtime": 1783521053.2235873,
+    "ast_hash": "5c99c23fb14fc4b44ff4eed5c583ec3f",
     "semantic_hash": ""
   },
   "reports/blockchain-essentials.md": {
-    "mtime": 1782748048.828963,
-    "ast_hash": "187910496ad32525c5486ae8a063cb44",
+    "mtime": 1783521053.2244368,
+    "ast_hash": "131bc40df4a23510cdc802166790e140",
     "semantic_hash": ""
   },
   "reports/claude-code-setups.md": {
-    "mtime": 1782748049.3163455,
-    "ast_hash": "2867960e94dd67bd6f2050c7918dceca",
+    "mtime": 1783521053.2257504,
+    "ast_hash": "2e88d5522efd8da7bc8b4ae920977eeb",
     "semantic_hash": ""
   },
   "reports/hermes-vs-openclaw.md": {
-    "mtime": 1782748048.475525,
-    "ast_hash": "e64ed20932e2580bbcce9697ba6f30d6",
+    "mtime": 1783521053.2266133,
+    "ast_hash": "4066ebd62916e32ce6d75e7bc05aa761",
     "semantic_hash": ""
   },
   "reports/llm-evaluation-tooling.md": {
-    "mtime": 1782748047.7443686,
-    "ast_hash": "de07fdd04e96dcf2ca444d6bd60f29e4",
+    "mtime": 1783521053.2275546,
+    "ast_hash": "a7c4fa394c6ab3231debd2d389dc6469",
     "semantic_hash": ""
   },
   "reports/local-vs-infra-stack.md": {
-    "mtime": 1782748049.0736988,
-    "ast_hash": "b3929c484d929f51b185c7b76baaf55f",
+    "mtime": 1783521053.231102,
+    "ast_hash": "f6840ec8290f102e3b30f502289da51e",
     "semantic_hash": ""
   },
   "reports/mcp-tooling.md": {
-    "mtime": 1782748047.9868884,
-    "ast_hash": "441819503f746d07658bdb53a70f9db8",
+    "mtime": 1783521053.232076,
+    "ast_hash": "4a93f133cbd3cdc7c9118a9bdfc4c2ee",
     "semantic_hash": ""
   },
   "reports/meeting-transcription.md": {
-    "mtime": 1782748049.195135,
-    "ast_hash": "15b0eba5b3162ceccaf03a8d0a31b265",
+    "mtime": 1783521053.2330048,
+    "ast_hash": "2b9468375c6852d55296a59e7af303f2",
     "semantic_hash": ""
   },
   "reports/memory-frameworks-for-llm-agents.md": {
-    "mtime": 1782748047.6184359,
-    "ast_hash": "5b91fdd28c473f03ab73f4fd0d1a012a",
+    "mtime": 1783521053.233988,
+    "ast_hash": "dca7d7c716f0e735755bf1c1c2b7300d",
     "semantic_hash": ""
   },
   "reports/openclaw-ecosystem.md": {
-    "mtime": 1782748048.108694,
-    "ast_hash": "f2cea92f974b0d9b34f5d405d57185ea",
+    "mtime": 1783521053.2348614,
+    "ast_hash": "96954511487ac828b510b9caf8a20d6d",
     "semantic_hash": ""
   },
   "reports/rag-tooling.md": {
-    "mtime": 1782748047.8660417,
-    "ast_hash": "1841a5bd9041de9d4ac13a9174172790",
+    "mtime": 1783521053.2358408,
+    "ast_hash": "2f9f8b48d7ffae35091e7176291d4891",
     "semantic_hash": ""
   },
   "reports/recommended-blockchain-stars.md": {
@@ -500,33 +490,373 @@
     "semantic_hash": ""
   },
   "reports/voice-agents.md": {
-    "mtime": 1782748048.950287,
-    "ast_hash": "1c608368818e907a9ab29b0e6599108d",
+    "mtime": 1783521053.2375727,
+    "ast_hash": "e4adef32f5b3fdb75f1bf6eb2b7fb7df",
     "semantic_hash": ""
   },
   "reports/which-claw.md": {
-    "mtime": 1782748048.600728,
-    "ast_hash": "c5442978883f8ef4f8fd6916fb7ec176",
+    "mtime": 1783521053.2386584,
+    "ast_hash": "e3ec5c48c843bd74b9c6c2a78fe3bf3f",
     "semantic_hash": ""
   },
   "reports/ai-engineer-stack.meta.json": {
-    "mtime": 1782748049.4385693,
-    "ast_hash": "8eac97838f00cc573a8351c457b47942",
+    "mtime": 1783521053.1905327,
+    "ast_hash": "a6dfafd4c46f77e6865bfcdc1e1c0e33",
     "semantic_hash": ""
   },
   "scripts/reports/ai_engineer_stack.py": {
-    "mtime": 1782748007.6657329,
-    "ast_hash": "4759e4538b3b6fbe11166306dbaedcc2",
+    "mtime": 1783520295.2958896,
+    "ast_hash": "f882f8dfe3026e9ea83ff7c14dfe53ec",
     "semantic_hash": ""
   },
   "public/reports/ai-engineer-stack.md": {
-    "mtime": 1782748049.4550428,
-    "ast_hash": "76795762602f698b9e943d4cc6dc0a0c",
+    "mtime": 1783521053.2230303,
+    "ast_hash": "5684d587f42b9ae92e92c71243d7d7db",
     "semantic_hash": ""
   },
   "reports/ai-engineer-stack.md": {
-    "mtime": 1782748049.4383807,
-    "ast_hash": "76795762602f698b9e943d4cc6dc0a0c",
+    "mtime": 1783521053.2227771,
+    "ast_hash": "5684d587f42b9ae92e92c71243d7d7db",
+    "semantic_hash": ""
+  },
+  "data/classified-100.json": {
+    "mtime": 1778191777.7970183,
+    "ast_hash": "a32c6d725a12738ef07daf98f35f8b23",
+    "semantic_hash": ""
+  },
+  "data/classified.json": {
+    "mtime": 1781215113.6163902,
+    "ast_hash": "238ab42cd56714167d004c06d6111691",
+    "semantic_hash": ""
+  },
+  "scripts/reports/lib.py": {
+    "mtime": 1783520618.7274003,
+    "ast_hash": "26a458abed2564747cd73c3518aae40f",
+    "semantic_hash": ""
+  },
+  "scripts/reports/snapshot.py": {
+    "mtime": 1783520255.6902764,
+    "ast_hash": "821f1a2173eee6cd582419094bbaddac",
+    "semantic_hash": ""
+  },
+  "src/lab/RiskQuadrant.jsx": {
+    "mtime": 1783520828.676891,
+    "ast_hash": "c3e7fbd61c5a191650e90c9af1da7595",
+    "semantic_hash": ""
+  },
+  ".github/workflows/refresh-data.yml": {
+    "mtime": 1783520428.2908206,
+    "ast_hash": "554a73f332cb57698f81b805bc56482d",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/agent-orchestration-categories.svg": {
+    "mtime": 1783521053.2196355,
+    "ast_hash": "ea0e94296224b8584d172990dd96c566",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/agent-orchestration-top-tools.svg": {
+    "mtime": 1783521053.2192595,
+    "ast_hash": "c3b39000a24c8811a116841df53b0a35",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/ai-engineer-stack-categories.svg": {
+    "mtime": 1783521053.222329,
+    "ast_hash": "062cbab77e9d1f183e604b6985c00ea1",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/ai-engineer-stack-top-tools.svg": {
+    "mtime": 1783521053.2221873,
+    "ast_hash": "10f0fc596306f5b0e45ba0bdd0467197",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/blockchain-claws-categories.svg": {
+    "mtime": 1783521053.2233906,
+    "ast_hash": "4d3c5e8aa248e50ecccc45b6610af8c2",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/blockchain-claws-top-tools.svg": {
+    "mtime": 1783521053.2232513,
+    "ast_hash": "ba0d4e1314b9485bbe369a7ebecd779e",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/blockchain-essentials-categories.svg": {
+    "mtime": 1783521053.2242045,
+    "ast_hash": "5db49c4dcc49791990e4b25e1781bb65",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/blockchain-essentials-top-tools.svg": {
+    "mtime": 1783521053.2240367,
+    "ast_hash": "418c8fa81e9e6e8f5bbd3e2f6b7afda4",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/claude-code-setups-categories.svg": {
+    "mtime": 1783521053.2252822,
+    "ast_hash": "c740e50fa6f3f2126fda983dbe809f77",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/claude-code-setups-top-tools.svg": {
+    "mtime": 1783521053.2249994,
+    "ast_hash": "a009efe329cd6cec4090eefc5d287783",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/hermes-vs-openclaw-top-tools.svg": {
+    "mtime": 1783521053.2262754,
+    "ast_hash": "1728547e2199d831cb127f4331b9a731",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/llm-evaluation-tooling-categories.svg": {
+    "mtime": 1783521053.2271802,
+    "ast_hash": "2d54c1f2f130ce0bc7daea302e16481d",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/llm-evaluation-tooling-top-tools.svg": {
+    "mtime": 1783521053.2270563,
+    "ast_hash": "34ee21ed64945ebe809a3e825eea2c38",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/local-vs-infra-stack-categories.svg": {
+    "mtime": 1783521053.2307768,
+    "ast_hash": "8ab934c00c9f0d323167ef08f5886aac",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/local-vs-infra-stack-top-tools.svg": {
+    "mtime": 1783521053.2306228,
+    "ast_hash": "46a006df3eb82319595711216356bfc1",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/mcp-tooling-categories.svg": {
+    "mtime": 1783521053.231753,
+    "ast_hash": "ac53490b7008dc49dd3c01dc6aef6675",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/mcp-tooling-top-tools.svg": {
+    "mtime": 1783521053.2316206,
+    "ast_hash": "1df95bcd0d0eb031876618dc26c45afb",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/meeting-transcription-categories.svg": {
+    "mtime": 1783521053.2327163,
+    "ast_hash": "5332131acf5b27b86937dc063029747e",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/meeting-transcription-top-tools.svg": {
+    "mtime": 1783521053.2325845,
+    "ast_hash": "69bf48d679091035e0f24f3cfa12e0b6",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/memory-frameworks-for-llm-agents-categories.svg": {
+    "mtime": 1783521053.233726,
+    "ast_hash": "d6ee6755226dab998d3c184e091be1de",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/memory-frameworks-for-llm-agents-top-tools.svg": {
+    "mtime": 1783521053.2334862,
+    "ast_hash": "ec5d6292af9807014aabe30f5dcef799",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/openclaw-ecosystem-categories.svg": {
+    "mtime": 1783521053.2345626,
+    "ast_hash": "d0707cca40d8fe68a4d615fd453c8025",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/openclaw-ecosystem-top-tools.svg": {
+    "mtime": 1783521053.2344246,
+    "ast_hash": "1cdccc1484aecc35ad07278a0ec84e9b",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/rag-tooling-categories.svg": {
+    "mtime": 1783521053.23553,
+    "ast_hash": "106c9ff2fb50319d3877c45757ad76d6",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/rag-tooling-top-tools.svg": {
+    "mtime": 1783521053.2353969,
+    "ast_hash": "f5b1188f55ec031fa4f53330739af112",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/token-savings-categories.svg": {
+    "mtime": 1783521053.2364187,
+    "ast_hash": "b9311cf45bc5229a62456ed42025e951",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/token-savings-top-tools.svg": {
+    "mtime": 1783521053.2362792,
+    "ast_hash": "5dbd160aaecd41921a69d7a83c4ee548",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/voice-agents-categories.svg": {
+    "mtime": 1783521053.2373059,
+    "ast_hash": "0e580b366f694351fc5093aadb793a62",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/voice-agents-top-tools.svg": {
+    "mtime": 1783521053.2371716,
+    "ast_hash": "718f6e13f89be7d21b955d854488e761",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/which-claw-categories.svg": {
+    "mtime": 1783521053.2384171,
+    "ast_hash": "68fbc4356f2a6b72fb466d4e0e656682",
+    "semantic_hash": ""
+  },
+  "public/reports/assets/which-claw-top-tools.svg": {
+    "mtime": 1783521053.238299,
+    "ast_hash": "cfa615cb9e7378552160942c6a28c755",
+    "semantic_hash": ""
+  },
+  "reports/assets/agent-orchestration-categories.svg": {
+    "mtime": 1783521053.2196355,
+    "ast_hash": "ea0e94296224b8584d172990dd96c566",
+    "semantic_hash": ""
+  },
+  "reports/assets/agent-orchestration-top-tools.svg": {
+    "mtime": 1783521053.2192595,
+    "ast_hash": "c3b39000a24c8811a116841df53b0a35",
+    "semantic_hash": ""
+  },
+  "reports/assets/ai-engineer-stack-categories.svg": {
+    "mtime": 1783521053.222329,
+    "ast_hash": "062cbab77e9d1f183e604b6985c00ea1",
+    "semantic_hash": ""
+  },
+  "reports/assets/ai-engineer-stack-top-tools.svg": {
+    "mtime": 1783521053.2221873,
+    "ast_hash": "10f0fc596306f5b0e45ba0bdd0467197",
+    "semantic_hash": ""
+  },
+  "reports/assets/blockchain-claws-categories.svg": {
+    "mtime": 1783521053.2233906,
+    "ast_hash": "4d3c5e8aa248e50ecccc45b6610af8c2",
+    "semantic_hash": ""
+  },
+  "reports/assets/blockchain-claws-top-tools.svg": {
+    "mtime": 1783521053.2232513,
+    "ast_hash": "ba0d4e1314b9485bbe369a7ebecd779e",
+    "semantic_hash": ""
+  },
+  "reports/assets/blockchain-essentials-categories.svg": {
+    "mtime": 1783521053.2242045,
+    "ast_hash": "5db49c4dcc49791990e4b25e1781bb65",
+    "semantic_hash": ""
+  },
+  "reports/assets/blockchain-essentials-top-tools.svg": {
+    "mtime": 1783521053.2240367,
+    "ast_hash": "418c8fa81e9e6e8f5bbd3e2f6b7afda4",
+    "semantic_hash": ""
+  },
+  "reports/assets/claude-code-setups-categories.svg": {
+    "mtime": 1783521053.2252822,
+    "ast_hash": "c740e50fa6f3f2126fda983dbe809f77",
+    "semantic_hash": ""
+  },
+  "reports/assets/claude-code-setups-top-tools.svg": {
+    "mtime": 1783521053.2249994,
+    "ast_hash": "a009efe329cd6cec4090eefc5d287783",
+    "semantic_hash": ""
+  },
+  "reports/assets/hermes-vs-openclaw-top-tools.svg": {
+    "mtime": 1783521053.2262754,
+    "ast_hash": "1728547e2199d831cb127f4331b9a731",
+    "semantic_hash": ""
+  },
+  "reports/assets/llm-evaluation-tooling-categories.svg": {
+    "mtime": 1783521053.2271802,
+    "ast_hash": "2d54c1f2f130ce0bc7daea302e16481d",
+    "semantic_hash": ""
+  },
+  "reports/assets/llm-evaluation-tooling-top-tools.svg": {
+    "mtime": 1783521053.2270563,
+    "ast_hash": "34ee21ed64945ebe809a3e825eea2c38",
+    "semantic_hash": ""
+  },
+  "reports/assets/local-vs-infra-stack-categories.svg": {
+    "mtime": 1783521053.2307768,
+    "ast_hash": "8ab934c00c9f0d323167ef08f5886aac",
+    "semantic_hash": ""
+  },
+  "reports/assets/local-vs-infra-stack-top-tools.svg": {
+    "mtime": 1783521053.2306228,
+    "ast_hash": "46a006df3eb82319595711216356bfc1",
+    "semantic_hash": ""
+  },
+  "reports/assets/mcp-tooling-categories.svg": {
+    "mtime": 1783521053.231753,
+    "ast_hash": "ac53490b7008dc49dd3c01dc6aef6675",
+    "semantic_hash": ""
+  },
+  "reports/assets/mcp-tooling-top-tools.svg": {
+    "mtime": 1783521053.2316206,
+    "ast_hash": "1df95bcd0d0eb031876618dc26c45afb",
+    "semantic_hash": ""
+  },
+  "reports/assets/meeting-transcription-categories.svg": {
+    "mtime": 1783521053.2327163,
+    "ast_hash": "5332131acf5b27b86937dc063029747e",
+    "semantic_hash": ""
+  },
+  "reports/assets/meeting-transcription-top-tools.svg": {
+    "mtime": 1783521053.2325845,
+    "ast_hash": "69bf48d679091035e0f24f3cfa12e0b6",
+    "semantic_hash": ""
+  },
+  "reports/assets/memory-frameworks-for-llm-agents-categories.svg": {
+    "mtime": 1783521053.233726,
+    "ast_hash": "d6ee6755226dab998d3c184e091be1de",
+    "semantic_hash": ""
+  },
+  "reports/assets/memory-frameworks-for-llm-agents-top-tools.svg": {
+    "mtime": 1783521053.2334862,
+    "ast_hash": "ec5d6292af9807014aabe30f5dcef799",
+    "semantic_hash": ""
+  },
+  "reports/assets/openclaw-ecosystem-categories.svg": {
+    "mtime": 1783521053.2345626,
+    "ast_hash": "d0707cca40d8fe68a4d615fd453c8025",
+    "semantic_hash": ""
+  },
+  "reports/assets/openclaw-ecosystem-top-tools.svg": {
+    "mtime": 1783521053.2344246,
+    "ast_hash": "1cdccc1484aecc35ad07278a0ec84e9b",
+    "semantic_hash": ""
+  },
+  "reports/assets/rag-tooling-categories.svg": {
+    "mtime": 1783521053.23553,
+    "ast_hash": "106c9ff2fb50319d3877c45757ad76d6",
+    "semantic_hash": ""
+  },
+  "reports/assets/rag-tooling-top-tools.svg": {
+    "mtime": 1783521053.2353969,
+    "ast_hash": "f5b1188f55ec031fa4f53330739af112",
+    "semantic_hash": ""
+  },
+  "reports/assets/token-savings-categories.svg": {
+    "mtime": 1783521053.2364187,
+    "ast_hash": "b9311cf45bc5229a62456ed42025e951",
+    "semantic_hash": ""
+  },
+  "reports/assets/token-savings-top-tools.svg": {
+    "mtime": 1783521053.2362792,
+    "ast_hash": "5dbd160aaecd41921a69d7a83c4ee548",
+    "semantic_hash": ""
+  },
+  "reports/assets/voice-agents-categories.svg": {
+    "mtime": 1783521053.2373059,
+    "ast_hash": "0e580b366f694351fc5093aadb793a62",
+    "semantic_hash": ""
+  },
+  "reports/assets/voice-agents-top-tools.svg": {
+    "mtime": 1783521053.2371716,
+    "ast_hash": "718f6e13f89be7d21b955d854488e761",
+    "semantic_hash": ""
+  },
+  "reports/assets/which-claw-categories.svg": {
+    "mtime": 1783521053.2384171,
+    "ast_hash": "68fbc4356f2a6b72fb466d4e0e656682",
+    "semantic_hash": ""
+  },
+  "reports/assets/which-claw-top-tools.svg": {
+    "mtime": 1783521053.238299,
+    "ast_hash": "cfa615cb9e7378552160942c6a28c755",
     "semantic_hash": ""
   }
 }
