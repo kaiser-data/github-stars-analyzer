@@ -38,3 +38,4 @@ graphify-out/cache/
 *.sw?
 # Local Netlify folder
 .netlify
+scripts/reports/__pycache__/

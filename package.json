@@ -33,7 +33,7 @@
     "test:graph": "node scripts/test-graph.mjs",
     "refresh:sample": "node --env-file=.env scripts/sample.mjs ${USERNAME:-kaiser-data} --all",
     "refresh:ingest": "node --env-file=.env scripts/ingest.mjs --sample=src/data/sample-all.json --max-age=${MAX_AGE:-7}",
-    "refresh:classify": "node scripts/classify.mjs --in=src/data/raw-all.json && cp src/data/classified-all.json public/data/classified.json && echo 'wrote public/data/classified.json'",
+    "refresh:classify": "node scripts/classify.mjs --in=src/data/raw-all.json && cp src/data/classified-all.json data/classified.json && echo 'wrote data/classified.json'",
     "precompute": "node scripts/precompute.mjs",
     "precompute:questions": "node --env-file=.env scripts/precompute-questions.mjs",
     "reports": "python3 scripts/reports/build_index.py",

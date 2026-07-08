@@ -8,9 +8,9 @@ import pagerank from 'graphology-metrics/centrality/pagerank.js';
 import { bidirectional } from 'graphology-shortest-path';
 
 import { existsSync } from 'node:fs';
-const SOURCE = existsSync('public/data/classified.json')
-  ? 'public/data/classified.json'
-  : 'public/data/classified-100.json';
+const SOURCE = existsSync('data/classified.json')
+  ? 'data/classified.json'
+  : 'data/classified-100.json';
 console.log(`Source: ${SOURCE}`);
 const data = JSON.parse(readFileSync(SOURCE, 'utf8'));
 

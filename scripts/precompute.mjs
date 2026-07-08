@@ -22,7 +22,7 @@ const pagerank = await import('graphology-metrics/centrality/pagerank.js');
 const { forceSimulation, forceLink, forceManyBody, forceCenter } = await import('d3-force-3d');
 
 // ── load classified data ────────────────────────────────────────────────────
-const classified = JSON.parse(readFileSync(join(root, 'public/data/classified.json'), 'utf8'));
+const classified = JSON.parse(readFileSync(join(root, 'data/classified.json'), 'utf8'));
 const repos = classified.repos;
 console.log(`⚙  Pre-computing graph for ${repos.length} repos…`);
 
