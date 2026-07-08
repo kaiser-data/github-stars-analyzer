@@ -14,6 +14,16 @@ const MD_COMPONENTS = {
   h3: (p) => <h3 className="text-lg font-semibold text-blue-300 mt-5 mb-2" {...p} />,
   p: (p) => <p className="text-gray-300 leading-relaxed my-3" {...p} />,
   a: (p) => <a className="text-blue-400 hover:underline" target="_blank" rel="noreferrer" {...p} />,
+  // report markdown references its charts relative to itself (assets/…); the
+  // app serves them from /reports/assets/
+  img: ({ src, ...p }) => (
+    <img
+      src={src?.startsWith('assets/') ? `/reports/${src}` : src}
+      className="my-4 rounded-lg max-w-full"
+      loading="lazy"
+      {...p}
+    />
+  ),
   ul: (p) => <ul className="list-disc pl-6 my-3 space-y-1 text-gray-300" {...p} />,
   ol: (p) => <ol className="list-decimal pl-6 my-3 space-y-1 text-gray-300" {...p} />,
   li: (p) => <li className="leading-relaxed" {...p} />,

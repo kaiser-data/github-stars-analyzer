@@ -6,6 +6,7 @@ import Comparator from './Comparator';
 import RepoDetail from './RepoDetail';
 import AllRepos from './AllRepos';
 import HealthHistogram from './HealthHistogram';
+import RiskQuadrant from './RiskQuadrant';
 
 // Lazy: both pull in react-force-graph-3d + three (~1.36 MB chunk).
 // Loaded only when the user actually opens the Map or Topics tab.
@@ -36,6 +37,7 @@ const TABS = [
   { key: 'map', label: 'Map' },
   { key: 'topics', label: 'Topics' },
   { key: 'insights', label: 'Insights' },
+  { key: 'risk', label: 'Risk' },
   { key: 'all', label: 'Browse' },
   { key: 'compare', label: 'Compare' },
   { key: 'reports', label: 'Reports' },
@@ -381,6 +383,7 @@ function LabContent() {
         ))}
       </div>
       {tab === 'insights' && <InsightFeed onSelect={select} />}
+      {tab === 'risk' && <RiskQuadrant onSelect={select} />}
       {tab === 'all' && <AllRepos onSelect={select} />}
       {tab === 'map' && (
         <Suspense fallback={<GraphTabFallback label="map" />}>
