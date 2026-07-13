@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">102,488</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">104,842</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
-<path d="M244,67 h166.0 q4,0 4,4 v10 q0,4 -4,4 h-166.0 z" class="bar"/>
-<text x="420.0" y="76.0" class="val" dominant-baseline="central">50,646</text>
+<path d="M244,67 h165.8 q4,0 4,4 v10 q0,4 -4,4 h-165.8 z" class="bar"/>
+<text x="419.8" y="76.0" class="val" dominant-baseline="central">51,754</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">SYSTRAN/faster-whisper</text>
-<path d="M244,94 h75.0 q4,0 4,4 v10 q0,4 -4,4 h-75.0 z" class="bar"/>
-<text x="329.0" y="103.0" class="val" dominant-baseline="central">23,549</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">m-bain/whisperX</text>
-<path d="M244,121 h71.2 q4,0 4,4 v10 q0,4 -4,4 h-71.2 z" class="bar"/>
-<text x="325.2" y="130.0" class="val" dominant-baseline="central">22,396</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">screenpipe/screenpipe</text>
-<path d="M244,148 h60.6 q4,0 4,4 v10 q0,4 -4,4 h-60.6 z" class="bar"/>
-<text x="314.6" y="157.0" class="val" dominant-baseline="central">19,259</text>
+<path d="M244,94 h75.5 q4,0 4,4 v10 q0,4 -4,4 h-75.5 z" class="bar"/>
+<text x="329.5" y="103.0" class="val" dominant-baseline="central">24,238</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Zackriya-Solutions/meetily</text>
+<path d="M244,121 h74.0 q4,0 4,4 v10 q0,4 -4,4 h-74.0 z" class="bar"/>
+<text x="328.0" y="130.0" class="val" dominant-baseline="central">23,776</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">m-bain/whisperX</text>
+<path d="M244,148 h71.6 q4,0 4,4 v10 q0,4 -4,4 h-71.6 z" class="bar"/>
+<text x="325.6" y="157.0" class="val" dominant-baseline="central">23,041</text>
 </svg>

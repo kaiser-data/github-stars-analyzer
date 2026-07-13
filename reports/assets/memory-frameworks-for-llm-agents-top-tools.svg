@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">81,818</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">87,012</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">mem0ai/mem0</text>
-<path d="M244,67 h241.4 q4,0 4,4 v10 q0,4 -4,4 h-241.4 z" class="bar"/>
-<text x="495.4" y="76.0" class="val" dominant-baseline="central">58,361</text>
+<path d="M244,67 h236.0 q4,0 4,4 v10 q0,4 -4,4 h-236.0 z" class="bar"/>
+<text x="490.0" y="76.0" class="val" dominant-baseline="central">60,706</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">MemPalace/mempalace</text>
-<path d="M244,94 h228.9 q4,0 4,4 v10 q0,4 -4,4 h-228.9 z" class="bar"/>
-<text x="482.9" y="103.0" class="val" dominant-baseline="central">55,384</text>
+<path d="M244,94 h222.4 q4,0 4,4 v10 q0,4 -4,4 h-222.4 z" class="bar"/>
+<text x="476.4" y="103.0" class="val" dominant-baseline="central">57,268</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">getzep/graphiti</text>
-<path d="M244,121 h110.8 q4,0 4,4 v10 q0,4 -4,4 h-110.8 z" class="bar"/>
-<text x="364.8" y="130.0" class="val" dominant-baseline="central">27,306</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">gastownhall/beads</text>
-<path d="M244,148 h98.9 q4,0 4,4 v10 q0,4 -4,4 h-98.9 z" class="bar"/>
-<text x="352.9" y="157.0" class="val" dominant-baseline="central">24,471</text>
+<path d="M244,121 h109.3 q4,0 4,4 v10 q0,4 -4,4 h-109.3 z" class="bar"/>
+<text x="363.3" y="130.0" class="val" dominant-baseline="central">28,658</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">topoteretes/cognee</text>
+<path d="M244,148 h105.5 q4,0 4,4 v10 q0,4 -4,4 h-105.5 z" class="bar"/>
+<text x="359.5" y="157.0" class="val" dominant-baseline="central">27,704</text>
 </svg>

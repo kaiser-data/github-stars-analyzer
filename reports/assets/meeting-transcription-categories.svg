@@ -13,20 +13,20 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Tools per category</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ASR engine / model</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">13</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">12</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Meeting assistant (end-to-end)</text>
-<path d="M244,67 h207.7 q4,0 4,4 v10 q0,4 -4,4 h-207.7 z" class="bar"/>
-<text x="461.7" y="76.0" class="val" dominant-baseline="central">8</text>
+<path d="M244,67 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
+<text x="479.3" y="76.0" class="val" dominant-baseline="central">8</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Diarization &amp; alignment</text>
-<path d="M244,94 h101.8 q4,0 4,4 v10 q0,4 -4,4 h-101.8 z" class="bar"/>
-<text x="355.8" y="103.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,94 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
+<text x="364.7" y="103.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Streaming / live capture</text>
-<path d="M244,121 h101.8 q4,0 4,4 v10 q0,4 -4,4 h-101.8 z" class="bar"/>
-<text x="355.8" y="130.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,121 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
+<text x="364.7" y="130.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Transcription server / API</text>
-<path d="M244,148 h48.9 q4,0 4,4 v10 q0,4 -4,4 h-48.9 z" class="bar"/>
-<text x="302.9" y="157.0" class="val" dominant-baseline="central">2</text>
+<path d="M244,148 h53.3 q4,0 4,4 v10 q0,4 -4,4 h-53.3 z" class="bar"/>
+<text x="307.3" y="157.0" class="val" dominant-baseline="central">2</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Transcript analysis</text>
-<path d="M244,175 h22.5 q4,0 4,4 v10 q0,4 -4,4 h-22.5 z" class="bar"/>
-<text x="276.5" y="184.0" class="val" dominant-baseline="central">1</text>
+<path d="M244,175 h24.7 q4,0 4,4 v10 q0,4 -4,4 h-24.7 z" class="bar"/>
+<text x="278.7" y="184.0" class="val" dominant-baseline="central">1</text>
 </svg>

@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">224,734</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">253,346</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ollama/ollama</text>
-<path d="M244,67 h262.2 q4,0 4,4 v10 q0,4 -4,4 h-262.2 z" class="bar"/>
-<text x="516.2" y="76.0" class="val" dominant-baseline="central">173,893</text>
+<path d="M244,67 h235.0 q4,0 4,4 v10 q0,4 -4,4 h-235.0 z" class="bar"/>
+<text x="489.0" y="76.0" class="val" dominant-baseline="central">176,020</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">huggingface/transformers</text>
-<path d="M244,94 h243.2 q4,0 4,4 v10 q0,4 -4,4 h-243.2 z" class="bar"/>
-<text x="497.2" y="103.0" class="val" dominant-baseline="central">161,513</text>
+<path d="M244,94 h216.7 q4,0 4,4 v10 q0,4 -4,4 h-216.7 z" class="bar"/>
+<text x="470.7" y="103.0" class="val" dominant-baseline="central">162,561</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">anthropics/skills</text>
-<path d="M244,121 h224.8 q4,0 4,4 v10 q0,4 -4,4 h-224.8 z" class="bar"/>
-<text x="478.8" y="130.0" class="val" dominant-baseline="central">149,487</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">langchain-ai/langchain</text>
-<path d="M244,148 h208.9 q4,0 4,4 v10 q0,4 -4,4 h-208.9 z" class="bar"/>
-<text x="462.9" y="157.0" class="val" dominant-baseline="central">139,060</text>
+<path d="M244,121 h214.2 q4,0 4,4 v10 q0,4 -4,4 h-214.2 z" class="bar"/>
+<text x="468.2" y="130.0" class="val" dominant-baseline="central">160,695</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">firecrawl/firecrawl</text>
+<path d="M244,148 h199.8 q4,0 4,4 v10 q0,4 -4,4 h-199.8 z" class="bar"/>
+<text x="453.8" y="157.0" class="val" dominant-baseline="central">150,087</text>
 </svg>

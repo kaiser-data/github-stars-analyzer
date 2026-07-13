@@ -11,19 +11,19 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">JuliusBrussee/caveman</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">81,818</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">JuliusBrussee/caveman</text>
-<path d="M244,67 h296.7 q4,0 4,4 v10 q0,4 -4,4 h-296.7 z" class="bar"/>
-<text x="550.7" y="76.0" class="val" dominant-baseline="central">71,515</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">88,727</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
+<path d="M244,67 h333.4 q4,0 4,4 v10 q0,4 -4,4 h-333.4 z" class="bar"/>
+<text x="587.4" y="76.0" class="val" dominant-baseline="central">87,012</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">rtk-ai/rtk</text>
-<path d="M244,94 h254.5 q4,0 4,4 v10 q0,4 -4,4 h-254.5 z" class="bar"/>
-<text x="508.5" y="103.0" class="val" dominant-baseline="central">61,471</text>
+<path d="M244,94 h270.0 q4,0 4,4 v10 q0,4 -4,4 h-270.0 z" class="bar"/>
+<text x="524.0" y="103.0" class="val" dominant-baseline="central">70,662</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">colbymchenry/codegraph</text>
-<path d="M244,121 h195.4 q4,0 4,4 v10 q0,4 -4,4 h-195.4 z" class="bar"/>
-<text x="449.4" y="130.0" class="val" dominant-baseline="central">47,422</text>
+<path d="M244,121 h226.8 q4,0 4,4 v10 q0,4 -4,4 h-226.8 z" class="bar"/>
+<text x="480.8" y="130.0" class="val" dominant-baseline="central">59,541</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">toon-format/toon</text>
-<path d="M244,148 h99.2 q4,0 4,4 v10 q0,4 -4,4 h-99.2 z" class="bar"/>
-<text x="353.2" y="157.0" class="val" dominant-baseline="central">24,534</text>
+<path d="M244,148 h92.3 q4,0 4,4 v10 q0,4 -4,4 h-92.3 z" class="bar"/>
+<text x="346.3" y="157.0" class="val" dominant-baseline="central">24,844</text>
 </svg>

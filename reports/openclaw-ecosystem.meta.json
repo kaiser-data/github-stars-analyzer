@@ -3,9 +3,9 @@
   "title": "OpenClaw Ecosystem \u2014 What to Use Now",
   "file": "openclaw-ecosystem.md",
   "category": "AI / OpenClaw",
-  "summary": "28 OpenClaw (\ud83e\udd9e) ecosystem projects (1,019,471\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
+  "summary": "28 OpenClaw (\ud83e\udd9e) ecosystem projects (1,073,239\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
   "tool_count": 28,
-  "total_stars": 1019471,
+  "total_stars": 1073239,
   "categories": {
     "Alternatives": 5,
     "Hosting": 3,
@@ -16,26 +16,26 @@
   "top_tools": [
     {
       "name": "openclaw/openclaw",
-      "stars": 378215
+      "stars": 382751
     },
     {
       "name": "NousResearch/hermes-agent",
-      "stars": 190933
+      "stars": 213952
     },
     {
       "name": "farion1231/cc-switch",
-      "stars": 98479
+      "stars": 116545
     },
     {
       "name": "CherryHQ/cherry-studio",
-      "stars": 47220
+      "stars": 48494
     },
     {
       "name": "HKUDS/nanobot",
-      "stars": 44068
+      "stars": 45327
     }
   ],
-  "snapshot": "2026-06-11T21:58:33.384Z",
-  "generated": "2026-07-08",
+  "snapshot": "2026-07-13T08:42:30.177Z",
+  "generated": "2026-07-13",
   "generator": "scripts/reports/openclaw_ecosystem.py"
 }
