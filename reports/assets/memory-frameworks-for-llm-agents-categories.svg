@@ -13,14 +13,14 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Tools per category</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">General memory layer</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">12</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">13</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Coding-agent memory</text>
-<path d="M244,67 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
-<text x="364.7" y="76.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,67 h101.8 q4,0 4,4 v10 q0,4 -4,4 h-101.8 z" class="bar"/>
+<text x="355.8" y="76.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Knowledge-graph memory</text>
-<path d="M244,94 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
-<text x="364.7" y="103.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,94 h101.8 q4,0 4,4 v10 q0,4 -4,4 h-101.8 z" class="bar"/>
+<text x="355.8" y="103.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">LLM framework w/ memory</text>
-<path d="M244,121 h24.7 q4,0 4,4 v10 q0,4 -4,4 h-24.7 z" class="bar"/>
-<text x="278.7" y="130.0" class="val" dominant-baseline="central">1</text>
+<path d="M244,121 h22.5 q4,0 4,4 v10 q0,4 -4,4 h-22.5 z" class="bar"/>
+<text x="276.5" y="130.0" class="val" dominant-baseline="central">1</text>
 </svg>

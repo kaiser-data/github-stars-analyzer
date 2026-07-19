@@ -1,6 +1,6 @@
 # Agent Harnesses — Six Approaches to Running Autonomous Agents
 
-> Derived from **kaiser-data**'s 1,327 starred repos (snapshot `2026-07-13T08:42:30.177Z`), cross-referenced with the repo-similarity graph (1,327 nodes / 4,302 edges, 26 communities).
+> Derived from **kaiser-data**'s 1,341 starred repos (snapshot `2026-07-19T22:39:07.967Z`), cross-referenced with the repo-similarity graph (1,341 nodes / 4,341 edges, 28 communities).
 >
 > Generated 2026-07-19 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
 
@@ -11,11 +11,11 @@
 
 ## Executive summary
 
-- A **harness** is everything around the model: the loop, tools, state, guardrails, and execution environment. **35 harness projects** in your stars (**1,328,972★** combined) cluster into **six distinct approaches** — they disagree about *where the harness lives* and *what the hard problem is*:
-  - **Harness-as-SDK** (7): `pi`, `deepagents`, `parlant`, `harness-sdk`, `eve`, `cheetahclaws`, `pydantic-ai-harness`
+- A **harness** is everything around the model: the loop, tools, state, guardrails, and execution environment. **36 harness projects** in your stars (**1,356,185★** combined) cluster into **six distinct approaches** — they disagree about *where the harness lives* and *what the hard problem is*:
+  - **Harness-as-SDK** (8): `pi`, `deepagents`, `parlant`, `jcode`, `harness-sdk`, `eve`, `cheetahclaws`, `pydantic-ai-harness`
   - **Meta-harness over coding agents** (6): `superpowers`, `ECC`, `oh-my-openagent`, `ruflo`, `oh-my-claudecode`, `Archon`
-  - **Fleet / parallel orchestration** (7): `multica`, `vibe-kanban`, `gastown`, `Aperant`, `ccpm`, `agent-orchestrator`, `container-use`
-  - **Determinism & spec-driven** (5): `spec-kit`, `planning-with-files`, `agents.md`, `gsd-2`, `loop-engineering`
+  - **Fleet / parallel orchestration** (7): `multica`, `vibe-kanban`, `gastown`, `Aperant`, `agent-orchestrator`, `ccpm`, `container-use`
+  - **Determinism & spec-driven** (5): `spec-kit`, `planning-with-files`, `agents.md`, `loop-engineering`, `gsd-2`
   - **Sandbox substrate** (5): `daytona`, `NemoClaw`, `cua`, `OpenSandbox`, `forkd`
   - **Autonomous long-horizon** (5): `deer-flow`, `agent-zero`, `sia`, `agent`, `ClaudeNightsWatch`
 - The fault line: **build the loop** (Harness-as-SDK) vs **wrap an existing agent** (meta-harness) vs **multiply agents** (fleet) — with determinism, sandboxing, and long-horizon autonomy as orthogonal bets any of them can adopt.
@@ -38,41 +38,42 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Approach | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [obra/superpowers](https://github.com/obra/superpowers) | Meta-harness over coding agents | Shell | MIT | 253,346 (▲28,612) | Hot | 78 | very active | 3d ago | 9mo | 3 |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Meta-harness over coding agents | JavaScript | MIT | 229,056 (▲15,622) | Hot | 90 | very active | 0d ago | 5mo | 35 |
-| [github/spec-kit](https://github.com/github/spec-kit) | Determinism & spec-driven | Python | MIT | 120,147 (▲8,672) | Hot | 93 | very active | 3d ago | 10mo | 18 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Autonomous long-horizon | Python | MIT | 76,889 (▲5,901) | Hot | 79 | very active | 0d ago | 1.2y | 24 |
-| [daytonaio/daytona](https://github.com/daytonaio/daytona) | Sandbox substrate | — | — | 72,197 (▼261) | Mature | 97 | very active | 4d ago | 2.4y | 21 |
-| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness-as-SDK | TypeScript | MIT | 70,188 (▲8,410) | Hot | 85 | very active | 0d ago | 11mo | 16 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 65,655 (▲3,730) | Hot | 78 | very active | 0d ago | 7mo | 4 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Meta-harness over coding agents | TypeScript | MIT | 64,230 (▲5,237) | Mature | 76 | very active | 0d ago | 1.1y | 2 |
-| [multica-ai/multica](https://github.com/multica-ai/multica) | Fleet / parallel orchestration | Go | NOASSERTION | 40,056 (▲3,769) | Hot | 81 | very active | 0d ago | 6mo | 15 |
-| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 37,719 (▲1,498) | Hot | 80 | very active | 0d ago | 6mo | 18 |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 27,351 (▲413) | Mature | 58 | slowing | 2mo ago | 1.1y | 2 |
-| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 26,162 (▲1,676) | Hot | 79 | very active | 0d ago | 11mo | 14 |
-| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Python | MIT | 25,254 (▲2,207) | Hot | 78 | very active | 0d ago | 6mo | 21 |
-| [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 22,981 (▲831) | Declining | 21 | slowing | 4mo ago | 10mo | 0 |
-| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 22,862 (▲515) | Hot | 77 | very active | 2d ago | 1.4y | 9 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 21,759 (▲627) | Hot | 74 | very active | 0d ago | 4mo | 27 |
-| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | HTML | MIT | 19,602 (▲1,763) | Hot | 76 | very active | 0d ago | 1.4y | 8 |
-| [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 18,408 (▲380) | Mature | 78 | very active | 1d ago | 2.1y | 1 |
-| [emcie-co/parlant](https://github.com/emcie-co/parlant) | Harness-as-SDK | Python | Apache-2.0 | 18,172 (▲63) | Mature | 75 | very active | 1d ago | 2.4y | 8 |
-| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 16,990 | Hot | 78 | very active | 3d ago | 6mo | 5 |
-| [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,443 (▲102) | Declining | 58 | active | 29d ago | 7mo | 1 |
-| [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Sandbox substrate | Python | Apache-2.0 | 11,976 (▲512) | Hot | 78 | very active | 0d ago | 6mo | 9 |
-| [automazeio/ccpm](https://github.com/automazeio/ccpm) | Fleet / parallel orchestration | Shell | MIT | 8,261 (▲76) | Declining | 30 | slowing | 3mo ago | 10mo | 0 |
-| [AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator) | Fleet / parallel orchestration | Go | Apache-2.0 | 8,222 (▲714) | Hot | 97 | very active | 0d ago | 5mo | 26 |
-| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | Determinism & spec-driven | TypeScript | MIT | 7,744 (▲7) | Rising | 76 | active | 1mo ago | 4mo | 2 |
-| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | Determinism & spec-driven | JavaScript | MIT | 7,233 | Hot | 69 | very active | 0d ago | 1mo | 18 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 6,545 (▲438) | Hot | 92 | very active | 0d ago | 1.2y | 25 |
-| [dagger/container-use](https://github.com/dagger/container-use) | Fleet / parallel orchestration | Go | Apache-2.0 | 3,911 (▲79) | Declining | 49 | active | 1mo ago | 1.1y | 1 |
-| [vercel/eve](https://github.com/vercel/eve) | Harness-as-SDK | TypeScript | Apache-2.0 | 3,460 | Hot | 83 | very active | 0d ago | 27d | 21 |
-| [deeplethe/forkd](https://github.com/deeplethe/forkd) | Sandbox substrate | Rust | Apache-2.0 | 2,717 (▲551) | Hot | 78 | very active | 4d ago | 2mo | 5 |
-| [hexo-ai/sia](https://github.com/hexo-ai/sia) | Autonomous long-horizon | Python | MIT | 2,011 (▲789) | Rising | 54 | very active | 11d ago | 3mo | 8 |
-| [stakpak/agent](https://github.com/stakpak/agent) | Autonomous long-horizon | Rust | Apache-2.0 | 1,655 (▲59) | Hot | 81 | very active | 7d ago | 1.6y | 6 |
-| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Harness-as-SDK | Python | Apache-2.0 | 757 (▲36) | Hot | 76 | very active | 2d ago | 3mo | 5 |
-| [pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) | Harness-as-SDK | Python | MIT | 644 (▲105) | Hot | 73 | very active | 1d ago | 3mo | 9 |
-| [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Autonomous long-horizon | Shell | MIT | 369 | Declining | 22 | slowing | 6mo ago | 12mo | 0 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Meta-harness over coding agents | Shell | MIT | 257,531 (▲4,185) | Hot | 78 | very active | 0d ago | 9mo | 3 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Meta-harness over coding agents | JavaScript | MIT | 231,210 (▲2,154) | Hot | 95 | very active | 0d ago | 6mo | 38 |
+| [github/spec-kit](https://github.com/github/spec-kit) | Determinism & spec-driven | Python | MIT | 122,299 (▲2,152) | Hot | 89 | very active | 2d ago | 11mo | 18 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Autonomous long-horizon | Python | MIT | 77,391 (▲502) | Hot | 84 | very active | 0d ago | 1.2y | 34 |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness-as-SDK | TypeScript | MIT | 72,748 (▲2,560) | Hot | 85 | very active | 0d ago | 11mo | 12 |
+| [daytonaio/daytona](https://github.com/daytonaio/daytona) | Sandbox substrate | — | — | 72,243 (▲46) | Mature | 97 | very active | 10d ago | 2.5y | 21 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 66,173 (▲518) | Hot | 78 | very active | 0d ago | 7mo | 5 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Meta-harness over coding agents | TypeScript | MIT | 65,191 (▲961) | Hot | 76 | very active | 1d ago | 1.1y | 4 |
+| [multica-ai/multica](https://github.com/multica-ai/multica) | Fleet / parallel orchestration | Go | NOASSERTION | 41,073 (▲1,017) | Hot | 86 | very active | 1d ago | 6mo | 26 |
+| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 37,897 (▲178) | Hot | 80 | very active | 0d ago | 6mo | 18 |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 27,449 (▲98) | Mature | 54 | slowing | 2mo ago | 1.1y | 2 |
+| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 26,516 (▲354) | Hot | 79 | very active | 1d ago | 11mo | 12 |
+| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Python | MIT | 25,518 (▲264) | Hot | 78 | very active | 2d ago | 6mo | 20 |
+| [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 23,096 (▲115) | Declining | 21 | slowing | 4mo ago | 11mo | 0 |
+| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 22,946 (▲84) | Hot | 78 | very active | 2d ago | 1.4y | 13 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 21,841 (▲82) | Hot | 84 | very active | 0d ago | 4mo | 26 |
+| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | HTML | MIT | 20,219 (▲617) | Hot | 80 | very active | 0d ago | 1.5y | 10 |
+| [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 18,455 (▲47) | Mature | 78 | very active | 0d ago | 2.1y | 2 |
+| [emcie-co/parlant](https://github.com/emcie-co/parlant) | Harness-as-SDK | Python | Apache-2.0 | 18,177 (▲5) | Mature | 73 | very active | 7d ago | 2.4y | 8 |
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 17,103 (▲113) | Hot | 78 | very active | 2d ago | 7mo | 8 |
+| [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,469 (▲26) | Declining | 57 | active | 1mo ago | 7mo | 1 |
+| [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Sandbox substrate | Python | Apache-2.0 | 12,058 (▲82) | Hot | 78 | very active | 2d ago | 7mo | 13 |
+| [1jehuang/jcode](https://github.com/1jehuang/jcode) | Harness-as-SDK | Rust | MIT | 8,854 | Hot | 78 | very active | 0d ago | 6mo | 3 |
+| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | Determinism & spec-driven | JavaScript | MIT | 8,638 (▲1,405) | Hot | 70 | very active | 0d ago | 1mo | 19 |
+| [AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator) | Fleet / parallel orchestration | Go | Apache-2.0 | 8,385 (▲163) | Hot | 97 | very active | 0d ago | 5mo | 30 |
+| [automazeio/ccpm](https://github.com/automazeio/ccpm) | Fleet / parallel orchestration | Shell | MIT | 8,276 (▲15) | Declining | 30 | slowing | 4mo ago | 11mo | 0 |
+| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | Determinism & spec-driven | TypeScript | MIT | 7,752 (▲8) | Rising | 75 | active | 1mo ago | 4mo | 2 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 6,641 (▲96) | Hot | 91 | very active | 2d ago | 1.2y | 27 |
+| [dagger/container-use](https://github.com/dagger/container-use) | Fleet / parallel orchestration | Go | Apache-2.0 | 3,914 (▲3) | Declining | 44 | active | 1mo ago | 1.2y | 1 |
+| [vercel/eve](https://github.com/vercel/eve) | Harness-as-SDK | TypeScript | Apache-2.0 | 3,879 (▲419) | Hot | 84 | very active | 0d ago | 1mo | 19 |
+| [deeplethe/forkd](https://github.com/deeplethe/forkd) | Sandbox substrate | Rust | Apache-2.0 | 2,710 (▼7) | Hot | 78 | very active | 11d ago | 2mo | 5 |
+| [hexo-ai/sia](https://github.com/hexo-ai/sia) | Autonomous long-horizon | Python | MIT | 2,051 (▲40) | Rising | 54 | very active | 17d ago | 3mo | 8 |
+| [stakpak/agent](https://github.com/stakpak/agent) | Autonomous long-horizon | Rust | Apache-2.0 | 1,680 (▲25) | Hot | 80 | very active | 14d ago | 1.6y | 6 |
+| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Harness-as-SDK | Python | Apache-2.0 | 760 (▲3) | Hot | 76 | very active | 5d ago | 3mo | 5 |
+| [pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) | Harness-as-SDK | Python | MIT | 674 (▲30) | Hot | 75 | very active | 0d ago | 4mo | 9 |
+| [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Autonomous long-horizon | Shell | MIT | 368 (▼1) | Declining | 21 | stale | 6mo ago | 1.0y | 0 |
 
 ## By approach
 
@@ -80,25 +81,28 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 _The loop as a library: you import the harness, register tools, and own control flow. Maximum flexibility, maximum responsibility — you maintain planning, retries, memory, and safety yourself._
 
-- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 70,188★ · TypeScript · Hot  
+- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 72,748★ · TypeScript · Hot  
   Unified LLM API + agent loop + TUI + coding-agent CLI in one toolkit — the loop as a library.  
   <sub>topics: —</sub>
-- **[langchain-ai/deepagents](https://github.com/langchain-ai/deepagents)** · 26,162★ · Python · Hot  
+- **[langchain-ai/deepagents](https://github.com/langchain-ai/deepagents)** · 26,516★ · Python · Hot  
   The 'batteries-included agent harness' — planning, sub-agents, filesystem, from the LangChain team.  
   <sub>topics: deepagents, langchain, langgraph, ai, python, typescript</sub>
-- **[emcie-co/parlant](https://github.com/emcie-co/parlant)** · 18,172★ · Python · Mature  
+- **[emcie-co/parlant](https://github.com/emcie-co/parlant)** · 18,177★ · Python · Mature  
   Interaction *control* harness — behavioral guidelines enforced at runtime for customer-facing agents.  
   <sub>topics: ai-agents, genai, llm, customer-service, customer-success, gemini, llama3, openai</sub>
-- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 6,545★ · Python · Hot  
+- **[1jehuang/jcode](https://github.com/1jehuang/jcode)** · 8,854★ · Rust · Hot  
+  Rust-built coding-agent harness — CLI agent loop with MCP support and multi-model wiring.  
+  <sub>topics: ai, claude, cli, coding-agent, llm, mcp, openai, rust</sub>
+- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 6,641★ · Python · Hot  
   AWS's open SDK to build an agent harness and control it end-to-end in production.  
   <sub>topics: agentic, agentic-ai, agents, ai, autonomous-agents, llm, multi-agent-systems, python</sub>
-- **[vercel/eve](https://github.com/vercel/eve)** · 3,460★ · TypeScript · Hot  
+- **[vercel/eve](https://github.com/vercel/eve)** · 3,879★ · TypeScript · Hot  
   Vercel's framework for building agents — harness + sandbox as one integrated runtime.  
   <sub>topics: agent, framework, harness, javascript, markdown, typescript, vercel, sandbox</sub>
-- **[SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws)** · 757★ · Python · Hot  
+- **[SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws)** · 760★ · Python · Hot  
   Fast, easy agent-harness infrastructure aimed at long-horizon, multi-model runs.  
   <sub>topics: agentic-ai, claude, claude-code, memory, python, skills, openclaw</sub>
-- **[pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness)** · 644★ · Python · Hot  
+- **[pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness)** · 674★ · Python · Hot  
   'Batteries for your Pydantic AI agent' — the harness as a thin add-on to a typed agent framework.  
   <sub>topics: —</sub>
 
@@ -106,22 +110,22 @@ _The loop as a library: you import the harness, register tools, and own control 
 
 _These projects treat Claude Code / Codex as the engine and build the transmission: skills, personas, memory, token discipline, and multi-agent coordination injected via configs, hooks, and subagents._
 
-- **[obra/superpowers](https://github.com/obra/superpowers)** · 253,346★ · Shell · Hot  
+- **[obra/superpowers](https://github.com/obra/superpowers)** · 257,531★ · Shell · Hot  
   Skills framework + development methodology layered onto the agent you already run.  
   <sub>topics: ai, brainstorming, coding, obra, sdlc, skills, superpowers, subagent-driven-development</sub>
-- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 229,056★ · JavaScript · Hot  
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 231,210★ · JavaScript · Hot  
   Harness performance optimization: skills, instincts, memory, security, hooks on top of Claude Code.  
   <sub>topics: ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity</sub>
-- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 65,655★ · TypeScript · Hot  
+- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 66,173★ · TypeScript · Hot  
   'The one and only agent harness for complex coding' — tokenmaxxer harness wrapping coding agents.  
   <sub>topics: opencode, ai, anthropic, claude, claude-skills, cursor, gemini, ide</sub>
-- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 64,230★ · TypeScript · Mature  
+- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 65,191★ · TypeScript · Hot  
   The leading agent *meta*-harness — swarms, coordination, and autonomy on top of existing agents.  
   <sub>topics: claude-code, swarm, agentic-ai, agentic-framework, agentic-workflow, autonomous-agents, codex, mcp-server</sub>
-- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · 37,719★ · TypeScript · Hot  
+- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · 37,897★ · TypeScript · Hot  
   Teams-first multi-agent orchestration living entirely inside Claude Code.  
   <sub>topics: agentic-coding, ai-agents, claude, claude-code, oh-my-opencode, opencode, vibe-coding, automation</sub>
-- **[coleam00/Archon](https://github.com/coleam00/Archon)** · 22,862★ · TypeScript · Hot  
+- **[coleam00/Archon](https://github.com/coleam00/Archon)** · 22,946★ · TypeScript · Hot  
   'Harness builder' — make AI coding deterministic and repeatable by generating the harness itself.  
   <sub>topics: ai, automation, bun, claude, cli, coding-assistant, developer-tools, typescript</sub>
 
@@ -129,25 +133,25 @@ _These projects treat Claude Code / Codex as the engine and build the transmissi
 
 _One agent is a tool; a fleet is a team. The harness problem becomes scheduling, isolation (worktrees, containers), review queues, and merge discipline._
 
-- **[multica-ai/multica](https://github.com/multica-ai/multica)** · 40,056★ · Go · Hot  
+- **[multica-ai/multica](https://github.com/multica-ai/multica)** · 41,073★ · Go · Hot  
   Managed-agents platform: assign tasks to coding agents like teammates and supervise them.  
   <sub>topics: —</sub>
-- **[BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban)** · 27,351★ · Rust · Mature  
+- **[BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban)** · 27,449★ · Rust · Mature  
   A kanban board as the harness — queue, run, and review many agent tasks in parallel.  
   <sub>topics: agent, ai-agents, kanban, management, task-manager</sub>
-- **[gastownhall/gastown](https://github.com/gastownhall/gastown)** · 16,990★ · Go · Hot  
+- **[gastownhall/gastown](https://github.com/gastownhall/gastown)** · 17,103★ · Go · Hot  
   Multi-agent workspace manager — the 'town' where a fleet of agents live and work.  
   <sub>topics: —</sub>
-- **[AndyMik90/Aperant](https://github.com/AndyMik90/Aperant)** · 14,443★ · TypeScript · Declining  
+- **[AndyMik90/Aperant](https://github.com/AndyMik90/Aperant)** · 14,469★ · TypeScript · Declining  
   Autonomous multi-session AI coding — sessions as the unit of parallelism.  
   <sub>topics: —</sub>
-- **[automazeio/ccpm](https://github.com/automazeio/ccpm)** · 8,261★ · Shell · Declining  
-  GitHub Issues + git worktrees as the coordination fabric for parallel agents.  
-  <sub>topics: ai-agents, ai-coding, claude, claude-code, project-management, vibe-coding</sub>
-- **[AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator)** · 8,222★ · Go · Hot  
+- **[AgentWrapper/agent-orchestrator](https://github.com/AgentWrapper/agent-orchestrator)** · 8,385★ · Go · Hot  
   Plans tasks, spawns parallel coding agents in worktrees, merges autonomously.  
   <sub>topics: claude-code, codex-cli, orchestration, orchestrator, skills, agent-fleet, agent-swarm, git-worktrees</sub>
-- **[dagger/container-use](https://github.com/dagger/container-use)** · 3,911★ · Go · Declining  
+- **[automazeio/ccpm](https://github.com/automazeio/ccpm)** · 8,276★ · Shell · Declining  
+  GitHub Issues + git worktrees as the coordination fabric for parallel agents.  
+  <sub>topics: ai-agents, ai-coding, claude, claude-code, project-management, vibe-coding</sub>
+- **[dagger/container-use](https://github.com/dagger/container-use)** · 3,914★ · Go · Declining  
   Containerized dev environments so multiple agents work safely and independently.  
   <sub>topics: —</sub>
 
@@ -155,39 +159,39 @@ _One agent is a tool; a fleet is a team. The harness problem becomes scheduling,
 
 _The counter-culture: agents drift, so pin them down. Specs, standards files, and plans persisted to disk make runs reproducible, auditable, and resumable after crashes._
 
-- **[github/spec-kit](https://github.com/github/spec-kit)** · 120,147★ · Python · Hot  
+- **[github/spec-kit](https://github.com/github/spec-kit)** · 122,299★ · Python · Hot  
   Spec-Driven Development toolkit — the spec, not the prompt, steers the agent.  
   <sub>topics: ai, copilot, development, engineering, prd, spec, spec-driven</sub>
-- **[OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files)** · 25,254★ · Python · Hot  
+- **[OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files)** · 25,518★ · Python · Hot  
   Persistent file-based planning — crash-proof, resumable long-running agent tasks.  
   <sub>topics: claude, claude-code, claude-skills, manus, agent-skills, planning, copilot, pi</sub>
-- **[agentsmd/agents.md](https://github.com/agentsmd/agents.md)** · 22,981★ · TypeScript · Declining  
+- **[agentsmd/agents.md](https://github.com/agentsmd/agents.md)** · 23,096★ · TypeScript · Declining  
   The open AGENTS.md standard — a portable contract telling any harness how to behave in a repo.  
   <sub>topics: —</sub>
-- **[gsd-build/gsd-2](https://github.com/gsd-build/gsd-2)** · 7,744★ · TypeScript · Rising  
-  Meta-prompting + context engineering + spec-driven system for dependable outcomes.  
-  <sub>topics: context-engineering, meta-prompting, spec-driven-development</sub>
-- **[cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)** · 7,233★ · JavaScript · Hot  
+- **[cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)** · 8,638★ · JavaScript · Hot  
   Patterns and starters for *loop engineering* — designing the iteration, not just the prompt.  
   <sub>topics: agentic-ai, ai-agents, claude-code, codex, devops-automation, github-actions, grok, llm</sub>
+- **[gsd-build/gsd-2](https://github.com/gsd-build/gsd-2)** · 7,752★ · TypeScript · Rising  
+  Meta-prompting + context engineering + spec-driven system for dependable outcomes.  
+  <sub>topics: context-engineering, meta-prompting, spec-driven-development</sub>
 
 ### Sandbox substrate
 
 _Infrastructure-first: before you scale agents you need somewhere safe and fast to run them. MicroVMs, container runtimes, and hardened sandboxes are the harness's floor._
 
-- **[daytonaio/daytona](https://github.com/daytonaio/daytona)** · 72,197★ · — · Mature  
+- **[daytonaio/daytona](https://github.com/daytonaio/daytona)** · 72,243★ · — · Mature  
   Secure, elastic infrastructure for running AI-generated code — the harness's execution floor.  
   <sub>topics: developer-tools, agentic-workflow, ai, ai-agents, ai-runtime, code-execution, code-interpreter, ai-sandboxes</sub>
-- **[NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw)** · 21,759★ · TypeScript · Hot  
+- **[NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw)** · 21,841★ · TypeScript · Hot  
   Run harnesses (Hermes, Deep Agents, OpenClaw) inside hardened NVIDIA sandboxes.  
   <sub>topics: ai-agents, nvidia, openclaw, openshell, sandboxing, typescript, hermes</sub>
-- **[trycua/cua](https://github.com/trycua/cua)** · 19,602★ · HTML · Hot  
+- **[trycua/cua](https://github.com/trycua/cua)** · 20,219★ · HTML · Hot  
   Sandboxes, SDKs, and benchmarks for computer-use agents — full-desktop harnessing.  
   <sub>topics: apple, cua, lume, macos, virtualization, virtualization-framework, swift, ai-agent</sub>
-- **[opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox)** · 11,976★ · Python · Hot  
+- **[opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox)** · 12,058★ · Python · Hot  
   Secure, fast, extensible sandbox runtime purpose-built for AI agents.  
   <sub>topics: ai, ai-infra, kubernetes, sandbox, ai-agent</sub>
-- **[deeplethe/forkd](https://github.com/deeplethe/forkd)** · 2,717★ · Rust · Hot  
+- **[deeplethe/forkd](https://github.com/deeplethe/forkd)** · 2,710★ · Rust · Hot  
   fork() for agent microVMs — spawn 100 children in ~100ms; branch a live VM mid-run.  
   <sub>topics: ai-agents, copy-on-write, kvm, microvm, rust, sandbox, snapshot</sub>
 
@@ -195,53 +199,53 @@ _Infrastructure-first: before you scale agents you need somewhere safe and fast 
 
 _Maximum autonomy: agents that run for hours or days, planning and re-planning, sometimes improving their own scaffolding. The harness is a resident process, not a CLI invocation._
 
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 76,889★ · Python · Hot  
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 77,391★ · Python · Hot  
   Long-horizon SuperAgent harness that researches, codes, and creates with sub-agents in sandboxes.  
   <sub>topics: agent, agentic, agentic-framework, agentic-workflow, ai, ai-agents, deep-research, langchain</sub>
-- **[agent0ai/agent-zero](https://github.com/agent0ai/agent-zero)** · 18,408★ · Python · Mature  
+- **[agent0ai/agent-zero](https://github.com/agent0ai/agent-zero)** · 18,455★ · Python · Mature  
   General autonomous framework — the agent builds its own tools as it goes.  
   <sub>topics: agent, ai, assistant, autonomous, linux, zero</sub>
-- **[hexo-ai/sia](https://github.com/hexo-ai/sia)** · 2,011★ · Python · Rising  
+- **[hexo-ai/sia](https://github.com/hexo-ai/sia)** · 2,051★ · Python · Rising  
   Self-Improving AI — a harness whose loop optimizes the underlying system over time.  
   <sub>topics: —</sub>
-- **[stakpak/agent](https://github.com/stakpak/agent)** · 1,655★ · Rust · Hot  
+- **[stakpak/agent](https://github.com/stakpak/agent)** · 1,680★ · Rust · Hot  
   An agent that lives on your machines 24/7 and keeps shipping — harness as a resident daemon.  
   <sub>topics: agent, devops, devtool, generative-ai, hacktoberfest, ai-agent, autonomous-agent, llm-agent</sub>
-- **[aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch)** · 369★ · Shell · Declining  
+- **[aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch)** · 368★ · Shell · Declining  
   Watches your Claude usage windows and executes queued tasks autonomously overnight.  
   <sub>topics: —</sub>
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 35 tools span **14 of the graph's 26 communities**.
+**Community clustering.** These 36 tools span **14 of the graph's 28 communities**.
 
-- **Community 16** (9): `earendil-works/pi`, `SafeRL-Lab/cheetahclaws`, `code-yeongyu/oh-my-openagent`, `ruvnet/ruflo`, `coleam00/Archon`, `gastownhall/gastown`, `AgentWrapper/agent-orchestrator`, `trycua/cua`, `opensandbox-group/OpenSandbox`
-- **Community 8** (6): `affaan-m/ECC`, `AndyMik90/Aperant`, `OthmanAdi/planning-with-files`, `agentsmd/agents.md`, `cobusgreyling/loop-engineering`, `agent0ai/agent-zero`
-- **Community 1** (4): `pydantic/pydantic-ai-harness`, `obra/superpowers`, `daytonaio/daytona`, `deeplethe/forkd`
-- **Community 7** (3): `langchain-ai/deepagents`, `gsd-build/gsd-2`, `bytedance/deer-flow`
-- **Community 17** (2): `emcie-co/parlant`, `strands-agents/harness-sdk`
-- **Community 18** (2): `Yeachan-Heo/oh-my-claudecode`, `automazeio/ccpm`
-- **Community 3** (2): `multica-ai/multica`, `BloopAI/vibe-kanban`
+- **Community 2** (9): `affaan-m/ECC`, `Yeachan-Heo/oh-my-claudecode`, `coleam00/Archon`, `AndyMik90/Aperant`, `automazeio/ccpm`, `OthmanAdi/planning-with-files`, `agentsmd/agents.md`, `cobusgreyling/loop-engineering`, `agent0ai/agent-zero`
+- **Community 8** (7): `earendil-works/pi`, `SafeRL-Lab/cheetahclaws`, `code-yeongyu/oh-my-openagent`, `ruvnet/ruflo`, `gastownhall/gastown`, `AgentWrapper/agent-orchestrator`, `trycua/cua`
+- **Community 9** (6): `langchain-ai/deepagents`, `emcie-co/parlant`, `pydantic/pydantic-ai-harness`, `gsd-build/gsd-2`, `daytonaio/daytona`, `deeplethe/forkd`
+- **Community 1** (2): `obra/superpowers`, `github/spec-kit`
+- **Community 11** (2): `multica-ai/multica`, `BloopAI/vibe-kanban`
+- **Community 12** (2): `dagger/container-use`, `opensandbox-group/OpenSandbox`
 
-**Centrality (PageRank in the full 1,327-repo graph)** — most 'hub-like' harnesses in your ecosystem:
+**Centrality (PageRank in the full 1,341-repo graph)** — most 'hub-like' harnesses in your ecosystem:
 
-- `langchain-ai/deepagents` — PageRank 0.0023
-- `affaan-m/ECC` — PageRank 0.0022
-- `NVIDIA/NemoClaw` — PageRank 0.0016
-- `cobusgreyling/loop-engineering` — PageRank 0.0014
+- `affaan-m/ECC` — PageRank 0.0024
+- `langchain-ai/deepagents` — PageRank 0.0024
+- `cobusgreyling/loop-engineering` — PageRank 0.0013
+- `NVIDIA/NemoClaw` — PageRank 0.0013
+- `coleam00/Archon` — PageRank 0.0012
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0012
-- `coleam00/Archon` — PageRank 0.0010
-- `bytedance/deer-flow` — PageRank 0.0010
-- `stakpak/agent` — PageRank 0.0008
+- `1jehuang/jcode` — PageRank 0.0012
+- `bytedance/deer-flow` — PageRank 0.0011
+- `stakpak/agent` — PageRank 0.0009
 - `hexo-ai/sia` — PageRank 0.0008
-- `OthmanAdi/planning-with-files` — PageRank 0.0008
 
 **Direct links between harness projects** (top similarity edges where both endpoints are in this report):
 
-- `cobusgreyling/loop-engineering` ⇄ `affaan-m/ECC` (w=0.404) — topics: ai-agents, claude-code, llm, mcp; authors: dependabot[bot]
-- `bytedance/deer-flow` ⇄ `langchain-ai/deepagents` (w=0.367) — topics: ai, langchain, langgraph, python; authors: dependabot[bot]
-- `code-yeongyu/oh-my-openagent` ⇄ `coleam00/Archon` (w=0.353) — topics: ai, claude, typescript; authors: github-actions[bot]
+- `cobusgreyling/loop-engineering` ⇄ `affaan-m/ECC` (w=0.402) — topics: ai-agents, claude-code, llm, mcp; authors: dependabot[bot]
+- `bytedance/deer-flow` ⇄ `langchain-ai/deepagents` (w=0.358) — topics: ai, langchain, langgraph, python; authors: dependabot[bot]
 - `Yeachan-Heo/oh-my-claudecode` ⇄ `automazeio/ccpm` (w=0.333) — topics: ai-agents, claude, claude-code, vibe-coding
+- `opensandbox-group/OpenSandbox` ⇄ `langchain-ai/deepagents` (w=0.324) — topics: ai; authors: github-actions[bot], dependabot[bot]
+- `code-yeongyu/oh-my-openagent` ⇄ `coleam00/Archon` (w=0.304) — topics: ai, claude, typescript; authors: github-actions[bot]
 - `affaan-m/ECC` ⇄ `automazeio/ccpm` (w=0.273) — topics: ai-agents, claude, claude-code
 - `strands-agents/harness-sdk` ⇄ `ruvnet/ruflo` (w=0.212) — topics: agentic-ai, agents, autonomous-agents, multi-agent-systems
 - `bytedance/deer-flow` ⇄ `ruvnet/ruflo` (w=0.188) — topics: agentic-framework, agentic-workflow, ai-agents, multi-agent
@@ -252,41 +256,42 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| AgentWrapper/agent-orchestrator | 97 | Hot | very active | 6 | 16% | 70 |
+| AgentWrapper/agent-orchestrator | 97 | Hot | very active | 7 | 12% | 77 |
 | daytonaio/daytona | 97 | Mature | very active | 5 | 14% | 205 |
-| github/spec-kit | 93 | Hot | very active | 4 | 18% | 187 |
-| strands-agents/harness-sdk | 92 | Hot | very active | 4 | 22% | 72 |
-| affaan-m/ECC | 90 | Hot | very active | 3 | 35% | 14 |
-| earendil-works/pi | 85 | Hot | very active | 2 | 44% | 243 |
-| vercel/eve | 83 | Hot | very active | 3 | 23% | 53 |
-| multica-ai/multica | 81 | Hot | very active | 2 | 39% | 111 |
-| stakpak/agent | 81 | Hot | very active | 2 | 49% | 315 |
-| Yeachan-Heo/oh-my-claudecode | 80 | Hot | very active | 1 | 52% | 238 |
-| langchain-ai/deepagents | 79 | Hot | very active | 1 | 65% | 213 |
-| bytedance/deer-flow | 79 | Hot | very active | 4 | 20% | 1 |
+| affaan-m/ECC | 95 | Hot | very active | 4 | 29% | 14 |
+| strands-agents/harness-sdk | 91 | Hot | very active | 4 | 23% | 74 |
+| github/spec-kit | 89 | Hot | very active | 3 | 20% | 195 |
+| multica-ai/multica | 86 | Hot | very active | 3 | 22% | 116 |
+| earendil-works/pi | 85 | Hot | very active | 2 | 43% | 247 |
+| vercel/eve | 84 | Hot | very active | 3 | 22% | 64 |
+| NVIDIA/NemoClaw | 84 | Hot | very active | 5 | 15% | 0 |
+| bytedance/deer-flow | 84 | Hot | very active | 5 | 20% | 1 |
+| Yeachan-Heo/oh-my-claudecode | 80 | Hot | very active | 1 | 53% | 240 |
+| trycua/cua | 80 | Hot | very active | 2 | 49% | 560 |
+| stakpak/agent | 80 | Hot | very active | 2 | 49% | 315 |
+| langchain-ai/deepagents | 79 | Hot | very active | 1 | 67% | 222 |
+| 1jehuang/jcode | 78 | Hot | very active | 1 | 98% | 126 |
 | obra/superpowers | 78 | Hot | very active | 1 | 69% | 10 |
-| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 95% | 217 |
-| gastownhall/gastown | 78 | Hot | very active | 1 | 55% | 14 |
-| OthmanAdi/planning-with-files | 78 | Hot | very active | 1 | 70% | 76 |
+| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 93% | 221 |
+| coleam00/Archon | 78 | Hot | very active | 1 | 83% | 15 |
+| gastownhall/gastown | 78 | Hot | very active | 1 | 51% | 14 |
+| OthmanAdi/planning-with-files | 78 | Hot | very active | 1 | 73% | 79 |
 | opensandbox-group/OpenSandbox | 78 | Hot | very active | 1 | 53% | 160 |
 | deeplethe/forkd | 78 | Hot | very active | 1 | 85% | 23 |
-| agent0ai/agent-zero | 78 | Mature | very active | 1 | 100% | 66 |
-| coleam00/Archon | 77 | Hot | very active | 1 | 83% | 15 |
+| agent0ai/agent-zero | 78 | Mature | very active | 1 | 97% | 67 |
 | SafeRL-Lab/cheetahclaws | 76 | Hot | very active | 1 | 86% | 39 |
-| ruvnet/ruflo | 76 | Mature | very active | 1 | 98% | 1571 |
-| gsd-build/gsd-2 | 76 | Rising | active | 1 | 76% | 116 |
-| trycua/cua | 76 | Hot | very active | 1 | 82% | 552 |
-| emcie-co/parlant | 75 | Mature | very active | 1 | 66% | 33 |
-| NVIDIA/NemoClaw | 74 | Hot | very active | 3 | 34% | 0 |
-| pydantic/pydantic-ai-harness | 73 | Hot | very active | 2 | 30% | 9 |
-| cobusgreyling/loop-engineering | 69 | Hot | very active | 2 | 40% | 1 |
-| BloopAI/vibe-kanban | 58 | Mature | slowing | 1 | 85% | 284 |
-| AndyMik90/Aperant | 58 | Declining | active | 1 | 100% | 37 |
+| ruvnet/ruflo | 76 | Hot | very active | 1 | 97% | 1583 |
+| pydantic/pydantic-ai-harness | 75 | Hot | very active | 2 | 31% | 11 |
+| gsd-build/gsd-2 | 75 | Rising | active | 1 | 76% | 116 |
+| emcie-co/parlant | 73 | Mature | very active | 1 | 63% | 33 |
+| cobusgreyling/loop-engineering | 70 | Hot | very active | 2 | 27% | 1 |
+| AndyMik90/Aperant | 57 | Declining | active | 1 | 100% | 37 |
+| BloopAI/vibe-kanban | 54 | Mature | slowing | 1 | 83% | 284 |
 | hexo-ai/sia | 54 | Rising | very active | 2 | 35% | 0 |
-| dagger/container-use | 49 | Declining | active | 1 | 100% | 14 |
+| dagger/container-use | 44 | Declining | active | 1 | 100% | 14 |
 | automazeio/ccpm | 30 | Declining | slowing | 0 | 0% | 0 |
-| aniketkarne/ClaudeNightsWatch | 22 | Declining | slowing | 0 | 0% | 0 |
 | agentsmd/agents.md | 21 | Declining | slowing | 0 | 0% | 0 |
+| aniketkarne/ClaudeNightsWatch | 21 | Declining | stale | 0 | 0% | 0 |
 
 ## Which one should you use?
 
@@ -304,14 +309,14 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 
 ## Adjacent (deliberately not listed as harnesses)
 
-- **langchain-ai/langgraph** (37,147★) — agent *framework* (graphs, not harnesses) — see the agent-orchestration report
-- **crewAIInc/crewAI** (55,417★) — role-playing agent framework — agent-orchestration report
-- **microsoft/autogen** (59,693★) — multi-agent conversation framework — agent-orchestration report
-- **eigent-ai/eigent** (14,553★) — cowork desktop product — agent-orchestration report
-- **getpaseo/paseo** (10,300★) — desktop/mobile agent orchestrator — agent-orchestration report
-- **wshobson/agents** (37,852★) — multi-harness plugin *marketplace* — content for harnesses, not a harness
-- **EleutherAI/lm-evaluation-harness** (13,267★) — 'harness' for *model benchmarks*, not agent runtimes — see the LLM-evaluation report
-- **anthropics/claude-code** (137,635★) — the coding agent itself — the thing meta-harnesses wrap
+- **langchain-ai/langgraph** (37,615★) — agent *framework* (graphs, not harnesses) — see the agent-orchestration report
+- **crewAIInc/crewAI** (55,788★) — role-playing agent framework — agent-orchestration report
+- **microsoft/autogen** (59,817★) — multi-agent conversation framework — agent-orchestration report
+- **eigent-ai/eigent** (14,606★) — cowork desktop product — agent-orchestration report
+- **getpaseo/paseo** (10,864★) — desktop/mobile agent orchestrator — agent-orchestration report
+- **wshobson/agents** (38,060★) — multi-harness plugin *marketplace* — content for harnesses, not a harness
+- **EleutherAI/lm-evaluation-harness** (13,337★) — 'harness' for *model benchmarks*, not agent runtimes — see the LLM-evaluation report
+- **anthropics/claude-code** (138,330★) — the coding agent itself — the thing meta-harnesses wrap
 
 ## Methodology & caveats
 
@@ -320,4 +325,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 35 · Snapshot: 2026-07-13T08:42:30.177Z</sub>
+<sub>Tools covered: 36 · Snapshot: 2026-07-19T22:39:07.967Z</sub>

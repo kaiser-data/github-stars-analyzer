@@ -57,8 +57,8 @@ TAXONOMY = {
     # Ingestion / parsing / chunking
     "Unstructured-IO/unstructured": ("Ingestion / parsing / chunking", "ETL that turns PDFs/docs/HTML into clean, chunk-ready structured elements."),
     "PaddlePaddle/PaddleOCR": ("Ingestion / parsing / chunking", "Powerful OCR — turns PDFs/images into structured text for the RAG ingest stage."),
-    "chonkie-inc/chonkie": ("Ingestion / parsing / chunking", "Lightweight, fast chunking library (the 🦛) — many strategies, minimal deps."),
-    "chonkie-inc/chonkiejs": ("Ingestion / parsing / chunking", "TypeScript port of Chonkie for JS/TS RAG pipelines."),
+    "feyninc/chonkie": ("Ingestion / parsing / chunking", "Lightweight, fast chunking library (the 🦛) — many strategies, minimal deps."),
+    "feyninc/chonkiejs": ("Ingestion / parsing / chunking", "TypeScript port of Chonkie for JS/TS RAG pipelines."),
 
     # Embeddings / retrieval models / rerankers
     "huggingface/sentence-transformers": ("Embeddings / rerankers", "SoTA embeddings, retrieval & reranking models — the encoder layer of RAG."),
@@ -67,7 +67,7 @@ TAXONOMY = {
 
     # Novel / efficient retrieval approaches
     "VectifyAI/PageIndex": ("Novel retrieval approach", "Vectorless, reasoning-based RAG — builds a document index/tree, navigates with the LLM."),
-    "yichuan-w/LEANN": ("Novel retrieval approach", "Storage-frugal RAG: ~97% storage savings while keeping fast, accurate retrieval."),
+    "StarTrail-org/LEANN": ("Novel retrieval approach", "Storage-frugal RAG: ~97% storage savings while keeping fast, accurate retrieval."),
     "zilliztech/claude-context": ("Novel retrieval approach", "Code-search MCP that makes an entire codebase the retrievable context for coding agents."),
 }
 
@@ -320,11 +320,11 @@ guide = [
      "Adds vector search to the Postgres you already run."),
     ("Best document parsing for ingestion", "`Unstructured-IO/unstructured` (+ `PaddleOCR`)",
      "Turns messy PDFs/HTML into clean, chunkable elements; OCR for scanned docs."),
-    ("Good chunking without heavy deps", "`chonkie-inc/chonkie`",
+    ("Good chunking without heavy deps", "`feyninc/chonkie`",
      "Lightweight, many strategies; JS port available."),
     ("To skip vector DBs entirely", "`VectifyAI/PageIndex`",
      "Vectorless, reasoning-based retrieval over a document tree."),
-    ("Tiny-footprint / on-device RAG", "`yichuan-w/LEANN`",
+    ("Tiny-footprint / on-device RAG", "`StarTrail-org/LEANN`",
      "~97% storage savings vs. a conventional vector index."),
 ]
 for want, pick, why in guide:

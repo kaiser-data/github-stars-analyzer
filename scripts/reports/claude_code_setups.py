@@ -53,7 +53,6 @@ TAXONOMY = {
     "anthropics/skills": ("Skills framework", "Anthropic's official Agent Skills repo — canonical examples of the skills format."),
     "affaan-m/ECC": ("Skills framework", "Agent-harness performance system bundling skills, instincts, and memory into one optimization layer."),
     "ComposioHQ/awesome-claude-skills": ("Skills framework", "Curated index of Claude Skills + tooling — the discovery hub for what's worth installing."),
-    "sickn33/antigravity-awesome-skills": ("Skills framework", "Installable library of 1,500+ agentic skills across Claude Code/Cursor/etc."),
     "wshobson/agents": ("Skills framework", "Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor) — subagents & commands."),
     "K-Dense-AI/scientific-agent-skills": ("Skills framework", "Domain skill pack that turns an agent into a research scientist — example of vertical skills."),
 
@@ -84,12 +83,12 @@ TAXONOMY = {
     "rtk-ai/rtk": ("Token-saver / compression", "CLI proxy that cuts LLM token consumption 60–90% on common dev commands — sits in front of the agent."),
     "code-yeongyu/oh-my-openagent": ("Token-saver / compression", "omo/lazycodex — a coding agent built for 'tokenmaxxers'; efficiency-first harness."),
     "toon-format/toon": ("Token-saver / compression", "Token-Oriented Object Notation — compact schema-aware encoding to shrink structured payloads."),
-    "chopratejas/headroom": ("Token-saver / compression", "Compresses tool outputs, logs, files, and RAG chunks before they hit the model's context."),
+    "headroomlabs-ai/headroom": ("Token-saver / compression", "Compresses tool outputs, logs, files, and RAG chunks before they hit the model's context."),
     "getagentseal/codeburn": ("Token-saver / compression", "TUI dashboard showing where your AI coding tokens go — measure before you optimize."),
     "MinishLab/semble": ("Token-saver / compression", "Fast, accurate code search for agents using ~98% fewer tokens than reading files."),
 
     # Code-graph / retrieval — feed the right code
-    "safishamsi/graphify": ("Code-graph / retrieval", "Coding-assistant skill that turns a repo into a knowledge graph (you use this on this project)."),
+    "Graphify-Labs/graphify": ("Code-graph / retrieval", "Coding-assistant skill that turns a repo into a knowledge graph (you use this on this project)."),
     "colbymchenry/codegraph": ("Code-graph / retrieval", "Pre-indexed code knowledge graph for Claude Code/Codex/Cursor — structural retrieval."),
     "abhigyanpatwari/GitNexus": ("Code-graph / retrieval", "Zero-server code-intelligence engine — client-side code graph."),
     "Egonex-AI/Understand-Anything": ("Code-graph / retrieval", "Turns any code into an interactive teaching graph — comprehension over impression."),
@@ -105,6 +104,8 @@ TAXONOMY = {
     "comet-ml/opik": ("Observability / evals", "Debug/evaluate/monitor LLM apps, RAG, and agents — eval-first observability."),
     "Arize-ai/phoenix": ("Observability / evals", "AI observability & evaluation — OpenTelemetry-based tracing for agents."),
     "traceloop/openllmetry": ("Observability / evals", "Open-source OpenTelemetry-based observability for LLM apps — standards-based traces."),
+    "patoles/agent-flow": ("Observability / evals", "Real-time visualization of Claude Code agent orchestration — watch agents think, branch, coordinate."),
+    "ingo-eichhorst/Irrlicht": ("Observability / evals", "Claude Code session lights in the macOS menu bar — at-a-glance session state."),
 
     # Local runtimes — cut cost / go offline
     "ollama/ollama": ("Local runtime", "Run open models locally with one command — point an agent at it to slash API cost or go offline."),

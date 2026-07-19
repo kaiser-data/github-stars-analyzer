@@ -48,7 +48,7 @@ TAXONOMY = {
     "SYSTRAN/faster-whisper": ("ASR engine / model", "CTranslate2 Whisper — ~4× faster, lower memory; the production server-side transcription default."),
     "huggingface/distil-whisper": ("ASR engine / model", "Distilled Whisper — ~6× faster, 49% smaller, within ~1% WER; batch-transcribe long meetings cheaply."),
     "moonshine-ai/moonshine": ("ASR engine / model", "Edge-first ASR beating Whisper at 5–15× speed on short segments — built for live, on-device captioning."),
-    "NVIDIA-NeMo/NeMo": ("ASR engine / model", "NVIDIA's speech stack — Parakeet (fastest open ASR) and Canary (top of the Open ASR leaderboard) live here, plus diarization recipes."),
+    "NVIDIA-NeMo/Speech": ("ASR engine / model", "NVIDIA's speech stack — Parakeet (fastest open ASR) and Canary (top of the Open ASR leaderboard) live here, plus diarization recipes."),
     "modelscope/FunASR": ("ASR engine / model", "Alibaba's production ASR toolkit — streaming + offline models with punctuation, timestamps, and speaker labels (Paraformer)."),
     "FunAudioLLM/SenseVoice": ("ASR engine / model", "Multilingual ASR with emotion recognition and audio-event detection — transcription plus conversational tone signals."),
     "kyutai-labs/delayed-streams-modeling": ("ASR engine / model", "Kyutai's streaming STT — word-level timestamps over live streams with seconds-level latency."),
@@ -99,7 +99,7 @@ with open(GRAPH) as f:
 by_name = {r["full_name"]: r for r in cl["repos"]}
 # tolerate renamed repos (old full_name in curation, new in dataset or vice versa)
 ALIASES = {
-    "NVIDIA/NeMo": "NVIDIA-NeMo/NeMo",
+    "NVIDIA/NeMo": "NVIDIA-NeMo/Speech",
     "usefulsensors/moonshine": "moonshine-ai/moonshine",
     "mediar-ai/screenpipe": "screenpipe/screenpipe",
     "Zackriya-Solutions/meeting-minutes": "Zackriya-Solutions/meetily",
@@ -169,7 +169,7 @@ verdict = [
      "`collabora/WhisperLive` or `KoljaB/RealtimeSTT` (+ `juanmc2005/diart` for live speakers)",
      "Streaming websocket transcription with VAD; diart adds real-time 'who is speaking now'."),
     ("**Maximum accuracy or throughput (GPU server)**",
-     "`NVIDIA-NeMo/NeMo` (Canary / Parakeet)",
+     "`NVIDIA-NeMo/Speech` (Canary / Parakeet)",
      "Canary tops the Open ASR leaderboard; Parakeet transcribes at >2000× realtime."),
     ("**Analyze transcripts at scale (calls, voice agents)**",
      "`DrDroidLab/voicesummary`",

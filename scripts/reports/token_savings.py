@@ -77,7 +77,7 @@ TAXONOMY = {
         "Compresses model *weights* for cheaper/faster inference — a different layer than prompt-token savings; included for contrast."),
 
     # ===== Methodology / cross-cutting =====
-    "davidkimai/Context-Engineering": ("Methodology / cross-cutting", "Methodology / guide", "— (educational)",
+    "jasontang-ai/Context-Engineering": ("Methodology / cross-cutting", "Methodology / guide", "— (educational)",
         "A guide to filling the context window with just the right info — concepts that apply to every workload above; stale."),
 }
 

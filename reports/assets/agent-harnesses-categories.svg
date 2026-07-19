@@ -13,20 +13,20 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Tools per category</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Harness-as-SDK</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">7</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">8</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Fleet / parallel orchestration</text>
-<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="76.0" class="val" dominant-baseline="central">7</text>
+<path d="M244,67 h297.0 q4,0 4,4 v10 q0,4 -4,4 h-297.0 z" class="bar"/>
+<text x="551.0" y="76.0" class="val" dominant-baseline="central">7</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Meta-harness over coding agents</text>
-<path d="M244,94 h290.9 q4,0 4,4 v10 q0,4 -4,4 h-290.9 z" class="bar"/>
-<text x="544.9" y="103.0" class="val" dominant-baseline="central">6</text>
+<path d="M244,94 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="103.0" class="val" dominant-baseline="central">6</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Determinism &amp; spec-driven</text>
-<path d="M244,121 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
-<text x="495.7" y="130.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,121 h211.0 q4,0 4,4 v10 q0,4 -4,4 h-211.0 z" class="bar"/>
+<text x="465.0" y="130.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Sandbox substrate</text>
-<path d="M244,148 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
-<text x="495.7" y="157.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,148 h211.0 q4,0 4,4 v10 q0,4 -4,4 h-211.0 z" class="bar"/>
+<text x="465.0" y="157.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Autonomous long-horizon</text>
-<path d="M244,175 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
-<text x="495.7" y="184.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,175 h211.0 q4,0 4,4 v10 q0,4 -4,4 h-211.0 z" class="bar"/>
+<text x="465.0" y="184.0" class="val" dominant-baseline="central">5</text>
 </svg>

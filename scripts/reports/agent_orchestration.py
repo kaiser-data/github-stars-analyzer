@@ -45,7 +45,7 @@ TAXONOMY = {
     "agentscope-ai/agentscope": ("Code-first agent frameworks", "Build agents you can see/understand/trust; strong observability + multi-agent."),
     "microsoft/agent-framework": ("Code-first agent frameworks", "Microsoft's framework to build, orchestrate & deploy multi-agent workflows (health 92)."),
     "VoltAgent/voltagent": ("Code-first agent frameworks", "TypeScript agent-engineering platform + open-source framework."),
-    "strands-agents/sdk-python": ("Code-first agent frameworks", "Model-driven agents in a few lines; very high health (96) and bus factor 7."),
+    "strands-agents/harness-sdk": ("Code-first agent frameworks", "Model-driven agents in a few lines; very high health (96) and bus factor 7."),
     "i-am-bee/beeai-framework": ("Code-first agent frameworks", "Production-ready agents in both Python and TypeScript."),
     "liquidos-ai/AutoAgents": ("Code-first agent frameworks", "Rust multi-agent framework to build, deploy & coordinate agents."),
     "crewAIInc/crewAI": ("Code-first agent frameworks", "Role-based 'crew' multi-agent framework — agents with roles, goals & tools collaborate."),
@@ -71,7 +71,7 @@ TAXONOMY = {
     "wshobson/agents": ("Coding-agent orchestration", "Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor, OpenCode, Gemini)."),
     "Yeachan-Heo/oh-my-claudecode": ("Coding-agent orchestration", "Teams-first multi-agent orchestration for Claude Code."),
     "eigent-ai/eigent": ("Coding-agent orchestration", "Open-source cowork desktop — local/free multi-agent productivity workspace."),
-    "ComposioHQ/agent-orchestrator": ("Coding-agent orchestration", "Orchestrates parallel coding agents — plans tasks, spawns agents, handles CI autonomously."),
+    "AgentWrapper/agent-orchestrator": ("Coding-agent orchestration", "Orchestrates parallel coding agents — plans tasks, spawns agents, handles CI autonomously."),
     "getpaseo/paseo": ("Coding-agent orchestration", "Run & coordinate coding agents from phone, desktop and CLI."),
     "vercel-labs/coding-agent-template": ("Coding-agent orchestration", "Multi-agent coding platform on Vercel Sandbox + AI Gateway; declining, verify first."),
 
@@ -172,7 +172,7 @@ A("| You want… | Use this approach | Top picks |")
 A("|---|---|---|")
 A("| Fine-grained control, in code | Code-first framework | `langgraph`, `openai-agents-python` |")
 A("| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify`, `Flowise` |")
-A("| Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `ComposioHQ/agent-orchestrator` |")
+A("| Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `AgentWrapper/agent-orchestrator` |")
 A("| Always-on autonomous agents | Agent OS / harness | `elizaOS/eliza`, `deer-flow` |")
 A("| Durable, fault-tolerant prod | Production infra | `flyte`, `inngest/agent-kit` |")
 A("| A standard, not a library | Protocol / meta | `agent-workflow-protocol` |")

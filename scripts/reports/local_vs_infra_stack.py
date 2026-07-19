@@ -46,7 +46,7 @@ TAXONOMY = {
         "Self-hosted, OpenAI-drop-in engine for LLM/TTS/STT/image on commodity hardware — the all-in-one local server."),
     "nomic-ai/gpt4all": ("Inference runtime", LOCAL,
         "Desktop-first local LLM app + bindings; privacy-focused, runs on plain CPUs."),
-    "microsoft/Foundry-Local": ("Inference runtime", LOCAL,
+    "microsoft/foundry-local": ("Inference runtime", LOCAL,
         "Microsoft's on-device runtime — offline LLM + Whisper, hardware-accelerated where available."),
     "vllm-project/vllm": ("Inference runtime", INFRA,
         "The production serving standard — PagedAttention, continuous batching, tensor/pipeline parallelism for high QPS on GPU fleets."),

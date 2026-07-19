@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Tools per category</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Code-first</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">16</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">17</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Coding-agent</text>
-<path d="M244,67 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
-<text x="422.0" y="76.0" class="val" dominant-baseline="central">8</text>
+<path d="M244,67 h178.1 q4,0 4,4 v10 q0,4 -4,4 h-178.1 z" class="bar"/>
+<text x="432.1" y="76.0" class="val" dominant-baseline="central">9</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Visual</text>
-<path d="M244,94 h103.5 q4,0 4,4 v10 q0,4 -4,4 h-103.5 z" class="bar"/>
-<text x="357.5" y="103.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,94 h97.2 q4,0 4,4 v10 q0,4 -4,4 h-97.2 z" class="bar"/>
+<text x="351.2" y="103.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Infra</text>
-<path d="M244,121 h39.0 q4,0 4,4 v10 q0,4 -4,4 h-39.0 z" class="bar"/>
-<text x="293.0" y="130.0" class="val" dominant-baseline="central">2</text>
+<path d="M244,121 h36.5 q4,0 4,4 v10 q0,4 -4,4 h-36.5 z" class="bar"/>
+<text x="290.5" y="130.0" class="val" dominant-baseline="central">2</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Agent OS</text>
-<path d="M244,148 h17.5 q4,0 4,4 v10 q0,4 -4,4 h-17.5 z" class="bar"/>
-<text x="271.5" y="157.0" class="val" dominant-baseline="central">1</text>
+<path d="M244,148 h16.2 q4,0 4,4 v10 q0,4 -4,4 h-16.2 z" class="bar"/>
+<text x="270.2" y="157.0" class="val" dominant-baseline="central">1</text>
 </svg>

@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">253,346</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">257,531</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
-<path d="M244,67 h307.0 q4,0 4,4 v10 q0,4 -4,4 h-307.0 z" class="bar"/>
-<text x="561.0" y="76.0" class="val" dominant-baseline="central">229,056</text>
+<path d="M244,67 h304.8 q4,0 4,4 v10 q0,4 -4,4 h-304.8 z" class="bar"/>
+<text x="558.8" y="76.0" class="val" dominant-baseline="central">231,210</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">github/spec-kit</text>
-<path d="M244,94 h159.1 q4,0 4,4 v10 q0,4 -4,4 h-159.1 z" class="bar"/>
-<text x="413.1" y="103.0" class="val" dominant-baseline="central">120,147</text>
+<path d="M244,94 h159.4 q4,0 4,4 v10 q0,4 -4,4 h-159.4 z" class="bar"/>
+<text x="413.4" y="103.0" class="val" dominant-baseline="central">122,299</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,121 h100.4 q4,0 4,4 v10 q0,4 -4,4 h-100.4 z" class="bar"/>
-<text x="354.4" y="130.0" class="val" dominant-baseline="central">76,889</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">daytonaio/daytona</text>
-<path d="M244,148 h94.0 q4,0 4,4 v10 q0,4 -4,4 h-94.0 z" class="bar"/>
-<text x="348.0" y="157.0" class="val" dominant-baseline="central">72,197</text>
+<path d="M244,121 h99.4 q4,0 4,4 v10 q0,4 -4,4 h-99.4 z" class="bar"/>
+<text x="353.4" y="130.0" class="val" dominant-baseline="central">77,391</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
+<path d="M244,148 h93.2 q4,0 4,4 v10 q0,4 -4,4 h-93.2 z" class="bar"/>
+<text x="347.2" y="157.0" class="val" dominant-baseline="central">72,748</text>
 </svg>

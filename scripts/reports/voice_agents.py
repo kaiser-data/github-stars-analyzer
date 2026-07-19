@@ -66,7 +66,7 @@ TAXONOMY = {
 
     # Voice-capable runtime / serving — the host
     "mudler/LocalAI": ("Voice-capable runtime / serving", "Drop-in local AI engine exposing OpenAI-compatible TTS/STT/LLM endpoints — self-host the whole voice stack."),
-    "microsoft/Foundry-Local": ("Voice-capable runtime / serving", "Microsoft's local model runtime bundling speech-to-text (Whisper) for offline, on-device voice."),
+    "microsoft/foundry-local": ("Voice-capable runtime / serving", "Microsoft's local model runtime bundling speech-to-text (Whisper) for offline, on-device voice."),
     "Azure-Samples/cognitive-services-speech-sdk": ("Voice-capable runtime / serving", "Reference samples for Azure's hosted Speech SDK — STT/TTS/translation if you prefer a managed cloud."),
     "Picovoice/picollm": ("Voice-capable runtime / serving", "On-device LLM inference from the Picovoice (Porcupine/Cheetah wake-word & STT) voice stack."),
     "alexpinel/Dot": ("Voice-capable runtime / serving", "Self-contained local app combining TTS, RAG, and LLMs — an all-local talking assistant."),

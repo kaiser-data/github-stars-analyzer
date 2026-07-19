@@ -36,6 +36,7 @@ TAXONOMY = {
     "vercel/eve": ("Harness-as-SDK", "Vercel's framework for building agents — harness + sandbox as one integrated runtime."),
     "SafeRL-Lab/cheetahclaws": ("Harness-as-SDK", "Fast, easy agent-harness infrastructure aimed at long-horizon, multi-model runs."),
     "pydantic/pydantic-ai-harness": ("Harness-as-SDK", "'Batteries for your Pydantic AI agent' — the harness as a thin add-on to a typed agent framework."),
+    "1jehuang/jcode": ("Harness-as-SDK", "Rust-built coding-agent harness — CLI agent loop with MCP support and multi-model wiring."),
 
     # 2. Meta-harness over existing coding agents
     "obra/superpowers": ("Meta-harness over coding agents", "Skills framework + development methodology layered onto the agent you already run."),

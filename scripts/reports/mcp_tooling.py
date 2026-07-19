@@ -41,6 +41,7 @@ TAXONOMY = {
     "Klavis-AI/klavis": ("Gateway / control plane", "MCP integration platform so agents use tools reliably at scale."),
     "aipotheosis-labs/gate22": ("Gateway / control plane", "Open-source MCP gateway & control plane to govern which tools agents may use."),
     "googleapis/mcp-toolbox": ("Gateway / control plane", "Google's open MCP server for databases — one gateway fronting many DBs."),
+    "oomol-lab/open-connector": ("Gateway / control plane", "Open-source auth gateway connecting 1000+ SaaS providers to agents via MCP, SDK & HTTP."),
 
     # Browser / web automation servers
     "microsoft/playwright-mcp": ("Server · browser/web", "Microsoft's Playwright MCP server — drive a real browser from an agent."),
@@ -79,6 +80,9 @@ TAXONOMY = {
 
     # Game-engine / platform servers
     "Coding-Solo/godot-mcp": ("Server · game/platform", "MCP server to drive the Godot game engine (launch editor, run scenes)."),
+    "hi-godot/godot-ai": ("Server · game/platform", "Production-grade MCP server and AI tools for the Godot engine."),
+    "youichi-uda/godot-mcp-pro": ("Server · game/platform", "162 MCP tools for AI-powered Godot 4 development — scene, animation, 3D, physics."),
+    "tugcantopaloglu/godot-mcp": ("Server · game/platform", "Full Godot 4.x engine control via MCP: 157 tools for AI-driven game development."),
     "CoderGamester/mcp-unity": ("Server · game/platform", "MCP plugin connecting agents (Cursor/Claude) to the Unity editor."),
     "mobile-next/mobile-mcp": ("Server · game/platform", "MCP server for mobile automation/scraping (iOS, Android, emulators)."),
 

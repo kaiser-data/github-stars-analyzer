@@ -3,9 +3,9 @@
   "title": "LLM Evaluation Tooling \u2014 Landscape Report",
   "file": "llm-evaluation-tooling.md",
   "category": "AI / Evaluation",
-  "summary": "24 LLM evaluation tools (193,521\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+  "summary": "24 LLM evaluation tools (195,099\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
   "tool_count": 24,
-  "total_stars": 193521,
+  "total_stars": 195099,
   "categories": {
     "Observability + eval platform": 5,
     "Evaluation framework": 8,
@@ -15,26 +15,26 @@
   "top_tools": [
     {
       "name": "langfuse/langfuse",
-      "stars": 31012
+      "stars": 31428
     },
     {
       "name": "mlflow/mlflow",
-      "stars": 26998
+      "stars": 27102
     },
     {
       "name": "promptfoo/promptfoo",
-      "stars": 23183
+      "stars": 23411
     },
     {
       "name": "comet-ml/opik",
-      "stars": 20575
+      "stars": 20703
     },
     {
       "name": "openai/evals",
-      "stars": 18906
+      "stars": 18945
     }
   ],
-  "snapshot": "2026-07-13T08:42:30.177Z",
+  "snapshot": "2026-07-19T22:39:07.967Z",
   "generated": "2026-07-19",
   "generator": "scripts/reports/llm_evaluation.py",
   "created": "2026-05-31"

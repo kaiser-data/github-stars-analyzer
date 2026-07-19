@@ -53,7 +53,7 @@ TAXONOMY = {
 
     # Memory (cross-referenced with the Memory report)
     "supermemoryai/openclaw-supermemory": ("Memory", "Long-term memory & recall packaged specifically for OpenClaw agents."),
-    "Tencent/TencentDB-Agent-Memory": ("Memory", "Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin."),
+    "TencentCloud/TencentDB-Agent-Memory": ("Memory", "Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin."),
 
     # Observability / evaluation
     "vivekchand/clawmetry": ("Observability", "Real-time observability dashboard — 'see your agent think' (OpenTelemetry)."),
@@ -152,7 +152,7 @@ rec_rows = [
     ("Serverless host", "cloudflare/moltworker"),
     ("Skills directory", "openclaw/clawhub"),
     ("LLM router", "BlockRunAI/ClawRouter"),
-    ("Memory", "Tencent/TencentDB-Agent-Memory"),
+    ("Memory", "TencentCloud/TencentDB-Agent-Memory"),
     ("Observability", "vivekchand/clawmetry"),
     ("Desktop hub", "farion1231/cc-switch"),
 ]

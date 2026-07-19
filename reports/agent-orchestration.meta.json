@@ -3,39 +3,39 @@
   "title": "AI Agent Orchestration \u2014 Landscape Report",
   "file": "agent-orchestration.md",
   "category": "AI / Agents",
-  "summary": "37 agent-orchestration tools (1,520,898\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
-  "tool_count": 37,
-  "total_stars": 1520898,
+  "summary": "39 agent-orchestration tools (1,544,472\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
+  "tool_count": 39,
+  "total_stars": 1544472,
   "categories": {
-    "Code-first": 16,
+    "Code-first": 17,
     "Visual": 5,
-    "Coding-agent": 8,
+    "Coding-agent": 9,
     "Agent OS": 1,
     "Infra": 2
   },
   "top_tools": [
     {
       "name": "n8n-io/n8n",
-      "stars": 196233
+      "stars": 197066
     },
     {
       "name": "langflow-ai/langflow",
-      "stars": 151795
+      "stars": 152041
     },
     {
       "name": "langgenius/dify",
-      "stars": 148658
+      "stars": 149351
     },
     {
       "name": "TauricResearch/TradingAgents",
-      "stars": 92695
+      "stars": 93683
     },
     {
       "name": "bytedance/deer-flow",
-      "stars": 76889
+      "stars": 77391
     }
   ],
-  "snapshot": "2026-07-13T08:42:30.177Z",
+  "snapshot": "2026-07-19T22:39:07.967Z",
   "generated": "2026-07-19",
   "generator": "scripts/reports/agent_orchestration.py",
   "created": "2026-05-31"

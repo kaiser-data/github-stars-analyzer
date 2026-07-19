@@ -49,7 +49,7 @@ TAXONOMY = {
     "HKUDS/LightRAG": ("Grounded retrieval & citations", "Fast GraphRAG over chunks — multi-hop answers across sources, still simple to run."),
     "VectifyAI/PageIndex": ("Grounded retrieval & citations", "Vectorless reasoning-based retrieval over a document tree — page-level citations fall out naturally."),
     "StarTrail-org/LEANN": ("Grounded retrieval & citations", "~97% smaller index — the trick that makes a fully-local notebook on a laptop plausible."),
-    "chonkie-inc/chonkie": ("Grounded retrieval & citations", "Lightweight chunking with many strategies — the quality lever for retrieval and citation granularity."),
+    "feyninc/chonkie": ("Grounded retrieval & citations", "Lightweight chunking with many strategies — the quality lever for retrieval and citation granularity."),
     "lancedb/lancedb": ("Grounded retrieval & citations", "Embedded serverless vector DB — zero-ops storage that ships inside your app."),
 
     # Audio Overview (TTS / podcast generation) — the signature feature

@@ -20,18 +20,18 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Memory / context</text>
 <path d="M244,94 h196.7 q4,0 4,4 v10 q0,4 -4,4 h-196.7 z" class="bar"/>
 <text x="450.7" y="103.0" class="val" dominant-baseline="central">7</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Skills framework</text>
-<path d="M244,121 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
-<text x="422.0" y="130.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Token-saver / compression</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Token-saver / compression</text>
+<path d="M244,121 h196.7 q4,0 4,4 v10 q0,4 -4,4 h-196.7 z" class="bar"/>
+<text x="450.7" y="130.0" class="val" dominant-baseline="central">7</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Skills framework</text>
 <path d="M244,148 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
 <text x="422.0" y="157.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Code-graph / retrieval</text>
-<path d="M244,175 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
-<text x="364.7" y="184.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Observability / evals</text>
-<path d="M244,202 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
-<text x="364.7" y="211.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Observability / evals</text>
+<path d="M244,175 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
+<text x="422.0" y="184.0" class="val" dominant-baseline="central">6</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Code-graph / retrieval</text>
+<path d="M244,202 h139.3 q4,0 4,4 v10 q0,4 -4,4 h-139.3 z" class="bar"/>
+<text x="393.3" y="211.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">MCP ecosystem</text>
 <path d="M244,229 h82.0 q4,0 4,4 v10 q0,4 -4,4 h-82.0 z" class="bar"/>
 <text x="336.0" y="238.0" class="val" dominant-baseline="central">3</text>
