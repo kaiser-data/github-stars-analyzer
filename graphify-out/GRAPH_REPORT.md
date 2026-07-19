@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-07-20)
 
 ## Corpus Check
-- 125 files · ~2,176,144 words
+- 129 files · ~2,188,561 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1003 nodes · 1036 edges · 66 communities (59 shown, 7 thin omitted)
+- 1042 nodes · 1073 edges · 68 communities (61 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `74a362d6`
+- Built from commit: `eebac289`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -77,6 +77,8 @@
 - [[_COMMUNITY_Document Extraction Frameworks — Landscape & Task Rankings|Document Extraction Frameworks — Landscape & Task Rankings]]
 - [[_COMMUNITY_Document Extraction Frameworks — Landscape & Task Rankings|Document Extraction Frameworks — Landscape & Task Rankings]]
 - [[_COMMUNITY_make_node_for|make_node_for]]
+- [[_COMMUNITY_openclaw_ecosystem.py|openclaw_ecosystem.py]]
+- [[_COMMUNITY_load_data|load_data]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -84,11 +86,11 @@
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 13 edges
 5. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
-6. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
-7. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
-8. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
-9. `Document Extraction Frameworks — Landscape & Task Rankings` - 11 edges
-10. `By category` - 11 edges
+6. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
+7. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
+8. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
+9. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
+10. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -105,7 +107,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (66 total, 7 thin omitted)
+## Communities (68 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -204,8 +206,8 @@ Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.11
-Nodes (3): load_data(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses.
+Cohesion: 0.10
+Nodes (3): make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Build the node_for(full_name) lookup used in graph-analysis sections.
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -265,7 +267,7 @@ Nodes (7): meta_bits(), _esc(), fmt_int(), fmt_stars(), Dependency-free horizont
 
 ### Community 41 - "Community 41"
 Cohesion: 0.31
-Nodes (7): build(), created_date(), inject_charts(), make_charts(), First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines., Insert chart images after the intro blockquote of a generated report.
+Nodes (7): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
@@ -327,16 +329,26 @@ Nodes (16): Adjacent (deliberately not listed as extraction tools), By category,
 Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as extraction tools), By category, Conversion framework, Document Extraction Frameworks — Landscape & Task Rankings, Executive summary, Format-specific / serving, Graph analysis — how they relate, Maintenance & risk signal (+8 more)
 
+### Community 64 - "make_node_for"
+Cohesion: 0.11
+Nodes (18): Adjacent (deliberately not listed as training tools), By category, Domain & on-device tuning, Executive summary, Fine-Tuning & Post-Training Stack — Which Trainer for Which Task, Full-stack fine-tuning framework, Graph analysis — how they relate, Hardware fit & serving (+10 more)
+
+### Community 65 - "openclaw_ecosystem.py"
+Cohesion: 0.11
+Nodes (18): Adjacent (deliberately not listed as training tools), By category, Domain & on-device tuning, Executive summary, Fine-Tuning & Post-Training Stack — Which Trainer for Which Task, Full-stack fine-tuning framework, Graph analysis — how they relate, Hardware fit & serving (+10 more)
+
 ## Knowledge Gaps
-- **691 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+686 more)
+- **723 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+718 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `load_data()` connect `load_data` to `Community 26`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _705 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _737 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -347,5 +359,3 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.1076923076923077 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

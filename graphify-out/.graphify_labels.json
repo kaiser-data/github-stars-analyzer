@@ -64,5 +64,7 @@
   "62": "Document Extraction Frameworks — Landscape & Task Rankings",
   "63": "Document Extraction Frameworks — Landscape & Task Rankings",
   "64": "make_node_for",
-  "65": "openclaw_ecosystem.py"
+  "65": "openclaw_ecosystem.py",
+  "66": "load_data",
+  "67": "snapshot.py"
 }

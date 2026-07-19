@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-07-19)
+# Graph Report - github-stars-analyzer  (2026-07-20)
 
 ## Corpus Check
-- 117 files · ~2,124,904 words
+- 125 files · ~2,176,144 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 930 nodes · 967 edges · 61 communities (54 shown, 7 thin omitted)
+- 1003 nodes · 1036 edges · 66 communities (59 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3ad666be`
+- Built from commit: `74a362d6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,19 +72,23 @@
 - [[_COMMUNITY_load_data|load_data]]
 - [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages|Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages]]
 - [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Document Extraction Frameworks — Landscape & Task Rankings|Document Extraction Frameworks — Landscape & Task Rankings]]
+- [[_COMMUNITY_Document Extraction Frameworks — Landscape & Task Rankings|Document Extraction Frameworks — Landscape & Task Rankings]]
+- [[_COMMUNITY_make_node_for|make_node_for]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 13 edges
-5. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
-6. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
-7. `By category` - 11 edges
-8. `Meeting Transcription & Conversation Analysis — Field Guide` - 11 edges
-9. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 11 edges
-10. `RAG (Retrieval-Augmented Generation) Tooling — Landscape Report` - 11 edges
+5. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
+6. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
+7. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
+8. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
+9. `Document Extraction Frameworks — Landscape & Task Rankings` - 11 edges
+10. `By category` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -101,7 +105,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (61 total, 7 thin omitted)
+## Communities (66 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -201,7 +205,7 @@ Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embedd
 
 ### Community 26 - "Community 26"
 Cohesion: 0.11
-Nodes (3): make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Build the node_for(full_name) lookup used in graph-analysis sections.
+Nodes (3): load_data(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses.
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -284,8 +288,8 @@ Cohesion: 0.09
 Nodes (22): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+14 more)
 
 ### Community 51 - "Star-Reports Pipeline"
-Cohesion: 0.33
-Nodes (5): Adding a new report, Data flow, Pitfalls, Refreshing data (upstream of reports), Star-Reports Pipeline
+Cohesion: 0.29
+Nodes (6): Adding a new report, Data flow, Pitfalls, Refreshing data (upstream of reports), Star-Reports Pipeline, Task-ranked reports (web-research-backed)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.15
@@ -299,6 +303,10 @@ Nodes (16): Adjacent (deliberately not listed as harnesses), Agent Harnesses —
 Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as harnesses), Agent Harnesses — Six Approaches to Running Autonomous Agents, Autonomous long-horizon, By approach, Determinism & spec-driven, Executive summary, Fleet / parallel orchestration, Graph analysis — how they relate (+8 more)
 
+### Community 55 - "load_data"
+Cohesion: 0.11
+Nodes (17): Adjacent (deliberately not listed as terminal coding agents), Advantages & disadvantages — agent by agent, By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats (+9 more)
+
 ### Community 56 - "Community 56"
 Cohesion: 0.22
 Nodes (8): Biggest themes worth your attention, 🔴 Empty categories (highest value — you have *nothing* here), 🟠 New round — gaps in uncovered categories (17, live-checked), ✅ Only 1 left, 🟢 Original list — 1 left, Quick-star list (copy/paste), Recommended to Star — Gaps in Your Collection, Secondary picks in covered categories
@@ -307,8 +315,20 @@ Nodes (8): Biggest themes worth your attention, 🔴 Empty categories (highest v
 Cohesion: 0.33
 Nodes (5): Coverage snapshot, Recommended to Star — Blockchain / DeFi Gaps, 🔴 Tier 1 — can't do serious EVM/DeFi work without these, 🟠 Tier 2 — DeFi protocol references, data & infra (high value for analysis), 🟡 Tier 3 — Solana, ZK & specialized (star if in scope)
 
+### Community 58 - "Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages"
+Cohesion: 0.11
+Nodes (17): Adjacent (deliberately not listed as terminal coding agents), Advantages & disadvantages — agent by agent, By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats (+9 more)
+
+### Community 62 - "Document Extraction Frameworks — Landscape & Task Rankings"
+Cohesion: 0.12
+Nodes (16): Adjacent (deliberately not listed as extraction tools), By category, Conversion framework, Document Extraction Frameworks — Landscape & Task Rankings, Executive summary, Format-specific / serving, Graph analysis — how they relate, Maintenance & risk signal (+8 more)
+
+### Community 63 - "Document Extraction Frameworks — Landscape & Task Rankings"
+Cohesion: 0.12
+Nodes (16): Adjacent (deliberately not listed as extraction tools), By category, Conversion framework, Document Extraction Frameworks — Landscape & Task Rankings, Executive summary, Format-specific / serving, Graph analysis — how they relate, Maintenance & risk signal (+8 more)
+
 ## Knowledge Gaps
-- **632 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+627 more)
+- **691 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+686 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -316,7 +336,7 @@ Nodes (5): Coverage snapshot, Recommended to Star — Blockchain / DeFi Gaps, �
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _646 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _705 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

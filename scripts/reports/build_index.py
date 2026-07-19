@@ -44,6 +44,7 @@ GENERATORS = [
     "agent_harnesses.py",
     "document_extraction.py",
     "ai_coding_tuis.py",
+    "finetuning_stack.py",
 ]
 
 def run_generators():

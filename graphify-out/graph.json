@@ -1497,7 +1497,7 @@
       "label": "run_generators()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L49",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "scripts_reports_build_index_run_generators",
       "community": 41,
@@ -1507,7 +1507,7 @@
       "label": "created_date()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "scripts_reports_build_index_created_date",
       "community": 41,
@@ -1517,7 +1517,7 @@
       "label": "make_charts()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L77",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "scripts_reports_build_index_make_charts",
       "community": 41,
@@ -1527,7 +1527,7 @@
       "label": "inject_charts()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L98",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "scripts_reports_build_index_inject_charts",
       "community": 41,
@@ -1537,7 +1537,7 @@
       "label": "build()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L116",
+      "source_location": "L117",
       "_origin": "ast",
       "id": "scripts_reports_build_index_build",
       "community": 41,
@@ -1547,9 +1547,9 @@
       "label": "First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_60",
+      "id": "scripts_reports_build_index_rationale_61",
       "community": 41,
       "norm_label": "first git commit date (yyyy-mm-dd) of a report's markdown.      `generated` is b"
     },
@@ -1557,9 +1557,9 @@
       "label": "Render at-a-glance SVGs from a report's meta. Returns md image lines.",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_78",
+      "id": "scripts_reports_build_index_rationale_79",
       "community": 41,
       "norm_label": "render at-a-glance svgs from a report's meta. returns md image lines."
     },
@@ -1567,9 +1567,9 @@
       "label": "Insert chart images after the intro blockquote of a generated report.",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L99",
+      "source_location": "L100",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_99",
+      "id": "scripts_reports_build_index_rationale_100",
       "community": 41,
       "norm_label": "insert chart images after the intro blockquote of a generated report."
     },
@@ -1592,6 +1592,16 @@
       "id": "scripts_reports_document_extraction",
       "community": 26,
       "norm_label": "document_extraction.py"
+    },
+    {
+      "label": "finetuning_stack.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/finetuning_stack.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_reports_finetuning_stack",
+      "community": 26,
+      "norm_label": "finetuning_stack.py"
     },
     {
       "label": "hermes_vs_openclaw.py",
@@ -1660,7 +1670,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "scripts_reports_lib_load_data",
-      "community": 26,
+      "community": 66,
       "norm_label": "load_data()"
     },
     {
@@ -1670,7 +1680,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "scripts_reports_lib_make_node_for",
-      "community": 64,
+      "community": 26,
       "norm_label": "make_node_for()"
     },
     {
@@ -1780,7 +1790,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "scripts_reports_lib_rationale_25",
-      "community": 26,
+      "community": 66,
       "norm_label": "return (classified, graph) dicts \u2014 the two inputs every report uses."
     },
     {
@@ -1790,7 +1800,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "scripts_reports_lib_rationale_34",
-      "community": 64,
+      "community": 26,
       "norm_label": "build the node_for(full_name) lookup used in graph-analysis sections."
     },
     {
@@ -1910,7 +1920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_reports_openclaw_ecosystem",
-      "community": 65,
+      "community": 26,
       "norm_label": "openclaw_ecosystem.py"
     },
     {
@@ -1920,7 +1930,7 @@
       "source_location": "L130",
       "_origin": "ast",
       "id": "scripts_reports_openclaw_ecosystem_best_in",
-      "community": 65,
+      "community": 26,
       "norm_label": "best_in()"
     },
     {
@@ -1940,7 +1950,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_reports_snapshot",
-      "community": 26,
+      "community": 67,
       "norm_label": "snapshot.py"
     },
     {
@@ -1950,7 +1960,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "scripts_reports_snapshot_main",
-      "community": 26,
+      "community": 67,
       "norm_label": "main()"
     },
     {
@@ -4741,6 +4751,196 @@
       "_origin": "ast",
       "id": "public_reports_document_extraction_methodology_caveats",
       "community": 62,
+      "norm_label": "methodology & caveats"
+    },
+    {
+      "label": "finetuning-stack.md",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack",
+      "community": 64,
+      "norm_label": "finetuning-stack.md"
+    },
+    {
+      "label": "Fine-Tuning & Post-Training Stack \u2014 Which Trainer for Which Task",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "community": 64,
+      "norm_label": "fine-tuning & post-training stack \u2014 which trainer for which task"
+    },
+    {
+      "label": "Executive summary",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_executive_summary",
+      "community": 64,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "The post-training ladder at a glance",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_the_post_training_ladder_at_a_glance",
+      "community": 64,
+      "norm_label": "the post-training ladder at a glance"
+    },
+    {
+      "label": "Master comparison",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_master_comparison",
+      "community": 64,
+      "norm_label": "master comparison"
+    },
+    {
+      "label": "Task rankings \u2014 which stack for which job",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_task_rankings_which_stack_for_which_job",
+      "community": 64,
+      "norm_label": "task rankings \u2014 which stack for which job"
+    },
+    {
+      "label": "By category",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_by_category",
+      "community": 64,
+      "norm_label": "by category"
+    },
+    {
+      "label": "Full-stack fine-tuning framework",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_full_stack_fine_tuning_framework",
+      "community": 64,
+      "norm_label": "full-stack fine-tuning framework"
+    },
+    {
+      "label": "PEFT & alignment library",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_peft_alignment_library",
+      "community": 64,
+      "norm_label": "peft & alignment library"
+    },
+    {
+      "label": "RL post-training for agents",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_rl_post_training_for_agents",
+      "community": 64,
+      "norm_label": "rl post-training for agents"
+    },
+    {
+      "label": "Learn-by-building",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_learn_by_building",
+      "community": 64,
+      "norm_label": "learn-by-building"
+    },
+    {
+      "label": "Domain & on-device tuning",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_domain_on_device_tuning",
+      "community": 64,
+      "norm_label": "domain & on-device tuning"
+    },
+    {
+      "label": "Hardware fit & serving",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_hardware_fit_serving",
+      "community": 64,
+      "norm_label": "hardware fit & serving"
+    },
+    {
+      "label": "Spotlight: SFT \u2192 DPO \u2192 GRPO \u2014 post-training became a ladder",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_spotlight_sft_dpo_grpo_post_training_became_a_ladder",
+      "community": 64,
+      "norm_label": "spotlight: sft \u2192 dpo \u2192 grpo \u2014 post-training became a ladder"
+    },
+    {
+      "label": "Graph analysis \u2014 how they relate",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L210",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_graph_analysis_how_they_relate",
+      "community": 64,
+      "norm_label": "graph analysis \u2014 how they relate"
+    },
+    {
+      "label": "Maintenance & risk signal",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_maintenance_risk_signal",
+      "community": 64,
+      "norm_label": "maintenance & risk signal"
+    },
+    {
+      "label": "Which one should you use?",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_which_one_should_you_use",
+      "community": 64,
+      "norm_label": "which one should you use?"
+    },
+    {
+      "label": "Adjacent (deliberately not listed as training tools)",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_adjacent_deliberately_not_listed_as_training_tools",
+      "community": 64,
+      "norm_label": "adjacent (deliberately not listed as training tools)"
+    },
+    {
+      "label": "Methodology & caveats",
+      "file_type": "document",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L310",
+      "_origin": "ast",
+      "id": "public_reports_finetuning_stack_methodology_caveats",
+      "community": 64,
       "norm_label": "methodology & caveats"
     },
     {
@@ -8041,6 +8241,196 @@
       "_origin": "ast",
       "id": "reports_document_extraction_methodology_caveats",
       "community": 63,
+      "norm_label": "methodology & caveats"
+    },
+    {
+      "label": "finetuning-stack.md",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack",
+      "community": 65,
+      "norm_label": "finetuning-stack.md"
+    },
+    {
+      "label": "Fine-Tuning & Post-Training Stack \u2014 Which Trainer for Which Task",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "community": 65,
+      "norm_label": "fine-tuning & post-training stack \u2014 which trainer for which task"
+    },
+    {
+      "label": "Executive summary",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_executive_summary",
+      "community": 65,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "The post-training ladder at a glance",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_the_post_training_ladder_at_a_glance",
+      "community": 65,
+      "norm_label": "the post-training ladder at a glance"
+    },
+    {
+      "label": "Master comparison",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_master_comparison",
+      "community": 65,
+      "norm_label": "master comparison"
+    },
+    {
+      "label": "Task rankings \u2014 which stack for which job",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_task_rankings_which_stack_for_which_job",
+      "community": 65,
+      "norm_label": "task rankings \u2014 which stack for which job"
+    },
+    {
+      "label": "By category",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_by_category",
+      "community": 65,
+      "norm_label": "by category"
+    },
+    {
+      "label": "Full-stack fine-tuning framework",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_full_stack_fine_tuning_framework",
+      "community": 65,
+      "norm_label": "full-stack fine-tuning framework"
+    },
+    {
+      "label": "PEFT & alignment library",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_peft_alignment_library",
+      "community": 65,
+      "norm_label": "peft & alignment library"
+    },
+    {
+      "label": "RL post-training for agents",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_rl_post_training_for_agents",
+      "community": 65,
+      "norm_label": "rl post-training for agents"
+    },
+    {
+      "label": "Learn-by-building",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_learn_by_building",
+      "community": 65,
+      "norm_label": "learn-by-building"
+    },
+    {
+      "label": "Domain & on-device tuning",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_domain_on_device_tuning",
+      "community": 65,
+      "norm_label": "domain & on-device tuning"
+    },
+    {
+      "label": "Hardware fit & serving",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_hardware_fit_serving",
+      "community": 65,
+      "norm_label": "hardware fit & serving"
+    },
+    {
+      "label": "Spotlight: SFT \u2192 DPO \u2192 GRPO \u2014 post-training became a ladder",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_spotlight_sft_dpo_grpo_post_training_became_a_ladder",
+      "community": 65,
+      "norm_label": "spotlight: sft \u2192 dpo \u2192 grpo \u2014 post-training became a ladder"
+    },
+    {
+      "label": "Graph analysis \u2014 how they relate",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L210",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_graph_analysis_how_they_relate",
+      "community": 65,
+      "norm_label": "graph analysis \u2014 how they relate"
+    },
+    {
+      "label": "Maintenance & risk signal",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_maintenance_risk_signal",
+      "community": 65,
+      "norm_label": "maintenance & risk signal"
+    },
+    {
+      "label": "Which one should you use?",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_which_one_should_you_use",
+      "community": 65,
+      "norm_label": "which one should you use?"
+    },
+    {
+      "label": "Adjacent (deliberately not listed as training tools)",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_adjacent_deliberately_not_listed_as_training_tools",
+      "community": 65,
+      "norm_label": "adjacent (deliberately not listed as training tools)"
+    },
+    {
+      "label": "Methodology & caveats",
+      "file_type": "document",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L310",
+      "_origin": "ast",
+      "id": "reports_finetuning_stack_methodology_caveats",
+      "community": 65,
       "norm_label": "methodology & caveats"
     },
     {
@@ -11787,7 +12177,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L116",
+      "source_location": "L117",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_build",
@@ -11797,7 +12187,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_created_date",
@@ -11807,7 +12197,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L98",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_inject_charts",
@@ -11817,7 +12207,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L77",
+      "source_location": "L78",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_make_charts",
@@ -11827,7 +12217,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_run_generators",
@@ -11838,7 +12228,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L129",
+      "source_location": "L130",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_created_date",
@@ -11848,9 +12238,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_60",
+      "source": "scripts_reports_build_index_rationale_61",
       "target": "scripts_reports_build_index_created_date",
       "confidence_score": 1.0
     },
@@ -11859,7 +12249,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_make_charts",
@@ -11871,7 +12261,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L82",
+      "source_location": "L83",
       "weight": 1.0,
       "source": "scripts_reports_build_index_make_charts",
       "target": "scripts_reports_lib_svg_hbar"
@@ -11880,9 +12270,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_78",
+      "source": "scripts_reports_build_index_rationale_79",
       "target": "scripts_reports_build_index_make_charts",
       "confidence_score": 1.0
     },
@@ -11891,7 +12281,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L132",
+      "source_location": "L133",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_inject_charts",
@@ -11901,9 +12291,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L99",
+      "source_location": "L100",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_99",
+      "source": "scripts_reports_build_index_rationale_100",
       "target": "scripts_reports_build_index_inject_charts",
       "confidence_score": 1.0
     },
@@ -11926,6 +12316,17 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_document_extraction",
+      "target": "scripts_reports_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/finetuning_stack.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "scripts_reports_finetuning_stack",
       "target": "scripts_reports_lib",
       "confidence_score": 1.0
     },
@@ -15552,6 +15953,186 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack",
+      "target": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_adjacent_deliberately_not_listed_as_training_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_by_category",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L210",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_graph_analysis_how_they_relate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_maintenance_risk_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_master_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L310",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_methodology_caveats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_spotlight_sft_dpo_grpo_post_training_became_a_ladder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_task_rankings_which_stack_for_which_job",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_the_post_training_ladder_at_a_glance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "public_reports_finetuning_stack_which_one_should_you_use",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_domain_on_device_tuning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_full_stack_fine_tuning_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_hardware_fit_serving",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_learn_by_building",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_peft_alignment_library",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/finetuning-stack.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "public_reports_finetuning_stack_by_category",
+      "target": "public_reports_finetuning_stack_rl_post_training_for_agents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "public/reports/hermes-vs-openclaw.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -18662,6 +19243,186 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack",
+      "target": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_adjacent_deliberately_not_listed_as_training_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_by_category",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L210",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_graph_analysis_how_they_relate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_maintenance_risk_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_master_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L310",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_methodology_caveats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_spotlight_sft_dpo_grpo_post_training_became_a_ladder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_task_rankings_which_stack_for_which_job",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_the_post_training_ladder_at_a_glance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L287",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_fine_tuning_post_training_stack_which_trainer_for_which_task",
+      "target": "reports_finetuning_stack_which_one_should_you_use",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_domain_on_device_tuning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_full_stack_fine_tuning_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_hardware_fit_serving",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_learn_by_building",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_peft_alignment_library",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/finetuning-stack.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "reports_finetuning_stack_by_category",
+      "target": "reports_finetuning_stack_rl_post_training_for_agents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "reports/hermes-vs-openclaw.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -20521,5 +21282,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "74a362d626a89043b7f4ffb07eb464677220a79c"
+  "built_at_commit": "eebac289bb474aa6aa6a5c987d8856475d85f06a"
 }
