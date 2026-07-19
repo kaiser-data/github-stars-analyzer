@@ -1,6 +1,6 @@
 ---
 name: star-reports
-description: Create, update, or regenerate landscape reports in the github-stars-analyzer report pipeline. Use when the user asks for a new report from the starred-repos dataset/graph, wants an existing report refreshed or extended, asks how the reports pipeline works, or mentions reports/, scripts/reports/, build_index.py, or the app's Reports tab.
+description: Create, update, or regenerate landscape reports in the github-stars-analyzer report pipeline. Use when the user asks for a new report from the starred-repos dataset/graph, wants an existing report refreshed, extended, or ranked by task/use-case, asks how the reports pipeline works, or mentions reports/, scripts/reports/, build_index.py, or the app's Reports tab.
 ---
 
 # Star-Reports Pipeline
@@ -25,9 +25,12 @@ data/snapshots/*.json  — one per data vintage; powers the ▲/▼ star-trend d
 
 1. **Scan the dataset for candidates** before curating — keyword match over
    `full_name + description + topics` of `data/classified.json` repos. Pick
-   ~25–40 repos; verify every curated name exists in the dataset.
+   ~25–40 repos; verify every curated name exists in the dataset. Watch for
+   **name collisions** in the scan (e.g. `tk04/Marker` is a markdown editor,
+   unrelated to `datalab-to/marker`) — check descriptions, not just names.
 2. **Copy an existing generator as the template** — `rag_tooling.py` is the
-   canonical one. Keep the house structure:
+   canonical one; `document_extraction.py` is the reference for reports with
+   evidence-backed task rankings. Keep the house structure:
    - `TAXONOMY = {"owner/repo": ("Category", "one-line blurb"), …}` (curated by hand)
    - `ADJACENT = [(name, why-excluded), …]` — overlaps routed to sibling reports, kept honest
    - Sections in order: executive summary → pipeline/anatomy table → **Master
@@ -52,6 +55,24 @@ data/snapshots/*.json  — one per data vintage; powers the ▲/▼ star-trend d
    `reports/assets/<slug>-*.svg`; spot-check the markdown tables render (column
    counts must match the header — historic bug source).
 
+## Task-ranked reports (web-research-backed)
+
+When the user wants tools **ranked per task/use-case** (not just compared), use the
+`document_extraction.py` pattern:
+
+- A `TASK_RANKINGS = [(task, [(repo, note) × 3], evidence), …]` table rendered as
+  `| Task | 🥇 First pick | 🥈 Second | 🥉 Third | Evidence / note |`.
+- **Gather evidence via web search at authoring time** (benchmarks, head-to-head
+  comparisons, vendor papers), then bake the findings into the generator as frozen
+  text — generation itself stays deterministic and offline.
+- Cite sources + retrieval date in Methodology, and flag that benchmark numbers are
+  point-in-time / partly vendor-reported.
+- **Keep rankings honest against the dataset**: if a ranked pick reads as
+  Abandoned/stale in the snapshot (e.g. a top pick that stopped shipping), say so in
+  the ranking note or the maintenance section's watch items.
+- Frozen benchmark text does NOT refresh with `build_index.py` — re-verify citations
+  manually when major model/tool releases land.
+
 ## Pitfalls
 
 - **Markdown tables**: every row must have the same column count as the header
@@ -62,7 +83,9 @@ data/snapshots/*.json  — one per data vintage; powers the ▲/▼ star-trend d
   SVGs to be generated.
 - Trend markers (▲/▼) only appear once ≥2 snapshots exist in `data/snapshots/`.
 - Meta `category` groups reports in the UI — reuse an existing one
-  (check `reports/*.meta.json`) before inventing a new one.
+  (check `reports/*.meta.json`; currently includes AI / RAG, Agents, Apps,
+  Comparison, Documents, Efficiency, Engineering, Evaluation, Infrastructure,
+  MCP, OpenClaw, Voice) before inventing a new one.
 - Don't hand-edit `reports/*.md` or anything in `public/reports/` — they're
   generated; edit the generator and re-run.
 
