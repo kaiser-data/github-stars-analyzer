@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-07-08)
+# Graph Report - github-stars-analyzer  (2026-07-19)
 
 ## Corpus Check
-- 108 files · ~1,963,076 words
+- 113 files · ~1,975,834 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 837 nodes · 878 edges · 56 communities (49 shown, 7 thin omitted)
+- 892 nodes · 930 edges · 59 communities (52 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `75f8a5ba`
+- Built from commit: `ac738161`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -64,7 +64,10 @@
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 48|Community 48]]
 - [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone|Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone]]
+- [[_COMMUNITY_Star-Reports Pipeline|Star-Reports Pipeline]]
 - [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_make_node_for|make_node_for]]
 - [[_COMMUNITY_Community 56|Community 56]]
 - [[_COMMUNITY_Community 57|Community 57]]
 - [[_COMMUNITY_Community 59|Community 59]]
@@ -78,8 +81,8 @@
 6. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
 7. `By category` - 11 edges
 8. `Meeting Transcription & Conversation Analysis — Field Guide` - 11 edges
-9. `RAG (Retrieval-Augmented Generation) Tooling — Landscape Report` - 11 edges
-10. `Voice AI Agents — Landscape Report` - 11 edges
+9. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 11 edges
+10. `RAG (Retrieval-Augmented Generation) Tooling — Landscape Report` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -96,7 +99,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (56 total, 7 thin omitted)
+## Communities (59 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -195,8 +198,8 @@ Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.12
-Nodes (3): make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Build the node_for(full_name) lookup used in graph-analysis sections.
+Cohesion: 0.11
+Nodes (3): load_data(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses.
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -270,6 +273,18 @@ Nodes (3): fmt(), MD_COMPONENTS, ReportCard()
 Cohesion: 0.12
 Nodes (12): abandoned, added, authorSets, classic, data, g, hot, keepKeys (+4 more)
 
+### Community 49 - "Community 49"
+Cohesion: 0.09
+Nodes (22): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+14 more)
+
+### Community 50 - "Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone"
+Cohesion: 0.09
+Nodes (22): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+14 more)
+
+### Community 51 - "Star-Reports Pipeline"
+Cohesion: 0.33
+Nodes (5): Adding a new report, Data flow, Pitfalls, Refreshing data (upstream of reports), Star-Reports Pipeline
+
 ### Community 52 - "Community 52"
 Cohesion: 0.15
 Nodes (12): Architecture, Ask AI setup, Data pipeline, Deploy to Netlify, GitHub Stars Analyzer, License, Project structure, Provider recipes (+4 more)
@@ -283,7 +298,7 @@ Cohesion: 0.33
 Nodes (5): Coverage snapshot, Recommended to Star — Blockchain / DeFi Gaps, 🔴 Tier 1 — can't do serious EVM/DeFi work without these, 🟠 Tier 2 — DeFi protocol references, data & infra (high value for analysis), 🟡 Tier 3 — Solana, ZK & specialized (star if in scope)
 
 ## Knowledge Gaps
-- **560 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+555 more)
+- **603 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+598 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -291,7 +306,7 @@ Nodes (5): Coverage snapshot, Recommended to Star — Blockchain / DeFi Gaps, �
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _573 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _616 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

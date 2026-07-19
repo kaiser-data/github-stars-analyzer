@@ -40,6 +40,7 @@ GENERATORS = [
     "meeting_transcription.py",
     "claude_code_setups.py",
     "ai_engineer_stack.py",
+    "notebooklm_stack.py",
 ]
 
 def run_generators():
