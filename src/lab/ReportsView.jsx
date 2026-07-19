@@ -64,13 +64,18 @@ function ReportCard({ report, onOpen }) {
         {report.title.split('—')[0].trim()}
       </h3>
       <p className="text-sm text-gray-400 mt-2 flex-1">{report.summary}</p>
-      <div className="flex flex-wrap gap-3 mt-4 text-sm">
+      <div className="flex flex-wrap items-baseline gap-3 mt-4 text-sm">
         <span className="text-gray-300">
           <span className="font-semibold text-white">{report.tool_count}</span> tools
         </span>
         <span className="text-gray-300">
           <span className="font-semibold text-amber-300">★ {fmt(report.total_stars)}</span>
         </span>
+        {report.created && (
+          <span className="text-xs text-gray-500 ml-auto" title={`First published ${report.created}`}>
+            {report.created}
+          </span>
+        )}
       </div>
       {Object.keys(cats).length > 0 && (
         <div className="flex flex-wrap gap-1.5 mt-3">
@@ -133,10 +138,19 @@ function ReportReader({ report, onBack }) {
   );
 }
 
+const SORTS = {
+  size: { label: 'Biggest', fn: (a, b) => (b.tool_count || 0) - (a.tool_count || 0) },
+  created: {
+    label: 'Newest',
+    fn: (a, b) => String(b.created || b.generated || '').localeCompare(String(a.created || a.generated || '')),
+  },
+};
+
 export default function ReportsView() {
   const [index, setIndex] = useState(null);
   const [error, setError] = useState(null);
   const [active, setActive] = useState(null);
+  const [sort, setSort] = useState('size');
 
   useEffect(() => {
     let alive = true;
@@ -173,15 +187,30 @@ export default function ReportsView() {
 
   return (
     <div>
-      <div className="mb-5">
-        <h2 className="text-lg font-semibold text-white">Curated reports</h2>
-        <p className="text-sm text-gray-400 mt-1">
-          Deep-dives into clusters of these stars, built from the dataset + similarity graph.
-          {index.generated && <span className="text-gray-500"> Updated {index.generated}.</span>}
-        </p>
+      <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <h2 className="text-lg font-semibold text-white">Curated reports</h2>
+          <p className="text-sm text-gray-400 mt-1">
+            Deep-dives into clusters of these stars, built from the dataset + similarity graph.
+            {index.generated && <span className="text-gray-500"> Updated {index.generated}.</span>}
+          </p>
+        </div>
+        <div className="flex items-center gap-1 text-xs bg-gray-800/60 border border-gray-700 rounded-lg p-1">
+          {Object.entries(SORTS).map(([key, s]) => (
+            <button
+              key={key}
+              onClick={() => setSort(key)}
+              className={`px-2.5 py-1 rounded-md transition-colors ${
+                sort === key ? 'bg-gray-700 text-white' : 'text-gray-400 hover:text-gray-200'
+              }`}
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {index.reports.map((r) => (
+        {[...index.reports].sort(SORTS[sort].fn).map((r) => (
           <ReportCard key={r.slug} report={r} onOpen={setActive} />
         ))}
       </div>

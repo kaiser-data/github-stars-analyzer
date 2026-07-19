@@ -14,10 +14,10 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Source ingestion &amp; parsing</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
 <text x="594.0" y="49.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Grounded retrieval &amp; citations</text>
-<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="76.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Clone / reference app</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Clone / reference app</text>
+<path d="M244,67 h282.7 q4,0 4,4 v10 q0,4 -4,4 h-282.7 z" class="bar"/>
+<text x="536.7" y="76.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Grounded retrieval &amp; citations</text>
 <path d="M244,94 h282.7 q4,0 4,4 v10 q0,4 -4,4 h-282.7 z" class="bar"/>
 <text x="536.7" y="103.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Audio Overview (TTS / podcast)</text>

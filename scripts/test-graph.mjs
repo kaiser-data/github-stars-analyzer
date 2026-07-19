@@ -143,7 +143,9 @@ try {
 
 console.log('\n== Lifecycle invariants ==');
 const abandoned = data.repos.filter((r) => r.lifecycle_stage === 'Abandoned');
-ok('all Abandoned have days_since_push > 365', abandoned.every((r) => r.days_since_push > 365 || r.archived === true));
+// classify.mjs compares fractional days (> 365) but stores the floored int,
+// so a repo abandoned at 365.4 days serializes as 365 — compare inclusively.
+ok('all Abandoned have days_since_push >= 365', abandoned.every((r) => r.days_since_push >= 365 || r.archived === true));
 const classic = data.repos.filter((r) => r.lifecycle_stage === 'Classic');
 ok('all Classic are >3y old', classic.every((r) => r.age_days > 365 * 3), `${classic.length} classic repos`);
 const hot = data.repos.filter((r) => r.lifecycle_stage === 'Hot');

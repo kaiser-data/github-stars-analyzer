@@ -41,6 +41,7 @@ GENERATORS = [
     "claude_code_setups.py",
     "ai_engineer_stack.py",
     "notebooklm_stack.py",
+    "agent_harnesses.py",
 ]
 
 def run_generators():
@@ -52,6 +53,24 @@ def run_generators():
         print(f"  running {g} …")
         subprocess.run([sys.executable, path], check=True, cwd=ROOT,
                        stdout=subprocess.DEVNULL)
+
+def created_date(md_file):
+    """First git commit date (YYYY-MM-DD) of a report's markdown.
+
+    `generated` is bumped on every rebuild; `created` stays fixed at the date
+    the report first entered the repo. Returns None for untracked (brand-new)
+    reports — the caller falls back to today's `generated`.
+    """
+    try:
+        out = subprocess.run(
+            ["git", "log", "--follow", "--diff-filter=A", "--format=%ad",
+             "--date=short", "--", f"reports/{md_file}"],
+            capture_output=True, text=True, cwd=ROOT, check=True,
+        ).stdout.split()
+        return out[-1] if out else None
+    except (subprocess.CalledProcessError, OSError):
+        return None
+
 
 def make_charts(meta):
     """Render at-a-glance SVGs from a report's meta. Returns md image lines."""
@@ -103,6 +122,11 @@ def build():
         if not os.path.exists(md_src):
             print(f"  WARNING: {meta['file']} missing for {meta['slug']}, skipping")
             continue
+        # Stable creation date (first commit) alongside the rolling `generated`;
+        # persisted into the sidecar so the app can sort by it.
+        meta["created"] = created_date(meta["file"]) or meta.get("created") or meta["generated"]
+        with open(mp, "w") as f:
+            json.dump(meta, f, indent=2)
         inject_charts(md_src, make_charts(meta))
         shutil.copyfile(md_src, os.path.join(PUBLIC_DIR, meta["file"]))
         metas.append(meta)
