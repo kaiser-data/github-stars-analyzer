@@ -168,13 +168,18 @@ const nodes = fgNodes.map(n => {
   const a = n._attrs;
   const pos = posById.get(n.id);
   return {
-    id: n.id, val: n.val,
+    id: n.id, val: +n.val.toFixed(2),
     full_name: a.full_name, description: a.description,
     stars: a.stars, primary_language: a.primary_language, topics: a.topics,
     lifecycle_stage: a.lifecycle_stage, health_score: a.health_score,
     bus_factor: a.bus_factor, unique_authors_90d: a.unique_authors_90d,
     commits_90d: a.commits_90d, open_issues: a.open_issues,
-    releases_total: a.releases_total, momentum: a.momentum,
+    releases_total: a.releases_total,
+    // full-precision floats bloat graph.json (~90KB in momentum alone) — 3dp is plenty
+    momentum: a.momentum && {
+      ...a.momentum,
+      lifetime_per_day: +(a.momentum.lifetime_per_day ?? 0).toFixed(3),
+    },
     age_days: a.age_days, days_since_push: a.days_since_push,
     stratum: a.stratum, url: a.url, owner: a.owner,
     community: a.community ?? 0,
