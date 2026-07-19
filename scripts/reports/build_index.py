@@ -43,6 +43,7 @@ GENERATORS = [
     "notebooklm_stack.py",
     "agent_harnesses.py",
     "document_extraction.py",
+    "ai_coding_tuis.py",
 ]
 
 def run_generators():
