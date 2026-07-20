@@ -3,9 +3,9 @@
   "title": "Claude Code Superpowers \u2014 Setup Strategies from Your Stars",
   "file": "claude-code-setups.md",
   "category": "AI / Agents",
-  "summary": "59 Claude-Code 'superpower' projects (4,526,690\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
+  "summary": "59 Claude-Code 'superpower' projects (4,530,251\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
   "tool_count": 59,
-  "total_stars": 4526690,
+  "total_stars": 4530251,
   "categories": {
     "Harness / coding agent": 12,
     "Skills framework": 6,
@@ -20,27 +20,27 @@
   "top_tools": [
     {
       "name": "openclaw/openclaw",
-      "stars": 383486
+      "stars": 383533
     },
     {
       "name": "obra/superpowers",
-      "stars": 257531
+      "stars": 257811
     },
     {
       "name": "affaan-m/ECC",
-      "stars": 231210
+      "stars": 231351
     },
     {
       "name": "NousResearch/hermes-agent",
-      "stars": 217226
+      "stars": 217444
     },
     {
       "name": "multica-ai/andrej-karpathy-skills",
-      "stars": 194346
+      "stars": 194504
     }
   ],
-  "snapshot": "2026-07-19T22:39:07.967Z",
-  "generated": "2026-07-19",
+  "snapshot": "2026-07-20T08:33:57.852Z",
+  "generated": "2026-07-20",
   "generator": "scripts/reports/claude_code_setups.py",
-  "created": "2026-06-13"
+  "created": "2026-07-20"
 }

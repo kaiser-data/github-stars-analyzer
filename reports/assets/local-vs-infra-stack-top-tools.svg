@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ollama/ollama</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">176,458</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">176,491</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">huggingface/transformers</text>
-<path d="M244,67 h313.3 q4,0 4,4 v10 q0,4 -4,4 h-313.3 z" class="bar"/>
-<text x="567.3" y="76.0" class="val" dominant-baseline="central">162,739</text>
+<path d="M244,67 h313.2 q4,0 4,4 v10 q0,4 -4,4 h-313.2 z" class="bar"/>
+<text x="567.2" y="76.0" class="val" dominant-baseline="central">162,754</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">open-webui/open-webui</text>
 <path d="M244,94 h280.6 q4,0 4,4 v10 q0,4 -4,4 h-280.6 z" class="bar"/>
-<text x="534.6" y="103.0" class="val" dominant-baseline="central">145,979</text>
+<text x="534.6" y="103.0" class="val" dominant-baseline="central">146,021</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/llama.cpp</text>
-<path d="M244,121 h231.8 q4,0 4,4 v10 q0,4 -4,4 h-231.8 z" class="bar"/>
-<text x="485.8" y="130.0" class="val" dominant-baseline="central">120,964</text>
+<path d="M244,121 h231.9 q4,0 4,4 v10 q0,4 -4,4 h-231.9 z" class="bar"/>
+<text x="485.9" y="130.0" class="val" dominant-baseline="central">121,006</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">vllm-project/vllm</text>
-<path d="M244,148 h164.9 q4,0 4,4 v10 q0,4 -4,4 h-164.9 z" class="bar"/>
-<text x="418.9" y="157.0" class="val" dominant-baseline="central">86,648</text>
+<path d="M244,148 h165.0 q4,0 4,4 v10 q0,4 -4,4 h-165.0 z" class="bar"/>
+<text x="419.0" y="157.0" class="val" dominant-baseline="central">86,682</text>
 </svg>

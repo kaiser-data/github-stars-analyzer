@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,683</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,746</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">OpenBB-finance/OpenBB</text>
-<path d="M244,67 h255.9 q4,0 4,4 v10 q0,4 -4,4 h-255.9 z" class="bar"/>
-<text x="509.9" y="76.0" class="val" dominant-baseline="central">70,776</text>
+<path d="M244,67 h255.8 q4,0 4,4 v10 q0,4 -4,4 h-255.8 z" class="bar"/>
+<text x="509.8" y="76.0" class="val" dominant-baseline="central">70,792</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ethereum/go-ethereum</text>
-<path d="M244,94 h184.0 q4,0 4,4 v10 q0,4 -4,4 h-184.0 z" class="bar"/>
-<text x="438.0" y="103.0" class="val" dominant-baseline="central">51,199</text>
+<path d="M244,94 h183.9 q4,0 4,4 v10 q0,4 -4,4 h-183.9 z" class="bar"/>
+<text x="437.9" y="103.0" class="val" dominant-baseline="central">51,200</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">OpenZeppelin/openzeppelin-contr…</text>
 <path d="M244,121 h95.8 q4,0 4,4 v10 q0,4 -4,4 h-95.8 z" class="bar"/>
-<text x="349.8" y="130.0" class="val" dominant-baseline="central">27,189</text>
+<text x="349.8" y="130.0" class="val" dominant-baseline="central">27,190</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">argotorg/solidity</text>
 <path d="M244,148 h90.3 q4,0 4,4 v10 q0,4 -4,4 h-90.3 z" class="bar"/>
-<text x="344.3" y="157.0" class="val" dominant-baseline="central">25,687</text>
+<text x="344.3" y="157.0" class="val" dominant-baseline="central">25,685</text>
 </svg>

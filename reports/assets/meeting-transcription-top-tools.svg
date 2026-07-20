@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">105,253</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">105,272</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
 <path d="M244,67 h165.5 q4,0 4,4 v10 q0,4 -4,4 h-165.5 z" class="bar"/>
-<text x="419.5" y="76.0" class="val" dominant-baseline="central">51,875</text>
+<text x="419.5" y="76.0" class="val" dominant-baseline="central">51,885</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Zackriya-Solutions/meetily</text>
-<path d="M244,94 h79.7 q4,0 4,4 v10 q0,4 -4,4 h-79.7 z" class="bar"/>
-<text x="333.7" y="103.0" class="val" dominant-baseline="central">25,607</text>
+<path d="M244,94 h79.9 q4,0 4,4 v10 q0,4 -4,4 h-79.9 z" class="bar"/>
+<text x="333.9" y="103.0" class="val" dominant-baseline="central">25,677</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">SYSTRAN/faster-whisper</text>
 <path d="M244,121 h75.7 q4,0 4,4 v10 q0,4 -4,4 h-75.7 z" class="bar"/>
-<text x="329.7" y="130.0" class="val" dominant-baseline="central">24,379</text>
+<text x="329.7" y="130.0" class="val" dominant-baseline="central">24,392</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">m-bain/whisperX</text>
 <path d="M244,148 h71.7 q4,0 4,4 v10 q0,4 -4,4 h-71.7 z" class="bar"/>
-<text x="325.7" y="157.0" class="val" dominant-baseline="central">23,147</text>
+<text x="325.7" y="157.0" class="val" dominant-baseline="central">23,151</text>
 </svg>

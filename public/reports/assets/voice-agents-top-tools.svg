@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">105,253</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">105,272</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">CorentinJ/Real-Time-Voice-Cloni…</text>
-<path d="M244,67 h192.3 q4,0 4,4 v10 q0,4 -4,4 h-192.3 z" class="bar"/>
-<text x="446.3" y="76.0" class="val" dominant-baseline="central">60,047</text>
+<path d="M244,67 h192.2 q4,0 4,4 v10 q0,4 -4,4 h-192.2 z" class="bar"/>
+<text x="446.2" y="76.0" class="val" dominant-baseline="central">60,050</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
 <path d="M244,94 h165.5 q4,0 4,4 v10 q0,4 -4,4 h-165.5 z" class="bar"/>
-<text x="419.5" y="103.0" class="val" dominant-baseline="central">51,875</text>
+<text x="419.5" y="103.0" class="val" dominant-baseline="central">51,885</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">mudler/LocalAI</text>
-<path d="M244,121 h151.8 q4,0 4,4 v10 q0,4 -4,4 h-151.8 z" class="bar"/>
-<text x="405.8" y="130.0" class="val" dominant-baseline="central">47,683</text>
+<path d="M244,121 h151.9 q4,0 4,4 v10 q0,4 -4,4 h-151.9 z" class="bar"/>
+<text x="405.9" y="130.0" class="val" dominant-baseline="central">47,698</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">coqui-ai/TTS</text>
 <path d="M244,148 h145.6 q4,0 4,4 v10 q0,4 -4,4 h-145.6 z" class="bar"/>
-<text x="399.6" y="157.0" class="val" dominant-baseline="central">45,780</text>
+<text x="399.6" y="157.0" class="val" dominant-baseline="central">45,782</text>
 </svg>

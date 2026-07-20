@@ -5,7 +5,7 @@
   "category": "AI / Comparison",
   "summary": "Which claw is best for blockchain/web3/DeFi (eliza = crypto-native; openclaw = MCP + on-chain-payments analysis hub) plus a skills-by-purpose map \u2014 on-chain data (blockscout), valuation (OpenBB), trading (TradingAgents), payments (ClawRouter/x402) \u2014 and ready-made stacks for analyzing DeFi positions.",
   "tool_count": 18,
-  "total_stars": 1175342,
+  "total_stars": 1175776,
   "categories": {
     "On-chain data & explorer": 1,
     "Valuation, market data & quant": 1,
@@ -17,27 +17,27 @@
   "top_tools": [
     {
       "name": "openclaw/openclaw",
-      "stars": 383486
+      "stars": 383533
     },
     {
       "name": "NousResearch/hermes-agent",
-      "stars": 217226
+      "stars": 217444
     },
     {
       "name": "TauricResearch/TradingAgents",
-      "stars": 93683
+      "stars": 93746
     },
     {
       "name": "punkpeye/awesome-mcp-servers",
-      "stars": 90968
+      "stars": 90979
     },
     {
       "name": "modelcontextprotocol/servers",
-      "stars": 88639
+      "stars": 88650
     }
   ],
-  "snapshot": "2026-07-19T22:39:07.967Z",
-  "generated": "2026-07-19",
+  "snapshot": "2026-07-20T08:33:57.852Z",
+  "generated": "2026-07-20",
   "generator": "scripts/reports/blockchain_claws.py",
-  "created": "2026-06-03"
+  "created": "2026-07-20"
 }

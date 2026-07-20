@@ -11,19 +11,19 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">zeroclaw-labs/zeroclaw</text>
-<path d="M244,40 h25.0 q4,0 4,4 v10 q0,4 -4,4 h-25.0 z" class="bar"/>
-<text x="279.0" y="49.0" class="val" dominant-baseline="central">32,317</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
-<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="76.0" class="val" dominant-baseline="central">383,486</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,94 h190.9 q4,0 4,4 v10 q0,4 -4,4 h-190.9 z" class="bar"/>
-<text x="444.9" y="103.0" class="val" dominant-baseline="central">217,226</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
+<path d="M244,40 h191.0 q4,0 4,4 v10 q0,4 -4,4 h-191.0 z" class="bar"/>
+<text x="445.0" y="49.0" class="val" dominant-baseline="central">217,444</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">zeroclaw-labs/zeroclaw</text>
+<path d="M244,67 h25.0 q4,0 4,4 v10 q0,4 -4,4 h-25.0 z" class="bar"/>
+<text x="279.0" y="76.0" class="val" dominant-baseline="central">32,331</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
+<path d="M244,94 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="103.0" class="val" dominant-baseline="central">383,533</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">NVIDIA/NemoClaw</text>
 <path d="M244,121 h15.6 q4,0 4,4 v10 q0,4 -4,4 h-15.6 z" class="bar"/>
-<text x="269.6" y="130.0" class="val" dominant-baseline="central">21,841</text>
+<text x="269.6" y="130.0" class="val" dominant-baseline="central">21,848</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">code-yeongyu/oh-my-openagent</text>
 <path d="M244,148 h55.4 q4,0 4,4 v10 q0,4 -4,4 h-55.4 z" class="bar"/>
-<text x="309.4" y="157.0" class="val" dominant-baseline="central">66,173</text>
+<text x="309.4" y="157.0" class="val" dominant-baseline="central">66,217</text>
 </svg>

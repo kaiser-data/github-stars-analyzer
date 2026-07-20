@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">huggingface/transformers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">162,739</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">162,754</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">rasbt/LLMs-from-scratch</text>
 <path d="M244,67 h206.1 q4,0 4,4 v10 q0,4 -4,4 h-206.1 z" class="bar"/>
-<text x="460.1" y="76.0" class="val" dominant-baseline="central">99,378</text>
+<text x="460.1" y="76.0" class="val" dominant-baseline="central">99,415</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">hiyouga/LlamaFactory</text>
 <path d="M244,94 h151.1 q4,0 4,4 v10 q0,4 -4,4 h-151.1 z" class="bar"/>
-<text x="405.1" y="103.0" class="val" dominant-baseline="central">73,374</text>
+<text x="405.1" y="103.0" class="val" dominant-baseline="central">73,385</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">unslothai/unsloth</text>
-<path d="M244,121 h140.6 q4,0 4,4 v10 q0,4 -4,4 h-140.6 z" class="bar"/>
-<text x="394.6" y="130.0" class="val" dominant-baseline="central">68,426</text>
+<path d="M244,121 h140.7 q4,0 4,4 v10 q0,4 -4,4 h-140.7 z" class="bar"/>
+<text x="394.7" y="130.0" class="val" dominant-baseline="central">68,445</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">labmlai/annotated_deep_learning…</text>
 <path d="M244,148 h138.0 q4,0 4,4 v10 q0,4 -4,4 h-138.0 z" class="bar"/>
-<text x="392.0" y="157.0" class="val" dominant-baseline="central">67,181</text>
+<text x="392.0" y="157.0" class="val" dominant-baseline="central">67,190</text>
 </svg>

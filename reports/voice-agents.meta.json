@@ -3,9 +3,9 @@
   "title": "Voice AI Agents \u2014 Landscape Report",
   "file": "voice-agents.md",
   "category": "AI / Voice",
-  "summary": "28 voice-AI projects (606,971\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+  "summary": "28 voice-AI projects (607,559\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
   "tool_count": 28,
-  "total_stars": 606971,
+  "total_stars": 607559,
   "categories": {
     "Realtime voice-agent framework": 4,
     "Speech-to-text / ASR": 6,
@@ -17,27 +17,27 @@
   "top_tools": [
     {
       "name": "openai/whisper",
-      "stars": 105253
+      "stars": 105272
     },
     {
       "name": "CorentinJ/Real-Time-Voice-Cloning",
-      "stars": 60047
+      "stars": 60050
     },
     {
       "name": "ggml-org/whisper.cpp",
-      "stars": 51875
+      "stars": 51885
     },
     {
       "name": "mudler/LocalAI",
-      "stars": 47683
+      "stars": 47698
     },
     {
       "name": "coqui-ai/TTS",
-      "stars": 45780
+      "stars": 45782
     }
   ],
-  "snapshot": "2026-07-19T22:39:07.967Z",
-  "generated": "2026-07-19",
+  "snapshot": "2026-07-20T08:33:57.852Z",
+  "generated": "2026-07-20",
   "generator": "scripts/reports/voice_agents.py",
-  "created": "2026-06-04"
+  "created": "2026-07-20"
 }

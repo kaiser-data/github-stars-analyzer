@@ -3,9 +3,9 @@
   "title": "Memory Frameworks for LLMs & Agents \u2014 Comparative Report",
   "file": "memory-frameworks-for-llm-agents.md",
   "category": "AI / Agents",
-  "summary": "22 LLM/agent memory frameworks (391,153\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
+  "summary": "22 LLM/agent memory frameworks (391,427\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
   "tool_count": 22,
-  "total_stars": 391153,
+  "total_stars": 391427,
   "categories": {
     "General memory layer": 13,
     "Coding-agent memory": 4,
@@ -15,27 +15,27 @@
   "top_tools": [
     {
       "name": "thedotmack/claude-mem",
-      "stars": 87866
+      "stars": 87912
     },
     {
       "name": "mem0ai/mem0",
-      "stars": 61207
+      "stars": 61274
     },
     {
       "name": "MemPalace/mempalace",
-      "stars": 57480
+      "stars": 57493
     },
     {
       "name": "getzep/graphiti",
-      "stars": 28921
+      "stars": 28947
     },
     {
       "name": "topoteretes/cognee",
-      "stars": 28491
+      "stars": 28551
     }
   ],
-  "snapshot": "2026-07-19T22:39:07.967Z",
-  "generated": "2026-07-19",
+  "snapshot": "2026-07-20T08:33:57.852Z",
+  "generated": "2026-07-20",
   "generator": "scripts/reports/memory_frameworks.py",
-  "created": "2026-05-31"
+  "created": "2026-07-20"
 }
