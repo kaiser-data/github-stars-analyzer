@@ -39,8 +39,8 @@
       "stars": 194504
     }
   ],
-  "snapshot": "2026-07-19T22:39:07.967Z",
+  "snapshot": "2026-07-20T08:33:57.852Z",
   "generated": "2026-07-22",
   "generator": "scripts/reports/claude_code_setups.py",
-  "created": "2026-07-20"
+  "created": "2026-06-13"
 }

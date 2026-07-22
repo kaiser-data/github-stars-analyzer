@@ -4,11 +4,6 @@
 >
 > Generated 2026-07-22 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
 
-![Top tools by stars](assets/notebooklm-stack-top-tools.svg)
-
-![Tools per category](assets/notebooklm-stack-categories.svg)
-
-
 ## Executive summary
 
 - **Goal**: everything needed to build (and demo) your own NotebookLM — a source-grounded notebook with cited answers, an *Audio Overview* podcast generator, live voice interaction, and a mind-map view — from **34 repos already in your stars** (**1,323,839★** combined).

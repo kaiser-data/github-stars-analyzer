@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-07-20)
+# Graph Report - github-stars-analyzer  (2026-07-23)
 
 ## Corpus Check
-- 129 files · ~2,188,561 words
+- 129 files · ~2,193,956 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1042 nodes · 1073 edges · 68 communities (61 shown, 7 thin omitted)
+- 1064 nodes · 1095 edges · 68 communities (61 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `eebac289`
+- Built from commit: `77fead07`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -85,12 +85,12 @@
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 13 edges
-5. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
-6. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
+5. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+6. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
 7. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
 8. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
-9. `The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending` - 11 edges
-10. `Claude Code Superpowers — Setup Strategies from Your Stars` - 11 edges
+9. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
+10. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -207,7 +207,7 @@ Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embedd
 
 ### Community 26 - "Community 26"
 Cohesion: 0.10
-Nodes (3): make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Build the node_for(full_name) lookup used in graph-analysis sections.
+Nodes (3): load_data(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses.
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -282,12 +282,12 @@ Cohesion: 0.12
 Nodes (12): abandoned, added, authorSets, classic, data, g, hot, keepKeys (+4 more)
 
 ### Community 49 - "Community 49"
-Cohesion: 0.09
-Nodes (22): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+14 more)
+Cohesion: 0.06
+Nodes (33): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+25 more)
 
 ### Community 50 - "Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone"
-Cohesion: 0.09
-Nodes (22): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+14 more)
+Cohesion: 0.06
+Nodes (33): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+25 more)
 
 ### Community 51 - "Star-Reports Pipeline"
 Cohesion: 0.29
@@ -338,17 +338,15 @@ Cohesion: 0.11
 Nodes (18): Adjacent (deliberately not listed as training tools), By category, Domain & on-device tuning, Executive summary, Fine-Tuning & Post-Training Stack — Which Trainer for Which Task, Full-stack fine-tuning framework, Graph analysis — how they relate, Hardware fit & serving (+10 more)
 
 ## Knowledge Gaps
-- **723 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+718 more)
+- **741 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+736 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `load_data()` connect `load_data` to `Community 26`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _737 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _755 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -359,3 +357,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.1076923076923077 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Community 5` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
