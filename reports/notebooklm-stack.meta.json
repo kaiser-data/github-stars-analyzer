@@ -3,7 +3,7 @@
   "title": "Build Your Own NotebookLM \u2014 The Repo Stack for a Source-Grounded Notebook Clone",
   "file": "notebooklm-stack.md",
   "category": "AI / Apps",
-  "summary": "34 repos (1,323,839\u2605) to build a NotebookLM clone: reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps, and demo-day add-ons.",
+  "summary": "34 repos (1,322,872\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
   "tool_count": 34,
   "total_stars": 1323839,
   "categories": {
@@ -38,8 +38,8 @@
       "stars": 75161
     }
   ],
-  "snapshot": "2026-07-20T08:33:57.852Z",
-  "generated": "2026-07-20",
+  "snapshot": "2026-07-19T22:39:07.967Z",
+  "generated": "2026-07-22",
   "generator": "scripts/reports/notebooklm_stack.py",
   "created": "2026-07-20"
 }

@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,350 starred repos (snapshot `2026-07-20T08:33:57.852Z`), cross-referenced with the repo-similarity graph (1,350 nodes / 4,379 edges, 28 communities) and the 2026 AI-engineering landscape.
 >
-> Generated 2026-07-20 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
+> Generated 2026-07-22 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/ai-engineer-stack-top-tools.svg)
 

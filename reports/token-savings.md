@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,350 starred repos (snapshot `2026-07-20T08:33:57.852Z`), cross-referenced with the repo-similarity graph (1,350 nodes / 4,379 edges, 28 communities).
 >
-> Generated 2026-07-20 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
+> Generated 2026-07-22 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/token-savings-top-tools.svg)
 
