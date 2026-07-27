@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">257,811</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">261,805</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
-<path d="M244,67 h304.7 q4,0 4,4 v10 q0,4 -4,4 h-304.7 z" class="bar"/>
-<text x="558.7" y="76.0" class="val" dominant-baseline="central">231,351</text>
+<path d="M244,67 h303.2 q4,0 4,4 v10 q0,4 -4,4 h-303.2 z" class="bar"/>
+<text x="557.2" y="76.0" class="val" dominant-baseline="central">233,791</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">github/spec-kit</text>
-<path d="M244,94 h159.5 q4,0 4,4 v10 q0,4 -4,4 h-159.5 z" class="bar"/>
-<text x="413.5" y="103.0" class="val" dominant-baseline="central">122,508</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
+<path d="M244,94 h158.9 q4,0 4,4 v10 q0,4 -4,4 h-158.9 z" class="bar"/>
+<text x="412.9" y="103.0" class="val" dominant-baseline="central">124,012</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
 <path d="M244,121 h99.3 q4,0 4,4 v10 q0,4 -4,4 h-99.3 z" class="bar"/>
-<text x="353.3" y="130.0" class="val" dominant-baseline="central">77,423</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
-<path d="M244,148 h93.4 q4,0 4,4 v10 q0,4 -4,4 h-93.4 z" class="bar"/>
-<text x="347.4" y="157.0" class="val" dominant-baseline="central">72,998</text>
+<text x="353.3" y="130.0" class="val" dominant-baseline="central">78,580</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
+<path d="M244,148 h98.4 q4,0 4,4 v10 q0,4 -4,4 h-98.4 z" class="bar"/>
+<text x="352.4" y="157.0" class="val" dominant-baseline="central">77,940</text>
 </svg>
