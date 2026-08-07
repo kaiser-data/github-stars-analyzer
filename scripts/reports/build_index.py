@@ -45,6 +45,7 @@ GENERATORS = [
     "document_extraction.py",
     "ai_coding_tuis.py",
     "finetuning_stack.py",
+    "trending_now.py",
 ]
 
 def run_generators():
@@ -76,23 +77,33 @@ def created_date(md_file):
 
 
 def make_charts(meta):
-    """Render at-a-glance SVGs from a report's meta. Returns md image lines."""
+    """Render at-a-glance SVGs from a report's meta. Returns md image lines.
+
+    Chart titles and the top-chart series default to the star-ranked landscape
+    framing every taxonomy report uses. A report whose subject isn't "biggest
+    tools" (e.g. trending-now, which ranks by star *gain*) can override them
+    with `chart_top_title` / `chart_top_series` / `chart_cat_title`.
+    """
     imgs = []
-    top = [t for t in meta.get("top_tools") or [] if t.get("stars")]
-    if len(top) >= 3:
-        svg = svg_hbar("Top tools by stars", [(t["name"], t["stars"]) for t in top])
+    series = ([(s["name"], s["value"]) for s in meta.get("chart_top_series") or []]
+              or [(t["name"], t["stars"]) for t in meta.get("top_tools") or []
+                  if t.get("stars")])
+    top_title = meta.get("chart_top_title") or "Top tools by stars"
+    if len(series) >= 3:
+        svg = svg_hbar(top_title, series)
         name = f"{meta['slug']}-top-tools.svg"
         with open(os.path.join(ASSETS_DIR, name), "w") as f:
             f.write(svg)
-        imgs.append(f"![Top tools by stars](assets/{name})")
+        imgs.append(f"![{top_title}](assets/{name})")
     cats = {k: v for k, v in (meta.get("categories") or {}).items() if v}
+    cat_title = meta.get("chart_cat_title") or "Tools per category"
     if len(cats) >= 3:
         items = sorted(cats.items(), key=lambda x: -x[1])
-        svg = svg_hbar("Tools per category", items)
+        svg = svg_hbar(cat_title, items)
         name = f"{meta['slug']}-categories.svg"
         with open(os.path.join(ASSETS_DIR, name), "w") as f:
             f.write(svg)
-        imgs.append(f"![Tools per category](assets/{name})")
+        imgs.append(f"![{cat_title}](assets/{name})")
     return imgs
 
 
