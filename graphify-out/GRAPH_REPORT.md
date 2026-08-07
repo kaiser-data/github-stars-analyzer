@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-07-23)
+# Graph Report - github-stars-analyzer  (2026-08-07)
 
 ## Corpus Check
-- 129 files · ~2,206,629 words
+- 133 files · ~2,407,799 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1064 nodes · 1095 edges · 68 communities (61 shown, 7 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.8)
+- 1109 nodes · 1140 edges · 69 communities (64 shown, 5 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5e55ac2e`
+- Built from commit: `f44869dc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,6 +79,7 @@
 - [[_COMMUNITY_make_node_for|make_node_for]]
 - [[_COMMUNITY_openclaw_ecosystem.py|openclaw_ecosystem.py]]
 - [[_COMMUNITY_load_data|load_data]]
+- [[_COMMUNITY_Trending Now — What's Actually Moving in Your Stars|Trending Now — What's Actually Moving in Your Stars]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -107,7 +108,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (68 total, 7 thin omitted)
+## Communities (69 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -206,8 +207,8 @@ Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.10
-Nodes (3): make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Build the node_for(full_name) lookup used in graph-analysis sections.
+Cohesion: 0.09
+Nodes (5): load_data(), make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses., Build the node_for(full_name) lookup used in graph-analysis sections.
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -267,7 +268,7 @@ Nodes (7): meta_bits(), _esc(), fmt_int(), fmt_stars(), Dependency-free horizont
 
 ### Community 41 - "Community 41"
 Cohesion: 0.31
-Nodes (7): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.
+Nodes (7): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
@@ -280,6 +281,10 @@ Nodes (4): fmt(), MD_COMPONENTS, ReportCard(), SORTS
 ### Community 44 - "Community 44"
 Cohesion: 0.12
 Nodes (12): abandoned, added, authorSets, classic, data, g, hot, keepKeys (+4 more)
+
+### Community 46 - "Community 46"
+Cohesion: 0.20
+Nodes (7): comp_table(), activity_label(), days_between(), deltas(), [(name, gain, per_day, now, then)] for repos present in both snapshots., (lang, lifecycle, activity, url, description) for a repo, safely., row_meta()
 
 ### Community 49 - "Community 49"
 Cohesion: 0.06
@@ -337,18 +342,24 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 Cohesion: 0.11
 Nodes (18): Adjacent (deliberately not listed as training tools), By category, Domain & on-device tuning, Executive summary, Fine-Tuning & Post-Training Stack — Which Trainer for Which Task, Full-stack fine-tuning framework, Graph analysis — how they relate, Hardware fit & serving (+10 more)
 
+### Community 66 - "load_data"
+Cohesion: 0.11
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-20 → 2026-08-07, 18d), Frontier models on hardware you already own (+10 more)
+
+### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
+Cohesion: 0.11
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-20 → 2026-08-07, 18d), Frontier models on hardware you already own (+10 more)
+
 ## Knowledge Gaps
-- **741 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+736 more)
+- **773 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+768 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `load_data()` connect `load_data` to `Community 26`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _755 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _789 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -359,3 +370,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.1076923076923077 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+- **Should `Community 5` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

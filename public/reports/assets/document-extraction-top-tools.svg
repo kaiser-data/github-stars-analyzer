@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/markitdown</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">167,484</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">172,207</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">PaddlePaddle/PaddleOCR</text>
-<path d="M244,67 h172.3 q4,0 4,4 v10 q0,4 -4,4 h-172.3 z" class="bar"/>
-<text x="426.3" y="76.0" class="val" dominant-baseline="central">85,841</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">tesseract-ocr/tesseract</text>
-<path d="M244,94 h151.0 q4,0 4,4 v10 q0,4 -4,4 h-151.0 z" class="bar"/>
-<text x="405.0" y="103.0" class="val" dominant-baseline="central">75,449</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">opendatalab/MinerU</text>
-<path d="M244,121 h150.4 q4,0 4,4 v10 q0,4 -4,4 h-150.4 z" class="bar"/>
-<text x="404.4" y="130.0" class="val" dominant-baseline="central">75,161</text>
+<path d="M244,67 h170.2 q4,0 4,4 v10 q0,4 -4,4 h-170.2 z" class="bar"/>
+<text x="424.2" y="76.0" class="val" dominant-baseline="central">87,213</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">opendatalab/MinerU</text>
+<path d="M244,94 h150.0 q4,0 4,4 v10 q0,4 -4,4 h-150.0 z" class="bar"/>
+<text x="404.0" y="103.0" class="val" dominant-baseline="central">77,092</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">tesseract-ocr/tesseract</text>
+<path d="M244,121 h147.4 q4,0 4,4 v10 q0,4 -4,4 h-147.4 z" class="bar"/>
+<text x="401.4" y="130.0" class="val" dominant-baseline="central">75,806</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">docling-project/docling</text>
-<path d="M244,148 h126.4 q4,0 4,4 v10 q0,4 -4,4 h-126.4 z" class="bar"/>
-<text x="380.4" y="157.0" class="val" dominant-baseline="central">63,487</text>
+<path d="M244,148 h124.6 q4,0 4,4 v10 q0,4 -4,4 h-124.6 z" class="bar"/>
+<text x="378.6" y="157.0" class="val" dominant-baseline="central">64,396</text>
 </svg>

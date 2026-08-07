@@ -1,0 +1,76 @@
+{
+  "slug": "trending-now",
+  "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
+  "file": "trending-now.md",
+  "category": "AI / Trends",
+  "summary": "Measured star momentum across 5 data vintages: the 18-day movers, relative breakouts, sustained climbers, 136 new entrants, and what has gone flat.",
+  "tool_count": 192,
+  "total_stars": 5290668,
+  "categories": {
+    "Risers": 1127,
+    "Breakouts": 1030,
+    "New entrants": 136,
+    "Cooling": 28
+  },
+  "top_tools": [
+    {
+      "name": "earendil-works/pi",
+      "stars": 85266
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "stars": 103983
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "stars": 98197
+    },
+    {
+      "name": "obra/superpowers",
+      "stars": 268683
+    },
+    {
+      "name": "microsoft/AI-For-Beginners",
+      "stars": 63137
+    }
+  ],
+  "chart_top_series": [
+    {
+      "name": "earendil-works/pi",
+      "value": 12268
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "value": 12167
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "value": 11912
+    },
+    {
+      "name": "obra/superpowers",
+      "value": 10872
+    },
+    {
+      "name": "microsoft/AI-For-Beginners",
+      "value": 10672
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "value": 9598
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "value": 9571
+    },
+    {
+      "name": "codecrafters-io/build-your-own-x",
+      "value": 8324
+    }
+  ],
+  "chart_top_title": "Biggest star gains (18d)",
+  "chart_cat_title": "Repos by movement type",
+  "snapshot": "2026-08-07T21:10:17.796Z",
+  "generated": "2026-08-07",
+  "generator": "scripts/reports/trending_now.py"
+}
