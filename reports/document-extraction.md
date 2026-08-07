@@ -34,32 +34,32 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | Conversion framework | Python | MIT | 172,207 (▲4,723) | Mature | 61 | active | 9d ago | 1.7y | 5 |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | OCR / layout model | Python | Apache-2.0 | 87,213 (▲1,372) | Classic | 83 | very active | 16d ago | 6.3y | 16 |
-| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Conversion framework | Python | NOASSERTION | 77,092 (▲1,931) | Mature | 80 | very active | 0d ago | 2.4y | 1 |
-| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 75,806 (▲357) | Classic | 65 | very active | 5d ago | 12.0y | 9 |
-| [docling-project/docling](https://github.com/docling-project/docling) | Conversion framework | Python | MIT | 64,396 (▲909) | Mature | 95 | very active | 0d ago | 2.1y | 37 |
-| [datalab-to/marker](https://github.com/datalab-to/marker) | Conversion framework | Python | Apache-2.0 | 38,522 (▲860) | Mature | 68 | very active | 1d ago | 2.8y | 2 |
-| [google/langextract](https://github.com/google/langextract) | Structured field extraction | Python | Apache-2.0 | 37,992 (▲401) | Mature | 65 | active | 13d ago | 1.1y | 2 |
-| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | VLM document parser | Python | MIT | 23,754 (▲141) | Declining | 15 | stale | 6mo ago | 9mo | 0 |
-| [allenai/olmocr](https://github.com/allenai/olmocr) | VLM document parser | Python | Apache-2.0 | 19,277 (▲149) | Declining | 42 | slowing | 4mo ago | 1.9y | 0 |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Conversion framework | HTML | Apache-2.0 | 15,276 (▲111) | Classic | 69 | active | 3d ago | 3.9y | 7 |
-| [getomni-ai/zerox](https://github.com/getomni-ai/zerox) | VLM document parser | TypeScript | MIT | 12,262 (▲3) | Abandoned | 3 | stale | 1.2y ago | 2.0y | 0 |
-| [facebookresearch/nougat](https://github.com/facebookresearch/nougat) | VLM document parser | Python | MIT | 10,057 (▲10) | Abandoned | 5 | stale | 1.5y ago | 3.2y | 0 |
-| [studio-dots-ai/dots.ocr](https://github.com/studio-dots-ai/dots.ocr) | VLM document parser | Python | MIT | 9,059 | Declining | 23 | slowing | 4mo ago | 1.0y | 0 |
-| [bytedance/Dolphin](https://github.com/bytedance/Dolphin) | VLM document parser | Python | NOASSERTION | 9,045 (▲10) | Declining | 24 | slowing | 4mo ago | 1.2y | 0 |
-| [xberg-io/xberg](https://github.com/xberg-io/xberg) | Conversion framework | Rust | MIT | 8,928 (▲253) | Mature | 80 | very active | 0d ago | 1.5y | 1 |
-| [Yuliang-Liu/MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR) | VLM document parser | Python | Apache-2.0 | 6,623 (▲19) | Declining | 47 | active | 18d ago | 1.2y | 1 |
-| [python-openxml/python-docx](https://github.com/python-openxml/python-docx) | Format-specific / serving | Python | MIT | 5,693 (▲11) | Mature | 37 | active | 6d ago | 12.8y | 0 |
-| [deepseek-ai/DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | VLM document parser | Python | Apache-2.0 | 3,236 (▲85) | Declining | 15 | stale | 6mo ago | 6mo | 0 |
-| [opendatalab/DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) | OCR / layout model | Python | AGPL-3.0 | 2,244 (▲13) | Abandoned | 7 | stale | 1.3y ago | 1.8y | 0 |
-| [run-llama/semtools](https://github.com/run-llama/semtools) | Conversion framework | Rust | MIT | 1,845 (▲8) | Declining | 40 | slowing | 4mo ago | 11mo | 0 |
-| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,025 (▲12) | Hot | 73 | very active | 2d ago | 10mo | 5 |
-| [adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api) | Format-specific / serving | Python | GPL-3.0 | 979 (▲1) | Abandoned | 2 | stale | 1.8y ago | 2.2y | 0 |
-| [567-labs/instructor-js](https://github.com/567-labs/instructor-js) | Structured field extraction | TypeScript | MIT | 802 (▲3) | Abandoned | 7 | stale | 1.5y ago | 2.6y | 0 |
-| [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 705 (▲16) | Mature | 69 | very active | 7d ago | 1.4y | 6 |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | Conversion framework | Python | MIT | 172,207 (▲2,888) | Mature | 61 | active | 9d ago | 1.7y | 5 |
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | OCR / layout model | Python | Apache-2.0 | 87,213 (▲897) | Classic | 83 | very active | 16d ago | 6.3y | 16 |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Conversion framework | Python | NOASSERTION | 77,092 (▲1,246) | Mature | 80 | very active | 0d ago | 2.4y | 1 |
+| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 75,806 (▲233) | Classic | 65 | very active | 5d ago | 12.0y | 9 |
+| [docling-project/docling](https://github.com/docling-project/docling) | Conversion framework | Python | MIT | 64,396 (▲568) | Mature | 95 | very active | 0d ago | 2.1y | 37 |
+| [datalab-to/marker](https://github.com/datalab-to/marker) | Conversion framework | Python | Apache-2.0 | 38,522 (▲610) | Mature | 68 | very active | 1d ago | 2.8y | 2 |
+| [google/langextract](https://github.com/google/langextract) | Structured field extraction | Python | Apache-2.0 | 37,992 (▲116) | Mature | 65 | active | 13d ago | 1.1y | 2 |
+| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | VLM document parser | Python | MIT | 23,754 (▲70) | Declining | 15 | stale | 6mo ago | 9mo | 0 |
+| [allenai/olmocr](https://github.com/allenai/olmocr) | VLM document parser | Python | Apache-2.0 | 19,277 (▲80) | Declining | 42 | slowing | 4mo ago | 1.9y | 0 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Conversion framework | HTML | Apache-2.0 | 15,276 (▲72) | Classic | 69 | active | 3d ago | 3.9y | 7 |
+| [getomni-ai/zerox](https://github.com/getomni-ai/zerox) | VLM document parser | TypeScript | MIT | 12,262 (▲5) | Abandoned | 3 | stale | 1.2y ago | 2.0y | 0 |
+| [facebookresearch/nougat](https://github.com/facebookresearch/nougat) | VLM document parser | Python | MIT | 10,057 (▲4) | Abandoned | 5 | stale | 1.5y ago | 3.2y | 0 |
+| [studio-dots-ai/dots.ocr](https://github.com/studio-dots-ai/dots.ocr) | VLM document parser | Python | MIT | 9,059 (▲28) | Declining | 23 | slowing | 4mo ago | 1.0y | 0 |
+| [bytedance/Dolphin](https://github.com/bytedance/Dolphin) | VLM document parser | Python | NOASSERTION | 9,045 (▲5) | Declining | 24 | slowing | 4mo ago | 1.2y | 0 |
+| [xberg-io/xberg](https://github.com/xberg-io/xberg) | Conversion framework | Rust | MIT | 8,928 (▲226) | Mature | 80 | very active | 0d ago | 1.5y | 1 |
+| [Yuliang-Liu/MonkeyOCR](https://github.com/Yuliang-Liu/MonkeyOCR) | VLM document parser | Python | Apache-2.0 | 6,623 (▲13) | Declining | 47 | active | 18d ago | 1.2y | 1 |
+| [python-openxml/python-docx](https://github.com/python-openxml/python-docx) | Format-specific / serving | Python | MIT | 5,693 (▲5) | Mature | 37 | active | 6d ago | 12.8y | 0 |
+| [deepseek-ai/DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | VLM document parser | Python | Apache-2.0 | 3,236 (▲50) | Declining | 15 | stale | 6mo ago | 6mo | 0 |
+| [opendatalab/DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) | OCR / layout model | Python | AGPL-3.0 | 2,244 (▲8) | Abandoned | 7 | stale | 1.3y ago | 1.8y | 0 |
+| [run-llama/semtools](https://github.com/run-llama/semtools) | Conversion framework | Rust | MIT | 1,845 (▲5) | Declining | 40 | slowing | 4mo ago | 11mo | 0 |
+| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,025 (▲6) | Hot | 73 | very active | 2d ago | 10mo | 5 |
+| [adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api) | Format-specific / serving | Python | GPL-3.0 | 979 (▲2) | Abandoned | 2 | stale | 1.8y ago | 2.2y | 0 |
+| [567-labs/instructor-js](https://github.com/567-labs/instructor-js) | Structured field extraction | TypeScript | MIT | 802 | Abandoned | 7 | stale | 1.5y ago | 2.6y | 0 |
+| [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 705 (▲8) | Mature | 69 | very active | 7d ago | 1.4y | 6 |
 | [AstraBert/PdfItDown](https://github.com/AstraBert/PdfItDown) | Format-specific / serving | Rust | MIT | 249 (▲1) | Mature | 74 | very active | 29d ago | 1.6y | 2 |
-| [JoshData/pdf-redactor](https://github.com/JoshData/pdf-redactor) | Format-specific / serving | Python | CC0-1.0 | 212 (▲2) | Abandoned | 2 | stale | 2.2y ago | 9.8y | 0 |
+| [JoshData/pdf-redactor](https://github.com/JoshData/pdf-redactor) | Format-specific / serving | Python | CC0-1.0 | 212 (▲1) | Abandoned | 2 | stale | 2.2y ago | 9.8y | 0 |
 
 ## Task rankings — which framework for which job
 

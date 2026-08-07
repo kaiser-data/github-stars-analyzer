@@ -13,14 +13,14 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Repos by movement type</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Risers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">1,127</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">1,130</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Breakouts</text>
-<path d="M244,67 h310.4 q4,0 4,4 v10 q0,4 -4,4 h-310.4 z" class="bar"/>
-<text x="564.4" y="76.0" class="val" dominant-baseline="central">1,030</text>
+<path d="M244,67 h316.3 q4,0 4,4 v10 q0,4 -4,4 h-316.3 z" class="bar"/>
+<text x="570.3" y="76.0" class="val" dominant-baseline="central">1,052</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">New entrants</text>
-<path d="M244,94 h37.5 q4,0 4,4 v10 q0,4 -4,4 h-37.5 z" class="bar"/>
-<text x="291.5" y="103.0" class="val" dominant-baseline="central">136</text>
+<path d="M244,94 h21.6 q4,0 4,4 v10 q0,4 -4,4 h-21.6 z" class="bar"/>
+<text x="275.6" y="103.0" class="val" dominant-baseline="central">84</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Cooling</text>
-<path d="M244,121 h4.5 q4,0 4,4 v10 q0,4 -4,4 h-4.5 z" class="bar"/>
-<text x="258.5" y="130.0" class="val" dominant-baseline="central">28</text>
+<path d="M244,121 h10.9 q4,0 4,4 v10 q0,4 -4,4 h-10.9 z" class="bar"/>
+<text x="264.9" y="130.0" class="val" dominant-baseline="central">49</text>
 </svg>

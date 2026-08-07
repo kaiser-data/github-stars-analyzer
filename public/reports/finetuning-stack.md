@@ -41,31 +41,31 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [huggingface/transformers](https://github.com/huggingface/transformers) | Full-stack fine-tuning framework | Python | Apache-2.0 | 163,444 (▲690) | Classic | 100 | very active | 0d ago | 7.8y | 37 |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Learn-by-building | Jupyter Notebook | NOASSERTION | 100,892 (▲1,477) | Classic | 53 | active | 9d ago | 3.0y | 5 |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Full-stack fine-tuning framework | Python | Apache-2.0 | 73,899 (▲514) | Classic | 84 | very active | 2d ago | 3.2y | 30 |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Full-stack fine-tuning framework | Python | Apache-2.0 | 69,685 (▲1,240) | Mature | 78 | very active | 0d ago | 2.7y | 14 |
-| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Learn-by-building | Python | MIT | 67,292 (▲102) | Declining | 22 | stale | 6mo ago | 6.0y | 0 |
-| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | Learn-by-building | Python | MIT | 61,946 (▲611) | Declining | 11 | stale | 8mo ago | 3.6y | 0 |
-| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Full-stack fine-tuning framework | Python | Apache-2.0 | 31,276 (▲36) | Classic | 73 | very active | 1d ago | 7.4y | 14 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Hardware fit & serving | Rust | MIT | 31,232 (▲1,421) | Hot | 78 | very active | 1d ago | 5mo | 15 |
-| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Hardware fit & serving | Jupyter Notebook | Apache-2.0 | 29,885 (▲6,130) | Mature | 61 | very active | 2d ago | 3.2y | 1 |
-| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,515 (▲97) | Classic | 87 | very active | 1d ago | 3.7y | 39 |
-| [huggingface/trl](https://github.com/huggingface/trl) | PEFT & alignment library | Python | Apache-2.0 | 19,025 (▲139) | Classic | 85 | very active | 0d ago | 6.4y | 22 |
-| [PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,964 (▲7) | Mature | 41 | slowing | 2mo ago | 5.5y | 1 |
-| [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,326 (▲109) | Classic | 84 | very active | 0d ago | 3.3y | 14 |
-| [OpenPipe/ART](https://github.com/OpenPipe/ART) | RL post-training for agents | Python | Apache-2.0 | 10,562 (▲67) | Hot | 79 | very active | 0d ago | 1.4y | 7 |
-| [roboflow/rf-detr](https://github.com/roboflow/rf-detr) | Domain & on-device tuning | Python | Apache-2.0 | 8,896 (▲285) | Hot | 84 | very active | 0d ago | 1.4y | 26 |
-| [yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL) | Learn-by-building | Jupyter Notebook | Unlicense | 6,553 (▲9) | Mature | 27 | slowing | 4mo ago | 9.5y | 0 |
-| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | RL post-training for agents | Python | Apache-2.0 | 5,627 (▲39) | Declining | 35 | slowing | 2mo ago | 5mo | 1 |
-| [unslothai/notebooks](https://github.com/unslothai/notebooks) | Learn-by-building | Jupyter Notebook | LGPL-3.0 | 5,552 (▲34) | Hot | 50 | very active | 1d ago | 1.7y | 3 |
-| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | Domain & on-device tuning | Python | MIT | 5,304 (▲127) | Mature | 84 | very active | 0d ago | 2.3y | 9 |
-| [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) | Hardware fit & serving | Python | AGPL-3.0 | 5,170 (▲8) | Mature | 80 | very active | 2d ago | 2.6y | 3 |
-| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,000 (▲18) | Declining | 6 | stale | 11mo ago | 1.8y | 0 |
-| [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | Domain & on-device tuning | Python | MIT | 4,101 (▲10) | Abandoned | 4 | stale | 1.6y ago | 2.8y | 0 |
-| [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,823 (▲6) | Mature | 36 | slowing | 2mo ago | 2.8y | 1 |
-| [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,560 (▲29) | Declining | 10 | stale | 10mo ago | 1.1y | 0 |
-| [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | RL post-training for agents | Python | BSD-3-Clause | 2,487 (▲53) | Hot | 80 | very active | 0d ago | 10mo | 9 |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | Full-stack fine-tuning framework | Python | Apache-2.0 | 163,444 (▲416) | Classic | 100 | very active | 0d ago | 7.8y | 37 |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Learn-by-building | Jupyter Notebook | NOASSERTION | 100,892 (▲964) | Classic | 53 | active | 9d ago | 3.0y | 5 |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Full-stack fine-tuning framework | Python | Apache-2.0 | 73,899 (▲361) | Classic | 84 | very active | 2d ago | 3.2y | 30 |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Full-stack fine-tuning framework | Python | Apache-2.0 | 69,685 (▲737) | Mature | 78 | very active | 0d ago | 2.7y | 14 |
+| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Learn-by-building | Python | MIT | 67,292 (▲61) | Declining | 22 | stale | 6mo ago | 6.0y | 0 |
+| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | Learn-by-building | Python | MIT | 61,946 (▲368) | Declining | 11 | stale | 8mo ago | 3.6y | 0 |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Full-stack fine-tuning framework | Python | Apache-2.0 | 31,276 (▲25) | Classic | 73 | very active | 1d ago | 7.4y | 14 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Hardware fit & serving | Rust | MIT | 31,232 (▲501) | Hot | 78 | very active | 1d ago | 5mo | 15 |
+| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Hardware fit & serving | Jupyter Notebook | Apache-2.0 | 29,885 (▲5,791) | Mature | 61 | very active | 2d ago | 3.2y | 1 |
+| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,515 (▲61) | Classic | 87 | very active | 1d ago | 3.7y | 39 |
+| [huggingface/trl](https://github.com/huggingface/trl) | PEFT & alignment library | Python | Apache-2.0 | 19,025 (▲83) | Classic | 85 | very active | 0d ago | 6.4y | 22 |
+| [PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,964 (▲3) | Mature | 41 | slowing | 2mo ago | 5.5y | 1 |
+| [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,326 (▲62) | Classic | 84 | very active | 0d ago | 3.3y | 14 |
+| [OpenPipe/ART](https://github.com/OpenPipe/ART) | RL post-training for agents | Python | Apache-2.0 | 10,562 (▲28) | Hot | 79 | very active | 0d ago | 1.4y | 7 |
+| [roboflow/rf-detr](https://github.com/roboflow/rf-detr) | Domain & on-device tuning | Python | Apache-2.0 | 8,896 (▲150) | Hot | 84 | very active | 0d ago | 1.4y | 26 |
+| [yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL) | Learn-by-building | Jupyter Notebook | Unlicense | 6,553 (▲5) | Mature | 27 | slowing | 4mo ago | 9.5y | 0 |
+| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | RL post-training for agents | Python | Apache-2.0 | 5,627 (▲18) | Declining | 35 | slowing | 2mo ago | 5mo | 1 |
+| [unslothai/notebooks](https://github.com/unslothai/notebooks) | Learn-by-building | Jupyter Notebook | LGPL-3.0 | 5,552 (▲21) | Hot | 50 | very active | 1d ago | 1.7y | 3 |
+| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | Domain & on-device tuning | Python | MIT | 5,304 (▲44) | Mature | 84 | very active | 0d ago | 2.3y | 9 |
+| [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) | Hardware fit & serving | Python | AGPL-3.0 | 5,170 (▲4) | Mature | 80 | very active | 2d ago | 2.6y | 3 |
+| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,000 (▲11) | Declining | 6 | stale | 11mo ago | 1.8y | 0 |
+| [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | Domain & on-device tuning | Python | MIT | 4,101 (▲3) | Abandoned | 4 | stale | 1.6y ago | 2.8y | 0 |
+| [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,823 (▲3) | Mature | 36 | slowing | 2mo ago | 2.8y | 1 |
+| [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,560 (▲27) | Declining | 10 | stale | 10mo ago | 1.1y | 0 |
+| [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | RL post-training for agents | Python | BSD-3-Clause | 2,487 (▲37) | Hot | 80 | very active | 0d ago | 10mo | 9 |
 | [pico-lm/pico-train](https://github.com/pico-lm/pico-train) | Learn-by-building | Python | Apache-2.0 | 318 | Declining | 23 | slowing | 5mo ago | 1.9y | 0 |
 | [VectorInstitute/fed-rag](https://github.com/VectorInstitute/fed-rag) | Domain & on-device tuning | Python | Apache-2.0 | 150 | Declining | 33 | active | 1mo ago | 1.6y | 0 |
 

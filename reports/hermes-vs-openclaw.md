@@ -53,16 +53,16 @@ Where the two sit among the other personal-assistant / agent-harness projects in
 
 | Project | ★ Stars | Lang | Health | Lifecycle | Momentum (★/30d) | Note |
 |---|---|---|---|---|---|---|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,936) | TypeScript | 84 | Hot | 112,731 | **this comparison** — the hub |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 227,042 (▲9,598) | Python | 85 | Hot | 37,994 | **this comparison** — Python challenger |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 79,512 (▲2,089) | Python | 84 | Hot | 11,073 | long-horizon SuperAgent harness |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 67,452 (▲1,235) | TypeScript | 78 | Hot | 20,414 | agent harness (ex oh-my-opencode) |
-| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 46,749 (▲833) | Python | 84 | Hot | 18,692 | lightweight agent |
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 32,526 (▲195) | Rust | 83 | Hot | 13,899 | healthiest alternative (Rust) |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲174) | TypeScript | 76 | Hot | 12,140 | containerized secure OpenClaw alt |
-| [elizaOS/eliza](https://github.com/elizaOS/eliza) | 18,927 (▲155) | TypeScript | 84 | Mature | 1,308 | agentic OS, always-on agents |
-| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 18,083 (▲48) | Rust | 71 | Rising | 3,310 | open Agent-OS (Rust) |
-| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 12,597 (▲65) | Rust | 80 | Hot | 5,091 | privacy/security Agent-OS (Rust) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,190) | TypeScript | 84 | Hot | 112,731 | **this comparison** — the hub |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 227,042 (▲5,921) | Python | 85 | Hot | 37,994 | **this comparison** — Python challenger |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 79,512 (▲1,572) | Python | 84 | Hot | 11,073 | long-horizon SuperAgent harness |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 67,452 (▲807) | TypeScript | 78 | Hot | 20,414 | agent harness (ex oh-my-opencode) |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 46,749 (▲466) | Python | 84 | Hot | 18,692 | lightweight agent |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 32,526 (▲120) | Rust | 83 | Hot | 13,899 | healthiest alternative (Rust) |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲88) | TypeScript | 76 | Hot | 12,140 | containerized secure OpenClaw alt |
+| [elizaOS/eliza](https://github.com/elizaOS/eliza) | 18,927 (▲112) | TypeScript | 84 | Mature | 1,308 | agentic OS, always-on agents |
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 18,083 (▲19) | Rust | 71 | Rising | 3,310 | open Agent-OS (Rust) |
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 12,597 (▲32) | Rust | 80 | Hot | 5,091 | privacy/security Agent-OS (Rust) |
 
 ## Which should you use?
 

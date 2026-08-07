@@ -17,14 +17,14 @@ Opinionated picks — filtered for **healthy + actively maintained** (high healt
 
 | Layer | Pick | ★ | Health | Why |
 |---|---|---|---|---|
-| Core assistant | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,936) | 84 | The OpenClaw assistant itself — your own personal AI, any OS/platform. Everything else extends this. |
-| Secure runtime | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲174) | 76 | Lightweight OpenClaw alternative that runs in containers for security; WhatsApp/Telegram/Slack connectors. |
-| Serverless host | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 9,931 (▲6) | 28 | Run OpenClaw on Cloudflare Workers (serverless edge). |
-| Skills directory | [openclaw/clawhub](https://github.com/openclaw/clawhub) | 9,277 (▲96) | 80 | The official skill directory for OpenClaw. |
-| LLM router | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,682 (▲20) | 78 | Agent-native LLM router for OpenClaw — 41+ models, <1ms routing, on-chain payments. |
-| Memory | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 17,450 (▲8,301) | 67 | Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin. |
-| Observability | [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | 392 (▲2) | 78 | Real-time observability dashboard — 'see your agent think' (OpenTelemetry). |
-| Desktop hub | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 125,449 (▲6,353) | 77 | Cross-platform desktop hub for OpenClaw + Claude Code + Codex + Gemini CLI + Hermes. |
+| Core assistant | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,190) | 84 | The OpenClaw assistant itself — your own personal AI, any OS/platform. Everything else extends this. |
+| Secure runtime | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲88) | 76 | Lightweight OpenClaw alternative that runs in containers for security; WhatsApp/Telegram/Slack connectors. |
+| Serverless host | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 9,931 (▲2) | 28 | Run OpenClaw on Cloudflare Workers (serverless edge). |
+| Skills directory | [openclaw/clawhub](https://github.com/openclaw/clawhub) | 9,277 (▲56) | 80 | The official skill directory for OpenClaw. |
+| LLM router | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,682 | 78 | Agent-native LLM router for OpenClaw — 41+ models, <1ms routing, on-chain payments. |
+| Memory | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 17,450 (▲8,141) | 67 | Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin. |
+| Observability | [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | 392 (▼2) | 78 | Real-time observability dashboard — 'see your agent think' (OpenTelemetry). |
+| Desktop hub | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 125,449 (▲3,902) | 77 | Cross-platform desktop hub for OpenClaw + Claude Code + Codex + Gemini CLI + Hermes. |
 
 **One-liner:** keep `openclaw/openclaw` as the core; run it via **nanoclaw** (security) or **moltworker** (serverless); add **clawhub** skills, **ClawRouter** routing, and **clawmetry** observability. Want a fresh start? **zeroclaw-labs/zeroclaw** is the highest-health alternative you've starred.
 
@@ -34,34 +34,34 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Project | Category | Lang | ★ Stars | Lifecycle | Health | Activity | Last push | Bus factor |
 |---|---|---|---|---|---|---|---|---|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Core | TypeScript | 385,469 (▲1,936) | Hot | 84 | very active | 0d ago | 2 |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Alternative agent / OS | Python | 227,042 (▲9,598) | Hot | 85 | very active | 0d ago | 3 |
-| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Desktop / orchestration | Rust | 125,449 (▲6,353) | Hot | 77 | very active | 0d ago | 1 |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | Desktop / orchestration | TypeScript | 50,017 (▲1,235) | Mature | 89 | very active | 0d ago | 3 |
-| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Alternative agent / OS | Python | 46,749 (▲833) | Hot | 84 | very active | 0d ago | 2 |
-| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 32,938 (▲4,801) | Hot | 78 | very active | 0d ago | 1 |
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Alternative agent / OS | Rust | 32,526 (▲195) | Hot | 83 | very active | 0d ago | 2 |
-| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Skills / directory | — | 31,670 (▲140) | Declining | 24 | slowing | 4mo ago | 0 |
-| [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | Desktop / orchestration | TypeScript | 31,662 (▲1,173) | Hot | 86 | very active | 0d ago | 3 |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Hosting / secure runtime | TypeScript | 30,468 (▲174) | Hot | 76 | very active | 1d ago | 2 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Hosting / secure runtime | TypeScript | 22,085 (▲237) | Hot | 84 | very active | 0d ago | 5 |
-| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | Alternative agent / OS | Rust | 18,083 (▲48) | Rising | 71 | active | 1mo ago | 1 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Memory | TypeScript | 17,450 (▲8,301) | Mature | 67 | active | 1d ago | 2 |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Specialized agent | Python | 13,975 (▲131) | Hot | 76 | very active | 26d ago | 2 |
-| [nearai/ironclaw](https://github.com/nearai/ironclaw) | Alternative agent / OS | Rust | 12,597 (▲65) | Hot | 80 | very active | 0d ago | 2 |
-| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | Hosting / secure runtime | TypeScript | 9,931 (▲6) | Declining | 28 | slowing | 3mo ago | 0 |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Skills / directory | TypeScript | 9,277 (▲96) | Hot | 80 | very active | 0d ago | 1 |
-| [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | Specialized agent | Python | 8,297 (▲51) | Declining | 20 | slowing | 5mo ago | 0 |
-| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Routing | TypeScript | 6,682 (▲20) | Hot | 78 | very active | 0d ago | 1 |
-| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Specialized agent | Python | 5,627 (▲39) | Declining | 35 | slowing | 2mo ago | 1 |
-| [crshdn/mission-control](https://github.com/crshdn/mission-control) | Desktop / orchestration | TypeScript | 2,126 (▲18) | Rising | 66 | active | 1mo ago | 1 |
-| [pinchbench/skill](https://github.com/pinchbench/skill) | Observability | Python | 1,306 (▲21) | Mature | 63 | active | 1mo ago | 1 |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Core | TypeScript | 385,469 (▲1,190) | Hot | 84 | very active | 0d ago | 2 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Alternative agent / OS | Python | 227,042 (▲5,921) | Hot | 85 | very active | 0d ago | 3 |
+| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Desktop / orchestration | Rust | 125,449 (▲3,902) | Hot | 77 | very active | 0d ago | 1 |
+| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | Desktop / orchestration | TypeScript | 50,017 (▲992) | Mature | 89 | very active | 0d ago | 3 |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Alternative agent / OS | Python | 46,749 (▲466) | Hot | 84 | very active | 0d ago | 2 |
+| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 32,938 (▲2,658) | Hot | 78 | very active | 0d ago | 1 |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Alternative agent / OS | Rust | 32,526 (▲120) | Hot | 83 | very active | 0d ago | 2 |
+| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Skills / directory | — | 31,670 (▲136) | Declining | 24 | slowing | 4mo ago | 0 |
+| [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | Desktop / orchestration | TypeScript | 31,662 (▲750) | Hot | 86 | very active | 0d ago | 3 |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Hosting / secure runtime | TypeScript | 30,468 (▲88) | Hot | 76 | very active | 1d ago | 2 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Hosting / secure runtime | TypeScript | 22,085 (▲133) | Hot | 84 | very active | 0d ago | 5 |
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | Alternative agent / OS | Rust | 18,083 (▲19) | Rising | 71 | active | 1mo ago | 1 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Memory | TypeScript | 17,450 (▲8,141) | Mature | 67 | active | 1d ago | 2 |
+| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Specialized agent | Python | 13,975 (▲79) | Hot | 76 | very active | 26d ago | 2 |
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | Alternative agent / OS | Rust | 12,597 (▲32) | Hot | 80 | very active | 0d ago | 2 |
+| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | Hosting / secure runtime | TypeScript | 9,931 (▲2) | Declining | 28 | slowing | 3mo ago | 0 |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Skills / directory | TypeScript | 9,277 (▲56) | Hot | 80 | very active | 0d ago | 1 |
+| [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | Specialized agent | Python | 8,297 (▲5) | Declining | 20 | slowing | 5mo ago | 0 |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Routing | TypeScript | 6,682 | Hot | 78 | very active | 0d ago | 1 |
+| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Specialized agent | Python | 5,627 (▲18) | Declining | 35 | slowing | 2mo ago | 1 |
+| [crshdn/mission-control](https://github.com/crshdn/mission-control) | Desktop / orchestration | TypeScript | 2,126 (▲13) | Rising | 66 | active | 1mo ago | 1 |
+| [pinchbench/skill](https://github.com/pinchbench/skill) | Observability | Python | 1,306 (▲7) | Mature | 63 | active | 1mo ago | 1 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | Memory | TypeScript | 792 (▲1) | Rising | 57 | active | 1mo ago | 3 |
-| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Specialized agent | Python | 764 (▲4) | Hot | 75 | very active | 8d ago | 1 |
-| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 711 (▲28) | Rising | 71 | active | 10d ago | 2 |
-| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 573 (▲4) | Rising | 68 | very active | 1d ago | 1 |
-| [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | Skills / directory | Python | 559 (▲4) | Hot | 54 | active | 1mo ago | 2 |
-| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 392 (▲2) | Hot | 78 | very active | 0d ago | 1 |
+| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Specialized agent | Python | 764 (▲5) | Hot | 75 | very active | 8d ago | 1 |
+| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 711 (▲14) | Rising | 71 | active | 10d ago | 2 |
+| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 573 (▲2) | Rising | 68 | very active | 1d ago | 1 |
+| [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | Skills / directory | Python | 559 (▲1) | Hot | 54 | active | 1mo ago | 2 |
+| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 392 (▼2) | Hot | 78 | very active | 0d ago | 1 |
 
 ## By category
 

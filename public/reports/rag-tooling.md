@@ -38,38 +38,38 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Ingestion / parsing / chunking | Python | Apache-2.0 | 87,213 (▲1,372) | Classic | 83 | very active | 16d ago | 6.3y | 16 |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | RAG framework / engine | Go | Apache-2.0 | 87,034 (▲1,592) | Mature | 93 | very active | 0d ago | 2.7y | 21 |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | RAG framework / engine | Python | MIT | 51,447 (▲494) | Classic | 99 | very active | 1d ago | 3.8y | 54 |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector DB / search | Go | Apache-2.0 | 45,553 (▲276) | Classic | 99 | very active | 0d ago | 6.9y | 29 |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Vector DB / search | C++ | MIT | 40,690 (▲146) | Classic | 94 | very active | 0d ago | 9.5y | 33 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | RAG framework / engine | Python | MIT | 38,620 (▲750) | Hot | 79 | very active | 1d ago | 1.8y | 5 |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | RAG framework / engine | Python | MIT | 35,319 (▲797) | Mature | 69 | active | 3d ago | 2.4y | 4 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Novel retrieval approach | Python | MIT | 35,066 (▲945) | Hot | 60 | very active | 1d ago | 1.4y | 8 |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector DB / search | Rust | Apache-2.0 | 33,835 (▲412) | Classic | 88 | very active | 0d ago | 6.2y | 15 |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Vector DB / search | Rust | Apache-2.0 | 28,974 (▲141) | Classic | 83 | very active | 2d ago | 3.8y | 9 |
-| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,142 (▲191) | Classic | 90 | very active | 0d ago | 6.7y | 30 |
-| [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 22,809 (▲513) | Hot | 67 | very active | 18d ago | 1.2y | 14 |
-| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 22,529 (▲263) | Classic | 65 | very active | 0d ago | 5.3y | 4 |
-| [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 18,978 (▲57) | Classic | 84 | very active | 0d ago | 7.0y | 32 |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector DB / search | Go | BSD-3-Clause | 16,703 (▲84) | Classic | 84 | very active | 0d ago | 10.4y | 8 |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 15,403 (▲237) | Hot | 88 | very active | 0d ago | 8mo | 16 |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Ingestion / parsing / chunking | HTML | Apache-2.0 | 15,276 (▲111) | Classic | 69 | active | 3d ago | 3.9y | 7 |
-| [llmware-ai/llmware](https://github.com/llmware-ai/llmware) | RAG framework / engine | Python | Apache-2.0 | 14,858 (▲30) | Mature | 47 | slowing | 2mo ago | 2.9y | 1 |
-| [neuml/txtai](https://github.com/neuml/txtai) | RAG framework / engine | Python | Apache-2.0 | 12,812 (▲75) | Classic | 80 | very active | 3d ago | 6.0y | 7 |
-| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Novel retrieval approach | Python | MIT | 12,776 (▲64) | Hot | 76 | very active | 7d ago | 1.2y | 18 |
-| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | Novel retrieval approach | TypeScript | MIT | 12,307 (▲142) | Mature | 46 | active | 24d ago | 1.2y | 5 |
-| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Vector DB / search | Rust | Apache-2.0 | 11,089 (▲154) | Classic | 87 | very active | 0d ago | 3.4y | 30 |
-| [airweave-ai/airweave](https://github.com/airweave-ai/airweave) | RAG framework / engine | Python | MIT | 6,541 (▲53) | Mature | 57 | slowing | 2mo ago | 1.6y | 2 |
-| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector DB / search | Rust | NOASSERTION | 5,413 (▲608) | Classic | 83 | very active | 0d ago | 3.1y | 11 |
-| [marqo-ai/marqo](https://github.com/marqo-ai/marqo) | Vector DB / search | Python | Apache-2.0 | 5,017 | Mature | 49 | active | 3d ago | 4.0y | 0 |
-| [feyninc/chonkie](https://github.com/feyninc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,652 (▲129) | Hot | 78 | very active | 2d ago | 1.4y | 4 |
-| [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,196 (▲12) | Mature | 49 | slowing | 2mo ago | 2.3y | 2 |
-| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,728 (▲26) | Mature | 65 | active | 4d ago | 2.1y | 4 |
-| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 2,668 (▲391) | Mature | 80 | very active | 0d ago | 2.8y | 6 |
-| [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 983 (▲11) | Mature | 76 | very active | 1d ago | 2.5y | 3 |
-| [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 670 | Declining | 57 | active | 1mo ago | 1.7y | 1 |
-| [feyninc/chonkiejs](https://github.com/feyninc/chonkiejs) | Ingestion / parsing / chunking | TypeScript | MIT | 367 (▲4) | Mature | 71 | very active | 10d ago | 1.3y | 1 |
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Ingestion / parsing / chunking | Python | Apache-2.0 | 87,213 (▲897) | Classic | 83 | very active | 16d ago | 6.3y | 16 |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | RAG framework / engine | Go | Apache-2.0 | 87,034 (▲925) | Mature | 93 | very active | 0d ago | 2.7y | 21 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | RAG framework / engine | Python | MIT | 51,447 (▲309) | Classic | 99 | very active | 1d ago | 3.8y | 54 |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector DB / search | Go | Apache-2.0 | 45,553 (▲167) | Classic | 99 | very active | 0d ago | 6.9y | 29 |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Vector DB / search | C++ | MIT | 40,690 (▲103) | Classic | 94 | very active | 0d ago | 9.5y | 33 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | RAG framework / engine | Python | MIT | 38,620 (▲407) | Hot | 79 | very active | 1d ago | 1.8y | 5 |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | RAG framework / engine | Python | MIT | 35,319 (▲424) | Mature | 69 | active | 3d ago | 2.4y | 4 |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Novel retrieval approach | Python | MIT | 35,066 (▲315) | Hot | 60 | very active | 1d ago | 1.4y | 8 |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector DB / search | Rust | Apache-2.0 | 33,835 (▲230) | Classic | 88 | very active | 0d ago | 6.2y | 15 |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Vector DB / search | Rust | Apache-2.0 | 28,974 (▲88) | Classic | 83 | very active | 2d ago | 3.8y | 9 |
+| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,142 (▲116) | Classic | 90 | very active | 0d ago | 6.7y | 30 |
+| [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 22,809 (▲373) | Hot | 67 | very active | 18d ago | 1.2y | 14 |
+| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 22,529 (▲167) | Classic | 65 | very active | 0d ago | 5.3y | 4 |
+| [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 18,978 (▲32) | Classic | 84 | very active | 0d ago | 7.0y | 32 |
+| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector DB / search | Go | BSD-3-Clause | 16,703 (▲51) | Classic | 84 | very active | 0d ago | 10.4y | 8 |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 15,403 (▲121) | Hot | 88 | very active | 0d ago | 8mo | 16 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Ingestion / parsing / chunking | HTML | Apache-2.0 | 15,276 (▲72) | Classic | 69 | active | 3d ago | 3.9y | 7 |
+| [llmware-ai/llmware](https://github.com/llmware-ai/llmware) | RAG framework / engine | Python | Apache-2.0 | 14,858 (▲31) | Mature | 47 | slowing | 2mo ago | 2.9y | 1 |
+| [neuml/txtai](https://github.com/neuml/txtai) | RAG framework / engine | Python | Apache-2.0 | 12,812 (▲53) | Classic | 80 | very active | 3d ago | 6.0y | 7 |
+| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Novel retrieval approach | Python | MIT | 12,776 (▲41) | Hot | 76 | very active | 7d ago | 1.2y | 18 |
+| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | Novel retrieval approach | TypeScript | MIT | 12,307 (▲104) | Mature | 46 | active | 24d ago | 1.2y | 5 |
+| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Vector DB / search | Rust | Apache-2.0 | 11,089 (▲86) | Classic | 87 | very active | 0d ago | 3.4y | 30 |
+| [airweave-ai/airweave](https://github.com/airweave-ai/airweave) | RAG framework / engine | Python | MIT | 6,541 (▲37) | Mature | 57 | slowing | 2mo ago | 1.6y | 2 |
+| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector DB / search | Rust | NOASSERTION | 5,413 (▲584) | Classic | 83 | very active | 0d ago | 3.1y | 11 |
+| [marqo-ai/marqo](https://github.com/marqo-ai/marqo) | Vector DB / search | Python | Apache-2.0 | 5,017 (▼1) | Mature | 49 | active | 3d ago | 4.0y | 0 |
+| [feyninc/chonkie](https://github.com/feyninc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,652 (▲72) | Hot | 78 | very active | 2d ago | 1.4y | 4 |
+| [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,196 (▲9) | Mature | 49 | slowing | 2mo ago | 2.3y | 2 |
+| [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,728 (▲20) | Mature | 65 | active | 4d ago | 2.1y | 4 |
+| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 2,668 (▲327) | Mature | 80 | very active | 0d ago | 2.8y | 6 |
+| [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 983 (▲5) | Mature | 76 | very active | 1d ago | 2.5y | 3 |
+| [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 670 (▲1) | Declining | 57 | active | 1mo ago | 1.7y | 1 |
+| [feyninc/chonkiejs](https://github.com/feyninc/chonkiejs) | Ingestion / parsing / chunking | TypeScript | MIT | 367 (▲2) | Mature | 71 | very active | 10d ago | 1.3y | 1 |
 
 ## By category
 

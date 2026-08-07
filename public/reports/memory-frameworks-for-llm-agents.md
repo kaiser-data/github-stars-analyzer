@@ -22,28 +22,28 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | JavaScript | Apache-2.0 | 89,998 (▲2,086) | Hot | 79 | very active | 2d ago | 11mo | 7 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 62,779 (▲1,505) | Classic | 89 | very active | 0d ago | 3.1y | 34 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 58,192 (▲699) | Hot | 76 | very active | 0d ago | 4mo | 8 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 29,847 (▲1,296) | Mature | 83 | very active | 0d ago | 3.0y | 11 |
-| [getzep/graphiti](https://github.com/getzep/graphiti) | General memory layer | Python | Apache-2.0 | 29,659 (▲712) | Hot | 78 | very active | 0d ago | 2.0y | 22 |
-| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 26,117 (▲677) | Hot | 83 | very active | 0d ago | 10mo | 14 |
-| [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | Python | Apache-2.0 | 24,148 (▲274) | Mature | 65 | active | 6d ago | 2.8y | 2 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 17,450 (▲8,301) | Mature | 67 | active | 1d ago | 4mo | 4 |
-| [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,189 (▲180) | Declining | 61 | active | 24d ago | 1.2y | 2 |
-| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 15,693 (▲59) | Hot | 81 | very active | 7d ago | 1.0y | 13 |
-| [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,902 (▲93) | Hot | 53 | slowing | 2mo ago | 9mo | 5 |
-| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | General memory layer | Python | AGPL-3.0 | 6,502 (▲431) | Mature | 69 | very active | 0d ago | 2.9y | 26 |
-| [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | Coding-agent memory | TypeScript | NOASSERTION | 4,933 (▲8) | Hot | 80 | active | 1mo ago | 1.1y | 8 |
-| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | General memory layer | JavaScript | Apache-2.0 | 3,662 (▲79) | Declining | 51 | active | 24d ago | 1.1y | 0 |
-| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,800 (▲2) | Declining | 25 | slowing | 3mo ago | 3mo | 0 |
-| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,482 (▲152) | Mature | 64 | very active | 2d ago | 2.1y | 10 |
-| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 2,294 (▲878) | Hot | 80 | very active | 0d ago | 1.1y | 6 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | JavaScript | Apache-2.0 | 89,998 (▲1,328) | Hot | 79 | very active | 2d ago | 11mo | 7 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 62,779 (▲968) | Classic | 89 | very active | 0d ago | 3.1y | 34 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 58,192 (▲414) | Hot | 76 | very active | 0d ago | 4mo | 8 |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 29,847 (▲441) | Mature | 83 | very active | 0d ago | 3.0y | 11 |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | General memory layer | Python | Apache-2.0 | 29,659 (▲421) | Hot | 78 | very active | 0d ago | 2.0y | 22 |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 26,117 (▲432) | Hot | 83 | very active | 0d ago | 10mo | 14 |
+| [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | Python | Apache-2.0 | 24,148 (▲171) | Mature | 65 | active | 6d ago | 2.8y | 2 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 17,450 (▲8,141) | Mature | 67 | active | 1d ago | 4mo | 4 |
+| [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,189 (▲118) | Declining | 61 | active | 24d ago | 1.2y | 2 |
+| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 15,693 (▲24) | Hot | 81 | very active | 7d ago | 1.0y | 13 |
+| [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,902 (▲45) | Hot | 53 | slowing | 2mo ago | 9mo | 5 |
+| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | General memory layer | Python | AGPL-3.0 | 6,502 (▲262) | Mature | 69 | very active | 0d ago | 2.9y | 26 |
+| [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | Coding-agent memory | TypeScript | NOASSERTION | 4,933 (▲3) | Hot | 80 | active | 1mo ago | 1.1y | 8 |
+| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | General memory layer | JavaScript | Apache-2.0 | 3,662 (▲77) | Declining | 51 | active | 24d ago | 1.1y | 0 |
+| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,800 | Declining | 25 | slowing | 3mo ago | 3mo | 0 |
+| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,482 (▲96) | Mature | 64 | very active | 2d ago | 2.1y | 10 |
+| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 2,294 (▲855) | Hot | 80 | very active | 0d ago | 1.1y | 6 |
 | [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Knowledge-graph memory | JavaScript | MIT | 882 (▲5) | Declining | 57 | slowing | 2mo ago | 1.7y | 1 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | General memory layer | TypeScript | — | 792 (▲1) | Rising | 57 | active | 1mo ago | 6mo | 7 |
 | [zmedelis/bosquet](https://github.com/zmedelis/bosquet) | LLM framework w/ memory | Clojure | EPL-1.0 | 377 (▲2) | Mature | 43 | slowing | 2mo ago | 3.6y | 2 |
 | [needle-ai/needle-mcp](https://github.com/needle-ai/needle-mcp) | Knowledge-graph memory | Python | MIT | 101 (▲2) | Abandoned | 10 | stale | 1.0y ago | 1.6y | 0 |
-| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 74 (▲4) | Hot | 76 | very active | 5d ago | 6mo | 4 |
+| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 74 (▲3) | Hot | 76 | very active | 5d ago | 6mo | 4 |
 
 ## By category
 
@@ -213,11 +213,11 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 
 | Store | ★ Stars | Lang | Role |
 |---|---|---|---|
-| [redis/redis](https://github.com/redis/redis) | 75,922 (▲330) | C | In-memory data store; common KV/vector backing for memory layers. |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | 40,690 (▲146) | C++ | Dense-vector similarity search library; embedding index substrate. |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 28,974 (▲141) | Rust | AI-native search/vector DB used as memory storage. |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | 15,403 (▲237) | C++ | Lightweight in-process vector database. |
-| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | 5,413 (▲608) | Rust | Fast graph database (GraphBLAS) for graph-shaped memory. |
+| [redis/redis](https://github.com/redis/redis) | 75,922 (▲210) | C | In-memory data store; common KV/vector backing for memory layers. |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | 40,690 (▲103) | C++ | Dense-vector similarity search library; embedding index substrate. |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 28,974 (▲88) | Rust | AI-native search/vector DB used as memory storage. |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | 15,403 (▲121) | C++ | Lightweight in-process vector database. |
+| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | 5,413 (▲584) | Rust | Fast graph database (GraphBLAS) for graph-shaped memory. |
 
 ## Methodology & caveats
 

@@ -33,41 +33,41 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Approach | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [obra/superpowers](https://github.com/obra/superpowers) | Meta-harness over coding agents | Shell | MIT | 268,683 (▲10,872) | Hot | 78 | very active | 0d ago | 10mo | 6 |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Meta-harness over coding agents | JavaScript | MIT | 238,551 (▲7,200) | Hot | 85 | very active | 0d ago | 6mo | 29 |
-| [github/spec-kit](https://github.com/github/spec-kit) | Determinism & spec-driven | Python | MIT | 125,772 (▲3,264) | Hot | 89 | very active | 0d ago | 11mo | 13 |
-| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness-as-SDK | TypeScript | MIT | 85,266 (▲12,268) | Hot | 90 | very active | 0d ago | 12mo | 20 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Autonomous long-horizon | Python | MIT | 79,512 (▲2,089) | Hot | 84 | very active | 0d ago | 1.3y | 35 |
-| [daytonaio/daytona](https://github.com/daytonaio/daytona) | Sandbox substrate | — | — | 72,023 (▼221) | Mature | 96 | very active | 15d ago | 2.5y | 21 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 67,452 (▲1,235) | Hot | 78 | very active | 0d ago | 8mo | 5 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Meta-harness over coding agents | TypeScript | MIT | 67,279 (▲2,042) | Hot | 76 | very active | 1d ago | 1.2y | 3 |
-| [multica-ai/multica](https://github.com/multica-ai/multica) | Fleet / parallel orchestration | Go | NOASSERTION | 44,689 (▲3,556) | Hot | 81 | very active | 0d ago | 6mo | 16 |
-| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 38,422 (▲520) | Hot | 80 | very active | 1d ago | 7mo | 15 |
-| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 27,698 (▲243) | Declining | 42 | slowing | 3mo ago | 1.1y | 0 |
-| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 27,487 (▲935) | Hot | 83 | very active | 0d ago | 1.0y | 9 |
-| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Shell | MIT | 26,042 (▲490) | Hot | 78 | very active | 4d ago | 7mo | 17 |
-| [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 23,507 (▲403) | Declining | 19 | slowing | 4mo ago | 11mo | 0 |
-| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 23,101 (▲152) | Hot | 78 | very active | 0d ago | 1.5y | 15 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 22,085 (▲237) | Hot | 84 | very active | 0d ago | 4mo | 24 |
-| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | HTML | MIT | 21,022 (▲717) | Hot | 76 | very active | 0d ago | 1.5y | 18 |
-| [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 18,769 (▲312) | Mature | 78 | very active | 6d ago | 2.2y | 2 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Meta-harness over coding agents | Shell | MIT | 268,683 (▲6,878) | Hot | 78 | very active | 0d ago | 10mo | 6 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Meta-harness over coding agents | JavaScript | MIT | 238,551 (▲4,760) | Hot | 85 | very active | 0d ago | 6mo | 29 |
+| [github/spec-kit](https://github.com/github/spec-kit) | Determinism & spec-driven | Python | MIT | 125,772 (▲1,760) | Hot | 89 | very active | 0d ago | 11mo | 13 |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness-as-SDK | TypeScript | MIT | 85,266 (▲6,686) | Hot | 90 | very active | 0d ago | 12mo | 20 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Autonomous long-horizon | Python | MIT | 79,512 (▲1,572) | Hot | 84 | very active | 0d ago | 1.3y | 35 |
+| [daytonaio/daytona](https://github.com/daytonaio/daytona) | Sandbox substrate | — | — | 72,023 (▼128) | Mature | 96 | very active | 15d ago | 2.5y | 21 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 0d ago | 8mo | 5 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Meta-harness over coding agents | TypeScript | MIT | 67,279 (▲1,090) | Hot | 76 | very active | 1d ago | 1.2y | 3 |
+| [multica-ai/multica](https://github.com/multica-ai/multica) | Fleet / parallel orchestration | Go | NOASSERTION | 44,689 (▲2,523) | Hot | 81 | very active | 0d ago | 6mo | 16 |
+| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 38,422 (▲318) | Hot | 80 | very active | 1d ago | 7mo | 15 |
+| [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 27,698 (▲157) | Declining | 42 | slowing | 3mo ago | 1.1y | 0 |
+| [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 27,487 (▲642) | Hot | 83 | very active | 0d ago | 1.0y | 9 |
+| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Shell | MIT | 26,042 (▲269) | Hot | 78 | very active | 4d ago | 7mo | 17 |
+| [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 23,507 (▲277) | Declining | 19 | slowing | 4mo ago | 11mo | 0 |
+| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 23,101 (▲86) | Hot | 78 | very active | 0d ago | 1.5y | 15 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 22,085 (▲133) | Hot | 84 | very active | 0d ago | 4mo | 24 |
+| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | HTML | MIT | 21,022 (▲334) | Hot | 76 | very active | 0d ago | 1.5y | 18 |
+| [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 18,769 (▲203) | Mature | 78 | very active | 6d ago | 2.2y | 2 |
 | [emcie-co/parlant](https://github.com/emcie-co/parlant) | Harness-as-SDK | Python | Apache-2.0 | 18,235 (▲56) | Mature | 64 | active | 26d ago | 2.5y | 4 |
-| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 17,495 (▲385) | Hot | 77 | very active | 2d ago | 7mo | 9 |
-| [1jehuang/jcode](https://github.com/1jehuang/jcode) | Harness-as-SDK | Rust | MIT | 16,337 (▲7,219) | Rising | 76 | very active | 1d ago | 7mo | 1 |
-| [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,504 (▲34) | Declining | 56 | active | 1mo ago | 8mo | 1 |
-| [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Sandbox substrate | Python | Apache-2.0 | 12,395 (▲327) | Hot | 82 | very active | 2d ago | 7mo | 13 |
-| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | Determinism & spec-driven | JavaScript | MIT | 9,954 (▲1,233) | Hot | 78 | very active | 1d ago | 2mo | 15 |
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 17,495 (▲258) | Hot | 77 | very active | 2d ago | 7mo | 9 |
+| [1jehuang/jcode](https://github.com/1jehuang/jcode) | Harness-as-SDK | Rust | MIT | 16,337 (▲4,598) | Rising | 76 | very active | 1d ago | 7mo | 1 |
+| [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,504 (▲17) | Declining | 56 | active | 1mo ago | 8mo | 1 |
+| [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Sandbox substrate | Python | Apache-2.0 | 12,395 (▲211) | Hot | 82 | very active | 2d ago | 7mo | 13 |
+| [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | Determinism & spec-driven | JavaScript | MIT | 9,954 (▲488) | Hot | 78 | very active | 1d ago | 2mo | 15 |
 | [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) | Fleet / parallel orchestration | Go | Apache-2.0 | 8,852 | Hot | 93 | very active | 0d ago | 5mo | 20 |
-| [automazeio/ccpm](https://github.com/automazeio/ccpm) | Fleet / parallel orchestration | Shell | MIT | 8,316 (▲40) | Declining | 28 | slowing | 4mo ago | 11mo | 0 |
-| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | Determinism & spec-driven | TypeScript | MIT | 7,755 (▲3) | Rising | 74 | slowing | 2mo ago | 5mo | 2 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 6,832 (▲184) | Hot | 92 | very active | 0d ago | 1.2y | 26 |
-| [vercel/eve](https://github.com/vercel/eve) | Harness-as-SDK | TypeScript | Apache-2.0 | 4,450 (▲559) | Hot | 94 | very active | 0d ago | 1mo | 25 |
-| [dagger/container-use](https://github.com/dagger/container-use) | Fleet / parallel orchestration | Go | Apache-2.0 | 3,997 (▲83) | Declining | 39 | active | 1mo ago | 1.2y | 1 |
-| [deeplethe/forkd](https://github.com/deeplethe/forkd) | Sandbox substrate | Rust | Apache-2.0 | 2,732 (▲21) | Hot | 78 | very active | 5d ago | 2mo | 6 |
-| [hexo-ai/sia](https://github.com/hexo-ai/sia) | Autonomous long-horizon | Python | MIT | 2,093 (▲42) | Rising | 52 | active | 1mo ago | 4mo | 8 |
-| [stakpak/agent](https://github.com/stakpak/agent) | Autonomous long-horizon | Rust | Apache-2.0 | 1,720 (▲40) | Hot | 69 | active | 1mo ago | 1.7y | 4 |
-| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Harness-as-SDK | Python | Apache-2.0 | 764 (▲4) | Hot | 75 | very active | 8d ago | 4mo | 5 |
-| [pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) | Harness-as-SDK | Python | MIT | 747 (▲73) | Hot | 78 | very active | 1d ago | 4mo | 11 |
+| [automazeio/ccpm](https://github.com/automazeio/ccpm) | Fleet / parallel orchestration | Shell | MIT | 8,316 (▲27) | Declining | 28 | slowing | 4mo ago | 11mo | 0 |
+| [gsd-build/gsd-2](https://github.com/gsd-build/gsd-2) | Determinism & spec-driven | TypeScript | MIT | 7,755 (▲5) | Rising | 74 | slowing | 2mo ago | 5mo | 2 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 6,832 (▲129) | Hot | 92 | very active | 0d ago | 1.2y | 26 |
+| [vercel/eve](https://github.com/vercel/eve) | Harness-as-SDK | TypeScript | Apache-2.0 | 4,450 (▲351) | Hot | 94 | very active | 0d ago | 1mo | 25 |
+| [dagger/container-use](https://github.com/dagger/container-use) | Fleet / parallel orchestration | Go | Apache-2.0 | 3,997 (▲75) | Declining | 39 | active | 1mo ago | 1.2y | 1 |
+| [deeplethe/forkd](https://github.com/deeplethe/forkd) | Sandbox substrate | Rust | Apache-2.0 | 2,732 (▲10) | Hot | 78 | very active | 5d ago | 2mo | 6 |
+| [hexo-ai/sia](https://github.com/hexo-ai/sia) | Autonomous long-horizon | Python | MIT | 2,093 (▲15) | Rising | 52 | active | 1mo ago | 4mo | 8 |
+| [stakpak/agent](https://github.com/stakpak/agent) | Autonomous long-horizon | Rust | Apache-2.0 | 1,720 (▲29) | Hot | 69 | active | 1mo ago | 1.7y | 4 |
+| [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Harness-as-SDK | Python | Apache-2.0 | 764 (▲5) | Hot | 75 | very active | 8d ago | 4mo | 5 |
+| [pydantic/pydantic-ai-harness](https://github.com/pydantic/pydantic-ai-harness) | Harness-as-SDK | Python | MIT | 747 (▲40) | Hot | 78 | very active | 1d ago | 4mo | 11 |
 | [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Autonomous long-horizon | Shell | MIT | 368 | Declining | 20 | stale | 6mo ago | 1.1y | 0 |
 
 ## By approach
