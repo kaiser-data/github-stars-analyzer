@@ -41,5 +41,6 @@
   ],
   "snapshot": "2026-08-07T21:10:17.796Z",
   "generated": "2026-08-07",
-  "generator": "scripts/reports/claude_code_setups.py"
+  "generator": "scripts/reports/claude_code_setups.py",
+  "created": "2026-06-13"
 }

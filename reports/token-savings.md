@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/token-savings-top-tools.svg)
+
+![Tools per category](assets/token-savings-categories.svg)
+
+
 > **Read this first:** the right token-saver depends on **what you're spending tokens on** — reading code, generating structured output, retrieving documents, or carrying long-session memory. So this report is organized **by workload**, not by tool type. Tools at different layers mostly **compose** rather than compete. All **% figures are the projects' own claims** on the May-2026 snapshot — not independently benchmarked here.
 
 ## Executive summary

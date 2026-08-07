@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/agent-orchestration-top-tools.svg)
+
+![Tools per category](assets/agent-orchestration-categories.svg)
+
+
 > **Orchestration** = coordinating multiple agents / tools / steps toward a goal: routing, planning, parallelism, hand-offs, state and recovery. The tools below differ mostly in **how you express that coordination** — in code, on a visual canvas, across coding agents, or as durable production infra.
 
 ## Executive summary

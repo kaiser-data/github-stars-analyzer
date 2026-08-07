@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/ai-engineer-stack-top-tools.svg)
+
+![Tools per category](assets/ai-engineer-stack-categories.svg)
+
+
 ## The one thing to understand first
 
 In 2026 the **model layer is commoditizing** — model differences matter less each quarter, and the infrastructure beneath your app (serving, vector search, basic RAG, tracing) is **largely solved**. The value has moved *up the stack*: to **reliability, evaluation, context engineering, and memory** for agentic systems. So this report does two jobs at once — it tells you **which repos to know** (Fundamental / Must-have / Trending) *and* **which problems are already solved** (integrate, don't rebuild) **vs. still frontier** (where you actually add value).

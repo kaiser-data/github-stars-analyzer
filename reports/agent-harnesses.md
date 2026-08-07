@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/agent-harnesses-top-tools.svg)
+
+![Tools per category](assets/agent-harnesses-categories.svg)
+
+
 ## Executive summary
 
 - A **harness** is everything around the model: the loop, tools, state, guardrails, and execution environment. **36 harness projects** in your stars (**1,414,906★** combined) cluster into **six distinct approaches** — they disagree about *where the harness lives* and *what the hard problem is*:

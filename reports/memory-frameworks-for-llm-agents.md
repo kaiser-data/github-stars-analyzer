@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/memory-frameworks-for-llm-agents-top-tools.svg)
+
+![Tools per category](assets/memory-frameworks-for-llm-agents-categories.svg)
+
+
 ## Executive summary
 
 - **22 dedicated memory frameworks** identified across your stars, plus **5 storage substrates** (vector/graph DBs) they build on.

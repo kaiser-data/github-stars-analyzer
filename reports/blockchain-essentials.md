@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/blockchain-essentials-top-tools.svg)
+
+![Tools per category](assets/blockchain-essentials-categories.svg)
+
+
 > **What this is.** The essential blockchain/web3/DeFi repos worth knowing, organized by **layer** (language → toolchain → libraries → clients → protocols → ZK → the AI×crypto edge), with live metrics. Start at the top of each layer and work down.
 
 ## 🔥 What's hot right now

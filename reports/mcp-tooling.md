@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/mcp-tooling-top-tools.svg)
+
+![Tools per category](assets/mcp-tooling-categories.svg)
+
+
 > **What is MCP?** The Model Context Protocol is an open standard (Anthropic, late 2024) that lets LLM apps talk to external tools/data through a uniform interface — the 'USB-C port' for AI. **Servers** expose capabilities; **clients/hosts** (Claude Desktop, Cursor, editors) consume them; **gateways** govern them at scale.
 
 ## Executive summary

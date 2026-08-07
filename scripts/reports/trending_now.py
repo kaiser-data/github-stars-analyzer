@@ -60,7 +60,8 @@ THEMES = [
         ["obra/superpowers", "anthropics/skills", "multica-ai/andrej-karpathy-skills",
          "nextlevelbuilder/ui-ux-pro-max-skill", "affaan-m/ECC", "garrytan/gstack",
          "msitarzewski/agency-agents", "hesreallyhim/awesome-claude-code",
-         "shanraisshan/claude-code-best-practice", "DietrichGebert/ponytail"],
+         "shanraisshan/claude-code-best-practice", "DietrichGebert/ponytail",
+         "ayghri/i-have-adhd"],
     ),
     (
         "Giving agents a memory of the codebase",

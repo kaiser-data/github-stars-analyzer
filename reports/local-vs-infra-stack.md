@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/local_vs_infra_stack.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/local-vs-infra-stack-top-tools.svg)
+
+![Tools per category](assets/local-vs-infra-stack-categories.svg)
+
+
 ## Executive summary
 
 - **39 stack tools** in your stars (**1,778,214★** combined), mapped to every layer of a self-hosted AI stack and tagged by deployment tier:

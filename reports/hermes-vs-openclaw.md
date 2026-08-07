@@ -4,6 +4,9 @@
 >
 > Generated 2026-08-07 by `scripts/reports/hermes_vs_openclaw.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/hermes-vs-openclaw-top-tools.svg)
+
+
 **[openclaw/openclaw](https://github.com/openclaw/openclaw)** — 🦞 _Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞_  
 **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** — ☤ _The agent that grows with you_
 

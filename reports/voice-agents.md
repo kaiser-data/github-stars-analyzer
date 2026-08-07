@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/voice-agents-top-tools.svg)
+
+![Tools per category](assets/voice-agents-categories.svg)
+
+
 ## Executive summary
 
 - **28 voice-AI projects** in your stars (**622,494★** combined), organized along the voice-agent loop:

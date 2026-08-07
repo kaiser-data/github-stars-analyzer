@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/meeting_transcription.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/meeting-transcription-top-tools.svg)
+
+![Tools per category](assets/meeting-transcription-categories.svg)
+
+
 ## TL;DR — which repo should you use?
 
 | Your situation | Pick | Why it wins |

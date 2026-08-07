@@ -118,6 +118,8 @@ _The single loudest signal in this dataset. A year ago you configured an agent w
 
 - **[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)** · 98,197★ · +8,152★ in 11d  
   Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
+- **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)** · 18,105★ · +7,219★ in 11d  
+  A skill to stop your coding agent from burying the answer. ADHD-friendly output.
 - **[obra/superpowers](https://github.com/obra/superpowers)** · 268,683★ · +6,878★ in 11d  
   An agentic skills framework & software development methodology that works.
 - **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 238,551★ · +4,760★ in 11d  

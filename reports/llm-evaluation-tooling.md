@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/llm-evaluation-tooling-top-tools.svg)
+
+![Tools per category](assets/llm-evaluation-tooling-categories.svg)
+
+
 ## Executive summary
 
 - **24 evaluation-focused tools** found in your stars (**199,744★** combined), spanning four categories:

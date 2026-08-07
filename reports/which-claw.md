@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/which-claw-top-tools.svg)
+
+![Tools per category](assets/which-claw-categories.svg)
+
+
 > **Scope.** This ranks the standalone **claws** — agents/runtimes you'd run *as* your assistant. "Claw" here is a **role, not a name**: functional claws that aren't literally branded *claw* (Hermes, nanobot, eliza, oh-my-openagent) are ranked alongside the named ones and tagged **†**. The accessory ecosystem (skills, routers, memory, observability, dashboards) is covered separately in the **OpenClaw Ecosystem** report; those *complement* a claw rather than replace it.
 
 ## TL;DR — two honest answers

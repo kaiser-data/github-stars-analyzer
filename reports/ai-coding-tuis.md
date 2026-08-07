@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/ai-coding-tuis-top-tools.svg)
+
+![Tools per category](assets/ai-coding-tuis-categories.svg)
+
+
 ## Executive summary
 
 - **31 terminal-AI-coding tools** in your stars (**1,218,987★** combined), split into the agents themselves and the terminal ecosystem around them:

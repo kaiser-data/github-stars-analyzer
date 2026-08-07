@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/claude-code-setups-top-tools.svg)
+
+![Tools per category](assets/claude-code-setups-categories.svg)
+
+
 ## The big idea
 
 A modern Claude Code setup is **layered**, and the 2026 superpower is *on-demand context*, not a big always-loaded instruction blob. A harness runs the loop; **skills** and config shape behavior only when triggered; **memory** persists context across sessions; **token-savers** compress what the model sees; **code-graph/retrieval** feeds it the right code; **MCP** adds reach; **observability** measures it; **local runtimes** cut cost. Your stars already contain a best-in-class tool for every one of those layers — this report assembles them into three ready-to-run strategies.

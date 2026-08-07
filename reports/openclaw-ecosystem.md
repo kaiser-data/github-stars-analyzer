@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/openclaw-ecosystem-top-tools.svg)
+
+![Tools per category](assets/openclaw-ecosystem-categories.svg)
+
+
 > **What is OpenClaw?** A personal AI assistant (🦞, formerly *Clawdbot* / *Moltbot*) that runs on any OS/platform. It has spawned a fast-moving ecosystem of runtimes, skills, routers, memory layers, dashboards, and specialized agents — this report maps the parts in your stars and flags what's worth adopting **now**.
 
 ## Recommended stack (use now)

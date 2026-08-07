@@ -34,5 +34,6 @@
   ],
   "snapshot": "2026-08-07T21:10:17.796Z",
   "generated": "2026-08-07",
-  "generator": "scripts/reports/hermes_vs_openclaw.py"
+  "generator": "scripts/reports/hermes_vs_openclaw.py",
+  "created": "2026-06-02"
 }

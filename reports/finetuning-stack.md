@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/finetuning-stack-top-tools.svg)
+
+![Tools per category](assets/finetuning-stack-categories.svg)
+
+
 ## Executive summary
 
 - **27 fine-tuning / post-training tools** in your stars (**761,484★** combined), organized along the training ladder:

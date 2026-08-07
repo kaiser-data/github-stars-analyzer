@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/document-extraction-top-tools.svg)
+
+![Tools per category](assets/document-extraction-categories.svg)
+
+
 ## Executive summary
 
 - **26 document-extraction tools** in your stars (**684,499★** combined), organized along the extraction pipeline:

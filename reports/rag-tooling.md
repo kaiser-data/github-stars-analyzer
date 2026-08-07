@@ -4,6 +4,11 @@
 >
 > Generated 2026-08-07 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
+![Top tools by stars](assets/rag-tooling-top-tools.svg)
+
+![Tools per category](assets/rag-tooling-categories.svg)
+
+
 ## Executive summary
 
 - **32 RAG tools** in your stars (**718,668★** combined) — the largest AI category here — organized along the RAG pipeline:
