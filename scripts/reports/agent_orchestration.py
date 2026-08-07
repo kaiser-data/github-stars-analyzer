@@ -71,7 +71,7 @@ TAXONOMY = {
     "wshobson/agents": ("Coding-agent orchestration", "Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor, OpenCode, Gemini)."),
     "Yeachan-Heo/oh-my-claudecode": ("Coding-agent orchestration", "Teams-first multi-agent orchestration for Claude Code."),
     "eigent-ai/eigent": ("Coding-agent orchestration", "Open-source cowork desktop — local/free multi-agent productivity workspace."),
-    "AgentWrapper/agent-orchestrator": ("Coding-agent orchestration", "Orchestrates parallel coding agents — plans tasks, spawns agents, handles CI autonomously."),
+    "Untrivial-ai/agent-orchestrator": ("Coding-agent orchestration", "Orchestrates parallel coding agents — plans tasks, spawns agents, handles CI autonomously."),
     "getpaseo/paseo": ("Coding-agent orchestration", "Run & coordinate coding agents from phone, desktop and CLI."),
     "vercel-labs/coding-agent-template": ("Coding-agent orchestration", "Multi-agent coding platform on Vercel Sandbox + AI Gateway; declining, verify first."),
 
@@ -172,7 +172,7 @@ A("| You want… | Use this approach | Top picks |")
 A("|---|---|---|")
 A("| Fine-grained control, in code | Code-first framework | `langgraph`, `openai-agents-python` |")
 A("| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify`, `Flowise` |")
-A("| Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `AgentWrapper/agent-orchestrator` |")
+A("| Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `Untrivial-ai/agent-orchestrator` |")
 A("| Always-on autonomous agents | Agent OS / harness | `elizaOS/eliza`, `deer-flow` |")
 A("| Durable, fault-tolerant prod | Production infra | `flyte`, `inngest/agent-kit` |")
 A("| A standard, not a library | Protocol / meta | `agent-workflow-protocol` |")

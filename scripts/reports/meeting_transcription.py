@@ -50,7 +50,7 @@ TAXONOMY = {
     "moonshine-ai/moonshine": ("ASR engine / model", "Edge-first ASR beating Whisper at 5–15× speed on short segments — built for live, on-device captioning."),
     "NVIDIA-NeMo/Speech": ("ASR engine / model", "NVIDIA's speech stack — Parakeet (fastest open ASR) and Canary (top of the Open ASR leaderboard) live here, plus diarization recipes."),
     "modelscope/FunASR": ("ASR engine / model", "Alibaba's production ASR toolkit — streaming + offline models with punctuation, timestamps, and speaker labels (Paraformer)."),
-    "FunAudioLLM/SenseVoice": ("ASR engine / model", "Multilingual ASR with emotion recognition and audio-event detection — transcription plus conversational tone signals."),
+    "QwenAudio/SenseVoice": ("ASR engine / model", "Multilingual ASR with emotion recognition and audio-event detection — transcription plus conversational tone signals."),
     "kyutai-labs/delayed-streams-modeling": ("ASR engine / model", "Kyutai's streaming STT — word-level timestamps over live streams with seconds-level latency."),
     "alphacep/vosk-api": ("ASR engine / model", "Offline ASR for 20+ languages with tiny (~50MB) models — bindings for ~10 languages; runs on a Raspberry Pi."),
     "kaldi-asr/kaldi": ("ASR engine / model", "The classic ASR research toolkit — the foundation Vosk and a generation of speech systems were built on."),

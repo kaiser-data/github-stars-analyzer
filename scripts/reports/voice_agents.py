@@ -59,7 +59,7 @@ TAXONOMY = {
     # Voice cloning / studios
     "CorentinJ/Real-Time-Voice-Cloning": ("Voice cloning / studio", "The classic 5-second voice-cloning demo (SV2TTS) — the repo that popularized OSS voice cloning."),
     "jamiepine/voicebox": ("Voice cloning / studio", "Open-source AI voice studio — clone, dictate, and create voices through a polished app."),
-    "debpalash/OmniVoice-Studio": ("Voice cloning / studio", "Local ElevenLabs alternative — voice cloning, design, and generation without the cloud."),
+    "debpalash/VoiceStudio": ("Voice cloning / studio", "Local ElevenLabs alternative — voice cloning, design, and generation without the cloud."),
 
     # Speech-LLM / omni model — the brain that hears and speaks
     "QwenLM/Qwen3-Omni": ("Speech-LLM / omni model", "Natively end-to-end omni-modal LLM (text/audio/vision) — collapses STT+LLM+TTS into one speech-native model."),
@@ -169,7 +169,7 @@ A("| **LLM / agent — brain** | Decide what to say / which tool to call | "
 A("| **TTS — voice** | Text → natural, low-latency speech | "
   "`coqui-TTS`, `chatterbox`, `bark`, `VoxCPM`, `Qwen3-TTS`, `supertonic`, `neutts` |")
 A("| **Voice identity** | Clone / design a specific voice | "
-  "`Real-Time-Voice-Cloning`, `voicebox`, `OmniVoice-Studio` |")
+  "`Real-Time-Voice-Cloning`, `voicebox`, `VoiceStudio` |")
 A("| **Collapse the stack** | One speech-native model for all of it | "
   "`Qwen3-Omni` |")
 A("| **Host it** | Serve the models locally / in cloud | "
@@ -336,7 +336,7 @@ guide = [
      "SoTA naturalness with emotion control (chatterbox); broad model zoo + cloning (coqui)."),
     ("Fast on-device TTS", "`supertone-inc/supertonic` or `neuphonic/neutts`",
      "ONNX/edge-friendly synthesis for low-latency, offline voice."),
-    ("To clone a specific voice", "`OmniVoice-Studio` or `coqui-ai/TTS`",
+    ("To clone a specific voice", "`VoiceStudio` or `coqui-ai/TTS`",
      "Local ElevenLabs-style cloning — mind consent/ethics."),
     ("Lowest latency / richest prosody", "`QwenLM/Qwen3-Omni`",
      "Speech-native omni model collapses STT+LLM+TTS into one — fewer hops."),

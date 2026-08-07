@@ -52,7 +52,7 @@ TAXONOMY = {
     "gastownhall/gastown": ("Fleet / parallel orchestration", "Multi-agent workspace manager — the 'town' where a fleet of agents live and work."),
     "AndyMik90/Aperant": ("Fleet / parallel orchestration", "Autonomous multi-session AI coding — sessions as the unit of parallelism."),
     "automazeio/ccpm": ("Fleet / parallel orchestration", "GitHub Issues + git worktrees as the coordination fabric for parallel agents."),
-    "AgentWrapper/agent-orchestrator": ("Fleet / parallel orchestration", "Plans tasks, spawns parallel coding agents in worktrees, merges autonomously."),
+    "Untrivial-ai/agent-orchestrator": ("Fleet / parallel orchestration", "Plans tasks, spawns parallel coding agents in worktrees, merges autonomously."),
     "dagger/container-use": ("Fleet / parallel orchestration", "Containerized dev environments so multiple agents work safely and independently."),
 
     # 4. Determinism & spec-driven control

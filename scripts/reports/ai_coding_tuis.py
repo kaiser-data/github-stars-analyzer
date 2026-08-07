@@ -41,7 +41,7 @@ TAXONOMY = {
     "github/copilot-cli": ("Terminal coding agent", "Copilot coding agent in the terminal — deep GitHub integration, premium-request pricing model."),
     "earendil-works/pi": ("Terminal coding agent", "Minimal AI toolkit: unified LLM API + agent loop + TUI + coding CLI — the hackable build-your-own base."),
     "code-yeongyu/oh-my-openagent": ("Terminal coding agent", "omo/lazycodex — token-obsessed harness layered on Codex/OpenCode for complex codebases."),
-    "CodebuffAI/codebuff": ("Terminal coding agent", "Codegen from the terminal — smaller, focused alternative."),
+    "CodebuffAI/freebuff": ("Terminal coding agent", "Codegen from the terminal — smaller, focused alternative."),
     "rsrohan99/tig": ("Terminal coding agent", "Multi-LLM Claude-Code-alike — abandoned; listed as a cautionary tale of the category's churn."),
 
     # Session, token & cost ops
@@ -121,7 +121,7 @@ PROS_CONS = [
     ("code-yeongyu/oh-my-openagent",
      "Token-efficiency-first harness (the 'tokenmaxxer' pick) layered on Codex/OpenCode for complex codebases",
      "Depends on underlying agents; opinionated workflow; no OSS license declared"),
-    ("CodebuffAI/codebuff",
+    ("CodebuffAI/freebuff",
      "Simple terminal codegen with low setup friction; Apache-2.0",
      "Far smaller scope and community than the majors; fewer agentic features (no deep hooks/MCP story)"),
     ("rsrohan99/tig",
@@ -248,7 +248,7 @@ A("| Layer | What it does | Tools in your stars |")
 A("|---|---|---|")
 A("| **The agent (TUI)** | Plan, edit, run, iterate in your terminal | "
   "`claude-code`, `opencode`, `gemini-cli`, `codex`, `goose`, `aider`, `crush`, "
-  "`qwen-code`, `copilot-cli`, `pi`, `oh-my-openagent`, `codebuff` |")
+  "`qwen-code`, `copilot-cli`, `pi`, `oh-my-openagent`, `freebuff` |")
 A("| **Token / session ops** | Cut cost, track spend, recall history | "
   "`rtk`, `context-mode`, `codeburn`, `ctx`, `rudel`, `claude-auto-resume`, `ClaudeNightsWatch` |")
 A("| **Safety** | Guard the shell the agent drives | "

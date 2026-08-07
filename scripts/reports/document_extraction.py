@@ -50,7 +50,7 @@ TAXONOMY = {
     "getomni-ai/zerox": ("VLM document parser", "OCR by delegation: renders pages and asks a hosted vision model (GPT/Claude/Gemini) — zero local models."),
     "facebookresearch/nougat": ("VLM document parser", "Meta's neural OCR for academic PDFs (math → LaTeX) — historically important, now effectively unmaintained."),
     "bytedance/Dolphin": ("VLM document parser", "ByteDance's ACL-2025 parser — heterogeneous anchor prompting (layout first, parallel element parsing second)."),
-    "rednote-hilab/dots.ocr": ("VLM document parser", "Multilingual layout + parsing in a single compact VLM (~3B); 88.4 on OmniDocBench v1.5."),
+    "studio-dots-ai/dots.ocr": ("VLM document parser", "Multilingual layout + parsing in a single compact VLM (~3B); 88.4 on OmniDocBench v1.5."),
     "Yuliang-Liu/MonkeyOCR": ("VLM document parser", "Lightweight structure-recognition-relation model; MonkeyOCR-pro-3B beat Gemini/GPT-4o-class models on OmniDocBench."),
 
     # Structured / field extraction (LLM-driven)
@@ -87,7 +87,7 @@ TASK_RANKINGS = [
      "opendataloader-bench (200 PDFs): docling 0.877 > marker 0.861 > MinerU 0.831."),
     ("Complex layouts, CJK & multilingual docs",
      [("opendatalab/MinerU", "nothing else close for Chinese/Japanese/Korean layout"),
-      ("rednote-hilab/dots.ocr", "one compact VLM, 100+ languages"),
+      ("studio-dots-ai/dots.ocr", "one compact VLM, 100+ languages"),
       ("PaddlePaddle/PaddleOCR", "PaddleOCR-VL tops OmniDocBench composite")],
      "OmniDocBench v1.5: PaddleOCR-VL 94.5, MinerU2.5 90.7, dots.ocr 88.4."),
     ("Tables & financial documents",
