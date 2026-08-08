@@ -1,8 +1,8 @@
 # RAG (Retrieval-Augmented Generation) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/rag-tooling-top-tools.svg)
 
@@ -43,7 +43,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | RAG framework / engine | Python | MIT | 51,447 (▲309) | Classic | 99 | very active | 1d ago | 3.8y | 54 |
 | [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector DB / search | Go | Apache-2.0 | 45,553 (▲167) | Classic | 99 | very active | 0d ago | 6.9y | 29 |
 | [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Vector DB / search | C++ | MIT | 40,690 (▲103) | Classic | 94 | very active | 0d ago | 9.5y | 33 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | RAG framework / engine | Python | MIT | 38,620 (▲407) | Hot | 79 | very active | 1d ago | 1.8y | 5 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | RAG framework / engine | Python | MIT | 38,620 (▲407) | Hot | 79 | very active | 2d ago | 1.8y | 5 |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | RAG framework / engine | Python | MIT | 35,319 (▲424) | Mature | 69 | active | 3d ago | 2.4y | 4 |
 | [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Novel retrieval approach | Python | MIT | 35,066 (▲315) | Hot | 60 | very active | 1d ago | 1.4y | 8 |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector DB / search | Rust | Apache-2.0 | 33,835 (▲230) | Classic | 88 | very active | 0d ago | 6.2y | 15 |
@@ -51,9 +51,9 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,142 (▲116) | Classic | 90 | very active | 0d ago | 6.7y | 30 |
 | [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 22,809 (▲373) | Hot | 67 | very active | 18d ago | 1.2y | 14 |
 | [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 22,529 (▲167) | Classic | 65 | very active | 0d ago | 5.3y | 4 |
-| [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 18,978 (▲32) | Classic | 84 | very active | 0d ago | 7.0y | 32 |
+| [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 18,978 (▲32) | Classic | 84 | very active | 1d ago | 7.0y | 32 |
 | [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector DB / search | Go | BSD-3-Clause | 16,703 (▲51) | Classic | 84 | very active | 0d ago | 10.4y | 8 |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 15,403 (▲121) | Hot | 88 | very active | 0d ago | 8mo | 16 |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 15,403 (▲121) | Hot | 88 | very active | 1d ago | 8mo | 16 |
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Ingestion / parsing / chunking | HTML | Apache-2.0 | 15,276 (▲72) | Classic | 69 | active | 3d ago | 3.9y | 7 |
 | [llmware-ai/llmware](https://github.com/llmware-ai/llmware) | RAG framework / engine | Python | Apache-2.0 | 14,858 (▲31) | Mature | 47 | slowing | 2mo ago | 2.9y | 1 |
 | [neuml/txtai](https://github.com/neuml/txtai) | RAG framework / engine | Python | Apache-2.0 | 12,812 (▲53) | Classic | 80 | very active | 3d ago | 6.0y | 7 |
@@ -68,7 +68,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,728 (▲20) | Mature | 65 | active | 4d ago | 2.1y | 4 |
 | [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 2,668 (▲327) | Mature | 80 | very active | 0d ago | 2.8y | 6 |
 | [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 983 (▲5) | Mature | 76 | very active | 1d ago | 2.5y | 3 |
-| [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 670 (▲1) | Declining | 57 | active | 1mo ago | 1.7y | 1 |
+| [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 670 (▲1) | Declining | 56 | active | 1mo ago | 1.7y | 1 |
 | [feyninc/chonkiejs](https://github.com/feyninc/chonkiejs) | Ingestion / parsing / chunking | TypeScript | MIT | 367 (▲2) | Mature | 71 | very active | 10d ago | 1.3y | 1 |
 
 ## By category
@@ -205,24 +205,25 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **10 of the graph's 33 communities**.
+**Community clustering.** These 32 tools span **9 of the graph's 34 communities**.
 
-- **Community 12** (10): `infiniflow/ragflow`, `run-llama/llama_index`, `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `airweave-ai/airweave`, `Bessouat40/RAGLight`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 15** (6): `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `alibaba/zvec`, `milvus-io/milvus`, `lancedb/lancedb`
-- **Community 16** (5): `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `feyninc/chonkie`, `feyninc/chonkiejs`, `illuin-tech/colpali`
-- **Community 2** (3): `facebookresearch/faiss`, `marqo-ai/marqo`, `PaddlePaddle/PaddleOCR`
-- **Community 1** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
-- **Community 8** (2): `Unstructured-IO/unstructured`, `superlinked/sie`
+- **Community 18** (10): `infiniflow/ragflow`, `run-llama/llama_index`, `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `airweave-ai/airweave`, `Bessouat40/RAGLight`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 28** (6): `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `alibaba/zvec`, `milvus-io/milvus`, `lancedb/lancedb`
+- **Community 6** (5): `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `feyninc/chonkie`, `feyninc/chonkiejs`, `illuin-tech/colpali`
+- **Community 5** (3): `facebookresearch/faiss`, `marqo-ai/marqo`, `PaddlePaddle/PaddleOCR`
+- **Community 4** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
+- **Community 20** (2): `chroma-core/chroma`, `zilliztech/claude-context`
+- **Community 16** (2): `Unstructured-IO/unstructured`, `superlinked/sie`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' RAG tools in your ecosystem:
 
-- `VectifyAI/PageIndex` — PageRank 0.0017
-- `deepset-ai/haystack` — PageRank 0.0014
-- `neuml/txtai` — PageRank 0.0014
-- `FalkorDB/GraphRAG-SDK` — PageRank 0.0014
-- `chroma-core/chroma` — PageRank 0.0013
+- `VectifyAI/PageIndex` — PageRank 0.0016
+- `deepset-ai/haystack` — PageRank 0.0013
+- `FalkorDB/GraphRAG-SDK` — PageRank 0.0013
+- `neuml/txtai` — PageRank 0.0013
 - `HKUDS/LightRAG` — PageRank 0.0012
-- `superlinked/sie` — PageRank 0.0012
+- `chroma-core/chroma` — PageRank 0.0011
+- `superlinked/sie` — PageRank 0.0011
 - `HKUDS/RAG-Anything` — PageRank 0.0011
 - `StarTrail-org/LEANN` — PageRank 0.0010
 - `weaviate/weaviate` — PageRank 0.0010
@@ -279,7 +280,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | illuin-tech/colpali | 65 | Mature | active | 2 | 40% | 22 |
 | VectifyAI/PageIndex | 60 | Hot | very active | 1 | 64% | 2 |
 | airweave-ai/airweave | 57 | Mature | slowing | 1 | 67% | 470 |
-| Bessouat40/RAGLight | 57 | Declining | active | 1 | 100% | 45 |
+| Bessouat40/RAGLight | 56 | Declining | active | 1 | 100% | 45 |
 | SylphAI-Inc/AdalFlow | 49 | Mature | slowing | 1 | 60% | 7 |
 | marqo-ai/marqo | 49 | Mature | active | 0 | 0% | 113 |
 | llmware-ai/llmware | 47 | Mature | slowing | 1 | 100% | 3 |
@@ -314,4 +315,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 32 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

@@ -1,13 +1,8 @@
 # Agent Harnesses — Six Approaches to Running Autonomous Agents
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
-
-![Top tools by stars](assets/agent-harnesses-top-tools.svg)
-
-![Tools per category](assets/agent-harnesses-categories.svg)
-
+> Generated 2026-08-08 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
 
 ## Executive summary
 
@@ -44,20 +39,20 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [earendil-works/pi](https://github.com/earendil-works/pi) | Harness-as-SDK | TypeScript | MIT | 85,266 (▲6,686) | Hot | 90 | very active | 0d ago | 12mo | 20 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Autonomous long-horizon | Python | MIT | 79,512 (▲1,572) | Hot | 84 | very active | 0d ago | 1.3y | 35 |
 | [daytonaio/daytona](https://github.com/daytonaio/daytona) | Sandbox substrate | — | — | 72,023 (▼128) | Mature | 96 | very active | 15d ago | 2.5y | 21 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 0d ago | 8mo | 5 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Meta-harness over coding agents | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 1d ago | 8mo | 5 |
 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Meta-harness over coding agents | TypeScript | MIT | 67,279 (▲1,090) | Hot | 76 | very active | 1d ago | 1.2y | 3 |
 | [multica-ai/multica](https://github.com/multica-ai/multica) | Fleet / parallel orchestration | Go | NOASSERTION | 44,689 (▲2,523) | Hot | 81 | very active | 0d ago | 6mo | 16 |
 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 38,422 (▲318) | Hot | 80 | very active | 1d ago | 7mo | 15 |
 | [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 27,698 (▲157) | Declining | 42 | slowing | 3mo ago | 1.1y | 0 |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 27,487 (▲642) | Hot | 83 | very active | 0d ago | 1.0y | 9 |
-| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Shell | MIT | 26,042 (▲269) | Hot | 78 | very active | 4d ago | 7mo | 17 |
+| [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Shell | MIT | 26,042 (▲269) | Hot | 78 | very active | 5d ago | 7mo | 17 |
 | [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 23,507 (▲277) | Declining | 19 | slowing | 4mo ago | 11mo | 0 |
 | [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 23,101 (▲86) | Hot | 78 | very active | 0d ago | 1.5y | 15 |
 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 22,085 (▲133) | Hot | 84 | very active | 0d ago | 4mo | 24 |
 | [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | HTML | MIT | 21,022 (▲334) | Hot | 76 | very active | 0d ago | 1.5y | 18 |
 | [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 18,769 (▲203) | Mature | 78 | very active | 6d ago | 2.2y | 2 |
 | [emcie-co/parlant](https://github.com/emcie-co/parlant) | Harness-as-SDK | Python | Apache-2.0 | 18,235 (▲56) | Mature | 64 | active | 26d ago | 2.5y | 4 |
-| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 17,495 (▲258) | Hot | 77 | very active | 2d ago | 7mo | 9 |
+| [gastownhall/gastown](https://github.com/gastownhall/gastown) | Fleet / parallel orchestration | Go | MIT | 17,495 (▲258) | Hot | 77 | very active | 3d ago | 7mo | 9 |
 | [1jehuang/jcode](https://github.com/1jehuang/jcode) | Harness-as-SDK | Rust | MIT | 16,337 (▲4,598) | Rising | 76 | very active | 1d ago | 7mo | 1 |
 | [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,504 (▲17) | Declining | 56 | active | 1mo ago | 8mo | 1 |
 | [opensandbox-group/OpenSandbox](https://github.com/opensandbox-group/OpenSandbox) | Sandbox substrate | Python | Apache-2.0 | 12,395 (▲211) | Hot | 82 | very active | 2d ago | 7mo | 13 |
@@ -217,27 +212,26 @@ _Maximum autonomy: agents that run for hours or days, planning and re-planning, 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 36 tools span **14 of the graph's 33 communities**.
+**Community clustering.** These 36 tools span **12 of the graph's 34 communities**.
 
-- **Community 0** (7): `earendil-works/pi`, `SafeRL-Lab/cheetahclaws`, `1jehuang/jcode`, `ruvnet/ruflo`, `AndyMik90/Aperant`, `Untrivial-ai/agent-orchestrator`, `agentsmd/agents.md`
-- **Community 3** (7): `emcie-co/parlant`, `pydantic/pydantic-ai-harness`, `BloopAI/vibe-kanban`, `gastownhall/gastown`, `daytonaio/daytona`, `deeplethe/forkd`, `agent0ai/agent-zero`
-- **Community 9** (6): `affaan-m/ECC`, `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `automazeio/ccpm`, `OthmanAdi/planning-with-files`, `cobusgreyling/loop-engineering`
-- **Community 24** (3): `langchain-ai/deepagents`, `gsd-build/gsd-2`, `bytedance/deer-flow`
-- **Community 11** (3): `vercel/eve`, `obra/superpowers`, `coleam00/Archon`
-- **Community 15** (2): `multica-ai/multica`, `dagger/container-use`
+- **Community 20** (11): `langchain-ai/deepagents`, `emcie-co/parlant`, `pydantic/pydantic-ai-harness`, `obra/superpowers`, `BloopAI/vibe-kanban`, `gastownhall/gastown`, `gsd-build/gsd-2`, `daytonaio/daytona`, `deeplethe/forkd`, `bytedance/deer-flow`, `agent0ai/agent-zero`
+- **Community 10** (9): `vercel/eve`, `1jehuang/jcode`, `affaan-m/ECC`, `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `coleam00/Archon`, `automazeio/ccpm`, `OthmanAdi/planning-with-files`, `cobusgreyling/loop-engineering`
+- **Community 8** (5): `earendil-works/pi`, `SafeRL-Lab/cheetahclaws`, `ruvnet/ruflo`, `Untrivial-ai/agent-orchestrator`, `trycua/cua`
+- **Community 0** (2): `multica-ai/multica`, `dagger/container-use`
+- **Community 2** (2): `AndyMik90/Aperant`, `agentsmd/agents.md`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — most 'hub-like' harnesses in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' harnesses in your ecosystem:
 
-- `affaan-m/ECC` — PageRank 0.0019
-- `langchain-ai/deepagents` — PageRank 0.0018
-- `cobusgreyling/loop-engineering` — PageRank 0.0009
-- `strands-agents/harness-sdk` — PageRank 0.0009
+- `affaan-m/ECC` — PageRank 0.0018
+- `langchain-ai/deepagents` — PageRank 0.0017
+- `cobusgreyling/loop-engineering` — PageRank 0.0008
+- `strands-agents/harness-sdk` — PageRank 0.0008
 - `coleam00/Archon` — PageRank 0.0008
 - `NVIDIA/NemoClaw` — PageRank 0.0008
-- `1jehuang/jcode` — PageRank 0.0008
+- `1jehuang/jcode` — PageRank 0.0007
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0007
-- `bytedance/deer-flow` — PageRank 0.0007
-- `opensandbox-group/OpenSandbox` — PageRank 0.0006
+- `bytedance/deer-flow` — PageRank 0.0006
+- `multica-ai/multica` — PageRank 0.0006
 
 **Direct links between harness projects** (top similarity edges where both endpoints are in this report):
 
@@ -324,4 +318,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 36 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 36 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

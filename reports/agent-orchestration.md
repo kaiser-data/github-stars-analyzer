@@ -1,13 +1,8 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
-
-![Top tools by stars](assets/agent-orchestration-top-tools.svg)
-
-![Tools per category](assets/agent-orchestration-categories.svg)
-
+> Generated 2026-08-08 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
 > **Orchestration** = coordinating multiple agents / tools / steps toward a goal: routing, planning, parallelism, hand-offs, state and recovery. The tools below differ mostly in **how you express that coordination** — in code, on a visual canvas, across coding agents, or as durable production infra.
 
@@ -268,28 +263,27 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 39 tools span **14 of the graph's 33 communities**.
+**Community clustering.** These 39 tools span **14 of the graph's 34 communities**.
 
-- **Community 11** (7): `VoltAgent/voltagent`, `n8n-io/n8n`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `vercel-labs/coding-agent-template`, `elizaOS/eliza`
-- **Community 12** (6): `agentscope-ai/agentscope`, `strands-agents/harness-sdk`, `FoundationAgents/MetaGPT`, `camel-ai/camel`, `eigent-ai/eigent`, `TauricResearch/TradingAgents`
-- **Community 3** (6): `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `assafelovic/gpt-researcher`, `inngest/agent-kit`, `veegee82/agent-workflow-protocol`
-- **Community 24** (4): `langchain-ai/langgraph`, `i-am-bee/beeai-framework`, `langflow-ai/langflow`, `bytedance/deer-flow`
-- **Community 10** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 9** (3): `code-yeongyu/oh-my-openagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`
-- **Community 0** (3): `ruvnet/ruflo`, `Untrivial-ai/agent-orchestrator`, `TinyAGI/tinyagi`
+- **Community 20** (9): `langchain-ai/langgraph`, `i-am-bee/beeai-framework`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `langflow-ai/langflow`, `bytedance/deer-flow`, `inngest/agent-kit`, `veegee82/agent-workflow-protocol`
+- **Community 10** (9): `VoltAgent/voltagent`, `langgenius/dify`, `FlowiseAI/Flowise`, `simstudioai/sim`, `code-yeongyu/oh-my-openagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `vercel-labs/coding-agent-template`, `elizaOS/eliza`
+- **Community 18** (6): `agentscope-ai/agentscope`, `strands-agents/harness-sdk`, `FoundationAgents/MetaGPT`, `camel-ai/camel`, `eigent-ai/eigent`, `TauricResearch/TradingAgents`
+- **Community 17** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
+- **Community 8** (2): `ruvnet/ruflo`, `Untrivial-ai/agent-orchestrator`
+- **Community 2** (2): `getpaseo/paseo`, `TinyAGI/tinyagi`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
-- `agno-agi/agno` — PageRank 0.0023
-- `langchain-ai/langgraph` — PageRank 0.0020
-- `liquidos-ai/AutoAgents` — PageRank 0.0020
-- `openai/openai-agents-python` — PageRank 0.0017
-- `crewAIInc/crewAI` — PageRank 0.0016
-- `microsoft/semantic-kernel` — PageRank 0.0016
-- `microsoft/agent-framework` — PageRank 0.0014
+- `agno-agi/agno` — PageRank 0.0021
+- `langchain-ai/langgraph` — PageRank 0.0019
+- `liquidos-ai/AutoAgents` — PageRank 0.0018
+- `openai/openai-agents-python` — PageRank 0.0016
+- `microsoft/semantic-kernel` — PageRank 0.0015
+- `crewAIInc/crewAI` — PageRank 0.0015
+- `microsoft/agent-framework` — PageRank 0.0013
 - `VoltAgent/voltagent` — PageRank 0.0013
 - `inngest/agent-kit` — PageRank 0.0012
-- `langgenius/dify` — PageRank 0.0012
+- `langgenius/dify` — PageRank 0.0011
 
 **Direct links between orchestration tools** (top similarity edges where both endpoints are in this report):
 
@@ -368,4 +362,4 @@ Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, La
 - **Selection**: scan for orchestration / multi-agent / swarm / workflow / agent-framework signals, then manual curation by approach. RAG frameworks, eval/observability platforms, and single-purpose agents were routed to their own reports or excluded; only tools whose *primary* job is coordinating agents/steps appear here.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 39 across 7 approaches · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 39 across 7 approaches · Snapshot: 2026-08-07T23:57:40.892Z</sub>

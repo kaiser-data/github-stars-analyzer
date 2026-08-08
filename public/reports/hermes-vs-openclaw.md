@@ -1,8 +1,8 @@
 # Hermes Agent vs OpenClaw — Head-to-Head
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph.
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph.
 >
-> Generated 2026-08-07 by `scripts/reports/hermes_vs_openclaw.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/hermes_vs_openclaw.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/hermes-vs-openclaw-top-tools.svg)
 
@@ -20,7 +20,7 @@
 |---|---|---|
 | Stars | 385,469 🏆 | 227,042 |
 | Health score | 84 | 85 🏆 |
-| Momentum (est. ★/30d) | 112,731 🏆 | 37,994 |
+| Momentum (est. ★/30d) | 112,679 🏆 | 37,983 |
 | Language | TypeScript | Python |
 | License | NOASSERTION | MIT |
 | Lifecycle | Hot | Hot |
@@ -45,7 +45,7 @@
 
 ## Ecosystem & graph signal
 
-- **Communities:** OpenClaw is in community 11, Hermes in 9 (different clusters). PageRank — OpenClaw 0.0008 vs Hermes 0.0008.
+- **Communities:** OpenClaw is in community 10, Hermes in 10 (same cluster). PageRank — OpenClaw 0.0008 vs Hermes 0.0008.
 - **No direct similarity edge** between them in the graph.
 - **Hermes explicitly tags the OpenClaw ecosystem** — its topics include `clawdbot`, `moltbot`, `openclaw` — i.e. it positions in/around the same space (interop or competition), not as an unrelated project.
 - **The accessory ecosystem orbits OpenClaw**, not Hermes: your stars already include `nanoclaw`, `clawhub`, `ClawRouter`, `opik-openclaw`, `openclaw-supermemory`, `NemoClaw`, `moltworker` — all OpenClaw-specific. That network effect is a real switching cost in OpenClaw's favour.
@@ -56,16 +56,16 @@ Where the two sit among the other personal-assistant / agent-harness projects in
 
 | Project | ★ Stars | Lang | Health | Lifecycle | Momentum (★/30d) | Note |
 |---|---|---|---|---|---|---|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,190) | TypeScript | 84 | Hot | 112,731 | **this comparison** — the hub |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 227,042 (▲5,921) | Python | 85 | Hot | 37,994 | **this comparison** — Python challenger |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 79,512 (▲1,572) | Python | 84 | Hot | 11,073 | long-horizon SuperAgent harness |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 67,452 (▲807) | TypeScript | 78 | Hot | 20,414 | agent harness (ex oh-my-opencode) |
-| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 46,749 (▲466) | Python | 84 | Hot | 18,692 | lightweight agent |
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 32,526 (▲120) | Rust | 83 | Hot | 13,899 | healthiest alternative (Rust) |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲88) | TypeScript | 76 | Hot | 12,140 | containerized secure OpenClaw alt |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | 385,469 (▲1,190) | TypeScript | 84 | Hot | 112,679 | **this comparison** — the hub |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 227,042 (▲5,921) | Python | 85 | Hot | 37,983 | **this comparison** — Python challenger |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 79,512 (▲1,572) | Python | 84 | Hot | 11,070 | long-horizon SuperAgent harness |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 67,452 (▲807) | TypeScript | 78 | Hot | 20,405 | agent harness (ex oh-my-opencode) |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 46,749 (▲466) | Python | 84 | Hot | 18,680 | lightweight agent |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 32,526 (▲120) | Rust | 83 | Hot | 13,890 | healthiest alternative (Rust) |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,468 (▲88) | TypeScript | 76 | Hot | 12,133 | containerized secure OpenClaw alt |
 | [elizaOS/eliza](https://github.com/elizaOS/eliza) | 18,927 (▲112) | TypeScript | 84 | Mature | 1,308 | agentic OS, always-on agents |
-| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 18,083 (▲19) | Rust | 71 | Rising | 3,310 | open Agent-OS (Rust) |
-| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 12,597 (▲32) | Rust | 80 | Hot | 5,091 | privacy/security Agent-OS (Rust) |
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 18,083 (▲19) | Rust | 71 | Rising | 3,307 | open Agent-OS (Rust) |
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 12,597 (▲32) | Rust | 80 | Hot | 5,087 | privacy/security Agent-OS (Rust) |
 
 ## Which should you use?
 
@@ -81,4 +81,4 @@ Where the two sit among the other personal-assistant / agent-harness projects in
 - **Stars ≠ fit.** Adoption and velocity don't decide *your* use case — language, extension model, and the specific tasks matter more. Treat this as a starting point.
 - Metrics (health, momentum, bus_factor) are precomputed by the analyzer pipeline.
 
-<sub>Snapshot: 2026-08-07T21:10:17.796Z · regenerate via scripts/reports/hermes_vs_openclaw.py</sub>
+<sub>Snapshot: 2026-08-07T23:57:40.892Z · regenerate via scripts/reports/hermes_vs_openclaw.py</sub>

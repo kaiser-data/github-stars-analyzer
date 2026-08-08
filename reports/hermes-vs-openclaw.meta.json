@@ -32,8 +32,7 @@
       "stars": 46749
     }
   ],
-  "snapshot": "2026-08-07T21:10:17.796Z",
-  "generated": "2026-08-07",
-  "generator": "scripts/reports/hermes_vs_openclaw.py",
-  "created": "2026-06-02"
+  "snapshot": "2026-08-07T23:57:40.892Z",
+  "generated": "2026-08-08",
+  "generator": "scripts/reports/hermes_vs_openclaw.py"
 }

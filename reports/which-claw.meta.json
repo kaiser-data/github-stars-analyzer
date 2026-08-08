@@ -33,8 +33,7 @@
       "stars": 46749
     }
   ],
-  "snapshot": "2026-08-07T21:10:17.796Z",
-  "generated": "2026-08-07",
-  "generator": "scripts/reports/which_claw.py",
-  "created": "2026-06-03"
+  "snapshot": "2026-08-07T23:57:40.892Z",
+  "generated": "2026-08-08",
+  "generator": "scripts/reports/which_claw.py"
 }

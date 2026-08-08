@@ -1,8 +1,8 @@
 # Claude Code Superpowers — Setup Strategies from Your Stars
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/claude-code-setups-top-tools.svg)
 
@@ -89,7 +89,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Code-graph / retrieval | TypeScript | MIT | 77,872 (▲1,546) | Hot | 80 | very active | 9d ago | 4mo | 15 |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Token-saver / compression | Rust | Apache-2.0 | 75,183 (▲1,775) | Hot | 78 | very active | 0d ago | 6mo | 11 |
 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Skills framework | Python | — | 72,027 (▲1,034) | Mature | 40 | active | 15d ago | 9mo | 4 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Token-saver / compression | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 0d ago | 8mo | 5 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Token-saver / compression | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 1d ago | 8mo | 5 |
 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Harness / coding agent | TypeScript | MIT | 67,279 (▲1,090) | Hot | 76 | very active | 1d ago | 1.2y | 3 |
 | [cline/cline](https://github.com/cline/cline) | Harness / coding agent | TypeScript | Apache-2.0 | 65,830 (▲737) | Mature | 79 | very active | 0d ago | 2.1y | 17 |
 | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Token-saver / compression | Python | Apache-2.0 | 65,384 (▲2,710) | Hot | 81 | very active | 0d ago | 7mo | 27 |
@@ -116,12 +116,12 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts) | Config / setup kit | JavaScript | MIT | 12,214 (▲171) | Rising | 76 | very active | 0d ago | 8mo | 2 |
 | [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Observability / evals | Python | NOASSERTION | 10,937 (▲180) | Classic | 79 | very active | 0d ago | 3.7y | 18 |
 | [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | Token-saver / compression | TypeScript | MIT | 9,192 (▲241) | Hot | 79 | very active | 3d ago | 3mo | 10 |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability / evals | Python | Apache-2.0 | 7,360 (▲28) | Mature | 70 | very active | 3d ago | 2.9y | 4 |
-| [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram) | Memory / context | Go | MIT | 5,899 (▲188) | Hot | 76 | very active | 8d ago | 5mo | 12 |
+| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability / evals | Python | Apache-2.0 | 7,360 (▲28) | Mature | 70 | very active | 4d ago | 2.9y | 4 |
+| [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram) | Memory / context | Go | MIT | 5,899 (▲188) | Hot | 76 | very active | 9d ago | 5mo | 12 |
 | [MinishLab/semble](https://github.com/MinishLab/semble) | Token-saver / compression | Python | MIT | 5,843 (▲130) | Hot | 76 | very active | 2d ago | 4mo | 6 |
 | [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | Memory / context | TypeScript | NOASSERTION | 4,933 (▲3) | Hot | 80 | active | 1mo ago | 1.1y | 8 |
 | [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | Memory / context | JavaScript | Apache-2.0 | 3,662 (▲77) | Declining | 51 | active | 24d ago | 1.1y | 0 |
-| [centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup) | Config / setup kit | Python | MIT | 2,551 (▲18) | Mature | 55 | very active | 6d ago | 1.1y | 1 |
+| [centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup) | Config / setup kit | Python | MIT | 2,551 (▲18) | Mature | 55 | very active | 7d ago | 1.1y | 1 |
 | [patoles/agent-flow](https://github.com/patoles/agent-flow) | Observability / evals | TypeScript | Apache-2.0 | 1,457 (▲78) | Mature | 51 | active | 27d ago | 4mo | 2 |
 | [ingo-eichhorst/Irrlicht](https://github.com/ingo-eichhorst/Irrlicht) | Observability / evals | Go | MIT | 92 (▲3) | Hot | 85 | very active | 0d ago | 11mo | 3 |
 
@@ -351,30 +351,31 @@ _Run open models locally or proxy many models behind one endpoint — the cost f
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 59 tools span **14 of the graph's 33 communities** — the Claude-Code ecosystem is spread across agent-framework, memory, retrieval, and observability neighborhoods rather than forming one tidy cluster.
+**Community clustering.** These 59 tools span **13 of the graph's 34 communities** — the Claude-Code ecosystem is spread across agent-framework, memory, retrieval, and observability neighborhoods rather than forming one tidy cluster.
 
-- **Community 0** (18): `anthropics/claude-code`, `earendil-works/pi`, `ruvnet/ruflo`, `anthropics/skills`, `K-Dense-AI/scientific-agent-skills`, `garrytan/gstack`, `centminmod/my-claude-code-setup`, `davila7/claude-code-templates`, `farion1231/cc-switch`, `luongnv89/claude-howto`, `hesreallyhim/awesome-claude-code`, `Piebald-AI/claude-code-system-prompts`, `anthropics/claude-cookbooks`, `rtk-ai/rtk`, `getagentseal/codeburn`, `colbymchenry/codegraph`, `Egonex-AI/Understand-Anything`, `traceloop/openllmetry`
-- **Community 9** (9): `NousResearch/hermes-agent`, `Yeachan-Heo/oh-my-claudecode`, `affaan-m/ECC`, `ComposioHQ/awesome-claude-skills`, `wshobson/agents`, `thedotmack/claude-mem`, `JuliusBrussee/caveman`, `code-yeongyu/oh-my-openagent`, `patoles/agent-flow`
-- **Community 24** (7): `bytedance/deer-flow`, `mem0ai/mem0`, `headroomlabs-ai/headroom`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`, `BerriAI/litellm`
-- **Community 3** (5): `aaif-goose/goose`, `x1xhlol/system-prompts-and-models-of-ai-tools`, `MemPalace/mempalace`, `memodb-io/Acontext`, `punkpeye/awesome-mcp-servers`
-- **Community 11** (4): `openclaw/openclaw`, `google-gemini/gemini-cli`, `obra/superpowers`, `campfirein/byterover-cli`
-- **Community 16** (3): `cline/cline`, `abhigyanpatwari/GitNexus`, `DeusData/codebase-memory-mcp`
-- **Community 13** (3): `shanraisshan/claude-code-best-practice`, `toon-format/toon`, `ollama/ollama`
-- **Community 22** (3): `MinishLab/semble`, `modelcontextprotocol/servers`, `upstash/context7`
-- **Community 8** (2): `Graphify-Labs/graphify`, `ingo-eichhorst/Irrlicht`
+- **Community 10** (13): `openclaw/openclaw`, `NousResearch/hermes-agent`, `Yeachan-Heo/oh-my-claudecode`, `affaan-m/ECC`, `ComposioHQ/awesome-claude-skills`, `wshobson/agents`, `thedotmack/claude-mem`, `campfirein/byterover-cli`, `JuliusBrussee/caveman`, `rtk-ai/rtk`, `code-yeongyu/oh-my-openagent`, `getagentseal/codeburn`, `patoles/agent-flow`
+- **Community 8** (12): `earendil-works/pi`, `ruvnet/ruflo`, `K-Dense-AI/scientific-agent-skills`, `centminmod/my-claude-code-setup`, `davila7/claude-code-templates`, `farion1231/cc-switch`, `luongnv89/claude-howto`, `hesreallyhim/awesome-claude-code`, `Piebald-AI/claude-code-system-prompts`, `colbymchenry/codegraph`, `Egonex-AI/Understand-Anything`, `traceloop/openllmetry`
+- **Community 20** (7): `google-gemini/gemini-cli`, `bytedance/deer-flow`, `obra/superpowers`, `mem0ai/mem0`, `MemPalace/mempalace`, `memodb-io/Acontext`, `headroomlabs-ai/headroom`
+- **Community 6** (6): `anthropics/claude-code`, `cline/cline`, `anthropics/skills`, `anthropics/claude-cookbooks`, `abhigyanpatwari/GitNexus`, `DeusData/codebase-memory-mcp`
+- **Community 12** (6): `aaif-goose/goose`, `x1xhlol/system-prompts-and-models-of-ai-tools`, `MinishLab/semble`, `modelcontextprotocol/servers`, `punkpeye/awesome-mcp-servers`, `upstash/context7`
+- **Community 27** (4): `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`, `BerriAI/litellm`
+- **Community 2** (2): `anomalyco/opencode`, `garrytan/gstack`
+- **Community 0** (2): `multica-ai/andrej-karpathy-skills`, `Gentleman-Programming/engram`
+- **Community 7** (2): `toon-format/toon`, `ollama/ollama`
+- **Community 16** (2): `Graphify-Labs/graphify`, `ingo-eichhorst/Irrlicht`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — the most 'hub-like' setup tools in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — the most 'hub-like' setup tools in your ecosystem:
 
-- `ingo-eichhorst/Irrlicht` — PageRank 0.0020
-- `hesreallyhim/awesome-claude-code` — PageRank 0.0020
-- `affaan-m/ECC` — PageRank 0.0019
-- `punkpeye/awesome-mcp-servers` — PageRank 0.0016
-- `davila7/claude-code-templates` — PageRank 0.0013
-- `comet-ml/opik` — PageRank 0.0013
-- `aaif-goose/goose` — PageRank 0.0010
-- `MemPalace/mempalace` — PageRank 0.0010
-- `DeusData/codebase-memory-mcp` — PageRank 0.0010
-- `upstash/context7` — PageRank 0.0009
+- `hesreallyhim/awesome-claude-code` — PageRank 0.0019
+- `ingo-eichhorst/Irrlicht` — PageRank 0.0019
+- `affaan-m/ECC` — PageRank 0.0018
+- `punkpeye/awesome-mcp-servers` — PageRank 0.0014
+- `davila7/claude-code-templates` — PageRank 0.0012
+- `comet-ml/opik` — PageRank 0.0012
+- `MemPalace/mempalace` — PageRank 0.0009
+- `aaif-goose/goose` — PageRank 0.0009
+- `wshobson/agents` — PageRank 0.0008
+- `anthropics/skills` — PageRank 0.0008
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
@@ -477,4 +478,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 - **The three-strategy table is opinionated**, built only from repos in your stars — it is a starting point, not a benchmark. Validate model-tier and token-saver claims against your own `langfuse`/`codeburn` traces.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Tools covered: 59 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 59 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

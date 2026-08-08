@@ -1,8 +1,8 @@
 # Fine-Tuning & Post-Training Stack — Which Trainer for Which Task
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
 >
-> Generated 2026-08-07 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/finetuning-stack-top-tools.svg)
 
@@ -61,7 +61,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [unslothai/notebooks](https://github.com/unslothai/notebooks) | Learn-by-building | Jupyter Notebook | LGPL-3.0 | 5,552 (▲21) | Hot | 50 | very active | 1d ago | 1.7y | 3 |
 | [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | Domain & on-device tuning | Python | MIT | 5,304 (▲44) | Mature | 84 | very active | 0d ago | 2.3y | 9 |
 | [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) | Hardware fit & serving | Python | AGPL-3.0 | 5,170 (▲4) | Mature | 80 | very active | 2d ago | 2.6y | 3 |
-| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,000 (▲11) | Declining | 6 | stale | 11mo ago | 1.8y | 0 |
+| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,000 (▲11) | Declining | 5 | stale | 11mo ago | 1.8y | 0 |
 | [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | Domain & on-device tuning | Python | MIT | 4,101 (▲3) | Abandoned | 4 | stale | 1.6y ago | 2.8y | 0 |
 | [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,823 (▲3) | Mature | 36 | slowing | 2mo ago | 2.8y | 1 |
 | [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,560 (▲27) | Declining | 10 | stale | 10mo ago | 1.1y | 0 |
@@ -209,26 +209,25 @@ Fine-tuning in 2024 meant one thing: LoRA on instruction data. The 2026 stack is
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 27 tools span **11 of the graph's 33 communities**.
+**Community clustering.** These 27 tools span **10 of the graph's 34 communities**.
 
-- **Community 13** (6): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `unslothai/notebooks`, `lyogavin/airllm`, `predibase/lorax`
-- **Community 2** (6): `Lightning-AI/pytorch-lightning`, `PaddlePaddle/PaddleNLP`, `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `roboflow/rf-detr`
-- **Community 17** (5): `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `huggingface/distil-whisper`
-- **Community 16** (2): `Gen-Verse/OpenClaw-RL`, `transformerlab/transformerlab-app`
-- **Community 1** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
+- **Community 7** (11): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `unslothai/notebooks`, `huggingface/distil-whisper`, `lyogavin/airllm`, `predibase/lorax`
+- **Community 5** (6): `Lightning-AI/pytorch-lightning`, `PaddlePaddle/PaddleNLP`, `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `roboflow/rf-detr`
+- **Community 6** (2): `Gen-Verse/OpenClaw-RL`, `transformerlab/transformerlab-app`
+- **Community 4** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — most 'hub-like' training tools in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' training tools in your ecosystem:
 
-- `Lightning-AI/pytorch-lightning` — PageRank 0.0030
-- `huggingface/peft` — PageRank 0.0016
-- `axolotl-ai-cloud/axolotl` — PageRank 0.0014
-- `predibase/lorax` — PageRank 0.0012
+- `Lightning-AI/pytorch-lightning` — PageRank 0.0029
+- `huggingface/peft` — PageRank 0.0015
+- `axolotl-ai-cloud/axolotl` — PageRank 0.0013
+- `predibase/lorax` — PageRank 0.0011
 - `huggingface/transformers` — PageRank 0.0011
 - `unslothai/unsloth` — PageRank 0.0011
 - `roboflow/rf-detr` — PageRank 0.0009
-- `huggingface/trl` — PageRank 0.0009
-- `huggingface/OpenEnv` — PageRank 0.0008
-- `huggingface/distil-whisper` — PageRank 0.0008
+- `huggingface/trl` — PageRank 0.0008
+- `huggingface/OpenEnv` — PageRank 0.0007
+- `karpathy/nanoGPT` — PageRank 0.0007
 
 **Direct links between training tools** (top similarity edges where both endpoints are in this report):
 
@@ -280,7 +279,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | labmlai/annotated_deep_learning_paper_implementations | 22 | Declining | stale | 0 | 0% | 0 |
 | karpathy/nanoGPT | 11 | Declining | stale | 0 | 0% | 0 |
 | Memento-Teams/Memento | 10 | Declining | stale | 0 | 0% | 0 |
-| SylphAI-Inc/LLM-engineer-handbook | 6 | Declining | stale | 0 | 0% | 0 |
+| SylphAI-Inc/LLM-engineer-handbook | 5 | Declining | stale | 0 | 0% | 0 |
 | huggingface/distil-whisper | 4 | Abandoned | stale | 0 | 0% | 0 |
 
 Watch items: `nanoGPT` and most learn-by-building repos read as frozen — expected and fine for their purpose, but don't depend on them. `distil-whisper` is abandoned in this snapshot (the *technique* lives on in papers and Whisper forks). `Memento` has gone quiet since its paper. `lorax` is slowing (single-maintainer, ~2 months between pushes) — if adapter serving is on your critical path, benchmark vLLM's multi-LoRA as the fallback. `PaddleNLP` is healthy mainly inside the Paddle ecosystem.
@@ -316,4 +315,4 @@ Watch items: `nanoGPT` and most learn-by-building repos read as frozen — expec
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; benchmark citations are frozen text and need manual review when major releases land.
 
-<sub>Tools covered: 27 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 27 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

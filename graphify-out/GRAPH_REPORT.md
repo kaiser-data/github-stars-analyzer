@@ -1,7 +1,7 @@
-# Graph Report - github-stars-analyzer  (2026-08-07)
+# Graph Report - github-stars-analyzer  (2026-08-08)
 
 ## Corpus Check
-- 133 files · ~2,407,799 words
+- 133 files · ~2,460,994 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f44869dc`
+- Built from commit: `c2f7c580`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -344,11 +344,11 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-20 → 2026-08-07, 18d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-07, 11d), Frontier models on hardware you already own (+10 more)
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-20 → 2026-08-07, 18d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-07, 11d), Frontier models on hardware you already own (+10 more)
 
 ## Knowledge Gaps
 - **773 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+768 more)

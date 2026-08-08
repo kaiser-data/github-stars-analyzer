@@ -143,13 +143,24 @@ for f in snap_files:
         snaps[f[:-5]] = json.load(fh)
 
 dates = list(snaps.keys())
-NEWEST, PREV, OLDEST = dates[-1], dates[-2], dates[0]
+NEWEST, OLDEST = dates[-1], dates[0]
 
 
 def days_between(a, b):
     ya, ma, da = map(int, a.split("-"))
     yb, mb, db = map(int, b.split("-"))
     return (date(yb, mb, db) - date(ya, ma, da)).days
+
+
+# Snapshots are written per data vintage, not on a schedule, so the immediately
+# preceding one can be a day old (two refreshes in one day) — which produces a
+# 1-day window where noise swamps signal. Pick the newest snapshot that is at
+# least MIN_WINDOW_DAYS older instead, falling back to the immediately previous
+# one when history is too short to offer anything better.
+MIN_WINDOW_DAYS = 7
+_candidates = [d for d in dates[:-1] if days_between(d, NEWEST) >= MIN_WINDOW_DAYS]
+PREV = _candidates[-1] if _candidates else dates[-2]
+BASELINE_WAS_WIDENED = bool(_candidates) and PREV != dates[-2]
 
 
 def deltas(a, b):
@@ -251,6 +262,11 @@ A(f"- **This is the only report here that measures *change* rather than describi
 A(f"- **Window**: `{PREV}` → `{NEWEST}` (**{days_word(RECENT_DAYS)}**), covering the "
   f"**{fmt_int(len(recent))} repos** present in both snapshots. Long-run comparisons use "
   f"`{OLDEST}` → `{NEWEST}` (**{days_word(LONG_DAYS)}**).")
+if BASELINE_WAS_WIDENED:
+    A(f"  - The immediately preceding snapshot (`{dates[-2]}`) is only "
+      f"{days_word(days_between(dates[-2], NEWEST))} before this one — too short to separate "
+      f"signal from noise — so the baseline was widened to the newest snapshot at least "
+      f"{MIN_WINDOW_DAYS} days back.")
 A(f"- **{fmt_int(len([r for r in recent if r[1] > 0]))} repos gained stars** in the recent window, "
   f"adding **{fmt_int(total_gain)}★** between them.")
 if entrants:
@@ -452,8 +468,10 @@ A(f"- **Snapshots available**: {', '.join(dates)} ({len(dates)} vintages). "
   f"`build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.")
 A(f"- **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a "
   f"fixed cadence — consecutive vintages here range from 1 day to several weeks apart. "
-  f"Per-day normalization makes the boards comparable, but a 1-day window amplifies noise, "
-  f"so treat short-window figures as directional.")
+  f"The recent window therefore does not always use the immediately preceding snapshot: "
+  f"it uses the newest one at least {MIN_WINDOW_DAYS} days back, because a 1-day window "
+  f"amplifies noise far more than it reveals movement. Per-day normalization keeps the "
+  f"boards comparable across refreshes either way.")
 A("- **Star counts are a popularity signal, not a quality one.** A launch post, a "
   "conference talk, or a newsletter mention moves stars without anything changing in the code.")
 A("- **Only repos present in both snapshots are diffed.** Newly starred repos appear under "

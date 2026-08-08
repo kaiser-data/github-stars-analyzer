@@ -1,13 +1,8 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges).
 >
-> Generated 2026-08-07 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
-
-![Top tools by stars](assets/blockchain-essentials-top-tools.svg)
-
-![Tools per category](assets/blockchain-essentials-categories.svg)
-
+> Generated 2026-08-08 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
 > **What this is.** The essential blockchain/web3/DeFi repos worth knowing, organized by **layer** (language → toolchain → libraries → clients → protocols → ZK → the AI×crypto edge), with live metrics. Start at the top of each layer and work down.
 
@@ -18,13 +13,13 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 | Repo | Layer-fit | ★ | Lifecycle | Momentum (★/30d) | Commits (90d) |
 |---|---|---|---|---|---|
 | [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 18,927 | 🟢 Mature | 1,308 | 11,880 |
-| [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 368 | 🔥 Hot | 56 | 399 |
+| [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 368 | 🔥 Hot | 55 | 399 |
+| [reth](https://github.com/paradigmxyz/reth) | Execution clients (nodes) | 5,734 | 🔵 Classic | 151 | 582 |
 | [go-ethereum](https://github.com/ethereum/go-ethereum) | Execution clients (nodes) | 51,273 | 🔵 Classic | 417 | 268 |
+| [anchor](https://github.com/otter-sec/anchor) | Solana | 5,108 | 🔵 Classic | 94 | 137 |
 | [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | Contract libraries & standards | 27,206 | 🔵 Classic | 279 | 63 |
 | [slither](https://github.com/crytic/slither) | Security & analysis | 6,338 | 🔵 Classic | 82 | 54 |
-| [vyper](https://github.com/vyperlang/vyper) | Languages & compilers | 5,177 | 🔵 Classic | 55 | 89 |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,682 | 🔥 Hot | 2,707 | 101 |
-| [wagmi](https://github.com/wevm/wagmi) | Client libraries (TS/JS) | 6,741 | 🔵 Classic | 147 | 74 |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,682 | 🔥 Hot | 2,705 | 101 |
 
 **Two trends to watch:**
 
@@ -175,4 +170,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-07T21:10:17.796Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-07T23:57:40.892Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

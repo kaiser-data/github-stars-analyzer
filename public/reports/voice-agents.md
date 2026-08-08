@@ -1,8 +1,8 @@
 # Voice AI Agents — Landscape Report
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/voice-agents-top-tools.svg)
 
@@ -49,7 +49,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [mudler/LocalAI](https://github.com/mudler/LocalAI) | Voice-capable runtime / serving | Go | MIT | 48,310 (▲392) | Classic | 79 | very active | 0d ago | 3.4y | 9 |
 | [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Text-to-speech / TTS | Python | MPL-2.0 | 45,865 (▲38) | Abandoned | 10 | stale | 2.0y ago | 6.2y | 0 |
 | [suno-ai/bark](https://github.com/suno-ai/bark) | Text-to-speech / TTS | Jupyter Notebook | MIT | 39,229 (▲16) | Abandoned | 5 | stale | 2.0y ago | 3.3y | 0 |
-| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Text-to-speech / TTS | Python | Apache-2.0 | 35,069 (▲802) | Rising | 76 | very active | 1mo ago | 10mo | 8 |
+| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Text-to-speech / TTS | Python | Apache-2.0 | 35,069 (▲802) | Rising | 76 | active | 1mo ago | 10mo | 8 |
 | [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Text-to-speech / TTS | Python | MIT | 25,893 (▲173) | Declining | 38 | active | 17d ago | 1.3y | 2 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech-to-text / ASR | Python | MIT | 24,799 (▲239) | Declining | 17 | stale | 8mo ago | 3.5y | 0 |
 | [m-bain/whisperX](https://github.com/m-bain/whisperX) | Speech-to-text / ASR | Python | BSD-2-Clause | 23,471 (▲188) | Classic | 70 | active | 26d ago | 3.7y | 5 |
@@ -198,25 +198,23 @@ These are the projects that make something a *voice agent* rather than a model. 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 28 tools span **11 of the graph's 33 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
+**Community clustering.** These 28 tools span **10 of the graph's 34 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
 
-- **Community 2** (6): `gradio-app/fastrtc`, `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
-- **Community 20** (5): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`, `openai/whisper`, `KoljaB/RealtimeSTT`
-- **Community 13** (4): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`
-- **Community 11** (3): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`, `alexpinel/Dot`
-- **Community 1** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
-- **Community 4** (2): `jamiepine/voicebox`, `debpalash/VoiceStudio`
-- **Community 10** (2): `microsoft/foundry-local`, `Azure-Samples/cognitive-services-speech-sdk`
+- **Community 5** (6): `gradio-app/fastrtc`, `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
+- **Community 23** (6): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`, `jamiepine/voicebox`, `debpalash/VoiceStudio`
+- **Community 13** (5): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`, `openai/whisper`, `KoljaB/RealtimeSTT`
+- **Community 10** (4): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`, `Azure-Samples/cognitive-services-speech-sdk`, `alexpinel/Dot`
+- **Community 4** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — most 'hub-like' voice tools in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' voice tools in your ecosystem:
 
-- `m-bain/whisperX` — PageRank 0.0021
+- `m-bain/whisperX` — PageRank 0.0020
 - `Macoron/whisper.unity` — PageRank 0.0013
-- `CorentinJ/Real-Time-Voice-Cloning` — PageRank 0.0012
+- `CorentinJ/Real-Time-Voice-Cloning` — PageRank 0.0011
 - `Picovoice/picollm` — PageRank 0.0011
 - `ggml-org/whisper.cpp` — PageRank 0.0010
-- `OpenBMB/VoxCPM` — PageRank 0.0010
-- `mudler/LocalAI` — PageRank 0.0010
+- `mudler/LocalAI` — PageRank 0.0009
+- `OpenBMB/VoxCPM` — PageRank 0.0009
 - `microsoft/foundry-local` — PageRank 0.0009
 - `DigitalPhonetics/IMS-Toucan` — PageRank 0.0009
 - `lucidrains/voicebox-pytorch` — PageRank 0.0008
@@ -254,7 +252,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | debpalash/VoiceStudio | 80 | Hot | very active | 1 | 90% | 35 |
 | pipecat-ai/pipecat | 79 | Mature | very active | 1 | 70% | 116 |
 | mudler/LocalAI | 79 | Classic | very active | 1 | 67% | 135 |
-| OpenBMB/VoxCPM | 76 | Rising | very active | 3 | 24% | 14 |
+| OpenBMB/VoxCPM | 76 | Rising | active | 3 | 24% | 14 |
 | m-bain/whisperX | 70 | Classic | active | 2 | 38% | 44 |
 | Azure-Samples/cognitive-services-speech-sdk | 64 | Mature | active | 3 | 22% | 107 |
 | Picovoice/picollm | 59 | Mature | active | 1 | 74% | 6 |
@@ -306,4 +304,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 28 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 28 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

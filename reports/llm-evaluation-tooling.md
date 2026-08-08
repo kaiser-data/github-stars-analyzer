@@ -1,13 +1,8 @@
 # LLM Evaluation Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
-
-![Top tools by stars](assets/llm-evaluation-tooling-top-tools.svg)
-
-![Tools per category](assets/llm-evaluation-tooling-categories.svg)
-
+> Generated 2026-08-08 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
 
 ## Executive summary
 
@@ -35,10 +30,10 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Benchmark / leaderboard | Python | MIT | 13,569 (▲145) | Classic | 72 | active | 25d ago | 5.9y | 12 |
 | [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Evaluation framework | Python | NOASSERTION | 10,937 (▲180) | Classic | 79 | very active | 0d ago | 3.7y | 18 |
 | [NVIDIA/garak](https://github.com/NVIDIA/garak) | Safety / red-team | Python | Apache-2.0 | 8,729 (▲143) | Classic | 82 | very active | 3d ago | 3.2y | 13 |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,360 (▲28) | Mature | 70 | very active | 3d ago | 2.9y | 4 |
+| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,360 (▲28) | Mature | 70 | very active | 4d ago | 2.9y | 4 |
 | [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,490 (▲27) | Classic | 98 | very active | 0d ago | 5.8y | 33 |
 | [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,508 (▲9) | Mature | 58 | active | 1mo ago | 2.5y | 4 |
-| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 2,356 (▲55) | Hot | 59 | very active | 2d ago | 1.4y | 5 |
+| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 2,356 (▲55) | Hot | 59 | very active | 3d ago | 1.4y | 5 |
 | [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,484 (▲46) | Mature | 88 | very active | 0d ago | 2.2y | 18 |
 | [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,306 (▲7) | Mature | 63 | active | 1mo ago | 5mo | 2 |
 | [LiveBench/LiveBench](https://github.com/LiveBench/LiveBench) | Benchmark / leaderboard | Python | NOASSERTION | 1,274 (▲11) | Mature | 66 | very active | 1d ago | 2.2y | 4 |
@@ -156,22 +151,23 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 24 tools span **9 of the graph's 33 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
+**Community clustering.** These 24 tools span **9 of the graph's 34 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
 
-- **Community 24** (9): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `langchain-ai/openevals`, `langchain-ai/agentevals`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
-- **Community 20** (3): `confident-ai/deepeval`, `openai/evals`, `confident-ai/deepteam`
-- **Community 6** (3): `rhesis-ai/rhesis`, `NVIDIA/garak`, `cvs-health/uqlm`
-- **Community 13** (3): `vllm-project/guidellm`, `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`
-- **Community 1** (2): `LiveBench/LiveBench`, `pinchbench/skill`
+- **Community 27** (7): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
+- **Community 7** (4): `vllm-project/guidellm`, `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`, `huggingface/lighteval`
+- **Community 13** (3): `confident-ai/deepeval`, `openai/evals`, `confident-ai/deepteam`
+- **Community 9** (3): `rhesis-ai/rhesis`, `NVIDIA/garak`, `cvs-health/uqlm`
+- **Community 20** (2): `langchain-ai/openevals`, `langchain-ai/agentevals`
+- **Community 4** (2): `LiveBench/LiveBench`, `pinchbench/skill`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — how 'hub-like' each tool is within your starred ecosystem:
 
-- `comet-ml/opik` — PageRank 0.0013
+- `comet-ml/opik` — PageRank 0.0012
 - `NVIDIA/garak` — PageRank 0.0011
 - `confident-ai/deepeval` — PageRank 0.0009
 - `langchain-ai/openevals` — PageRank 0.0009
-- `huggingface/lighteval` — PageRank 0.0009
-- `langchain-ai/agentevals` — PageRank 0.0009
+- `huggingface/lighteval` — PageRank 0.0008
+- `langchain-ai/agentevals` — PageRank 0.0008
 - `confident-ai/deepteam` — PageRank 0.0007
 - `vllm-project/guidellm` — PageRank 0.0007
 
@@ -255,4 +251,4 @@ Several widely-used evaluation tools are **not** in this dataset — worth knowi
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 24 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 24 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

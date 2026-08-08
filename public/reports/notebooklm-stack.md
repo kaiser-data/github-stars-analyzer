@@ -1,8 +1,8 @@
 # Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/notebooklm-stack-top-tools.svg)
 
@@ -51,10 +51,10 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [docling-project/docling](https://github.com/docling-project/docling) | Source ingestion & parsing | Python | MIT | 64,396 (▲568) | Mature | 95 | very active | 0d ago | 2.1y | 37 |
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | Grounded retrieval & citations | Python | MIT | 51,447 (▲309) | Classic | 99 | very active | 1d ago | 3.8y | 54 |
 | [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Audio Overview (TTS / podcast) | Python | MPL-2.0 | 45,865 (▲38) | Abandoned | 10 | stale | 2.0y ago | 6.2y | 0 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Grounded retrieval & citations | Python | MIT | 38,620 (▲407) | Hot | 79 | very active | 1d ago | 1.8y | 5 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Grounded retrieval & citations | Python | MIT | 38,620 (▲407) | Hot | 79 | very active | 2d ago | 1.8y | 5 |
 | [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) | Clone / reference app | TypeScript | MIT | 36,456 (▲384) | Hot | 78 | very active | 1d ago | 1.8y | 9 |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | Mind map / knowledge graph | Python | MIT | 35,319 (▲424) | Mature | 69 | active | 3d ago | 2.4y | 4 |
-| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 35,069 (▲802) | Rising | 76 | very active | 1mo ago | 10mo | 8 |
+| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 35,069 (▲802) | Rising | 76 | active | 1mo ago | 10mo | 8 |
 | [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Grounded retrieval & citations | Python | MIT | 35,066 (▲315) | Hot | 60 | very active | 1d ago | 1.4y | 8 |
 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Clone / reference app | Python | Apache-2.0 | 32,938 (▲2,658) | Hot | 78 | very active | 0d ago | 7mo | 30 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | Mind map / knowledge graph | Python | Apache-2.0 | 29,847 (▲441) | Mature | 83 | very active | 0d ago | 3.0y | 11 |
@@ -371,28 +371,28 @@ _All-open, self-hosted models; managed API spend optional. The anti-cloud pitch 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 34 tools span **14 of the graph's 33 communities**.
+**Community clustering.** These 34 tools span **15 of the graph's 34 communities**.
 
-- **Community 12** (5): `Mintplex-Labs/anything-llm`, `run-llama/llama_index`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`, `topoteretes/cognee`
-- **Community 20** (5): `yt-dlp/yt-dlp`, `openai/whisper`, `pipecat-ai/pipecat`, `livekit/agents`, `KoljaB/RealtimeSTT`
-- **Community 11** (3): `lfnovo/open-notebook`, `alexpinel/Dot`, `QwenLM/Qwen3-TTS`
-- **Community 1** (3): `HKUDS/DeepTutor`, `HKUDS/LightRAG`, `resemble-ai/chatterbox`
-- **Community 13** (3): `jina-ai/reader`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`
-- **Community 2** (3): `OpenBMB/VoxCPM`, `coqui-ai/TTS`, `gradio-app/fastrtc`
-- **Community 16** (2): `teng-lin/notebooklm-py`, `feyninc/chonkie`
-- **Community 10** (2): `microsoft/markitdown`, `microsoft/graphrag`
-- **Community 8** (2): `docling-project/docling`, `Unstructured-IO/unstructured`
-- **Community 3** (2): `getzep/graphiti`, `screenpipe/screenpipe`
+- **Community 18** (5): `Mintplex-Labs/anything-llm`, `run-llama/llama_index`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`, `topoteretes/cognee`
+- **Community 13** (4): `openai/whisper`, `pipecat-ai/pipecat`, `livekit/agents`, `KoljaB/RealtimeSTT`
+- **Community 10** (3): `lfnovo/open-notebook`, `alexpinel/Dot`, `QwenLM/Qwen3-TTS`
+- **Community 4** (3): `HKUDS/DeepTutor`, `HKUDS/LightRAG`, `resemble-ai/chatterbox`
+- **Community 5** (3): `OpenBMB/VoxCPM`, `coqui-ai/TTS`, `gradio-app/fastrtc`
+- **Community 20** (3): `getzep/graphiti`, `bytedance/deer-flow`, `screenpipe/screenpipe`
+- **Community 6** (2): `teng-lin/notebooklm-py`, `feyninc/chonkie`
+- **Community 17** (2): `microsoft/markitdown`, `microsoft/graphrag`
+- **Community 16** (2): `docling-project/docling`, `Unstructured-IO/unstructured`
+- **Community 23** (2): `SYSTRAN/faster-whisper`, `m-bain/whisperX`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — most 'hub-like' picks in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' picks in your ecosystem:
 
-- `m-bain/whisperX` — PageRank 0.0021
-- `VectifyAI/PageIndex` — PageRank 0.0017
+- `m-bain/whisperX` — PageRank 0.0020
+- `VectifyAI/PageIndex` — PageRank 0.0016
 - `HKUDS/LightRAG` — PageRank 0.0012
 - `HKUDS/DeepTutor` — PageRank 0.0011
 - `StarTrail-org/LEANN` — PageRank 0.0010
-- `OpenBMB/VoxCPM` — PageRank 0.0010
 - `feyninc/chonkie` — PageRank 0.0010
+- `OpenBMB/VoxCPM` — PageRank 0.0009
 - `microsoft/graphrag` — PageRank 0.0009
 - `opendatalab/MinerU` — PageRank 0.0008
 - `jina-ai/reader` — PageRank 0.0008
@@ -435,7 +435,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | feyninc/chonkie | 78 | Hot | very active | 1 | 84% | 45 |
 | getzep/graphiti | 78 | Hot | very active | 2 | 43% | 197 |
 | StarTrail-org/LEANN | 76 | Hot | very active | 2 | 38% | 29 |
-| OpenBMB/VoxCPM | 76 | Rising | very active | 3 | 24% | 14 |
+| OpenBMB/VoxCPM | 76 | Rising | active | 3 | 24% | 14 |
 | m-bain/whisperX | 70 | Classic | active | 2 | 38% | 44 |
 | Unstructured-IO/unstructured | 69 | Classic | active | 1 | 58% | 236 |
 | microsoft/graphrag | 69 | Mature | active | 1 | 50% | 41 |
@@ -485,4 +485,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; re-verify service pricing manually on major model/tool releases.
 
-<sub>Tools covered: 34 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 34 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

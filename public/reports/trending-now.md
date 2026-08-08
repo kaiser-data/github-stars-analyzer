@@ -1,8 +1,8 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
 ![Biggest star gains (11d)](assets/trending-now-top-tools.svg)
 
@@ -14,7 +14,7 @@
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
 - **Window**: `2026-07-27` → `2026-08-07` (**11 days**), covering the **1,392 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-08-07` (**57 days**).
 - **1,130 repos gained stars** in the recent window, adding **364,169★** between them.
-- **84 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **143 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -105,7 +105,7 @@ Averaged over the full snapshot history, so a single viral week doesn't dominate
 | 16 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **367.1** | +20,927 | 84,381 | TypeScript | 87 |
 | 17 | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | **360.1** | +20,527 | 77,872 | TypeScript | 80 |
 | 18 | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | **349.5** | +19,920 | 49,694 | TypeScript | 87 |
-| 19 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **324.9** | +18,517 | 493,398 | — | 52 |
+| 19 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **324.9** | +18,517 | 493,398 | — | 51 |
 | 20 | [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | **313.9** | +17,890 | 65,312 | C | 78 |
 
 ## Emerging themes
@@ -276,46 +276,46 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | Repo | Stars | Lang | Lifecycle | What it is |
 |---|---|---|---|---|
 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) | 81,508 | TypeScript | Hot | The open-source CapCut alternative |
+| [jgraph/drawio-desktop](https://github.com/jgraph/drawio-desktop) | 62,495 | JavaScript | Classic | Official electron build of draw.io |
 | [SimplifyJobs/Summer2027-Internships](https://github.com/SimplifyJobs/Summer2027-Internships) | 46,073 | Python | Classic | Summer 2026 software engineering, data science, AI, quant, product management, and h… |
 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | 45,875 | Python | Hot | World's first open-source, agentic video production system. 12 production pipelines,… |
 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | 42,447 | TypeScript | Hot | Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500… |
+| [aseprite/aseprite](https://github.com/aseprite/aseprite) | 38,586 | C++ | Classic | Animated sprite editor & pixel art tool (Windows, macOS, Linux) |
+| [iced-rs/iced](https://github.com/iced-rs/iced) | 31,181 | Rust | Classic | A cross-platform GUI library for Rust, inspired by Elm |
 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | 30,684 | TypeScript | Hot | The job search that runs on your machine. AI job application framework built on Clau… |
 | [ScrapeGraphAI/Scrapegraph-ai](https://github.com/ScrapeGraphAI/Scrapegraph-ai) | 29,186 | Python | Mature | Python scraper based on AI |
+| [GraphiteEditor/Graphite](https://github.com/GraphiteEditor/Graphite) | 26,780 | Rust | Classic | Community-built comprehensive 2D content creation appplication for graphic design, d… |
 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | 25,579 | Rust | Hot | the runtime your coding agents live on |
 | [block/buzz](https://github.com/block/buzz) | 24,879 | Rust | Hot | A hive mind communication platform |
+| [ssloy/tinyrenderer](https://github.com/ssloy/tinyrenderer) | 24,070 | C++ | Mature | A brief computer graphics / rendering course |
+| [processing/p5.js](https://github.com/processing/p5.js) | 23,851 | JavaScript | Classic | p5.js is a client-side JS platform that empowers artists, designers, students, and a… |
 | [krayin/laravel-crm](https://github.com/krayin/laravel-crm) | 23,643 | PHP | Classic | Krayin CRM is Free & Open Source CRM Built with Laravel for Customer, Lead, and Sale… |
 | [snarktank/ralph](https://github.com/snarktank/ralph) | 21,406 | TypeScript | Declining | Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are co… |
+| [rough-stuff/rough](https://github.com/rough-stuff/rough) | 21,120 | HTML | Abandoned | Create graphics with a hand-drawn, sketchy, appearance |
 | [chidiwilliams/buzz](https://github.com/chidiwilliams/buzz) | 20,832 | Python | Classic | Buzz transcribes and translates audio offline on your personal computer. Powered by … |
+| [google/filament](https://github.com/google/filament) | 20,324 | C++ | Classic | Filament is a real-time physically based rendering engine for Android, iOS, Windows,… |
+| [lettier/3d-game-shaders-for-beginners](https://github.com/lettier/3d-game-shaders-for-beginners) | 19,797 | C++ | Abandoned | 🎮 A step-by-step guide to implementing SSAO, depth of field, lighting, normal mappin… |
 | [react/yoga](https://github.com/react/yoga) | 18,859 | C++ | Classic | Yoga is an embeddable layout engine targeting web standards. |
+| [mojs/mojs](https://github.com/mojs/mojs) | 18,750 | CoffeeScript | Mature | The motion graphics toolbelt for the web |
+| [mahmoud/awesome-python-applications](https://github.com/mahmoud/awesome-python-applications) | 17,973 | Jupyter Notebook | Mature | 💿 Free software that works great, and also happens to be open-source Python. |
 | [gnachman/iTerm2](https://github.com/gnachman/iTerm2) | 17,912 | Objective-C | Classic | iTerm2 is a terminal emulator for Mac OS X that does amazing things. |
+| [kitao/pyxel](https://github.com/kitao/pyxel) | 17,635 | Rust | Mature | A retro game engine for Python |
+| [gztchan/awesome-design](https://github.com/gztchan/awesome-design) | 17,381 | — | Abandoned | 🌟 Curated design resources from all over the world. |
 | [danielmiessler/LifeOS](https://github.com/danielmiessler/LifeOS) | 17,239 | TypeScript | Hot | ⛰️A General Hill-climbing AI harness that helps you move from Current State to Ideal… |
+| [hoffstadt/DearPyGui](https://github.com/hoffstadt/DearPyGui) | 15,560 | C++ | Mature | Dear PyGui: A fast and powerful Graphical User Interface Toolkit for Python with min… |
 | [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata) | 14,767 | TypeScript | Classic | The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for buil… |
+| [konvajs/konva](https://github.com/konvajs/konva) | 14,667 | TypeScript | Classic | Konva.js is an HTML5 Canvas JavaScript framework that extends the 2d context by enab… |
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | 14,418 | Python | Mature | Give Claude the ability to watch any video. /watch downloads, extracts frames, trans… |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | 14,326 | Python | Mature | TensorRT LLM provides users with an easy-to-use Python API to define Large Language … |
+| [MonoGame/MonoGame](https://github.com/MonoGame/MonoGame) | 14,276 | C# | Classic | One framework for creating powerful cross-platform games. |
 | [github-linguist/linguist](https://github.com/github-linguist/linguist) | 13,623 | Ruby | Classic | Language Savant. If your repository's language is being reported incorrectly, send u… |
+| [fogleman/primitive](https://github.com/fogleman/primitive) | 13,179 | Go | Abandoned | Reproducing images with geometric primitives. |
+| [antvis/G2](https://github.com/antvis/G2) | 12,581 | TypeScript | Mature | 📊 The concise and progressive visualization grammar. |
+| [CosmicMind/Material](https://github.com/CosmicMind/Material) | 12,007 | Swift | Abandoned | A UI/UX framework for creating beautiful applications. |
+| [SFML/SFML](https://github.com/SFML/SFML) | 11,974 | C++ | Mature | Simple and Fast Multimedia Library |
 | [huggingface/speech-to-speech](https://github.com/huggingface/speech-to-speech) | 11,564 | Python | Mature | Build local voice agents with open-source models |
 | [NVIDIA/cosmos](https://github.com/NVIDIA/cosmos) | 11,410 | Jupyter Notebook | Hot | NVIDIA Cosmos is an open platform of world models, datasets, and tools that enables … |
-| [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | 10,465 | Python | Declining | Native and Compact Structured Latents for 3D Generation |
-| [bluewave-labs/Checkmate](https://github.com/bluewave-labs/Checkmate) | 10,430 | TypeScript | Mature | Checkmate is an open-source, self-hosted tool designed to track and monitor server h… |
-| [pymupdf/PyMuPDF](https://github.com/pymupdf/PyMuPDF) | 10,424 | Python | Classic | PyMuPDF is a high performance Python library for data extraction, analysis, conversi… |
-| [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) | 10,174 | Python | Hot | Build your own AI SRE agents. The open source toolkit for the AI era. |
-| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | 10,161 | Python | Hot | Rebuild the object in a reference image as a code-only, procedural, quality-gated, a… |
-| [openscad/openscad](https://github.com/openscad/openscad) | 9,901 | C++ | Classic | OpenSCAD - The Programmers Solid 3D CAD Modeller |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | 9,714 | Python | Hot | The Open-Source Elevenlabs alternative AI Voice Clone, Dub, Dictate, Transcribe, Aud… |
-| [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) | 8,852 | Go | Hot | Agent IDE that enables you to manage fleets of coding agents. It comes with an agent… |
-| [CodebuffAI/freebuff](https://github.com/CodebuffAI/freebuff) | 8,571 | TypeScript | Mature | The free coding agent |
-| [MoonshotAI/Kimi-K3](https://github.com/MoonshotAI/Kimi-K3) | 8,185 | — | Mature | Open Frontier Intelligence |
-| [soldair/node-qrcode](https://github.com/soldair/node-qrcode) | 8,155 | JavaScript | Abandoned | qr code generator |
-| [trycompai/crm](https://github.com/trycompai/crm) | 7,462 | TypeScript | Hot | Comp AI CRM is an open source, CRM designed for AI agents. Agentic-first CRM. |
-| [HKUDS/OpenSpace](https://github.com/HKUDS/OpenSpace) | 7,291 | Python | Rising | "OpenSpace: The Skill Management Layer for AI Agents" -- https://open-space.cloud/ |
-| [agmmnn/awesome-blender](https://github.com/agmmnn/awesome-blender) | 7,174 | — | Declining | 🪐 A curated list of awesome Blender addons, tools, tutorials; and 3D resources for e… |
-| [pliang279/awesome-multimodal-ml](https://github.com/pliang279/awesome-multimodal-ml) | 6,921 | — | Abandoned | Reading list for research topics in multimodal machine learning |
-| [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 6,209 | TypeScript | Hot | A self-improving RLM agent for coding workflows and long-running autonomous tasks. |
-| [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | 5,778 | C++ | Mature | The open source mesh processing system |
-| [cloudflare/computer](https://github.com/cloudflare/computer) | 5,523 | TypeScript | Hot | Give your agent a computer 👾 |
-| [bashalarmistalt/decimen-optical-transfer](https://github.com/bashalarmistalt/decimen-optical-transfer) | 5,136 | TypeScript | Rising | — |
-| [PrimeIntellect-ai/verifiers](https://github.com/PrimeIntellect-ai/verifiers) | 4,465 | Python | Hot | Our library for RL environments + evals |
-| _…and 44 more_ | | | | |
+| _…and 103 more_ | | | | |
 
 ## Cooling off
 
@@ -327,7 +327,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 57-day long win
 | [https-deeplearning-ai/deeplearning-ai](https://github.com/https-deeplearning-ai/deeplearning-ai) | 2.5 | 0.2 | **7%** of prior pace | 1mo ago | Rising |
 | [hexo-ai/sia](https://github.com/hexo-ai/sia) | 15.3 | 1.4 | **9%** of prior pace | 1mo ago | Rising |
 | [deeplethe/forkd](https://github.com/deeplethe/forkd) | 9.9 | 0.9 | **9%** of prior pace | 5d ago | Hot |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | 98.7 | 11.0 | **11%** of prior pace | 0d ago | Hot |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | 98.7 | 11.0 | **11%** of prior pace | 1d ago | Hot |
 | [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | 1.6 | 0.3 | **17%** of prior pace | 1mo ago | Hot |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | 211.5 | 40.1 | **19%** of prior pace | 0d ago | Mature |
 | [openai/openai-cs-agents-demo](https://github.com/openai/openai-cs-agents-demo) | 2.6 | 0.5 | **21%** of prior pace | 7mo ago | Declining |
@@ -341,19 +341,17 @@ Deceleration, not decline. These averaged ≥1★/day across the 57-day long win
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **14 of the graph's 33 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **16 of the graph's 34 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
-- **Community 0** (7): `earendil-works/pi`, `1jehuang/jcode`, `nextlevelbuilder/ui-ux-pro-max-skill`, `farion1231/cc-switch`, `colbymchenry/codegraph`, `nexu-io/open-design`, `anthropics/skills`
-- **Community 9** (5): `DietrichGebert/ponytail`, `ayghri/i-have-adhd`, `NousResearch/hermes-agent`, `affaan-m/ECC`, `JuliusBrussee/caveman`
-- **Community 4** (5): `codecrafters-io/build-your-own-x`, `sindresorhus/awesome`, `jamiepine/voicebox`, `DigitalPlatDev/FreeDomain`, `awesome-selfhosted/awesome-selfhosted`
-- **Community 3** (4): `TencentCloud/TencentDB-Agent-Memory`, `firecrawl/firecrawl`, `Shubhamsaboo/awesome-llm-apps`, `harry0703/MoneyPrinterTurbo`
-- **Community 10** (3): `microsoft/AI-For-Beginners`, `microsoft/generative-ai-for-beginners`, `microsoft/markitdown`
-- **Community 8** (3): `Graphify-Labs/graphify`, `tirth8205/code-review-graph`, `tw93/Mole`
-- **Community 11** (2): `obra/superpowers`, `VoltAgent/awesome-design-md`
-- **Community 13** (2): `lyogavin/airllm`, `JustVugg/colibri`
-- **Community 23** (2): `usestrix/strix`, `donnemartin/system-design-primer`
-- **Community 15** (2): `multica-ai/andrej-karpathy-skills`, `multica-ai/multica`
-- **Community 20** (2): `openai/codex`, `yt-dlp/yt-dlp`
+- **Community 10** (7): `DietrichGebert/ponytail`, `ayghri/i-have-adhd`, `NousResearch/hermes-agent`, `affaan-m/ECC`, `1jehuang/jcode`, `JuliusBrussee/caveman`, `VoltAgent/awesome-design-md`
+- **Community 20** (5): `TencentCloud/TencentDB-Agent-Memory`, `obra/superpowers`, `Shubhamsaboo/awesome-llm-apps`, `headroomlabs-ai/headroom`, `harry0703/MoneyPrinterTurbo`
+- **Community 8** (5): `earendil-works/pi`, `nextlevelbuilder/ui-ux-pro-max-skill`, `farion1231/cc-switch`, `colbymchenry/codegraph`, `nexu-io/open-design`
+- **Community 21** (4): `codecrafters-io/build-your-own-x`, `sindresorhus/awesome`, `DigitalPlatDev/FreeDomain`, `awesome-selfhosted/awesome-selfhosted`
+- **Community 17** (3): `microsoft/AI-For-Beginners`, `microsoft/generative-ai-for-beginners`, `microsoft/markitdown`
+- **Community 16** (3): `Graphify-Labs/graphify`, `tirth8205/code-review-graph`, `tw93/Mole`
+- **Community 7** (2): `lyogavin/airllm`, `JustVugg/colibri`
+- **Community 27** (2): `usestrix/strix`, `donnemartin/system-design-primer`
+- **Community 0** (2): `multica-ai/andrej-karpathy-skills`, `multica-ai/multica`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
@@ -383,10 +381,10 @@ Deceleration, not decline. These averaged ≥1★/day across the 57-day long win
 
 - **Source**: `data/snapshots/*.json` diffed against `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07 (6 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
-- **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a fixed cadence — consecutive vintages here range from 1 day to several weeks apart. Per-day normalization makes the boards comparable, but a 1-day window amplifies noise, so treat short-window figures as directional.
+- **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a fixed cadence — consecutive vintages here range from 1 day to several weeks apart. The recent window therefore does not always use the immediately preceding snapshot: it uses the newest one at least 7 days back, because a 1-day window amplifies noise far more than it reveals movement. Per-day normalization keeps the boards comparable across refreshes either way.
 - **Star counts are a popularity signal, not a quality one.** A launch post, a conference talk, or a newsletter mention moves stars without anything changing in the code.
 - **Only repos present in both snapshots are diffed.** Newly starred repos appear under *New entrants* with no growth figure; unstarred repos silently drop out.
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 1,392 · Window: 2026-07-27 → 2026-08-07 (11d) · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Repos tracked: 1,392 · Window: 2026-07-27 → 2026-08-07 (11d) · Snapshot: 2026-08-07T23:57:40.892Z</sub>

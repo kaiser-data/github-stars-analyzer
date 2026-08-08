@@ -1,8 +1,8 @@
 # The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities) and the 2026 AI-engineering landscape.
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities) and the 2026 AI-engineering landscape.
 >
-> Generated 2026-08-07 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/ai-engineer-stack-top-tools.svg)
 
@@ -195,7 +195,7 @@ Ranked by a momentum signal (Hot/Rising lifecycle + recent age + 90-day commit v
 | [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | 91,941 | 1.7y | 3302 | 5d ago | 5 |
 | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | 89,327 | 1.7y | 61 | 2d ago | 5 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | 79,512 | 1.3y | 847 | 0d ago | 5 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | 38,620 | 1.8y | 1909 | 1d ago | 5 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | 38,620 | 1.8y | 1909 | 2d ago | 5 |
 | [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | 35,066 | 1.4y | 73 | 1d ago | 5 |
 | [anthropics/skills](https://github.com/anthropics/skills) | Trending | 166,884 | 10mo | 13 | 0d ago | 4 |
 | [ollama/ollama](https://github.com/ollama/ollama) | Must-have | 178,014 | 3.1y | 230 | 0d ago | 2 |
@@ -263,7 +263,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 40,690 (▲103) | Classic | 94 | very active | 0d ago | 9.5y |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 40,163 (▲870) | Hot | 70 | very active | 3d ago | 6mo |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 39,143 (▲910) | Mature | 77 | very active | 0d ago | 3.0y |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 38,620 (▲407) | Hot | 79 | very active | 1d ago | 1.8y |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 38,620 (▲407) | Hot | 79 | very active | 2d ago | 1.8y |
 | [google/langextract](https://github.com/google/langextract) | Trending | Data & ingestion | Python | 37,992 (▲116) | Mature | 65 | active | 13d ago | 1.1y |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | Must-have | Orchestration & agents | Python | 36,684 (▲281) | Classic | 82 | very active | 0d ago | 3.6y |
 | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 35,895 (▲369) | Mature | 76 | very active | 0d ago | 1.4y |
@@ -282,28 +282,28 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 56 repos span **18 of the graph's 33 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
+**Community clustering.** These 56 repos span **19 of the graph's 34 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
 
-- **Community 24** (9): `langchain-ai/langchain`, `bytedance/deer-flow`, `dair-ai/Prompt-Engineering-Guide`, `mem0ai/mem0`, `BerriAI/litellm`, `langchain-ai/langgraph`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
-- **Community 13** (7): `ollama/ollama`, `ggml-org/llama.cpp`, `vllm-project/vllm`, `mlabonne/llm-course`, `hiyouga/LlamaFactory`, `unslothai/unsloth`, `sgl-project/sglang`
-- **Community 3** (7): `firecrawl/firecrawl`, `browser-use/browser-use`, `punkpeye/awesome-mcp-servers`, `MemPalace/mempalace`, `crewAIInc/crewAI`, `agno-agi/agno`, `chroma-core/chroma`
-- **Community 2** (5): `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
-- **Community 12** (5): `TauricResearch/TradingAgents`, `infiniflow/ragflow`, `run-llama/llama_index`, `VectifyAI/PageIndex`, `NirDiamant/RAG_Techniques`
-- **Community 11** (4): `obra/superpowers`, `google-gemini/gemini-cli`, `OpenHands/OpenHands`, `vercel-labs/agent-browser`
-- **Community 10** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
+- **Community 20** (12): `obra/superpowers`, `langchain-ai/langchain`, `browser-use/browser-use`, `google-gemini/gemini-cli`, `bytedance/deer-flow`, `dair-ai/Prompt-Engineering-Guide`, `mem0ai/mem0`, `MemPalace/mempalace`, `crewAIInc/crewAI`, `agno-agi/agno`
+- **Community 7** (8): `ollama/ollama`, `huggingface/transformers`, `vllm-project/vllm`, `mlabonne/llm-course`, `hiyouga/LlamaFactory`, `unslothai/unsloth`, `sgl-project/sglang`, `huggingface/smolagents`
+- **Community 5** (5): `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
+- **Community 18** (5): `TauricResearch/TradingAgents`, `infiniflow/ragflow`, `run-llama/llama_index`, `VectifyAI/PageIndex`, `NirDiamant/RAG_Techniques`
+- **Community 27** (4): `BerriAI/litellm`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
+- **Community 17** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
+- **Community 12** (3): `github/spec-kit`, `punkpeye/awesome-mcp-servers`, `modelcontextprotocol/servers`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
+**Centrality (PageRank in the full 1,535-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
 
-- `microsoft/generative-ai-for-beginners` — PageRank 0.0034 (Fundamental)
-- `Lightning-AI/pytorch-lightning` — PageRank 0.0030 (Fundamental)
-- `langchain-ai/langchain` — PageRank 0.0029 (Must-have)
-- `agno-agi/agno` — PageRank 0.0023 (Trending)
-- `langchain-ai/langgraph` — PageRank 0.0020 (Must-have)
-- `NirDiamant/RAG_Techniques` — PageRank 0.0017 (Fundamental)
-- `VectifyAI/PageIndex` — PageRank 0.0017 (Trending)
-- `punkpeye/awesome-mcp-servers` — PageRank 0.0016 (Trending)
-- `crewAIInc/crewAI` — PageRank 0.0016 (Must-have)
-- `comet-ml/opik` — PageRank 0.0013 (Trending)
+- `microsoft/generative-ai-for-beginners` — PageRank 0.0035 (Fundamental)
+- `Lightning-AI/pytorch-lightning` — PageRank 0.0029 (Fundamental)
+- `langchain-ai/langchain` — PageRank 0.0027 (Must-have)
+- `agno-agi/agno` — PageRank 0.0021 (Trending)
+- `langchain-ai/langgraph` — PageRank 0.0019 (Must-have)
+- `NirDiamant/RAG_Techniques` — PageRank 0.0016 (Fundamental)
+- `VectifyAI/PageIndex` — PageRank 0.0016 (Trending)
+- `crewAIInc/crewAI` — PageRank 0.0015 (Must-have)
+- `punkpeye/awesome-mcp-servers` — PageRank 0.0014 (Trending)
+- `comet-ml/opik` — PageRank 0.0012 (Trending)
 
 ## Maintenance & risk signal
 
@@ -383,4 +383,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 - **Selection** favors recognizable, broadly-applicable AI-engineering tooling. The coding-agent/harness ecosystem and voice stack are summarized here but detailed in the Claude-Code-setups and voice-agents reports respectively.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Repos covered: 56 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Repos covered: 56 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

@@ -1,8 +1,8 @@
 # Document Extraction Frameworks — Landscape & Task Rankings
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
 >
-> Generated 2026-08-07 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/document-extraction-top-tools.svg)
 
@@ -59,11 +59,11 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [deepseek-ai/DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | VLM document parser | Python | Apache-2.0 | 3,236 (▲50) | Declining | 15 | stale | 6mo ago | 6mo | 0 |
 | [opendatalab/DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) | OCR / layout model | Python | AGPL-3.0 | 2,244 (▲8) | Abandoned | 7 | stale | 1.3y ago | 1.8y | 0 |
 | [run-llama/semtools](https://github.com/run-llama/semtools) | Conversion framework | Rust | MIT | 1,845 (▲5) | Declining | 40 | slowing | 4mo ago | 11mo | 0 |
-| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,025 (▲6) | Hot | 73 | very active | 2d ago | 10mo | 5 |
+| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,025 (▲6) | Hot | 73 | very active | 3d ago | 10mo | 5 |
 | [adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api) | Format-specific / serving | Python | GPL-3.0 | 979 (▲2) | Abandoned | 2 | stale | 1.8y ago | 2.2y | 0 |
 | [567-labs/instructor-js](https://github.com/567-labs/instructor-js) | Structured field extraction | TypeScript | MIT | 802 | Abandoned | 7 | stale | 1.5y ago | 2.6y | 0 |
-| [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 705 (▲8) | Mature | 69 | very active | 7d ago | 1.4y | 6 |
-| [AstraBert/PdfItDown](https://github.com/AstraBert/PdfItDown) | Format-specific / serving | Rust | MIT | 249 (▲1) | Mature | 74 | very active | 29d ago | 1.6y | 2 |
+| [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 705 (▲8) | Mature | 69 | very active | 8d ago | 1.4y | 6 |
+| [AstraBert/PdfItDown](https://github.com/AstraBert/PdfItDown) | Format-specific / serving | Rust | MIT | 249 (▲1) | Mature | 74 | very active | 1mo ago | 1.6y | 2 |
 | [JoshData/pdf-redactor](https://github.com/JoshData/pdf-redactor) | Format-specific / serving | Python | CC0-1.0 | 212 (▲1) | Abandoned | 2 | stale | 2.2y ago | 9.8y | 0 |
 
 ## Task rankings — which framework for which job
@@ -199,27 +199,27 @@ Two years ago document extraction meant a *pipeline of specialist models* (layou
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 26 tools span **11 of the graph's 33 communities**.
+**Community clustering.** These 26 tools span **11 of the graph's 34 communities**.
 
-- **Community 19** (6): `opendatalab/MinerU`, `opendatalab/DocLayout-YOLO`, `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`, `adithya-s-k/marker-api`
-- **Community 1** (5): `allenai/olmocr`, `studio-dots-ai/dots.ocr`, `Yuliang-Liu/MonkeyOCR`, `python-openxml/python-docx`, `JoshData/pdf-redactor`
-- **Community 8** (3): `docling-project/docling`, `Unstructured-IO/unstructured`, `docling-project/docling-mcp`
-- **Community 10** (2): `microsoft/markitdown`, `tesseract-ocr/tesseract`
-- **Community 12** (2): `xberg-io/xberg`, `run-llama/semtools`
-- **Community 2** (2): `PaddlePaddle/PaddleOCR`, `facebookresearch/nougat`
-- **Community 4** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
+- **Community 22** (6): `opendatalab/MinerU`, `opendatalab/DocLayout-YOLO`, `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`, `adithya-s-k/marker-api`
+- **Community 4** (5): `allenai/olmocr`, `studio-dots-ai/dots.ocr`, `Yuliang-Liu/MonkeyOCR`, `python-openxml/python-docx`, `JoshData/pdf-redactor`
+- **Community 16** (3): `docling-project/docling`, `Unstructured-IO/unstructured`, `docling-project/docling-mcp`
+- **Community 17** (2): `microsoft/markitdown`, `tesseract-ocr/tesseract`
+- **Community 18** (2): `xberg-io/xberg`, `run-llama/semtools`
+- **Community 5** (2): `PaddlePaddle/PaddleOCR`, `facebookresearch/nougat`
+- **Community 21** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
 
-**Centrality (PageRank in the full 1,476-repo graph)** — most 'hub-like' extraction tools in your ecosystem:
+**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' extraction tools in your ecosystem:
 
 - `Yuliang-Liu/MonkeyOCR` — PageRank 0.0010
-- `google/langextract` — PageRank 0.0009
-- `deepseek-ai/DeepSeek-OCR-2` — PageRank 0.0009
+- `google/langextract` — PageRank 0.0010
+- `deepseek-ai/DeepSeek-OCR-2` — PageRank 0.0008
 - `opendatalab/MinerU` — PageRank 0.0008
 - `datalab-to/marker` — PageRank 0.0008
-- `bytedance/Dolphin` — PageRank 0.0008
+- `bytedance/Dolphin` — PageRank 0.0007
 - `landing-ai/ade-python` — PageRank 0.0007
 - `facebookresearch/nougat` — PageRank 0.0007
-- `run-llama/semtools` — PageRank 0.0007
+- `run-llama/semtools` — PageRank 0.0006
 - `deepseek-ai/DeepSeek-OCR` — PageRank 0.0006
 
 **Direct links between extraction tools** (top similarity edges where both endpoints are in this report):
@@ -290,4 +290,4 @@ Watch items: `nougat` is effectively frozen (use `MinerU`/`marker` instead); `ze
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; benchmark citations are frozen text and need manual review on major model releases.
 
-<sub>Tools covered: 26 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 26 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

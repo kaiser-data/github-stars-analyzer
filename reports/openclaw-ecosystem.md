@@ -1,13 +1,8 @@
 # OpenClaw Ecosystem — What to Use Now
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
-
-![Top tools by stars](assets/openclaw-ecosystem-top-tools.svg)
-
-![Tools per category](assets/openclaw-ecosystem-categories.svg)
-
+> Generated 2026-08-08 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
 > **What is OpenClaw?** A personal AI assistant (🦞, formerly *Clawdbot* / *Moltbot*) that runs on any OS/platform. It has spawned a fast-moving ecosystem of runtimes, skills, routers, memory layers, dashboards, and specialized agents — this report maps the parts in your stars and flags what's worth adopting **now**.
 
@@ -211,27 +206,26 @@ Low health and/or not pushed recently — verify before wiring into anything you
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 28 projects span **12 of the graph's 33 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
+**Community clustering.** These 28 projects span **10 of the graph's 34 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
 
-- **Community 1** (5): `HKUDS/nanobot`, `pinchbench/skill`, `aiming-lab/AutoResearchClaw`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
-- **Community 0** (5): `nanocoai/nanoclaw`, `farion1231/cc-switch`, `iOfficeAI/AionUi`, `CherryHQ/cherry-studio`, `SafeRL-Lab/cheetahclaws`
-- **Community 11** (3): `openclaw/openclaw`, `openclaw/clawhub`, `BlockRunAI/ClawRouter`
-- **Community 24** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
-- **Community 3** (2): `zeroclaw-labs/zeroclaw`, `TencentCloud/TencentDB-Agent-Memory`
-- **Community 9** (2): `NousResearch/hermes-agent`, `rohitg00/awesome-openclaw`
-- **Community 8** (2): `cloudflare/moltworker`, `vivekchand/clawmetry`
-- **Community 16** (2): `Gen-Verse/OpenClaw-RL`, `hydro13/tandem-browser`
+- **Community 10** (5): `openclaw/openclaw`, `NousResearch/hermes-agent`, `openclaw/clawhub`, `rohitg00/awesome-openclaw`, `BlockRunAI/ClawRouter`
+- **Community 4** (5): `HKUDS/nanobot`, `pinchbench/skill`, `aiming-lab/AutoResearchClaw`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
+- **Community 8** (5): `nanocoai/nanoclaw`, `farion1231/cc-switch`, `iOfficeAI/AionUi`, `CherryHQ/cherry-studio`, `SafeRL-Lab/cheetahclaws`
+- **Community 27** (4): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`, `crshdn/mission-control`
+- **Community 20** (2): `zeroclaw-labs/zeroclaw`, `TencentCloud/TencentDB-Agent-Memory`
+- **Community 16** (2): `cloudflare/moltworker`, `vivekchand/clawmetry`
+- **Community 6** (2): `Gen-Verse/OpenClaw-RL`, `hydro13/tandem-browser`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' OpenClaw projects in your ecosystem:
 
-- `vivekchand/clawmetry` — PageRank 0.0035
-- `hydro13/tandem-browser` — PageRank 0.0026
+- `vivekchand/clawmetry` — PageRank 0.0032
+- `hydro13/tandem-browser` — PageRank 0.0018
 - `HKUDS/DeepTutor` — PageRank 0.0011
 - `HKUDS/nanobot` — PageRank 0.0010
 - `nanocoai/nanoclaw` — PageRank 0.0009
-- `cloudflare/moltworker` — PageRank 0.0009
-- `RightNow-AI/openfang` — PageRank 0.0009
-- `HKUDS/ClawWork` — PageRank 0.0009
+- `cloudflare/moltworker` — PageRank 0.0008
+- `HKUDS/ClawWork` — PageRank 0.0008
+- `RightNow-AI/openfang` — PageRank 0.0008
 - `NousResearch/hermes-agent` — PageRank 0.0008
 - `NVIDIA/NemoClaw` — PageRank 0.0008
 
@@ -261,4 +255,4 @@ Low health and/or not pushed recently — verify before wiring into anything you
 - **Metrics** (health, lifecycle, bus_factor, days_since_push) are precomputed at snapshot time. **OpenClaw moves extremely fast** — treat all ages/stars as a May-2026 snapshot and re-verify before adopting.
 - Re-run after a fresh `classified.json` to refresh.
 
-<sub>Projects covered: 28 · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Projects covered: 28 · Snapshot: 2026-08-07T23:57:40.892Z</sub>

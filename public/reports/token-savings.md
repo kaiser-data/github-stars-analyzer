@@ -1,8 +1,8 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 1,476 starred repos (snapshot `2026-08-07T21:10:17.796Z`), cross-referenced with the repo-similarity graph (1,476 nodes / 4,785 edges, 33 communities).
+> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
 >
-> Generated 2026-08-07 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
+> Generated 2026-08-08 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/token-savings-top-tools.svg)
 
@@ -187,23 +187,24 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **8 of the graph's 33 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **7 of the graph's 34 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
-- **Community 0** (4): `rtk-ai/rtk`, `colbymchenry/codegraph`, `mksglu/context-mode`, `getagentseal/codeburn`
-- **Community 1** (3): `HKUDS/FastCode`, `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
-- **Community 9** (2): `JuliusBrussee/caveman`, `thedotmack/claude-mem`
-- **Community 13** (2): `toon-format/toon`, `vllm-project/llm-compressor`
+- **Community 10** (4): `rtk-ai/rtk`, `getagentseal/codeburn`, `JuliusBrussee/caveman`, `thedotmack/claude-mem`
+- **Community 4** (3): `HKUDS/FastCode`, `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
+- **Community 8** (2): `colbymchenry/codegraph`, `mksglu/context-mode`
+- **Community 12** (2): `MinishLab/semble`, `bytebase/dbhub`
+- **Community 7** (2): `toon-format/toon`, `vllm-project/llm-compressor`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
 
-- `mksglu/context-mode` — PageRank 0.0032
-- `yvgude/lean-ctx` — PageRank 0.0018
-- `HKUDS/FastCode` — PageRank 0.0009
-- `vllm-project/llm-compressor` — PageRank 0.0008
+- `mksglu/context-mode` — PageRank 0.0028
+- `yvgude/lean-ctx` — PageRank 0.0015
+- `HKUDS/FastCode` — PageRank 0.0008
+- `vllm-project/llm-compressor` — PageRank 0.0007
 - `JuliusBrussee/caveman` — PageRank 0.0007
-- `bytebase/dbhub` — PageRank 0.0006
 - `deepseek-ai/DeepSeek-OCR` — PageRank 0.0006
-- `rtk-ai/rtk` — PageRank 0.0006
+- `bytebase/dbhub` — PageRank 0.0006
+- `rtk-ai/rtk` — PageRank 0.0005
 
 **Direct links between these tools** (similarity edges where both endpoints are in this report):
 
@@ -218,4 +219,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-07T21:10:17.796Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-07T23:57:40.892Z</sub>
