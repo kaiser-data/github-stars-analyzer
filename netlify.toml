@@ -19,7 +19,14 @@
   [headers.values]
     Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
 
-# SPA fallback — all routes serve index.html so React Router handles them
+# The root serves the Astrolab landing page; the app itself lives under /lab.
+# This must come before the SPA fallback — Netlify takes the first match.
+[[redirects]]
+  from = "/"
+  to = "/landing.html"
+  status = 200
+
+# SPA fallback — all other routes serve index.html so React Router handles them
 [[redirects]]
   from = "/*"
   to = "/index.html"

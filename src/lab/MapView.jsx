@@ -19,9 +19,17 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
       <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
       <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
+      <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Filter</div>
+      <Row label={`Min stars (${settings.minStars.toLocaleString()})`}>
+        <input type="range" min={0} max={2000} step={50} value={settings.minStars} onChange={(e) => upd('minStars', Number(e.target.value))} className="w-full" />
+      </Row>
+      <Row label="Hide abandoned"><input type="checkbox" checked={settings.hideAbandoned} onChange={(e) => upd('hideAbandoned', e.target.checked)} /></Row>
+      <Row label="Hide declining"><input type="checkbox" checked={settings.hideDeclining} onChange={(e) => upd('hideDeclining', e.target.checked)} /></Row>
+      <Row label="Show links"><input type="checkbox" checked={settings.showLinks} onChange={(e) => upd('showLinks', e.target.checked)} /></Row>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Display</div>
       <Row label="Label density"><input type="range" min={1} max={12} step={0.5} value={settings.labelDensity} onChange={(e) => upd('labelDensity', Number(e.target.value))} className="w-full" /></Row>
       <Row label="Labels always"><input type="checkbox" checked={settings.alwaysLabels} onChange={(e) => upd('alwaysLabels', e.target.checked)} /></Row>
+      <Row label="Thick links"><input type="checkbox" checked={settings.thickLinks} onChange={(e) => upd('thickLinks', e.target.checked)} /></Row>
       <Row label="Drag nodes"><input type="checkbox" checked={settings.drag} onChange={(e) => upd('drag', e.target.checked)} /></Row>
       <Row label="Auto-rotate"><input type="checkbox" checked={settings.autoRotate} onChange={(e) => upd('autoRotate', e.target.checked)} /></Row>
       <div className="text-[10px] text-gray-500 mt-3 leading-snug">Left-drag: orbit · Right-drag: pan · Scroll: zoom · Click: focus</div>
@@ -39,8 +47,35 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   const [highlightNodes, setHighlightNodes] = useState(new Set());
   const [settings, setSettings] = useState({
     charge: -120, linkDistance: 60, alwaysLabels: false, drag: false, autoRotate: false,
-    labelDensity: 5,
+    // 5 renders ~1.1k label sprites (one canvas texture each); 7 cuts that to
+    // ~400 while still labelling everything structurally significant.
+    labelDensity: 7,
+    // Filtering defaults: the long tail of low-star and abandoned repos costs a
+    // draw call each while carrying almost no signal. Trimmed by default; the
+    // full corpus is one slider away.
+    minStars: 100, hideAbandoned: true, hideDeclining: false,
+    // Links as thin lines (1 draw call each) rather than cylinder meshes.
+    showLinks: true, thickLinks: false,
   });
+
+  // Apply filters before the graph ever reaches three.js. Links are kept only
+  // when both endpoints survive, otherwise the force layout gets dangling refs.
+  const view = React.useMemo(() => {
+    const keep = new Set();
+    for (const n of nodes) {
+      if ((n.stars ?? 0) < settings.minStars) continue;
+      if (settings.hideAbandoned && n.lifecycle_stage === 'Abandoned') continue;
+      if (settings.hideDeclining && n.lifecycle_stage === 'Declining') continue;
+      keep.add(n.id);
+    }
+    const id = (e) => (typeof e === 'object' ? e.id : e);
+    return {
+      nodes: nodes.filter((n) => keep.has(n.id)),
+      links: settings.showLinks
+        ? links.filter((l) => keep.has(id(l.source)) && keep.has(id(l.target)))
+        : [],
+    };
+  }, [nodes, links, settings.minStars, settings.hideAbandoned, settings.hideDeclining, settings.showLinks]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -52,11 +87,17 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
     return () => ro.disconnect();
   }, []);
 
-  // Update forces when sliders change — reheat to let the pre-computed layout adjust
+  // The layout starts frozen at the pre-computed positions (cooldownTicks 0).
+  // Touching a layout slider is the one case where re-simulating is wanted, so
+  // wake the engine for a bounded burst and let it settle again.
+  const [simTicks, setSimTicks] = useState(0);
+  const firstLayoutRun = useRef(true);
   useEffect(() => {
     if (!fgRef.current || !nodes.length) return;
     fgRef.current.d3Force('charge')?.strength(settings.charge);
     fgRef.current.d3Force('link')?.distance(settings.linkDistance);
+    if (firstLayoutRun.current) { firstLayoutRun.current = false; return; }
+    setSimTicks(60);
     fgRef.current.d3ReheatSimulation?.();
   }, [settings.charge, settings.linkDistance]);
 
@@ -65,6 +106,13 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   }, [settings.labelDensity, settings.alwaysLabels, highlightNodes]);
 
   const recenter = () => fgRef.current?.zoomToFit?.(800, 80);
+
+  // On a 2× display the drawing buffer is 4× the pixels for no visible gain on a
+  // graph of flat-shaded spheres — cap it and hand the fragment budget back.
+  useEffect(() => {
+    const r = fgRef.current?.renderer?.();
+    if (r?.setPixelRatio) r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+  }, [nodes.length]);
 
   useEffect(() => {
     if (!nodes.length) return;
@@ -129,7 +177,12 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
   return (
     <div className="relative">
       <div className="absolute top-3 left-3 z-10 bg-gray-900/85 backdrop-blur border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
-        <div>{stats?.nodeCount} repos · {stats?.edgeCount} edges · {stats?.communityCount} communities</div>
+        <div>
+          {view.nodes.length.toLocaleString()} repos · {view.links.length.toLocaleString()} edges · {stats?.communityCount} communities
+          {view.nodes.length < (stats?.nodeCount ?? 0) && (
+            <span className="text-gray-500"> (of {stats.nodeCount.toLocaleString()})</span>
+          )}
+        </div>
         <div className="text-gray-500 mt-1">Color = community · Size = stars + PageRank</div>
         {focusedRepoName && <div className="mt-1 text-blue-300">Focused: {focusedRepoName}</div>}
       </div>
@@ -153,7 +206,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             ref={fgRef}
             width={size.w}
             height={size.h}
-            graphData={{ nodes, links }}
+            graphData={view}
             backgroundColor="rgba(0,0,0,0)"
             showNavInfo={false}
             nodeRelSize={6}
@@ -170,7 +223,10 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
               if (highlightLinks.size > 0) return highlightLinks.has(l) ? 'rgba(96,165,250,0.9)' : 'rgba(75,85,99,0.04)';
               return 'rgba(148,163,184,0.16)';
             }}
-            linkWidth={(l) => 0.3 + Math.min(2, l.weight * 0.5)}
+            // A non-zero linkWidth makes react-force-graph build a CylinderGeometry
+            // *mesh* per link; at ~5k links that alone cost ~60% of the frame budget.
+            // 0 renders them as THREE.Line instead. "Thick links" opts back in.
+            linkWidth={settings.thickLinks ? (l) => 0.3 + Math.min(2, l.weight * 0.5) : 0}
             linkOpacity={0.5}
             linkDirectionalParticles={(l) => (highlightLinks.has(l) ? 3 : 0)}
             linkDirectionalParticleSpeed={0.005}
@@ -179,7 +235,10 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             d3AlphaDecay={0.02}
             d3VelocityDecay={0.35}
             warmupTicks={0}
-            cooldownTicks={60}
+            // precompute.mjs already ran a 300-tick simulation and froze x/y/z;
+            // re-simulating on load only burns frames and shifts that layout.
+            cooldownTicks={simTicks}
+            onEngineStop={() => simTicks !== 0 && setSimTicks(0)}
             enableNodeDrag={settings.drag}
             onNodeClick={(node) => onSelectNode && onSelectNode({ full_name: node.full_name })}
             onBackgroundClick={() => onSelectNode && onSelectNode(null)}
