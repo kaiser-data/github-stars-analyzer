@@ -21,10 +21,13 @@
 
 # The root serves the Astrolab landing page; the app itself lives under /lab.
 # This must come before the SPA fallback — Netlify takes the first match.
+# force = true is required: without it Netlify serves the existing static
+# index.html at the root and never consults this rule.
 [[redirects]]
   from = "/"
   to = "/landing.html"
   status = 200
+  force = true
 
 # SPA fallback — all other routes serve index.html so React Router handles them
 [[redirects]]
