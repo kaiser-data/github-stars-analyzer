@@ -1,0 +1,929 @@
+<title>Chartography</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --ground:#f7f8fa; --panel:#ffffff; --rule:#dde2ea; --hair:#e9edf3;
+  --ink:#12161c; --ink-2:#4a5462; --ink-3:#727c8b;
+  --accent:#2a78d6; --accent-soft:#e8f0fb;
+  --good:#1a7f4b; --good-bg:#e6f4ec;
+  --warn:#8a5a00; --warn-bg:#fbf0da;
+  --crit:#a52f2f; --crit-bg:#fbe9e9;
+  --hot:#1f5fa8; --hot-bg:#e4eefb;
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0e1116; --panel:#161b22; --rule:#2b333e; --hair:#222a34;
+    --ink:#eef2f7; --ink-2:#b3bdca; --ink-3:#8592a2;
+    --accent:#3987e5; --accent-soft:#16283f;
+    --good:#5fd39a; --good-bg:#13291f;
+    --warn:#e0b25f; --warn-bg:#2c2416;
+    --crit:#f08b8b; --crit-bg:#2e1a1a;
+    --hot:#7fb2f0; --hot-bg:#152438;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0e1116; --panel:#161b22; --rule:#2b333e; --hair:#222a34;
+  --ink:#eef2f7; --ink-2:#b3bdca; --ink-3:#8592a2;
+  --accent:#3987e5; --accent-soft:#16283f;
+  --good:#5fd39a; --good-bg:#13291f;
+  --warn:#e0b25f; --warn-bg:#2c2416;
+  --crit:#f08b8b; --crit-bg:#2e1a1a;
+  --hot:#7fb2f0; --hot-bg:#152438;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.65;
+  /* graph-paper ground: the subject's own material */
+  background-image:linear-gradient(var(--hair) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--hair) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+header.hero{padding:72px 0 40px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+.eyebrow{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 18px
+}
+h1{
+  font-family:var(--display);font-weight:600;line-height:1.04;
+  font-size:clamp(2.9rem,7vw,5.1rem);letter-spacing:-.022em;
+  margin:0 0 6px;text-wrap:balance
+}
+.sub{
+  font-family:var(--display);font-style:italic;color:var(--ink-2);
+  font-size:clamp(1.05rem,2.2vw,1.4rem);margin:0 0 28px;max-width:62ch
+}
+.intro{color:var(--ink-2);font-size:14.5px;max-width:78ch;margin:0}
+.intro code{font-size:12.5px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 40px;margin:30px 0 0;padding:0;list-style:none}
+.stats div{display:flex;flex-direction:column}
+.stats b{
+  font-family:var(--display);font-size:1.9rem;font-weight:600;
+  font-variant-numeric:tabular-nums;line-height:1.1
+}
+.stats span{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3)
+}
+h2{
+  font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3vw,2.05rem);
+  letter-spacing:-.014em;margin:64px 0 4px;padding-top:16px;
+  border-top:1px solid var(--rule);position:relative;text-wrap:balance
+}
+/* tick mark on the section axis — a plotting device, not decoration */
+h2::before{content:"";position:absolute;top:-1px;left:0;width:52px;height:3px;background:var(--accent)}
+h3{
+  font-family:var(--body);font-weight:650;font-size:.85rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin:40px 0 10px
+}
+p{margin:0 0 14px;max-width:82ch}
+ul{margin:0 0 16px;padding:0;list-style:none;max-width:84ch}
+li{position:relative;padding-left:18px;margin-bottom:7px;color:var(--ink-2)}
+li::before{content:"";position:absolute;left:2px;top:.68em;width:6px;height:1.5px;background:var(--accent)}
+li.d1{margin-left:22px;font-size:14.6px}
+li.d2{margin-left:44px;font-size:14.2px}
+li strong,p strong{color:var(--ink);font-weight:640}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+code{
+  font-family:var(--mono);font-size:.855em;background:var(--accent-soft);
+  color:var(--ink);padding:.1em .34em;border-radius:3px
+}
+.tw{
+  overflow-x:auto;margin:0 0 26px;border:1px solid var(--rule);border-radius:6px;
+  background:var(--panel)
+}
+table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:640px}
+thead th{
+  position:sticky;top:0;z-index:1;background:var(--panel);
+  text-align:left;vertical-align:bottom;padding:11px 13px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.075em;text-transform:uppercase;
+  color:var(--ink-3);border-bottom:1.5px solid var(--ink);white-space:nowrap
+}
+tbody td{
+  padding:11px 13px;border-bottom:1px solid var(--hair);
+  vertical-align:top;color:var(--ink-2);font-variant-numeric:tabular-nums
+}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--accent-soft)}
+td strong{color:var(--ink)}
+td:first-child{min-width:150px}
+.pill{
+  display:inline-block;padding:2px 8px;border-radius:11px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.045em;white-space:nowrap
+}
+.s-good{background:var(--good-bg);color:var(--good)}
+.s-warn{background:var(--warn-bg);color:var(--warn)}
+.s-crit{background:var(--crit-bg);color:var(--crit)}
+.s-hot{background:var(--hot-bg);color:var(--hot)}
+.s-mute{background:var(--hair);color:var(--ink-3)}
+.chart{
+  margin:22px 0 30px;padding:16px;background:var(--panel);
+  border:1px solid var(--rule);border-radius:6px;overflow-x:auto
+}
+.chart svg{max-width:100%;height:auto;display:block}
+.fine{
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  margin-top:36px;padding-top:14px;border-top:1px solid var(--rule)
+}
+@media (max-width:640px){
+  header.hero{padding:44px 0 30px}
+  .wrap{padding:0 16px 64px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<div class="wrap">
+<header class="hero">
+  <p class="eyebrow">Landscape report · github-stars-analyzer</p>
+  <h1>Chartography</h1>
+  <p class="sub">A map of 61 charting and data-visualization tools — what each one is good at, where it breaks, and when to reach for it.</p>
+  <p class="intro">Derived from <strong>kaiser-data</strong>'s 1,596 starred repos (snapshot <code>2026-08-11T18:59:16.380Z</code>), cross-referenced with the repo-similarity graph (1,596 nodes / 5,170 edges, 31 communities). The advantages/disadvantages column is editorial judgement grounded in the dataset's own health metrics plus external comparisons — see Methodology. Generated 2026-08-11 by <code>scripts/reports/charting_stack.py</code> (regenerate any time — no API cost).</p>
+  <div class="stats"><div><b>61</b><span>tools compared</span></div><div><b>1,322,435</b><span>combined stars</span></div><div><b>10</b><span>layers</span></div><div><b>2026-08-11</b><span>data vintage</span></div></div>
+</header>
+<figure class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Top tools by stars</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">excalidraw/excalidraw</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">129,346</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">d3/d3</text>
+<path d="M244,67 h297.7 q4,0 4,4 v10 q0,4 -4,4 h-297.7 z" class="bar"/>
+<text x="551.7" y="76.0" class="val" dominant-baseline="central">113,436</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">grafana/grafana</text>
+<path d="M244,94 h198.5 q4,0 4,4 v10 q0,4 -4,4 h-198.5 z" class="bar"/>
+<text x="452.5" y="103.0" class="val" dominant-baseline="central">76,153</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">apache/superset</text>
+<path d="M244,121 h193.4 q4,0 4,4 v10 q0,4 -4,4 h-193.4 z" class="bar"/>
+<text x="447.4" y="130.0" class="val" dominant-baseline="central">74,220</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">chartjs/Chart.js</text>
+<path d="M244,148 h175.9 q4,0 4,4 v10 q0,4 -4,4 h-175.9 z" class="bar"/>
+<text x="429.9" y="157.0" class="val" dominant-baseline="central">67,634</text>
+</svg></figure>
+<figure class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="680" height="315" viewBox="0 0 680 315" role="img" aria-label="Tools per category">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="314" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Tools per category</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">BI &amp; dashboard platform</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">10</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Web charting library</text>
+<path d="M244,67 h305.6 q4,0 4,4 v10 q0,4 -4,4 h-305.6 z" class="bar"/>
+<text x="559.6" y="76.0" class="val" dominant-baseline="central">9</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Python plotting</text>
+<path d="M244,94 h305.6 q4,0 4,4 v10 q0,4 -4,4 h-305.6 z" class="bar"/>
+<text x="559.6" y="103.0" class="val" dominant-baseline="central">9</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Low-level / high-performance</text>
+<path d="M244,121 h202.4 q4,0 4,4 v10 q0,4 -4,4 h-202.4 z" class="bar"/>
+<text x="456.4" y="130.0" class="val" dominant-baseline="central">6</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Grammar of graphics</text>
+<path d="M244,148 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
+<text x="422.0" y="157.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Data-app framework</text>
+<path d="M244,175 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
+<text x="422.0" y="184.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Native / systems charting</text>
+<path d="M244,202 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
+<text x="422.0" y="211.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">React charting library</text>
+<path d="M244,229 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
+<text x="387.6" y="238.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">Dashboards as code</text>
+<path d="M244,256 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
+<text x="387.6" y="265.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">Diagrams &amp; AI charts</text>
+<path d="M244,283 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
+<text x="387.6" y="292.0" class="val" dominant-baseline="central">4</text>
+</svg></figure>
+<h2>Executive summary</h2>
+<ul>
+<li class="d0"><strong>61 charting and visualization tools</strong> in your stars (<strong>1,322,435★</strong> combined), grouped into 10 layers:</li>
+<li class="d1"><strong>Web charting library</strong> (9): <code>Chart.js</code>, <code>echarts</code>, <code>plotly.js</code>, <code>apexcharts.js</code>, <code>frappe/charts</code>, <code>G2</code>, <code>highcharts</code>, <code>c3</code>, <code>observablehq/plot</code></li>
+<li class="d1"><strong>React charting library</strong> (4): <code>recharts</code>, <code>visx</code>, <code>nivo</code>, <code>tremor</code></li>
+<li class="d1"><strong>Low-level / high-performance</strong> (6): <code>d3</code>, <code>lightweight-charts</code>, <code>deck.gl</code>, <code>kepler.gl</code>, <code>perspective</code>, <code>uPlot</code></li>
+<li class="d1"><strong>Grammar of graphics</strong> (5): <code>vega</code>, <code>altair</code>, <code>vega-lite</code>, <code>plotnine</code>, <code>lets-plot</code></li>
+<li class="d1"><strong>Python plotting</strong> (9): <code>matplotlib</code>, <code>bokeh</code>, <code>plotly.py</code>, <code>pygwalker</code>, <code>panel</code>, <code>dtale</code>, <code>holoviews</code>, <code>great-tables</code>, <code>xy</code></li>
+<li class="d1"><strong>BI &amp; dashboard platform</strong> (10): <code>grafana</code>, <code>superset</code>, <code>metabase</code>, <code>ToolJet</code>, <code>redash</code>, <code>kibana</code>, <code>openobserve</code>, <code>WrenAI</code>, <code>evidence</code>, <code>rill</code></li>
+<li class="d1"><strong>Data-app framework</strong> (5): <code>streamlit</code>, <code>gradio</code>, <code>reflex</code>, <code>dash</code>, <code>taipy</code></li>
+<li class="d1"><strong>Dashboards as code</strong> (4): <code>grafanalib</code>, <code>grabana</code>, <code>grafana-foundation-sdk</code>, <code>grafyaml</code></li>
+<li class="d1"><strong>Diagrams &amp; AI charts</strong> (4): <code>excalidraw</code>, <code>drawio-desktop</code>, <code>beautiful-mermaid</code>, <code>mcp-mermaid</code></li>
+<li class="d1"><strong>Native / systems charting</strong> (5): <code>ScottPlot</code>, <code>matplotplusplus</code>, <code>AAChartKit</code>, <code>gonum/plot</code>, <code>core-plot</code></li>
+<li class="d0"><strong>There is no 'best chart app' — there are six different questions.</strong> <em>Who writes the chart</em> (developer / analyst / business user / agent), <em>where it renders</em> (browser / notebook / desktop / static site), <em>how much data</em> (hundreds / millions), <em>how bespoke</em> (library defaults / pixel-exact), <em>who operates it</em> (a dependency vs. a platform to run), and <em>what licence</em> you can live with. Every row in the advantages/disadvantages table below is really one of those trade-offs.</li>
+<li class="d0">The single most common mistake this landscape produces: <strong>picking an SVG library for a canvas-sized problem</strong>. Recharts, ApexCharts, and Chart.js degrade noticeably past ~10k points; ECharts, uPlot, Perspective, and deck.gl exist precisely for what lies beyond that line.</li>
+<li class="d0"><strong>Licence is a real constraint, not a footnote.</strong> <code>highcharts</code> is proprietary for commercial use — and <code>AAChartKit</code> inherits that licence by wrapping it. <code>grafana</code>, <code>metabase</code>, and <code>superset</code> differ sharply in what they gate behind an enterprise edition.</li>
+<li class="d0">The dashboards-as-code corner is consolidating: <code>grafanalib</code> is <strong>declining</strong> and <code>grabana</code> reads as <strong>abandoned</strong> in this snapshot, both superseded by Grafana's first-party <code>grafana-foundation-sdk</code>.</li>
+<li class="d0">New in this landscape: <strong>charts as an agent output</strong>. <code>vega-lite</code>'s JSON specs, <code>mcp-mermaid</code>'s MCP tool, and <code>WrenAI</code>/<code>rill</code>'s explicit agent framing all point the same way — the chart is becoming something a model emits, not something a human draws.</li>
+</ul>
+<h2>Choosing: the six questions</h2>
+<div class="tw"><table><thead><tr><th>Question</th><th>If the answer is…</th><th>Look at</th></tr></thead><tbody>
+<tr><td><strong>Who authors the chart?</strong></td><td>a developer, in code</td><td>charting libraries (ECharts, Recharts, D3)</td></tr>
+<tr><td></td><td>an analyst, in SQL</td><td>Superset, Redash, Evidence, Rill</td></tr>
+<tr><td></td><td>a business user, clicking</td><td>Metabase, ToolJet</td></tr>
+<tr><td></td><td>an LLM / agent</td><td>Vega-Lite specs, mcp-mermaid, WrenAI</td></tr>
+<tr><td><strong>Where does it render?</strong></td><td>browser app</td><td>web + React charting libraries</td></tr>
+<tr><td></td><td>notebook</td><td>Plotly.py, Altair, HoloViews, PyGWalker</td></tr>
+<tr><td></td><td>desktop / native</td><td>ScottPlot, AAChartKit, Core Plot</td></tr>
+<tr><td></td><td>a static site / PDF</td><td>Evidence, matplotlib, plotnine</td></tr>
+<tr><td><strong>How much data?</strong></td><td>&lt; 10k points</td><td>any SVG library</td></tr>
+<tr><td></td><td>10k–1M</td><td>ECharts, uPlot, ScottPlot</td></tr>
+<tr><td></td><td>&gt; 1M / streaming</td><td>Perspective, deck.gl, Datashader-backed HoloViews</td></tr>
+<tr><td><strong>How bespoke?</strong></td><td>library defaults are fine</td><td>Chart.js, Recharts, ApexCharts</td></tr>
+<tr><td></td><td>must match a design system</td><td>visx, D3, G2</td></tr>
+<tr><td><strong>Who operates it?</strong></td><td>it's a dependency</td><td>every library here</td></tr>
+<tr><td></td><td>it's a platform you run</td><td>Grafana, Superset, Metabase, Kibana</td></tr>
+<tr><td><strong>Licence tolerance?</strong></td><td>permissive only</td><td>avoid Highcharts (and AAChartKit)</td></tr>
+<tr><td></td><td>AGPL/open-core acceptable</td><td>Grafana, Metabase</td></tr>
+</tbody></table></div>
+<h2>Advantages, disadvantages &amp; use cases</h2>
+<p>The core of this report. Grouped by layer, sorted by stars within each layer.</p>
+<h3>Web charting library</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/chartjs/Chart.js" target="_blank" rel="noopener">chartjs/Chart.js</a></strong></td><td>67,634</td><td>Trivial learning curve; small (~60 KB, ~14 KB tree-shaken for basic charts); huge plugin ecosystem; framework-agnostic with well-maintained React/Vue bindings; MIT.</td><td>Only ~8 core chart types; performance degrades noticeably past ~10k points; canvas output isn't selectable/exportable as vector; deep customisation means writing plugins.</td><td>Standard business charts (line/bar/pie/doughnut) at typical data volumes.</td></tr>
+<tr><td><strong><a href="https://github.com/apache/echarts" target="_blank" rel="noopener">apache/echarts</a></strong></td><td>67,048</td><td>Enormous chart catalogue (incl. sankey, treemap, graph, geo); canvas renderer handles hundreds of thousands to millions of points; built-in dataZoom/toolbox/theming; strong i18n and accessibility work; Apache governance.</td><td>Large bundle (~1 MB full build) unless you hand-assemble tree-shaken imports; imperative <code>setOption</code> config object is verbose and weakly typed; docs and issues skew Chinese-first; React/Vue wrappers are third-party.</td><td>Dense enterprise dashboards and any chart type the small libraries don't have.</td></tr>
+<tr><td><strong><a href="https://github.com/plotly/plotly.js" target="_blank" rel="noopener">plotly/plotly.js</a></strong></td><td>18,282</td><td>40+ chart types including 3D, contour, and statistical plots; zoom/pan/hover/export toolbar out of the box; identical JSON figure spec across JS/Python/R.</td><td>Very heavy bundle (bundles D3 + gl-vis internally); the JSON figure format is verbose; styling fights you if you want a bespoke look; MIT core but commercial upsell around Dash.</td><td>Scientific and engineering charts, and anything already using Plotly in Python/R.</td></tr>
+<tr><td><strong><a href="https://github.com/apexcharts/apexcharts.js" target="_blank" rel="noopener">apexcharts/apexcharts.js</a></strong></td><td>15,123</td><td>Attractive out-of-the-box styling and animations; good annotation and mixed-chart support; official React/Vue/Angular wrappers; MIT.</td><td>SVG rendering caps practical dataset size well below canvas libraries; less flexible than D3 for custom marks; some advanced features are documented only by example.</td><td>Product dashboards that must look good with little design work.</td></tr>
+<tr><td><strong><a href="https://github.com/frappe/charts" target="_blank" rel="noopener">frappe/charts</a></strong></td><td>15,088</td><td>Tiny footprint and no dependencies; genuinely pleasant defaults; heatmap (GitHub-contribution style) built in; MIT.</td><td>Small chart catalogue; sparse maintenance; no serious large-dataset story; limited interactivity beyond tooltips.</td><td>Weight-sensitive pages and simple embedded charts.</td></tr>
+<tr><td><strong><a href="https://github.com/antvis/G2" target="_blank" rel="noopener">antvis/G2</a></strong></td><td>12,581</td><td>Grammar-of-graphics composability without leaving JS; strong statistical transforms; part of the wider AntV suite (G6 graphs, L7 geo, S2 tables); good animation primitives.</td><td>Documentation and community are largely Chinese-language; API churned hard across v4→v5; smaller Western ecosystem means fewer StackOverflow answers.</td><td>Teams that want ggplot-style composition in a TypeScript frontend.</td></tr>
+<tr><td><strong><a href="https://github.com/highcharts/highcharts" target="_blank" rel="noopener">highcharts/highcharts</a></strong></td><td>12,479</td><td>Best-in-class accessibility module (screen-reader sonification, keyboard nav); mature stock/maps/gantt packages; export server; enterprise support and long-term API stability.</td><td><strong>Not free for commercial use</strong> — proprietary licence with per-developer pricing; large bundle; the licence alone disqualifies it for many OSS/SaaS teams.</td><td>Regulated or accessibility-mandated products with budget for a licence.</td></tr>
+<tr><td><strong><a href="https://github.com/c3js/c3" target="_blank" rel="noopener">c3js/c3</a></strong></td><td>9,347</td><td>Simple declarative config over real D3 output; stable, small, easy to theme with CSS; still receiving maintenance commits.</td><td>Effectively feature-frozen; built on D3 v5-era patterns; limited chart types; the problem it solved is now solved better by Observable Plot and ECharts.</td><td>Legacy codebases already on C3 — not a new-project choice.</td></tr>
+<tr><td><strong><a href="https://github.com/observablehq/plot" target="_blank" rel="noopener">observablehq/plot</a></strong></td><td>5,348</td><td>Extremely terse for exploratory charts; sensible statistical defaults (bins, stacks, facets); built on and interoperable with D3; ISC licence.</td><td>Deliberately exploratory-first — less suited to pixel-exact product charts; interaction model is thinner than ECharts/Highcharts; smaller plugin ecosystem.</td><td>Fast exploratory charts in notebooks and internal tools.</td></tr>
+</tbody></table></div>
+<h3>React charting library</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/recharts/recharts" target="_blank" rel="noopener">recharts/recharts</a></strong></td><td>27,490</td><td>Idiomatic React composition (<code>&lt;LineChart&gt;&lt;XAxis/&gt;&lt;Tooltip/&gt;</code>); declarative and easy to reason about; responsive container built in; MIT; the most-recommended React default.</td><td>SVG-only — struggles well before 10k points; animation and layout bugs surface in complex compositions; customisation beyond the component props gets awkward fast.</td><td>The default choice for typical React dashboards with modest data volumes.</td></tr>
+<tr><td><strong><a href="https://github.com/airbnb/visx" target="_blank" rel="noopener">airbnb/visx</a></strong></td><td>21,000</td><td>You own the DOM and the design entirely; tree-shakes to only what you import; no chart abstraction to fight; excellent for design-system-native charts.</td><td>Not a chart library — you assemble axes, scales, and tooltips yourself; substantially more code per chart; steeper ramp; you inherit D3's mental model anyway.</td><td>Bespoke, design-system-consistent charts in React where control beats speed.</td></tr>
+<tr><td><strong><a href="https://github.com/plouc/nivo" target="_blank" rel="noopener">plouc/nivo</a></strong></td><td>14,082</td><td>Beautiful defaults and a superb interactive docs/playground; canvas variants for larger datasets; SSR support; motion via react-spring.</td><td>Heavy dependency footprint; each chart family has its own prop vocabulary to learn; theming is powerful but verbose; bundle size adds up quickly.</td><td>Design-led React dashboards where visual polish matters more than bundle size.</td></tr>
+<tr><td><strong><a href="https://github.com/tremorlabs/tremor" target="_blank" rel="noopener">tremorlabs/tremor</a></strong></td><td>3,560</td><td>Fastest path to a competent-looking dashboard; Tailwind-native; components are copied into your repo so you can edit them; KPI/stat tiles included, not just charts.</td><td>Requires Tailwind; inherits every Recharts performance limit; shifted to a copy-paste model which complicates upgrades; opinionated visual style is hard to fully escape.</td><td>Tailwind/Next.js dashboards that need to look finished this week.</td></tr>
+</tbody></table></div>
+<h3>Low-level / high-performance</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/d3/d3" target="_blank" rel="noopener">d3/d3</a></strong></td><td>113,436</td><td>Total expressive freedom; the scales/shape/geo/force modules are the reference implementations; modular (import only <code>d3-scale</code> if that's all you need); unmatched learning material.</td><td>Very steep learning curve; you write and maintain everything including axes, legends, and accessibility; direct DOM manipulation clashes with React's model; slow to ship simple charts.</td><td>Custom, one-of-a-kind visualizations — and as a dependency of everything else.</td></tr>
+<tr><td><strong><a href="https://github.com/tradingview/lightweight-charts" target="_blank" rel="noopener">tradingview/lightweight-charts</a></strong></td><td>16,931</td><td>Purpose-built for financial series: candlestick/OHLC, real-time streaming updates, professional pan/zoom feel; tiny; Apache-2.0.</td><td>Financial charts only — no general chart types; indicator library is not included (that's the paid Charting Library); attribution notice required.</td><td>Trading, crypto, and any price/time chart that must feel native.</td></tr>
+<tr><td><strong><a href="https://github.com/visgl/deck.gl" target="_blank" rel="noopener">visgl/deck.gl</a></strong></td><td>14,364</td><td>GPU rendering of millions of points/arcs/hexbins; composable layer model; integrates with MapLibre/Mapbox/Google Maps; battle-tested at Uber scale.</td><td>GPU-only mental model with real memory/driver pitfalls; heavy bundle; overkill for anything under ~100k features; documentation assumes graphics familiarity.</td><td>Large-scale geospatial visualization and GPU-accelerated point clouds.</td></tr>
+<tr><td><strong><a href="https://github.com/keplergl/kepler.gl" target="_blank" rel="noopener">keplergl/kepler.gl</a></strong></td><td>11,959</td><td>No-code map analysis for large datasets; layer/filter/time-playback UI included; embeddable as a React component; exports configs as JSON.</td><td>Opinionated app, not a library — customisation means forking behaviour; Redux-coupled embedding is awkward; maintenance has slowed since the Uber era.</td><td>Ad-hoc geospatial exploration without building a mapping app.</td></tr>
+<tr><td><strong><a href="https://github.com/perspective-dev/perspective" target="_blank" rel="noopener">perspective-dev/perspective</a></strong></td><td>11,099</td><td>Handles millions of rows client-side via WASM + Apache Arrow; pivots, filters, and charts over streaming updates; works in the browser, Jupyter, and as a server.</td><td>Heavy, unusual architecture (WASM binary + web components); steep conceptual ramp; overkill for static datasets; smaller community than mainstream charting.</td><td>Real-time, million-row analytical grids that must stay interactive in the browser.</td></tr>
+<tr><td><strong><a href="https://github.com/leeoniya/uPlot" target="_blank" rel="noopener">leeoniya/uPlot</a></strong></td><td>10,400</td><td>Renders hundreds of thousands of points in milliseconds; ~50 KB with zero dependencies; memory-frugal; the benchmark other libraries are measured against.</td><td>Deliberately narrow — time-series shapes only, no pie/treemap/geo; terse, low-level API; minimal built-in interactivity; you build the polish yourself.</td><td>Dense time-series panels and anything where render latency is the requirement.</td></tr>
+</tbody></table></div>
+<h3>Grammar of graphics</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/vega/vega" target="_blank" rel="noopener">vega/vega</a></strong></td><td>11,953</td><td>Far more expressive than Vega-Lite (custom interaction, layouts, transforms) while staying declarative; renders to canvas or SVG; strong academic pedigree (UW IDL).</td><td>Verbose specs that get unwieldy fast; steeper than both Vega-Lite and most imperative libraries; debugging a large spec is genuinely painful.</td><td>Custom interactive graphics that must still be declarative and serializable.</td></tr>
+<tr><td><strong><a href="https://github.com/vega/altair" target="_blank" rel="noopener">vega/altair</a></strong></td><td>10,450</td><td>Very concise, highly readable chart code; interactive selections and linked brushing come free; native pandas/Polars support; output is a portable Vega-Lite spec.</td><td>Historically awkward with large data (data is embedded in the spec unless you use <code>vegafusion</code>/URLs); customisation ceiling is Vega-Lite's; static export needs extra deps.</td><td>Exploratory statistical charts in notebooks, especially with linked interaction.</td></tr>
+<tr><td><strong><a href="https://github.com/vega/vega-lite" target="_blank" rel="noopener">vega/vega-lite</a></strong></td><td>5,444</td><td>Charts are portable JSON, which makes them diffable, generatable, and <strong>the most LLM-friendly chart format</strong>; sensible defaults infer scales and legends; excellent faceting/layering; BSD-3.</td><td>Escaping the grammar for a bespoke design means dropping to Vega or another library; rendering performance is modest; error messages on malformed specs are cryptic.</td><td>Spec-driven charts, embedded analytics, and charts generated by agents or LLMs.</td></tr>
+<tr><td><strong><a href="https://github.com/has2k1/plotnine" target="_blank" rel="noopener">has2k1/plotnine</a></strong></td><td>4,753</td><td>If you know ggplot2, you already know it; excellent faceting and statistical layers; publication-grade static output via matplotlib; consistent, principled API.</td><td>Static only — no interactivity; matplotlib backend means matplotlib's speed and styling constraints; smaller ecosystem than matplotlib/seaborn; slower on large frames.</td><td>Publication figures for anyone coming from R/ggplot2.</td></tr>
+<tr><td><strong><a href="https://github.com/JetBrains/lets-plot" target="_blank" rel="noopener">JetBrains/lets-plot</a></strong></td><td>1,779</td><td>Same grammar from Python and Kotlin/JVM; genuinely good geospatial support; renders in Jupyter, Datalore, and Kotlin notebooks; actively developed by a funded team.</td><td>Much smaller community than ggplot2/matplotlib; Kotlin-first documentation in places; fewer third-party extensions; another rendering stack to learn.</td><td>JVM/Kotlin data teams, and Python users who want ggplot without the R baggage.</td></tr>
+</tbody></table></div>
+<h3>Python plotting</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/matplotlib/matplotlib" target="_blank" rel="noopener">matplotlib/matplotlib</a></strong></td><td>23,073</td><td>Can draw literally anything; the publication standard for scientific figures; vector output (PDF/SVG/EPS); enormous documentation and 20 years of StackOverflow answers; PSF-style licence.</td><td>Two competing APIs (pyplot state machine vs. object-oriented) confuse newcomers; verbose for anything non-trivial; dated defaults; no real interactivity; slow on large datasets.</td><td>Publication figures and any plot that must be exactly right.</td></tr>
+<tr><td><strong><a href="https://github.com/bokeh/bokeh" target="_blank" rel="noopener">bokeh/bokeh</a></strong></td><td>20,428</td><td>Python callbacks can run server-side (no JS required) via <code>bokeh serve</code>; strong streaming and large-data story (with Datashader); composable widgets; BSD-3.</td><td>Heavier concepts than Plotly for simple charts; the server model adds deployment burden; smaller community and slower momentum than Plotly/Altair.</td><td>Streaming/live Python dashboards that need server-side callbacks.</td></tr>
+<tr><td><strong><a href="https://github.com/plotly/plotly.py" target="_blank" rel="noopener">plotly/plotly.py</a></strong></td><td>18,731</td><td>Interactivity (hover/zoom/select) for free in notebooks and web; Plotly Express is genuinely concise; 3D and statistical chart types; the same figure object powers Dash.</td><td>Large output payloads bloat notebooks and slow rendering; styling defaults are hard to override cleanly; the free/enterprise boundary around Dash causes confusion.</td><td>Interactive exploration in notebooks, and any chart destined for a Dash app.</td></tr>
+<tr><td><strong><a href="https://github.com/Kanaries/pygwalker" target="_blank" rel="noopener">Kanaries/pygwalker</a></strong></td><td>15,932</td><td><code>pyg.walk(df)</code> and you have pivot + chart exploration; no chart code at all; works in Jupyter/Streamlit/Colab; exports the resulting spec.</td><td>Exploration tool, not a production chart library; struggles on very large frames without a compute backend; the free tier nudges toward the commercial Kanaries cloud.</td><td>Fast visual EDA on a DataFrame before writing any chart code.</td></tr>
+<tr><td><strong><a href="https://github.com/holoviz/panel" target="_blank" rel="noopener">holoviz/panel</a></strong></td><td>5,731</td><td>Backend-agnostic: embeds matplotlib, Plotly, Bokeh, Altair, Vega, and DataFrames alike; works inside notebooks <em>and</em> as a served app; mature templating.</td><td>Large API surface with several overlapping ways to do things; documentation sprawl; smaller community than Streamlit; more concepts before the first app runs.</td><td>Python dashboards that must mix plotting libraries rather than commit to one.</td></tr>
+<tr><td><strong><a href="https://github.com/man-group/dtale" target="_blank" rel="noopener">man-group/dtale</a></strong></td><td>5,213</td><td>Deep pandas-specific tooling (correlations, missing-value analysis, code export); shows the pandas code for each operation; runs from notebook, CLI, or Flask.</td><td>Purely an inspection/EDA tool; heavy Flask app for what is often a quick look; not embeddable as a component; pandas-centric.</td><td>Interrogating an unfamiliar DataFrame in depth.</td></tr>
+<tr><td><strong><a href="https://github.com/holoviz/holoviews" target="_blank" rel="noopener">holoviz/holoviews</a></strong></td><td>2,901</td><td>Extremely concise for exploratory work; backend-agnostic (same code → Bokeh or matplotlib); composes plots with <code>+</code> and <code>*</code>; pairs with Datashader for billion-point rendering.</td><td>Heavy abstraction — debugging means understanding the backend anyway; sparse error messages; steep conceptual learning curve; small community.</td><td>Iterative exploratory analysis where you re-plot constantly.</td></tr>
+<tr><td><strong><a href="https://github.com/posit-dev/great-tables" target="_blank" rel="noopener">posit-dev/great-tables</a></strong></td><td>2,714</td><td>Turns DataFrames into genuinely presentable tables (spanners, footnotes, formatting, nanoplots); the missing piece in most reporting stacks; Posit maintenance.</td><td>Display only — not interactive, not sortable, not a data grid; young API; another dependency for something teams often hand-roll.</td><td>Report and dashboard tables that need to look designed rather than dumped.</td></tr>
+<tr><td><strong><a href="https://github.com/reflex-dev/xy" target="_blank" rel="noopener">reflex-dev/xy</a></strong></td><td>1,610</td><td>Very fast rendering; clean modern API; first-class inside Reflex apps; hot development pace with a funded team behind it.</td><td>Young and small — API stability, chart coverage, and ecosystem are all unproven; documentation is thin; effectively single-vendor.</td><td>Reflex apps, and experiments where speed matters more than maturity.</td></tr>
+</tbody></table></div>
+<h3>BI &amp; dashboard platform</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/grafana/grafana" target="_blank" rel="noopener">grafana/grafana</a></strong></td><td>76,153</td><td>Best-in-class time-series dashboards and alerting; plugs into anything (Prometheus, Loki, SQL, Elasticsearch, cloud); huge dashboard library; excellent health/activity metrics in this dataset (see comparison table).</td><td>Awkward for non-time-series BI (joins, drill-downs, pivots); dashboard JSON is painful to review in git without a codegen layer; AGPL core with enterprise features gated; query-language burden shifts to the data source.</td><td>Infrastructure, metrics, and any alert-driven operational dashboard.</td></tr>
+<tr><td><strong><a href="https://github.com/apache/superset" target="_blank" rel="noopener">apache/superset</a></strong></td><td>74,220</td><td>Rich visualization catalogue; genuine multi-tenant BI (roles, row-level security, caching); warehouse-scale via SQLAlchemy; Apache-2.0 with no feature gating.</td><td>Heavy to deploy and operate (Celery, Redis, metadata DB); upgrades are notoriously involved; the semantic layer is weaker than commercial BI; steeper for business users.</td><td>Technical data teams that want warehouse-scale, self-hosted BI.</td></tr>
+<tr><td><strong><a href="https://github.com/metabase/metabase" target="_blank" rel="noopener">metabase/metabase</a></strong></td><td>48,666</td><td>Fastest setup of any BI platform here; the notebook/question builder genuinely works for business users; good embedding story; sane defaults.</td><td>Visualization catalogue is comparatively basic; complex analytical modelling hits a ceiling quickly; the useful embedding/SSO features sit behind the commercial edition (AGPL core).</td><td>Self-service BI where adoption by non-technical users is the deciding factor.</td></tr>
+<tr><td><strong><a href="https://github.com/ToolJet/ToolJet" target="_blank" rel="noopener">ToolJet/ToolJet</a></strong></td><td>38,304</td><td>Builds full CRUD internal tools, not just read-only dashboards; 50+ connectors; self-hostable; very healthy maintenance signal.</td><td>A low-code app builder first and a charting tool second — visualization options are basic; vendor lock-in to its app model; complex logic in a visual builder ages badly.</td><td>Internal tools that need charts <em>and</em> write actions in one place.</td></tr>
+<tr><td><strong><a href="https://github.com/getredash/redash" target="_blank" rel="noopener">getredash/redash</a></strong></td><td>28,739</td><td>Extremely simple model (query → visualization → dashboard); 50+ data sources; low operational weight; good for SQL-fluent teams.</td><td>Development has been slow since the Databricks acquisition; visualization options are thin; no semantic layer or modelling; effectively in maintenance mode.</td><td>SQL-fluent teams that want dashboards without a BI platform.</td></tr>
+<tr><td><strong><a href="https://github.com/elastic/kibana" target="_blank" rel="noopener">elastic/kibana</a></strong></td><td>21,230</td><td>Unmatched for log/search exploration (Discover, Lens, ES|QL); tight security/APM/observability integration; mature alerting and ML jobs.</td><td>Only really useful with Elasticsearch behind it; heavy resource footprint; the SSPL/Elastic licence change still rules it out for some; the UI sprawls across many overlapping apps.</td><td>Log-centric troubleshooting in an Elastic-based stack.</td></tr>
+<tr><td><strong><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener">openobserve/openobserve</a></strong></td><td>20,592</td><td>Claims order-of-magnitude storage savings vs. Elasticsearch; single binary, trivial to run; logs + metrics + traces + dashboards in one product; very healthy activity in this dataset.</td><td>Much younger and smaller ecosystem than Grafana/Kibana; fewer integrations and community dashboards; open-core with features reserved for the enterprise tier.</td><td>Small teams that want an all-in-one observability stack without Elastic's bill.</td></tr>
+<tr><td><strong><a href="https://github.com/Canner/WrenAI" target="_blank" rel="noopener">Canner/WrenAI</a></strong></td><td>17,179</td><td>Semantic/context layer keeps LLM-generated SQL grounded and governed; answers arrive as charts, not just tables; MCP-friendly for agent workflows; very active.</td><td>Accuracy still depends on modelling discipline — a bad semantic layer produces confidently wrong charts; requires an LLM provider (cost + data-egress questions); young category.</td><td>Letting non-analysts (or agents) ask questions of a governed warehouse.</td></tr>
+<tr><td><strong><a href="https://github.com/evidence-dev/evidence" target="_blank" rel="noopener">evidence-dev/evidence</a></strong></td><td>6,838</td><td>Dashboards live in version control and review like code; markdown+SQL is fast to author; static output deploys anywhere; excellent for reproducible reporting.</td><td>No point-and-click authoring — non-technical users can't self-serve; static build model doesn't fit ad-hoc exploration; smaller component library than mature BI tools.</td><td>Engineering-led reporting where dashboards should be reviewed like code.</td></tr>
+<tr><td><strong><a href="https://github.com/rilldata/rill" target="_blank" rel="noopener">rilldata/rill</a></strong></td><td>2,803</td><td>Genuinely fast exploratory slicing (embedded DuckDB); dashboards-as-YAML; local-first development loop; deliberately designed to be driven by agents as well as humans.</td><td>Young project with a narrower feature set than Superset/Metabase; opinionated metrics-layer model; open-source core alongside a commercial cloud.</td><td>Fast metric exploration for teams comfortable defining dashboards in code.</td></tr>
+</tbody></table></div>
+<h3>Data-app framework</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/streamlit/streamlit" target="_blank" rel="noopener">streamlit/streamlit</a></strong></td><td>45,512</td><td>Lowest possible friction (a script becomes an app); enormous component ecosystem; free Community Cloud hosting; renders matplotlib/Plotly/Altair/Vega directly.</td><td>The rerun-on-every-interaction model becomes a correctness and performance problem as apps grow; state management is bolted on; limited layout control; not built for high traffic or multi-user production.</td><td>Internal prototypes and demos that will stay simple.</td></tr>
+<tr><td><strong><a href="https://github.com/gradio-app/gradio" target="_blank" rel="noopener">gradio-app/gradio</a></strong></td><td>43,311</td><td>Purpose-built for model demos (image/audio/chat components are excellent); instant public share links; deep Hugging Face Spaces integration; auto-generated REST API.</td><td>Charting is an afterthought compared to Streamlit; not designed for traffic or complex multi-page apps; layout control is limited; app structure gets messy past a few screens.</td><td>ML model demos, chat UIs, and Hugging Face Spaces.</td></tr>
+<tr><td><strong><a href="https://github.com/reflex-dev/reflex" target="_blank" rel="noopener">reflex-dev/reflex</a></strong></td><td>28,791</td><td>Real web-app architecture (components, routing, state) without writing JS; compiles to React/Next.js so the output is a normal SPA; excellent health/activity in this dataset.</td><td>Much larger conceptual surface than Streamlit; the Python→React compilation leaks when you need custom JS; younger ecosystem; debugging spans two runtimes.</td><td>Python teams shipping a real web app, not a script with widgets.</td></tr>
+<tr><td><strong><a href="https://github.com/plotly/dash" target="_blank" rel="noopener">plotly/dash</a></strong></td><td>24,373</td><td>Explicit callback graph scales to genuinely complex apps; runs on Flask so it deploys like any WSGI app; the most 'production' of the Python options; mature enterprise story.</td><td>Far more boilerplate than Streamlit; callback chains get hard to reason about; tied to Plotly for charting; the good enterprise features (auth, scaling) are commercial.</td><td>Production Python dashboards that outgrew Streamlit.</td></tr>
+<tr><td><strong><a href="https://github.com/Avaiga/taipy" target="_blank" rel="noopener">Avaiga/taipy</a></strong></td><td>19,397</td><td>Per-user state isolation and an async backend (unlike Streamlit's rerun model); built-in scenario/pipeline management for what-if analysis; designed for business-facing apps.</td><td>More code and more concepts than Streamlit for a simple app; smaller community and component ecosystem; the orchestration half is wasted if you only want a dashboard.</td><td>Business-facing Python apps with scenario/what-if workflows.</td></tr>
+</tbody></table></div>
+<h3>Dashboards as code</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/weaveworks/grafanalib" target="_blank" rel="noopener">weaveworks/grafanalib</a></strong></td><td>1,971</td><td>Pythonic dashboard construction with reusable functions; large body of existing examples; simple to integrate into Python CI.</td><td><strong>Declining in this dataset</strong> — Weaveworks shut down and maintenance has stalled; lags current Grafana panel schemas; superseded by grafana-foundation-sdk.</td><td>Legacy Python dashboard pipelines — migrate new work to the Foundation SDK.</td></tr>
+<tr><td><strong><a href="https://github.com/K-Phoen/grabana" target="_blank" rel="noopener">K-Phoen/grabana</a></strong></td><td>729</td><td>Pleasant Go builder API and a YAML DSL; good fit for Go-based platform tooling; supports alerts as code.</td><td><strong>Reads as abandoned in this snapshot</strong> (no pushes in well over a year); trails current Grafana schema; the official Go Foundation SDK now covers the same ground.</td><td>Existing Go dashboard pipelines only — not a new-project choice.</td></tr>
+<tr><td><strong><a href="https://github.com/grafana/grafana-foundation-sdk" target="_blank" rel="noopener">grafana/grafana-foundation-sdk</a></strong></td><td>248</td><td>First-party and versioned against Grafana schemas; strong typing catches invalid dashboards at compile time; multi-language; actively maintained.</td><td>Still maturing, with API churn between Grafana versions; more verbose than writing JSON for simple dashboards; you must track schema versions.</td><td>Teams standardising Grafana dashboards as reviewed, typed code.</td></tr>
+<tr><td><strong><a href="https://github.com/deliveryhero/grafyaml" target="_blank" rel="noopener">deliveryhero/grafyaml</a></strong></td><td>44</td><td>YAML is far more reviewable than Grafana's dashboard JSON; minimal tooling; easy to slot into existing CI; still maintained.</td><td>Thin abstraction — you still need to know the underlying JSON model; small community; no type checking; limited to what the YAML mapping exposes.</td><td>Small teams wanting reviewable dashboards without adopting an SDK.</td></tr>
+</tbody></table></div>
+<h3>Diagrams &amp; AI charts</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/excalidraw/excalidraw" target="_blank" rel="noopener">excalidraw/excalidraw</a></strong></td><td>129,346</td><td>Effortless, genuinely fast sketching; hand-drawn style reads as 'draft' which encourages iteration; local-first with an open file format; embeddable library; huge adoption.</td><td>Not a data-charting tool — no data binding whatsoever; the sketch aesthetic is wrong for formal documentation; collaboration/storage features push toward Excalidraw+.</td><td>Architecture sketches, whiteboarding, and diagrams-in-docs.</td></tr>
+<tr><td><strong><a href="https://github.com/jgraph/drawio-desktop" target="_blank" rel="noopener">jgraph/drawio-desktop</a></strong></td><td>62,495</td><td>Exhaustive shape libraries (AWS/Azure/GCP/UML/BPMN/network); fully offline and local-file based; no account required; stable and battle-tested.</td><td>Dated Electron UI; XML file format is unpleasant to diff; no data binding — diagrams are drawn, not generated from data; manual layout work.</td><td>Formal architecture, network, and process diagrams that must follow a notation.</td></tr>
+<tr><td><strong><a href="https://github.com/lukilabs/beautiful-mermaid" target="_blank" rel="noopener">lukilabs/beautiful-mermaid</a></strong></td><td>10,809</td><td>Text-defined diagrams mean git-diffable, LLM-generatable output; substantially better looking than stock Mermaid; drops into docs pipelines.</td><td>Bound to Mermaid's syntax and layout engine (auto-layout is often mediocre); <strong>declining maintenance signal</strong> in this snapshot; presentation layer only.</td><td>Diagrams in docs and READMEs that should look designed.</td></tr>
+<tr><td><strong><a href="https://github.com/hustcc/mcp-mermaid" target="_blank" rel="noopener">hustcc/mcp-mermaid</a></strong></td><td>621</td><td>Gives agents a real diagramming capability over MCP; text-in/diagram-out fits LLMs perfectly; trivial to wire into Claude Code or any MCP client.</td><td>Inherits every Mermaid limitation (layout quality, chart-type range); thin wrapper with <strong>declining maintenance</strong>; single-maintainer risk.</td><td>Letting an agent produce diagrams inside a conversation or doc pipeline.</td></tr>
+</tbody></table></div>
+<h3>Native / systems charting</h3>
+<div class="tw"><table><thead><tr><th>Tool</th><th>★</th><th>✅ Advantages</th><th>⚠️ Disadvantages</th><th>🎯 Best for</th></tr></thead><tbody>
+<tr><td><strong><a href="https://github.com/ScottPlot/ScottPlot" target="_blank" rel="noopener">ScottPlot/ScottPlot</a></strong></td><td>6,696</td><td>By far the strongest .NET plotting option; renders millions of points interactively; supports every major .NET UI framework; MIT; excellent docs and cookbook.</td><td>.NET-only; desktop-oriented (no first-class web story); smaller community than the web libraries; single primary maintainer.</td><td>Desktop .NET applications that need real interactive plots.</td></tr>
+<tr><td><strong><a href="https://github.com/alandefreitas/matplotplusplus" target="_blank" rel="noopener">alandefreitas/matplotplusplus</a></strong></td><td>4,914</td><td>Familiar matplotlib-like API from C++; wide chart coverage for a C++ library; multiple backends and export formats; header-friendly CMake integration.</td><td>Depends on gnuplot for rendering in the common setup; heavy build; <strong>low health / slow maintenance</strong> in this snapshot; small community.</td><td>C++ scientific and simulation code that must plot without leaving the process.</td></tr>
+<tr><td><strong><a href="https://github.com/AAChartModel/AAChartKit" target="_blank" rel="noopener">AAChartModel/AAChartKit</a></strong></td><td>4,766</td><td>Highcharts' chart quality inside a native app; declarative, chainable API; broad chart coverage; long-lived project.</td><td><strong>Wraps Highcharts — inherits its commercial licence for commercial apps</strong>; web-view rendering costs memory and startup time; slowing maintenance; Swift Charts now covers many cases natively.</td><td>Apple-platform apps needing chart types Swift Charts doesn't cover — check the licence first.</td></tr>
+<tr><td><strong><a href="https://github.com/gonum/plot" target="_blank" rel="noopener">gonum/plot</a></strong></td><td>2,963</td><td>Idiomatic Go with no CGo or browser needed; vector output (SVG/PDF/EPS); integrates with the Gonum numeric libraries; BSD-3.</td><td>Static images only, no interactivity; limited chart types and styling; <strong>low health and slow maintenance</strong> in this snapshot; API is spartan.</td><td>Server-side chart image generation from Go without a JS runtime.</td></tr>
+<tr><td><strong><a href="https://github.com/core-plot/core-plot" target="_blank" rel="noopener">core-plot/core-plot</a></strong></td><td>2,762</td><td>Genuinely native rendering (no JS bridge); fine-grained drawing control; BSD licence; long track record.</td><td>Dated API from the pre-Swift era; slow maintenance; steep learning curve; largely superseded by Apple's Swift Charts for new work.</td><td>Legacy Apple codebases already using it.</td></tr>
+</tbody></table></div>
+<h2>Use-case rankings — which tool for which job</h2>
+<p>Ranked picks per job. Dataset metrics say who is <em>healthy</em>; the notes and evidence column say who is <em>right for the job</em>.</p>
+<div class="tw"><table><thead><tr><th>Use case</th><th>🥇 First pick</th><th>🥈 Second</th><th>🥉 Third</th><th>Evidence / note</th></tr></thead><tbody>
+<tr><td><strong>Standard business charts in a web app (line/bar/pie)</strong></td><td><code>Chart.js</code> — smallest sane default, trivial API</td><td><code>apexcharts.js</code> — better-looking defaults, still simple</td><td><code>frappe/charts</code> — ~14 KB when weight is the constraint</td><td>Chart.js is ~60 KB (≈14 KB tree-shaken for basic charts) and covers the common types; reach further only when it fails you.</td></tr>
+<tr><td><strong>Charts in a React app with minimal effort</strong></td><td><code>recharts</code> — the idiomatic React default</td><td><code>nivo</code> — nicer defaults, canvas variants available</td><td><code>tremor</code> — whole dashboard UI, not just charts</td><td>Consensus 2026 guidance: Recharts as the practical React default; switch to canvas-based libs when volume bites.</td></tr>
+<tr><td><strong>Dense dashboards / 10k+ points in the browser</strong></td><td><code>echarts</code> — canvas renderer, millions of points</td><td><code>uPlot</code> — ~50 KB, fastest time-series render</td><td><code>perspective</code> — WASM engine for millions of streaming rows</td><td>Chart.js and SVG libraries (Recharts, ApexCharts) degrade noticeably above ~10k points; ECharts is documented at 10M+.</td></tr>
+<tr><td><strong>Fully bespoke, one-of-a-kind visualization</strong></td><td><code>d3</code> — total control, the reference implementation</td><td><code>visx</code> — D3 maths with React rendering</td><td><code>G2</code> — grammar-based composition in TS</td><td>D3 is a toolkit, not a chart library — budget for building axes, legends, and accessibility yourself.</td></tr>
+<tr><td><strong>Financial / trading charts</strong></td><td><code>lightweight-charts</code> — purpose-built, ~45 KB, streaming</td><td><code>highcharts</code> — Highstock package, commercial licence</td><td><code>echarts</code> — candlestick support, free</td><td>Lightweight-charts gives trading-desk interaction feel; indicators are in TradingView's paid Charting Library, not this one.</td></tr>
+<tr><td><strong>Large-scale geospatial visualization</strong></td><td><code>deck.gl</code> — GPU layers, millions of features</td><td><code>kepler.gl</code> — ready-made app on top of deck.gl</td><td><code>echarts</code> — adequate for modest geo overlays</td><td>deck.gl is the library; kepler.gl is the app — pick by whether you're building or exploring.</td></tr>
+<tr><td><strong>Publication-quality static figures (Python)</strong></td><td><code>matplotlib</code> — the publication standard, vector output</td><td><code>plotnine</code> — ggplot2 grammar, matplotlib backend</td><td><code>lets-plot</code> — grammar + good geospatial</td><td>Journals expect vector PDF/EPS; all three deliver it. Choose by API taste, not capability.</td></tr>
+<tr><td><strong>Exploratory analysis in a notebook</strong></td><td><code>plotly.py</code> — Plotly Express, one-line interactive charts</td><td><code>altair</code> — concise grammar with linked selections</td><td><code>holoviews</code> — re-plot repeatedly with minimal code</td><td>Altair embeds data in the spec — use vegafusion or URL data for large frames.</td></tr>
+<tr><td><strong>Zero-code exploration of a DataFrame</strong></td><td><code>pygwalker</code> — Tableau-style drag-and-drop in one line</td><td><code>dtale</code> — deep pandas inspection + code export</td><td><code>panel</code> — when it needs to become an app</td><td>EDA tools, not production charting — expect to rewrite the final chart properly.</td></tr>
+<tr><td><strong>Charts described as data (spec-driven / LLM-generated)</strong></td><td><code>vega-lite</code> — portable JSON spec, the LLM-friendly format</td><td><code>vega</code> — when Vega-Lite's ceiling is reached</td><td><code>mcp-mermaid</code> — agent-callable diagram/chart tool over MCP</td><td>Vega-Lite specs are diffable JSON, which makes them the most reliable target for model-generated charts.</td></tr>
+<tr><td><strong>ML model demo with a UI in an afternoon</strong></td><td><code>gradio</code> — purpose-built for model demos + Spaces</td><td><code>streamlit</code> — more general, better charting</td><td><code>dash</code> — if it will outlive the demo</td><td>Gradio's image/audio/chat components are why it wins here; its charting is weaker than Streamlit's.</td></tr>
+<tr><td><strong>Python data app that must survive production</strong></td><td><code>dash</code> — explicit callbacks, Flask deployment</td><td><code>reflex</code> — compiles to React, real app architecture</td><td><code>taipy</code> — per-user state + scenario orchestration</td><td>Streamlit's rerun-everything model is the documented pain point at scale; all three fix it differently.</td></tr>
+<tr><td><strong>Self-service BI for non-technical users</strong></td><td><code>metabase</code> — easiest adoption, question builder</td><td><code>superset</code> — richer viz, heavier to run</td><td><code>redash</code> — simplest if everyone writes SQL</td><td>2026 comparisons converge on Metabase for usability, Superset for depth — Redash is effectively in maintenance mode.</td></tr>
+<tr><td><strong>Warehouse-scale BI for a technical data team</strong></td><td><code>superset</code> — 40+ viz types, RLS, caching</td><td><code>rill</code> — DuckDB speed, dashboards as code</td><td><code>WrenAI</code> — governed text-to-SQL on top</td><td>Superset is the deepest self-hosted option; budget real operational effort for Celery/Redis/upgrades.</td></tr>
+<tr><td><strong>Dashboards reviewed in git (BI as code)</strong></td><td><code>evidence</code> — SQL + markdown → static data site</td><td><code>rill</code> — dashboards as YAML, local-first</td><td><code>grafana-foundation-sdk</code> — typed Grafana dashboards in 5 languages</td><td>All three trade point-and-click authoring for reviewability — non-technical self-service is the cost.</td></tr>
+<tr><td><strong>Infrastructure metrics &amp; alerting</strong></td><td><code>grafana</code> — the standard; ~200 data sources</td><td><code>openobserve</code> — single binary, logs+metrics+traces</td><td><code>kibana</code> — if the data already lives in Elastic</td><td>Grafana remains the leading choice for live metrics and alert-driven dashboards.</td></tr>
+<tr><td><strong>Log-centric troubleshooting</strong></td><td><code>kibana</code> — Discover/Lens/ES|QL over Elasticsearch</td><td><code>openobserve</code> — much cheaper storage, younger</td><td><code>grafana</code> — via Loki, if already on Grafana</td><td>Kibana is strongest when logs and search are central — and only really useful with Elastic behind it.</td></tr>
+<tr><td><strong>Natural-language questions → charts (for people or agents)</strong></td><td><code>WrenAI</code> — governed semantic layer over text-to-SQL</td><td><code>rill</code> — explicitly designed for agent-driven BI</td><td><code>metabase</code> — safest fallback: a guided question builder</td><td>The failure mode is confidently wrong SQL — the semantic layer, not the model, is what makes this safe.</td></tr>
+<tr><td><strong>Internal tool with charts <em>and</em> write actions</strong></td><td><code>ToolJet</code> — low-code CRUD + charts + 50 connectors</td><td><code>reflex</code> — code-first alternative, full control</td><td><code>taipy</code> — when scenarios/what-if are involved</td><td>Dashboards are read-only; if users must also edit data, a BI tool is the wrong shape.</td></tr>
+<tr><td><strong>Charts in a desktop .NET application</strong></td><td><code>ScottPlot</code> — the clear .NET winner, millions of points</td><td>—</td><td>—</td><td>No serious open-source competition in .NET desktop plotting; ScottPlot supports WinForms/WPF/Avalonia.</td></tr>
+<tr><td><strong>Charts in a native iOS / macOS app</strong></td><td><code>AAChartKit</code> — broad chart coverage — check the Highcharts licence</td><td><code>core-plot</code> — truly native Core Graphics, dated API</td><td>—</td><td>Apple's own Swift Charts now covers most common cases natively — reach for these only for chart types it lacks.</td></tr>
+<tr><td><strong>Charts from a Go or C++ service (no browser)</strong></td><td><code>gonum/plot</code> — Go, vector output, no CGo</td><td><code>matplotplusplus</code> — C++17, matplotlib-shaped API</td><td>—</td><td>Both are static-image generators with low maintenance signal in this snapshot — vendor or pin them.</td></tr>
+<tr><td><strong>Presentable tables (not charts) in a report</strong></td><td><code>great-tables</code> — publication-quality display tables in Python</td><td>—</td><td>—</td><td>Frequently the actual requirement behind 'make me a chart' — a table that reads well beats a weak chart.</td></tr>
+<tr><td><strong>Architecture &amp; flow diagrams (not data charts)</strong></td><td><code>excalidraw</code> — fastest sketching, hand-drawn feel</td><td><code>drawio-desktop</code> — formal notations, exhaustive shape libraries</td><td><code>beautiful-mermaid</code> — text-defined, git-diffable diagrams</td><td>Diagrams are drawn, not data-bound — a different job from every other row in this table.</td></tr>
+</tbody></table></div>
+<h2>Master comparison — dataset metrics</h2>
+<p>Sorted by stars. <code>Health</code>/<code>Lifecycle</code> are the dataset's computed metrics; <code>Activity</code> is derived from days-since-push + 90-day commits.</p>
+<div class="tw"><table><thead><tr><th>Tool</th><th>Layer</th><th>Lang</th><th>License</th><th>★ Stars</th><th>Lifecycle</th><th>Health</th><th>Activity</th><th>Last push</th><th>Age</th><th>Contrib(90d)</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/excalidraw/excalidraw" target="_blank" rel="noopener">excalidraw/excalidraw</a></td><td>Diagrams &amp; AI charts</td><td>TypeScript</td><td>MIT</td><td>129,346</td><td><span class="pill s-good">Classic</span></td><td>60</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>6.6y</td><td>17</td></tr>
+<tr><td><a href="https://github.com/d3/d3" target="_blank" rel="noopener">d3/d3</a></td><td>Low-level / high-performance</td><td>Shell</td><td>ISC</td><td>113,436</td><td><span class="pill s-good">Mature</span></td><td>40</td><td><span class="pill s-warn">slowing</span></td><td>2mo ago</td><td>15.9y</td><td>1</td></tr>
+<tr><td><a href="https://github.com/grafana/grafana" target="_blank" rel="noopener">grafana/grafana</a></td><td>BI &amp; dashboard platform</td><td>TypeScript</td><td>AGPL-3.0</td><td>76,153</td><td><span class="pill s-good">Classic</span></td><td>99</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>12.7y</td><td>54</td></tr>
+<tr><td><a href="https://github.com/apache/superset" target="_blank" rel="noopener">apache/superset</a></td><td>BI &amp; dashboard platform</td><td>Python</td><td>Apache-2.0</td><td>74,220</td><td><span class="pill s-good">Classic</span></td><td>85</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>11.1y</td><td>33</td></tr>
+<tr><td><a href="https://github.com/chartjs/Chart.js" target="_blank" rel="noopener">chartjs/Chart.js</a></td><td>Web charting library</td><td>JavaScript</td><td>MIT</td><td>67,634</td><td><span class="pill s-good">Mature</span></td><td>41</td><td><span class="pill s-warn">slowing</span></td><td>2mo ago</td><td>13.4y</td><td>1</td></tr>
+<tr><td><a href="https://github.com/apache/echarts" target="_blank" rel="noopener">apache/echarts</a></td><td>Web charting library</td><td>TypeScript</td><td>Apache-2.0</td><td>67,048</td><td><span class="pill s-good">Classic</span></td><td>65</td><td><span class="pill s-good">active</span></td><td>7d ago</td><td>13.4y</td><td>5</td></tr>
+<tr><td><a href="https://github.com/jgraph/drawio-desktop" target="_blank" rel="noopener">jgraph/drawio-desktop</a></td><td>Diagrams &amp; AI charts</td><td>JavaScript</td><td>Apache-2.0</td><td>62,495</td><td><span class="pill s-good">Classic</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>9.2y</td><td>3</td></tr>
+<tr><td><a href="https://github.com/metabase/metabase" target="_blank" rel="noopener">metabase/metabase</a></td><td>BI &amp; dashboard platform</td><td>Clojure</td><td>NOASSERTION</td><td>48,666</td><td><span class="pill s-good">Classic</span></td><td>99</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>11.5y</td><td>31</td></tr>
+<tr><td><a href="https://github.com/streamlit/streamlit" target="_blank" rel="noopener">streamlit/streamlit</a></td><td>Data-app framework</td><td>Python</td><td>Apache-2.0</td><td>45,512</td><td><span class="pill s-good">Classic</span></td><td>83</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>7.0y</td><td>9</td></tr>
+<tr><td><a href="https://github.com/gradio-app/gradio" target="_blank" rel="noopener">gradio-app/gradio</a></td><td>Data-app framework</td><td>Python</td><td>Apache-2.0</td><td>43,311</td><td><span class="pill s-good">Classic</span></td><td>84</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>7.6y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/ToolJet/ToolJet" target="_blank" rel="noopener">ToolJet/ToolJet</a></td><td>BI &amp; dashboard platform</td><td>JavaScript</td><td>AGPL-3.0</td><td>38,304</td><td><span class="pill s-good">Classic</span></td><td>94</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>5.4y</td><td>19</td></tr>
+<tr><td><a href="https://github.com/reflex-dev/reflex" target="_blank" rel="noopener">reflex-dev/reflex</a></td><td>Data-app framework</td><td>Python</td><td>Apache-2.0</td><td>28,791</td><td><span class="pill s-good">Classic</span></td><td>94</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>3.8y</td><td>15</td></tr>
+<tr><td><a href="https://github.com/getredash/redash" target="_blank" rel="noopener">getredash/redash</a></td><td>BI &amp; dashboard platform</td><td>Python</td><td>BSD-2-Clause</td><td>28,739</td><td><span class="pill s-good">Classic</span></td><td>63</td><td><span class="pill s-good">active</span></td><td>1d ago</td><td>12.8y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/recharts/recharts" target="_blank" rel="noopener">recharts/recharts</a></td><td>React charting library</td><td>TypeScript</td><td>MIT</td><td>27,490</td><td><span class="pill s-good">Classic</span></td><td>84</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>11.0y</td><td>21</td></tr>
+<tr><td><a href="https://github.com/plotly/dash" target="_blank" rel="noopener">plotly/dash</a></td><td>Data-app framework</td><td>Python</td><td>MIT</td><td>24,373</td><td><span class="pill s-good">Classic</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>11.3y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/matplotlib/matplotlib" target="_blank" rel="noopener">matplotlib/matplotlib</a></td><td>Python plotting</td><td>Python</td><td>—</td><td>23,073</td><td><span class="pill s-good">Classic</span></td><td>89</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>15.5y</td><td>27</td></tr>
+<tr><td><a href="https://github.com/elastic/kibana" target="_blank" rel="noopener">elastic/kibana</a></td><td>BI &amp; dashboard platform</td><td>TypeScript</td><td>NOASSERTION</td><td>21,230</td><td><span class="pill s-good">Classic</span></td><td>98</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>13.6y</td><td>64</td></tr>
+<tr><td><a href="https://github.com/airbnb/visx" target="_blank" rel="noopener">airbnb/visx</a></td><td>React charting library</td><td>TypeScript</td><td>MIT</td><td>21,000</td><td><span class="pill s-good">Classic</span></td><td>55</td><td><span class="pill s-good">active</span></td><td>1mo ago</td><td>9.4y</td><td>3</td></tr>
+<tr><td><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener">openobserve/openobserve</a></td><td>BI &amp; dashboard platform</td><td>TypeScript</td><td>AGPL-3.0</td><td>20,592</td><td><span class="pill s-good">Classic</span></td><td>98</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>3.5y</td><td>18</td></tr>
+<tr><td><a href="https://github.com/bokeh/bokeh" target="_blank" rel="noopener">bokeh/bokeh</a></td><td>Python plotting</td><td>TypeScript</td><td>BSD-3-Clause</td><td>20,428</td><td><span class="pill s-good">Classic</span></td><td>73</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>14.4y</td><td>18</td></tr>
+<tr><td><a href="https://github.com/Avaiga/taipy" target="_blank" rel="noopener">Avaiga/taipy</a></td><td>Data-app framework</td><td>Python</td><td>Apache-2.0</td><td>19,397</td><td><span class="pill s-good">Mature</span></td><td>53</td><td><span class="pill s-good">active</span></td><td>6d ago</td><td>4.5y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/plotly/plotly.py" target="_blank" rel="noopener">plotly/plotly.py</a></td><td>Python plotting</td><td>Python</td><td>MIT</td><td>18,731</td><td><span class="pill s-good">Classic</span></td><td>81</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>12.7y</td><td>13</td></tr>
+<tr><td><a href="https://github.com/plotly/plotly.js" target="_blank" rel="noopener">plotly/plotly.js</a></td><td>Web charting library</td><td>JavaScript</td><td>MIT</td><td>18,282</td><td><span class="pill s-good">Classic</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>2d ago</td><td>10.8y</td><td>13</td></tr>
+<tr><td><a href="https://github.com/Canner/WrenAI" target="_blank" rel="noopener">Canner/WrenAI</a></td><td>BI &amp; dashboard platform</td><td>Python</td><td>NOASSERTION</td><td>17,179</td><td><span class="pill s-good">Mature</span></td><td>80</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>2.4y</td><td>11</td></tr>
+<tr><td><a href="https://github.com/tradingview/lightweight-charts" target="_blank" rel="noopener">tradingview/lightweight-charts</a></td><td>Low-level / high-performance</td><td>TypeScript</td><td>Apache-2.0</td><td>16,931</td><td><span class="pill s-good">Classic</span></td><td>62</td><td><span class="pill s-good">very active</span></td><td>6d ago</td><td>7.2y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/Kanaries/pygwalker" target="_blank" rel="noopener">Kanaries/pygwalker</a></td><td>Python plotting</td><td>Python</td><td>Apache-2.0</td><td>15,932</td><td><span class="pill s-good">Classic</span></td><td>65</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>3.5y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/apexcharts/apexcharts.js" target="_blank" rel="noopener">apexcharts/apexcharts.js</a></td><td>Web charting library</td><td>JavaScript</td><td>NOASSERTION</td><td>15,123</td><td><span class="pill s-good">Classic</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>8.1y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/frappe/charts" target="_blank" rel="noopener">frappe/charts</a></td><td>Web charting library</td><td>JavaScript</td><td>MIT</td><td>15,088</td><td><span class="pill s-crit">Abandoned</span></td><td>5</td><td><span class="pill s-crit">stale</span></td><td>1.1y ago</td><td>8.8y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/visgl/deck.gl" target="_blank" rel="noopener">visgl/deck.gl</a></td><td>Low-level / high-performance</td><td>TypeScript</td><td>MIT</td><td>14,364</td><td><span class="pill s-good">Classic</span></td><td>88</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>10.7y</td><td>17</td></tr>
+<tr><td><a href="https://github.com/plouc/nivo" target="_blank" rel="noopener">plouc/nivo</a></td><td>React charting library</td><td>TypeScript</td><td>MIT</td><td>14,082</td><td><span class="pill s-good">Classic</span></td><td>51</td><td><span class="pill s-good">active</span></td><td>22d ago</td><td>10.3y</td><td>4</td></tr>
+<tr><td><a href="https://github.com/antvis/G2" target="_blank" rel="noopener">antvis/G2</a></td><td>Web charting library</td><td>TypeScript</td><td>MIT</td><td>12,581</td><td><span class="pill s-good">Mature</span></td><td>62</td><td><span class="pill s-good">active</span></td><td>28d ago</td><td>10.2y</td><td>3</td></tr>
+<tr><td><a href="https://github.com/highcharts/highcharts" target="_blank" rel="noopener">highcharts/highcharts</a></td><td>Web charting library</td><td>TypeScript</td><td>NOASSERTION</td><td>12,479</td><td><span class="pill s-good">Classic</span></td><td>70</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>16.2y</td><td>6</td></tr>
+<tr><td><a href="https://github.com/keplergl/kepler.gl" target="_blank" rel="noopener">keplergl/kepler.gl</a></td><td>Low-level / high-performance</td><td>TypeScript</td><td>MIT</td><td>11,959</td><td><span class="pill s-good">Classic</span></td><td>82</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>8.5y</td><td>5</td></tr>
+<tr><td><a href="https://github.com/vega/vega" target="_blank" rel="noopener">vega/vega</a></td><td>Grammar of graphics</td><td>JavaScript</td><td>BSD-3-Clause</td><td>11,953</td><td><span class="pill s-good">Classic</span></td><td>69</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>13.5y</td><td>10</td></tr>
+<tr><td><a href="https://github.com/perspective-dev/perspective" target="_blank" rel="noopener">perspective-dev/perspective</a></td><td>Low-level / high-performance</td><td>Rust</td><td>Apache-2.0</td><td>11,099</td><td><span class="pill s-good">Classic</span></td><td>76</td><td><span class="pill s-good">very active</span></td><td>1d ago</td><td>8.8y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/lukilabs/beautiful-mermaid" target="_blank" rel="noopener">lukilabs/beautiful-mermaid</a></td><td>Diagrams &amp; AI charts</td><td>TypeScript</td><td>MIT</td><td>10,809</td><td><span class="pill s-warn">Declining</span></td><td>37</td><td><span class="pill s-warn">slowing</span></td><td>3mo ago</td><td>6mo</td><td>0</td></tr>
+<tr><td><a href="https://github.com/vega/altair" target="_blank" rel="noopener">vega/altair</a></td><td>Grammar of graphics</td><td>Python</td><td>BSD-3-Clause</td><td>10,450</td><td><span class="pill s-good">Classic</span></td><td>71</td><td><span class="pill s-good">very active</span></td><td>2d ago</td><td>10.9y</td><td>15</td></tr>
+<tr><td><a href="https://github.com/leeoniya/uPlot" target="_blank" rel="noopener">leeoniya/uPlot</a></td><td>Low-level / high-performance</td><td>JavaScript</td><td>MIT</td><td>10,400</td><td><span class="pill s-good">Mature</span></td><td>29</td><td><span class="pill s-warn">slowing</span></td><td>3mo ago</td><td>6.9y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/c3js/c3" target="_blank" rel="noopener">c3js/c3</a></td><td>Web charting library</td><td>JavaScript</td><td>MIT</td><td>9,347</td><td><span class="pill s-good">Classic</span></td><td>51</td><td><span class="pill s-good">active</span></td><td>6d ago</td><td>13.1y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/evidence-dev/evidence" target="_blank" rel="noopener">evidence-dev/evidence</a></td><td>BI &amp; dashboard platform</td><td>JavaScript</td><td>MIT</td><td>6,838</td><td><span class="pill s-good">Mature</span></td><td>38</td><td><span class="pill s-warn">slowing</span></td><td>5mo ago</td><td>5.2y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/ScottPlot/ScottPlot" target="_blank" rel="noopener">ScottPlot/ScottPlot</a></td><td>Native / systems charting</td><td>C#</td><td>MIT</td><td>6,696</td><td><span class="pill s-good">Classic</span></td><td>61</td><td><span class="pill s-good">active</span></td><td>1mo ago</td><td>8.6y</td><td>8</td></tr>
+<tr><td><a href="https://github.com/holoviz/panel" target="_blank" rel="noopener">holoviz/panel</a></td><td>Python plotting</td><td>Python</td><td>BSD-3-Clause</td><td>5,731</td><td><span class="pill s-good">Classic</span></td><td>80</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>8.0y</td><td>16</td></tr>
+<tr><td><a href="https://github.com/vega/vega-lite" target="_blank" rel="noopener">vega/vega-lite</a></td><td>Grammar of graphics</td><td>TypeScript</td><td>BSD-3-Clause</td><td>5,444</td><td><span class="pill s-good">Classic</span></td><td>66</td><td><span class="pill s-good">very active</span></td><td>2d ago</td><td>11.7y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/observablehq/plot" target="_blank" rel="noopener">observablehq/plot</a></td><td>Web charting library</td><td>HTML</td><td>ISC</td><td>5,348</td><td><span class="pill s-good">Mature</span></td><td>42</td><td><span class="pill s-good">active</span></td><td>29d ago</td><td>5.8y</td><td>1</td></tr>
+<tr><td><a href="https://github.com/man-group/dtale" target="_blank" rel="noopener">man-group/dtale</a></td><td>Python plotting</td><td>TypeScript</td><td>LGPL-2.1</td><td>5,213</td><td><span class="pill s-good">Mature</span></td><td>43</td><td><span class="pill s-good">active</span></td><td>19d ago</td><td>7.1y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/alandefreitas/matplotplusplus" target="_blank" rel="noopener">alandefreitas/matplotplusplus</a></td><td>Native / systems charting</td><td>C++</td><td>MIT</td><td>4,914</td><td><span class="pill s-good">Mature</span></td><td>24</td><td><span class="pill s-warn">slowing</span></td><td>4mo ago</td><td>6.0y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/AAChartModel/AAChartKit" target="_blank" rel="noopener">AAChartModel/AAChartKit</a></td><td>Native / systems charting</td><td>Objective-C</td><td>MIT</td><td>4,766</td><td><span class="pill s-good">Mature</span></td><td>32</td><td><span class="pill s-warn">slowing</span></td><td>3mo ago</td><td>9.4y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/has2k1/plotnine" target="_blank" rel="noopener">has2k1/plotnine</a></td><td>Grammar of graphics</td><td>Python</td><td>MIT</td><td>4,753</td><td><span class="pill s-good">Classic</span></td><td>75</td><td><span class="pill s-good">very active</span></td><td>27d ago</td><td>9.3y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/tremorlabs/tremor" target="_blank" rel="noopener">tremorlabs/tremor</a></td><td>React charting library</td><td>TypeScript</td><td>Apache-2.0</td><td>3,560</td><td><span class="pill s-warn">Declining</span></td><td>12</td><td><span class="pill s-crit">stale</span></td><td>10mo ago</td><td>2.4y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/gonum/plot" target="_blank" rel="noopener">gonum/plot</a></td><td>Native / systems charting</td><td>Go</td><td>BSD-3-Clause</td><td>2,963</td><td><span class="pill s-good">Mature</span></td><td>29</td><td><span class="pill s-warn">slowing</span></td><td>3mo ago</td><td>13.1y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/holoviz/holoviews" target="_blank" rel="noopener">holoviz/holoviews</a></td><td>Python plotting</td><td>Python</td><td>BSD-3-Clause</td><td>2,901</td><td><span class="pill s-good">Classic</span></td><td>68</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>12.3y</td><td>13</td></tr>
+<tr><td><a href="https://github.com/rilldata/rill" target="_blank" rel="noopener">rilldata/rill</a></td><td>BI &amp; dashboard platform</td><td>Go</td><td>Apache-2.0</td><td>2,803</td><td><span class="pill s-good">Classic</span></td><td>84</td><td><span class="pill s-good">very active</span></td><td>0d ago</td><td>4.7y</td><td>11</td></tr>
+<tr><td><a href="https://github.com/core-plot/core-plot" target="_blank" rel="noopener">core-plot/core-plot</a></td><td>Native / systems charting</td><td>Objective-C</td><td>BSD-3-Clause</td><td>2,762</td><td><span class="pill s-good">Mature</span></td><td>31</td><td><span class="pill s-warn">slowing</span></td><td>3mo ago</td><td>12.6y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/posit-dev/great-tables" target="_blank" rel="noopener">posit-dev/great-tables</a></td><td>Python plotting</td><td>Python</td><td>MIT</td><td>2,714</td><td><span class="pill s-good">Classic</span></td><td>72</td><td><span class="pill s-good">very active</span></td><td>6d ago</td><td>4.3y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/weaveworks/grafanalib" target="_blank" rel="noopener">weaveworks/grafanalib</a></td><td>Dashboards as code</td><td>Python</td><td>Apache-2.0</td><td>1,971</td><td><span class="pill s-warn">Declining</span></td><td>16</td><td><span class="pill s-crit">stale</span></td><td>8mo ago</td><td>9.7y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/JetBrains/lets-plot" target="_blank" rel="noopener">JetBrains/lets-plot</a></td><td>Grammar of graphics</td><td>Kotlin</td><td>MIT</td><td>1,779</td><td><span class="pill s-good">Classic</span></td><td>77</td><td><span class="pill s-good">active</span></td><td>1mo ago</td><td>7.4y</td><td>6</td></tr>
+<tr><td><a href="https://github.com/reflex-dev/xy" target="_blank" rel="noopener">reflex-dev/xy</a></td><td>Python plotting</td><td>Python</td><td>Apache-2.0</td><td>1,610</td><td><span class="pill s-hot">Hot</span></td><td>74</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>1mo</td><td>10</td></tr>
+<tr><td><a href="https://github.com/K-Phoen/grabana" target="_blank" rel="noopener">K-Phoen/grabana</a></td><td>Dashboards as code</td><td>Go</td><td>MIT</td><td>729</td><td><span class="pill s-crit">Abandoned</span></td><td>6</td><td><span class="pill s-crit">stale</span></td><td>1.2y ago</td><td>6.5y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/hustcc/mcp-mermaid" target="_blank" rel="noopener">hustcc/mcp-mermaid</a></td><td>Diagrams &amp; AI charts</td><td>TypeScript</td><td>MIT</td><td>621</td><td><span class="pill s-warn">Declining</span></td><td>49</td><td><span class="pill s-warn">slowing</span></td><td>2mo ago</td><td>1.2y</td><td>1</td></tr>
+<tr><td><a href="https://github.com/grafana/grafana-foundation-sdk" target="_blank" rel="noopener">grafana/grafana-foundation-sdk</a></td><td>Dashboards as code</td><td>PHP</td><td>Apache-2.0</td><td>248</td><td><span class="pill s-good">Mature</span></td><td>65</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>2.7y</td><td>5</td></tr>
+<tr><td><a href="https://github.com/deliveryhero/grafyaml" target="_blank" rel="noopener">deliveryhero/grafyaml</a></td><td>Dashboards as code</td><td>Python</td><td>Apache-2.0</td><td>44</td><td><span class="pill s-good">Mature</span></td><td>47</td><td><span class="pill s-good">active</span></td><td>1mo ago</td><td>6.0y</td><td>3</td></tr>
+</tbody></table></div>
+<h2>By layer</h2>
+<h3>Web charting library</h3>
+<p><em>General-purpose JS/TS chart engines. The choice here is mostly bundle size vs. chart-type breadth vs. how many points you need to draw.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/chartjs/Chart.js" target="_blank" rel="noopener">chartjs/Chart.js</a></strong> · 67,634★ · JavaScript · Mature</li>
+</ul>
+<p>  The default 'just draw me a bar chart' library — canvas-based, tiny API surface, everywhere in tutorials and CMS plugins.  </p>
+<p class="fine">topics: javascript, chart, html5, canvas, graph, html5-charts</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/apache/echarts" target="_blank" rel="noopener">apache/echarts</a></strong> · 67,048★ · TypeScript · Classic</li>
+</ul>
+<p>  Apache's batteries-included canvas/SVG charting engine — the widest chart-type catalogue in open source, with a mature big-data rendering path.  </p>
+<p class="fine">topics: echarts, data-visualization, charts, charting-library, visualization, apache, data-viz, canvas</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/plotly/plotly.js" target="_blank" rel="noopener">plotly/plotly.js</a></strong> · 18,282★ · JavaScript · Classic</li>
+</ul>
+<p>  The JS engine underneath Plotly's Python/R/Julia libraries and Dash — scientific chart types plus an interaction toolbar you get for free.  </p>
+<p class="fine">topics: data-visualization, d3, webgl, plotly, charting-library, charts, visualization, plotly-dash</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/apexcharts/apexcharts.js" target="_blank" rel="noopener">apexcharts/apexcharts.js</a></strong> · 15,123★ · JavaScript · Classic</li>
+</ul>
+<p>  SVG charting with polished defaults — the pragmatic middle ground between Chart.js's simplicity and ECharts's breadth.  </p>
+<p class="fine">topics: charts, graphs, javascript, svg, data-visualization, visualization, interactive</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/frappe/charts" target="_blank" rel="noopener">frappe/charts</a></strong> · 15,088★ · JavaScript · Abandoned</li>
+</ul>
+<p>  Zero-dependency SVG charts, ~14 KB gzipped — the minimalist option, extracted from the Frappe/ERPNext stack.  </p>
+<p class="fine">topics: chart, javascript, svg, svg-chart, graph, zero-dependency, hacktoberfest</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/antvis/G2" target="_blank" rel="noopener">antvis/G2</a></strong> · 12,581★ · TypeScript · Mature</li>
+</ul>
+<p>  AntV's 'concise and progressive visualization grammar' — a grammar-of-graphics layer that compiles to canvas/SVG, from Ant Group's data-viz team.  </p>
+<p class="fine">topics: visualization, grammar, graphics, canvas, svg, interaction, animation, webgl</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/highcharts/highcharts" target="_blank" rel="noopener">highcharts/highcharts</a></strong> · 12,479★ · TypeScript · Classic</li>
+</ul>
+<p>  The long-running commercial charting suite — extremely complete, with accessibility and export modules that most open-source libraries lack.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/c3js/c3" target="_blank" rel="noopener">c3js/c3</a></strong> · 9,347★ · JavaScript · Classic</li>
+</ul>
+<p>  A D3-based reusable chart wrapper — the 2015-era way to get D3 output without writing D3.  </p>
+<p class="fine">topics: chart, d3, graphics, data-visualization, svg, graph, interactive-visualizations</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/observablehq/plot" target="_blank" rel="noopener">observablehq/plot</a></strong> · 5,348★ · HTML · Mature</li>
+</ul>
+<p>  Observable's concise layered grammar of graphics for JavaScript — from the authors of D3, as the answer to 'D3 is too low-level for a scatterplot'.  </p>
+<p class="fine">topics: visualization, data-visualization, charts, d3, svg</p>
+<h3>React charting library</h3>
+<p><em>Charts as React components. Convenience scales inversely with control — and all of them inherit SVG's data-volume ceiling unless noted.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/recharts/recharts" target="_blank" rel="noopener">recharts/recharts</a></strong> · 27,490★ · TypeScript · Classic</li>
+</ul>
+<p>  Charts as React components, composed from D3 primitives — the default answer to 'chart library for React'.  </p>
+<p class="fine">topics: react, charting-library, recharts, d3, chart, components, javascript, ui</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/airbnb/visx" target="_blank" rel="noopener">airbnb/visx</a></strong> · 21,000★ · TypeScript · Classic</li>
+</ul>
+<p>  Airbnb's <em>unopinionated</em> collection of low-level visualization primitives — D3 maths with React rendering, not a chart library.  </p>
+<p class="fine">topics: vx, react, d3, visualization, chart, svg, data-visualization, visx</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/plouc/nivo" target="_blank" rel="noopener">plouc/nivo</a></strong> · 14,082★ · TypeScript · Classic</li>
+</ul>
+<p>  A rich, opinionated set of dataviz React components on top of D3 — with SVG, canvas, and server-side rendering variants of most charts.  </p>
+<p class="fine">topics: dataviz, react, d3js, isomorphic, svg, charts, components, canvas</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/tremorlabs/tremor" target="_blank" rel="noopener">tremorlabs/tremor</a></strong> · 3,560★ · TypeScript · Declining</li>
+</ul>
+<p>  Copy-paste React + Tailwind dashboard components (KPI cards, bars, area charts) built on Recharts — a dashboard UI kit rather than a charting engine.  </p>
+<p class="fine">topics: components, dashboard, radix-ui, react, tailwindcss, typescript, ui</p>
+<h3>Low-level / high-performance</h3>
+<p><em>Toolkits and renderers rather than chart libraries: maximum control (D3, visx) or maximum throughput (uPlot, Perspective, deck.gl).</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/d3/d3" target="_blank" rel="noopener">d3/d3</a></strong> · 113,436★ · Shell · Mature</li>
+</ul>
+<p>  Not a chart library — the data-binding, scales, shapes, and layout toolkit that most other libraries are built on.  </p>
+<p class="fine">topics: visualization, data-visualization, charts, svg, chart, d3</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/tradingview/lightweight-charts" target="_blank" rel="noopener">tradingview/lightweight-charts</a></strong> · 16,931★ · TypeScript · Classic</li>
+</ul>
+<p>  TradingView's ~45 KB financial charting engine — candlesticks, volume, and crosshairs with trading-desk-grade interaction.  </p>
+<p class="fine">topics: financial-charting-library, charting-library, html5-charts, canvas, typescript, charting, charts, finance</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/visgl/deck.gl" target="_blank" rel="noopener">visgl/deck.gl</a></strong> · 14,364★ · TypeScript · Classic</li>
+</ul>
+<p>  Uber/vis.gl's WebGL2 layer framework for very large geospatial and scientific datasets.  </p>
+<p class="fine">topics: webgl, data-visualization, javascript, visualization, python, geospatial-analysis, maps</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/keplergl/kepler.gl" target="_blank" rel="noopener">keplergl/kepler.gl</a></strong> · 11,959★ · TypeScript · Classic</li>
+</ul>
+<p>  A ready-made geospatial analysis application built on deck.gl — drag a CSV in and explore it on a map.  </p>
+<p class="fine">topics: data-visualization, geospatial, visualization, mapbox, kepler</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/perspective-dev/perspective" target="_blank" rel="noopener">perspective-dev/perspective</a></strong> · 11,099★ · Rust · Classic</li>
+</ul>
+<p>  A C++/WASM streaming analytics engine with a chart+pivot UI — originally built at J.P. Morgan for real-time trading data.  </p>
+<p class="fine">topics: webassembly, data-visualization, real-time, analytics, javascript, python, bi, jupyter</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/leeoniya/uPlot" target="_blank" rel="noopener">leeoniya/uPlot</a></strong> · 10,400★ · JavaScript · Mature</li>
+</ul>
+<p>  A ~50 KB canvas chart for time series, lines, areas, OHLC, and bars — built around one constraint: render fast.  </p>
+<p class="fine">topics: time-series, ohlc, line-chart, performance, lightweight, plotting, graphs, charts</p>
+<h3>Grammar of graphics</h3>
+<p><em>Describe the chart declaratively and let the library draw it. The most portable, diffable, and LLM-generatable way to specify a chart.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/vega/vega" target="_blank" rel="noopener">vega/vega</a></strong> · 11,953★ · JavaScript · Classic</li>
+</ul>
+<p>  The full visualization grammar Vega-Lite compiles down to — a declarative runtime with signals, event streams, and custom transforms.  </p>
+<p class="fine">topics: visualization-grammar, visualization, canvas, svg, vega, d3</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/vega/altair" target="_blank" rel="noopener">vega/altair</a></strong> · 10,450★ · Python · Classic</li>
+</ul>
+<p>  The Python API over Vega-Lite — statistical charts as method chains on a DataFrame.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/vega/vega-lite" target="_blank" rel="noopener">vega/vega-lite</a></strong> · 5,444★ · TypeScript · Classic</li>
+</ul>
+<p>  A concise JSON grammar for interactive graphics — describe the chart, not the drawing code. The pragmatic layer over Vega.  </p>
+<p class="fine">topics: visual-analysis, visualization-grammar, visualization, vega, charts, declarative-language, vega-lite, plot</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/has2k1/plotnine" target="_blank" rel="noopener">has2k1/plotnine</a></strong> · 4,753★ · Python · Classic</li>
+</ul>
+<p>  A faithful port of R's ggplot2 to Python — <code>+</code> operator, aesthetics, geoms, facets, the whole grammar.  </p>
+<p class="fine">topics: plotting, grammar, graphics, python, data-analysis</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/JetBrains/lets-plot" target="_blank" rel="noopener">JetBrains/lets-plot</a></strong> · 1,779★ · Kotlin · Classic</li>
+</ul>
+<p>  JetBrains's multiplatform grammar-of-graphics library — one ggplot-style API across Python, Kotlin, and JVM notebooks.  </p>
+<p class="fine">topics: python, kotlin, plot, data-visualization, jupyter, jupyter-notebooks, ggplot, plot-library</p>
+<h3>Python plotting</h3>
+<p><em>The notebook and scientific-computing side: static publication figures, interactive exploration, and zero-code DataFrame inspection.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/matplotlib/matplotlib" target="_blank" rel="noopener">matplotlib/matplotlib</a></strong> · 23,073★ · Python · Classic</li>
+</ul>
+<p>  The foundation of Python plotting — every other Python viz library either builds on it or defines itself against it.  </p>
+<p class="fine">topics: matplotlib, data-visualization, data-science, python, qt, wx, gtk, plotting</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/bokeh/bokeh" target="_blank" rel="noopener">bokeh/bokeh</a></strong> · 20,428★ · TypeScript · Classic</li>
+</ul>
+<p>  Interactive browser visualization from Python with a real server component for streaming and Python-side callbacks.  </p>
+<p class="fine">topics: bokeh, python, interactive-plots, javascript, visualization, plotting, plots, data-visualisation</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/plotly/plotly.py" target="_blank" rel="noopener">plotly/plotly.py</a></strong> · 18,731★ · Python · Classic</li>
+</ul>
+<p>  Interactive charts from Python, rendering through plotly.js — Plotly Express makes most charts one line.  </p>
+<p class="fine">topics: python, d3, plotly, plotlyjs, webgl, dashboard, visualization, graph-library</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Kanaries/pygwalker" target="_blank" rel="noopener">Kanaries/pygwalker</a></strong> · 15,932★ · Python · Classic</li>
+</ul>
+<p>  Turns a DataFrame into a drag-and-drop Tableau-style exploration UI with one line in a notebook.  </p>
+<p class="fine">topics: data-analysis, pandas, tableau, tableau-alternative, visualization, data-exploration, dataframe, matplotlib</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/holoviz/panel" target="_blank" rel="noopener">holoviz/panel</a></strong> · 5,731★ · Python · Classic</li>
+</ul>
+<p>  HoloViz's app/dashboard framework — the layout and widget layer that turns any Python plot into an app.  </p>
+<p class="fine">topics: holoviz, panel, dashboards, control-panels, gui, dataapp, dataviz, bokeh</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/man-group/dtale" target="_blank" rel="noopener">man-group/dtale</a></strong> · 5,213★ · TypeScript · Mature</li>
+</ul>
+<p>  Man Group's DataFrame inspector — a full web UI for filtering, describing, and charting pandas objects.  </p>
+<p class="fine">topics: python27, python3, react, flask, pandas, ipython, jupyter-notebook, react-virtualized</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/holoviz/holoviews" target="_blank" rel="noopener">holoviz/holoviews</a></strong> · 2,901★ · Python · Classic</li>
+</ul>
+<p>  Declare <em>what</em> the data means and let it render itself — an annotation layer over Bokeh, matplotlib, and Plotly.  </p>
+<p class="fine">topics: holoviz, holoviews, plotting</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/posit-dev/great-tables" target="_blank" rel="noopener">posit-dev/great-tables</a></strong> · 2,714★ · Python · Classic</li>
+</ul>
+<p>  Not charts — <em>tables</em>. Posit's library for publication-quality display tables in Python (the gt package's Python sibling).  </p>
+<p class="fine">topics: easy-to-use, formatting-data, pandas-dataframe, polars-dataframe, python, styling, summary-tables, tables</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/reflex-dev/xy" target="_blank" rel="noopener">reflex-dev/xy</a></strong> · 1,610★ · Python · Hot</li>
+</ul>
+<p>  Reflex's fast, customizable Python charting library — a young, actively developed entrant aimed at Reflex apps and beyond.  </p>
+<p class="fine">topics: charts, data-analysis, data-science, data-visualization, graphs, python</p>
+<h3>BI &amp; dashboard platform</h3>
+<p><em>Products you deploy and operate, not dependencies you import. Differ by audience (business vs. technical) and by data shape (metrics vs. warehouse vs. logs).</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/grafana/grafana" target="_blank" rel="noopener">grafana/grafana</a></strong> · 76,153★ · TypeScript · Classic</li>
+</ul>
+<p>  The observability dashboard standard — time-series panels over ~200 data sources, with alerting as a first-class citizen.  </p>
+<p class="fine">topics: grafana, monitoring, analytics, metrics, influxdb, prometheus, elasticsearch, alerting</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/apache/superset" target="_blank" rel="noopener">apache/superset</a></strong> · 74,220★ · Python · Classic</li>
+</ul>
+<p>  Apache's SQL-first BI platform — 40+ visualization types, a semantic layer, and a proper SQL Lab for technical analysts.  </p>
+<p class="fine">topics: superset, apache, apache-superset, data-visualization, data-viz, analytics, business-intelligence, data-science</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/metabase/metabase" target="_blank" rel="noopener">metabase/metabase</a></strong> · 48,666★ · Clojure · Classic</li>
+</ul>
+<p>  The friendliest open-source BI tool — a question builder that non-SQL users actually use.  </p>
+<p class="fine">topics: analytics, businessintelligence, dashboard, reporting, slack, clojure, database, metabase</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/ToolJet/ToolJet" target="_blank" rel="noopener">ToolJet/ToolJet</a></strong> · 38,304★ · JavaScript · Classic</li>
+</ul>
+<p>  A low-code internal-tool builder — drag-and-drop apps with charts, tables, and forms wired to databases and APIs.  </p>
+<p class="fine">topics: javascript, internal-tools, self-hosted, reactjs, no-code, typescript, low-code, low-code-framework</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/getredash/redash" target="_blank" rel="noopener">getredash/redash</a></strong> · 28,739★ · Python · Classic</li>
+</ul>
+<p>  Query-first BI: write SQL, save it, chart it, dashboard it — the simplest mental model of the BI tools here.  </p>
+<p class="fine">topics: redash, python, visualization, analytics, bi, redshift, bigquery, athena</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/elastic/kibana" target="_blank" rel="noopener">elastic/kibana</a></strong> · 21,230★ · TypeScript · Classic</li>
+</ul>
+<p>  Elastic's window into Elasticsearch — log exploration, search analytics, and dashboards over the Elastic stack.  </p>
+<p class="fine">topics: kibana, elasticsearch, visualizations, metrics, observability, dashboards, hacktoberfest</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/openobserve/openobserve" target="_blank" rel="noopener">openobserve/openobserve</a></strong> · 20,592★ · TypeScript · Classic</li>
+</ul>
+<p>  A Rust-based observability platform (logs, metrics, traces, RUM) that positions itself as a lighter, cheaper Elastic/Grafana-stack replacement.  </p>
+<p class="fine">topics: logs, metrics, traces, analytics, elasticsearch, jaeger, log-analytics, log-management</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Canner/WrenAI" target="_blank" rel="noopener">Canner/WrenAI</a></strong> · 17,179★ · Python · Mature</li>
+</ul>
+<p>  Generative BI — a governed text-to-SQL layer that turns natural-language questions into queries and charts for humans and agents.  </p>
+<p class="fine">topics: bigquery, duckdb, llm, postgresql, rag, text-to-sql, sql, text2sql</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/evidence-dev/evidence" target="_blank" rel="noopener">evidence-dev/evidence</a></strong> · 6,838★ · JavaScript · Mature</li>
+</ul>
+<p>  BI as code — write SQL and markdown, get a static interactive data site. Git is the source of truth, not a dashboard editor.  </p>
+<p class="fine">topics: analytics, sql, business-intelligence, data-visualization, dbt, duckdb, tailwindcss, self-hosted</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/rilldata/rill" target="_blank" rel="noopener">rilldata/rill</a></strong> · 2,803★ · Go · Classic</li>
+</ul>
+<p>  A DuckDB-backed BI tool built for speed — dashboards defined as code, with sub-second exploration and an explicit agent/LLM story.  </p>
+<p class="fine">topics: duckdb, sveltekit, dataviz, csv, parquet, parquet-tools, golang, s3</p>
+<h3>Data-app framework</h3>
+<p><em>Turn Python into a UI. The axis that matters is how far each one scales past a prototype.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/streamlit/streamlit" target="_blank" rel="noopener">streamlit/streamlit</a></strong> · 45,512★ · Python · Classic</li>
+</ul>
+<p>  The default way to turn a Python script into a shareable data app — rerun-the-script execution model, widgets, and charts in a few lines.  </p>
+<p class="fine">topics: python, machine-learning, data-science, deep-learning, data-visualization, streamlit, data-analysis, developer-tools</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/gradio-app/gradio" target="_blank" rel="noopener">gradio-app/gradio</a></strong> · 43,311★ · Python · Classic</li>
+</ul>
+<p>  Hugging Face's framework for ML model demos — inputs, outputs, and a shareable link in under ten lines.  </p>
+<p class="fine">topics: machine-learning, models, ui, ui-components, interface, python, data-science, data-visualization</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/reflex-dev/reflex" target="_blank" rel="noopener">reflex-dev/reflex</a></strong> · 28,791★ · Python · Classic</li>
+</ul>
+<p>  Pure-Python web apps that compile to a React frontend — full-stack, with routing, auth, and state in Python.  </p>
+<p class="fine">topics: python, framework, open-source, gui, dashboard, fullstack, webapp, data-analysis</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/plotly/dash" target="_blank" rel="noopener">plotly/dash</a></strong> · 24,373★ · Python · Classic</li>
+</ul>
+<p>  The production-oriented Python dashboard framework — explicit reactive callbacks, Flask underneath, Plotly figures on top.  </p>
+<p class="fine">topics: dash, plotly, data-visualization, data-science, gui-framework, flask, react, python</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Avaiga/taipy" target="_blank" rel="noopener">Avaiga/taipy</a></strong> · 19,397★ · Python · Mature</li>
+</ul>
+<p>  A Python framework with two halves: a GUI layer and a genuine scenario/pipeline orchestration engine for data and what-if workflows.  </p>
+<p class="fine">topics: automation, data-engineering, data-ops, data-visualization, datascience, developer-tools, mlops, orchestration</p>
+<h3>Dashboards as code</h3>
+<p><em>Generate Grafana dashboards from typed code or YAML so they can be reviewed and versioned. Consolidating fast around Grafana's first-party SDK.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/weaveworks/grafanalib" target="_blank" rel="noopener">weaveworks/grafanalib</a></strong> · 1,971★ · Python · Declining</li>
+</ul>
+<p>  The original Python library for generating Grafana dashboards — historically the standard before Grafana shipped its own SDK.  </p>
+<p class="fine">topics: grafana, monitoring, edsl, dashboards</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/K-Phoen/grabana" target="_blank" rel="noopener">K-Phoen/grabana</a></strong> · 729★ · Go · Abandoned</li>
+</ul>
+<p>  A Go library and DSL for building Grafana dashboards — the Go-ecosystem counterpart to grafanalib.  </p>
+<p class="fine">topics: grafana, grafana-dashboard, library, golang, builder, grafana-dashboards, dashboards, dashboard-configuration</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/grafana/grafana-foundation-sdk" target="_blank" rel="noopener">grafana/grafana-foundation-sdk</a></strong> · 248★ · PHP · Mature</li>
+</ul>
+<p>  Grafana's own typed builders for dashboards and alerts across Go, Java, PHP, Python, and TypeScript — the official successor to the community codegen tools.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/deliveryhero/grafyaml" target="_blank" rel="noopener">deliveryhero/grafyaml</a></strong> · 44★ · Python · Mature</li>
+</ul>
+<p>  Grafana dashboards defined in YAML instead of JSON — the lightest-weight dashboards-as-code option here.  </p>
+<p class="fine">topics: —</p>
+<h3>Diagrams &amp; AI charts</h3>
+<p><em>Drawn diagrams rather than data-bound charts — plus the text-defined formats that agents can generate.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/excalidraw/excalidraw" target="_blank" rel="noopener">excalidraw/excalidraw</a></strong> · 129,346★ · TypeScript · Classic</li>
+</ul>
+<p>  A virtual whiteboard with a hand-drawn aesthetic — the default tool for sketching architecture and flow diagrams.  </p>
+<p class="fine">topics: productivity, collaboration, diagrams, drawing, whiteboard, canvas, hacktoberfest</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/jgraph/drawio-desktop" target="_blank" rel="noopener">jgraph/drawio-desktop</a></strong> · 62,495★ · JavaScript · Classic</li>
+</ul>
+<p>  The offline Electron build of draw.io — the most complete free diagramming application, with the shape libraries enterprises actually need.  </p>
+<p class="fine">topics: javascript-applications, electron-app, graphics, diagram-editor</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/lukilabs/beautiful-mermaid" target="_blank" rel="noopener">lukilabs/beautiful-mermaid</a></strong> · 10,809★ · TypeScript · Declining</li>
+</ul>
+<p>  A polished renderer for Mermaid diagrams — Mermaid's text-to-diagram syntax with far better typography and theming.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/hustcc/mcp-mermaid" target="_blank" rel="noopener">hustcc/mcp-mermaid</a></strong> · 621★ · TypeScript · Declining</li>
+</ul>
+<p>  An MCP server that lets an AI agent generate Mermaid diagrams and charts on demand — charting as an agent tool.  </p>
+<p class="fine">topics: mcp, mcp-server, mermaid, mermaidjs</p>
+<h3>Native / systems charting</h3>
+<p><em>Plotting inside desktop and systems applications, where a browser runtime isn't available or isn't wanted.</em></p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/ScottPlot/ScottPlot" target="_blank" rel="noopener">ScottPlot/ScottPlot</a></strong> · 6,696★ · C# · Classic</li>
+</ul>
+<p>  Interactive plotting for .NET — WinForms, WPF, Avalonia, and console, with a genuinely simple API.  </p>
+<p class="fine">topics: plot, plotting, visualization, data-visualization, charts, chart, charting, graphics</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/alandefreitas/matplotplusplus" target="_blank" rel="noopener">alandefreitas/matplotplusplus</a></strong> · 4,914★ · C++ · Mature</li>
+</ul>
+<p>  Matplot++ — a C++17 graphics library with a matplotlib-shaped API for scientific plotting.  </p>
+<p class="fine">topics: plot-categories, data-visualization, contour-plots, polar-plots, matplot, data-analysis, charts, charting-library</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/AAChartModel/AAChartKit" target="_blank" rel="noopener">AAChartModel/AAChartKit</a></strong> · 4,766★ · Objective-C · Mature</li>
+</ul>
+<p>  Declarative charts for iOS/iPadOS/macOS — an Objective-C/Swift wrapper around Highcharts rendered in a web view.  </p>
+<p class="fine">topics: chart, column-chart, line-charts, pie-chart, bubble-chart, area-chart, radar-chart, polar-chart</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/gonum/plot" target="_blank" rel="noopener">gonum/plot</a></strong> · 2,963★ · Go · Mature</li>
+</ul>
+<p>  Plotting for Go, part of the Gonum numerical stack — generate chart images from a Go service.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/core-plot/core-plot" target="_blank" rel="noopener">core-plot/core-plot</a></strong> · 2,762★ · Objective-C · Mature</li>
+</ul>
+<p>  The veteran native Core Graphics plotting framework for macOS and iOS — no web view involved.  </p>
+<p class="fine">topics: —</p>
+<h2>Spotlight: the SVG/canvas line, and why most chart choices go wrong</h2>
+<p>Almost every 'our dashboard got slow' story in this landscape is the same story: an SVG-based library asked to draw more marks than the DOM can carry.</p>
+<ul>
+<li class="d0"><strong>SVG libraries</strong> (<code>Recharts</code>, <code>ApexCharts</code>, <code>nivo</code>'s SVG variants, <code>frappe/charts</code>, <code>c3</code>) create one DOM node per mark. That is wonderful for styling, CSS transitions, and accessibility — and it falls over somewhere between 5k and 10k points.</li>
+<li class="d0"><strong>Canvas libraries</strong> (<code>Chart.js</code>, <code>ECharts</code>, <code>uPlot</code>, <code>nivo</code>'s canvas variants, <code>ScottPlot</code>) draw pixels. You lose per-element CSS and easy hit-testing; you gain one to two orders of magnitude of headroom. <code>ECharts</code> documents rendering at 10M+ points.</li>
+<li class="d0"><strong>GPU/WASM</strong> (<code>deck.gl</code>, <code>perspective</code>) move the work off the main thread entirely. This is the only tier that survives millions of <em>streaming</em> rows, and it costs real architectural complexity.</li>
+</ul>
+<p>The practical rule: <strong>decide the data volume before the library.</strong> Retrofitting a canvas renderer into a component tree built around SVG charts is close to a rewrite. The second rule: <strong>downsample before you upgrade</strong> — <code>uPlot</code>-class performance on aggregated data usually beats GPU rendering on raw data, and it's far less code.</p>
+<h2>Graph analysis — how they relate</h2>
+<p><strong>Community clustering.</strong> These 61 tools span <strong>10 of the graph's 31 communities</strong> — a wide spread, because charting cuts across the frontend, Python-data, and observability clusters rather than forming one of its own.</p>
+<ul>
+<li class="d0"><strong>Community 0</strong> (31): <code>apache/echarts</code>, <code>chartjs/Chart.js</code>, <code>plotly/plotly.js</code>, <code>apexcharts/apexcharts.js</code>, <code>antvis/G2</code>, <code>frappe/charts</code>, <code>observablehq/plot</code>, <code>recharts/recharts</code>, <code>plouc/nivo</code>, <code>airbnb/visx</code>, <code>tremorlabs/tremor</code>, <code>d3/d3</code>, <code>leeoniya/uPlot</code>, <code>tradingview/lightweight-charts</code>, <code>visgl/deck.gl</code>, <code>keplergl/kepler.gl</code>, <code>vega/vega-lite</code>, <code>vega/vega</code>, <code>vega/altair</code>, <code>plotly/plotly.py</code>, <code>bokeh/bokeh</code>, <code>holoviz/holoviews</code>, <code>holoviz/panel</code>, <code>evidence-dev/evidence</code>, <code>plotly/dash</code>, <code>excalidraw/excalidraw</code>, <code>lukilabs/beautiful-mermaid</code>, <code>ScottPlot/ScottPlot</code>, <code>AAChartModel/AAChartKit</code>, <code>core-plot/core-plot</code>, <code>alandefreitas/matplotplusplus</code></li>
+<li class="d0"><strong>Community 1</strong> (8): <code>Kanaries/pygwalker</code>, <code>man-group/dtale</code>, <code>posit-dev/great-tables</code>, <code>apache/superset</code>, <code>metabase/metabase</code>, <code>getredash/redash</code>, <code>rilldata/rill</code>, <code>gonum/plot</code></li>
+<li class="d0"><strong>Community 3</strong> (7): <code>has2k1/plotnine</code>, <code>matplotlib/matplotlib</code>, <code>reflex-dev/xy</code>, <code>streamlit/streamlit</code>, <code>gradio-app/gradio</code>, <code>reflex-dev/reflex</code>, <code>Avaiga/taipy</code></li>
+<li class="d0"><strong>Community 19</strong> (4): <code>grafana/grafana</code>, <code>elastic/kibana</code>, <code>openobserve/openobserve</code>, <code>weaveworks/grafanalib</code></li>
+<li class="d0"><strong>Community 13</strong> (3): <code>c3js/c3</code>, <code>deliveryhero/grafyaml</code>, <code>K-Phoen/grabana</code></li>
+<li class="d0"><strong>Community 14</strong> (3): <code>Canner/WrenAI</code>, <code>grafana/grafana-foundation-sdk</code>, <code>jgraph/drawio-desktop</code></li>
+<li class="d0"><strong>Community 2</strong> (2): <code>perspective-dev/perspective</code>, <code>JetBrains/lets-plot</code></li>
+</ul>
+<p><strong>Centrality (PageRank in the full 1,596-repo graph)</strong> — most 'hub-like' visualization tools in your ecosystem:</p>
+<ul>
+<li class="d0"><code>apache/superset</code> — PageRank 0.0063</li>
+<li class="d0"><code>posit-dev/great-tables</code> — PageRank 0.0058</li>
+<li class="d0"><code>Kanaries/pygwalker</code> — PageRank 0.0057</li>
+<li class="d0"><code>getredash/redash</code> — PageRank 0.0051</li>
+<li class="d0"><code>c3js/c3</code> — PageRank 0.0034</li>
+<li class="d0"><code>tremorlabs/tremor</code> — PageRank 0.0030</li>
+<li class="d0"><code>keplergl/kepler.gl</code> — PageRank 0.0029</li>
+<li class="d0"><code>plouc/nivo</code> — PageRank 0.0025</li>
+<li class="d0"><code>excalidraw/excalidraw</code> — PageRank 0.0025</li>
+<li class="d0"><code>streamlit/streamlit</code> — PageRank 0.0019</li>
+</ul>
+<p><strong>Direct links between charting tools</strong> (top similarity edges where both endpoints are in this report):</p>
+<ul>
+<li class="d0"><code>vega/vega-lite</code> ⇄ <code>vega/vega</code> (w=1.606) — topics: visualization-grammar, visualization, vega; authors: domoritz, dependabot[bot], joelostblom</li>
+<li class="d0"><code>reflex-dev/xy</code> ⇄ <code>reflex-dev/reflex</code> (w=1.358) — topics: data-analysis, data-science, data-visualization, python; authors: Alek99, masenf, FarhanAliRaza</li>
+<li class="d0"><code>holoviz/panel</code> ⇄ <code>holoviz/holoviews</code> (w=1.205) — topics: holoviz, holoviews; authors: philippjfr, hoxbro, Kkkakania</li>
+<li class="d0"><code>plotly/plotly.py</code> ⇄ <code>plotly/plotly.js</code> (w=1.114) — topics: d3, plotly, webgl, visualization; authors: emilykl, camdecoster, 91409429+hanu-14@users.noreply.github.com</li>
+<li class="d0"><code>observablehq/plot</code> ⇄ <code>d3/d3</code> (w=0.833) — topics: visualization, data-visualization, charts, d3</li>
+<li class="d0"><code>vega/altair</code> ⇄ <code>vega/vega-lite</code> (w=0.816) — authors: joelostblom, dependabot[bot], jonathanzong</li>
+<li class="d0"><code>vega/altair</code> ⇄ <code>vega/vega</code> (w=0.773) — authors: joelostblom, dependabot[bot], jonathanzong</li>
+<li class="d0"><code>apache/superset</code> ⇄ <code>apache/echarts</code> (w=0.679) — topics: apache, data-visualization, data-viz; authors: dependabot[bot]</li>
+<li class="d0"><code>plotly/dash</code> ⇄ <code>plotly/plotly.py</code> (w=0.653) — topics: plotly, python, plotly-dash</li>
+<li class="d0"><code>plotly/dash</code> ⇄ <code>plotly/plotly.js</code> (w=0.625) — topics: plotly, data-visualization, plotly-dash</li>
+<li class="d0"><code>airbnb/visx</code> ⇄ <code>d3/d3</code> (w=0.556) — topics: d3, visualization, chart, svg</li>
+<li class="d0"><code>apexcharts/apexcharts.js</code> ⇄ <code>apache/echarts</code> (w=0.515) — topics: charts, svg, data-visualization, visualization; authors: dependabot[bot]</li>
+<li class="d0"><code>observablehq/plot</code> ⇄ <code>apexcharts/apexcharts.js</code> (w=0.500) — topics: visualization, data-visualization, charts, svg</li>
+<li class="d0"><code>grafana/grafana-foundation-sdk</code> ⇄ <code>grafana/grafana</code> (w=0.500)</li>
+<li class="d0"><code>streamlit/streamlit</code> ⇄ <code>reflex-dev/reflex</code> (w=0.494) — topics: python, data-science, data-visualization, data-analysis; authors: github-actions[bot]</li>
+<li class="d0">…and 108 more.</li>
+</ul>
+<h2>Maintenance &amp; risk signal</h2>
+<p>Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecycle + activity before adopting.</p>
+<div class="tw"><table><thead><tr><th>Tool</th><th>Health</th><th>Lifecycle</th><th>Activity</th><th>Bus factor</th><th>Top-author share</th><th>Releases</th></tr></thead><tbody>
+<tr><td>grafana/grafana</td><td>99</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>12</td><td>14%</td><td>635</td></tr>
+<tr><td>metabase/metabase</td><td>99</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>8</td><td>9%</td><td>816</td></tr>
+<tr><td>elastic/kibana</td><td>98</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>18</td><td>9%</td><td>258</td></tr>
+<tr><td>openobserve/openobserve</td><td>98</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>5</td><td>16%</td><td>216</td></tr>
+<tr><td>ToolJet/ToolJet</td><td>94</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>4</td><td>18%</td><td>587</td></tr>
+<tr><td>reflex-dev/reflex</td><td>94</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>4</td><td>22%</td><td>220</td></tr>
+<tr><td>matplotlib/matplotlib</td><td>89</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>3</td><td>26%</td><td>102</td></tr>
+<tr><td>visgl/deck.gl</td><td>88</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>3</td><td>24%</td><td>307</td></tr>
+<tr><td>apache/superset</td><td>85</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>41%</td><td>266</td></tr>
+<tr><td>recharts/recharts</td><td>84</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>39%</td><td>92</td></tr>
+<tr><td>rilldata/rill</td><td>84</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>47%</td><td>327</td></tr>
+<tr><td>gradio-app/gradio</td><td>84</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>36%</td><td>5075</td></tr>
+<tr><td>streamlit/streamlit</td><td>83</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>38%</td><td>125</td></tr>
+<tr><td>keplergl/kepler.gl</td><td>82</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>49%</td><td>56</td></tr>
+<tr><td>plotly/plotly.py</td><td>81</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>41%</td><td>107</td></tr>
+<tr><td>holoviz/panel</td><td>80</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>41%</td><td>101</td></tr>
+<tr><td>Canner/WrenAI</td><td>80</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>41%</td><td>187</td></tr>
+<tr><td>apexcharts/apexcharts.js</td><td>79</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>89%</td><td>152</td></tr>
+<tr><td>plotly/plotly.js</td><td>78</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>64%</td><td>277</td></tr>
+<tr><td>plotly/dash</td><td>78</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>75%</td><td>109</td></tr>
+<tr><td>jgraph/drawio-desktop</td><td>78</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>79%</td><td>187</td></tr>
+<tr><td>JetBrains/lets-plot</td><td>77</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>2</td><td>32%</td><td>109</td></tr>
+<tr><td>perspective-dev/perspective</td><td>76</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>98%</td><td>62</td></tr>
+<tr><td>has2k1/plotnine</td><td>75</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>93%</td><td>39</td></tr>
+<tr><td>reflex-dev/xy</td><td>74</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>61%</td><td>11</td></tr>
+<tr><td>bokeh/bokeh</td><td>73</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>3</td><td>25%</td><td>0</td></tr>
+<tr><td>posit-dev/great-tables</td><td>72</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>99%</td><td>35</td></tr>
+<tr><td>vega/altair</td><td>71</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>67%</td><td>37</td></tr>
+<tr><td>highcharts/highcharts</td><td>70</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>46%</td><td>0</td></tr>
+<tr><td>vega/vega</td><td>69</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>60%</td><td>153</td></tr>
+<tr><td>holoviz/holoviews</td><td>68</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>51%</td><td>89</td></tr>
+<tr><td>vega/vega-lite</td><td>66</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>50%</td><td>214</td></tr>
+<tr><td>apache/echarts</td><td>65</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>2</td><td>32%</td><td>125</td></tr>
+<tr><td>Kanaries/pygwalker</td><td>65</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>98%</td><td>66</td></tr>
+<tr><td>grafana/grafana-foundation-sdk</td><td>65</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>43%</td><td>0</td></tr>
+<tr><td>getredash/redash</td><td>63</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>3</td><td>31%</td><td>101</td></tr>
+<tr><td>antvis/G2</td><td>62</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>50%</td><td>155</td></tr>
+<tr><td>tradingview/lightweight-charts</td><td>62</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>70%</td><td>47</td></tr>
+<tr><td>ScottPlot/ScottPlot</td><td>61</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>63%</td><td>179</td></tr>
+<tr><td>excalidraw/excalidraw</td><td>60</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>53%</td><td>15</td></tr>
+<tr><td>airbnb/visx</td><td>55</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>50%</td><td>107</td></tr>
+<tr><td>Avaiga/taipy</td><td>53</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>0</td><td>0%</td><td>127</td></tr>
+<tr><td>c3js/c3</td><td>51</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>67%</td><td>94</td></tr>
+<tr><td>plouc/nivo</td><td>51</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>50%</td><td>65</td></tr>
+<tr><td>hustcc/mcp-mermaid</td><td>49</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-warn">slowing</span></td><td>1</td><td>100%</td><td>6</td></tr>
+<tr><td>deliveryhero/grafyaml</td><td>47</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>50%</td><td>8</td></tr>
+<tr><td>man-group/dtale</td><td>43</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>0</td><td>0%</td><td>183</td></tr>
+<tr><td>observablehq/plot</td><td>42</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>100%</td><td>39</td></tr>
+<tr><td>chartjs/Chart.js</td><td>41</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>1</td><td>100%</td><td>117</td></tr>
+<tr><td>d3/d3</td><td>40</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>1</td><td>100%</td><td>194</td></tr>
+<tr><td>evidence-dev/evidence</td><td>38</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>949</td></tr>
+<tr><td>lukilabs/beautiful-mermaid</td><td>37</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>6</td></tr>
+<tr><td>AAChartModel/AAChartKit</td><td>32</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>18</td></tr>
+<tr><td>core-plot/core-plot</td><td>31</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>19</td></tr>
+<tr><td>leeoniya/uPlot</td><td>29</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>63</td></tr>
+<tr><td>gonum/plot</td><td>29</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>8</td></tr>
+<tr><td>alandefreitas/matplotplusplus</td><td>24</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>6</td></tr>
+<tr><td>weaveworks/grafanalib</td><td>16</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-crit">stale</span></td><td>0</td><td>0%</td><td>16</td></tr>
+<tr><td>tremorlabs/tremor</td><td>12</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-crit">stale</span></td><td>0</td><td>0%</td><td>0</td></tr>
+<tr><td>K-Phoen/grabana</td><td>6</td><td><span class="pill s-crit">Abandoned</span></td><td><span class="pill s-crit">stale</span></td><td>0</td><td>0%</td><td>105</td></tr>
+<tr><td>frappe/charts</td><td>5</td><td><span class="pill s-crit">Abandoned</span></td><td><span class="pill s-crit">stale</span></td><td>0</td><td>0%</td><td>18</td></tr>
+</tbody></table></div>
+<p>Watch items: <code>grafanalib</code> is <strong>declining</strong> (Weaveworks is gone) and <code>grabana</code> reads as <strong>abandoned</strong> — migrate Grafana codegen to <code>grafana-foundation-sdk</code>. <code>c3</code> is effectively feature-frozen; <code>Observable Plot</code> or <code>ECharts</code> covers new work. <code>core-plot</code>, <code>gonum/plot</code>, and <code>matplotplusplus</code> all show low health and slow maintenance — pin or vendor them. <code>beautiful-mermaid</code> and <code>mcp-mermaid</code> are declining single-maintainer projects; the underlying Mermaid syntax is the durable part, not these wrappers. <code>redash</code> is effectively in maintenance mode post-acquisition.</p>
+<h2>Licensing traps</h2>
+<p>The one dimension that silently disqualifies an otherwise-correct choice:</p>
+<ul>
+<li class="d0"><strong><code>highcharts</code> is proprietary for commercial use.</strong> It is genuinely excellent — especially its accessibility module — but it is a per-developer paid licence, not an open-source dependency.</li>
+<li class="d0"><strong><code>AAChartKit</code> wraps Highcharts</strong>, and therefore inherits that licence for commercial apps. This is the most commonly missed trap in the table above.</li>
+<li class="d0"><strong><code>grafana</code> (AGPL) and <code>metabase</code> (AGPL)</strong> are open-core: self-hosting is free, but SSO, fine-grained permissions, and some embedding features are enterprise-only.</li>
+<li class="d0"><strong><code>kibana</code></strong> is under the Elastic Licence / SSPL, which is not OSI-approved and is rejected by some corporate policies outright.</li>
+<li class="d0"><strong><code>apache/echarts</code> and <code>apache/superset</code></strong> are Apache-2.0 with no feature gating — the safest picks in their respective rows if licensing is the binding constraint.</li>
+</ul>
+<h2>Adjacent (deliberately not listed as charting tools)</h2>
+<ul>
+<li class="d0"><strong>prometheus/prometheus</strong> (65,615★) — a time-series <em>database</em> and the data source behind most Grafana panels — storage, not charting</li>
+<li class="d0"><strong>plausible/analytics</strong> (28,411★) — a fixed-purpose web-analytics product; its dashboard isn't reusable for your own data</li>
+<li class="d0"><strong>bluewave-labs/Checkmate</strong> (10,430★) — uptime/infrastructure monitoring with built-in status charts — a monitoring product, not a charting tool</li>
+<li class="d0"><strong>voxel51/fiftyone</strong> (10,990★) — visualizes <em>datasets and model predictions</em> for computer vision — a data-curation app, not a chart library</li>
+<li class="d0"><strong>jessevig/bertviz</strong> (8,147★) — visualizes transformer attention specifically — a model-interpretability tool</li>
+<li class="d0"><strong>OpenSpace/OpenSpace</strong> (1,225★) — astrovisualization of space data — scientific rendering, not general charting</li>
+<li class="d0"><strong>originalankur/maptoposter</strong> (13,896★) — turns city maps into poster art — cartographic design, not data visualization</li>
+<li class="d0"><strong>unhappychoice/gitlogue</strong> (4,900★) — animated replay of git history in the terminal — a novelty visualizer</li>
+<li class="d0"><strong>patoles/agent-flow</strong> (1,457★) — real-time visualization of agent orchestration — see the <em>Agent orchestration</em> report</li>
+<li class="d0"><strong>vivekchand/clawmetry</strong> (392★) — agent-runtime observability dashboards — routed to the agent reports</li>
+<li class="d0"><strong>williamngan/pts</strong> (5,339★) — creative-coding and generative visuals rather than charts; reads as abandoned in this snapshot</li>
+<li class="d0"><strong>GraphiteEditor/Graphite</strong> (26,780★) — a 2D vector graphics editor — design tooling, not data charting</li>
+<li class="d0"><strong>mosra/magnum</strong> (5,182★) — C++ graphics middleware used <em>for</em> visualization, but a rendering engine at heart</li>
+<li class="d0"><strong>deliveryhero/helm-charts</strong> (565★) — name collision — Kubernetes Helm charts, nothing to do with data charts</li>
+<li class="d0"><strong>ultraworkers/hermes-agent-helm-chart</strong> (126★) — same collision: a Helm chart, not a data chart</li>
+<li class="d0"><strong>jakevdp/PythonDataScienceHandbook</strong> (49,553★) — a book (notebooks) that teaches matplotlib — learning material, not a tool</li>
+<li class="d0"><strong>GeostatsGuy/DataScienceInteractivePython</strong> (2,579★) — teaching notebooks with interactive dashboards — course material</li>
+</ul>
+<h2>Methodology &amp; caveats</h2>
+<ul>
+<li class="d0"><strong>Source</strong>: <code>data/classified.json</code> + <code>public/data/graph.json</code> for all repo metrics and graph structure. No API calls at generation time; fully reproducible.</li>
+<li class="d0"><strong>Selection</strong>: keyword scan (chart / plot / visuali[sz] / dashboard / graphing / BI / diagram) over <code>full_name + description + topics</code>, then manual curation into layers. Domain-specific visualizers (model interpretability, geospatial art, agent observability) and rendering engines were routed to the adjacent list.</li>
+<li class="d0"><strong>Name collisions were checked</strong>: <code>deliveryhero/helm-charts</code> and <code>ultraworkers/hermes-agent-helm-chart</code> are Kubernetes Helm charts, not data charts, and are excluded.</li>
+<li class="d0"><strong>Advantages/disadvantages are editorial</strong>, not measured. They combine the dataset's own health/lifecycle/activity signals (which <em>are</em> measured) with external comparisons gathered 2026-08 covering JS charting libraries (bundle sizes, data-volume ceilings), BI platforms (Grafana/Kibana/Metabase/Superset), and Python data-app frameworks (Streamlit/Gradio/Reflex/Taipy). Bundle-size and performance figures are point-in-time and version-dependent — verify against the version you are pinning.</li>
+<li class="d0"><strong>Licence fields</strong> come from the snapshot's GitHub metadata and can be wrong for dual-licensed projects. <code>highcharts</code> in particular is not usable commercially under an open-source licence regardless of what the repo metadata says. Verify before shipping.</li>
+<li class="d0"><strong>Metrics</strong> (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.</li>
+<li class="d0">Re-run after a fresh <code>classified.json</code> to refresh stars/activity; the editorial columns are frozen text and need manual review when major versions land.</li>
+</ul>
+<p class="fine">Tools covered: 61 · Snapshot: 2026-08-11T18:59:16.380Z</p>
+</div>
