@@ -34,7 +34,8 @@
       "stars": 29659
     }
   ],
-  "snapshot": "2026-08-07T23:57:40.892Z",
-  "generated": "2026-08-08",
-  "generator": "scripts/reports/memory_frameworks.py"
+  "snapshot": "2026-08-11T18:59:16.380Z",
+  "generated": "2026-08-11",
+  "generator": "scripts/reports/memory_frameworks.py",
+  "created": "2026-05-31"
 }

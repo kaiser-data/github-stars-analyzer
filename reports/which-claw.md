@@ -1,8 +1,13 @@
 # Which Claw Should I Use? — A Decision Report
 
-> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph.
+> Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`), cross-referenced with the repo-similarity graph.
 >
-> Generated 2026-08-08 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
+> Generated 2026-08-11 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/which-claw-top-tools.svg)
+
+![Tools per category](assets/which-claw-categories.svg)
+
 
 > **Scope.** This ranks the standalone **claws** — agents/runtimes you'd run *as* your assistant. "Claw" here is a **role, not a name**: functional claws that aren't literally branded *claw* (Hermes, nanobot, eliza, oh-my-openagent) are ranked alongside the named ones and tagged **†**. The accessory ecosystem (skills, routers, memory, observability, dashboards) is covered separately in the **OpenClaw Ecosystem** report; those *complement* a claw rather than replace it.
 
@@ -13,7 +18,7 @@
 **As a pragmatic default, [`openclaw/openclaw`](https://github.com/openclaw/openclaw) (composite 0.801, #1).** The score above *deliberately excludes the ecosystem network effect* — and that's OpenClaw's real edge: every accessory you've already starred (`clawhub`, `ClawRouter`, `clawmetry`, `opik-openclaw`, `openclaw-supermemory`, `NemoClaw`, `moltworker`) targets OpenClaw, not zeroclaw. That's a genuine switching cost in its favour.
 
 - **TypeScript + crypto fit → OpenClaw.** It's TS (so is most of its accessory line), and the ecosystem leans on-chain — e.g. `ClawRouter` does on-chain payments / agent-native settlement. If you live in the TS and crypto world, that's another argument for the hub.
-- **Maximum stability/quality →** [`sipeed/picoclaw`](https://github.com/sipeed/picoclaw) (health 85).
+- **Maximum stability/quality →** [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) (health 85).
 - **Running untrusted tools / need isolation →** [`NVIDIA/NemoClaw`](https://github.com/NVIDIA/NemoClaw) — security-hardened runtime.
 - **Mostly coding →** [`code-yeongyu/oh-my-openagent`](https://github.com/code-yeongyu/oh-my-openagent) is the coding-focused claw.
 - **Tiny/edge footprint →** `sipeed/picoclaw` and `nullclaw/nullclaw` (minimal builds).
@@ -26,25 +31,25 @@ Composite = 25% health + 25% adoption + 20% resilience + 15% maturity + 15% mome
 
 | # | Claw | Type | Score | ★ Stars | Health | Momentum (★/30d) | Last push | Bus factor | Lang |
 |---|---|---|---|---|---|---|---|---|---|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.801** | 385,469 (▲1,190) | 84 | 112,679 | 0d ago | 2 | TypeScript |
-| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.793** | 227,042 (▲5,921) | 85 | 37,983 | 0d ago | 3 | Python |
-| 🥉 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.737** | 22,085 (▲133) | 84 | 11,401 | 0d ago | 5 | TypeScript |
-| 4 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.710** | 32,526 (▲120) | 83 | 13,890 | 0d ago | 2 | Rust |
-| 5 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.691** | 46,749 (▲466) | 84 | 18,680 | 0d ago | 2 | Python |
-| 6 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.689** | 67,452 (▲807) | 78 | 20,405 | 1d ago | 1 | TypeScript |
-| 7 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.676** | 29,833 (▲100) | 85 | 12,129 | 0d ago | 2 | Go |
-| 8 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.674** | 18,927 (▲112) | 84 | 1,308 | 0d ago | 2 | TypeScript |
-| 9 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.650** | 12,597 (▲32) | 80 | 5,087 | 0d ago | 2 | Rust |
-| 10 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.637** | 30,468 (▲88) | 76 | 12,133 | 1d ago | 2 | TypeScript |
-| 11 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.602** | 18,083 (▲19) | 71 | 3,307 | 1mo ago | 1 | Rust |
-| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.600** | 195,004 (▲74) | 65 | 112,828 | 2d ago | 1 | Rust |
-| 13 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.578** | 8,009 (▲95) | 77 | 2,234 | 20d ago | 1 | Zig |
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.801** | 385,469 | 84 | 111,038 | 4d ago | 2 | TypeScript |
+| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.793** | 227,042 | 85 | 37,608 | 4d ago | 3 | Python |
+| 🥉 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.737** | 22,085 | 84 | 11,111 | 4d ago | 5 | TypeScript |
+| 4 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.710** | 32,526 | 83 | 13,596 | 4d ago | 2 | Rust |
+| 5 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.689** | 67,452 | 78 | 20,097 | 4d ago | 1 | TypeScript |
+| 6 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.688** | 46,749 | 83 | 18,310 | 4d ago | 2 | Python |
+| 7 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.674** | 29,833 | 84 | 11,884 | 4d ago | 2 | Go |
+| 8 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.674** | 18,927 | 84 | 1,302 | 4d ago | 2 | TypeScript |
+| 9 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.650** | 12,597 | 80 | 4,986 | 4d ago | 2 | Rust |
+| 10 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.637** | 30,468 | 76 | 11,893 | 5d ago | 2 | TypeScript |
+| 11 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.602** | 18,083 | 71 | 3,232 | 1mo ago | 1 | Rust |
+| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.598** | 195,004 | 64 | 109,621 | 5d ago | 1 | Rust |
+| 13 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.575** | 8,009 | 76 | 2,185 | 24d ago | 1 | Zig |
 
 **Where's Hermes?** [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) lands **#2** (composite 0.793) — the **strongest functional claw** and it trails OpenClaw (#1). Health 85, bus factor 3 (vs OpenClaw's 2 — more resilient), 227,042★, very active.
 It sits just behind [`openclaw/openclaw`](https://github.com/openclaw/openclaw), which edges it on health (84 vs 85) and resilience (bus 2 vs 3). 
 The catch: Hermes carries **none** of the OpenClaw accessory ecosystem and is **Python-first** — so it's the natural pick if you'd rather extend in Python than TypeScript, or value NousResearch's lineage over ecosystem lock-in. See the dedicated **Hermes vs OpenClaw** report for the full head-to-head.
 
-Other functional claws (†): `nanobot` #5, `oh-my-openagent` #6, `eliza` #8.
+Other functional claws (†): `oh-my-openagent` #5, `nanobot` #6, `eliza` #8.
 
 ### How the top picks score (component view)
 
@@ -53,10 +58,10 @@ Each column is 0–1 (higher = better); the bar shows the weighted composite.
 | Claw | Health | Adoption | Resilience | Maturity | Momentum | Composite |
 |---|---|---|---|---|---|---|
 | openclaw/openclaw | 0.84 | 1.00 | 0.40 | 0.74 | 1.00 | **0.801** |
-| NousResearch/hermes-agent | 0.85 | 0.96 | 0.60 | 0.56 | 0.91 | **0.793** |
+| NousResearch/hermes-agent | 0.85 | 0.96 | 0.60 | 0.57 | 0.91 | **0.793** |
 | NVIDIA/NemoClaw | 0.84 | 0.78 | 1.00 | 0.08 | 0.80 | **0.737** |
 | zeroclaw-labs/zeroclaw | 0.83 | 0.81 | 0.40 | 0.65 | 0.82 | **0.710** |
-| HKUDS/nanobot | 0.84 | 0.84 | 0.40 | 0.43 | 0.85 | **0.691** |
+| code-yeongyu/oh-my-openagent | 0.78 | 0.86 | 0.20 | 0.74 | 0.85 | **0.689** |
 
 ## Deeper analysis
 
@@ -70,8 +75,8 @@ A single weight vector is easy to rig. So here's the ranking re-run under **six 
 | hermes-agent † | 2 | 2 | **1** | 2 | 2 | 3 | 2.0 | #1–#3 |
 | zeroclaw | 4 | 3 | 4 | 4 | 4 | 6 | 4.2 | #3–#6 |
 | NemoClaw | 3 | 4 | 3 | 8 | **1** | 8 | 4.5 | #1–#8 |
-| nanobot † | 5 | 6 | 6 | 5 | 6 | 5 | 5.5 | #5–#6 |
-| oh-my-openagent † | 6 | 5 | 8 | 3 | 9 | 4 | 5.8 | #3–#9 |
+| nanobot † | 6 | 6 | 6 | 5 | 6 | 5 | 5.7 | #5–#6 |
+| oh-my-openagent † | 5 | 5 | 8 | 3 | 9 | 4 | 5.7 | #3–#9 |
 | picoclaw | 7 | 8 | 7 | 7 | 7 | 7 | 7.2 | #7–#8 |
 | eliza † | 8 | 7 | 5 | 10 | 5 | 12 | 7.8 | #5–#12 |
 | ironclaw | 9 | 9 | 9 | 11 | 8 | 10 | 9.3 | #8–#11 |
@@ -90,27 +95,30 @@ A single weight vector is easy to rig. So here's the ranking re-run under **six 
 
 Ignoring fit and weights entirely: a claw is **dominated** if another claw matches or beats it on *every* generic axis (health, stars, bus factor, releases, momentum, freshness) and beats it on at least one. Dominated claws are never the answer **if you only care about generic quality/scale** — but several survive purely on a niche the axes can't see.
 
-**Pareto-optimal (6):** `openclaw`, `hermes-agent`, `NemoClaw`, `oh-my-openagent`, `nanoclaw`, `claw-code`.
+**Pareto-optimal (3):** `openclaw`, `hermes-agent`, `NemoClaw`.
 
 **Dominated — only justified by fit, not metrics:**
 
 | Claw | Dominated by | Survives only if you need… |
 |---|---|---|
 | `zeroclaw` | `openclaw` | a specific niche |
+| `oh-my-openagent` | `openclaw` | a TS coding harness for big codebases |
 | `nanobot` | `openclaw`, `hermes-agent` | a minimal embeddable Python agent |
-| `picoclaw` | `hermes-agent` | a tiny Go edge/SBC binary |
-| `eliza` | `openclaw`, `picoclaw`, `hermes-agent`, `nanobot` | autonomous social/web3 swarm bots |
+| `picoclaw` | `openclaw`, `hermes-agent` | a tiny Go edge/SBC binary |
+| `eliza` | `openclaw`, `picoclaw`, `hermes-agent` | autonomous social/web3 swarm bots |
 | `ironclaw` | `openclaw`, `zeroclaw` | WASM-sandboxed execution of untrusted code |
-| `openfang` | `oh-my-openagent` | an MCP-native Rust agent-OS |
-| `nullclaw` | `oh-my-openagent` | the absolute smallest (Zig) footprint |
+| `nanoclaw` | `openclaw`, `zeroclaw`, `hermes-agent`, `nanobot` | containerised chat-app connectors |
+| `openfang` | `openclaw`, `zeroclaw`, `oh-my-openagent` | an MCP-native Rust agent-OS |
+| `claw-code` | `openclaw` | bleeding-edge Rust coding (experimental) |
+| `nullclaw` | `openclaw`, `zeroclaw`, `ironclaw`, `oh-my-openagent` | the absolute smallest (Zig) footprint |
 
 > This is the **same lesson as the use-case table, proven from the other direction**: raw metrics would tell you to ignore these — but each holds a job the metrics don't measure. Dominance ≠ uselessness when the dimensions are generic.
 
 ### Graph signal: centrality, clustering & the *real* network effect
 
-In the repo-similarity graph (1,138 nodes / 4,980 edges), the claws **don't form one cluster** — they scatter across **9 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
+In the repo-similarity graph (1,138 nodes / 5,170 edges), the claws **don't form one cluster** — they scatter across **9 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
 
-- **Centrality (PageRank).** Most hub-like claws: `nanobot` (0.0010), `nanoclaw` (0.0009), `openfang` (0.0008). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
+- **Centrality (PageRank).** Most hub-like claws: `nanoclaw` (0.0009), `openfang` (0.0008), `nanobot` (0.0008). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
 - **Closest claw pair:** `nullclaw` ⇄ `openclaw` (w=0.38) — near-substitutes. The `zeroclaw` ⇄ `openclaw` edge confirms they compete for the same slot.
 - **The honest network-effect caveat.** The similarity graph measures shared topics/authors, **not** 'plugs-into' dependency — so it does *not* by itself prove OpenClaw lock-in. The one direct graph signal that does is **`openclaw` ⇄ `clawhub` (its official skill directory) at w=0.76** — the strongest accessory tie of any claw. The broader lock-in argument below rests on real-world integration, which the graph under-counts, not over-counts.
 
@@ -124,8 +132,8 @@ These claws are **not interchangeable** — they target different jobs. Use this
 | [hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | Python | **Python-first builders** who want an agent that *learns/grows over time*, broad model interop, and NousResearch's research lineage. | you want TS or the OpenClaw plug-in ecosystem (it has neither). |
 | [NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | TypeScript | **Enterprise GPU / managed inference** — run OpenClaw *or* Hermes more securely inside NVIDIA OpenShell. | you're not on NVIDIA infra or want a simple self-host. |
 | [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | Rust | **Production self-host where quality matters** — 'deploy anywhere, swap anything' infra, fully autonomous, top health & resilience. The connoisseur's pick. | you depend on OpenClaw's accessory ecosystem or want a TS codebase. |
-| [nanobot](https://github.com/HKUDS/nanobot) † | General assistant | Python | **Embedding a lightweight agent into your own tools/chats/workflows** — small Python surface, quick to wire in. | you want a full assistant *platform* or strong maintainer resilience (bus 2). |
 | [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | TypeScript | **Serious software engineering on big codebases** — a TUI/IDE 'pickaxe' agent harness for complex SWE and multi-tool orchestration. | you want a general life/personal assistant rather than a coding harness. |
+| [nanobot](https://github.com/HKUDS/nanobot) † | General assistant | Python | **Embedding a lightweight agent into your own tools/chats/workflows** — small Python surface, quick to wire in. | you want a full assistant *platform* or strong maintainer resilience (bus 2). |
 | [picoclaw](https://github.com/sipeed/picoclaw) | General assistant | Go | **Edge / embedded / SBC** deployments — a tiny, fast, single Go binary to automate mundane tasks cheaply, anywhere. | you need a rich plugin ecosystem or heavy multi-agent orchestration. |
 | [eliza](https://github.com/elizaOS/eliza) † | General assistant | TypeScript | **Always-on autonomous social agents** — Discord/Telegram/Slack bots, crypto/web3 agents, swarms, on a mature plugin framework. | you want a personal CLI/desktop assistant, not deployed autonomous bots. |
 | [ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | Rust | **Privacy/security-first** agent-OS — sandboxed CodeAct via WASM; good when the agent runs untrusted code and isolation matters. | you want plug-and-play or the largest community/ecosystem. |
@@ -143,8 +151,8 @@ These claws are **not interchangeable** — they target different jobs. Use this
 | **Best on raw metrics** | [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | tops the composite (health/resilience/freshness) |
 | **Largest ecosystem & accessory support** | [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | the hub every skill/router/memory tool you've starred targets; TS + crypto-friendly |
 | **Code quality / least bus-factor risk** | [`NVIDIA/NemoClaw`](https://github.com/NVIDIA/NemoClaw) | highest bus factor (5) — most resilient to a maintainer leaving |
-| **Best health score** | [`sipeed/picoclaw`](https://github.com/sipeed/picoclaw) | health 85 — cleanest maintenance signals |
-| **Fastest-growing right now** | [`ultraworkers/claw-code`](https://github.com/ultraworkers/claw-code) | ~112,828 est. stars/30d |
+| **Best health score** | [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) | health 85 — cleanest maintenance signals |
+| **Fastest-growing right now** | [`openclaw/openclaw`](https://github.com/openclaw/openclaw) | ~111,038 est. stars/30d |
 | **Security / sandboxed execution** | [`NVIDIA/NemoClaw`](https://github.com/NVIDIA/NemoClaw) | hardened/containerized runtime |
 | **Coding agent** | [`code-yeongyu/oh-my-openagent`](https://github.com/code-yeongyu/oh-my-openagent) | purpose-built for code |
 | **Tiny / edge / self-host cheap** | `sipeed/picoclaw` · `nullclaw/nullclaw` | minimal footprints (Go / Zig) |
@@ -167,4 +175,4 @@ These claws are **not interchangeable** — they target different jobs. Use this
 - **Why these weights:** this is an *adoption* decision, so battle-testing (adoption) and survivability (resilience, maturity) are weighted as heavily as raw health, and hype (momentum) is capped at 15% and log-scaled — a 2-month-old repo riding a star spike shouldn't outrank a seasoned, multi-maintainer project.
 - **Snapshot-bound.** Claws move weekly; momentum especially can flip fast. Re-run after a fresh `npm run refresh`.
 
-<sub>Claws ranked: 13 · Snapshot: 2026-08-07T23:57:40.892Z · regenerate via scripts/reports/which_claw.py</sub>
+<sub>Claws ranked: 13 · Snapshot: 2026-08-11T18:59:16.380Z · regenerate via scripts/reports/which_claw.py</sub>

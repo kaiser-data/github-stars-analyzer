@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (11d)">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (15d)">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 .srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
@@ -10,7 +10,7 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="260" rx="8" class="srf"/>
-<text x="14" y="25" class="ttl">Biggest star gains (11d)</text>
+<text x="14" y="25" class="ttl">Biggest star gains (15d)</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/AI-For-Beginners</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
 <text x="594.0" y="49.0" class="val" dominant-baseline="central">10,212</text>

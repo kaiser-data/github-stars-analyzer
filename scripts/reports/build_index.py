@@ -46,6 +46,7 @@ GENERATORS = [
     "ai_coding_tuis.py",
     "finetuning_stack.py",
     "trending_now.py",
+    "charting_stack.py",
 ]
 
 def run_generators():

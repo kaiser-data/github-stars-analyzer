@@ -1,8 +1,13 @@
 # MCP (Model Context Protocol) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities).
+> Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`), cross-referenced with the repo-similarity graph (1,596 nodes / 5,170 edges, 31 communities).
 >
-> Generated 2026-08-08 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-08-11 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+
+![Top tools by stars](assets/mcp-tooling-top-tools.svg)
+
+![Tools per category](assets/mcp-tooling-categories.svg)
+
 
 > **What is MCP?** The Model Context Protocol is an open standard (Anthropic, late 2024) that lets LLM apps talk to external tools/data through a uniform interface — the 'USB-C port' for AI. **Servers** expose capabilities; **clients/hosts** (Claude Desktop, Cursor, editors) consume them; **gateways** govern them at scale.
 
@@ -32,46 +37,46 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Learning / reference | — | MIT | 91,941 (▲501) | Hot | 64 | very active | 5d ago | 1.7y | 16 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | SDK / framework | TypeScript | NOASSERTION | 89,327 (▲400) | Hot | 83 | very active | 2d ago | 1.7y | 15 |
-| [upstash/context7](https://github.com/upstash/context7) | Server · code intelligence | TypeScript | MIT | 60,396 (▲586) | Hot | 84 | very active | 0d ago | 1.4y | 18 |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Server · browser/web | TypeScript | Apache-2.0 | 35,895 (▲369) | Mature | 76 | very active | 0d ago | 1.4y | 6 |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | Server · dev-tooling | Go | MIT | 32,035 (▲290) | Hot | 88 | very active | 0d ago | 1.4y | 29 |
-| [oraios/serena](https://github.com/oraios/serena) | Server · code intelligence | Python | MIT | 27,719 (▲726) | Hot | 79 | very active | 2d ago | 1.4y | 14 |
-| [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | SDK / framework | Python | Apache-2.0 | 27,103 (▲238) | Hot | 79 | very active | 0d ago | 1.7y | 16 |
-| [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | Server · dev-tooling | TypeScript | MIT | 22,630 (▲211) | Hot | 79 | very active | 1d ago | 1.2y | 9 |
-| [mksglu/context-mode](https://github.com/mksglu/context-mode) | Server · code intelligence | TypeScript | NOASSERTION | 19,694 (▲343) | Rising | 78 | very active | 0d ago | 5mo | 2 |
-| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Learning / reference | Jupyter Notebook | MIT | 16,938 (▲97) | Hot | 70 | very active | 2d ago | 1.3y | 6 |
-| [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) | Gateway / control plane | Go | Apache-2.0 | 16,137 (▲110) | Mature | 93 | very active | 0d ago | 2.2y | 27 |
-| [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) | SDK / framework | TypeScript | NOASSERTION | 13,095 (▲141) | Hot | 76 | very active | 1d ago | 1.9y | 9 |
-| [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome) | Server · browser/web | TypeScript | MIT | 12,270 (▲63) | Declining | 17 | stale | 7mo ago | 1.2y | 0 |
-| [tadata-org/fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) | SDK / framework | Python | MIT | 11,977 (▲18) | Declining | 13 | stale | 8mo ago | 1.4y | 0 |
-| [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) | Client / host | TypeScript | — | 10,615 (▲127) | Hot | 79 | very active | 0d ago | 1.8y | 3 |
-| [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | SDK / framework | TypeScript | MIT | 10,457 (▲64) | Hot | 84 | very active | 0d ago | 1.4y | 5 |
-| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | Server · game/platform | TypeScript | Apache-2.0 | 5,835 (▲172) | Hot | 71 | very active | 1d ago | 1.4y | 5 |
-| [Klavis-AI/klavis](https://github.com/Klavis-AI/klavis) | Gateway / control plane | Python | Apache-2.0 | 5,786 (▲8) | Declining | 52 | slowing | 2mo ago | 1.3y | 1 |
-| [Coding-Solo/godot-mcp](https://github.com/Coding-Solo/godot-mcp) | Server · game/platform | JavaScript | MIT | 5,112 (▲189) | Declining | 25 | slowing | 3mo ago | 1.4y | 0 |
-| [oomol-lab/open-connector](https://github.com/oomol-lab/open-connector) | Gateway / control plane | TypeScript | Apache-2.0 | 4,425 (▲1,047) | Hot | 100 | very active | 0d ago | 1mo | 29 |
-| [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers) | Learning / reference | — | MIT | 4,252 (▲24) | Mature | 46 | active | 25d ago | 1.7y | 1 |
-| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Server · code intelligence | Rust | Apache-2.0 | 3,540 (▲120) | Hot | 80 | very active | 1d ago | 4mo | 3 |
-| [bytebase/dbhub](https://github.com/bytebase/dbhub) | Server · database/data | TypeScript | MIT | 3,301 (▲67) | Hot | 74 | very active | 2d ago | 1.4y | 7 |
-| [blazickjp/arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | Server · docs/research | Python | Apache-2.0 | 3,029 (▲41) | Mature | 67 | very active | 10d ago | 1.7y | 6 |
-| [brightdata/brightdata-mcp](https://github.com/brightdata/brightdata-mcp) | Server · browser/web | JavaScript | MIT | 2,566 (▲28) | Mature | 68 | very active | 11d ago | 1.3y | 3 |
-| [Kochava-Studios/witsy](https://github.com/Kochava-Studios/witsy) | Client / host | TypeScript | AGPL-3.0 | 2,014 (▲5) | Mature | 45 | slowing | 3mo ago | 2.3y | 0 |
-| [CoderGamester/mcp-unity](https://github.com/CoderGamester/mcp-unity) | Server · game/platform | C# | MIT | 1,859 (▲14) | Hot | 63 | very active | 3d ago | 1.4y | 8 |
-| [ravitemer/mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | Client / host | Lua | MIT | 1,783 (▼2) | Declining | 22 | stale | 6mo ago | 1.5y | 0 |
-| [hi-godot/godot-ai](https://github.com/hi-godot/godot-ai) | Server · game/platform | GDScript | MIT | 1,488 (▲226) | Hot | 80 | very active | 0d ago | 3mo | 11 |
-| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Server · code intelligence | JavaScript | MIT | 882 (▲5) | Declining | 57 | slowing | 2mo ago | 1.7y | 1 |
-| [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) | Server · dev-tooling | TypeScript | NOASSERTION | 808 (▲15) | Hot | 83 | very active | 0d ago | 1.4y | 16 |
-| [hustcc/mcp-mermaid](https://github.com/hustcc/mcp-mermaid) | Server · docs/research | TypeScript | MIT | 621 (▲6) | Declining | 49 | slowing | 2mo ago | 1.2y | 1 |
-| [SonarSource/sonarqube-mcp-server](https://github.com/SonarSource/sonarqube-mcp-server) | Server · dev-tooling | Java | NOASSERTION | 617 (▲9) | Hot | 76 | very active | 1d ago | 1.3y | 17 |
-| [youichi-uda/godot-mcp-pro](https://github.com/youichi-uda/godot-mcp-pro) | Server · game/platform | GDScript | NOASSERTION | 553 (▲20) | Rising | 68 | very active | 6d ago | 5mo | 2 |
-| [reading-plus-ai/mcp-server-data-exploration](https://github.com/reading-plus-ai/mcp-server-data-exploration) | Server · database/data | Python | MIT | 545 (▲1) | Abandoned | 1 | stale | 1.4y ago | 1.7y | 0 |
-| [tugcantopaloglu/godot-mcp](https://github.com/tugcantopaloglu/godot-mcp) | Server · game/platform | JavaScript | MIT | 390 (▲20) | Rising | 54 | active | 26d ago | 6mo | 2 |
-| [VectifyAI/pageindex-mcp](https://github.com/VectifyAI/pageindex-mcp) | Server · docs/research | TypeScript | MIT | 378 (▲5) | Rising | 68 | active | 13d ago | 11mo | 2 |
-| [neo4j/mcp](https://github.com/neo4j/mcp) | Server · database/data | Go | NOASSERTION | 278 (▲2) | Hot | 76 | very active | 7d ago | 11mo | 5 |
-| [storybookjs/mcp](https://github.com/storybookjs/mcp) | Server · dev-tooling | TypeScript | MIT | 265 (▲1) | Hot | 75 | very active | 0d ago | 11mo | 8 |
-| [aipotheosis-labs/gate22](https://github.com/aipotheosis-labs/gate22) | Gateway / control plane | TypeScript | Apache-2.0 | 175 | Declining | 26 | stale | 7mo ago | 11mo | 0 |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Learning / reference | — | MIT | 91,941 | Hot | 64 | very active | 9d ago | 1.7y | 16 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | SDK / framework | TypeScript | NOASSERTION | 89,327 | Hot | 82 | very active | 6d ago | 1.7y | 15 |
+| [upstash/context7](https://github.com/upstash/context7) | Server · code intelligence | TypeScript | MIT | 60,396 | Hot | 83 | very active | 4d ago | 1.4y | 18 |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Server · browser/web | TypeScript | Apache-2.0 | 35,895 | Mature | 76 | very active | 4d ago | 1.4y | 6 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | Server · dev-tooling | Go | MIT | 32,035 | Hot | 88 | very active | 4d ago | 1.4y | 29 |
+| [oraios/serena](https://github.com/oraios/serena) | Server · code intelligence | Python | MIT | 27,719 | Hot | 79 | very active | 6d ago | 1.4y | 14 |
+| [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | SDK / framework | Python | Apache-2.0 | 27,103 | Hot | 78 | very active | 4d ago | 1.7y | 16 |
+| [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | Server · dev-tooling | TypeScript | MIT | 22,630 | Hot | 79 | very active | 4d ago | 1.2y | 9 |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode) | Server · code intelligence | TypeScript | NOASSERTION | 19,694 | Rising | 78 | very active | 4d ago | 5mo | 2 |
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Learning / reference | Jupyter Notebook | MIT | 16,938 | Hot | 69 | very active | 6d ago | 1.4y | 6 |
+| [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) | Gateway / control plane | Go | Apache-2.0 | 16,137 | Mature | 93 | very active | 4d ago | 2.2y | 27 |
+| [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) | SDK / framework | TypeScript | NOASSERTION | 13,095 | Hot | 75 | very active | 5d ago | 1.9y | 9 |
+| [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome) | Server · browser/web | TypeScript | MIT | 12,270 | Declining | 17 | stale | 7mo ago | 1.2y | 0 |
+| [tadata-org/fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) | SDK / framework | Python | MIT | 11,977 | Declining | 13 | stale | 8mo ago | 1.4y | 0 |
+| [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) | Client / host | TypeScript | — | 10,615 | Hot | 79 | very active | 4d ago | 1.9y | 3 |
+| [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | SDK / framework | TypeScript | MIT | 10,457 | Hot | 84 | very active | 4d ago | 1.4y | 5 |
+| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | Server · game/platform | TypeScript | Apache-2.0 | 5,835 | Hot | 71 | very active | 5d ago | 1.4y | 5 |
+| [Klavis-AI/klavis](https://github.com/Klavis-AI/klavis) | Gateway / control plane | Python | Apache-2.0 | 5,786 | Declining | 52 | slowing | 2mo ago | 1.3y | 1 |
+| [Coding-Solo/godot-mcp](https://github.com/Coding-Solo/godot-mcp) | Server · game/platform | JavaScript | MIT | 5,112 | Declining | 25 | slowing | 3mo ago | 1.5y | 0 |
+| [oomol-lab/open-connector](https://github.com/oomol-lab/open-connector) | Gateway / control plane | TypeScript | Apache-2.0 | 4,425 | Hot | 99 | very active | 4d ago | 1mo | 29 |
+| [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers) | Learning / reference | — | MIT | 4,252 | Mature | 46 | active | 29d ago | 1.7y | 1 |
+| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Server · code intelligence | Rust | Apache-2.0 | 3,540 | Hot | 79 | very active | 4d ago | 4mo | 3 |
+| [bytebase/dbhub](https://github.com/bytebase/dbhub) | Server · database/data | TypeScript | MIT | 3,301 | Hot | 74 | very active | 6d ago | 1.4y | 7 |
+| [blazickjp/arxiv-mcp-server](https://github.com/blazickjp/arxiv-mcp-server) | Server · docs/research | Python | Apache-2.0 | 3,029 | Mature | 66 | very active | 14d ago | 1.7y | 6 |
+| [brightdata/brightdata-mcp](https://github.com/brightdata/brightdata-mcp) | Server · browser/web | JavaScript | MIT | 2,566 | Mature | 68 | very active | 15d ago | 1.3y | 3 |
+| [Kochava-Studios/witsy](https://github.com/Kochava-Studios/witsy) | Client / host | TypeScript | AGPL-3.0 | 2,014 | Mature | 45 | slowing | 3mo ago | 2.3y | 0 |
+| [CoderGamester/mcp-unity](https://github.com/CoderGamester/mcp-unity) | Server · game/platform | C# | MIT | 1,859 | Hot | 63 | very active | 7d ago | 1.4y | 8 |
+| [ravitemer/mcphub.nvim](https://github.com/ravitemer/mcphub.nvim) | Client / host | Lua | MIT | 1,783 | Declining | 22 | stale | 6mo ago | 1.5y | 0 |
+| [hi-godot/godot-ai](https://github.com/hi-godot/godot-ai) | Server · game/platform | GDScript | MIT | 1,488 | Hot | 79 | very active | 4d ago | 4mo | 11 |
+| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Server · code intelligence | JavaScript | MIT | 882 | Declining | 57 | slowing | 2mo ago | 1.7y | 1 |
+| [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) | Server · dev-tooling | TypeScript | NOASSERTION | 808 | Hot | 82 | very active | 4d ago | 1.4y | 16 |
+| [hustcc/mcp-mermaid](https://github.com/hustcc/mcp-mermaid) | Server · docs/research | TypeScript | MIT | 621 | Declining | 49 | slowing | 2mo ago | 1.2y | 1 |
+| [SonarSource/sonarqube-mcp-server](https://github.com/SonarSource/sonarqube-mcp-server) | Server · dev-tooling | Java | NOASSERTION | 617 | Hot | 76 | very active | 5d ago | 1.3y | 17 |
+| [youichi-uda/godot-mcp-pro](https://github.com/youichi-uda/godot-mcp-pro) | Server · game/platform | GDScript | NOASSERTION | 553 | Rising | 68 | very active | 10d ago | 5mo | 2 |
+| [reading-plus-ai/mcp-server-data-exploration](https://github.com/reading-plus-ai/mcp-server-data-exploration) | Server · database/data | Python | MIT | 545 | Abandoned | 1 | stale | 1.4y ago | 1.7y | 0 |
+| [tugcantopaloglu/godot-mcp](https://github.com/tugcantopaloglu/godot-mcp) | Server · game/platform | JavaScript | MIT | 390 | Rising | 53 | active | 29d ago | 6mo | 2 |
+| [VectifyAI/pageindex-mcp](https://github.com/VectifyAI/pageindex-mcp) | Server · docs/research | TypeScript | MIT | 378 | Rising | 68 | active | 17d ago | 11mo | 2 |
+| [neo4j/mcp](https://github.com/neo4j/mcp) | Server · database/data | Go | NOASSERTION | 278 | Hot | 75 | very active | 11d ago | 11mo | 5 |
+| [storybookjs/mcp](https://github.com/storybookjs/mcp) | Server · dev-tooling | TypeScript | MIT | 265 | Hot | 74 | very active | 4d ago | 11mo | 8 |
+| [aipotheosis-labs/gate22](https://github.com/aipotheosis-labs/gate22) | Gateway / control plane | TypeScript | Apache-2.0 | 175 | Declining | 26 | stale | 8mo ago | 11mo | 0 |
 
 ## By category
 
@@ -249,38 +254,38 @@ _Where the ecosystem is catalogued and taught._
 
 A maturity signal — major vendors shipping **first-party** MCP servers in your stars:
 
-- **Upstash** — [upstash/context7](https://github.com/upstash/context7) · 60,396★ · health 84
+- **Upstash** — [upstash/context7](https://github.com/upstash/context7) · 60,396★ · health 83
 - **Microsoft** — [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) · 35,895★ · health 76
 - **GitHub** — [github/github-mcp-server](https://github.com/github/github-mcp-server) · 32,035★ · health 88
-- **Microsoft (edu)** — [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) · 16,938★ · health 70
+- **Microsoft (edu)** — [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) · 16,938★ · health 69
 - **Google** — [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) · 16,137★ · health 93
-- **Sentry** — [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) · 808★ · health 83
+- **Sentry** — [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp) · 808★ · health 82
 - **SonarSource** — [SonarSource/sonarqube-mcp-server](https://github.com/SonarSource/sonarqube-mcp-server) · 617★ · health 76
-- **Neo4j** — [neo4j/mcp](https://github.com/neo4j/mcp) · 278★ · health 76
-- **Storybook** — [storybookjs/mcp](https://github.com/storybookjs/mcp) · 265★ · health 75
+- **Neo4j** — [neo4j/mcp](https://github.com/neo4j/mcp) · 278★ · health 75
+- **Storybook** — [storybookjs/mcp](https://github.com/storybookjs/mcp) · 265★ · health 74
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 40 projects span **14 of the graph's 34 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
+**Community clustering.** These 40 projects span **14 of the graph's 31 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
 
-- **Community 12** (20): `tadata-org/fastapi_mcp`, `oomol-lab/open-connector`, `brightdata/brightdata-mcp`, `bytebase/dbhub`, `github/github-mcp-server`, `getsentry/sentry-mcp`, `SonarSource/sonarqube-mcp-server`, `czlonkowski/n8n-mcp`, `upstash/context7`, `shaneholloman/mcp-knowledge-graph`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`, `hustcc/mcp-mermaid`, `Coding-Solo/godot-mcp`, `hi-godot/godot-ai`, `youichi-uda/godot-mcp-pro`, `tugcantopaloglu/godot-mcp`, `CoderGamester/mcp-unity`, `punkpeye/awesome-mcp-servers`
-- **Community 20** (3): `PrefectHQ/fastmcp`, `Klavis-AI/klavis`, `aipotheosis-labs/gate22`
-- **Community 8** (3): `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `mksglu/context-mode`
-- **Community 2** (3): `hangwin/mcp-chrome`, `storybookjs/mcp`, `mobile-next/mobile-mcp`
-- **Community 17** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
+- **Community 12** (13): `PrefectHQ/fastmcp`, `tadata-org/fastapi_mcp`, `Klavis-AI/klavis`, `aipotheosis-labs/gate22`, `bytebase/dbhub`, `shaneholloman/mcp-knowledge-graph`, `blazickjp/arxiv-mcp-server`, `Coding-Solo/godot-mcp`, `hi-godot/godot-ai`, `youichi-uda/godot-mcp-pro`, `tugcantopaloglu/godot-mcp`, `CoderGamester/mcp-unity`, `punkpeye/awesome-mcp-servers`
+- **Community 10** (10): `oomol-lab/open-connector`, `brightdata/brightdata-mcp`, `github/github-mcp-server`, `getsentry/sentry-mcp`, `czlonkowski/n8n-mcp`, `upstash/context7`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`, `hustcc/mcp-mermaid`
+- **Community 14** (3): `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `mksglu/context-mode`
+- **Community 0** (3): `hangwin/mcp-chrome`, `storybookjs/mcp`, `mobile-next/mobile-mcp`
+- **Community 20** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' MCP projects in your ecosystem:
 
-- `modelcontextprotocol/typescript-sdk` — PageRank 0.0034
-- `microsoft/mcp-for-beginners` — PageRank 0.0029
-- `mksglu/context-mode` — PageRank 0.0028
+- `microsoft/mcp-for-beginners` — PageRank 0.0032
+- `modelcontextprotocol/typescript-sdk` — PageRank 0.0031
+- `mksglu/context-mode` — PageRank 0.0027
 - `yvgude/lean-ctx` — PageRank 0.0015
-- `github/github-mcp-server` — PageRank 0.0014
 - `punkpeye/awesome-mcp-servers` — PageRank 0.0014
+- `github/github-mcp-server` — PageRank 0.0013
 - `Coding-Solo/godot-mcp` — PageRank 0.0011
 - `blazickjp/arxiv-mcp-server` — PageRank 0.0011
-- `microsoft/playwright-mcp` — PageRank 0.0011
-- `czlonkowski/n8n-mcp` — PageRank 0.0009
+- `microsoft/playwright-mcp` — PageRank 0.0010
+- `SonarSource/sonarqube-mcp-server` — PageRank 0.0010
 
 **Direct links between MCP projects** (top similarity edges where both endpoints are in this report):
 
@@ -299,7 +304,7 @@ A maturity signal — major vendors shipping **first-party** MCP servers in your
 - `microsoft/mcp-for-beginners` ⇄ `czlonkowski/n8n-mcp` (w=0.433) — topics: mcp, mcp-server; authors: dependabot[bot], Copilot
 - `hi-godot/godot-ai` ⇄ `punkpeye/awesome-mcp-servers` (w=0.400) — topics: ai, mcp
 - `hustcc/mcp-mermaid` ⇄ `github/github-mcp-server` (w=0.400) — topics: mcp, mcp-server
-- …and 22 more.
+- …and 21 more.
 
 ## Maintenance & risk signal
 
@@ -307,36 +312,36 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 
 | Project | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| oomol-lab/open-connector | 100 | Hot | very active | 5 | 13% | 12 |
+| oomol-lab/open-connector | 99 | Hot | very active | 5 | 13% | 12 |
 | googleapis/mcp-toolbox | 93 | Mature | very active | 4 | 19% | 47 |
 | github/github-mcp-server | 88 | Hot | very active | 3 | 28% | 73 |
 | mcp-use/mcp-use | 84 | Hot | very active | 2 | 42% | 1203 |
-| upstash/context7 | 84 | Hot | very active | 2 | 42% | 101 |
-| getsentry/sentry-mcp | 83 | Hot | very active | 2 | 48% | 41 |
-| modelcontextprotocol/servers | 83 | Hot | very active | 3 | 30% | 26 |
-| yvgude/lean-ctx | 80 | Hot | very active | 1 | 95% | 243 |
-| hi-godot/godot-ai | 80 | Hot | very active | 1 | 53% | 94 |
-| PrefectHQ/fastmcp | 79 | Hot | very active | 1 | 77% | 112 |
+| upstash/context7 | 83 | Hot | very active | 2 | 42% | 101 |
+| getsentry/sentry-mcp | 82 | Hot | very active | 2 | 48% | 41 |
+| modelcontextprotocol/servers | 82 | Hot | very active | 3 | 30% | 26 |
 | czlonkowski/n8n-mcp | 79 | Hot | very active | 1 | 73% | 251 |
 | oraios/serena | 79 | Hot | very active | 1 | 64% | 15 |
+| yvgude/lean-ctx | 79 | Hot | very active | 1 | 95% | 243 |
 | modelcontextprotocol/inspector | 79 | Hot | very active | 1 | 96% | 58 |
+| hi-godot/godot-ai | 79 | Hot | very active | 1 | 53% | 94 |
+| PrefectHQ/fastmcp | 78 | Hot | very active | 1 | 77% | 112 |
 | mksglu/context-mode | 78 | Rising | very active | 1 | 71% | 195 |
 | microsoft/playwright-mcp | 76 | Mature | very active | 2 | 36% | 69 |
-| neo4j/mcp | 76 | Hot | very active | 2 | 28% | 28 |
 | SonarSource/sonarqube-mcp-server | 76 | Hot | very active | 2 | 33% | 36 |
-| modelcontextprotocol/typescript-sdk | 76 | Hot | very active | 1 | 67% | 159 |
-| storybookjs/mcp | 75 | Hot | very active | 1 | 81% | 55 |
+| neo4j/mcp | 75 | Hot | very active | 2 | 28% | 28 |
+| modelcontextprotocol/typescript-sdk | 75 | Hot | very active | 1 | 67% | 159 |
 | bytebase/dbhub | 74 | Hot | very active | 1 | 90% | 6 |
+| storybookjs/mcp | 74 | Hot | very active | 1 | 81% | 55 |
 | mobile-next/mobile-mcp | 71 | Hot | very active | 1 | 90% | 50 |
-| microsoft/mcp-for-beginners | 70 | Hot | very active | 2 | 43% | 0 |
+| microsoft/mcp-for-beginners | 69 | Hot | very active | 2 | 43% | 0 |
 | brightdata/brightdata-mcp | 68 | Mature | very active | 1 | 55% | 12 |
 | VectifyAI/pageindex-mcp | 68 | Rising | active | 1 | 75% | 20 |
 | youichi-uda/godot-mcp-pro | 68 | Rising | very active | 1 | 55% | 19 |
-| blazickjp/arxiv-mcp-server | 67 | Mature | very active | 1 | 77% | 6 |
+| blazickjp/arxiv-mcp-server | 66 | Mature | very active | 1 | 77% | 6 |
 | punkpeye/awesome-mcp-servers | 64 | Hot | very active | 1 | 79% | 0 |
 | CoderGamester/mcp-unity | 63 | Hot | very active | 1 | 75% | 9 |
 | shaneholloman/mcp-knowledge-graph | 57 | Declining | slowing | 1 | 100% | 8 |
-| tugcantopaloglu/godot-mcp | 54 | Rising | active | 1 | 91% | 3 |
+| tugcantopaloglu/godot-mcp | 53 | Rising | active | 1 | 91% | 3 |
 | Klavis-AI/klavis | 52 | Declining | slowing | 1 | 100% | 79 |
 | hustcc/mcp-mermaid | 49 | Declining | slowing | 1 | 100% | 6 |
 | wong2/awesome-mcp-servers | 46 | Mature | active | 1 | 100% | 0 |
@@ -371,4 +376,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state. MCP moves *very* fast — treat ages/stars as a May-2026 snapshot.
 - Re-run after a fresh `classified.json` to refresh.
 
-<sub>Projects covered: 40 (25 servers) · Snapshot: 2026-08-07T23:57:40.892Z</sub>
+<sub>Projects covered: 40 (25 servers) · Snapshot: 2026-08-11T18:59:16.380Z</sub>

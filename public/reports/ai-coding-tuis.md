@@ -1,8 +1,8 @@
 # Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages
 
-> Derived from **kaiser-data**'s 1,535 starred repos (snapshot `2026-08-07T23:57:40.892Z`), cross-referenced with the repo-similarity graph (1,535 nodes / 4,980 edges, 34 communities). Pros/cons and task rankings are additionally backed by external evidence (Terminal-Bench 2.1, 2026 head-to-head comparisons) — see Methodology.
+> Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`), cross-referenced with the repo-similarity graph (1,596 nodes / 5,170 edges, 31 communities). Pros/cons and task rankings are additionally backed by external evidence (Terminal-Bench 2.1, 2026 head-to-head comparisons) — see Methodology.
 >
-> Generated 2026-08-08 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
+> Generated 2026-08-11 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/ai-coding-tuis-top-tools.svg)
 
@@ -37,37 +37,37 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | Terminal coding agent | TypeScript | MIT | 194,722 (▲4,651) | Hot | 83 | very active | 0d ago | 1.3y | 21 |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Terminal coding agent | Python | — | 140,599 (▲1,351) | Hot | 76 | very active | 1d ago | 1.5y | 7 |
-| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Multi-CLI glue | Rust | MIT | 125,449 (▲3,902) | Hot | 77 | very active | 0d ago | 1.0y | 14 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Terminal coding agent | TypeScript | Apache-2.0 | 106,408 (▲207) | Hot | 90 | very active | 0d ago | 1.3y | 15 |
-| [openai/codex](https://github.com/openai/codex) | Terminal coding agent | Rust | Apache-2.0 | 104,648 (▲2,888) | Hot | 95 | very active | 0d ago | 1.3y | 43 |
-| [earendil-works/pi](https://github.com/earendil-works/pi) | Terminal coding agent | TypeScript | MIT | 85,266 (▲6,686) | Hot | 90 | very active | 0d ago | 12mo | 20 |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Session / token ops | Rust | Apache-2.0 | 75,183 (▲1,775) | Hot | 78 | very active | 0d ago | 6mo | 11 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Terminal coding agent | TypeScript | NOASSERTION | 67,452 (▲807) | Hot | 78 | very active | 1d ago | 8mo | 5 |
-| [aaif-goose/goose](https://github.com/aaif-goose/goose) | Terminal coding agent | Rust | Apache-2.0 | 52,523 (▲747) | Hot | 99 | very active | 0d ago | 2.0y | 43 |
-| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Terminal coding agent | Python | Apache-2.0 | 48,029 (▲310) | Mature | 48 | slowing | 2mo ago | 3.2y | 3 |
-| [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | Multi-CLI glue | Python | MIT | 44,770 (▲2,323) | Hot | 62 | very active | 0d ago | 6mo | 6 |
-| [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea) | TUI building blocks | Go | MIT | 44,223 (▲240) | Classic | 66 | active | 0d ago | 6.6y | 6 |
-| [charmbracelet/crush](https://github.com/charmbracelet/crush) | Terminal coding agent | Go | NOASSERTION | 27,153 (▲272) | Hot | 82 | very active | 0d ago | 1.2y | 13 |
-| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | Terminal coding agent | TypeScript | Apache-2.0 | 26,826 (▲473) | Hot | 83 | very active | 0d ago | 1.1y | 21 |
-| [mksglu/context-mode](https://github.com/mksglu/context-mode) | Session / token ops | TypeScript | NOASSERTION | 19,694 (▲343) | Rising | 78 | very active | 0d ago | 5mo | 2 |
-| [github/copilot-cli](https://github.com/github/copilot-cli) | Terminal coding agent | Shell | NOASSERTION | 11,068 (▲43) | Mature | 68 | very active | 0d ago | 3.6y | 1 |
-| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | Session / token ops | TypeScript | MIT | 9,192 (▲241) | Hot | 79 | very active | 3d ago | 3mo | 10 |
-| [charmbracelet/bubbles](https://github.com/charmbracelet/bubbles) | TUI building blocks | Go | MIT | 8,759 (▲41) | Mature | 59 | active | 3d ago | 6.6y | 3 |
-| [CodebuffAI/freebuff](https://github.com/CodebuffAI/freebuff) | Terminal coding agent | TypeScript | Apache-2.0 | 8,571 | Mature | 74 | very active | 0d ago | 2.1y | 2 |
-| [UfoMiao/zcf](https://github.com/UfoMiao/zcf) | Multi-CLI glue | TypeScript | MIT | 6,076 (▼4) | Hot | 71 | very active | 2d ago | 1.0y | 5 |
-| [dagger/container-use](https://github.com/dagger/container-use) | Safety / isolation | Go | Apache-2.0 | 3,997 (▲75) | Declining | 39 | active | 1mo ago | 1.2y | 1 |
-| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Safety / isolation | Rust | AGPL-3.0 | 2,644 (▲22) | Rising | 79 | very active | 0d ago | 6mo | 2 |
-| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Safety / isolation | TypeScript | MIT | 1,475 (▲15) | Hot | 79 | very active | 0d ago | 7mo | 3 |
-| [affaan-m/agentshield](https://github.com/affaan-m/agentshield) | Safety / isolation | TypeScript | MIT | 1,053 (▲30) | Hot | 64 | very active | 17d ago | 5mo | 4 |
-| [ctxrs/ctx](https://github.com/ctxrs/ctx) | Session / token ops | Rust | Apache-2.0 | 1,013 (▲39) | Rising | 80 | very active | 0d ago | 5mo | 1 |
-| [terryso/claude-auto-resume](https://github.com/terryso/claude-auto-resume) | Session / token ops | Shell | MIT | 813 (▲7) | Declining | 27 | slowing | 3mo ago | 1.1y | 0 |
-| [zamalali/langchain-code](https://github.com/zamalali/langchain-code) | Multi-CLI glue | Python | Apache-2.0 | 440 | Declining | 12 | stale | 8mo ago | 11mo | 0 |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | Terminal coding agent | TypeScript | MIT | 194,722 | Hot | 83 | very active | 4d ago | 1.3y | 21 |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Terminal coding agent | Python | — | 140,599 | Hot | 76 | very active | 5d ago | 1.5y | 7 |
+| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Multi-CLI glue | Rust | MIT | 125,449 | Hot | 77 | very active | 4d ago | 1.0y | 14 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Terminal coding agent | TypeScript | Apache-2.0 | 106,408 | Hot | 89 | very active | 4d ago | 1.3y | 15 |
+| [openai/codex](https://github.com/openai/codex) | Terminal coding agent | Rust | Apache-2.0 | 104,648 | Hot | 94 | very active | 4d ago | 1.3y | 43 |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | Terminal coding agent | TypeScript | MIT | 85,266 | Hot | 90 | very active | 4d ago | 1.0y | 20 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Session / token ops | Rust | Apache-2.0 | 75,183 | Hot | 78 | very active | 4d ago | 6mo | 11 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Terminal coding agent | TypeScript | NOASSERTION | 67,452 | Hot | 78 | very active | 4d ago | 8mo | 5 |
+| [aaif-goose/goose](https://github.com/aaif-goose/goose) | Terminal coding agent | Rust | Apache-2.0 | 52,523 | Hot | 99 | very active | 4d ago | 2.0y | 43 |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Terminal coding agent | Python | Apache-2.0 | 48,029 | Mature | 45 | slowing | 2mo ago | 3.3y | 3 |
+| [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | Multi-CLI glue | Python | MIT | 44,770 | Hot | 61 | very active | 4d ago | 6mo | 6 |
+| [charmbracelet/bubbletea](https://github.com/charmbracelet/bubbletea) | TUI building blocks | Go | MIT | 44,223 | Classic | 66 | active | 4d ago | 6.6y | 6 |
+| [charmbracelet/crush](https://github.com/charmbracelet/crush) | Terminal coding agent | Go | NOASSERTION | 27,153 | Hot | 81 | very active | 4d ago | 1.2y | 13 |
+| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | Terminal coding agent | TypeScript | Apache-2.0 | 26,826 | Hot | 83 | very active | 4d ago | 1.1y | 21 |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode) | Session / token ops | TypeScript | NOASSERTION | 19,694 | Rising | 78 | very active | 4d ago | 5mo | 2 |
+| [github/copilot-cli](https://github.com/github/copilot-cli) | Terminal coding agent | Shell | NOASSERTION | 11,068 | Mature | 67 | very active | 4d ago | 3.6y | 1 |
+| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | Session / token ops | TypeScript | MIT | 9,192 | Hot | 78 | very active | 7d ago | 4mo | 10 |
+| [charmbracelet/bubbles](https://github.com/charmbracelet/bubbles) | TUI building blocks | Go | MIT | 8,759 | Mature | 59 | active | 7d ago | 6.6y | 3 |
+| [CodebuffAI/freebuff](https://github.com/CodebuffAI/freebuff) | Terminal coding agent | TypeScript | Apache-2.0 | 8,571 | Mature | 73 | very active | 4d ago | 2.1y | 2 |
+| [UfoMiao/zcf](https://github.com/UfoMiao/zcf) | Multi-CLI glue | TypeScript | MIT | 6,076 | Hot | 71 | very active | 5d ago | 1.0y | 5 |
+| [dagger/container-use](https://github.com/dagger/container-use) | Safety / isolation | Go | Apache-2.0 | 3,997 | Declining | 38 | active | 2mo ago | 1.2y | 1 |
+| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Safety / isolation | Rust | AGPL-3.0 | 2,644 | Rising | 79 | very active | 4d ago | 6mo | 2 |
+| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Safety / isolation | TypeScript | MIT | 1,475 | Hot | 78 | very active | 4d ago | 7mo | 3 |
+| [affaan-m/agentshield](https://github.com/affaan-m/agentshield) | Safety / isolation | TypeScript | MIT | 1,053 | Hot | 64 | very active | 20d ago | 6mo | 4 |
+| [ctxrs/ctx](https://github.com/ctxrs/ctx) | Session / token ops | Rust | Apache-2.0 | 1,013 | Rising | 79 | very active | 4d ago | 5mo | 1 |
+| [terryso/claude-auto-resume](https://github.com/terryso/claude-auto-resume) | Session / token ops | Shell | MIT | 813 | Declining | 26 | slowing | 3mo ago | 1.1y | 0 |
+| [zamalali/langchain-code](https://github.com/zamalali/langchain-code) | Multi-CLI glue | Python | Apache-2.0 | 440 | Declining | 11 | stale | 8mo ago | 12mo | 0 |
 | [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Session / token ops | Shell | MIT | 368 | Declining | 20 | stale | 6mo ago | 1.1y | 0 |
-| [evrendom/rudel](https://github.com/evrendom/rudel) | Session / token ops | TypeScript | MIT | 289 (▲1) | Hot | 74 | very active | 2d ago | 5mo | 4 |
+| [evrendom/rudel](https://github.com/evrendom/rudel) | Session / token ops | TypeScript | MIT | 289 | Hot | 73 | very active | 6d ago | 5mo | 4 |
 | [rsrohan99/tig](https://github.com/rsrohan99/tig) | Terminal coding agent | Python | — | 153 | Abandoned | 5 | stale | 1.3y ago | 1.3y | 0 |
-| [BA-CalderonMorales/terminal-jarvis](https://github.com/BA-CalderonMorales/terminal-jarvis) | Multi-CLI glue | Rust | MIT | 131 (▼2) | Mature | 80 | very active | 0d ago | 1.0y | 2 |
+| [BA-CalderonMorales/terminal-jarvis](https://github.com/BA-CalderonMorales/terminal-jarvis) | Multi-CLI glue | Rust | MIT | 131 | Mature | 79 | very active | 4d ago | 1.0y | 2 |
 
 ## Advantages & disadvantages — agent by agent
 
@@ -232,24 +232,26 @@ The June 2026 Terminal-Bench 2.1 snapshot makes one thing unambiguous — the ag
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 31 tools span **10 of the graph's 34 communities**.
+**Community clustering.** These 31 tools span **8 of the graph's 31 communities**.
 
-- **Community 8** (9): `Aider-AI/aider`, `github/copilot-cli`, `earendil-works/pi`, `CodebuffAI/freebuff`, `mksglu/context-mode`, `terryso/claude-auto-resume`, `sheeki03/tirith`, `kenryu42/cc-safety-net`, `farion1231/cc-switch`
-- **Community 10** (8): `QwenLM/qwen-code`, `code-yeongyu/oh-my-openagent`, `rtk-ai/rtk`, `getagentseal/codeburn`, `ctxrs/ctx`, `affaan-m/agentshield`, `UfoMiao/zcf`, `BA-CalderonMorales/terminal-jarvis`
-- **Community 6** (7): `anthropics/claude-code`, `charmbracelet/crush`, `evrendom/rudel`, `Alishahryar1/free-claude-code`, `zamalali/langchain-code`, `charmbracelet/bubbletea`, `charmbracelet/bubbles`
+- **Community 14** (10): `anthropics/claude-code`, `Aider-AI/aider`, `github/copilot-cli`, `earendil-works/pi`, `CodebuffAI/freebuff`, `mksglu/context-mode`, `terryso/claude-auto-resume`, `sheeki03/tirith`, `kenryu42/cc-safety-net`, `farion1231/cc-switch`
+- **Community 13** (7): `charmbracelet/crush`, `evrendom/rudel`, `aniketkarne/ClaudeNightsWatch`, `Alishahryar1/free-claude-code`, `zamalali/langchain-code`, `charmbracelet/bubbletea`, `charmbracelet/bubbles`
+- **Community 15** (7): `code-yeongyu/oh-my-openagent`, `rtk-ai/rtk`, `getagentseal/codeburn`, `ctxrs/ctx`, `affaan-m/agentshield`, `UfoMiao/zcf`, `BA-CalderonMorales/terminal-jarvis`
+- **Community 12** (2): `google-gemini/gemini-cli`, `aaif-goose/goose`
+- **Community 1** (2): `rsrohan99/tig`, `dagger/container-use`
 
-**Centrality (PageRank in the full 1,535-repo graph)** — most 'hub-like' terminal-coding tools in your ecosystem:
+**Centrality (PageRank in the full 1,596-repo graph)** — most 'hub-like' terminal-coding tools in your ecosystem:
 
-- `github/copilot-cli` — PageRank 0.0058
-- `mksglu/context-mode` — PageRank 0.0028
-- `charmbracelet/bubbles` — PageRank 0.0018
-- `sheeki03/tirith` — PageRank 0.0014
-- `QwenLM/qwen-code` — PageRank 0.0013
-- `affaan-m/agentshield` — PageRank 0.0010
+- `github/copilot-cli` — PageRank 0.0055
+- `mksglu/context-mode` — PageRank 0.0027
+- `charmbracelet/bubbles` — PageRank 0.0017
+- `sheeki03/tirith` — PageRank 0.0013
+- `QwenLM/qwen-code` — PageRank 0.0012
+- `affaan-m/agentshield` — PageRank 0.0009
 - `aaif-goose/goose` — PageRank 0.0009
-- `kenryu42/cc-safety-net` — PageRank 0.0009
+- `kenryu42/cc-safety-net` — PageRank 0.0008
 - `charmbracelet/bubbletea` — PageRank 0.0008
-- `charmbracelet/crush` — PageRank 0.0008
+- `charmbracelet/crush` — PageRank 0.0007
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
@@ -275,35 +277,35 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
 | aaif-goose/goose | 99 | Hot | very active | 6 | 13% | 145 |
-| openai/codex | 95 | Hot | very active | 7 | 21% | 974 |
-| google-gemini/gemini-cli | 90 | Hot | very active | 3 | 19% | 574 |
+| openai/codex | 94 | Hot | very active | 7 | 21% | 974 |
 | earendil-works/pi | 90 | Hot | very active | 3 | 34% | 254 |
+| google-gemini/gemini-cli | 89 | Hot | very active | 3 | 19% | 574 |
 | anomalyco/opencode | 83 | Hot | very active | 2 | 44% | 857 |
 | QwenLM/qwen-code | 83 | Hot | very active | 2 | 40% | 587 |
-| charmbracelet/crush | 82 | Hot | very active | 2 | 34% | 179 |
-| ctxrs/ctx | 80 | Rising | very active | 1 | 100% | 23 |
-| BA-CalderonMorales/terminal-jarvis | 80 | Mature | very active | 1 | 97% | 47 |
-| getagentseal/codeburn | 79 | Hot | very active | 1 | 59% | 48 |
+| charmbracelet/crush | 81 | Hot | very active | 2 | 34% | 179 |
+| ctxrs/ctx | 79 | Rising | very active | 1 | 100% | 23 |
 | sheeki03/tirith | 79 | Rising | very active | 1 | 53% | 86 |
-| kenryu42/cc-safety-net | 79 | Hot | very active | 1 | 92% | 24 |
+| BA-CalderonMorales/terminal-jarvis | 79 | Mature | very active | 1 | 97% | 47 |
 | code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 82% | 225 |
 | rtk-ai/rtk | 78 | Hot | very active | 2 | 48% | 273 |
 | mksglu/context-mode | 78 | Rising | very active | 1 | 71% | 195 |
+| getagentseal/codeburn | 78 | Hot | very active | 1 | 59% | 48 |
+| kenryu42/cc-safety-net | 78 | Hot | very active | 1 | 92% | 24 |
 | farion1231/cc-switch | 77 | Hot | very active | 1 | 77% | 50 |
 | anthropics/claude-code | 76 | Hot | very active | 1 | 85% | 181 |
-| CodebuffAI/freebuff | 74 | Mature | very active | 1 | 99% | 9 |
-| evrendom/rudel | 74 | Hot | very active | 1 | 94% | 13 |
+| CodebuffAI/freebuff | 73 | Mature | very active | 1 | 99% | 9 |
+| evrendom/rudel | 73 | Hot | very active | 1 | 94% | 13 |
 | UfoMiao/zcf | 71 | Hot | very active | 1 | 63% | 95 |
-| github/copilot-cli | 68 | Mature | very active | 1 | 100% | 384 |
+| github/copilot-cli | 67 | Mature | very active | 1 | 100% | 384 |
 | charmbracelet/bubbletea | 66 | Classic | active | 1 | 58% | 79 |
 | affaan-m/agentshield | 64 | Hot | very active | 1 | 95% | 4 |
-| Alishahryar1/free-claude-code | 62 | Hot | very active | 1 | 91% | 0 |
+| Alishahryar1/free-claude-code | 61 | Hot | very active | 1 | 91% | 0 |
 | charmbracelet/bubbles | 59 | Mature | active | 1 | 78% | 36 |
-| Aider-AI/aider | 48 | Mature | slowing | 2 | 40% | 93 |
-| dagger/container-use | 39 | Declining | active | 1 | 100% | 14 |
-| terryso/claude-auto-resume | 27 | Declining | slowing | 0 | 0% | 0 |
+| Aider-AI/aider | 45 | Mature | slowing | 2 | 40% | 93 |
+| dagger/container-use | 38 | Declining | active | 1 | 100% | 14 |
+| terryso/claude-auto-resume | 26 | Declining | slowing | 0 | 0% | 0 |
 | aniketkarne/ClaudeNightsWatch | 20 | Declining | stale | 0 | 0% | 0 |
-| zamalali/langchain-code | 12 | Declining | stale | 0 | 0% | 0 |
+| zamalali/langchain-code | 11 | Declining | stale | 0 | 0% | 0 |
 | rsrohan99/tig | 5 | Abandoned | stale | 0 | 0% | 0 |
 
 Watch items: `gemini-cli` is deprecated upstream (Antigravity CLI replaced it, June 2026) despite healthy-looking repo metrics; `aider` is slowing (52d since push in this snapshot); `tig` and `langchain-code` are effectively dead; `claude-auto-resume` and `ClaudeNightsWatch` are declining single-maintainer shell utilities.
@@ -330,4 +332,4 @@ Watch items: `gemini-cli` is deprecated upstream (Antigravity CLI replaced it, J
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; frozen benchmark citations need manual review as new models/agents ship.
 
-<sub>Tools covered: 31 · Snapshot: 2026-08-07T23:57:40.892Z</sub>
+<sub>Tools covered: 31 · Snapshot: 2026-08-11T18:59:16.380Z</sub>

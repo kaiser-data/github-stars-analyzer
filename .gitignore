@@ -39,3 +39,4 @@ graphify-out/cache/
 # Local Netlify folder
 .netlify
 scripts/reports/__pycache__/
+graphify-out/.graphify_python

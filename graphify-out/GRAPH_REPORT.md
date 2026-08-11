@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-08-08)
+# Graph Report - github-stars-analyzer  (2026-08-11)
 
 ## Corpus Check
-- 133 files · ~2,460,994 words
+- 137 files · ~2,561,822 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1109 nodes · 1140 edges · 69 communities (64 shown, 5 thin omitted)
+- 1179 nodes · 1208 edges · 72 communities (67 shown, 5 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c2f7c580`
+- Built from commit: `bae3f9ef`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -79,17 +79,19 @@
 - [[_COMMUNITY_make_node_for|make_node_for]]
 - [[_COMMUNITY_openclaw_ecosystem.py|openclaw_ecosystem.py]]
 - [[_COMMUNITY_load_data|load_data]]
+- [[_COMMUNITY_snapshot.py|snapshot.py]]
 - [[_COMMUNITY_Trending Now — What's Actually Moving in Your Stars|Trending Now — What's Actually Moving in Your Stars]]
+- [[_COMMUNITY_Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases|Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 13 edges
-5. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+5. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
 6. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
-7. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
-8. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
+7. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
+8. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
 9. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
 10. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
 
@@ -108,7 +110,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (69 total, 5 thin omitted)
+## Communities (72 total, 5 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -344,14 +346,22 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-07, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-11, 15d), Frontier models on hardware you already own (+10 more)
+
+### Community 67 - "snapshot.py"
+Cohesion: 0.06
+Nodes (33): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions, Dashboards as code (+25 more)
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-07, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-11, 15d), Frontier models on hardware you already own (+10 more)
+
+### Community 69 - "Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases"
+Cohesion: 0.06
+Nodes (33): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions, Dashboards as code (+25 more)
 
 ## Knowledge Gaps
-- **773 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+768 more)
+- **833 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+828 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -359,7 +369,7 @@ Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fas
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _789 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _849 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

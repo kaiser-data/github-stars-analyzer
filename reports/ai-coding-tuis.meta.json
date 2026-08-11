@@ -35,7 +35,8 @@
       "stars": 104648
     }
   ],
-  "snapshot": "2026-08-07T23:57:40.892Z",
-  "generated": "2026-08-08",
-  "generator": "scripts/reports/ai_coding_tuis.py"
+  "snapshot": "2026-08-11T18:59:16.380Z",
+  "generated": "2026-08-11",
+  "generator": "scripts/reports/ai_coding_tuis.py",
+  "created": "2026-07-19"
 }

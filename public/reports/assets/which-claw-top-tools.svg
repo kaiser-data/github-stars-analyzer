@@ -23,7 +23,7 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">zeroclaw-labs/zeroclaw</text>
 <path d="M244,121 h25.0 q4,0 4,4 v10 q0,4 -4,4 h-25.0 z" class="bar"/>
 <text x="279.0" y="130.0" class="val" dominant-baseline="central">32,526</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/nanobot</text>
-<path d="M244,148 h37.7 q4,0 4,4 v10 q0,4 -4,4 h-37.7 z" class="bar"/>
-<text x="291.7" y="157.0" class="val" dominant-baseline="central">46,749</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">code-yeongyu/oh-my-openagent</text>
+<path d="M244,148 h56.2 q4,0 4,4 v10 q0,4 -4,4 h-56.2 z" class="bar"/>
+<text x="310.2" y="157.0" class="val" dominant-baseline="central">67,452</text>
 </svg>
