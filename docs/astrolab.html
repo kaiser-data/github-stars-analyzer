@@ -41,13 +41,15 @@ body{
 
 /* ── hero: the rete, an astrolabe's rotating star-map ─────────────── */
 .hero{position:relative;padding:104px 0 60px;text-align:center}
-.rete{
+.hero > *{position:relative;z-index:1}
+/* Must out-specify `.hero > *` above (same 0,1,0 specificity would let the
+   later rule win and make this 760px SVG take up layout space). */
+.hero > svg.rete{
   position:absolute;top:-130px;left:50%;transform:translateX(-50%);
   width:760px;height:760px;pointer-events:none;opacity:.5;z-index:0;
 }
 .rete circle,.rete line{fill:none;stroke:var(--brass);stroke-width:.7;opacity:.5}
 .rete .faint{opacity:.22}
-.hero > *{position:relative;z-index:1}
 .eyebrow{
   font-family:var(--mono);font-size:11px;letter-spacing:.30em;text-transform:uppercase;
   color:var(--brass);margin:0 0 26px
