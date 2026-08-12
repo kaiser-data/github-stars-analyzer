@@ -13,6 +13,23 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOTS = os.path.join(ROOT, "docs/screenshots")
 OUT = os.path.join(ROOT, "docs/astrolab.html")
+REPO_URL = "https://github.com/kaiser-data/github-stars-analyzer"
+
+# Inlined marks — the page makes no external requests, so no icon font or CDN.
+GH_MARK = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 '
+    '3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53'
+    '-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 '
+    '1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 '
+    '0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 '
+    '2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 '
+    '1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 '
+    '2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>'
+)
+STAR_MARK = (
+    '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.1l2 4.15 4.5.63-3.26 '
+    '3.2.78 4.52L8 11.47l-4.02 2.13.78-4.52L1.5 5.88 6 5.25 8 1.1Z"/></svg>'
+)
 
 FEATURES = [
     ("01-map.jpg", "Map", "The corpus as a sky",
@@ -119,7 +136,8 @@ def main():
     stat_html = "".join(
         f'<div><b>{v}</b><span>{k}</span></div>' for v, k in stats)
 
-    html = f"""<title>GitHub Astrolab</title>
+    html = f"""<meta charset="utf-8">
+<title>GitHub Astrolab</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{{
@@ -191,15 +209,28 @@ h1 .pre{{
   max-width:33ch;margin:0 auto 14px;text-wrap:balance
 }}
 .sub{{color:var(--ink-3);font-size:14.5px;max-width:56ch;margin:0 auto}}
-.cta-row{{margin:38px 0 0}}
+.cta-row{{
+  margin:38px 0 0;display:flex;flex-wrap:wrap;justify-content:center;gap:14px
+}}
 .cta{{
-  display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.2em;
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.2em;
   text-transform:uppercase;color:var(--night);background:var(--brass);
-  padding:15px 34px;border-radius:2px;border:0;
-  transition:transform .2s ease,box-shadow .2s ease,background .2s ease
+  padding:15px 30px;border-radius:2px;border:0;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease
 }}
 .cta:hover{{background:var(--brass-lit);transform:translateY(-2px);
   box-shadow:0 12px 30px -12px var(--brass);border-bottom-color:transparent}}
+.cta svg{{width:15px;height:15px;flex:none;fill:currentColor}}
+/* secondary CTA — the GitHub link, present but not competing with the map */
+.cta-ghost{{
+  background:transparent;color:var(--brass);
+  box-shadow:inset 0 0 0 1px var(--rule)
+}}
+.cta-ghost:hover{{
+  background:transparent;color:var(--brass-lit);transform:translateY(-2px);
+  box-shadow:inset 0 0 0 1px var(--brass),0 12px 30px -16px var(--brass)
+}}
 .stats{{
   display:flex;flex-wrap:wrap;justify-content:center;gap:26px 60px;
   margin:52px 0 0;padding:30px 0 0;border-top:1px solid var(--rule)
@@ -250,6 +281,16 @@ h1 .pre{{
   font-family:var(--mono);font-size:.85em;background:var(--hair);
   color:var(--ink);padding:.16em .42em;border-radius:3px
 }}
+/* the ask: open source, and a star is the whole price */
+.ask{{
+  display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;
+  max-width:640px;margin:38px auto 34px;padding:22px 26px;text-align:left;
+  border:1px solid var(--rule);border-radius:9px;background:var(--plate);
+  box-shadow:0 18px 44px -26px var(--glow)
+}}
+.ask p{{margin:0!important;color:var(--ink-2);font-size:14.5px;flex:1 1 260px}}
+.ask strong{{color:var(--ink);font-weight:600}}
+.ask .cta{{flex:none}}
 a{{color:var(--brass-lit);text-decoration:none;border-bottom:1px solid transparent}}
 a:hover{{border-bottom-color:var(--brass-lit)}}
 a:focus-visible{{outline:2px solid var(--brass-lit);outline-offset:3px;border-radius:2px}}
@@ -291,7 +332,10 @@ a:focus-visible{{outline:2px solid var(--brass-lit);outline-offset:3px;border-ra
   <p class="sub">This turns a GitHub star list into something you can navigate — a knowledge
   graph with communities and lifecycle scoring, twenty-three curated landscape reports,
   and search that understands the shape of what you saved.</p>
-  <p class="cta-row"><a class="cta" href="/lab?tab=map">Enter the map<span aria-hidden="true"> →</span></a></p>
+  <p class="cta-row">
+    <a class="cta" href="/lab?tab=map">Enter the map<span aria-hidden="true"> →</span></a>
+    <a class="cta cta-ghost" href="{REPO_URL}" target="_blank" rel="noopener">{GH_MARK}View on GitHub</a>
+  </p>
   <div class="stats">{stat_html}</div>
 </header>
 {"".join(sections)}
@@ -302,6 +346,11 @@ a:focus-visible{{outline:2px solid var(--brass-lit);outline-offset:3px;border-ra
   runtime, no model in the hot path, no API call needed to read a report.</p>
   <p>Refresh the data with <code>npm run refresh</code>, rebuild every report with
   <code>npm run reports</code>. Both are reproducible and cost nothing.</p>
+  <div class="ask">
+    <p>The whole thing is open source under MIT — clone it and point it at your own stars.
+    <strong>If you like it, a star on the repo is the only thanks it costs.</strong></p>
+    <a class="cta" href="{REPO_URL}" target="_blank" rel="noopener">{STAR_MARK}Star the repo</a>
+  </div>
   <p class="fine">github-stars-analyzer · MIT · data vintage {cl.get('generatedAt','')[:10]}</p>
 </section>
 </div>
