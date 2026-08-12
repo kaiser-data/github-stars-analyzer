@@ -119,8 +119,15 @@ A("## Executive summary")
 A("")
 A(f"- **{len(present)} dedicated memory frameworks** identified across your stars, "
   f"plus **{len(SUBSTRATE)} storage substrates** (vector/graph DBs) they build on.")
-A(f"- Combined reach: **{fmt_int(total_stars)}★**. The space is overwhelmingly "
-  f"**{top_lang[0][0]}** ({top_lang[0][1]}/{len(present)} projects).")
+# `present` is empty when none of the curated repos are in the dataset — which
+# means the dataset is broken, not that the language mix is unknowable. Say so
+# rather than crashing the whole report build on top_lang[0].
+if top_lang:
+    A(f"- Combined reach: **{fmt_int(total_stars)}★**. The space is overwhelmingly "
+      f"**{top_lang[0][0]}** ({top_lang[0][1]}/{len(present)} projects).")
+else:
+    A("- No curated memory frameworks matched the current dataset — "
+      "language breakdown unavailable.")
 A(f"- Four sub-categories emerge: **general memory layers**, **coding-agent/session "
   f"memory**, **knowledge-graph memory**, and frameworks that **bundle a memory module**.")
 A(f"- The dominant architectural split is **vector-recall vs. knowledge-graph** memory — "

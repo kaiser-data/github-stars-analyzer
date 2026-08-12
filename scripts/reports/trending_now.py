@@ -135,7 +135,10 @@ node_for = make_node_for(nodes_by_id, name_to_nodeid)
 
 snap_files = sorted(f for f in os.listdir(SNAPSHOT_DIR) if f.endswith(".json"))
 if len(snap_files) < 2:
-    raise SystemExit("trending-now needs >= 2 snapshots in data/snapshots/ — skipping")
+    # Nothing to trend against yet — a legitimate no-op, not a failure. Exit 0 so
+    # build_index.py doesn't count this as a broken generator.
+    print("trending-now needs >= 2 snapshots in data/snapshots/ — skipping")
+    raise SystemExit(0)
 
 snaps = {}
 for f in snap_files:
@@ -230,7 +233,10 @@ def row_meta(name):
         r.get("lifecycle_stage") or "—",
         activity_label(r) if r else "unknown",
         r.get("url") or f"https://github.com/{name}",
-        (r.get("description") or "").strip(),
+        # Descriptions come straight from GitHub and some contain a literal "|"
+        # (e.g. airbnb/visx: "🐯 visx | visualization components"), which splits
+        # the markdown row into an extra cell. Escape it.
+        (r.get("description") or "").strip().replace("|", "\\|"),
     )
 
 
