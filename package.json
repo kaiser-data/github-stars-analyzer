@@ -34,10 +34,11 @@
     "refresh:sample": "node --env-file=.env scripts/sample.mjs ${USERNAME:-kaiser-data} --all",
     "refresh:ingest": "node --env-file=.env scripts/ingest.mjs --sample=src/data/sample-all.json --max-age=${MAX_AGE:-7}",
     "refresh:classify": "node scripts/classify.mjs --in=src/data/raw-all.json && cp src/data/classified-all.json data/classified.json && echo 'wrote data/classified.json'",
+    "check:dataset": "node scripts/check-dataset.mjs",
     "precompute": "node scripts/precompute.mjs",
     "precompute:questions": "node --env-file=.env scripts/precompute-questions.mjs",
     "reports": "python3 scripts/reports/build_index.py",
     "prebuild": "python3 scripts/reports/build_index.py",
-    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run precompute"
+    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run check:dataset && npm run precompute"
   }
 }
