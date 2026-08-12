@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`), cross-referenced with the repo-similarity graph (1,596 nodes / 5,170 edges, 31 communities).
 >
-> Generated 2026-08-11 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-08-12 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/mcp-tooling-top-tools.svg)
 

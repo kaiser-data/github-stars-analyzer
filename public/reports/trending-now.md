@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`), cross-referenced with the repo-similarity graph (1,596 nodes / 5,170 edges, 31 communities).
 >
-> Generated 2026-08-11 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
+> Generated 2026-08-12 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
 ![Biggest star gains (15d)](assets/trending-now-top-tools.svg)
 
@@ -303,7 +303,7 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) | 23,073 | Python | Classic | matplotlib: plotting with Python |
 | [snarktank/ralph](https://github.com/snarktank/ralph) | 21,406 | TypeScript | Declining | Ralph is an autonomous AI agent loop that runs repeatedly until all PRD items are co… |
 | [rough-stuff/rough](https://github.com/rough-stuff/rough) | 21,120 | HTML | Abandoned | Create graphics with a hand-drawn, sketchy, appearance |
-| [airbnb/visx](https://github.com/airbnb/visx) | 21,000 | TypeScript | Classic | 🐯 visx | visualization components |
+| [airbnb/visx](https://github.com/airbnb/visx) | 21,000 | TypeScript | Classic | 🐯 visx \| visualization components |
 | [chidiwilliams/buzz](https://github.com/chidiwilliams/buzz) | 20,832 | Python | Classic | Buzz transcribes and translates audio offline on your personal computer. Powered by … |
 | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | 20,433 | Python | Hot | Turn any technical book PDF into a Claude Code skill — ready to study, reference, an… |
 | [bokeh/bokeh](https://github.com/bokeh/bokeh) | 20,428 | TypeScript | Classic | Interactive Data Visualization in the browser, from  Python |

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-11",
-  "count": 23,
+  "generated": "2026-08-12",
+  "count": 24,
   "reports": [
     {
       "slug": "trending-now",
@@ -75,7 +75,7 @@
       "chart_top_title": "Biggest star gains (15d)",
       "chart_cat_title": "Repos by movement type",
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
     },
@@ -122,7 +122,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
     },
@@ -168,7 +168,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
     },
@@ -208,7 +208,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
     },
@@ -250,7 +250,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/mcp_tooling.py",
       "created": "2026-05-31"
     },
@@ -292,7 +292,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
     },
@@ -341,9 +341,53 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
+    },
+    {
+      "slug": "agent-memory",
+      "title": "Agent Memory & Conversational Knowledge Graphs",
+      "file": "agent-memory.md",
+      "category": "AI / RAG",
+      "summary": "38 agent-memory and conversational-knowledge-graph tools (703,842\u2605): graph-native vs vector-first memory, the stores underneath, chat connectors and meeting capture \u2014 plus a primitive-coverage matrix of which chat signals each tool actually consumes, and a ranked analysis of the ones nobody consumes at all.",
+      "tool_count": 38,
+      "total_stars": 703842,
+      "categories": {
+        "Graph-native memory": 7,
+        "Vector-first memory": 9,
+        "Vector & graph stores": 7,
+        "Extraction & ontology": 5,
+        "Chat & workspace connectors": 5,
+        "Meeting & transcript capture": 3,
+        "Memory evaluation": 2
+      },
+      "top_tools": [
+        {
+          "name": "mem0ai/mem0",
+          "stars": 62779
+        },
+        {
+          "name": "MemPalace/mempalace",
+          "stars": 58192
+        },
+        {
+          "name": "milvus-io/milvus",
+          "stars": 45553
+        },
+        {
+          "name": "HKUDS/LightRAG",
+          "stars": 38620
+        },
+        {
+          "name": "microsoft/graphrag",
+          "stars": 35319
+        }
+      ],
+      "snapshot": "2026-08-11T18:59:16.380Z",
+      "generated": "2026-08-12",
+      "generator": "scripts/reports/agent_memory.py",
+      "created": "2026-08-12"
     },
     {
       "slug": "blockchain-essentials",
@@ -391,7 +435,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
     },
@@ -434,7 +478,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/agent_harnesses.py",
       "created": "2026-07-19"
     },
@@ -479,7 +523,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
     },
@@ -522,7 +566,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
     },
@@ -564,7 +608,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
     },
@@ -606,7 +650,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/ai_coding_tuis.py",
       "created": "2026-07-19"
     },
@@ -648,7 +692,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/openclaw_ecosystem.py",
       "created": "2026-05-31"
     },
@@ -691,7 +735,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/voice_agents.py",
       "created": "2026-06-04"
     },
@@ -734,7 +778,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
     },
@@ -776,7 +820,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
     },
@@ -817,7 +861,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
     },
@@ -858,7 +902,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
     },
@@ -901,7 +945,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
     },
@@ -943,7 +987,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
     },
@@ -983,7 +1027,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
     },
@@ -1022,7 +1066,7 @@
         }
       ],
       "snapshot": "2026-08-11T18:59:16.380Z",
-      "generated": "2026-08-11",
+      "generated": "2026-08-12",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"
     }

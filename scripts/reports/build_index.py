@@ -25,6 +25,7 @@ PUBLIC_DIR = os.path.join(ROOT, "public/reports")
 
 GENERATORS = [
     "memory_frameworks.py",
+    "agent_memory.py",
     "llm_evaluation.py",
     "rag_tooling.py",
     "mcp_tooling.py",
@@ -50,14 +51,30 @@ GENERATORS = [
 ]
 
 def run_generators():
+    """Run every generator, then report the ones that failed.
+
+    A single crashing generator used to abort the whole build, leaving the other
+    22 reports stale. Now each one is isolated: the rest still regenerate and the
+    index is still rebuilt, but the failures are collected and re-raised at the
+    end so a broken generator can never pass silently.
+    """
+    failed = []
     for g in GENERATORS:
         path = os.path.join(HERE, g)
         if not os.path.exists(path):
             print(f"  skip (missing): {g}")
             continue
         print(f"  running {g} …")
-        subprocess.run([sys.executable, path], check=True, cwd=ROOT,
-                       stdout=subprocess.DEVNULL)
+        proc = subprocess.run([sys.executable, path], cwd=ROOT,
+                              stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
+                              text=True)
+        if proc.returncode != 0:
+            tail = (proc.stderr or "").strip().splitlines()[-3:]
+            print(f"  ✗ FAILED: {g} (exit {proc.returncode})")
+            for line in tail:
+                print(f"      {line}")
+            failed.append(g)
+    return failed
 
 def created_date(md_file):
     """First git commit date (YYYY-MM-DD) of a report's markdown.
@@ -168,6 +185,11 @@ if __name__ == "__main__":
     subprocess.run([sys.executable, os.path.join(HERE, "snapshot.py")],
                    check=True, cwd=ROOT)
     print("Regenerating reports…")
-    run_generators()
+    failed = run_generators()
     print("Building index…")
     build()
+    if failed:
+        raise SystemExit(
+            f"\n✗ {len(failed)} generator(s) failed: {', '.join(failed)}\n"
+            "  The other reports and the index were still rebuilt."
+        )
