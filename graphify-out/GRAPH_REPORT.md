@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-08-23)
 
 ## Corpus Check
-- 151 files · ~2,745,385 words
+- 155 files · ~2,761,920 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1379 nodes · 1420 edges · 82 communities (76 shown, 6 thin omitted)
+- 1413 nodes · 1452 edges · 85 communities (78 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `078ac977`
+- Built from commit: `9a91aadd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -93,18 +93,21 @@
 - [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
 - [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
 - [[_COMMUNITY_agentic_terminals.py|agentic_terminals.py]]
+- [[_COMMUNITY_Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps|Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps]]
+- [[_COMMUNITY_Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps|Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps]]
+- [[_COMMUNITY_jetson_inference.py|jetson_inference.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 14 edges
-5. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
-6. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
-7. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
-8. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
-9. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
-10. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
+5. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
+6. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
+7. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
+8. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
+9. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
+10. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -121,7 +124,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (82 total, 6 thin omitted)
+## Communities (85 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -281,7 +284,7 @@ Nodes (7): meta_bits(), _esc(), fmt_int(), fmt_stars(), Dependency-free horizont
 
 ### Community 41 - "Community 41"
 Cohesion: 0.27
-Nodes (9): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., Run every generator, then report the ones that failed.      A single crashing ge, First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart (+1 more)
+Nodes (9): build(), created_date(), inject_charts(), make_charts(), Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart, Insert chart images after the intro blockquote of a generated report., Run every generator, then report the ones that failed.      A single crashing ge, First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b (+1 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
@@ -411,16 +414,24 @@ Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-a
 Cohesion: 0.08
 Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
 
+### Community 82 - "Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps"
+Cohesion: 0.13
+Nodes (14): Adjacent (deliberately not counted as inference engines), Engine verdicts against this hardware, Executive summary, Graph analysis, How much headroom is left? A bandwidth roofline, Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps, Maintenance & risk signal, Measured baseline — what this box actually does (+6 more)
+
+### Community 83 - "Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps"
+Cohesion: 0.13
+Nodes (14): Adjacent (deliberately not counted as inference engines), Engine verdicts against this hardware, Executive summary, Graph analysis, How much headroom is left? A bandwidth roofline, Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps, Maintenance & risk signal, Measured baseline — what this box actually does (+6 more)
+
 ## Knowledge Gaps
-- **959 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+954 more)
+- **985 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+980 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _989 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1016 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

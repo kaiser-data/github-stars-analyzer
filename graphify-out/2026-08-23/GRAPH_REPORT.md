@@ -1,11 +1,11 @@
 # Graph Report - github-stars-analyzer  (2026-08-23)
 
 ## Corpus Check
-- 147 files · ~2,719,358 words
+- 151 files · ~2,745,385 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1327 nodes · 1370 edges · 79 communities (74 shown, 5 thin omitted)
+- 1379 nodes · 1420 edges · 82 communities (76 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -90,6 +90,9 @@
 - [[_COMMUNITY_Handoff — 2026-08-11|Handoff — 2026-08-11]]
 - [[_COMMUNITY_render_html.py|render_html.py]]
 - [[_COMMUNITY_agent_memory.py|agent_memory.py]]
+- [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
+- [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
+- [[_COMMUNITY_agentic_terminals.py|agentic_terminals.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -97,11 +100,11 @@
 3. `The field guide, by layer` - 15 edges
 4. `scripts` - 14 edges
 5. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
-6. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
-7. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
-8. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
-9. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
-10. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+6. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
+7. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
+8. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+9. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
+10. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
@@ -118,7 +121,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (79 total, 5 thin omitted)
+## Communities (82 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -400,16 +403,24 @@ Nodes (8): cell(), convert(), inline_md(), main(), Inline markdown → HTML. Cod
 Cohesion: 0.33
 Nodes (6): col_values(), full_degree(), isolation_verdict(), All marks for one primitive across the matrix rows., Edge count in the whole 1,596-repo graph, not just this report's slice., Name the call — including when the honest call is 'the metric can't support one'
 
+### Community 79 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
+Cohesion: 0.08
+Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+
+### Community 80 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
+Cohesion: 0.08
+Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+
 ## Knowledge Gaps
-- **921 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+916 more)
+- **959 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+954 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _950 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _989 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

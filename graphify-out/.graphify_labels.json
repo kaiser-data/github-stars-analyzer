@@ -80,5 +80,8 @@
   "78": "build_showcase.py",
   "79": "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?",
   "80": "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?",
-  "81": "agentic_terminals.py"
+  "81": "agentic_terminals.py",
+  "82": "Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps",
+  "83": "Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps",
+  "84": "jetson_inference.py"
 }
