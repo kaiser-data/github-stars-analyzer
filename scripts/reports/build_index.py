@@ -46,6 +46,7 @@ GENERATORS = [
     "document_extraction.py",
     "ai_coding_tuis.py",
     "agentic_terminals.py",
+    "jetson_inference.py",
     "finetuning_stack.py",
     "trending_now.py",
     "charting_stack.py",
