@@ -40,3 +40,4 @@ graphify-out/cache/
 .netlify
 scripts/reports/__pycache__/
 graphify-out/.graphify_python
+scripts/__pycache__/

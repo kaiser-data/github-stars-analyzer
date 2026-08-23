@@ -1,0 +1,968 @@
+#!/usr/bin/env python3
+"""
+Generate a landscape report on the *terminal* coding agents run inside — the
+emulator, the multiplexer, the session layer, and the 2026 "agent-aware
+terminal" category — as opposed to the agents themselves (ai-coding-tuis.py).
+
+Two axes drive the report: **operating system** (the best answer on macOS is
+not available on Windows at all) and **session count** (everything changes at
+roughly four concurrent agents).
+
+The dataset's blind spot is the point of the gap section: the stars cover
+coding agents exhaustively and the terminal underneath them barely at all, so
+the report carries an explicit table of terminal apps that are *missing* from
+the stars, with metrics verified against the GitHub API at authoring time and
+frozen here (generation stays offline and deterministic).
+
+Inputs:
+  data/classified.json
+  public/data/graph.json
+
+Output:
+  reports/agentic-terminals.md   (+ reports/agentic-terminals.meta.json)
+
+Run: python3 scripts/reports/agentic_terminals.py
+"""
+import json
+import os
+from datetime import datetime, timezone
+
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
+def cell(s):
+    """Escape a value for a markdown table cell.
+
+    Authored prose here includes shell snippets (`yes | head -…`), and a raw
+    pipe silently splits the row into an extra column — the recurring table
+    corruption bug in this pipeline.
+    """
+    return str(s).replace("|", "\\|")
+
+
+SLUG = "agentic-terminals"
+TITLE = "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
+OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
+META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
+
+# Date the external evidence below was gathered / verified against the GitHub API.
+EVIDENCE_DATE = "2026-08-23"
+
+# ---- Curated taxonomy (repos that ARE in the stars) --------------------------
+TAXONOMY = {
+    # The emulator itself
+    "gnachman/iTerm2": ("Terminal emulator", "The long-standing macOS emulator — and the one Claude Code integrates with by name: `claude --worktree --tmux` uses iTerm2 native panes when available. Objective-C, single-maintainer, macOS only."),
+    "ghostty-org/ghostling": ("Terminal emulator", "A minimum-viable emulator demonstrating the libghostty C API — a reference consumer of Ghostty's embeddable core, not the core and not Ghostty itself."),
+
+    # Where the agents actually live
+    "tmux/tmux": ("Agent runtime / multiplexer", "The 2007 multiplexer that became agent infrastructure — process isolation, detach/reattach, and a stable `send-keys` API orchestrators target. Runs anywhere POSIX."),
+    "herdrdev/herdr": ("Agent runtime / multiplexer", "A background server the terminals live inside: agents survive a closed lid, a dropped network, and a reboot, and reattach from any terminal or over SSH. Marks every pane working/blocked/idle, and its socket API is the same surface agents drive. One Rust binary, macOS/Linux with Windows in beta."),
+    "Untrivial-ai/agent-orchestrator": ("Agent runtime / multiplexer", "Agent IDE over tmux + git worktrees — plans tasks, spawns fleets, handles CI fixes and merge conflicts autonomously."),
+
+    # Hardening the shell the agent drives
+    "sheeki03/tirith": ("Terminal hardening", "Terminal security for devs and agents — intercepts homograph URLs, pipe-to-shell, ANSI injection, and exfiltration before execution."),
+    "dagger/container-use": ("Terminal hardening", "Containerized dev environments so parallel agents can't collide — the isolation half of running fleets safely."),
+
+    # Shell, process and config layer around the agent
+    "x-cmd/x-cmd": ("Shell & process layer", "'Shell superpowers for AI agents' — POSIX-portable command toolkit agents can call without installing a language runtime."),
+    "pranshuparmar/witr": ("Shell & process layer", "'Why is this running?' — traces any process, port, container, or file back to its origin; the triage tool for a pane you no longer recognise."),
+    "caarlos0/dotfiles": ("Shell & process layer", "A maintained real-world `$HOME/.config` (fish + tmux + nix) — the reference for making a terminal reproducible across machines."),
+
+    # Terminal capabilities and reference material
+    "hpjansson/chafa": ("Terminal capability / reference", "Terminal graphics for any emulator (sixel, Kitty, iTerm2 protocols) — how agent-generated images render where no native protocol exists."),
+    "hackerb9/lsix": ("Terminal capability / reference", "`ls` for images via sixel — the minimal proof that inline graphics work in your stack."),
+    "mbadolato/iTerm2-Color-Schemes": ("Terminal capability / reference", "450+ schemes ported across iTerm2, Kitty, Alacritty, Ghostty, Windows Terminal — the de-facto emulator compatibility matrix."),
+    "rothgar/awesome-tuis": ("Terminal capability / reference", "The canonical index of terminal user interfaces — the discovery surface for the layer this report says you're under-invested in."),
+}
+
+CAT_ORDER = [
+    "Terminal emulator",
+    "Agent runtime / multiplexer",
+    "Terminal hardening",
+    "Shell & process layer",
+    "Terminal capability / reference",
+]
+
+
+# ---- The gap: terminal apps NOT in the stars ---------------------------------
+# Metrics verified via the GitHub API on EVIDENCE_DATE — point-in-time, and they
+# do NOT refresh with build_index.py. `os` is the platform reality, which is the
+# axis that eliminates most candidates before any feature comparison starts.
+def gap(name, layer, os_, stars, lang, lic, fresh, why, verdict):
+    return {"name": name, "layer": layer, "os": os_, "stars": stars, "lang": lang,
+            "lic": lic, "fresh": fresh, "why": why, "verdict": verdict}
+
+
+MISSING = [
+    # --- the category the stars have zero of
+    gap("manaflow-ai/cmux", "Agent-aware terminal", "macOS only", 26373, "Swift", "NOASSERTION",
+        "created 2026-01-28, pushed same-day, 1,751 open issues + 2,668 open PRs",
+        "Purpose-built for running several coding agents in parallel: Ghostty rendering engine, vertical tabs with per-tab git branch / worktree / PR status, notification rings and unread badges per pane, session restore, embedded browser, and a Unix-socket API agents can call to drive the UI. Codex CLI's sandbox can block the socket.",
+        "**Star it — the biggest single gap in your stars**, if you're on macOS."),
+    gap("warpdotdev/warp", "Agent-aware terminal", "macOS, Linux, Windows (beta)", 64466, "Rust", "AGPL-3.0",
+        "pushed same-day",
+        "Markets itself as an 'agentic development environment': per-tab git/PR metadata, reusable `.toml` tab configs, unified agent notifications. Proprietary rendering engine, opinionated conventions, reported CJK IME issues.",
+        "**Star it** — the only agent-aware terminal with a Windows story at all."),
+    gap("wavetermdev/waveterm", "Agent-aware terminal", "macOS, Linux, Windows", 22088, "Go", "Apache-2.0",
+        "pushed 12d",
+        "Open-source, cross-platform, AI-integrated terminal with graphical blocks — the non-proprietary answer to Warp, and the only genuinely tri-platform option in this layer.",
+        "**Star it** — the open, cross-OS pick in this layer."),
+
+    # --- agent-grade emulators
+    gap("ghostty-org/ghostty", "Emulator", "macOS, Linux (no Windows)", 60102, "Zig", "MIT",
+        "v1.3.1; 1.0 Dec 2024, 1.3.0 Mar 2026 stability release",
+        "Fastest sustained-output rendering on macOS in published 2026 comparisons; native Shift+Enter; `macos-option-as-alt = true` needed for Alt+, / Alt+. reasoning controls. On Linux it's GTK4 + optional libadwaita. Windows is planned post-1.0 with no timeline; WSL2 works but is explicitly unsupported.",
+        "**Star it.** You already star `ghostling` (its libghostty shell) but not the terminal."),
+    gap("kovidgoyal/kitty", "Emulator", "macOS, Linux", 34563, "Python", "GPL-3.0", "pushed same-day",
+        "The Kitty graphics protocol is the de-facto standard for inline images from agent output; built-in multiplexing; deep keyboard control. No Windows build.",
+        "**Star it** if agents emit charts, diagrams, or screenshots."),
+    gap("wezterm/wezterm", "Emulator", "macOS, Linux, Windows", 28509, "Rust", "NOASSERTION", "pushed 3d",
+        "Broadest graphics-protocol support (Kitty + sixel + iTerm2), built-in multiplexer with its own persistence, Lua config. The only first-tier emulator that is genuinely equal on all three desktop OSes. Rendering trails Ghostty.",
+        "**Star it** — the cross-OS default, and the answer if any teammate is on Windows."),
+    gap("alacritty/alacritty", "Emulator", "macOS, Linux, Windows", 65469, "Rust", "Apache-2.0", "pushed 6d",
+        "~30 MB resident vs 60–100 MB for Kitty/Ghostty — the pick when the agent fleet, not the terminal, should own the RAM. No tabs or splits by design (pair with tmux).",
+        "Star if you run many panes on constrained hardware."),
+    gap("microsoft/terminal", "Emulator", "Windows", 104674, "C++", "MIT", "pushed 2d",
+        "The default answer on Windows, where Ghostty and cmux simply don't run. Pairs with WSL for a POSIX agent environment.",
+        "Star only if Windows is in scope."),
+    gap("Eugeny/tabby", "Emulator", "macOS, Linux, Windows", 74084, "TypeScript", "MIT", "pushed 2d",
+        "Cross-platform with first-class SSH/serial profile management — useful when agents live on several remote boxes and you want saved profiles per host.",
+        "Optional — WezTerm covers most of this."),
+    gap("gnunn1/tilix", "Emulator", "Linux", 5713, "D", "MPL-2.0", "pushed 2026-07-01",
+        "GTK3 tiling emulator with saved session layouts — the Linux-native way to get a fixed multi-agent pane grid without a multiplexer.",
+        "Optional on Linux; tmux is more portable."),
+    gap("raphamorim/rio", "Emulator", "macOS, Linux, Windows, web", 7391, "Rust", "MIT", "pushed same-day",
+        "Newer GPU emulator that also targets the browser — interesting for agent sessions surfaced over the web.",
+        "Watch, don't adopt."),
+    gap("contour-terminal/contour", "Emulator", "macOS, Linux, Windows", 2997, "C++", "Apache-2.0", "pushed 1d",
+        "Standards-focused emulator; a reference implementation for VT and sixel behaviour.",
+        "Reference only."),
+    gap("KDE/konsole", "Emulator", "Linux", 692, "C++", "NOASSERTION", "pushed 2d (GitHub mirror; dev on KDE Invent)",
+        "The KDE default — split views and profiles, deeply integrated on Plasma. Low GitHub star count reflects the mirror, not adoption.",
+        "Reference only — you get it with the desktop."),
+    gap("Codavo/ghostinthewsl", "Emulator", "Windows (WSL2)", 56, "Zig", "MIT", "pushed 2026-08-02",
+        "A Ghostty fork that bypasses Windows terminal infrastructure and talks directly to the WSL2 VM, keeping Kitty graphics. Tiny project; the honest read is that it exists because Ghostty has no Windows support.",
+        "Reference only — evidence of the gap, not a dependency."),
+
+    # --- session / multiplexing layer
+    gap("zellij-org/zellij", "Multiplexer / session", "macOS, Linux (WSL on Windows)", 35067, "Rust", "MIT",
+        "v0.45.0 (2026-08-20)",
+        "Better out-of-the-box UX than tmux (floating panes, visible keybindings) but no `send-keys`-equivalent with comparable API stability, and native session persistence is still roadmap — which is why orchestrators keep targeting tmux.",
+        "Star for interactive work; don't build orchestration on it yet."),
+    gap("gpakosz/.tmux", "Multiplexer / session", "any POSIX", 25320, "Shell", "MIT", "pushed 15d",
+        "The widely-used opinionated tmux config — the fastest path from bare tmux to a usable multi-agent cockpit.",
+        "**Star it** — you star `tmux` with no config layer."),
+    gap("tmux-plugins/tpm", "Multiplexer / session", "any POSIX", 15014, "Shell", "MIT", "pushed 2026-05-17",
+        "tmux plugin manager — the prerequisite for everything below.",
+        "Star it."),
+    gap("tmux-plugins/tmux-resurrect", "Multiplexer / session", "any POSIX", 13014, "Shell", "MIT",
+        "⚠ pushed 2024-08-13 — ~2y stale",
+        "Still the standard way to survive a reboot with agent panes intact, but effectively unmaintained. Neither tmux nor Zellij persists across reboots by default.",
+        "Star with eyes open; the staleness is a real risk."),
+    gap("joshmedeski/sesh", "Multiplexer / session", "macOS, Linux", 2780, "Go", "MIT", "pushed 2d",
+        "Smart tmux session manager — one keystroke from repo to a named agent session, which is the actual bottleneck once you run one session per worktree.",
+        "**Star it** — high leverage for the price."),
+    gap("tmux-python/libtmux", "Multiplexer / session", "any POSIX", 1203, "Python", "MIT", "pushed same-day",
+        "Typed Python API over tmux — what you write against instead of shelling out to `send-keys` when you build your own agent supervisor.",
+        "Star it if you'll ever script the multiplexer."),
+
+    # --- parallel-agent orchestration on top of the terminal
+    gap("smtg-ai/claude-squad", "Parallel-agent orchestration", "macOS, Linux", 8356, "Go", "AGPL-3.0", "pushed 3d",
+        "Manages multiple terminal agents (Claude Code, Codex, OpenCode, Amp) in isolated worktrees from one TUI — the cheapest way to get past four concurrent agents without adopting a new terminal.",
+        "**Star it.**"),
+    gap("omnara-ai/omnara", "Parallel-agent orchestration", "any + mobile", 2758, "Go", "Apache-2.0", "pushed same-day",
+        "Command-centre view over agents running elsewhere, including from a phone — the answer to 'which agent is stuck' when you're away from the machine.",
+        "**Star it** — the mobile-supervision gap is otherwise unfilled."),
+    gap("nimbalyst/nimbalyst", "Parallel-agent orchestration", "desktop + iPhone app", 1552, "TypeScript", "MIT",
+        "pushed same-day (successor to `stravu/crystal`)",
+        "Visual workspace for Claude Code/Codex/OpenCode: an agent kanban where each card is a task, branch, or running session showing active / blocked / awaiting-review / ready-to-merge — plus a native iPhone app for reviewing and resuming.",
+        "**Star it** — this is the live project; `stravu/crystal` is the dead name."),
+    gap("pvolok/dekit", "Parallel-agent orchestration", "macOS, Linux, Windows", 2699, "Rust", "MIT",
+        "pushed 2026-07-20, renamed from `mprocs`",
+        "Runs many commands in parallel with per-process panes — the generic, OS-portable version of agent multiplexing.",
+        "Optional."),
+    gap("stravu/crystal", "Parallel-agent orchestration", "desktop", 3106, "TypeScript", "MIT",
+        "⚠ pushed 2026-02-26, renamed to Nimbalyst",
+        "Parallel Codex/Claude Code sessions in git worktrees as a desktop app — but the repo has been idle ~6 months and the project moved.",
+        "**Skip** — star `nimbalyst/nimbalyst` instead."),
+
+    # --- remote & multi-machine session survival
+    gap("mobile-shell/mosh", "Remote & web sessions", "macOS, Linux (client anywhere)", 14390, "C++", "GPL-3.0",
+        "pushed 2026-03-22",
+        "UDP-based roaming shell that survives IP changes and sleep — the layer that stops a laptop lid closing from killing an SSH-attached agent run. Pair with tmux; mosh has no scrollback of its own.",
+        "**Star it** — directly relevant to long agent runs."),
+    gap("MisterTea/EternalTerminal", "Remote & web sessions", "macOS, Linux", 3859, "C++", "Apache-2.0", "pushed 16d",
+        "Reconnecting SSH replacement that keeps the session alive across network changes, with native scrollback (unlike mosh).",
+        "Star it — the mosh alternative worth comparing."),
+    gap("tsl0922/ttyd", "Remote & web sessions", "any (serves to browser)", 12248, "C", "MIT", "pushed 11d",
+        "Shares a terminal over the web — the simplest way to look in on a long agent run from a phone or another machine without an app.",
+        "**Star it** — cheap mobile supervision."),
+    gap("tmate-io/tmate", "Remote & web sessions", "macOS, Linux", 6113, "C", "NOASSERTION", "pushed 25d",
+        "Instant shared tmux session over a relay — useful for pairing a colleague into a running agent session.",
+        "Star it."),
+    gap("butlerx/wetty", "Remote & web sessions", "any (serves to browser)", 5411, "TypeScript", "MIT", "pushed 2d",
+        "Terminal over HTTP/HTTPS with auth — the self-hosted variant of the same idea as ttyd.",
+        "Optional — pick one of ttyd/wetty."),
+    gap("ekzhang/sshx", "Remote & web sessions", "any (serves to browser)", 7649, "Rust", "MIT",
+        "⚠ pushed 2025-06-19 — >1y stale",
+        "Collaborative web terminal with multiplayer cursors; elegant, but the repo has been quiet for over a year.",
+        "Watch only — the staleness matters for anything you expose to a network."),
+    gap("sorenisanerd/gotty", "Remote & web sessions", "any (serves to browser)", 2539, "Go", "MIT", "pushed 18d",
+        "The maintained fork of the original gotty — share a command's output as a web page.",
+        "Optional."),
+    gap("blinksh/blink", "Remote & web sessions", "iOS/iPadOS", 6909, "Swift", "GPL-3.0", "pushed 2026-06-29",
+        "Mosh + SSH client for iOS with a real keyboard story — the way to attach to a tmux session full of agents from a phone or iPad.",
+        "**Star it** if you ever supervise agents away from the desk."),
+    gap("martanne/abduco", "Remote & web sessions", "Linux, BSD", 983, "C", "ISC",
+        "⚠ pushed 2023-01-18 — 3y stale",
+        "Session detach/attach with no multiplexing — the minimal alternative when you want persistence without tmux's surface area.",
+        "Reference only."),
+
+    # --- Windows-specific
+    gap("microsoft/WSL", "Windows & shells", "Windows", 33494, "C++", "MIT", "pushed same-day",
+        "The thing that actually makes agentic coding viable on Windows — a real Linux userland for the agent's shell commands. Most agent tooling assumes POSIX.",
+        "**Star it** if Windows is in scope — it's the platform, not an accessory."),
+    gap("cmderdev/cmder", "Windows & shells", "Windows", 26990, "PowerShell", "MIT", "pushed 2d",
+        "Portable console emulator bundle for Windows — the pre-WSL answer, still widely used.",
+        "Optional — Windows Terminal + WSL supersedes it."),
+    gap("ConEmu/ConEmu", "Windows & shells", "Windows", 9247, "C++", "BSD-3-Clause",
+        "⚠ pushed 2025-04-07 — >1y stale",
+        "The console host cmder is built on; historically important, now slowing.",
+        "Skip — Windows Terminal is the maintained path."),
+
+    # --- shell / prompt / history
+    gap("junegunn/fzf", "Shell & history", "any", 82619, "Go", "MIT", "pushed same-day",
+        "Fuzzy selection is what makes 'jump to the right session/worktree/file' cheap for a human supervising agents.",
+        "**Star it.**"),
+    gap("ohmyzsh/ohmyzsh", "Shell & history", "any POSIX", 189322, "Shell", "MIT", "pushed same-day",
+        "The default zsh framework; mostly ergonomics, some startup-time cost — which multiplies when you spawn a shell per agent pane.",
+        "Optional."),
+    gap("starship/starship", "Shell & history", "any", 59550, "Rust", "ISC", "pushed same-day",
+        "Cross-shell prompt; carries git/worktree/branch state that tells you which agent's pane you're looking at — genuinely useful at 6+ sessions.",
+        "**Star it** — it's per-pane identity, cheaply."),
+    gap("nushell/nushell", "Shell & history", "macOS, Linux, Windows", 40319, "Rust", "MIT", "pushed same-day",
+        "Structured-data shell — pipelines return tables, which is markedly easier for an agent to parse than ad-hoc text. Also one of the few shells equally native on Windows.",
+        "Star it if you want agents parsing shell output reliably."),
+    gap("ajeetdsouza/zoxide", "Shell & history", "any", 38789, "Rust", "MIT", "pushed 1d",
+        "Frecency-based `cd` — trivial, and saves real time across many worktrees.",
+        "Star it."),
+    gap("fish-shell/fish-shell", "Shell & history", "macOS, Linux", 34055, "Rust", "NOASSERTION", "pushed 2d",
+        "Best interactive defaults; non-POSIX, so agent-generated shell snippets can break.",
+        "Optional — note the POSIX caveat for agents."),
+    gap("atuinsh/atuin", "Shell & history", "any", 31384, "Rust", "MIT", "pushed 1d",
+        "Searchable, synced shell history — the audit trail for what an agent actually ran, and the only practical way to reconstruct it across many machines and sessions.",
+        "**Star it** — genuinely agent-relevant."),
+    gap("xtermjs/xterm.js", "Remote & web sessions", "browser", 21084, "TypeScript", "MIT", "pushed 1d",
+        "The terminal component inside browsers and Electron apps — what you'd build on to give an agent fleet a web UI.",
+        "Star it if you'd ever ship an agent terminal."),
+]
+
+LAYER_ORDER = ["Agent-aware terminal", "Emulator", "Multiplexer / session",
+               "Parallel-agent orchestration", "Remote & web sessions",
+               "Windows & shells", "Shell & history"]
+
+# ---- OS matrix ---------------------------------------------------------------
+# (os, emulator pick, session layer, multi-agent layer, the constraint)
+OS_MATRIX = [
+    ("**macOS**",
+     "cmux (agent-aware) or Ghostty (fastest)",
+     "tmux, or cmux's own tabs — or iTerm2 native panes via `claude -w --tmux`",
+     "cmux, herdr, claude-squad",
+     "The richest options by a wide margin — and the only place cmux runs. Also the only place Claude Code's own `--tmux` gets native panes, since that path is iTerm2-specific."),
+    ("**Linux**",
+     "Ghostty (GTK4/libadwaita) or Kitty",
+     "tmux or Zellij",
+     "herdr, claude-squad, agent-orchestrator",
+     "No cmux. Ghostty is native and excellent, but you build the agent-awareness layer yourself out of tmux + an orchestrator."),
+    ("**Windows**",
+     "WezTerm, or Windows Terminal + WSL",
+     "tmux inside WSL",
+     "Warp (beta), waveterm, dekit",
+     "The weakest story. Ghostty, Kitty, and cmux have no Windows build at all. WSL is not a nicety here — most agent tooling assumes POSIX."),
+    ("**Remote / headless box**",
+     "irrelevant — the emulator is local",
+     "tmux (+ mosh or Eternal Terminal)",
+     "herdr, claude-squad over SSH",
+     "The emulator stops mattering; persistence and reconnection are everything. This is where tmux's 2007 design is still unbeaten."),
+    ("**Phone / away from desk**",
+     "Blink (iOS) attaching to tmux, or ttyd in a browser",
+     "tmux on the host",
+     "nimbalyst (iPhone app), omnara",
+     "Supervision, not authoring: you want to see which agent is blocked and approve or kill it in ten seconds."),
+]
+
+# ---- Session-count ladder ----------------------------------------------------
+# (agent count, what breaks, what to run)
+SESSION_LADDER = [
+    ("**1 agent**", "Nothing. Any terminal works.",
+     "Ghostty (or whatever you already use). Don't over-engineer this."),
+    ("**2–3 agents**", "You start losing track of which pane finished.",
+     "`claude -w --tmux` — one worktree per session, in iTerm2 native panes on macOS or classic tmux elsewhere. Add `starship` so each pane shows its branch."),
+    ("**4–6 agents**", "Panes stop being self-describing; you scroll to find the crashed one. File collisions appear if they share a working directory.",
+     "One git worktree per agent — `claude --worktree` — plus one tmux session per worktree, managed with `sesh`. This is the step most people skip and regret."),
+    ("**7–12 agents**", "Human polling fails entirely. You need to be *told*, not to look.",
+     "An agent-aware surface: `cmux` notification rings (macOS), `herdr`, or `claude-squad`. Push notifications via `omnara`/`nimbalyst` if you leave the desk."),
+    ("**12+ agents**", "Supervision itself is the bottleneck; review capacity, not compute, is the limit.",
+     "Queue-and-review rather than watch: agents open PRs, you review asynchronously. `agent-orchestrator` handles CI fixes and merge conflicts without you."),
+]
+
+# ---- The rubric: what actually matters for agentic programming ---------------
+CRITERIA = [
+    ("Sustained-output throughput",
+     "Agents emit thousands of lines per task; a slow renderer turns a refactor into visible stutter and makes the pane unreadable while it streams.",
+     "`yes | head -5000000` and watch for tearing; time a large `git log -p`."),
+    ("Agent notifications",
+     "The scarce resource with more than one agent is your attention. The terminal must tell you when an agent finished or is blocked on input.",
+     "Check for OSC 9 / OSC 99 / OSC 777 (bell + desktop notification) and OSC 133;C/D prompt marking."),
+    ("Parallel-session state at a glance",
+     "Past ~4 agents, undifferentiated panes actively hurt — you scroll to find the crashed one. Per-pane branch/worktree/status metadata is the fix.",
+     "Open 6 agents; can you name which is waiting without reading scrollback?"),
+    ("Session persistence",
+     "Long-running agents must survive a dropped SSH connection, a closed lid, and ideally a reboot.",
+     "Detach, kill the client, reattach. Then reboot and try again."),
+    ("Key & escape-sequence fidelity",
+     "Shift+Enter for newlines, Alt+, / Alt+. for reasoning controls, OSC 52 for clipboard, OSC 8 for clickable `file:line` — all agent-facing UX.",
+     "Type a multi-line prompt; click a `path.py:42` link; copy from a remote session."),
+    ("Graphics protocol",
+     "Agents increasingly return plots, diagrams, and screenshots. Without a protocol you get a file path instead of an image.",
+     "`chafa image.png` vs native Kitty/sixel rendering."),
+    ("Scriptable control surface",
+     "Every orchestrator on top of a terminal needs to inject keystrokes and read pane state programmatically.",
+     "Is there a stable `send-keys` equivalent or a socket/IPC API?"),
+    ("OS coverage",
+     "The best tool you cannot install is worth nothing. This eliminates more candidates than any feature comparison.",
+     "Does it run on every machine you and your team actually use?"),
+]
+
+# Scorecard: (tool, OS, marks in CRITERIA order minus OS coverage, note).
+# ● = strong, ◐ = partial, ○ = absent/not applicable.
+SCORECARD = [
+    ("cmux (Ghostty core)", "macOS", "●●●●●○●", "Only tool designed for the parallel-agent case; macOS-only, very young."),
+    ("Warp", "mac/Linux/Win beta", "●●●●◐○◐", "Strongest notifications after cmux; proprietary engine, opinionated."),
+    ("waveterm", "mac/Linux/Win", "◐◐◐◐◐◐◐", "The only open, tri-platform agent-aware option — nothing best-in-class, nothing missing."),
+    ("Ghostty", "macOS, Linux", "●○○○●○○", "Best raw renderer, zero agent awareness — pair with tmux. No Windows."),
+    ("Kitty", "macOS, Linux", "●○◐○●●●", "Graphics protocol leader; remote-control socket, but no detach-to-daemon so nothing survives a dropped connection. No Windows."),
+    ("WezTerm", "mac/Linux/Win", "◐○◐●●●●", "Built-in multiplexer + persistence + widest graphics; slowest of the GPU set, and the only cross-OS emulator here."),
+    ("iTerm2", "macOS", "◐◐◐○●◐◐", "Mature and scriptable, but the oldest engine in the set."),
+    ("Alacritty", "mac/Linux/Win", "●○○○◐○○", "Deliberately minimal — no tabs, no splits, no notifications."),
+    ("Windows Terminal", "Windows", "◐○◐○◐○◐", "The only real choice on Windows; pair with WSL."),
+    ("tmux", "any POSIX", "◐◐○●◐○●", "Weak UI, unbeatable persistence and the reference automation API."),
+    ("Zellij", "mac/Linux", "◐◐◐◐◐○◐", "Nicer UX than tmux; persistence and scripting API both still weaker."),
+    ("herdr", "mac/Linux/Win beta", "●◐●●●○●", "Agent-native multiplexer, terminal-agnostic single Rust binary. Marks panes working/blocked/idle and survives reboot natively; desktop-push notification unconfirmed."),
+]
+
+# ---- Task-ranked picks: (scenario, [(pick, note) x3], evidence) --------------
+TASK_RANKINGS = [
+    ("One agent, one Mac, want the best default",
+     [("Ghostty", "fastest renderer, native Shift+Enter, one-line 25M scrollback"),
+      ("cmux", "same engine plus agent notifications — worth it the moment you add a second agent"),
+      ("iTerm2", "already in your stars; mature, slower engine")],
+     "Ghostty benchmarked ~4× iTerm2/Kitty throughput on sustained output; ~2 ms vs 3 ms input latency vs Kitty."),
+    ("One agent on Linux",
+     [("Ghostty", "GTK4 + libadwaita, native on GNOME and KDE"),
+      ("Kitty", "graphics protocol and built-in multiplexing"),
+      ("Tilix", "if you want saved tiling layouts without a multiplexer")],
+     "Ghostty ships a first-class Linux build; cmux does not exist here, so the agent-awareness layer must come from tmux + an orchestrator."),
+    ("Agentic coding on Windows",
+     [("Windows Terminal + WSL", "WSL is the platform — most agent tooling assumes POSIX"),
+      ("WezTerm", "the one first-tier emulator equally at home on Windows"),
+      ("Warp", "agent-aware, but Windows support is still beta")],
+     "Ghostty has no Windows support (planned post-1.0, no timeline; WSL2 works but is explicitly unsupported). Kitty and cmux have no Windows build at all."),
+    ("Four or more agents in parallel on one machine",
+     [("cmux", "notification rings, per-tab branch/PR/worktree metadata, unread badges — macOS only"),
+      ("herdr", "agent-native multiplexer, already in your stars, not macOS-locked"),
+      ("claude-squad", "TUI over isolated worktrees on tmux you already trust")],
+     "Multiple 2026 comparisons converge: past four agents the binding constraint is knowing which one needs you, not render speed."),
+    ("Keeping many sessions from corrupting each other",
+     [("git worktree per agent", "`claude -w` / `--worktree`, built into the CLI — verified against the installed binary"),
+      ("claude --worktree --tmux", "each session in its own tmux environment — iTerm2 native panes when available, `--tmux=classic` otherwise"),
+      ("container-use", "in your stars — full container isolation when worktrees aren't enough")],
+     "Running several agents in panes against one working directory is fragile: two sessions editing the same file conflict or overwrite. Worktrees give each session its own filesystem scope at near-zero cost."),
+    ("Agents on a remote box, or over flaky SSH",
+     [("tmux", "detach/reattach is non-negotiable and nothing beats it"),
+      ("mosh or Eternal Terminal", "survives IP changes and sleep; mosh has no scrollback, ET does"),
+      ("Zellij", "same job as tmux, friendlier UI, weaker scripting")],
+     "Process isolation, session persistence, real-time output, and remote attach — tmux's 2007 feature set is exactly the agent-orchestration requirement list."),
+    ("Surviving a reboot with agent state intact",
+     [("herdr", "a background server that claims native survival of lid-close, network drop and restart — no plugin needed"),
+      ("tmux + tmux-resurrect", "the well-trodden path *within tmux*, but resurrect is ~2 years stale"),
+      ("cmux", "session restore built in, macOS only")],
+     "Neither tmux nor Zellij persists across reboots by default; Zellij's native persistence is still roadmap. herdr's reboot claim is from its own README and is not independently verified here."),
+    ("Supervising agents from a phone",
+     [("nimbalyst", "agent kanban — active / blocked / awaiting review / ready to merge — with a native iPhone app"),
+      ("omnara", "command centre over agents running elsewhere, push notifications"),
+      ("Blink + tmux, or ttyd", "the DIY route: attach to the real session from iOS or a browser")],
+     "The mobile pattern is tap-notification, review, approve or reject in ~10 seconds — not authoring on a phone. Agents in 2026 are autonomous enough to work alone but not to go unsupervised."),
+    ("Building an orchestrator on top of a terminal",
+     [("tmux", "`send-keys` is the stable reference backend orchestrators target"),
+      ("libtmux", "typed Python API so you're not string-building shell commands"),
+      ("cmux socket API", "if macOS-only is acceptable")],
+     "Zellij lacks a `send-keys` equivalent with comparable API stability, which is why multi-agent projects keep targeting tmux."),
+    ("Agents that return images, plots, or screenshots",
+     [("Kitty", "the graphics protocol everyone else implements"),
+      ("WezTerm", "Kitty + sixel + iTerm2 protocols, the widest support"),
+      ("chafa", "in your stars already — makes almost any emulator render something")],
+     "Ghostty and cmux both score zero on native graphics protocols in the agent-aware terminal scorecards."),
+    ("Letting an autonomous agent drive the shell",
+     [("tirith", "in your stars — intercepts pipe-to-shell, ANSI injection, homograph URLs"),
+      ("container-use", "in your stars — container isolation per agent, though declining upstream"),
+      ("Alacritty or Ghostty + tmux", "small, boring, auditable surface")],
+     "Terminal-layer attacks (ANSI injection, homograph URLs, malicious skill configs) are the agent-specific threat model; `tirith` is the only tool in your stars aimed at it."),
+    ("Auditing what an agent actually ran",
+     [("atuin", "searchable, synced shell history across machines and sessions"),
+      ("witr", "in your stars — trace any process/port/container back to its origin"),
+      ("OSC 133 prompt marking", "gives the terminal per-command boundaries to record")],
+     "OSC 133;C/D mark command start/end, which is what lets a terminal time, notify on, and record individual agent commands."),
+]
+
+# ---- Adjacent (routed elsewhere, kept honest) --------------------------------
+ADJACENT = [
+    ("anthropics/claude-code", "The agent, not the terminal — see the `ai-coding-tuis` report."),
+    ("openai/codex", "Same: agent layer. This report is about what it runs inside."),
+    ("Untrivial-ai/agent-orchestrator", "Also covered by `agent-orchestration` and `agent-harnesses`; listed here for its tmux dependency."),
+    ("sheeki03/tirith", "Also in `ai-coding-tuis` as a safety tool; kept here because the attack surface is the terminal itself."),
+    ("BloopAI/vibe-kanban", "Parallel-agent management, but a web UI rather than a terminal surface."),
+    ("getagentseal/codeburn", "Token/cost tracking — `token-savings` and `ai-coding-tuis` cover it."),
+    ("charmbracelet/bubbletea", "How TUIs are built, not where agents run — `ai-coding-tuis`."),
+    ("zed-industries/zed", "Has a terminal, but it's an editor; out of scope."),
+    ("gravitational/teleport", "Access control for infrastructure — relevant to remote agents, but an infra product, not a terminal."),
+]
+
+# Closed-source products named in the evidence but excluded from the gap table,
+# which only lists repos that can actually be starred.
+NO_REPO = [
+    ("Otty", "agent-aware terminal; only themes/plugins are on GitHub"),
+    ("Termdock", "AI-native terminal — public repo is an issue tracker only"),
+    ("amux", "agent multiplexer with a self-healing watchdog and push notifications"),
+    ("Paseo", "mobile-first agent supervision with worktrees and voice input"),
+]
+
+# ---- Load --------------------------------------------------------------------
+with open(CLASSIFIED) as f:
+    cl = json.load(f)
+with open(GRAPH) as f:
+    gr = json.load(f)
+
+by_name = {r["full_name"]: r for r in cl["repos"]}
+nodes_by_id = {n["id"]: n for n in gr["nodes"]}
+name_to_nodeid = {n["full_name"]: n["id"] for n in gr["nodes"]}
+
+sel_names = list(TAXONOMY.keys())
+sel_node_ids = {name_to_nodeid[n] for n in sel_names if n in name_to_nodeid}
+inter_edges = [e for e in gr["links"]
+               if e["source"] in sel_node_ids and e["target"] in sel_node_ids]
+
+node_for = make_node_for(nodes_by_id, name_to_nodeid)
+
+present = [n for n in sel_names if n in by_name]
+total_stars = sum(by_name[n]["stars"] for n in present)
+cats = {}
+for n in present:
+    cats.setdefault(TAXONOMY[n][0], []).append(n)
+
+missing_stars = sum(m["stars"] for m in MISSING)
+missing_layers = {}
+for m in MISSING:
+    missing_layers.setdefault(m["layer"], []).append(m)
+
+# ---- Build -------------------------------------------------------------------
+gen = cl.get("generatedAt", "")
+user = cl.get("username", "")
+lines = []
+A = lines.append
+
+A(f"# {TITLE}")
+A("")
+A(f"> Derived from **{user}**'s {fmt_int(cl['total'])} starred repos "
+  f"(snapshot `{gen}`), cross-referenced with the repo-similarity graph "
+  f"({fmt_int(len(gr['nodes']))} nodes / {fmt_int(len(gr['links']))} edges, "
+  f"{len(gr['communities'])} communities). The OS matrix, gap table, and "
+  f"scorecard are backed by external evidence gathered {EVIDENCE_DATE} "
+  f"(GitHub API + 2026 head-to-head comparisons) — see Methodology.")
+A(">")
+A(f"> Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d')} by "
+  f"`scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).")
+A("")
+
+# --- Executive summary
+A("## Executive summary")
+A("")
+A("- **Two questions decide this, in order: which OS, and how many concurrent "
+  "sessions.** Feature comparisons come third, and render benchmarks barely matter "
+  "at all. The best tool for the job on macOS does not exist on Windows.")
+A("- **Best terminal for agentic coding, by OS:** macOS → **`cmux`** past one agent, "
+  "**Ghostty** for a single session. Linux → **Ghostty** or **Kitty** as the emulator "
+  "with **tmux** underneath and **`herdr`** or **`claude-squad`** for agent state. "
+  "Windows → **Windows Terminal + WSL**, or **WezTerm** if you want one emulator "
+  "everywhere. Remote → **tmux**, always.")
+A("- **The break point is roughly four agents.** Below it, any terminal works and "
+  "panes are fine. Above it, undifferentiated panes actively hurt — you scroll to find "
+  "the one that crashed — and you need per-session identity (branch, worktree, status) "
+  "plus notifications that come to you.")
+A("- **One worktree per agent is the step people skip and regret.** Several agents in "
+  "panes against a single working directory conflict or overwrite each other's edits. "
+  "Claude Code ships `-w` / `--worktree` and `--tmux` to do exactly this — verified "
+  "against the installed binary, not a blog post.")
+A("- **The agent already integrates with one terminal by name.** `claude --worktree "
+  "--tmux` \"uses iTerm2 native panes when available; use `--tmux=classic` for "
+  "traditional tmux\". On macOS that makes `iTerm2` — already in your stars — the "
+  "zero-install multi-session answer, and it is a first-party signal worth more than "
+  "any render benchmark in this report.")
+A(f"- **The gap in your stars is structural.** Coding *agents* are covered "
+  f"exhaustively — 31 tools, 1.2M★ in `ai-coding-tuis` — but the *terminal they live "
+  f"in* is only **{len(present)} repos ({fmt_int(total_stars)}★)**, against "
+  f"**{len(MISSING)} relevant terminal apps ({fmt_int(missing_stars)}★) missing "
+  f"entirely**.")
+A("- **You have zero agent-aware terminals.** The category that 2026 actually "
+  "produced — terminals that know an agent is running and surface its state — is "
+  "unrepresented: no `cmux` (26,373★), no `warp` (64,466★), no `waveterm` (22,088★). "
+  "You star `ghostty-org/ghostling` (1,091★, declining) but not "
+  "`ghostty-org/ghostty` (60,102★).")
+A("- **What you do have** breaks down as:")
+for c in CAT_ORDER:
+    if cats.get(c):
+        A(f"  - **{c}** ({len(cats[c])}): "
+          + ", ".join(f"`{x.split('/')[-1]}`" for x in sorted(cats[c], key=lambda x: -by_name[x]['stars'])))
+A("- **Nothing in your stars covers this layer editorially.** `tmux`, `iTerm2`, "
+  "`herdr`, `chafa`, `x-cmd`, `witr`, and `awesome-tuis` appear in **no other report** "
+  "in this suite — `herdr` alone is 25,579★ and Hot.")
+A("")
+
+# --- OS matrix (the new first-class axis)
+A("## Choosing by operating system")
+A("")
+A("Platform availability eliminates more candidates than any feature does. The "
+  "agent-aware terminals — the ones actually built for this — are macOS-first, and "
+  "two of the three best emulators have no Windows build at all.")
+A("")
+A("| OS | Emulator | Session layer | Multi-agent layer | The constraint |")
+A("|---|---|---|---|---|")
+for os_name, emu, sess, multi, note in OS_MATRIX:
+    A(f"| {cell(os_name)} | {cell(emu)} | {cell(sess)} | {cell(multi)} | {cell(note)} |")
+A("")
+A("**Platform reality, stated plainly:**")
+A("")
+A("- **`cmux` is macOS-only** — the single best tool for multi-agent supervision is "
+  "unavailable to Linux and Windows users, with no announced plans otherwise.")
+A("- **Ghostty runs on macOS and Linux, not Windows.** Windows is planned post-1.0 "
+  "with no timeline; WSL2 works but is explicitly unsupported by the maintainer. "
+  "A community fork (`Codavo/ghostinthewsl`, 56★) exists precisely because of this.")
+A("- **Kitty has no Windows build.** WSL only.")
+A("- **WezTerm is the only first-tier emulator equally at home on all three** — which "
+  "is why it's the right default for a mixed-OS team even though its renderer is the "
+  "slowest of the GPU-accelerated set.")
+A("- **On Windows, WSL is the platform, not an accessory.** Agent tooling overwhelmingly "
+  "assumes POSIX; `microsoft/WSL` (33,494★) belongs in your stars before any emulator "
+  "does.")
+A("- **On a remote box the emulator stops mattering entirely.** Only persistence and "
+  "reconnection do — tmux plus `mosh` or Eternal Terminal.")
+A("")
+
+# --- Multiple sessions (the other new axis)
+A("## Running multiple sessions — where each approach breaks")
+A("")
+A("Agent count is the variable that changes the answer. Each row is where the previous "
+  "setup stops working.")
+A("")
+A("| Concurrent agents | What breaks | What to run |")
+A("|---|---|---|")
+for count, breaks, run in SESSION_LADDER:
+    A(f"| {cell(count)} | {cell(breaks)} | {cell(run)} |")
+A("")
+A("### The isolation question comes before the terminal question")
+A("")
+A("Before choosing where sessions *appear*, decide how they're *isolated*. Four levels, "
+  "cheapest first:")
+A("")
+A("1. **Shared working directory, separate panes** — fine for read-only or genuinely "
+  "unrelated tasks, fragile otherwise. Two agents editing the same file conflict or "
+  "silently overwrite. This is the default people fall into and the source of most "
+  "\"parallel agents don't work\" complaints.")
+A("2. **One git worktree per agent** — each session gets its own filesystem scope and "
+  "branch, at near-zero cost. `claude -w` / `--worktree` creates it, and `--tmux` puts "
+  "each session in its own tmux environment (iTerm2 native panes where available). "
+  "**This is the right default past two agents.**")
+A("3. **One container per agent** — `container-use` (in your stars, though declining) "
+  "when agents install packages or run services that would collide on ports.")
+A("4. **One machine per agent** — remote boxes, supervised over tmux + mosh. Only when "
+  "the work is genuinely heavy.")
+A("")
+A("A caveat worth internalising: **parallel sessions pay off for independent tasks, not "
+  "for splitting one task.** Fanning a single feature across agents creates merge "
+  "conflicts and coordination overhead that erases the speedup.")
+A("")
+A("### Session persistence is a separate problem from session isolation")
+A("")
+A("Isolation stops agents corrupting each other. Persistence stops a closed lid or a "
+  "dropped connection killing an hour of work. They need different tools:")
+A("")
+A("- **Detach/reattach**: tmux (or Zellij). Non-negotiable for anything long-running.")
+A("- **Network roaming**: `mosh` (UDP, survives IP changes and sleep, but has no "
+  "scrollback of its own) or `EternalTerminal` (reconnecting, keeps scrollback).")
+A("- **Across a reboot**: within tmux, `tmux-resurrect` is still the well-trodden "
+  "path — and it hasn't been pushed since August 2024. `herdr` claims this natively "
+  "(its README promises agents survive a machine restart), which if it holds is the "
+  "strongest reason in this report to prefer it over a tmux + plugin stack. Zellij's "
+  "native persistence remains roadmap.")
+A("- **Away from the desk**: `nimbalyst` (agent kanban + iPhone app) or `omnara` for "
+  "push notifications; `Blink` or `ttyd` if you'd rather attach to the real session.")
+A("")
+
+# --- Master comparison (in-dataset)
+A("## Master comparison — the terminal layer in your stars")
+A("")
+A("Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; "
+  "`Activity` is derived from days-since-push + 90-day commits.")
+A("")
+A("| Tool | Layer | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |")
+A("|---|---|---|---|---|---|---|---|---|---|---|")
+for n in sorted(present, key=lambda x: -by_name[x]["stars"]):
+    r = by_name[n]
+    A("| [{n}](https://github.com/{n}) | {cat} | {lang} | {lic} | {st} | {lc} | {h} | {act} | {dsp} ago | {age} | {au} |".format(
+        n=n, cat=TAXONOMY[n][0], lang=cell(r.get("primary_language") or "—"),
+        lic=cell((r.get("license_name") or "—").replace("License", "").strip() or "—"),
+        st=fmt_stars(r), lc=r.get("lifecycle_stage") or "—",
+        h=r.get("health_score", "—"), act=activity_label(r),
+        dsp=days_to_human(r.get("days_since_push")), age=days_to_human(r.get("age_days")),
+        au=r.get("unique_authors_90d", "—")))
+A("")
+for c in CAT_ORDER:
+    if not cats.get(c):
+        continue
+    A(f"**{c}**")
+    A("")
+    for n in sorted(cats[c], key=lambda x: -by_name[x]["stars"]):
+        A(f"- **{n}** ({fmt_int(by_name[n]['stars'])}★) — {TAXONOMY[n][1]}")
+    A("")
+
+# --- The gap table
+A("## The gap — terminal apps missing from your stars")
+A("")
+A(f"{len(MISSING)} repos, **{fmt_int(missing_stars)}★** combined. Metrics verified "
+  f"against the GitHub API on **{EVIDENCE_DATE}** and frozen into the generator — "
+  f"they are *not* dataset metrics and do **not** refresh when the pipeline re-runs. "
+  f"The **OS** column is the first filter to apply.")
+A("")
+for layer in LAYER_ORDER:
+    items = missing_layers.get(layer, [])
+    if not items:
+        continue
+    sub = sum(i["stars"] for i in items)
+    A(f"### {layer} — {len(items)} missing, {fmt_int(sub)}★")
+    A("")
+    A("| Repo | ★ | OS | Lang | License | Freshness | Why it matters for agents | Verdict |")
+    A("|---|---|---|---|---|---|---|---|")
+    for m in sorted(items, key=lambda x: -x["stars"]):
+        A(f"| [{m['name']}](https://github.com/{m['name']}) | {fmt_int(m['stars'])} | "
+          f"{cell(m['os'])} | {cell(m['lang'])} | {cell(m['lic'])} | {cell(m['fresh'])} | "
+          f"{cell(m['why'])} | {cell(m['verdict'])} |")
+    A("")
+
+star_now = [m for m in MISSING if m["verdict"].startswith("**Star it")]
+A(f"**Priority shortlist.** If you only add a handful, add these {len(star_now)} — "
+  f"each closes a structural hole rather than adding another variant of something you "
+  f"already have:")
+A("")
+for m in sorted(star_now, key=lambda x: -x["stars"]):
+    A(f"- `{m['name']}` ({fmt_int(m['stars'])}★, {m['os']}) — {m['layer']}")
+A("")
+A("**Named in the evidence but not starrable** (closed source, or the public repo is "
+  "only an issue tracker) — worth knowing the category is bigger than the table:")
+A("")
+for name, why in NO_REPO:
+    A(f"- **{name}** — {why}")
+A("")
+
+# --- Rubric
+A("## What actually matters for agentic programming")
+A("")
+A("Eight criteria, ordered by how often they bite. The last column is how to test a "
+  "candidate in under a minute.")
+A("")
+A("| Criterion | Why it matters with agents | How to test it |")
+A("|---|---|---|")
+for crit, why, how in CRITERIA:
+    A(f"| **{cell(crit)}** | {cell(why)} | {cell(how)} |")
+A("")
+A("### Scorecard")
+A("")
+A("Columns follow the criteria above in order — throughput · notifications · parallel "
+  "state · persistence · key fidelity · graphics · scriptability — with OS coverage "
+  "broken out as its own column since it's a hard filter, not a score. "
+  "● strong · ◐ partial · ○ absent.")
+A("")
+A("| Tool | OS | Thr | Notif | State | Persist | Keys | Gfx | Script | Note |")
+A("|---|---|---|---|---|---|---|---|---|---|")
+for tool, os_cov, marks, note in SCORECARD:
+    cells = " | ".join(marks)
+    A(f"| **{cell(tool)}** | {cell(os_cov)} | {cells} | {cell(note)} |")
+A("")
+A("Read the scorecard as a shape, not a total. `Ghostty` and `tmux` are near-opposites "
+  "and are routinely used *together* — which is the real recommendation for anyone who "
+  "can't or won't adopt a macOS-only agent terminal.")
+A("")
+
+# --- Task rankings
+A("## Best pick per scenario")
+A("")
+A("| Scenario | 🥇 First pick | 🥈 Second | 🥉 Third | Evidence / note |")
+A("|---|---|---|---|---|")
+for task, picks, ev in TASK_RANKINGS:
+    cells = " | ".join(f"**{cell(p)}** — {cell(note)}" for p, note in picks)
+    A(f"| {cell(task)} | {cells} | {cell(ev)} |")
+A("")
+
+# --- Graph analysis
+A("## Graph analysis — how the terminal layer sits in your ecosystem")
+A("")
+comm = {}
+for n in present:
+    nd = node_for(n)
+    if nd is not None:
+        comm.setdefault(nd.get("community"), []).append(n)
+A(f"**Community clustering.** These {len(present)} tools span "
+  f"**{len(comm)} of the graph's {len(gr['communities'])} communities** — a scatter, "
+  f"not a cluster, which is itself the finding: the terminal layer has no centre of "
+  f"gravity in your stars the way the agent layer does.")
+A("")
+for c, names in sorted(comm.items(), key=lambda x: -len(x[1])):
+    if len(names) >= 2:
+        A(f"- **Community {c}** ({len(names)}): " + ", ".join(f"`{x}`" for x in names))
+A("")
+
+ranked = sorted(
+    [(node_for(n).get("pagerank", 0) if node_for(n) else 0, n) for n in present],
+    key=lambda x: -x[0],
+)
+A(f"**Centrality (PageRank in the full {fmt_int(len(gr['nodes']))}-repo graph)** — "
+  "the most hub-like terminal-layer repos you hold:")
+A("")
+for pr, n in ranked[:10]:
+    A(f"- `{n}` — PageRank {pr:.4f}")
+A("")
+
+A("**Direct links between these tools** (similarity edges where both endpoints are in "
+  "this report):")
+A("")
+if inter_edges:
+    id_to_name = {v: k for k, v in name_to_nodeid.items()}
+    shown = sorted(inter_edges, key=lambda x: -x["weight"])[:15]
+    for e in shown:
+        a = id_to_name.get(e["source"], e["source"])
+        b = id_to_name.get(e["target"], e["target"])
+        why = []
+        if e.get("shared_topics"):
+            why.append("topics: " + ", ".join(e["shared_topics"][:4]))
+        if e.get("shared_authors"):
+            why.append("authors: " + ", ".join(e["shared_authors"][:3]))
+        A(f"- `{a}` ⇄ `{b}` (w={e['weight']:.3f})" + (f" — {'; '.join(why)}" if why else ""))
+    if len(inter_edges) > 15:
+        A(f"- …and {len(inter_edges) - 15} more.")
+else:
+    A("- _None._ The terminal-layer repos in your stars are not similar enough to each "
+      "other to link — further evidence that this layer was collected incidentally "
+      "rather than deliberately.")
+A("")
+
+# --- Maintenance / risk
+A("## Maintenance & risk signal")
+A("")
+A("Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecycle "
+  "+ activity before adopting.")
+A("")
+A("| Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |")
+A("|---|---|---|---|---|---|---|")
+for n in sorted(present, key=lambda x: -(by_name[x].get("health_score") or 0)):
+    r = by_name[n]
+    tas = r.get("top_author_share")
+    A("| {n} | {h} | {lc} | {act} | {bf} | {tas} | {rel} |".format(
+        n=n, h=r.get("health_score", "—"), lc=r.get("lifecycle_stage", "—"),
+        act=activity_label(r), bf=r.get("bus_factor", "—"),
+        tas=f"{tas:.0%}" if isinstance(tas, (int, float)) else "—",
+        rel=r.get("releases_total", "—")))
+A("")
+A("Watch items:")
+A("")
+A("- **`ghostty-org/ghostling`** is Declining (78d since push, 4 commits in 90d, bus "
+  "factor 1) — it is a libghostty demo, not a terminal to depend on. The project you "
+  "want starred is `ghostty-org/ghostty`.")
+A("- **`dagger/container-use`** is Declining (60d since push, 1 commit in 90d) despite "
+  "being the isolation story for parallel agents — there is no maintained replacement "
+  "in your stars.")
+A("- **`gnachman/iTerm2`** and **`tmux/tmux`** are both healthy but bus-factor 1, with "
+  "top-author shares of 93% and 67%. Decade-old projects with one hand on the wheel.")
+A("- **`herdrdev/herdr`** is the interesting risk: 25,579★ in 137 days, 994 commits in "
+  "90d, 26 contributors — but bus factor 1 and a category (agent multiplexers) with a "
+  "dozen competitors. High upside, high churn. Its scorecard marks here come from its "
+  "own README (background server, pane state marking, socket API, Windows beta), not "
+  "from hands-on testing or a third-party review — the weakest evidence base of any "
+  "headline recommendation in this report.")
+A("- **Outside the dataset**, four load-bearing pieces are stale: "
+  "`tmux-plugins/tmux-resurrect` (~2y, and it's the reboot-persistence story), "
+  "`ekzhang/sshx` (>1y, and it's network-exposed), `ConEmu/ConEmu` (>1y), and "
+  "`martanne/abduco` (3y). `stravu/crystal` has gone idle and moved to "
+  "`nimbalyst/nimbalyst`.")
+A("")
+
+# --- Decision
+A("## Which one should you use?")
+A("")
+A("```")
+A("1. What OS?")
+A("   ├─ Windows ──► Windows Terminal + WSL   (or WezTerm for one emulator everywhere)")
+A("   │              cmux, Ghostty and Kitty do not run here.")
+A("   ├─ Linux ────► Ghostty or Kitty + tmux")
+A("   │              No cmux; get agent-awareness from herdr or claude-squad.")
+A("   └─ macOS ────► continue to 2.")
+A("")
+A("2. How many agents at once?")
+A("   ├─ 1 ────────► Ghostty. Stop here; don't over-engineer.")
+A("   ├─ 2–3 ──────► Ghostty + tmux panes + starship (per-pane branch identity).")
+A("   ├─ 4–12 ─────► cmux — notification rings, per-tab branch/PR/worktree state.")
+A("   │              One git worktree per agent (claude --worktree).")
+A("   └─ 12+ ──────► Stop watching. agent-orchestrator + PR review queue,")
+A("                  nimbalyst or omnara for push notifications.")
+A("")
+A("3. Is any of it remote, or do you leave the desk?")
+A("   ├─ Remote ───► tmux is mandatory. Add mosh or EternalTerminal.")
+A("   └─ Mobile ───► nimbalyst (iPhone) or omnara; Blink/ttyd for the raw session.")
+A("```")
+A("")
+A("**The pragmatic stack if you change nothing else:** keep `tmux` as the substrate "
+  "(persistence + scriptability, and it's the one layer that works identically on every "
+  "OS), add `Ghostty` as the emulator on macOS or Linux — `WezTerm` if Windows is in "
+  "the mix — and add exactly one state-aware layer on top: `herdr` if you want it "
+  "terminal-agnostic and already in your stars, `cmux` if you're macOS-only and want "
+  "notifications from the terminal itself. Run one git worktree per agent. Add `atuin` "
+  "so you can reconstruct what the agents actually ran.")
+A("")
+A("**What not to do:** don't pick on render benchmarks. Every GPU-accelerated terminal "
+  "here is fast enough that the difference is imperceptible in normal use; the "
+  "throughput column only matters when an agent dumps a very large diff. And don't run "
+  "four agents in one working directory — isolation is a bigger win than any terminal "
+  "feature in this report.")
+A("")
+
+# --- Adjacent
+A("## Adjacent (deliberately not counted as terminal-layer tools)")
+A("")
+for name, why in ADJACENT:
+    r = by_name.get(name)
+    star = f" ({fmt_int(r['stars'])}★)" if r else ""
+    A(f"- **{name}**{star} — {why}")
+A("")
+
+# --- Methodology
+A("## Methodology & caveats")
+A("")
+A("- **In-dataset metrics**: `data/classified.json` + `public/data/graph.json`. No API "
+  "calls at generation time; fully reproducible.")
+A("- **Selection**: keyword scan over `full_name + description + topics` for terminal / "
+  "emulator / multiplexer / tmux / shell / pty / tui, plus the specific names of every "
+  "major terminal app across macOS, Linux and Windows, then manual curation. Agent TUIs "
+  "themselves were routed to `ai-coding-tuis`; fleet orchestrators with web UIs to "
+  "`agent-orchestration`.")
+A(f"- **Gap analysis**: {len(MISSING)} candidate repos were checked by exact "
+  f"`owner/name` against the dataset and confirmed absent, then their stars, language, "
+  f"license, and last-push date were read from the GitHub API on {EVIDENCE_DATE}. Three "
+  f"identity problems surfaced in that check and are reflected above: `pvolok/mprocs` → "
+  f"`pvolok/dekit`, `stravu/crystal` → `nimbalyst/nimbalyst`, and `KDE/konsole` being a "
+  f"read-only mirror whose star count understates adoption. Products with no starrable "
+  f"repo (Otty, Termdock, amux, Paseo) are listed separately rather than fabricated "
+  f"into the table.")
+A("- **OS claims** come from the projects' own platform support: Ghostty on macOS + "
+  "Linux with Windows planned post-1.0 and WSL2 unsupported "
+  "([discussion](https://github.com/ghostty-org/ghostty/discussions/2563)); cmux "
+  "macOS-only; Kitty with no Windows build; WezTerm and waveterm tri-platform.")
+A("- **Multi-session claims are first-party.** `-w, --worktree [name]` and `--tmux` "
+  "(\"Create a tmux session for the worktree (requires --worktree). Uses iTerm2 native "
+  "panes when available; use --tmux=classic for traditional tmux.\") were read from "
+  "`claude --help` on the installed binary, **v2.1.241**, on " + EVIDENCE_DATE + ". "
+  "Secondary write-ups date the feature to v2.1.49 (February 2026); that date is *not* "
+  "verified here and is omitted from the body.")
+A("- **Scorecard and rankings** are judgement calls informed by external evidence "
+  "gathered " + EVIDENCE_DATE + ": agent-aware terminal comparisons "
+  "([codex.danielvaughan.com](https://codex.danielvaughan.com/2026/04/29/agent-aware-terminals-codex-cli-warp-cmux-ghostty-choosing-terminal-emulator/), "
+  "[agentsroom.dev](https://agentsroom.dev/blog/best-terminal-for-agentic-coding)), "
+  "emulator benchmarks and multiplexer head-to-heads "
+  "([dasroot.net](https://dasroot.net/posts/2026/03/linux-terminal-emulators-alacritty-kitty-wezterm/), "
+  "[pistack.xyz](https://www.pistack.xyz/posts/2026-08-10-ghostty-vs-alacritty-vs-wezterm-terminal-emulator-guide/), "
+  "[commandinline.com](https://www.commandinline.com/tmux-vs-zellij-comparison/)), "
+  "and OSC-sequence documentation for agent notifications "
+  "([cmux docs](https://manaflow-ai-cmux.mintlify.app/features/notifications)).")
+A("- **Several sources have a commercial stake in their own conclusions.** "
+  "`agentsroom.dev` ranks its own product first for multi-machine use; `amux.io` "
+  "publishes the multiplexer ranking it appears in; `termdock.com` authors tmux "
+  "comparisons. Their factual claims (platform support, feature presence) were "
+  "cross-checked against the GitHub API and project docs where they mattered; their "
+  "*verdicts* were not adopted wholesale. The recurring framing that survives across "
+  "unrelated sources — attention management beats render speed past ~4 agents — is "
+  "the one this report leans on.")
+A("- **Numbers are point-in-time and partly third-party.** Render-throughput and "
+  "latency figures (\"~4× iTerm2\", \"2 ms vs 3 ms\", \"~30 MB vs 60–100 MB\") come "
+  "from published 2026 comparisons, not from measurements taken here; treat them as "
+  "directional. Independent sources also disagree on how much any of it matters in "
+  "practice, and this report sides with the view that it mostly doesn't.")
+A("- **The gap table does not refresh.** Re-running the pipeline updates every "
+  "in-dataset metric; the missing-repo stars and the frozen citations need a manual "
+  "pass. Re-verify after any major terminal release.")
+A("- **`cmux` is very young** (created 2026-01-28; 1,751 open issues and 2,668 open "
+  "PRs at check time — GitHub's `open_issues_count` of 4,419 conflates the two, and "
+  "several published write-ups repeat it as an issue count). "
+  "It is the top recommendation for the parallel-agent case on merit, not on "
+  "stability — weigh that if you'd rather not be an early adopter.")
+A("")
+A(f"<sub>In-dataset tools: {len(present)} · Missing tools catalogued: {len(MISSING)} · "
+  f"Snapshot: {gen}</sub>")
+
+with open(OUT, "w") as f:
+    f.write("\n".join(lines) + "\n")
+
+# --- Sidecar meta (consumed by build_index.py) --------------------------------
+top = sorted(present, key=lambda x: -by_name[x]["stars"])[:5]
+meta = {
+    "slug": SLUG,
+    "title": TITLE,
+    "file": f"{SLUG}.md",
+    "category": "AI / Comparison",
+    "summary": (f"Which terminal to run coding agents in, decided by OS first and "
+                f"concurrent-session count second: a per-OS matrix (macOS/Linux/"
+                f"Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, "
+                f"an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/"
+                f"Zellij/herdr, and a gap analysis showing {len(MISSING)} terminal apps "
+                f"({fmt_int(missing_stars)}★) missing from the stars against "
+                f"{len(present)} present."),
+    "tool_count": len(present),
+    "total_stars": total_stars,
+    "categories": {c: len(cats.get(c, [])) for c in CAT_ORDER},
+    "top_tools": [{"name": n, "stars": by_name[n]["stars"]} for n in top],
+    "snapshot": gen,
+    "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+    "generator": "scripts/reports/agentic_terminals.py",
+}
+with open(META_OUT, "w") as f:
+    json.dump(meta, f, indent=2)
+
+print(f"Wrote {OUT}")
+print(f"Wrote {META_OUT}")
+print(f"  tools: {len(present)} / {len(sel_names)} curated")
+print(f"  missing catalogued: {len(MISSING)} ({fmt_int(missing_stars)}★) "
+      f"across {len(missing_layers)} layers")
+missing_from_dataset = [n for n in sel_names if n not in by_name]
+if missing_from_dataset:
+    print("  WARNING missing:", missing_from_dataset)
+
+# The gap table's whole claim is that these repos are absent. Once one gets
+# starred the dataset will contain it and the report would be asserting a
+# falsehood — so fail loudly and force a re-curation instead.
+now_starred = [m["name"] for m in MISSING if m["name"] in by_name]
+if now_starred:
+    print("  WARNING gap table is stale — these are now in the dataset and must be "
+          "moved into TAXONOMY:", now_starred)
+
+# Every layer in MISSING must be rendered; a typo'd layer would silently drop rows.
+unrendered = set(missing_layers) - set(LAYER_ORDER)
+if unrendered:
+    raise SystemExit(f"ERROR: MISSING entries in unrendered layers: {unrendered}")

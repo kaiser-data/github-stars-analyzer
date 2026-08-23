@@ -45,6 +45,7 @@ GENERATORS = [
     "agent_harnesses.py",
     "document_extraction.py",
     "ai_coding_tuis.py",
+    "agentic_terminals.py",
     "finetuning_stack.py",
     "trending_now.py",
     "charting_stack.py",

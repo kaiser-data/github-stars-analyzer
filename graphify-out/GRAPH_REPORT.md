@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-08-11)
+# Graph Report - github-stars-analyzer  (2026-08-23)
 
 ## Corpus Check
-- 137 files · ~2,561,822 words
+- 151 files · ~2,745,385 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1179 nodes · 1208 edges · 72 communities (67 shown, 5 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.8)
+- 1379 nodes · 1420 edges · 82 communities (76 shown, 6 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bae3f9ef`
+- Built from commit: `078ac977`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -82,35 +82,46 @@
 - [[_COMMUNITY_snapshot.py|snapshot.py]]
 - [[_COMMUNITY_Trending Now — What's Actually Moving in Your Stars|Trending Now — What's Actually Moving in Your Stars]]
 - [[_COMMUNITY_Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases|Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases]]
+- [[_COMMUNITY_charting_stack.py|charting_stack.py]]
+- [[_COMMUNITY_openclaw_ecosystem.py|openclaw_ecosystem.py]]
+- [[_COMMUNITY_build_viz_skill.py|build_viz_skill.py]]
+- [[_COMMUNITY_choosing-viz-tools — design|choosing-viz-tools — design]]
+- [[_COMMUNITY_check-dataset.mjs|check-dataset.mjs]]
+- [[_COMMUNITY_Handoff — 2026-08-11|Handoff — 2026-08-11]]
+- [[_COMMUNITY_render_html.py|render_html.py]]
+- [[_COMMUNITY_agent_memory.py|agent_memory.py]]
+- [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
+- [[_COMMUNITY_Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions|Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?]]
+- [[_COMMUNITY_agentic_terminals.py|agentic_terminals.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
 2. `The field guide, by layer` - 15 edges
 3. `The field guide, by layer` - 15 edges
-4. `scripts` - 13 edges
-5. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
-6. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+4. `scripts` - 14 edges
+5. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
+6. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
 7. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
 8. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
-9. `Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages` - 12 edges
-10. `Fine-Tuning & Post-Training Stack — Which Trainer for Which Task` - 12 edges
+9. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
+10. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
   netlify/functions/ask.mjs → scripts/lib/ask-prompt.mjs
+- `isolation_verdict()` --calls--> `activity_label()`  [INFERRED]
+  scripts/reports/agent_memory.py → scripts/reports/lib.py
 - `comp_table()` --calls--> `fmt_stars()`  [INFERRED]
   scripts/reports/agent_orchestration.py → scripts/reports/lib.py
 - `meta_bits()` --calls--> `fmt_stars()`  [INFERRED]
   scripts/reports/blockchain_claws.py → scripts/reports/lib.py
 - `make_charts()` --calls--> `svg_hbar()`  [INFERRED]
   scripts/reports/build_index.py → scripts/reports/lib.py
-- `comp_table()` --calls--> `activity_label()`  [INFERRED]
-  scripts/reports/agent_orchestration.py → scripts/reports/lib.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (72 total, 5 thin omitted)
+## Communities (82 total, 6 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -125,8 +136,8 @@ Cohesion: 0.09
 Nodes (24): clientIp(), config, extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER (+16 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.11
-Nodes (21): args, failures, maxAgeArg, out, pickReadme(), projectRepo(), results, sample (+13 more)
+Cohesion: 0.08
+Nodes (29): ABORT_AFTER_CONSECUTIVE, args, byKind, failures, MAX_FAILURE_RATE, maxAgeArg, OUT_PATH, paceMs (+21 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.08
@@ -150,7 +161,7 @@ Nodes (11): args, classified, data, daysAgo(), dist, healthScore(), inArg, lifec
 
 ### Community 9 - "Community 9"
 Cohesion: 0.05
-Nodes (38): dependencies, dexie, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path, lucide-react, react (+30 more)
+Nodes (39): dependencies, dexie, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path, lucide-react, react (+31 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.10
@@ -209,7 +220,7 @@ Cohesion: 0.12
 Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.09
+Cohesion: 0.08
 Nodes (5): load_data(), make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses., Build the node_for(full_name) lookup used in graph-analysis sections.
 
 ### Community 27 - "Community 27"
@@ -269,8 +280,8 @@ Cohesion: 0.22
 Nodes (7): meta_bits(), _esc(), fmt_int(), fmt_stars(), Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume, Star count with a trend marker when snapshot history exists.      e.g. "12,345 (, svg_hbar()
 
 ### Community 41 - "Community 41"
-Cohesion: 0.31
-Nodes (7): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart
+Cohesion: 0.27
+Nodes (9): build(), created_date(), inject_charts(), make_charts(), Insert chart images after the intro blockquote of a generated report., Run every generator, then report the ones that failed.      A single crashing ge, First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart (+1 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
@@ -301,8 +312,8 @@ Cohesion: 0.29
 Nodes (6): Adding a new report, Data flow, Pitfalls, Refreshing data (upstream of reports), Star-Reports Pipeline, Task-ranked reports (web-research-backed)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.15
-Nodes (12): Architecture, Ask AI setup, Data pipeline, Deploy to Netlify, GitHub Stars Analyzer, License, Project structure, Provider recipes (+4 more)
+Cohesion: 0.10
+Nodes (20): Architecture, Ask AI — natural language over the graph, Ask AI setup, Browse — the whole corpus, filtered, Compare — two repos, side by side, Data pipeline, Deploy, Features (+12 more)
 
 ### Community 53 - "make_node_for"
 Cohesion: 0.12
@@ -360,16 +371,56 @@ Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fas
 Cohesion: 0.06
 Nodes (33): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions, Dashboards as code (+25 more)
 
+### Community 70 - "charting_stack.py"
+Cohesion: 0.07
+Nodes (27): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+19 more)
+
+### Community 71 - "openclaw_ecosystem.py"
+Cohesion: 0.07
+Nodes (27): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+19 more)
+
+### Community 72 - "build_viz_skill.py"
+Cohesion: 0.18
+Nodes (17): load(), main(), parse_capabilities(), parse_jobs(), [(full_name, layer, advantages, disadvantages, best_for)] from the report., [(job, [full_name, ...])] from the ranked use-case table., Display name — unambiguous but not repo-path verbose., Off-menu routing table. Read only when no job row matches. (+9 more)
+
+### Community 73 - "choosing-viz-tools — design"
+Cohesion: 0.17
+Nodes (11): choosing-viz-tools — design, Files, Knowledge base, Maintenance handling, Out of scope, Output shape, Problem, Routing dimensions (+3 more)
+
+### Community 74 - "check-dataset.mjs"
+Cohesion: 0.17
+Nodes (9): args, baseline, baselineFile, CLASSIFIED, current, currentDate, MAX_DROP, MIN_REPOS (+1 more)
+
+### Community 75 - "Handoff — 2026-08-11"
+Cohesion: 0.18
+Nodes (10): 1. BLOCKER — CI ingest truncates the dataset (1,596 → 96 repos), 2. Report generator crashes on an empty taxonomy, 3. Credential hygiene — action required, 4. Known limitations, not bugs, 5. Reproducing the current state, 6. Suggested order of work, 7. What was fixed on 2026-08-12, Handoff — 2026-08-11 (+2 more)
+
+### Community 76 - "render_html.py"
+Cohesion: 0.36
+Nodes (8): cell(), convert(), inline_md(), main(), Inline markdown → HTML. Code spans are protected from other rules., A table cell, with bare state words promoted to pills., Inline an SVG file, stripped of its XML prolog., read_svg()
+
+### Community 77 - "agent_memory.py"
+Cohesion: 0.33
+Nodes (6): col_values(), full_degree(), isolation_verdict(), All marks for one primitive across the matrix rows., Edge count in the whole 1,596-repo graph, not just this report's slice., Name the call — including when the honest call is 'the metric can't support one'
+
+### Community 79 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
+Cohesion: 0.08
+Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+
+### Community 80 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
+Cohesion: 0.08
+Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+
 ## Knowledge Gaps
-- **833 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+828 more)
+- **959 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+954 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _849 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _989 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -377,7 +428,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.0896551724137931 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.1076923076923077 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07777777777777778 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
 - **Should `Community 5` be split into smaller, more focused modules?**
