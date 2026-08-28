@@ -1,12 +1,33 @@
 // Shared GitHub API helpers. Run with: node --env-file=.env <script>
 
+import { execFileSync } from 'node:child_process';
+
 const GITHUB_API = 'https://api.github.com';
 const GRAPHQL_API = 'https://api.github.com/graphql';
 
+let _ghToken;
+
 export function getToken() {
   const t = process.env.GITHUB_TOKEN;
-  if (!t) throw new Error('GITHUB_TOKEN missing. Run with: node --env-file=.env <script>');
-  return t.trim();
+  if (t && t.trim()) return t.trim();
+
+  // Fall back to the gh CLI's own token. A dead or missing .env then costs
+  // nothing on a machine where `gh auth login` has been run.
+  if (_ghToken === undefined) {
+    try {
+      _ghToken = execFileSync('gh', ['auth', 'token'], {
+        encoding: 'utf8',
+        stdio: ['ignore', 'pipe', 'ignore'],
+      }).trim() || null;
+    } catch {
+      _ghToken = null;
+    }
+  }
+  if (_ghToken) return _ghToken;
+
+  throw new Error(
+    'No GitHub token. Set GITHUB_TOKEN (node --env-file=.env <script>) or run `gh auth login`.',
+  );
 }
 
 function authHeader(token) {
