@@ -1,6 +1,6 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges).
+> Derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges).
 >
 > Generated 2026-08-28 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
@@ -17,14 +17,14 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 
 | Repo | Layer-fit | ★ | Lifecycle | Momentum (★/30d) | Commits (90d) |
 |---|---|---|---|---|---|
-| [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,190 | 🟢 Mature | 1,292 | 20,079 |
+| [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,190 | 🟢 Mature | 1,291 | 20,079 |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,573 | 🔥 Hot | 2,396 | 109 |
 | [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 382 | 🔥 Hot | 85 | 234 |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,573 | 🔥 Hot | 2,401 | 109 |
-| [go-ethereum](https://github.com/ethereum/go-ethereum) | Execution clients (nodes) | 51,314 | 🔵 Classic | 416 | 241 |
-| [slither](https://github.com/crytic/slither) | Security & analysis | 6,353 | 🔵 Classic | 82 | 46 |
-| [echidna](https://github.com/crytic/echidna) | Security & analysis | 3,171 | 🔵 Classic | 36 | 28 |
-| [graph-node](https://github.com/graphprotocol/graph-node) | Indexing & on-chain data | 3,146 | 🔵 Classic | 39 | 55 |
 | [agave](https://github.com/anza-xyz/agave) | Solana | 1,895 | 🟢 Mature | 106 | 1,162 |
+| [hardhat](https://github.com/NomicFoundation/hardhat) | Dev toolkits | 8,505 | 🔵 Classic | 104 | 629 |
+| [reth](https://github.com/paradigmxyz/reth) | Execution clients (nodes) | 5,753 | 🔵 Classic | 150 | 484 |
+| [go-ethereum](https://github.com/ethereum/go-ethereum) | Execution clients (nodes) | 51,314 | 🔵 Classic | 416 | 241 |
+| [solidity](https://github.com/argotorg/solidity) | Languages & compilers | 25,717 | 🔵 Classic | 239 | 234 |
 
 **Two trends to watch:**
 
@@ -175,4 +175,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-28T01:21:50.535Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-28T10:47:12.716Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

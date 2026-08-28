@@ -1,6 +1,6 @@
 # Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps
 
-> Engine roster derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges, 35 communities).
+> Engine roster derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges, 37 communities).
 >
 > **The throughput numbers in this report are measured, not quoted** — benchmark runs against a real Jetson Orin Nano Super 8GB in **MAXN_SUPER** (25W) mode on 2026-08-23, with the desktop and a voice stack running. Engine verdicts are argued against those numbers. See Methodology.
 >
@@ -115,12 +115,12 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 90,249 (▲1,791) | Classic | 99 | very active | 0d ago | 78 |
 | [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,396 (▼17) | Abandoned | 7 | stale | 1.3y ago | 0 |
 | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 53,239 (▲570) | Classic | 94 | very active | 3d ago | 48 |
-| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,102 (▲398) | Mature | 73 | active | 2d ago | 6 |
+| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,102 (▲398) | Mature | 73 | active | 3d ago | 6 |
 | [microsoft/BitNet](https://github.com/microsoft/BitNet) | Format & quantization | C++ | MIT | 40,207 (▲393) | Mature | 45 | active | 1mo ago | 3 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,371 (▲3,139) | Hot | 88 | very active | 0d ago | 33 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,371 (▲3,139) | Hot | 88 | very active | 1d ago | 33 |
 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 32,693 (▲2,808) | Mature | 65 | very active | 1d ago | 1 |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 32,584 (▲1,082) | Mature | 99 | very active | 0d ago | 48 |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,707 (▲196) | Mature | 66 | very active | 1d ago | 5 |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,707 (▲196) | Mature | 66 | very active | 2d ago | 5 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,117 (▲318) | Declining | 15 | stale | 9mo ago | 0 |
 | [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,373 (▲97) | Classic | 84 | very active | 0d ago | 22 |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,490 (▲164) | Classic | 99 | very active | 0d ago | 57 |
@@ -219,25 +219,25 @@ What are you running?
 
 ## Graph analysis
 
-**Community clustering.** These 17 engines span **6 of the graph's 35 communities**.
+**Community clustering.** These 17 engines span **8 of the graph's 37 communities**.
 
-- **Community 21** (9): `ggml-org/llama.cpp`, `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `lyogavin/airllm`
-- **Community 15** (2): `mozilla-ai/llamafile`, `microsoft/BitNet`
-- **Community 18** (2): `dusty-nv/jetson-containers`, `onnx/onnx`
-- **Community 20** (2): `AlexsJones/llmfit`, `exo-explore/exo`
+- **Community 5** (4): `ggml-org/llama.cpp`, `mozilla-ai/llamafile`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`
+- **Community 10** (4): `ollama/ollama`, `vllm-project/vllm`, `sgl-project/sglang`, `NVIDIA/TensorRT-LLM`
+- **Community 9** (3): `nomic-ai/gpt4all`, `InternLM/lmdeploy`, `lyogavin/airllm`
+- **Community 8** (2): `dusty-nv/jetson-containers`, `onnx/onnx`
 
-**Centrality (PageRank in the full 1,752-repo graph)**:
+**Centrality (PageRank in the full 1,837-repo graph)**:
 
-- `nomic-ai/gpt4all` — PageRank 0.0023
-- `NVIDIA/TensorRT-LLM` — PageRank 0.0018
-- `vllm-project/vllm` — PageRank 0.0009
+- `nomic-ai/gpt4all` — PageRank 0.0022
+- `NVIDIA/TensorRT-LLM` — PageRank 0.0017
 - `ggml-org/whisper.cpp` — PageRank 0.0008
+- `vllm-project/vllm` — PageRank 0.0007
 - `onnx/onnx` — PageRank 0.0007
-- `InternLM/lmdeploy` — PageRank 0.0006
 - `SYSTRAN/faster-whisper` — PageRank 0.0006
+- `InternLM/lmdeploy` — PageRank 0.0006
 - `microsoft/BitNet` — PageRank 0.0005
+- `ggml-org/llama.cpp` — PageRank 0.0005
 - `sgl-project/sglang` — PageRank 0.0004
-- `k2-fsa/sherpa-onnx` — PageRank 0.0004
 
 **Direct links between these engines:**
 
@@ -246,8 +246,6 @@ What are you running?
 - `vllm-project/vllm` ⇄ `sgl-project/sglang` (w=0.407) — topics: llm, transformer, inference, llama
 - `sgl-project/sglang` ⇄ `ollama/ollama` (w=0.269) — topics: llama, llm, deepseek, gpt-oss
 - `dusty-nv/jetson-containers` ⇄ `onnx/onnx` (w=0.182) — topics: machine-learning, pytorch, tensorflow, scikit-learn
-- `ggml-org/whisper.cpp` ⇄ `mozilla-ai/llamafile` (w=0.121) — topics: speech-to-text
-- `nomic-ai/gpt4all` ⇄ `InternLM/lmdeploy` (w=0.083) — topics: llm-inference
 
 ## Maintenance & risk signal
 
@@ -294,4 +292,4 @@ Watch items: `nomic-ai/gpt4all` is Declining and adds nothing here. Outside the 
 - **Board identification.** Specs for the Super (67 TOPS, 102 GB/s, 7W/15W/25W) are NVIDIA's published figures for the Orin Nano Super Developer Kit; the uplift from 40 TOPS / 68 GB/s is a software unlock on identical hardware, not a new board.
 - **The gap table does not refresh** with the pipeline; its metrics and the frozen citations need a manual pass.
 
-<sub>Engines covered: 17 · Missing catalogued: 11 · Measurements: 2026-08-23 · Snapshot: 2026-08-28T01:21:50.535Z</sub>
+<sub>Engines covered: 17 · Missing catalogued: 11 · Measurements: 2026-08-23 · Snapshot: 2026-08-28T10:47:12.716Z</sub>

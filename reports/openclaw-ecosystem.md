@@ -1,6 +1,6 @@
 # OpenClaw Ecosystem — What to Use Now
 
-> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges, 35 communities).
+> Derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges, 37 communities).
 >
 > Generated 2026-08-28 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
@@ -38,8 +38,8 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Alternative agent / OS | Python | 237,338 (▲10,296) | Hot | 85 | very active | 0d ago | 3 |
 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Desktop / orchestration | Rust | 129,761 (▲4,312) | Hot | 77 | very active | 0d ago | 1 |
 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | Desktop / orchestration | TypeScript | 51,155 (▲1,138) | Mature | 94 | very active | 0d ago | 4 |
-| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Alternative agent / OS | Python | 47,471 (▲722) | Hot | 79 | very active | 0d ago | 1 |
-| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 37,717 (▲4,779) | Hot | 78 | very active | 0d ago | 1 |
+| [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Alternative agent / OS | Python | 47,471 (▲722) | Hot | 79 | very active | 1d ago | 1 |
+| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 37,717 (▲4,779) | Hot | 78 | very active | 1d ago | 1 |
 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Alternative agent / OS | Rust | 32,667 (▲141) | Hot | 88 | very active | 1d ago | 3 |
 | [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | Desktop / orchestration | TypeScript | 32,345 (▲683) | Hot | 81 | very active | 1d ago | 2 |
 | [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Skills / directory | — | 31,672 (▲2) | Declining | 22 | slowing | 5mo ago | 0 |
@@ -50,7 +50,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Specialized agent | Python | 14,263 (▲288) | Hot | 72 | very active | 9d ago | 1 |
 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Alternative agent / OS | Rust | 12,603 (▲6) | Hot | 80 | very active | 0d ago | 2 |
 | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | Hosting / secure runtime | TypeScript | 9,957 (▲26) | Declining | 26 | slowing | 3mo ago | 0 |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Skills / directory | TypeScript | 9,359 (▲82) | Hot | 85 | very active | 0d ago | 2 |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Skills / directory | TypeScript | 9,359 (▲82) | Hot | 85 | very active | 1d ago | 2 |
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | Specialized agent | Python | 8,525 (▲228) | Declining | 18 | slowing | 5mo ago | 0 |
 | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Routing | TypeScript | 6,573 (▼109) | Hot | 78 | very active | 2d ago | 1 |
 | [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Specialized agent | Python | 5,657 (▲30) | Declining | 24 | slowing | 3mo ago | 0 |
@@ -58,7 +58,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [pinchbench/skill](https://github.com/pinchbench/skill) | Observability | Python | 1,327 (▲21) | Declining | 49 | active | 1mo ago | 0 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | Memory | TypeScript | 798 (▲6) | Mature | 48 | slowing | 2mo ago | 2 |
 | [SafeRL-Lab/cheetahclaws](https://github.com/SafeRL-Lab/cheetahclaws) | Specialized agent | Python | 768 (▲4) | Hot | 76 | very active | 1d ago | 1 |
-| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 725 (▲14) | Declining | 59 | active | 0d ago | 1 |
+| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 725 (▲14) | Declining | 59 | active | 1d ago | 1 |
 | [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 594 (▲21) | Rising | 70 | very active | 12d ago | 1 |
 | [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | Skills / directory | Python | 561 (▲2) | Rising | 40 | slowing | 2mo ago | 1 |
 | [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 401 (▲9) | Rising | 79 | very active | 0d ago | 1 |
@@ -200,8 +200,8 @@ Low health and/or not pushed recently — verify before wiring into anything you
 
 | Project | Health | Lifecycle | Last push | Note |
 |---|---|---|---|---|
-| [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 18 | Declining | 5mo ago | 177d stale; low health; declining |
-| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 22 | Declining | 5mo ago | 156d stale; low health; declining |
+| [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 18 | Declining | 5mo ago | 178d stale; low health; declining |
+| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 22 | Declining | 5mo ago | 157d stale; low health; declining |
 | [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | 24 | Declining | 3mo ago | 97d stale; low health; declining |
 | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 26 | Declining | 3mo ago | 111d stale; low health; declining |
 | [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | 40 | Rising | 2mo ago | 77d stale; low health |
@@ -209,43 +209,42 @@ Low health and/or not pushed recently — verify before wiring into anything you
 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 49 | Declining | 1mo ago | 57d stale; low health; declining |
 | [pinchbench/skill](https://github.com/pinchbench/skill) | 49 | Declining | 1mo ago | 57d stale; low health; declining |
 | [crshdn/mission-control](https://github.com/crshdn/mission-control) | 56 | Declining | 1mo ago | 52d stale; declining |
-| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | 59 | Declining | 0d ago | declining |
+| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | 59 | Declining | 1d ago | declining |
 
 > Note: `openagen/zeroclaw` (1.9k★, 70d stale) is a *different, older* project than the healthy **`zeroclaw-labs/zeroclaw`** (h93) recommended above — don't confuse them.
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 28 projects span **12 of the graph's 35 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
+**Community clustering.** These 28 projects span **12 of the graph's 37 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
 
-- **Community 11** (5): `nanocoai/nanoclaw`, `vivekchand/clawmetry`, `farion1231/cc-switch`, `iOfficeAI/AionUi`, `CherryHQ/cherry-studio`
-- **Community 20** (4): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`, `Gen-Verse/OpenClaw-RL`
-- **Community 10** (4): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`, `crshdn/mission-control`
-- **Community 16** (3): `openclaw/openclaw`, `openclaw/clawhub`, `BlockRunAI/ClawRouter`
-- **Community 6** (3): `zeroclaw-labs/zeroclaw`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
-- **Community 5** (2): `nearai/ironclaw`, `RightNow-AI/openfang`
-- **Community 0** (2): `rohitg00/awesome-openclaw`, `pinchbench/skill`
+- **Community 12** (5): `zeroclaw-labs/zeroclaw`, `NousResearch/hermes-agent`, `BlockRunAI/ClawRouter`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
+- **Community 3** (4): `nanocoai/nanoclaw`, `vivekchand/clawmetry`, `farion1231/cc-switch`, `iOfficeAI/AionUi`
+- **Community 19** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
+- **Community 7** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
+- **Community 13** (3): `rohitg00/awesome-openclaw`, `CherryHQ/cherry-studio`, `SafeRL-Lab/cheetahclaws`
+- **Community 22** (2): `openclaw/openclaw`, `openclaw/clawhub`
+- **Community 10** (2): `RightNow-AI/openfang`, `NVIDIA/NemoClaw`
+- **Community 15** (2): `cloudflare/moltworker`, `crshdn/mission-control`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' OpenClaw projects in your ecosystem:
 
-- `hydro13/tandem-browser` — PageRank 0.0018
-- `vivekchand/clawmetry` — PageRank 0.0013
-- `openclaw/openclaw` — PageRank 0.0009
-- `NousResearch/hermes-agent` — PageRank 0.0007
-- `cloudflare/moltworker` — PageRank 0.0007
-- `RightNow-AI/openfang` — PageRank 0.0007
+- `hydro13/tandem-browser` — PageRank 0.0019
+- `vivekchand/clawmetry` — PageRank 0.0011
+- `supermemoryai/openclaw-supermemory` — PageRank 0.0008
+- `NousResearch/hermes-agent` — PageRank 0.0008
+- `cloudflare/moltworker` — PageRank 0.0008
 - `CherryHQ/cherry-studio` — PageRank 0.0007
-- `nanocoai/nanoclaw` — PageRank 0.0007
+- `openclaw/openclaw` — PageRank 0.0007
+- `RightNow-AI/openfang` — PageRank 0.0007
 - `HKUDS/nanobot` — PageRank 0.0006
-- `NVIDIA/NemoClaw` — PageRank 0.0005
+- `nanocoai/nanoclaw` — PageRank 0.0005
 
 **Direct links between OpenClaw projects** (top similarity edges where both endpoints are in this report):
 
 - `openclaw/clawhub` ⇄ `openclaw/openclaw` (w=0.858) — authors: Patrick-Erichsen, vincentkoc, vyctorbrzezowski
 - `HKUDS/nanobot` ⇄ `HKUDS/DeepTutor` (w=0.586) — topics: ai-agents
-- `vivekchand/clawmetry` ⇄ `nanocoai/nanoclaw` (w=0.318) — topics: openclaw, ai-agents, claude-code; authors: github-actions[bot]
 - `comet-ml/opik-openclaw` ⇄ `supermemoryai/openclaw-supermemory` (w=0.281) — topics: clawdbot, moltbot, openclaw
 - `hesamsheikh/awesome-openclaw-usecases` ⇄ `supermemoryai/openclaw-supermemory` (w=0.250) — topics: clawdbot, moltbot, openclaw
-- `BlockRunAI/ClawRouter` ⇄ `openclaw/openclaw` (w=0.240) — topics: ai, openclaw; authors: steipete
 - `hydro13/tandem-browser` ⇄ `iOfficeAI/AionUi` (w=0.235) — topics: ai, openclaw, claude-code, codex
 - `RightNow-AI/openfang` ⇄ `nearai/ironclaw` (w=0.232) — topics: openclaw, rust
 - `NousResearch/hermes-agent` ⇄ `iOfficeAI/AionUi` (w=0.222) — topics: ai, ai-agent, llm, claude-code
@@ -255,7 +254,9 @@ Low health and/or not pushed recently — verify before wiring into anything you
 - `iOfficeAI/AionUi` ⇄ `CherryHQ/cherry-studio` (w=0.210) — topics: ai-agent, claude-code, codex, skills
 - `crshdn/mission-control` ⇄ `nanocoai/nanoclaw` (w=0.193) — topics: openclaw
 - `farion1231/cc-switch` ⇄ `iOfficeAI/AionUi` (w=0.176) — topics: claude-code, codex, opencode, skills
-- …and 4 more.
+- `hydro13/tandem-browser` ⇄ `openclaw/clawhub` (w=0.175) — authors: dependabot[bot]
+- `NVIDIA/NemoClaw` ⇄ `crshdn/mission-control` (w=0.161) — topics: openclaw
+- …and 1 more.
 
 ## Methodology & caveats
 
@@ -264,4 +265,4 @@ Low health and/or not pushed recently — verify before wiring into anything you
 - **Metrics** (health, lifecycle, bus_factor, days_since_push) are precomputed at snapshot time. **OpenClaw moves extremely fast** — treat all ages/stars as a May-2026 snapshot and re-verify before adopting.
 - Re-run after a fresh `classified.json` to refresh.
 
-<sub>Projects covered: 28 · Snapshot: 2026-08-28T01:21:50.535Z</sub>
+<sub>Projects covered: 28 · Snapshot: 2026-08-28T10:47:12.716Z</sub>

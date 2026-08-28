@@ -1,6 +1,6 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges, 35 communities).
+> Derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges, 37 communities).
 >
 > Generated 2026-08-28 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
@@ -14,7 +14,7 @@
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
 - **Window**: `2026-08-11` → `2026-08-28` (**17 days**), covering the **1,590 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-08-28` (**78 days**).
 - **1,357 repos gained stars** in the recent window, adding **732,614★** between them.
-- **162 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **247 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -101,10 +101,10 @@ Averaged over the full snapshot history, so a single viral week doesn't dominate
 | 12 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **395.7** | +30,866 | 471,727 | Python | 65 |
 | 13 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | **388.9** | +30,331 | 243,765 | JavaScript | 79 |
 | 14 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | **383.7** | +29,925 | 101,440 | Go | 75 |
-| 15 | [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **372.2** | +29,029 | 543,458 | Markdown | 49 |
+| 15 | [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **372.2** | +29,029 | 543,458 | Markdown | 48 |
 | 16 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | **368.9** | +28,772 | 201,972 | TypeScript | 83 |
 | 17 | [openai/codex](https://github.com/openai/codex) | **368.6** | +28,749 | 119,207 | Rust | 94 |
-| 18 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **366.8** | +28,611 | 92,065 | — | 83 |
+| 18 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **366.8** | +28,611 | 92,065 | — | 82 |
 | 19 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **329.1** | +25,672 | 500,553 | — | 60 |
 | 20 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | **327.2** | +25,521 | 176,664 | Python | 64 |
 
@@ -279,20 +279,27 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 189,413 | Shell | Classic | 🙃   A delightful community-driven (with 2,500+ contributors) framework for managing … |
 | [microsoft/terminal](https://github.com/microsoft/terminal) | 104,709 | C++ | Classic | The new Windows Terminal and the original Windows console host, all in the same plac… |
 | [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 94,813 | Python | Declining | AI agents running research on single-GPU nanochat training automatically |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 90,398 | JavaScript | Hot | Production-grade engineering skills for AI coding agents. |
 | [Eugeny/tabby](https://github.com/Eugeny/tabby) | 74,174 | TypeScript | Classic | A terminal for a more modern age |
 | [alacritty/alacritty](https://github.com/alacritty/alacritty) | 65,535 | Rust | Mature | A cross-platform, OpenGL terminal emulator. |
 | [warpdotdev/warp](https://github.com/warpdotdev/warp) | 64,569 | Rust | Classic | Warp is an agentic development environment, born out of the terminal. |
 | [tldr-pages/tldr](https://github.com/tldr-pages/tldr) | 63,500 | Markdown | Classic | Collaborative cheatsheets for console commands 📚. |
+| [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) | 60,368 | Zig | Classic | 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses pl… |
 | [sharkdp/bat](https://github.com/sharkdp/bat) | 60,278 | Rust | Classic | A cat(1) clone with wings. |
 | [termux/termux-app](https://github.com/termux/termux-app) | 59,879 | Java | Mature | Termux - a terminal emulator application for Android OS extendible by variety of pac… |
+| [starship/starship](https://github.com/starship/starship) | 59,638 | Rust | Classic | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! |
 | [Textualize/rich](https://github.com/Textualize/rich) | 57,263 | Python | Mature | Rich is a Python library for rich text and beautiful formatting in the terminal. |
 | [stablyai/orca](https://github.com/stablyai/orca) | 55,278 | TypeScript | Hot | Orca is the ADE for working with a fleet of parallel agents. Run any coding agent wi… |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 49,848 | TypeScript | Hot | Chrome DevTools for coding agents |
 | [vercel/hyper](https://github.com/vercel/hyper) | 44,707 | TypeScript | Mature | A terminal built on web technologies |
 | [sharkdp/fd](https://github.com/sharkdp/fd) | 44,221 | Rust | Classic | A simple, fast and user-friendly alternative to 'find' |
 | [DataExpert-io/data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook) | 43,887 | Jupyter Notebook | Mature | This is a repo with links to everything you'd ever want to learn about data engineer… |
 | [sxyazi/yazi](https://github.com/sxyazi/yazi) | 41,732 | Rust | Classic | 💥 Blazing fast terminal file manager written in Rust, based on async I/O. |
 | [chubin/cheat.sh](https://github.com/chubin/cheat.sh) | 41,694 | Python | Declining | the only cheat sheet you need |
+| [Hmbown/CodeWhale](https://github.com/Hmbown/CodeWhale) | 40,863 | Rust | Hot | Open-source coding agent for your terminal, built in Rust and on a journey of contin… |
+| [appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) | 40,770 | TypeScript | Classic | Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ … |
 | [ManimCommunity/manim](https://github.com/ManimCommunity/manim) | 40,489 | Python | Classic | A community-maintained Python framework for creating mathematical animations. |
+| [nushell/nushell](https://github.com/nushell/nushell) | 40,356 | Rust | Classic | A new type of shell |
 | [httpie/cli](https://github.com/httpie/cli) | 38,464 | Python | Abandoned | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON… |
 | [Textualize/textual](https://github.com/Textualize/textual) | 37,069 | Python | Classic | The lean application framework for Python.  Build sophisticated user interfaces with… |
 | [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35,222 | Go | Hot | DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache st… |
@@ -304,18 +311,11 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix) | 33,024 | — | Abandoned | A collection of modern/faster/saner alternatives to common unix commands. |
 | [kingToolbox/WindTerm](https://github.com/kingToolbox/WindTerm) | 32,078 | C | Declining | A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal. |
 | [jumpserver/jumpserver](https://github.com/jumpserver/jumpserver) | 31,463 | Python | Classic | JumpServer is an open-source Privileged Access Management (PAM) platform that provid… |
+| [atuinsh/atuin](https://github.com/atuinsh/atuin) | 31,444 | Rust | Classic | ✨ Making your shell magical |
 | [tqdm/tqdm](https://github.com/tqdm/tqdm) | 31,296 | Python | Classic | :zap: A Fast, Extensible Progress Bar for Python and CLI |
 | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 30,546 | JavaScript | Hot | Vercel's official collection of agent skills |
 | [micro-editor/micro](https://github.com/micro-editor/micro) | 29,444 | Go | Classic | A modern and intuitive terminal-based text editor |
-| [sharkdp/hyperfine](https://github.com/sharkdp/hyperfine) | 28,752 | Rust | Mature | A command-line benchmarking tool |
-| [wezterm/wezterm](https://github.com/wezterm/wezterm) | 28,591 | Rust | Classic | A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez a… |
-| [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | 27,955 | HTML | Hot | 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG… |
-| [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) | 27,927 | TypeScript | Hot | ⌥ Coding agent with the IDE wired in |
-| [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 26,529 | Swift | Hot | Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI… |
-| [Swordfish90/cool-retro-term](https://github.com/Swordfish90/cool-retro-term) | 25,960 | QML | Mature | A good looking terminal emulator which mimics the old cathode display... |
-| [gpakosz/.tmux](https://github.com/gpakosz/.tmux) | 25,333 | Shell | Classic | Oh my tmux! My self-contained, pretty & versatile tmux configuration made with 💛🩷💙🖤❤… |
-| [withfig/autocomplete](https://github.com/withfig/autocomplete) | 25,223 | TypeScript | Declining | IDE-style autocomplete for your existing terminal & shell |
-| _…and 122 more_ | | | | |
+| _…and 207 more_ | | | | |
 
 ## Cooling off
 
@@ -324,35 +324,34 @@ Deceleration, not decline. These averaged ≥1★/day across the 78-day long win
 | Repo | Long-run ★/day | Recent ★/day | Now at | Last push | Lifecycle |
 |---|---|---|---|---|---|
 | [HeartMuLa/heartlib](https://github.com/HeartMuLa/heartlib) | 1.2 | -3.5 | **-297%** of prior pace | 4mo ago | Declining |
-| [axios/axios](https://github.com/axios/axios) | 1.5 | -2.1 | **-139%** of prior pace | 0d ago | Classic |
+| [axios/axios](https://github.com/axios/axios) | 1.5 | -2.1 | **-139%** of prior pace | 1d ago | Classic |
 | [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 1.3 | -0.1 | **-4%** of prior pace | 4mo ago | Declining |
 | [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 4.3 | 0.1 | **3%** of prior pace | 5mo ago | Declining |
 | [alibaba/zvec](https://github.com/alibaba/zvec) | 73.7 | 7.4 | **10%** of prior pace | 1d ago | Hot |
 | [Suvink/cut-it-out](https://github.com/Suvink/cut-it-out) | 3.1 | 0.4 | **13%** of prior pace | 8mo ago | Declining |
-| [hexo-ai/sia](https://github.com/hexo-ai/sia) | 11.6 | 1.9 | **16%** of prior pace | 1d ago | Rising |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 160.3 | 26.6 | **17%** of prior pace | 0d ago | Classic |
+| [hexo-ai/sia](https://github.com/hexo-ai/sia) | 11.6 | 1.9 | **16%** of prior pace | 2d ago | Rising |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 160.3 | 26.6 | **17%** of prior pace | 1d ago | Classic |
 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | 2.1 | 0.4 | **17%** of prior pace | 0d ago | Hot |
 | [microsoft/fara](https://github.com/microsoft/fara) | 8.9 | 1.6 | **18%** of prior pace | 1mo ago | Rising |
 | [https-deeplearning-ai/deeplearning-ai](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1.9 | 0.4 | **18%** of prior pace | 2mo ago | Rising |
 | [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | 29.0 | 6.5 | **22%** of prior pace | 1mo ago | Declining |
 | [morphik-org/morphik-core](https://github.com/morphik-org/morphik-core) | 1.3 | 0.3 | **23%** of prior pace | 1mo ago | Mature |
-| [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 30.5 | 7.9 | **26%** of prior pace | 14d ago | Mature |
+| [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 30.5 | 7.9 | **26%** of prior pace | 15d ago | Mature |
 | [winfunc/opcode](https://github.com/winfunc/opcode) | 4.3 | 1.2 | **27%** of prior pace | 10mo ago | Declining |
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **16 of the graph's 35 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **14 of the graph's 37 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
-- **Community 2** (6): `DietrichGebert/ponytail`, `NousResearch/hermes-agent`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `ayghri/i-have-adhd`, `affaan-m/ECC`
-- **Community 11** (6): `diegosouzapw/OmniRoute`, `earendil-works/pi`, `nexu-io/open-design`, `herdrdev/herdr`, `santifer/career-ops`, `JuliusBrussee/caveman`
-- **Community 19** (4): `public-apis/public-apis`, `sindresorhus/awesome`, `codecrafters-io/build-your-own-x`, `DigitalPlatDev/FreeDomain`
-- **Community 6** (4): `firecrawl/firecrawl`, `obra/superpowers`, `TencentCloud/TencentDB-Agent-Memory`, `MadsLorentzen/ai-job-search`
-- **Community 26** (3): `harry0703/MoneyPrinterTurbo`, `calesthio/OpenMontage`, `github/spec-kit`
-- **Community 1** (3): `usestrix/strix`, `multica-ai/andrej-karpathy-skills`, `anthropics/skills`
-- **Community 22** (2): `openai/codex`, `unslothai/unsloth`
-- **Community 18** (2): `msitarzewski/agency-agents`, `Comfy-Org/ComfyUI`
-- **Community 8** (2): `semantica-agi/semantica`, `virgiliojr94/book-to-skill`
-- **Community 9** (2): `Alishahryar1/free-claude-code`, `OpenCut-app/OpenCut`
+- **Community 13** (10): `DietrichGebert/ponytail`, `diegosouzapw/OmniRoute`, `msitarzewski/agency-agents`, `nexu-io/open-design`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `herdrdev/herdr`, `ayghri/i-have-adhd`, `affaan-m/ECC`, `anthropics/skills`
+- **Community 12** (5): `firecrawl/firecrawl`, `NousResearch/hermes-agent`, `obra/superpowers`, `TencentCloud/TencentDB-Agent-Memory`, `MadsLorentzen/ai-job-search`
+- **Community 24** (4): `public-apis/public-apis`, `sindresorhus/awesome`, `codecrafters-io/build-your-own-x`, `DigitalPlatDev/FreeDomain`
+- **Community 0** (4): `semantica-agi/semantica`, `multica-ai/andrej-karpathy-skills`, `virgiliojr94/book-to-skill`, `TauricResearch/TradingAgents`
+- **Community 4** (3): `openai/codex`, `anomalyco/opencode`, `unslothai/unsloth`
+- **Community 3** (3): `earendil-works/pi`, `santifer/career-ops`, `JuliusBrussee/caveman`
+- **Community 19** (2): `harry0703/MoneyPrinterTurbo`, `HKUDS/DeepTutor`
+- **Community 6** (2): `calesthio/OpenMontage`, `github/spec-kit`
+- **Community 2** (2): `Alishahryar1/free-claude-code`, `OpenCut-app/OpenCut`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
@@ -390,4 +389,4 @@ Deceleration, not decline. These averaged ≥1★/day across the 78-day long win
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 1,590 · Window: 2026-08-11 → 2026-08-28 (17d) · Snapshot: 2026-08-28T01:21:50.535Z</sub>
+<sub>Repos tracked: 1,590 · Window: 2026-08-11 → 2026-08-28 (17d) · Snapshot: 2026-08-28T10:47:12.716Z</sub>

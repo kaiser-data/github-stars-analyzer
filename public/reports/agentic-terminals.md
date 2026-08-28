@@ -1,6 +1,6 @@
 # Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?
 
-> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges, 35 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
+> Derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges, 37 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
 >
 > Generated 2026-08-28 by `scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).
 
@@ -85,19 +85,19 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Layer | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [tmux/tmux](https://github.com/tmux/tmux) | Agent runtime / multiplexer | C | ISC | 48,868 (▲397) | Classic | 79 | very active | 2d ago | 11.2y | 5 |
-| [herdrdev/herdr](https://github.com/herdrdev/herdr) | Agent runtime / multiplexer | Rust | Apache  2.0 | 32,948 (▲7,369) | Hot | 79 | very active | 0d ago | 5mo | 12 |
-| [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) | Terminal capability / reference | Shell | Other | 27,159 (▲43) | Classic | 89 | very active | 3d ago | 15.4y | 31 |
+| [tmux/tmux](https://github.com/tmux/tmux) | Agent runtime / multiplexer | C | ISC | 48,868 (▲397) | Classic | 79 | very active | 3d ago | 11.2y | 5 |
+| [herdrdev/herdr](https://github.com/herdrdev/herdr) | Agent runtime / multiplexer | Rust | Apache  2.0 | 32,948 (▲7,369) | Hot | 79 | very active | 1d ago | 5mo | 12 |
+| [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) | Terminal capability / reference | Shell | Other | 27,159 (▲43) | Classic | 89 | very active | 4d ago | 15.4y | 31 |
 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | Shell & process layer | Go | Apache  2.0 | 21,719 (▲2,063) | Hot | 76 | very active | 12d ago | 8mo | 6 |
-| [rothgar/awesome-tuis](https://github.com/rothgar/awesome-tuis) | Terminal capability / reference | — | — | 20,364 (▲276) | Classic | 72 | very active | 16d ago | 7.4y | 30 |
-| [gnachman/iTerm2](https://github.com/gnachman/iTerm2) | Terminal emulator | Objective-C | GNU General Public  v2.0 | 17,980 (▲68) | Classic | 60 | very active | 0d ago | 15.4y | 8 |
+| [rothgar/awesome-tuis](https://github.com/rothgar/awesome-tuis) | Terminal capability / reference | — | — | 20,364 (▲276) | Classic | 72 | very active | 17d ago | 7.4y | 30 |
+| [gnachman/iTerm2](https://github.com/gnachman/iTerm2) | Terminal emulator | Objective-C | GNU General Public  v2.0 | 17,980 (▲68) | Classic | 60 | very active | 1d ago | 15.4y | 8 |
 | [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) | Agent runtime / multiplexer | Go | Apache  2.0 | 10,141 (▲1,289) | Hot | 97 | very active | 0d ago | 6mo | 22 |
-| [hpjansson/chafa](https://github.com/hpjansson/chafa) | Terminal capability / reference | C | GNU Lesser General Public  v3.0 | 5,182 (▲73) | Classic | 66 | very active | 0d ago | 8.3y | 3 |
+| [hpjansson/chafa](https://github.com/hpjansson/chafa) | Terminal capability / reference | C | GNU Lesser General Public  v3.0 | 5,182 (▲73) | Classic | 66 | very active | 0d ago | 8.4y | 3 |
 | [x-cmd/x-cmd](https://github.com/x-cmd/x-cmd) | Shell & process layer | Awk | Apache  2.0 | 4,600 (▲36) | Classic | 72 | very active | 1d ago | 3.9y | 3 |
 | [hackerb9/lsix](https://github.com/hackerb9/lsix) | Terminal capability / reference | Shell | GNU General Public  v3.0 | 4,175 (▲3) | Abandoned | 5 | stale | 2.2y ago | 9.2y | 0 |
-| [dagger/container-use](https://github.com/dagger/container-use) | Terminal hardening | Go | Apache  2.0 | 4,021 (▲24) | Mature | 46 | active | 10d ago | 1.3y | 3 |
-| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Terminal hardening | Rust | GNU Affero General Public  v3.0 | 2,684 (▲40) | Rising | 80 | very active | 0d ago | 6mo | 2 |
-| [ghostty-org/ghostling](https://github.com/ghostty-org/ghostling) | Terminal emulator | C | MIT | 1,102 (▲11) | Declining | 43 | active | 18d ago | 5mo | 2 |
+| [dagger/container-use](https://github.com/dagger/container-use) | Terminal hardening | Go | Apache  2.0 | 4,021 (▲24) | Mature | 46 | active | 11d ago | 1.3y | 3 |
+| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Terminal hardening | Rust | GNU Affero General Public  v3.0 | 2,684 (▲40) | Rising | 80 | very active | 1d ago | 6mo | 2 |
+| [ghostty-org/ghostling](https://github.com/ghostty-org/ghostling) | Terminal emulator | C | MIT | 1,102 (▲11) | Declining | 43 | active | 19d ago | 5mo | 2 |
 | [caarlos0/dotfiles](https://github.com/caarlos0/dotfiles) | Shell & process layer | Shell | MIT | 220 (▲2) | Mature | 80 | very active | 1d ago | 3.4y | 1 |
 
 **Terminal emulator**
@@ -296,31 +296,30 @@ Read the scorecard as a shape, not a total. `Ghostty` and `tmux` are near-opposi
 
 ## Graph analysis — how the terminal layer sits in your ecosystem
 
-**Community clustering.** These 14 tools span **7 of the graph's 35 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
+**Community clustering.** These 14 tools span **8 of the graph's 37 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
 
-- **Community 5** (5): `ghostty-org/ghostling`, `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `mbadolato/iTerm2-Color-Schemes`
-- **Community 11** (3): `herdrdev/herdr`, `sheeki03/tirith`, `pranshuparmar/witr`
-- **Community 1** (2): `tmux/tmux`, `Untrivial-ai/agent-orchestrator`
+- **Community 14** (4): `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `mbadolato/iTerm2-Color-Schemes`
+- **Community 13** (3): `tmux/tmux`, `herdrdev/herdr`, `Untrivial-ai/agent-orchestrator`
+- **Community 3** (2): `sheeki03/tirith`, `pranshuparmar/witr`
 
-**Centrality (PageRank in the full 1,752-repo graph)** — the most hub-like terminal-layer repos you hold:
+**Centrality (PageRank in the full 1,837-repo graph)** — the most hub-like terminal-layer repos you hold:
 
-- `sheeki03/tirith` — PageRank 0.0011
-- `hpjansson/chafa` — PageRank 0.0006
+- `sheeki03/tirith` — PageRank 0.0009
+- `herdrdev/herdr` — PageRank 0.0008
 - `pranshuparmar/witr` — PageRank 0.0005
-- `herdrdev/herdr` — PageRank 0.0005
 - `x-cmd/x-cmd` — PageRank 0.0005
-- `caarlos0/dotfiles` — PageRank 0.0004
+- `hpjansson/chafa` — PageRank 0.0004
+- `ghostty-org/ghostling` — PageRank 0.0004
+- `caarlos0/dotfiles` — PageRank 0.0003
 - `tmux/tmux` — PageRank 0.0003
 - `hackerb9/lsix` — PageRank 0.0003
 - `dagger/container-use` — PageRank 0.0003
-- `Untrivial-ai/agent-orchestrator` — PageRank 0.0003
 
 **Direct links between these tools** (similarity edges where both endpoints are in this report):
 
 - `herdrdev/herdr` ⇄ `sheeki03/tirith` (w=0.371) — topics: cli, devtools, rust, terminal; authors: github-actions[bot]
 - `hackerb9/lsix` ⇄ `hpjansson/chafa` (w=0.136) — topics: graphics, terminal, terminal-graphics
 - `hackerb9/lsix` ⇄ `mbadolato/iTerm2-Color-Schemes` (w=0.083) — topics: terminal
-- `hpjansson/chafa` ⇄ `ghostty-org/ghostling` (w=0.050)
 
 ## Maintenance & risk signal
 
@@ -403,4 +402,4 @@ Watch items:
 - **The gap table does not refresh.** Re-running the pipeline updates every in-dataset metric; the missing-repo stars and the frozen citations need a manual pass. Re-verify after any major terminal release.
 - **`cmux` is very young** (created 2026-01-28; 1,751 open issues and 2,668 open PRs at check time — GitHub's `open_issues_count` of 4,419 conflates the two, and several published write-ups repeat it as an issue count). It is the top recommendation for the parallel-agent case on merit, not on stability — weigh that if you'd rather not be an early adopter.
 
-<sub>In-dataset tools: 14 · Missing tools catalogued: 45 · Snapshot: 2026-08-28T01:21:50.535Z</sub>
+<sub>In-dataset tools: 14 · Missing tools catalogued: 45 · Snapshot: 2026-08-28T10:47:12.716Z</sub>

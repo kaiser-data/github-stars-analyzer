@@ -1,6 +1,6 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`), cross-referenced with the repo-similarity graph (1,752 nodes / 5,707 edges, 35 communities).
+> Derived from **kaiser-data**'s 1,837 starred repos (snapshot `2026-08-28T10:47:12.716Z`), cross-referenced with the repo-similarity graph (1,837 nodes / 5,995 edges, 37 communities).
 >
 > Generated 2026-08-28 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
@@ -33,7 +33,7 @@
 |---|---|---|---|---|---|
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 101,440 (▲4,746) | 75 | very active | Prompt-style skill | ~65% |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 77,635 (▲2,452) | 78 | very active | Wire-level proxy | 60–90% on dev cmds |
-| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 68,386 (▲3,074) | 78 | very active | Code index/graph | ~70% |
+| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 68,386 (▲3,074) | 77 | very active | Code index/graph | ~70% |
 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | 20,195 (▲501) | 78 | very active | Tool-output sandbox | 98% on tool output |
 | [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | 9,691 (▲499) | 79 | very active | Measurement / observability | — (measures) |
 | [MinishLab/semble](https://github.com/MinishLab/semble) | 5,964 (▲121) | 73 | very active | Semantic code search | ~98% vs grep+read |
@@ -84,7 +84,7 @@ _Claude Code, Codex, Cursor, OpenCode, Hermes — the biggest token sink for mos
 - **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 77,635★ · Rust · Hot · health 78 · _Wire-level proxy_ · **60–90% on dev cmds**  
   CLI proxy that intercepts common dev commands; integration-free 'install once, save everywhere'.  
   <sub>topics: agentic-coding, ai-coding, anthropic, claude-code, cli, command-line-tool</sub>
-- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 68,386★ · C · Hot · health 78 · _Code index/graph_ · **~70%**  
+- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 68,386★ · C · Hot · health 77 · _Code index/graph_ · **~70%**  
   Pre-indexed code knowledge graph for Claude Code/Codex/Cursor/OpenCode/Hermes — query instead of read.  
   <sub>topics: —</sub>
 - **[mksglu/context-mode](https://github.com/mksglu/context-mode)** · 20,195★ · TypeScript · Rising · health 78 · _Tool-output sandbox_ · **98% on tool output**  
@@ -187,22 +187,22 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **10 of the graph's 35 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **10 of the graph's 37 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
-- **Community 2** (3): `rtk-ai/rtk`, `yvgude/lean-ctx`, `thedotmack/claude-mem`
-- **Community 11** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
-- **Community 0** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
+- **Community 13** (3): `rtk-ai/rtk`, `yvgude/lean-ctx`, `thedotmack/claude-mem`
+- **Community 3** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
+- **Community 1** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
 
-- `mksglu/context-mode` — PageRank 0.0057
-- `JuliusBrussee/caveman` — PageRank 0.0010
+- `mksglu/context-mode` — PageRank 0.0058
+- `JuliusBrussee/caveman` — PageRank 0.0009
 - `vllm-project/llm-compressor` — PageRank 0.0006
 - `deepseek-ai/DeepSeek-OCR` — PageRank 0.0005
-- `rtk-ai/rtk` — PageRank 0.0005
+- `rtk-ai/rtk` — PageRank 0.0004
 - `bytebase/dbhub` — PageRank 0.0004
-- `yvgude/lean-ctx` — PageRank 0.0004
 - `HKUDS/FastCode` — PageRank 0.0004
+- `yvgude/lean-ctx` — PageRank 0.0004
 
 **Direct links between these tools** (similarity edges where both endpoints are in this report):
 
@@ -217,4 +217,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-28T01:21:50.535Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-28T10:47:12.716Z</sub>
