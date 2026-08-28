@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (15d)">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (17d)">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 .srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
@@ -10,29 +10,29 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="260" rx="8" class="srf"/>
-<text x="14" y="25" class="ttl">Biggest star gains (15d)</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/AI-For-Beginners</text>
+<text x="14" y="25" class="ttl">Biggest star gains (17d)</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">public-apis/public-apis</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">10,212</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">16,779</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">DietrichGebert/ponytail</text>
-<path d="M244,67 h270.6 q4,0 4,4 v10 q0,4 -4,4 h-270.6 z" class="bar"/>
-<text x="524.6" y="76.0" class="val" dominant-baseline="central">8,152</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">TencentCloud/TencentDB-Agent-Me…</text>
-<path d="M244,94 h270.2 q4,0 4,4 v10 q0,4 -4,4 h-270.2 z" class="bar"/>
-<text x="524.2" y="103.0" class="val" dominant-baseline="central">8,141</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Graphify-Labs/graphify</text>
-<path d="M244,121 h241.4 q4,0 4,4 v10 q0,4 -4,4 h-241.4 z" class="bar"/>
-<text x="495.4" y="130.0" class="val" dominant-baseline="central">7,286</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ayghri/i-have-adhd</text>
-<path d="M244,148 h239.2 q4,0 4,4 v10 q0,4 -4,4 h-239.2 z" class="bar"/>
-<text x="493.2" y="157.0" class="val" dominant-baseline="central">7,219</text>
-<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
-<path d="M244,175 h227.7 q4,0 4,4 v10 q0,4 -4,4 h-227.7 z" class="bar"/>
-<text x="481.7" y="184.0" class="val" dominant-baseline="central">6,878</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
-<path d="M244,202 h221.2 q4,0 4,4 v10 q0,4 -4,4 h-221.2 z" class="bar"/>
-<text x="475.2" y="211.0" class="val" dominant-baseline="central">6,686</text>
+<path d="M244,67 h321.0 q4,0 4,4 v10 q0,4 -4,4 h-321.0 z" class="bar"/>
+<text x="575.0" y="76.0" class="val" dominant-baseline="central">15,852</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">harry0703/MoneyPrinterTurbo</text>
+<path d="M244,94 h310.9 q4,0 4,4 v10 q0,4 -4,4 h-310.9 z" class="bar"/>
+<text x="564.9" y="103.0" class="val" dominant-baseline="central">15,359</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/codex</text>
+<path d="M244,121 h294.5 q4,0 4,4 v10 q0,4 -4,4 h-294.5 z" class="bar"/>
+<text x="548.5" y="130.0" class="val" dominant-baseline="central">14,559</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">diegosouzapw/OmniRoute</text>
+<path d="M244,148 h294.0 q4,0 4,4 v10 q0,4 -4,4 h-294.0 z" class="bar"/>
+<text x="548.0" y="157.0" class="val" dominant-baseline="central">14,533</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
+<path d="M244,175 h263.4 q4,0 4,4 v10 q0,4 -4,4 h-263.4 z" class="bar"/>
+<text x="517.4" y="184.0" class="val" dominant-baseline="central">13,045</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">PrimeIntellect-ai/prime-agent</text>
+<path d="M244,202 h254.6 q4,0 4,4 v10 q0,4 -4,4 h-254.6 z" class="bar"/>
+<text x="508.6" y="211.0" class="val" dominant-baseline="central">12,613</text>
 <text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">firecrawl/firecrawl</text>
-<path d="M244,229 h204.6 q4,0 4,4 v10 q0,4 -4,4 h-204.6 z" class="bar"/>
-<text x="458.6" y="238.0" class="val" dominant-baseline="central">6,193</text>
+<path d="M244,229 h209.0 q4,0 4,4 v10 q0,4 -4,4 h-209.0 z" class="bar"/>
+<text x="463.0" y="238.0" class="val" dominant-baseline="central">10,390</text>
 </svg>

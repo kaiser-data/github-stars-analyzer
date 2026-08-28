@@ -11,19 +11,19 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">PaddlePaddle/PaddleOCR</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">infiniflow/ragflow</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">87,213</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">infiniflow/ragflow</text>
-<path d="M244,67 h339.3 q4,0 4,4 v10 q0,4 -4,4 h-339.3 z" class="bar"/>
-<text x="593.3" y="76.0" class="val" dominant-baseline="central">87,034</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">89,410</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">PaddlePaddle/PaddleOCR</text>
+<path d="M244,67 h336.0 q4,0 4,4 v10 q0,4 -4,4 h-336.0 z" class="bar"/>
+<text x="590.0" y="76.0" class="val" dominant-baseline="central">88,359</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">run-llama/llama_index</text>
-<path d="M244,94 h198.9 q4,0 4,4 v10 q0,4 -4,4 h-198.9 z" class="bar"/>
-<text x="452.9" y="103.0" class="val" dominant-baseline="central">51,447</text>
+<path d="M244,94 h195.7 q4,0 4,4 v10 q0,4 -4,4 h-195.7 z" class="bar"/>
+<text x="449.7" y="103.0" class="val" dominant-baseline="central">51,894</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">milvus-io/milvus</text>
-<path d="M244,121 h175.7 q4,0 4,4 v10 q0,4 -4,4 h-175.7 z" class="bar"/>
-<text x="429.7" y="130.0" class="val" dominant-baseline="central">45,553</text>
+<path d="M244,121 h172.3 q4,0 4,4 v10 q0,4 -4,4 h-172.3 z" class="bar"/>
+<text x="426.3" y="130.0" class="val" dominant-baseline="central">45,834</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">facebookresearch/faiss</text>
-<path d="M244,148 h156.5 q4,0 4,4 v10 q0,4 -4,4 h-156.5 z" class="bar"/>
-<text x="410.5" y="157.0" class="val" dominant-baseline="central">40,690</text>
+<path d="M244,148 h153.0 q4,0 4,4 v10 q0,4 -4,4 h-153.0 z" class="bar"/>
+<text x="407.0" y="157.0" class="val" dominant-baseline="central">40,812</text>
 </svg>
