@@ -1,8 +1,8 @@
 # Which Claw for the Blockchain World? — Claws & Skills for On-Chain / DeFi
 
-> Derived from **kaiser-data**'s 1,596 starred repos (snapshot `2026-08-11T18:59:16.380Z`).
+> Derived from **kaiser-data**'s 1,752 starred repos (snapshot `2026-08-28T01:21:50.535Z`).
 >
-> Generated 2026-08-23 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
+> Generated 2026-08-28 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/blockchain-claws-top-tools.svg)
 
@@ -23,13 +23,13 @@ Flags are concrete, checkable attributes — *crypto-native* (built-in web3 plug
 
 | Claw | Fit | Crypto-native | MCP | On-chain pay | ★ | Lang | Health | Why |
 |---|---|---|---|---|---|---|---|---|
-| [openclaw](https://github.com/openclaw/openclaw) | 🟢 High | — | ✅ | ✅ | 385,469 | TypeScript | 84 | Not crypto-native itself, but **MCP-native + on-chain-settled ecosystem**: wire in a blockscout MCP for reads, and `ClawRouter` already does USDC payments on Base & Solana (x402). The pragmatic DeFi *analysis* hub, and it's TypeScript. |
-| [eliza](https://github.com/elizaOS/eliza) | 🟢 High | ✅ | ✅ | — | 18,927 | TypeScript | 84 | The **only crypto-native claw** — `crypto`/web3 topics, wallet & chain plugins, autonomous on-chain agents. Best when the agent should *act* on-chain, not just read. |
-| [nanoclaw](https://github.com/nanocoai/nanoclaw) | 🟡 Medium | — | ✅ | — | 30,468 | TypeScript | 76 | Containerised + chat connectors — good for a **sandboxed wallet/alert bot** on Telegram/Discord that watches positions and pings you. |
-| [openfang](https://github.com/RightNow-AI/openfang) | 🟡 Medium | — | ✅ | — | 18,083 | Rust | 71 | **MCP-native Agent-OS** (Rust) — a clean backbone for plugging chain-data MCP servers, if you don't need crypto-specific plugins out of the box. |
-| [ironclaw](https://github.com/nearai/ironclaw) | 🟡 Medium | — | ✅ | — | 12,597 | Rust | 80 | Privacy/security agent-OS with **WASM-sandboxed CodeAct** — valuable when the agent executes untrusted contract code or keys must stay isolated. |
-| [hermes-agent](https://github.com/NousResearch/hermes-agent) | ⚪ Low | — | ✅ | — | 227,042 | Python | 85 | General Python agent; no crypto specialisation, but the strongest functional claw if you'd build the chain integration yourself in Python. |
-| [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ⚪ Low | — | — | — | 32,526 | Rust | 83 | Highest-quality general claw, but no crypto/MCP affordances — you'd wire everything by hand. |
+| [openclaw](https://github.com/openclaw/openclaw) | 🟢 High | — | ✅ | ✅ | 387,846 (▲2,377) | TypeScript | 79 | Not crypto-native itself, but **MCP-native + on-chain-settled ecosystem**: wire in a blockscout MCP for reads, and `ClawRouter` already does USDC payments on Base & Solana (x402). The pragmatic DeFi *analysis* hub, and it's TypeScript. |
+| [eliza](https://github.com/elizaOS/eliza) | 🟢 High | ✅ | ✅ | — | 19,190 (▲263) | TypeScript | 89 | The **only crypto-native claw** — `crypto`/web3 topics, wallet & chain plugins, autonomous on-chain agents. Best when the agent should *act* on-chain, not just read. |
+| [nanoclaw](https://github.com/nanocoai/nanoclaw) | 🟡 Medium | — | ✅ | — | 30,626 (▲158) | TypeScript | 80 | Containerised + chat connectors — good for a **sandboxed wallet/alert bot** on Telegram/Discord that watches positions and pings you. |
+| [openfang](https://github.com/RightNow-AI/openfang) | 🟡 Medium | — | ✅ | — | 18,139 (▲56) | Rust | 49 | **MCP-native Agent-OS** (Rust) — a clean backbone for plugging chain-data MCP servers, if you don't need crypto-specific plugins out of the box. |
+| [ironclaw](https://github.com/nearai/ironclaw) | 🟡 Medium | — | ✅ | — | 12,603 (▲6) | Rust | 80 | Privacy/security agent-OS with **WASM-sandboxed CodeAct** — valuable when the agent executes untrusted contract code or keys must stay isolated. |
+| [hermes-agent](https://github.com/NousResearch/hermes-agent) | ⚪ Low | — | ✅ | — | 237,338 (▲10,296) | Python | 85 | General Python agent; no crypto specialisation, but the strongest functional claw if you'd build the chain integration yourself in Python. |
+| [zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | ⚪ Low | — | — | — | 32,667 (▲141) | Rust | 88 | Highest-quality general claw, but no crypto/MCP affordances — you'd wire everything by hand. |
 
 ## Skills & tools — superb for which purpose
 
@@ -37,32 +37,32 @@ The capability layer a claw orchestrates. Pick per job; most stacks combine 2–
 
 ### On-chain data & explorer
 
-- **[blockscout](https://github.com/blockscout/blockscout)** · 4,627★ · Elixir · health 84 — Read positions, txs, token balances across EVM chains; exposes an MCP server → plugs straight into a claw.
+- **[blockscout](https://github.com/blockscout/blockscout)** · 4,651 (▲24)★ · Elixir · health 80 — Read positions, txs, token balances across EVM chains; exposes an MCP server → plugs straight into a claw.
 
 ### Valuation, market data & quant
 
-- **[OpenBB](https://github.com/OpenBB-finance/OpenBB)** · 71,556★ · Python · health 69 — Financial data platform explicitly 'for analysts, quants and **AI agents**' — crypto + derivatives coverage to price and value positions.
+- **[OpenBB](https://github.com/OpenBB-finance/OpenBB)** · 72,386 (▲830)★ · Python · health 66 — Financial data platform explicitly 'for analysts, quants and **AI agents**' — crypto + derivatives coverage to price and value positions.
 
 ### Autonomous trading agents
 
-- **[TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 96,073★ · Python · health 73 — Multi-agent LLM trading framework — orchestrate it *from* a claw for strategy/execution.
-- **[AI-Trader](https://github.com/HKUDS/AI-Trader)** · 21,195★ · Python · health 53 — Fully-automated agent-native trading loop.
-- **[valuecell](https://github.com/ValueCell-ai/valuecell)** · 10,962★ · Python · health 39 — Community multi-agent platform for finance (crypto + equity); MCP-enabled.
+- **[TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 101,235 (▲5,162)★ · Python · health 69 — Multi-agent LLM trading framework — orchestrate it *from* a claw for strategy/execution.
+- **[AI-Trader](https://github.com/HKUDS/AI-Trader)** · 21,667 (▲472)★ · Python · health 50 — Fully-automated agent-native trading loop.
+- **[valuecell](https://github.com/ValueCell-ai/valuecell)** · 11,006 (▲44)★ · Python · health 38 — Community multi-agent platform for finance (crypto + equity); MCP-enabled.
 
 ### Agentic payments & settlement
 
-- **[ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,682★ · TypeScript · health 78 — Agent-native LLM router with **USDC payments on Base & Solana via x402** — settle agent spend on-chain. Built for OpenClaw.
-- **[x402scan](https://github.com/Merit-Systems/x402scan)** · 368★ · TypeScript · health 76 — x402 ecosystem explorer — inspect agentic stablecoin payment flows.
+- **[ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,573 (▼109)★ · TypeScript · health 78 — Agent-native LLM router with **USDC payments on Base & Solana via x402** — settle agent spend on-chain. Built for OpenClaw.
+- **[x402scan](https://github.com/Merit-Systems/x402scan)** · 382 (▲14)★ · TypeScript · health 81 — x402 ecosystem explorer — inspect agentic stablecoin payment flows.
 
 ### MCP infrastructure (wire any chain in)
 
-- **[servers](https://github.com/modelcontextprotocol/servers)** · 89,327★ · TypeScript · health 82 — Official MCP server collection — the integration layer for chain-data tools.
-- **[awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 91,941★ · — · health 64 — Directory of MCP servers (incl. blockchain/explorer servers).
-- **[awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** · 72,027★ · Python · health 40 — Curated Claude skills — reusable capabilities to bolt onto a claw.
+- **[servers](https://github.com/modelcontextprotocol/servers)** · 89,915 (▲588)★ · TypeScript · health 78 — Official MCP server collection — the integration layer for chain-data tools.
+- **[awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 92,895 (▲954)★ · — · health 65 — Directory of MCP servers (incl. blockchain/explorer servers).
+- **[awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** · 73,612 (▲1,585)★ · Python · health 37 — Curated Claude skills — reusable capabilities to bolt onto a claw.
 
 ### Security & crypto primitives
 
-- **[awesome-cryptography](https://github.com/sobolevn/awesome-cryptography)** · 7,056★ · — · health 44 — Reference for cryptography primitives — key handling, signing, hashing.
+- **[awesome-cryptography](https://github.com/sobolevn/awesome-cryptography)** · 7,091 (▲35)★ · — · health 42 — Reference for cryptography primitives — key handling, signing, hashing.
 
 ## Recommended stacks
 
@@ -88,4 +88,4 @@ Claw + skills, assembled by goal:
 - **A claw orchestrates; it doesn't custody.** Keep signing/keys in a sandboxed, least-privilege layer (see ironclaw/nanoclaw) — never hand raw keys to a general assistant.
 - Fit ratings are editorial (based on each repo's own topics/description); stars/health/bus factor are precomputed dataset metrics.
 
-<sub>Snapshot: 2026-08-11T18:59:16.380Z · regenerate via scripts/reports/blockchain_claws.py</sub>
+<sub>Snapshot: 2026-08-28T01:21:50.535Z · regenerate via scripts/reports/blockchain_claws.py</sub>

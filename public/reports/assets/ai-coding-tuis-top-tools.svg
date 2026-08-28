@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">anomalyco/opencode</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">194,722</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">201,972</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">anthropics/claude-code</text>
-<path d="M244,67 h244.4 q4,0 4,4 v10 q0,4 -4,4 h-244.4 z" class="bar"/>
-<text x="498.4" y="76.0" class="val" dominant-baseline="central">140,599</text>
+<path d="M244,67 h239.9 q4,0 4,4 v10 q0,4 -4,4 h-239.9 z" class="bar"/>
+<text x="493.9" y="76.0" class="val" dominant-baseline="central">143,202</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">farion1231/cc-switch</text>
-<path d="M244,94 h217.6 q4,0 4,4 v10 q0,4 -4,4 h-217.6 z" class="bar"/>
-<text x="471.6" y="103.0" class="val" dominant-baseline="central">125,449</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">google-gemini/gemini-cli</text>
-<path d="M244,121 h184.0 q4,0 4,4 v10 q0,4 -4,4 h-184.0 z" class="bar"/>
-<text x="438.0" y="130.0" class="val" dominant-baseline="central">106,408</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/codex</text>
-<path d="M244,148 h180.9 q4,0 4,4 v10 q0,4 -4,4 h-180.9 z" class="bar"/>
-<text x="434.9" y="157.0" class="val" dominant-baseline="central">104,648</text>
+<path d="M244,94 h217.0 q4,0 4,4 v10 q0,4 -4,4 h-217.0 z" class="bar"/>
+<text x="471.0" y="103.0" class="val" dominant-baseline="central">129,761</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/codex</text>
+<path d="M244,121 h199.0 q4,0 4,4 v10 q0,4 -4,4 h-199.0 z" class="bar"/>
+<text x="453.0" y="130.0" class="val" dominant-baseline="central">119,207</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">google-gemini/gemini-cli</text>
+<path d="M244,148 h177.8 q4,0 4,4 v10 q0,4 -4,4 h-177.8 z" class="bar"/>
+<text x="431.8" y="157.0" class="val" dominant-baseline="central">106,719</text>
 </svg>

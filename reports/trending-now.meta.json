@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 7 data vintages: the 15-day movers, relative breakouts, sustained climbers, 204 new entrants, and what has gone flat.",
-  "tool_count": 261,
-  "total_stars": 6441035,
+  "summary": "Measured star momentum across 8 data vintages: the 17-day movers, relative breakouts, sustained climbers, 162 new entrants, and what has gone flat.",
+  "tool_count": 219,
+  "total_stars": 7310625,
   "categories": {
-    "Risers": 1130,
-    "Breakouts": 1052,
-    "New entrants": 204,
-    "Cooling": 76
+    "Risers": 1357,
+    "Breakouts": 1242,
+    "New entrants": 162,
+    "Cooling": 39
   },
   "top_tools": [
     {
-      "name": "microsoft/AI-For-Beginners",
-      "stars": 63137
+      "name": "public-apis/public-apis",
+      "stars": 471727
     },
     {
       "name": "DietrichGebert/ponytail",
-      "stars": 98197
+      "stars": 114049
     },
     {
-      "name": "TencentCloud/TencentDB-Agent-Memory",
-      "stars": 17450
+      "name": "harry0703/MoneyPrinterTurbo",
+      "stars": 117446
     },
     {
-      "name": "Graphify-Labs/graphify",
-      "stars": 103983
+      "name": "openai/codex",
+      "stars": 119207
     },
     {
-      "name": "ayghri/i-have-adhd",
-      "stars": 18105
+      "name": "diegosouzapw/OmniRoute",
+      "stars": 56980
     }
   ],
   "chart_top_series": [
     {
-      "name": "microsoft/AI-For-Beginners",
-      "value": 10212
+      "name": "public-apis/public-apis",
+      "value": 16779
     },
     {
       "name": "DietrichGebert/ponytail",
-      "value": 8152
+      "value": 15852
     },
     {
-      "name": "TencentCloud/TencentDB-Agent-Memory",
-      "value": 8141
+      "name": "harry0703/MoneyPrinterTurbo",
+      "value": 15359
     },
     {
-      "name": "Graphify-Labs/graphify",
-      "value": 7286
+      "name": "openai/codex",
+      "value": 14559
     },
     {
-      "name": "ayghri/i-have-adhd",
-      "value": 7219
-    },
-    {
-      "name": "obra/superpowers",
-      "value": 6878
+      "name": "diegosouzapw/OmniRoute",
+      "value": 14533
     },
     {
       "name": "earendil-works/pi",
-      "value": 6686
+      "value": 13045
+    },
+    {
+      "name": "PrimeIntellect-ai/prime-agent",
+      "value": 12613
     },
     {
       "name": "firecrawl/firecrawl",
-      "value": 6193
+      "value": 10390
     }
   ],
-  "chart_top_title": "Biggest star gains (15d)",
+  "chart_top_title": "Biggest star gains (17d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-08-11T18:59:16.380Z",
-  "generated": "2026-08-23",
+  "snapshot": "2026-08-28T01:21:50.535Z",
+  "generated": "2026-08-28",
   "generator": "scripts/reports/trending_now.py",
   "created": "2026-08-08"
 }
