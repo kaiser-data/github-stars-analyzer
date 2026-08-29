@@ -34,8 +34,8 @@
       "stars": 19288
     }
   ],
-  "snapshot": "2026-08-28T10:47:12.716Z",
-  "generated": "2026-08-28",
+  "snapshot": "2026-08-29T05:40:29.678Z",
+  "generated": "2026-08-29",
   "generator": "scripts/reports/llm_evaluation.py",
   "created": "2026-05-31"
 }
