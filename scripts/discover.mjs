@@ -10,7 +10,7 @@ import { writeFileSync } from 'node:fs';
 import path from 'node:path';
 
 import { loadLandscape, stateFor } from './lib/discover/landscape.mjs';
-import { parseExtra, buildQueries } from './lib/discover/candidates.mjs';
+import { parseExtra, buildQueries, selectCandidates } from './lib/discover/candidates.mjs';
 import { resolveRepos, searchRepos } from './lib/discover/fetch.mjs';
 import { classifyKind, fitScore } from './lib/discover/score.mjs';
 import { renderMarkdown, renderJson } from './lib/discover/render.mjs';
@@ -61,20 +61,25 @@ if (!flag('no-search')) {
 console.error(`Resolving ${wanted.size} candidate names…`);
 const { resolved, renamed, unresolved } = await resolveRepos([...wanted.values()], { now });
 
-const candidates = resolved
-  // Re-check against the star set on the RESOLVED name — a rename can land on
-  // something already held.
-  .filter((r) => stateFor(r.full_name, landscape) !== 'held')
-  .filter((r) => !r.fork && !r.archived)
-  .filter((r) => (r.stars ?? 0) >= minStars)
-  .filter((r) => r.days_since_push <= maxStaleDays)
+// State is re-checked on the RESOLVED name — a rename can land on something
+// already held. selectCandidates then exempts known gaps from the heuristics.
+const scored = selectCandidates(resolved, {
+  stateOf: (name) => stateFor(name, landscape),
+  minStars,
+  maxStaleDays,
+})
   .map((r) => {
     const kind = classifyKind(r);
-    const state = stateFor(r.full_name, landscape);
-    return { ...r, kind, state, score: fitScore({ ...r, kind }, landscape.vocabulary, { state }) };
+    return { ...r, kind, score: fitScore({ ...r, kind }, landscape.vocabulary, { state: r.state }) };
   })
-  .sort((a, b) => b.score.total - a.score.total)
-  .slice(0, limit);
+  .sort((a, b) => b.score.total - a.score.total);
+
+// `limit` caps search noise, so it applies to `new` finds only. Letting it
+// truncate known gaps would lose them as silently as the filters did.
+const candidates = [
+  ...scored.filter((r) => r.state === 'known-gap'),
+  ...scored.filter((r) => r.state !== 'known-gap').slice(0, limit),
+].sort((a, b) => b.score.total - a.score.total);
 
 const result = {
   slug,

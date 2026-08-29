@@ -46,3 +46,25 @@ export function buildQueries(landscape, { minStars = 200, maxStaleDays = 365, no
 
   return queries;
 }
+
+/**
+ * Which resolved repos make the table.
+ *
+ * The heuristics — fork, archived, star floor, staleness — exist to keep raw
+ * search noise out of the output. A `known-gap` is not search noise: the report
+ * named it, so a human already judged it in scope, and the whole posture toward
+ * one is "star unless there's a reason not to". Dropping a known-gap here loses
+ * it silently — it appears in neither the table nor `unresolved`, so nothing
+ * records that it was ever considered. The heuristics therefore apply to `new`
+ * candidates only.
+ */
+export function selectCandidates(resolved, { stateOf, minStars = 200, maxStaleDays = 365 } = {}) {
+  return resolved
+    .map((r) => ({ ...r, state: stateOf(r.full_name) }))
+    .filter((r) => r.state !== 'held')
+    .filter(
+      (r) =>
+        r.state === 'known-gap' ||
+        (!r.fork && !r.archived && (r.stars ?? 0) >= minStars && r.days_since_push <= maxStaleDays),
+    );
+}

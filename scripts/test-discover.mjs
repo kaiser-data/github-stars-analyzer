@@ -128,7 +128,7 @@ console.log('\n== Task 4: scoring ==');
 
 console.log('\n== Task 5: candidate generation ==');
 {
-  const { parseExtra, buildQueries } = await import('./lib/discover/candidates.mjs');
+  const { parseExtra, buildQueries, selectCandidates } = await import('./lib/discover/candidates.mjs');
 
   ok('parses a comma list', JSON.stringify(parseExtra('a/b, c/d')) === JSON.stringify(['a/b', 'c/d']));
   ok('strips a github url', parseExtra('https://github.com/a/b')[0] === 'a/b');
@@ -148,6 +148,26 @@ console.log('\n== Task 5: candidate generation ==');
   ok('every query carries a pushed floor', qs.every((q) => /pushed:>=\d{4}-\d{2}-\d{2}/.test(q.q)));
   ok('pushed floor is maxStaleDays back', qs[0].q.includes('pushed:>=2025-08-28'));
   ok('queries are labelled', qs.every((q) => typeof q.label === 'string' && q.label.length > 0));
+
+  // A known-gap is a repo the report itself named. The heuristics must never
+  // drop one: it would vanish from the table AND from `unresolved`, leaving no
+  // trace that it was ever considered. This is how LostRuins/koboldcpp (a fork)
+  // and four stale agentic-terminals gaps went missing.
+  const stateOf = (n) => ({ 'a/held': 'held', 'a/gap': 'known-gap', 'a/new': 'new' })[n] ?? 'new';
+  const row = (full_name, over = {}) => ({ full_name, stars: 5000, days_since_push: 1, fork: false, archived: false, ...over });
+  const names = (rs) => rs.map((r) => r.full_name).sort().join(',');
+  const sel = (rows, opts = {}) => selectCandidates(rows, { stateOf, minStars: 200, maxStaleDays: 365, ...opts });
+
+  ok('known-gap survives the fork filter', names(sel([row('a/gap', { fork: true })])) === 'a/gap');
+  ok('known-gap survives the archived filter', names(sel([row('a/gap', { archived: true })])) === 'a/gap');
+  ok('known-gap survives the star floor', names(sel([row('a/gap', { stars: 3 })])) === 'a/gap');
+  ok('known-gap survives the staleness floor', names(sel([row('a/gap', { days_since_push: 4000 })])) === 'a/gap');
+  ok('new fork is still dropped', names(sel([row('a/new', { fork: true })])) === '');
+  ok('new archived is still dropped', names(sel([row('a/new', { archived: true })])) === '');
+  ok('new below the star floor is still dropped', names(sel([row('a/new', { stars: 3 })])) === '');
+  ok('new past the staleness floor is still dropped', names(sel([row('a/new', { days_since_push: 4000 })])) === '');
+  ok('held is dropped whatever its shape', names(sel([row('a/held')])) === '');
+  ok('state is attached to what survives', sel([row('a/gap')])[0].state === 'known-gap');
 }
 
 console.log('\n== Task 6: fetch (network) ==');
