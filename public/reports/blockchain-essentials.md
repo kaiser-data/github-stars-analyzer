@@ -1,6 +1,6 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges).
+> Derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges).
 >
 > Generated 2026-08-29 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
@@ -19,12 +19,12 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 |---|---|---|---|---|---|
 | [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,190 | 🟢 Mature | 1,290 | 20,079 |
 | [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 382 | 🔥 Hot | 84 | 234 |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,573 | 🔥 Hot | 2,387 | 109 |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,573 | 🔥 Hot | 2,383 | 109 |
 | [agave](https://github.com/anza-xyz/agave) | Solana | 1,895 | 🟢 Mature | 106 | 1,162 |
 | [foundry](https://github.com/foundry-rs/foundry) | Dev toolkits | 10,570 | 🔵 Classic | 218 | 1,031 |
 | [nethermind](https://github.com/NethermindEth/nethermind) | Execution clients (nodes) | 1,588 | 🔵 Classic | 18 | 713 |
 | [hardhat](https://github.com/NomicFoundation/hardhat) | Dev toolkits | 8,505 | 🔵 Classic | 104 | 629 |
-| [chainlink](https://github.com/smartcontractkit/chainlink) | Oracles, AA & wallets | 8,236 | 🔵 Classic | 96 | 480 |
+| [reth](https://github.com/paradigmxyz/reth) | Execution clients (nodes) | 5,753 | 🔵 Classic | 149 | 484 |
 
 **Two trends to watch:**
 
@@ -48,7 +48,7 @@ _Build, test, fuzz, deploy._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [foundry](https://github.com/foundry-rs/foundry) | 10,570 | 🔵 Classic | 85 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
+| [foundry](https://github.com/foundry-rs/foundry) | 10,570 | 🔵 Classic | 84 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
 | [hardhat](https://github.com/NomicFoundation/hardhat) | 8,505 | 🔵 Classic | 78 | TypeScript | The established JS/TS dev environment. |
 
 ### Contract libraries & standards
@@ -119,7 +119,7 @@ _The largest non-EVM L1._
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
 | [anchor](https://github.com/otter-sec/anchor) | 5,122 | 🔵 Classic | 82 | Rust | The standard Solana smart-contract framework. |
-| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,749 | 🟢 Mature | 46 | TypeScript | JS SDK for Solana. |
+| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,749 | 🟢 Mature | 45 | TypeScript | JS SDK for Solana. |
 | [agave](https://github.com/anza-xyz/agave) | 1,895 | 🟢 Mature | 97 | Rust | The Solana validator client. |
 
 ### Zero-knowledge
@@ -175,4 +175,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-29T05:40:29.678Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-08-29T14:32:27.250Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

@@ -1,6 +1,6 @@
 # Meeting Transcription & Conversation Analysis — Field Guide
 
-> Derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges, 38 communities).
+> Derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges, 39 communities).
 >
 > Generated 2026-08-29 by `scripts/reports/meeting_transcription.py` (regenerate any time — no API cost).
 
@@ -59,31 +59,31 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | Meeting assistant (end-to-end) | Rust | MIT | 29,977 | Mature | 58 | active | 2d ago | 1.7y | 2 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | ASR engine / model | Python | MIT | 25,117 | Declining | 15 | stale | 9mo ago | 3.5y | 0 |
 | [m-bain/whisperX](https://github.com/m-bain/whisperX) | Diarization & alignment | Python | BSD-2-Clause | 23,781 | Mature | 64 | active | 1mo ago | 3.7y | 4 |
-| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Meeting assistant (end-to-end) | Rust | NOASSERTION | 21,267 | Mature | 85 | very active | 1d ago | 2.2y | 3 |
-| [modelscope/FunASR](https://github.com/modelscope/FunASR) | ASR engine / model | Python | MIT | 20,052 | Classic | 80 | very active | 1d ago | 3.8y | 12 |
-| [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | ASR engine / model | Python | Apache-2.0 | 18,345 | Classic | 99 | very active | 1d ago | 7.1y | 30 |
+| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Meeting assistant (end-to-end) | Rust | NOASSERTION | 21,267 | Mature | 85 | very active | 2d ago | 2.2y | 3 |
+| [modelscope/FunASR](https://github.com/modelscope/FunASR) | ASR engine / model | Python | MIT | 20,052 | Classic | 80 | very active | 2d ago | 3.8y | 12 |
+| [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | ASR engine / model | Python | Apache-2.0 | 18,345 | Classic | 99 | very active | 2d ago | 7.1y | 30 |
 | [kaldi-asr/kaldi](https://github.com/kaldi-asr/kaldi) | ASR engine / model | Shell | NOASSERTION | 15,468 | Declining | 10 | stale | 11mo ago | 11.4y | 0 |
 | [alphacep/vosk-api](https://github.com/alphacep/vosk-api) | ASR engine / model | Jupyter Notebook | Apache-2.0 | 15,080 | Mature | 49 | active | 20d ago | 7.0y | 3 |
 | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Streaming / live capture | C++ | Apache-2.0 | 14,438 | Classic | 76 | very active | 4d ago | 4.0y | 25 |
 | [speechbrain/speechbrain](https://github.com/speechbrain/speechbrain) | ASR engine / model | Python | Apache-2.0 | 11,787 | Classic | 67 | active | 2d ago | 6.3y | 10 |
-| [moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine) | ASR engine / model | C++ | NOASSERTION | 10,947 | Mature | 79 | very active | 2d ago | 1.9y | 2 |
+| [moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine) | ASR engine / model | C++ | NOASSERTION | 10,947 | Mature | 79 | very active | 3d ago | 1.9y | 2 |
 | [pyannote/pyannote-audio](https://github.com/pyannote/pyannote-audio) | Diarization & alignment | Jupyter Notebook | MIT | 10,479 | Classic | 66 | active | 25d ago | 10.5y | 4 |
-| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Streaming / live capture | Python | MIT | 10,081 | Classic | 67 | very active | 1d ago | 3.0y | 4 |
+| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Streaming / live capture | Python | MIT | 10,081 | Classic | 67 | very active | 2d ago | 3.0y | 4 |
 | [snakers4/silero-vad](https://github.com/snakers4/silero-vad) | Streaming / live capture | Python | MIT | 10,072 | Classic | 65 | active | 5d ago | 5.8y | 6 |
-| [espnet/espnet](https://github.com/espnet/espnet) | ASR engine / model | Python | Apache-2.0 | 9,944 | Classic | 83 | very active | 1d ago | 8.7y | 15 |
+| [espnet/espnet](https://github.com/espnet/espnet) | ASR engine / model | Python | Apache-2.0 | 9,944 | Classic | 83 | very active | 2d ago | 8.7y | 15 |
 | [QwenAudio/SenseVoice](https://github.com/QwenAudio/SenseVoice) | ASR engine / model | C | MIT | 9,159 | Mature | 74 | very active | 2d ago | 2.2y | 4 |
-| [thewh1teagle/vibe](https://github.com/thewh1teagle/vibe) | Meeting assistant (end-to-end) | TypeScript | MIT | 7,217 | Mature | 77 | very active | 1d ago | 2.6y | 7 |
+| [thewh1teagle/vibe](https://github.com/thewh1teagle/vibe) | Meeting assistant (end-to-end) | TypeScript | MIT | 7,217 | Mature | 77 | very active | 2d ago | 2.6y | 7 |
 | [SevaSk/ecoute](https://github.com/SevaSk/ecoute) | Meeting assistant (end-to-end) | Python | MIT | 6,048 | Mature | 22 | slowing | 4mo ago | 3.3y | 0 |
 | [MahmoudAshraf97/whisper-diarization](https://github.com/MahmoudAshraf97/whisper-diarization) | Diarization & alignment | Jupyter Notebook | BSD-2-Clause | 5,632 | Mature | 45 | active | 14d ago | 3.6y | 2 |
 | [collabora/WhisperLive](https://github.com/collabora/WhisperLive) | Streaming / live capture | Python | MIT | 4,242 | Classic | 65 | very active | 25d ago | 3.3y | 9 |
 | [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | ASR engine / model | Python | MIT | 4,112 | Abandoned | 4 | stale | 1.6y ago | 2.8y | 0 |
-| [speaches-ai/speaches](https://github.com/speaches-ai/speaches) | Transcription server / API | Python | MIT | 3,625 | Mature | 51 | active | 1d ago | 2.3y | 0 |
-| [ahmetoner/whisper-asr-webservice](https://github.com/ahmetoner/whisper-asr-webservice) | Transcription server / API | Python | MIT | 3,326 | Mature | 54 | very active | 19d ago | 3.9y | 1 |
+| [speaches-ai/speaches](https://github.com/speaches-ai/speaches) | Transcription server / API | Python | MIT | 3,625 | Mature | 51 | active | 2d ago | 2.3y | 0 |
+| [ahmetoner/whisper-asr-webservice](https://github.com/ahmetoner/whisper-asr-webservice) | Transcription server / API | Python | MIT | 3,326 | Mature | 54 | very active | 20d ago | 3.9y | 1 |
 | [pluja/whishper](https://github.com/pluja/whishper) | Meeting assistant (end-to-end) | Svelte | AGPL-3.0 | 3,067 | Mature | 32 | active | 29d ago | 3.0y | 0 |
 | [kyutai-labs/delayed-streams-modeling](https://github.com/kyutai-labs/delayed-streams-modeling) | ASR engine / model | Python | Apache-2.0 | 3,017 | Declining | 19 | stale | 7mo ago | 1.2y | 0 |
 | [rishikanthc/Scriberr](https://github.com/rishikanthc/Scriberr) | Meeting assistant (end-to-end) | Go | MIT | 2,996 | Declining | 44 | slowing | 2mo ago | 1.9y | 0 |
 | [kaixxx/noScribe](https://github.com/kaixxx/noScribe) | Meeting assistant (end-to-end) | Python | GPL-3.0 | 2,135 | Mature | 51 | active | 1mo ago | 3.3y | 3 |
-| [juanmc2005/diart](https://github.com/juanmc2005/diart) | Diarization & alignment | Python | MIT | 2,022 | Mature | 32 | slowing | 2mo ago | 5.1y | 0 |
+| [juanmc2005/diart](https://github.com/juanmc2005/diart) | Diarization & alignment | Python | MIT | 2,022 | Mature | 31 | slowing | 2mo ago | 5.1y | 0 |
 | [transcriptionstream/transcriptionstream](https://github.com/transcriptionstream/transcriptionstream) | Meeting assistant (end-to-end) | Python | GPL-3.0 | 946 | Declining | 20 | stale | 7mo ago | 2.8y | 0 |
 | [DrDroidLab/voicesummary](https://github.com/DrDroidLab/voicesummary) | Transcript analysis | Python | MIT | 34 | Declining | 11 | stale | 9mo ago | 1.0y | 0 |
 
@@ -238,25 +238,25 @@ mic/system audio → silero-vad → WhisperLive or RealtimeSTT (streaming ASR)
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **9 of the graph's 38 communities**.
+**Community clustering.** These 32 tools span **10 of the graph's 39 communities**.
 
-- **Community 1** (19): `Zackriya-Solutions/meetily`, `SevaSk/ecoute`, `rishikanthc/Scriberr`, `pluja/whishper`, `kaixxx/noScribe`, `transcriptionstream/transcriptionstream`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `modelscope/FunASR`, `alphacep/vosk-api`, `kaldi-asr/kaldi`, `speechbrain/speechbrain`, `pyannote/pyannote-audio`, `m-bain/whisperX`, `MahmoudAshraf97/whisper-diarization`, `juanmc2005/diart`, `collabora/WhisperLive`, `speaches-ai/speaches`, `ahmetoner/whisper-asr-webservice`
+- **Community 1** (17): `Zackriya-Solutions/meetily`, `SevaSk/ecoute`, `rishikanthc/Scriberr`, `pluja/whishper`, `kaixxx/noScribe`, `transcriptionstream/transcriptionstream`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `alphacep/vosk-api`, `kaldi-asr/kaldi`, `speechbrain/speechbrain`, `pyannote/pyannote-audio`, `m-bain/whisperX`, `MahmoudAshraf97/whisper-diarization`, `juanmc2005/diart`, `speaches-ai/speaches`, `ahmetoner/whisper-asr-webservice`
+- **Community 10** (4): `thewh1teagle/vibe`, `openai/whisper`, `KoljaB/RealtimeSTT`, `collabora/WhisperLive`
 - **Community 9** (3): `screenpipe/screenpipe`, `moonshine-ai/moonshine`, `DrDroidLab/voicesummary`
-- **Community 8** (3): `thewh1teagle/vibe`, `openai/whisper`, `KoljaB/RealtimeSTT`
-- **Community 12** (2): `espnet/espnet`, `snakers4/silero-vad`
+- **Community 15** (2): `espnet/espnet`, `snakers4/silero-vad`
 
-**Centrality (PageRank in the full 1,853-repo graph)** — most 'hub-like' transcription tools in your ecosystem:
+**Centrality (PageRank in the full 1,861-repo graph)** — most 'hub-like' transcription tools in your ecosystem:
 
 - `m-bain/whisperX` — PageRank 0.0013
-- `ggml-org/whisper.cpp` — PageRank 0.0011
+- `ggml-org/whisper.cpp` — PageRank 0.0012
 - `MahmoudAshraf97/whisper-diarization` — PageRank 0.0010
-- `ahmetoner/whisper-asr-webservice` — PageRank 0.0007
 - `modelscope/FunASR` — PageRank 0.0007
+- `ahmetoner/whisper-asr-webservice` — PageRank 0.0007
 - `SYSTRAN/faster-whisper` — PageRank 0.0006
 - `KoljaB/RealtimeSTT` — PageRank 0.0006
 - `huggingface/distil-whisper` — PageRank 0.0006
 - `QwenAudio/SenseVoice` — PageRank 0.0006
-- `openai/whisper` — PageRank 0.0005
+- `speechbrain/speechbrain` — PageRank 0.0005
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
@@ -307,7 +307,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Several of the d
 | rishikanthc/Scriberr | 44 | Declining | slowing | 0 | 0% | 16 |
 | openai/whisper | 40 | Mature | active | 1 | 50% | 13 |
 | pluja/whishper | 32 | Mature | active | 0 | 0% | 21 |
-| juanmc2005/diart | 32 | Mature | slowing | 0 | 0% | 13 |
+| juanmc2005/diart | 31 | Mature | slowing | 0 | 0% | 13 |
 | SevaSk/ecoute | 22 | Mature | slowing | 0 | 0% | 0 |
 | transcriptionstream/transcriptionstream | 20 | Declining | stale | 0 | 0% | 0 |
 | kyutai-labs/delayed-streams-modeling | 19 | Declining | stale | 0 | 0% | 0 |
@@ -332,4 +332,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Several of the d
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 32 · Snapshot: 2026-08-29T05:40:29.678Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-08-29T14:32:27.250Z</sub>

@@ -1,6 +1,6 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges, 38 communities).
+> Derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges, 39 communities).
 >
 > Generated 2026-08-29 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
@@ -187,10 +187,10 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **10 of the graph's 38 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **10 of the graph's 39 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
-- **Community 17** (3): `rtk-ai/rtk`, `yvgude/lean-ctx`, `thedotmack/claude-mem`
-- **Community 7** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
+- **Community 11** (3): `rtk-ai/rtk`, `yvgude/lean-ctx`, `thedotmack/claude-mem`
+- **Community 8** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
 - **Community 0** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
@@ -217,4 +217,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-29T05:40:29.678Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-29T14:32:27.250Z</sub>

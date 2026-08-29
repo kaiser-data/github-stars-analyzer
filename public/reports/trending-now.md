@@ -1,6 +1,6 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges, 38 communities).
+> Derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges, 39 communities).
 >
 > Generated 2026-08-29 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
@@ -12,10 +12,10 @@
 ## Executive summary
 
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
-- **Window**: `2026-08-11` → `2026-08-29` (**18 days**), covering the **1,590 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-08-29` (**79 days**).
+- **Window**: `2026-08-11` → `2026-08-29` (**18 days**), covering the **1,589 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-08-29` (**79 days**).
   - The immediately preceding snapshot (`2026-08-28`) is only 1 day before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
-- **1,357 repos gained stars** in the recent window, adding **732,614★** between them.
-- **263 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **1,356 repos gained stars** in the recent window, adding **732,588★** between them.
+- **272 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -98,7 +98,7 @@ Averaged over the full snapshot history, so a single viral week doesn't dominate
 | 8 | [usestrix/strix](https://github.com/usestrix/strix) | **416.8** | +32,926 | 58,872 | Python | 76 |
 | 9 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **399.7** | +31,573 | 122,011 | Python | 95 |
 | 10 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | **396.8** | +31,349 | 117,446 | Python | 85 |
-| 11 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | **396.0** | +31,282 | 129,761 | Rust | 77 |
+| 11 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | **396.0** | +31,282 | 129,761 | Rust | 76 |
 | 12 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **390.7** | +30,866 | 471,727 | Python | 64 |
 | 13 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | **383.9** | +30,331 | 243,765 | JavaScript | 79 |
 | 14 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | **378.8** | +29,925 | 101,440 | Go | 75 |
@@ -316,7 +316,7 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [kingToolbox/WindTerm](https://github.com/kingToolbox/WindTerm) | 32,078 | C | Declining | A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal. |
 | [jumpserver/jumpserver](https://github.com/jumpserver/jumpserver) | 31,463 | Python | Classic | JumpServer is an open-source Privileged Access Management (PAM) platform that provid… |
 | [atuinsh/atuin](https://github.com/atuinsh/atuin) | 31,444 | Rust | Classic | ✨ Making your shell magical |
-| _…and 223 more_ | | | | |
+| _…and 232 more_ | | | | |
 
 ## Cooling off
 
@@ -331,28 +331,29 @@ Deceleration, not decline. These averaged ≥1★/day across the 79-day long win
 | [alibaba/zvec](https://github.com/alibaba/zvec) | 72.8 | 6.9 | **10%** of prior pace | 2d ago | Hot |
 | [Suvink/cut-it-out](https://github.com/Suvink/cut-it-out) | 3.0 | 0.4 | **13%** of prior pace | 8mo ago | Declining |
 | [hexo-ai/sia](https://github.com/hexo-ai/sia) | 11.4 | 1.8 | **16%** of prior pace | 3d ago | Rising |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 158.3 | 25.1 | **16%** of prior pace | 1d ago | Classic |
-| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 2.0 | 0.3 | **16%** of prior pace | 1d ago | Hot |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 158.3 | 25.1 | **16%** of prior pace | 2d ago | Classic |
+| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 2.0 | 0.3 | **16%** of prior pace | 2d ago | Hot |
 | [microsoft/fara](https://github.com/microsoft/fara) | 8.8 | 1.5 | **17%** of prior pace | 1mo ago | Rising |
 | [https-deeplearning-ai/deeplearning-ai](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1.9 | 0.3 | **18%** of prior pace | 2mo ago | Rising |
 | [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | 28.6 | 6.1 | **21%** of prior pace | 1mo ago | Declining |
 | [morphik-org/morphik-core](https://github.com/morphik-org/morphik-core) | 1.3 | 0.3 | **22%** of prior pace | 1mo ago | Mature |
-| [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 30.2 | 7.4 | **25%** of prior pace | 15d ago | Mature |
+| [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 30.2 | 7.4 | **25%** of prior pace | 16d ago | Mature |
 | [winfunc/opcode](https://github.com/winfunc/opcode) | 4.3 | 1.1 | **26%** of prior pace | 10mo ago | Declining |
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **17 of the graph's 38 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **17 of the graph's 39 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
-- **Community 17** (10): `DietrichGebert/ponytail`, `diegosouzapw/OmniRoute`, `msitarzewski/agency-agents`, `nexu-io/open-design`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `herdrdev/herdr`, `ayghri/i-have-adhd`, `affaan-m/ECC`, `anthropics/skills`
-- **Community 24** (5): `public-apis/public-apis`, `usestrix/strix`, `sindresorhus/awesome`, `codecrafters-io/build-your-own-x`, `DigitalPlatDev/FreeDomain`
-- **Community 9** (4): `obra/superpowers`, `TencentCloud/TencentDB-Agent-Memory`, `MadsLorentzen/ai-job-search`, `calesthio/OpenMontage`
-- **Community 7** (3): `earendil-works/pi`, `santifer/career-ops`, `JuliusBrussee/caveman`
-- **Community 23** (2): `harry0703/MoneyPrinterTurbo`, `HKUDS/DeepTutor`
-- **Community 8** (2): `openai/codex`, `anomalyco/opencode`
-- **Community 16** (2): `firecrawl/firecrawl`, `NousResearch/hermes-agent`
-- **Community 6** (2): `semantica-agi/semantica`, `virgiliojr94/book-to-skill`
-- **Community 4** (2): `Alishahryar1/free-claude-code`, `OpenCut-app/OpenCut`
+- **Community 11** (9): `DietrichGebert/ponytail`, `diegosouzapw/OmniRoute`, `msitarzewski/agency-agents`, `nexu-io/open-design`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `herdrdev/herdr`, `ayghri/i-have-adhd`, `affaan-m/ECC`
+- **Community 27** (4): `public-apis/public-apis`, `sindresorhus/awesome`, `codecrafters-io/build-your-own-x`, `DigitalPlatDev/FreeDomain`
+- **Community 12** (3): `harry0703/MoneyPrinterTurbo`, `calesthio/OpenMontage`, `github/spec-kit`
+- **Community 8** (3): `earendil-works/pi`, `santifer/career-ops`, `JuliusBrussee/caveman`
+- **Community 18** (3): `firecrawl/firecrawl`, `NousResearch/hermes-agent`, `TauricResearch/TradingAgents`
+- **Community 9** (3): `obra/superpowers`, `TencentCloud/TencentDB-Agent-Memory`, `MadsLorentzen/ai-job-search`
+- **Community 10** (2): `openai/codex`, `unslothai/unsloth`
+- **Community 21** (2): `usestrix/strix`, `anthropics/skills`
+- **Community 7** (2): `semantica-agi/semantica`, `virgiliojr94/book-to-skill`
+- **Community 2** (2): `Alishahryar1/free-claude-code`, `OpenCut-app/OpenCut`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
@@ -390,4 +391,4 @@ Deceleration, not decline. These averaged ≥1★/day across the 79-day long win
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 1,590 · Window: 2026-08-11 → 2026-08-29 (18d) · Snapshot: 2026-08-29T05:40:29.678Z</sub>
+<sub>Repos tracked: 1,589 · Window: 2026-08-11 → 2026-08-29 (18d) · Snapshot: 2026-08-29T14:32:27.250Z</sub>

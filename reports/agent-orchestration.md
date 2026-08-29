@@ -1,6 +1,6 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges, 38 communities).
+> Derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges, 39 communities).
 >
 > Generated 2026-08-29 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
@@ -42,9 +42,9 @@
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 70,071 | Python | 22 | stale | Declining | 0 |
+| [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 70,071 | Python | 21 | stale | Declining | 0 |
 | [microsoft/autogen](https://github.com/microsoft/autogen) | 60,659 | Python | 29 | slowing | Mature | 0 |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 57,688 | Python | 85 | very active | Mature | 2 |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 57,688 | Python | 84 | very active | Mature | 2 |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | 41,945 | Python | 98 | very active | Classic | 5 |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 40,570 | Python | 77 | very active | Classic | 1 |
 | [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 37,627 | Python | 83 | very active | Classic | 2 |
@@ -117,13 +117,13 @@
 
 _SDKs you write agents in — maximum control over routing, state and hand-offs; the engineer's default._
 
-- **[FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT)** · 70,071★ · Python · Declining · health 22  
+- **[FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT)** · 70,071★ · Python · Declining · health 21  
   Multi-agent 'software company' — assigns SOPs/roles (PM, architect, engineer).  
   <sub>topics: agent, gpt, llm, metagpt, multi-agent</sub>
 - **[microsoft/autogen](https://github.com/microsoft/autogen)** · 60,659★ · Python · Mature · health 29  
   Microsoft's conversational multi-agent framework; agents talk to solve tasks.  
   <sub>topics: chatgpt, llm-agent, llm-framework, agentic, agentic-agi, agents</sub>
-- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · 57,688★ · Python · Mature · health 85  
+- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · 57,688★ · Python · Mature · health 84  
   Role-based 'crew' multi-agent framework — agents with roles, goals & tools collaborate.  
   <sub>topics: agents, ai, ai-agents, llms, aiagentframework</sub>
 - **[agno-agi/agno](https://github.com/agno-agi/agno)** · 41,945★ · Python · Classic · health 98  
@@ -264,28 +264,27 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 38 tools span **16 of the graph's 38 communities**.
+**Community clustering.** These 38 tools span **17 of the graph's 39 communities**.
 
+- **Community 18** (7): `langchain-ai/langgraph`, `agentscope-ai/agentscope`, `i-am-bee/beeai-framework`, `FoundationAgents/MetaGPT`, `assafelovic/gpt-researcher`, `langflow-ai/langflow`, `TauricResearch/TradingAgents`
 - **Community 9** (6): `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `n8n-io/n8n`, `inngest/agent-kit`, `veegee82/agent-workflow-protocol`
-- **Community 17** (5): `VoltAgent/voltagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `Untrivial-ai/agent-orchestrator`, `getpaseo/paseo`
-- **Community 16** (4): `langchain-ai/langgraph`, `i-am-bee/beeai-framework`, `assafelovic/gpt-researcher`, `langflow-ai/langflow`
-- **Community 15** (4): `agentscope-ai/agentscope`, `FoundationAgents/MetaGPT`, `bytedance/deer-flow`, `TauricResearch/TradingAgents`
-- **Community 2** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 12** (3): `camel-ai/camel`, `eigent-ai/eigent`, `flyteorg/flyte`
-- **Community 8** (2): `openai/openai-agents-python`, `TinyAGI/tinyagi`
-- **Community 26** (2): `langgenius/dify`, `simstudioai/sim`
-- **Community 27** (2): `vercel-labs/coding-agent-template`, `elizaOS/eliza`
+- **Community 11** (4): `VoltAgent/voltagent`, `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `getpaseo/paseo`
+- **Community 3** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
+- **Community 15** (3): `camel-ai/camel`, `eigent-ai/eigent`, `flyteorg/flyte`
+- **Community 24** (2): `langgenius/dify`, `simstudioai/sim`
+- **Community 0** (2): `bytedance/deer-flow`, `sentient-agi/ROMA`
+- **Community 25** (2): `vercel-labs/coding-agent-template`, `elizaOS/eliza`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
 - `agno-agi/agno` — PageRank 0.0019
-- `langchain-ai/langgraph` — PageRank 0.0016
 - `liquidos-ai/AutoAgents` — PageRank 0.0016
-- `openai/openai-agents-python` — PageRank 0.0015
+- `langchain-ai/langgraph` — PageRank 0.0016
 - `microsoft/semantic-kernel` — PageRank 0.0014
 - `crewAIInc/crewAI` — PageRank 0.0013
+- `openai/openai-agents-python` — PageRank 0.0013
+- `code-yeongyu/oh-my-openagent` — PageRank 0.0012
 - `wshobson/agents` — PageRank 0.0011
-- `code-yeongyu/oh-my-openagent` — PageRank 0.0011
 - `inngest/agent-kit` — PageRank 0.0010
 - `huggingface/smolagents` — PageRank 0.0010
 
@@ -324,8 +323,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 | flyteorg/flyte | Durable / production infra | 90 | Classic | very active | 3 |
 | elizaOS/eliza | Agent OS / long-horizon harness | 89 | Mature | very active | 3 |
 | openai/openai-agents-python | Code-first agent frameworks | 85 | Hot | very active | 2 |
-| crewAIInc/crewAI | Code-first agent frameworks | 85 | Mature | very active | 2 |
 | camel-ai/camel | Code-first agent frameworks | 85 | Classic | very active | 3 |
+| crewAIInc/crewAI | Code-first agent frameworks | 84 | Mature | very active | 2 |
 | assafelovic/gpt-researcher | Vertical / domain systems | 84 | Classic | very active | 2 |
 | bytedance/deer-flow | Coding-agent orchestration | 84 | Hot | very active | 12 |
 | stanfordnlp/dspy | Code-first agent frameworks | 83 | Classic | very active | 2 |
@@ -351,7 +350,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 | microsoft/autogen | Code-first agent frameworks | 29 | Mature | slowing | 0 |
 | veegee82/agent-workflow-protocol | Protocols & meta-frameworks | 26 | Declining | slowing | 0 |
 | sentient-agi/ROMA | Protocols & meta-frameworks | 26 | Declining | stale | 0 |
-| FoundationAgents/MetaGPT | Code-first agent frameworks | 22 | Declining | stale | 0 |
+| FoundationAgents/MetaGPT | Code-first agent frameworks | 21 | Declining | stale | 0 |
 
 ⚠️ **Adopt with caution** (low health and/or declining): `FoundationAgents/MetaGPT`, `veegee82/agent-workflow-protocol`, `sentient-agi/ROMA`, `microsoft/autogen`, `vercel-labs/coding-agent-template`, `TinyAGI/tinyagi`, `inngest/agent-kit`.
 
@@ -365,4 +364,4 @@ Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, La
 - **Selection**: scan for orchestration / multi-agent / swarm / workflow / agent-framework signals, then manual curation by approach. RAG frameworks, eval/observability platforms, and single-purpose agents were routed to their own reports or excluded; only tools whose *primary* job is coordinating agents/steps appear here.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-08-29T05:40:29.678Z</sub>
+<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-08-29T14:32:27.250Z</sub>

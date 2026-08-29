@@ -24,8 +24,8 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <path d="M244,121 h187.1 q4,0 4,4 v10 q0,4 -4,4 h-187.1 z" class="bar"/>
 <text x="441.1" y="130.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Chat &amp; workspace connectors</text>
-<path d="M244,148 h187.1 q4,0 4,4 v10 q0,4 -4,4 h-187.1 z" class="bar"/>
-<text x="441.1" y="157.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,148 h148.9 q4,0 4,4 v10 q0,4 -4,4 h-148.9 z" class="bar"/>
+<text x="402.9" y="157.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Meeting &amp; transcript capture</text>
 <path d="M244,175 h110.7 q4,0 4,4 v10 q0,4 -4,4 h-110.7 z" class="bar"/>
 <text x="364.7" y="184.0" class="val" dominant-baseline="central">3</text>

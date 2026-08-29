@@ -1,6 +1,6 @@
 # Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps
 
-> Engine roster derived from **kaiser-data**'s 1,853 starred repos (snapshot `2026-08-29T05:40:29.678Z`), cross-referenced with the repo-similarity graph (1,853 nodes / 6,048 edges, 38 communities).
+> Engine roster derived from **kaiser-data**'s 1,861 starred repos (snapshot `2026-08-29T14:32:27.250Z`), cross-referenced with the repo-similarity graph (1,861 nodes / 6,077 edges, 39 communities).
 >
 > **The throughput numbers in this report are measured, not quoted** — benchmark runs against a real Jetson Orin Nano Super 8GB in **MAXN_SUPER** (25W) mode on 2026-08-23, with the desktop and a voice stack running. Engine verdicts are argued against those numbers. See Methodology.
 >
@@ -110,20 +110,20 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Engine | Class | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|
-| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 179,588 | Classic | 83 | very active | 1d ago | 9 |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 125,969 | Classic | 99 | very active | 1d ago | 48 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 90,249 | Classic | 99 | very active | 1d ago | 78 |
+| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 179,588 | Classic | 83 | very active | 2d ago | 9 |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 125,969 | Classic | 99 | very active | 2d ago | 48 |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 90,249 | Classic | 99 | very active | 2d ago | 78 |
 | [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,396 | Abandoned | 7 | stale | 1.3y ago | 0 |
 | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 53,239 | Classic | 94 | very active | 4d ago | 48 |
-| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,102 | Mature | 73 | active | 3d ago | 6 |
+| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,102 | Mature | 73 | active | 4d ago | 6 |
 | [microsoft/BitNet](https://github.com/microsoft/BitNet) | Format & quantization | C++ | MIT | 40,207 | Mature | 45 | active | 1mo ago | 3 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,371 | Hot | 88 | very active | 1d ago | 33 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,371 | Hot | 88 | very active | 2d ago | 33 |
 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 32,693 | Mature | 65 | very active | 2d ago | 1 |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 32,584 | Mature | 99 | very active | 1d ago | 48 |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,707 | Mature | 66 | very active | 2d ago | 5 |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 32,584 | Mature | 99 | very active | 2d ago | 48 |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,707 | Mature | 66 | very active | 3d ago | 5 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,117 | Declining | 15 | stale | 9mo ago | 0 |
-| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,373 | Classic | 84 | very active | 1d ago | 22 |
-| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,490 | Classic | 98 | very active | 1d ago | 57 |
+| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,373 | Classic | 84 | very active | 2d ago | 22 |
+| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,490 | Classic | 98 | very active | 2d ago | 57 |
 | [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 14,438 | Classic | 76 | very active | 4d ago | 25 |
 | [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) | Datacenter-oriented runtime | Python | Apache  2.0 | 8,029 | Classic | 92 | very active | 2d ago | 23 |
 | [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers) | NVIDIA / Jetson path | Jupyter Notebook | Other | 4,835 | Mature | 45 | active | 19d ago | 2 |
@@ -219,21 +219,20 @@ What are you running?
 
 ## Graph analysis
 
-**Community clustering.** These 17 engines span **9 of the graph's 38 communities**.
+**Community clustering.** These 17 engines span **8 of the graph's 39 communities**.
 
+- **Community 17** (6): `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `lyogavin/airllm`
 - **Community 1** (4): `ggml-org/llama.cpp`, `mozilla-ai/llamafile`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`
-- **Community 15** (3): `ollama/ollama`, `vllm-project/vllm`, `sgl-project/sglang`
-- **Community 14** (3): `nomic-ai/gpt4all`, `InternLM/lmdeploy`, `lyogavin/airllm`
-- **Community 12** (2): `dusty-nv/jetson-containers`, `onnx/onnx`
+- **Community 15** (2): `dusty-nv/jetson-containers`, `onnx/onnx`
 
-**Centrality (PageRank in the full 1,853-repo graph)**:
+**Centrality (PageRank in the full 1,861-repo graph)**:
 
-- `NVIDIA/TensorRT-LLM` — PageRank 0.0015
-- `ggml-org/whisper.cpp` — PageRank 0.0011
+- `NVIDIA/TensorRT-LLM` — PageRank 0.0014
+- `ggml-org/whisper.cpp` — PageRank 0.0012
+- `ggml-org/llama.cpp` — PageRank 0.0010
 - `vllm-project/vllm` — PageRank 0.0007
 - `onnx/onnx` — PageRank 0.0007
 - `SYSTRAN/faster-whisper` — PageRank 0.0006
-- `ggml-org/llama.cpp` — PageRank 0.0006
 - `InternLM/lmdeploy` — PageRank 0.0005
 - `microsoft/BitNet` — PageRank 0.0004
 - `k2-fsa/sherpa-onnx` — PageRank 0.0004
@@ -292,4 +291,4 @@ Watch items: `nomic-ai/gpt4all` is Declining and adds nothing here. Outside the 
 - **Board identification.** Specs for the Super (67 TOPS, 102 GB/s, 7W/15W/25W) are NVIDIA's published figures for the Orin Nano Super Developer Kit; the uplift from 40 TOPS / 68 GB/s is a software unlock on identical hardware, not a new board.
 - **The gap table does not refresh** with the pipeline; its metrics and the frozen citations need a manual pass.
 
-<sub>Engines covered: 17 · Missing catalogued: 11 · Measurements: 2026-08-23 · Snapshot: 2026-08-29T05:40:29.678Z</sub>
+<sub>Engines covered: 17 · Missing catalogued: 11 · Measurements: 2026-08-23 · Snapshot: 2026-08-29T14:32:27.250Z</sub>

@@ -42,7 +42,7 @@
       "stars": 90249
     }
   ],
-  "snapshot": "2026-08-29T05:40:29.678Z",
+  "snapshot": "2026-08-29T14:32:27.250Z",
   "generated": "2026-08-29",
   "generator": "scripts/reports/local_vs_infra_stack.py",
   "created": "2026-06-05"
