@@ -37,12 +37,28 @@ jobs:
         with:
           python-version: "3.12"
 
+      # A non-empty secret is not a working token. Three times the stored value
+      # has been command text pasted by mistake, and once an expired PAT sat
+      # here for four weeks. Authenticate for real, so a bad token fails in
+      # seconds naming the reason rather than dying obscurely downstream.
       - name: Check token
+        env:
+          TOKEN: ${{ secrets.GH_STARS_TOKEN }}
         run: |
-          if [ -z "${{ secrets.GH_STARS_TOKEN }}" ]; then
-            echo "::error::GH_STARS_TOKEN secret is not set (PAT, no scopes needed)."
+          if [ -z "$TOKEN" ]; then
+            echo "::error::GH_STARS_TOKEN is not set. A classic PAT with no scopes ticked is enough — the ingest reads public data only."
             exit 1
           fi
+          body=$(curl -sS -H "Authorization: bearer $TOKEN" \
+                   -X POST -d '{"query":"{viewer{login}}"}' \
+                   https://api.github.com/graphql)
+          login=$(printf '%s' "$body" | jq -r '.data.viewer.login // empty')
+          if [ -z "$login" ]; then
+            reason=$(printf '%s' "$body" | jq -r '.message // .errors[0].message // "no reason given"')
+            echo "::error::GH_STARS_TOKEN did not authenticate: $reason"
+            exit 1
+          fi
+          echo "Authenticated as $login."
 
       - run: npm ci
 
@@ -68,4 +84,44 @@ jobs:
           else
             git commit -m "chore: weekly data refresh ($(date -u +%F))"
             git push
+          fi
+
+  # This workflow was red for four weeks, twice, before anyone noticed: a failed
+  # scheduled run is silent. An issue is not. Runs as its own job so it still
+  # fires when `refresh` dies of a timeout rather than a failing step.
+  notify:
+    needs: refresh
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Open or update the failure issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create ci-failure --color B60205 \
+            --description "Automated: refresh-data.yml failed" --force >/dev/null 2>&1 || true
+          existing=$(gh issue list --label ci-failure --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "Failed again on $(date -u +%F): $RUN_URL"
+          else
+            gh issue create --title "Weekly data refresh is failing" --label ci-failure --body \
+          "\`refresh-data.yml\` failed on $(date -u +%F).
+
+          Run: $RUN_URL
+
+          Check the token first — it is the usual cause. The \"Check token\" step
+          authenticates before anything else runs, so if that is the step that
+          went red, \`GH_STARS_TOKEN\` is expired, malformed, or lacks access.
+          Reissue it and store it without the clipboard:
+
+          \`\`\`
+          read -rs TOKEN && gh secret set GH_STARS_TOKEN --body \"\$TOKEN\" && unset TOKEN
+          \`\`\`
+
+          This issue is reused for later failures, so comments here are a
+          history of the outage. Close it once a run goes green."
           fi
