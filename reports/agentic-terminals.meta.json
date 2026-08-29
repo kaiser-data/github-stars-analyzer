@@ -5,7 +5,7 @@
   "category": "AI / Comparison",
   "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 45 terminal apps (1,235,000\u2605) missing from the stars against 14 present.",
   "tool_count": 14,
-  "total_stars": 201163,
+  "total_stars": 202115,
   "categories": {
     "Terminal emulator": 2,
     "Agent runtime / multiplexer": 3,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "tmux/tmux",
-      "stars": 48868
+      "stars": 48898
     },
     {
       "name": "herdrdev/herdr",
-      "stars": 32948
+      "stars": 33330
     },
     {
       "name": "mbadolato/iTerm2-Color-Schemes",
-      "stars": 27159
+      "stars": 27162
     },
     {
       "name": "pranshuparmar/witr",
-      "stars": 21719
+      "stars": 21840
     },
     {
       "name": "rothgar/awesome-tuis",
-      "stars": 20364
+      "stars": 20394
     }
   ],
-  "snapshot": "2026-08-29T14:32:27.250Z",
+  "snapshot": "2026-08-29T15:31:31.780Z",
   "generated": "2026-08-29",
   "generator": "scripts/reports/agentic_terminals.py",
-  "created": "2026-08-23"
+  "created": "2026-08-29"
 }

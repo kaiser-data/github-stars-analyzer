@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">387,846</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">387,982</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,67 h206.5 q4,0 4,4 v10 q0,4 -4,4 h-206.5 z" class="bar"/>
-<text x="460.5" y="76.0" class="val" dominant-baseline="central">237,338</text>
+<path d="M244,67 h207.0 q4,0 4,4 v10 q0,4 -4,4 h-207.0 z" class="bar"/>
+<text x="461.0" y="76.0" class="val" dominant-baseline="central">237,998</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
-<path d="M244,94 h85.8 q4,0 4,4 v10 q0,4 -4,4 h-85.8 z" class="bar"/>
-<text x="339.8" y="103.0" class="val" dominant-baseline="central">101,235</text>
+<path d="M244,94 h86.1 q4,0 4,4 v10 q0,4 -4,4 h-86.1 z" class="bar"/>
+<text x="340.1" y="103.0" class="val" dominant-baseline="central">101,667</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">punkpeye/awesome-mcp-servers</text>
-<path d="M244,121 h78.4 q4,0 4,4 v10 q0,4 -4,4 h-78.4 z" class="bar"/>
-<text x="332.4" y="130.0" class="val" dominant-baseline="central">92,895</text>
+<path d="M244,121 h78.5 q4,0 4,4 v10 q0,4 -4,4 h-78.5 z" class="bar"/>
+<text x="332.5" y="130.0" class="val" dominant-baseline="central">93,040</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">modelcontextprotocol/servers</text>
 <path d="M244,148 h75.8 q4,0 4,4 v10 q0,4 -4,4 h-75.8 z" class="bar"/>
-<text x="329.8" y="157.0" class="val" dominant-baseline="central">89,915</text>
+<text x="329.8" y="157.0" class="val" dominant-baseline="central">89,953</text>
 </svg>

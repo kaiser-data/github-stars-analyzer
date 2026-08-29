@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">n8n-io/n8n</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">202,638</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">202,786</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">langflow-ai/langflow</text>
 <path d="M244,67 h257.0 q4,0 4,4 v10 q0,4 -4,4 h-257.0 z" class="bar"/>
-<text x="511.0" y="76.0" class="val" dominant-baseline="central">153,747</text>
+<text x="511.0" y="76.0" class="val" dominant-baseline="central">153,855</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">langgenius/dify</text>
 <path d="M244,94 h256.9 q4,0 4,4 v10 q0,4 -4,4 h-256.9 z" class="bar"/>
-<text x="510.9" y="103.0" class="val" dominant-baseline="central">153,692</text>
+<text x="510.9" y="103.0" class="val" dominant-baseline="central">153,823</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
-<path d="M244,121 h167.9 q4,0 4,4 v10 q0,4 -4,4 h-167.9 z" class="bar"/>
-<text x="421.9" y="130.0" class="val" dominant-baseline="central">101,235</text>
+<path d="M244,121 h168.5 q4,0 4,4 v10 q0,4 -4,4 h-168.5 z" class="bar"/>
+<text x="422.5" y="130.0" class="val" dominant-baseline="central">101,667</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,148 h133.5 q4,0 4,4 v10 q0,4 -4,4 h-133.5 z" class="bar"/>
-<text x="387.5" y="157.0" class="val" dominant-baseline="central">81,018</text>
+<path d="M244,148 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
+<text x="387.6" y="157.0" class="val" dominant-baseline="central">81,091</text>
 </svg>

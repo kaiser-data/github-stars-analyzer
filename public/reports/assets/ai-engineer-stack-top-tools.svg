@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">278,661</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">279,271</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ollama/ollama</text>
-<path d="M244,67 h217.7 q4,0 4,4 v10 q0,4 -4,4 h-217.7 z" class="bar"/>
-<text x="471.7" y="76.0" class="val" dominant-baseline="central">179,588</text>
+<path d="M244,67 h217.4 q4,0 4,4 v10 q0,4 -4,4 h-217.4 z" class="bar"/>
+<text x="471.4" y="76.0" class="val" dominant-baseline="central">179,714</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">firecrawl/firecrawl</text>
-<path d="M244,94 h209.9 q4,0 4,4 v10 q0,4 -4,4 h-209.9 z" class="bar"/>
-<text x="463.9" y="103.0" class="val" dominant-baseline="central">173,242</text>
+<path d="M244,94 h210.2 q4,0 4,4 v10 q0,4 -4,4 h-210.2 z" class="bar"/>
+<text x="464.2" y="103.0" class="val" dominant-baseline="central">173,889</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">anthropics/skills</text>
 <path d="M244,121 h208.4 q4,0 4,4 v10 q0,4 -4,4 h-208.4 z" class="bar"/>
-<text x="462.4" y="130.0" class="val" dominant-baseline="central">172,083</text>
+<text x="462.4" y="130.0" class="val" dominant-baseline="central">172,418</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">huggingface/transformers</text>
-<path d="M244,148 h199.1 q4,0 4,4 v10 q0,4 -4,4 h-199.1 z" class="bar"/>
-<text x="453.1" y="157.0" class="val" dominant-baseline="central">164,519</text>
+<path d="M244,148 h198.8 q4,0 4,4 v10 q0,4 -4,4 h-198.8 z" class="bar"/>
+<text x="452.8" y="157.0" class="val" dominant-baseline="central">164,601</text>
 </svg>
