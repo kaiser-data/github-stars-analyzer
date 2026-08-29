@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 9 data vintages: the 18-day movers, relative breakouts, sustained climbers, 273 new entrants, and what has gone flat.",
+  "summary": "Measured star momentum across 9 data vintages: the 18-day movers, relative breakouts, sustained climbers, 274 new entrants, and what has gone flat.",
   "tool_count": 331,
-  "total_stars": 8665728,
+  "total_stars": 8546159,
   "categories": {
     "Risers": 1356,
-    "Breakouts": 1239,
-    "New entrants": 273,
-    "Cooling": 32
+    "Breakouts": 1241,
+    "New entrants": 274,
+    "Cooling": 45
   },
   "top_tools": [
     {
-      "name": "DietrichGebert/ponytail",
-      "stars": 116107
+      "name": "public-apis/public-apis",
+      "stars": 471727
     },
     {
-      "name": "public-apis/public-apis",
-      "stars": 472653
+      "name": "DietrichGebert/ponytail",
+      "stars": 114049
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
-      "stars": 118380
-    },
-    {
-      "name": "diegosouzapw/OmniRoute",
-      "stars": 57894
+      "stars": 117446
     },
     {
       "name": "openai/codex",
-      "stars": 119746
+      "stars": 119207
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "stars": 56980
     }
   ],
   "chart_top_series": [
     {
-      "name": "DietrichGebert/ponytail",
-      "value": 17910
+      "name": "public-apis/public-apis",
+      "value": 16779
     },
     {
-      "name": "public-apis/public-apis",
-      "value": 17705
+      "name": "DietrichGebert/ponytail",
+      "value": 15852
     },
     {
       "name": "harry0703/MoneyPrinterTurbo",
-      "value": 16293
-    },
-    {
-      "name": "diegosouzapw/OmniRoute",
-      "value": 15447
+      "value": 15359
     },
     {
       "name": "openai/codex",
-      "value": 15098
+      "value": 14559
+    },
+    {
+      "name": "diegosouzapw/OmniRoute",
+      "value": 14533
     },
     {
       "name": "earendil-works/pi",
-      "value": 13739
+      "value": 13045
     },
     {
       "name": "PrimeIntellect-ai/prime-agent",
-      "value": 12800
+      "value": 12613
     },
     {
       "name": "firecrawl/firecrawl",
-      "value": 11037
+      "value": 10390
     }
   ],
   "chart_top_title": "Biggest star gains (18d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-08-29T15:31:31.780Z",
+  "snapshot": "2026-08-29T23:54:34.573Z",
   "generated": "2026-08-29",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-29"
+  "created": "2026-08-08"
 }

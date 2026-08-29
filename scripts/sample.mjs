@@ -3,6 +3,7 @@
 
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { rest, logRate } from './lib/github.mjs';
+import { loadIgnored } from './lib/ignore.mjs';
 
 const args = process.argv.slice(2);
 const username = args.find((a) => !a.startsWith('--')) ?? 'kaiser-data';
@@ -50,8 +51,14 @@ async function fetchAllStarred() {
 }
 
 function pickStratified(all) {
-  // Filter out archived to keep the spike clean.
-  const candidates = all.filter((r) => !r.archived);
+  // Filter out archived to keep the spike clean, and anything on the ignore
+  // list — see data/ignore-repos.txt for why each entry is there.
+  const ignored = loadIgnored();
+  const dropped = all.filter((r) => ignored.has(r.full_name.toLowerCase()));
+  if (dropped.length) {
+    console.error(`Ignoring ${dropped.length}: ${dropped.map((r) => r.full_name).join(', ')}`);
+  }
+  const candidates = all.filter((r) => !r.archived && !ignored.has(r.full_name.toLowerCase()));
   if (ALL) return candidates.map((r) => ({ ...r, stratum: 'all' }));
   if (candidates.length <= TOTAL) return candidates;
 

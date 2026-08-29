@@ -3,9 +3,9 @@
   "title": "Build Your Own NotebookLM \u2014 The Repo Stack for a Source-Grounded Notebook Clone",
   "file": "notebooklm-stack.md",
   "category": "AI / Apps",
-  "summary": "34 repos (1,388,187\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
+  "summary": "34 repos (1,386,085\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
   "tool_count": 34,
-  "total_stars": 1388187,
+  "total_stars": 1386085,
   "categories": {
     "Clone / reference app": 5,
     "Source ingestion & parsing": 6,
@@ -19,27 +19,27 @@
   "top_tools": [
     {
       "name": "yt-dlp/yt-dlp",
-      "stars": 187700
+      "stars": 187386
     },
     {
       "name": "microsoft/markitdown",
-      "stars": 176979
+      "stars": 176664
     },
     {
       "name": "openai/whisper",
-      "stars": 108115
+      "stars": 108031
     },
     {
       "name": "bytedance/deer-flow",
-      "stars": 81091
+      "stars": 81018
     },
     {
       "name": "opendatalab/MinerU",
-      "stars": 78733
+      "stars": 78635
     }
   ],
-  "snapshot": "2026-08-29T15:31:31.780Z",
+  "snapshot": "2026-08-29T23:54:34.573Z",
   "generated": "2026-08-29",
   "generator": "scripts/reports/notebooklm_stack.py",
-  "created": "2026-08-29"
+  "created": "2026-07-19"
 }

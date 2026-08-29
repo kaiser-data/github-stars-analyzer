@@ -1,0 +1,18 @@
+# Repos deliberately kept out of the dataset.
+#
+# One `owner/repo` per line; `#` starts a comment; matching is case-insensitive.
+# Filtering happens in sample.mjs, so an ignored repo never reaches the ingest:
+# it costs no API call and raises no failure.
+
+# The masterschool-weiterbildung org forbids fine-grained PATs with a lifetime
+# over 366 days, so CI cannot read these and logs a failure for each on every
+# run. Old bootcamp projects; they feed no report.
+masterschool-weiterbildung/guess-the-title
+masterschool-weiterbildung/ai_project
+masterschool-weiterbildung/hackathon-alien
+
+# Private. A local run authenticates as the owner and can read it, so it lands
+# in a dataset that is published to a public site; CI cannot read it and drops
+# it again. Excluding it keeps private metadata out of the public data and
+# stops local and CI runs disagreeing by one repo.
+May-Lee/Zeitamt
