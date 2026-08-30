@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-29",
+  "generated": "2026-08-30",
   "count": 26,
   "reports": [
     {
@@ -75,7 +75,7 @@
       "chart_top_title": "Biggest star gains (18d)",
       "chart_cat_title": "Repos by movement type",
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
     },
@@ -122,7 +122,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
     },
@@ -168,7 +168,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
     },
@@ -208,9 +208,55 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
+    },
+    {
+      "slug": "agentic-terminals",
+      "title": "Terminals for Agentic Programming \u2014 Which Terminal App, on Which OS, for How Many Sessions?",
+      "file": "agentic-terminals.md",
+      "category": "AI / Comparison",
+      "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 52 present.",
+      "tool_count": 52,
+      "total_stars": 1403336,
+      "categories": {
+        "Agent-aware terminal": 3,
+        "Emulator": 11,
+        "Multiplexer / session": 7,
+        "Parallel-agent orchestration": 5,
+        "Remote & web sessions": 8,
+        "Windows & shells": 2,
+        "Shell & history": 10,
+        "Terminal hardening": 2,
+        "Terminal capability / reference": 4
+      },
+      "top_tools": [
+        {
+          "name": "ohmyzsh/ohmyzsh",
+          "stars": 189413
+        },
+        {
+          "name": "microsoft/terminal",
+          "stars": 104709
+        },
+        {
+          "name": "junegunn/fzf",
+          "stars": 82703
+        },
+        {
+          "name": "Eugeny/tabby",
+          "stars": 74174
+        },
+        {
+          "name": "alacritty/alacritty",
+          "stars": 65535
+        }
+      ],
+      "snapshot": "2026-08-29T23:54:34.573Z",
+      "generated": "2026-08-30",
+      "generator": "scripts/reports/agentic_terminals.py",
+      "created": "2026-08-23"
     },
     {
       "slug": "mcp-tooling",
@@ -250,7 +296,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/mcp_tooling.py",
       "created": "2026-05-31"
     },
@@ -299,7 +345,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
     },
@@ -308,7 +354,7 @@
       "title": "AI Agent Orchestration \u2014 Landscape Report",
       "file": "agent-orchestration.md",
       "category": "AI / Agents",
-      "summary": "38 agent-orchestration tools (1,544,193\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
+      "summary": "38 agent-orchestration tools (1,544,193\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
       "tool_count": 38,
       "total_stars": 1544193,
       "categories": {
@@ -341,7 +387,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
     },
@@ -385,7 +431,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/agent_memory.py",
       "created": "2026-08-12"
     },
@@ -435,7 +481,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
     },
@@ -478,7 +524,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/agent_harnesses.py",
       "created": "2026-07-19"
     },
@@ -523,7 +569,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
     },
@@ -566,9 +612,51 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
+    },
+    {
+      "slug": "ai-coding-tuis",
+      "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
+      "file": "ai-coding-tuis.md",
+      "category": "AI / Comparison",
+      "summary": "31 terminal AI coding tools (1,277,491\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
+      "tool_count": 31,
+      "total_stars": 1277491,
+      "categories": {
+        "Terminal coding agent": 13,
+        "Session / token ops": 7,
+        "Safety / isolation": 4,
+        "Multi-CLI glue": 5,
+        "TUI building blocks": 2
+      },
+      "top_tools": [
+        {
+          "name": "anomalyco/opencode",
+          "stars": 201972
+        },
+        {
+          "name": "anthropics/claude-code",
+          "stars": 143202
+        },
+        {
+          "name": "farion1231/cc-switch",
+          "stars": 129761
+        },
+        {
+          "name": "openai/codex",
+          "stars": 119207
+        },
+        {
+          "name": "google-gemini/gemini-cli",
+          "stars": 106719
+        }
+      ],
+      "snapshot": "2026-08-29T23:54:34.573Z",
+      "generated": "2026-08-30",
+      "generator": "scripts/reports/ai_coding_tuis.py",
+      "created": "2026-07-19"
     },
     {
       "slug": "rag-tooling",
@@ -608,51 +696,9 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
-    },
-    {
-      "slug": "ai-coding-tuis",
-      "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
-      "file": "ai-coding-tuis.md",
-      "category": "AI / Comparison",
-      "summary": "30 terminal AI coding tools (1,277,203\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
-      "tool_count": 30,
-      "total_stars": 1277203,
-      "categories": {
-        "Terminal coding agent": 13,
-        "Session / token ops": 6,
-        "Safety / isolation": 4,
-        "Multi-CLI glue": 5,
-        "TUI building blocks": 2
-      },
-      "top_tools": [
-        {
-          "name": "anomalyco/opencode",
-          "stars": 201972
-        },
-        {
-          "name": "anthropics/claude-code",
-          "stars": 143202
-        },
-        {
-          "name": "farion1231/cc-switch",
-          "stars": 129761
-        },
-        {
-          "name": "openai/codex",
-          "stars": 119207
-        },
-        {
-          "name": "google-gemini/gemini-cli",
-          "stars": 106719
-        }
-      ],
-      "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
-      "generator": "scripts/reports/ai_coding_tuis.py",
-      "created": "2026-07-19"
     },
     {
       "slug": "openclaw-ecosystem",
@@ -692,7 +738,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/openclaw_ecosystem.py",
       "created": "2026-05-31"
     },
@@ -735,7 +781,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/voice_agents.py",
       "created": "2026-06-04"
     },
@@ -778,7 +824,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
     },
@@ -820,9 +866,53 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
+    },
+    {
+      "slug": "jetson-inference-engines",
+      "title": "Inference Engines for the Jetson Orin Nano Super 8GB \u2014 What Actually Runs, and What Actually Helps",
+      "file": "jetson-inference-engines.md",
+      "category": "AI / Infrastructure",
+      "summary": "Which inference engine to run on a Jetson Orin Nano 8GB, argued against first-party measurements (36.8 tok/s at 0.8B, 14.3 at 4.7B): llama.cpp is the answer, TensorRT-LLM does not target this SKU, the datacenter tier is the wrong machine class \u2014 and the three biggest throughput levers are not engine swaps at all. Covers 24 engines in the dataset plus 4 missing (23,396\u2605).",
+      "tool_count": 24,
+      "total_stars": 930627,
+      "categories": {
+        "Edge-viable LLM runtime": 6,
+        "NVIDIA / Jetson path": 3,
+        "Compiler & substrate": 3,
+        "Datacenter-oriented runtime": 3,
+        "Speech & non-LLM runtime": 4,
+        "Format & quantization": 2,
+        "Sizing & fit": 3
+      },
+      "top_tools": [
+        {
+          "name": "ollama/ollama",
+          "stars": 179588
+        },
+        {
+          "name": "ggml-org/llama.cpp",
+          "stars": 125969
+        },
+        {
+          "name": "vllm-project/vllm",
+          "stars": 90249
+        },
+        {
+          "name": "nomic-ai/gpt4all",
+          "stars": 77396
+        },
+        {
+          "name": "ggml-org/whisper.cpp",
+          "stars": 53239
+        }
+      ],
+      "snapshot": "2026-08-29T23:54:34.573Z",
+      "generated": "2026-08-30",
+      "generator": "scripts/reports/jetson_inference.py",
+      "created": "2026-08-23"
     },
     {
       "slug": "llm-evaluation-tooling",
@@ -861,7 +951,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
     },
@@ -902,7 +992,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
     },
@@ -945,52 +1035,9 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
-    },
-    {
-      "slug": "jetson-inference-engines",
-      "title": "Inference Engines for the Jetson Orin Nano Super 8GB \u2014 What Actually Runs, and What Actually Helps",
-      "file": "jetson-inference-engines.md",
-      "category": "AI / Infrastructure",
-      "summary": "Which inference engine to run on a Jetson Orin Nano 8GB, argued against first-party measurements (36.8 tok/s at 0.8B, 14.3 at 4.7B): llama.cpp is the answer, TensorRT-LLM does not target this SKU, the datacenter tier is the wrong machine class \u2014 and the three biggest throughput levers are not engine swaps at all. Covers 17 engines in the dataset plus 11 missing (126,399\u2605).",
-      "tool_count": 17,
-      "total_stars": 827387,
-      "categories": {
-        "Edge-viable LLM runtime": 4,
-        "NVIDIA / Jetson path": 2,
-        "Datacenter-oriented runtime": 3,
-        "Speech & non-LLM runtime": 3,
-        "Format & quantization": 2,
-        "Sizing & fit": 3
-      },
-      "top_tools": [
-        {
-          "name": "ollama/ollama",
-          "stars": 179588
-        },
-        {
-          "name": "ggml-org/llama.cpp",
-          "stars": 125969
-        },
-        {
-          "name": "vllm-project/vllm",
-          "stars": 90249
-        },
-        {
-          "name": "nomic-ai/gpt4all",
-          "stars": 77396
-        },
-        {
-          "name": "ggml-org/whisper.cpp",
-          "stars": 53239
-        }
-      ],
-      "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
-      "generator": "scripts/reports/jetson_inference.py",
-      "created": "2026-08-23"
     },
     {
       "slug": "token-savings",
@@ -1030,51 +1077,9 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
-    },
-    {
-      "slug": "agentic-terminals",
-      "title": "Terminals for Agentic Programming \u2014 Which Terminal App, on Which OS, for How Many Sessions?",
-      "file": "agentic-terminals.md",
-      "category": "AI / Comparison",
-      "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 45 terminal apps (1,235,000\u2605) missing from the stars against 14 present.",
-      "tool_count": 14,
-      "total_stars": 201163,
-      "categories": {
-        "Terminal emulator": 2,
-        "Agent runtime / multiplexer": 3,
-        "Terminal hardening": 2,
-        "Shell & process layer": 3,
-        "Terminal capability / reference": 4
-      },
-      "top_tools": [
-        {
-          "name": "tmux/tmux",
-          "stars": 48868
-        },
-        {
-          "name": "herdrdev/herdr",
-          "stars": 32948
-        },
-        {
-          "name": "mbadolato/iTerm2-Color-Schemes",
-          "stars": 27159
-        },
-        {
-          "name": "pranshuparmar/witr",
-          "stars": 21719
-        },
-        {
-          "name": "rothgar/awesome-tuis",
-          "stars": 20364
-        }
-      ],
-      "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
-      "generator": "scripts/reports/agentic_terminals.py",
-      "created": "2026-08-23"
     },
     {
       "slug": "which-claw",
@@ -1112,7 +1117,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
     },
@@ -1151,7 +1156,7 @@
         }
       ],
       "snapshot": "2026-08-29T23:54:34.573Z",
-      "generated": "2026-08-29",
+      "generated": "2026-08-30",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"
     }

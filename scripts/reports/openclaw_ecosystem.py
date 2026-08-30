@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "openclaw-ecosystem"
@@ -27,6 +27,15 @@ OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 
 # ---- Curated taxonomy --------------------------------------------------------
+# ---- Retired from the scored set (archived upstream) -------------------------
+RETIRED = {
+    "abhi1693/openclaw-mission-control": (
+        "Desktop / orchestration",
+        "Archived upstream; last in the dataset 2026-07-27. Agent-orchestration dashboard for OpenClaw (assign tasks, coordinate agents).",
+        "2026-07-27",
+    ),
+}
+
 TAXONOMY = {
     # The core
     "openclaw/openclaw": ("Core", "The OpenClaw assistant itself — your own personal AI, any OS/platform. Everything else extends this."),
@@ -64,7 +73,6 @@ TAXONOMY = {
     "farion1231/cc-switch": ("Desktop / orchestration", "Cross-platform desktop hub for OpenClaw + Claude Code + Codex + Gemini CLI + Hermes."),
     "iOfficeAI/AionUi": ("Desktop / orchestration", "Free local 24/7 cowork app for OpenClaw, Hermes, Claude Code, Codex & more."),
     "CherryHQ/cherry-studio": ("Desktop / orchestration", "AI productivity studio (300+ assistants) with OpenClaw/skills support; highest health here."),
-    "abhi1693/openclaw-mission-control": ("Desktop / orchestration", "Agent-orchestration dashboard for OpenClaw (assign tasks, coordinate agents)."),
     "crshdn/mission-control": ("Desktop / orchestration", "Autonomous Product Engine — agents research, build & ship via OpenClaw."),
 
     # Specialized agents built on / for OpenClaw
@@ -319,6 +327,8 @@ A("- **Metrics** (health, lifecycle, bus_factor, days_since_push) are precompute
   "May-2026 snapshot and re-verify before adopting.")
 A("- Re-run after a fresh `classified.json` to refresh.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Projects covered: {len(present)} · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:

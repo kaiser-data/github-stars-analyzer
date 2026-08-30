@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities).
 >
-> Generated 2026-08-29 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/mcp-tooling-top-tools.svg)
 
@@ -376,5 +376,13 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 - **Selection**: word-boundary scan for `mcp` / 'model context protocol' across name/description/topics/README, then manual curation into roles + server domains. Many repos *mention* MCP support (agents, IDEs, gateways like litellm/Portkey) but aren't MCP-specific tools — those were excluded to keep the list about MCP itself.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state. MCP moves *very* fast — treat ages/stars as a May-2026 snapshot.
 - Re-run after a fresh `classified.json` to refresh.
+
+### Retired from the scored set
+
+Archived upstream, so they no longer appear in this report's tables — `sample.mjs` excludes archived repos. Metrics are frozen at the date shown and are not refreshed.
+
+| Project | Category | Why it left | Metrics as of |
+|---|---|---|---|
+| [`browserbase/mcp-server-browserbase`](https://github.com/browserbase/mcp-server-browserbase) | Server · browser/web | Archived upstream; last in the dataset 2026-07-20. Let LLMs control a cloud browser via Browserbase + Stagehand. | 2026-07-20 |
 
 <sub>Projects covered: 40 (25 servers) · Snapshot: 2026-08-29T23:54:34.573Z</sub>

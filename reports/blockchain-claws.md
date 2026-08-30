@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`).
 >
-> Generated 2026-08-29 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/blockchain_claws.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/blockchain-claws-top-tools.svg)
 

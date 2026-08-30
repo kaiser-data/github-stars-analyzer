@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities). Pros/cons and task rankings are additionally backed by external evidence (Terminal-Bench 2.1, 2026 head-to-head comparisons) — see Methodology.
 >
-> Generated 2026-08-29 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/ai-coding-tuis-top-tools.svg)
 
@@ -11,9 +11,9 @@
 
 ## Executive summary
 
-- **30 terminal-AI-coding tools** in your stars (**1,277,203★** combined), split into the agents themselves and the terminal ecosystem around them:
+- **31 terminal-AI-coding tools** in your stars (**1,277,491★** combined), split into the agents themselves and the terminal ecosystem around them:
   - **Terminal coding agent** (13): `opencode`, `claude-code`, `codex`, `gemini-cli`, `pi`, `oh-my-openagent`, `goose`, `aider`, `crush`, `qwen-code`, `copilot-cli`, `freebuff`, `tig`
-  - **Session / token ops** (6): `rtk`, `context-mode`, `codeburn`, `ctx`, `claude-auto-resume`, `ClaudeNightsWatch`
+  - **Session / token ops** (7): `rtk`, `context-mode`, `codeburn`, `ctx`, `claude-auto-resume`, `ClaudeNightsWatch`, `cli`
   - **Safety / isolation** (4): `container-use`, `tirith`, `cc-safety-net`, `agentshield`
   - **Multi-CLI glue** (5): `cc-switch`, `free-claude-code`, `zcf`, `langchain-code`, `terminal-jarvis`
   - **TUI building blocks** (2): `bubbletea`, `bubbles`
@@ -26,7 +26,7 @@
 | Layer | What it does | Tools in your stars |
 |---|---|---|
 | **The agent (TUI)** | Plan, edit, run, iterate in your terminal | `claude-code`, `opencode`, `gemini-cli`, `codex`, `goose`, `aider`, `crush`, `qwen-code`, `copilot-cli`, `pi`, `oh-my-openagent`, `freebuff` |
-| **Token / session ops** | Cut cost, track spend, recall history | `rtk`, `context-mode`, `codeburn`, `ctx`, `rudel`, `claude-auto-resume`, `ClaudeNightsWatch` |
+| **Token / session ops** | Cut cost, track spend, recall history | `rtk`, `context-mode`, `codeburn`, `ctx`, `opaline`, `claude-auto-resume`, `ClaudeNightsWatch` |
 | **Safety** | Guard the shell the agent drives | `tirith`, `cc-safety-net`, `container-use`, `agentshield` |
 | **Glue / launchers** | Switch, combine, and provision the CLIs | `cc-switch`, `free-claude-code`, `zcf`, `terminal-jarvis`, `langchain-code` |
 | **Build-your-own** | Frameworks the TUIs are made of | `bubbletea`, `bubbles`, `pi` |
@@ -65,6 +65,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [terryso/claude-auto-resume](https://github.com/terryso/claude-auto-resume) | Session / token ops | Shell | MIT | 816 | Declining | 25 | slowing | 3mo ago | 1.2y | 0 |
 | [zamalali/langchain-code](https://github.com/zamalali/langchain-code) | Multi-CLI glue | Python | Apache-2.0 | 440 | Declining | 10 | stale | 9mo ago | 1.0y | 0 |
 | [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Session / token ops | Shell | MIT | 370 | Declining | 18 | stale | 7mo ago | 1.1y | 0 |
+| [opalinehq/cli](https://github.com/opalinehq/cli) | Session / token ops | TypeScript | MIT | 288 | Hot | 73 | very active | 4d ago | 6mo | 3 |
 | [rsrohan99/tig](https://github.com/rsrohan99/tig) | Terminal coding agent | Python | — | 153 | Abandoned | 5 | stale | 1.3y ago | 1.4y | 0 |
 | [BA-CalderonMorales/terminal-jarvis](https://github.com/BA-CalderonMorales/terminal-jarvis) | Multi-CLI glue | Rust | MIT | 133 | Hot | 79 | very active | 7d ago | 1.1y | 3 |
 
@@ -169,6 +170,9 @@ _The cost layer: agentic coding burns tokens, and these tools cut, track, and re
 - **[aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch)** · 370★ · Shell · Declining  
   Autonomous task runner that watches Claude usage windows and executes queued tasks.  
   <sub>topics: —</sub>
+- **[opalinehq/cli](https://github.com/opalinehq/cli)** · 288★ · TypeScript · Hot  
+  Claude Code & Codex session analytics. Formerly `rudel`.  
+  <sub>topics: analytics, claude-code, cli, codex, developer-tools, opaline</sub>
 
 ### Safety / isolation
 
@@ -228,14 +232,14 @@ The June 2026 Terminal-Bench 2.1 snapshot makes one thing unambiguous — the ag
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 30 tools span **14 of the graph's 37 communities**.
+**Community clustering.** These 31 tools span **14 of the graph's 37 communities**.
 
 - **Community 9** (8): `github/copilot-cli`, `earendil-works/pi`, `code-yeongyu/oh-my-openagent`, `CodebuffAI/freebuff`, `mksglu/context-mode`, `sheeki03/tirith`, `kenryu42/cc-safety-net`, `farion1231/cc-switch`
 - **Community 12** (5): `rtk-ai/rtk`, `ctxrs/ctx`, `terryso/claude-auto-resume`, `affaan-m/agentshield`, `UfoMiao/zcf`
 - **Community 21** (3): `charmbracelet/crush`, `charmbracelet/bubbletea`, `charmbracelet/bubbles`
+- **Community 4** (3): `getagentseal/codeburn`, `opalinehq/cli`, `Alishahryar1/free-claude-code`
 - **Community 13** (2): `google-gemini/gemini-cli`, `aaif-goose/goose`
 - **Community 19** (2): `Aider-AI/aider`, `zamalali/langchain-code`
-- **Community 4** (2): `getagentseal/codeburn`, `Alishahryar1/free-claude-code`
 
 **Centrality (PageRank in the full 1,859-repo graph)** — most 'hub-like' terminal-coding tools in your ecosystem:
 
@@ -243,12 +247,12 @@ The June 2026 Terminal-Bench 2.1 snapshot makes one thing unambiguous — the ag
 - `CodebuffAI/freebuff` — PageRank 0.0033
 - `kenryu42/cc-safety-net` — PageRank 0.0015
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0012
+- `opalinehq/cli` — PageRank 0.0011
 - `charmbracelet/bubbles` — PageRank 0.0010
 - `sheeki03/tirith` — PageRank 0.0009
 - `aaif-goose/goose` — PageRank 0.0008
 - `anthropics/claude-code` — PageRank 0.0007
 - `QwenLM/qwen-code` — PageRank 0.0007
-- `charmbracelet/bubbletea` — PageRank 0.0007
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
@@ -263,6 +267,7 @@ The June 2026 Terminal-Bench 2.1 snapshot makes one thing unambiguous — the ag
 - `mksglu/context-mode` ⇄ `github/copilot-cli` (w=0.667) — authors: github-actions[bot]
 - `mksglu/context-mode` ⇄ `code-yeongyu/oh-my-openagent` (w=0.644) — topics: claude, codex, opencode; authors: github-actions[bot]
 - `code-yeongyu/oh-my-openagent` ⇄ `kenryu42/cc-safety-net` (w=0.617) — topics: opencode, claude, cursor, ai-agents; authors: github-actions[bot]
+- `opalinehq/cli` ⇄ `getagentseal/codeburn` (w=0.336) — topics: claude-code, cli, codex, developer-tools
 - `mksglu/context-mode` ⇄ `earendil-works/pi` (w=0.193) — authors: github-actions[bot]
 - `earendil-works/pi` ⇄ `CodebuffAI/freebuff` (w=0.193) — authors: github-actions[bot]
 - `farion1231/cc-switch` ⇄ `mksglu/context-mode` (w=0.176) — topics: claude-code, codex, mcp, opencode
@@ -291,6 +296,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | anthropics/claude-code | 76 | Hot | very active | 1 | 89% | 202 |
 | farion1231/cc-switch | 76 | Hot | very active | 1 | 53% | 52 |
 | CodebuffAI/freebuff | 73 | Mature | very active | 1 | 100% | 9 |
+| opalinehq/cli | 73 | Hot | very active | 1 | 96% | 14 |
 | UfoMiao/zcf | 72 | Hot | very active | 1 | 67% | 95 |
 | charmbracelet/bubbletea | 72 | Classic | active | 2 | 37% | 80 |
 | charmbracelet/bubbles | 70 | Classic | active | 2 | 32% | 38 |
@@ -328,4 +334,4 @@ Watch items: `gemini-cli` is deprecated upstream (Antigravity CLI replaced it, J
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; frozen benchmark citations need manual review as new models/agents ship.
 
-<sub>Tools covered: 30 · Snapshot: 2026-08-29T23:54:34.573Z</sub>
+<sub>Tools covered: 31 · Snapshot: 2026-08-29T23:54:34.573Z</sub>

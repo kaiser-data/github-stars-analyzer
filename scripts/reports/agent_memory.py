@@ -33,7 +33,7 @@ import os
 from datetime import datetime, timezone
 
 from lib import (fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human,
-                 activity_label, make_node_for)
+                 activity_label, make_node_for, retired_rows)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "agent-memory"
@@ -54,6 +54,18 @@ CAPTURE = "Meeting & transcript capture"
 EVAL = "Memory evaluation"
 
 ORDER = [GRAPH_NATIVE, VECTOR_MEM, STORES, EXTRACTION, CONNECTORS, CAPTURE, EVAL]
+
+# ---- Retired from the scored set (archived upstream) -------------------------
+# airweave leaves the star/health tables but KEEPS its PRIMITIVE_EVIDENCE row: the
+# evidence is read from its source, not from live metrics, and it is this report's
+# single most important finding (the one tool that transports reaction identity).
+RETIRED = {
+    "airweave-ai/airweave": (
+        CONNECTORS,
+        "Archived upstream; last in the dataset 2026-08-28. Context retrieval layer with typed per-source entity schemas; the only tool in the set whose message entities carry reaction payloads (Teams, ClickUp). Still scored in the primitives matrix below.",
+        "2026-08-28",
+    ),
+}
 
 TAXONOMY = {
     # Graph-native memory — the structure-first bet
@@ -94,7 +106,6 @@ TAXONOMY = {
 
     # Chat & workspace connectors — the tier that actually touches Slack
     "onyx-dot-app/onyx": (CONNECTORS, "Enterprise search over 40+ sources with a mature Slack connector — notably syncs Slack *permissions*, not just content."),
-    "airweave-ai/airweave": (CONNECTORS, "Context retrieval layer with typed per-source entity schemas; the only tool in the set whose message entities carry reaction payloads (Teams, ClickUp)."),
     "nanocoai/nanoclaw": (CONNECTORS, "Containerised personal agent that connects to WhatsApp, Telegram, Slack and Discord — chat as the agent's primary surface."),
     "elizaOS/eliza": (CONNECTORS, "Agent OS with first-class Discord/Slack/Telegram clients — built to *live in* chat rather than index it."),
     "cyrusagents/cyrus": (CONNECTORS, "Background coding agent driven from Linear/Slack/GitHub threads — chat as the task queue."),
@@ -129,7 +140,9 @@ ADJACENT = [
     ("agentscope-ai/ReMe", "memory management kit; overlaps the vector-first tier without adding a distinct conversational angle"),
     ("mudler/LocalRecall", "local memory/knowledge base for agents — generic document recall rather than chat-native"),
     ("HKUDS/CatchMe", "agent personalisation; memory is implicit rather than the product"),
-    ("matrixorigin/Memoria", "secure memory management — security framing, thin conversational story"),
+    # Case-only rename upstream: matrixorigin/Memoria → matrixorigin/memoria. The
+    # dataset keys on the exact full_name, so the capital M matched nothing.
+    ("matrixorigin/memoria", "secure memory management — security framing, thin conversational story"),
     ("supermemoryai/openclaw-supermemory", "long-term memory for one specific agent harness"),
     ("rishikanthc/Scriberr", "self-hosted transcription — see the Meeting Transcription report"),
     ("gleanwork/glean-agent-toolkit", "client toolkit for the closed-source Glean platform — the platform itself is off-dataset (see Competitors)"),
@@ -334,8 +347,12 @@ cats = {}
 for n in present:
     cats.setdefault(TAXONOMY[n][0], []).append(n)
 
-# Rows of the matrix that exist in the dataset, in taxonomy order.
-matrix_rows = [n for n in sel_names if n in PRIMITIVE_EVIDENCE and n in by_name]
+# Rows of the matrix, in taxonomy order. Retired tools stay: PRIMITIVE_EVIDENCE is
+# read from each tool's source code, so archiving upstream does not invalidate it —
+# dropping them here is what silently deleted airweave's row, and with it the
+# report's central finding, for the whole of the 2026-08-29 refresh.
+matrix_names = sel_names + [n for n in RETIRED if n not in sel_names]
+matrix_rows = [n for n in matrix_names if n in PRIMITIVE_EVIDENCE]
 
 MARK = {"y": "✅", "p": "◐", "n": "✖", "?": "?"}
 
@@ -471,13 +488,15 @@ A("|" + "---|" * (len(PRIM_KEYS) + 2))
 for n in matrix_rows:
     basis, vals, _note = PRIMITIVE_EVIDENCE[n]
     cells = " | ".join(MARK[vals[k]] for k in PRIM_KEYS)
-    A(f"| `{n.split('/')[-1]}` | {basis} | {cells} |")
+    tag = " *(archived)*" if n in RETIRED else ""
+    A(f"| `{n.split('/')[-1]}`{tag} | {basis} | {cells} |")
 A("")
 A("### Per-tool notes")
 A("")
 for n in matrix_rows:
     _basis, _vals, note = PRIMITIVE_EVIDENCE[n]
-    A(f"- **`{n}`** — {note}")
+    tag = " **(archived upstream — analysis stands, metrics frozen)**" if n in RETIRED else ""
+    A(f"- **`{n}`**{tag} — {note}")
 A("")
 
 # --- Hypothesis verdict (computed, not asserted)
@@ -905,6 +924,8 @@ A("- Re-run after a fresh `classified.json` to refresh stars and activity; the m
   "competitor section are frozen text and need manual review when these tools ship "
   "connector changes.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Tools covered: {len(present)} · Matrix rows: {len(matrix_rows)} · "
   f"Evidence date: {EVIDENCE_DATE} · Snapshot: {gen}</sub>")
 

@@ -40,7 +40,7 @@
     }
   ],
   "snapshot": "2026-08-29T23:54:34.573Z",
-  "generated": "2026-08-29",
+  "generated": "2026-08-30",
   "generator": "scripts/reports/claude_code_setups.py",
   "created": "2026-06-13"
 }

@@ -43,7 +43,7 @@
     }
   ],
   "snapshot": "2026-08-29T23:54:34.573Z",
-  "generated": "2026-08-29",
+  "generated": "2026-08-30",
   "generator": "scripts/reports/local_vs_infra_stack.py",
   "created": "2026-06-05"
 }

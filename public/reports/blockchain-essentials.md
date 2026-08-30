@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges).
 >
-> Generated 2026-08-29 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/blockchain-essentials-top-tools.svg)
 

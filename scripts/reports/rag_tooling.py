@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "rag-tooling"
@@ -27,6 +27,15 @@ OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 
 # ---- Curated taxonomy --------------------------------------------------------
+# ---- Retired from the scored set (archived upstream) -------------------------
+RETIRED = {
+    "airweave-ai/airweave": (
+        "RAG framework / engine",
+        "Archived upstream; last in the dataset 2026-08-28. Context-retrieval layer that syncs apps/DBs into agent-queryable knowledge.",
+        "2026-08-28",
+    ),
+}
+
 TAXONOMY = {
     # End-to-end RAG frameworks & engines
     "infiniflow/ragflow": ("RAG framework / engine", "Leading OSS RAG engine; deep document understanding + template-based chunking, batteries included."),
@@ -36,7 +45,6 @@ TAXONOMY = {
     "HKUDS/RAG-Anything": ("RAG framework / engine", "All-in-one multimodal RAG over text, tables, images, equations."),
     "llmware-ai/llmware": ("RAG framework / engine", "Enterprise RAG with small, specialized models; private-deployment focus."),
     "SylphAI-Inc/AdalFlow": ("RAG framework / engine", "Library to build & *auto-optimize* LLM/RAG apps (prompt + retriever tuning)."),
-    "airweave-ai/airweave": ("RAG framework / engine", "Context-retrieval layer that syncs apps/DBs into agent-queryable knowledge."),
     "Bessouat40/RAGLight": ("RAG framework / engine", "Lightweight modular RAG framework for quick pipelines."),
     "FalkorDB/GraphRAG-SDK": ("RAG framework / engine", "SDK to build GraphRAG apps on FalkorDB at scale."),
 
@@ -353,6 +361,8 @@ A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot tim
   "lag GitHub's current state.")
 A("- Re-run after a fresh `classified.json` to refresh stars/activity.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Tools covered: {len(present)} · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:

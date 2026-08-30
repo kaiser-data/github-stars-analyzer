@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "agent-orchestration"
@@ -36,6 +36,15 @@ APPROACHES = [
     "Vertical / domain systems",
     "Protocols & meta-frameworks",
 ]
+# ---- Retired from the scored set (archived upstream) -------------------------
+RETIRED = {
+    "FlowiseAI/Flowise": (
+        "Visual / low-code platforms",
+        "Archived upstream; last in the dataset 2026-08-11. Build AI agents visually; popular drag-and-drop builder.",
+        "2026-08-11",
+    ),
+}
+
 TAXONOMY = {
     # ===== Code-first agent frameworks (SDKs you write agents in) =====
     "langchain-ai/langgraph": ("Code-first agent frameworks", "Graph-based agent runtime — explicit nodes/edges/state; the de-facto control-flow framework."),
@@ -60,7 +69,6 @@ TAXONOMY = {
     # ===== Visual / low-code workflow platforms =====
     "n8n-io/n8n": ("Visual / low-code platforms", "Fair-code workflow automation with native AI nodes — the giant (189k★, health 100)."),
     "langgenius/dify": ("Visual / low-code platforms", "Production-ready platform for agentic workflow development (health 100)."),
-    "FlowiseAI/Flowise": ("Visual / low-code platforms", "Build AI agents visually; popular drag-and-drop builder."),
     "simstudioai/sim": ("Visual / low-code platforms", "Build, deploy & orchestrate agents — 'central intelligence layer for your AI workforce'."),
     "langflow-ai/langflow": ("Visual / low-code platforms", "Popular drag-and-drop builder for agents & flows; visual graph of components."),
 
@@ -155,14 +163,15 @@ for a in APPROACHES:
           + ", ".join(f"`{x.split('/')[-1]}`" for x in sorted(m, key=lambda x: -by_name[x]['stars'])))
 A("- **The split that matters:** *code-first frameworks* (langgraph, openai-agents, "
   "semantic-kernel) give you fine control in a programming language; *visual platforms* "
-  "(n8n, dify, Flowise) trade control for speed and non-engineer access; *coding-agent "
+  "(n8n, dify) trade control for speed and non-engineer access; *coding-agent "
   "orchestration* (ruflo, agent-orchestrator) is a newer niche that runs **swarms of coding "
   "agents** in parallel.")
 A("- **Big-tech has entered:** Microsoft (agent-framework, semantic-kernel), Google "
   "(adk-python), OpenAI (openai-agents-python), AWS (strands-agents) all ship first-party "
   "frameworks — a strong maturity signal.")
 A("- **Highest-health picks:** `n8n`/`dify` (100), `strands-agents` (96), "
-  "`microsoft/agent-framework` & `semantic-kernel` & `Flowise` (92).")
+  "`microsoft/agent-framework` & `semantic-kernel` (92). `Flowise` used to sit in this "
+  "band and was **archived upstream** in August 2026 — see *Retired from the scored set*.")
 A("")
 
 # --- Decision framing
@@ -171,7 +180,7 @@ A("")
 A("| You want… | Use this approach | Top picks |")
 A("|---|---|---|")
 A("| Fine-grained control, in code | Code-first framework | `langgraph`, `openai-agents-python` |")
-A("| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify`, `Flowise` |")
+A("| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify` |")
 A("| Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `Untrivial-ai/agent-orchestrator` |")
 A("| Always-on autonomous agents | Agent OS / harness | `elizaOS/eliza`, `deer-flow` |")
 A("| Durable, fault-tolerant prod | Production infra | `flyte`, `inngest/agent-kit` |")
@@ -328,6 +337,8 @@ A("- **Selection**: scan for orchestration / multi-agent / swarm / workflow / ag
 A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may "
   "lag GitHub. Re-run after a fresh `classified.json` to refresh.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Tools covered: {len(present)} across {sum(1 for a in APPROACHES if by_app[a])} "
   f"approaches · Snapshot: {gen}</sub>")
 
@@ -350,7 +361,7 @@ meta = {
     "category": "AI / Agents",
     "summary": (f"{len(present)} agent-orchestration tools ({fmt_int(total_stars)}★) by "
                 "approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), "
-                "visual platforms (n8n, dify, Flowise), coding-agent swarms (ruflo), agent OS, "
+                "visual platforms (n8n, dify), coding-agent swarms (ruflo), agent OS, "
                 "and durable infra (flyte)."),
     "tool_count": len(present),
     "total_stars": total_stars,

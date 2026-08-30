@@ -18,13 +18,23 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "mcp-tooling"
 TITLE = "MCP (Model Context Protocol) Tooling — Landscape Report"
 OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
+
+# ---- Retired from the scored set ---------------------------------------------
+# Archived upstream, so sample.mjs drops them and they resolve against nothing.
+RETIRED = {
+    "browserbase/mcp-server-browserbase": (
+        "Server · browser/web",
+        "Archived upstream; last in the dataset 2026-07-20. Let LLMs control a cloud browser via Browserbase + Stagehand.",
+        "2026-07-20",
+    ),
+}
 
 # ---- Curated taxonomy --------------------------------------------------------
 TAXONOMY = {
@@ -45,7 +55,6 @@ TAXONOMY = {
 
     # Browser / web automation servers
     "microsoft/playwright-mcp": ("Server · browser/web", "Microsoft's Playwright MCP server — drive a real browser from an agent."),
-    "browserbase/mcp-server-browserbase": ("Server · browser/web", "Let LLMs control a cloud browser via Browserbase + Stagehand."),
     "hangwin/mcp-chrome": ("Server · browser/web", "Chrome-extension-based MCP server exposing the user's actual browser."),
     "brightdata/brightdata-mcp": ("Server · browser/web", "All-in-one MCP server for public web data access / scraping at scale."),
 
@@ -373,6 +382,8 @@ A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot tim
   "snapshot.")
 A("- Re-run after a fresh `classified.json` to refresh.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Projects covered: {len(present)} ({n_servers} servers) · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:

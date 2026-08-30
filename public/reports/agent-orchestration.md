@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities).
 >
-> Generated 2026-08-29 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/agent-orchestration-top-tools.svg)
 
@@ -21,16 +21,16 @@
   - **Durable / production infra** (2): `flyte`, `agent-kit`
   - **Vertical / domain systems** (2): `TradingAgents`, `gpt-researcher`
   - **Protocols & meta-frameworks** (3): `ROMA`, `tinyagi`, `agent-workflow-protocol`
-- **The split that matters:** *code-first frameworks* (langgraph, openai-agents, semantic-kernel) give you fine control in a programming language; *visual platforms* (n8n, dify, Flowise) trade control for speed and non-engineer access; *coding-agent orchestration* (ruflo, agent-orchestrator) is a newer niche that runs **swarms of coding agents** in parallel.
+- **The split that matters:** *code-first frameworks* (langgraph, openai-agents, semantic-kernel) give you fine control in a programming language; *visual platforms* (n8n, dify) trade control for speed and non-engineer access; *coding-agent orchestration* (ruflo, agent-orchestrator) is a newer niche that runs **swarms of coding agents** in parallel.
 - **Big-tech has entered:** Microsoft (agent-framework, semantic-kernel), Google (adk-python), OpenAI (openai-agents-python), AWS (strands-agents) all ship first-party frameworks — a strong maturity signal.
-- **Highest-health picks:** `n8n`/`dify` (100), `strands-agents` (96), `microsoft/agent-framework` & `semantic-kernel` & `Flowise` (92).
+- **Highest-health picks:** `n8n`/`dify` (100), `strands-agents` (96), `microsoft/agent-framework` & `semantic-kernel` (92). `Flowise` used to sit in this band and was **archived upstream** in August 2026 — see *Retired from the scored set*.
 
 ## Pick by how you want to express coordination
 
 | You want… | Use this approach | Top picks |
 |---|---|---|
 | Fine-grained control, in code | Code-first framework | `langgraph`, `openai-agents-python` |
-| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify`, `Flowise` |
+| Fast builds / non-engineers | Visual / low-code | `n8n`, `dify` |
 | Parallel **coding** agents | Coding-agent orchestration | `ruflo`, `Untrivial-ai/agent-orchestrator` |
 | Always-on autonomous agents | Agent OS / harness | `elizaOS/eliza`, `deer-flow` |
 | Durable, fault-tolerant prod | Production infra | `flyte`, `inngest/agent-kit` |
@@ -363,5 +363,13 @@ Your stars now cover the canonical orchestration frameworks (crewAI, AutoGen, La
 - **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
 - **Selection**: scan for orchestration / multi-agent / swarm / workflow / agent-framework signals, then manual curation by approach. RAG frameworks, eval/observability platforms, and single-purpose agents were routed to their own reports or excluded; only tools whose *primary* job is coordinating agents/steps appear here.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
+
+### Retired from the scored set
+
+Archived upstream, so they no longer appear in this report's tables — `sample.mjs` excludes archived repos. Metrics are frozen at the date shown and are not refreshed.
+
+| Project | Category | Why it left | Metrics as of |
+|---|---|---|---|
+| [`FlowiseAI/Flowise`](https://github.com/FlowiseAI/Flowise) | Visual / low-code platforms | Archived upstream; last in the dataset 2026-08-11. Build AI agents visually; popular drag-and-drop builder. | 2026-08-11 |
 
 <sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-08-29T23:54:34.573Z</sub>

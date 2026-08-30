@@ -53,14 +53,24 @@ GENERATORS = [
 ]
 
 def run_generators():
-    """Run every generator, then report the ones that failed.
+    """Run every generator, then report the ones that failed and the ones that drifted.
 
     A single crashing generator used to abort the whole build, leaving the other
     22 reports stale. Now each one is isolated: the rest still regenerate and the
     index is still rebuilt, but the failures are collected and re-raised at the
     end so a broken generator can never pass silently.
+
+    Generators also print `WARNING …` on stdout when a curated `TAXONOMY` key is
+    no longer in the dataset — a repo renamed upstream, archived (and so dropped
+    by sample.mjs), or unstarred. That detection has always worked; this runner
+    sent its stdout to DEVNULL, so every warning was discarded by the only thing
+    that ever runs the generators. Six entries drifted unnoticed that way. The
+    warnings are surfaced per-generator now and summarised by the caller.
+
+    Returns (failed, drift) where drift is [(generator, warning line), …].
     """
     failed = []
+    drift = []
     for g in GENERATORS:
         path = os.path.join(HERE, g)
         if not os.path.exists(path):
@@ -68,7 +78,7 @@ def run_generators():
             continue
         print(f"  running {g} …")
         proc = subprocess.run([sys.executable, path], cwd=ROOT,
-                              stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                               text=True)
         if proc.returncode != 0:
             tail = (proc.stderr or "").strip().splitlines()[-3:]
@@ -76,7 +86,13 @@ def run_generators():
             for line in tail:
                 print(f"      {line}")
             failed.append(g)
-    return failed
+            continue
+        for line in (proc.stdout or "").splitlines():
+            line = line.strip()
+            if line.startswith("WARNING"):
+                print(f"  ⚠ {g}: {line}")
+                drift.append((g, line))
+    return failed, drift
 
 def created_date(md_file):
     """First git commit date (YYYY-MM-DD) of a report's markdown.
@@ -187,9 +203,21 @@ if __name__ == "__main__":
     subprocess.run([sys.executable, os.path.join(HERE, "snapshot.py")],
                    check=True, cwd=ROOT)
     print("Regenerating reports…")
-    failed = run_generators()
+    failed, drift = run_generators()
     print("Building index…")
     build()
+    if drift:
+        # Not fatal: a curated repo going archived or renamed is normal upstream
+        # churn, not a broken build. It does need a human to re-point or retire
+        # the entry, so it gets its own summary rather than one line lost among
+        # 26 generator logs.
+        print(f"\n⚠ {len(drift)} curation drift warning(s):")
+        for g, line in drift:
+            print(f"    {g}: {line}")
+        print("  Drift runs both ways — a curated entry that left the dataset "
+              "(renamed, archived, unstarred), or a gap-table entry that has since "
+              "been starred and now needs promoting into TAXONOMY.")
+        print("  See docs/HANDOFF-2026-08-28.md §3 on renames.")
     if failed:
         raise SystemExit(
             f"\n✗ {len(failed)} generator(s) failed: {', '.join(failed)}\n"

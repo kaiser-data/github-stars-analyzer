@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
 >
-> Generated 2026-08-29 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/document-extraction-top-tools.svg)
 

@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities). The primitive-coverage matrix is additionally backed by documentation and source-code evidence gathered 2026-08-12 — see Methodology.
 >
-> Generated 2026-08-29 by `scripts/reports/agent_memory.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/agent_memory.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/agent-memory-top-tools.svg)
 
@@ -128,6 +128,7 @@ Legend: ✅ consumed · ◐ partial / transported but not modelled · ✖ not co
 | `meetily` | docs+arch | ✅ | ✅ | ✅ | ✖ | ✖ | ◐ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✅ | ✖ |
 | `vexa` | docs+arch | ✅ | ✅ | ✅ | ✖ | ✖ | ◐ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ◐ | ✖ | ✖ | ✅ | ✖ |
 | `screenpipe` | arch | ◐ | ✖ | ✅ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ✖ | ◐ | ✖ |
+| `airweave` *(archived)* | code | ✅ | ✅ | ✅ | ✅ | ✖ | ✖ | ✖ | ◐ | ◐ | ◐ | ✖ | ◐ | ✖ | ✖ | ◐ | ✖ | ✖ |
 
 ### Per-tool notes
 
@@ -146,13 +147,14 @@ Legend: ✅ consumed · ◐ partial / transported but not modelled · ✖ not co
 - **`Zackriya-Solutions/meetily`** — Speaker diarization gives real author identity, and turn timestamps make response latency *implicitly* available — nobody computes it, but the data is right there.
 - **`Vexa-ai/vexa`** — Auto-join bots see participant join/leave events for the meeting itself — the only place membership dynamics are observed anywhere in this set.
 - **`screenpipe/screenpipe`** — Captures pixels, so it is the only tool that could *see* reactions appear in order — and the only one that models none of it. Everything arrives as undifferentiated OCR text.
+- **`airweave-ai/airweave`** **(archived upstream — analysis stands, metrics frozen)** — **The one exception in the entire set.** Its `SlackMessageEntity` has no reaction field at all, but its **Teams** entity carries `reactions: List[Dict[str, Any]]` — and Microsoft Graph's `chatMessageReaction` includes both `user` and `createdDateTime`. So airweave *transports* reaction identity and timing for Teams. It does not model, index or reason over them: the payload is an opaque dict. Partial, not yes.
 
 ### Verdict on the hypothesis
 
 The hypothesis was: *almost every tool consumes only text, author and timestamp, and the right-hand columns are nearly empty.*
 
-- **Confirmed on the left.** 12 of 15 tools consume all three core primitives — the floor is universal.
-- **Confirmed on the right.** Across the other 14 primitives × 15 tools = 210 cells, only **9 are a full ✅ (4%)**, with 18 partial. The right-hand side of this matrix is mostly empty, exactly as predicted.
+- **Confirmed on the left.** 13 of 16 tools consume all three core primitives — the floor is universal.
+- **Confirmed on the right.** Across the other 14 primitives × 16 tools = 224 cells, only **10 are a full ✅ (4%)**, with 23 partial. The right-hand side of this matrix is mostly empty, exactly as predicted.
 - **Correction 1 — you underrated the connector tier.** `thr` (thread structure) and `acl` (permissions) are genuinely well covered by `onyx` and `airweave`. Slack's reply graph is not unexploited territory; its *social* metadata is.
 - **Correction 2 — one tool does carry reaction timing, and you should know about it.** `airweave`'s Microsoft Teams entity stores raw `chatMessageReaction` dicts, and Microsoft Graph includes `createdDateTime` and `user` on every reaction. So reaction identity and timing *are* being transported today — on Teams, as an opaque payload, by a tool that never reads them. Nobody **reasons** over reaction ordering anywhere in this set.
 
@@ -527,7 +529,7 @@ _— · unverified_
 - **agentscope-ai/ReMe** (3,360★) — memory management kit; overlaps the vector-first tier without adding a distinct conversational angle
 - **mudler/LocalRecall** (969★) — local memory/knowledge base for agents — generic document recall rather than chat-native
 - **HKUDS/CatchMe** (491★) — agent personalisation; memory is implicit rather than the product
-- **matrixorigin/Memoria** — secure memory management — security framing, thin conversational story
+- **matrixorigin/memoria** (591★) — secure memory management — security framing, thin conversational story
 - **supermemoryai/openclaw-supermemory** (798★) — long-term memory for one specific agent harness
 - **rishikanthc/Scriberr** (2,996★) — self-hosted transcription — see the Meeting Transcription report
 - **gleanwork/glean-agent-toolkit** (65★) — client toolkit for the closed-source Glean platform — the platform itself is off-dataset (see Competitors)
@@ -545,4 +547,12 @@ _— · unverified_
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars and activity; the matrix and the competitor section are frozen text and need manual review when these tools ship connector changes.
 
-<sub>Tools covered: 37 · Matrix rows: 15 · Evidence date: 2026-08-12 · Snapshot: 2026-08-29T23:54:34.573Z</sub>
+### Retired from the scored set
+
+Archived upstream, so they no longer appear in this report's tables — `sample.mjs` excludes archived repos. Metrics are frozen at the date shown and are not refreshed.
+
+| Project | Category | Why it left | Metrics as of |
+|---|---|---|---|
+| [`airweave-ai/airweave`](https://github.com/airweave-ai/airweave) | Chat & workspace connectors | Archived upstream; last in the dataset 2026-08-28. Context retrieval layer with typed per-source entity schemas; the only tool in the set whose message entities carry reaction payloads (Teams, ClickUp). Still scored in the primitives matrix below. | 2026-08-28 |
+
+<sub>Tools covered: 37 · Matrix rows: 16 · Evidence date: 2026-08-12 · Snapshot: 2026-08-29T23:54:34.573Z</sub>

@@ -3,40 +3,44 @@
   "title": "Terminals for Agentic Programming \u2014 Which Terminal App, on Which OS, for How Many Sessions?",
   "file": "agentic-terminals.md",
   "category": "AI / Comparison",
-  "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 45 terminal apps (1,235,000\u2605) missing from the stars against 14 present.",
-  "tool_count": 14,
-  "total_stars": 201163,
+  "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 52 present.",
+  "tool_count": 52,
+  "total_stars": 1403336,
   "categories": {
-    "Terminal emulator": 2,
-    "Agent runtime / multiplexer": 3,
+    "Agent-aware terminal": 3,
+    "Emulator": 11,
+    "Multiplexer / session": 7,
+    "Parallel-agent orchestration": 5,
+    "Remote & web sessions": 8,
+    "Windows & shells": 2,
+    "Shell & history": 10,
     "Terminal hardening": 2,
-    "Shell & process layer": 3,
     "Terminal capability / reference": 4
   },
   "top_tools": [
     {
-      "name": "tmux/tmux",
-      "stars": 48868
+      "name": "ohmyzsh/ohmyzsh",
+      "stars": 189413
     },
     {
-      "name": "herdrdev/herdr",
-      "stars": 32948
+      "name": "microsoft/terminal",
+      "stars": 104709
     },
     {
-      "name": "mbadolato/iTerm2-Color-Schemes",
-      "stars": 27159
+      "name": "junegunn/fzf",
+      "stars": 82703
     },
     {
-      "name": "pranshuparmar/witr",
-      "stars": 21719
+      "name": "Eugeny/tabby",
+      "stars": 74174
     },
     {
-      "name": "rothgar/awesome-tuis",
-      "stars": 20364
+      "name": "alacritty/alacritty",
+      "stars": 65535
     }
   ],
   "snapshot": "2026-08-29T23:54:34.573Z",
-  "generated": "2026-08-29",
+  "generated": "2026-08-30",
   "generator": "scripts/reports/agentic_terminals.py",
   "created": "2026-08-23"
 }

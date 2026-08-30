@@ -155,6 +155,44 @@ def newly_archived(r):
     return bool(r.get("archived")) and prev is not None and not prev.get("archived")
 
 
+def retired_rows(retired, by_name):
+    """Markdown for curated entries that have left the dataset.
+
+    `sample.mjs` drops archived repos, so a `TAXONOMY` entry whose upstream gets
+    archived stops resolving and vanishes from every generated table — while the
+    hand-written prose around it keeps discussing the tool as a live option. Five
+    entries drifted that way between 2026-07-20 and 2026-08-29 without anyone
+    noticing.
+
+    Retiring an entry moves it out of `TAXONOMY` and into a `RETIRED` dict of
+    `{full_name: (label, why, metrics_as_of)}`, rendered here so the report still
+    tells the reader the tool exists and why it is no longer scored. Entries that
+    come *back* (unarchived, or re-pointed after a rename) are flagged rather than
+    silently rendered twice.
+
+    Returns a list of markdown lines, empty when there is nothing retired.
+    """
+    if not retired:
+        return []
+    lines = [
+        "### Retired from the scored set",
+        "",
+        "Archived upstream, so they no longer appear in this report's tables — "
+        "`sample.mjs` excludes archived repos. Metrics are frozen at the date shown "
+        "and are not refreshed.",
+        "",
+        "| Project | Category | Why it left | Metrics as of |",
+        "|---|---|---|---|",
+    ]
+    for name, (label, why, as_of) in sorted(retired.items()):
+        back = "  ⚠ **back in the dataset — re-promote to TAXONOMY**" if name in by_name else ""
+        lines.append(
+            f"| [`{name}`](https://github.com/{name}) | {label} | {why}{back} | {as_of} |"
+        )
+    lines.append("")
+    return lines
+
+
 def days_to_human(d):
     if d is None:
         return "?"

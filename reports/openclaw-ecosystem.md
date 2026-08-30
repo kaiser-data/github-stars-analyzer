@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities).
 >
-> Generated 2026-08-29 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
+> Generated 2026-08-30 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/openclaw-ecosystem-top-tools.svg)
 
@@ -263,5 +263,13 @@ Low health and/or not pushed recently — verify before wiring into anything you
 - **Selection**: scan for `openclaw` / `clawd*` / `moltbot` across name/description/topics/README, then manual curation. Repos that merely *mention* OpenClaw in passing (general agent harnesses, awesome-lists, unrelated tools) were excluded; memory/MCP-centric repos are covered in their own reports and only the OpenClaw-specific ones appear here.
 - **Metrics** (health, lifecycle, bus_factor, days_since_push) are precomputed at snapshot time. **OpenClaw moves extremely fast** — treat all ages/stars as a May-2026 snapshot and re-verify before adopting.
 - Re-run after a fresh `classified.json` to refresh.
+
+### Retired from the scored set
+
+Archived upstream, so they no longer appear in this report's tables — `sample.mjs` excludes archived repos. Metrics are frozen at the date shown and are not refreshed.
+
+| Project | Category | Why it left | Metrics as of |
+|---|---|---|---|
+| [`abhi1693/openclaw-mission-control`](https://github.com/abhi1693/openclaw-mission-control) | Desktop / orchestration | Archived upstream; last in the dataset 2026-07-27. Agent-orchestration dashboard for OpenClaw (assign tasks, coordinate agents). | 2026-07-27 |
 
 <sub>Projects covered: 28 · Snapshot: 2026-08-29T23:54:34.573Z</sub>

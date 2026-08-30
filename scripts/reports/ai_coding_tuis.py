@@ -49,7 +49,9 @@ TAXONOMY = {
     "mksglu/context-mode": ("Session / token ops", "Context-window optimizer for coding agents — sandboxes tool output (~98% reduction), persists session memory."),
     "getagentseal/codeburn": ("Session / token ops", "Local token/cost tracker across 31 coding tools and agents, by model, project, and tool."),
     "ctxrs/ctx": ("Session / token ops", "Search the coding-agent history already on your machine — cross-agent transcript recall."),
-    "evrendom/rudel": ("Session / token ops", "Claude Code & Codex session analytics."),
+    # Renamed upstream evrendom/rudel → opalinehq/cli (confirmed 2026-08-30); the
+    # old key silently dropped out of every table until then.
+    "opalinehq/cli": ("Session / token ops", "Claude Code & Codex session analytics. Formerly `rudel`."),
     "terryso/claude-auto-resume": ("Session / token ops", "Shell utility that resumes Claude CLI tasks when usage limits lift."),
     "aniketkarne/ClaudeNightsWatch": ("Session / token ops", "Autonomous task runner that watches Claude usage windows and executes queued tasks."),
 
@@ -250,7 +252,7 @@ A("| **The agent (TUI)** | Plan, edit, run, iterate in your terminal | "
   "`claude-code`, `opencode`, `gemini-cli`, `codex`, `goose`, `aider`, `crush`, "
   "`qwen-code`, `copilot-cli`, `pi`, `oh-my-openagent`, `freebuff` |")
 A("| **Token / session ops** | Cut cost, track spend, recall history | "
-  "`rtk`, `context-mode`, `codeburn`, `ctx`, `rudel`, `claude-auto-resume`, `ClaudeNightsWatch` |")
+  "`rtk`, `context-mode`, `codeburn`, `ctx`, `opaline`, `claude-auto-resume`, `ClaudeNightsWatch` |")
 A("| **Safety** | Guard the shell the agent drives | "
   "`tirith`, `cc-safety-net`, `container-use`, `agentshield` |")
 A("| **Glue / launchers** | Switch, combine, and provision the CLIs | "

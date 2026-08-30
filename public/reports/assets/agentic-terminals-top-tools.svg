@@ -11,19 +11,19 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">tmux/tmux</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ohmyzsh/ohmyzsh</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">48,868</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">herdrdev/herdr</text>
-<path d="M244,67 h227.9 q4,0 4,4 v10 q0,4 -4,4 h-227.9 z" class="bar"/>
-<text x="481.9" y="76.0" class="val" dominant-baseline="central">32,948</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">mbadolato/iTerm2-Color-Schemes</text>
-<path d="M244,94 h187.2 q4,0 4,4 v10 q0,4 -4,4 h-187.2 z" class="bar"/>
-<text x="441.2" y="103.0" class="val" dominant-baseline="central">27,159</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">pranshuparmar/witr</text>
-<path d="M244,121 h148.9 q4,0 4,4 v10 q0,4 -4,4 h-148.9 z" class="bar"/>
-<text x="402.9" y="130.0" class="val" dominant-baseline="central">21,719</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">rothgar/awesome-tuis</text>
-<path d="M244,148 h139.3 q4,0 4,4 v10 q0,4 -4,4 h-139.3 z" class="bar"/>
-<text x="393.3" y="157.0" class="val" dominant-baseline="central">20,364</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">189,413</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/terminal</text>
+<path d="M244,67 h186.2 q4,0 4,4 v10 q0,4 -4,4 h-186.2 z" class="bar"/>
+<text x="440.2" y="76.0" class="val" dominant-baseline="central">104,709</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">junegunn/fzf</text>
+<path d="M244,94 h146.2 q4,0 4,4 v10 q0,4 -4,4 h-146.2 z" class="bar"/>
+<text x="400.2" y="103.0" class="val" dominant-baseline="central">82,703</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Eugeny/tabby</text>
+<path d="M244,121 h130.7 q4,0 4,4 v10 q0,4 -4,4 h-130.7 z" class="bar"/>
+<text x="384.7" y="130.0" class="val" dominant-baseline="central">74,174</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">alacritty/alacritty</text>
+<path d="M244,148 h115.0 q4,0 4,4 v10 q0,4 -4,4 h-115.0 z" class="bar"/>
+<text x="369.0" y="157.0" class="val" dominant-baseline="central">65,535</text>
 </svg>

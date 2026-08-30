@@ -71,7 +71,7 @@
   "chart_top_title": "Biggest star gains (18d)",
   "chart_cat_title": "Repos by movement type",
   "snapshot": "2026-08-29T23:54:34.573Z",
-  "generated": "2026-08-29",
+  "generated": "2026-08-30",
   "generator": "scripts/reports/trending_now.py",
   "created": "2026-08-08"
 }

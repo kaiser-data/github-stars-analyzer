@@ -77,11 +77,27 @@ TAXONOMY = {
     "AlexsJones/llmfit": ("Sizing & fit", "'One command to find what runs on your hardware' — the fit question this report exists to answer, as a tool."),
     "lyogavin/airllm": ("Sizing & fit", "Layer-streaming to run 70B on 4 GB. Technically remarkable, and far too slow to be a serving answer here."),
     "exo-explore/exo": ("Sizing & fit", "Cluster several devices into one pool — the escape hatch when 8 GB is simply the wrong number."),
+
+    # ===== Edge-viable LLM runtime — promoted from the gap table once starred =====
+    "mlc-ai/mlc-llm": ("Edge-viable LLM runtime", "TVM-compiled, arch-specialized kernels with INT4 — the one engine with a credible claim to beating llama.cpp on Orin Nano, and the NVIDIA-quoted path for Jetson LLM figures."),
+    "LostRuins/koboldcpp": ("Edge-viable LLM runtime", "A llama.cpp distribution with a wider sampler and format range in one binary; occasionally ships Jetson-relevant fixes earlier."),
+
+    # ===== NVIDIA / Jetson path — promoted from the gap table once starred =====
+    "NVIDIA/TensorRT": ("NVIDIA / Jetson path", "The core inference compiler. On Jetson this is the reliable big win for vision models, and the base of the TensorRT Edge-LLM path that does reach Orin Nano."),
+
+    # ===== Speech & non-LLM runtime — promoted from the gap table once starred =====
+    "OpenNMT/CTranslate2": ("Speech & non-LLM runtime", "The engine underneath `faster-whisper`, which you already star — quantized transformer inference with a small footprint."),
+
+    # ===== Compiler & substrate — promoted from the gap table once starred =====
+    "microsoft/onnxruntime": ("Compiler & substrate", "The actual runtime behind the ONNX format you already star, with CUDA and TensorRT execution providers. Everything small on this box — STT, TTS, embeddings — can run here."),
+    "ggml-org/ggml": ("Compiler & substrate", "The tensor library underneath llama.cpp and whisper.cpp, both of which you star. Where quantization formats and CUDA kernels actually land."),
+    "apache/tvm": ("Compiler & substrate", "The compiler MLC-LLM is built on — relevant if you want to understand or tune what MLC produces for SM 8.7."),
 }
 
 CAT_ORDER = [
     "Edge-viable LLM runtime",
     "NVIDIA / Jetson path",
+    "Compiler & substrate",
     "Datacenter-oriented runtime",
     "Speech & non-LLM runtime",
     "Format & quantization",
@@ -194,24 +210,6 @@ def gap(name, stars, lang, lic, fresh, why, verdict):
 
 
 MISSING = [
-    gap("mlc-ai/mlc-llm", 23084, "Python", "Apache-2.0", "pushed 6d",
-        "TVM-compiled, arch-specialized kernels with INT4 — the one engine with a credible claim to beating llama.cpp on Orin Nano, and the NVIDIA-quoted path for Jetson LLM figures.",
-        "**Star it — the biggest gap for this hardware.**"),
-    gap("microsoft/onnxruntime", 21611, "C++", "MIT", "pushed same-day",
-        "The actual runtime behind the ONNX format you already star, with CUDA and TensorRT execution providers. Everything small on this box — STT, TTS, embeddings — can run here.",
-        "**Star it** — you star the format but not the engine."),
-    gap("ggml-org/ggml", 15220, "C++", "MIT", "pushed 2d",
-        "The tensor library underneath llama.cpp and whisper.cpp, both of which you star. Where quantization formats and CUDA kernels actually land.",
-        "**Star it** — it's the substrate of your two most-used engines."),
-    gap("apache/tvm", 13678, "Python", "Apache-2.0", "pushed same-day",
-        "The compiler MLC-LLM is built on — relevant if you want to understand or tune what MLC produces for SM 8.7.",
-        "Star it if you pursue MLC."),
-    gap("NVIDIA/TensorRT", 13276, "C++", "Apache-2.0", "pushed 6d",
-        "The core inference compiler. On Jetson this is the reliable big win for vision models, and the base of the TensorRT Edge-LLM path that does reach Orin Nano.",
-        "**Star it** — the NVIDIA path that actually supports this SKU."),
-    gap("LostRuins/koboldcpp", 11503, "C++", "AGPL-3.0", "pushed same-day",
-        "A llama.cpp distribution with a wider sampler and format range in one binary; occasionally ships Jetson-relevant fixes earlier.",
-        "Optional."),
     gap("dusty-nv/jetson-inference", 8967, "C++", "MIT", "⚠ pushed 2025-10-16 — ~10mo",
         "The classic Jetson vision tutorial stack (detection, segmentation, TensorRT). Still the best on-ramp for the vision half, but no longer actively pushed.",
         "Star for reference; note the staleness."),
@@ -221,9 +219,6 @@ MISSING = [
     gap("NVIDIA-AI-IOT/torch2trt", 4877, "Python", "MIT", "⚠ pushed 2024-08-17 — ~2y stale",
         "PyTorch→TensorRT converter that was the standard Jetson shortcut. Two years without a push is disqualifying for new work.",
         "**Skip** — use TensorRT or ONNX Runtime directly."),
-    gap("OpenNMT/CTranslate2", 4631, "C++", "MIT", "pushed 7d",
-        "The engine underneath `faster-whisper`, which you already star — quantized transformer inference with a small footprint.",
-        "**Star it** — you depend on it transitively."),
     gap("turboderp-org/exllamav2", 4611, "Python", "MIT", "⚠ pushed 2026-03-04 — ~6mo",
         "EXL2 quantization, excellent on discrete consumer GPUs; not a Jetson target and slowing.",
         "Skip."),
@@ -316,19 +311,20 @@ A("- **`vLLM`, `SGLang` and `LMDeploy` are the wrong machine class.** PagedAtten
   "and continuous batching optimize for many concurrent sequences against plentiful "
   "VRAM. Serving one user from an 8 GB unified pool inverts every one of those "
   "assumptions.")
-A("- **`MLC-LLM` is the one engine genuinely worth benchmarking — and it is missing "
-  "from your stars.** TVM-compiled, architecture-specialized INT4 kernels are the only "
+A("- **`MLC-LLM` is the one engine genuinely worth benchmarking, and it is now in "
+  "your stars.** TVM-compiled, architecture-specialized INT4 kernels are the only "
   "credible claim to beating llama.cpp on this SKU. The numbers below are the baseline "
-  "it has to beat.")
+  "it has to beat — running that benchmark is the open action here, not starring it.")
 A("- **Measured ceiling on this box:** **36.8 tok/s** at 0.8B, **18 tok/s** at 3.8B, "
   "**14.3 tok/s** at 4.7B. Embedding prefill saturates at **~8.6k tok/s**, but only "
   "at batch ≥ 32.")
-A(f"- **Engine coverage in your stars is good; Jetson-specific coverage is thin.** "
-  f"{len(present)} engines present ({fmt_int(total_stars)}★), but "
-  f"{len(MISSING)} relevant projects missing ({fmt_int(missing_stars)}★) — including "
-  f"`mlc-llm`, `onnxruntime` (you star the *format* but not the *engine*), `ggml` (the "
-  f"substrate of two engines you do star), and `CTranslate2` (which you depend on "
-  f"transitively through `faster-whisper`).")
+A(f"- **Engine coverage is now good at both layers.** {len(present)} engines present "
+  f"({fmt_int(total_stars)}★), with only {len(MISSING)} relevant projects still missing "
+  f"({fmt_int(missing_stars)}★). The substrate gap earlier editions flagged is closed: "
+  f"`onnxruntime` (the engine under the ONNX *format*), `ggml` (the substrate of "
+  f"`llama.cpp` and `whisper.cpp`), `tvm` (what MLC compiles through) and `CTranslate2` "
+  f"(the engine under `faster-whisper`) are all held now. What remains missing is "
+  f"stale or off-target rather than structural — see the gap table.")
 A("")
 
 # --- The constraint
