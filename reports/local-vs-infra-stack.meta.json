@@ -3,9 +3,9 @@
   "title": "Local vs High-Infra AI Stack \u2014 A Deployment-Tier Comparison",
   "file": "local-vs-infra-stack.md",
   "category": "AI / Infrastructure",
-  "summary": "39 stack tools (1,805,415\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 15 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
+  "summary": "39 stack tools (1,809,471\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 15 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
   "tool_count": 39,
-  "total_stars": 1805415,
+  "total_stars": 1809471,
   "categories": {
     "Inference runtime": 11,
     "Scaling / serving infra": 2,
@@ -23,27 +23,27 @@
   "top_tools": [
     {
       "name": "ollama/ollama",
-      "stars": 179588
+      "stars": 179825
     },
     {
       "name": "huggingface/transformers",
-      "stars": 164519
+      "stars": 164656
     },
     {
       "name": "open-webui/open-webui",
-      "stars": 150148
+      "stars": 150483
     },
     {
       "name": "ggml-org/llama.cpp",
-      "stars": 125969
+      "stars": 126473
     },
     {
       "name": "vllm-project/vllm",
-      "stars": 90249
+      "stars": 90578
     }
   ],
-  "snapshot": "2026-08-29T23:54:34.573Z",
-  "generated": "2026-08-30",
+  "snapshot": "2026-08-31T12:10:08.018Z",
+  "generated": "2026-08-31",
   "generator": "scripts/reports/local_vs_infra_stack.py",
-  "created": "2026-06-05"
+  "created": "2026-08-30"
 }

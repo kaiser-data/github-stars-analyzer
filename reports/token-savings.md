@@ -1,8 +1,8 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 1,859 starred repos (snapshot `2026-08-29T23:54:34.573Z`), cross-referenced with the repo-similarity graph (1,859 nodes / 6,070 edges, 37 communities).
+> Derived from **kaiser-data**'s 1,900 starred repos (snapshot `2026-08-31T12:10:08.018Z`), cross-referenced with the repo-similarity graph (1,900 nodes / 6,181 edges, 37 communities).
 >
-> Generated 2026-08-30 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
+> Generated 2026-08-31 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/token-savings-top-tools.svg)
 
@@ -13,7 +13,7 @@
 
 ## Executive summary
 
-- **15 token-savings tools** in your stars (**447,359★**), organized by workload:
+- **15 token-savings tools** in your stars (**449,341★**), organized by workload:
   - **Coding agents & codebases** (8): `caveman`, `rtk`, `codegraph`, `context-mode`, `codeburn`, `semble`, `lean-ctx`, `FastCode`
   - **Generation & structured prompting** (1): `toon`
   - **Retrieval, RAG & documents** (3): `DeepSeek-OCR`, `dbhub`, `blockify-agentic-data-optimization`
@@ -22,7 +22,7 @@
   - **Methodology / cross-cutting** (1): `Context-Engineering`
 - **Your collection skews hard to coding** — 8 of 15 tools. The big coding sink is *reading the codebase*, so the highest-leverage picks index/search code (`semble`, `codegraph`) or tame tool output (`context-mode`).
 - **Different workload, different layer:** generation savings live in the *prompt/format* (`toon`); retrieval savings in *what you fetch* (`dbhub`, `blockify`); long agents in *session memory* (`claude-mem`); and model-level compression (`llm-compressor`) is a separate concern entirely (cheaper inference, not fewer prompt tokens).
-- **The one integration-free win:** `rtk` (a CLI proxy) claims 60–90% with no per-agent setup — and it's the most-starred here (77,635★).
+- **The one integration-free win:** `rtk` (a CLI proxy) claims 60–90% with no per-agent setup — and it's the most-starred here (78,015★).
 - **Measure first:** `codeburn` shows where tokens actually go before you optimize.
 
 ## Comparison by workload
@@ -31,46 +31,46 @@
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 101,440 | 75 | very active | Prompt-style skill | ~65% |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 77,635 | 78 | very active | Wire-level proxy | 60–90% on dev cmds |
-| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 68,386 | 77 | very active | Code index/graph | ~70% |
-| [mksglu/context-mode](https://github.com/mksglu/context-mode) | 20,195 | 78 | very active | Tool-output sandbox | 98% on tool output |
-| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | 9,691 | 79 | very active | Measurement / observability | — (measures) |
-| [MinishLab/semble](https://github.com/MinishLab/semble) | 5,964 | 73 | very active | Semantic code search | ~98% vs grep+read |
-| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | 3,662 | 80 | very active | Context layer | qualitative |
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | 101,969 (▲529) | 78 | very active | Prompt-style skill | ~65% |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 78,015 (▲380) | 78 | very active | Wire-level proxy | 60–90% on dev cmds |
+| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | 68,800 (▲414) | 77 | very active | Code index/graph | ~70% |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode) | 20,272 (▲77) | 78 | very active | Tool-output sandbox | 98% on tool output |
+| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | 9,761 (▲70) | 79 | very active | Measurement / observability | — (measures) |
+| [MinishLab/semble](https://github.com/MinishLab/semble) | 5,970 (▲6) | 73 | very active | Semantic code search | ~98% vs grep+read |
+| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | 3,682 (▲20) | 80 | very active | Context layer | qualitative |
 | [HKUDS/FastCode](https://github.com/HKUDS/FastCode) | 2,292 | 40 | active | Code understanding | qualitative |
 
 ### Generation & structured prompting
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [toon-format/toon](https://github.com/toon-format/toon) | 25,267 | 79 | very active | Compact data format | ~30–50% on structured data |
+| [toon-format/toon](https://github.com/toon-format/toon) | 25,281 (▲14) | 80 | very active | Compact data format | ~30–50% on structured data |
 
 ### Retrieval, RAG & documents
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | 23,855 | 13 | stale | Optical context compression | research |
-| [bytebase/dbhub](https://github.com/bytebase/dbhub) | 3,417 | 76 | very active | Token-efficient DB access | qualitative |
-| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 313 | 24 | slowing | Data optimization (RAG) | qualitative |
+| [deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR) | 23,859 (▲4) | 13 | stale | Optical context compression | research |
+| [bytebase/dbhub](https://github.com/bytebase/dbhub) | 3,434 (▲17) | 76 | very active | Token-efficient DB access | qualitative |
+| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 312 (▼1) | 24 | slowing | Data optimization (RAG) | qualitative |
 
 ### Long-running agents & memory
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 92,280 | 79 | very active | Session compression | qualitative |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 92,714 (▲434) | 80 | very active | Session compression | qualitative |
 
 ### Model & inference level
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | 3,734 | 89 | very active | Model weight compression | n/a (inference, not prompt) |
+| [vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor) | 3,744 (▲10) | 89 | very active | Model weight compression | n/a (inference, not prompt) |
 
 ### Methodology / cross-cutting
 
 | Tool | ★ | Health | Activity | Mechanism | Claimed saving |
 |---|---|---|---|---|---|
-| [jasontang-ai/Context-Engineering](https://github.com/jasontang-ai/Context-Engineering) | 9,228 | 23 | stale | Methodology / guide | — (educational) |
+| [jasontang-ai/Context-Engineering](https://github.com/jasontang-ai/Context-Engineering) | 9,236 (▲8) | 23 | stale | Methodology / guide | — (educational) |
 
 ## Details
 
@@ -78,25 +78,25 @@
 
 _Claude Code, Codex, Cursor, OpenCode, Hermes — the biggest token sink for most users, dominated by reading/searching source and tool output._
 
-- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 101,440★ · Go · Hot · health 75 · _Prompt-style skill_ · **~65%**  
+- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 101,969★ · Go · Hot · health 78 · _Prompt-style skill_ · **~65%**  
   Claude Code skill that trims tokens by emitting terse 'caveman' output — cheap to try, trades readability.  
   <sub>topics: ai, anthropic, caveman, claude, claude-code, llm</sub>
-- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 77,635★ · Rust · Hot · health 78 · _Wire-level proxy_ · **60–90% on dev cmds**  
+- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 78,015★ · Rust · Hot · health 78 · _Wire-level proxy_ · **60–90% on dev cmds**  
   CLI proxy that intercepts common dev commands; integration-free 'install once, save everywhere'.  
   <sub>topics: agentic-coding, ai-coding, anthropic, claude-code, cli, command-line-tool</sub>
-- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 68,386★ · C · Hot · health 77 · _Code index/graph_ · **~70%**  
+- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 68,800★ · C · Hot · health 77 · _Code index/graph_ · **~70%**  
   Pre-indexed code knowledge graph for Claude Code/Codex/Cursor/OpenCode/Hermes — query instead of read.  
   <sub>topics: —</sub>
-- **[mksglu/context-mode](https://github.com/mksglu/context-mode)** · 20,195★ · TypeScript · Rising · health 78 · _Tool-output sandbox_ · **98% on tool output**  
+- **[mksglu/context-mode](https://github.com/mksglu/context-mode)** · 20,272★ · TypeScript · Rising · health 78 · _Tool-output sandbox_ · **98% on tool output**  
   Sandboxes/truncates tool output in the context window; 15 platforms.  
   <sub>topics: claude, claude-code, claude-code-plugins, mcp, skills, codex</sub>
-- **[getagentseal/codeburn](https://github.com/getagentseal/codeburn)** · 9,691★ · TypeScript · Hot · health 79 · _Measurement / observability_ · **— (measures)**  
+- **[getagentseal/codeburn](https://github.com/getagentseal/codeburn)** · 9,761★ · TypeScript · Hot · health 79 · _Measurement / observability_ · **— (measures)**  
   TUI dashboard showing where your Claude Code/Codex/Cursor tokens go. Measure before you optimize.  
   <sub>topics: ai-coding, claude-code, cli, codex, cost-tracking, developer-tools</sub>
-- **[MinishLab/semble](https://github.com/MinishLab/semble)** · 5,964★ · Python · Hot · health 73 · _Semantic code search_ · **~98% vs grep+read**  
+- **[MinishLab/semble](https://github.com/MinishLab/semble)** · 5,970★ · Python · Hot · health 73 · _Semantic code search_ · **~98% vs grep+read**  
   Fast, accurate code search for agents — replaces the grep+read pattern that dominates coding context.  
   <sub>topics: agents, code-search, embeddings, mcp, mcp-server, model-context-protocol</sub>
-- **[yvgude/lean-ctx](https://github.com/yvgude/lean-ctx)** · 3,662★ · Rust · Rising · health 80 · _Context layer_ · **qualitative**  
+- **[yvgude/lean-ctx](https://github.com/yvgude/lean-ctx)** · 3,682★ · Rust · Rising · health 80 · _Context layer_ · **qualitative**  
   Cognitive context layer: 51+ MCP tools, multiple read modes, surgical reads (also in the MCP report).  
   <sub>topics: ai, cursor, llm, mcp, rust, token-optimization</sub>
 - **[HKUDS/FastCode](https://github.com/HKUDS/FastCode)** · 2,292★ · Python · Declining · health 40 · _Code understanding_ · **qualitative**  
@@ -107,7 +107,7 @@ _Claude Code, Codex, Cursor, OpenCode, Hermes — the biggest token sink for mos
 
 _When you feed data into prompts or ask for structured output — savings come from a tighter serialization format._
 
-- **[toon-format/toon](https://github.com/toon-format/toon)** · 25,267★ · TypeScript · Hot · health 79 · _Compact data format_ · **~30–50% on structured data**  
+- **[toon-format/toon](https://github.com/toon-format/toon)** · 25,281★ · TypeScript · Hot · health 80 · _Compact data format_ · **~30–50% on structured data**  
   Token-Oriented Object Notation — schema-aware, human-readable replacement for JSON when you feed data into prompts or ask for structured output. Cross-cutting, but lives at the generation/prompt layer.  
   <sub>topics: data-format, llm, serialization, tokenization</sub>
 
@@ -115,13 +115,13 @@ _When you feed data into prompts or ask for structured output — savings come f
 
 _When tokens go to fetched context — keep what you retrieve small and dense._
 
-- **[deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)** · 23,855★ · Python · Declining · health 13 · _Optical context compression_ · **research**  
+- **[deepseek-ai/DeepSeek-OCR](https://github.com/deepseek-ai/DeepSeek-OCR)** · 23,859★ · Python · Declining · health 13 · _Optical context compression_ · **research**  
   'Contexts Optical Compression' — renders document context to images to fit more in window; low health & stale.  
   <sub>topics: —</sub>
-- **[bytebase/dbhub](https://github.com/bytebase/dbhub)** · 3,417★ · TypeScript · Hot · health 76 · _Token-efficient DB access_ · **qualitative**  
+- **[bytebase/dbhub](https://github.com/bytebase/dbhub)** · 3,434★ · TypeScript · Hot · health 76 · _Token-efficient DB access_ · **qualitative**  
   Zero-dependency, token-efficient database MCP server (Postgres/MySQL/SQL Server/…) — keeps query results lean.  
   <sub>topics: ai, anthropic, claude, database, mcp, mcp-server</sub>
-- **[iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization)** · 313★ · Python · Declining · health 24 · _Data optimization (RAG)_ · **qualitative**  
+- **[iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization)** · 312★ · Python · Declining · health 24 · _Data optimization (RAG)_ · **qualitative**  
   Replaces naive chunking with dense 'blocks' so retrieved context is smaller; declining/low health.  
   <sub>topics: —</sub>
 
@@ -129,7 +129,7 @@ _When tokens go to fetched context — keep what you retrieve small and dense._
 
 _Multi-session work where re-sending history is the cost — compress and persist instead._
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 92,280★ · JavaScript · Rising · health 79 · _Session compression_ · **qualitative**  
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 92,714★ · JavaScript · Hot · health 80 · _Session compression_ · **qualitative**  
   Compresses & persists session context across runs so long projects don't re-pay for history (also in the Memory report).  
   <sub>topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, claude</sub>
 
@@ -137,7 +137,7 @@ _Multi-session work where re-sending history is the cost — compress and persis
 
 _A different layer: shrink the *model* for cheaper inference (doesn't reduce your prompt tokens)._
 
-- **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** · 3,734★ · Python · Mature · health 89 · _Model weight compression_ · **n/a (inference, not prompt)**  
+- **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** · 3,744★ · Python · Mature · health 89 · _Model weight compression_ · **n/a (inference, not prompt)**  
   Compresses model *weights* for cheaper/faster inference — a different layer than prompt-token savings; included for contrast.  
   <sub>topics: compression, quantization</sub>
 
@@ -145,7 +145,7 @@ _A different layer: shrink the *model* for cheaper inference (doesn't reduce you
 
 _Principles that apply across every workload above._
 
-- **[jasontang-ai/Context-Engineering](https://github.com/jasontang-ai/Context-Engineering)** · 9,228★ · Python · Declining · health 23 · _Methodology / guide_ · **— (educational)**  
+- **[jasontang-ai/Context-Engineering](https://github.com/jasontang-ai/Context-Engineering)** · 9,236★ · Python · Declining · health 23 · _Methodology / guide_ · **— (educational)**  
   A guide to filling the context window with just the right info — concepts that apply to every workload above; stale.  
   <sub>topics: —</sub>
 
@@ -166,7 +166,7 @@ Because they hit different layers, a strong setup combines several:
 ## Recommendations
 
 **For coding agents (most people):**
-1. `rtk-ai/rtk` — best general, integration-free reduction (60–90%, 77,635★, health 78).
+1. `rtk-ai/rtk` — best general, integration-free reduction (60–90%, 78,015★, health 78).
 2. `MinishLab/semble` (sharpest claim) or `colbymchenry/codegraph` (most adopted) — kill the read-the-codebase cost.
 3. `mksglu/context-mode` — pair on top to tame tool output.
 
@@ -187,28 +187,30 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **10 of the graph's 37 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **9 of the graph's 37 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
-- **Community 12** (3): `rtk-ai/rtk`, `yvgude/lean-ctx`, `thedotmack/claude-mem`
-- **Community 9** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
-- **Community 1** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
+- **Community 2** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
+- **Community 21** (3): `HKUDS/FastCode`, `bytebase/dbhub`, `thedotmack/claude-mem`
+- **Community 15** (2): `rtk-ai/rtk`, `yvgude/lean-ctx`
+- **Community 4** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
 
-- `mksglu/context-mode` — PageRank 0.0057
-- `JuliusBrussee/caveman` — PageRank 0.0009
+- `mksglu/context-mode` — PageRank 0.0060
+- `JuliusBrussee/caveman` — PageRank 0.0006
 - `vllm-project/llm-compressor` — PageRank 0.0006
+- `thedotmack/claude-mem` — PageRank 0.0005
 - `deepseek-ai/DeepSeek-OCR` — PageRank 0.0005
 - `bytebase/dbhub` — PageRank 0.0004
 - `rtk-ai/rtk` — PageRank 0.0004
 - `HKUDS/FastCode` — PageRank 0.0004
-- `yvgude/lean-ctx` — PageRank 0.0004
 
 **Direct links between these tools** (similarity edges where both endpoints are in this report):
 
-- `JuliusBrussee/caveman` ⇄ `mksglu/context-mode` (w=0.738) — topics: claude, claude-code; authors: github-actions[bot]
 - `colbymchenry/codegraph` ⇄ `mksglu/context-mode` (w=0.400) — authors: github-actions[bot]
 - `yvgude/lean-ctx` ⇄ `rtk-ai/rtk` (w=0.330) — topics: llm, rust, token-optimization, agentic-coding
+- `thedotmack/claude-mem` ⇄ `bytebase/dbhub` (w=0.278) — topics: ai, anthropic, claude, sqlite; authors: claude
+- `JuliusBrussee/caveman` ⇄ `rtk-ai/rtk` (w=0.255) — topics: anthropic, claude-code, llm; authors: SomSamantray
 
 ## Methodology & caveats
 
@@ -217,4 +219,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-29T23:54:34.573Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-08-31T12:10:08.018Z</sub>

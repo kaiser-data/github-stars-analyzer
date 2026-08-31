@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">yt-dlp/yt-dlp</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">187,386</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">188,072</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/markitdown</text>
 <path d="M244,67 h320.3 q4,0 4,4 v10 q0,4 -4,4 h-320.3 z" class="bar"/>
-<text x="574.3" y="76.0" class="val" dominant-baseline="central">176,664</text>
+<text x="574.3" y="76.0" class="val" dominant-baseline="central">177,309</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
-<path d="M244,94 h194.3 q4,0 4,4 v10 q0,4 -4,4 h-194.3 z" class="bar"/>
-<text x="448.3" y="103.0" class="val" dominant-baseline="central">108,031</text>
+<path d="M244,94 h193.9 q4,0 4,4 v10 q0,4 -4,4 h-193.9 z" class="bar"/>
+<text x="447.9" y="103.0" class="val" dominant-baseline="central">108,190</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,121 h144.7 q4,0 4,4 v10 q0,4 -4,4 h-144.7 z" class="bar"/>
-<text x="398.7" y="130.0" class="val" dominant-baseline="central">81,018</text>
+<path d="M244,121 h144.5 q4,0 4,4 v10 q0,4 -4,4 h-144.5 z" class="bar"/>
+<text x="398.5" y="130.0" class="val" dominant-baseline="central">81,168</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">opendatalab/MinerU</text>
-<path d="M244,148 h140.4 q4,0 4,4 v10 q0,4 -4,4 h-140.4 z" class="bar"/>
-<text x="394.4" y="157.0" class="val" dominant-baseline="central">78,635</text>
+<path d="M244,148 h140.2 q4,0 4,4 v10 q0,4 -4,4 h-140.2 z" class="bar"/>
+<text x="394.2" y="157.0" class="val" dominant-baseline="central">78,858</text>
 </svg>

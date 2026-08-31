@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ohmyzsh/ohmyzsh</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">189,413</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">189,468</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/terminal</text>
 <path d="M244,67 h186.2 q4,0 4,4 v10 q0,4 -4,4 h-186.2 z" class="bar"/>
-<text x="440.2" y="76.0" class="val" dominant-baseline="central">104,709</text>
+<text x="440.2" y="76.0" class="val" dominant-baseline="central">104,753</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">junegunn/fzf</text>
 <path d="M244,94 h146.2 q4,0 4,4 v10 q0,4 -4,4 h-146.2 z" class="bar"/>
-<text x="400.2" y="103.0" class="val" dominant-baseline="central">82,703</text>
+<text x="400.2" y="103.0" class="val" dominant-baseline="central">82,740</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Eugeny/tabby</text>
-<path d="M244,121 h130.7 q4,0 4,4 v10 q0,4 -4,4 h-130.7 z" class="bar"/>
-<text x="384.7" y="130.0" class="val" dominant-baseline="central">74,174</text>
+<path d="M244,121 h130.8 q4,0 4,4 v10 q0,4 -4,4 h-130.8 z" class="bar"/>
+<text x="384.8" y="130.0" class="val" dominant-baseline="central">74,247</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">alacritty/alacritty</text>
 <path d="M244,148 h115.0 q4,0 4,4 v10 q0,4 -4,4 h-115.0 z" class="bar"/>
-<text x="369.0" y="157.0" class="val" dominant-baseline="central">65,535</text>
+<text x="369.0" y="157.0" class="val" dominant-baseline="central">65,569</text>
 </svg>
