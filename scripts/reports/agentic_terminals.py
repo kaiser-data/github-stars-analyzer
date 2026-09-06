@@ -84,8 +84,8 @@ TAXONOMY = {
     # ===== Emulator — promoted from the gap table once starred =====
     "microsoft/terminal": ("Emulator", "The default answer on Windows, where Ghostty and cmux simply don't run. Pairs with WSL for a POSIX agent environment."),
     "Eugeny/tabby": ("Emulator", "Cross-platform with first-class SSH/serial profile management — useful when agents live on several remote boxes and you want saved profiles per host."),
-    "alacritty/alacritty": ("Emulator", "~30 MB resident vs 60–100 MB for Kitty/Ghostty — the pick when the agent fleet, not the terminal, should own the RAM. No tabs or splits by design (pair with tmux)."),
-    "ghostty-org/ghostty": ("Emulator", "Fastest sustained-output rendering on macOS in published 2026 comparisons; native Shift+Enter; `macos-option-as-alt = true` needed for Alt+, / Alt+. reasoning controls. On Linux it's GTK4 + optional libadwaita. Windows is planned post-1.0 with no timeline; WSL2 works but is explicitly unsupported."),
+    "alacritty/alacritty": ("Emulator", "Long cited at ~30 MB resident against 60–100 MB for Kitty/Ghostty — the pick when the agent fleet, not the terminal, should own the RAM. That gap has closed: Ghostty 1.3.1 measures 23 MB settled on an M2 (see Methodology), so the memory argument for Alacritty no longer holds. No tabs or splits by design — which stops being a loss when paired with `herdr` or tmux, since those supply the tabs. Homebrew's cask was disabled 2026-09-01 for failing the macOS Gatekeeper check, so this is not currently installable that way."),
+    "ghostty-org/ghostty": ("Emulator", "Fastest sustained-output rendering on macOS in published 2026 comparisons; native Shift+Enter; `macos-option-as-alt = true` needed for Alt+, / Alt+. reasoning controls. Measured here at 23 MB resident / 33 MB phys_footprint settled and idle on an M2 running 1.3.1 — roughly 3× lighter than the 60–100 MB figure earlier editions of this report carried, and lighter than Alacritty's cited ~30 MB. On Linux it's GTK4 + optional libadwaita. Windows is planned post-1.0 with no timeline; WSL2 works but is explicitly unsupported."),
     "kovidgoyal/kitty": ("Emulator", "The Kitty graphics protocol is the de-facto standard for inline images from agent output; built-in multiplexing; deep keyboard control. No Windows build."),
     "wezterm/wezterm": ("Emulator", "Broadest graphics-protocol support (Kitty + sixel + iTerm2), built-in multiplexer with its own persistence, Lua config. The only first-tier emulator that is genuinely equal on all three desktop OSes. Rendering trails Ghostty."),
     "raphamorim/rio": ("Emulator", "Newer GPU emulator that also targets the browser — interesting for agent sessions surfaced over the web."),
@@ -831,9 +831,14 @@ A("- **Several sources have a commercial stake in their own conclusions.** "
   "unrelated sources — attention management beats render speed past ~4 agents — is "
   "the one this report leans on.")
 A("- **Numbers are point-in-time and partly third-party.** Render-throughput and "
-  "latency figures (\"~4× iTerm2\", \"2 ms vs 3 ms\", \"~30 MB vs 60–100 MB\") come "
+  "latency figures (\"~4× iTerm2\", \"2 ms vs 3 ms\") come "
   "from published 2026 comparisons, not from measurements taken here; treat them as "
-  "directional. Independent sources also disagree on how much any of it matters in "
+  "directional. **One figure is first-party:** Ghostty's memory use was measured "
+  "locally on 2026-09-06 (M2, macOS 15, Ghostty 1.3.1, idle with one window) at 23 MB "
+  "resident / 33 MB phys_footprint. It replaced a third-party \"60–100 MB\" claim that "
+  "was wrong by roughly 3× — a reminder that borrowed benchmarks rot faster than star "
+  "counts, and that this class of number is worth re-measuring rather than re-citing. "
+  "Independent sources also disagree on how much any of it matters in "
   "practice, and this report sides with the view that it mostly doesn't.")
 A("- **The gap table does not refresh.** Re-running the pipeline updates every "
   "in-dataset metric; the missing-repo stars and the frozen citations need a manual "
