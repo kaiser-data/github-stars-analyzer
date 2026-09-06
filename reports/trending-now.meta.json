@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 10 data vintages: the 20-day movers, relative breakouts, sustained climbers, 316 new entrants, and what has gone flat.",
-  "tool_count": 374,
-  "total_stars": 8887429,
+  "summary": "Measured star momentum across 11 data vintages: the 8-day movers, relative breakouts, sustained climbers, 168 new entrants, and what has gone flat.",
+  "tool_count": 229,
+  "total_stars": 6412324,
   "categories": {
-    "Risers": 1358,
-    "Breakouts": 1241,
-    "New entrants": 316,
-    "Cooling": 37
+    "Risers": 1505,
+    "Breakouts": 1412,
+    "New entrants": 168,
+    "Cooling": 73
   },
   "top_tools": [
     {
       "name": "DietrichGebert/ponytail",
-      "stars": 117844
+      "stars": 128376
     },
     {
-      "name": "public-apis/public-apis",
-      "stars": 473534
+      "name": "deepseek-ai/deepseek-harness",
+      "stars": 213440
     },
     {
-      "name": "harry0703/MoneyPrinterTurbo",
-      "stars": 118972
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "stars": 43072
     },
     {
-      "name": "diegosouzapw/OmniRoute",
-      "stars": 58969
+      "name": "debpalash/VoiceStudio",
+      "stars": 19219
     },
     {
-      "name": "openai/codex",
-      "stars": 120352
+      "name": "stablyai/orca",
+      "stars": 62398
     }
   ],
   "chart_top_series": [
     {
       "name": "DietrichGebert/ponytail",
-      "value": 19647
+      "value": 14327
     },
     {
-      "name": "public-apis/public-apis",
-      "value": 18586
+      "name": "deepseek-ai/deepseek-harness",
+      "value": 13237
     },
     {
-      "name": "harry0703/MoneyPrinterTurbo",
-      "value": 16885
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "value": 7753
+    },
+    {
+      "name": "debpalash/VoiceStudio",
+      "value": 7356
+    },
+    {
+      "name": "stablyai/orca",
+      "value": 7120
+    },
+    {
+      "name": "affaan-m/ECC",
+      "value": 6511
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "value": 4811
     },
     {
       "name": "diegosouzapw/OmniRoute",
-      "value": 16522
-    },
-    {
-      "name": "openai/codex",
-      "value": 15704
-    },
-    {
-      "name": "earendil-works/pi",
-      "value": 14543
-    },
-    {
-      "name": "PrimeIntellect-ai/prime-agent",
-      "value": 13141
-    },
-    {
-      "name": "firecrawl/firecrawl",
-      "value": 11786
+      "value": 4737
     }
   ],
-  "chart_top_title": "Biggest star gains (20d)",
+  "chart_top_title": "Biggest star gains (8d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-08-31T12:10:08.018Z",
-  "generated": "2026-08-31",
+  "snapshot": "2026-09-06T08:24:34.321Z",
+  "generated": "2026-09-06",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-30"
+  "created": "2026-08-08"
 }

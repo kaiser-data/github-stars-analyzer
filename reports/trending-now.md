@@ -1,10 +1,10 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 1,900 starred repos (snapshot `2026-08-31T12:10:08.018Z`), cross-referenced with the repo-similarity graph (1,900 nodes / 6,181 edges, 37 communities).
+> Derived from **kaiser-data**'s 2,022 starred repos (snapshot `2026-09-06T08:24:34.321Z`), cross-referenced with the repo-similarity graph (2,022 nodes / 6,605 edges, 38 communities).
 >
-> Generated 2026-08-31 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
+> Generated 2026-09-06 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
-![Biggest star gains (20d)](assets/trending-now-top-tools.svg)
+![Biggest star gains (8d)](assets/trending-now-top-tools.svg)
 
 ![Repos by movement type](assets/trending-now-categories.svg)
 
@@ -12,10 +12,10 @@
 ## Executive summary
 
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
-- **Window**: `2026-08-11` → `2026-08-31` (**20 days**), covering the **1,584 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-08-31` (**81 days**).
-  - The immediately preceding snapshot (`2026-08-29`) is only 2 days before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
-- **1,358 repos gained stars** in the recent window, adding **839,980★** between them.
-- **316 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **Window**: `2026-08-29` → `2026-09-06` (**8 days**), covering the **1,854 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-09-06` (**87 days**).
+  - The immediately preceding snapshot (`2026-08-31`) is only 6 days before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
+- **1,505 repos gained stars** in the recent window, adding **353,780★** between them.
+- **168 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -28,86 +28,86 @@
 | **New entrants** | What did you just start following? | Not growth at all — these have no baseline. |
 | **Cooling off** | What is still growing, but much slower than it was? | Deceleration usually means a launch spike ending, not a project dying. |
 
-## Fastest risers — absolute (2026-08-11 → 2026-08-31, 20d)
+## Fastest risers — absolute (2026-08-29 → 2026-09-06, 8d)
 
 Raw star gain over the window. `Stars/day` normalizes for window length so this stays comparable across refreshes of different spacing.
 
 | # | Repo | Gain | Stars/day | Stars now | Lang | Lifecycle | Activity |
 |---|---|---|---|---|---|---|---|
-| 1 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | **+19,647** | 982.4 | 117,844 | JavaScript | Hot | very active |
-| 2 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **+18,586** | 929.3 | 473,534 | Python | Classic | very active |
-| 3 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | **+16,885** | 844.2 | 118,972 | Python | Mature | very active |
-| 4 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | **+16,522** | 826.1 | 58,969 | TypeScript | Hot | very active |
-| 5 | [openai/codex](https://github.com/openai/codex) | **+15,704** | 785.2 | 120,352 | Rust | Hot | very active |
-| 6 | [earendil-works/pi](https://github.com/earendil-works/pi) | **+14,543** | 727.1 | 99,809 | TypeScript | Hot | very active |
-| 7 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | **+13,141** | 657.0 | 19,350 | TypeScript | Hot | very active |
-| 8 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | **+11,786** | 589.3 | 174,638 | TypeScript | Mature | very active |
-| 9 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | **+11,707** | 585.4 | 238,749 | Python | Hot | very active |
-| 10 | [obra/superpowers](https://github.com/obra/superpowers) | **+11,202** | 560.1 | 279,885 | Shell | Hot | very active |
-| 11 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | **+10,087** | 504.4 | 149,179 | Shell | Hot | very active |
-| 12 | [usestrix/strix](https://github.com/usestrix/strix) | **+9,997** | 499.9 | 59,621 | Python | Hot | very active |
-| 13 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | **+9,182** | 459.1 | 11,476 | Python | Hot | very active |
-| 14 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | **+8,973** | 448.6 | 54,848 | Python | Hot | very active |
-| 15 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **+8,913** | 445.6 | 123,383 | Python | Hot | very active |
-| 16 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | **+8,863** | 443.1 | 112,846 | Python | Hot | very active |
-| 17 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **+8,576** | 428.8 | 92,957 | — | Hot | very active |
-| 18 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **+8,517** | 425.9 | 209,025 | — | Declining | slowing |
-| 19 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | **+8,316** | 415.8 | 33,895 | Rust | Hot | very active |
-| 20 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **+8,190** | 409.5 | 501,588 | — | Mature | active |
+| 1 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | **+14,327** | 1790.9 | 128,376 | JavaScript | Hot | very active |
+| 2 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | **+13,237** | 1654.6 | 213,440 | TypeScript | Hot | very active |
+| 3 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | **+7,753** | 969.1 | 43,072 | Python | Hot | very active |
+| 4 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | **+7,356** | 919.5 | 19,219 | Python | Hot | very active |
+| 5 | [stablyai/orca](https://github.com/stablyai/orca) | **+7,120** | 890.0 | 62,398 | TypeScript | Hot | very active |
+| 6 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | **+6,511** | 813.9 | 250,276 | JavaScript | Hot | very active |
+| 7 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | **+4,811** | 601.4 | 242,149 | Python | Hot | very active |
+| 8 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | **+4,737** | 592.1 | 61,717 | TypeScript | Hot | very active |
+| 9 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **+4,367** | 545.9 | 476,094 | Python | Classic | very active |
+| 10 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) | **+3,932** | 491.5 | 56,299 | Python | Hot | very active |
+| 11 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | **+3,916** | 489.5 | 31,871 | HTML | Hot | very active |
+| 12 | [earendil-works/pi](https://github.com/earendil-works/pi) | **+3,904** | 488.0 | 102,215 | TypeScript | Hot | very active |
+| 13 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | **+3,770** | 471.2 | 177,012 | TypeScript | Mature | very active |
+| 14 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) | **+3,688** | 461.0 | 40,955 | Python | Hot | very active |
+| 15 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | **+3,540** | 442.5 | 115,151 | Python | Hot | very active |
+| 16 | [obra/superpowers](https://github.com/obra/superpowers) | **+3,523** | 440.4 | 282,184 | Shell | Hot | very active |
+| 17 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | **+3,465** | 433.1 | 120,911 | Python | Mature | very active |
+| 18 | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | **+3,447** | 430.9 | 114,340 | — | Declining | active |
+| 19 | [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | **+3,404** | 425.5 | 24,470 | TypeScript | Hot | very active |
+| 20 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **+3,340** | 417.5 | 125,351 | Python | Hot | very active |
 
 ## Breakouts — fastest relative growth (≥300★ baseline)
 
-Percent growth over the same 20-day window. The baseline floor keeps small-number noise off the board — a repo going 8★ → 20★ is not a trend.
+Percent growth over the same 8-day window. The baseline floor keeps small-number noise off the board — a repo going 8★ → 20★ is not a trend.
 
 | # | Repo | Growth | Gain | Stars now | What it is |
 |---|---|---|---|---|---|
-| 1 | [MakazhanAlpamys/Soup](https://github.com/MakazhanAlpamys/Soup) | **+934%** | +3,680 | 4,074 | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. |
-| 2 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | **+400%** | +9,182 | 11,476 | Graph-Native Infrastructure for Context and Accountable AI Systems |
-| 3 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | **+212%** | +13,141 | 19,350 | A self-improving RLM agent for coding workflows and long-running autonomous tasks. |
-| 4 | [cactus-compute/needle](https://github.com/cactus-compute/needle) | **+166%** | +6,141 | 9,836 | 14MB foundation model for tiny devices; phones, wearables, smart home, and robots. |
-| 5 | [FareedKhan-dev/kimi-k3-in-c](https://github.com/FareedKhan-dev/kimi-k3-in-c) | **+114%** | +3,665 | 6,885 | A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. P… |
-| 6 | [vitali87/code-graph-rag](https://github.com/vitali87/code-graph-rag) | **+91%** | +2,329 | 4,890 | The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases… |
-| 7 | [Prism-Shadow/penguin-harness](https://github.com/Prism-Shadow/penguin-harness) | **+88%** | +861 | 1,840 | 🐧 Harness for RSI. Let AI Build AI. Multi-Agent Auto-Dev Platform. Everything is Transpa… |
-| 8 | [Anakin-Inc/anakin](https://github.com/Anakin-Inc/anakin) | **+67%** | +997 | 2,494 | Open-source web scraping API. Turn any website into clean markdown or structured JSON. A… |
-| 9 | [cloudflare/computer](https://github.com/cloudflare/computer) | **+60%** | +3,327 | 8,850 | Give your agent a computer 👾 |
-| 10 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | **+45%** | +7,913 | 25,363 | TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations,… |
-| 11 | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | **+44%** | +4,495 | 14,656 | Rebuild the object in a reference image as a code-only, procedural, quality-gated, anima… |
-| 12 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | **+43%** | +7,834 | 25,939 | A skill to stop your coding agent from burying the answer. ADHD-friendly output. |
-| 13 | [floci-io/floci-az](https://github.com/floci-io/floci-az) | **+41%** | +162 | 555 | Light, fluffy, and always free - Local Azure Emulator |
-| 14 | [bjarneo/cliamp](https://github.com/bjarneo/cliamp) | **+40%** | +1,122 | 3,895 | cliamp - Terminal music player inspired by winamp |
-| 15 | [diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute) | **+39%** | +16,522 | 58,969 | Never stop coding. Free MIT AI gateway: one endpoint, 350 providers (90+ free), 1200+ mo… |
-| 16 | [hi-godot/godot-ai](https://github.com/hi-godot/godot-ai) | **+37%** | +551 | 2,039 | Production-grade MCP server and AI tools for the Godot engine. A Snap to install. Totall… |
-| 17 | [zzet/gortex](https://github.com/zzet/gortex) | **+36%** | +404 | 1,511 | High-performance code-intelligence engine for AI agents and IDE, supports 257 languages,… |
-| 18 | [sophiamyang/finger-frame-effect-ai](https://github.com/sophiamyang/finger-frame-effect-ai) | **+35%** | +259 | 989 | — |
-| 19 | [virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill) | **+34%** | +7,037 | 27,470 | Turn any technical book PDF into a Claude Code skill — ready to study, reference, and us… |
-| 20 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | **+33%** | +8,316 | 33,895 | the runtime your coding agents live on |
+| 1 | [MakazhanAlpamys/Soup](https://github.com/MakazhanAlpamys/Soup) | **+63%** | +2,104 | 5,447 | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. |
+| 2 | [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | **+62%** | +7,356 | 19,219 | VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voic… |
+| 3 | [CopilotKit/OpenBot](https://github.com/CopilotKit/OpenBot) | **+36%** | +1,148 | 4,332 | Open-source AI coworkers that each get a computer of their own: a browser, files and too… |
+| 4 | [FlashML-org/FreeToken](https://github.com/FlashML-org/FreeToken) | **+32%** | +2,856 | 11,794 | FreeToken brings datacenter-scale model serving to your desktop. Run massive models loca… |
+| 5 | [apache/maka](https://github.com/apache/maka) | **+27%** | +1,031 | 4,797 | Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete rec… |
+| 6 | [termio-sh/termio](https://github.com/termio-sh/termio) | **+24%** | +80 | 408 | A terminal-first agentic development environment for agentic coding. Build for CLI/TUI a… |
+| 7 | [meta-llama/prompt-ops](https://github.com/meta-llama/prompt-ops) | **+24%** | +208 | 1,061 | An open-source tool for LLM prompt optimization. |
+| 8 | [nvidia-isaac/video_to_data](https://github.com/nvidia-isaac/video_to_data) | **+23%** | +102 | 538 | Nvidia Isaac Video to Data Pipeline |
+| 9 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | **+22%** | +7,753 | 43,072 | Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by… |
+| 10 | [dramaclaw/dramaclaw](https://github.com/dramaclaw/dramaclaw) | **+21%** | +949 | 5,418 | A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, a… |
+| 11 | [decodingai-magazine/building-a-coding-agent-from-scratch-course](https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course) | **+19%** | +58 | 358 | From agent user to agent builder: build a Claude Code-style coding agent from scratch in… |
+| 12 | [Anakin-Inc/anakin](https://github.com/Anakin-Inc/anakin) | **+19%** | +438 | 2,747 | Open-source web scraping API. Turn any website into clean markdown or structured JSON. A… |
+| 13 | [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | **+17%** | +832 | 5,824 | Solution for long term memory for agent coding CLIs and to facilitate handoff between di… |
+| 14 | [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | **+16%** | +3,404 | 24,470 | 7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behin… |
+| 15 | [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) | **+14%** | +3,916 | 31,871 | 38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No… |
+| 16 | [superlinked/sie](https://github.com/superlinked/sie) | **+13%** | +379 | 3,216 | Open-source inference server and production cluster for all the models your agent needs. |
+| 17 | [stablyai/orca](https://github.com/stablyai/orca) | **+13%** | +7,120 | 62,398 | Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with y… |
+| 18 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | **+13%** | +14,327 | 128,376 | Makes your AI agent think like the laziest senior dev in the room. The best code is the … |
+| 19 | [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | **+12%** | +1,171 | 10,862 | Free, local tool to track AI coding token usage and cost across 37 tools and agents (Cla… |
+| 20 | [trailhq/Graft](https://github.com/trailhq/Graft) | **+12%** | +605 | 5,617 | Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, wi… |
 
-## Sustained climbers — long run (2026-06-11 → 2026-08-31, 81d)
+## Sustained climbers — long run (2026-06-11 → 2026-09-06, 87d)
 
 Averaged over the full snapshot history, so a single viral week doesn't dominate. Repos high here *and* in the recent board are compounding, not spiking.
 
 | # | Repo | Stars/day | Total gain | Stars now | Lang | Health |
 |---|---|---|---|---|---|---|
-| 1 | [obra/superpowers](https://github.com/obra/superpowers) | **680.9** | +55,151 | 279,885 | Shell | 78 |
-| 2 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | **590.3** | +47,816 | 238,749 | Python | 80 |
-| 3 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | **532.2** | +43,111 | 174,638 | TypeScript | 89 |
-| 4 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | **470.3** | +38,098 | 41,415 | C | 75 |
-| 5 | [earendil-works/pi](https://github.com/earendil-works/pi) | **469.5** | +38,031 | 99,809 | TypeScript | 85 |
-| 6 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | **465.8** | +37,726 | 149,179 | Shell | 64 |
-| 7 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **438.8** | +35,545 | 209,025 | — | 24 |
-| 8 | [usestrix/strix](https://github.com/usestrix/strix) | **415.7** | +33,675 | 59,621 | Python | 81 |
-| 9 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **406.7** | +32,945 | 123,383 | Python | 96 |
-| 10 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | **405.9** | +32,875 | 118,972 | Python | 85 |
-| 11 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **403.4** | +32,673 | 473,534 | Python | 65 |
-| 12 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | **393.3** | +31,861 | 130,340 | Rust | 77 |
-| 13 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | **388.9** | +31,504 | 244,938 | JavaScript | 79 |
-| 14 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | **376.0** | +30,454 | 101,969 | Go | 78 |
-| 15 | [openai/codex](https://github.com/openai/codex) | **369.1** | +29,894 | 120,352 | Rust | 94 |
-| 16 | [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **367.7** | +29,783 | 544,212 | Markdown | 48 |
-| 17 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | **364.4** | +29,519 | 202,719 | TypeScript | 83 |
-| 18 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **364.2** | +29,503 | 92,957 | — | 82 |
-| 19 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **329.7** | +26,707 | 501,588 | — | 60 |
-| 20 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | **323.0** | +26,166 | 177,309 | Python | 63 |
+| 1 | [obra/superpowers](https://github.com/obra/superpowers) | **660.3** | +57,450 | 282,184 | Shell | 79 |
+| 2 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | **588.7** | +51,216 | 242,149 | Python | 75 |
+| 3 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | **522.8** | +45,485 | 177,012 | TypeScript | 84 |
+| 4 | [earendil-works/pi](https://github.com/earendil-works/pi) | **464.8** | +40,437 | 102,215 | TypeScript | 85 |
+| 5 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | **449.1** | +39,068 | 42,385 | C | 75 |
+| 6 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | **446.5** | +38,846 | 150,299 | Shell | 58 |
+| 7 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **425.1** | +36,981 | 210,461 | — | 23 |
+| 8 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | **423.5** | +36,842 | 250,276 | JavaScript | 79 |
+| 9 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **405.0** | +35,233 | 476,094 | Python | 65 |
+| 10 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **401.3** | +34,913 | 125,351 | Python | 97 |
+| 11 | [usestrix/strix](https://github.com/usestrix/strix) | **400.6** | +34,854 | 60,800 | Python | 75 |
+| 12 | [harry0703/MoneyPrinterTurbo](https://github.com/harry0703/MoneyPrinterTurbo) | **400.2** | +34,814 | 120,911 | Python | 80 |
+| 13 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | **376.8** | +32,779 | 131,258 | Rust | 77 |
+| 14 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | **371.6** | +32,325 | 103,840 | Go | 78 |
+| 15 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | **363.6** | +31,637 | 204,837 | TypeScript | 88 |
+| 16 | [openai/codex](https://github.com/openai/codex) | **360.7** | +31,382 | 121,840 | Rust | 89 |
+| 17 | [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **357.0** | +31,057 | 545,486 | Markdown | 48 |
+| 18 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **355.0** | +30,886 | 94,340 | TypeScript | 87 |
+| 19 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | **328.0** | +28,537 | 503,418 | — | 55 |
+| 20 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | **313.3** | +27,255 | 178,398 | Python | 87 |
 
 ## Emerging themes
 
@@ -117,158 +117,158 @@ The boards above are computed; this section is interpretation. Each theme groups
 
 _The single loudest signal in this dataset. A year ago you configured an agent with a prompt; now behaviour ships as a versioned, installable *skill* bundle — and the repos distributing those bundles are growing faster than the agents that consume them. Note what this implies: the moat is moving from the model to the instruction layer._
 
-- **[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)** · 117,844★ · +19,647★ in 20d  
+- **[DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)** · 128,376★ · +14,327★ in 8d  
   Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
-- **[obra/superpowers](https://github.com/obra/superpowers)** · 279,885★ · +11,202★ in 20d  
-  An agentic skills framework & software development methodology that works.
-- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** · 149,179★ · +10,087★ in 20d  
-  A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
-- **[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** · 123,383★ · +8,913★ in 20d  
-  An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.
-- **[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)** · 209,025★ · +8,517★ in 20d  
-  A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
-- **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)** · 25,939★ · +7,834★ in 20d  
-  A skill to stop your coding agent from burying the answer. ADHD-friendly output.
-- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 244,938★ · +6,387★ in 20d  
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 250,276★ · +6,511★ in 8d  
   The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
-- **[anthropics/skills](https://github.com/anthropics/skills)** · 172,734★ · +5,850★ in 20d  
+- **[obra/superpowers](https://github.com/obra/superpowers)** · 282,184★ · +3,523★ in 8d  
+  An agentic skills framework & software development methodology that works.
+- **[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** · 125,351★ · +3,340★ in 8d  
+  An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.
+- **[anthropics/skills](https://github.com/anthropics/skills)** · 174,678★ · +2,595★ in 8d  
   Public repository for Agent Skills
-- **[garrytan/gstack](https://github.com/garrytan/gstack)** · 130,541★ · +3,749★ in 20d  
+- **[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)** · 210,461★ · +2,370★ in 8d  
+  A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+- **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)** · 27,248★ · +2,263★ in 8d  
+  A skill to stop your coding agent from burying the answer. ADHD-friendly output.
+- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** · 150,299★ · +1,817★ in 8d  
+  A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+- **[garrytan/gstack](https://github.com/garrytan/gstack)** · 131,611★ · +1,548★ in 8d  
   Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA
-- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · 53,272★ · +1,424★ in 20d  
+- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · 53,575★ · +478★ in 8d  
   A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC. A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins
-- **[shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** · 65,417★ · +1,279★ in 20d  
+- **[shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** · 65,642★ · +380★ in 8d  
   from vibe coding to agentic engineering - practice makes claude perfect
 
 ### Giving agents a memory of the codebase
 
 _Retrieval over a codebase is being replaced by *pre-indexed structure* — graphs and persistent stores an agent can consult instead of re-reading files every session. This is the same insight the graph in this repo is built on, and it is now one of the fastest-moving categories in your stars._
 
-- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 11,476★ · +9,182★ in 20d  
-  Graph-Native Infrastructure for Context and Accountable AI Systems
-- **[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)** · 112,846★ · +8,863★ in 20d  
+- **[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)** · 115,151★ · +3,540★ in 8d  
   Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.
-- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 25,363★ · +7,913★ in 20d  
-  TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.
-- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 68,800★ · +3,488★ in 20d  
-  Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local
-- **[DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)** · 41,415★ · +3,375★ in 20d  
+- **[DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)** · 42,385★ · +1,484★ in 8d  
   High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.
-- **[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything)** · 81,154★ · +3,282★ in 20d  
-  Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 92,714★ · +2,716★ in 20d  
+- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 69,783★ · +1,397★ in 8d  
+  Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local
+- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 25,983★ · +1,111★ in 8d  
+  TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.
+- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 12,126★ · +1,083★ in 8d  
+  Graph-Native Infrastructure for Context and Accountable AI Systems
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 93,309★ · +1,029★ in 8d  
   Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More
-- **[repowise-dev/repowise](https://github.com/repowise-dev/repowise)** · 6,275★ · +1,428★ in 20d  
-  Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP.
-- **[langchain-ai/openwiki](https://github.com/langchain-ai/openwiki)** · 15,895★ · +1,380★ in 20d  
+- **[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything)** · 81,627★ · +854★ in 8d  
+  Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.
+- **[langchain-ai/openwiki](https://github.com/langchain-ai/openwiki)** · 16,153★ · +391★ in 8d  
   OpenWiki is a CLI that writes and maintains agent documentation for your codebase.
-- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 30,367★ · +520★ in 20d  
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 30,502★ · +203★ in 8d  
   Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.
-- **[zilliztech/claude-context](https://github.com/zilliztech/claude-context)** · 12,456★ · +149★ in 20d  
+- **[repowise-dev/repowise](https://github.com/repowise-dev/repowise)** · 6,346★ · +100★ in 8d  
+  Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP.
+- **[zilliztech/claude-context](https://github.com/zilliztech/claude-context)** · 12,486★ · +36★ in 8d  
   Code search MCP for Claude Code. Make entire codebase the context for any coding agent.
 
 ### Frontier models on hardware you already own
 
 _The counter-current to everything above: instead of making API calls cheaper, remove them. Big mixture-of-experts models are being squeezed onto consumer machines, and the repos doing it are among the fastest relative movers in the dataset._
 
-- **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** · 126,473★ · +3,462★ in 20d  
+- **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** · 127,199★ · +1,230★ in 8d  
   LLM inference in C/C++
-- **[lyogavin/airllm](https://github.com/lyogavin/airllm)** · 33,289★ · +3,404★ in 20d  
+- **[lyogavin/airllm](https://github.com/lyogavin/airllm)** · 33,755★ · +1,062★ in 8d  
   AirLLM 70B inference with single 4GB GPU
-- **[JustVugg/colibri](https://github.com/JustVugg/colibri)** · 26,501★ · +3,333★ in 20d  
+- **[JustVugg/colibri](https://github.com/JustVugg/colibri)** · 26,879★ · +570★ in 8d  
   Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
-- **[Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm)** · 3,341★ · +269★ in 20d  
+- **[Mesh-LLM/mesh-llm](https://github.com/Mesh-LLM/mesh-llm)** · 3,358★ · +50★ in 8d  
   Distributed AI/LLM for the people. Share compute privately or publicly to power your agents and chat.
-- **[microsoft/foundry-local](https://github.com/microsoft/foundry-local)** · 2,533★ · +38★ in 20d  
+- **[microsoft/foundry-local](https://github.com/microsoft/foundry-local)** · 2,542★ · +14★ in 8d  
   —
 
 ### Token economics became a product category
 
 _Context windows got bigger and people started paying for them. These repos exist purely to make agents cheaper to run — compressing tool output, trimming prompts, proxying calls. That a compression layer can add tens of thousands of stars in weeks says the cost pressure is real, not theoretical._
 
-- **[Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code)** · 52,128★ · +7,358★ in 20d  
+- **[Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code)** · 53,419★ · +2,563★ in 8d  
   Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)
-- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 101,969★ · +5,275★ in 20d  
+- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 103,840★ · +2,400★ in 8d  
   🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
-- **[JustVugg/colibri](https://github.com/JustVugg/colibri)** · 26,501★ · +3,333★ in 20d  
-  Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
-- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 78,015★ · +2,832★ in 20d  
+- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 78,990★ · +1,355★ in 8d  
   CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies
-- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · 68,158★ · +2,774★ in 20d  
+- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · 69,062★ · +1,232★ in 8d  
   Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.
+- **[JustVugg/colibri](https://github.com/JustVugg/colibri)** · 26,879★ · +570★ in 8d  
+  Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦
 
 ### The coding-agent harness field is still splitting, not consolidating
 
 _Terminal coding agents keep multiplying rather than converging on a winner, and a second layer has appeared above them: switchers, meta-harnesses, and orchestrators whose job is to manage the agents themselves._
 
-- **[openai/codex](https://github.com/openai/codex)** · 120,352★ · +15,704★ in 20d  
-  Lightweight coding agent that runs in your terminal
-- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 99,809★ · +14,543★ in 20d  
-  AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI
-- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** · 238,749★ · +11,707★ in 20d  
+- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** · 242,149★ · +4,811★ in 8d  
   The agent that grows with you
-- **[anomalyco/opencode](https://github.com/anomalyco/opencode)** · 202,719★ · +7,997★ in 20d  
+- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 102,215★ · +3,904★ in 8d  
+  AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI
+- **[anomalyco/opencode](https://github.com/anomalyco/opencode)** · 204,837★ · +2,865★ in 8d  
   The open source coding agent.
-- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** · 130,340★ · +4,891★ in 20d  
+- **[openai/codex](https://github.com/openai/codex)** · 121,840★ · +2,633★ in 8d  
+  Lightweight coding agent that runs in your terminal
+- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** · 131,258★ · +1,497★ in 8d  
   A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io
-- **[paperclipai/paperclip](https://github.com/paperclipai/paperclip)** · 79,736★ · +3,909★ in 20d  
-  The open-source app everyone uses to manage agents at work
-- **[multica-ai/multica](https://github.com/multica-ai/multica)** · 48,377★ · +3,688★ in 20d  
-  Make humans and AI agents work as one team — open-source and self-hostable.
-- **[getpaseo/paseo](https://github.com/getpaseo/paseo)** · 15,603★ · +2,963★ in 20d  
-  Orchestrate multiple coding agents from desktop and mobile
-- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 143,538★ · +2,939★ in 20d  
-  Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
-- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 69,923★ · +2,644★ in 20d  
+- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 70,783★ · +1,215★ in 8d  
   🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated
-- **[1jehuang/jcode](https://github.com/1jehuang/jcode)** · 18,864★ · +2,527★ in 20d  
-  The most RAM efficient harness
-- **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** · 85,738★ · +2,346★ in 20d  
+- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 144,210★ · +1,008★ in 8d  
+  Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.
+- **[multica-ai/multica](https://github.com/multica-ai/multica)** · 49,015★ · +999★ in 8d  
+  Make humans and AI agents work as one team — open-source and self-hostable.
+- **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** · 86,301★ · +985★ in 8d  
   🙌 OpenHands: AI-Driven Development
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 81,168★ · +1,656★ in 20d  
+- **[getpaseo/paseo](https://github.com/getpaseo/paseo)** · 16,158★ · +894★ in 8d  
+  Orchestrate multiple coding agents from desktop and mobile
+- **[paperclipai/paperclip](https://github.com/paperclipai/paperclip)** · 80,078★ · +564★ in 8d  
+  The open-source app everyone uses to manage agents at work
+- **[1jehuang/jcode](https://github.com/1jehuang/jcode)** · 19,189★ · +481★ in 8d  
+  The most RAM efficient harness
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 81,454★ · +436★ in 8d  
   An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.
-- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 68,547★ · +1,095★ in 20d  
-  omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode
-- **[vercel/eve](https://github.com/vercel/eve)** · 4,882★ · +432★ in 20d  
+- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 68,739★ · +290★ in 8d  
+  OmO: Drop your tokens. Ultrawork. Done.
+- **[vercel/eve](https://github.com/vercel/eve)** · 4,985★ · +147★ in 8d  
   The Open Framework for Building Agents
 
 ### Agents are leaving the terminal for specific jobs
 
 _The generalist assistant is being joined by vertical agents pointed at one domain — pentesting, trading, tutoring, job hunting, video. These grow on usefulness to a specific audience rather than on developer-tool hype._
 
-- **[usestrix/strix](https://github.com/usestrix/strix)** · 59,621★ · +9,997★ in 20d  
+- **[usestrix/strix](https://github.com/usestrix/strix)** · 60,800★ · +1,928★ in 8d  
   Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.
-- **[santifer/career-ops](https://github.com/santifer/career-ops)** · 69,537★ · +6,378★ in 20d  
-  Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)
-- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 101,945★ · +5,872★ in 20d  
+- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 102,649★ · +1,414★ in 8d  
   TradingAgents: Multi-Agents LLM Financial Trading Framework
-- **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)** · 38,004★ · +5,066★ in 20d  
-  DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.
-- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** · 111,814★ · +3,617★ in 20d  
-  🌐 Make websites accessible for AI agents. Automate tasks online with ease.
-- **[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)** · 43,295★ · +3,354★ in 20d  
+- **[heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)** · 44,222★ · +1,342★ in 8d  
   Write HTML. Render video. Built for agents.
-- **[jamiepine/voicebox](https://github.com/jamiepine/voicebox)** · 51,931★ · +2,237★ in 20d  
-  The open-source AI voice studio. Clone, dictate, create.
-- **[HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading)** · 32,152★ · +1,922★ in 20d  
+- **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)** · 38,854★ · +1,137★ in 8d  
+  DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.
+- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** · 112,460★ · +1,005★ in 8d  
+  🌐 Make websites accessible for AI agents. Automate tasks online with ease.
+- **[HKUDS/Vibe-Trading](https://github.com/HKUDS/Vibe-Trading)** · 32,667★ · +770★ in 8d  
   "Vibe-Trading: Your Personal Trading Agent"
-- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** · 30,138★ · +1,699★ in 20d  
+- **[jamiepine/voicebox](https://github.com/jamiepine/voicebox)** · 52,390★ · +740★ in 8d  
+  The open-source AI voice studio. Clone, dictate, create.
+- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** · 30,401★ · +424★ in 8d  
   Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows. Understand How to write meeting minutes
-- **[Canner/WrenAI](https://github.com/Canner/WrenAI)** · 17,430★ · +251★ in 20d  
+- **[Canner/WrenAI](https://github.com/Canner/WrenAI)** · 17,507★ · +98★ in 8d  
   GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.
+- **[career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops)** · 70,274★ · new to the dataset  
+  Open-source AI job search: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)
 
 ### Design and spec as agent-readable artifacts
 
 _If an agent writes the code, the leverage moves upstream to the spec and the design system. These repos turn intent into something an agent can consume directly._
 
-- **[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** · 123,383★ · +8,913★ in 20d  
-  An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.
-- **[nexu-io/open-design](https://github.com/nexu-io/open-design)** · 92,957★ · +8,576★ in 20d  
-  🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.
-- **[github/spec-kit](https://github.com/github/spec-kit)** · 132,434★ · +6,662★ in 20d  
-  💫 Toolkit to help you get started with Spec-Driven Development
-- **[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)** · 111,935★ · +4,751★ in 20d  
+- **[VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md)** · 114,340★ · +3,447★ in 8d  
   A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.
+- **[nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** · 125,351★ · +3,340★ in 8d  
+  An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.
+- **[nexu-io/open-design](https://github.com/nexu-io/open-design)** · 94,340★ · +2,275★ in 8d  
+  🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.
+- **[github/spec-kit](https://github.com/github/spec-kit)** · 133,643★ · +1,742★ in 8d  
+  💫 Toolkit to help you get started with Spec-Driven Development
 
 ## New entrants — newly starred since the last refresh
 
@@ -276,116 +276,114 @@ These joined the dataset during this window, so they have no baseline to diff. T
 
 | Repo | Stars | Lang | Lifecycle | What it is |
 |---|---|---|---|---|
-| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 205,832 | TypeScript | Hot | DeepSeek Harness: Everything is a Plugin. |
-| [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 189,468 | Shell | Classic | 🙃   A delightful community-driven (with 2,500+ contributors) framework for managing … |
-| [microsoft/terminal](https://github.com/microsoft/terminal) | 104,753 | C++ | Classic | The new Windows Terminal and the original Windows console host, all in the same plac… |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 94,985 | Python | Declining | AI agents running research on single-GPU nanochat training automatically |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 91,042 | JavaScript | Hot | Production-grade engineering skills for AI coding agents. |
-| [junegunn/fzf](https://github.com/junegunn/fzf) | 82,740 | Go | Classic | :cherry_blossom: A command-line fuzzy finder |
-| [Eugeny/tabby](https://github.com/Eugeny/tabby) | 74,247 | TypeScript | Classic | A terminal for a more modern age |
-| [alacritty/alacritty](https://github.com/alacritty/alacritty) | 65,569 | Rust | Mature | A cross-platform, OpenGL terminal emulator. |
-| [warpdotdev/warp](https://github.com/warpdotdev/warp) | 64,674 | Rust | Classic | Warp is an agentic development environment, born out of the terminal. |
-| [tldr-pages/tldr](https://github.com/tldr-pages/tldr) | 63,539 | Markdown | Classic | Collaborative cheatsheets for console commands 📚. |
-| [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) | 60,506 | Zig | Classic | 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses pl… |
-| [sharkdp/bat](https://github.com/sharkdp/bat) | 60,315 | Rust | Classic | A cat(1) clone with wings. |
-| [termux/termux-app](https://github.com/termux/termux-app) | 60,071 | Java | Mature | Termux - a terminal emulator application for Android OS extendible by variety of pac… |
-| [starship/starship](https://github.com/starship/starship) | 59,685 | Rust | Classic | ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell! |
-| [stablyai/orca](https://github.com/stablyai/orca) | 57,944 | TypeScript | Hot | Orca is the ADE for working with a fleet of parallel agents. Run any coding agent wi… |
-| [Textualize/rich](https://github.com/Textualize/rich) | 57,289 | Python | Mature | Rich is a Python library for rich text and beautiful formatting in the terminal. |
-| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 50,248 | TypeScript | Hot | Chrome DevTools for coding agents |
-| [vercel/hyper](https://github.com/vercel/hyper) | 44,711 | TypeScript | Mature | A terminal built on web technologies |
-| [sharkdp/fd](https://github.com/sharkdp/fd) | 44,258 | Rust | Classic | A simple, fast and user-friendly alternative to 'find' |
-| [DataExpert-io/data-engineer-handbook](https://github.com/DataExpert-io/data-engineer-handbook) | 43,923 | Jupyter Notebook | Mature | This is a repo with links to everything you'd ever want to learn about data engineer… |
-| [sxyazi/yazi](https://github.com/sxyazi/yazi) | 41,827 | Rust | Classic | 💥 Blazing fast terminal file manager written in Rust, based on async I/O. |
-| [chubin/cheat.sh](https://github.com/chubin/cheat.sh) | 41,709 | Python | Declining | the only cheat sheet you need |
-| [Hmbown/CodeWhale](https://github.com/Hmbown/CodeWhale) | 40,876 | Rust | Hot | Open-source coding agent for your terminal, built in Rust and on a journey of contin… |
-| [appsmithorg/appsmith](https://github.com/appsmithorg/appsmith) | 40,788 | TypeScript | Classic | Platform to build admin panels, internal tools, and dashboards. Integrates with 25+ … |
-| [ManimCommunity/manim](https://github.com/ManimCommunity/manim) | 40,543 | Python | Classic | A community-maintained Python framework for creating mathematical animations. |
-| [nushell/nushell](https://github.com/nushell/nushell) | 40,382 | Rust | Classic | A new type of shell |
-| [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) | 39,082 | Rust | Classic | A smarter cd command. Supports all major shells. |
-| [httpie/cli](https://github.com/httpie/cli) | 38,472 | Python | Abandoned | 🥧 HTTPie CLI  — modern, user-friendly command-line HTTP client for the API era. JSON… |
-| [Textualize/textual](https://github.com/Textualize/textual) | 37,102 | Python | Classic | The lean application framework for Python.  Build sophisticated user interfaces with… |
-| [esengine/DeepSeek-Reasonix](https://github.com/esengine/DeepSeek-Reasonix) | 35,284 | Go | Hot | DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache st… |
-| [zellij-org/zellij](https://github.com/zellij-org/zellij) | 35,209 | Rust | Classic | A terminal workspace with batteries included |
-| [kovidgoyal/kitty](https://github.com/kovidgoyal/kitty) | 34,703 | Python | Classic | If you live in the terminal, kitty is made for you! Cross-platform, fast, feature-ri… |
-| [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 34,602 | Python | Hot | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and … |
-| [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell) | 34,102 | Rust | Classic | The user-friendly command line shell. |
-| [microsoft/WSL](https://github.com/microsoft/WSL) | 33,578 | C++ | Classic | Windows Subsystem for Linux |
-| [nicolargo/glances](https://github.com/nicolargo/glances) | 33,486 | Python | Classic | Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, macOS and … |
-| [ibraheemdev/modern-unix](https://github.com/ibraheemdev/modern-unix) | 33,022 | — | Abandoned | A collection of modern/faster/saner alternatives to common unix commands. |
-| [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) | 32,452 | Rust | Rising | Algorithm powering the For You feed on X |
-| [kingToolbox/WindTerm](https://github.com/kingToolbox/WindTerm) | 32,103 | C | Declining | A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal. |
-| [jumpserver/jumpserver](https://github.com/jumpserver/jumpserver) | 31,479 | Python | Classic | JumpServer is an open-source Privileged Access Management (PAM) platform that provid… |
-| _…and 276 more_ | | | | |
+| [career-ops-hq/career-ops](https://github.com/career-ops-hq/career-ops) | 70,274 | JavaScript | Hot | Open-source AI job search: scan job portals, evaluate listings into a structured A-H… |
+| [asgeirtj/system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | 64,247 | JavaScript | Mature | Extracted system prompts from Anthropic - Claude Fable 5.1, Opus 5, Claude Design, C… |
+| [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 52,516 | Python | Hot | Learn it. Build it. Ship it for others. |
+| [elder-plinius/CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) | 49,048 | — | Mature | LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE… |
+| [zhayujie/CowAgent](https://github.com/zhayujie/CowAgent) | 46,787 | Python | Classic | Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, … |
+| [Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | 46,458 | Python | Hot | Academic Research Skills for Claude Code: research → write → review → revise → final… |
+| [Hmbown/Codewhale](https://github.com/Hmbown/Codewhale) | 40,913 | Rust | Hot | Open-source coding agent for your terminal, built in Rust and on a journey of contin… |
+| [TencentARC/GFPGAN](https://github.com/TencentARC/GFPGAN) | 37,668 | Python | Abandoned | GFPGAN aims at developing Practical Algorithms for Real-world Face Restoration. |
+| [ItzCrazyKns/Vane](https://github.com/ItzCrazyKns/Vane) | 36,650 | TypeScript | Mature | Vane is an AI-powered answering engine. |
+| [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm) | 32,740 | Rust | Rising | Algorithm powering the For You feed on X |
+| [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) | 32,263 | Python | Hot | 817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE AT… |
+| [iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) | 30,079 | C# | Hot | OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, e… |
+| [dmlc/xgboost](https://github.com/dmlc/xgboost) | 28,738 | C++ | Classic | Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  f… |
+| [h4ckf0r0day/obscura](https://github.com/h4ckf0r0day/obscura) | 25,977 | Rust | Hot | The headless browser for AI agents and web scraping |
+| [pytorch/examples](https://github.com/pytorch/examples) | 24,034 | Python | Abandoned | A set of examples around pytorch in Vision, Text, Reinforcement Learning, etc. |
+| [mikeroyal/Self-Hosting-Guide](https://github.com/mikeroyal/Self-Hosting-Guide) | 22,723 | Dockerfile | Abandoned | Self-Hosting Guide. Learn all about  locally hosting (on premises & private web serv… |
+| [palantir/blueprint](https://github.com/palantir/blueprint) | 22,033 | TypeScript | Classic | A React-based UI toolkit for the web |
+| [t8y2/dbx](https://github.com/t8y2/dbx) | 18,102 | Rust | Hot | 20 MB lightweight cross-platform database client for 90+ databases, including MySQL,… |
+| [tradecatlabs/vibe-coding-cn](https://github.com/tradecatlabs/vibe-coding-cn) | 16,097 | Python | Rising | Vibe Coding 从入门到精通教程｜AI 结对编程工作流｜Prompt、Skill、Workflow、上下文管理、codex实战指南 |
+| [duixcom/Duix-Avatar](https://github.com/duixcom/Duix-Avatar) | 15,038 | C | Declining | 🚀 Truly open-source AI avatar(digital human) toolkit for offline video generation an… |
+| [davisking/dlib](https://github.com/davisking/dlib) | 14,438 | C++ | Mature | A toolkit for making real world machine learning and data analysis applications in C… |
+| [spotify/annoy](https://github.com/spotify/annoy) | 14,293 | C++ | Declining | Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/s… |
+| [YouMind-OpenLab/awesome-nano-banana-pro-prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) | 13,373 | TypeScript | Rising | 🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with prev… |
+| [ifixai-ai/iFixAi](https://github.com/ifixai-ai/iFixAi) | 13,008 | Python | Hot | Independent Auditing of AI Agents. Run by human or the agent itself, to answer the m… |
+| [ZeroLu/awesome-nanobanana-pro](https://github.com/ZeroLu/awesome-nanobanana-pro) | 10,291 | — | Rising | 🚀 An awesome list of curated Nano Banana pro prompts and examples. Your go-to resour… |
+| [fossasia/visdom](https://github.com/fossasia/visdom) | 10,289 | Python | Classic | Tool for real-time visualization, monitoring and collaborative analysis of AI/ML exp… |
+| [TencentARC/PhotoMaker](https://github.com/TencentARC/PhotoMaker) | 10,087 | Jupyter Notebook | Abandoned | PhotoMaker [CVPR 2024] |
+| [OpenMined/PySyft](https://github.com/OpenMined/PySyft) | 10,026 | Python | Classic | Perform data science on data that remains in someone else's server |
+| [friuns2/BlackFriday-GPTs-Prompts](https://github.com/friuns2/BlackFriday-GPTs-Prompts) | 9,725 | — | Mature | List of free GPTs that doesn't require plus subscription |
+| [sparkle-project/Sparkle](https://github.com/sparkle-project/Sparkle) | 9,648 | Objective-C | Classic | A software update framework for macOS |
+| [advaitpaliwal/feynman](https://github.com/advaitpaliwal/feynman) | 8,871 | TypeScript | Rising | The open source AI research agent. |
+| [rockbenben/ChatGPT-Shortcut](https://github.com/rockbenben/ChatGPT-Shortcut) | 8,738 | TypeScript | Classic | Stop writing prompts from scratch — a searchable prompt library for ChatGPT, Claude,… |
+| [simplifaisoul/osiris](https://github.com/simplifaisoul/osiris) | 8,561 | TypeScript | Hot | Open Source Global Intelligence Platform - Real-Time OSINT Dashboard - A Palantir Al… |
+| [jamez-bondos/awesome-gpt4o-images](https://github.com/jamez-bondos/awesome-gpt4o-images) | 8,139 | JavaScript | Abandoned | Awesome curated collection of images and prompts generated by GPT-4o and gpt-image-1… |
+| [bombshell-dev/clack](https://github.com/bombshell-dev/clack) | 8,042 | TypeScript | Classic | Effortlessly build beautiful command-line apps |
+| [enquirer/enquirer](https://github.com/enquirer/enquirer) | 7,951 | JavaScript | Abandoned | Stylish, intuitive and user-friendly prompts. Used by eslint, webpack, yarn, pm2, pn… |
+| [evidentlyai/evidently](https://github.com/evidentlyai/evidently) | 7,893 | Jupyter Notebook | Mature | Evidently is ​​an open-source ML and LLM observability framework. Evaluate, test, an… |
+| [h2oai/h2o-3](https://github.com/h2oai/h2o-3) | 7,500 | Jupyter Notebook | Classic | H2O is an Open Source, Distributed, Fast & Scalable Machine Learning Platform: Deep … |
+| [NVIDIA/warp](https://github.com/NVIDIA/warp) | 7,080 | Python | Classic | A Python framework for GPU-accelerated simulation, robotics, and machine learning. |
+| [OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) | 6,996 | JavaScript | Hot | Voice-to-text dictation app with local (Nvidia Parakeet/Whisper) and cloud models (B… |
+| _…and 128 more_ | | | | |
 
 ## Cooling off
 
-Deceleration, not decline. These averaged ≥1★/day across the 81-day long window but are now running below 40% of that rate. Most are still gaining — just far more slowly than they were, which is usually the tail of a launch spike rather than a problem.
+Deceleration, not decline. These averaged ≥1★/day across the 87-day long window but are now running below 40% of that rate. Most are still gaining — just far more slowly than they were, which is usually the tail of a launch spike rather than a problem.
 
 | Repo | Long-run ★/day | Recent ★/day | Now at | Last push | Lifecycle |
 |---|---|---|---|---|---|
-| [HeartMuLa/heartlib](https://github.com/HeartMuLa/heartlib) | 1.2 | -2.5 | **-209%** of prior pace | 4mo ago | Declining |
-| [axios/axios](https://github.com/axios/axios) | 1.5 | -1.8 | **-123%** of prior pace | 3d ago | Classic |
-| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 1.3 | -0.1 | **-8%** of prior pace | 4mo ago | Declining |
-| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 4.1 | -0.1 | **-2%** of prior pace | 5mo ago | Declining |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | 71.2 | 7.0 | **10%** of prior pace | 1d ago | Hot |
-| [nearai/ironclaw](https://github.com/nearai/ironclaw) | 2.0 | 0.2 | **13%** of prior pace | 0d ago | Hot |
-| [hexo-ai/sia](https://github.com/hexo-ai/sia) | 11.2 | 1.9 | **17%** of prior pace | 5d ago | Rising |
-| [Suvink/cut-it-out](https://github.com/Suvink/cut-it-out) | 3.0 | 0.5 | **17%** of prior pace | 8mo ago | Declining |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 155.2 | 26.0 | **17%** of prior pace | 0d ago | Classic |
-| [https-deeplearning-ai/deeplearning-ai](https://github.com/https-deeplearning-ai/deeplearning-ai) | 1.9 | 0.3 | **19%** of prior pace | 2mo ago | Mature |
-| [microsoft/fara](https://github.com/microsoft/fara) | 8.6 | 1.7 | **20%** of prior pace | 1mo ago | Rising |
-| [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | 28.0 | 5.8 | **21%** of prior pace | 1mo ago | Declining |
-| [i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 1.2 | 0.3 | **26%** of prior pace | 3d ago | Mature |
-| [allenai/olmocr](https://github.com/allenai/olmocr) | 25.0 | 6.5 | **26%** of prior pace | 5mo ago | Declining |
-| [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 29.7 | 8.0 | **27%** of prior pace | 18d ago | Mature |
+| [OpenZeppelin/openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | 1.1 | -0.6 | **-58%** of prior pace | 1d ago | Classic |
+| [TurixAI/TuriX-CUA](https://github.com/TurixAI/TuriX-CUA) | 1.1 | -0.5 | **-45%** of prior pace | 1mo ago | Mature |
+| [DevAgentForge/Open-Claude-Cowork](https://github.com/DevAgentForge/Open-Claude-Cowork) | 1.0 | -0.4 | **-36%** of prior pace | 5mo ago | Declining |
+| [ValueCell-ai/valuecell](https://github.com/ValueCell-ai/valuecell) | 2.5 | -0.1 | **-5%** of prior pace | 6mo ago | Declining |
+| [iternal-technologies-partners/blockify-agentic-data-optimization](https://github.com/iternal-technologies-partners/blockify-agentic-data-optimization) | 1.2 | 0.0 | **0%** of prior pace | 4mo ago | Declining |
+| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | 1.2 | 0.0 | **0%** of prior pace | 9d ago | Declining |
+| [Avaiga/taipy](https://github.com/Avaiga/taipy) | 2.3 | 0.0 | **0%** of prior pace | 27d ago | Mature |
+| [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 3.9 | 0.1 | **3%** of prior pace | 5mo ago | Declining |
+| [russellromney/honker](https://github.com/russellromney/honker) | 2.2 | 0.1 | **6%** of prior pace | 1d ago | Hot |
+| [hexabot-ai/Hexabot](https://github.com/hexabot-ai/Hexabot) | 2.7 | 0.2 | **9%** of prior pace | 13d ago | Mature |
+| [gamosoft/NoteDiscovery](https://github.com/gamosoft/NoteDiscovery) | 2.7 | 0.2 | **9%** of prior pace | 1d ago | Hot |
+| [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | 1.3 | 0.1 | **10%** of prior pace | 11mo ago | Declining |
+| [morphik-org/morphik-core](https://github.com/morphik-org/morphik-core) | 1.2 | 0.1 | **11%** of prior pace | 2d ago | Mature |
+| [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | 26.3 | 3.5 | **13%** of prior pace | 1mo ago | Declining |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | 146.1 | 25.4 | **17%** of prior pace | 0d ago | Classic |
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **18 of the graph's 37 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **16 of the graph's 38 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
-- **Community 15** (6): `DietrichGebert/ponytail`, `diegosouzapw/OmniRoute`, `nextlevelbuilder/ui-ux-pro-max-skill`, `Graphify-Labs/graphify`, `ayghri/i-have-adhd`, `affaan-m/ECC`
-- **Community 2** (5): `earendil-works/pi`, `TencentCloud/TencentDB-Agent-Memory`, `K-Dense-AI/scientific-agent-skills`, `santifer/career-ops`, `JuliusBrussee/caveman`
-- **Community 0** (4): `public-apis/public-apis`, `sindresorhus/awesome`, `codecrafters-io/build-your-own-x`, `DigitalPlatDev/FreeDomain`
-- **Community 7** (4): `harry0703/MoneyPrinterTurbo`, `NousResearch/hermes-agent`, `obra/superpowers`, `MadsLorentzen/ai-job-search`
-- **Community 1** (4): `msitarzewski/agency-agents`, `nexu-io/open-design`, `herdrdev/herdr`, `anomalyco/opencode`
-- **Community 19** (2): `usestrix/strix`, `block/buzz`
-- **Community 16** (2): `semantica-agi/semantica`, `virgiliojr94/book-to-skill`
-- **Community 18** (2): `calesthio/OpenMontage`, `github/spec-kit`
-- **Community 9** (2): `Alishahryar1/free-claude-code`, `OpenCut-app/OpenCut`
+- **Community 16** (12): `DietrichGebert/ponytail`, `stablyai/orca`, `affaan-m/ECC`, `diegosouzapw/OmniRoute`, `cathrynlavery/diagram-design`, `Graphify-Labs/graphify`, `VoltAgent/awesome-design-md`, `nextlevelbuilder/ui-ux-pro-max-skill`, `herdrdev/herdr`, `nexu-io/open-design`, `ayghri/i-have-adhd`, `addyosmani/agent-skills`
+- **Community 4** (5): `deepseek-ai/deepseek-harness`, `public-apis/public-apis`, `sindresorhus/awesome`, `multica-ai/andrej-karpathy-skills`, `codecrafters-io/build-your-own-x`
+- **Community 17** (5): `debpalash/VoiceStudio`, `MadsLorentzen/ai-job-search`, `obra/superpowers`, `harry0703/MoneyPrinterTurbo`, `tashfeenahmed/freellmapi`
+- **Community 10** (2): `K-Dense-AI/scientific-agent-skills`, `JuliusBrussee/caveman`
+- **Community 23** (2): `NousResearch/hermes-agent`, `guillaumemeyer/watermarks-remover`
+- **Community 13** (2): `calesthio/OpenMontage`, `firecrawl/firecrawl`
+- **Community 6** (2): `openai/codex`, `unclecode/crawl4ai`
+- **Community 22** (2): `anthropics/skills`, `usestrix/strix`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
 - `DietrichGebert/ponytail` ⇄ `affaan-m/ECC` (w=0.435) — topics: ai-agents, claude, claude-code, developer-tools
-- `NousResearch/hermes-agent` ⇄ `affaan-m/ECC` (w=0.313) — topics: ai-agents, llm, anthropic, claude
-- `MadsLorentzen/ai-job-search` ⇄ `santifer/career-ops` (w=0.280) — topics: ai, career, claude-code, job-application
-- `calesthio/OpenMontage` ⇄ `unslothai/unsloth` (w=0.269) — topics: agent, ai, image-generation, openai
-- `ayghri/i-have-adhd` ⇄ `affaan-m/ECC` (w=0.218) — topics: developer-tools, productivity; authors: Souptik96
-- `JuliusBrussee/caveman` ⇄ `santifer/career-ops` (w=0.190) — topics: ai, anthropic, claude, claude-code; authors: github-actions[bot]
+- `addyosmani/agent-skills` ⇄ `cathrynlavery/diagram-design` (w=0.375) — topics: agent-skills, claude-code, codex; authors: mvanhorn, NgoQuocViet2001
+- `FlashML-org/FreeToken` ⇄ `sgl-project/sglang` (w=0.350) — topics: glm, inference, minimax, moe
+- `ayghri/i-have-adhd` ⇄ `affaan-m/ECC` (w=0.221) — topics: developer-tools, productivity; authors: Souptik96
 - `MadsLorentzen/ai-job-search` ⇄ `NousResearch/hermes-agent` (w=0.186) — topics: ai, ai-agents, claude-code
-- `public-apis/public-apis` ⇄ `sindresorhus/awesome` (w=0.168) — topics: resources, lists; authors: morning-verlu
+- `public-apis/public-apis` ⇄ `sindresorhus/awesome` (w=0.166) — topics: resources, lists; authors: AkashGowdaNC
 - `ayghri/i-have-adhd` ⇄ `DietrichGebert/ponytail` (w=0.143) — topics: claude-code-plugin, developer-tools
-- `DigitalPlatDev/FreeDomain` ⇄ `codecrafters-io/build-your-own-x` (w=0.100) — topics: free
+- `deepseek-ai/deepseek-harness` ⇄ `nexu-io/open-design` (w=0.141) — topics: dsh, dsh-plugin
+- `tashfeenahmed/freellmapi` ⇄ `MadsLorentzen/ai-job-search` (w=0.054) — authors: shahidbeig-a11y
 
 **What the risers are written in** — language mix of the top 40 movers:
 
 - **Python** — 19
-- **TypeScript** — 7
+- **TypeScript** — 8
 - **JavaScript** — 3
-- **Rust** — 3
 - **—** — 3
-- **Shell** — 2
-- **Markdown** — 2
+- **Rust** — 2
+- **HTML** — 1
+- **Shell** — 1
 - **Go** — 1
 
 ## Methodology & caveats
 
 - **Source**: `data/snapshots/*.json` diffed against `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
-- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31 (10 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
+- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31, 2026-09-06 (11 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
 - **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a fixed cadence — consecutive vintages here range from 1 day to several weeks apart. The recent window therefore does not always use the immediately preceding snapshot: it uses the newest one at least 7 days back, because a 1-day window amplifies noise far more than it reveals movement. Per-day normalization keeps the boards comparable across refreshes either way.
 - **Star counts are a popularity signal, not a quality one.** A launch post, a conference talk, or a newsletter mention moves stars without anything changing in the code.
 - **Only repos present in both snapshots are diffed.** Newly starred repos appear under *New entrants* with no growth figure; unstarred repos silently drop out.
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 1,584 · Window: 2026-08-11 → 2026-08-31 (20d) · Snapshot: 2026-08-31T12:10:08.018Z</sub>
+<sub>Repos tracked: 1,854 · Window: 2026-08-29 → 2026-09-06 (8d) · Snapshot: 2026-09-06T08:24:34.321Z</sub>

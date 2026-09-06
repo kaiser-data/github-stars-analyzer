@@ -3,9 +3,9 @@
   "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
   "file": "mcp-tooling.md",
   "category": "AI / MCP",
-  "summary": "40 MCP projects (559,325\u2605): SDKs/frameworks, clients, gateways, and 25 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
+  "summary": "40 MCP projects (562,060\u2605): SDKs/frameworks, clients, gateways, and 25 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
   "tool_count": 40,
-  "total_stars": 559325,
+  "total_stars": 562060,
   "categories": {
     "SDK/framework": 5,
     "Client/host": 3,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "punkpeye/awesome-mcp-servers",
-      "stars": 93560
+      "stars": 94371
     },
     {
       "name": "modelcontextprotocol/servers",
-      "stars": 89985
+      "stars": 90105
     },
     {
       "name": "upstash/context7",
-      "stars": 61439
+      "stars": 61682
     },
     {
       "name": "microsoft/playwright-mcp",
-      "stars": 36650
+      "stars": 36841
     },
     {
       "name": "github/github-mcp-server",
-      "stars": 32621
+      "stars": 32742
     }
   ],
-  "snapshot": "2026-08-31T12:10:08.018Z",
-  "generated": "2026-08-31",
+  "snapshot": "2026-09-06T08:24:34.321Z",
+  "generated": "2026-09-06",
   "generator": "scripts/reports/mcp_tooling.py",
-  "created": "2026-08-30"
+  "created": "2026-05-31"
 }

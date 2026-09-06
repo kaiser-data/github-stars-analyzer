@@ -1,8 +1,8 @@
 # Voice AI Agents — Landscape Report
 
-> Derived from **kaiser-data**'s 1,900 starred repos (snapshot `2026-08-31T12:10:08.018Z`), cross-referenced with the repo-similarity graph (1,900 nodes / 6,181 edges, 37 communities).
+> Derived from **kaiser-data**'s 2,022 starred repos (snapshot `2026-09-06T08:24:34.321Z`), cross-referenced with the repo-similarity graph (2,022 nodes / 6,605 edges, 38 communities).
 >
-> Generated 2026-08-31 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
+> Generated 2026-09-06 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/voice-agents-top-tools.svg)
 
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-- **28 voice-AI projects** in your stars (**635,365★** combined), organized along the voice-agent loop:
+- **28 voice-AI projects** in your stars (**644,457★** combined), organized along the voice-agent loop:
   - **Realtime voice-agent framework** (4): `pipecat`, `agents`, `ten-framework`, `fastrtc`
   - **Speech-to-text / ASR** (6): `whisper`, `whisper.cpp`, `faster-whisper`, `whisperX`, `RealtimeSTT`, `whisper.unity`
   - **Text-to-speech / TTS** (9): `TTS`, `bark`, `VoxCPM`, `chatterbox`, `supertonic`, `Qwen3-TTS`, `neutts`, `IMS-Toucan`, `voicebox-pytorch`
@@ -42,34 +42,34 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [openai/whisper](https://github.com/openai/whisper) | Speech-to-text / ASR | Python | MIT | 108,190 (▲159) | Mature | 40 | active | 1mo ago | 4.0y | 2 |
-| [CorentinJ/Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning) | Voice cloning / studio | Python | NOASSERTION | 60,122 (▲6) | Mature | 24 | slowing | 5mo ago | 7.3y | 0 |
-| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech-to-text / ASR | C++ | MIT | 53,323 (▲84) | Classic | 95 | very active | 0d ago | 3.9y | 48 |
-| [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | Voice cloning / studio | TypeScript | MIT | 51,931 (▲281) | Hot | 86 | very active | 23d ago | 7mo | 32 |
-| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Voice-capable runtime / serving | Go | MIT | 48,780 (▲69) | Classic | 84 | very active | 0d ago | 3.5y | 10 |
-| [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Text-to-speech / TTS | Python | MPL-2.0 | 45,972 (▲9) | Abandoned | 10 | stale | 2.0y ago | 6.3y | 0 |
-| [suno-ai/bark](https://github.com/suno-ai/bark) | Text-to-speech / TTS | Jupyter Notebook | MIT | 39,260 (▲7) | Abandoned | 5 | stale | 2.0y ago | 3.4y | 0 |
-| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Text-to-speech / TTS | Python | Apache-2.0 | 36,360 (▲173) | Rising | 72 | active | 5d ago | 11mo | 7 |
-| [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Text-to-speech / TTS | Python | MIT | 26,213 (▲43) | Declining | 36 | active | 1mo ago | 1.4y | 2 |
-| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech-to-text / ASR | Python | MIT | 25,159 (▲42) | Declining | 15 | stale | 9mo ago | 3.6y | 0 |
-| [m-bain/whisperX](https://github.com/m-bain/whisperX) | Speech-to-text / ASR | Python | BSD-2-Clause | 23,823 (▲42) | Mature | 68 | active | 1d ago | 3.7y | 4 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Realtime voice-agent framework | Python | BSD-2-Clause | 15,012 (▲184) | Mature | 79 | very active | 0d ago | 2.7y | 6 |
-| [livekit/agents](https://github.com/livekit/agents) | Realtime voice-agent framework | Python | Apache-2.0 | 13,903 (▲710) | Mature | 99 | very active | 0d ago | 2.9y | 47 |
-| [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | Text-to-speech / TTS | Swift | MIT | 13,743 (▲7) | Declining | 42 | active | 1mo ago | 9mo | 2 |
-| [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | Text-to-speech / TTS | Python | Apache-2.0 | 13,209 (▲80) | Declining | 25 | slowing | 5mo ago | 7mo | 0 |
-| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | Voice cloning / studio | Python | AGPL-3.0 | 12,426 (▲563) | Hot | 80 | very active | 1d ago | 4mo | 4 |
-| [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | Realtime voice-agent framework | Python | NOASSERTION | 11,096 (▲8) | Mature | 84 | very active | 0d ago | 2.2y | 17 |
-| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Speech-to-text / ASR | Python | MIT | 10,099 (▲18) | Classic | 68 | very active | 1d ago | 3.0y | 4 |
-| [neuphonic/neutts](https://github.com/neuphonic/neutts) | Text-to-speech / TTS | Python | NOASSERTION | 6,261 (▲5) | Rising | 48 | active | 1mo ago | 11mo | 2 |
-| [gradio-app/fastrtc](https://github.com/gradio-app/fastrtc) | Realtime voice-agent framework | JavaScript | MIT | 4,625 (▲4) | Declining | 24 | stale | 7mo ago | 1.9y | 0 |
-| [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) | Speech-LLM / omni model | Jupyter Notebook | Apache-2.0 | 3,990 (▲6) | Declining | 28 | slowing | 4mo ago | 11mo | 0 |
-| [Azure-Samples/cognitive-services-speech-sdk](https://github.com/Azure-Samples/cognitive-services-speech-sdk) | Voice-capable runtime / serving | C# | MIT | 3,445 (▲2) | Mature | 60 | active | 27d ago | 8.4y | 5 |
-| [microsoft/foundry-local](https://github.com/microsoft/foundry-local) | Voice-capable runtime / serving | C++ | NOASSERTION | 2,533 (▲5) | Hot | 87 | very active | 0d ago | 1.4y | 19 |
-| [DigitalPhonetics/IMS-Toucan](https://github.com/DigitalPhonetics/IMS-Toucan) | Text-to-speech / TTS | Python | Apache-2.0 | 2,208 | Declining | 22 | stale | 7mo ago | 5.1y | 0 |
-| [alexpinel/Dot](https://github.com/alexpinel/Dot) | Voice-capable runtime / serving | JavaScript | GPL-3.0 | 1,912 (▲1) | Abandoned | 1 | stale | 1.7y ago | 2.5y | 0 |
-| [Macoron/whisper.unity](https://github.com/Macoron/whisper.unity) | Speech-to-text / ASR | C# | MIT | 750 | Declining | 5 | stale | 1.4y ago | 3.4y | 0 |
-| [lucidrains/voicebox-pytorch](https://github.com/lucidrains/voicebox-pytorch) | Text-to-speech / TTS | Python | MIT | 703 (▲1) | Abandoned | 6 | stale | 1.9y ago | 3.1y | 0 |
-| [Picovoice/picollm](https://github.com/Picovoice/picollm) | Voice-capable runtime / serving | Python | Apache-2.0 | 317 | Mature | 58 | active | 20d ago | 2.4y | 2 |
+| [openai/whisper](https://github.com/openai/whisper) | Speech-to-text / ASR | Python | MIT | 108,555 (▲365) | Mature | 48 | active | 6d ago | 4.0y | 3 |
+| [CorentinJ/Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning) | Voice cloning / studio | Python | NOASSERTION | 60,126 (▲4) | Declining | 23 | stale | 6mo ago | 7.3y | 0 |
+| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech-to-text / ASR | C++ | MIT | 53,473 (▲150) | Classic | 97 | very active | 2d ago | 4.0y | 61 |
+| [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | Voice cloning / studio | TypeScript | MIT | 52,390 (▲459) | Hot | 85 | very active | 28d ago | 7mo | 32 |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Voice-capable runtime / serving | Go | MIT | 48,897 (▲117) | Classic | 84 | very active | 0d ago | 3.5y | 14 |
+| [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Text-to-speech / TTS | Python | MPL-2.0 | 45,987 (▲15) | Abandoned | 10 | stale | 2.1y ago | 6.3y | 0 |
+| [suno-ai/bark](https://github.com/suno-ai/bark) | Text-to-speech / TTS | Jupyter Notebook | MIT | 39,259 (▼1) | Abandoned | 5 | stale | 2.0y ago | 3.4y | 0 |
+| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Text-to-speech / TTS | Python | Apache-2.0 | 36,757 (▲397) | Rising | 73 | very active | 4d ago | 11mo | 6 |
+| [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Text-to-speech / TTS | Python | MIT | 26,291 (▲78) | Declining | 36 | active | 1mo ago | 1.4y | 2 |
+| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech-to-text / ASR | Python | MIT | 25,259 (▲100) | Declining | 15 | stale | 9mo ago | 3.6y | 0 |
+| [m-bain/whisperX](https://github.com/m-bain/whisperX) | Speech-to-text / ASR | Python | BSD-2-Clause | 23,912 (▲89) | Mature | 60 | active | 7d ago | 3.7y | 2 |
+| [debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) | Voice cloning / studio | Python | AGPL-3.0 | 19,219 (▲6,793) | Hot | 80 | very active | 1d ago | 4mo | 4 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Realtime voice-agent framework | Python | BSD-2-Clause | 15,259 (▲247) | Mature | 79 | very active | 0d ago | 2.7y | 8 |
+| [livekit/agents](https://github.com/livekit/agents) | Realtime voice-agent framework | Python | Apache-2.0 | 14,029 (▲126) | Mature | 99 | very active | 0d ago | 2.9y | 48 |
+| [supertone-inc/supertonic](https://github.com/supertone-inc/supertonic) | Text-to-speech / TTS | Swift | MIT | 13,764 (▲21) | Declining | 41 | active | 1mo ago | 9mo | 2 |
+| [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | Text-to-speech / TTS | Python | Apache-2.0 | 13,287 (▲78) | Declining | 24 | slowing | 5mo ago | 7mo | 0 |
+| [TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework) | Realtime voice-agent framework | Python | NOASSERTION | 11,110 (▲14) | Mature | 84 | very active | 2d ago | 2.2y | 18 |
+| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Speech-to-text / ASR | Python | MIT | 10,114 (▲15) | Classic | 68 | very active | 7d ago | 3.0y | 4 |
+| [neuphonic/neutts](https://github.com/neuphonic/neutts) | Text-to-speech / TTS | Python | NOASSERTION | 6,270 (▲9) | Rising | 48 | active | 1mo ago | 11mo | 2 |
+| [gradio-app/fastrtc](https://github.com/gradio-app/fastrtc) | Realtime voice-agent framework | JavaScript | MIT | 4,623 (▼2) | Declining | 21 | stale | 7mo ago | 1.9y | 0 |
+| [QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni) | Speech-LLM / omni model | Jupyter Notebook | Apache-2.0 | 4,000 (▲10) | Declining | 28 | slowing | 4mo ago | 11mo | 0 |
+| [Azure-Samples/cognitive-services-speech-sdk](https://github.com/Azure-Samples/cognitive-services-speech-sdk) | Voice-capable runtime / serving | C# | MIT | 3,444 (▼1) | Mature | 59 | active | 1mo ago | 8.4y | 5 |
+| [microsoft/foundry-local](https://github.com/microsoft/foundry-local) | Voice-capable runtime / serving | C++ | NOASSERTION | 2,542 (▲9) | Hot | 87 | very active | 0d ago | 1.4y | 22 |
+| [DigitalPhonetics/IMS-Toucan](https://github.com/DigitalPhonetics/IMS-Toucan) | Text-to-speech / TTS | Python | Apache-2.0 | 2,207 (▼1) | Declining | 21 | stale | 7mo ago | 5.1y | 0 |
+| [alexpinel/Dot](https://github.com/alexpinel/Dot) | Voice-capable runtime / serving | JavaScript | GPL-3.0 | 1,912 | Abandoned | 1 | stale | 1.7y ago | 2.5y | 0 |
+| [Macoron/whisper.unity](https://github.com/Macoron/whisper.unity) | Speech-to-text / ASR | C# | MIT | 751 (▲1) | Declining | 5 | stale | 1.4y ago | 3.5y | 0 |
+| [lucidrains/voicebox-pytorch](https://github.com/lucidrains/voicebox-pytorch) | Text-to-speech / TTS | Python | MIT | 703 | Abandoned | 6 | stale | 1.9y ago | 3.1y | 0 |
+| [Picovoice/picollm](https://github.com/Picovoice/picollm) | Voice-capable runtime / serving | Python | Apache-2.0 | 317 | Mature | 59 | very active | 2d ago | 2.4y | 2 |
 
 ## By category
 
@@ -77,16 +77,16 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 _The orchestrators — they own the real-time loop, turn-taking, barge-in, and transport. This is where you actually *build* a voice agent._
 
-- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 15,012★ · Python · Mature  
+- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 15,259★ · Python · Mature  
   Open-source framework for voice & multimodal conversational AI; wires STT→LLM→TTS with interruptions, VAD, and pluggable vendors.  
   <sub>topics: ai, real-time, voice, voice-assistant, chatbot-framework, chatbots</sub>
-- **[livekit/agents](https://github.com/livekit/agents)** · 13,903★ · Python · Mature  
+- **[livekit/agents](https://github.com/livekit/agents)** · 14,029★ · Python · Mature  
   Realtime voice-AI agent framework on LiveKit's WebRTC transport — turn detection, telephony (SIP), and tool calling built in.  
   <sub>topics: ai, real-time, voice, video, agents, openai</sub>
-- **[TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework)** · 11,096★ · Python · Mature  
+- **[TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework)** · 11,110★ · Python · Mature  
   Low-latency framework for conversational voice-AI agents; graph of multimodal extensions for real-time pipelines.  
   <sub>topics: ai, multi-modal, real-time, video, voice</sub>
-- **[gradio-app/fastrtc](https://github.com/gradio-app/fastrtc)** · 4,625★ · JavaScript · Declining  
+- **[gradio-app/fastrtc](https://github.com/gradio-app/fastrtc)** · 4,623★ · JavaScript · Declining  
   Python real-time audio/video (WebRTC) library — the browser transport layer that turns a model into a live voice app.  
   <sub>topics: artificial-intelligence, llm, python, real-time, speech-to-text, text-to-speech, hacktoberfest, hacktoberfest2025</sub>
 
@@ -94,22 +94,22 @@ _The orchestrators — they own the real-time loop, turn-taking, barge-in, and t
 
 _The ears. Streaming + word timestamps + diarization matter more than raw accuracy once you're in a live conversation._
 
-- **[openai/whisper](https://github.com/openai/whisper)** · 108,190★ · Python · Mature  
+- **[openai/whisper](https://github.com/openai/whisper)** · 108,555★ · Python · Mature  
   The reference open ASR model — robust multilingual transcription via large-scale weak supervision.  
   <sub>topics: —</sub>
-- **[ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp)** · 53,323★ · C++ · Classic  
+- **[ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp)** · 53,473★ · C++ · Classic  
   C/C++ port of Whisper — runs on CPU/edge/mobile with no Python; the embeddable ASR workhorse.  
   <sub>topics: openai, speech-to-text, transformer, whisper, inference, speech-recognition</sub>
-- **[SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)** · 25,159★ · Python · Declining  
+- **[SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)** · 25,259★ · Python · Declining  
   CTranslate2 reimplementation of Whisper — up to 4× faster, lower memory; the production STT default.  
   <sub>topics: deep-learning, inference, quantization, speech-recognition, speech-to-text, transformer, whisper, openai</sub>
-- **[m-bain/whisperX](https://github.com/m-bain/whisperX)** · 23,823★ · Python · Mature  
+- **[m-bain/whisperX](https://github.com/m-bain/whisperX)** · 23,912★ · Python · Mature  
   Whisper + word-level timestamps + speaker diarization — adds the 'who said what, when' a transcript agent needs.  
   <sub>topics: asr, speech, speech-recognition, speech-to-text, whisper</sub>
-- **[KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT)** · 10,099★ · Python · Classic  
+- **[KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT)** · 10,114★ · Python · Classic  
   Low-latency streaming STT with built-in voice-activity detection and wake-word — purpose-built for live voice agents.  
   <sub>topics: python, realtime, speech-to-text</sub>
-- **[Macoron/whisper.unity](https://github.com/Macoron/whisper.unity)** · 750★ · C# · Declining  
+- **[Macoron/whisper.unity](https://github.com/Macoron/whisper.unity)** · 751★ · C# · Declining  
   whisper.cpp bindings for Unity — on-device speech-to-text inside games/XR.  
   <sub>topics: asr, stt, speech-to-text, openai, speech-recognition, whisper, unity3d</sub>
 
@@ -117,28 +117,28 @@ _The ears. Streaming + word timestamps + diarization matter more than raw accura
 
 _The voice. The trade-off is naturalness vs. latency vs. on-device footprint; streaming (first-audio-chunk time) beats total render time for agents._
 
-- **[coqui-ai/TTS](https://github.com/coqui-ai/TTS)** · 45,972★ · Python · Abandoned  
+- **[coqui-ai/TTS](https://github.com/coqui-ai/TTS)** · 45,987★ · Python · Abandoned  
   Battle-tested deep-learning TTS toolkit — many models, voice cloning, 1000+ languages; the OSS TTS staple.  
   <sub>topics: python, text-to-speech, deep-learning, speech, pytorch, tts, vocoder, tacotron</sub>
-- **[suno-ai/bark](https://github.com/suno-ai/bark)** · 39,260★ · Jupyter Notebook · Abandoned  
+- **[suno-ai/bark](https://github.com/suno-ai/bark)** · 39,259★ · Jupyter Notebook · Abandoned  
   Generative audio model — expressive, prompt-driven speech (laughs, music, SFX), not just plain narration.  
   <sub>topics: —</sub>
-- **[OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)** · 36,360★ · Python · Rising  
+- **[OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)** · 36,757★ · Python · Rising  
   Tokenizer-free multilingual TTS with creative voice design and strong zero-shot cloning.  
   <sub>topics: audio, deeplearning, minicpm, python, pytorch, speech, speech-synthesis, text-to-speech</sub>
-- **[resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox)** · 26,213★ · Python · Declining  
+- **[resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox)** · 26,291★ · Python · Declining  
   SoTA open-source TTS with emotion/exaggeration control — a credible ElevenLabs-class voice.  
   <sub>topics: —</sub>
-- **[supertone-inc/supertonic](https://github.com/supertone-inc/supertonic)** · 13,743★ · Swift · Declining  
+- **[supertone-inc/supertonic](https://github.com/supertone-inc/supertonic)** · 13,764★ · Swift · Declining  
   Lightning-fast on-device multilingual TTS running natively via ONNX — edge-friendly voice.  
   <sub>topics: cpp, csharp, go, ios, java, lightweight, nodejs, on-device</sub>
-- **[QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)** · 13,209★ · Python · Declining  
+- **[QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)** · 13,287★ · Python · Declining  
   Qwen team's open TTS series — high-quality multilingual synthesis from a frontier-model lab.  
   <sub>topics: —</sub>
-- **[neuphonic/neutts](https://github.com/neuphonic/neutts)** · 6,261★ · Python · Rising  
+- **[neuphonic/neutts](https://github.com/neuphonic/neutts)** · 6,270★ · Python · Rising  
   Compact on-device TTS model focused on natural, low-footprint speech.  
   <sub>topics: —</sub>
-- **[DigitalPhonetics/IMS-Toucan](https://github.com/DigitalPhonetics/IMS-Toucan)** · 2,208★ · Python · Declining  
+- **[DigitalPhonetics/IMS-Toucan](https://github.com/DigitalPhonetics/IMS-Toucan)** · 2,207★ · Python · Declining  
   Controllable, fast TTS covering 7000+ languages — breadth-first multilingual synthesis.  
   <sub>topics: text-to-speech, toolkit, speech-synthesis, deep-learning, speech-processing, tts, pytorch, speech</sub>
 - **[lucidrains/voicebox-pytorch](https://github.com/lucidrains/voicebox-pytorch)** · 703★ · Python · Abandoned  
@@ -149,13 +149,13 @@ _The voice. The trade-off is naturalness vs. latency vs. on-device footprint; st
 
 _Give the agent a specific identity — clone a reference voice or design a new one. Mind consent/ethics here._
 
-- **[CorentinJ/Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)** · 60,122★ · Python · Mature  
+- **[CorentinJ/Real-Time-Voice-Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)** · 60,126★ · Python · Declining  
   The classic 5-second voice-cloning demo (SV2TTS) — the repo that popularized OSS voice cloning.  
   <sub>topics: deep-learning, pytorch, tensorflow, tts, voice-cloning, python</sub>
-- **[jamiepine/voicebox](https://github.com/jamiepine/voicebox)** · 51,931★ · TypeScript · Hot  
+- **[jamiepine/voicebox](https://github.com/jamiepine/voicebox)** · 52,390★ · TypeScript · Hot  
   Open-source AI voice studio — clone, dictate, and create voices through a polished app.  
   <sub>topics: ai, voice-clone, qwen3-tts, voice-ai, whisper, qwen3-tts-ui, cuda, mlx</sub>
-- **[debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)** · 12,426★ · Python · Hot  
+- **[debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio)** · 19,219★ · Python · Hot  
   Local ElevenLabs alternative — voice cloning, design, and generation without the cloud.  
   <sub>topics: tts, voice-cloning, voice-generation, voice-ai, ai, cuda, mlx, huggingface</sub>
 
@@ -163,7 +163,7 @@ _Give the agent a specific identity — clone a reference voice or design a new 
 
 _The brain that natively hears and speaks — one model instead of a cascade, trading swappability for lower latency and better prosody._
 
-- **[QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni)** · 3,990★ · Jupyter Notebook · Declining  
+- **[QwenLM/Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni)** · 4,000★ · Jupyter Notebook · Declining  
   Natively end-to-end omni-modal LLM (text/audio/vision) — collapses STT+LLM+TTS into one speech-native model.  
   <sub>topics: —</sub>
 
@@ -171,13 +171,13 @@ _The brain that natively hears and speaks — one model instead of a cascade, tr
 
 _Where the models actually run — local OpenAI-compatible servers or hosted SDKs that expose STT/TTS endpoints._
 
-- **[mudler/LocalAI](https://github.com/mudler/LocalAI)** · 48,780★ · Go · Classic  
+- **[mudler/LocalAI](https://github.com/mudler/LocalAI)** · 48,897★ · Go · Classic  
   Drop-in local AI engine exposing OpenAI-compatible TTS/STT/LLM endpoints — self-host the whole voice stack.  
   <sub>topics: llama, ai, llm, stable-diffusion, api, tts, musicgen, mamba</sub>
-- **[Azure-Samples/cognitive-services-speech-sdk](https://github.com/Azure-Samples/cognitive-services-speech-sdk)** · 3,445★ · C# · Mature  
+- **[Azure-Samples/cognitive-services-speech-sdk](https://github.com/Azure-Samples/cognitive-services-speech-sdk)** · 3,444★ · C# · Mature  
   Reference samples for Azure's hosted Speech SDK — STT/TTS/translation if you prefer a managed cloud.  
   <sub>topics: —</sub>
-- **[microsoft/foundry-local](https://github.com/microsoft/foundry-local)** · 2,533★ · C++ · Hot  
+- **[microsoft/foundry-local](https://github.com/microsoft/foundry-local)** · 2,542★ · C++ · Hot  
   Microsoft's local model runtime bundling speech-to-text (Whisper) for offline, on-device voice.  
   <sub>topics: ai-sdk, chat-completions, foundry-local, gpu-acceleration, local-ai, microsoft, on-device-inference, onnx-runtime</sub>
 - **[alexpinel/Dot](https://github.com/alexpinel/Dot)** · 1,912★ · JavaScript · Abandoned  
@@ -191,44 +191,43 @@ _Where the models actually run — local OpenAI-compatible servers or hosted SDK
 
 These are the projects that make something a *voice agent* rather than a model. They sequence ears→brain→voice, cut latency, and — critically — handle **barge-in** so a user can interrupt the bot mid-sentence. Pick the framework first, then slot in STT/TTS.
 
-- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 15,012★ · Python — Open-source framework for voice & multimodal conversational AI; wires STT→LLM→TTS with interruptions, VAD, and pluggable vendors.
-- **[livekit/agents](https://github.com/livekit/agents)** · 13,903★ · Python — Realtime voice-AI agent framework on LiveKit's WebRTC transport — turn detection, telephony (SIP), and tool calling built in.
-- **[TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework)** · 11,096★ · Python — Low-latency framework for conversational voice-AI agents; graph of multimodal extensions for real-time pipelines.
-- **[gradio-app/fastrtc](https://github.com/gradio-app/fastrtc)** · 4,625★ · JavaScript — Python real-time audio/video (WebRTC) library — the browser transport layer that turns a model into a live voice app.
+- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 15,259★ · Python — Open-source framework for voice & multimodal conversational AI; wires STT→LLM→TTS with interruptions, VAD, and pluggable vendors.
+- **[livekit/agents](https://github.com/livekit/agents)** · 14,029★ · Python — Realtime voice-AI agent framework on LiveKit's WebRTC transport — turn detection, telephony (SIP), and tool calling built in.
+- **[TEN-framework/ten-framework](https://github.com/TEN-framework/ten-framework)** · 11,110★ · Python — Low-latency framework for conversational voice-AI agents; graph of multimodal extensions for real-time pipelines.
+- **[gradio-app/fastrtc](https://github.com/gradio-app/fastrtc)** · 4,623★ · JavaScript — Python real-time audio/video (WebRTC) library — the browser transport layer that turns a model into a live voice app.
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 28 tools span **11 of the graph's 37 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
+**Community clustering.** These 28 tools span **13 of the graph's 38 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
 
-- **Community 11** (6): `gradio-app/fastrtc`, `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
-- **Community 6** (6): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`, `suno-ai/bark`, `debpalash/VoiceStudio`
-- **Community 7** (4): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`, `jamiepine/voicebox`
-- **Community 17** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
-- **Community 4** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
-- **Community 22** (2): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`
-- **Community 15** (2): `supertone-inc/supertonic`, `Azure-Samples/cognitive-services-speech-sdk`
+- **Community 1** (6): `gradio-app/fastrtc`, `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
+- **Community 17** (4): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`, `debpalash/VoiceStudio`
+- **Community 12** (4): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`
+- **Community 6** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
+- **Community 3** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
+- **Community 30** (2): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`
+- **Community 28** (2): `microsoft/foundry-local`, `Azure-Samples/cognitive-services-speech-sdk`
 
-**Centrality (PageRank in the full 1,900-repo graph)** — most 'hub-like' voice tools in your ecosystem:
+**Centrality (PageRank in the full 2,022-repo graph)** — most 'hub-like' voice tools in your ecosystem:
 
-- `m-bain/whisperX` — PageRank 0.0012
-- `Picovoice/picollm` — PageRank 0.0012
-- `ggml-org/whisper.cpp` — PageRank 0.0010
-- `Macoron/whisper.unity` — PageRank 0.0009
-- `microsoft/foundry-local` — PageRank 0.0009
-- `mudler/LocalAI` — PageRank 0.0008
-- `OpenBMB/VoxCPM` — PageRank 0.0008
-- `CorentinJ/Real-Time-Voice-Cloning` — PageRank 0.0007
+- `m-bain/whisperX` — PageRank 0.0016
+- `Picovoice/picollm` — PageRank 0.0011
+- `ggml-org/whisper.cpp` — PageRank 0.0011
+- `microsoft/foundry-local` — PageRank 0.0007
+- `Macoron/whisper.unity` — PageRank 0.0007
+- `mudler/LocalAI` — PageRank 0.0006
+- `CorentinJ/Real-Time-Voice-Cloning` — PageRank 0.0006
+- `OpenBMB/VoxCPM` — PageRank 0.0006
 - `DigitalPhonetics/IMS-Toucan` — PageRank 0.0006
-- `KoljaB/RealtimeSTT` — PageRank 0.0006
+- `lucidrains/voicebox-pytorch` — PageRank 0.0005
 
 **Direct links between voice tools** (top similarity edges where both endpoints are in this report):
 
 - `ggml-org/whisper.cpp` ⇄ `SYSTRAN/faster-whisper` (w=0.750) — topics: openai, speech-to-text, transformer, whisper
-- `livekit/agents` ⇄ `TEN-framework/ten-framework` (w=0.653) — topics: ai, real-time, voice, video; authors: 3DRX
+- `livekit/agents` ⇄ `TEN-framework/ten-framework` (w=0.621) — topics: ai, real-time, voice, video
 - `m-bain/whisperX` ⇄ `Macoron/whisper.unity` (w=0.500) — topics: asr, speech-recognition, speech-to-text, whisper
-- `ggml-org/whisper.cpp` ⇄ `Macoron/whisper.unity` (w=0.444) — topics: openai, speech-to-text, whisper, speech-recognition
 - `TEN-framework/ten-framework` ⇄ `pipecat-ai/pipecat` (w=0.425) — topics: ai, real-time, voice
-- `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.422) — topics: ai, real-time, voice; authors: feizhuzheng
+- `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.420) — topics: ai, real-time, voice; authors: github-actions[bot]
 - `OpenBMB/VoxCPM` ⇄ `coqui-ai/TTS` (w=0.370) — topics: python, pytorch, speech, speech-synthesis
 - `SYSTRAN/faster-whisper` ⇄ `Macoron/whisper.unity` (w=0.364) — topics: speech-recognition, speech-to-text, whisper, openai
 - `m-bain/whisperX` ⇄ `SYSTRAN/faster-whisper` (w=0.350) — topics: speech-recognition, speech-to-text, whisper
@@ -238,7 +237,8 @@ These are the projects that make something a *voice agent* rather than a model. 
 - `OpenBMB/VoxCPM` ⇄ `CorentinJ/Real-Time-Voice-Cloning` (w=0.300) — topics: python, pytorch, tts, voice-cloning
 - `CorentinJ/Real-Time-Voice-Cloning` ⇄ `coqui-ai/TTS` (w=0.300) — topics: deep-learning, pytorch, tts, voice-cloning
 - `lucidrains/voicebox-pytorch` ⇄ `DigitalPhonetics/IMS-Toucan` (w=0.272) — topics: deep-learning, text-to-speech
-- …and 5 more.
+- `KoljaB/RealtimeSTT` ⇄ `gradio-app/fastrtc` (w=0.222) — topics: python, speech-to-text
+- …and 3 more.
 
 ## Maintenance & risk signal
 
@@ -246,28 +246,28 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| livekit/agents | 99 | Mature | very active | 6 | 21% | 370 |
-| ggml-org/whisper.cpp | 95 | Classic | very active | 5 | 25% | 40 |
-| microsoft/foundry-local | 87 | Hot | very active | 3 | 21% | 22 |
-| jamiepine/voicebox | 86 | Hot | very active | 8 | 22% | 25 |
-| TEN-framework/ten-framework | 84 | Mature | very active | 3 | 29% | 121 |
-| mudler/LocalAI | 84 | Classic | very active | 2 | 45% | 136 |
-| debpalash/VoiceStudio | 80 | Hot | very active | 1 | 95% | 37 |
-| pipecat-ai/pipecat | 79 | Mature | very active | 1 | 52% | 118 |
-| OpenBMB/VoxCPM | 72 | Rising | active | 2 | 28% | 14 |
-| m-bain/whisperX | 68 | Mature | active | 2 | 25% | 44 |
+| livekit/agents | 99 | Mature | very active | 7 | 19% | 371 |
+| ggml-org/whisper.cpp | 97 | Classic | very active | 15 | 12% | 40 |
+| microsoft/foundry-local | 87 | Hot | very active | 3 | 20% | 23 |
+| jamiepine/voicebox | 85 | Hot | very active | 8 | 22% | 25 |
+| TEN-framework/ten-framework | 84 | Mature | very active | 3 | 28% | 121 |
+| mudler/LocalAI | 84 | Classic | very active | 2 | 42% | 136 |
+| debpalash/VoiceStudio | 80 | Hot | very active | 1 | 91% | 37 |
+| pipecat-ai/pipecat | 79 | Mature | very active | 1 | 59% | 118 |
+| OpenBMB/VoxCPM | 73 | Rising | very active | 2 | 35% | 14 |
 | KoljaB/RealtimeSTT | 68 | Classic | very active | 1 | 86% | 47 |
-| Azure-Samples/cognitive-services-speech-sdk | 60 | Mature | active | 3 | 20% | 107 |
-| Picovoice/picollm | 58 | Mature | active | 1 | 83% | 6 |
+| m-bain/whisperX | 60 | Mature | active | 1 | 50% | 44 |
+| Azure-Samples/cognitive-services-speech-sdk | 59 | Mature | active | 3 | 20% | 107 |
+| Picovoice/picollm | 59 | Mature | very active | 1 | 85% | 6 |
+| openai/whisper | 48 | Mature | active | 2 | 33% | 13 |
 | neuphonic/neutts | 48 | Rising | active | 1 | 94% | 0 |
-| supertone-inc/supertonic | 42 | Declining | active | 1 | 75% | 1 |
-| openai/whisper | 40 | Mature | active | 1 | 50% | 13 |
+| supertone-inc/supertonic | 41 | Declining | active | 1 | 75% | 1 |
 | resemble-ai/chatterbox | 36 | Declining | active | 1 | 50% | 1 |
 | QwenLM/Qwen3-Omni | 28 | Declining | slowing | 0 | 0% | 0 |
-| QwenLM/Qwen3-TTS | 25 | Declining | slowing | 0 | 0% | 0 |
-| gradio-app/fastrtc | 24 | Declining | stale | 0 | 0% | 22 |
-| CorentinJ/Real-Time-Voice-Cloning | 24 | Mature | slowing | 0 | 0% | 0 |
-| DigitalPhonetics/IMS-Toucan | 22 | Declining | stale | 0 | 0% | 14 |
+| QwenLM/Qwen3-TTS | 24 | Declining | slowing | 0 | 0% | 0 |
+| CorentinJ/Real-Time-Voice-Cloning | 23 | Declining | stale | 0 | 0% | 0 |
+| gradio-app/fastrtc | 21 | Declining | stale | 0 | 0% | 22 |
+| DigitalPhonetics/IMS-Toucan | 21 | Declining | stale | 0 | 0% | 14 |
 | SYSTRAN/faster-whisper | 15 | Declining | stale | 0 | 0% | 21 |
 | coqui-ai/TTS | 10 | Abandoned | stale | 0 | 0% | 98 |
 | lucidrains/voicebox-pytorch | 6 | Abandoned | stale | 0 | 0% | 65 |
@@ -291,13 +291,13 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 ## Adjacent (deliberately not listed as voice-AI tools)
 
-- **Chainlit/chainlit** (12,412★) — conversational-AI *chat UI* (audio is secondary) — not a voice-pipeline framework
-- **mastra-ai/mastra** (27,591★) — general TS agent framework with a TTS module — covered by the agent-orchestration report
-- **VoltAgent/voltagent** (10,486★) — general TS agent platform that *can* do TTS — not voice-specific
-- **Fosowl/agenticSeek** (27,074★) — autonomous local agent with an optional voice front-end — general agent, not a voice stack
-- **mozilla-ai/llamafile** (25,810★) — single-file LLM runner that bundles whisper.cpp — general runtime, see inference reports
-- **huggingface/transformers** (164,656★) — hosts most of these speech models, but far too broad to list as a 'voice' tool
-- **unslothai/unsloth** (75,324★) — fine-tunes TTS/audio models among many others — a training tool, not a voice agent
+- **Chainlit/chainlit** (12,431★) — conversational-AI *chat UI* (audio is secondary) — not a voice-pipeline framework
+- **mastra-ai/mastra** (27,730★) — general TS agent framework with a TTS module — covered by the agent-orchestration report
+- **VoltAgent/voltagent** (10,555★) — general TS agent platform that *can* do TTS — not voice-specific
+- **Fosowl/agenticSeek** (27,159★) — autonomous local agent with an optional voice front-end — general agent, not a voice stack
+- **mozilla-ai/llamafile** (25,880★) — single-file LLM runner that bundles whisper.cpp — general runtime, see inference reports
+- **huggingface/transformers** (164,856★) — hosts most of these speech models, but far too broad to list as a 'voice' tool
+- **unslothai/unsloth** (75,696★) — fine-tunes TTS/audio models among many others — a training tool, not a voice agent
 
 ## Methodology & caveats
 
@@ -306,4 +306,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 28 · Snapshot: 2026-08-31T12:10:08.018Z</sub>
+<sub>Tools covered: 28 · Snapshot: 2026-09-06T08:24:34.321Z</sub>
