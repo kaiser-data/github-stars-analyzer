@@ -109,7 +109,7 @@ THEMES = [
         "pentesting, trading, tutoring, job hunting, video. These grow on usefulness to a "
         "specific audience rather than on developer-tool hype.",
         ["usestrix/strix", "TauricResearch/TradingAgents", "HKUDS/Vibe-Trading",
-         "HKUDS/DeepTutor", "santifer/career-ops", "jamiepine/voicebox",
+         "HKUDS/DeepTutor", "career-ops-hq/career-ops", "jamiepine/voicebox",
          "heygen-com/hyperframes", "browser-use/browser-use", "Canner/WrenAI",
          "Zackriya-Solutions/meetily"],
     ),

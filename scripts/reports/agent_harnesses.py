@@ -34,7 +34,7 @@ TAXONOMY = {
     "emcie-co/parlant": ("Harness-as-SDK", "Interaction *control* harness — behavioral guidelines enforced at runtime for customer-facing agents."),
     "strands-agents/harness-sdk": ("Harness-as-SDK", "AWS's open SDK to build an agent harness and control it end-to-end in production."),
     "vercel/eve": ("Harness-as-SDK", "Vercel's framework for building agents — harness + sandbox as one integrated runtime."),
-    "SafeRL-Lab/cheetahclaws": ("Harness-as-SDK", "Fast, easy agent-harness infrastructure aimed at long-horizon, multi-model runs."),
+    "SAIL-Research-Lab/cheetahclaws": ("Harness-as-SDK", "Fast, easy agent-harness infrastructure aimed at long-horizon, multi-model runs."),
     "pydantic/pydantic-ai-harness": ("Harness-as-SDK", "'Batteries for your Pydantic AI agent' — the harness as a thin add-on to a typed agent framework."),
     "1jehuang/jcode": ("Harness-as-SDK", "Rust-built coding-agent harness — CLI agent loop with MCP support and multi-model wiring."),
 

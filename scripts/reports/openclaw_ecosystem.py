@@ -80,7 +80,7 @@ TAXONOMY = {
     "HKUDS/DeepTutor": ("Specialized agent", "Agent-native personalized tutoring."),
     "HKUDS/ClawWork": ("Specialized agent", "OpenClaw as an AI coworker (coding focus) — but check freshness."),
     "Gen-Verse/OpenClaw-RL": ("Specialized agent", "Train any OpenClaw agent simply by talking (RL/skill-learning)."),
-    "SafeRL-Lab/cheetahclaws": ("Specialized agent", "Fast, production-ready Python-native personal assistant inspired by OpenClaw."),
+    "SAIL-Research-Lab/cheetahclaws": ("Specialized agent", "Fast, production-ready Python-native personal assistant inspired by OpenClaw."),
     "hydro13/tandem-browser": ("Specialized agent", "AI-human symbiotic browser with OpenClaw integration."),
 }
 
