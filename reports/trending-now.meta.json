@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 11 data vintages: the 8-day movers, relative breakouts, sustained climbers, 168 new entrants, and what has gone flat.",
-  "tool_count": 229,
-  "total_stars": 6412324,
+  "summary": "Measured star momentum across 12 data vintages: the 7-day movers, relative breakouts, sustained climbers, 192 new entrants, and what has gone flat.",
+  "tool_count": 256,
+  "total_stars": 6500215,
   "categories": {
-    "Risers": 1505,
-    "Breakouts": 1412,
-    "New entrants": 168,
-    "Cooling": 73
+    "Risers": 1494,
+    "Breakouts": 1407,
+    "New entrants": 192,
+    "Cooling": 109
   },
   "top_tools": [
     {
       "name": "DietrichGebert/ponytail",
-      "stars": 128376
+      "stars": 130235
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "stars": 213440
-    },
-    {
-      "name": "K-Dense-AI/scientific-agent-skills",
-      "stars": 43072
+      "stars": 214697
     },
     {
       "name": "debpalash/VoiceStudio",
-      "stars": 19219
+      "stars": 20221
+    },
+    {
+      "name": "affaan-m/ECC",
+      "stars": 252195
     },
     {
       "name": "stablyai/orca",
-      "stars": 62398
+      "stars": 63130
     }
   ],
   "chart_top_series": [
     {
       "name": "DietrichGebert/ponytail",
-      "value": 14327
+      "value": 12391
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 13237
-    },
-    {
-      "name": "K-Dense-AI/scientific-agent-skills",
-      "value": 7753
+      "value": 8865
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 7356
-    },
-    {
-      "name": "stablyai/orca",
-      "value": 7120
+      "value": 7795
     },
     {
       "name": "affaan-m/ECC",
-      "value": 6511
+      "value": 7257
+    },
+    {
+      "name": "stablyai/orca",
+      "value": 5186
     },
     {
       "name": "NousResearch/hermes-agent",
-      "value": 4811
+      "value": 4079
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "value": 4022
     },
     {
       "name": "diegosouzapw/OmniRoute",
-      "value": 4737
+      "value": 3248
     }
   ],
-  "chart_top_title": "Biggest star gains (8d)",
+  "chart_top_title": "Biggest star gains (7d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-06T08:24:34.321Z",
-  "generated": "2026-09-06",
+  "snapshot": "2026-09-07T10:42:15.216Z",
+  "generated": "2026-09-07",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-08"
+  "created": "2026-09-07"
 }

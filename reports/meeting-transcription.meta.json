@@ -3,9 +3,9 @@
   "title": "Meeting Transcription & Conversation Analysis \u2014 Field Guide",
   "file": "meeting-transcription.md",
   "category": "AI / Voice",
-  "summary": "32 meeting-transcription & conversation-analysis projects (468,242\u2605) across the pipeline: end-to-end notetakers, ASR engines, diarization, live streaming, servers, and transcript analytics \u2014 with a verdict per use case.",
+  "summary": "32 meeting-transcription & conversation-analysis projects (468,564\u2605) across the pipeline: end-to-end notetakers, ASR engines, diarization, live streaming, servers, and transcript analytics \u2014 with a verdict per use case.",
   "tool_count": 32,
-  "total_stars": 468242,
+  "total_stars": 468564,
   "categories": {
     "Meeting assistant (end-to-end)": 8,
     "ASR engine / model": 13,
@@ -17,27 +17,27 @@
   "top_tools": [
     {
       "name": "openai/whisper",
-      "stars": 108555
+      "stars": 108667
     },
     {
       "name": "ggml-org/whisper.cpp",
-      "stars": 53473
+      "stars": 53488
     },
     {
       "name": "Zackriya-Solutions/meetily",
-      "stars": 30401
+      "stars": 30437
     },
     {
       "name": "SYSTRAN/faster-whisper",
-      "stars": 25259
+      "stars": 25273
     },
     {
       "name": "m-bain/whisperX",
-      "stars": 23912
+      "stars": 23918
     }
   ],
-  "snapshot": "2026-09-06T08:24:34.321Z",
-  "generated": "2026-09-06",
+  "snapshot": "2026-09-07T10:42:15.216Z",
+  "generated": "2026-09-07",
   "generator": "scripts/reports/meeting_transcription.py",
-  "created": "2026-06-12"
+  "created": "2026-09-07"
 }

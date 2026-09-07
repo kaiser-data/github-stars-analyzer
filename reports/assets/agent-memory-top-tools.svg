@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">mem0ai/mem0</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">64,763</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">64,827</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">MemPalace/mempalace</text>
-<path d="M244,67 h308.7 q4,0 4,4 v10 q0,4 -4,4 h-308.7 z" class="bar"/>
-<text x="562.7" y="76.0" class="val" dominant-baseline="central">58,865</text>
+<path d="M244,67 h308.5 q4,0 4,4 v10 q0,4 -4,4 h-308.5 z" class="bar"/>
+<text x="562.5" y="76.0" class="val" dominant-baseline="central">58,895</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">milvus-io/milvus</text>
-<path d="M244,94 h240.3 q4,0 4,4 v10 q0,4 -4,4 h-240.3 z" class="bar"/>
-<text x="494.3" y="103.0" class="val" dominant-baseline="central">45,994</text>
+<path d="M244,94 h240.2 q4,0 4,4 v10 q0,4 -4,4 h-240.2 z" class="bar"/>
+<text x="494.2" y="103.0" class="val" dominant-baseline="central">46,011</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/LightRAG</text>
 <path d="M244,121 h205.4 q4,0 4,4 v10 q0,4 -4,4 h-205.4 z" class="bar"/>
-<text x="459.4" y="130.0" class="val" dominant-baseline="central">39,429</text>
+<text x="459.4" y="130.0" class="val" dominant-baseline="central">39,453</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/graphrag</text>
 <path d="M244,148 h186.4 q4,0 4,4 v10 q0,4 -4,4 h-186.4 z" class="bar"/>
-<text x="440.4" y="157.0" class="val" dominant-baseline="central">35,850</text>
+<text x="440.4" y="157.0" class="val" dominant-baseline="central">35,873</text>
 </svg>

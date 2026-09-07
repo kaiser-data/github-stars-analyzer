@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,309</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,375</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">mem0ai/mem0</text>
 <path d="M244,67 h234.8 q4,0 4,4 v10 q0,4 -4,4 h-234.8 z" class="bar"/>
-<text x="488.8" y="76.0" class="val" dominant-baseline="central">64,763</text>
+<text x="488.8" y="76.0" class="val" dominant-baseline="central">64,827</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">MemPalace/mempalace</text>
 <path d="M244,94 h213.0 q4,0 4,4 v10 q0,4 -4,4 h-213.0 z" class="bar"/>
-<text x="467.0" y="103.0" class="val" dominant-baseline="central">58,865</text>
+<text x="467.0" y="103.0" class="val" dominant-baseline="central">58,895</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">getzep/graphiti</text>
 <path d="M244,121 h108.9 q4,0 4,4 v10 q0,4 -4,4 h-108.9 z" class="bar"/>
-<text x="362.9" y="130.0" class="val" dominant-baseline="central">30,624</text>
+<text x="362.9" y="130.0" class="val" dominant-baseline="central">30,658</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">topoteretes/cognee</text>
 <path d="M244,148 h108.5 q4,0 4,4 v10 q0,4 -4,4 h-108.5 z" class="bar"/>
-<text x="362.5" y="157.0" class="val" dominant-baseline="central">30,502</text>
+<text x="362.5" y="157.0" class="val" dominant-baseline="central">30,544</text>
 </svg>

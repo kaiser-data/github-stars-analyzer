@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">yt-dlp/yt-dlp</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">189,290</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">189,537</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/markitdown</text>
-<path d="M244,67 h320.2 q4,0 4,4 v10 q0,4 -4,4 h-320.2 z" class="bar"/>
-<text x="574.2" y="76.0" class="val" dominant-baseline="central">178,398</text>
+<path d="M244,67 h321.2 q4,0 4,4 v10 q0,4 -4,4 h-321.2 z" class="bar"/>
+<text x="575.2" y="76.0" class="val" dominant-baseline="central">179,157</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
-<path d="M244,94 h193.3 q4,0 4,4 v10 q0,4 -4,4 h-193.3 z" class="bar"/>
-<text x="447.3" y="103.0" class="val" dominant-baseline="central">108,555</text>
+<path d="M244,94 h193.2 q4,0 4,4 v10 q0,4 -4,4 h-193.2 z" class="bar"/>
+<text x="447.2" y="103.0" class="val" dominant-baseline="central">108,667</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,121 h144.0 q4,0 4,4 v10 q0,4 -4,4 h-144.0 z" class="bar"/>
-<text x="398.0" y="130.0" class="val" dominant-baseline="central">81,454</text>
+<path d="M244,121 h144.2 q4,0 4,4 v10 q0,4 -4,4 h-144.2 z" class="bar"/>
+<text x="398.2" y="130.0" class="val" dominant-baseline="central">81,667</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">opendatalab/MinerU</text>
 <path d="M244,148 h140.1 q4,0 4,4 v10 q0,4 -4,4 h-140.1 z" class="bar"/>
-<text x="394.1" y="157.0" class="val" dominant-baseline="central">79,294</text>
+<text x="394.1" y="157.0" class="val" dominant-baseline="central">79,377</text>
 </svg>
