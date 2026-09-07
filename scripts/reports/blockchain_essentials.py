@@ -273,4 +273,4 @@ print(f"Wrote {META_OUT}")
 print(f"  essential repos mapped: {len(all_repos)}")
 missing = [n for _, _, items in LAYERS for n, _ in items if n not in by_name]
 if missing:
-    print("  NOTE not in dataset:", missing)
+    print("  WARNING not in dataset:", missing)

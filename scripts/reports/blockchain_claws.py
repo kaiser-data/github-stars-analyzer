@@ -263,4 +263,4 @@ print(f"  claws: {len(present_claws)}/{len(CLAWS)} | skill repos: {len(skill_rep
 missing = [n for n in list(CLAWS) + [s for items in SKILLS.values() for s, _ in items]
            if n not in by_name]
 if missing:
-    print("  NOTE not in stars:", missing)
+    print("  WARNING not in stars:", missing)
