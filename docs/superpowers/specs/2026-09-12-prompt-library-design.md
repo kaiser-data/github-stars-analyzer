@@ -117,9 +117,24 @@ present, and rely on the report being regenerated from scratch each build so the
 injection is idempotent per run.
 
 Placement: immediately before `## Methodology & caveats` when present, otherwise
-appended. Ordering constraint — **`build_prompts.py` must run after the report
-generators**, since it edits their output. It is invoked at the end of
-`build_index.py`'s `build()`, after `inject_charts`.
+appended. The guard marker is the section heading itself.
+
+**Ordering is a correctness requirement, not a preference.** `build()` injects
+charts and copies each report to `public/reports/` inside the *same loop*, so
+anything that edits report markdown must run before that loop or the public copy
+silently diverges from the repo copy — the app would show a report with no
+cross-link while `reports/` has one. The sequence in `build_index.py.__main__`
+becomes:
+
+1. `run_generators()` — report generators write `reports/*.md`
+2. `run_prompt_generators()` — prompt generators write `prompts/*`, then inject
+   cross-links into `reports/*.md`
+3. `build()` — chart injection, copy to `public/reports/`, write the report index
+4. `build_prompts_index()` — copy `prompts/*.md` to `public/prompts/`, write
+   `public/prompts/index.json`
+
+Steps 2 and 4 are separate because step 2 must precede the copy in step 3 while
+step 4 has no such constraint and is clearer at the end.
 
 ## App
 
