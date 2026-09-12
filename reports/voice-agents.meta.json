@@ -3,13 +3,13 @@
   "title": "Voice AI Agents \u2014 Landscape Report",
   "file": "voice-agents.md",
   "category": "AI / Voice",
-  "summary": "28 voice-AI projects (644,457\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
-  "tool_count": 28,
-  "total_stars": 644457,
+  "summary": "27 voice-AI projects (630,693\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+  "tool_count": 27,
+  "total_stars": 630693,
   "categories": {
     "Realtime voice-agent framework": 4,
     "Speech-to-text / ASR": 6,
-    "Text-to-speech / TTS": 9,
+    "Text-to-speech / TTS": 8,
     "Voice cloning / studio": 3,
     "Speech-LLM / omni model": 1,
     "Voice-capable runtime / serving": 5
@@ -36,8 +36,8 @@
       "stars": 48897
     }
   ],
-  "snapshot": "2026-09-06T08:24:34.321Z",
-  "generated": "2026-09-06",
+  "snapshot": "2026-09-12T16:25:05.965Z",
+  "generated": "2026-09-12",
   "generator": "scripts/reports/voice_agents.py",
   "created": "2026-06-04"
 }

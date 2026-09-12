@@ -1,20 +1,20 @@
 {
-  "generated": "2026-09-06",
-  "count": 26,
+  "generated": "2026-09-12",
+  "count": 27,
   "reports": [
     {
       "slug": "trending-now",
       "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
       "file": "trending-now.md",
       "category": "AI / Trends",
-      "summary": "Measured star momentum across 11 data vintages: the 8-day movers, relative breakouts, sustained climbers, 168 new entrants, and what has gone flat.",
-      "tool_count": 229,
-      "total_stars": 6412324,
+      "summary": "Measured star momentum across 12 data vintages: the 12-day movers, relative breakouts, sustained climbers, 246 new entrants, and what has gone flat.",
+      "tool_count": 310,
+      "total_stars": 7086734,
       "categories": {
-        "Risers": 1505,
-        "Breakouts": 1412,
-        "New entrants": 168,
-        "Cooling": 73
+        "Risers": 1483,
+        "Breakouts": 1398,
+        "New entrants": 246,
+        "Cooling": 345
       },
       "top_tools": [
         {
@@ -26,12 +26,12 @@
           "stars": 213440
         },
         {
-          "name": "K-Dense-AI/scientific-agent-skills",
-          "stars": 43072
-        },
-        {
           "name": "debpalash/VoiceStudio",
           "stars": 19219
+        },
+        {
+          "name": "affaan-m/ECC",
+          "stars": 250276
         },
         {
           "name": "stablyai/orca",
@@ -41,41 +41,41 @@
       "chart_top_series": [
         {
           "name": "DietrichGebert/ponytail",
-          "value": 14327
+          "value": 10532
         },
         {
           "name": "deepseek-ai/deepseek-harness",
-          "value": 13237
-        },
-        {
-          "name": "K-Dense-AI/scientific-agent-skills",
-          "value": 7753
+          "value": 7608
         },
         {
           "name": "debpalash/VoiceStudio",
-          "value": 7356
-        },
-        {
-          "name": "stablyai/orca",
-          "value": 7120
+          "value": 6793
         },
         {
           "name": "affaan-m/ECC",
-          "value": 6511
+          "value": 5338
+        },
+        {
+          "name": "stablyai/orca",
+          "value": 4454
         },
         {
           "name": "NousResearch/hermes-agent",
-          "value": 4811
+          "value": 3400
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "value": 2898
         },
         {
           "name": "diegosouzapw/OmniRoute",
-          "value": 4737
+          "value": 2748
         }
       ],
-      "chart_top_title": "Biggest star gains (8d)",
+      "chart_top_title": "Biggest star gains (12d)",
       "chart_cat_title": "Repos by movement type",
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
     },
@@ -121,8 +121,8 @@
           "stars": 67682
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
     },
@@ -167,8 +167,8 @@
           "stars": 210461
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
     },
@@ -207,8 +207,8 @@
           "stars": 164856
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
     },
@@ -253,52 +253,10 @@
           "stars": 65631
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/agentic_terminals.py",
       "created": "2026-08-23"
-    },
-    {
-      "slug": "mcp-tooling",
-      "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
-      "file": "mcp-tooling.md",
-      "category": "AI / MCP",
-      "summary": "40 MCP projects (562,060\u2605): SDKs/frameworks, clients, gateways, and 25 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
-      "tool_count": 40,
-      "total_stars": 562060,
-      "categories": {
-        "SDK/framework": 5,
-        "Client/host": 3,
-        "Gateway": 4,
-        "Servers": 25,
-        "Learning": 3
-      },
-      "top_tools": [
-        {
-          "name": "punkpeye/awesome-mcp-servers",
-          "stars": 94371
-        },
-        {
-          "name": "modelcontextprotocol/servers",
-          "stars": 90105
-        },
-        {
-          "name": "upstash/context7",
-          "stars": 61682
-        },
-        {
-          "name": "microsoft/playwright-mcp",
-          "stars": 36841
-        },
-        {
-          "name": "github/github-mcp-server",
-          "stars": 32742
-        }
-      ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
-      "generator": "scripts/reports/mcp_tooling.py",
-      "created": "2026-05-31"
     },
     {
       "slug": "local-vs-infra-stack",
@@ -344,10 +302,52 @@
           "stars": 91060
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
+    },
+    {
+      "slug": "mcp-tooling",
+      "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
+      "file": "mcp-tooling.md",
+      "category": "AI / MCP",
+      "summary": "39 MCP projects (561,790\u2605): SDKs/frameworks, clients, gateways, and 24 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
+      "tool_count": 39,
+      "total_stars": 561790,
+      "categories": {
+        "SDK/framework": 5,
+        "Client/host": 3,
+        "Gateway": 4,
+        "Servers": 24,
+        "Learning": 3
+      },
+      "top_tools": [
+        {
+          "name": "punkpeye/awesome-mcp-servers",
+          "stars": 94371
+        },
+        {
+          "name": "modelcontextprotocol/servers",
+          "stars": 90105
+        },
+        {
+          "name": "upstash/context7",
+          "stars": 61682
+        },
+        {
+          "name": "microsoft/playwright-mcp",
+          "stars": 36841
+        },
+        {
+          "name": "github/github-mcp-server",
+          "stars": 32742
+        }
+      ],
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
+      "generator": "scripts/reports/mcp_tooling.py",
+      "created": "2026-05-31"
     },
     {
       "slug": "agent-orchestration",
@@ -386,8 +386,8 @@
           "stars": 81454
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
     },
@@ -430,8 +430,8 @@
           "stars": 35850
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/agent_memory.py",
       "created": "2026-08-12"
     },
@@ -480,8 +480,8 @@
           "stars": 25722
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
     },
@@ -523,8 +523,8 @@
           "stars": 81454
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/agent_harnesses.py",
       "created": "2026-07-19"
     },
@@ -533,14 +533,14 @@
       "title": "Build Your Own NotebookLM \u2014 The Repo Stack for a Source-Grounded Notebook Clone",
       "file": "notebooklm-stack.md",
       "category": "AI / Apps",
-      "summary": "34 repos (1,397,943\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
-      "tool_count": 34,
-      "total_stars": 1397943,
+      "summary": "33 repos (1,384,179\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
+      "tool_count": 33,
+      "total_stars": 1384179,
       "categories": {
         "Clone / reference app": 5,
         "Source ingestion & parsing": 6,
         "Grounded retrieval & citations": 6,
-        "Audio Overview (TTS / podcast)": 5,
+        "Audio Overview (TTS / podcast)": 4,
         "Audio/video understanding (STT)": 3,
         "Interactive voice mode": 4,
         "Mind map / knowledge graph": 3,
@@ -568,10 +568,54 @@
           "stars": 79294
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
+    },
+    {
+      "slug": "3d-printing-stack",
+      "title": "LLM-Driven 3D Modelling for 3D Printing \u2014 Landscape Report",
+      "file": "3d-printing-stack.md",
+      "category": "Engineering",
+      "summary": "32 tools (311,006\u2605) for driving 3D modelling with LLMs: code-CAD authoring, parametric libraries, implicit/SDF modelling, generative image-to-3D, mesh validation & repair, and print prep & slicing.",
+      "tool_count": 32,
+      "total_stars": 311006,
+      "categories": {
+        "Code-CAD authoring": 5,
+        "Parametric component library": 3,
+        "Implicit / SDF modelling": 3,
+        "Generative 3D (image\u2192mesh)": 6,
+        "Mesh validation & repair": 7,
+        "Print prep & slicing": 4,
+        "Agent bridge / viewer": 4
+      },
+      "top_tools": [
+        {
+          "name": "Comfy-Org/ComfyUI",
+          "stars": 131687
+        },
+        {
+          "name": "ahujasid/blender-mcp",
+          "stars": 28331
+        },
+        {
+          "name": "OrcaSlicer/OrcaSlicer",
+          "stars": 15676
+        },
+        {
+          "name": "img2threejs/img2threejs",
+          "stars": 15329
+        },
+        {
+          "name": "Tencent-Hunyuan/Hunyuan3D-2",
+          "stars": 14822
+        }
+      ],
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
+      "generator": "scripts/reports/printing_stack.py",
+      "created": "2026-09-12"
     },
     {
       "slug": "meeting-transcription",
@@ -611,8 +655,8 @@
           "stars": 23912
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
     },
@@ -653,8 +697,8 @@
           "stars": 106826
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/ai_coding_tuis.py",
       "created": "2026-07-19"
     },
@@ -695,8 +739,8 @@
           "stars": 40859
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
     },
@@ -737,53 +781,10 @@
           "stars": 47739
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/openclaw_ecosystem.py",
       "created": "2026-05-31"
-    },
-    {
-      "slug": "voice-agents",
-      "title": "Voice AI Agents \u2014 Landscape Report",
-      "file": "voice-agents.md",
-      "category": "AI / Voice",
-      "summary": "28 voice-AI projects (644,457\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
-      "tool_count": 28,
-      "total_stars": 644457,
-      "categories": {
-        "Realtime voice-agent framework": 4,
-        "Speech-to-text / ASR": 6,
-        "Text-to-speech / TTS": 9,
-        "Voice cloning / studio": 3,
-        "Speech-LLM / omni model": 1,
-        "Voice-capable runtime / serving": 5
-      },
-      "top_tools": [
-        {
-          "name": "openai/whisper",
-          "stars": 108555
-        },
-        {
-          "name": "CorentinJ/Real-Time-Voice-Cloning",
-          "stars": 60126
-        },
-        {
-          "name": "ggml-org/whisper.cpp",
-          "stars": 53473
-        },
-        {
-          "name": "jamiepine/voicebox",
-          "stars": 52390
-        },
-        {
-          "name": "mudler/LocalAI",
-          "stars": 48897
-        }
-      ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
-      "generator": "scripts/reports/voice_agents.py",
-      "created": "2026-06-04"
     },
     {
       "slug": "finetuning-stack",
@@ -823,10 +824,53 @@
           "stars": 67394
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
+    },
+    {
+      "slug": "voice-agents",
+      "title": "Voice AI Agents \u2014 Landscape Report",
+      "file": "voice-agents.md",
+      "category": "AI / Voice",
+      "summary": "27 voice-AI projects (630,693\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+      "tool_count": 27,
+      "total_stars": 630693,
+      "categories": {
+        "Realtime voice-agent framework": 4,
+        "Speech-to-text / ASR": 6,
+        "Text-to-speech / TTS": 8,
+        "Voice cloning / studio": 3,
+        "Speech-LLM / omni model": 1,
+        "Voice-capable runtime / serving": 5
+      },
+      "top_tools": [
+        {
+          "name": "openai/whisper",
+          "stars": 108555
+        },
+        {
+          "name": "CorentinJ/Real-Time-Voice-Cloning",
+          "stars": 60126
+        },
+        {
+          "name": "ggml-org/whisper.cpp",
+          "stars": 53473
+        },
+        {
+          "name": "jamiepine/voicebox",
+          "stars": 52390
+        },
+        {
+          "name": "mudler/LocalAI",
+          "stars": 48897
+        }
+      ],
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
+      "generator": "scripts/reports/voice_agents.py",
+      "created": "2026-06-04"
     },
     {
       "slug": "document-extraction",
@@ -865,8 +909,8 @@
           "stars": 66049
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
     },
@@ -909,8 +953,8 @@
           "stars": 53473
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/jetson_inference.py",
       "created": "2026-08-23"
     },
@@ -950,8 +994,8 @@
           "stars": 19390
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
     },
@@ -991,8 +1035,8 @@
           "stars": 30502
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
     },
@@ -1034,8 +1078,8 @@
           "stars": 90105
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
     },
@@ -1076,8 +1120,8 @@
           "stars": 25325
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
     },
@@ -1116,8 +1160,8 @@
           "stars": 242149
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
     },
@@ -1155,8 +1199,8 @@
           "stars": 47739
         }
       ],
-      "snapshot": "2026-09-06T08:24:34.321Z",
-      "generated": "2026-09-06",
+      "snapshot": "2026-09-12T16:25:05.965Z",
+      "generated": "2026-09-12",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"
     }

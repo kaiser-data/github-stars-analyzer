@@ -3,14 +3,14 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 11 data vintages: the 8-day movers, relative breakouts, sustained climbers, 168 new entrants, and what has gone flat.",
-  "tool_count": 229,
-  "total_stars": 6412324,
+  "summary": "Measured star momentum across 12 data vintages: the 12-day movers, relative breakouts, sustained climbers, 246 new entrants, and what has gone flat.",
+  "tool_count": 310,
+  "total_stars": 7086734,
   "categories": {
-    "Risers": 1505,
-    "Breakouts": 1412,
-    "New entrants": 168,
-    "Cooling": 73
+    "Risers": 1483,
+    "Breakouts": 1398,
+    "New entrants": 246,
+    "Cooling": 345
   },
   "top_tools": [
     {
@@ -22,12 +22,12 @@
       "stars": 213440
     },
     {
-      "name": "K-Dense-AI/scientific-agent-skills",
-      "stars": 43072
-    },
-    {
       "name": "debpalash/VoiceStudio",
       "stars": 19219
+    },
+    {
+      "name": "affaan-m/ECC",
+      "stars": 250276
     },
     {
       "name": "stablyai/orca",
@@ -37,41 +37,41 @@
   "chart_top_series": [
     {
       "name": "DietrichGebert/ponytail",
-      "value": 14327
+      "value": 10532
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 13237
-    },
-    {
-      "name": "K-Dense-AI/scientific-agent-skills",
-      "value": 7753
+      "value": 7608
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 7356
-    },
-    {
-      "name": "stablyai/orca",
-      "value": 7120
+      "value": 6793
     },
     {
       "name": "affaan-m/ECC",
-      "value": 6511
+      "value": 5338
+    },
+    {
+      "name": "stablyai/orca",
+      "value": 4454
     },
     {
       "name": "NousResearch/hermes-agent",
-      "value": 4811
+      "value": 3400
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "value": 2898
     },
     {
       "name": "diegosouzapw/OmniRoute",
-      "value": 4737
+      "value": 2748
     }
   ],
-  "chart_top_title": "Biggest star gains (8d)",
+  "chart_top_title": "Biggest star gains (12d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-06T08:24:34.321Z",
-  "generated": "2026-09-06",
+  "snapshot": "2026-09-12T16:25:05.965Z",
+  "generated": "2026-09-12",
   "generator": "scripts/reports/trending_now.py",
   "created": "2026-08-08"
 }

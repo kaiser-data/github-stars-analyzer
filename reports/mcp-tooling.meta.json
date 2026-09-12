@@ -3,14 +3,14 @@
   "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
   "file": "mcp-tooling.md",
   "category": "AI / MCP",
-  "summary": "40 MCP projects (562,060\u2605): SDKs/frameworks, clients, gateways, and 25 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
-  "tool_count": 40,
-  "total_stars": 562060,
+  "summary": "39 MCP projects (561,790\u2605): SDKs/frameworks, clients, gateways, and 24 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
+  "tool_count": 39,
+  "total_stars": 561790,
   "categories": {
     "SDK/framework": 5,
     "Client/host": 3,
     "Gateway": 4,
-    "Servers": 25,
+    "Servers": 24,
     "Learning": 3
   },
   "top_tools": [
@@ -35,8 +35,8 @@
       "stars": 32742
     }
   ],
-  "snapshot": "2026-09-06T08:24:34.321Z",
-  "generated": "2026-09-06",
+  "snapshot": "2026-09-12T16:25:05.965Z",
+  "generated": "2026-09-12",
   "generator": "scripts/reports/mcp_tooling.py",
   "created": "2026-05-31"
 }
