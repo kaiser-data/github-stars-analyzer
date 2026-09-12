@@ -41,6 +41,9 @@ graphify-out/cache/
 scripts/reports/__pycache__/
 graphify-out/.graphify_python
 scripts/__pycache__/
+scripts/prompts/__pycache__/
+tests/__pycache__/
+.pytest_cache/
 
 # Discovery output — regenerable, and a working list rather than a deliverable
 reports/*.candidates.md
