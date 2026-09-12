@@ -50,6 +50,7 @@ GENERATORS = [
     "finetuning_stack.py",
     "trending_now.py",
     "charting_stack.py",
+    "printing_stack.py",
 ]
 
 def run_generators():
