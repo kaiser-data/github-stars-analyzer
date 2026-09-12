@@ -18,7 +18,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "voice-agents"
@@ -30,6 +30,15 @@ META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 # A voice agent is a loop: capture audio → VAD/turn-taking → STT (ears) →
 # LLM/agent (brain) → TTS (voice) → stream back over a realtime transport.
 # Each category below owns one stage; the frameworks stitch them together.
+RETIRED = {
+    "supertone-inc/supertonic": (
+        "Text-to-speech / TTS",
+        "Archived upstream 2026-09 and renamed to `supertone-oss-archive/supertonic`; last in the "
+        "dataset 2026-09-06. Lightning-fast on-device multilingual TTS via ONNX — still usable, no longer developed.",
+        "2026-09-06",
+    ),
+}
+
 TAXONOMY = {
     # Realtime voice-agent frameworks — the orchestrators (the actual "agents")
     "pipecat-ai/pipecat": ("Realtime voice-agent framework", "Open-source framework for voice & multimodal conversational AI; wires STT→LLM→TTS with interruptions, VAD, and pluggable vendors."),
@@ -51,7 +60,6 @@ TAXONOMY = {
     "OpenBMB/VoxCPM": ("Text-to-speech / TTS", "Tokenizer-free multilingual TTS with creative voice design and strong zero-shot cloning."),
     "resemble-ai/chatterbox": ("Text-to-speech / TTS", "SoTA open-source TTS with emotion/exaggeration control — a credible ElevenLabs-class voice."),
     "QwenLM/Qwen3-TTS": ("Text-to-speech / TTS", "Qwen team's open TTS series — high-quality multilingual synthesis from a frontier-model lab."),
-    "supertone-inc/supertonic": ("Text-to-speech / TTS", "Lightning-fast on-device multilingual TTS running natively via ONNX — edge-friendly voice."),
     "neuphonic/neutts": ("Text-to-speech / TTS", "Compact on-device TTS model focused on natural, low-footprint speech."),
     "DigitalPhonetics/IMS-Toucan": ("Text-to-speech / TTS", "Controllable, fast TTS covering 7000+ languages — breadth-first multilingual synthesis."),
     "lucidrains/voicebox-pytorch": ("Text-to-speech / TTS", "Clean PyTorch implementation of Meta's Voicebox — non-autoregressive flow-matching TTS research base."),
@@ -334,8 +342,9 @@ guide = [
      "Word-level alignment + diarization — 'who said what, when'."),
     ("Best-quality open TTS voice", "`resemble-ai/chatterbox` or `coqui-ai/TTS`",
      "SoTA naturalness with emotion control (chatterbox); broad model zoo + cloning (coqui)."),
-    ("Fast on-device TTS", "`supertone-inc/supertonic` or `neuphonic/neutts`",
-     "ONNX/edge-friendly synthesis for low-latency, offline voice."),
+    ("Fast on-device TTS", "`neuphonic/neutts`",
+     "Compact, low-footprint synthesis for low-latency offline voice. (`supertonic` held this slot "
+     "until it was archived upstream — see *Retired from the scored set*.)"),
     ("To clone a specific voice", "`VoiceStudio` or `coqui-ai/TTS`",
      "Local ElevenLabs-style cloning — mind consent/ethics."),
     ("Lowest latency / richest prosody", "`QwenLM/Qwen3-Omni`",
@@ -369,6 +378,8 @@ A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot tim
   "lag GitHub's current state.")
 A("- Re-run after a fresh `classified.json` to refresh stars/activity.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Tools covered: {len(present)} · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:

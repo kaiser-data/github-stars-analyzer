@@ -34,6 +34,11 @@ RETIRED = {
         "Archived upstream; last in the dataset 2026-07-20. Let LLMs control a cloud browser via Browserbase + Stagehand.",
         "2026-07-20",
     ),
+    "storybookjs/mcp": (
+        "Server · dev-tooling",
+        "Archived upstream 2026-09; last in the dataset 2026-09-06. Storybook's MCP server for component-driven workflows.",
+        "2026-09-06",
+    ),
 }
 
 # ---- Curated taxonomy --------------------------------------------------------
@@ -68,7 +73,6 @@ TAXONOMY = {
     "getsentry/sentry-mcp": ("Server · dev-tooling", "Interact with Sentry (errors/issues) via LLMs."),
     "SonarSource/sonarqube-mcp-server": ("Server · dev-tooling", "Official SonarQube MCP server — code quality & security in agents."),
     "czlonkowski/n8n-mcp": ("Server · dev-tooling", "MCP server that helps agents build n8n workflows."),
-    "storybookjs/mcp": ("Server · dev-tooling", "Storybook's MCP server for component-driven workflows."),
 
     # Code-intelligence / context servers
     "oraios/serena": ("Server · code intelligence", "Powerful MCP coding toolkit — semantic retrieval & editing (LSP-backed)."),

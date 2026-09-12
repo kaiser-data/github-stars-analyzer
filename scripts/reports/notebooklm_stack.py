@@ -21,7 +21,7 @@ import json
 import os
 from datetime import datetime, timezone
 
-from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for
+from lib import fmt_stars, CLASSIFIED, GRAPH, fmt_int, days_to_human, activity_label, make_node_for, retired_rows
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SLUG = "notebooklm-stack"
@@ -30,6 +30,15 @@ OUT = os.path.join(ROOT, f"reports/{SLUG}.md")
 META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 
 # ---- Curated taxonomy --------------------------------------------------------
+RETIRED = {
+    "supertone-inc/supertonic": (
+        "Audio Overview (TTS / podcast)",
+        "Archived upstream 2026-09 and renamed to `supertone-oss-archive/supertonic`; last in the "
+        "dataset 2026-09-06. On-device ONNX TTS — still usable, no longer developed.",
+        "2026-09-06",
+    ),
+}
+
 TAXONOMY = {
     # Reference clones & direct NotebookLM tooling
     "lfnovo/open-notebook": ("Clone / reference app", "An actual OSS NotebookLM implementation — notebooks, sources, podcast generation. Study it before writing a line."),
@@ -59,7 +68,6 @@ TAXONOMY = {
     "OpenBMB/VoxCPM": ("Audio Overview (TTS / podcast)", "Tokenizer-free multilingual TTS with creative voice design — distinctive hosts nobody else's demo has."),
     "QwenLM/Qwen3-TTS": ("Audio Overview (TTS / podcast)", "Open TTS model series from Qwen — strong multilingual coverage for non-English Audio Overviews."),
     "coqui-ai/TTS": ("Audio Overview (TTS / podcast)", "Battle-tested TTS toolkit (XTTS voice cloning) — huge ecosystem, but check the maintenance signal below."),
-    "supertone-inc/supertonic": ("Audio Overview (TTS / podcast)", "Lightning-fast on-device TTS via ONNX — podcast generation without a GPU server."),
 
     # Audio & video source understanding (STT)
     "openai/whisper": ("Audio/video understanding (STT)", "The reference open speech recognition — turns audio/video sources into searchable text."),
@@ -114,7 +122,7 @@ BLUEPRINT = [
         ("Ingest", "microsoft/markitdown"),
         ("Tiny index", "StarTrail-org/LEANN"),
         ("STT", "SYSTRAN/faster-whisper"),
-        ("On-device TTS", "supertone-inc/supertonic"),
+        ("On-device TTS", "neuphonic/neutts"),
         ("Reference", "alexpinel/Dot"),
     ]),
 ]
@@ -536,8 +544,9 @@ guide = [
      "Duplex voice pipelines with interruption handling; `fastrtc` if you want it in 20 lines."),
     ("The mind-map view", "`getzep/graphiti`",
      "Real-time knowledge graph that updates as sources arrive."),
-    ("Everything offline on a laptop", "`StarTrail-org/LEANN` + `supertone-inc/supertonic`",
-     "Tiny index + on-device ONNX TTS — the private-notebook pitch NotebookLM can't make."),
+    ("Everything offline on a laptop", "`StarTrail-org/LEANN` + `neuphonic/neutts`",
+     "Tiny index + compact on-device TTS — the private-notebook pitch NotebookLM can't make. "
+     "(`supertonic` filled this slot until it was archived upstream.)"),
     ("A demo nobody else has", "`screenpipe/screenpipe`",
      "Ambient screen/audio capture auto-feeds your notebook — sources add themselves."),
 ]
@@ -577,6 +586,8 @@ A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot tim
 A("- Re-run after a fresh `classified.json` to refresh stars/activity; re-verify service "
   "pricing manually on major model/tool releases.")
 A("")
+for _line in retired_rows(RETIRED, by_name):
+    A(_line)
 A(f"<sub>Tools covered: {len(present)} · Snapshot: {gen}</sub>")
 
 with open(OUT, "w") as f:
