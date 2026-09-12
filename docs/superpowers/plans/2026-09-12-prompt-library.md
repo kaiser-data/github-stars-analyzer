@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - No network calls at generation time. Generators read `data/classified.json` and `reports/*.meta.json` only; output must be reproducible.
-- Reuse `scripts/reports/lib.py` — do not fork `fmt_stars`, `fmt_int`, `activity_label`, `CLASSIFIED`.
+- Reuse `scripts/reports/lib.py` for `CLASSIFIED` and `fmt_int` — do not redefine either. `fmt_stars` is deliberately **not** reused in prompt output: it appends a ▲/▼ snapshot trend marker, which is signal in a landscape report and noise in a build prompt whose stack table already carries health and lifecycle. `activity_label` is not needed by prompts.
 - Every markdown table row must have the same column count as its header. This is the historic bug source in this repo.
 - A `STACK` entry that does not resolve against `classified.json` must print `WARNING missing: [...]` on stdout, surface in the same drift summary as report drift, and render a visible warning banner in the prompt's own markdown. It must **not** fail the build: `build_index.py` deliberately treats curation drift as normal upstream churn (see the comment in its `__main__`), and one stale prompt must not block 27 reports from rebuilding.
 - Cross-link injection must run **before** `build()` copies reports to `public/reports/`, or the two diverge.
@@ -28,7 +28,7 @@
 - Test: `tests/test_prompt_lib.py`
 
 **Interfaces:**
-- Consumes: `scripts/reports/lib.py` → `fmt_int`, `CLASSIFIED`
+- Consumes: `scripts/reports/lib.py` → `fmt_int`, `CLASSIFIED` (imported inside `promptlib.py` and re-exported, so generators import both from `promptlib`)
 - Produces:
   - `resolve_stack(stack, by_name) -> (resolved, missing)` where `stack` is `[(stage:str, full_name:str)]`, `resolved` is `[(stage:str, full_name:str, repo:dict)]`, `missing` is `[str]`
   - `render_stack_table(resolved) -> list[str]` (markdown lines)
@@ -126,11 +126,24 @@ Create `scripts/prompts/promptlib.py`:
 """Shared helpers for prompt generators.
 
 Named promptlib, not lib, because scripts/reports/lib.py already claims `lib`
-and both directories land on sys.path during a full build.
+and both directories land on sys.path during a full build. That rename is what
+lets this module import the reports lib by its own name, below.
 
 Mirrors scripts/reports/lib.py in spirit: pure functions over already-loaded
 data, no I/O beyond the one injection helper, no network.
 """
+
+import os
+import sys
+
+# scripts/reports/lib.py owns CLASSIFIED and fmt_int; reuse them rather than
+# forking. Path insert is done here so the import works regardless of which
+# generator imported this module first.
+_REPORTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports")
+if _REPORTS_DIR not in sys.path:
+    sys.path.insert(0, _REPORTS_DIR)
+
+from lib import CLASSIFIED, fmt_int  # noqa: E402,F401  (re-exported for generators)
 
 PROMPT_SECTION = "## Build something with this stack"
 
@@ -170,7 +183,7 @@ def render_stack_table(resolved):
             "| {stage} | [`{name}`](https://github.com/{name}) | {stars} | {health} | {lc} |".format(
                 stage=stage,
                 name=full_name,
-                stars=f"{repo.get('stars', 0):,}",
+                stars=fmt_int(repo.get("stars", 0)),
                 health=repo.get("health_score", "—"),
                 lc=repo.get("lifecycle_stage", "—"),
             )
@@ -238,7 +251,7 @@ git commit -m "feat: prompt library core — stack resolution and cross-link inj
 - Test: `tests/test_prompt_outputs.py`
 
 **Interfaces:**
-- Consumes: `lib.resolve_stack`, `lib.render_stack_table`; `scripts/reports/lib.py` → `CLASSIFIED`
+- Consumes: `promptlib.resolve_stack`, `promptlib.render_stack_table`, `promptlib.CLASSIFIED` (re-exported from `scripts/reports/lib.py`)
 - Produces: `prompts/stump-base.md`, `prompts/stump-base.meta.json`. Meta schema all later tasks depend on:
   `{slug, title, file, report, summary, stack: [{stage, name, stars, health, lifecycle}], brief, generated, generator}`
 
@@ -337,9 +350,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(ROOT, "scripts", "reports"))
 
-from promptlib import render_stack_table, resolve_stack  # noqa: E402
-
-CLASSIFIED = os.path.join(ROOT, "data/classified.json")
+from promptlib import CLASSIFIED, render_stack_table, resolve_stack  # noqa: E402
 
 SLUG = "stump-base"
 TITLE = "Tree-stump base for a Pokal"
@@ -606,7 +617,7 @@ git commit -m "feat: stump-base prompt generated from the 3d-printing-stack repo
 - Test: `tests/test_build_prompts.py`
 
 **Interfaces:**
-- Consumes: `lib.inject_prompt_links`, `prompts/*.meta.json` from Task 2
+- Consumes: `promptlib.inject_prompt_links`, `prompts/*.meta.json` from Task 2
 - Produces:
   - `run_prompt_generators() -> list[tuple[str, str]]` — returns drift as `[(generator, warning_line)]`, matching `build_index.run_generators()`'s second return value so the two concatenate; raises `RuntimeError` only if a generator exits non-zero
   - `inject_cross_links() -> int` — number of reports modified
@@ -936,7 +947,7 @@ git commit -m "feat: run prompt generators inside the main build, before the pub
 - Test: `tests/test_prompt_outputs.py` (extend)
 
 **Interfaces:**
-- Consumes: same `lib.resolve_stack` / `lib.render_stack_table` contract as Task 2
+- Consumes: same `promptlib.resolve_stack` / `promptlib.render_stack_table` contract as Task 2
 - Produces: `prompts/rag-eval-harness.*`, `prompts/trading-dashboard.*` with the identical meta schema
 
 - [ ] **Step 1: Confirm the stacks resolve before writing briefs**
