@@ -394,6 +394,13 @@ Three rules that matter more than any single number: **require a flat base** —
 - **modelcontextprotocol/servers** (90,105★) — the MCP substrate the bridges build on — covered in the *MCP tooling* report
 - **blender/blender** — not starred; reachable via `blender-mcp` and listed there instead
 
+## Build something with this stack
+
+Ready-to-paste build prompts generated from this report's stack — the tools above, wired into a brief an LLM can act on.
+
+- **Tree-stump base for a Pokal** — A naturalistic tree-stump plinth for an existing trophy, sized entirely from measurements of the trophy it carries.  
+  <sub>`prompts/stump-base.md`</sub>
+
 ## Methodology & caveats
 
 - **Source**: `data/classified.json` + `public/data/graph.json`. No external calls at generation time; fully reproducible.
