@@ -55,26 +55,30 @@ report is derived from it, not the other way round.
 
 **Keep retrieval quality and generation quality in separate columns, and never blend
 them into one number.** Recall@k and MRR (mean reciprocal rank) are retrieval metrics —
-they ask only whether the right chunk was fetched, and at what rank. Faithfulness and
-answer-correctness are generation metrics — they ask whether the model's final answer is
-supported by and consistent with what was fetched. These measure different failure
-modes: a retrieval miss and a generation hallucination look identical in a single
-blended score but need opposite fixes. The CSV must carry `recall_at_k`, `mrr`,
-`faithfulness`, and `answer_correctness` as four distinct columns, and the script must
-refuse to print or write any single score that averages across that boundary. Score a
-run as "retrieval failed" or "generation failed" separately — never as one number that
-hides which stage broke.
+they ask only whether the right chunk was fetched, and at what rank. Faithfulness is a
+generation metric — it asks whether the model's final answer is supported by and
+consistent with what was fetched. These measure different failure modes: a retrieval
+miss and a generation hallucination look identical in a single blended score but need
+opposite fixes. The CSV must carry `recall_at_k`, `mrr`, and `faithfulness` as three
+distinct columns, and the script must refuse to print or write any single score that
+averages across that boundary. Score a run as "retrieval failed" or "generation failed"
+separately — never as one number that hides which stage broke.
+
+Deliberately absent: answer-correctness. Scoring it needs a gold answer to compare the
+model's answer against, and `questions.jsonl` below carries only a gold document id or
+span — no gold answer exists to score against. A number nothing here can ground is
+worse than no number, so this harness reports faithfulness only.
 
 **Reproducibility:** fix the random seed as a top-level constant, `SEED = 42`, and pass
 it to every stochastic step — negative sampling for the question set, any shuffling of
 the document set, and any sampling used by the embedding or index step. Two runs on the
 same corpus and question set must produce byte-identical `recall_at_k` and `mrr`
 columns — the retrieval half of the pipeline has no stochastic step it doesn't control,
-so it has no excuse not to be deterministic. `faithfulness` and `answer_correctness`
-depend on the generation step below and are *not* covered by this guarantee: LLM output
-is not reliably byte-identical run to run, even at temperature 0, across providers or
-model versions. Do not claim byte-identical generation metrics — only the two retrieval
-columns carry that promise.
+so it has no excuse not to be deterministic. `faithfulness` depends on the generation
+step below and is *not* covered by this guarantee: LLM output is not reliably
+byte-identical run to run, even at temperature 0, across providers or model versions.
+Do not claim byte-identical generation metrics — only the two retrieval columns carry
+that promise.
 
 **Baseline flag:** add a `--baseline` command-line flag that runs the retrieval step
 with embeddings disabled, falling back to plain keyword (BM25-style) matching only. A
@@ -117,9 +121,9 @@ Chunk documents at a fixed size (state it as a constant, e.g. `CHUNK_SIZE = 400`
 with a fixed overlap, so chunk boundaries are reproducible run to run.
 
 Print a short console summary at the end: mean recall@k, mean MRR, mean faithfulness,
-mean answer-correctness, and — only when `--baseline` was used — the delta between the
-embedding run and the baseline run for each retrieval metric, never for the generation
-metrics (a keyword-only baseline has no generation stage to compare)."""
+and — only when `--baseline` was used — the delta between the embedding run and the
+baseline run for each retrieval metric, never for the generation metric (a
+keyword-only baseline has no generation stage to compare)."""
 
 VARIANTS = [
     ("Multi-hop questions", "Extend the question set format with a list of gold document "

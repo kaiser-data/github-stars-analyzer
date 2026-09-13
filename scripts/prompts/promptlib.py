@@ -33,8 +33,9 @@ def resolve_stack(stack, by_name):
 
     Returns (resolved, missing). A repo that has left the dataset — archived
     upstream and dropped by sample.mjs, unstarred, or renamed — lands in
-    `missing` so the generator can warn and the build can fail loudly, rather
-    than a prompt quietly recommending a dead tool.
+    `missing` so the generator can warn the reader in the rendered prompt,
+    rather than quietly recommending a dead tool. The build itself does not
+    fail on this — see run_prompt_generators.
     """
     resolved = []
     missing = []

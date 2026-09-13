@@ -140,9 +140,9 @@ usually a root lobe that floated free. Raise the smooth-union `k` rather than re
 repair tool; fixing it at the source keeps the guarantee that made this route worth choosing.
 
 **Test the socket before printing the whole thing.** Slice a 10 mm tall disc containing just
-the socket and print that first — a clearance that is wrong costs minutes there and hours on
-the full base. FDM shrinkage varies enough between filaments that 0.3 mm is a starting point,
-not an answer.
+the socket in `OrcaSlicer/OrcaSlicer` and print that first — a clearance that is wrong costs
+minutes there and hours on the full base. FDM shrinkage varies enough between filaments that
+0.3 mm is a starting point, not an answer.
 
 Then show the render and the trimesh numbers back to the model and iterate. That loop, not
 the first generation, is where the shape gets good.

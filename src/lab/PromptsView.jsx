@@ -55,7 +55,7 @@ function CopyBriefButton({ brief }) {
         ref={taRef}
         readOnly
         tabIndex={-1}
-        aria-hidden="true"
+        aria-label="Prompt text, for manual copy"
         style={{ position: 'fixed', top: 0, left: '-9999px', width: 1, height: 1, opacity: 0 }}
       />
     </>

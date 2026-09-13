@@ -237,5 +237,5 @@ if __name__ == "__main__":
     if failed:
         raise SystemExit(
             f"\n✗ {len(failed)} generator(s) failed: {', '.join(failed)}\n"
-            "  The other reports and the index were still rebuilt."
+            "  The other reports/prompts and the index were still rebuilt."
         )

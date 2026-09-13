@@ -59,9 +59,13 @@ Metrics are live from the dataset.
 >    panel, the linked volume histogram pane, and the moving-average line overlay.
 >    Lightweight Charts' own multi-pane API (a candlestick series and a histogram series
 >    on a linked pane, plus a line series for the overlay, all on one chart instance)
->    gives you the shared/linked x-axis and the combined crosshair tooltip natively —
->    this is the one job the library is purpose-built for, so do not reach for a second
->    charting library to get panel-linking it already does for free. Lightweight Charts
+>    gives you the shared/linked time axis and a native crosshair — this is the one job
+>    the library is purpose-built for, so do not reach for a second charting
+>    library to get panel-linking it already does for free. The combined tooltip is not
+>    native, though: Lightweight Charts' crosshair draws axis labels only, with no data
+>    tooltip of its own, so build it yourself on the library's `subscribeCrosshairMove`
+>    callback, reading every series' value at the hovered time from the callback's param
+>    and rendering them together in one tooltip element. Lightweight Charts
 >    is a JavaScript library with no official Python binding: write the chart-construction
 >    code in plain JavaScript against its UMD bundle, loaded via a `<script>` tag in the
 >    page the app step serves. Do not route it through an unofficial Python wrapper that
