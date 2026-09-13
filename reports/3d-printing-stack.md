@@ -44,26 +44,26 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Generative 3D (image→mesh) | Python | GPL-3.0 | 131,687 | Classic | 85 | very active | 7d ago | 3.7y | 21 |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Generative 3D (image→mesh) | Python | GPL-3.0 | 131,687 (▼189) | Classic | 85 | very active | 7d ago | 3.7y | 21 |
 | [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) | Agent bridge / viewer | Python | MIT | 28,331 | Hot | 58 | very active | 5d ago | 1.5y | 11 |
 | [OrcaSlicer/OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 15,676 | Classic | 83 | very active | 0d ago | 4.2y | 15 |
-| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Generative 3D (image→mesh) | Python | Apache-2.0 | 15,329 | Hot | 68 | very active | 7d ago | 2mo | 3 |
+| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Generative 3D (image→mesh) | Python | Apache-2.0 | 15,329 (▼117) | Hot | 68 | very active | 7d ago | 2mo | 3 |
 | [Tencent-Hunyuan/Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) | Generative 3D (image→mesh) | Python | NOASSERTION | 14,822 | Declining | 6 | stale | 10mo ago | 1.6y | 0 |
 | [isl-org/Open3D](https://github.com/isl-org/Open3D) | Mesh validation & repair | C++ | NOASSERTION | 13,956 | Classic | 64 | very active | 0d ago | 9.8y | 16 |
-| [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | Generative 3D (image→mesh) | Python | MIT | 11,041 | Declining | 26 | slowing | 2mo ago | 9mo | 0 |
-| [openscad/openscad](https://github.com/openscad/openscad) | Code-CAD authoring | C++ | NOASSERTION | 10,146 | Classic | 63 | very active | 7d ago | 15.9y | 13 |
+| [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | Generative 3D (image→mesh) | Python | MIT | 11,041 (▼25) | Declining | 26 | slowing | 2mo ago | 9mo | 0 |
+| [openscad/openscad](https://github.com/openscad/openscad) | Code-CAD authoring | C++ | NOASSERTION | 10,146 (▼8) | Classic | 63 | very active | 7d ago | 15.9y | 13 |
 | [prusa3d/PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 9,327 | Classic | 85 | very active | 11d ago | 10.5y | 8 |
-| [NVIDIA/warp](https://github.com/NVIDIA/warp) | Implicit / SDF modelling | Python | Apache-2.0 | 7,080 | Classic | 77 | very active | 6d ago | 4.5y | 14 |
+| [NVIDIA/warp](https://github.com/NVIDIA/warp) | Implicit / SDF modelling | Python | Apache-2.0 | 7,080 (▼4) | Classic | 77 | very active | 6d ago | 4.5y | 14 |
 | [wjakob/instant-meshes](https://github.com/wjakob/instant-meshes) | Mesh validation & repair | C++ | NOASSERTION | 6,215 | Abandoned | 4 | stale | 4.7y ago | 11.0y | 0 |
-| [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,817 | Mature | 43 | active | 18d ago | 9.9y | 1 |
+| [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,817 (▼2) | Mature | 43 | active | 18d ago | 9.9y | 1 |
 | [CadQuery/cadquery](https://github.com/CadQuery/cadquery) | Code-CAD authoring | Python | NOASSERTION | 5,752 | Classic | 61 | very active | 1d ago | 7.9y | 5 |
-| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,669 | Classic | 82 | very active | 8d ago | 6.6y | 14 |
+| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,669 (▼4) | Classic | 82 | very active | 8d ago | 6.6y | 14 |
 | [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh) | Generative 3D (image→mesh) | Python | Apache-2.0 | 4,520 | Abandoned | 4 | stale | 1.7y ago | 2.4y | 0 |
 | [mikedh/trimesh](https://github.com/mikedh/trimesh) | Mesh validation & repair | Python | MIT | 3,678 | Classic | 74 | very active | 10d ago | 13.1y | 9 |
-| [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,029 | Classic | 67 | very active | 7d ago | 4.2y | 6 |
+| [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,029 (▼7) | Classic | 67 | very active | 7d ago | 4.2y | 6 |
 | [BelfrySCAD/BOSL2](https://github.com/BelfrySCAD/BOSL2) | Parametric component library | OpenSCAD | BSD-2-Clause | 2,361 | Classic | 83 | very active | 2d ago | 7.4y | 5 |
 | [elalish/manifold](https://github.com/elalish/manifold) | Mesh validation & repair | C++ | Apache-2.0 | 2,265 | Classic | 82 | very active | 2d ago | 7.5y | 14 |
-| [TencentARC/Pixal3D](https://github.com/TencentARC/Pixal3D) | Generative 3D (image→mesh) | Python | MIT | 2,238 | Declining | 40 | active | 11d ago | 4mo | 1 |
+| [TencentARC/Pixal3D](https://github.com/TencentARC/Pixal3D) | Generative 3D (image→mesh) | Python | MIT | 2,238 (▼14) | Declining | 40 | active | 11d ago | 4mo | 1 |
 | [neka-nat/freecad-mcp](https://github.com/neka-nat/freecad-mcp) | Agent bridge / viewer | Python | MIT | 2,183 | Mature | 59 | very active | 2d ago | 2.8y | 14 |
 | [fogleman/sdf](https://github.com/fogleman/sdf) | Implicit / SDF modelling | Python | MIT | 2,001 | Abandoned | 4 | stale | 2.1y ago | 5.6y | 0 |
 | [Ultimaker/CuraEngine](https://github.com/Ultimaker/CuraEngine) | Print prep & slicing | C++ | AGPL-3.0 | 1,850 | Classic | 68 | very active | 1d ago | 13.5y | 5 |

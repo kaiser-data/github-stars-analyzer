@@ -13,7 +13,7 @@
 
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
 - **Window**: `2026-08-31` → `2026-09-12` (**12 days**), covering the **1,894 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-09-12` (**93 days**).
-  - The immediately preceding snapshot (`2026-09-06`) is only 6 days before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
+  - The immediately preceding snapshot (`2026-09-07`) is only 5 days before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
 - **1,483 repos gained stars** in the recent window, adding **226,272★** between them.
 - **246 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
@@ -378,7 +378,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 93-day long win
 ## Methodology & caveats
 
 - **Source**: `data/snapshots/*.json` diffed against `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
-- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31, 2026-09-06, 2026-09-12 (12 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
+- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31, 2026-09-06, 2026-09-07, 2026-09-12 (13 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
 - **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a fixed cadence — consecutive vintages here range from 1 day to several weeks apart. The recent window therefore does not always use the immediately preceding snapshot: it uses the newest one at least 7 days back, because a 1-day window amplifies noise far more than it reveals movement. Per-day normalization keeps the boards comparable across refreshes either way.
 - **Star counts are a popularity signal, not a quality one.** A launch post, a conference talk, or a newsletter mention moves stars without anything changing in the code.
 - **Only repos present in both snapshots are diffed.** Newly starred repos appear under *New entrants* with no growth figure; unstarred repos silently drop out.

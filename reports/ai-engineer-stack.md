@@ -223,62 +223,62 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Repo | Tier | Layer | Lang | ★ Stars | Lifecycle | Health | Activity | Last push | Age |
 |---|---|---|---|---|---|---|---|---|---|
-| [obra/superpowers](https://github.com/obra/superpowers) | Trending | Coding agents & MCP | Shell | 282,184 | Hot | 78 | very active | 8d ago | 11mo |
-| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | Inference & serving | Go | 180,266 | Classic | 82 | very active | 8d ago | 3.2y |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | Data & ingestion | TypeScript | 177,012 | Mature | 84 | very active | 6d ago | 2.4y |
-| [anthropics/skills](https://github.com/anthropics/skills) | Trending | Coding agents & MCP | Python | 174,678 | Rising | 50 | active | 9d ago | 11mo |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | Fundamental | Base & training | Python | 164,856 | Classic | 99 | very active | 7d ago | 7.9y |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Must-have | Orchestration & agents | Python | 145,744 | Classic | 84 | very active | 7d ago | 3.9y |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | Python | 144,210 | Hot | 76 | very active | 7d ago | 1.6y |
-| [github/spec-kit](https://github.com/github/spec-kit) | Trending | Coding agents & MCP | Python | 133,643 | Hot | 93 | very active | 8d ago | 1.1y |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Fundamental | Inference & serving | C++ | 127,199 | Classic | 99 | very active | 6d ago | 3.5y |
-| [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | Fundamental | Learning | Jupyter Notebook | 119,235 | Classic | 69 | very active | 7d ago | 3.2y |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | Orchestration & agents | Python | 112,460 | Hot | 79 | very active | 7d ago | 1.9y |
-| [openai/whisper](https://github.com/openai/whisper) | Fundamental | Voice & multimodal | Python | 108,555 | Mature | 48 | active | 12d ago | 4.0y |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | Coding agents & MCP | TypeScript | 106,826 | Hot | 89 | very active | 7d ago | 1.4y |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Fundamental | Learning | Jupyter Notebook | 104,416 | Classic | 52 | active | 11d ago | 3.1y |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | Orchestration & agents | Python | 102,649 | Mature | 72 | very active | 11d ago | 1.7y |
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | Coding agents & MCP | — | 94,371 | Mature | 64 | very active | 11d ago | 1.8y |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Must-have | Inference & serving | Python | 91,060 | Classic | 98 | very active | 6d ago | 3.6y |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Must-have | RAG & retrieval | Go | 90,113 | Mature | 98 | very active | 7d ago | 2.8y |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 90,105 | Hot | 89 | very active | 10d ago | 1.8y |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | Trending | Coding agents & MCP | TypeScript | 86,301 | Mature | 99 | very active | 7d ago | 2.5y |
-| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamental | Learning | — | 82,323 | Declining | 15 | stale | 7mo ago | 3.2y |
-| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 81,706 | Mature | 78 | very active | 11d ago | 2.3y |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | Orchestration & agents | Python | 81,454 | Hot | 84 | very active | 7d ago | 1.4y |
-| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Fundamental | Learning | MDX | 78,046 | Declining | 18 | stale | 6mo ago | 3.7y |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Must-have | Fine-tuning | Python | 75,696 | Mature | 77 | very active | 6d ago | 2.8y |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Must-have | Fine-tuning | Python | 74,599 | Classic | 83 | very active | 8d ago | 3.3y |
-| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Fundamental | Learning | Python | 67,394 | Declining | 19 | stale | 7mo ago | 6.1y |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Trending | Memory | Python | 64,763 | Classic | 78 | very active | 8d ago | 3.2y |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | Memory | Python | 58,865 | Hot | 75 | very active | 7d ago | 5mo |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Must-have | Orchestration & agents | Python | 58,136 | Mature | 84 | very active | 8d ago | 2.9y |
-| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Must-have | Inference & serving | Python | 58,134 | Classic | 88 | very active | 6d ago | 3.1y |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Must-have | RAG & retrieval | Python | 52,031 | Classic | 98 | very active | 7d ago | 3.9y |
-| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Must-have | Inference & serving | Go | 48,897 | Classic | 84 | very active | 6d ago | 3.5y |
-| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Trending | Coding agents & MCP | Python | 48,778 | Mature | 27 | slowing | 3mo ago | 3.3y |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Must-have | Vector store | Go | 45,994 | Classic | 99 | very active | 8d ago | 7.0y |
-| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,065 | Classic | 96 | very active | 6d ago | 6.6y |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | Trending | Orchestration & agents | Python | 42,068 | Classic | 92 | very active | 7d ago | 4.4y |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 42,025 | Hot | 71 | very active | 6d ago | 8mo |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 41,111 | Classic | 76 | very active | 7d ago | 3.1y |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 40,859 | Classic | 99 | very active | 7d ago | 9.6y |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 39,429 | Hot | 78 | very active | 6d ago | 1.9y |
-| [google/langextract](https://github.com/google/langextract) | Trending | Data & ingestion | Python | 38,544 | Mature | 64 | active | 6d ago | 1.2y |
-| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | Must-have | Orchestration & agents | Python | 37,796 | Classic | 82 | very active | 7d ago | 3.7y |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 36,841 | Mature | 76 | very active | 8d ago | 1.5y |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 35,850 | Mature | 70 | very active | 11d ago | 2.5y |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | RAG & retrieval | Python | 35,544 | Hot | 76 | very active | 7d ago | 1.4y |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Must-have | Inference & serving | Python | 35,519 | Mature | 98 | very active | 6d ago | 2.7y |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 34,404 | Classic | 92 | very active | 7d ago | 6.3y |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 34,243 | Classic | 88 | very active | 7d ago | 3.3y |
-| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,318 | Classic | 66 | very active | 11d ago | 7.5y |
-| [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 30,937 | Abandoned | 4 | stale | 1.2y ago | 2.4y |
-| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Fundamental | RAG & retrieval | Jupyter Notebook | 29,385 | Mature | 59 | very active | 8d ago | 2.2y |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Must-have | Vector store | Rust | 29,236 | Classic | 82 | very active | 8d ago | 3.9y |
-| [huggingface/smolagents](https://github.com/huggingface/smolagents) | Must-have | Orchestration & agents | Python | 29,184 | Mature | 56 | active | 18d ago | 1.8y |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Trending | Eval & observability | Python | 21,823 | Classic | 93 | very active | 7d ago | 3.3y |
-| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Trending | Eval & observability | Python | 11,342 | Classic | 83 | very active | 7d ago | 3.8y |
+| [obra/superpowers](https://github.com/obra/superpowers) | Trending | Coding agents & MCP | Shell | 282,184 (▼430) | Hot | 78 | very active | 8d ago | 11mo |
+| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | Inference & serving | Go | 180,266 (▼101) | Classic | 82 | very active | 8d ago | 3.2y |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | Data & ingestion | TypeScript | 177,012 (▼424) | Mature | 84 | very active | 6d ago | 2.4y |
+| [anthropics/skills](https://github.com/anthropics/skills) | Trending | Coding agents & MCP | Python | 174,678 (▼274) | Rising | 50 | active | 9d ago | 11mo |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | Fundamental | Base & training | Python | 164,856 (▼84) | Classic | 99 | very active | 7d ago | 7.9y |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Must-have | Orchestration & agents | Python | 145,744 (▼100) | Classic | 84 | very active | 7d ago | 3.9y |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | Python | 144,210 (▼114) | Hot | 76 | very active | 7d ago | 1.6y |
+| [github/spec-kit](https://github.com/github/spec-kit) | Trending | Coding agents & MCP | Python | 133,643 (▼150) | Hot | 93 | very active | 8d ago | 1.1y |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Fundamental | Inference & serving | C++ | 127,199 (▼137) | Classic | 99 | very active | 6d ago | 3.5y |
+| [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | Fundamental | Learning | Jupyter Notebook | 119,235 (▼89) | Classic | 69 | very active | 7d ago | 3.2y |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | Orchestration & agents | Python | 112,460 (▼392) | Hot | 79 | very active | 7d ago | 1.9y |
+| [openai/whisper](https://github.com/openai/whisper) | Fundamental | Voice & multimodal | Python | 108,555 (▼112) | Mature | 48 | active | 12d ago | 4.0y |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | Coding agents & MCP | TypeScript | 106,826 (▼16) | Hot | 89 | very active | 7d ago | 1.4y |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Fundamental | Learning | Jupyter Notebook | 104,416 (▼90) | Classic | 52 | active | 11d ago | 3.1y |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | Orchestration & agents | Python | 102,649 (▼159) | Mature | 72 | very active | 11d ago | 1.7y |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | Coding agents & MCP | — | 94,371 (▼167) | Mature | 64 | very active | 11d ago | 1.8y |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Must-have | Inference & serving | Python | 91,060 (▼88) | Classic | 98 | very active | 6d ago | 3.6y |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Must-have | RAG & retrieval | Go | 90,113 (▼81) | Mature | 98 | very active | 7d ago | 2.8y |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 90,105 (▼23) | Hot | 89 | very active | 10d ago | 1.8y |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | Trending | Coding agents & MCP | TypeScript | 86,301 (▼111) | Mature | 99 | very active | 7d ago | 2.5y |
+| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamental | Learning | — | 82,323 (▼39) | Declining | 15 | stale | 7mo ago | 3.2y |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 81,706 (▼148) | Mature | 78 | very active | 11d ago | 2.3y |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | Orchestration & agents | Python | 81,454 (▼213) | Hot | 84 | very active | 7d ago | 1.4y |
+| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Fundamental | Learning | MDX | 78,046 (▼28) | Declining | 18 | stale | 6mo ago | 3.7y |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Must-have | Fine-tuning | Python | 75,696 (▼53) | Mature | 77 | very active | 6d ago | 2.8y |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Must-have | Fine-tuning | Python | 74,599 (▼17) | Classic | 83 | very active | 8d ago | 3.3y |
+| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Fundamental | Learning | Python | 67,394 (▼3) | Declining | 19 | stale | 7mo ago | 6.1y |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Trending | Memory | Python | 64,763 (▼64) | Classic | 78 | very active | 8d ago | 3.2y |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | Memory | Python | 58,865 (▼30) | Hot | 75 | very active | 7d ago | 5mo |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Must-have | Orchestration & agents | Python | 58,136 (▼51) | Mature | 84 | very active | 8d ago | 2.9y |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Must-have | Inference & serving | Python | 58,134 (▼65) | Classic | 88 | very active | 6d ago | 3.1y |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Must-have | RAG & retrieval | Python | 52,031 (▼18) | Classic | 98 | very active | 7d ago | 3.9y |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Must-have | Inference & serving | Go | 48,897 (▼55) | Classic | 84 | very active | 6d ago | 3.5y |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Trending | Coding agents & MCP | Python | 48,778 (▼30) | Mature | 27 | slowing | 3mo ago | 3.3y |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Must-have | Vector store | Go | 45,994 (▼17) | Classic | 99 | very active | 8d ago | 7.0y |
+| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,065 (▼5) | Classic | 96 | very active | 6d ago | 6.6y |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | Trending | Orchestration & agents | Python | 42,068 (▼14) | Classic | 92 | very active | 7d ago | 4.4y |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 42,025 (▼55) | Hot | 71 | very active | 6d ago | 8mo |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 41,111 (▼59) | Classic | 76 | very active | 7d ago | 3.1y |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 40,859 (▼8) | Classic | 99 | very active | 7d ago | 9.6y |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 39,429 (▼24) | Hot | 78 | very active | 6d ago | 1.9y |
+| [google/langextract](https://github.com/google/langextract) | Trending | Data & ingestion | Python | 38,544 (▲1) | Mature | 64 | active | 6d ago | 1.2y |
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | Must-have | Orchestration & agents | Python | 37,796 (▼21) | Classic | 82 | very active | 7d ago | 3.7y |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 36,841 (▼25) | Mature | 76 | very active | 8d ago | 1.5y |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 35,850 (▼23) | Mature | 70 | very active | 11d ago | 2.5y |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | RAG & retrieval | Python | 35,544 (▼15) | Hot | 76 | very active | 7d ago | 1.4y |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Must-have | Inference & serving | Python | 35,519 (▼57) | Mature | 98 | very active | 6d ago | 2.7y |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 34,404 (▼13) | Classic | 92 | very active | 7d ago | 6.3y |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 34,243 (▼43) | Classic | 88 | very active | 7d ago | 3.3y |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,318 (▼4) | Classic | 66 | very active | 11d ago | 7.5y |
+| [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 30,937 (▼2) | Abandoned | 4 | stale | 1.2y ago | 2.4y |
+| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Fundamental | RAG & retrieval | Jupyter Notebook | 29,385 (▼8) | Mature | 59 | very active | 8d ago | 2.2y |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Must-have | Vector store | Rust | 29,236 (▼5) | Classic | 82 | very active | 8d ago | 3.9y |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | Must-have | Orchestration & agents | Python | 29,184 (▼23) | Mature | 56 | active | 18d ago | 1.8y |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Trending | Eval & observability | Python | 21,823 (▼23) | Classic | 93 | very active | 7d ago | 3.3y |
+| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Trending | Eval & observability | Python | 11,342 (▼12) | Classic | 83 | very active | 7d ago | 3.8y |
 
 ## Graph analysis — how they relate
 

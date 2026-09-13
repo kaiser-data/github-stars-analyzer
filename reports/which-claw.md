@@ -31,19 +31,19 @@ Composite = 25% health + 25% adoption + 20% resilience + 15% maturity + 15% mome
 
 | # | Claw | Type | Score | ★ Stars | Health | Momentum (★/30d) | Last push | Bus factor | Lang |
 |---|---|---|---|---|---|---|---|---|---|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.760** | 388,996 | 79 | 99,826 | 6d ago | 1 | TypeScript |
-| 🥈 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.730** | 32,734 | 83 | 11,618 | 6d ago | 2 | Rust |
-| 🥉 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.723** | 22,380 | 78 | 9,275 | 6d ago | 4 | TypeScript |
-| 4 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.710** | 47,739 | 83 | 16,028 | 6d ago | 2 | Python |
-| 5 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.703** | 242,149 | 74 | 37,041 | 6d ago | 1 | Python |
-| 6 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.700** | 68,739 | 77 | 18,178 | 6d ago | 1 | TypeScript |
-| 7 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.696** | 19,261 | 83 | 1,271 | 6d ago | 2 | TypeScript |
-| 8 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.688** | 29,942 | 84 | 6,528 | 9d ago | 2 | Go |
-| 9 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.670** | 30,708 | 79 | 10,280 | 6d ago | 2 | TypeScript |
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.760** | 388,996 (▼89) | 79 | 99,826 | 6d ago | 1 | TypeScript |
+| 🥈 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.730** | 32,734 (▼4) | 83 | 11,618 | 6d ago | 2 | Rust |
+| 🥉 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.723** | 22,380 (▼14) | 78 | 9,275 | 6d ago | 4 | TypeScript |
+| 4 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.710** | 47,739 (▼92) | 83 | 16,028 | 6d ago | 2 | Python |
+| 5 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.703** | 242,149 (▼679) | 74 | 37,041 | 6d ago | 1 | Python |
+| 6 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.700** | 68,739 (▼34) | 77 | 18,178 | 6d ago | 1 | TypeScript |
+| 7 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.696** | 19,261 (▼14) | 83 | 1,271 | 6d ago | 2 | TypeScript |
+| 8 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.688** | 29,942 (▼3) | 84 | 6,528 | 9d ago | 2 | Go |
+| 9 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.670** | 30,708 (▼5) | 79 | 10,280 | 6d ago | 2 | TypeScript |
 | 10 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.667** | 12,607 | 80 | 2,733 | 8d ago | 2 | Rust |
-| 11 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.630** | 195,177 | 55 | 56,672 | 27d ago | 2 | Rust |
-| 12 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.552** | 8,066 | 65 | 1,165 | 1mo ago | 1 | Zig |
-| 13 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.479** | 18,163 | 48 | 2,728 | 2mo ago | 0 | Rust |
+| 11 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.630** | 195,177 (▼8) | 55 | 56,672 | 27d ago | 2 | Rust |
+| 12 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.552** | 8,066 (▼3) | 65 | 1,165 | 1mo ago | 1 | Zig |
+| 13 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.479** | 18,163 (▼3) | 48 | 2,728 | 2mo ago | 0 | Rust |
 
 **Where's Hermes?** [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) lands **#5** (composite 0.703) — the **strongest functional claw** and it trails OpenClaw (#1). Health 74, bus factor 1 (vs OpenClaw's 1 — more resilient), 242,149★, very active.
 It sits just behind [`HKUDS/nanobot`](https://github.com/HKUDS/nanobot), which edges it on health (83 vs 74) and resilience (bus 2 vs 1). 

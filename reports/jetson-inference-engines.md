@@ -110,30 +110,30 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Engine | Class | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|
-| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 180,266 | Classic | 82 | very active | 8d ago | 10 |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 127,199 | Classic | 99 | very active | 6d ago | 53 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 91,060 | Classic | 98 | very active | 6d ago | 71 |
-| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,379 | Abandoned | 7 | stale | 1.3y ago | 0 |
-| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 53,473 | Classic | 97 | very active | 8d ago | 61 |
-| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,272 | Mature | 65 | active | 18d ago | 3 |
+| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 180,266 (▼101) | Classic | 82 | very active | 8d ago | 10 |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 127,199 (▼137) | Classic | 99 | very active | 6d ago | 53 |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 91,060 (▼88) | Classic | 98 | very active | 6d ago | 71 |
+| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,379 (▼5) | Abandoned | 7 | stale | 1.3y ago | 0 |
+| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 53,473 (▼15) | Classic | 97 | very active | 8d ago | 61 |
+| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 47,272 (▼21) | Mature | 65 | active | 18d ago | 3 |
 | [microsoft/BitNet](https://github.com/microsoft/BitNet) | Format & quantization | C++ | MIT | 40,228 | Mature | 43 | active | 1mo ago | 3 |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 35,519 | Mature | 98 | very active | 6d ago | 54 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,945 | Hot | 93 | very active | 9d ago | 43 |
-| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 33,755 | Mature | 70 | very active | 6d ago | 1 |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,880 | Classic | 65 | very active | 9d ago | 5 |
-| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,259 | Declining | 14 | stale | 9mo ago | 0 |
-| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,137 | Mature | 52 | active | 26d ago | 3 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 21,769 | Classic | 98 | very active | 6d ago | 37 |
-| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,419 | Classic | 89 | very active | 7d ago | 28 |
-| [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,295 | Classic | 94 | very active | 8d ago | 57 |
-| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 14,627 | Classic | 76 | very active | 7d ago | 27 |
-| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,556 | Classic | 98 | very active | 6d ago | 60 |
-| [apache/tvm](https://github.com/apache/tvm) | Compiler & substrate | Python | Apache  2.0 | 13,718 | Classic | 89 | very active | 7d ago | 23 |
-| [NVIDIA/TensorRT](https://github.com/NVIDIA/TensorRT) | NVIDIA / Jetson path | C++ | Apache  2.0 | 13,321 | Mature | 65 | active | 18d ago | 3 |
-| [LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp) | Edge-viable LLM runtime | C++ | GNU Affero General Public  v3.0 | 11,619 | Classic | 96 | very active | 7d ago | 48 |
-| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) | Datacenter-oriented runtime | Python | Apache  2.0 | 8,044 | Classic | 92 | very active | 7d ago | 25 |
-| [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers) | NVIDIA / Jetson path | Jupyter Notebook | Other | 4,845 | Mature | 43 | active | 1mo ago | 1 |
-| [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) | Speech & non-LLM runtime | C++ | MIT | 4,663 | Classic | 65 | active | 12d ago | 7 |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 35,519 (▼57) | Mature | 98 | very active | 6d ago | 54 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 34,945 (▼51) | Hot | 93 | very active | 9d ago | 43 |
+| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 33,755 (▼50) | Mature | 70 | very active | 6d ago | 1 |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 25,880 (▼17) | Classic | 65 | very active | 9d ago | 5 |
+| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,259 (▼14) | Declining | 14 | stale | 9mo ago | 0 |
+| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,137 (▼2) | Mature | 52 | active | 26d ago | 3 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 21,769 (▼18) | Classic | 98 | very active | 6d ago | 37 |
+| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,419 (▼3) | Classic | 89 | very active | 7d ago | 28 |
+| [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,295 (▼7) | Classic | 94 | very active | 8d ago | 57 |
+| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 14,627 (▼20) | Classic | 76 | very active | 7d ago | 27 |
+| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,556 (▼5) | Classic | 98 | very active | 6d ago | 60 |
+| [apache/tvm](https://github.com/apache/tvm) | Compiler & substrate | Python | Apache  2.0 | 13,718 (▼3) | Classic | 89 | very active | 7d ago | 23 |
+| [NVIDIA/TensorRT](https://github.com/NVIDIA/TensorRT) | NVIDIA / Jetson path | C++ | Apache  2.0 | 13,321 (▼3) | Mature | 65 | active | 18d ago | 3 |
+| [LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp) | Edge-viable LLM runtime | C++ | GNU Affero General Public  v3.0 | 11,619 (▼7) | Classic | 96 | very active | 7d ago | 48 |
+| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) | Datacenter-oriented runtime | Python | Apache  2.0 | 8,044 (▼2) | Classic | 92 | very active | 7d ago | 25 |
+| [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers) | NVIDIA / Jetson path | Jupyter Notebook | Other | 4,845 (▼3) | Mature | 43 | active | 1mo ago | 1 |
+| [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) | Speech & non-LLM runtime | C++ | MIT | 4,663 (▼1) | Classic | 65 | active | 12d ago | 7 |
 
 **Edge-viable LLM runtime**
 
