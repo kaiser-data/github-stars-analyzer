@@ -654,6 +654,13 @@ The one dimension that silently disqualifies an otherwise-correct choice:
 - **jakevdp/PythonDataScienceHandbook** (49,792★) — a book (notebooks) that teaches matplotlib — learning material, not a tool
 - **GeostatsGuy/DataScienceInteractivePython** (2,587★) — teaching notebooks with interactive dashboards — course material
 
+## Build something with this stack
+
+Ready-to-paste build prompts generated from this report's stack — the tools above, wired into a brief an LLM can act on.
+
+- **OHLC trading dashboard** — A single-file OHLC dashboard with a linked volume subplot and moving-average overlay, built to avoid the two classic trading-chart bugs: interpolated market-closed gaps and hue-only direction encoding.  
+  <sub>`prompts/trading-dashboard.md`</sub>
+
 ## Methodology & caveats
 
 - **Source**: `data/classified.json` + `public/data/graph.json` for all repo metrics and graph structure. No API calls at generation time; fully reproducible.

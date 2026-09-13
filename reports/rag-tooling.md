@@ -301,6 +301,13 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 - **NirDiamant/RAG_Techniques** (29,385★) — excellent *tutorial* collection, not a tool/library
 - **KRLabsOrg/LettuceDetect** (602★) — RAG *evaluation* (hallucination detection) — see the LLM-evaluation report
 
+## Build something with this stack
+
+Ready-to-paste build prompts generated from this report's stack — the tools above, wired into a brief an LLM can act on.
+
+- **Retrieval-evaluation harness** — A retrieval-evaluation harness that scores recall@k and MRR against a fixed question set, with a keyword-only baseline so every number has a floor.  
+  <sub>`prompts/rag-eval-harness.md`</sub>
+
 ## Methodology & caveats
 
 - **Source**: `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.

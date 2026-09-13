@@ -28,6 +28,8 @@ REPORTS_DIR = os.path.join(ROOT, "reports")
 
 GENERATORS = [
     "stump_base.py",
+    "rag_eval_harness.py",
+    "trading_dashboard.py",
 ]
 
 
