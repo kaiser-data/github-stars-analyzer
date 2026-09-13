@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Each Gate Can See</title>
+<style>
+:root{
+  --paper:#f4f5f7; --surface:#ffffff; --surface-2:#eaecf0;
+  --ink:#16181d; --ink-2:#3a404b; --muted:#666d7c;
+  --rule:#dcdfe6; --rule-soft:#e8eaef;
+  --accent:#4338a8; --accent-2:#332a86; --accent-soft:#e6e4f6;
+  --caught:#2d6f50; --caught-soft:#dff0e6;
+  --escaped:#a8352c; --escaped-soft:#f7e4e2;
+  --warn:#8a6508; --warn-soft:#f6edd6;
+  --display:"Avenir Next","Segoe UI Variable Display",system-ui,-apple-system,sans-serif;
+  --body:"Iowan Old Style","Charter","Palatino Linotype",Palatino,Georgia,ui-serif,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#101217; --surface:#181b22; --surface-2:#21252e;
+  --ink:#e8eaef; --ink-2:#bcc2cd; --muted:#8c94a3;
+  --rule:#2c323d; --rule-soft:#232831;
+  --accent:#9a8ff0; --accent-2:#b5adf7; --accent-soft:#221e46;
+  --caught:#6fc194; --caught-soft:#14301f;
+  --escaped:#e5877c; --escaped-soft:#361c19;
+  --warn:#dbb45e; --warn-soft:#332a12;
+}}
+:root[data-theme="dark"]{
+  --paper:#101217; --surface:#181b22; --surface-2:#21252e;
+  --ink:#e8eaef; --ink-2:#bcc2cd; --muted:#8c94a3;
+  --rule:#2c323d; --rule-soft:#232831;
+  --accent:#9a8ff0; --accent-2:#b5adf7; --accent-soft:#221e46;
+  --caught:#6fc194; --caught-soft:#14301f;
+  --escaped:#e5877c; --escaped-soft:#361c19;
+  --warn:#dbb45e; --warn-soft:#332a12;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.66}
+.shell{max-width:1080px;margin-inline:auto;padding-inline:22px;padding-block:0 76px}
+p,li{color:var(--ink-2)}
+.narrow{max-width:67ch}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);text-wrap:balance;margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+code,.mono{font-family:var(--mono);font-size:.86em}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.hero{padding-block:56px 34px;border-bottom:2px solid var(--ink)}
+h1{font-size:clamp(38px,7vw,66px);font-weight:700;letter-spacing:-.028em;line-height:1.02;margin-block:14px 0}
+.claim{font-size:clamp(19px,2.3vw,23px);max-width:58ch;margin-block:22px 0;color:var(--ink)}
+.stamp{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  border:1px solid var(--rule);border-radius:2px;padding:4px 9px;color:var(--muted);background:var(--surface)}
+
+.caveat{border:1px solid var(--warn);background:var(--warn-soft);padding:16px 19px;margin-block:26px;border-radius:3px}
+.caveat p{margin:0;color:var(--ink);font-size:16px}
+.caveat strong{color:var(--warn)}
+
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));border:1px solid var(--rule);background:var(--surface);margin-block:30px}
+.fig{padding:20px 18px;border-right:1px solid var(--rule-soft)}
+.fig:last-child{border-right:0}
+.fnum{font-family:var(--display);font-size:33px;font-weight:700;letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
+.fci{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:6px}
+.flab{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px;line-height:1.5}
+
+section{padding-block:46px 6px}
+h2{font-size:clamp(23px,3.3vw,32px);font-weight:700;letter-spacing:-.02em}
+.h2row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:24px}
+h3{font-size:18px;font-weight:600;margin-block:28px 10px}
+
+.sieve{border:1px solid var(--rule);background:var(--surface);padding:24px 18px;overflow-x:auto;margin-block:22px}
+.sieve svg{display:block;min-width:660px;width:100%;height:auto}
+
+.tw{overflow-x:auto;border:1px solid var(--rule);background:var(--surface);margin-block:20px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-family:var(--display);font-size:14.5px}
+th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400;padding:12px 14px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:12px 14px;border-bottom:1px solid var(--rule-soft);color:var(--ink-2);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td strong{color:var(--ink);font-weight:600}
+td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;font-family:var(--mono);font-size:12.5px}
+
+.chip{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:2px;white-space:nowrap}
+.c-plan{background:var(--accent-soft);color:var(--accent)}
+.c-pre{background:var(--caught-soft);color:var(--caught)}
+.c-imp{background:var(--warn-soft);color:var(--warn)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule);background:var(--surface);margin-block:24px}
+.split>div{padding:22px}
+.split>div:first-child{border-right:1px solid var(--rule-soft)}
+.split h4{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.split.known h4{color:var(--muted)}
+.split.known>div:last-child h4{color:var(--accent)}
+.split ul{margin:0;padding-left:19px}
+.split li{margin-bottom:9px;font-size:15.5px}
+
+.test{border-left:3px solid var(--accent);background:var(--accent-soft);padding:20px 22px;margin-block:24px}
+.test p{margin:0;color:var(--ink)}
+.test p+p{margin-top:11px}
+
+ul.plain{padding-left:20px;margin-block:14px}
+ul.plain li{margin-bottom:9px}
+footer{border-top:1px solid var(--rule);margin-top:54px;padding-top:22px}
+footer p{font-size:13.5px;color:var(--muted);font-family:var(--display);max-width:75ch}
+@media (max-width:640px){
+  body{font-size:16px}
+  .fig{border-right:0;border-bottom:1px solid var(--rule-soft)}
+  .split{grid-template-columns:1fr}
+  .split>div:first-child{border-right:0;border-bottom:1px solid var(--rule-soft)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<header class="hero">
+  <span class="stamp">Single-run census · 7 tasks · 15 agent reviews · 13 Sep 2026</span>
+  <h1>What Each Gate Can See</h1>
+  <p class="claim">Fourteen task-scoped reviews over 1.03M tokens found nothing important.
+  One branch-scoped review costing a tenth as much found two merge blockers. Not because it
+  was cheaper — because the defects that mattered did not exist inside any single task.</p>
+</header>
+
+<div class="caveat">
+  <p><strong>This page was wrong once already.</strong> Its first version claimed every defect
+  was a plan defect and none were in the code — written after the 14 task reviews came back
+  clean and <em>before</em> the whole-branch review ran. That review then found four Important
+  findings, two of them merge blockers, several of them genuine code defects. The claim did not
+  survive an hour. It is corrected below, and the correction is the more interesting result.</p>
+  <p style="margin-top:11px"><strong>Also:</strong> n=1. One plan, one repository, one controller,
+  one model family, no control arm. Seven tasks is <em>not</em> seven replicates. Nothing here is
+  an effect size — it is a census of one run, with intervals so the width is visible.</p>
+</div>
+
+<div class="figs">
+  <div class="fig"><div class="fnum">0</div><div class="fci">14 passes · 1,027,363 tokens</div><div class="flab">Important findings from<br>task-scoped review</div></div>
+  <div class="fig"><div class="fnum">4</div><div class="fci">1 pass · 105,337 tokens</div><div class="flab">Important findings from<br>branch-scoped review</div></div>
+  <div class="fig"><div class="fnum">2</div><div class="fci">both cross-artifact</div><div class="flab">Merge blockers, invisible<br>to every task review</div></div>
+  <div class="fig"><div class="fnum">6</div><div class="fci">5/6 · 95% CI 44–97%</div><div class="flab">Plan defects, caught<br>before dispatch</div></div>
+</div>
+
+<section>
+  <div class="h2row"><span class="eyebrow">01</span><h2>What actually happened</h2></div>
+  <p class="narrow">A seven-task plan was executed by a fresh subagent per task, each followed by
+  a reviewing subagent issuing separate spec-compliance and code-quality verdicts. Fourteen agent
+  passes, 1.03M subagent tokens, 223 tool calls.</p>
+  <p class="narrow">Every task passed review on the first attempt. No fix subagent was ever
+  dispatched. The thirteen findings those reviewers raised were all Minor — style, consistency
+  with sibling code, a Mac-specific label. Zero Critical, zero Important.</p>
+  <p class="narrow">Then one reviewer read the whole branch at once, and returned
+  <strong>do not merge</strong>.</p>
+  <p class="narrow">It is tempting to read that as the task reviews having been sloppy. They were
+  not. Re-read the two blockers and notice what they have in common: neither defect exists inside
+  any single task's diff. Both are contradictions <em>between</em> artifacts.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Blocker</th><th>The contradiction</th><th>Which diff contains it</th></tr></thead>
+    <tbody>
+      <tr><td><strong>A</strong></td>
+        <td>A prompt recommends a tool its own parent report explicitly rejects — the report calls it
+        “exploration, not production charting”, and ranks a different library first for exactly this
+        use case. The feature's whole premise is that the prompt inherits the report's decision.</td>
+        <td>Neither. The prompt is in one commit, the report was written months earlier and never
+        changed. The contradiction lives in the gap.</td></tr>
+      <tr><td><strong>B</strong></td>
+        <td>A new module raises on failure, and the raise sits upstream of the step that keeps two
+        directories in sync — silently reintroducing a divergence that an existing file's docstring
+        documents having already fixed once.</td>
+        <td>Half in one commit, half in a file nobody's task asked them to read.</td></tr>
+    </tbody>
+  </table></div>
+
+  <p class="narrow">A task-scoped reviewer given that diff and that brief would be <em>correct</em>
+  to approve both. The information needed to see the defect was not in front of them. This is not a
+  quality problem; it is a scope problem, and no amount of rigour at the task gate fixes it.</p>
+
+  <p class="narrow">The plan, separately, was wrong six times — and that part of the original finding
+  survives. Each was caught by a different layer before becoming code.</p>
+
+  <div class="sieve">
+    <svg viewBox="0 0 860 300" role="img" aria-label="Six plan defects caught across four layers, none reaching merge">
+      <g font-family="ui-monospace,Menlo,monospace">
+        <text x="10" y="20" font-size="10.5" fill="var(--muted)" letter-spacing="1">6 PLAN DEFECTS ENTER</text>
+        <g fill="var(--accent)">
+          <circle cx="40" cy="42" r="7"/><circle cx="62" cy="42" r="7"/><circle cx="84" cy="42" r="7"/>
+          <circle cx="106" cy="42" r="7"/><circle cx="128" cy="42" r="7"/><circle cx="150" cy="42" r="7"/>
+        </g>
+
+        <g stroke="var(--rule)" stroke-width="1.5" fill="none"><path d="M95 54 L95 72"/></g>
+
+        <rect x="10" y="72" width="560" height="42" fill="var(--caught-soft)" stroke="var(--caught)" stroke-width="1.5"/>
+        <text x="24" y="90" font-size="12" font-family="var(--display)" font-weight="600" fill="var(--ink)">Layer 1 · Plan self-review</text>
+        <text x="24" y="105" font-size="10" fill="var(--muted)">re-read the plan against the real files before dispatching anything</text>
+        <text x="556" y="99" font-size="20" font-weight="700" text-anchor="end" fill="var(--caught)">−3</text>
+
+        <g stroke="var(--rule)" stroke-width="1.5" fill="none"><path d="M95 114 L95 132"/></g>
+
+        <rect x="10" y="132" width="560" height="42" fill="var(--caught-soft)" stroke="var(--caught)" stroke-width="1.5"/>
+        <text x="24" y="150" font-size="12" font-family="var(--display)" font-weight="600" fill="var(--ink)">Layer 2 · Pre-flight scan</text>
+        <text x="24" y="165" font-size="10" fill="var(--muted)">check the plan's constraints against the plan's own code</text>
+        <text x="556" y="159" font-size="20" font-weight="700" text-anchor="end" fill="var(--caught)">−1</text>
+
+        <g stroke="var(--rule)" stroke-width="1.5" fill="none"><path d="M95 174 L95 192"/></g>
+
+        <rect x="10" y="192" width="560" height="42" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="1.5"/>
+        <text x="24" y="210" font-size="12" font-family="var(--display)" font-weight="600" fill="var(--ink)">Layer 3 · Implementer, told “real code wins”</text>
+        <text x="24" y="225" font-size="10" fill="var(--muted)">reported the conflict instead of following the brief off a cliff</text>
+        <text x="556" y="219" font-size="20" font-weight="700" text-anchor="end" fill="var(--warn)">−2</text>
+
+        <g stroke="var(--rule)" stroke-width="1.5" fill="none"><path d="M95 234 L95 252"/></g>
+
+        <rect x="10" y="252" width="560" height="36" fill="var(--surface-2)" stroke="var(--rule)" stroke-width="1.5"/>
+        <text x="24" y="268" font-size="12" font-family="var(--display)" font-weight="600" fill="var(--ink)">Layer 4 · Task review — 14 passes</text>
+        <text x="24" y="282" font-size="10" fill="var(--muted)">scoped to one diff each · structurally cannot see across artifacts</text>
+        <text x="556" y="275" font-size="20" font-weight="700" text-anchor="end" fill="var(--muted)">−0</text>
+
+        <text x="600" y="90" font-size="10.5" fill="var(--muted)" letter-spacing="1">COST TO CATCH</text>
+        <text x="600" y="112" font-size="13" font-family="var(--display)" fill="var(--caught)">~10³ tokens</text>
+        <text x="600" y="128" font-size="10" fill="var(--muted)">one shell command each</text>
+        <text x="600" y="212" font-size="13" font-family="var(--display)" fill="var(--warn)">absorbed in-task</text>
+        <text x="600" y="228" font-size="10" fill="var(--muted)">no extra cycle spent</text>
+        <text x="600" y="272" font-size="13" font-family="var(--display)" fill="var(--muted)">~1.5×10⁵ tokens</text>
+        <text x="600" y="288" font-size="10" fill="var(--muted)">per fix-loop avoided</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">02</span><h2>The six</h2></div>
+  <p class="narrow">What matters is not that a plan had bugs. It is <em>which kind</em>. Not one
+  was an algorithm error — the plan's logic was sound everywhere. Five of six were assertions
+  about the surrounding codebase that nobody checked.</p>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>Defect</th><th>Caught by</th><th>Class</th></tr></thead>
+    <tbody>
+      <tr><td class="n">1</td><td><strong>Module name collision.</strong> A new <code>lib.py</code> would shadow, or be shadowed by, an existing <code>lib.py</code> once both directories land on <code>sys.path</code>.</td><td><span class="chip c-plan">plan review</span></td><td>Name resolution in the real tree</td></tr>
+      <tr><td class="n">2</td><td><strong>Invented API.</strong> The plan called a helper that does not exist, and mismatched the real function's two-value return contract.</td><td><span class="chip c-plan">plan review</span></td><td>Unverified signature</td></tr>
+      <tr><td class="n">3</td><td><strong>Inverted convention.</strong> Specified a failure as fatal; the codebase deliberately treats that class as non-fatal, with a comment saying why.</td><td><span class="chip c-plan">plan review</span></td><td>Unread existing decision</td></tr>
+      <tr><td class="n">4</td><td><strong>Self-contradiction.</strong> A global constraint forbade something the plan's own example code then did.</td><td><span class="chip c-pre">pre-flight</span></td><td>Internal inconsistency</td></tr>
+      <tr><td class="n">5</td><td><strong>Invalid insertion point.</strong> “Add the import after line X” — where the symbol it references is not defined until two lines later. Would raise at import time.</td><td><span class="chip c-imp">implementer</span></td><td>Unverified file position</td></tr>
+      <tr><td class="n">6</td><td><strong>Toolchain mismatch.</strong> Named a file <code>.js</code> that contains JSX, which this project's bundler only transforms for <code>.jsx</code>.</td><td><span class="chip c-imp">implementer</span></td><td>Unchecked build config</td></tr>
+    </tbody>
+  </table></div>
+  <p class="narrow">Read the Class column downward. Every entry is a fact that one
+  <code>grep</code>, one <code>sed -n</code>, or one <code>ls</code> would have settled — and that
+  no amount of re-reading the plan for logical coherence would ever surface.</p>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">03</span><h2>Known, and possibly not</h2></div>
+  <p class="narrow">Most of this is unsurprising. The part worth arguing about is narrower than
+  the headline suggests, so here it is separated out.</p>
+  <div class="split known">
+    <div>
+      <h4>Already well known</h4>
+      <ul>
+        <li>Plans written by an author with imperfect memory of a codebase contain errors.</li>
+        <li>Catching a defect earlier is cheaper than catching it later.</li>
+        <li>Review gates catch things; fresh context per task reduces confusion.</li>
+        <li>Cheap static checks are worth running before expensive dynamic ones.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>The part that may be new</h4>
+      <ul>
+        <li><strong>The defect class is lopsided.</strong> Zero logic errors; five of six were unverified claims about existing code. If that holds, plan review is <em>the wrong activity</em> — it should be a verification pass against the tree, not a coherence read.</li>
+        <li><strong>The residue is convertible.</strong> One sentence in the dispatch — <em>the real code is authority over the brief</em> — is what turned defects 5 and 6 from build failures into reports. That clause is nearly free and did measurable work.</li>
+        <li><strong>Review scope, not review rigour, set the ceiling.</strong> 14 task-scoped passes at 1.03M tokens: zero Important. One branch-scoped pass at 105k: four Important, two blocking. The cheap review did not win by being cheap — it won by being the only one allowed to see two artifacts at once.</li>
+        <li><strong>Cross-artifact contradiction may be its own defect class</strong>, structurally invisible to per-task gates and not reducible to "review harder". Both blockers were of this class; neither was findable from the diff that contained them.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">04</span><h2>The claim, and how to kill it</h2></div>
+  <div class="test">
+    <p><strong>Hypothesis 1 — scope sets the ceiling.</strong> Defects in agent-executed plans
+    sort into two classes by the scope needed to see them. Task-scoped review, however rigorous,
+    has a hard ceiling: it cannot find a contradiction between two artifacts when only one is in
+    front of it. Adding more task-gate rigour trades against nothing; adding one branch-scoped pass
+    changes what is findable at all.</p>
+    <p><strong>Hypothesis 2 — plan defects are interface claims.</strong> Plan defects are
+    dominated by unverified assertions about existing code rather than logic errors, and a
+    mechanical pre-dispatch check — every import resolves, every signature matches, every filename
+    satisfies the toolchain, every insertion point is valid — catches most of them cheaply. This
+    one survived the correction intact.</p>
+    <p><strong>Falsification.</strong> For H1: run plans under two arms, one with a branch-scoped
+    pass and one without, and classify every escaped defect by the minimum scope needed to see it.
+    If the escapes are mostly single-artifact, H1 is wrong and the task gate was simply sloppy. For
+    H2: two arms with and without the pre-dispatch check, same plan author and model, counting
+    whether the same defects arrive later as failed tasks.</p>
+    <p><strong>What this run cannot tell you.</strong> Whether one branch-scoped pass is sufficient
+    or merely better — this run has exactly one, found four Important findings with it, and has no
+    way to know what a second reviewer would have found. The upper bound on what escaped is
+    unmeasured, not zero.</p>
+  </div>
+  <p class="narrow">The honest summary is narrow, and narrower than the version of this page that
+  existed an hour ago. In one run: the plan was wrong six times in a way cheap checks caught; the
+  code was wrong in ways only a reader holding two artifacts at once could catch; and the gate that
+  found those cost a tenth of the gates that did not. Whether any of it generalises past this one
+  plan, this one repository and this one model is exactly the open question — and the fact that the
+  first draft of this page was confidently wrong about it is the best available evidence for
+  treating single-run findings as hypotheses.</p>
+</section>
+
+<footer>
+  <p><strong>Method.</strong> One implementation plan, seven tasks, executed sequentially with a
+  fresh implementer subagent per task and a separate reviewer per task issuing spec and quality
+  verdicts. Controller held cross-task context and a durable progress ledger. Token and tool-call
+  counts are the harness's own per-subagent figures, summed: 524,238 implementer + 503,125 reviewer
+  = 1,027,363 tokens over 223 tool calls. Wilson score intervals at 95%.</p>
+  <p><strong>Limits.</strong> Single run, no control arm, no replication. The plan author, the
+  controller and the author of this page were the same agent — which plausibly inflates the
+  pre-dispatch catch rate, and did produce one confidently wrong published claim, corrected above.
+  The branch-scoped review was run on a more capable model than the task reviews, so model capability
+  and review scope are <em>confounded</em> in this run and cannot be separated by it; that confound
+  is the first thing a replication should break. Wall-clock durations are excluded because they
+  include queueing. “Defect” means something that would have produced incorrect behaviour, a failed
+  build, or a user-facing recommendation contradicting its own source — not a style finding.</p>
+</footer>
+
+</div>
+</body>
+</html>

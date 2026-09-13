@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompts From Your Stars</title>
+<style>
+:root{
+  --paper:#f1f2f3; --surface:#ffffff; --surface-2:#e7e9ea; --sunken:#1b1d20;
+  --ink:#14161a; --ink-2:#3b4048; --muted:#6a717b;
+  --rule:#d9dcdf; --rule-soft:#e6e8ea;
+  --act:#b4441a; --act-2:#96350f; --act-soft:#fbe8e0;
+  --live:#2c7049; --live-soft:#dcefe3;
+  --finished:#8d6a0d; --finished-soft:#f6eed7;
+  --display:"Avenir Next","Segoe UI Variable Display",system-ui,-apple-system,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0f1113; --surface:#181b1e; --surface-2:#22262a; --sunken:#0a0b0d;
+  --ink:#e9ebed; --ink-2:#bcc2c8; --muted:#89919b;
+  --rule:#2b3036; --rule-soft:#212629;
+  --act:#f0845a; --act-2:#f5a184; --act-soft:#37190f;
+  --live:#68bc8c; --live-soft:#11291c;
+  --finished:#d4ac52; --finished-soft:#302711;
+}}
+:root[data-theme="dark"]{
+  --paper:#0f1113; --surface:#181b1e; --surface-2:#22262a; --sunken:#0a0b0d;
+  --ink:#e9ebed; --ink-2:#bcc2c8; --muted:#89919b;
+  --rule:#2b3036; --rule-soft:#212629;
+  --act:#f0845a; --act-2:#f5a184; --act-soft:#37190f;
+  --live:#68bc8c; --live-soft:#11291c;
+  --finished:#d4ac52; --finished-soft:#302711;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--display);font-size:16.5px;line-height:1.62}
+.shell{max-width:1060px;margin-inline:auto;padding-inline:22px;padding-block:0 76px}
+p{color:var(--ink-2)}
+.narrow{max-width:62ch}
+h1,h2,h3,h4{color:var(--ink);text-wrap:balance;margin:0;letter-spacing:-.02em}
+code,.mono{font-family:var(--mono);font-size:.87em}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.hero{padding-block:58px 40px}
+h1{font-size:clamp(38px,7.2vw,68px);font-weight:700;line-height:1.02;margin-block:16px 0}
+.lede{font-size:clamp(18px,2.2vw,21px);max-width:56ch;margin-block:22px 0;color:var(--ink-2)}
+.stamp{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  border:1px solid var(--rule);border-radius:2px;padding:4px 9px;color:var(--muted);background:var(--surface)}
+
+.loop{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:0;border:1px solid var(--rule);
+  background:var(--surface);margin-block:34px}
+.step{padding:22px 20px;border-right:1px solid var(--rule-soft);position:relative}
+.step:last-child{border-right:0}
+.snum{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--muted)}
+.sbig{font-size:30px;font-weight:700;line-height:1;margin-top:9px;font-variant-numeric:tabular-nums}
+.sname{font-size:15px;font-weight:600;margin-top:7px}
+.sdesc{font-size:13.5px;color:var(--muted);margin-top:5px;line-height:1.5}
+.step.now .sbig{color:var(--act)}
+
+section{padding-block:48px 6px}
+h2{font-size:clamp(24px,3.4vw,33px);font-weight:700}
+.h2row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:26px}
+h3{font-size:18px;font-weight:600;margin-block:28px 10px}
+
+.demo{border:1px solid var(--rule);background:var(--surface);margin-block:24px}
+.demohead{padding:16px 20px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.demohead .t{font-size:17px;font-weight:600}
+.demohead .p{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.btn{font-family:var(--display);font-size:13px;font-weight:600;background:var(--act);color:#fff;border:0;
+  border-radius:4px;padding:8px 15px;cursor:default}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
+th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  font-weight:400;padding:10px 20px;border-bottom:1px solid var(--rule-soft);white-space:nowrap}
+td{padding:10px 20px;border-bottom:1px solid var(--rule-soft);color:var(--ink-2)}
+tr:last-child td{border-bottom:0}
+td.repo{font-family:var(--mono);font-size:12.5px;color:var(--ink);white-space:nowrap}
+td.n{font-variant-numeric:tabular-nums;text-align:right;font-family:var(--mono);font-size:12.5px;white-space:nowrap}
+.pill{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:2px}
+.p-live{background:var(--live-soft);color:var(--live)}
+.p-fin{background:var(--finished-soft);color:var(--finished)}
+
+.payload{background:var(--sunken);color:#d6dade;font-family:var(--mono);font-size:12.5px;line-height:1.72;
+  padding:20px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+.payload .hi{color:#f0a882}
+.payloadnote{padding:11px 20px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);background:var(--surface-2)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px;margin-block:24px}
+.card{border:1px solid var(--rule);background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:9px}
+.card .src{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--act)}
+.card h4{font-size:17px;font-weight:600}
+.card p{font-size:14px;margin:0;flex:1}
+.card .chain{font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.6;border-top:1px solid var(--rule-soft);padding-top:10px}
+
+.key{border-left:3px solid var(--act);background:var(--act-soft);padding:20px 22px;margin-block:26px}
+.key p{margin:0;color:var(--ink)}
+.key p+p{margin-top:11px}
+
+.cmd{background:var(--sunken);color:#d6dade;font-family:var(--mono);font-size:13px;padding:15px 18px;
+  border-radius:4px;overflow-x:auto;margin-block:16px}
+.cmd .c{color:#7f8a93}
+
+footer{border-top:1px solid var(--rule);margin-top:54px;padding-top:22px}
+footer p{font-size:13.5px;color:var(--muted);max-width:74ch}
+@media (max-width:640px){
+  body{font-size:16px}
+  .step{border-right:0;border-bottom:1px solid var(--rule-soft)}
+  th,td,.demohead,.payloadnote{padding-inline:16px}
+  .payload{padding:16px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<header class="hero">
+  <span class="stamp">github-stars-analyzer · prompt library · 13 Sep 2026</span>
+  <h1>Prompts From Your Stars</h1>
+  <p class="lede">Your starred repos already decided which tools are good. This turns that
+  decision into something you can paste into a model and get a built thing back.</p>
+</header>
+
+<div class="loop">
+  <div class="step"><div class="snum">01 · HAVE</div><div class="sbig">2,140</div>
+    <div class="sname">Starred repos</div><div class="sdesc">Years of judgement, sitting as a list</div></div>
+  <div class="step"><div class="snum">02 · ALREADY BUILT</div><div class="sbig">27</div>
+    <div class="sname">Landscape reports</div><div class="sdesc">Curated, ranked, health-scored by task</div></div>
+  <div class="step now"><div class="snum">03 · NEW</div><div class="sbig">3</div>
+    <div class="sname">Build prompts</div><div class="sdesc">Paste-ready, wired to the tools the report picked</div></div>
+  <div class="step"><div class="snum">04 · YOU</div><div class="sbig">→</div>
+    <div class="sname">A printed part, a working harness</div><div class="sdesc">The thing the list was for</div></div>
+</div>
+
+<section>
+  <div class="h2row"><span class="eyebrow">01</span><h2>What one actually looks like</h2></div>
+  <p class="narrow">This is real generated output, not a mockup. The stack table is resolved against
+  the dataset every build, so the numbers below are whatever was true at generation time.</p>
+
+  <div class="demo">
+    <div class="demohead">
+      <div>
+        <div class="t">Tree-stump base for a Pokal</div>
+        <div class="p">built from reports/3d-printing-stack.md</div>
+      </div>
+      <button class="btn" type="button" disabled>Copy prompt</button>
+    </div>
+    <div class="tw"><table>
+      <thead><tr><th>Stage</th><th>Tool</th><th class="n">Stars</th><th class="n">Health</th><th>State</th></tr></thead>
+      <tbody>
+        <tr><td>Author</td><td class="repo">fogleman/sdf</td><td class="n">2,001</td><td class="n">4</td><td><span class="pill p-fin">finished</span></td></tr>
+        <tr><td>See</td><td class="repo">f3d-app/f3d</td><td class="n">4,669</td><td class="n">82</td><td><span class="pill p-live">classic</span></td></tr>
+        <tr><td>Validate</td><td class="repo">mikedh/trimesh</td><td class="n">3,678</td><td class="n">74</td><td><span class="pill p-live">classic</span></td></tr>
+        <tr><td>Slice</td><td class="repo">OrcaSlicer/OrcaSlicer</td><td class="n">15,676</td><td class="n">83</td><td><span class="pill p-live">classic</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="payload">You are writing Python that generates a 3D-printable model using the `sdf` library
+(`fogleman/sdf`). Output a single script, nothing else. Units are millimetres.
+
+<span class="hi">**Model: a naturalistic tree stump that serves as the base of a trophy (Pokal).**</span>
+It is not a standalone ornament — it carries an existing trophy, and every dimension is
+derived from that trophy rather than chosen.
+
+Begin the script with an input block holding only *measured* values: `MOUNT_DIA`,
+`MOUNT_DEPTH`, `MOUNT_TYPE`, `TROPHY_HEIGHT`, `TROPHY_MASS`, `TROPHY_COG`…
+                                                        <span style="color:#7f8a93">[ 4,741 characters total ]</span></div>
+    <div class="payloadnote">The Copy button gives you <strong>this text only</strong> — not the table
+    above it, not the verify commands below it. What lands in the model's context is the prompt and nothing else.</div>
+  </div>
+
+  <p class="narrow">Note what is <em>not</em> in there: a single dimension. Every size derives from
+  measurements of the trophy you already own, and each derived value must carry a comment stating
+  its rule. That is the difference between a prompt that makes a stump and one that makes a stump
+  which fits.</p>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">02</span><h2>The part that is actually new</h2></div>
+  <div class="key">
+    <p><strong>These prompts decay loudly.</strong> The stack is resolved against your dataset at
+    generation time, not typed into prose. When a tool gets archived upstream it leaves the dataset,
+    drops out of the table, and the build prints a warning while the prompt itself renders a banner
+    saying which tool went missing.</p>
+    <p>A hand-written prompt library cannot do that. It keeps recommending a dead tool silently,
+    forever, until a human happens to notice.</p>
+  </div>
+  <p class="narrow">There is an honest limit worth stating on the same page. Look at the first row of
+  the table above: <code>fogleman/sdf</code>, health <strong>4</strong>, last pushed August 2024.
+  It is not archived, so nothing warns about it — it is simply finished. A small SDF library whose
+  maths does not change looks identical to an abandoned one, and no metric here separates them.
+  That is why the health column is printed inline rather than hidden: the page shows you the number
+  and trusts you to read it.</p>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">03</span><h2>Three, from three unrelated reports</h2></div>
+  <p class="narrow">The point of three is that the machinery is not specific to any one domain —
+  the same generator contract produced all of these.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="src">3d-printing-stack</div>
+      <h4>Tree-stump base for a Pokal</h4>
+      <p>A naturalistic stump plinth for a trophy you already own, sized entirely from measurements
+      of it. Organic form that is watertight by construction, so the repair stage never runs.</p>
+      <div class="chain">sdf → f3d → trimesh → OrcaSlicer</div>
+    </div>
+    <div class="card">
+      <div class="src">rag-tooling</div>
+      <h4>Retrieval-evaluation harness</h4>
+      <p>Scores recall@k and MRR against a fixed question set, keeps retrieval and generation quality
+      in separate columns, and refuses to print a single blended number.</p>
+      <div class="chain">haystack → qdrant → sentence-transformers → LettuceDetect</div>
+    </div>
+    <div class="card">
+      <div class="src">charting-stack</div>
+      <h4>OHLC trading dashboard</h4>
+      <p>Candlesticks with a linked volume subplot, built to avoid the two classic traps: no line
+      drawn across a closed market, and direction encoded by fill rather than hue alone.</p>
+      <div class="chain">lightweight-charts → streamlit</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">04</span><h2>Using it</h2></div>
+  <p class="narrow">Prompts live beside the reports and regenerate with them. One command rebuilds
+  every report and every prompt against the current dataset — no API calls, fully reproducible.</p>
+  <div class="cmd"><span class="c"># rebuild everything: 27 reports + 3 prompts</span>
+python3 scripts/reports/build_index.py
+
+<span class="c"># then open the app and use the Prompts tab</span>
+npm run dev</div>
+  <p class="narrow">Each parent report grows a <strong>Build something with this stack</strong>
+  section linking to the prompts made from it, so the path from a landscape you were reading to a
+  thing you can build is one click, in the direction you were already going.</p>
+</section>
+
+<footer>
+  <p><strong>Status.</strong> Feature complete; fixes for both merge blockers have landed and are
+  in final review. A whole-branch review had returned two — a prompt whose tool choice contradicted
+  its own parent report, and a failure path that could leave the published copies of reports out of
+  sync. The stacks shown above are the corrected ones.</p>
+  <p><strong>Honest caveat.</strong> Nothing here can check that a stack is the <em>right</em> answer,
+  only that its repos exist. One of the three prompts shipped a tool its own report explicitly
+  rejected, and every automated check passed. Choosing the stack stays an editorial judgement.</p>
+</footer>
+
+</div>
+</body>
+</html>

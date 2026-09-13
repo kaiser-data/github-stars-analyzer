@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Printable Stack</title>
+<style>
+:root{
+  --paper:#f2f5f6; --surface:#ffffff; --surface-2:#e9eef0;
+  --ink:#15212a; --ink-2:#3d515e; --muted:#6a7f8c;
+  --rule:#d3dee2; --rule-soft:#e3eaed;
+  --accent:#0c7a89; --accent-2:#0a5f6b; --accent-soft:#dcf0f2;
+  --crit:#a8382f; --crit-soft:#f7e3e1;
+  --warn:#96660b; --warn-soft:#f7ecd8;
+  --ok:#2c7355; --ok-soft:#dff0e7;
+  --display:"Avenir Next","Segoe UI Variable Display",system-ui,-apple-system,sans-serif;
+  --body:"Iowan Old Style","Charter","Palatino Linotype",Palatino,Georgia,ui-serif,serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0d151a; --surface:#141f26; --surface-2:#1b2a33;
+  --ink:#e4edf1; --ink-2:#b3c4cd; --muted:#8399a5;
+  --rule:#294049; --rule-soft:#1f3039;
+  --accent:#3cb8c8; --accent-2:#6fd3df; --accent-soft:#0f3238;
+  --crit:#e88a80; --crit-soft:#3a1f1c;
+  --warn:#e0b05c; --warn-soft:#3a2e16;
+  --ok:#6cc39b; --ok-soft:#12301f;
+}}
+:root[data-theme="dark"]{
+  --paper:#0d151a; --surface:#141f26; --surface-2:#1b2a33;
+  --ink:#e4edf1; --ink-2:#b3c4cd; --muted:#8399a5;
+  --rule:#294049; --rule-soft:#1f3039;
+  --accent:#3cb8c8; --accent-2:#6fd3df; --accent-soft:#0f3238;
+  --crit:#e88a80; --crit-soft:#3a1f1c;
+  --warn:#e0b05c; --warn-soft:#3a2e16;
+  --ok:#6cc39b; --ok-soft:#12301f;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.65;}
+.shell{max-width:1120px;margin-inline:auto;padding-inline:22px;padding-block:0 72px}
+p,li{color:var(--ink-2)}
+.narrow{max-width:68ch}
+h1,h2,h3,h4{font-family:var(--display);color:var(--ink);text-wrap:balance;margin:0}
+a{color:var(--accent);text-underline-offset:3px}
+code,.mono{font-family:var(--mono);font-size:.86em}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* ---- hero ---- */
+.hero{padding-block:56px 40px;border-bottom:2px solid var(--ink);position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(to bottom,transparent 0 5px,var(--rule-soft) 5px 6px);
+  -webkit-mask-image:linear-gradient(to bottom,transparent,#000);mask-image:linear-gradient(to bottom,transparent,#000)}
+.hero>*{position:relative;z-index:1}
+h1{font-size:clamp(38px,7vw,68px);font-weight:700;letter-spacing:-.025em;line-height:1.02;margin-block:14px 0}
+.lede{font-size:clamp(18px,2.2vw,21px);max-width:60ch;margin-block:20px 0;color:var(--ink-2)}
+.stamp{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  border:1px solid var(--rule);border-radius:2px;padding:4px 9px;color:var(--muted);background:var(--surface)}
+
+/* ---- verdict ---- */
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;
+  border:1px solid var(--rule);background:var(--surface);margin-block:32px}
+.vcell{padding:20px 18px;border-right:1px solid var(--rule-soft)}
+.vcell:last-child{border-right:0}
+.vnum{font-family:var(--display);font-size:34px;font-weight:700;letter-spacing:-.02em;line-height:1;
+  font-variant-numeric:tabular-nums;color:var(--ink)}
+.vnum.bad{color:var(--crit)}
+.vlab{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+
+/* ---- sections ---- */
+section{padding-block:48px 8px}
+h2{font-size:clamp(24px,3.4vw,34px);font-weight:700;letter-spacing:-.02em}
+.h2row{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:26px}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em;margin-block:30px 10px}
+
+/* ---- key idea ---- */
+.key{border-left:3px solid var(--accent);background:var(--accent-soft);padding:20px 22px;margin-block:26px}
+.key p{margin:0;color:var(--ink);font-size:17.5px}
+.key p+p{margin-top:12px}
+
+/* ---- pipeline ---- */
+.pipe{border:1px solid var(--rule);background:var(--surface);padding:22px 18px;overflow-x:auto;margin-block:24px}
+.pipe svg{display:block;min-width:760px;width:100%;height:auto}
+
+/* ---- tables ---- */
+.tw{overflow-x:auto;border:1px solid var(--rule);background:var(--surface);margin-block:20px}
+table{border-collapse:collapse;width:100%;min-width:660px;font-family:var(--display);font-size:14.5px}
+th{text-align:left;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);font-weight:400;padding:12px 14px;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:12px 14px;border-bottom:1px solid var(--rule-soft);color:var(--ink-2);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.repo{font-family:var(--mono);font-size:12.5px;color:var(--ink);white-space:nowrap}
+td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;color:var(--muted)}
+td strong{color:var(--ink);font-weight:600}
+
+/* ---- chips ---- */
+.chip{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 7px;border-radius:2px;white-space:nowrap}
+.c-crit{background:var(--crit-soft);color:var(--crit)}
+.c-warn{background:var(--warn-soft);color:var(--warn)}
+.c-ok{background:var(--ok-soft);color:var(--ok)}
+.c-neutral{background:var(--surface-2);color:var(--muted)}
+
+/* ---- stacks ---- */
+.stacks{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px;margin-block:24px}
+.stack{border:1px solid var(--rule);background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:10px}
+.stack.lead{border-color:var(--accent);border-width:2px}
+.stack h4{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.stack .for{font-size:14px;color:var(--muted);font-family:var(--display)}
+.stack ol{margin:4px 0 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:7px}
+.stack ol li{font-family:var(--mono);font-size:12.5px;color:var(--ink-2);line-height:1.45;
+  padding-left:16px;position:relative}
+.stack ol li::before{content:"→";position:absolute;left:0;color:var(--accent)}
+.stack ol li em{font-family:var(--display);font-style:normal;color:var(--muted);font-size:12px}
+
+/* ---- specs ---- */
+.specs{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:0;
+  border:1px solid var(--rule);background:var(--surface);margin-block:22px}
+.spec{padding:15px 17px;border-right:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft)}
+.spec dt{font-family:var(--display);font-size:13px;color:var(--muted);margin-bottom:5px}
+.spec dd{margin:0;font-family:var(--mono);font-size:14.5px;color:var(--ink);font-variant-numeric:tabular-nums}
+.spec dd span{color:var(--muted);font-size:12px}
+
+ul.plain{padding-left:20px;margin-block:14px}
+ul.plain li{margin-bottom:9px}
+footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px}
+footer p{font-size:13.5px;color:var(--muted);font-family:var(--display)}
+footer a{color:var(--muted)}
+@media (max-width:620px){
+  body{font-size:16px}
+  .vcell{border-right:0;border-bottom:1px solid var(--rule-soft)}
+  .spec{border-right:0}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<header class="hero">
+  <span class="stamp">Gap audit · 2,022 repos · 12 Sep 2026 · <strong style="color:var(--ok)">resolved</strong></span>
+  <h1>The Printable Stack</h1>
+  <p class="lede">Which of your starred repos combine into an LLM-driven pipeline for 3D models that
+  look good <em>and</em> survive the build plate — and the four layers where you currently have nothing.</p>
+</header>
+
+<div class="verdict">
+  <div class="vcell"><div class="vnum">13</div><div class="vlab">Found at audit</div></div>
+  <div class="vcell"><div class="vnum">7</div><div class="vlab">Pipeline layers</div></div>
+  <div class="vcell"><div class="vnum bad">4</div><div class="vlab">Layers at zero <span style="color:var(--ok)">→ 0</span></div></div>
+  <div class="vcell"><div class="vnum" style="color:var(--ok)">21</div><div class="vlab">Added &amp; starred</div></div>
+</div>
+
+<div class="key" style="border-left-color:var(--ok);background:var(--ok-soft)">
+  <p><strong>Status — closed 12 Sep 2026.</strong> All 21 candidates below were starred and pulled
+  into the dataset. The collection now covers all seven layers with <strong>32 tools</strong>
+  (311,006★). This page is kept as the audit that produced the decision; the living version is the
+  generated report <code>reports/3d-printing-stack.md</code>, visible in the app's Reports tab and
+  regenerated from <code>scripts/reports/printing_stack.py</code> on every build.</p>
+</div>
+<section>
+  <div class="h2row"><span class="eyebrow">01</span><h2>The finding</h2></div>
+  <div class="narrow">
+    <p>Your collection is strong where most people are weak and empty where most people are strong.
+    You have two serious code-CAD authoring tools, three image-to-3D generators, a headless viewer
+    and a mesh processor. What you do not have is anything that <em>checks</em> a model, <em>repairs</em>
+    it, or <em>slices</em> it. The front of the pipeline is well covered; the back half does not exist.</p>
+    <p>That matters because the back half is where printability is decided. A generative mesh that
+    renders beautifully is routinely non-manifold, self-intersecting, has no flat base and carries
+    features below nozzle width. Nothing in your current set would tell you that before the print fails.</p>
+  </div>
+
+  <div class="key">
+    <p><strong>The principle the whole stack rests on:</strong> ChatGPT, Claude and Gemini cannot
+    produce good mesh geometry directly — vertex soup is the one thing they are reliably bad at.
+    They are excellent at writing <em>code that produces geometry</em>.</p>
+    <p>So the model never emits an STL. It emits a <code>.scad</code> or a Python script, you execute it,
+    render it, show the render back to the model, assert on the mesh, and slice it. The quality of your
+    output is set almost entirely by how tight that feedback loop is — not by which model you picked.</p>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">02</span><h2>Seven layers, and where you stand</h2></div>
+  <div class="pipe">
+    <svg viewBox="0 0 900 210" role="img" aria-label="Seven-layer pipeline showing coverage per layer">
+      <g font-family="ui-monospace,Menlo,monospace" font-size="10">
+      <!-- boxes -->
+      <g>
+        <rect x="8"   y="44" width="110" height="56" fill="var(--ok-soft)"   stroke="var(--ok)"    stroke-width="1.5"/>
+        <rect x="134" y="44" width="110" height="56" fill="var(--ok-soft)"   stroke="var(--ok)"    stroke-width="1.5"/>
+        <rect x="260" y="44" width="110" height="56" fill="var(--warn-soft)" stroke="var(--warn)"  stroke-width="1.5"/>
+        <rect x="386" y="44" width="110" height="56" fill="var(--crit-soft)" stroke="var(--crit)"  stroke-width="1.5"/>
+        <rect x="512" y="44" width="110" height="56" fill="var(--warn-soft)" stroke="var(--warn)"  stroke-width="1.5"/>
+        <rect x="638" y="44" width="110" height="56" fill="var(--crit-soft)" stroke="var(--crit)"  stroke-width="1.5"/>
+        <rect x="764" y="44" width="110" height="56" fill="var(--crit-soft)" stroke="var(--crit)"  stroke-width="1.5"/>
+      </g>
+      <g fill="var(--muted)" font-size="9" letter-spacing="1">
+        <text x="18" y="62">01</text><text x="144" y="62">02</text><text x="270" y="62">03</text>
+        <text x="396" y="62">04</text><text x="522" y="62">05</text><text x="648" y="62">06</text>
+        <text x="774" y="62">07</text>
+      </g>
+      <g fill="var(--ink)" font-family="var(--display)" font-size="13" font-weight="600">
+        <text x="18" y="82">Intent</text><text x="144" y="82">Author</text><text x="270" y="82">See</text>
+        <text x="396" y="82">Validate</text><text x="522" y="82">Repair</text><text x="648" y="82">Prep</text>
+        <text x="774" y="82">Slice</text>
+      </g>
+      <g fill="var(--muted)" font-size="9.5">
+        <text x="18" y="95">prompt, refs</text><text x="144" y="95">code or gen</text><text x="270" y="95">render back</text>
+        <text x="396" y="95">asserts</text><text x="522" y="95">watertight</text><text x="648" y="95">orient, split</text>
+        <text x="774" y="95">g-code</text>
+      </g>
+      <!-- arrows -->
+      <g stroke="var(--rule)" stroke-width="1.5" fill="none">
+        <path d="M118 72 L134 72"/><path d="M244 72 L260 72"/><path d="M370 72 L386 72"/>
+        <path d="M496 72 L512 72"/><path d="M622 72 L638 72"/><path d="M748 72 L764 72"/>
+      </g>
+      <!-- feedback loop -->
+      <g stroke="var(--accent)" stroke-width="1.5" fill="none" stroke-dasharray="4 3">
+        <path d="M819 100 L819 140 L189 140 L189 100"/>
+      </g>
+      <polygon points="189,100 185,109 193,109" fill="var(--accent)"/>
+      <text x="440" y="155" fill="var(--accent)" font-size="10.5" letter-spacing=".5">critique · re-author · re-run</text>
+      <!-- coverage labels -->
+      <g font-size="9" letter-spacing=".5">
+        <text x="18"  y="34" fill="var(--ok)">COVERED</text>
+        <text x="144" y="34" fill="var(--ok)">COVERED</text>
+        <text x="270" y="34" fill="var(--warn)">PARTIAL</text>
+        <text x="396" y="34" fill="var(--crit)">EMPTY</text>
+        <text x="522" y="34" fill="var(--warn)">PARTIAL</text>
+        <text x="648" y="34" fill="var(--crit)">EMPTY</text>
+        <text x="774" y="34" fill="var(--crit)">EMPTY</text>
+      </g>
+      <text x="8" y="188" fill="var(--muted)" font-size="9.5">Layers 04, 06 and 07 decide whether a model prints. You own none of them.</text>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">03</span><h2>What you already have</h2>
+    <span class="chip c-ok">13 repos</span></div>
+  <p class="narrow">Pulled from your 2,022 stars. These are real assets — several are better than what most
+  people assemble deliberately.</p>
+  <div class="tw"><table>
+    <thead><tr><th>Repo</th><th class="num">Stars</th><th>Layer</th><th>What it does for you</th></tr></thead>
+    <tbody>
+      <tr><td class="repo">openscad/openscad</td><td class="num">10,146</td><td>02 Author</td>
+        <td><strong>Your highest-hit-rate authoring target.</strong> The largest CAD training corpus any LLM has seen, so generated code compiles more often than anything else here.</td></tr>
+      <tr><td class="repo">gumyr/build123d</td><td class="num">3,029</td><td>02 Author</td>
+        <td>Python on the OpenCascade B-rep kernel. Real fillets and chamfers, exports STEP. Use when OpenSCAD's lack of rounding hurts.</td></tr>
+      <tr><td class="repo">microsoft/TRELLIS.2</td><td class="num">11,041</td><td>02 Generate</td>
+        <td>Best open-weight visual quality for image-to-3D. This is your "astonishing" lever.</td></tr>
+      <tr><td class="repo">img2threejs/img2threejs</td><td class="num">15,329</td><td>02 Generate</td>
+        <td><strong>The most interesting repo you own for this.</strong> Rebuilds a reference image as procedural <em>code</em>, quality-gated — the generative look with the code-CAD guarantees.</td></tr>
+      <tr><td class="repo">cnr-isti-vclab/meshlab</td><td class="num">5,817</td><td>05 Repair</td>
+        <td>The canonical mesh repair toolkit. GUI only in this form — the scriptable binding is a gap below.</td></tr>
+      <tr><td class="repo">f3d-app/f3d</td><td class="num">4,669</td><td>03 See</td>
+        <td><strong>Your render-back step.</strong> A fast CLI 3D viewer that screenshots from arbitrary camera angles — exactly what the feedback loop needs to give the model eyes.</td></tr>
+      <tr><td class="repo">TencentARC/InstantMesh</td><td class="num">4,520</td><td>02 Generate</td>
+        <td>Fast single-image-to-3D. <span class="chip c-warn">stale</span> No push since Jan 2025; superseded by TRELLIS.2.</td></tr>
+      <tr><td class="repo">TencentARC/Pixal3D</td><td class="num">2,238</td><td>02 Generate</td>
+        <td>Pixel-aligned 3D generation from images (SIGGRAPH 2026). Sharper alignment to a reference than diffusion-only paths.</td></tr>
+      <tr><td class="repo">BOMWiki/partmode</td><td class="num">521</td><td>02 Author</td>
+        <td>Local-first browser parametric CAD on OpenCascade. Useful as a human review surface for agent output.</td></tr>
+      <tr><td class="repo">meshy-dev/meshy-3d-agent</td><td class="num">88</td><td>07 Glue</td>
+        <td><strong>Your only agent↔3D bridge.</strong> Agent skills for a hosted 3D-gen platform; read it as a reference pattern even if you self-host.</td></tr>
+      <tr><td class="repo">NVIDIA/warp</td><td class="num">—</td><td>04 Validate</td>
+        <td>Differentiable kernels with marching cubes. Your only existing route to SDF-based, watertight-by-construction geometry.</td></tr>
+      <tr><td class="repo">agmmnn/awesome-blender</td><td class="num">7,281</td><td>ref</td>
+        <td>Index of Blender addons — the fastest way to find the 3D-Print Toolbox and displacement tooling.</td></tr>
+      <tr><td class="repo">modelcontextprotocol/servers</td><td class="num">90,105</td><td>07 Glue</td>
+        <td>The substrate every CAD MCP bridge below is built on. Already yours.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">04</span><h2>What's missing</h2>
+    <span class="chip c-crit">21 candidates</span></div>
+  <p class="narrow">Ranked by how much each one unblocks. The first five are the difference between
+  a pipeline that produces printable output and one that produces plausible-looking failures.</p>
+
+  <h3>P0 — the loop cannot close without these</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Repo</th><th>Layer</th><th>Why it's blocking</th></tr></thead>
+    <tbody>
+      <tr><td class="repo">mikedh/trimesh</td><td>04 Validate</td>
+        <td><strong>The single most important missing repo.</strong> <code>is_watertight</code>, <code>is_winding_consistent</code>, <code>euler_number</code>, volume and bounding box — the machine-checkable asserts that turn "looks fine" into a pass/fail an agent can iterate against.</td></tr>
+      <tr><td class="repo">SoftFever/OrcaSlicer</td><td>07 Slice</td>
+        <td>Real CLI with documented exit codes plus <code>--detect-overhang-wall</code>. Slicing headlessly and parsing the result is your reward signal — print time, filament, support volume, failures.</td></tr>
+      <tr><td class="repo">pyvista/pymeshfix</td><td>05 Repair</td>
+        <td>One call turns a generative mesh into a watertight polyhedron — removes singularities, self-intersections, degenerate faces. The standard fix for TRELLIS/Hunyuan output.</td></tr>
+      <tr><td class="repo">elalish/manifold</td><td>04 Validate</td>
+        <td>Guaranteed-manifold boolean kernel — also what modern OpenSCAD uses internally. Booleans that cannot produce broken geometry.</td></tr>
+      <tr><td class="repo">cnr-isti-vclab/PyMeshLab</td><td>05 Repair</td>
+        <td>You own MeshLab the application; this is MeshLab as a Python API. Without it none of your repair capability is scriptable.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>P1 — largest quality gain per repo added</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Repo</th><th>Layer</th><th>Why it's worth it</th></tr></thead>
+    <tbody>
+      <tr><td class="repo">BelfrySCAD/BOSL2</td><td>02 Author</td>
+        <td><strong>The biggest single jump in LLM output quality available to you.</strong> Threads, gears, rounding, joiners, attachments for OpenSCAD. Handing the model a library beats asking it to derive involute gear maths — which it will get subtly wrong.</td></tr>
+      <tr><td class="repo">comfyanonymous/ComfyUI</td><td>02 Generate</td>
+        <td>How you actually run TRELLIS and Hunyuan3D locally with a reproducible graph. You own the models and not the runtime.</td></tr>
+      <tr><td class="repo">Tencent-Hunyuan/Hunyuan3D-2</td><td>02 Generate</td>
+        <td>Open weights with PBR materials — the other half of the open generative duo alongside TRELLIS.2. Different failure modes, so useful as a second opinion.</td></tr>
+      <tr><td class="repo">ahujasid/blender-mcp</td><td>07 Glue</td>
+        <td>Puts Blender under Claude's direct control: 3D-Print Toolbox checks, booleans, displacement, decimation. Closes layers 05 and 06 in one move.</td></tr>
+      <tr><td class="repo">wjakob/instant-meshes</td><td>05 Repair</td>
+        <td>Retopology. Generative output arrives as 200k unstructured triangles; this makes it a clean quad mesh that slices predictably and edits sanely.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>P2 — the missing middle, and finishing</h3>
+  <div class="tw"><table>
+    <thead><tr><th>Repo</th><th>Layer</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="repo">fogleman/sdf</td><td>02 Author</td>
+        <td><strong>The underrated answer to your actual question.</strong> Signed-distance-function modelling in Python: organic, sculptural forms that are watertight <em>by construction</em>. Skips the entire repair layer. LLMs write SDF maths well.</td></tr>
+      <tr><td class="repo">libfive/libfive</td><td>02 Author</td>
+        <td>The heavier implicit-geometry kernel if you commit to the SDF route.</td></tr>
+      <tr><td class="repo">CadQuery/cadquery</td><td>02 Author</td>
+        <td>Larger ecosystem and more training data than build123d, same OCCT kernel. Worth having both; the model picks whichever it knows better that day.</td></tr>
+      <tr><td class="repo">gumyr/cq_warehouse</td><td>02 Author</td>
+        <td>Bearings, fasteners and threads with <em>real dimensions</em>. Stops the model inventing an M3 that doesn't fit.</td></tr>
+      <tr><td class="repo">nophead/NopSCADlib</td><td>02 Author</td>
+        <td>The same grounding for OpenSCAD — hundreds of real vitamins with correct measurements.</td></tr>
+      <tr><td class="repo">3MFConsortium/lib3mf</td><td>06 Prep</td>
+        <td>STL discards colour, materials and per-object settings. If "astonishing" means multi-material or painted, 3MF is the only format that carries it.</td></tr>
+      <tr><td class="repo">prusa3d/PrusaSlicer</td><td>07 Slice</td>
+        <td>The reference slicer every Orca fork descends from; same CLI patterns, useful as a cross-check.</td></tr>
+      <tr><td class="repo">Ultimaker/CuraEngine</td><td>07 Slice</td>
+        <td>Headless slicing engine with no GUI attached — the easiest thing to embed in an automated loop.</td></tr>
+      <tr><td class="repo">neka-nat/freecad-mcp</td><td>07 Glue</td>
+        <td>Parametric GUI CAD under agent control, with a feature tree a human can pick up afterwards.</td></tr>
+      <tr><td class="repo">KittyCAD/modeling-app</td><td>02 Author</td>
+        <td>Zoo Design Studio: KCL plus a native text-to-CAD ML API and the Zookeeper agent. The commercial answer to this whole report.</td></tr>
+      <tr><td class="repo">isl-org/Open3D</td><td>04 Validate</td>
+        <td>Point-cloud and mesh operations if you ever scan real objects rather than generate them.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">05</span><h2>Three stacks worth assembling</h2></div>
+  <div class="stacks">
+    <div class="stack lead">
+      <span class="chip c-ok">Start here</span>
+      <h4>Parametric, agent-driven</h4>
+      <p class="for">Functional parts, enclosures, brackets, anything that has to fit something else.</p>
+      <ol>
+        <li>Claude Code <em>— runs the loop locally</em></li>
+        <li>openscad + BOSL2 <em>— have / add</em></li>
+        <li>f3d → 4-view render <em>— have</em></li>
+        <li>vision critique <em>— re-author</em></li>
+        <li>trimesh asserts <em>— add</em></li>
+        <li>OrcaSlicer CLI <em>— add</em></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <span class="chip c-neutral">Highest ceiling</span>
+      <h4>Generative, repaired</h4>
+      <p class="for">Sculptural and decorative pieces — where "astonishing" actually comes from.</p>
+      <ol>
+        <li>Gemini <em>— concept image</em></li>
+        <li>TRELLIS.2 / Hunyuan3D <em>— have / add</em></li>
+        <li>Instant Meshes <em>— add, retopo</em></li>
+        <li>pymeshfix <em>— add, watertight</em></li>
+        <li>blender-mcp <em>— add, print check</em></li>
+        <li>OrcaSlicer CLI <em>— add</em></li>
+      </ol>
+    </div>
+    <div class="stack">
+      <span class="chip c-neutral">Least effort</span>
+      <h4>Implicit / SDF</h4>
+      <p class="for">Organic form with zero repair stage. The gap nobody fills.</p>
+      <ol>
+        <li>Claude <em>— writes the SDF</em></li>
+        <li>fogleman/sdf <em>— add</em></li>
+        <li>marching cubes <em>— watertight by construction</em></li>
+        <li>f3d render <em>— have</em></li>
+        <li>straight to slicer <em>— no repair layer</em></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">06</span><h2>Which model for which layer</h2></div>
+  <div class="tw"><table>
+    <thead><tr><th>Model</th><th>Use it for</th><th>Why, and where it stops</th></tr></thead>
+    <tbody>
+      <tr><td class="repo">Claude</td><td>Layers 02–07 — the orchestrator</td>
+        <td><strong>The host for the loop.</strong> Claude Code executes locally, is MCP-native, and holds a 600-line build123d file coherent across many edits. This is where the pipeline actually lives.</td></tr>
+      <tr><td class="repo">Gemini</td><td>Layer 03 — the critic</td>
+        <td><strong>Best at looking at renders.</strong> Strongest spatial reasoning over multi-view images and the largest context for reference photos and datasheets. Use it to judge, not to author.</td></tr>
+      <tr><td class="repo">ChatGPT</td><td>Layer 01 — concept and maths</td>
+        <td>Strongest general Python and <code>bpy</code> fluency. Code Interpreter runs trimesh and numpy but is sandboxed with no network and no OpenCascade — a scratchpad, not a build host.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="h2row"><span class="eyebrow">07</span><h2>Constraints to put in the prompt</h2></div>
+  <p class="narrow">A model will not infer these. Stating them in the system prompt removes most
+  unprintable output before the first render. Figures assume a 0.4&nbsp;mm nozzle on FDM.</p>
+  <div class="specs">
+    <div class="spec"><dt>Minimum wall</dt><dd>0.8–1.2 mm <span>· 2–3 perimeters</span></dd></div>
+    <div class="spec"><dt>Unsupported overhang</dt><dd>≤ 45° <span>· 55° with cooling</span></dd></div>
+    <div class="spec"><dt>Unsupported bridge</dt><dd>5–10 mm</dd></div>
+    <div class="spec"><dt>Smallest feature</dt><dd>0.4 mm wide <span>· 0.3 deep</span></dd></div>
+    <div class="spec"><dt>Clearance, loose fit</dt><dd>0.3 mm <span>· press 0.1</span></dd></div>
+    <div class="spec"><dt>Minimum hole</dt><dd>2 mm <span>· prints ~0.15 under</span></dd></div>
+    <div class="spec"><dt>Bottom-edge chamfer</dt><dd>0.2 mm <span>· elephant's foot</span></dd></div>
+    <div class="spec"><dt>Resin hollowing</dt><dd>2 mm wall <span>· 2× 3 mm drains</span></dd></div>
+    <div class="spec"><dt>Layer height</dt><dd>0.2 mm <span>· fine 0.08</span></dd></div>
+    <div class="spec"><dt>Build volume</dt><dd>256³ mm <span>· split beyond</span></dd></div>
+  </div>
+  <ul class="plain narrow">
+    <li><strong>Always require a flat base.</strong> Generative models almost never produce one; it is the most common single cause of a failed art print.</li>
+    <li><strong>Orient for layer-line strength.</strong> Parts are weakest across layers — state which axis takes load.</li>
+    <li><strong>Split beyond bed size with registration features</strong>, not a bare plane cut. BOSL2 has dovetails and pins for exactly this.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><strong>Method.</strong> Scanned 2,022 starred repos from <code>data/classified.json</code> (snapshot
+  2026-09-06) across name, description, topics and README for 35 CAD, mesh and printing keywords,
+  then cross-checked 60 curated ecosystem repos for presence. 13 usable assets found; 4 of 7 pipeline
+  layers had no coverage at all.</p>
+  <p>External checks: Zoo Design Studio &amp; Zookeeper · Text2CAD-Bench · OrcaSlicer CLI docs ·
+  trimesh &amp; PyMeshFix documentation · open image-to-3D comparisons, Sept 2026.</p>
+</footer>
+
+</div>
+</body>
+</html>
