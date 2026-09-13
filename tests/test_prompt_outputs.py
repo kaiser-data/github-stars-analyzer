@@ -3,6 +3,8 @@ import os
 import subprocess
 import sys
 
+import pytest
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REQUIRED_META_KEYS = {
     "slug", "title", "file", "report", "summary", "stack", "brief", "generated", "generator",
@@ -61,9 +63,6 @@ def test_stump_base_markdown_tables_are_well_formed():
     run_generator("stump_base.py")
     with open(os.path.join(ROOT, "prompts", "stump-base.md")) as f:
         assert table_columns_match(f.read())
-
-
-import pytest
 
 
 @pytest.mark.parametrize("gen,slug,report", [

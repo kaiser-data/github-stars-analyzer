@@ -100,8 +100,12 @@ optional inputs table → the brief → variants → verify block → methodolog
 `STACK` entries are resolved against `classified.json`. An entry that no longer
 resolves — archived upstream and dropped by `sample.mjs`, unstarred, or renamed —
 makes the generator print `WARNING missing: [...]` on stdout, exactly as report
-`TAXONOMY` drift already does, and `build_prompts.py` collects those and re-raises
-at the end. This is the mechanism that keeps a prompt from recommending a dead tool.
+`TAXONOMY` drift already does, and `build_prompts.py` collects those and prints them
+as a summary at the end, without failing the build — matching `build_index.py`'s
+treatment of report drift, since a repo going archived or renamed upstream is normal
+churn, not a broken build. What actually keeps a prompt from silently recommending a
+dead tool is the visible warning banner the generator writes into the prompt's own
+markdown, not a build failure.
 
 Each resolved entry additionally renders its current metrics inline
 (`fogleman/sdf · 2,001★ · Abandoned`), so a reader sees the evidence and can judge
@@ -168,9 +172,14 @@ step 4 has no such constraint and is clearer at the end.
 - Each parent report contains exactly one `## Build something with this stack`
   section after a full `build_index.py` run, and still exactly one after a second
   consecutive run.
-- A deliberately broken `STACK` entry (nonexistent repo) fails the build loudly.
+- A deliberately broken `STACK` entry (nonexistent repo) prints `WARNING missing:
+  [...]`, surfaces in the generated prompt's own warning banner, and shows up in the
+  end-of-build drift summary — it does not fail the build (non-fatal, matching
+  `build_index.py`'s treatment of report drift).
 - `npm run build` succeeds; the `Prompts` tab renders; the copy button places the
-  brief and only the brief on the clipboard.
+  brief and only the brief on the clipboard, or — when the Clipboard API is
+  unavailable — selects the brief into a hidden textarea so the fallback label is
+  actionable.
 
 ## Out of scope
 

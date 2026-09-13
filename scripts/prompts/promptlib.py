@@ -22,6 +22,11 @@ from lib import CLASSIFIED, fmt_int  # noqa: E402,F401  (re-exported for generat
 
 PROMPT_SECTION = "## Build something with this stack"
 
+# TODO: the three generators' main() functions (stump_base.py, rag_eval_harness.py,
+# trading_dashboard.py) are near-identical renderers over their authored constants.
+# Extracting a shared renderer here was considered and deliberately deferred —
+# narrow scope for this wave — so this stays follow-up debt, not an oversight.
+
 
 def resolve_stack(stack, by_name):
     """Resolve [(stage, full_name)] against the classified dataset.

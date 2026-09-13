@@ -28,6 +28,14 @@ STACK = [
     ("Slice", "OrcaSlicer/OrcaSlicer"),
 ]
 
+# Per-generator heading + health caveat (promptlib intentionally has no shared
+# renderer for these — see the TODO there). This caveat was earned here: the
+# stack below genuinely includes a health-4/Abandoned entry (fogleman/sdf) that
+# is finished, not dead.
+VERIFY_HEADING = "## Verify before you print"
+HEALTH_CAVEAT = (" A low health score in geometry libraries usually means *finished*, "
+                  "not dead — see the parent report's maintenance section.")
+
 WHY = ("A stump base is the textbook case for the implicit/SDF route: the form is organic "
        "and irregular (where code-CAD is painful), it needs no support (it is its own flat "
        "base), and SDF output is watertight by construction — so the repair layer never runs.")
@@ -134,7 +142,6 @@ print('volume cm3 :', round(m.volume/1000, 1))
 print('centre of mass:', m.center_mass.round(1))
 \""""),
     ("look at it", "f3d stump_base.stl --output=view.png --camera-direction=-1,-1,0.4"),
-    ("will it slice", "orca-slicer --export-3mf out.3mf --detect-overhang-wall=1 stump_base.stl"),
 ]
 
 CLOSING = """`is_watertight` should be `True` first try. If not, the SDF has disjoint components —
@@ -180,8 +187,7 @@ def main():
     L.append("")
     L.extend(render_stack_table(resolved))
     L.append("")
-    L.append("Metrics are live from the dataset. A low health score in geometry libraries "
-             "usually means *finished*, not dead — see the parent report's maintenance section.")
+    L.append(("Metrics are live from the dataset." + HEALTH_CAVEAT).strip())
     L.append("")
     if INPUTS:
         L.append("## Measure these first")
@@ -206,7 +212,7 @@ def main():
     for label, text in VARIANTS:
         L.append(f"- **{label}** — \"{text}\"")
     L.append("")
-    L.append("## Verify before you print")
+    L.append(VERIFY_HEADING)
     L.append("")
     for comment, cmd in VERIFY:
         L.append(f"```bash")

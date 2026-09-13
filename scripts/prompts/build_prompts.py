@@ -34,13 +34,22 @@ GENERATORS = [
 
 
 def run_prompt_generators():
-    """Run each generator; collect drift, raise only on hard failure.
+    """Run each generator; collect drift and failures, raise on neither.
 
-    Returns drift as [(generator, warning_line), …] — the same shape
-    build_index.run_generators() returns, so the two lists concatenate.
+    Returns (drift, failed) — drift as [(generator, warning_line), …] and
+    failed as [generator, …] — the same shapes build_index.run_generators()
+    returns, so the two lists concatenate in the caller.
+
+    A single crashing generator must not abort the run: this function is
+    called before inject_cross_links() and build() in build_index.py's
+    __main__, and raising here used to skip both — leaving reports/*.md
+    rewritten (cross-links stripped) but public/reports/ never updated, on
+    top of whatever the crash itself broke. Failures are collected and left
+    for the caller to surface once the rest of the build has completed,
+    mirroring run_generators()'s own isolation contract.
     """
     drift = []
-    failures = []
+    failed = []
     print("Running prompt generators…")
     for g in GENERATORS:
         path = os.path.join(HERE, g)
@@ -51,15 +60,17 @@ def run_prompt_generators():
         proc = subprocess.run([sys.executable, path], cwd=ROOT,
                               capture_output=True, text=True)
         for line in proc.stdout.split("\n"):
-            if "WARNING" in line:
-                drift.append((g, line.strip()))
-                print(f"  ⚠ {g}: {line.strip()}")
+            line = line.strip()
+            if line.startswith("WARNING"):
+                drift.append((g, line))
+                print(f"  ⚠ {g}: {line}")
         if proc.returncode != 0:
-            failures.append((g, proc.stderr.strip()))
-            print(f"  ✗ {g} failed")
-    if failures:
-        raise RuntimeError("prompt generators failed: " + ", ".join(f[0] for f in failures))
-    return drift
+            tail = (proc.stderr or "").strip().splitlines()[-3:]
+            print(f"  ✗ FAILED: {g} (exit {proc.returncode})")
+            for line in tail:
+                print(f"      {line}")
+            failed.append(g)
+    return drift, failed
 
 
 def load_metas():
@@ -92,11 +103,15 @@ def inject_cross_links():
 def build_prompts_index():
     """Copy prompt markdown to public/ and write the index."""
     os.makedirs(PUBLIC_DIR, exist_ok=True)
-    metas = load_metas()
-    for meta in metas:
+    kept = []
+    for meta in load_metas():
         src = os.path.join(PROMPTS_DIR, meta["file"])
-        if os.path.exists(src):
-            shutil.copyfile(src, os.path.join(PUBLIC_DIR, meta["file"]))
+        if not os.path.exists(src):
+            print(f"  WARNING: {meta['file']} missing for {meta['slug']}, skipping")
+            continue
+        shutil.copyfile(src, os.path.join(PUBLIC_DIR, meta["file"]))
+        kept.append(meta)
+    metas = kept
     metas.sort(key=lambda m: m["slug"])
     index = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
@@ -110,7 +125,7 @@ def build_prompts_index():
 
 
 if __name__ == "__main__":
-    drift = run_prompt_generators()
+    drift, failed = run_prompt_generators()
     inject_cross_links()
     build_prompts_index()
     if drift:
@@ -120,3 +135,8 @@ if __name__ == "__main__":
         print(f"\n⚠ {len(drift)} prompt drift warning(s):")
         for g, line in drift:
             print(f"    {g}: {line}")
+    if failed:
+        raise SystemExit(
+            f"\n✗ {len(failed)} prompt generator(s) failed: {', '.join(failed)}\n"
+            "  The other prompts and the index were still rebuilt."
+        )

@@ -214,7 +214,9 @@ if __name__ == "__main__":
     # so cross-links must be written before it runs or the public copy silently
     # diverges from the repo copy.
     print("Regenerating prompts…")
-    drift += run_prompt_generators()
+    prompt_drift, prompt_failed = run_prompt_generators()
+    drift += prompt_drift
+    failed += prompt_failed
     inject_cross_links()
 
     print("Building index…")

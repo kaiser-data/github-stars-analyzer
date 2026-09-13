@@ -8,11 +8,10 @@ Financial charts fail in ways that are easy to miss in a demo and expensive to m
 
 | Stage | Tool | Stars | Health | Lifecycle |
 |---|---|---|---|---|
-| Chart | [`apache/echarts`](https://github.com/apache/echarts) | 67,251 | 64 | Classic |
-| Data | [`Kanaries/pygwalker`](https://github.com/Kanaries/pygwalker) | 15,957 | 64 | Classic |
-| App | [`Avaiga/taipy`](https://github.com/Avaiga/taipy) | 19,434 | 50 | Mature |
+| Chart | [`tradingview/lightweight-charts`](https://github.com/tradingview/lightweight-charts) | 17,186 | 72 | Classic |
+| App | [`streamlit/streamlit`](https://github.com/streamlit/streamlit) | 45,699 | 83 | Classic |
 
-Metrics are live from the dataset. A low health score in charting libraries usually means *finished*, not dead — see the parent report's maintenance section.
+Metrics are live from the dataset.
 
 ## The prompt
 
@@ -56,16 +55,23 @@ Metrics are live from the dataset. A low health score in charting libraries usua
 >
 > **Build, naming each tool where it is used:**
 >
-> 1. **Data** — use `Kanaries/pygwalker` to load and reshape the raw OHLC+volume rows
->    (from CSV or an in-memory dataframe) into the tidy per-timestamp structure the chart
->    layer consumes, including the trading-timestamp list used for the gap handling above.
-> 2. **Chart** — use `apache/echarts` (via its Python binding) to render the candlestick
->    price panel, the linked volume bar panel, and the moving-average line overlay, with
->    the shared/linked x-axis (`axisPointer` link group or equivalent) and the combined
->    tooltip wired at this layer.
-> 3. **App** — use `Avaiga/taipy` to host the chart in a single-process web app: one
->    Python entry point, a page containing the chart component, and a `taipy.Gui(...).run()`
->    call that is the only thing needed to view it locally.
+> 1. **Chart** — use `tradingview/lightweight-charts` to render the candlestick price
+>    panel, the linked volume histogram pane, and the moving-average line overlay.
+>    Lightweight Charts' own multi-pane API (a candlestick series and a histogram series
+>    on a linked pane, plus a line series for the overlay, all on one chart instance)
+>    gives you the shared/linked x-axis and the combined crosshair tooltip natively —
+>    this is the one job the library is purpose-built for, so do not reach for a second
+>    charting library to get panel-linking it already does for free. Lightweight Charts
+>    is a JavaScript library with no official Python binding: write the chart-construction
+>    code in plain JavaScript against its UMD bundle, loaded via a `<script>` tag in the
+>    page the app step serves. Do not route it through an unofficial Python wrapper that
+>    is not part of this stack.
+> 2. **App** — use `streamlit/streamlit` to host the page as a single-process app: read
+>    the OHLC+volume CSV, reshape it into the JSON structure the chart script consumes
+>    (including the trading-timestamp list used for the gap handling above and the
+>    moving-average series), and hand the assembled HTML/JS as one string to
+>    `st.components.v1.html(...)`. One `streamlit run trading_dashboard.py` is the only
+>    command needed to view it locally.
 >
 > Compute the moving average (state the window, e.g. `MA_WINDOW = 20`, as a constant) over
 > the same trading-timestamp list as the price series, so the overlay has no points on
@@ -82,11 +88,11 @@ Append one of these:
 - **Bollinger bands** — "Add a second overlay band (rolling mean ± k·rolling std) as a shaded region on the price panel, computed over the same trading-timestamp list as the moving average."
 - **Intraday** — "Switch the time axis from daily bars to intraday bars and extend the gap handling to skip overnight and lunch-break closures, not just weekends and holidays."
 
-## Verify before you print
+## Verify before you ship it
 
 ```bash
 # run it
-python3 trading_dashboard.py --csv sample_ohlc.csv
+streamlit run trading_dashboard.py -- --csv sample_ohlc.csv
 ```
 
 ```bash
@@ -102,7 +108,7 @@ print('weekend-sized gaps present:', (gaps >= 3).any())
 
 ```bash
 # look at it
-open http://localhost:5000  # taipy's default GUI port
+open http://localhost:8501  # streamlit's default port
 ```
 
 If the chart draws a diagonal line across every weekend, the x-axis is a

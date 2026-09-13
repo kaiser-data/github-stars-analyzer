@@ -23,10 +23,18 @@ SUMMARY = ("A single-file OHLC dashboard with a linked volume subplot and moving
            "market-closed gaps and hue-only direction encoding.")
 
 STACK = [
-    ("Chart", "apache/echarts"),
-    ("Data", "Kanaries/pygwalker"),
-    ("App", "Avaiga/taipy"),
+    ("Chart", "tradingview/lightweight-charts"),
+    ("App", "streamlit/streamlit"),
 ]
+
+# Per-generator heading + health caveat (promptlib intentionally has no shared
+# renderer for these — see the TODO there). The "low health usually means
+# finished" caveat was earned for geometry/algorithm libraries in the
+# 3d-printing-stack report; it does not hold here (staleness is a real risk in
+# a fast-moving JS charting ecosystem) and this table has nothing unhealthy in
+# it anyway, so it stays off.
+VERIFY_HEADING = "## Verify before you ship it"
+HEALTH_CAVEAT = ""
 
 WHY = ("Financial charts fail in ways that are easy to miss in a demo and expensive to miss "
        "in front of a trader: a line quietly drawn across a weekend implies trading that "
@@ -76,16 +84,23 @@ hue-only after the chart body got the fix.
 
 **Build, naming each tool where it is used:**
 
-1. **Data** — use `Kanaries/pygwalker` to load and reshape the raw OHLC+volume rows
-   (from CSV or an in-memory dataframe) into the tidy per-timestamp structure the chart
-   layer consumes, including the trading-timestamp list used for the gap handling above.
-2. **Chart** — use `apache/echarts` (via its Python binding) to render the candlestick
-   price panel, the linked volume bar panel, and the moving-average line overlay, with
-   the shared/linked x-axis (`axisPointer` link group or equivalent) and the combined
-   tooltip wired at this layer.
-3. **App** — use `Avaiga/taipy` to host the chart in a single-process web app: one
-   Python entry point, a page containing the chart component, and a `taipy.Gui(...).run()`
-   call that is the only thing needed to view it locally.
+1. **Chart** — use `tradingview/lightweight-charts` to render the candlestick price
+   panel, the linked volume histogram pane, and the moving-average line overlay.
+   Lightweight Charts' own multi-pane API (a candlestick series and a histogram series
+   on a linked pane, plus a line series for the overlay, all on one chart instance)
+   gives you the shared/linked x-axis and the combined crosshair tooltip natively —
+   this is the one job the library is purpose-built for, so do not reach for a second
+   charting library to get panel-linking it already does for free. Lightweight Charts
+   is a JavaScript library with no official Python binding: write the chart-construction
+   code in plain JavaScript against its UMD bundle, loaded via a `<script>` tag in the
+   page the app step serves. Do not route it through an unofficial Python wrapper that
+   is not part of this stack.
+2. **App** — use `streamlit/streamlit` to host the page as a single-process app: read
+   the OHLC+volume CSV, reshape it into the JSON structure the chart script consumes
+   (including the trading-timestamp list used for the gap handling above and the
+   moving-average series), and hand the assembled HTML/JS as one string to
+   `st.components.v1.html(...)`. One `streamlit run trading_dashboard.py` is the only
+   command needed to view it locally.
 
 Compute the moving average (state the window, e.g. `MA_WINDOW = 20`, as a constant) over
 the same trading-timestamp list as the price series, so the overlay has no points on
@@ -106,7 +121,7 @@ VARIANTS = [
 ]
 
 VERIFY = [
-    ("run it", "python3 trading_dashboard.py --csv sample_ohlc.csv"),
+    ("run it", "streamlit run trading_dashboard.py -- --csv sample_ohlc.csv"),
     ("check for interpolated gaps", """python3 -c "
 import pandas as pd
 df = pd.read_csv('sample_ohlc.csv', parse_dates=['date'])
@@ -114,7 +129,7 @@ gaps = df['date'].diff().dt.days
 print('max gap (days):', gaps.max())
 print('weekend-sized gaps present:', (gaps >= 3).any())
 \""""),
-    ("look at it", "open http://localhost:5000  # taipy's default GUI port"),
+    ("look at it", "open http://localhost:8501  # streamlit's default port"),
 ]
 
 CLOSING = """If the chart draws a diagonal line across every weekend, the x-axis is a
@@ -157,8 +172,7 @@ def main():
     L.append("")
     L.extend(render_stack_table(resolved))
     L.append("")
-    L.append("Metrics are live from the dataset. A low health score in charting libraries "
-             "usually means *finished*, not dead — see the parent report's maintenance section.")
+    L.append(("Metrics are live from the dataset." + HEALTH_CAVEAT).strip())
     L.append("")
     if INPUTS:
         L.append("## Measure these first")
@@ -180,7 +194,7 @@ def main():
     for label, text in VARIANTS:
         L.append(f"- **{label}** — \"{text}\"")
     L.append("")
-    L.append("## Verify before you print")
+    L.append(VERIFY_HEADING)
     L.append("")
     for comment, cmd in VERIFY:
         L.append(f"```bash")

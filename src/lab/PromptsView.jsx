@@ -1,30 +1,64 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { MD_COMPONENTS } from './markdownComponents';
 
 function CopyBriefButton({ brief }) {
   const [state, setState] = useState('idle');
+  const taRef = useRef(null);
+
+  // Selects the brief into an offscreen textarea so the fallback label is
+  // actually true: there is something selected to press Ctrl/Cmd+C on.
+  const selectFallback = () => {
+    const ta = taRef.current;
+    if (!ta) return;
+    ta.value = brief;
+    ta.focus();
+    ta.select();
+    ta.setSelectionRange(0, brief.length);
+  };
 
   const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(brief);
-      setState('copied');
-    } catch {
-      setState('failed');
+    // navigator.clipboard is undefined on non-secure origins (e.g. a
+    // `vite --host` LAN preview over plain http), so this button must not
+    // assume it exists.
+    if (navigator.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(brief);
+        setState('copied');
+        setTimeout(() => setState('idle'), 2000);
+        return;
+      } catch {
+        // fall through to the selection fallback below
+      }
     }
+    selectFallback();
+    setState('selected');
     setTimeout(() => setState('idle'), 2000);
   };
 
-  const label = { idle: 'Copy prompt', copied: 'Copied', failed: 'Press ⌘C' }[state];
+  const label = {
+    idle: 'Copy prompt',
+    copied: 'Copied',
+    selected: 'Selected — press Ctrl/Cmd+C',
+  }[state];
 
   return (
-    <button
-      onClick={copy}
-      className="text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg px-4 py-2 transition-colors"
-    >
-      {label}
-    </button>
+    <>
+      <button
+        onClick={copy}
+        className="text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg px-4 py-2 transition-colors"
+      >
+        {label}
+      </button>
+      <textarea
+        ref={taRef}
+        readOnly
+        tabIndex={-1}
+        aria-hidden="true"
+        style={{ position: 'fixed', top: 0, left: '-9999px', width: 1, height: 1, opacity: 0 }}
+      />
+    </>
   );
 }
 
@@ -124,8 +158,8 @@ export default function PromptsView() {
 
   if (error) {
     return (
-      <div className="bg-red-950/40 border border-red-800 rounded-lg p-4 text-red-300 text-sm">
-        Couldn’t load prompts ({error}). Run <code>python3 scripts/reports/build_index.py</code>.
+      <div className="bg-amber-950/40 border border-amber-800 rounded-lg p-4 text-amber-200 text-sm">
+        No prompts found ({error}). Run <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">python3 scripts/reports/build_index.py</code> to generate them.
       </div>
     );
   }
@@ -136,8 +170,10 @@ export default function PromptsView() {
     <div>
       <p className="text-sm text-gray-400 mb-5 max-w-2xl">
         Build prompts generated from the landscape reports. Each one names the tools its
-        parent report selected, with their current metrics, so a prompt that recommends a
-        dead tool fails the build instead of failing you.
+        parent report selected, with their current stars, health and lifecycle stage
+        alongside it, so you can judge a low score for yourself instead of trusting a
+        stale recommendation — and if a tool has since left the dataset, the prompt
+        carries a visible warning saying so.
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {index.prompts.map((p) => (

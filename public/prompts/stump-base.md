@@ -135,11 +135,6 @@ print('centre of mass:', m.center_mass.round(1))
 f3d stump_base.stl --output=view.png --camera-direction=-1,-1,0.4
 ```
 
-```bash
-# will it slice
-orca-slicer --export-3mf out.3mf --detect-overhang-wall=1 stump_base.stl
-```
-
 `is_watertight` should be `True` first try. If not, the SDF has disjoint components —
 usually a root lobe that floated free. Raise the smooth-union `k` rather than reaching for a
 repair tool; fixing it at the source keeps the guarantee that made this route worth choosing.

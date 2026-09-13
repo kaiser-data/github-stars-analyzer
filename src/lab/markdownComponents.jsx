@@ -1,5 +1,7 @@
 import React from 'react';
 
+// react-markdown component overrides shared by ReportsView and PromptsView, so
+// generated reports and prompts render with one consistent look.
 export const MD_COMPONENTS = {
   h1: (p) => <h1 className="text-2xl font-bold text-white mt-6 mb-3" {...p} />,
   h2: (p) => <h2 className="text-xl font-semibold text-white mt-7 mb-3 pb-1 border-b border-gray-700" {...p} />,

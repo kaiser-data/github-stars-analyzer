@@ -13,7 +13,7 @@ A home-made RAG eval is the easiest place in the whole stack to fool yourself: i
 | Embed | [`huggingface/sentence-transformers`](https://github.com/huggingface/sentence-transformers) | 19,074 | 74 | Classic |
 | Judge | [`KRLabsOrg/LettuceDetect`](https://github.com/KRLabsOrg/LettuceDetect) | 602 | 66 | Hot |
 
-Metrics are live from the dataset. A low health score in retrieval libraries usually means *finished*, not dead — see the parent report's maintenance section.
+Metrics are live from the dataset.
 
 ## The prompt
 
@@ -41,7 +41,13 @@ Metrics are live from the dataset. A low health score in retrieval libraries usu
 > **Reproducibility:** fix the random seed as a top-level constant, `SEED = 42`, and pass
 > it to every stochastic step — negative sampling for the question set, any shuffling of
 > the document set, and any sampling used by the embedding or index step. Two runs on the
-> same corpus and question set must produce byte-identical CSVs.
+> same corpus and question set must produce byte-identical `recall_at_k` and `mrr`
+> columns — the retrieval half of the pipeline has no stochastic step it doesn't control,
+> so it has no excuse not to be deterministic. `faithfulness` and `answer_correctness`
+> depend on the generation step below and are *not* covered by this guarantee: LLM output
+> is not reliably byte-identical run to run, even at temperature 0, across providers or
+> model versions. Do not claim byte-identical generation metrics — only the two retrieval
+> columns carry that promise.
 >
 > **Baseline flag:** add a `--baseline` command-line flag that runs the retrieval step
 > with embeddings disabled, falling back to plain keyword (BM25-style) matching only. A
@@ -68,7 +74,14 @@ Metrics are live from the dataset. A low health score in retrieval libraries usu
 >    a retrieval pipeline object, so the retrieval stage is a single composable component
 >    rather than hand-rolled glue code, and so `--baseline` can swap in a keyword
 >    retriever at exactly this seam.
-> 4. **Judge** — use `KRLabsOrg/LettuceDetect` as the faithfulness/hallucination judge
+> 4. **Generate** — produce the answer that step 5 judges; without this step nothing
+>    exists for the judge to score. There is no curated generation tool in this stack, so
+>    use whatever model you have on hand — a local model, a hosted API, even the same
+>    model you are using to write this harness — and record which one as a comment at
+>    the top of the script. Feed it only the question plus the top-k retrieved chunks, so
+>    a bad answer traces back to bad retrieval rather than the model ignoring the context
+>    it was given.
+> 5. **Judge** — use `KRLabsOrg/LettuceDetect` as the faithfulness/hallucination judge
 >    over the generated answer against the retrieved context, to produce the
 >    `faithfulness` column. Do not let this judge see or influence the retrieval-metric
 >    columns; it only ever scores the generation half.
@@ -89,7 +102,7 @@ Append one of these:
 - **Chunking sweep** — "Wrap the harness in an outer loop over a list of CHUNK_SIZE values and append the chunk size as a column, so the CSV can answer 'what chunk size maximises recall@k' directly."
 - **Cross-encoder rerank** — "Add an optional rerank stage after retrieval and before Judge, and add a `reranked` boolean column so its effect is isolated rather than folded into the base recall@k numbers."
 
-## Verify before you print
+## Verify before you trust the numbers
 
 ```bash
 # generate on a tiny corpus
