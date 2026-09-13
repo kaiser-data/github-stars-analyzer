@@ -14,6 +14,7 @@ const MapView = lazy(() => import('./MapView'));
 const TopicMap = lazy(() => import('./TopicMap'));
 // Lazy: pulls in react-markdown + remark-gfm; only loaded on the Reports tab.
 const ReportsView = lazy(() => import('./ReportsView'));
+const PromptsView = lazy(() => import('./PromptsView'));
 
 function GraphTabFallback({ label = 'graph' }) {
   return (
@@ -41,6 +42,7 @@ const TABS = [
   { key: 'all', label: 'Browse' },
   { key: 'compare', label: 'Compare' },
   { key: 'reports', label: 'Reports' },
+  { key: 'prompts', label: 'Prompts' },
   { key: 'ask', label: 'Ask AI' },
 ];
 
@@ -399,6 +401,11 @@ function LabContent() {
       {tab === 'reports' && (
         <Suspense fallback={<TabFallback label="reports" />}>
           <ReportsView />
+        </Suspense>
+      )}
+      {tab === 'prompts' && (
+        <Suspense fallback={<TabFallback label="prompts" />}>
+          <PromptsView />
         </Suspense>
       )}
       {tab === 'ask' && <AskView />}
