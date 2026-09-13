@@ -1100,7 +1100,7 @@ git commit -m "feat: add rag-eval-harness and trading-dashboard prompts"
 ### Task 6: Extract shared markdown components
 
 **Files:**
-- Create: `src/lab/markdownComponents.js`
+- Create: `src/lab/markdownComponents.jsx`
 - Modify: `src/lab/ReportsView.jsx:1-48` (remove the inline `MD_COMPONENTS`, import instead)
 
 **Interfaces:**
@@ -1108,7 +1108,10 @@ git commit -m "feat: add rag-eval-harness and trading-dashboard prompts"
 
 - [ ] **Step 1: Create the shared module**
 
-Create `src/lab/markdownComponents.js` containing the exact `MD_COMPONENTS` object
+Create `src/lab/markdownComponents.jsx` (the `.jsx` extension is required — the file
+contains JSX, and this repo's Vite config only applies the JSX transform to `.jsx`/`.tsx`;
+`src/lab/queries.js` is the only `.js` file there and it contains no JSX) containing the
+exact `MD_COMPONENTS` object
 currently in `src/lab/ReportsView.jsx` lines 11–48, unchanged, with `import React from 'react';`
 at the top and `export const MD_COMPONENTS = { … };`.
 
@@ -1132,7 +1135,7 @@ Expected: build succeeds with no unresolved-import errors
 - [ ] **Step 4: Commit**
 
 ```bash
-git add src/lab/markdownComponents.js src/lab/ReportsView.jsx
+git add src/lab/markdownComponents.jsx src/lab/ReportsView.jsx
 git commit -m "refactor: extract MD_COMPONENTS so both report and prompt views share it"
 ```
 
