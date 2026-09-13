@@ -19,6 +19,9 @@ from lib import svg_hbar
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
+sys.path.insert(0, os.path.join(ROOT, "scripts", "prompts"))
+from build_prompts import build_prompts_index, inject_cross_links, run_prompt_generators  # noqa: E402
+
 REPORTS_DIR = os.path.join(ROOT, "reports")
 ASSETS_DIR = os.path.join(REPORTS_DIR, "assets")
 PUBLIC_DIR = os.path.join(ROOT, "public/reports")
@@ -205,8 +208,18 @@ if __name__ == "__main__":
                    check=True, cwd=ROOT)
     print("Regenerating reports…")
     failed, drift = run_generators()
+
+    # Prompt generators run between the report generators and build(). build()
+    # injects charts and copies each report to public/reports/ in the SAME loop,
+    # so cross-links must be written before it runs or the public copy silently
+    # diverges from the repo copy.
+    print("Regenerating prompts…")
+    drift += run_prompt_generators()
+    inject_cross_links()
+
     print("Building index…")
     build()
+    build_prompts_index()
     if drift:
         # Not fatal: a curated repo going archived or renamed is normal upstream
         # churn, not a broken build. It does need a human to re-point or retire

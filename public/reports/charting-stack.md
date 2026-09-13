@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 2,140 starred repos (snapshot `2026-09-12T16:25:05.965Z`), cross-referenced with the repo-similarity graph (2,140 nodes / 7,036 edges, 41 communities). The advantages/disadvantages column is editorial judgement grounded in the dataset's own health metrics plus external comparisons — see Methodology.
 >
-> Generated 2026-09-12 by `scripts/reports/charting_stack.py` (regenerate any time — no API cost).
+> Generated 2026-09-13 by `scripts/reports/charting_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/charting-stack-top-tools.svg)
 

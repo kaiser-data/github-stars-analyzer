@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 2,140 starred repos (snapshot `2026-09-12T16:25:05.965Z`), cross-referenced with the repo-similarity graph.
 >
-> Generated 2026-09-12 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
+> Generated 2026-09-13 by `scripts/reports/which_claw.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/which-claw-top-tools.svg)
 

@@ -43,6 +43,7 @@
     "precompute:questions": "node --env-file=.env scripts/precompute-questions.mjs",
     "reports": "python3 scripts/reports/build_index.py",
     "prebuild": "python3 scripts/reports/build_index.py",
-    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run check:dataset && npm run precompute"
+    "refresh": "npm run refresh:sample && npm run refresh:ingest && npm run refresh:classify && npm run check:dataset && npm run precompute",
+    "test:prompts": "python3 -m pytest tests/ -q"
   }
 }

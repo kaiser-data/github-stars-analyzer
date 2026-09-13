@@ -42,3 +42,19 @@ def test_cross_link_appears_once_after_two_consecutive_runs():
     with open(os.path.join(ROOT, "reports", "3d-printing-stack.md")) as f:
         text = f.read()
     assert text.count(PROMPT_SECTION) == 1
+
+
+def test_full_build_leaves_public_report_and_repo_report_identical():
+    """The cross-link must reach public/reports/, not just reports/."""
+    proc = subprocess.run(
+        [sys.executable, os.path.join(ROOT, "scripts", "reports", "build_index.py")],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    assert proc.returncode == 0, proc.stdout + proc.stderr
+    with open(os.path.join(ROOT, "reports", "3d-printing-stack.md")) as f:
+        repo_copy = f.read()
+    with open(os.path.join(ROOT, "public", "reports", "3d-printing-stack.md")) as f:
+        public_copy = f.read()
+    assert repo_copy == public_copy
+    from promptlib import PROMPT_SECTION
+    assert PROMPT_SECTION in public_copy

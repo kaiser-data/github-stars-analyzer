@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 2,140 starred repos (snapshot `2026-09-12T16:25:05.965Z`), cross-referenced with the repo-similarity graph (2,140 nodes / 7,036 edges, 41 communities).
 >
-> Generated 2026-09-12 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
+> Generated 2026-09-13 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/3d-printing-stack-top-tools.svg)
 
@@ -393,6 +393,13 @@ Three rules that matter more than any single number: **require a flat base** —
 - **the3deer/android-3D-model-viewer** (1,553★) — an Android STL/OBJ viewer app, not a modelling or prep tool
 - **modelcontextprotocol/servers** (90,105★) — the MCP substrate the bridges build on — covered in the *MCP tooling* report
 - **blender/blender** — not starred; reachable via `blender-mcp` and listed there instead
+
+## Build something with this stack
+
+Ready-to-paste build prompts generated from this report's stack — the tools above, wired into a brief an LLM can act on.
+
+- **Tree-stump base for a Pokal** — A naturalistic tree-stump plinth for an existing trophy, sized entirely from measurements of the trophy it carries.  
+  <sub>`prompts/stump-base.md`</sub>
 
 ## Methodology & caveats
 

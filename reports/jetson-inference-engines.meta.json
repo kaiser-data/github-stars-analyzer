@@ -38,7 +38,7 @@
     }
   ],
   "snapshot": "2026-09-12T16:25:05.965Z",
-  "generated": "2026-09-12",
+  "generated": "2026-09-13",
   "generator": "scripts/reports/jetson_inference.py",
   "created": "2026-08-23"
 }

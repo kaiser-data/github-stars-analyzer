@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12",
+  "generated": "2026-09-13",
   "count": 27,
   "reports": [
     {
@@ -75,7 +75,7 @@
       "chart_top_title": "Biggest star gains (12d)",
       "chart_cat_title": "Repos by movement type",
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
     },
@@ -122,7 +122,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
     },
@@ -168,7 +168,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
     },
@@ -208,7 +208,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
     },
@@ -254,7 +254,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/agentic_terminals.py",
       "created": "2026-08-23"
     },
@@ -303,7 +303,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
     },
@@ -345,7 +345,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/mcp_tooling.py",
       "created": "2026-05-31"
     },
@@ -387,7 +387,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
     },
@@ -431,7 +431,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/agent_memory.py",
       "created": "2026-08-12"
     },
@@ -481,7 +481,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
     },
@@ -524,7 +524,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/agent_harnesses.py",
       "created": "2026-07-19"
     },
@@ -569,7 +569,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
     },
@@ -613,7 +613,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/printing_stack.py",
       "created": "2026-09-12"
     },
@@ -656,7 +656,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
     },
@@ -698,7 +698,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/ai_coding_tuis.py",
       "created": "2026-07-19"
     },
@@ -740,7 +740,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
     },
@@ -782,7 +782,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/openclaw_ecosystem.py",
       "created": "2026-05-31"
     },
@@ -825,7 +825,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
     },
@@ -868,7 +868,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/voice_agents.py",
       "created": "2026-06-04"
     },
@@ -910,7 +910,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
     },
@@ -954,7 +954,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/jetson_inference.py",
       "created": "2026-08-23"
     },
@@ -995,7 +995,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
     },
@@ -1036,7 +1036,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
     },
@@ -1079,7 +1079,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
     },
@@ -1121,7 +1121,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
     },
@@ -1161,7 +1161,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
     },
@@ -1200,7 +1200,7 @@
         }
       ],
       "snapshot": "2026-09-12T16:25:05.965Z",
-      "generated": "2026-09-12",
+      "generated": "2026-09-13",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"
     }
