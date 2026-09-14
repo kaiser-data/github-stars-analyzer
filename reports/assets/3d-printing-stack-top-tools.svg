@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Comfy-Org/ComfyUI</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">131,687</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">133,022</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ahujasid/blender-mcp</text>
-<path d="M244,67 h70.0 q4,0 4,4 v10 q0,4 -4,4 h-70.0 z" class="bar"/>
-<text x="324.0" y="76.0" class="val" dominant-baseline="central">28,331</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">OrcaSlicer/OrcaSlicer</text>
-<path d="M244,94 h36.9 q4,0 4,4 v10 q0,4 -4,4 h-36.9 z" class="bar"/>
-<text x="290.9" y="103.0" class="val" dominant-baseline="central">15,676</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">img2threejs/img2threejs</text>
-<path d="M244,121 h36.0 q4,0 4,4 v10 q0,4 -4,4 h-36.0 z" class="bar"/>
-<text x="290.0" y="130.0" class="val" dominant-baseline="central">15,329</text>
+<path d="M244,67 h69.8 q4,0 4,4 v10 q0,4 -4,4 h-69.8 z" class="bar"/>
+<text x="323.8" y="76.0" class="val" dominant-baseline="central">28,519</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">img2threejs/img2threejs</text>
+<path d="M244,94 h37.2 q4,0 4,4 v10 q0,4 -4,4 h-37.2 z" class="bar"/>
+<text x="291.2" y="103.0" class="val" dominant-baseline="central">15,948</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">OrcaSlicer/OrcaSlicer</text>
+<path d="M244,121 h36.6 q4,0 4,4 v10 q0,4 -4,4 h-36.6 z" class="bar"/>
+<text x="290.6" y="130.0" class="val" dominant-baseline="central">15,683</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Tencent-Hunyuan/Hunyuan3D-2</text>
-<path d="M244,148 h34.7 q4,0 4,4 v10 q0,4 -4,4 h-34.7 z" class="bar"/>
-<text x="288.7" y="157.0" class="val" dominant-baseline="central">14,822</text>
+<path d="M244,148 h34.4 q4,0 4,4 v10 q0,4 -4,4 h-34.4 z" class="bar"/>
+<text x="288.4" y="157.0" class="val" dominant-baseline="central">14,845</text>
 </svg>

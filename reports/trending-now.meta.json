@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 13 data vintages: the 12-day movers, relative breakouts, sustained climbers, 246 new entrants, and what has gone flat.",
-  "tool_count": 310,
-  "total_stars": 7086734,
+  "summary": "Measured star momentum across 14 data vintages: the 7-day movers, relative breakouts, sustained climbers, 77 new entrants, and what has gone flat.",
+  "tool_count": 142,
+  "total_stars": 6183064,
   "categories": {
-    "Risers": 1483,
-    "Breakouts": 1398,
-    "New entrants": 246,
-    "Cooling": 345
+    "Risers": 1610,
+    "Breakouts": 1525,
+    "New entrants": 77,
+    "Cooling": 96
   },
   "top_tools": [
     {
-      "name": "DietrichGebert/ponytail",
-      "stars": 128376
+      "name": "ayghri/i-have-adhd",
+      "stars": 44890
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "stars": 213440
+      "stars": 223346
     },
     {
       "name": "debpalash/VoiceStudio",
-      "stars": 19219
+      "stars": 28010
     },
     {
-      "name": "affaan-m/ECC",
-      "stars": 250276
+      "name": "DietrichGebert/ponytail",
+      "stars": 137824
     },
     {
-      "name": "stablyai/orca",
-      "stars": 62398
+      "name": "cathrynlavery/diagram-design",
+      "stars": 39546
     }
   ],
   "chart_top_series": [
     {
-      "name": "DietrichGebert/ponytail",
-      "value": 10532
+      "name": "ayghri/i-have-adhd",
+      "value": 17366
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 7608
+      "value": 8649
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 6793
+      "value": 7789
     },
     {
-      "name": "affaan-m/ECC",
-      "value": 5338
-    },
-    {
-      "name": "stablyai/orca",
-      "value": 4454
-    },
-    {
-      "name": "NousResearch/hermes-agent",
-      "value": 3400
+      "name": "DietrichGebert/ponytail",
+      "value": 7589
     },
     {
       "name": "cathrynlavery/diagram-design",
-      "value": 2898
+      "value": 6551
     },
     {
-      "name": "diegosouzapw/OmniRoute",
-      "value": 2748
+      "name": "affaan-m/ECC",
+      "value": 5830
+    },
+    {
+      "name": "heygen-com/hyperframes",
+      "value": 5261
+    },
+    {
+      "name": "stablyai/orca",
+      "value": 5133
     }
   ],
-  "chart_top_title": "Biggest star gains (12d)",
+  "chart_top_title": "Biggest star gains (7d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-12T16:25:05.965Z",
-  "generated": "2026-09-13",
+  "snapshot": "2026-09-14T11:08:08.535Z",
+  "generated": "2026-09-14",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-08"
+  "created": "2026-09-13"
 }

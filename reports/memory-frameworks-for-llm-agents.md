@@ -1,8 +1,8 @@
 # Memory Frameworks for LLMs & Agents — Comparative Report
 
-> Derived from **kaiser-data**'s 2,140 starred repos (snapshot `2026-09-12T16:25:05.965Z`), cross-referenced with the repo-similarity graph (2,140 nodes / 7,036 edges, 41 communities).
+> Derived from **kaiser-data**'s 2,159 starred repos (snapshot `2026-09-14T11:08:08.535Z`), cross-referenced with the repo-similarity graph (2,159 nodes / 7,086 edges, 37 communities).
 >
-> Generated 2026-09-13 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
+> Generated 2026-09-14 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/memory-frameworks-for-llm-agents-top-tools.svg)
 
@@ -12,7 +12,7 @@
 ## Executive summary
 
 - **22 dedicated memory frameworks** identified across your stars, plus **5 storage substrates** (vector/graph DBs) they build on.
-- Combined reach: **437,896★**. The space is overwhelmingly **Python** (10/22 projects).
+- Combined reach: **441,844★**. The space is overwhelmingly **Python** (10/22 projects).
 - Four sub-categories emerge: **general memory layers**, **coding-agent/session memory**, **knowledge-graph memory**, and frameworks that **bundle a memory module**.
 - The dominant architectural split is **vector-recall vs. knowledge-graph** memory — with a clear trend toward *temporal knowledge graphs* (graphiti) and *local-first* designs (OpenChronicle, ctx, TencentDB-Agent-Memory).
 
@@ -22,28 +22,28 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | JavaScript | Apache-2.0 | 93,309 (▼66) | Hot | 79 | very active | 7d ago | 1.0y | 4 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 64,763 (▼64) | Classic | 78 | very active | 8d ago | 3.2y | 24 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 58,865 (▼30) | Hot | 75 | very active | 7d ago | 5mo | 9 |
-| [getzep/graphiti](https://github.com/getzep/graphiti) | General memory layer | Python | Apache-2.0 | 30,624 (▼34) | Mature | 73 | very active | 8d ago | 2.1y | 23 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 30,502 (▼42) | Classic | 77 | very active | 7d ago | 3.1y | 9 |
-| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 26,937 (▼20) | Hot | 86 | very active | 7d ago | 11mo | 19 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 25,983 (▼67) | Rising | 71 | very active | 10d ago | 5mo | 11 |
-| [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | — | Apache-2.0 | 24,626 (▼14) | Mature | 65 | active | 20d ago | 2.9y | 2 |
-| [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,489 (▼3) | Declining | 56 | active | 2mo ago | 1.3y | 1 |
-| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 16,443 (▼26) | Mature | 72 | active | 9d ago | 1.1y | 4 |
-| [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,961 (▼2) | Declining | 28 | slowing | 3mo ago | 10mo | 0 |
-| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 12,126 (▼114) | Hot | 83 | very active | 7d ago | 1.2y | 20 |
-| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | General memory layer | Python | AGPL-3.0 | 7,036 (▼9) | Classic | 76 | very active | 7d ago | 3.0y | 25 |
-| [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | Coding-agent memory | TypeScript | NOASSERTION | 4,956 | Declining | 54 | slowing | 2mo ago | 1.2y | 1 |
-| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | General memory layer | JavaScript | Apache-2.0 | 3,684 (▼1) | Declining | 48 | active | 2mo ago | 1.2y | 0 |
-| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,677 (▼8) | Mature | 63 | very active | 9d ago | 2.2y | 11 |
-| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,670 (▲1) | Declining | 22 | slowing | 4mo ago | 4mo | 0 |
-| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Knowledge-graph memory | JavaScript | MIT | 889 | Declining | 42 | slowing | 3mo ago | 1.8y | 0 |
-| [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | General memory layer | TypeScript | — | 799 | Mature | 46 | slowing | 2mo ago | 7mo | 4 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | TypeScript | Apache-2.0 | 93,826 (▲517) | Hot | 80 | very active | 1d ago | 1.0y | 19 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 65,265 (▲502) | Classic | 79 | very active | 0d ago | 3.2y | 24 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 59,043 (▲178) | Hot | 76 | very active | 0d ago | 5mo | 23 |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | General memory layer | Python | Apache-2.0 | 30,865 (▲241) | Mature | 73 | very active | 3d ago | 2.1y | 27 |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 30,674 (▲172) | Classic | 78 | very active | 0d ago | 3.1y | 9 |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 27,138 (▲201) | Hot | 87 | very active | 0d ago | 11mo | 19 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 26,642 (▲659) | Hot | 77 | very active | 3d ago | 5mo | 15 |
+| [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | — | Apache-2.0 | 24,732 (▲106) | Mature | 67 | active | 4d ago | 2.9y | 2 |
+| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 16,702 (▲259) | Declining | 62 | active | 11d ago | 1.1y | 1 |
+| [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,539 (▲50) | Declining | 56 | slowing | 2mo ago | 1.3y | 1 |
+| [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,975 (▲14) | Declining | 28 | slowing | 3mo ago | 10mo | 0 |
+| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 12,855 (▲729) | Hot | 94 | very active | 0d ago | 1.2y | 27 |
+| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | General memory layer | Python | AGPL-3.0 | 7,156 (▲120) | Classic | 71 | very active | 3d ago | 3.0y | 20 |
+| [campfirein/byterover-cli](https://github.com/campfirein/byterover-cli) | Coding-agent memory | TypeScript | NOASSERTION | 4,957 (▲1) | Declining | 54 | slowing | 2mo ago | 1.2y | 1 |
+| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | General memory layer | JavaScript | Apache-2.0 | 3,692 (▲8) | Declining | 48 | slowing | 2mo ago | 1.2y | 0 |
+| [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,828 (▲158) | Declining | 22 | slowing | 4mo ago | 4mo | 0 |
+| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,712 (▲35) | Mature | 64 | very active | 11d ago | 2.2y | 11 |
+| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Knowledge-graph memory | JavaScript | MIT | 888 (▼1) | Declining | 42 | slowing | 3mo ago | 1.8y | 0 |
+| [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | General memory layer | TypeScript | — | 798 (▼1) | Mature | 47 | active | 5d ago | 7mo | 2 |
 | [zmedelis/bosquet](https://github.com/zmedelis/bosquet) | LLM framework w/ memory | Clojure | EPL-1.0 | 379 | Mature | 32 | slowing | 3mo ago | 3.7y | 0 |
 | [needle-ai/needle-mcp](https://github.com/needle-ai/needle-mcp) | Knowledge-graph memory | Python | MIT | 102 | Abandoned | 10 | stale | 1.1y ago | 1.7y | 0 |
-| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 76 | Hot | 76 | very active | 7d ago | 7mo | 5 |
+| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 76 | Hot | 77 | very active | 0d ago | 7mo | 6 |
 
 ## By category
 
@@ -51,40 +51,40 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 
 _Drop-in memory APIs for any agent: store interactions/facts, retrieve relevant context on demand. The crowded, fast-moving core of the space._
 
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 64,763★ · Python · Classic  
+- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 65,265★ · Python · Classic  
   Universal, LLM-agnostic memory API; extract+store+retrieve facts across sessions.  
   <sub>topics: ai, chatgpt, llm, python, rag, long-term-memory, memory, memory-management</sub>
-- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 58,865★ · Python · Hot  
+- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,043★ · Python · Hot  
   Benchmark-focused open-source memory system.  
   <sub>topics: ai, chromadb, llm, mcp, memory, python</sub>
-- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 30,624★ · Python · Mature  
+- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 30,865★ · Python · Mature  
   Temporal knowledge graph engine behind Zep; bi-temporal edges, real-time incremental updates.  
   <sub>topics: agents, graph, llms, rag</sub>
-- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 30,502★ · Python · Classic  
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 30,674★ · Python · Classic  
   'Memory control plane' — ECL (extract-cognify-load) pipelines into a knowledge graph + vector store.  
   <sub>topics: ai, cognitive-architecture, vector-database, ai-agents, graph-database, ai-memory, cognitive-memory, knowledge</sub>
-- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 25,983★ · TypeScript · Rising  
+- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 26,642★ · TypeScript · Hot  
   Fully-local long-term memory via a 4-tier progressive pipeline.  
   <sub>topics: agent, llm, memory, openclaw-plugin, ai-agent, embedding, local-first, long-term-memory</sub>
-- **[letta-ai/letta](https://github.com/letta-ai/letta)** · 24,626★ · — · Mature  
+- **[letta-ai/letta](https://github.com/letta-ai/letta)** · 24,732★ · — · Mature  
   Ex-MemGPT — the project that coined 'agent memory'; self-editing memory + a stateful agent server.  
   <sub>topics: llm, llm-agent, ai, ai-agents</sub>
-- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,489★ · Rust · Declining  
-  Serverless single-file memory layer; replaces RAG pipelines with a portable artifact.  
-  <sub>topics: ai, context, embedded, faiss, knowledge-base, knowledge-graph, llm, machine-learning</sub>
-- **[MemoriLabs/Memori](https://github.com/MemoriLabs/Memori)** · 16,443★ · Python · Mature  
+- **[MemoriLabs/Memori](https://github.com/MemoriLabs/Memori)** · 16,702★ · Python · Declining  
   Agent-native memory infra; turns execution & conversations into structured recall.  
   <sub>topics: agent, ai, long-short-term-memory, memory, python, rag, state-management, memory-management</sub>
-- **[plastic-labs/honcho](https://github.com/plastic-labs/honcho)** · 7,036★ · Python · Classic  
+- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,539★ · Rust · Declining  
+  Serverless single-file memory layer; replaces RAG pipelines with a portable artifact.  
+  <sub>topics: ai, context, embedded, faiss, knowledge-base, knowledge-graph, llm, machine-learning</sub>
+- **[plastic-labs/honcho](https://github.com/plastic-labs/honcho)** · 7,156★ · Python · Classic  
   Memory library for stateful agents; user-modeling / theory-of-mind oriented.  
   <sub>topics: ai, llm, memory, agent-memory, ai-agents, ai-memory, context-engineering, continual-learning</sub>
-- **[memodb-io/Acontext](https://github.com/memodb-io/Acontext)** · 3,684★ · JavaScript · Declining  
+- **[memodb-io/Acontext](https://github.com/memodb-io/Acontext)** · 3,692★ · JavaScript · Declining  
   Treats agent 'skills' as a memory layer.  
   <sub>topics: agent, context-engineering, data-platform, self-learning, agent-development-kit, ai-agent, llm, memory</sub>
-- **[Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle)** · 2,670★ · Python · Declining  
+- **[Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle)** · 2,828★ · Python · Declining  
   Local-first memory for any tool-capable LLM agent.  
   <sub>topics: —</sub>
-- **[supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory)** · 799★ · TypeScript · Mature  
+- **[supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory)** · 798★ · TypeScript · Mature  
   Long-term memory & recall, packaged for OpenClaw agents.  
   <sub>topics: ai-memory, clawd, clawdbot, memory, moltbot, openai, openclaw</sub>
 - **[ActiveMemory/ctx](https://github.com/ActiveMemory/ctx)** · 76★ · HTML · Hot  
@@ -95,16 +95,16 @@ _Drop-in memory APIs for any agent: store interactions/facts, retrieve relevant 
 
 _Memory specialized for coding assistants (Claude Code, Cursor, OpenClaw): persist project context, decisions, and history across sessions._
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 93,309★ · JavaScript · Hot  
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 93,826★ · TypeScript · Hot  
   Persistent context across sessions; captures everything an agent does and re-injects it.  
   <sub>topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, claude, claude-agent-sdk, claude-agents</sub>
-- **[gastownhall/beads](https://github.com/gastownhall/beads)** · 26,937★ · Go · Hot  
+- **[gastownhall/beads](https://github.com/gastownhall/beads)** · 27,138★ · Go · Hot  
   Distributed graph issue-tracker as durable agent memory (Dolt-backed).  
   <sub>topics: agents, claude-code, coding</sub>
-- **[andrewyng/context-hub](https://github.com/andrewyng/context-hub)** · 13,961★ · JavaScript · Declining  
+- **[andrewyng/context-hub](https://github.com/andrewyng/context-hub)** · 13,975★ · JavaScript · Declining  
   Curated, versioned docs so agents stop hallucinating APIs / forgetting.  
   <sub>topics: —</sub>
-- **[campfirein/byterover-cli](https://github.com/campfirein/byterover-cli)** · 4,956★ · TypeScript · Declining  
+- **[campfirein/byterover-cli](https://github.com/campfirein/byterover-cli)** · 4,957★ · TypeScript · Declining  
   Portable memory layer for autonomous coding agents (formerly Cipher).  
   <sub>topics: agent, llm, mcp, memory, vibe-coding, ai, autonomous-agents, cli</sub>
 
@@ -112,13 +112,13 @@ _Memory specialized for coding assistants (Claude Code, Cursor, OpenClaw): persi
 
 _Memory as a structured graph/ontology rather than a vector blob — better provenance, reasoning, and explainability._
 
-- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 12,126★ · Python · Hot  
+- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 12,855★ · Python · Hot  
   AI-native KG framework: semantic retrieval, ontology reasoning, provenance.  
   <sub>topics: ai, ai-governance, artificial-intelligence, context-engineering, context-graphs, decision-intelligence, explainable-ai, generative-ai</sub>
-- **[trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph)** · 2,677★ · Python · Mature  
+- **[trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph)** · 2,712★ · Python · Mature  
   Agent runtime platform powered by context graphs + ontology.  
   <sub>topics: open-source, ontology, agent, graph, rdf, context, knowledge-graph, owl</sub>
-- **[shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph)** · 889★ · JavaScript · Declining  
+- **[shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph)** · 888★ · JavaScript · Declining  
   MCP server giving Claude persistent memory via a local knowledge graph.  
   <sub>topics: ai-memory, claude-ai, knowledge-graph, mcp, memory-server, typescript</sub>
 - **[needle-ai/needle-mcp](https://github.com/needle-ai/needle-mcp)** · 102★ · Python · Abandoned  
@@ -135,32 +135,30 @@ _Broader LLMOps toolkits that ship memory as one module._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** The 22 frameworks fall into **12 of the graph's 41 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
+**Community clustering.** The 22 frameworks fall into **11 of the graph's 37 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
 
-- **Community 16** (5): `mem0ai/mem0`, `MemoriLabs/Memori`, `memvid/memvid`, `plastic-labs/honcho`, `semantica-agi/semantica`
-- **Community 20** (2): `letta-ai/letta`, `getzep/graphiti`
-- **Community 17** (2): `TencentCloud/TencentDB-Agent-Memory`, `gastownhall/beads`
-- **Community 5** (2): `memodb-io/Acontext`, `MemPalace/mempalace`
-- **Community 9** (2): `ActiveMemory/ctx`, `trustgraph-ai/trustgraph`
-- **Community 12** (2): `thedotmack/claude-mem`, `zmedelis/bosquet`
-- **Community 22** (2): `shaneholloman/mcp-knowledge-graph`, `needle-ai/needle-mcp`
+- **Community 3** (6): `letta-ai/letta`, `getzep/graphiti`, `TencentCloud/TencentDB-Agent-Memory`, `memodb-io/Acontext`, `MemPalace/mempalace`, `needle-ai/needle-mcp`
+- **Community 14** (5): `mem0ai/mem0`, `MemoriLabs/Memori`, `memvid/memvid`, `plastic-labs/honcho`, `semantica-agi/semantica`
+- **Community 10** (2): `ActiveMemory/ctx`, `trustgraph-ai/trustgraph`
+- **Community 16** (2): `thedotmack/claude-mem`, `zmedelis/bosquet`
 
 **Centrality (PageRank in the full 1,071-repo graph).** Higher = more connected to the rest of your starred ecosystem (a proxy for how 'hub-like' the project is):
 
-- `MemPalace/mempalace` — PageRank 0.0010
 - `letta-ai/letta` — PageRank 0.0008
-- `supermemoryai/openclaw-supermemory` — PageRank 0.0006
-- `plastic-labs/honcho` — PageRank 0.0006
-- `mem0ai/mem0` — PageRank 0.0005
-- `topoteretes/cognee` — PageRank 0.0005
+- `MemPalace/mempalace` — PageRank 0.0007
+- `mem0ai/mem0` — PageRank 0.0006
+- `topoteretes/cognee` — PageRank 0.0006
+- `supermemoryai/openclaw-supermemory` — PageRank 0.0005
+- `gastownhall/beads` — PageRank 0.0005
+- `plastic-labs/honcho` — PageRank 0.0005
 - `getzep/graphiti` — PageRank 0.0005
-- `TencentCloud/TencentDB-Agent-Memory` — PageRank 0.0004
 
 **Direct links between memory frameworks** (similarity edges where both endpoints are in this report):
 
 - `MemoriLabs/Memori` ⇄ `mem0ai/mem0` (w=0.330) — topics: ai, memory, python, rag
 - `MemPalace/mempalace` ⇄ `plastic-labs/honcho` (w=0.281) — topics: ai, llm, memory
 - `plastic-labs/honcho` ⇄ `MemoriLabs/Memori` (w=0.267) — topics: ai, llm, memory, agent-memory
+- `semantica-agi/semantica` ⇄ `topoteretes/cognee` (w=0.254) — topics: ai, context-engineering, graph-rag, knowledge-graph; authors: dependabot[bot]
 - `TencentCloud/TencentDB-Agent-Memory` ⇄ `memodb-io/Acontext` (w=0.200) — topics: agent, llm, memory, ai-agent
 - `trustgraph-ai/trustgraph` ⇄ `topoteretes/cognee` (w=0.168) — topics: open-source, knowledge-graph, context-engineering, help-wanted
 
@@ -170,23 +168,23 @@ Bus factor = how concentrated commits are in one author (1 = single-maintainer r
 
 | Project | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| gastownhall/beads | 86 | Hot | very active | 3 | 23% | 98 |
-| semantica-agi/semantica | 83 | Hot | very active | 2 | 46% | 23 |
-| thedotmack/claude-mem | 79 | Hot | very active | 1 | 92% | 324 |
-| mem0ai/mem0 | 78 | Classic | very active | 1 | 55% | 395 |
-| topoteretes/cognee | 77 | Classic | very active | 1 | 69% | 147 |
-| plastic-labs/honcho | 76 | Classic | very active | 4 | 20% | 0 |
-| ActiveMemory/ctx | 76 | Hot | very active | 1 | 66% | 7 |
-| MemPalace/mempalace | 75 | Hot | very active | 1 | 65% | 17 |
-| getzep/graphiti | 73 | Mature | very active | 1 | 61% | 199 |
-| MemoriLabs/Memori | 72 | Mature | active | 2 | 43% | 38 |
-| TencentCloud/TencentDB-Agent-Memory | 71 | Rising | very active | 2 | 29% | 14 |
-| letta-ai/letta | 65 | Mature | active | 1 | 63% | 177 |
-| trustgraph-ai/trustgraph | 63 | Mature | very active | 1 | 64% | 0 |
-| memvid/memvid | 56 | Declining | active | 1 | 100% | 12 |
+| semantica-agi/semantica | 94 | Hot | very active | 4 | 35% | 23 |
+| gastownhall/beads | 87 | Hot | very active | 3 | 23% | 99 |
+| thedotmack/claude-mem | 80 | Hot | very active | 1 | 68% | 344 |
+| mem0ai/mem0 | 79 | Classic | very active | 1 | 55% | 399 |
+| topoteretes/cognee | 78 | Classic | very active | 1 | 71% | 147 |
+| TencentCloud/TencentDB-Agent-Memory | 77 | Hot | very active | 3 | 26% | 16 |
+| ActiveMemory/ctx | 77 | Hot | very active | 1 | 68% | 7 |
+| MemPalace/mempalace | 76 | Hot | very active | 1 | 52% | 17 |
+| getzep/graphiti | 73 | Mature | very active | 1 | 56% | 200 |
+| plastic-labs/honcho | 71 | Classic | very active | 3 | 20% | 0 |
+| letta-ai/letta | 67 | Mature | active | 1 | 60% | 177 |
+| trustgraph-ai/trustgraph | 64 | Mature | very active | 1 | 64% | 1 |
+| MemoriLabs/Memori | 62 | Declining | active | 1 | 100% | 38 |
+| memvid/memvid | 56 | Declining | slowing | 1 | 100% | 12 |
 | campfirein/byterover-cli | 54 | Declining | slowing | 1 | 100% | 27 |
-| memodb-io/Acontext | 48 | Declining | active | 0 | 0% | 279 |
-| supermemoryai/openclaw-supermemory | 46 | Mature | slowing | 2 | 43% | 0 |
+| memodb-io/Acontext | 48 | Declining | slowing | 0 | 0% | 279 |
+| supermemoryai/openclaw-supermemory | 47 | Mature | active | 1 | 50% | 0 |
 | shaneholloman/mcp-knowledge-graph | 42 | Declining | slowing | 0 | 0% | 8 |
 | zmedelis/bosquet | 32 | Mature | slowing | 0 | 0% | 14 |
 | andrewyng/context-hub | 28 | Declining | slowing | 0 | 0% | 1 |
@@ -211,11 +209,11 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 
 | Store | ★ Stars | Lang | Role |
 |---|---|---|---|
-| [redis/redis](https://github.com/redis/redis) | 76,226 (▼37) | C | In-memory data store; common KV/vector backing for memory layers. |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | 40,859 (▼8) | C++ | Dense-vector similarity search library; embedding index substrate. |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 29,236 (▼5) | Rust | AI-native search/vector DB used as memory storage. |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | 15,800 (▼25) | C++ | Lightweight in-process vector database. |
-| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | 5,904 (▼21) | Rust | Fast graph database (GraphBLAS) for graph-shaped memory. |
+| [redis/redis](https://github.com/redis/redis) | 76,357 (▲131) | C | In-memory data store; common KV/vector backing for memory layers. |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | 40,903 (▲44) | C++ | Dense-vector similarity search library; embedding index substrate. |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 29,294 (▲58) | Rust | AI-native search/vector DB used as memory storage. |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | 15,915 (▲115) | C++ | Lightweight in-process vector database. |
+| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | 6,092 (▲188) | Rust | Fast graph database (GraphBLAS) for graph-shaped memory. |
 
 ## Methodology & caveats
 
@@ -224,4 +222,4 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 - **Metrics** (health, momentum, lifecycle, bus_factor) are precomputed by the analyzer pipeline at snapshot time and may lag GitHub's current state.
 - **The market is young**: many of these launched in the last 12 months; star counts and activity shift fast. Re-run this script after a fresh `classified.json` to refresh.
 
-<sub>Frameworks covered: 22 · Snapshot: 2026-09-12T16:25:05.965Z</sub>
+<sub>Frameworks covered: 22 · Snapshot: 2026-09-14T11:08:08.535Z</sub>
