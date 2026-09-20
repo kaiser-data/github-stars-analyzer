@@ -119,55 +119,55 @@ footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--ink);font-siz
 
 <section id="rank" class="verdict">
   <h2>Convenience ranking for this job</h2>
-  <p>Job = named autonomous agent, systemd or Docker, channels stay up after logout. Switching cost is ignored. Standing tie-break: higher job fit wins. Claude Code revised three contradictions in the first pass (ZeroClaw was not an Ops 10; Hermes was not a full point behind an identical capability list; Eliza was dinged on an unstated finance axis).</p>
+  <p>Job = named autonomous agent, systemd or Docker, channels stay up after logout. Switching cost is ignored. Two independent reviews now sit behind these numbers, and both returned <b>revise</b>. Claude found the rubric contradictions; Codex read the vendor docs and overturned three rationales that were wrong on the facts. Every claim that moved a score by a full point was re-checked against primary docs before it was applied — see <a href="#reviews">Independent review</a>. The old tie-break (higher Fit wins) no longer separates the top two: they are tied on both axes.</p>
   <ol class="rank">
     <li>
-      <span class="n">1</span>
-      <div class="who">OpenClaw 2.0 <small>Fit 10 / ops 7.5. Scale anchor. RAM ding applied consistently. Score 8.8</small></div>
-      <span class="sc">8.8</span>
-      <div class="bar"><i style="width:88%"></i></div>
+      <span class="n">=1</span>
+      <div class="who">OpenClaw 2.0 <small>Fit 10 / ops 8.5. Ops restored: the 6 GB figure is a source-build requirement prebuilt images avoid. Score 9.3</small></div>
+      <span class="sc">9.3</span>
+      <div class="bar"><i style="width:93%"></i></div>
     </li>
     <li>
-      <span class="n">2</span>
-      <div class="who">Hermes Agent <small>Fit 9.5 / ops 8. Same job as OpenClaw; curl + linger. Tied at 8.8, loses fit tie-break. Score 8.8</small></div>
-      <span class="sc">8.8</span>
-      <div class="bar"><i style="width:88%"></i></div>
+      <span class="n">=1</span>
+      <div class="who">Hermes Agent <small>Fit 10 / ops 8.5. Identical capability list to OpenClaw; no missing capability was ever named. Genuine tie. Score 9.3</small></div>
+      <span class="sc">9.3</span>
+      <div class="bar"><i style="width:93%"></i></div>
     </li>
     <li>
-      <span class="n">3</span>
-      <div class="who">ZeroClaw <small>Fit 8 / ops 8.5. Best daemon story, not a 10: Docker sample binds public. Score 8.3</small></div>
+      <span class="n">=3</span>
+      <div class="who">ZeroClaw <small>Fit 9 / ops 8. Channels, memory and cron are real. Ops capped: the official image ships public-bind with pairing off. Score 8.5</small></div>
+      <span class="sc">8.5</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </li>
+    <li>
+      <span class="n">=3</span>
+      <div class="who">Nanobot <small>Fit 9 / ops 8. Corrected: it ships <code>gateway install-service --manager systemd</code>, linger docs and loopback defaults. Score 8.5</small></div>
+      <span class="sc">8.5</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </li>
+    <li>
+      <span class="n">5</span>
+      <div class="who">PicoClaw <small>Fit 8.5 / ops 8. 19+ channels, cron, memory store. Its own notice says not before v1.0, which caps ops. Score 8.3</small></div>
       <span class="sc">8.3</span>
       <div class="bar"><i style="width:83%"></i></div>
     </li>
     <li>
-      <span class="n">4</span>
-      <div class="who">PicoClaw <small>Fit 6 / ops 9. One binary. Thin on memory/skills, not “treasury-grade.” Score 7.5</small></div>
-      <span class="sc">7.5</span>
-      <div class="bar"><i style="width:75%"></i></div>
-    </li>
-    <li>
-      <span class="n">5</span>
-      <div class="who">NanoClaw <small>Fit 7 / ops 7. Isolation is real; 4 GB is cheap; Claude lock lives on Fit only. Score 7.0</small></div>
-      <span class="sc">7.0</span>
-      <div class="bar"><i style="width:70%"></i></div>
-    </li>
-    <li>
       <span class="n">6</span>
-      <div class="who">ElizaOS <small>Fit 7 / ops 6. Named agent + channels + memory on the stated rubric. Score 6.5</small></div>
-      <span class="sc">6.5</span>
-      <div class="bar"><i style="width:65%"></i></div>
+      <div class="who">NanoClaw <small>Fit 9 / ops 7. Not Claude-locked: Codex, OpenRouter, Google, DeepSeek and Ollama are drop-in. Score 8.0</small></div>
+      <span class="sc">8.0</span>
+      <div class="bar"><i style="width:80%"></i></div>
     </li>
     <li>
       <span class="n">7</span>
-      <div class="who">IronClaw <small>Fit 6 / ops 7. WASM has nowhere to score without a security axis. Score 6.5</small></div>
-      <span class="sc">6.5</span>
-      <div class="bar"><i style="width:65%"></i></div>
+      <div class="who">IronClaw <small>Fit 8.5 / ops 7. Identity, memory, channels, routines, heartbeat, installs a service. Channels need the WebUI. Score 7.8</small></div>
+      <span class="sc">7.8</span>
+      <div class="bar"><i style="width:78%"></i></div>
     </li>
     <li>
       <span class="n">8</span>
-      <div class="who">Nanobot <small>Fit 4 / ops 4. You write the daemon, so ops cannot sit at the midpoint. Score 4.0</small></div>
-      <span class="sc">4.0</span>
-      <div class="bar"><i style="width:40%"></i></div>
+      <div class="who">ElizaOS <small>Fit 7 / ops 6. The one score both reviewers left alone. Assembling an agent from framework parts earns less convenience credit. Score 6.5</small></div>
+      <span class="sc">6.5</span>
+      <div class="bar"><i style="width:65%"></i></div>
     </li>
   </ol>
 </section>
@@ -198,7 +198,7 @@ footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--ink);font-siz
     </tbody>
   </table>
   </div>
-  <p class="note">Gate, from Claude’s review: a shipped default or sample that binds a secrets-bearing process off loopback cannot score Ops 10. That is why ZeroClaw dropped from 10 to 8.5. Tie-break is standing: higher Fit wins. Codex did not review — CLI usage-capped until 20 Sep 2026 20:26, API credits exhausted.</p>
+  <p class="note">Gate: a shipped default that binds a secrets-bearing process off loopback cannot score Ops 10. ZeroClaw fails it hardest — verified 21 Sep 2026, its official image bakes <code>allow_public_bind = true</code> and <code>require_pairing = false</code>, answering unauthenticated requests on <code>/api/config</code>, <code>/api/memory</code> and <code>/api/browse</code>. That is a shipped default, not just a sample. Nanobot passes the same gate: its gateway defaults to <code>127.0.0.1</code>.</p>
 </section>
 
 <section id="matrix">
@@ -217,97 +217,97 @@ footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--ink);font-siz
     </thead>
     <tbody>
       <tr>
-        <td class="pick">1</td>
+        <td class="pick">=1</td>
         <td class="pick"><b>OpenClaw 2.0</b></td>
         <td class="pick">10</td>
-        <td class="pick">7.5</td>
-        <td class="pick"><b>8.8</b></td>
-        <td class="pick">Fit is the scale anchor. Ops −0.5 vs first pass: 6 GB source-build RAM must ding if NanoClaw’s 4 GB does.</td>
+        <td class="pick">8.5</td>
+        <td class="pick"><b>9.3</b></td>
+        <td class="pick">Ops +1.0. The RAM ding was misapplied: the docs read “at least 6 GB RAM for a local source image build; pre-built images avoid this build requirement.” Build RAM is not runtime RAM.</td>
       </tr>
       <tr>
-        <td>2</td>
-        <td><b>Hermes</b></td>
-        <td>9.5</td>
-        <td>8</td>
-        <td><b>8.8</b></td>
-        <td>Fit +0.5: rationale already said “same job as OpenClaw.” A 1.0 gap needed a named missing capability. Ops stays 8 — curl+linger is not a 6 GB source build.</td>
+        <td class="pick">=1</td>
+        <td class="pick"><b>Hermes</b></td>
+        <td class="pick">10</td>
+        <td class="pick">8.5</td>
+        <td class="pick"><b>9.3</b></td>
+        <td class="pick">Fit +0.5 to parity. Both reviewers refused the gap: the rationale said “same job as OpenClaw” and then subtracted, naming no missing capability. Docker floor is 1 GB.</td>
       </tr>
       <tr>
-        <td>3</td>
+        <td>=3</td>
         <td><b>ZeroClaw</b></td>
+        <td>9</td>
         <td>8</td>
-        <td>8.5</td>
-        <td><b>8.3</b></td>
-        <td>Ops −1.5: <code>service install</code> and distroless still excellent; a public-bind Docker sample fails “sane loopback defaults,” so it cannot be 10.</td>
+        <td><b>8.5</b></td>
+        <td>Fit +1 (channels, memory, cron, resumable procedures are documented). Ops −0.5 further: the public bind is in the <em>official image’s</em> baked config, worse than the “sample” framing allowed.</td>
       </tr>
       <tr>
-        <td>4</td>
-        <td><b>PicoClaw</b></td>
-        <td>6</td>
+        <td>=3</td>
+        <td><b>Nanobot</b></td>
         <td>9</td>
-        <td><b>7.5</b></td>
-        <td>Same number. Fit 6 is thin memory/skills, not an unstated “treasury-grade” test.</td>
+        <td>8</td>
+        <td><b>8.5</b></td>
+        <td>Fit +5, ops +4 — the largest correction in the table. “You write the daemon” was false: <code>nanobot gateway install-service --manager systemd</code> writes the unit, and the docs cover <code>loginctl enable-linger</code>.</td>
       </tr>
       <tr>
         <td>5</td>
-        <td><b>NanoClaw</b></td>
-        <td>7</td>
-        <td>7</td>
-        <td><b>7.0</b></td>
-        <td>Ops +1: 4 GB is cheaper than OpenClaw’s 6 GB; Claude lock-in already lives on Fit.</td>
+        <td><b>PicoClaw</b></td>
+        <td>8.5</td>
+        <td>8</td>
+        <td><b>8.3</b></td>
+        <td>Fit +2.5: 19+ messaging platforms, <code>picoclaw cron</code>, a JSONL memory store. Ops −1 on its own security notice: “Do not deploy to production before v1.0.”</td>
       </tr>
       <tr>
         <td>6</td>
-        <td><b>ElizaOS</b></td>
+        <td><b>NanoClaw</b></td>
+        <td>9</td>
         <td>7</td>
-        <td>6</td>
-        <td><b>6.5</b></td>
-        <td>Fit +2: named agent, channels, memory, daemon on the stated rubric.</td>
+        <td><b>8.0</b></td>
+        <td>Fit +2. The “Claude-tied” ding was wrong: <code>/add-codex</code>, <code>/add-opencode</code> and <code>/add-ollama-provider</code> make the provider swappable. Ops unchanged — container and credential friction is real.</td>
       </tr>
       <tr>
         <td>7</td>
         <td><b>IronClaw</b></td>
-        <td>6</td>
+        <td>8.5</td>
         <td>7</td>
-        <td><b>6.5</b></td>
-        <td>Unchanged. WASM sandbox has no column; that is a formula gap, not a scoring error.</td>
+        <td><b>7.8</b></td>
+        <td>Fit +2.5: identity files, hybrid-search memory, multi-channel, routines, heartbeat, and onboarding that installs the background service. Ops held — Slack/Telegram cannot be enabled from config or CLI, only the WebUI.</td>
       </tr>
       <tr>
         <td>8</td>
-        <td><b>Nanobot</b></td>
-        <td>4</td>
-        <td>4</td>
-        <td><b>4.0</b></td>
-        <td>Ops −1: “you write the daemon” fails the first term of Ops 10.</td>
+        <td><b>ElizaOS</b></td>
+        <td>7</td>
+        <td>6</td>
+        <td><b>6.5</b></td>
+        <td>Unchanged, and the only row both reviewers independently agreed on. It meets the stated rubric; PM2 as a named path still sits awkwardly against a systemd-or-Docker job.</td>
       </tr>
     </tbody>
   </table>
   </div>
-  <p class="meta">Total = 0.50×fit + 0.50×ops, displayed to one decimal. Displayed 8.8 is 8.75; 8.3 is 8.25. Dataset metrics are context only. Snapshot 2026-09-12.</p>
+  <p class="meta">Total = 0.50×fit + 0.50×ops, displayed to one decimal. Displayed 9.3 is 9.25; 8.3 is 8.25; 7.8 is 7.75. Dataset metrics are context only. Snapshot 2026-09-12, scores revised 2026-09-21.</p>
 </section>
 
 <section id="each">
   <h2>Why the order is this order</h2>
   <div class="grid-2">
     <article class="card">
-      <div class="tag">1 · 8.8</div>
-      <h3>OpenClaw is the scale, Hermes is the peer</h3>
-      <p>Fit 10 is the anchor, not a measurement. Ops 7.5 applies the RAM ding consistently. Claude’s three-axis formula (fit / day-1 / day-2) would put Hermes 0.05 ahead — noise. Honest reading: the two are tied at the top.</p>
+      <div class="tag">=1 · 9.3</div>
+      <h3>The top is a real tie, not a tie-break</h3>
+      <p>Both reviewers closed the OpenClaw/Hermes Fit gap, for the same reason: the rationale asserted an identical capability list and then subtracted a point without naming what was missing. With Fit level and Ops level, the standing “higher Fit wins” rule has nothing to separate. Breaking this tie needs operational testing — reconnects, update pain, recovery after reboot — not another pass over the docs.</p>
     </article>
     <article class="card">
-      <div class="tag">2 · 8.8</div>
-      <h3>Hermes was under-scored on Fit</h3>
-      <p>The first pass said “same job as OpenClaw” and then subtracted a full point. Claude closed that to 0.5. Ops stays 8 because linger + curl is lighter than a 6 GB source image.</p>
+      <div class="tag">=3 · 8.5</div>
+      <h3>Nanobot was the worst call in the first pass</h3>
+      <p>It sat last at 4.0 on the claim that you write your own daemon. That was false, and checkably so: the deployment doc installs a systemd user unit, documents linger for logout survival, and defaults the gateway to <code>127.0.0.1</code>. It now ties ZeroClaw — and passes the loopback gate ZeroClaw fails.</p>
     </article>
     <article class="card">
-      <div class="tag">3 · 8.3</div>
-      <h3>ZeroClaw is third, not co-first</h3>
-      <p>The 9.0/9.0 tie was an artifact of Ops=10 against a public-bind sample. Daemon story is still the best in the table. Do not ship that compose file as-is.</p>
+      <div class="tag">=3 · 8.5</div>
+      <h3>ZeroClaw gained Fit and lost more Ops</h3>
+      <p>Its capability surface was under-rated, so Fit rises. But the security problem is worse than “a sample binds public”: the official image itself ships <code>require_pairing = false</code>, leaving config, memory and browse endpoints unauthenticated on every interface. Do not deploy it as shipped.</p>
     </article>
     <article class="card">
-      <div class="tag">4–8</div>
-      <h3>The rest, after rubric cleanup</h3>
-      <p>PicoClaw stays 7.5. NanoClaw ops up. Eliza Fit up (it met the stated rubric). IronClaw unchanged. Nanobot ops down because there is no official daemon path.</p>
+      <div class="tag">5–8</div>
+      <h3>The middle was scored on vibes</h3>
+      <p>PicoClaw, NanoClaw and IronClaw all under-scored on Fit because the first pass judged them by reputation rather than docs — “too thin,” “Claude-tied,” “a WASM sandbox.” All three document identity, memory, channels and scheduling. ElizaOS is the only row that survived untouched, and it is now last.</p>
     </article>
   </div>
 </section>
@@ -347,30 +347,42 @@ openclaw health</pre>
 
 <section id="reviews">
   <h2>Independent review</h2>
-  <p class="sec-lead">Same brief sent to Claude Code 2.1.278 (OAuth, Silverblock team) and Codex CLI 0.154.0. Claude returned a full scoring critique. Codex did not.</p>
+  <p class="sec-lead">Same brief sent to Claude Code 2.1.278 (OAuth, Silverblock team) and Codex CLI 0.154.0 (<code>gpt-6-astra</code>, read-only sandbox). The Codex run originally died on a usage cap and was re-run on 21 Sep 2026. Both returned <b>revise</b>. Neither accepted the ranking.</p>
   <div class="grid-2">
     <article class="card">
       <div class="tag">Claude Code · revise</div>
-      <h3>Three contradictions, ranking kept</h3>
-      <p>ZeroClaw Ops 10 fails the loopback term of its own rubric. Hermes Fit 9 contradicts “same job as OpenClaw.” Eliza Fit 5 used an unstated finance test. RAM floors were applied backwards (OpenClaw 6 GB kept 8, NanoClaw 4 GB got 6). Full write-up: <code>reports/review-claude.md</code>.</p>
+      <h3>Found the rubric contradictions</h3>
+      <p>Stated up front that it had no tools, so it judged internal consistency only: ZeroClaw’s Ops 10 fails the loopback term of its own rubric, Hermes Fit 9 contradicts “same job as OpenClaw,” and an undeclared “treasury-grade” test was scoring rows 4 and 7. All three held up. Its RAM reasoning did not. Full write-up: <code>docs/notes/review-claude.md</code>.</p>
     </article>
     <article class="card">
-      <div class="tag">Codex · not obtained</div>
-      <h3>Usage cap + empty API credits</h3>
-      <p>CLI: hit ChatGPT usage limit, retry after 20 Sep 2026 20:26. API: <code>credit_balance_exhausted</code>. No Codex numbers were mixed in. Note: <code>reports/review-codex.md</code>.</p>
+      <div class="tag">Codex · revise</div>
+      <h3>Overturned three rationales on the facts</h3>
+      <p>Had web access and cited what it read. OpenClaw’s 6 GB is a source-build figure, so Ops should rise rather than fall; PicoClaw documents far more assistant surface than Fit 6 allows; Nanobot ships a systemd installer. Its revised table is the one adopted here. Full write-up: <code>docs/notes/review-codex.md</code>.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Verification · 21 Sep 2026</div>
+      <h3>Six claims re-checked, six held</h3>
+      <p>No score moved on a reviewer’s say-so. Each claim worth a full point was read back against primary docs: Nanobot’s service installer, OpenClaw’s build-RAM wording, ZeroClaw’s container defaults, PicoClaw’s channel and cron surface, IronClaw’s feature list, NanoClaw’s provider support. All six confirmed.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Found in verification</div>
+      <h3>Two things neither reviewer caught</h3>
+      <p>ZeroClaw’s unauthenticated posture is in the shipped image, not merely a sample — a harder finding than either review made. And NanoClaw is not Claude-locked: <code>/add-codex</code>, <code>/add-opencode</code> and <code>/add-ollama-provider</code> are documented, so the lock-in ding that survived both reviews was wrong.</p>
     </article>
   </div>
 </section>
 
 <section id="sources">
   <h2>Sources</h2>
-  <p class="sec-lead">Convenience scores are this brief’s weighting, not a vendor benchmark. Inputs: project docs opened 18 Sep 2026, plus the live Silver Parrot/OpenClaw layout, plus dataset metrics from 12 Sep 2026.</p>
+  <p class="sec-lead">Convenience scores are this brief’s weighting, not a vendor benchmark. Inputs: project docs opened 18 Sep 2026 and re-verified 21 Sep 2026, plus the live Silver Parrot/OpenClaw layout, plus dataset metrics from 12 Sep 2026.</p>
   <ul class="sources">
     <li>OpenClaw <a href="https://docs.openclaw.ai/vps">VPS</a>, <a href="https://docs.openclaw.ai/install/hetzner">Hetzner</a>, <a href="https://docs.openclaw.ai/gateway/security">security</a>, <a href="https://openclaw.ai/blog/openclaw-2-accidentally">2.0</a>.</li>
     <li>Hermes <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation">install / linger</a>.</li>
     <li>ZeroClaw <a href="https://docs.zeroclaw.com/v0.8.5/en/setup/linux.html">Linux</a>, <a href="https://github.com/zeroclaw-labs/zeroclaw/blob/master/docs/book/src/ops/service.md">service</a> (VPS = system scope).</li>
-    <li>PicoClaw <a href="https://docs.picoclaw.io/docs/installation/">binary + Docker gateway</a>.</li>
-    <li>NanoClaw container/VPS docs (4 GB floor, linger).</li>
+    <li>PicoClaw <a href="https://github.com/sipeed/picoclaw">README</a> (19+ channels, cron, pre-v1.0 notice), <a href="https://docs.picoclaw.io/docs/installation/">install</a>.</li>
+    <li>NanoClaw <a href="https://github.com/nanocoai/nanoclaw">README</a> (per-agent memory, scheduled tasks, swappable providers).</li>
+    <li>Nanobot <a href="https://github.com/HKUDS/nanobot">capabilities</a>, <a href="https://github.com/HKUDS/nanobot/blob/main/docs/deployment.md">deployment</a> (systemd installer, linger, loopback default).</li>
+    <li>ZeroClaw <a href="https://github.com/zeroclaw-labs/zeroclaw/blob/master/docs/book/src/setup/container.md">container defaults</a> (public bind, pairing off).</li>
     <li>ElizaOS <a href="https://docs.elizaos.ai/guides/deploy-a-project">self-host</a>; IronClaw <a href="https://github.com/nearai/ironclaw/tree/main/deploy">deploy/systemd</a>.</li>
     <li>Local: <code>ops/openclaw-gateway-runbook.md</code>, <code>~/.openclaw/secrets</code>, <code>data/classified.json</code>.</li>
   </ul>

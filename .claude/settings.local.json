@@ -1,7 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(node *e hot rising and so on)"
-    ]
+    "allow": []
   }
 }
