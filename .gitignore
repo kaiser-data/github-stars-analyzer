@@ -48,3 +48,6 @@ tests/__pycache__/
 # Discovery output — regenerable, and a working list rather than a deliverable
 reports/*.candidates.md
 reports/*.candidates.json
+
+# Reviewer stderr logs — transient tool output, not deliverables
+reports/*.err
