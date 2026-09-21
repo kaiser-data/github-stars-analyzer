@@ -3,9 +3,9 @@
   "title": "LLM-Driven 3D Modelling for 3D Printing \u2014 Landscape Report",
   "file": "3d-printing-stack.md",
   "category": "Engineering",
-  "summary": "32 tools (313,732\u2605) for driving 3D modelling with LLMs: code-CAD authoring, parametric libraries, implicit/SDF modelling, generative image-to-3D, mesh validation & repair, and print prep & slicing.",
-  "tool_count": 32,
-  "total_stars": 313732,
+  "summary": "31 tools (287,691\u2605) for driving 3D modelling with LLMs: code-CAD authoring, parametric libraries, implicit/SDF modelling, generative image-to-3D, mesh validation & repair, and print prep & slicing.",
+  "tool_count": 31,
+  "total_stars": 287691,
   "categories": {
     "Code-CAD authoring": 5,
     "Parametric component library": 3,
@@ -13,32 +13,32 @@
     "Generative 3D (image\u2192mesh)": 6,
     "Mesh validation & repair": 7,
     "Print prep & slicing": 4,
-    "Agent bridge / viewer": 4
+    "Agent bridge / viewer": 3
   },
   "top_tools": [
     {
       "name": "Comfy-Org/ComfyUI",
-      "stars": 133022
-    },
-    {
-      "name": "ahujasid/blender-mcp",
-      "stars": 28519
+      "stars": 134220
     },
     {
       "name": "img2threejs/img2threejs",
-      "stars": 15948
+      "stars": 16505
     },
     {
       "name": "OrcaSlicer/OrcaSlicer",
-      "stars": 15683
+      "stars": 15737
     },
     {
       "name": "Tencent-Hunyuan/Hunyuan3D-2",
-      "stars": 14845
+      "stars": 14925
+    },
+    {
+      "name": "isl-org/Open3D",
+      "stars": 13984
     }
   ],
-  "snapshot": "2026-09-14T11:08:08.535Z",
-  "generated": "2026-09-14",
+  "snapshot": "2026-09-21T11:17:33.969Z",
+  "generated": "2026-09-21",
   "generator": "scripts/reports/printing_stack.py",
-  "created": "2026-09-13"
+  "created": "2026-09-14"
 }

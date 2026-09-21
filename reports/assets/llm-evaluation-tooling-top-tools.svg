@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">langfuse/langfuse</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">34,579</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">34,883</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">mlflow/mlflow</text>
-<path d="M244,67 h274.0 q4,0 4,4 v10 q0,4 -4,4 h-274.0 z" class="bar"/>
-<text x="528.0" y="76.0" class="val" dominant-baseline="central">27,946</text>
+<path d="M244,67 h272.8 q4,0 4,4 v10 q0,4 -4,4 h-272.8 z" class="bar"/>
+<text x="526.8" y="76.0" class="val" dominant-baseline="central">28,072</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">promptfoo/promptfoo</text>
-<path d="M244,94 h245.6 q4,0 4,4 v10 q0,4 -4,4 h-245.6 z" class="bar"/>
-<text x="499.6" y="103.0" class="val" dominant-baseline="central">25,085</text>
+<path d="M244,94 h245.8 q4,0 4,4 v10 q0,4 -4,4 h-245.8 z" class="bar"/>
+<text x="499.8" y="103.0" class="val" dominant-baseline="central">25,330</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">comet-ml/opik</text>
-<path d="M244,121 h215.0 q4,0 4,4 v10 q0,4 -4,4 h-215.0 z" class="bar"/>
-<text x="469.0" y="130.0" class="val" dominant-baseline="central">22,010</text>
+<path d="M244,121 h214.7 q4,0 4,4 v10 q0,4 -4,4 h-214.7 z" class="bar"/>
+<text x="468.7" y="130.0" class="val" dominant-baseline="central">22,179</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/evals</text>
-<path d="M244,148 h189.5 q4,0 4,4 v10 q0,4 -4,4 h-189.5 z" class="bar"/>
-<text x="443.5" y="157.0" class="val" dominant-baseline="central">19,447</text>
+<path d="M244,148 h188.2 q4,0 4,4 v10 q0,4 -4,4 h-188.2 z" class="bar"/>
+<text x="442.2" y="157.0" class="val" dominant-baseline="central">19,488</text>
 </svg>

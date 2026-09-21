@@ -23,13 +23,13 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Print prep &amp; slicing</text>
 <path d="M244,121 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
 <text x="446.6" y="130.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Agent bridge / viewer</text>
-<path d="M244,148 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
-<text x="446.6" y="157.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Parametric component library</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Parametric component library</text>
+<path d="M244,148 h143.4 q4,0 4,4 v10 q0,4 -4,4 h-143.4 z" class="bar"/>
+<text x="397.4" y="157.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Implicit / SDF modelling</text>
 <path d="M244,175 h143.4 q4,0 4,4 v10 q0,4 -4,4 h-143.4 z" class="bar"/>
 <text x="397.4" y="184.0" class="val" dominant-baseline="central">3</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Implicit / SDF modelling</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Agent bridge / viewer</text>
 <path d="M244,202 h143.4 q4,0 4,4 v10 q0,4 -4,4 h-143.4 z" class="bar"/>
 <text x="397.4" y="211.0" class="val" dominant-baseline="central">3</text>
 </svg>

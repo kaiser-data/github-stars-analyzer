@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ollama/ollama</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">180,877</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">181,358</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/llama.cpp</text>
-<path d="M244,67 h239.8 q4,0 4,4 v10 q0,4 -4,4 h-239.8 z" class="bar"/>
-<text x="493.8" y="76.0" class="val" dominant-baseline="central">128,171</text>
+<path d="M244,67 h240.7 q4,0 4,4 v10 q0,4 -4,4 h-240.7 z" class="bar"/>
+<text x="494.7" y="76.0" class="val" dominant-baseline="central">129,028</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">vllm-project/vllm</text>
-<path d="M244,94 h170.4 q4,0 4,4 v10 q0,4 -4,4 h-170.4 z" class="bar"/>
-<text x="424.4" y="103.0" class="val" dominant-baseline="central">91,712</text>
+<path d="M244,94 h171.1 q4,0 4,4 v10 q0,4 -4,4 h-171.1 z" class="bar"/>
+<text x="425.1" y="103.0" class="val" dominant-baseline="central">92,317</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">nomic-ai/gpt4all</text>
-<path d="M244,121 h143.2 q4,0 4,4 v10 q0,4 -4,4 h-143.2 z" class="bar"/>
-<text x="397.2" y="130.0" class="val" dominant-baseline="central">77,394</text>
+<path d="M244,121 h142.8 q4,0 4,4 v10 q0,4 -4,4 h-142.8 z" class="bar"/>
+<text x="396.8" y="130.0" class="val" dominant-baseline="central">77,390</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
-<path d="M244,148 h98.0 q4,0 4,4 v10 q0,4 -4,4 h-98.0 z" class="bar"/>
-<text x="352.0" y="157.0" class="val" dominant-baseline="central">53,654</text>
+<path d="M244,148 h98.1 q4,0 4,4 v10 q0,4 -4,4 h-98.1 z" class="bar"/>
+<text x="352.1" y="157.0" class="val" dominant-baseline="central">53,824</text>
 </svg>

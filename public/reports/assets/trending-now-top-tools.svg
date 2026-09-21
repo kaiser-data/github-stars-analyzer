@@ -11,28 +11,28 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="260" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Biggest star gains (7d)</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ayghri/i-have-adhd</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">cloudflare/security-audit-skill</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">17,366</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">deepseek-ai/deepseek-harness</text>
-<path d="M244,67 h167.3 q4,0 4,4 v10 q0,4 -4,4 h-167.3 z" class="bar"/>
-<text x="421.3" y="76.0" class="val" dominant-baseline="central">8,649</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
-<path d="M244,94 h150.3 q4,0 4,4 v10 q0,4 -4,4 h-150.3 z" class="bar"/>
-<text x="404.3" y="103.0" class="val" dominant-baseline="central">7,789</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">DietrichGebert/ponytail</text>
-<path d="M244,121 h146.3 q4,0 4,4 v10 q0,4 -4,4 h-146.3 z" class="bar"/>
-<text x="400.3" y="130.0" class="val" dominant-baseline="central">7,589</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">cathrynlavery/diagram-design</text>
-<path d="M244,148 h125.8 q4,0 4,4 v10 q0,4 -4,4 h-125.8 z" class="bar"/>
-<text x="379.8" y="157.0" class="val" dominant-baseline="central">6,551</text>
-<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
-<path d="M244,175 h111.5 q4,0 4,4 v10 q0,4 -4,4 h-111.5 z" class="bar"/>
-<text x="365.5" y="184.0" class="val" dominant-baseline="central">5,830</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">heygen-com/hyperframes</text>
-<path d="M244,202 h100.2 q4,0 4,4 v10 q0,4 -4,4 h-100.2 z" class="bar"/>
-<text x="354.2" y="211.0" class="val" dominant-baseline="central">5,261</text>
-<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">stablyai/orca</text>
-<path d="M244,229 h97.7 q4,0 4,4 v10 q0,4 -4,4 h-97.7 z" class="bar"/>
-<text x="351.7" y="238.0" class="val" dominant-baseline="central">5,133</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">15,257</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">alibaba/open-code-review</text>
+<path d="M244,67 h326.7 q4,0 4,4 v10 q0,4 -4,4 h-326.7 z" class="bar"/>
+<text x="580.7" y="76.0" class="val" dominant-baseline="central">14,665</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">deepseek-ai/deepseek-harness</text>
+<path d="M244,94 h188.8 q4,0 4,4 v10 q0,4 -4,4 h-188.8 z" class="bar"/>
+<text x="442.8" y="103.0" class="val" dominant-baseline="central">8,549</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
+<path d="M244,121 h137.3 q4,0 4,4 v10 q0,4 -4,4 h-137.3 z" class="bar"/>
+<text x="391.3" y="130.0" class="val" dominant-baseline="central">6,265</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">stablyai/orca</text>
+<path d="M244,148 h128.8 q4,0 4,4 v10 q0,4 -4,4 h-128.8 z" class="bar"/>
+<text x="382.8" y="157.0" class="val" dominant-baseline="central">5,888</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">JustVugg/colibri</text>
+<path d="M244,175 h126.5 q4,0 4,4 v10 q0,4 -4,4 h-126.5 z" class="bar"/>
+<text x="380.5" y="184.0" class="val" dominant-baseline="central">5,787</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
+<path d="M244,202 h124.9 q4,0 4,4 v10 q0,4 -4,4 h-124.9 z" class="bar"/>
+<text x="378.9" y="211.0" class="val" dominant-baseline="central">5,716</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">DietrichGebert/ponytail</text>
+<path d="M244,229 h122.1 q4,0 4,4 v10 q0,4 -4,4 h-122.1 z" class="bar"/>
+<text x="376.1" y="238.0" class="val" dominant-baseline="central">5,592</text>
 </svg>

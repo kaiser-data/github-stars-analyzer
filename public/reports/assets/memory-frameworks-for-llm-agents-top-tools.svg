@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,826</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">94,376</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">mem0ai/mem0</text>
-<path d="M244,67 h235.3 q4,0 4,4 v10 q0,4 -4,4 h-235.3 z" class="bar"/>
-<text x="489.3" y="76.0" class="val" dominant-baseline="central">65,265</text>
+<path d="M244,67 h235.7 q4,0 4,4 v10 q0,4 -4,4 h-235.7 z" class="bar"/>
+<text x="489.7" y="76.0" class="val" dominant-baseline="central">65,757</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">MemPalace/mempalace</text>
-<path d="M244,94 h212.5 q4,0 4,4 v10 q0,4 -4,4 h-212.5 z" class="bar"/>
-<text x="466.5" y="103.0" class="val" dominant-baseline="central">59,043</text>
+<path d="M244,94 h211.8 q4,0 4,4 v10 q0,4 -4,4 h-211.8 z" class="bar"/>
+<text x="465.8" y="103.0" class="val" dominant-baseline="central">59,192</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">getzep/graphiti</text>
 <path d="M244,121 h109.2 q4,0 4,4 v10 q0,4 -4,4 h-109.2 z" class="bar"/>
-<text x="363.2" y="130.0" class="val" dominant-baseline="central">30,865</text>
+<text x="363.2" y="130.0" class="val" dominant-baseline="central">31,047</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">topoteretes/cognee</text>
-<path d="M244,148 h108.5 q4,0 4,4 v10 q0,4 -4,4 h-108.5 z" class="bar"/>
-<text x="362.5" y="157.0" class="val" dominant-baseline="central">30,674</text>
+<path d="M244,148 h108.6 q4,0 4,4 v10 q0,4 -4,4 h-108.6 z" class="bar"/>
+<text x="362.6" y="157.0" class="val" dominant-baseline="central">30,880</text>
 </svg>

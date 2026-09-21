@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 14 data vintages: the 7-day movers, relative breakouts, sustained climbers, 77 new entrants, and what has gone flat.",
-  "tool_count": 142,
-  "total_stars": 6183064,
+  "summary": "Measured star momentum across 15 data vintages: the 7-day movers, relative breakouts, sustained climbers, 56 new entrants, and what has gone flat.",
+  "tool_count": 119,
+  "total_stars": 6051305,
   "categories": {
-    "Risers": 1610,
-    "Breakouts": 1525,
-    "New entrants": 77,
-    "Cooling": 96
+    "Risers": 1712,
+    "Breakouts": 1614,
+    "New entrants": 56,
+    "Cooling": 83
   },
   "top_tools": [
     {
-      "name": "ayghri/i-have-adhd",
-      "stars": 44890
+      "name": "cloudflare/security-audit-skill",
+      "stars": 18543
+    },
+    {
+      "name": "alibaba/open-code-review",
+      "stars": 38849
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "stars": 223346
+      "stars": 231895
     },
     {
-      "name": "debpalash/VoiceStudio",
-      "stars": 28010
+      "name": "affaan-m/ECC",
+      "stars": 264290
     },
     {
-      "name": "DietrichGebert/ponytail",
-      "stars": 137824
-    },
-    {
-      "name": "cathrynlavery/diagram-design",
-      "stars": 39546
+      "name": "stablyai/orca",
+      "stars": 74151
     }
   ],
   "chart_top_series": [
     {
-      "name": "ayghri/i-have-adhd",
-      "value": 17366
+      "name": "cloudflare/security-audit-skill",
+      "value": 15257
+    },
+    {
+      "name": "alibaba/open-code-review",
+      "value": 14665
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 8649
-    },
-    {
-      "name": "debpalash/VoiceStudio",
-      "value": 7789
-    },
-    {
-      "name": "DietrichGebert/ponytail",
-      "value": 7589
-    },
-    {
-      "name": "cathrynlavery/diagram-design",
-      "value": 6551
+      "value": 8549
     },
     {
       "name": "affaan-m/ECC",
-      "value": 5830
-    },
-    {
-      "name": "heygen-com/hyperframes",
-      "value": 5261
+      "value": 6265
     },
     {
       "name": "stablyai/orca",
-      "value": 5133
+      "value": 5888
+    },
+    {
+      "name": "JustVugg/colibri",
+      "value": 5787
+    },
+    {
+      "name": "debpalash/VoiceStudio",
+      "value": 5716
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "value": 5592
     }
   ],
   "chart_top_title": "Biggest star gains (7d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-14T11:08:08.535Z",
-  "generated": "2026-09-14",
+  "snapshot": "2026-09-21T11:17:33.969Z",
+  "generated": "2026-09-21",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-09-13"
+  "created": "2026-09-14"
 }

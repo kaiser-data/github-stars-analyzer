@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">286,443</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">289,511</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
-<path d="M244,67 h305.9 q4,0 4,4 v10 q0,4 -4,4 h-305.9 z" class="bar"/>
-<text x="559.9" y="76.0" class="val" dominant-baseline="central">258,025</text>
+<path d="M244,67 h310.0 q4,0 4,4 v10 q0,4 -4,4 h-310.0 z" class="bar"/>
+<text x="564.0" y="76.0" class="val" dominant-baseline="central">264,290</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">github/spec-kit</text>
 <path d="M244,94 h160.1 q4,0 4,4 v10 q0,4 -4,4 h-160.1 z" class="bar"/>
-<text x="414.1" y="103.0" class="val" dominant-baseline="central">136,618</text>
+<text x="414.1" y="103.0" class="val" dominant-baseline="central">138,139</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
-<path d="M244,121 h122.0 q4,0 4,4 v10 q0,4 -4,4 h-122.0 z" class="bar"/>
-<text x="376.0" y="130.0" class="val" dominant-baseline="central">104,948</text>
+<path d="M244,121 h124.3 q4,0 4,4 v10 q0,4 -4,4 h-124.3 z" class="bar"/>
+<text x="378.3" y="130.0" class="val" dominant-baseline="central">107,989</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,148 h95.0 q4,0 4,4 v10 q0,4 -4,4 h-95.0 z" class="bar"/>
-<text x="349.0" y="157.0" class="val" dominant-baseline="central">82,408</text>
+<path d="M244,148 h94.4 q4,0 4,4 v10 q0,4 -4,4 h-94.4 z" class="bar"/>
+<text x="348.4" y="157.0" class="val" dominant-baseline="central">82,794</text>
 </svg>

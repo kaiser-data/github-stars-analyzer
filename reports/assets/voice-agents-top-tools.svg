@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">109,069</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">109,424</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">CorentinJ/Real-Time-Voice-Cloni…</text>
-<path d="M244,67 h185.6 q4,0 4,4 v10 q0,4 -4,4 h-185.6 z" class="bar"/>
-<text x="439.6" y="76.0" class="val" dominant-baseline="central">60,130</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
-<path d="M244,94 h165.2 q4,0 4,4 v10 q0,4 -4,4 h-165.2 z" class="bar"/>
-<text x="419.2" y="103.0" class="val" dominant-baseline="central">53,654</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">jamiepine/voicebox</text>
-<path d="M244,121 h163.7 q4,0 4,4 v10 q0,4 -4,4 h-163.7 z" class="bar"/>
-<text x="417.7" y="130.0" class="val" dominant-baseline="central">53,169</text>
+<path d="M244,67 h185.1 q4,0 4,4 v10 q0,4 -4,4 h-185.1 z" class="bar"/>
+<text x="439.1" y="76.0" class="val" dominant-baseline="central">60,142</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">jamiepine/voicebox</text>
+<path d="M244,94 h170.0 q4,0 4,4 v10 q0,4 -4,4 h-170.0 z" class="bar"/>
+<text x="424.0" y="103.0" class="val" dominant-baseline="central">55,333</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
+<path d="M244,121 h165.2 q4,0 4,4 v10 q0,4 -4,4 h-165.2 z" class="bar"/>
+<text x="419.2" y="130.0" class="val" dominant-baseline="central">53,824</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">mudler/LocalAI</text>
-<path d="M244,148 h150.9 q4,0 4,4 v10 q0,4 -4,4 h-150.9 z" class="bar"/>
-<text x="404.9" y="157.0" class="val" dominant-baseline="central">49,105</text>
+<path d="M244,148 h150.7 q4,0 4,4 v10 q0,4 -4,4 h-150.7 z" class="bar"/>
+<text x="404.7" y="157.0" class="val" dominant-baseline="central">49,203</text>
 </svg>
