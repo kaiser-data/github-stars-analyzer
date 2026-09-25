@@ -57,9 +57,18 @@ export function buildQueries(landscape, { minStars = 200, maxStaleDays = 365, no
  * it silently — it appears in neither the table nor `unresolved`, so nothing
  * records that it was ever considered. The heuristics therefore apply to `new`
  * candidates only.
+ *
+ * Rows are deduped by resolved name: two input names can rename to one repo.
  */
 export function selectCandidates(resolved, { stateOf, minStars = 200, maxStaleDays = 365 } = {}) {
+  const seen = new Set();
   return resolved
+    .filter((r) => {
+      const key = r.full_name.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
     .map((r) => ({ ...r, state: stateOf(r.full_name) }))
     .filter((r) => r.state !== 'held')
     .filter(

@@ -168,6 +168,12 @@ console.log('\n== Task 5: candidate generation ==');
   ok('new past the staleness floor is still dropped', names(sel([row('a/new', { days_since_push: 4000 })])) === '');
   ok('held is dropped whatever its shape', names(sel([row('a/held')])) === '');
   ok('state is attached to what survives', sel([row('a/gap')])[0].state === 'known-gap');
+
+  // Dedupe happens on input names, before resolution. `--extra katanemo/archgw`
+  // and a search hit for `katanemo/plano` are two keys that resolve to one repo,
+  // so the table showed plano twice.
+  ok('two names resolving to one repo make one row',
+     sel([row('a/new'), row('A/New')]).length === 1);
 }
 
 console.log('\n== Task 6: fetch (network) ==');
