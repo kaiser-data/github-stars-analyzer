@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">excalidraw/excalidraw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">132,579</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">132,866</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">d3/d3</text>
-<path d="M244,67 h291.1 q4,0 4,4 v10 q0,4 -4,4 h-291.1 z" class="bar"/>
-<text x="545.1" y="76.0" class="val" dominant-baseline="central">113,750</text>
+<path d="M244,67 h290.5 q4,0 4,4 v10 q0,4 -4,4 h-290.5 z" class="bar"/>
+<text x="544.5" y="76.0" class="val" dominant-baseline="central">113,763</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">grafana/grafana</text>
-<path d="M244,94 h195.4 q4,0 4,4 v10 q0,4 -4,4 h-195.4 z" class="bar"/>
-<text x="449.4" y="103.0" class="val" dominant-baseline="central">76,835</text>
+<path d="M244,94 h195.1 q4,0 4,4 v10 q0,4 -4,4 h-195.1 z" class="bar"/>
+<text x="449.1" y="103.0" class="val" dominant-baseline="central">76,905</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">apache/superset</text>
-<path d="M244,121 h190.3 q4,0 4,4 v10 q0,4 -4,4 h-190.3 z" class="bar"/>
-<text x="444.3" y="130.0" class="val" dominant-baseline="central">74,866</text>
+<path d="M244,121 h190.0 q4,0 4,4 v10 q0,4 -4,4 h-190.0 z" class="bar"/>
+<text x="444.0" y="130.0" class="val" dominant-baseline="central">74,914</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">chartjs/Chart.js</text>
-<path d="M244,148 h171.7 q4,0 4,4 v10 q0,4 -4,4 h-171.7 z" class="bar"/>
-<text x="425.7" y="157.0" class="val" dominant-baseline="central">67,704</text>
+<path d="M244,148 h171.3 q4,0 4,4 v10 q0,4 -4,4 h-171.3 z" class="bar"/>
+<text x="425.3" y="157.0" class="val" dominant-baseline="central">67,720</text>
 </svg>

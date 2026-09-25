@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13",
+  "generated": "2026-09-25",
   "count": 3,
   "prompts": [
     {
@@ -12,34 +12,34 @@
         {
           "stage": "Retrieve",
           "name": "deepset-ai/haystack",
-          "stars": 26430,
-          "health": 79,
+          "stars": 26594,
+          "health": 95,
           "lifecycle": "Classic"
         },
         {
           "stage": "Index",
           "name": "qdrant/qdrant",
-          "stars": 34404,
-          "health": 92,
+          "stars": 34809,
+          "health": 93,
           "lifecycle": "Classic"
         },
         {
           "stage": "Embed",
           "name": "huggingface/sentence-transformers",
-          "stars": 19074,
-          "health": 74,
+          "stars": 19121,
+          "health": 80,
           "lifecycle": "Classic"
         },
         {
           "stage": "Judge",
           "name": "KRLabsOrg/LettuceDetect",
-          "stars": 602,
-          "health": 66,
-          "lifecycle": "Hot"
+          "stars": 611,
+          "health": 59,
+          "lifecycle": "Mature"
         }
       ],
       "brief": "You are writing Python that builds a retrieval-evaluation harness for a\nretrieval-augmented-generation pipeline. Output a single script plus one data file,\nnothing else.\n\n**Deliverable:** a harness that loads a document set, builds an index over it, runs a\nfixed question set against that index, and writes per-question results to a CSV \u2014 one\nrow per question, never an aggregate-only summary. The CSV is the artifact; the console\nreport is derived from it, not the other way round.\n\n**Keep retrieval quality and generation quality in separate columns, and never blend\nthem into one number.** Recall@k and MRR (mean reciprocal rank) are retrieval metrics \u2014\nthey ask only whether the right chunk was fetched, and at what rank. Faithfulness is a\ngeneration metric \u2014 it asks whether the model's final answer is supported by and\nconsistent with what was fetched. These measure different failure modes: a retrieval\nmiss and a generation hallucination look identical in a single blended score but need\nopposite fixes. The CSV must carry `recall_at_k`, `mrr`, and `faithfulness` as three\ndistinct columns, and the script must refuse to print or write any single score that\naverages across that boundary. Score a run as \"retrieval failed\" or \"generation failed\"\nseparately \u2014 never as one number that hides which stage broke.\n\nDeliberately absent: answer-correctness. Scoring it needs a gold answer to compare the\nmodel's answer against, and `questions.jsonl` below carries only a gold document id or\nspan \u2014 no gold answer exists to score against. A number nothing here can ground is\nworse than no number, so this harness reports faithfulness only.\n\n**Reproducibility:** fix the random seed as a top-level constant, `SEED = 42`, and pass\nit to every stochastic step \u2014 negative sampling for the question set, any shuffling of\nthe document set, and any sampling used by the embedding or index step. Two runs on the\nsame corpus and question set must produce byte-identical `recall_at_k` and `mrr`\ncolumns \u2014 the retrieval half of the pipeline has no stochastic step it doesn't control,\nso it has no excuse not to be deterministic. `faithfulness` depends on the generation\nstep below and is *not* covered by this guarantee: LLM output is not reliably\nbyte-identical run to run, even at temperature 0, across providers or model versions.\nDo not claim byte-identical generation metrics \u2014 only the two retrieval columns carry\nthat promise.\n\n**Baseline flag:** add a `--baseline` command-line flag that runs the retrieval step\nwith embeddings disabled, falling back to plain keyword (BM25-style) matching only. A\nrecall@k of 0.9 means nothing on its own \u2014 it means something only next to what\nkeyword-only retrieval gets on the same questions. Running with `--baseline` must\nproduce a second, clearly-labelled CSV (`results_baseline.csv`) alongside the normal\none (`results.csv`), and the harness must refuse to claim an improvement unless the\nembedding-based run is compared against its own baseline run, not a baseline from a\ndifferent corpus.\n\n**Question set:** the fixed question set (question text plus the expected/gold document\nid or span) must live in its own file, `questions.jsonl`, one JSON object per line \u2014\nnever embedded as a Python literal inside the script. The script loads this file at\nrun time; changing the eval set must never require touching the harness code.\n\n**Pipeline, naming each tool where it is used:**\n\n1. **Embed** \u2014 use `huggingface/sentence-transformers` to embed both the document\n   chunks and the incoming questions into the same vector space.\n2. **Index** \u2014 use `qdrant/qdrant` as the vector index: upsert the embedded chunks with\n   their source document id as payload, and query it for the top-k nearest neighbours\n   per question.\n3. **Retrieve** \u2014 use `deepset-ai/haystack` to wire the embedding and index steps into\n   a retrieval pipeline object, so the retrieval stage is a single composable component\n   rather than hand-rolled glue code, and so `--baseline` can swap in a keyword\n   retriever at exactly this seam.\n4. **Generate** \u2014 produce the answer that step 5 judges; without this step nothing\n   exists for the judge to score. There is no curated generation tool in this stack, so\n   use whatever model you have on hand \u2014 a local model, a hosted API, even the same\n   model you are using to write this harness \u2014 and record which one as a comment at\n   the top of the script. Feed it only the question plus the top-k retrieved chunks, so\n   a bad answer traces back to bad retrieval rather than the model ignoring the context\n   it was given.\n5. **Judge** \u2014 use `KRLabsOrg/LettuceDetect` as the faithfulness/hallucination judge\n   over the generated answer against the retrieved context, to produce the\n   `faithfulness` column. Do not let this judge see or influence the retrieval-metric\n   columns; it only ever scores the generation half.\n\nChunk documents at a fixed size (state it as a constant, e.g. `CHUNK_SIZE = 400` tokens)\nwith a fixed overlap, so chunk boundaries are reproducible run to run.\n\nPrint a short console summary at the end: mean recall@k, mean MRR, mean faithfulness,\nand \u2014 only when `--baseline` was used \u2014 the delta between the embedding run and the\nbaseline run for each retrieval metric, never for the generation metric (a\nkeyword-only baseline has no generation stage to compare).",
-      "generated": "2026-09-13",
+      "generated": "2026-09-25",
       "generator": "scripts/prompts/rag_eval_harness.py"
     },
     {
@@ -52,34 +52,34 @@
         {
           "stage": "Author",
           "name": "fogleman/sdf",
-          "stars": 2001,
+          "stars": 2006,
           "health": 4,
           "lifecycle": "Abandoned"
         },
         {
           "stage": "See",
           "name": "f3d-app/f3d",
-          "stars": 4669,
+          "stars": 4722,
           "health": 82,
           "lifecycle": "Classic"
         },
         {
           "stage": "Validate",
           "name": "mikedh/trimesh",
-          "stars": 3678,
-          "health": 74,
+          "stars": 3687,
+          "health": 73,
           "lifecycle": "Classic"
         },
         {
           "stage": "Slice",
           "name": "OrcaSlicer/OrcaSlicer",
-          "stars": 15676,
-          "health": 83,
+          "stars": 15770,
+          "health": 87,
           "lifecycle": "Classic"
         }
       ],
       "brief": "You are writing Python that generates a 3D-printable model using the `sdf` library\n(`fogleman/sdf`). Output a single script, nothing else. Units are millimetres.\n\n**Model: a naturalistic tree stump that serves as the base of a trophy (Pokal).**\nIt is not a standalone ornament \u2014 it carries an existing trophy, and every dimension is\nderived from that trophy rather than chosen.\n\nBegin the script with an input block holding only *measured* values: `MOUNT_DIA`,\n`MOUNT_DEPTH`, `MOUNT_TYPE`, `TROPHY_HEIGHT`, `TROPHY_MASS`, `TROPHY_COG`, and optionally\n`PLATE_W` / `PLATE_H`. I will fill these in. Everything else must be **computed** from\nthem, each derived value a named constant with a one-line comment explaining the rule.\n\nDerive the proportions with these rules:\n\n- **Footprint** scales with trophy height and how high its mass sits \u2014 a tall or top-heavy\n  cup needs a wider stump. Size it so the whole assembly does not tip until it is leaned\n  well past any angle a display shelf would see, and state the resulting tip angle in a comment.\n- **Stump height** is a visual proportion of the trophy, not a fixed number: tall enough to\n  read as a plinth, short enough that the cup stays the subject.\n- **Taper** narrows from base to cut face; the cut face must be comfortably wider than\n  `MOUNT_DIA` so the socket is not cutting into the rim.\n\nBuild these features, in this order:\n\n1. **Trunk body** \u2014 a tapered vertical solid with a non-circular cross-section. Modulate\n   the radius by angle, and let that irregularity change with height so no two cross-sections\n   match. It must read as a real stump, not a noisy cylinder.\n2. **Root flare** \u2014 the lower portion swells into five or six uneven buttress roots,\n   unequally spaced and of differing sizes, blended into the trunk with a smooth union\n   (`k=` roughly 4\u20136) so there is no seam. Roots widen the footprint, so account for them\n   in the stability calculation rather than treating them as decoration.\n3. **Bark** \u2014 vertical ridges over the full height, irregular in spacing and depth, broken\n   by a second finer noise so they do not look striped. Relief must be at least 0.8 mm\n   peak-to-valley or it will not survive 0.2 mm layers.\n4. **Cut face** \u2014 flat, level, perpendicular to Z, with a slightly ragged outer edge where\n   the bark meets it. Cut concentric growth rings into it, irregularly spaced and off-centre,\n   0.6 mm wide and 0.4 mm deep, with two or three fine radial cracks. **Keep the rings clear\n   of the socket** \u2014 they should read as wood around the mount, not run into it.\n5. **Mount socket**, centred on the cut face, according to `MOUNT_TYPE`:\n   - *plain spigot* \u2014 a blind socket, `MOUNT_DIA` plus 0.3 mm diametral clearance, depth\n     `MOUNT_DEPTH` plus 1 mm so it seats on the shoulder and not the floor.\n   - *threaded rod* \u2014 a through-hole with the same clearance, opening into a hex or\n     cylindrical recess in the underside deep enough to take a nut and washer.\n   - *flat foot* \u2014 a shallow register recess matching the foot outline with 0.3 mm clearance,\n     so the trophy locates instead of sliding.\n6. **Nameplate facet** \u2014 if `PLATE_W` is set, flatten one area of the bark into a smooth\n   planar facet a little larger than the plate, tilted slightly upward toward a viewer.\n   It must be genuinely flat so the plate sits without rocking, and must not cut so deep\n   that it breaks into the interior.\n7. **Ballast cavity** \u2014 if `TROPHY_MASS` is large enough to matter, hollow the interior\n   from the underside into a cavity for sand or steel shot, leaving walls of at least 3 mm\n   and keeping the cavity clear of the socket and the nameplate facet. Ballast is far more\n   effective than infill for stability because it sits low. If it is not needed, say so in\n   a comment and skip it.\n8. **Underside** \u2014 perfectly flat at z=0, guaranteed by intersecting with a half-space,\n   with a shallow recess inset from the edge to take a felt pad.\n\n**Hard printability constraints \u2014 these override aesthetics:**\n\n- Nothing may overhang more than 45\u00b0 from vertical. The root flare is the risk: keep its\n  underside sloping outward and down to the base, never undercutting.\n- Minimum wall and minimum feature 0.8 mm. No knife edges.\n- One connected solid, no floating geometry.\n- Print orientation is cut-face-up, as modelled \u2014 do not design anything that assumes supports.\n- Mesh fine enough to resolve 0.4 mm detail: pass `step=0.25` to `save()`.\n\nExpose every noise seed and ridge parameter as a named constant so the shape can be\nre-rolled without touching the body of the code.\n\nSave to `stump_base.stl`. After saving, print the bounding box, the volume, the computed\nfootprint and the tip angle, so I can check the derivation before printing.",
-      "generated": "2026-09-13",
+      "generated": "2026-09-25",
       "generator": "scripts/prompts/stump_base.py"
     },
     {
@@ -92,20 +92,20 @@
         {
           "stage": "Chart",
           "name": "tradingview/lightweight-charts",
-          "stars": 17186,
-          "health": 72,
+          "stars": 17349,
+          "health": 74,
           "lifecycle": "Classic"
         },
         {
           "stage": "App",
           "name": "streamlit/streamlit",
-          "stars": 45699,
+          "stars": 45832,
           "health": 83,
           "lifecycle": "Classic"
         }
       ],
       "brief": "You are writing Python that builds a single-file, single-process trading\ndashboard for OHLC (open/high/low/close) price data. Output one script, nothing else.\n\n**Deliverable:** a dashboard rendering candlestick OHLC data with a volume subplot below\nit and a moving-average overlay on the price panel. It must run as one file with one\ncommand \u2014 no separate build step, no external services beyond the packages imported.\n\n**Shared x-axis, linked zoom and pan.** The price panel and the volume panel share one\ntime axis. Zooming or panning on either panel must move the other in lock-step \u2014 a\ntrader reading volume against price at the same instant, not two independently-scrolling\ncharts that happen to sit on the same page. Wire this through the charting library's own\naxis-linking mechanism rather than reimplementing it by hand with callbacks.\n\n**Tooltips must show every series at the hovered timestamp, not one series.** Hovering\nanywhere on the time axis shows open, high, low, close, volume, and the moving-average\nvalue together in one tooltip, aligned to that single x position. A tooltip that shows\nonly whichever series happens to be under the cursor forces the reader to hover multiple\ntimes to compare values that belong together.\n\n**Handle market-closed gaps correctly \u2014 do not interpolate across them.** Do not treat\nthe time axis as a continuous calendar. Weekends, exchange holidays, and any other\nsession with no trades must produce a visible gap or a compressed skip in the axis, never\na straight line drawn between the last tick before the closure and the first tick after\nit. A line through a closed market implies price movement that did not happen and is\ndata the source never recorded \u2014 it is a lie about the data. Build the x-axis from the\nlist of actual trading timestamps present in the data (a category axis, or an explicit\nskip-list of closed dates) rather than from a uniform time interval that assumes every\nday traded.\n\n**Direction must survive red-green colour blindness \u2014 do not encode it with hue alone.**\nUp/down candles must be distinguishable by a second, non-colour channel: use filled vs.\nhollow (or outlined) candle bodies as the primary encoding, with colour as a secondary\nreinforcement only. Roughly 8% of men have red-green colour vision deficiency and cannot\nreliably read a chart where the only signal is red-vs-green hue; a shape or fill\ndifference remains legible to them. Apply this same fill/hollow rule consistently in\nboth the candle body and any legend swatches \u2014 never introduce a legend that is itself\nhue-only after the chart body got the fix.\n\n**Build, naming each tool where it is used:**\n\n1. **Chart** \u2014 use `tradingview/lightweight-charts` to render the candlestick price\n   panel, the linked volume histogram pane, and the moving-average line overlay.\n   Lightweight Charts' own multi-pane API (a candlestick series and a histogram series\n   on a linked pane, plus a line series for the overlay, all on one chart instance)\n   gives you the shared/linked time axis and a native crosshair \u2014 this is the one job\n   the library is purpose-built for, so do not reach for a second charting\n   library to get panel-linking it already does for free. The combined tooltip is not\n   native, though: Lightweight Charts' crosshair draws axis labels only, with no data\n   tooltip of its own, so build it yourself on the library's `subscribeCrosshairMove`\n   callback, reading every series' value at the hovered time from the callback's param\n   and rendering them together in one tooltip element. Lightweight Charts\n   is a JavaScript library with no official Python binding: write the chart-construction\n   code in plain JavaScript against its UMD bundle, loaded via a `<script>` tag in the\n   page the app step serves. Do not route it through an unofficial Python wrapper that\n   is not part of this stack.\n2. **App** \u2014 use `streamlit/streamlit` to host the page as a single-process app: read\n   the OHLC+volume CSV, reshape it into the JSON structure the chart script consumes\n   (including the trading-timestamp list used for the gap handling above and the\n   moving-average series), and hand the assembled HTML/JS as one string to\n   `st.components.v1.html(...)`. One `streamlit run trading_dashboard.py` is the only\n   command needed to view it locally.\n\nCompute the moving average (state the window, e.g. `MA_WINDOW = 20`, as a constant) over\nthe same trading-timestamp list as the price series, so the overlay has no points on\nclosed-market gaps either.\n\nKeep styling minimal: a light and dark variant of the colour pair is fine, but the\nfill/hollow distinction must be present in both.",
-      "generated": "2026-09-13",
+      "generated": "2026-09-25",
       "generator": "scripts/prompts/trading_dashboard.py"
     }
   ]

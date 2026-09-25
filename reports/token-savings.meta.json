@@ -3,9 +3,9 @@
   "title": "Token-Savings & Context-Efficiency Tooling",
   "file": "token-savings.md",
   "category": "AI / Efficiency",
-  "summary": "15 token-savings tools (467,778\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
+  "summary": "15 token-savings tools (470,006\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
   "tool_count": 15,
-  "total_stars": 467778,
+  "total_stars": 470006,
   "categories": {
     "Coding": 8,
     "Generation": 1,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "JuliusBrussee/caveman",
-      "stars": 107079
+      "stars": 107770
     },
     {
       "name": "thedotmack/claude-mem",
-      "stars": 94376
+      "stars": 94658
     },
     {
       "name": "rtk-ai/rtk",
-      "stars": 81227
+      "stars": 81687
     },
     {
       "name": "colbymchenry/codegraph",
-      "stars": 71675
+      "stars": 72059
     },
     {
       "name": "toon-format/toon",
-      "stars": 25401
+      "stars": 25421
     }
   ],
-  "snapshot": "2026-09-21T11:17:33.969Z",
-  "generated": "2026-09-21",
+  "snapshot": "2026-09-25T10:37:19.717Z",
+  "generated": "2026-09-25",
   "generator": "scripts/reports/token_savings.py",
-  "created": "2026-09-14"
+  "created": "2026-05-31"
 }

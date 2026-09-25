@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 15 data vintages: the 7-day movers, relative breakouts, sustained climbers, 56 new entrants, and what has gone flat.",
-  "tool_count": 119,
-  "total_stars": 6051305,
+  "summary": "Measured star momentum across 16 data vintages: the 11-day movers, relative breakouts, sustained climbers, 89 new entrants, and what has gone flat.",
+  "tool_count": 151,
+  "total_stars": 5985923,
   "categories": {
-    "Risers": 1712,
-    "Breakouts": 1614,
-    "New entrants": 56,
-    "Cooling": 83
+    "Risers": 1758,
+    "Breakouts": 1641,
+    "New entrants": 89,
+    "Cooling": 76
   },
   "top_tools": [
     {
       "name": "cloudflare/security-audit-skill",
-      "stars": 18543
+      "stars": 21428
     },
     {
       "name": "alibaba/open-code-review",
-      "stars": 38849
+      "stars": 41030
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "stars": 231895
-    },
-    {
-      "name": "affaan-m/ECC",
-      "stars": 264290
+      "stars": 235536
     },
     {
       "name": "stablyai/orca",
-      "stars": 74151
+      "stars": 77810
+    },
+    {
+      "name": "affaan-m/ECC",
+      "stars": 267158
     }
   ],
   "chart_top_series": [
     {
       "name": "cloudflare/security-audit-skill",
-      "value": 15257
+      "value": 18142
     },
     {
       "name": "alibaba/open-code-review",
-      "value": 14665
+      "value": 16846
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 8549
-    },
-    {
-      "name": "affaan-m/ECC",
-      "value": 6265
+      "value": 12190
     },
     {
       "name": "stablyai/orca",
-      "value": 5888
+      "value": 9547
     },
     {
-      "name": "JustVugg/colibri",
-      "value": 5787
-    },
-    {
-      "name": "debpalash/VoiceStudio",
-      "value": 5716
+      "name": "affaan-m/ECC",
+      "value": 9133
     },
     {
       "name": "DietrichGebert/ponytail",
-      "value": 5592
+      "value": 7862
+    },
+    {
+      "name": "debpalash/VoiceStudio",
+      "value": 7324
+    },
+    {
+      "name": "Tencent/WeKnora",
+      "value": 6819
     }
   ],
-  "chart_top_title": "Biggest star gains (7d)",
+  "chart_top_title": "Biggest star gains (11d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-21T11:17:33.969Z",
-  "generated": "2026-09-21",
+  "snapshot": "2026-09-25T10:37:19.717Z",
+  "generated": "2026-09-25",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-09-14"
+  "created": "2026-08-08"
 }

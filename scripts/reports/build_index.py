@@ -54,6 +54,7 @@ GENERATORS = [
     "trending_now.py",
     "charting_stack.py",
     "printing_stack.py",
+    "decision_classifiers.py",
 ]
 
 def run_generators():

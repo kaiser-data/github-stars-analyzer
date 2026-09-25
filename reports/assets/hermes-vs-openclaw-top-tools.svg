@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">390,181</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">390,467</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,67 h214.3 q4,0 4,4 v10 q0,4 -4,4 h-214.3 z" class="bar"/>
-<text x="468.3" y="76.0" class="val" dominant-baseline="central">247,627</text>
+<path d="M244,67 h215.2 q4,0 4,4 v10 q0,4 -4,4 h-215.2 z" class="bar"/>
+<text x="469.2" y="76.0" class="val" dominant-baseline="central">248,814</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,94 h69.0 q4,0 4,4 v10 q0,4 -4,4 h-69.0 z" class="bar"/>
-<text x="323.0" y="103.0" class="val" dominant-baseline="central">82,794</text>
+<path d="M244,94 h69.1 q4,0 4,4 v10 q0,4 -4,4 h-69.1 z" class="bar"/>
+<text x="323.1" y="103.0" class="val" dominant-baseline="central">82,962</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">code-yeongyu/oh-my-openagent</text>
 <path d="M244,121 h57.1 q4,0 4,4 v10 q0,4 -4,4 h-57.1 z" class="bar"/>
-<text x="311.1" y="130.0" class="val" dominant-baseline="central">69,246</text>
+<text x="311.1" y="130.0" class="val" dominant-baseline="central">69,395</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/nanobot</text>
-<path d="M244,148 h38.7 q4,0 4,4 v10 q0,4 -4,4 h-38.7 z" class="bar"/>
-<text x="292.7" y="157.0" class="val" dominant-baseline="central">48,445</text>
+<path d="M244,148 h38.8 q4,0 4,4 v10 q0,4 -4,4 h-38.8 z" class="bar"/>
+<text x="292.8" y="157.0" class="val" dominant-baseline="central">48,561</text>
 </svg>

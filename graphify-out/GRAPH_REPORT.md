@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-08-23)
+# Graph Report - github-stars-analyzer  (2026-09-25)
 
 ## Corpus Check
-- 155 files · ~2,761,920 words
+- 220 files · ~3,746,362 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1413 nodes · 1452 edges · 85 communities (78 shown, 7 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.8)
+- 1916 nodes · 1981 edges · 127 communities (111 shown, 16 thin omitted)
+- Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9a91aadd`
+- Built from commit: `5147d0b9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -96,79 +96,119 @@
 - [[_COMMUNITY_Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps|Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps]]
 - [[_COMMUNITY_Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps|Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps]]
 - [[_COMMUNITY_jetson_inference.py|jetson_inference.py]]
+- [[_COMMUNITY_promptlib.py|promptlib.py]]
+- [[_COMMUNITY_LLM-Driven 3D Modelling for 3D Printing — Landscape Report|LLM-Driven 3D Modelling for 3D Printing — Landscape Report]]
+- [[_COMMUNITY_LLM-Driven 3D Modelling for 3D Printing — Landscape Report|LLM-Driven 3D Modelling for 3D Printing — Landscape Report]]
+- [[_COMMUNITY_Task 5 report two more prompts|Task 5 report: two more prompts]]
+- [[_COMMUNITY_Repo discovery — design|Repo discovery — design]]
+- [[_COMMUNITY_2. Score-by-score|2. Score-by-score]]
+- [[_COMMUNITY_check-coverage.mjs|check-coverage.mjs]]
+- [[_COMMUNITY_File Structure|File Structure]]
+- [[_COMMUNITY_Handoff — 2026-09-13|Handoff — 2026-09-13]]
+- [[_COMMUNITY_Prompt library — design|Prompt library — design]]
+- [[_COMMUNITY_Task 4 Report Wire prompts into the main build|Task 4 Report: Wire prompts into the main build]]
+- [[_COMMUNITY_Handoff — 2026-08-30|Handoff — 2026-08-30]]
+- [[_COMMUNITY_Global Constraints|Global Constraints]]
+- [[_COMMUNITY_discover-summary.mjs|discover-summary.mjs]]
+- [[_COMMUNITY_Task 2 report — the stump-base generator|Task 2 report — the stump-base generator]]
+- [[_COMMUNITY_Task 6 Report Extract shared markdown components|Task 6 Report: Extract shared markdown components]]
+- [[_COMMUNITY_test_prompt_outputs.py|test_prompt_outputs.py]]
+- [[_COMMUNITY_Task 7 report Prompts tab|Task 7 report: Prompts tab]]
+- [[_COMMUNITY_Scoring review 247 VPS claw convenience ranking (Codex, gpt-6-astra)|Scoring review: 24/7 VPS claw convenience ranking (Codex, gpt-6-astra)]]
+- [[_COMMUNITY_Tree-stump base for a Pokal|Tree-stump base for a Pokal]]
+- [[_COMMUNITY_Tree-stump base for a Pokal|Tree-stump base for a Pokal]]
+- [[_COMMUNITY_Task 3 report — prompt build step|Task 3 report — prompt build step]]
+- [[_COMMUNITY_test_build_prompts.py|test_build_prompts.py]]
+- [[_COMMUNITY_Retrieval-evaluation harness|Retrieval-evaluation harness]]
+- [[_COMMUNITY_OHLC trading dashboard|OHLC trading dashboard]]
+- [[_COMMUNITY_Retrieval-evaluation harness|Retrieval-evaluation harness]]
+- [[_COMMUNITY_OHLC trading dashboard|OHLC trading dashboard]]
+- [[_COMMUNITY_Task 1 report Prompt library core|Task 1 report: Prompt library core]]
+- [[_COMMUNITY_Scoring review request|Scoring review request]]
+- [[_COMMUNITY_task-7-brief|task-7-brief.md]]
+- [[_COMMUNITY_progress|progress.md]]
+- [[_COMMUNITY_task-1-brief|task-1-brief.md]]
+- [[_COMMUNITY_task-2-brief|task-2-brief.md]]
+- [[_COMMUNITY_task-3-brief|task-3-brief.md]]
+- [[_COMMUNITY_task-4-brief|task-4-brief.md]]
+- [[_COMMUNITY_task-5-brief|task-5-brief.md]]
+- [[_COMMUNITY_task-6-brief|task-6-brief.md]]
+- [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
+- [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
+- [[_COMMUNITY_decision_classifiers.py|decision_classifiers.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
-2. `The field guide, by layer` - 15 edges
+2. `scripts` - 19 edges
 3. `The field guide, by layer` - 15 edges
-4. `scripts` - 14 edges
-5. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
-6. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
-7. `Agent Memory & Conversational Knowledge Graphs` - 13 edges
-8. `Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?` - 13 edges
-9. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 13 edges
-10. `Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone` - 13 edges
+4. `The field guide, by layer` - 15 edges
+5. `LLM-Driven 3D Modelling for 3D Printing — Landscape Report` - 14 edges
+6. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 14 edges
+7. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
+8. `LLM-Driven 3D Modelling for 3D Printing — Landscape Report` - 14 edges
+9. `Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases` - 14 edges
+10. `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `handler()` --calls--> `buildSystemPrompt()`  [EXTRACTED]
-  netlify/functions/ask.mjs → scripts/lib/ask-prompt.mjs
-- `isolation_verdict()` --calls--> `activity_label()`  [INFERRED]
-  scripts/reports/agent_memory.py → scripts/reports/lib.py
-- `comp_table()` --calls--> `fmt_stars()`  [INFERRED]
-  scripts/reports/agent_orchestration.py → scripts/reports/lib.py
-- `meta_bits()` --calls--> `fmt_stars()`  [INFERRED]
-  scripts/reports/blockchain_claws.py → scripts/reports/lib.py
-- `make_charts()` --calls--> `svg_hbar()`  [INFERRED]
-  scripts/reports/build_index.py → scripts/reports/lib.py
+- `test_resolve_stack_reports_unresolved_entries()` --calls--> `resolve_stack()`  [INFERRED]
+  tests/test_prompt_lib.py → scripts/prompts/promptlib.py
+- `test_resolve_stack_returns_repos_in_declared_order()` --calls--> `resolve_stack()`  [INFERRED]
+  tests/test_prompt_lib.py → scripts/prompts/promptlib.py
+- `test_inject_prompt_links_appends_when_no_methodology()` --calls--> `inject_prompt_links()`  [INFERRED]
+  tests/test_prompt_lib.py → scripts/prompts/promptlib.py
+- `test_inject_prompt_links_inserts_before_methodology()` --calls--> `inject_prompt_links()`  [INFERRED]
+  tests/test_prompt_lib.py → scripts/prompts/promptlib.py
+- `test_inject_prompt_links_is_idempotent()` --calls--> `inject_prompt_links()`  [INFERRED]
+  tests/test_prompt_lib.py → scripts/prompts/promptlib.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (85 total, 7 thin omitted)
+## Communities (127 total, 16 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (27): ALL_STAGES, AllRepos(), Comparator(), GraphContext, GraphProvider(), STAGE_COLOR, useGraph(), HealthHistogram() (+19 more)
+Nodes (28): ALL_STAGES, AllRepos(), Comparator(), GraphContext, GraphProvider(), STAGE_COLOR, useGraph(), HealthHistogram() (+20 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.08
-Nodes (23): Agent OS / long-horizon harness, Agent OS / long-horizon harness, AI Agent Orchestration — Landscape Report, Code-first agent frameworks, Code-first agent frameworks, Coding-agent orchestration, Coding-agent orchestration, Comparison by approach (+15 more)
+Nodes (24): Agent OS / long-horizon harness, Agent OS / long-horizon harness, AI Agent Orchestration — Landscape Report, Code-first agent frameworks, Code-first agent frameworks, Coding-agent orchestration, Coding-agent orchestration, Comparison by approach (+16 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.09
 Nodes (24): clientIp(), config, extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER (+16 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.08
-Nodes (29): ABORT_AFTER_CONSECUTIVE, args, byKind, failures, MAX_FAILURE_RATE, maxAgeArg, OUT_PATH, paceMs (+21 more)
+Cohesion: 0.06
+Nodes (48): args, classified, data, dist, inArg, now, OUT, ABORT_AFTER_CONSECUTIVE (+40 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.08
-Nodes (23): Agent OS / long-horizon harness, Agent OS / long-horizon harness, AI Agent Orchestration — Landscape Report, Code-first agent frameworks, Code-first agent frameworks, Coding-agent orchestration, Coding-agent orchestration, Comparison by approach (+15 more)
+Nodes (24): Agent OS / long-horizon harness, Agent OS / long-horizon harness, AI Agent Orchestration — Landscape Report, Code-first agent frameworks, Code-first agent frameworks, Coding-agent orchestration, Coding-agent orchestration, Comparison by approach (+16 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.10
 Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Superpowers — Setup Strategies from Your Stars, Code-graph / retrieval, Config / setup kit, Executive summary, Graph analysis — how they relate, Harness / coding agent (+12 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (20): By category, Client / host, Executive summary, Gateway / control plane, Graph analysis — how they relate, Learning / reference, Maintenance & risk signal, Master comparison (+12 more)
+Cohesion: 0.09
+Nodes (21): By category, Client / host, Executive summary, Gateway / control plane, Graph analysis — how they relate, Learning / reference, Maintenance & risk signal, Master comparison (+13 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.10
 Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Superpowers — Setup Strategies from Your Stars, Code-graph / retrieval, Config / setup kit, Executive summary, Graph analysis — how they relate, Harness / coding agent (+12 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.19
-Nodes (11): args, classified, data, daysAgo(), dist, healthScore(), inArg, lifecycleStage() (+3 more)
+Cohesion: 0.07
+Nodes (32): candidates, landscape, limit, maxStaleDays, md, minStars, now, result (+24 more)
 
 ### Community 9 - "Community 9"
-Cohesion: 0.05
-Nodes (39): dependencies, dexie, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path, lucide-react, react (+31 more)
+Cohesion: 0.04
+Nodes (44): dependencies, dexie, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path, lucide-react, react (+36 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.10
-Nodes (20): By category, Client / host, Executive summary, Gateway / control plane, Graph analysis — how they relate, Learning / reference, Maintenance & risk signal, Master comparison (+12 more)
+Cohesion: 0.09
+Nodes (21): By category, Client / host, Executive summary, Gateway / control plane, Graph analysis — how they relate, Learning / reference, Maintenance & risk signal, Master comparison (+13 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.10
@@ -188,7 +228,7 @@ Nodes (17): Adjacent (deliberately not listed here), ASR engine / model, By cate
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
-Nodes (17): Adjacent (deliberately not listed as voice-AI tools), By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Realtime voice-agent framework (+9 more)
+Nodes (18): Adjacent (deliberately not listed as voice-AI tools), By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Realtime voice-agent framework (+10 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.11
@@ -200,31 +240,31 @@ Nodes (17): Adjacent (deliberately not listed here), ASR engine / model, By cate
 
 ### Community 18 - "Community 18"
 Cohesion: 0.11
-Nodes (17): Adjacent (deliberately not listed as voice-AI tools), By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Realtime voice-agent framework (+9 more)
+Nodes (18): Adjacent (deliberately not listed as voice-AI tools), By category, Executive summary, Graph analysis — how they relate, Maintenance & risk signal, Master comparison, Methodology & caveats, Realtime voice-agent framework (+10 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.12
-Nodes (16): ⚠️ Adopt with caution, Alternative agent / OS, By category, Core, Desktop / orchestration, Graph analysis — how they relate, Hosting / secure runtime, Master comparison (+8 more)
+Cohesion: 0.11
+Nodes (17): ⚠️ Adopt with caution, Alternative agent / OS, By category, Core, Desktop / orchestration, Graph analysis — how they relate, Hosting / secure runtime, Master comparison (+9 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.12
-Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
+Cohesion: 0.11
+Nodes (18): Adjacent (deliberately not listed as RAG tools), Build something with this stack, By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal (+10 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.12
-Nodes (16): ⚠️ Adopt with caution, Alternative agent / OS, By category, Core, Desktop / orchestration, Graph analysis — how they relate, Hosting / secure runtime, Master comparison (+8 more)
+Cohesion: 0.11
+Nodes (17): ⚠️ Adopt with caution, Alternative agent / OS, By category, Core, Desktop / orchestration, Graph analysis — how they relate, Hosting / secure runtime, Master comparison (+9 more)
 
 ### Community 22 - "Community 22"
 Cohesion: 0.06
 Nodes (30): authorSets, classified, communities, COMMUNITY_PALETTE, communityContext, communityMeta, __dirname, fgLinks (+22 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.12
-Nodes (16): Adjacent (deliberately not listed as RAG tools), By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal, Master comparison (+8 more)
+Cohesion: 0.11
+Nodes (18): Adjacent (deliberately not listed as RAG tools), Build something with this stack, By category, Embeddings / rerankers, Executive summary, Graph analysis — how they relate, Ingestion / parsing / chunking, Maintenance & risk signal (+10 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.08
-Nodes (5): load_data(), make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Return (classified, graph) dicts — the two inputs every report uses., Build the node_for(full_name) lookup used in graph-analysis sections.
+Cohesion: 0.07
+Nodes (7): load_data(), make_node_for(), Shared helpers for the report generators in scripts/reports/.  Every generator r, Markdown for curated entries that have left the dataset.      `sample.mjs` drops, Return (classified, graph) dicts — the two inputs every report uses., Build the node_for(full_name) lookup used in graph-analysis sections., retired_rows()
 
 ### Community 27 - "Community 27"
 Cohesion: 0.12
@@ -284,15 +324,15 @@ Nodes (7): meta_bits(), _esc(), fmt_int(), fmt_stars(), Dependency-free horizont
 
 ### Community 41 - "Community 41"
 Cohesion: 0.27
-Nodes (9): build(), created_date(), inject_charts(), make_charts(), Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart, Insert chart images after the intro blockquote of a generated report., Run every generator, then report the ones that failed.      A single crashing ge, First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b (+1 more)
+Nodes (9): build(), created_date(), inject_charts(), make_charts(), First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b, Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart, Insert chart images after the intro blockquote of a generated report., Run every generator, then report the ones that failed and the ones that drifted. (+1 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.33
 Nodes (6): baseline_snapshot(), newly_archived(), True if the repo is archived now but wasn't in the baseline snapshot., The snapshot to diff against: second-newest in data/snapshots/.      build_index, (delta, baseline_date) vs the previous snapshot, or None if no history., star_delta()
 
 ### Community 43 - "Community 43"
-Cohesion: 0.33
-Nodes (4): fmt(), MD_COMPONENTS, ReportCard(), SORTS
+Cohesion: 0.19
+Nodes (4): MD_COMPONENTS, fmt(), ReportCard(), SORTS
 
 ### Community 44 - "Community 44"
 Cohesion: 0.12
@@ -304,11 +344,11 @@ Nodes (7): comp_table(), activity_label(), days_between(), deltas(), [(name, gai
 
 ### Community 49 - "Community 49"
 Cohesion: 0.06
-Nodes (33): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+25 more)
+Nodes (34): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+26 more)
 
 ### Community 50 - "Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone"
 Cohesion: 0.06
-Nodes (33): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+25 more)
+Nodes (34): Adjacent (deliberately not listed as stack picks), Anatomy of a NotebookLM clone, Audio Overview (TTS / podcast), Audio/video understanding (STT), Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone, By category, Clone / reference app, Demo blueprints — three stacks, pick your ambition (+26 more)
 
 ### Community 51 - "Star-Reports Pipeline"
 Cohesion: 0.29
@@ -360,27 +400,27 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-11, 15d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-12 → 2026-09-25, 13d), Frontier models on hardware you already own (+10 more)
 
 ### Community 67 - "snapshot.py"
 Cohesion: 0.06
-Nodes (33): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions, Dashboards as code (+25 more)
+Nodes (34): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, Build something with this stack, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions (+26 more)
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-07-27 → 2026-08-11, 15d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-12 → 2026-09-25, 13d), Frontier models on hardware you already own (+10 more)
 
 ### Community 69 - "Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases"
 Cohesion: 0.06
-Nodes (33): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions, Dashboards as code (+25 more)
+Nodes (34): Adjacent (deliberately not listed as charting tools), Advantages, disadvantages & use cases, BI & dashboard platform, BI & dashboard platform, Build something with this stack, By layer, Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases, Choosing: the six questions (+26 more)
 
 ### Community 70 - "charting_stack.py"
 Cohesion: 0.07
-Nodes (27): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+19 more)
+Nodes (28): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+20 more)
 
 ### Community 71 - "openclaw_ecosystem.py"
 Cohesion: 0.07
-Nodes (27): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+19 more)
+Nodes (28): Adjacent (deliberately not listed as memory tools), Agent Memory & Conversational Knowledge Graphs, Beever Atlas, By category, Chat & workspace connectors, Competitors not in your stars, Executive summary, Extraction & ontology (+20 more)
 
 ### Community 72 - "build_viz_skill.py"
 Cohesion: 0.18
@@ -395,8 +435,8 @@ Cohesion: 0.17
 Nodes (9): args, baseline, baselineFile, CLASSIFIED, current, currentDate, MAX_DROP, MIN_REPOS (+1 more)
 
 ### Community 75 - "Handoff — 2026-08-11"
-Cohesion: 0.18
-Nodes (10): 1. BLOCKER — CI ingest truncates the dataset (1,596 → 96 repos), 2. Report generator crashes on an empty taxonomy, 3. Credential hygiene — action required, 4. Known limitations, not bugs, 5. Reproducing the current state, 6. Suggested order of work, 7. What was fixed on 2026-08-12, Handoff — 2026-08-11 (+2 more)
+Cohesion: 0.08
+Nodes (24): 1. BLOCKER — CI ingest truncates the dataset (1,596 → 96 repos), 2. Report generator crashes on an empty taxonomy, 3. Credential hygiene — action required, 4. Known limitations, not bugs, 5. Reproducing the current state, 6. Suggested order of work, 7. What was fixed on 2026-08-12, Handoff — 2026-08-11 (+16 more)
 
 ### Community 76 - "render_html.py"
 Cohesion: 0.36
@@ -407,12 +447,12 @@ Cohesion: 0.33
 Nodes (6): col_values(), full_degree(), isolation_verdict(), All marks for one primitive across the matrix rows., Edge count in the whole 1,596-repo graph, not just this report's slice., Name the call — including when the honest call is 'the metric can't support one'
 
 ### Community 79 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
-Cohesion: 0.08
-Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+Cohesion: 0.09
+Nodes (21): Adjacent (deliberately not counted as terminal-layer tools), Best pick per scenario, Choosing by operating system, Emulator — 2 missing, 748★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal, Master comparison — the terminal layer in your stars (+13 more)
 
 ### Community 80 - "Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?"
-Cohesion: 0.08
-Nodes (23): Adjacent (deliberately not counted as terminal-layer tools), Agent-aware terminal — 3 missing, 112,927★, Best pick per scenario, Choosing by operating system, Emulator — 11 missing, 384,250★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal (+15 more)
+Cohesion: 0.09
+Nodes (21): Adjacent (deliberately not counted as terminal-layer tools), Best pick per scenario, Choosing by operating system, Emulator — 2 missing, 748★, Executive summary, Graph analysis — how the terminal layer sits in your ecosystem, Maintenance & risk signal, Master comparison — the terminal layer in your stars (+13 more)
 
 ### Community 82 - "Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps"
 Cohesion: 0.13
@@ -422,25 +462,149 @@ Nodes (14): Adjacent (deliberately not counted as inference engines), Engine ver
 Cohesion: 0.13
 Nodes (14): Adjacent (deliberately not counted as inference engines), Engine verdicts against this hardware, Executive summary, Graph analysis, How much headroom is left? A bandwidth roofline, Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps, Maintenance & risk signal, Measured baseline — what this box actually does (+6 more)
 
+### Community 85 - "promptlib.py"
+Cohesion: 0.10
+Nodes (25): build_prompts_index(), inject_cross_links(), load_metas(), Copy prompt markdown to public/ and write the index., Run each generator; collect drift and failures, raise on neither.      Returns (, Add a prompts section to each parent report. Returns reports modified., run_prompt_generators(), inject_prompt_links() (+17 more)
+
+### Community 86 - "LLM-Driven 3D Modelling for 3D Printing — Landscape Report"
+Cohesion: 0.08
+Nodes (24): 1. Parametric, agent-driven — functional parts, 2. Generative, repaired — sculptural work, 3. Implicit / SDF — organic form, no repair stage, Adjacent (deliberately not listed), Agent bridge / viewer, Best tool per task, Build something with this stack, By category (+16 more)
+
+### Community 87 - "LLM-Driven 3D Modelling for 3D Printing — Landscape Report"
+Cohesion: 0.08
+Nodes (24): 1. Parametric, agent-driven — functional parts, 2. Generative, repaired — sculptural work, 3. Implicit / SDF — organic form, no repair stage, Adjacent (deliberately not listed), Agent bridge / viewer, Best tool per task, Build something with this stack, By category (+16 more)
+
+### Community 88 - "Task 5 report: two more prompts"
+Cohesion: 0.08
+Nodes (23): A — `trading-dashboard` stack contradicted its parent report (blocker), B — `run_prompt_generators()` aborting undid the ordering guarantee (blocker), C — Stale "Verify before you print" heading (both non-printing prompts), D — Clipboard fallback didn't exist, E — Health caveat asserted where false, Explicitly left alone (per "out of scope"), F — Wrong UI copy in PromptsView, Final accuracy pass (+15 more)
+
+### Community 89 - "Repo discovery — design"
+Cohesion: 0.11
+Nodes (18): Architecture, Data flow, Decisions, Fit: a separate, decomposed score, Health: reuse the existing classifier, Kind labels, not hard drops, Out of scope, Problem (+10 more)
+
+### Community 90 - "2. Score-by-score"
+Cohesion: 0.13
+Nodes (14): 1. Verdict, 2. Score-by-score, 3. Formula, 4. Blind spots, 5. Revised table, ElizaOS — Fit 5 / Ops 6, Hermes Agent — Fit 9 / Ops 8, IronClaw — Fit 6 / Ops 7 (+6 more)
+
+### Community 91 - "check-coverage.mjs"
+Cohesion: 0.13
+Nodes (12): args, blind, classified, curated, dataset, GENERATORS, MAX_BLIND, MIN_STARS (+4 more)
+
+### Community 92 - "File Structure"
+Cohesion: 0.14
+Nodes (13): File Structure, Global Constraints, Repo Discovery Implementation Plan, Self-Review, Task 1: `gh auth token` fallback, Task 2: Extract `classify-core.mjs`, Task 3: Landscape loading and the three-state split, Task 4: Kind classification and the fit score (+5 more)
+
+### Community 93 - "Handoff — 2026-09-13"
+Cohesion: 0.15
+Nodes (12): 1. The prompt library — what it is, 2. The thing no test can catch, 3. Known debt — deliberate, not forgotten, 4. Merge note — read before the next weekly refresh, 5. Where things are, 6. Open, if anyone wants it, Adding a prompt, Handoff — 2026-09-13 (+4 more)
+
+### Community 94 - "Prompt library — design"
+Cohesion: 0.15
+Nodes (12): App, Architecture, Cross-link injection, Decisions, Drift detection, Out of scope, Problem, Prompt library — design (+4 more)
+
+### Community 95 - "Task 4 Report: Wire prompts into the main build"
+Cohesion: 0.15
+Nodes (12): Commit, Exact lines inserted, Self-review findings, Status: DONE, Step 1: Read the current entry point (before touching anything), Step 2/3: Failing test, confirmed failing for the right reason, Step 4: Change applied, Step 5: Test passes (+4 more)
+
+### Community 96 - "Handoff — 2026-08-30"
+Cohesion: 0.18
+Nodes (10): 1. The drift class — what it was, and why it matters more than the six entries, 2. Drift runs both ways — the 45, 3. Still open, 4. Credentials — current state, 5. Reproducing, Handoff — 2026-08-30, Shipped and verified, The convention now (+2 more)
+
+### Community 97 - "Global Constraints"
+Cohesion: 0.18
+Nodes (10): Done criteria, Global Constraints, Prompt Library Implementation Plan, Task 1: Prompt library core, Task 2: The stump-base generator, Task 3: The prompt build step, Task 4: Wire prompts into the main build, Task 5: Two more prompts, from two other reports (+2 more)
+
+### Community 98 - "discover-summary.mjs"
+Cohesion: 0.18
+Nodes (9): byRepo, lines, minFit, minHealth, out, ranked, REPORTS, ROOT (+1 more)
+
+### Community 99 - "Task 2 report — the stump-base generator"
+Cohesion: 0.22
+Nodes (8): Anything that surprised me, BRIEF fidelity, Commit, Self-review findings, STACK resolution confirmation, Task 2 report — the stump-base generator, Test command and actual output, What was implemented
+
+### Community 100 - "Task 6 Report: Extract shared markdown components"
+Cohesion: 0.22
+Nodes (8): Build output, git diff on ReportsView.jsx, How I verified byte-identity, One deviation from the brief, with justification, Self-review findings, Task 6 Report: Extract shared markdown components, What surprised me, What was moved
+
+### Community 101 - "test_prompt_outputs.py"
+Cohesion: 0.42
+Nodes (8): INPUTS=None must render no 'Measure these first' section., run_generator(), table_columns_match(), test_additional_prompts_generate_cleanly(), test_rag_prompt_has_no_inputs_table(), test_stump_base_generates_without_drift(), test_stump_base_markdown_tables_are_well_formed(), test_stump_base_meta_has_required_keys_and_nonempty_brief()
+
+### Community 102 - "Task 7 report: Prompts tab"
+Cohesion: 0.25
+Nodes (7): Anything that surprised me, Build output, How I confirmed the copy payload is brief-only, Self-review findings, Task 7 report: Prompts tab, What I implemented, What I observed in the running app
+
+### Community 103 - "Scoring review: 24/7 VPS claw convenience ranking (Codex, gpt-6-astra)"
+Cohesion: 0.29
+Nodes (6): 1. Verdict, 2. Score-by-score, 3. Formula, 4. Blind spots, 5. Revised table, Scoring review: 24/7 VPS claw convenience ranking (Codex, gpt-6-astra)
+
+### Community 104 - "Tree-stump base for a Pokal"
+Cohesion: 0.29
+Nodes (6): Measure these first, The prompt, The stack this uses, Tree-stump base for a Pokal, Variants, Verify before you print
+
+### Community 105 - "Tree-stump base for a Pokal"
+Cohesion: 0.29
+Nodes (6): Measure these first, The prompt, The stack this uses, Tree-stump base for a Pokal, Variants, Verify before you print
+
+### Community 106 - "Task 3 report — prompt build step"
+Cohesion: 0.29
+Nodes (6): Confirming the idempotency test is real, Self-review findings, Task 3 report — prompt build step, TDD sequence and actual output, What surprised me, What was implemented
+
+### Community 107 - "test_build_prompts.py"
+Cohesion: 0.43
+Nodes (6): The cross-link must reach public/reports/, not just reports/., run_build(), test_build_copies_markdown_to_public(), test_build_writes_public_index_with_briefs(), test_cross_link_appears_once_after_two_consecutive_runs(), test_full_build_leaves_public_report_and_repo_report_identical()
+
+### Community 108 - "Retrieval-evaluation harness"
+Cohesion: 0.33
+Nodes (5): Retrieval-evaluation harness, The prompt, The stack this uses, Variants, Verify before you trust the numbers
+
+### Community 109 - "OHLC trading dashboard"
+Cohesion: 0.33
+Nodes (5): OHLC trading dashboard, The prompt, The stack this uses, Variants, Verify before you ship it
+
+### Community 110 - "Retrieval-evaluation harness"
+Cohesion: 0.33
+Nodes (5): Retrieval-evaluation harness, The prompt, The stack this uses, Variants, Verify before you trust the numbers
+
+### Community 111 - "OHLC trading dashboard"
+Cohesion: 0.33
+Nodes (5): OHLC trading dashboard, The prompt, The stack this uses, Variants, Verify before you ship it
+
+### Community 112 - "Task 1 report: Prompt library core"
+Cohesion: 0.33
+Nodes (5): Anything that surprised me, Self-review findings, Task 1 report: Prompt library core, Test commands and actual output, What was implemented
+
+### Community 113 - "Scoring review request"
+Cohesion: 0.50
+Nodes (3): Current scores, Scoring review request, What to return
+
+### Community 124 - "Decision Classifiers & Guard Models — Landscape Report"
+Cohesion: 0.10
+Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+12 more)
+
+### Community 125 - "Decision Classifiers & Guard Models — Landscape Report"
+Cohesion: 0.10
+Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+12 more)
+
 ## Knowledge Gaps
-- **985 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+980 more)
+- **1291 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1286 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `resolveRepos()` connect `Community 3` to `Community 8`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1016 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1334 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06203007518796992 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.0896551724137931 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.07777777777777778 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.055051421657592255 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.08333333333333333 - nodes in this community are weakly interconnected._
-- **Should `Community 5` be split into smaller, more focused modules?**
-  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._

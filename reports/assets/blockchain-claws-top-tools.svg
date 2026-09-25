@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">390,181</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">390,467</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,67 h214.3 q4,0 4,4 v10 q0,4 -4,4 h-214.3 z" class="bar"/>
-<text x="468.3" y="76.0" class="val" dominant-baseline="central">247,627</text>
+<path d="M244,67 h215.2 q4,0 4,4 v10 q0,4 -4,4 h-215.2 z" class="bar"/>
+<text x="469.2" y="76.0" class="val" dominant-baseline="central">248,814</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
-<path d="M244,94 h91.1 q4,0 4,4 v10 q0,4 -4,4 h-91.1 z" class="bar"/>
-<text x="345.1" y="103.0" class="val" dominant-baseline="central">107,884</text>
+<path d="M244,94 h91.6 q4,0 4,4 v10 q0,4 -4,4 h-91.6 z" class="bar"/>
+<text x="345.6" y="103.0" class="val" dominant-baseline="central">108,540</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">punkpeye/awesome-mcp-servers</text>
 <path d="M244,121 h80.1 q4,0 4,4 v10 q0,4 -4,4 h-80.1 z" class="bar"/>
-<text x="334.1" y="130.0" class="val" dominant-baseline="central">95,377</text>
+<text x="334.1" y="130.0" class="val" dominant-baseline="central">95,504</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">modelcontextprotocol/servers</text>
 <path d="M244,148 h75.8 q4,0 4,4 v10 q0,4 -4,4 h-75.8 z" class="bar"/>
-<text x="329.8" y="157.0" class="val" dominant-baseline="central">90,519</text>
+<text x="329.8" y="157.0" class="val" dominant-baseline="central">90,584</text>
 </svg>

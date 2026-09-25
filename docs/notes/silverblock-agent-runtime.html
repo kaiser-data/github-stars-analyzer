@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Silverblock · 24/7 VPS claws, ranked by convenience</title>
+<style>
+:root{
+  --paper:#e6e4de;
+  --panel:#f4f2ec;
+  --ink:#1b1e22;
+  --muted:#5a6168;
+  --rule:#b7b3aa;
+  --hair:#cdc9c0;
+  --pick:#24382e;
+  --pick-ink:#f3f6f2;
+  --gold:#8d7328;
+  --yes:#2c5a42;
+  --no:#7a3030;
+  --bar:#2c5a42;
+  --display:Didot,"Bodoni 72","Iowan Old Style",Georgia,serif;
+  --sans:"Avenir Next",Avenir,"Helvetica Neue",ui-sans-serif,sans-serif;
+  --mono:"SF Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-size:17px;line-height:1.55;
+  background-image:
+    linear-gradient(180deg,transparent 0,transparent 72px,rgba(27,30,34,.035) 72px,rgba(27,30,34,.035) 73px,transparent 73px);
+  background-size:100% 18px;
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 28px 96px}
+header{padding:36px 0 28px;border-bottom:1px solid var(--ink)}
+.mast{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:13px;color:var(--muted);margin-bottom:28px}
+.mast b{color:var(--ink);font-weight:600}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.3rem,6vw,4.1rem);line-height:1.02;letter-spacing:-.02em;margin:0 0 14px;text-wrap:balance}
+.lede{font-family:var(--display);font-style:italic;font-size:clamp(1.12rem,2.1vw,1.4rem);color:var(--muted);max-width:44rem;margin:0}
+nav.toc{display:flex;flex-wrap:wrap;gap:10px 22px;padding:18px 0 8px;font-size:14px}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+nav.toc a:hover{border-bottom-color:var(--ink)}
+.verdict{margin:36px 0 8px;background:var(--pick);color:var(--pick-ink);padding:32px 32px 28px}
+.verdict h2{font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,2.8vw,2.1rem);margin:0 0 10px;letter-spacing:-.015em}
+.verdict p{margin:0 0 18px;max-width:48rem;color:#d5ddd7}
+section{margin:52px 0 0}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.65rem,3vw,2.2rem);margin:0 0 8px;letter-spacing:-.015em}
+h3{font-family:var(--display);font-weight:400;font-size:1.32rem;margin:28px 0 8px}
+.sec-lead{color:var(--muted);max-width:48rem;margin:0 0 22px}
+p{max-width:48rem}
+.rank{list-style:none;margin:0;padding:0}
+.rank li{
+  display:grid;grid-template-columns:2.4rem 1fr auto;gap:12px 16px;
+  align-items:center;padding:12px 0;border-bottom:1px solid rgba(243,246,242,.18);
+}
+.rank li:first-child{border-top:1px solid rgba(243,246,242,.18)}
+.rank .n{font-family:var(--display);font-size:1.6rem;color:#c9a227}
+.rank .who{font-size:16px}
+.rank .who small{display:block;color:#b7c4bb;font-size:13px;margin-top:2px}
+.rank .sc{font-family:var(--mono);font-size:18px;white-space:nowrap}
+.bar{height:6px;background:rgba(243,246,242,.12);margin-top:8px;grid-column:2 / -1}
+.bar i{display:block;height:100%;background:#c9d9ce}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--panel);border:1px solid var(--hair);padding:18px 20px 16px}
+.card h3{margin-top:0}
+.card p:last-child{margin-bottom:0}
+.tag{display:inline-block;font-size:12px;color:var(--gold);margin-bottom:8px}
+.yes{color:var(--yes);font-weight:600}
+.no{color:var(--no);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel)}
+th,td{text-align:left;vertical-align:top;padding:10px 11px;border-bottom:1px solid var(--hair)}
+th{font-weight:600;font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--ink)}
+td.pick{background:#e7eee8}
+.scroll{overflow-x:auto;margin:12px 0 8px;border:1px solid var(--hair)}
+ol.steps{max-width:48rem;padding-left:1.2rem}
+ol.steps li{margin:0 0 10px}
+code{font-family:var(--mono);font-size:.86em;background:rgba(27,30,34,.06);padding:.08em .35em}
+pre{font-family:var(--mono);font-size:13px;line-height:1.45;background:var(--ink);color:#e8eee9;padding:16px 18px;overflow-x:auto}
+.note{border-left:3px solid var(--gold);padding:8px 0 8px 14px;color:var(--muted);max-width:48rem}
+.sources a{color:var(--ink)}
+footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--ink);font-size:13px;color:var(--muted)}
+.meta{font-size:13px;color:var(--muted)}
+@media (max-width:860px){
+  .wrap{padding:20px 16px 72px}
+  .verdict{padding:24px 18px}
+  .rank li{grid-template-columns:2rem 1fr; }
+  .rank .sc{grid-column:2}
+  .grid-2{grid-template-columns:1fr}
+  .mast{flex-direction:column;gap:4px}
+}
+@media print{
+  body{background:#fff;background-image:none}
+  .verdict{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  nav.toc{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="mast">
+    <div><b>Silverblock</b> · 24/7 VPS claws</div>
+    <div>18 September 2026 · ranked by convenience for this job</div>
+  </div>
+  <h1>Most convenient claw for a 24/7 VPS agent</h1>
+  <p class="lede">Sorted for the job itself: a named always-on assistant on a Linux VPS. Migration cost is not in the score. Numbers below are the post-review sheet after Claude Code challenged the first pass. Codex CLI was usage-capped.</p>
+  <nav class="toc" aria-label="Contents">
+    <a href="#rank">Ranking</a>
+    <a href="#how">How scored</a>
+    <a href="#matrix">Score sheet</a>
+    <a href="#each">Why the order</a>
+    <a href="#vps">Cutover</a>
+    <a href="#out">Out of ranking</a>
+    <a href="#reviews">Claude / Codex</a>
+    <a href="#sources">Sources</a>
+  </nav>
+</header>
+
+<section id="rank" class="verdict">
+  <h2>Convenience ranking for this job</h2>
+  <p>Job = named autonomous agent, systemd or Docker, channels stay up after logout. Switching cost is ignored. Two independent reviews now sit behind these numbers, and both returned <b>revise</b>. Claude found the rubric contradictions; Codex read the vendor docs and overturned three rationales that were wrong on the facts. Every claim that moved a score by a full point was re-checked against primary docs before it was applied — see <a href="#reviews">Independent review</a>. The old tie-break (higher Fit wins) no longer separates the top two: they are tied on both axes.</p>
+  <ol class="rank">
+    <li>
+      <span class="n">=1</span>
+      <div class="who">OpenClaw 2.0 <small>Fit 10 / ops 8.5. Ops restored: the 6 GB figure is a source-build requirement prebuilt images avoid. Score 9.3</small></div>
+      <span class="sc">9.3</span>
+      <div class="bar"><i style="width:93%"></i></div>
+    </li>
+    <li>
+      <span class="n">=1</span>
+      <div class="who">Hermes Agent <small>Fit 10 / ops 8.5. Identical capability list to OpenClaw; no missing capability was ever named. Genuine tie. Score 9.3</small></div>
+      <span class="sc">9.3</span>
+      <div class="bar"><i style="width:93%"></i></div>
+    </li>
+    <li>
+      <span class="n">=3</span>
+      <div class="who">ZeroClaw <small>Fit 9 / ops 8. Channels, memory and cron are real. Ops capped: the official image ships public-bind with pairing off. Score 8.5</small></div>
+      <span class="sc">8.5</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </li>
+    <li>
+      <span class="n">=3</span>
+      <div class="who">Nanobot <small>Fit 9 / ops 8. Corrected: it ships <code>gateway install-service --manager systemd</code>, linger docs and loopback defaults. Score 8.5</small></div>
+      <span class="sc">8.5</span>
+      <div class="bar"><i style="width:85%"></i></div>
+    </li>
+    <li>
+      <span class="n">5</span>
+      <div class="who">PicoClaw <small>Fit 8.5 / ops 8. 19+ channels, cron, memory store. Its own notice says not before v1.0, which caps ops. Score 8.3</small></div>
+      <span class="sc">8.3</span>
+      <div class="bar"><i style="width:83%"></i></div>
+    </li>
+    <li>
+      <span class="n">6</span>
+      <div class="who">NanoClaw <small>Fit 9 / ops 7. Not Claude-locked: Codex, OpenRouter, Google, DeepSeek and Ollama are drop-in. Score 8.0</small></div>
+      <span class="sc">8.0</span>
+      <div class="bar"><i style="width:80%"></i></div>
+    </li>
+    <li>
+      <span class="n">7</span>
+      <div class="who">IronClaw <small>Fit 8.5 / ops 7. Identity, memory, channels, routines, heartbeat, installs a service. Channels need the WebUI. Score 7.8</small></div>
+      <span class="sc">7.8</span>
+      <div class="bar"><i style="width:78%"></i></div>
+    </li>
+    <li>
+      <span class="n">8</span>
+      <div class="who">ElizaOS <small>Fit 7 / ops 6. The one score both reviewers left alone. Assembling an agent from framework parts earns less convenience credit. Score 6.5</small></div>
+      <span class="sc">6.5</span>
+      <div class="bar"><i style="width:65%"></i></div>
+    </li>
+  </ol>
+</section>
+
+<section id="how">
+  <h2>How the rating is built</h2>
+  <p class="sec-lead">Each axis is 0–10. Cutover and rewrite from OpenClaw are <em>not</em> scored. Hermes is judged as a 24/7 VPS runtime next to OpenClaw, not as a migration project.</p>
+  <div class="scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>Axis</th>
+        <th>Weight</th>
+        <th>What “10” means</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Job fit</td>
+        <td>50%</td>
+        <td>Named 24/7 assistant with channels, memory, a daemon — not a coding TUI and not a swarm framework.</td>
+      </tr>
+      <tr>
+        <td>VPS ops</td>
+        <td>50%</td>
+        <td>Official systemd/Docker path, headless docs, sane loopback defaults, RAM you can rent cheaply.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Gate: a shipped default that binds a secrets-bearing process off loopback cannot score Ops 10. ZeroClaw fails it hardest — verified 21 Sep 2026, its official image bakes <code>allow_public_bind = true</code> and <code>require_pairing = false</code>, answering unauthenticated requests on <code>/api/config</code>, <code>/api/memory</code> and <code>/api/browse</code>. That is a shipped default, not just a sample. Nanobot passes the same gate: its gateway defaults to <code>127.0.0.1</code>.</p>
+</section>
+
+<section id="matrix">
+  <h2>Score sheet (sorted)</h2>
+  <div class="scroll">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Claw</th>
+        <th>Fit</th>
+        <th>VPS ops</th>
+        <th>Total</th>
+        <th>Why this rank</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="pick">=1</td>
+        <td class="pick"><b>OpenClaw 2.0</b></td>
+        <td class="pick">10</td>
+        <td class="pick">8.5</td>
+        <td class="pick"><b>9.3</b></td>
+        <td class="pick">Ops +1.0. The RAM ding was misapplied: the docs read “at least 6 GB RAM for a local source image build; pre-built images avoid this build requirement.” Build RAM is not runtime RAM.</td>
+      </tr>
+      <tr>
+        <td class="pick">=1</td>
+        <td class="pick"><b>Hermes</b></td>
+        <td class="pick">10</td>
+        <td class="pick">8.5</td>
+        <td class="pick"><b>9.3</b></td>
+        <td class="pick">Fit +0.5 to parity. Both reviewers refused the gap: the rationale said “same job as OpenClaw” and then subtracted, naming no missing capability. Docker floor is 1 GB.</td>
+      </tr>
+      <tr>
+        <td>=3</td>
+        <td><b>ZeroClaw</b></td>
+        <td>9</td>
+        <td>8</td>
+        <td><b>8.5</b></td>
+        <td>Fit +1 (channels, memory, cron, resumable procedures are documented). Ops −0.5 further: the public bind is in the <em>official image’s</em> baked config, worse than the “sample” framing allowed.</td>
+      </tr>
+      <tr>
+        <td>=3</td>
+        <td><b>Nanobot</b></td>
+        <td>9</td>
+        <td>8</td>
+        <td><b>8.5</b></td>
+        <td>Fit +5, ops +4 — the largest correction in the table. “You write the daemon” was false: <code>nanobot gateway install-service --manager systemd</code> writes the unit, and the docs cover <code>loginctl enable-linger</code>.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td><b>PicoClaw</b></td>
+        <td>8.5</td>
+        <td>8</td>
+        <td><b>8.3</b></td>
+        <td>Fit +2.5: 19+ messaging platforms, <code>picoclaw cron</code>, a JSONL memory store. Ops −1 on its own security notice: “Do not deploy to production before v1.0.”</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><b>NanoClaw</b></td>
+        <td>9</td>
+        <td>7</td>
+        <td><b>8.0</b></td>
+        <td>Fit +2. The “Claude-tied” ding was wrong: <code>/add-codex</code>, <code>/add-opencode</code> and <code>/add-ollama-provider</code> make the provider swappable. Ops unchanged — container and credential friction is real.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td><b>IronClaw</b></td>
+        <td>8.5</td>
+        <td>7</td>
+        <td><b>7.8</b></td>
+        <td>Fit +2.5: identity files, hybrid-search memory, multi-channel, routines, heartbeat, and onboarding that installs the background service. Ops held — Slack/Telegram cannot be enabled from config or CLI, only the WebUI.</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td><b>ElizaOS</b></td>
+        <td>7</td>
+        <td>6</td>
+        <td><b>6.5</b></td>
+        <td>Unchanged, and the only row both reviewers independently agreed on. It meets the stated rubric; PM2 as a named path still sits awkwardly against a systemd-or-Docker job.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="meta">Total = 0.50×fit + 0.50×ops, displayed to one decimal. Displayed 9.3 is 9.25; 8.3 is 8.25; 7.8 is 7.75. Dataset metrics are context only. Snapshot 2026-09-12, scores revised 2026-09-21.</p>
+</section>
+
+<section id="each">
+  <h2>Why the order is this order</h2>
+  <div class="grid-2">
+    <article class="card">
+      <div class="tag">=1 · 9.3</div>
+      <h3>The top is a real tie, not a tie-break</h3>
+      <p>Both reviewers closed the OpenClaw/Hermes Fit gap, for the same reason: the rationale asserted an identical capability list and then subtracted a point without naming what was missing. With Fit level and Ops level, the standing “higher Fit wins” rule has nothing to separate. Breaking this tie needs operational testing — reconnects, update pain, recovery after reboot — not another pass over the docs.</p>
+    </article>
+    <article class="card">
+      <div class="tag">=3 · 8.5</div>
+      <h3>Nanobot was the worst call in the first pass</h3>
+      <p>It sat last at 4.0 on the claim that you write your own daemon. That was false, and checkably so: the deployment doc installs a systemd user unit, documents linger for logout survival, and defaults the gateway to <code>127.0.0.1</code>. It now ties ZeroClaw — and passes the loopback gate ZeroClaw fails.</p>
+    </article>
+    <article class="card">
+      <div class="tag">=3 · 8.5</div>
+      <h3>ZeroClaw gained Fit and lost more Ops</h3>
+      <p>Its capability surface was under-rated, so Fit rises. But the security problem is worse than “a sample binds public”: the official image itself ships <code>require_pairing = false</code>, leaving config, memory and browse endpoints unauthenticated on every interface. Do not deploy it as shipped.</p>
+    </article>
+    <article class="card">
+      <div class="tag">5–8</div>
+      <h3>The middle was scored on vibes</h3>
+      <p>PicoClaw, NanoClaw and IronClaw all under-scored on Fit because the first pass judged them by reputation rather than docs — “too thin,” “Claude-tied,” “a WASM sandbox.” All three document identity, memory, channels and scheduling. ElizaOS is the only row that survived untouched, and it is now last.</p>
+    </article>
+  </div>
+</section>
+
+<section id="vps">
+  <h2>What “convenient” looks like on the VPS</h2>
+  <p class="sec-lead">This ranking does not tell you to stay on OpenClaw because migration is hard. It tells you OpenClaw, ZeroClaw, and Hermes are the three convenient 24/7 VPS runtimes. If you already have Silver Parrot on OpenClaw, staying is still the cheap path — that is operations, not the score.</p>
+  <ol class="steps">
+    <li>Debian/Ubuntu, ≥6 GB if building OpenClaw from source (official Hetzner figure); prebuilt image if smaller.</li>
+    <li>Tailscale first, then restrict public SSH. No gateway port on 0.0.0.0/0.</li>
+    <li>Docker Compose or Ansible. Gateway on 127.0.0.1:18789. Tunnel or Tailscale Serve.</li>
+    <li>Backup <code>~/.openclaw</code> on the Mac. Install <b>2026.9.x</b>. Restore. Bind Silver Parrot. Stop the Mac daemon so you do not run two gateways.</li>
+    <li><code>openclaw security audit</code>. Keep <code>commands.restart: false</code>. Daily config + workspace + SQLite backup.</li>
+  </ol>
+  <pre>ssh -N -L 18789:127.0.0.1:18789 root@&lt;vps-ip&gt;
+openclaw security audit
+openclaw health</pre>
+</section>
+
+<section id="out">
+  <h2>Not ranked (wrong job or not a VPS claw)</h2>
+  <div class="scroll">
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Why it has no convenience score here</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>NemoClaw</td><td>NVIDIA OpenShell wrapper. Convenient on NVIDIA, not on a generic VPS.</td></tr>
+      <tr><td>oh-my-openagent / claw-code</td><td>Coding harnesses. Convenient for SWE, not 24/7 messaging.</td></tr>
+      <tr><td>Openfang / Nullclaw</td><td>Stale in the snapshot. Convenience of a dead updater is zero.</td></tr>
+      <tr><td>Moltworker</td><td>Cloudflare Workers. Not a VPS daemon.</td></tr>
+      <tr><td>Cowork / ChatGPT Work</td><td>Vendor clouds. Cannot be the named VPS process.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Independent review</h2>
+  <p class="sec-lead">Same brief sent to Claude Code 2.1.278 (OAuth, Silverblock team) and Codex CLI 0.154.0 (<code>gpt-6-astra</code>, read-only sandbox). The Codex run originally died on a usage cap and was re-run on 21 Sep 2026. Both returned <b>revise</b>. Neither accepted the ranking.</p>
+  <div class="grid-2">
+    <article class="card">
+      <div class="tag">Claude Code · revise</div>
+      <h3>Found the rubric contradictions</h3>
+      <p>Stated up front that it had no tools, so it judged internal consistency only: ZeroClaw’s Ops 10 fails the loopback term of its own rubric, Hermes Fit 9 contradicts “same job as OpenClaw,” and an undeclared “treasury-grade” test was scoring rows 4 and 7. All three held up. Its RAM reasoning did not. Full write-up: <code>docs/notes/review-claude.md</code>.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Codex · revise</div>
+      <h3>Overturned three rationales on the facts</h3>
+      <p>Had web access and cited what it read. OpenClaw’s 6 GB is a source-build figure, so Ops should rise rather than fall; PicoClaw documents far more assistant surface than Fit 6 allows; Nanobot ships a systemd installer. Its revised table is the one adopted here. Full write-up: <code>docs/notes/review-codex.md</code>.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Verification · 21 Sep 2026</div>
+      <h3>Six claims re-checked, six held</h3>
+      <p>No score moved on a reviewer’s say-so. Each claim worth a full point was read back against primary docs: Nanobot’s service installer, OpenClaw’s build-RAM wording, ZeroClaw’s container defaults, PicoClaw’s channel and cron surface, IronClaw’s feature list, NanoClaw’s provider support. All six confirmed.</p>
+    </article>
+    <article class="card">
+      <div class="tag">Found in verification</div>
+      <h3>Two things neither reviewer caught</h3>
+      <p>ZeroClaw’s unauthenticated posture is in the shipped image, not merely a sample — a harder finding than either review made. And NanoClaw is not Claude-locked: <code>/add-codex</code>, <code>/add-opencode</code> and <code>/add-ollama-provider</code> are documented, so the lock-in ding that survived both reviews was wrong.</p>
+    </article>
+  </div>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <p class="sec-lead">Convenience scores are this brief’s weighting, not a vendor benchmark. Inputs: project docs opened 18 Sep 2026 and re-verified 21 Sep 2026, plus the live Silver Parrot/OpenClaw layout, plus dataset metrics from 12 Sep 2026.</p>
+  <ul class="sources">
+    <li>OpenClaw <a href="https://docs.openclaw.ai/vps">VPS</a>, <a href="https://docs.openclaw.ai/install/hetzner">Hetzner</a>, <a href="https://docs.openclaw.ai/gateway/security">security</a>, <a href="https://openclaw.ai/blog/openclaw-2-accidentally">2.0</a>.</li>
+    <li>Hermes <a href="https://hermes-agent.nousresearch.com/docs/getting-started/installation">install / linger</a>.</li>
+    <li>ZeroClaw <a href="https://docs.zeroclaw.com/v0.8.5/en/setup/linux.html">Linux</a>, <a href="https://github.com/zeroclaw-labs/zeroclaw/blob/master/docs/book/src/ops/service.md">service</a> (VPS = system scope).</li>
+    <li>PicoClaw <a href="https://github.com/sipeed/picoclaw">README</a> (19+ channels, cron, pre-v1.0 notice), <a href="https://docs.picoclaw.io/docs/installation/">install</a>.</li>
+    <li>NanoClaw <a href="https://github.com/nanocoai/nanoclaw">README</a> (per-agent memory, scheduled tasks, swappable providers).</li>
+    <li>Nanobot <a href="https://github.com/HKUDS/nanobot">capabilities</a>, <a href="https://github.com/HKUDS/nanobot/blob/main/docs/deployment.md">deployment</a> (systemd installer, linger, loopback default).</li>
+    <li>ZeroClaw <a href="https://github.com/zeroclaw-labs/zeroclaw/blob/master/docs/book/src/setup/container.md">container defaults</a> (public bind, pairing off).</li>
+    <li>ElizaOS <a href="https://docs.elizaos.ai/guides/deploy-a-project">self-host</a>; IronClaw <a href="https://github.com/nearai/ironclaw/tree/main/deploy">deploy/systemd</a>.</li>
+    <li>Local: <code>ops/openclaw-gateway-runbook.md</code>, <code>~/.openclaw/secrets</code>, <code>data/classified.json</code>.</li>
+  </ul>
+</section>
+
+<footer>
+  Ranked by convenience for a 24/7 VPS agent (fit + ops). Scored after Claude review. Codex unavailable.
+  File: <code>reports/silverblock-agent-runtime.html</code>
+</footer>
+</div>
+</body>
+</html>

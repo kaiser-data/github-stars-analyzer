@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">Comfy-Org/ComfyUI</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">134,220</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">img2threejs/img2threejs</text>
-<path d="M244,67 h38.3 q4,0 4,4 v10 q0,4 -4,4 h-38.3 z" class="bar"/>
-<text x="292.3" y="76.0" class="val" dominant-baseline="central">16,505</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">OrcaSlicer/OrcaSlicer</text>
-<path d="M244,94 h36.3 q4,0 4,4 v10 q0,4 -4,4 h-36.3 z" class="bar"/>
-<text x="290.3" y="103.0" class="val" dominant-baseline="central">15,737</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Tencent-Hunyuan/Hunyuan3D-2</text>
-<path d="M244,121 h34.3 q4,0 4,4 v10 q0,4 -4,4 h-34.3 z" class="bar"/>
-<text x="288.3" y="130.0" class="val" dominant-baseline="central">14,925</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">isl-org/Open3D</text>
-<path d="M244,148 h31.8 q4,0 4,4 v10 q0,4 -4,4 h-31.8 z" class="bar"/>
-<text x="285.8" y="157.0" class="val" dominant-baseline="central">13,984</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">134,906</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ahujasid/mcp-for-blender</text>
+<path d="M244,67 h70.7 q4,0 4,4 v10 q0,4 -4,4 h-70.7 z" class="bar"/>
+<text x="324.7" y="76.0" class="val" dominant-baseline="central">29,314</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">img2threejs/img2threejs</text>
+<path d="M244,94 h38.7 q4,0 4,4 v10 q0,4 -4,4 h-38.7 z" class="bar"/>
+<text x="292.7" y="103.0" class="val" dominant-baseline="central">16,726</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">OrcaSlicer/OrcaSlicer</text>
+<path d="M244,121 h36.2 q4,0 4,4 v10 q0,4 -4,4 h-36.2 z" class="bar"/>
+<text x="290.2" y="130.0" class="val" dominant-baseline="central">15,770</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Tencent-Hunyuan/Hunyuan3D-2</text>
+<path d="M244,148 h34.2 q4,0 4,4 v10 q0,4 -4,4 h-34.2 z" class="bar"/>
+<text x="288.2" y="157.0" class="val" dominant-baseline="central">14,965</text>
 </svg>
