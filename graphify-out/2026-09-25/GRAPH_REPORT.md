@@ -1,11 +1,11 @@
 # Graph Report - github-stars-analyzer  (2026-09-25)
 
 ## Corpus Check
-- 220 files · ~3,746,332 words
+- 220 files · ~3,746,362 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1914 nodes · 1979 edges · 126 communities (111 shown, 15 thin omitted)
+- 1916 nodes · 1981 edges · 127 communities (111 shown, 16 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -135,6 +135,7 @@
 - [[_COMMUNITY_task-6-brief|task-6-brief.md]]
 - [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
 - [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
+- [[_COMMUNITY_decision_classifiers.py|decision_classifiers.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -163,7 +164,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (126 total, 15 thin omitted)
+## Communities (127 total, 16 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -588,7 +589,7 @@ Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncer
 ## Knowledge Gaps
 - **1291 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1286 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **15 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -596,7 +597,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `resolveRepos()` connect `Community 3` to `Community 8`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1333 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1334 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
