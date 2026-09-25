@@ -1,6 +1,6 @@
 # Tree-stump base for a Pokal
 
-> Built from the **3d-printing-stack** report, against 2,140 starred repos (snapshot `2026-09-12T16:25:05.965Z`). Regenerate any time — no API cost.
+> Built from the **3d-printing-stack** report, against 2,243 starred repos (snapshot `2026-09-25T10:37:19.717Z`). Regenerate any time — no API cost.
 
 A stump base is the textbook case for the implicit/SDF route: the form is organic and irregular (where code-CAD is painful), it needs no support (it is its own flat base), and SDF output is watertight by construction — so the repair layer never runs.
 
@@ -8,10 +8,10 @@ A stump base is the textbook case for the implicit/SDF route: the form is organi
 
 | Stage | Tool | Stars | Health | Lifecycle |
 |---|---|---|---|---|
-| Author | [`fogleman/sdf`](https://github.com/fogleman/sdf) | 2,001 | 4 | Abandoned |
-| See | [`f3d-app/f3d`](https://github.com/f3d-app/f3d) | 4,669 | 82 | Classic |
-| Validate | [`mikedh/trimesh`](https://github.com/mikedh/trimesh) | 3,678 | 74 | Classic |
-| Slice | [`OrcaSlicer/OrcaSlicer`](https://github.com/OrcaSlicer/OrcaSlicer) | 15,676 | 83 | Classic |
+| Author | [`fogleman/sdf`](https://github.com/fogleman/sdf) | 2,006 | 4 | Abandoned |
+| See | [`f3d-app/f3d`](https://github.com/f3d-app/f3d) | 4,722 | 82 | Classic |
+| Validate | [`mikedh/trimesh`](https://github.com/mikedh/trimesh) | 3,687 | 73 | Classic |
+| Slice | [`OrcaSlicer/OrcaSlicer`](https://github.com/OrcaSlicer/OrcaSlicer) | 15,770 | 87 | Classic |
 
 Metrics are live from the dataset. A low health score in geometry libraries usually means *finished*, not dead — see the parent report's maintenance section.
 
