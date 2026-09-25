@@ -1805,13 +1805,18 @@
     "semantic_hash": ""
   },
   "scripts/lib/discover/model.mjs": {
-    "mtime": 1790352581.710088,
-    "ast_hash": "6b82fd1a23abf3e3d8b3d32fdda02432",
+    "mtime": 1790372680.1093452,
+    "ast_hash": "4b84ca54566f282d35c857c898c14630",
     "semantic_hash": ""
   },
   "docs/notes/2026-09-25-gliclass-relevance-pilot.md": {
-    "mtime": 1790352857.3725557,
-    "ast_hash": "2e3d7ec48408bef87a909bdfa307fbff",
+    "mtime": 1790373333.2080367,
+    "ast_hash": "81eaf2641accf9f88d722703055fb3c9",
+    "semantic_hash": ""
+  },
+  "data/labels-agentic-terminals.txt": {
+    "mtime": 1790361075.034799,
+    "ast_hash": "97f36d49722b5a7ee60792168ddc907d",
     "semantic_hash": ""
   }
 }

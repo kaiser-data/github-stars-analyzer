@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-09-25)
 
 ## Corpus Check
-- 224 files · ~3,749,257 words
+- 224 files · ~3,750,418 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1945 nodes · 2010 edges · 130 communities (113 shown, 17 thin omitted)
+- 1947 nodes · 2013 edges · 130 communities (113 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `11d83fc6`
+- Built from commit: `b7499c43`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -203,7 +203,7 @@ Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Super
 
 ### Community 8 - "Community 8"
 Cohesion: 0.06
-Nodes (36): candidates, landscape, limit, maxStaleDays, md, minStars, now, result (+28 more)
+Nodes (38): candidates, landscape, limit, maxStaleDays, md, minStars, now, result (+30 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.04
@@ -594,21 +594,19 @@ Cohesion: 0.18
 Nodes (10): 1. The decision-classifiers report, 2. Companion page outside this repo, 3. Discovery lessons from this session, 4. A rename, 5. Open items, 6. Where things are, Handoff — 2026-09-25, Short-name collisions (+2 more)
 
 ### Community 128 - "GLiClass as a discovery relevance signal — pilot, 2026-09-25"
-Cohesion: 0.33
-Nodes (5): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live test: search hits (`agentic-terminals`, 47 candidates), Offline test: labelled report members, Resources, Where it stands
+Cohesion: 0.29
+Nodes (6): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live test 2: hand-labelled search hits (`agentic-terminals`, 47 candidates), Live test: search hits (`agentic-terminals`, 47 candidates), Offline test: labelled report members, Resources, Where it stands
 
 ## Knowledge Gaps
-- **1306 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1301 more)
+- **1307 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1302 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `render_stack_table()` connect `promptlib.py` to `Community 40`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1350 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1351 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -619,3 +617,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.05310734463276836 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `Community 5` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

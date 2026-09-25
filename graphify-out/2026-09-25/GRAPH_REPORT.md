@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-09-25)
 
 ## Corpus Check
-- 221 files · ~3,747,432 words
+- 224 files · ~3,749,257 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1927 nodes · 1991 edges · 128 communities (112 shown, 16 thin omitted)
+- 1945 nodes · 2010 edges · 130 communities (113 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d462c376`
+- Built from commit: `11d83fc6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -137,6 +137,8 @@
 - [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
 - [[_COMMUNITY_decision_classifiers.py|decision_classifiers.py]]
 - [[_COMMUNITY_Handoff — 2026-09-25|Handoff — 2026-09-25]]
+- [[_COMMUNITY_GLiClass as a discovery relevance signal — pilot, 2026-09-25|GLiClass as a discovery relevance signal — pilot, 2026-09-25]]
+- [[_COMMUNITY_gliclass_score.py|gliclass_score.py]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -165,7 +167,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (128 total, 16 thin omitted)
+## Communities (130 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -180,8 +182,8 @@ Cohesion: 0.09
 Nodes (24): clientIp(), config, extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER (+16 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.06
-Nodes (48): args, classified, data, dist, inArg, now, OUT, ABORT_AFTER_CONSECUTIVE (+40 more)
+Cohesion: 0.05
+Nodes (50): args, classified, data, dist, inArg, now, OUT, ABORT_AFTER_CONSECUTIVE (+42 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.08
@@ -200,8 +202,8 @@ Cohesion: 0.10
 Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Superpowers — Setup Strategies from Your Stars, Code-graph / retrieval, Config / setup kit, Executive summary, Graph analysis — how they relate, Harness / coding agent (+12 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.07
-Nodes (32): candidates, landscape, limit, maxStaleDays, md, minStars, now, result (+24 more)
+Cohesion: 0.06
+Nodes (36): candidates, landscape, limit, maxStaleDays, md, minStars, now, result (+28 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.04
@@ -591,18 +593,22 @@ Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncer
 Cohesion: 0.18
 Nodes (10): 1. The decision-classifiers report, 2. Companion page outside this repo, 3. Discovery lessons from this session, 4. A rename, 5. Open items, 6. Where things are, Handoff — 2026-09-25, Short-name collisions (+2 more)
 
+### Community 128 - "GLiClass as a discovery relevance signal — pilot, 2026-09-25"
+Cohesion: 0.33
+Nodes (5): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live test: search hits (`agentic-terminals`, 47 candidates), Offline test: labelled report members, Resources, Where it stands
+
 ## Knowledge Gaps
-- **1299 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1294 more)
+- **1306 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1301 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `resolveRepos()` connect `Community 3` to `Community 8`?**
+- **Why does `render_stack_table()` connect `promptlib.py` to `Community 40`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1342 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1350 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
@@ -610,6 +616,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.0896551724137931 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.055051421657592255 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05310734463276836 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._

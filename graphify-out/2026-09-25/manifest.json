@@ -1425,8 +1425,8 @@
     "semantic_hash": ""
   },
   "scripts/discover.mjs": {
-    "mtime": 1787987240.330486,
-    "ast_hash": "e5728b13d8ed55406b0a4b9f4d8bd009",
+    "mtime": 1790352824.0329256,
+    "ast_hash": "f163475cb19231f00a77dfac16d194fc",
     "semantic_hash": ""
   },
   "scripts/lib/classify-core.mjs": {
@@ -1440,8 +1440,8 @@
     "semantic_hash": ""
   },
   "scripts/lib/discover/fetch.mjs": {
-    "mtime": 1787880000.875799,
-    "ast_hash": "51c6ddfc34bad9a49814f1f74ec3a06f",
+    "mtime": 1790352593.4328332,
+    "ast_hash": "3495b2994a51e238483396187b4b7a2e",
     "semantic_hash": ""
   },
   "scripts/lib/discover/landscape.mjs": {
@@ -1450,13 +1450,13 @@
     "semantic_hash": ""
   },
   "scripts/lib/discover/render.mjs": {
-    "mtime": 1787880025.5251274,
-    "ast_hash": "22763c03e681bd667d2cff83ef6db182",
+    "mtime": 1790352593.4332182,
+    "ast_hash": "3f04d41046469ea5efda253c180d79cc",
     "semantic_hash": ""
   },
   "scripts/lib/discover/score.mjs": {
-    "mtime": 1787879920.1185486,
-    "ast_hash": "74a1cd1db5d9827b50bc09ef2dea4707",
+    "mtime": 1790352570.8439305,
+    "ast_hash": "0e67264c89daac3ad882c2bab5977ce3",
     "semantic_hash": ""
   },
   "scripts/lib/ignore.mjs": {
@@ -1500,8 +1500,8 @@
     "semantic_hash": ""
   },
   "scripts/test-discover.mjs": {
-    "mtime": 1790347489.2892432,
-    "ast_hash": "7fa3f2a10056e3b07ab18691313ca005",
+    "mtime": 1790352824.033823,
+    "ast_hash": "2ddeca3d075785aeb2941a89f2b85088",
     "semantic_hash": ""
   },
   "src/lab/PromptsView.jsx": {
@@ -1797,6 +1797,21 @@
   "docs/HANDOFF-2026-09-25.md": {
     "mtime": 1790347360.9767218,
     "ast_hash": "50c2ba1d5d00ff407751b8f6ebdcd764",
+    "semantic_hash": ""
+  },
+  "scripts/lib/discover/gliclass_score.py": {
+    "mtime": 1790352582.3260322,
+    "ast_hash": "13122add5563e15d1e7acb91bdb048c9",
+    "semantic_hash": ""
+  },
+  "scripts/lib/discover/model.mjs": {
+    "mtime": 1790352581.710088,
+    "ast_hash": "6b82fd1a23abf3e3d8b3d32fdda02432",
+    "semantic_hash": ""
+  },
+  "docs/notes/2026-09-25-gliclass-relevance-pilot.md": {
+    "mtime": 1790352857.3725557,
+    "ast_hash": "2e3d7ec48408bef87a909bdfa307fbff",
     "semantic_hash": ""
   }
 }
