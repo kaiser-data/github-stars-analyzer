@@ -124,6 +124,39 @@ console.log('\n== Task 4: scoring ==');
 
   const offTopic = fitScore({ ...base, kind: 'tool', description: 'json parser', topics: [] }, vocab, { state: 'new' });
   ok('off-theme scores lower than on-theme', offTopic.total < asNew.total);
+
+  // Model relevance is averaged with keyword relevance, not substituted for it:
+  // the pilot (docs/notes/2026-09-25-gliclass-relevance-pilot.md) found each
+  // wins on different reports and the average beats both.
+  const { combineRelevance } = await import('./lib/discover/score.mjs');
+  ok('combined relevance is the mean of keyword and model', combineRelevance(0.5, 0.9) === 0.7);
+  ok('no model score falls back to keyword', combineRelevance(0.5, null) === 0.5);
+  const withModel = fitScore({ ...base, kind: 'tool' }, vocab, { state: 'new', model: 0.2 });
+  ok('fitScore uses the combined relevance', Math.abs(withModel.parts.relevance - combineRelevance(asNew.parts.relevance, 0.2)) < 1e-9);
+  ok('fitScore records both relevance inputs',
+     withModel.relevance_inputs.model === 0.2 && withModel.relevance_inputs.keyword === asNew.parts.relevance);
+  ok('fitScore without a model is unchanged', asNew.relevance_inputs.model === null);
+}
+
+console.log('\n== Task 4b: model relevance ==');
+{
+  const { modelText, modelRelevance, README_CHARS } = await import('./lib/discover/model.mjs');
+
+  const repo = { full_name: 'a/b', description: 'voice agent', topics: ['tts', 'asr'], readme_excerpt: 'x'.repeat(5000) };
+  const text = modelText(repo);
+  ok('model text carries name, description and topics', text.startsWith('a/b: voice agent Topics: tts, asr'));
+  ok('model text caps the README', text.length < 200 + README_CHARS);
+
+  let sent;
+  const good = modelRelevance([repo], ['Speech-to-text'], { run: (req) => { sent = req; return { scores: { 'a/b': 0.8 } }; } });
+  ok('scores come back keyed by name', good.scores.get('a/b') === 0.8 && good.error === null);
+  ok('the report categories are the labels', sent.labels[0] === 'Speech-to-text');
+
+  const bad = modelRelevance([repo], ['x'], { run: () => { throw new Error('spawn uv ENOENT'); } });
+  ok('a failing model yields no scores and a reason', bad.scores === null && bad.error.includes('ENOENT'));
+
+  const none = modelRelevance([], ['x'], { run: () => { throw new Error('must not run'); } });
+  ok('an empty pool does not start the model', none.error === null && none.scores.size === 0);
 }
 
 console.log('\n== Task 5: candidate generation ==');
@@ -194,6 +227,10 @@ console.log('\n== Task 6: fetch (network) ==');
   ok('projectCandidate maps to dataset field names',
      p.full_name === 'a/b' && p.stars === 12 && p.commits_90d === 7
      && p.license === 'MIT' && p.topics[0] === 'cli' && p.unique_authors_90d === 1);
+  ok('no README projects to an empty excerpt', p.readme_excerpt === '');
+  const withReadme = projectCandidate({ ...node, readmeRst: { text: 'rst' }, readmeMd: { text: 'md' } });
+  ok('README.md wins over README.rst', withReadme.readme_excerpt === 'md');
+  ok('the excerpt is capped', projectCandidate({ ...node, readmeMd: { text: 'y'.repeat(9000) } }).readme_excerpt.length <= 4000);
 
   let token = true;
   try { (await import('./lib/github.mjs')).getToken(); } catch { token = false; }
@@ -237,6 +274,14 @@ console.log('\n== Task 7: render ==');
   ok('markdown surfaces renames', md.includes('x/old') && md.includes('x/new'));
   ok('markdown surfaces unresolved names', md.includes('q/nope'));
   ok('markdown escapes table pipes', !md.split('\n').some((l) => l.startsWith('|') && l.split('|').length > 16));
+
+  const { renderJson } = await import('./lib/discover/render.mjs');
+  const result = { slug: 'demo', generated: '2026-09-25', heldCount: 0, renamed: [], unresolved: [],
+    relevanceSource: 'keyword only (spawn uv ENOENT)',
+    candidates: [{ full_name: 'a/b', state: 'new', readme_excerpt: 'long', score: { total: 1, parts: { relevance: 0, standing: 0, health: 0, recency: 0 } } }] };
+  ok('json leaves README excerpts out', !('readme_excerpt' in renderJson(result).candidates[0]));
+  ok('json records the relevance source', renderJson(result).relevance_source.startsWith('keyword only'));
+  ok('markdown states the relevance source', renderMarkdown(result).includes('keyword only (spawn uv ENOENT)'));
 }
 
 console.log(`\n${pass} passed, ${fail} failed`);

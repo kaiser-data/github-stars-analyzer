@@ -5,6 +5,12 @@
 //   node scripts/discover.mjs --report rag-tooling --extra a/b,c/d --min-stars 500
 //
 // Writes reports/<slug>.candidates.md and .json, and prints the table.
+//
+// --model averages keyword relevance with a local GLiClass model (run via uv;
+// first run downloads ~600 MB). It is opt-in: it beat keywords on labelled
+// report members but not yet on live search hits, where bare category labels
+// ("Emulator") match off-topic repos. Without uv it falls back to keyword-only
+// and says so in the output.
 
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -13,6 +19,7 @@ import { loadLandscape, stateFor } from './lib/discover/landscape.mjs';
 import { parseExtra, buildQueries, selectCandidates } from './lib/discover/candidates.mjs';
 import { resolveRepos, searchRepos } from './lib/discover/fetch.mjs';
 import { classifyKind, fitScore } from './lib/discover/score.mjs';
+import { MODEL, modelRelevance } from './lib/discover/model.mjs';
 import { renderMarkdown, renderJson } from './lib/discover/render.mjs';
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -28,7 +35,7 @@ const flag = (name) => process.argv.includes(`--${name}`);
 
 const slug = arg('report');
 if (!slug) {
-  console.error('Usage: node scripts/discover.mjs --report <slug> [--extra a/b,c/d] [--min-stars 200] [--max-stale-days 365] [--limit 40] [--no-search]');
+  console.error('Usage: node scripts/discover.mjs --report <slug> [--extra a/b,c/d] [--min-stars 200] [--max-stale-days 365] [--limit 40] [--no-search] [--model]');
   process.exit(2);
 }
 
@@ -63,14 +70,36 @@ const { resolved, renamed, unresolved } = await resolveRepos([...wanted.values()
 
 // State is re-checked on the RESOLVED name — a rename can land on something
 // already held. selectCandidates then exempts known gaps from the heuristics.
-const scored = selectCandidates(resolved, {
+const selected = selectCandidates(resolved, {
   stateOf: (name) => stateFor(name, landscape),
   minStars,
   maxStaleDays,
-})
+});
+
+// Model relevance is scored on the whole selected pool, before `limit`, so it
+// can promote a repo the keyword score would have cut.
+let modelScores = null;
+let relevanceSource = 'keyword overlap only';
+if (flag('model')) {
+  const labels = Object.keys(landscape.meta?.categories ?? {});
+  console.error(`Scoring ${selected.length} candidates with ${MODEL}…`);
+  const t0 = Date.now();
+  const { scores, error } = modelRelevance(selected, labels);
+  if (scores) {
+    modelScores = scores;
+    relevanceSource = `keyword overlap averaged with ${MODEL} on description + README`;
+    console.error(`  model scored ${scores.size} in ${((Date.now() - t0) / 1000).toFixed(1)}s`);
+  } else {
+    relevanceSource = `keyword overlap only (model unavailable: ${error})`;
+    console.error(`  ! model unavailable, falling back to keyword relevance: ${error}`);
+  }
+}
+
+const scored = selected
   .map((r) => {
     const kind = classifyKind(r);
-    return { ...r, kind, score: fitScore({ ...r, kind }, landscape.vocabulary, { state: r.state }) };
+    const model = modelScores?.get(r.full_name) ?? null;
+    return { ...r, kind, score: fitScore({ ...r, kind }, landscape.vocabulary, { state: r.state, model }) };
   })
   .sort((a, b) => b.score.total - a.score.total);
 
@@ -86,6 +115,7 @@ const result = {
   generated: new Date(now).toISOString().slice(0, 10),
   heldCount: landscape.held.length,
   candidates,
+  relevanceSource,
   renamed,
   unresolved,
 };

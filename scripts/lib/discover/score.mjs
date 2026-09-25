@@ -48,9 +48,19 @@ const WEIGHTS = { relevance: 0.35, standing: 0.20, health: 0.25, recency: 0.20 }
 // the only open question is whether to star it. That is worth a head start.
 const KNOWN_GAP_BONUS = 0.15;
 
-export function fitScore(repo, vocabulary, { state = 'new' } = {}) {
+/**
+ * Keyword and model relevance, averaged. Measured on three reports, each scorer
+ * wins on different ones and the plain average matches or beats both; a plain
+ * average (not a rank average) keeps the score independent of pool size.
+ */
+export function combineRelevance(keyword, model) {
+  return model == null ? keyword : (keyword + model) / 2;
+}
+
+export function fitScore(repo, vocabulary, { state = 'new', model = null } = {}) {
+  const keyword = relevance(repo, vocabulary);
   const parts = {
-    relevance: relevance(repo, vocabulary),
+    relevance: combineRelevance(keyword, model),
     standing: standing(repo.stars),
     health: Math.min(1, Math.max(0, (repo.health_score ?? 0) / 100)),
     recency: recency(repo.days_since_push),
@@ -60,6 +70,7 @@ export function fitScore(repo, vocabulary, { state = 'new' } = {}) {
   const bonus = state === 'known-gap' ? KNOWN_GAP_BONUS : 0;
   return {
     parts,
+    relevance_inputs: { keyword, model },
     kind_multiplier: kindMultiplier,
     total: Math.round(Math.min(1, base * kindMultiplier + bonus) * 100),
   };

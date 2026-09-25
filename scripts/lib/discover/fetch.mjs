@@ -41,9 +41,27 @@ query Cand($owner: String!, $name: String!, $since: GitTimestamp!) {
     }
     issues(states: OPEN) { totalCount }
     closedIssues: issues(states: CLOSED) { totalCount }
+    readmeMd: object(expression: "HEAD:README.md") { ... on Blob { text } }
+    readmeMdx: object(expression: "HEAD:README.mdx") { ... on Blob { text } }
+    readmeRst: object(expression: "HEAD:README.rst") { ... on Blob { text } }
+    readmeTxt: object(expression: "HEAD:README.txt") { ... on Blob { text } }
+    readmeNoExt: object(expression: "HEAD:README") { ... on Blob { text } }
   }
   rateLimit { remaining limit resetAt cost }
 }`;
+
+// Same precedence as ingest.mjs. The model reads only the first 1,200 chars;
+// keeping a little more costs nothing and leaves room to test longer excerpts.
+const README_KEYS = ['readmeMd', 'readmeMdx', 'readmeRst', 'readmeTxt', 'readmeNoExt'];
+const README_EXCERPT_CHARS = 4000;
+
+function readmeExcerpt(repo) {
+  for (const k of README_KEYS) {
+    const text = repo[k]?.text;
+    if (typeof text === 'string' && text.length > 0) return text.slice(0, README_EXCERPT_CHARS);
+  }
+  return '';
+}
 
 const SEARCH_QUERY = `
 query Search($q: String!, $first: Int!) {
@@ -88,6 +106,7 @@ export function projectCandidate(repo) {
     releases_recent: (repo.releases?.nodes ?? []).map((r) => ({ tag: r.tagName, published_at: r.publishedAt })),
     open_issues: repo.issues?.totalCount ?? 0,
     closed_issues: repo.closedIssues?.totalCount ?? 0,
+    readme_excerpt: readmeExcerpt(repo),
   };
 }
 

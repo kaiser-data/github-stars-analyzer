@@ -22,6 +22,10 @@ export function renderMarkdown(result) {
   lines.push('');
   lines.push('`known-gap` means the report already judged it in-scope — the only open question is whether to star it.');
   lines.push('');
+  if (result.relevanceSource) {
+    lines.push(`Relevance (\`rel\`): ${result.relevanceSource}.`);
+    lines.push('');
+  }
   lines.push('| # | Repo | State | Kind | ★ | Lang | Licence | Stage | Health | Pushed | Bus | Fit | rel/std/hlt/rec | What it is |');
   lines.push('|---|---|---|---|---|---|---|---|---|---|---|---|---|---|');
 
@@ -73,7 +77,9 @@ export function renderJson(result) {
       renamed: result.renamed.length,
       unresolved: result.unresolved.length,
     },
-    candidates: result.candidates,
+    relevance_source: result.relevanceSource ?? null,
+    // README excerpts are model input, not output; they would dwarf the rest.
+    candidates: result.candidates.map(({ readme_excerpt, ...c }) => c),
     renamed: result.renamed,
     unresolved: result.unresolved,
   };
