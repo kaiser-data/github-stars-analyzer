@@ -126,5 +126,7 @@
   "124": "Decision Classifiers & Guard Models — Landscape Report",
   "125": "Decision Classifiers & Guard Models — Landscape Report",
   "126": "decision_classifiers.py",
-  "127": "Handoff — 2026-09-25"
+  "127": "Handoff — 2026-09-25",
+  "128": "GLiClass as a discovery relevance signal — pilot, 2026-09-25",
+  "129": "gliclass_score.py"
 }
