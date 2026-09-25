@@ -1,0 +1,45 @@
+{
+  "slug": "decision-classifiers",
+  "title": "Decision Classifiers & Guard Models \u2014 Landscape Report",
+  "file": "decision-classifiers.md",
+  "category": "AI / Evaluation",
+  "summary": "20 tools (65,879\u2605) that turn text into typed decisions: Jev, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
+  "tool_count": 20,
+  "total_stars": 65879,
+  "categories": {
+    "Typed decision API": 1,
+    "Zero-shot encoder": 3,
+    "Few-shot classifier": 2,
+    "Guard model / guardrails": 4,
+    "Deterministic policy": 1,
+    "Decision router": 4,
+    "Calibration / uncertainty": 2,
+    "LLM as classifier": 3
+  },
+  "top_tools": [
+    {
+      "name": "BoundaryML/baml",
+      "stars": 9284
+    },
+    {
+      "name": "guardrails-ai/guardrails",
+      "stars": 7447
+    },
+    {
+      "name": "NVIDIA-NeMo/Guardrails",
+      "stars": 7190
+    },
+    {
+      "name": "katanemo/plano",
+      "stars": 7066
+    },
+    {
+      "name": "BlockRunAI/ClawRouter",
+      "stars": 6614
+    }
+  ],
+  "snapshot": "2026-09-25T10:37:19.717Z",
+  "generated": "2026-09-25",
+  "generator": "scripts/reports/decision_classifiers.py",
+  "created": "2026-09-25"
+}

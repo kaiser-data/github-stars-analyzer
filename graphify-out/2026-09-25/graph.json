@@ -3220,28 +3220,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_reports_decision_classifiers",
-      "community": 126,
+      "community": 26,
       "norm_label": "decision_classifiers.py"
-    },
-    {
-      "label": "short()",
-      "file_type": "code",
-      "source_file": "scripts/reports/decision_classifiers.py",
-      "source_location": "L182",
-      "_origin": "ast",
-      "id": "scripts_reports_decision_classifiers_short",
-      "community": 126,
-      "norm_label": "short()"
-    },
-    {
-      "label": "Repo name alone, unless another tool here shares it (two semantic-routers, two g",
-      "file_type": "rationale",
-      "source_file": "scripts/reports/decision_classifiers.py",
-      "source_location": "L183",
-      "_origin": "ast",
-      "id": "scripts_reports_decision_classifiers_rationale_183",
-      "community": 126,
-      "norm_label": "repo name alone, unless another tool here shares it (two semantic-routers, two g"
     },
     {
       "label": "document_extraction.py",
@@ -23435,26 +23415,6 @@
       "weight": 1.0,
       "source": "scripts_reports_decision_classifiers",
       "target": "scripts_reports_lib",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/decision_classifiers.py",
-      "source_location": "L182",
-      "weight": 1.0,
-      "source": "scripts_reports_decision_classifiers",
-      "target": "scripts_reports_decision_classifiers_short",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/decision_classifiers.py",
-      "source_location": "L183",
-      "weight": 1.0,
-      "source": "scripts_reports_decision_classifiers_rationale_183",
-      "target": "scripts_reports_decision_classifiers_short",
       "confidence_score": 1.0
     },
     {

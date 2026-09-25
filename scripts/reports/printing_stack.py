@@ -79,7 +79,7 @@ TAXONOMY = {
     "3MFConsortium/lib3mf": (C_PRN, "Reference implementation of 3MF. STL discards colour, materials and per-object settings; 3MF is the only format that carries them."),
 
     # --- Agent bridges & viewers
-    "ahujasid/blender-mcp": (C_AGT, "Puts Blender under direct agent control — print-toolbox checks, booleans, displacement, decimation."),
+    "ahujasid/mcp-for-blender": (C_AGT, "Puts Blender under direct agent control — print-toolbox checks, booleans, displacement, decimation."),
     "neka-nat/freecad-mcp": (C_AGT, "Parametric GUI CAD under agent control, leaving a feature tree a human can pick up afterwards."),
     "f3d-app/f3d": (C_AGT, "Fast CLI 3D viewer that screenshots from arbitrary cameras — the render-back step that gives a vision model eyes."),
     "meshy-dev/meshy-3d-agent": (C_AGT, "Agent skills for a hosted 3D-generation platform; a reference pattern for wiring generation into a tool loop."),
@@ -129,17 +129,17 @@ ADJACENT = [
     ("CesiumGS/3d-tiles", "geospatial 3D streaming — a different meaning of 3D entirely"),
     ("the3deer/android-3D-model-viewer", "an Android STL/OBJ viewer app, not a modelling or prep tool"),
     ("modelcontextprotocol/servers", "the MCP substrate the bridges build on — covered in the *MCP tooling* report"),
-    ("blender/blender", "not starred; reachable via `blender-mcp` and listed there instead"),
+    ("blender/blender", "not starred; reachable via `mcp-for-blender` and listed there instead"),
 ]
 
 # The loop: stage -> (what happens, tools)
 PIPELINE = [
     ("Intent", "Prompt, reference images, hard constraints", "_the chat model_"),
     ("Author", "Emit code, or generate a mesh", "`openscad`, `build123d`, `cadquery`, `sdf`, `TRELLIS.2`, `Hunyuan3D-2`"),
-    ("See", "Render back to an image the model can judge", "`f3d`, `blender-mcp`"),
+    ("See", "Render back to an image the model can judge", "`f3d`, `mcp-for-blender`"),
     ("Validate", "Machine-checkable assertions on the mesh", "`trimesh`, `manifold`, `Open3D`"),
     ("Repair", "Make it watertight; fix topology", "`pymeshfix`, `PyMeshLab`, `meshlab`, `instant-meshes`"),
-    ("Prep", "Orient, split, hollow, carry materials", "`lib3mf`, `blender-mcp`, `freecad-mcp`"),
+    ("Prep", "Orient, split, hollow, carry materials", "`lib3mf`, `mcp-for-blender`, `freecad-mcp`"),
     ("Slice", "G-code, and the warnings that come with it", "`OrcaSlicer`, `PrusaSlicer`, `CuraEngine`"),
 ]
 
@@ -163,10 +163,10 @@ TASK_RANKINGS = [
     ("Closing the loop without a human in it",
      [("f3d-app/f3d", "render N cameras headless"),
       ("OrcaSlicer/OrcaSlicer", "exit codes + overhang flags as reward"),
-      ("ahujasid/blender-mcp", "when the fix needs a real modeller")],
+      ("ahujasid/mcp-for-blender", "when the fix needs a real modeller")],
      "OrcaSlicer documents a headless CLI with defined exit codes plus --detect-overhang-wall and --make-overhang-printable, which is what makes automated pass/fail possible."),
     ("Letting an agent drive an application directly",
-     [("ahujasid/blender-mcp", "28k★; mesh, materials, print toolbox"),
+     [("ahujasid/mcp-for-blender", "28k★; mesh, materials, print toolbox"),
       ("neka-nat/freecad-mcp", "parametric, leaves a feature tree"),
       ("KittyCAD/modeling-app", "commercial text-to-CAD + agent")],
      "Zoo shipped the Zookeeper conversational CAD agent with Design Studio v1.1 in Jan 2026, adding engine-level tools to inspect and debug geometry mid-generation."),
@@ -187,7 +187,7 @@ SELECTION = [
      "Documented CLI, exit codes and overhang detection; health 83 and shipping."),
     ("Colour or multi-material output", "`3MFConsortium/lib3mf`",
      "STL cannot carry it; 3MF can."),
-    ("An agent that operates a real modeller", "`ahujasid/blender-mcp`",
+    ("An agent that operates a real modeller", "`ahujasid/mcp-for-blender`",
      "28k★ and the broadest capability surface of the bridges here."),
 ]
 
@@ -352,7 +352,7 @@ A("Highest visual ceiling, longest path to something printable.")
 A("")
 A("```")
 A("reference image → ComfyUI[TRELLIS.2 | Hunyuan3D-2] → instant-meshes retopo")
-A("     → pymeshfix watertight → trimesh verify → blender-mcp orient/base → slicer")
+A("     → pymeshfix watertight → trimesh verify → mcp-for-blender orient/base → slicer")
 A("```")
 A("")
 A("Every stage after generation exists to undo a property of generative output. Budget for it: "
