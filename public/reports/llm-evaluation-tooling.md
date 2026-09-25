@@ -26,29 +26,29 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,033 (▲790) | Classic | 89 | very active | 0d ago | 3.4y | 21 |
-| [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 28,133 (▲308) | Classic | 92 | very active | 0d ago | 8.3y | 28 |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 25,439 (▲591) | Classic | 89 | very active | 0d ago | 3.4y | 28 |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability + eval platform | Python | Apache-2.0 | 22,230 (▲407) | Classic | 93 | very active | 0d ago | 3.4y | 22 |
-| [openai/evals](https://github.com/openai/evals) | Evaluation framework | Python | NOASSERTION | 19,505 (▲115) | Mature | 21 | slowing | 5mo ago | 3.7y | 0 |
-| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Evaluation framework | Python | Apache-2.0 | 18,437 (▲313) | Classic | 76 | very active | 1d ago | 3.1y | 8 |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Benchmark / leaderboard | Python | MIT | 14,073 (▲175) | Classic | 88 | very active | 11d ago | 6.1y | 54 |
-| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Evaluation framework | Python | NOASSERTION | 11,609 (▲267) | Classic | 79 | very active | 0d ago | 3.9y | 17 |
-| [NVIDIA/garak](https://github.com/NVIDIA/garak) | Safety / red-team | Python | Apache-2.0 | 9,351 (▲231) | Classic | 81 | very active | 9d ago | 3.4y | 21 |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,447 (▲34) | Classic | 70 | active | 1d ago | 3.1y | 7 |
-| [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,571 (▲35) | Classic | 100 | very active | 0d ago | 5.9y | 36 |
-| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 2,949 (▲207) | Hot | 55 | very active | 4d ago | 1.6y | 5 |
-| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,549 (▲14) | Mature | 59 | active | 2d ago | 2.7y | 5 |
-| [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,642 (▲57) | Mature | 93 | very active | 0d ago | 2.3y | 28 |
-| [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,350 (▲12) | Declining | 47 | slowing | 2mo ago | 7mo | 0 |
-| [LiveBench/LiveBench](https://github.com/LiveBench/LiveBench) | Benchmark / leaderboard | Python | NOASSERTION | 1,329 (▲19) | Mature | 65 | very active | 3d ago | 2.3y | 5 |
-| [langchain-ai/openevals](https://github.com/langchain-ai/openevals) | Evaluation framework | Python | MIT | 1,207 (▲20) | Hot | 77 | very active | 6d ago | 1.6y | 5 |
-| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Safety / red-team | Python | Apache-2.0 | 1,202 (▲6) | Hot | 76 | very active | 4d ago | 1.4y | 7 |
-| [langchain-ai/agentevals](https://github.com/langchain-ai/agentevals) | Evaluation framework | Python | MIT | 732 (▲17) | Declining | 37 | slowing | 2mo ago | 1.6y | 2 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,033 (▲150) | Classic | 89 | very active | 0d ago | 3.4y | 21 |
+| [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 28,133 (▲61) | Classic | 92 | very active | 0d ago | 8.3y | 28 |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 25,439 (▲109) | Classic | 89 | very active | 0d ago | 3.4y | 28 |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability + eval platform | Python | Apache-2.0 | 22,230 (▲51) | Classic | 93 | very active | 0d ago | 3.4y | 22 |
+| [openai/evals](https://github.com/openai/evals) | Evaluation framework | Python | NOASSERTION | 19,505 (▲17) | Mature | 21 | slowing | 5mo ago | 3.7y | 0 |
+| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Evaluation framework | Python | Apache-2.0 | 18,437 (▲72) | Classic | 76 | very active | 1d ago | 3.1y | 8 |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Benchmark / leaderboard | Python | MIT | 14,073 (▲30) | Classic | 88 | very active | 11d ago | 6.1y | 54 |
+| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Evaluation framework | Python | NOASSERTION | 11,609 (▲48) | Classic | 79 | very active | 0d ago | 3.9y | 17 |
+| [NVIDIA/garak](https://github.com/NVIDIA/garak) | Safety / red-team | Python | Apache-2.0 | 9,351 (▲29) | Classic | 81 | very active | 9d ago | 3.4y | 21 |
+| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,447 (▲6) | Classic | 70 | active | 1d ago | 3.1y | 7 |
+| [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,571 (▲3) | Classic | 100 | very active | 0d ago | 5.9y | 36 |
+| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 2,949 (▲51) | Hot | 55 | very active | 4d ago | 1.6y | 5 |
+| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,549 (▲2) | Mature | 59 | active | 2d ago | 2.7y | 5 |
+| [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,642 (▲11) | Mature | 93 | very active | 0d ago | 2.3y | 28 |
+| [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,350 (▲1) | Declining | 47 | slowing | 2mo ago | 7mo | 0 |
+| [LiveBench/LiveBench](https://github.com/LiveBench/LiveBench) | Benchmark / leaderboard | Python | NOASSERTION | 1,329 (▲4) | Mature | 65 | very active | 3d ago | 2.3y | 5 |
+| [langchain-ai/openevals](https://github.com/langchain-ai/openevals) | Evaluation framework | Python | MIT | 1,207 (▲1) | Hot | 77 | very active | 6d ago | 1.6y | 5 |
+| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Safety / red-team | Python | Apache-2.0 | 1,202 (▲1) | Hot | 76 | very active | 4d ago | 1.4y | 7 |
+| [langchain-ai/agentevals](https://github.com/langchain-ai/agentevals) | Evaluation framework | Python | MIT | 732 (▲5) | Declining | 37 | slowing | 2mo ago | 1.6y | 2 |
 | [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability + eval platform | TypeScript | Apache-2.0 | 724 (▼1) | Declining | 60 | active | 10d ago | 6mo | 2 |
-| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 611 (▲9) | Mature | 59 | very active | 18d ago | 1.6y | 8 |
-| [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis) | Evaluation framework | Python | NOASSERTION | 395 (▲4) | Hot | 79 | very active | 0d ago | 2.0y | 5 |
-| [finos-labs/Open-Financial-LLMs-Leaderboard](https://github.com/finos-labs/Open-Financial-LLMs-Leaderboard) | Benchmark / leaderboard | JavaScript | — | 37 (▲2) | Declining | 6 | stale | 9mo ago | 2.1y | 0 |
+| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 611 | Mature | 59 | very active | 18d ago | 1.6y | 8 |
+| [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis) | Evaluation framework | Python | NOASSERTION | 395 (▲3) | Hot | 79 | very active | 0d ago | 2.0y | 5 |
+| [finos-labs/Open-Financial-LLMs-Leaderboard](https://github.com/finos-labs/Open-Financial-LLMs-Leaderboard) | Benchmark / leaderboard | JavaScript | — | 37 | Declining | 6 | stale | 9mo ago | 2.1y | 0 |
 | [jszheng21/RACE](https://github.com/jszheng21/RACE) | Benchmark / leaderboard | Python | Apache-2.0 | 14 | Abandoned | 10 | stale | 2.0y ago | 2.2y | 0 |
 
 ## By category

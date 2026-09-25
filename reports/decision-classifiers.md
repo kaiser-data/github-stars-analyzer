@@ -41,25 +41,25 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [BoundaryML/baml](https://github.com/BoundaryML/baml) | LLM as classifier | Rust | Apache-2.0 | 9,284 (▲143) | Mature | 82 | very active | 0d ago | 3.0y | 11 |
-| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,447 (▲85) | Classic | 73 | very active | 0d ago | 3.7y | 3 |
-| [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Guard model / guardrails | Python | NOASSERTION | 7,190 (▲118) | Classic | 83 | very active | 1d ago | 3.4y | 11 |
+| [BoundaryML/baml](https://github.com/BoundaryML/baml) | LLM as classifier | Rust | Apache-2.0 | 9,284 (▲64) | Mature | 82 | very active | 0d ago | 3.0y | 11 |
+| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,447 (▲8) | Classic | 73 | very active | 0d ago | 3.7y | 3 |
+| [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Guard model / guardrails | Python | NOASSERTION | 7,190 (▲15) | Classic | 83 | very active | 1d ago | 3.4y | 11 |
 | [katanemo/plano](https://github.com/katanemo/plano) | Decision router | Rust | Apache-2.0 | 7,066 | Mature | 68 | very active | 1d ago | 2.2y | 11 |
-| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,614 (▲33) | Hot | 80 | very active | 0d ago | 7mo | 12 |
-| [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router) | Decision router | Go | Apache-2.0 | 5,913 (▲309) | Hot | 69 | very active | 0d ago | 1.1y | 21 |
-| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 3,942 (▲331) | Mature | 73 | very active | 2d ago | 2.9y | 8 |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,614 (▲3) | Hot | 80 | very active | 0d ago | 7mo | 12 |
+| [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router) | Decision router | Go | Apache-2.0 | 5,913 (▲28) | Hot | 69 | very active | 0d ago | 1.1y | 21 |
+| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 3,942 (▲68) | Mature | 73 | very active | 2d ago | 2.9y | 8 |
 | [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router) | Decision router | Python | MIT | 3,923 | Mature | 68 | very active | 13d ago | 2.9y | 6 |
 | [huggingface/setfit](https://github.com/huggingface/setfit) | Few-shot classifier | Jupyter Notebook | Apache-2.0 | 2,823 | Mature | 55 | active | 2d ago | 4.2y | 4 |
-| [fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2) | Zero-shot encoder | Python | Apache-2.0 | 2,176 (▲329) | Hot | 71 | very active | 0d ago | 1.2y | 8 |
-| [pemistahl/lingua-py](https://github.com/pemistahl/lingua-py) | Few-shot classifier | Python | Apache-2.0 | 1,802 (▲14) | Mature | 33 | slowing | 2mo ago | 5.2y | 0 |
+| [fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2) | Zero-shot encoder | Python | Apache-2.0 | 2,176 (▲72) | Hot | 71 | very active | 0d ago | 1.2y | 8 |
+| [pemistahl/lingua-py](https://github.com/pemistahl/lingua-py) | Few-shot classifier | Python | Apache-2.0 | 1,802 (▲3) | Mature | 33 | slowing | 2mo ago | 5.2y | 0 |
 | [scikit-learn-contrib/MAPIE](https://github.com/scikit-learn-contrib/MAPIE) | Calibration / uncertainty | Jupyter Notebook | BSD-3-Clause | 1,595 | Classic | 68 | very active | 17d ago | 5.5y | 6 |
-| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Deterministic policy | TypeScript | MIT | 1,555 (▲31) | Hot | 80 | very active | 0d ago | 9mo | 3 |
+| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Deterministic policy | TypeScript | MIT | 1,555 (▲4) | Hot | 80 | very active | 0d ago | 9mo | 3 |
 | [explosion/spacy-llm](https://github.com/explosion/spacy-llm) | LLM as classifier | Python | MIT | 1,393 (▼1) | Declining | 22 | stale | 6mo ago | 3.5y | 0 |
-| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Calibration / uncertainty | Python | Apache-2.0 | 1,202 (▲6) | Hot | 76 | very active | 4d ago | 1.4y | 7 |
-| [davidfowl/tally](https://github.com/davidfowl/tally) | LLM as classifier | Python | MIT | 1,161 (▲1) | Declining | 42 | slowing | 4mo ago | 9mo | 0 |
+| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Calibration / uncertainty | Python | Apache-2.0 | 1,202 (▲1) | Hot | 76 | very active | 4d ago | 1.4y | 7 |
+| [davidfowl/tally](https://github.com/davidfowl/tally) | LLM as classifier | Python | MIT | 1,161 | Declining | 42 | slowing | 4mo ago | 9mo | 0 |
 | [Knowledgator/GLiClass](https://github.com/Knowledgator/GLiClass) | Zero-shot encoder | Python | Apache-2.0 | 534 | Mature | 57 | very active | 1d ago | 2.3y | 3 |
 | [ibm-granite/granite-guardian](https://github.com/ibm-granite/granite-guardian) | Guard model / guardrails | Jupyter Notebook | Apache-2.0 | 179 | Mature | 39 | active | 1mo ago | 2.0y | 4 |
-| [fastino-ai/GLiGuard](https://github.com/fastino-ai/GLiGuard) | Guard model / guardrails | — | Apache-2.0 | 60 (▲9) | Declining | 19 | slowing | 4mo ago | 4mo | 0 |
+| [fastino-ai/GLiGuard](https://github.com/fastino-ai/GLiGuard) | Guard model / guardrails | — | Apache-2.0 | 60 | Declining | 19 | slowing | 4mo ago | 4mo | 0 |
 | [FrancoisChastel/jev-code](https://github.com/FrancoisChastel/jev-code) | Typed decision API | TypeScript | MIT | 20 | Declining | 43 | active | 6d ago | 6d | 1 |
 
 ## Ranked by task

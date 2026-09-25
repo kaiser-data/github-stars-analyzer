@@ -40,7 +40,7 @@ _What you write contracts in._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [solidity](https://github.com/argotorg/solidity) | 25,741 (▲19) | 🔵 Classic | 84 | C++ | The Solidity compiler & language (ex ethereum/solidity). |
+| [solidity](https://github.com/argotorg/solidity) | 25,741 (▲4) | 🔵 Classic | 84 | C++ | The Solidity compiler & language (ex ethereum/solidity). |
 | [vyper](https://github.com/vyperlang/vyper) | 5,182 (▲1) | 🔵 Classic | 73 | Python | Pythonic contract language; security-minded alternative. |
 
 ### Dev toolkits
@@ -48,69 +48,69 @@ _Build, test, fuzz, deploy._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [foundry](https://github.com/foundry-rs/foundry) | 10,625 (▲46) | 🔵 Classic | 95 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
-| [hardhat](https://github.com/NomicFoundation/hardhat) | 8,508 (▲4) | 🔵 Classic | 83 | TypeScript | The established JS/TS dev environment. |
+| [foundry](https://github.com/foundry-rs/foundry) | 10,625 (▲11) | 🔵 Classic | 95 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
+| [hardhat](https://github.com/NomicFoundation/hardhat) | 8,508 | 🔵 Classic | 83 | TypeScript | The established JS/TS dev environment. |
 
 ### Contract libraries & standards
 _Don't reinvent ERC-20/721; reuse audited code._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | 27,256 (▲25) | 🔵 Classic | 82 | Solidity | The standard audited token/access/proxy library. |
-| [solmate](https://github.com/transmissions11/solmate) | 4,286 (▲1) | ⚫ Abandoned | 6 | Solidity | Minimalist, modern contract primitives. |
-| [solady](https://github.com/Vectorized/solady) | 3,376 (▲7) | 🟢 Mature | 51 | Solidity | Gas-optimized Solidity building blocks. |
+| [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | 27,256 (▲10) | 🔵 Classic | 82 | Solidity | The standard audited token/access/proxy library. |
+| [solmate](https://github.com/transmissions11/solmate) | 4,286 | ⚫ Abandoned | 6 | Solidity | Minimalist, modern contract primitives. |
+| [solady](https://github.com/Vectorized/solady) | 3,376 | 🟢 Mature | 51 | Solidity | Gas-optimized Solidity building blocks. |
 
 ### Security & analysis
 _Catch bugs before mainnet._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [slither](https://github.com/crytic/slither) | 6,372 (▲16) | 🔵 Classic | 62 | Python | The go-to static analyzer for contract vulnerabilities. |
-| [echidna](https://github.com/crytic/echidna) | 3,181 (▲8) | 🔵 Classic | 69 | Haskell | Property-based fuzzer for smart contracts. |
+| [slither](https://github.com/crytic/slither) | 6,372 (▲7) | 🔵 Classic | 62 | Python | The go-to static analyzer for contract vulnerabilities. |
+| [echidna](https://github.com/crytic/echidna) | 3,181 (▲1) | 🔵 Classic | 69 | Haskell | Property-based fuzzer for smart contracts. |
 
 ### Client libraries (TS/JS)
 _Talk to chains from apps._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [ethers.js](https://github.com/ethers-io/ethers.js) | 8,713 (▼1) | 🟢 Mature | 34 | TypeScript | The long-time standard JS/TS library. |
-| [wagmi](https://github.com/wevm/wagmi) | 6,751 (▲7) | 🔵 Classic | 76 | TypeScript | React hooks for Ethereum (pairs with viem). |
-| [viem](https://github.com/wevm/viem) | 3,567 (▲18) | 🔵 Classic | 85 | TypeScript | Modern, type-safe Ethereum client — default for new TS apps. |
-| [rainbowkit](https://github.com/rainbow-me/rainbowkit) | 2,835 (▼1) | 🟢 Mature | 43 | MDX | Drop-in wallet-connection UX for dApps. |
+| [ethers.js](https://github.com/ethers-io/ethers.js) | 8,713 (▼2) | 🟢 Mature | 34 | TypeScript | The long-time standard JS/TS library. |
+| [wagmi](https://github.com/wevm/wagmi) | 6,751 (▲1) | 🔵 Classic | 76 | TypeScript | React hooks for Ethereum (pairs with viem). |
+| [viem](https://github.com/wevm/viem) | 3,567 (▲8) | 🔵 Classic | 85 | TypeScript | Modern, type-safe Ethereum client — default for new TS apps. |
+| [rainbowkit](https://github.com/rainbow-me/rainbowkit) | 2,835 (▲2) | 🟢 Mature | 43 | MDX | Drop-in wallet-connection UX for dApps. |
 
 ### Execution clients (nodes)
 _The chain itself._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [go-ethereum](https://github.com/ethereum/go-ethereum) | 51,369 (▲40) | 🔵 Classic | 100 | Go | geth — the reference Ethereum node (Go). |
-| [reth](https://github.com/paradigmxyz/reth) | 5,785 (▲20) | 🔵 Classic | 85 | Rust | Modern, fast Rust client (rising alternative). |
-| [nethermind](https://github.com/NethermindEth/nethermind) | 1,605 (▲13) | 🔵 Classic | 99 | C# | High-perf .NET client, strong on tooling. |
+| [go-ethereum](https://github.com/ethereum/go-ethereum) | 51,369 (▲15) | 🔵 Classic | 100 | Go | geth — the reference Ethereum node (Go). |
+| [reth](https://github.com/paradigmxyz/reth) | 5,785 (▲4) | 🔵 Classic | 85 | Rust | Modern, fast Rust client (rising alternative). |
+| [nethermind](https://github.com/NethermindEth/nethermind) | 1,605 (▲8) | 🔵 Classic | 99 | C# | High-perf .NET client, strong on tooling. |
 
 ### Oracles, AA & wallets
 _Price feeds, smart accounts, custody._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [chainlink](https://github.com/smartcontractkit/chainlink) | 8,249 (▲10) | 🔵 Classic | 98 | Go | Price feeds you need to value positions. |
-| [safe-smart-account](https://github.com/safe-fndn/safe-smart-account) | 2,181 (▲4) | 🟢 Mature | 49 | TypeScript | Safe multisig — treasury/custody standard. |
-| [account-abstraction](https://github.com/eth-infinitism/account-abstraction) | 1,939 (▲2) | 🟠 Declining | 21 | TypeScript | Reference ERC-4337 account-abstraction. |
+| [chainlink](https://github.com/smartcontractkit/chainlink) | 8,249 (▲3) | 🔵 Classic | 98 | Go | Price feeds you need to value positions. |
+| [safe-smart-account](https://github.com/safe-fndn/safe-smart-account) | 2,181 (▲2) | 🟢 Mature | 49 | TypeScript | Safe multisig — treasury/custody standard. |
+| [account-abstraction](https://github.com/eth-infinitism/account-abstraction) | 1,939 | 🟠 Declining | 21 | TypeScript | Reference ERC-4337 account-abstraction. |
 
 ### Indexing & on-chain data
 _Turn raw chain state into queries._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [blockscout](https://github.com/blockscout/blockscout) | 4,714 (▲46) | 🔵 Classic | 80 | Elixir | Open EVM explorer; exposes an MCP server for agents. |
-| [graph-node](https://github.com/graphprotocol/graph-node) | 3,152 (▲7) | 🔵 Classic | 67 | Rust | The Graph — index chains into queryable subgraphs. |
+| [blockscout](https://github.com/blockscout/blockscout) | 4,714 (▲12) | 🔵 Classic | 80 | Elixir | Open EVM explorer; exposes an MCP server for agents. |
+| [graph-node](https://github.com/graphprotocol/graph-node) | 3,152 (▲2) | 🔵 Classic | 67 | Rust | The Graph — index chains into queryable subgraphs. |
 
 ### DeFi protocol references
 _Read the canonical contracts._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [v3-core](https://github.com/Uniswap/v3-core) | 5,024 (▲4) | 🟢 Mature | 33 | TypeScript | The concentrated-liquidity AMM still everywhere. |
-| [v4-core](https://github.com/Uniswap/v4-core) | 2,534 (▲8) | 🟢 Mature | 27 | Solidity | Latest AMM/DEX core (hooks). |
+| [v3-core](https://github.com/Uniswap/v3-core) | 5,024 (▲1) | 🟢 Mature | 33 | TypeScript | The concentrated-liquidity AMM still everywhere. |
+| [v4-core](https://github.com/Uniswap/v4-core) | 2,534 (▲3) | 🟢 Mature | 27 | Solidity | Latest AMM/DEX core (hooks). |
 | [comet](https://github.com/compound-finance/comet) | 313 (▲1) | 🟢 Mature | 30 | TypeScript | Compound III lending. |
 
 ### Solana
@@ -118,37 +118,37 @@ _The largest non-EVM L1._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [anchor](https://github.com/otter-sec/anchor) | 5,137 (▲10) | 🔵 Classic | 82 | Rust | The standard Solana smart-contract framework. |
-| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,757 (▲4) | 🟢 Mature | 61 | TypeScript | JS SDK for Solana. |
-| [agave](https://github.com/anza-xyz/agave) | 1,922 (▲18) | 🟢 Mature | 97 | Rust | The Solana validator client. |
+| [anchor](https://github.com/otter-sec/anchor) | 5,137 (▲2) | 🔵 Classic | 82 | Rust | The standard Solana smart-contract framework. |
+| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,757 (▲1) | 🟢 Mature | 61 | TypeScript | JS SDK for Solana. |
+| [agave](https://github.com/anza-xyz/agave) | 1,922 (▲5) | 🟢 Mature | 97 | Rust | The Solana validator client. |
 
 ### Zero-knowledge
 _Proofs, privacy, scaling._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [risc0](https://github.com/risc0/risc0) | 2,191 (▲3) | 🟢 Mature | 52 | C++ | General-purpose zkVM. |
-| [sp1](https://github.com/succinctlabs/sp1) | 1,737 (▲3) | 🟢 Mature | 79 | Rust | Performant RISC-V zkVM. |
-| [circom](https://github.com/iden3/circom) | 1,694 (▲4) | 🟢 Mature | 36 | WebAssembly | Circuit compiler for zk-SNARKs. |
+| [risc0](https://github.com/risc0/risc0) | 2,191 (▲2) | 🟢 Mature | 52 | C++ | General-purpose zkVM. |
+| [sp1](https://github.com/succinctlabs/sp1) | 1,737 (▲2) | 🟢 Mature | 79 | Rust | Performant RISC-V zkVM. |
+| [circom](https://github.com/iden3/circom) | 1,694 (▲1) | 🟢 Mature | 36 | WebAssembly | Circuit compiler for zk-SNARKs. |
 
 ### 🔥 Agentic payments (x402)
 _AI agents settling on-chain — the breakout trend._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,614 (▲33) | 🔥 Hot | 80 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
-| [x402scan](https://github.com/Merit-Systems/x402scan) | 392 (▲7) | 🔥 Hot | 78 | TypeScript | x402 ecosystem explorer. |
-| [x402](https://github.com/coinbase/x402) | 159 (▲9) | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,614 (▲3) | 🔥 Hot | 80 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
+| [x402scan](https://github.com/Merit-Systems/x402scan) | 392 (▲2) | 🔥 Hot | 78 | TypeScript | x402 ecosystem explorer. |
+| [x402](https://github.com/coinbase/x402) | 159 (▲2) | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
 
 ### 🔥 AI × finance / trading
 _Where crypto meets the agent stack._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,540 (▲5,891) | 🟢 Mature | 79 | Python | Multi-agent LLM trading framework. |
-| [OpenBB](https://github.com/OpenBB-finance/OpenBB) | 73,453 (▲746) | 🟢 Mature | 65 | Python | Financial data platform 'for analysts, quants & AI agents'. |
-| [AI-Trader](https://github.com/HKUDS/AI-Trader) | 22,558 (▲380) | 🟠 Declining | 27 | Python | Fully-automated agent-native trading. |
-| [eliza](https://github.com/elizaOS/eliza) | 19,499 (▲238) | 🟢 Mature | 78 | TypeScript | Crypto-native agent OS (wallet/chain plugins). |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,540 (▲656) | 🟢 Mature | 79 | Python | Multi-agent LLM trading framework. |
+| [OpenBB](https://github.com/OpenBB-finance/OpenBB) | 73,453 (▲120) | 🟢 Mature | 65 | Python | Financial data platform 'for analysts, quants & AI agents'. |
+| [AI-Trader](https://github.com/HKUDS/AI-Trader) | 22,558 (▲131) | 🟠 Declining | 27 | Python | Fully-automated agent-native trading. |
+| [eliza](https://github.com/elizaOS/eliza) | 19,499 (▲95) | 🟢 Mature | 78 | TypeScript | Crypto-native agent OS (wallet/chain plugins). |
 
 ### Referenced but not in the live dataset
 

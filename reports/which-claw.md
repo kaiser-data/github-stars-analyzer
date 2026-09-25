@@ -31,19 +31,19 @@ Composite = 25% health + 25% adoption + 20% resilience + 15% maturity + 15% mome
 
 | # | Claw | Type | Score | ★ Stars | Health | Momentum (★/30d) | Last push | Bus factor | Lang |
 |---|---|---|---|---|---|---|---|---|---|
-| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.855** | 390,467 (▲1,471) | 84 | 96,012 | 0d ago | 2 | TypeScript |
-| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.804** | 248,814 (▲6,665) | 80 | 36,930 | 0d ago | 2 | Python |
-| 🥉 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.762** | 32,878 (▲144) | 83 | 11,005 | 0d ago | 2 | Rust |
-| 4 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.746** | 48,561 (▲822) | 84 | 15,423 | 0d ago | 2 | Python |
-| 5 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.720** | 69,395 (▲656) | 78 | 17,561 | 0d ago | 1 | TypeScript |
-| 6 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.714** | 22,538 (▲158) | 74 | 8,725 | 0d ago | 3 | TypeScript |
-| 7 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.712** | 30,013 (▲71) | 78 | 9,664 | 1d ago | 2 | Go |
-| 8 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.706** | 12,632 (▲25) | 80 | 4,046 | 0d ago | 2 | Rust |
-| 9 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.651** | 19,499 (▲238) | 78 | 1,267 | 0d ago | 1 | TypeScript |
-| 10 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.631** | 30,846 (▲138) | 76 | 9,770 | 1d ago | 1 | TypeScript |
-| 11 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.587** | 8,103 (▲37) | 68 | 2,755 | 1d ago | 1 | Zig |
-| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.571** | 195,282 (▲105) | 47 | 32,900 | 1mo ago | 1 | Rust |
-| 13 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.448** | 18,210 (▲47) | 47 | 2,571 | 2mo ago | 0 | Rust |
+| 🥇 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | General assistant | **0.855** | 390,467 (▲286) | 84 | 96,012 | 0d ago | 2 | TypeScript |
+| 🥈 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) † | General assistant | **0.804** | 248,814 (▲1,187) | 80 | 36,930 | 0d ago | 2 | Python |
+| 🥉 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | General assistant | **0.762** | 32,878 (▲29) | 83 | 11,005 | 0d ago | 2 | Rust |
+| 4 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) † | General assistant | **0.746** | 48,561 (▲116) | 84 | 15,423 | 0d ago | 2 | Python |
+| 5 | [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) † | Coding agent | **0.720** | 69,395 (▲149) | 78 | 17,561 | 0d ago | 1 | TypeScript |
+| 6 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Secure runtime | **0.714** | 22,538 (▲34) | 74 | 8,725 | 0d ago | 3 | TypeScript |
+| 7 | [sipeed/picoclaw](https://github.com/sipeed/picoclaw) | General assistant | **0.712** | 30,013 | 78 | 9,664 | 1d ago | 2 | Go |
+| 8 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Secure runtime | **0.706** | 12,632 (▲6) | 80 | 4,046 | 0d ago | 2 | Rust |
+| 9 | [elizaOS/eliza](https://github.com/elizaOS/eliza) † | General assistant | **0.651** | 19,499 (▲95) | 78 | 1,267 | 0d ago | 1 | TypeScript |
+| 10 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Secure runtime | **0.631** | 30,846 (▲35) | 76 | 9,770 | 1d ago | 1 | TypeScript |
+| 11 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | General assistant | **0.587** | 8,103 | 68 | 2,755 | 1d ago | 1 | Zig |
+| 12 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | Coding agent | **0.571** | 195,282 (▲3) | 47 | 32,900 | 1mo ago | 1 | Rust |
+| 13 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | General assistant | **0.448** | 18,210 (▲1) | 47 | 2,571 | 2mo ago | 0 | Rust |
 
 **Where's Hermes?** [`NousResearch/hermes-agent`](https://github.com/NousResearch/hermes-agent) lands **#2** (composite 0.804) — the **strongest functional claw** and it trails OpenClaw (#1). Health 80, bus factor 2 (vs OpenClaw's 2 — more resilient), 248,814★, very active.
 It sits just behind [`openclaw/openclaw`](https://github.com/openclaw/openclaw), which edges it on health (84 vs 80) and resilience (bus 2 vs 2). 

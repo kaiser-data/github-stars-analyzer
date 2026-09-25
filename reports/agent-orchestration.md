@@ -42,73 +42,73 @@
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 70,603 (▲369) | Python | 19 | stale | Declining | 0 |
-| [microsoft/autogen](https://github.com/microsoft/autogen) | 61,151 (▲320) | Python | 27 | slowing | Mature | 0 |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 59,005 (▲869) | Python | 94 | very active | Mature | 4 |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | 42,335 (▲267) | Python | 97 | very active | Classic | 6 |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 42,254 (▲1,143) | Python | 76 | very active | Classic | 1 |
-| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 38,270 (▲474) | Python | 83 | very active | Classic | 2 |
-| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 32,336 (▲1,511) | Python | 97 | very active | Mature | 6 |
-| [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 29,690 (▲475) | Python | 85 | very active | Hot | 2 |
-| [huggingface/smolagents](https://github.com/huggingface/smolagents) | 29,484 (▲300) | Python | 56 | active | Mature | 1 |
-| [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28,601 (▲64) | C# | 80 | very active | Classic | 2 |
-| [google/adk-python](https://github.com/google/adk-python) | 21,637 (▲215) | Python | 89 | very active | Hot | 3 |
-| [camel-ai/camel](https://github.com/camel-ai/camel) | 17,771 (▲98) | Python | 84 | very active | Classic | 3 |
-| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 13,787 (▲435) | Python | 99 | very active | Hot | 5 |
-| [VoltAgent/voltagent](https://github.com/VoltAgent/voltagent) | 10,672 (▲117) | TypeScript | 73 | very active | Mature | 2 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,371 (▲1,208) | Python | 97 | very active | Hot | 6 |
-| [i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 3,413 (▲23) | Python | 97 | very active | Mature | 6 |
-| [liquidos-ai/AutoAgents](https://github.com/liquidos-ai/AutoAgents) | 759 (▲14) | Rust | 65 | very active | Hot | 1 |
+| [FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT) | 70,603 (▲69) | Python | 19 | stale | Declining | 0 |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | 61,151 (▲60) | Python | 27 | slowing | Mature | 0 |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 59,005 (▲155) | Python | 94 | very active | Mature | 4 |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | 42,335 (▲58) | Python | 97 | very active | Classic | 6 |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 42,254 (▲191) | Python | 76 | very active | Classic | 1 |
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | 38,270 (▲94) | Python | 83 | very active | Classic | 2 |
+| [agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope) | 32,336 (▲237) | Python | 97 | very active | Mature | 6 |
+| [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 29,690 (▲89) | Python | 85 | very active | Hot | 2 |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | 29,484 (▲59) | Python | 56 | active | Mature | 1 |
+| [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28,601 (▲17) | C# | 80 | very active | Classic | 2 |
+| [google/adk-python](https://github.com/google/adk-python) | 21,637 (▲52) | Python | 89 | very active | Hot | 3 |
+| [camel-ai/camel](https://github.com/camel-ai/camel) | 17,771 (▲22) | Python | 84 | very active | Classic | 3 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 13,787 (▲114) | Python | 99 | very active | Hot | 5 |
+| [VoltAgent/voltagent](https://github.com/VoltAgent/voltagent) | 10,672 (▲18) | TypeScript | 73 | very active | Mature | 2 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,371 (▲985) | Python | 97 | very active | Hot | 6 |
+| [i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 3,413 (▲5) | Python | 97 | very active | Mature | 6 |
+| [liquidos-ai/AutoAgents](https://github.com/liquidos-ai/AutoAgents) | 759 (▲1) | Rust | 65 | very active | Hot | 1 |
 
 ### Visual / low-code platforms
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 205,912 (▲2,407) | TypeScript | 100 | very active | Classic | 10 |
-| [langgenius/dify](https://github.com/langgenius/dify) | 157,170 (▲2,595) | TypeScript | 95 | very active | Classic | 4 |
-| [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | 155,231 (▲920) | Python | 79 | very active | Classic | 1 |
-| [simstudioai/sim](https://github.com/simstudioai/sim) | 29,718 (▲161) | TypeScript | 77 | very active | Hot | 1 |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 205,912 (▲382) | TypeScript | 100 | very active | Classic | 10 |
+| [langgenius/dify](https://github.com/langgenius/dify) | 157,170 (▲458) | TypeScript | 95 | very active | Classic | 4 |
+| [langflow-ai/langflow](https://github.com/langflow-ai/langflow) | 155,231 (▲148) | Python | 79 | very active | Classic | 1 |
+| [simstudioai/sim](https://github.com/simstudioai/sim) | 29,718 (▲24) | TypeScript | 77 | very active | Hot | 1 |
 
 ### Coding-agent orchestration
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 82,962 (▲1,508) | Python | 87 | very active | Hot | 12 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 73,238 (▲2,455) | TypeScript | 76 | very active | Hot | 1 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 69,395 (▲656) | TypeScript | 78 | very active | Hot | 1 |
-| [wshobson/agents](https://github.com/wshobson/agents) | 39,933 (▲483) | Python | 66 | very active | Hot | 2 |
-| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 39,348 (▲318) | TypeScript | 85 | very active | Hot | 2 |
-| [getpaseo/paseo](https://github.com/getpaseo/paseo) | 18,530 (▲2,372) | TypeScript | 77 | very active | Hot | 1 |
-| [eigent-ai/eigent](https://github.com/eigent-ai/eigent) | 15,424 (▲229) | TypeScript | 78 | very active | Hot | 1 |
-| [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) | 12,362 (▲1,379) | Go | 98 | very active | Hot | 6 |
-| [vercel-labs/coding-agent-template](https://github.com/vercel-labs/coding-agent-template) | 1,790 (▲12) | TypeScript | 32 | active | Declining | 0 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | 82,962 (▲168) | Python | 87 | very active | Hot | 12 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 73,238 (▲265) | TypeScript | 76 | very active | Hot | 1 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | 69,395 (▲149) | TypeScript | 78 | very active | Hot | 1 |
+| [wshobson/agents](https://github.com/wshobson/agents) | 39,933 (▲86) | Python | 66 | very active | Hot | 2 |
+| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 39,348 (▲63) | TypeScript | 85 | very active | Hot | 2 |
+| [getpaseo/paseo](https://github.com/getpaseo/paseo) | 18,530 (▲573) | TypeScript | 77 | very active | Hot | 1 |
+| [eigent-ai/eigent](https://github.com/eigent-ai/eigent) | 15,424 (▲64) | TypeScript | 78 | very active | Hot | 1 |
+| [Untrivial-ai/agent-orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) | 12,362 (▲132) | Go | 98 | very active | Hot | 6 |
+| [vercel-labs/coding-agent-template](https://github.com/vercel-labs/coding-agent-template) | 1,790 (▲5) | TypeScript | 32 | active | Declining | 0 |
 
 ### Agent OS / long-horizon harness
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [elizaOS/eliza](https://github.com/elizaOS/eliza) | 19,499 (▲238) | TypeScript | 78 | very active | Mature | 1 |
+| [elizaOS/eliza](https://github.com/elizaOS/eliza) | 19,499 (▲95) | TypeScript | 78 | very active | Mature | 1 |
 
 ### Durable / production infra
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [flyteorg/flyte](https://github.com/flyteorg/flyte) | 7,565 (▲158) | Go | 80 | very active | Classic | 1 |
-| [inngest/agent-kit](https://github.com/inngest/agent-kit) | 938 (▲12) | TypeScript | 33 | slowing | Declining | 0 |
+| [flyteorg/flyte](https://github.com/flyteorg/flyte) | 7,565 (▲21) | Go | 80 | very active | Classic | 1 |
+| [inngest/agent-kit](https://github.com/inngest/agent-kit) | 938 (▲2) | TypeScript | 33 | slowing | Declining | 0 |
 
 ### Vertical / domain systems
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,540 (▲5,891) | Python | 79 | very active | Mature | 1 |
-| [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | 29,615 (▲307) | Python | 81 | very active | Classic | 2 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,540 (▲656) | Python | 79 | very active | Mature | 1 |
+| [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher) | 29,615 (▲62) | Python | 81 | very active | Classic | 2 |
 
 ### Protocols & meta-frameworks
 
 | Tool | ★ | Lang | Health | Activity | Lifecycle | Bus factor |
 |---|---|---|---|---|---|---|
-| [sentient-agi/ROMA](https://github.com/sentient-agi/ROMA) | 5,181 (▲3) | Python | 21 | stale | Declining | 0 |
-| [TinyAGI/tinyagi](https://github.com/TinyAGI/tinyagi) | 3,621 (▲10) | TypeScript | 35 | slowing | Declining | 0 |
+| [sentient-agi/ROMA](https://github.com/sentient-agi/ROMA) | 5,181 (▲1) | Python | 21 | stale | Declining | 0 |
+| [TinyAGI/tinyagi](https://github.com/TinyAGI/tinyagi) | 3,621 (▲5) | TypeScript | 35 | slowing | Declining | 0 |
 | [veegee82/agent-workflow-protocol](https://github.com/veegee82/agent-workflow-protocol) | 19 | Python | 24 | slowing | Declining | 0 |
 
 ## Details
