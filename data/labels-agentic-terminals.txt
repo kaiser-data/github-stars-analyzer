@@ -1,0 +1,54 @@
+# Label: does this belong in the agentic-terminals report?
+#
+# Replace the ? with  y (belongs / would star)  or  n (off-topic).
+# Sorted alphabetically, without scores, so they cannot anchor your judgement.
+# Report scope: terminal apps, multiplexers, shells and session tools for agentic programming.
+# LABELS BELOW ARE CLAUDE'S (2026-09-25), from descriptions + report categories. Override any you disagree with.
+
+n aeroshell-desktop/aerothemeplasma                 911★  An alternative shell for KDE Plasma that aims to replicate the look and feel of Windows 7.
+y automagik-dev/genie                               343★  Wishes in, PRs out. CLI agent that interviews you, plans the work, dispatches parallel agents in isolated work
+y BlackBeltTechnology/pi-agent-dashboard            301★  Real-time web dashboard for pi coding-agent sessions. Multi-session view, live chat mirroring, integrated term
+y cantino/mcfly                                   7,799★  Fly through your shell history. Great Scott!
+y Codavo/ghostinthewsl                               66★  GhostInTheWSL is a fork of 👻 Ghostty for use with Windows Subsystem For Linux (WSL)
+y ConEmu/ConEmu                                   9,265★  ConEmu: Customizable Windows terminal with tabs, splits, quake-style, hotkeys and more
+n copy/v86                                       23,527★  x86 PC emulator and x86-to-wasm JIT, running in the browser
+y Dicklesworthstone/claude_code_agent_farm          919★  Orchestration framework for running 20+ Claude Code agents in parallel: automated bug fixing, best-practices s
+n durable-workflow/workflow                       1,247★  Core package for defining and running durable workflows and activities. Supports long-running persistent workf
+y dustinkirkland/byobu                            1,719★  text window manager, shell multiplexer, integrated DevOps environment
+y dvorka/hstr                                     4,465★  Bash and Zsh shell history TUI suggest box - easily view, navigate, search and manage your command history.
+y ekzhang/sshx                                    7,671★  Fast, collaborative live terminal sharing over the web
+y elementary/terminal                               427★  Terminal emulator designed for elementary OS
+n EmulatorJS/EmulatorJS                           4,201★  A web-based frontend for RetroArch
+n fcmfcm1999/EdgeX                                  243★  Android 15+ LSPosed/Xposed edge gesture module for system-wide shortcuts, hardware key remapping, app   launch
+n fuxicodex/Fuxi                                  3,365★  FuXi is a fast, self-contained AI coding agent that lives in your terminal — edit code, run commands, and driv
+y generalaction/emdash                            5,835★  Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple coding agents in parallel. 
+y golutra/golutra                                 3,845★  Multi-agent AI orchestration platform for automation, workflows, and developer tools. Golutra transforms Codex
+y greenfield-inc/Pane                               487★  Terminal-first, open-source AI agent manager for any CLI agent (agent agnostic), any OS (mac, windows, linux).
+y javaterminal/TerminalFX                           301★  Java FX Terminal Emulator
+y josstei/maestro-orchestrate                       462★  Multi-agent orchestration platform for Gemini CLI, Claude Code, Codex, and Qwen Code — 39 specialists, paralle
+y Kc1t/alethe-agents                                724★  A local-first desktop workspace for running, organizing, and resuming multiple coding agents and shells with  
+y KDE/konsole                                       708★  Terminal emulator by KDE
+y l0ng-ai/tty7                                    1,118★  A terminal workbench in pure Rust: shells, persistent sessions, SSH, coding agents. GPU-rendered on Zed's gpui
+y lanes-sh/app                                      271★  Run many CLI (Coding) Agents in parallel lanes: issues, worktrees, sessions, and loops on one board. The agent
+y lxqt/qterminal                                    716★  A lightweight Qt-based terminal emulator
+y malxau/yori                                     1,318★  Yori is a CMD replacement shell that supports backquotes, job control, and improves tab completion, file match
+y martanne/abduco                                   987★  abduco provides session management i.e. it allows programs to be run independently from its controlling termin
+y mco-org/mco                                       526★  CLI-first orchestration for AI coding agents: run selected agents and models in parallel, compare raw answers,
+n micheleg/dash-to-dock                           4,390★  A dock for the Gnome Shell. This extension   moves the dash out of the overview transforming it in a dock for 
+y mintty/mintty                                   1,788★  The Cygwin Terminal – terminal emulator for Cygwin, MSYS, and WSL
+y mixpeek/amux                                      500★  Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and G
+y NoMoreFood/putty-cac                              580★  Windows Secure Shell Client With Support For Smart Cards, Certificates, & FIDO Keys
+y open-mercato/cezar                                251★  Cezar is a parallel coding agents orchestrator. Type a task, pick a workflow and an agent —  Claude Code, Code
+n PCSX2/pcsx2                                    15,633★  PCSX2 - The Playstation 2 Emulator
+n ravachol/kew                                    3,109★  Music for the Shell. kew is a fast, immersive music player that allows you to listen to music privately.
+y rcaloras/bashhub-client                         1,308★  :cloud: Bash history in the cloud. Indexed and searchable.
+y robzilla1738/harness-terminal                     302★  The native macOS terminal that keeps your sessions running and tells you when a coding agent needs you. GPU-re
+y RohitKushvaha01/ReTerminal                        646★  A Simple Android Terminal Emulator
+n RPCS3/rpcs3                                    19,866★  PlayStation 3 emulator and debugger
+n ruffle-rs/ruffle                               18,573★  A Flash Player emulator written in Rust
+n scottvr/wtffmpeg                                  329★  A minimal character terminal (console) REPL UI for controlling ffmpeg via natural language descriptions of inp
+n shadps4-emu/shadPS4                            32,968★  PlayStation 4 emulator for Windows, Linux, macOS and FreeBSD written in C++
+y stravu/crystal                                  3,122★  (Crystal is now Nimbalyst) Run multiple Codex and Claude Code AI sessions in parallel git worktrees. Test, com
+y thdxg/macterm                                     472★  A lightweight macOS terminal with vertical tabs, session persistence, and native UI
+y tmux-plugins/tmux-resurrect                    13,072★  Persists tmux environment across system restarts.
+y vercel-labs/wterm                               3,470★  A terminal emulator for the web

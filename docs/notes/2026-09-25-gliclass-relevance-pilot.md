@@ -62,12 +62,46 @@ That check is weak: only 7 gaps, and some of the new finds are real positives. I
 still gives no support for the model. Search picks repos by the category words, so
 bare category labels cannot tell a search hit apart from an in-scope repo.
 
+## Live test 2: hand-labelled search hits (`agentic-terminals`, 47 candidates)
+
+The same 47 search hits were labelled y/n in `data/labels-agentic-terminals.txt`
+(34 y / 13 n). **The labels are Claude's**, made from descriptions and the report's
+categories, and have not been reviewed by the owner yet.
+
+Three label sets were compared:
+
+- **A:** bare category names.
+- **B:** category name plus the report title. This one is automatic.
+- **C:** hand-written descriptions. These were written *after* seeing the labels,
+  so C is optimistic and counts as an upper bound.
+
+| Scorer | AUROC y>n | Off-topic in top 23 |
+|---|---|---|
+| keyword (current) | 0.66 | 4 |
+| model, A bare | 0.70 | 3 |
+| **combined, A bare** | **0.76** | 3 |
+| model, B +title | 0.60 | 4 |
+| combined, B +title | 0.71 | 3 |
+| model, C hand-written | 0.71 | 5 |
+| combined, C hand-written | 0.77 | 2 |
+
+What this showed:
+
+- Against real labels, the combined score beats keyword alone: 0.76 vs 0.66.
+  Live test 1's known-gap proxy understated the model.
+- Descriptive labels do not help. The automatic B is worse than A, and the tuned C
+  barely beats A. Keep the bare category names.
+- With only 13 negatives, the AUROC standard error is about ±0.08, so the gain is
+  suggestive, not established. It needs the owner's labels and a second report.
+- Offline mode, now automatic once the model is cached, cut a 47-repo pass from
+  87 s to 26 s.
+
 ## Where it stands
 
 - `--model` is opt-in and off by default. With it on, `rel` becomes the average of the
   keyword and model scores. The output always states which relevance was used.
-- **Next test:** make the labels specific to the report ("terminal emulator for
-  developers" instead of "Emulator"). Evaluate on hand-labelled search hits, meaning
-  your star/skip decisions on a live candidate list, not on report members.
-- Scratch pilot code (not committed): `export.mjs`, `score.py`, `dump.py` and
-  `combine.py`.
+- **Next step:** the owner corrects the labels in `data/labels-agentic-terminals.txt`
+  and labels a second report. If the combined score still wins, make `--model` the
+  default.
+- Scratch pilot code (not committed): `export.mjs`, `score.py`, `dump.py`,
+  `combine.py` and `live_eval.mjs`.

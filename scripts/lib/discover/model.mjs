@@ -4,6 +4,8 @@
 // working (keyword-only) on a machine without uv or the model.
 
 import { spawnSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 
 export const MODEL = 'knowledgator/gliclass-modern-base-v3.0';
@@ -11,6 +13,17 @@ export const MODEL = 'knowledgator/gliclass-modern-base-v3.0';
 export const README_CHARS = 1200;
 
 const SCRIPT = path.join(import.meta.dirname, 'gliclass_score.py');
+// A 47-repo run takes ~1.5 min. A hung call (seen after the laptop slept
+// mid-run, stuck on a dead Hugging Face request) must fall back, not block.
+const TIMEOUT_MS = 15 * 60 * 1000;
+
+/** Once the model is cached, skip the Hub entirely: no network, nothing to hang on. */
+function hubEnv() {
+  const hub = process.env.HF_HUB_CACHE
+    ?? path.join(process.env.HF_HOME ?? path.join(os.homedir(), '.cache/huggingface'), 'hub');
+  const cached = existsSync(path.join(hub, `models--${MODEL.replace('/', '--')}`));
+  return cached ? { ...process.env, HF_HUB_OFFLINE: '1' } : process.env;
+}
 
 /** The text the model reads. Must match the pilot's inputs for its numbers to hold. */
 export function modelText(repo) {
@@ -24,7 +37,10 @@ export function runPython(request) {
     input: JSON.stringify(request),
     encoding: 'utf8',
     maxBuffer: 64 * 1024 * 1024,
+    timeout: TIMEOUT_MS,
+    env: hubEnv(),
   });
+  if (r.error?.code === 'ETIMEDOUT') throw new Error(`model timed out after ${TIMEOUT_MS / 60000} min`);
   if (r.error) throw r.error;
   if (r.status !== 0) {
     const last = (r.stderr ?? '').trim().split('\n').pop() || `exit ${r.status}`;
