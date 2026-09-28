@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 16 data vintages: the 11-day movers, relative breakouts, sustained climbers, 89 new entrants, and what has gone flat.",
-  "tool_count": 151,
-  "total_stars": 5985923,
+  "summary": "Measured star momentum across 17 data vintages: the 7-day movers, relative breakouts, sustained climbers, 51 new entrants, and what has gone flat.",
+  "tool_count": 114,
+  "total_stars": 5824421,
   "categories": {
-    "Risers": 1758,
-    "Breakouts": 1641,
-    "New entrants": 89,
-    "Cooling": 76
+    "Risers": 1692,
+    "Breakouts": 1589,
+    "New entrants": 51,
+    "Cooling": 110
   },
   "top_tools": [
     {
-      "name": "cloudflare/security-audit-skill",
-      "stars": 21428
+      "name": "vectorize-io/hindsight",
+      "stars": 39507
     },
     {
-      "name": "alibaba/open-code-review",
-      "stars": 41030
+      "name": "paperclipai/paperclip",
+      "stars": 91575
     },
     {
-      "name": "deepseek-ai/deepseek-harness",
-      "stars": 235536
+      "name": "rocketride-org/rocketride-server",
+      "stars": 16558
     },
     {
-      "name": "stablyai/orca",
-      "stars": 77810
+      "name": "debpalash/VoiceStudio",
+      "stars": 41685
     },
     {
-      "name": "affaan-m/ECC",
-      "stars": 267158
+      "name": "browser-use/jev-ultrafast",
+      "stars": 21009
     }
   ],
   "chart_top_series": [
     {
-      "name": "cloudflare/security-audit-skill",
-      "value": 18142
+      "name": "vectorize-io/hindsight",
+      "value": 15340
     },
     {
-      "name": "alibaba/open-code-review",
-      "value": 16846
+      "name": "paperclipai/paperclip",
+      "value": 10406
     },
     {
-      "name": "deepseek-ai/deepseek-harness",
-      "value": 12190
-    },
-    {
-      "name": "stablyai/orca",
-      "value": 9547
-    },
-    {
-      "name": "affaan-m/ECC",
-      "value": 9133
-    },
-    {
-      "name": "DietrichGebert/ponytail",
-      "value": 7862
+      "name": "rocketride-org/rocketride-server",
+      "value": 8031
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 7324
+      "value": 7959
     },
     {
-      "name": "Tencent/WeKnora",
-      "value": 6819
+      "name": "browser-use/jev-ultrafast",
+      "value": 7108
+    },
+    {
+      "name": "deepseek-ai/deepseek-harness",
+      "value": 6498
+    },
+    {
+      "name": "stablyai/orca",
+      "value": 6065
+    },
+    {
+      "name": "rohitg00/ai-engineering-from-scratch",
+      "value": 4901
     }
   ],
-  "chart_top_title": "Biggest star gains (11d)",
+  "chart_top_title": "Biggest star gains (7d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-25T10:37:19.717Z",
-  "generated": "2026-09-25",
+  "snapshot": "2026-09-28T12:23:49.424Z",
+  "generated": "2026-09-28",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-08"
+  "created": "2026-09-26"
 }
