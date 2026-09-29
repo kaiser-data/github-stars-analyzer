@@ -6,9 +6,10 @@ few-shot classifiers, guard models and guardrail frameworks, deterministic
 pre-execution policy, decision routers, calibration / uncertainty tooling, and
 the incumbent "prompt an LLM into a typed answer" pattern.
 
-Task rankings carry evidence frozen at authoring time (2026-09-25): the
-Apart x CeSIA incident-sprint batteries and a Jev-Omni run in
-../jev-studies/results/, plus vendor/secondary sources cited in Methodology.
+Task rankings carry evidence frozen at authoring time (2026-09-25, hosted-Jev
+and open-encoder rows updated 2026-09-29): the Apart x CeSIA incident-sprint
+batteries, the Jev-Omni run and the jev-studies Tests 1–4, E, F, H and I
+(../jev-studies/RESULTS.md), plus vendor/secondary sources cited in Methodology.
 
 Inputs:
   data/classified.json
@@ -34,7 +35,12 @@ META_OUT = os.path.join(ROOT, f"reports/{SLUG}.meta.json")
 # ---- Curated taxonomy --------------------------------------------------------
 TAXONOMY = {
     # Typed decision APIs ("System One" models)
-    "FrancoisChastel/jev-code": ("Typed decision API", "Jev (TypeSafe's System One model) as classify / check / score / rank / ask tools inside Claude Code, Codex, Pi, OpenCode."),
+    "FrancoisChastel/jev-code": ("Typed decision API", "Jev (TypeSafe's System One model) as classify / check / score / rank / ask tools inside Claude Code, Codex, Pi, OpenCode; reaches Jev through TypeSafe, OpenRouter or Vercel AI Gateway (v0.2)."),
+    "Kevthetech143/super-jev": ("Typed decision API", "Small, extensible decision-to-action harness for hosted Jev — typed answer in, action out."),
+
+    # Open decision models (local System One-style)
+    "PsiACE/dohnuts": ("Open decision model", "Open System One-style multimodal decision models (0.8B): choose / judge / score with probabilities in one forward pass."),
+    "DreamBlooms/dohnuts.cpp": ("Open decision model", "llama.cpp inference for Dohnuts on CPU, no GPU — serves a Jev-like `/v1/systemone` endpoint."),
 
     # Zero-shot encoder classifiers & extractors
     "Knowledgator/GLiClass": ("Zero-shot encoder", "GLiNER-family zero-shot text classifier — labels supplied at runtime, CPU-friendly; closest open analogue to Jev."),
@@ -71,6 +77,7 @@ TAXONOMY = {
 }
 
 ADJACENT = [
+    ("daftAI2026/awesome-jev", "curated list of Jev projects and open alternatives — a discovery source, not a tool"),
     ("BerriAI/litellm", "gateway; can pass through to Jev but routes by config, not by decision — see *local-vs-infra-stack*"),
     ("Portkey-AI/gateway", "gateway with guardrail hooks — see *local-vs-infra-stack*"),
     ("maximhq/bifrost", "gateway with guardrails; infrastructure rather than a decision model"),
@@ -87,18 +94,23 @@ ADJACENT = [
 
 # Task rankings — evidence frozen 2026-09-25. "Sprint" = Apart x CeSIA incident sprint
 # (48-row authority battery, 30-case message-kind set); Jev-Omni run 20260925-102614.
+# Updated 2026-09-29 from ../jev-studies/RESULTS.md: hosted Jev 1.13 via OpenRouter (Tests 1–4, B1),
+# open Jev copies (Test E), GLiNER2.5-Decide (Test H), Laya (Test I).
 TASK_RANKINGS = [
     ("Allow/block an agent tool call",
      [("kenryu42/cc-safety-net", "rules on resolved resources; the final say"),
       ("ibm-granite/granite-guardian", "open function-call risk model with probabilities (untested here)"),
       ("FrancoisChastel/jev-code", "triage and decomposition, not the oracle")],
-     "Sprint: deterministic policy 48/48; Llama 3.3 70B 42/48; Jev-Omni 39/48 with 7 overblocks (cap ≤4); "
-     "Qwen3 30B 37/48; GLiNER2 24/48. Without the grant every model sits at 24/48."),
+     "Sprint fixtures: deterministic policy 48/48; hosted Jev 45–47/48 (3 runs, jev-studies); Llama 3.3 70B 42/48; best open Jev copy "
+     "(JevK5) 44/48; Jev-Omni 39/48 with 7 overblocks (cap ≤4); Qwen3 30B 37/48; GLiNER2 24/48. Without the grant "
+     "every model sits at 24/48. Open System-1 encoders (GLiNER2.5-Decide, Laya) score 9–25/48, at or below chance. "
+     "On the real incident hosted Jev caught 0/13 actions at 5% FPR."),
     ("High-volume closed-label triage (inbox, tickets, spam)",
-     [("FrancoisChastel/jev-code", "hosted, $0.042/M input, calibrated probabilities (vendor)"),
+     [("FrancoisChastel/jev-code", "hosted, $0.042/M input, graded scores; set thresholds on labelled data"),
       ("Knowledgator/GLiClass", "local zero-shot, private data stays on-box"),
       ("huggingface/setfit", "best once you have 8–64 labels per class")],
-     "eesel: 93% triage accuracy, 0 spam false positives on 284 chats (secondary). Not yet measured on your data."),
+     "Hosted Jev 28/30 on the sprint's message-kind set. eesel: 93% triage accuracy, 0 spam false positives on "
+     "284 chats (secondary). Not yet measured on your data."),
     ("Tell an action from a quoted action",
      [("BoundaryML/baml", "typed prompt to a 30B-class LLM"),
       ("fastino-ai/GLiNER2", "catches actions, misses quotations"),
@@ -115,8 +127,9 @@ TASK_RANKINGS = [
      [("scikit-learn-contrib/MAPIE", "conformal coverage over any score"),
       ("cvs-health/uqlm", "confidence for LLM outputs"),
       ("FrancoisChastel/jev-code", "claims built-in calibration")],
-     "Jev-Omni ECE 0.161 (author claims 0.040); wrong answers at 0.82–0.99 confidence. "
-     "Calibration claims need a reliability diagram on your own data."),
+     "Hosted Jev ECE 0.115 on 29 items — within the noise floor, so neither confirmed nor refuted (vendor claims "
+     "0.040). Jev-Omni ECE 0.161, wrong answers at 0.82–0.99 confidence. Calibration claims need a reliability "
+     "diagram on your own data."),
     ("Extract the resource before deciding",
      [("fastino-ai/GLiNER2", "schema extraction in one pass"),
       ("urchade/GLiNER", "runtime entity types"),
@@ -164,7 +177,7 @@ total_stars = sum(by_name[n]["stars"] for n in present)
 cats = {}
 for n in present:
     cats.setdefault(TAXONOMY[n][0], []).append(n)
-order = ["Typed decision API", "Zero-shot encoder", "Few-shot classifier",
+order = ["Typed decision API", "Open decision model", "Zero-shot encoder", "Few-shot classifier",
          "Guard model / guardrails", "Deterministic policy", "Decision router",
          "Calibration / uncertainty", "LLM as classifier"]
 
@@ -189,13 +202,17 @@ for c in order:
         A(f"  - **{c}** ({len(cats[c])}): "
           + ", ".join(f"`{short(x)}`" for x in sorted(cats[c], key=lambda x: -by_name[x]['stars'])))
 A("- The newcomer is **Jev** (TypeSafe, launched 2026-09-15): a hosted model that answers typed "
-  "questions with probabilities in one pass. It competes with small open encoders (GLiClass, "
-  "GLiNER2) on price and latency, and with prompted LLMs (BAML-style) on consistency.")
+  "questions with probabilities in one pass, reachable through TypeSafe, OpenRouter and Vercel AI "
+  "Gateway. It competes with small open encoders (GLiClass, GLiNER2) on price and latency, and with "
+  "prompted LLMs (BAML-style) on consistency. Open copies followed within two weeks (`dohnuts`, on CPU).")
 A("- Evidence from the incident sprint: **no classifier replaces policy for authorization** — "
   "rules scored 48/48, the best model 42/48, and every model fell to 24/48 without the grant. "
   "Classifiers earn their place as triage in front of rules and humans.")
-A("- **Calibration is the claim to check.** The unofficial Jev-Omni measured ECE 0.161 against a "
-  "claimed 0.040. `MAPIE` puts a coverage guarantee on any of these scores.")
+A("- Hosted Jev, measured (jev-studies, via OpenRouter): **45–47/48 on the permission check** — above every "
+  "open copy and most LLM baselines — but **0/13 real incident actions at 5% FPR**. Triage, not the guard.")
+A("- **Calibration is the claim to check.** Hosted Jev's ECE (0.115, n=29) can't be told apart from "
+  "calibrated or not; the unofficial Jev-Omni measured 0.161 against a claimed 0.040. `MAPIE` puts a "
+  "coverage guarantee on any of these scores.")
 A("")
 
 # --- Anatomy table
@@ -204,7 +221,7 @@ A("")
 A("| Step | What happens | Tools in your stars |")
 A("|---|---|---|")
 A("| **Extract** | Pull the resource, argument or entity out of the text | `GLiNER2`, `GLiNER`, `spacy-llm` |")
-A("| **Classify** | Answer a typed question: label, yes/no, score | `jev-code`, `GLiClass`, `setfit`, `lingua-py`, `baml` |")
+A("| **Classify** | Answer a typed question: label, yes/no, score | `jev-code`, `dohnuts`, `GLiClass`, `setfit`, `lingua-py`, `baml` |")
 A("| **Guard** | Flag risky prompts, outputs or tool calls | `granite-guardian`, `GLiGuard`, `NVIDIA-NeMo/Guardrails`, `guardrails-ai/guardrails` |")
 A("| **Decide by rule** | Deterministic allow/deny on resolved facts | `cc-safety-net` |")
 A("| **Route** | Pick the model, agent or path | `aurelio-labs/semantic-router`, `vllm-project/semantic-router`, `plano`, `ClawRouter` |")
@@ -240,9 +257,10 @@ A("")
 # --- Task rankings
 A("## Ranked by task")
 A("")
-A("Evidence frozen 2026-09-25. Sprint numbers come from runs on 48 synthetic authority "
-  "fixtures and 30 message-kind cases; vendor and secondary figures are marked. "
-  "Hosted Jev itself has not been run on these fixtures yet.")
+A("Evidence frozen 2026-09-25; hosted-Jev and open-encoder figures updated 2026-09-29. Sprint "
+  "numbers come from runs on 48 synthetic authority fixtures and 30 message-kind cases; hosted Jev "
+  "1.13 was run on the same fixtures through OpenRouter, and on the real incident data (13 escape "
+  "actions, 102 benign). Vendor and secondary figures are marked.")
 A("")
 A("| Task | 🥇 First pick | 🥈 Second | 🥉 Third | Evidence / note |")
 A("|---|---|---|---|---|")
@@ -257,6 +275,9 @@ A("")
 cat_blurb = {
     "Typed decision API": "Hosted models built for decisions rather than text: typed questions in, "
         "probabilities out, many questions per pass. Early access; 32k-token context (per review).",
+    "Open decision model": "Open-weight models built to the same System One shape — typed questions, "
+        "probabilities, one forward pass — small enough for a laptop CPU. Days old and not yet "
+        "measured here.",
     "Zero-shot encoder": "Small bidirectional encoders that take label or entity names at runtime. "
         "Local, cheap, fast — but they read surface form, so intent-level distinctions slip.",
     "Few-shot classifier": "Train on a handful of your own labels. The baseline any hosted model "
@@ -302,8 +323,8 @@ A("| Landscape relevance in this repo (`discover.mjs`) | strong | keyword-overla
 A("| Inbox / reply triage | strong | prompted LLM on cost per 1,000 mails | German text, GDPR for a US API |")
 A("| Coding-agent micro-decisions (CI failures, finding severity) | strong | frontier-model calls | 32k context |")
 A("| Model / agent routing | plausible | embedding routes only on criteria-defined routes | embedding routes are near-free |")
-A("| Tool-call guard | triage only | fast guards on latency and determinism | overblocks; quotations; needs the grant |")
-A("| Private data on the Jetson | weak | — | hosted API; Jev-Omni needs ~24 GB |")
+A("| Tool-call guard | triage only | fast guards on latency and determinism | 0/13 real incident actions @5% FPR; quotations; needs the grant |")
+A("| Private data on the Jetson | plausible | a hosted call | Jev itself is hosted-only; `dohnuts.cpp` runs a 0.8B copy on CPU (untested here) |")
 A("")
 
 # --- Graph analysis
@@ -370,8 +391,9 @@ for n in sorted(present, key=lambda x: -(by_name[x].get("health_score") or 0)):
         tas=f"{tas:.0%}" if isinstance(tas, (int, float)) else "—",
         rel=r.get("releases_total", "—")))
 A("")
-A("Watch items: `jev-code` is a days-old wrapper around a closed, early-access API — the repo's "
-  "health says little about the model. `GLiGuard` and `spacy-llm` read as Declining.")
+A("Watch items: `jev-code` (v0.2.1 on npm, three hosts) and `super-jev` are wrappers around a closed, "
+  "early-access API — the repos' health says little about the model. `dohnuts` and `dohnuts.cpp` are "
+  "about a week old. `GLiGuard` and `spacy-llm` read as Declining.")
 A("")
 
 # --- Selection guidance
@@ -385,7 +407,7 @@ guide = [
     ("Cheap, fast labels on text you can send out", "`FrancoisChastel/jev-code`",
      "Typed answers with probabilities; output tokens free."),
     ("The same, but data must stay local", "`Knowledgator/GLiClass`",
-     "Zero-shot on CPU; no API."),
+     "Zero-shot on CPU; no API. `dohnuts.cpp` is the Jev-shaped alternative, unmeasured."),
     ("A classifier trained on your own labels", "`huggingface/setfit`",
      "Few-shot, no prompts, strong baseline."),
     ("Intent-level distinctions (quoted vs real actions)", "`BoundaryML/baml` with a capable LLM",
@@ -418,14 +440,16 @@ A("- **Source**: `data/classified.json` + `public/data/graph.json`. No external 
 A("- **Selection**: keyword scan (classif / guard / router / calibrat / zero-shot / moderation / "
   "policy) + manual curation. Gateways, red-teaming, static scanners and tabular models were "
   "routed to adjacent reports or excluded.")
-A("- **Evidence (frozen 2026-09-25)**: sprint batteries and the Jev-Omni run "
+A("- **Evidence (frozen 2026-09-25; updated 2026-09-29)**: sprint batteries and the Jev-Omni run "
   "(`jev-studies/results/jev-omni-20260925-102614.md`; unofficial model, not TypeSafe's). "
+  "Hosted Jev 1.13, open Jev copies, GLiNER2.5-Decide and Laya: `jev-studies/RESULTS.md` "
+  "(Tests 1–4, E, F, H, I; hosted calls via OpenRouter, 2026-09-25 to 09-29). "
   "Vendor: TypeSafe launch post (typesafe.ai/blog/introducing-system-one-models-and-jev) — "
   "price, latency, calibration claims. Secondary: eesel review (eesel.ai/blog/typesafe-jev-review) — "
   "93% triage, 32k context; KDnuggets (kdnuggets.com/what-everyone-is-getting-wrong-about-typesafe-ais-jev) — "
   "145–271 ms routing. Retrieved 2026-09-25.")
-A("- Frozen evidence does **not** refresh with `build_index.py`; re-verify when hosted Jev "
-  "results land or new guard models ship.")
+A("- Frozen evidence does **not** refresh with `build_index.py`; re-verify when a new Jev "
+  "version ships (`jev-latest` → `jev-1.13-20260917` as of 2026-09-29) or new guard models land.")
 A("- **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may "
   "lag GitHub's current state.")
 A("")
@@ -442,7 +466,7 @@ meta = {
     "file": f"{SLUG}.md",
     "category": "AI / Evaluation",
     "summary": (f"{len(present)} tools ({fmt_int(total_stars)}★) that turn text into typed decisions: "
-                "Jev, zero-shot and few-shot classifiers, guard models, policy, routers, "
+                "Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, "
                 "calibration — ranked by task with sprint evidence."),
     "tool_count": len(present),
     "total_stars": total_stars,

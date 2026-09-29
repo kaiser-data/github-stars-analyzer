@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-09-25)
+# Graph Report - github-stars-analyzer  (2026-09-29)
 
 ## Corpus Check
-- 224 files · ~3,750,418 words
+- 225 files · ~3,779,344 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1947 nodes · 2013 edges · 130 communities (113 shown, 17 thin omitted)
+- 1957 nodes · 2022 edges · 131 communities (114 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b7499c43`
+- Built from commit: `ca100a83`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -139,6 +139,7 @@
 - [[_COMMUNITY_Handoff — 2026-09-25|Handoff — 2026-09-25]]
 - [[_COMMUNITY_GLiClass as a discovery relevance signal — pilot, 2026-09-25|GLiClass as a discovery relevance signal — pilot, 2026-09-25]]
 - [[_COMMUNITY_gliclass_score.py|gliclass_score.py]]
+- [[_COMMUNITY_Handoff — 2026-09-26|Handoff — 2026-09-26]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -167,7 +168,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (130 total, 17 thin omitted)
+## Communities (131 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -403,7 +404,7 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-14 → 2026-09-25, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-21 → 2026-09-29, 8d), Frontier models on hardware you already own (+10 more)
 
 ### Community 67 - "snapshot.py"
 Cohesion: 0.06
@@ -411,7 +412,7 @@ Nodes (34): Adjacent (deliberately not listed as charting tools), Advantages, di
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-14 → 2026-09-25, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-21 → 2026-09-29, 8d), Frontier models on hardware you already own (+10 more)
 
 ### Community 69 - "Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases"
 Cohesion: 0.06
@@ -582,12 +583,12 @@ Cohesion: 0.50
 Nodes (3): Current scores, Scoring review request, What to return
 
 ### Community 124 - "Decision Classifiers & Guard Models — Landscape Report"
-Cohesion: 0.10
-Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+12 more)
+Cohesion: 0.09
+Nodes (21): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+13 more)
 
 ### Community 125 - "Decision Classifiers & Guard Models — Landscape Report"
-Cohesion: 0.10
-Nodes (20): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+12 more)
+Cohesion: 0.09
+Nodes (21): Adjacent (deliberately not listed), By category, Calibration / uncertainty, Decision Classifiers & Guard Models — Landscape Report, Decision router, Deterministic policy, Executive summary, Few-shot classifier (+13 more)
 
 ### Community 127 - "Handoff — 2026-09-25"
 Cohesion: 0.18
@@ -597,8 +598,12 @@ Nodes (10): 1. The decision-classifiers report, 2. Companion page outside this r
 Cohesion: 0.29
 Nodes (6): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live test 2: hand-labelled search hits (`agentic-terminals`, 47 candidates), Live test: search hits (`agentic-terminals`, 47 candidates), Offline test: labelled report members, Resources, Where it stands
 
+### Community 130 - "Handoff — 2026-09-26"
+Cohesion: 0.25
+Nodes (7): 1. Merging PR #3, 2. Discovery changes (`scripts/discover.mjs`, `scripts/lib/discover/`), 3. What the GLiClass evaluation found, 4. Lessons from this session, 5. Open items, Handoff — 2026-09-26, TL;DR
+
 ## Knowledge Gaps
-- **1307 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1302 more)
+- **1315 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1310 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -606,7 +611,7 @@ Nodes (6): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live 
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1351 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1359 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

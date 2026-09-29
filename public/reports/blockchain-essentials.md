@@ -1,8 +1,8 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 2,259 starred repos (snapshot `2026-09-28T12:23:49.424Z`), cross-referenced with the repo-similarity graph (2,259 nodes / 7,430 edges).
+> Derived from **kaiser-data**'s 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`), cross-referenced with the repo-similarity graph (2,263 nodes / 7,463 edges).
 >
-> Generated 2026-09-28 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
+> Generated 2026-09-29 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/blockchain-essentials-top-tools.svg)
 
@@ -17,19 +17,19 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 
 | Repo | Layer-fit | ★ | Lifecycle | Momentum (★/30d) | Commits (90d) |
 |---|---|---|---|---|---|
-| [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,512 | 🟢 Mature | 1,263 | 20,635 |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,614 | 🔥 Hot | 2,095 | 173 |
-| [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 392 | 🔥 Hot | 68 | 91 |
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 108,991 | 🟢 Mature | 10,867 | 150 |
-| [sp1](https://github.com/succinctlabs/sp1) | Zero-knowledge | 1,737 | 🟢 Mature | 89 | 54 |
-| [vyper](https://github.com/vyperlang/vyper) | Languages & compilers | 5,184 | 🔵 Classic | 54 | 80 |
-| [echidna](https://github.com/crytic/echidna) | Security & analysis | 3,180 | 🔵 Classic | 36 | 26 |
-| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | Solana | 2,757 | 🔵 Classic | 35 | 65 |
+| [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,499 | 🟢 Mature | 1,260 | 20,773 |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,614 | 🔥 Hot | 2,085 | 182 |
+| [x402scan](https://github.com/Merit-Systems/x402scan) | 🔥 Agentic payments (x402) | 392 | 🔥 Hot | 67 | 97 |
+| [agave](https://github.com/anza-xyz/agave) | Solana | 1,922 | 🟢 Mature | 104 | 1,117 |
+| [foundry](https://github.com/foundry-rs/foundry) | Dev toolkits | 10,625 | 🔵 Classic | 216 | 1,252 |
+| [nethermind](https://github.com/NethermindEth/nethermind) | Execution clients (nodes) | 1,605 | 🔵 Classic | 18 | 915 |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 108,540 | 🟢 Mature | 10,803 | 150 |
+| [hardhat](https://github.com/NomicFoundation/hardhat) | Dev toolkits | 8,508 | 🔵 Classic | 103 | 675 |
 
 **Two trends to watch:**
 
 1. **Agentic payments (x402).** `coinbase/x402` (payments over HTTP) + `ClawRouter` (USDC on Base & Solana) + `x402scan` — agent-to-agent stablecoin settlement, brand-new and accelerating. The most genuinely *novel* movement here.
-2. **Autonomous AI trading.** `TauricResearch/TradingAgents` (82k★) and `HKUDS/AI-Trader` are high-momentum, and `elizaOS/eliza` ships at enormous velocity (20,635 commits/90d).
+2. **Autonomous AI trading.** `TauricResearch/TradingAgents` (82k★) and `HKUDS/AI-Trader` are high-momentum, and `elizaOS/eliza` ships at enormous velocity (20,773 commits/90d).
 
 **Quiet but foundational:** Rust is taking over the client/tooling layer — `agave`, `reth`, `foundry` all show very high 90-day commit counts despite mature/low momentum. High build activity, not hype.
 
@@ -40,16 +40,16 @@ _What you write contracts in._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [solidity](https://github.com/argotorg/solidity) | 25,745 (▲4) | 🔵 Classic | 84 | C++ | The Solidity compiler & language (ex ethereum/solidity). |
-| [vyper](https://github.com/vyperlang/vyper) | 5,184 (▲2) | 🔵 Classic | 72 | Python | Pythonic contract language; security-minded alternative. |
+| [solidity](https://github.com/argotorg/solidity) | 25,741 (▼4) | 🔵 Classic | 84 | C++ | The Solidity compiler & language (ex ethereum/solidity). |
+| [vyper](https://github.com/vyperlang/vyper) | 5,182 (▼2) | 🔵 Classic | 72 | Python | Pythonic contract language; security-minded alternative. |
 
 ### Dev toolkits
 _Build, test, fuzz, deploy._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [foundry](https://github.com/foundry-rs/foundry) | 10,625 | 🔵 Classic | 95 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
-| [hardhat](https://github.com/NomicFoundation/hardhat) | 8,508 | 🔵 Classic | 88 | TypeScript | The established JS/TS dev environment. |
+| [foundry](https://github.com/foundry-rs/foundry) | 10,625 | 🔵 Classic | 94 | Rust | Forge/Cast/Anvil — the dominant Rust-based Solidity toolchain. |
+| [hardhat](https://github.com/NomicFoundation/hardhat) | 8,508 | 🔵 Classic | 83 | TypeScript | The established JS/TS dev environment. |
 
 ### Contract libraries & standards
 _Don't reinvent ERC-20/721; reuse audited code._
@@ -57,7 +57,7 @@ _Don't reinvent ERC-20/721; reuse audited code._
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
 | [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) | 27,256 | 🔵 Classic | 82 | Solidity | The standard audited token/access/proxy library. |
-| [solmate](https://github.com/transmissions11/solmate) | 4,285 (▼1) | ⚫ Abandoned | 6 | Solidity | Minimalist, modern contract primitives. |
+| [solmate](https://github.com/transmissions11/solmate) | 4,286 (▲1) | ⚫ Abandoned | 6 | Solidity | Minimalist, modern contract primitives. |
 | [solady](https://github.com/Vectorized/solady) | 3,376 | 🟢 Mature | 50 | Solidity | Gas-optimized Solidity building blocks. |
 
 ### Security & analysis
@@ -65,17 +65,17 @@ _Catch bugs before mainnet._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [slither](https://github.com/crytic/slither) | 6,373 (▲1) | 🔵 Classic | 61 | Python | The go-to static analyzer for contract vulnerabilities. |
-| [echidna](https://github.com/crytic/echidna) | 3,180 (▼1) | 🔵 Classic | 70 | Haskell | Property-based fuzzer for smart contracts. |
+| [slither](https://github.com/crytic/slither) | 6,372 (▼1) | 🔵 Classic | 61 | Python | The go-to static analyzer for contract vulnerabilities. |
+| [echidna](https://github.com/crytic/echidna) | 3,181 (▲1) | 🔵 Classic | 69 | Haskell | Property-based fuzzer for smart contracts. |
 
 ### Client libraries (TS/JS)
 _Talk to chains from apps._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [ethers.js](https://github.com/ethers-io/ethers.js) | 8,711 (▼2) | 🟢 Mature | 34 | TypeScript | The long-time standard JS/TS library. |
-| [wagmi](https://github.com/wevm/wagmi) | 6,753 (▲2) | 🔵 Classic | 75 | TypeScript | React hooks for Ethereum (pairs with viem). |
-| [viem](https://github.com/wevm/viem) | 3,568 (▲1) | 🔵 Classic | 85 | TypeScript | Modern, type-safe Ethereum client — default for new TS apps. |
+| [ethers.js](https://github.com/ethers-io/ethers.js) | 8,713 (▲2) | 🟢 Mature | 34 | TypeScript | The long-time standard JS/TS library. |
+| [wagmi](https://github.com/wevm/wagmi) | 6,751 (▼2) | 🔵 Classic | 75 | TypeScript | React hooks for Ethereum (pairs with viem). |
+| [viem](https://github.com/wevm/viem) | 3,567 (▼1) | 🔵 Classic | 85 | TypeScript | Modern, type-safe Ethereum client — default for new TS apps. |
 | [rainbowkit](https://github.com/rainbow-me/rainbowkit) | 2,835 | 🟢 Mature | 43 | MDX | Drop-in wallet-connection UX for dApps. |
 
 ### Execution clients (nodes)
@@ -83,25 +83,25 @@ _The chain itself._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [go-ethereum](https://github.com/ethereum/go-ethereum) | 51,373 (▲4) | 🔵 Classic | 100 | Go | geth — the reference Ethereum node (Go). |
-| [reth](https://github.com/paradigmxyz/reth) | 5,799 (▲14) | 🔵 Classic | 80 | Rust | Modern, fast Rust client (rising alternative). |
-| [nethermind](https://github.com/NethermindEth/nethermind) | 1,607 (▲2) | 🔵 Classic | 84 | C# | High-perf .NET client, strong on tooling. |
+| [go-ethereum](https://github.com/ethereum/go-ethereum) | 51,369 (▼4) | 🔵 Classic | 99 | Go | geth — the reference Ethereum node (Go). |
+| [reth](https://github.com/paradigmxyz/reth) | 5,785 (▼14) | 🔵 Classic | 85 | Rust | Modern, fast Rust client (rising alternative). |
+| [nethermind](https://github.com/NethermindEth/nethermind) | 1,605 (▼2) | 🔵 Classic | 99 | C# | High-perf .NET client, strong on tooling. |
 
 ### Oracles, AA & wallets
 _Price feeds, smart accounts, custody._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [chainlink](https://github.com/smartcontractkit/chainlink) | 8,247 (▼2) | 🔵 Classic | 98 | Go | Price feeds you need to value positions. |
-| [safe-smart-account](https://github.com/safe-fndn/safe-smart-account) | 2,181 | 🟢 Mature | 49 | TypeScript | Safe multisig — treasury/custody standard. |
-| [account-abstraction](https://github.com/eth-infinitism/account-abstraction) | 1,940 (▲1) | 🟠 Declining | 21 | TypeScript | Reference ERC-4337 account-abstraction. |
+| [chainlink](https://github.com/smartcontractkit/chainlink) | 8,249 (▲2) | 🔵 Classic | 97 | Go | Price feeds you need to value positions. |
+| [safe-smart-account](https://github.com/safe-fndn/safe-smart-account) | 2,181 | 🟢 Mature | 48 | TypeScript | Safe multisig — treasury/custody standard. |
+| [account-abstraction](https://github.com/eth-infinitism/account-abstraction) | 1,939 (▼1) | 🟠 Declining | 21 | TypeScript | Reference ERC-4337 account-abstraction. |
 
 ### Indexing & on-chain data
 _Turn raw chain state into queries._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [blockscout](https://github.com/blockscout/blockscout) | 4,716 (▲2) | 🔵 Classic | 80 | Elixir | Open EVM explorer; exposes an MCP server for agents. |
+| [blockscout](https://github.com/blockscout/blockscout) | 4,714 (▼2) | 🔵 Classic | 79 | Elixir | Open EVM explorer; exposes an MCP server for agents. |
 | [graph-node](https://github.com/graphprotocol/graph-node) | 3,152 | 🔵 Classic | 67 | Rust | The Graph — index chains into queryable subgraphs. |
 
 ### DeFi protocol references
@@ -109,8 +109,8 @@ _Read the canonical contracts._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [v3-core](https://github.com/Uniswap/v3-core) | 5,024 | 🟢 Mature | 33 | TypeScript | The concentrated-liquidity AMM still everywhere. |
-| [v4-core](https://github.com/Uniswap/v4-core) | 2,535 (▲1) | 🟢 Mature | 27 | Solidity | Latest AMM/DEX core (hooks). |
+| [v3-core](https://github.com/Uniswap/v3-core) | 5,024 | 🟢 Mature | 32 | TypeScript | The concentrated-liquidity AMM still everywhere. |
+| [v4-core](https://github.com/Uniswap/v4-core) | 2,534 (▼1) | 🟢 Mature | 26 | Solidity | Latest AMM/DEX core (hooks). |
 | [comet](https://github.com/compound-finance/comet) | 313 | 🟢 Mature | 29 | TypeScript | Compound III lending. |
 
 ### Solana
@@ -119,7 +119,7 @@ _The largest non-EVM L1._
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
 | [anchor](https://github.com/otter-sec/anchor) | 5,137 | 🔵 Classic | 82 | Rust | The standard Solana smart-contract framework. |
-| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,757 | 🔵 Classic | 73 | TypeScript | JS SDK for Solana. |
+| [solana-web3.js](https://github.com/solana-foundation/solana-web3.js) | 2,757 | 🟢 Mature | 61 | TypeScript | JS SDK for Solana. |
 | [agave](https://github.com/anza-xyz/agave) | 1,922 | 🟢 Mature | 97 | Rust | The Solana validator client. |
 
 ### Zero-knowledge
@@ -127,9 +127,9 @@ _Proofs, privacy, scaling._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [risc0](https://github.com/risc0/risc0) | 2,192 (▲1) | 🟢 Mature | 52 | C++ | General-purpose zkVM. |
+| [risc0](https://github.com/risc0/risc0) | 2,191 (▼1) | 🟢 Mature | 52 | C++ | General-purpose zkVM. |
 | [sp1](https://github.com/succinctlabs/sp1) | 1,737 | 🟢 Mature | 79 | Rust | Performant RISC-V zkVM. |
-| [circom](https://github.com/iden3/circom) | 1,695 (▲1) | 🟢 Mature | 36 | WebAssembly | Circuit compiler for zk-SNARKs. |
+| [circom](https://github.com/iden3/circom) | 1,694 (▼1) | 🟢 Mature | 36 | WebAssembly | Circuit compiler for zk-SNARKs. |
 
 ### 🔥 Agentic payments (x402)
 _AI agents settling on-chain — the breakout trend._
@@ -138,17 +138,17 @@ _AI agents settling on-chain — the breakout trend._
 |---|---|---|---|---|---|
 | [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,614 | 🔥 Hot | 79 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
 | [x402scan](https://github.com/Merit-Systems/x402scan) | 392 | 🔥 Hot | 77 | TypeScript | x402 ecosystem explorer. |
-| [x402](https://github.com/coinbase/x402) | 161 (▲2) | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
+| [x402](https://github.com/coinbase/x402) | 159 (▼2) | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
 
 ### 🔥 AI × finance / trading
 _Where crypto meets the agent stack._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,991 (▲451) | 🟢 Mature | 79 | Python | Multi-agent LLM trading framework. |
-| [OpenBB](https://github.com/OpenBB-finance/OpenBB) | 73,568 (▲115) | 🟢 Mature | 65 | Python | Financial data platform 'for analysts, quants & AI agents'. |
-| [AI-Trader](https://github.com/HKUDS/AI-Trader) | 22,608 (▲50) | 🟠 Declining | 27 | Python | Fully-automated agent-native trading. |
-| [eliza](https://github.com/elizaOS/eliza) | 19,512 (▲13) | 🟢 Mature | 80 | TypeScript | Crypto-native agent OS (wallet/chain plugins). |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 108,540 (▼451) | 🟢 Mature | 79 | Python | Multi-agent LLM trading framework. |
+| [OpenBB](https://github.com/OpenBB-finance/OpenBB) | 73,453 (▼115) | 🟢 Mature | 65 | Python | Financial data platform 'for analysts, quants & AI agents'. |
+| [AI-Trader](https://github.com/HKUDS/AI-Trader) | 22,558 (▼50) | 🟠 Declining | 27 | Python | Fully-automated agent-native trading. |
+| [eliza](https://github.com/elizaOS/eliza) | 19,499 (▼13) | 🟢 Mature | 78 | TypeScript | Crypto-native agent OS (wallet/chain plugins). |
 
 ### Referenced but not in the live dataset
 
@@ -175,4 +175,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-09-28T12:23:49.424Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-09-29T15:12:50.430Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

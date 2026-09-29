@@ -3,9 +3,9 @@
   "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
   "file": "rag-tooling.md",
   "category": "AI / RAG",
-  "summary": "31 RAG tools (731,737\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
+  "summary": "31 RAG tools (730,961\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
   "tool_count": 31,
-  "total_stars": 731737,
+  "total_stars": 730961,
   "categories": {
     "RAG framework / engine": 11,
     "Vector DB / search": 10,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "infiniflow/ragflow",
-      "stars": 91423
+      "stars": 91284
     },
     {
       "name": "PaddlePaddle/PaddleOCR",
-      "stars": 90329
+      "stars": 90194
     },
     {
       "name": "run-llama/llama_index",
-      "stars": 52334
+      "stars": 52312
     },
     {
       "name": "milvus-io/milvus",
-      "stars": 46270
+      "stars": 46253
     },
     {
       "name": "facebookresearch/faiss",
-      "stars": 40993
+      "stars": 40978
     }
   ],
-  "snapshot": "2026-09-28T12:23:49.424Z",
-  "generated": "2026-09-28",
+  "snapshot": "2026-09-29T15:12:50.430Z",
+  "generated": "2026-09-29",
   "generator": "scripts/reports/rag_tooling.py",
-  "created": "2026-09-26"
+  "created": "2026-05-31"
 }

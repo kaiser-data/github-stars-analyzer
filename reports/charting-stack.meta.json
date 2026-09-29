@@ -3,9 +3,9 @@
   "title": "Charting & Data-Visualization Tools \u2014 Advantages, Disadvantages & Use Cases",
   "file": "charting-stack.md",
   "category": "AI / Apps",
-  "summary": "61 charting and data-visualization tools (1,339,287\u2605) compared head-to-head on advantages, disadvantages, and use cases: web and React chart libraries, high-performance renderers, grammar-of-graphics stacks, Python plotting, BI platforms, data-app frameworks, dashboards-as-code, and native/desktop plotting.",
+  "summary": "61 charting and data-visualization tools (1,338,526\u2605) compared head-to-head on advantages, disadvantages, and use cases: web and React chart libraries, high-performance renderers, grammar-of-graphics stacks, Python plotting, BI platforms, data-app frameworks, dashboards-as-code, and native/desktop plotting.",
   "tool_count": 61,
-  "total_stars": 1339287,
+  "total_stars": 1338526,
   "categories": {
     "Web charting library": 9,
     "React charting library": 4,
@@ -21,27 +21,27 @@
   "top_tools": [
     {
       "name": "excalidraw/excalidraw",
-      "stars": 133140
+      "stars": 132866
     },
     {
       "name": "d3/d3",
-      "stars": 113776
+      "stars": 113763
     },
     {
       "name": "grafana/grafana",
-      "stars": 76963
+      "stars": 76905
     },
     {
       "name": "apache/superset",
-      "stars": 74946
+      "stars": 74914
     },
     {
       "name": "chartjs/Chart.js",
-      "stars": 67722
+      "stars": 67720
     }
   ],
-  "snapshot": "2026-09-28T12:23:49.424Z",
-  "generated": "2026-09-28",
+  "snapshot": "2026-09-29T15:12:50.430Z",
+  "generated": "2026-09-29",
   "generator": "scripts/reports/charting_stack.py",
-  "created": "2026-09-26"
+  "created": "2026-08-11"
 }
