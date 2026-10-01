@@ -3227,7 +3227,7 @@
       "label": "run_generators()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "scripts_reports_build_index_run_generators",
       "community": 41,
@@ -3237,7 +3237,7 @@
       "label": "created_date()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L102",
+      "source_location": "L103",
       "_origin": "ast",
       "id": "scripts_reports_build_index_created_date",
       "community": 41,
@@ -3247,7 +3247,7 @@
       "label": "make_charts()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L120",
+      "source_location": "L121",
       "_origin": "ast",
       "id": "scripts_reports_build_index_make_charts",
       "community": 41,
@@ -3257,7 +3257,7 @@
       "label": "inject_charts()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L151",
+      "source_location": "L152",
       "_origin": "ast",
       "id": "scripts_reports_build_index_inject_charts",
       "community": 41,
@@ -3267,7 +3267,7 @@
       "label": "build()",
       "file_type": "code",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L169",
+      "source_location": "L170",
       "_origin": "ast",
       "id": "scripts_reports_build_index_build",
       "community": 41,
@@ -3277,9 +3277,9 @@
       "label": "Run every generator, then report the ones that failed and the ones that drifted.",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L61",
+      "source_location": "L62",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_61",
+      "id": "scripts_reports_build_index_rationale_62",
       "community": 41,
       "norm_label": "run every generator, then report the ones that failed and the ones that drifted."
     },
@@ -3287,9 +3287,9 @@
       "label": "First git commit date (YYYY-MM-DD) of a report's markdown.      `generated` is b",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L103",
+      "source_location": "L104",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_103",
+      "id": "scripts_reports_build_index_rationale_104",
       "community": 41,
       "norm_label": "first git commit date (yyyy-mm-dd) of a report's markdown.      `generated` is b"
     },
@@ -3297,9 +3297,9 @@
       "label": "Render at-a-glance SVGs from a report's meta. Returns md image lines.      Chart",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L121",
+      "source_location": "L122",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_121",
+      "id": "scripts_reports_build_index_rationale_122",
       "community": 41,
       "norm_label": "render at-a-glance svgs from a report's meta. returns md image lines.      chart"
     },
@@ -3307,9 +3307,9 @@
       "label": "Insert chart images after the intro blockquote of a generated report.",
       "file_type": "rationale",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L152",
+      "source_location": "L153",
       "_origin": "ast",
-      "id": "scripts_reports_build_index_rationale_152",
+      "id": "scripts_reports_build_index_rationale_153",
       "community": 41,
       "norm_label": "insert chart images after the intro blockquote of a generated report."
     },
@@ -3392,6 +3392,36 @@
       "id": "scripts_reports_finetuning_stack",
       "community": 26,
       "norm_label": "finetuning_stack.py"
+    },
+    {
+      "label": "harness_engineering.py",
+      "file_type": "code",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_reports_harness_engineering",
+      "community": 134,
+      "norm_label": "harness_engineering.py"
+    },
+    {
+      "label": "short()",
+      "file_type": "code",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "scripts_reports_harness_engineering_short",
+      "community": 134,
+      "norm_label": "short()"
+    },
+    {
+      "label": "stale_note()",
+      "file_type": "code",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L278",
+      "_origin": "ast",
+      "id": "scripts_reports_harness_engineering_stale_note",
+      "community": 134,
+      "norm_label": "stale_note()"
     },
     {
       "label": "hermes_vs_openclaw.py",
@@ -7342,6 +7372,76 @@
       "id": "docs_handoff_2026_09_26_5_open_items",
       "community": 130,
       "norm_label": "5. open items"
+    },
+    {
+      "label": "HANDOFF-2026-09-29.md",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29",
+      "community": 131,
+      "norm_label": "handoff-2026-09-29.md"
+    },
+    {
+      "label": "Handoff \u2014 2026-09-29",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "community": 131,
+      "norm_label": "handoff \u2014 2026-09-29"
+    },
+    {
+      "label": "TL;DR",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_tl_dr",
+      "community": 131,
+      "norm_label": "tl;dr"
+    },
+    {
+      "label": "1. What changed upstream (checked 2026-09-29)",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_1_what_changed_upstream_checked_2026_09_29",
+      "community": 131,
+      "norm_label": "1. what changed upstream (checked 2026-09-29)"
+    },
+    {
+      "label": "2. `decision-classifiers` changes (`scripts/reports/decision_classifiers.py`)",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_2_decision_classifiers_changes_scripts_reports_decision_classifiers_py",
+      "community": 131,
+      "norm_label": "2. `decision-classifiers` changes (`scripts/reports/decision_classifiers.py`)"
+    },
+    {
+      "label": "3. Lessons",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_3_lessons",
+      "community": 131,
+      "norm_label": "3. lessons"
+    },
+    {
+      "label": "4. Open items",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_09_29_4_open_items",
+      "community": 131,
+      "norm_label": "4. open items"
     },
     {
       "label": "2026-09-25-gliclass-relevance-pilot.md",
@@ -11732,6 +11832,246 @@
       "id": "public_reports_finetuning_stack_methodology_caveats",
       "community": 64,
       "norm_label": "methodology & caveats"
+    },
+    {
+      "label": "harness-engineering.md",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering",
+      "community": 132,
+      "norm_label": "harness-engineering.md"
+    },
+    {
+      "label": "Harness Engineering \u2014 Ten Methods That Make an Agent Harness Good",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "community": 132,
+      "norm_label": "harness engineering \u2014 ten methods that make an agent harness good"
+    },
+    {
+      "label": "Executive summary",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_executive_summary",
+      "community": 132,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "The ten methods",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_the_ten_methods",
+      "community": 132,
+      "norm_label": "the ten methods"
+    },
+    {
+      "label": "Best repo per method",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_best_repo_per_method",
+      "community": 132,
+      "norm_label": "best repo per method"
+    },
+    {
+      "label": "Master comparison",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_master_comparison",
+      "community": 132,
+      "norm_label": "master comparison"
+    },
+    {
+      "label": "By method",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_by_method",
+      "community": 132,
+      "norm_label": "by method"
+    },
+    {
+      "label": "1. Minimal loop first",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_1_minimal_loop_first",
+      "community": 132,
+      "norm_label": "1. minimal loop first"
+    },
+    {
+      "label": "2. Small instruction budget",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_2_small_instruction_budget",
+      "community": 132,
+      "norm_label": "2. small instruction budget"
+    },
+    {
+      "label": "3. Context engineering",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_3_context_engineering",
+      "community": 132,
+      "norm_label": "3. context engineering"
+    },
+    {
+      "label": "4. Lean action space",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_4_lean_action_space",
+      "community": 132,
+      "norm_label": "4. lean action space"
+    },
+    {
+      "label": "5. External verification",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L177",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_5_external_verification",
+      "community": 132,
+      "norm_label": "5. external verification"
+    },
+    {
+      "label": "6. State on disk",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_6_state_on_disk",
+      "community": 132,
+      "norm_label": "6. state on disk"
+    },
+    {
+      "label": "7. Sub-agents for isolation",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_7_sub_agents_for_isolation",
+      "community": 132,
+      "norm_label": "7. sub-agents for isolation"
+    },
+    {
+      "label": "8. Guards & sandboxes",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_8_guards_sandboxes",
+      "community": 132,
+      "norm_label": "8. guards & sandboxes"
+    },
+    {
+      "label": "9. Durable runs & approvals",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_9_durable_runs_approvals",
+      "community": 132,
+      "norm_label": "9. durable runs & approvals"
+    },
+    {
+      "label": "10. Observe & eval the harness",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_10_observe_eval_the_harness",
+      "community": 132,
+      "norm_label": "10. observe & eval the harness"
+    },
+    {
+      "label": "What the evidence says does *not* work",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_what_the_evidence_says_does_not_work",
+      "community": 132,
+      "norm_label": "what the evidence says does *not* work"
+    },
+    {
+      "label": "Harness scorecard",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_harness_scorecard",
+      "community": 132,
+      "norm_label": "harness scorecard"
+    },
+    {
+      "label": "Graph analysis \u2014 how they relate",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L315",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_graph_analysis_how_they_relate",
+      "community": 132,
+      "norm_label": "graph analysis \u2014 how they relate"
+    },
+    {
+      "label": "Maintenance & risk signal",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L356",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_maintenance_risk_signal",
+      "community": 132,
+      "norm_label": "maintenance & risk signal"
+    },
+    {
+      "label": "Where should you start?",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L403",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_where_should_you_start",
+      "community": 132,
+      "norm_label": "where should you start?"
+    },
+    {
+      "label": "Adjacent (deliberately not listed)",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L416",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_adjacent_deliberately_not_listed",
+      "community": 132,
+      "norm_label": "adjacent (deliberately not listed)"
+    },
+    {
+      "label": "Methodology & sources",
+      "file_type": "document",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "public_reports_harness_engineering_methodology_sources",
+      "community": 132,
+      "norm_label": "methodology & sources"
     },
     {
       "label": "hermes-vs-openclaw.md",
@@ -17072,6 +17412,246 @@
       "id": "reports_finetuning_stack_methodology_caveats",
       "community": 65,
       "norm_label": "methodology & caveats"
+    },
+    {
+      "label": "harness-engineering.md",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reports_harness_engineering",
+      "community": 133,
+      "norm_label": "harness-engineering.md"
+    },
+    {
+      "label": "Harness Engineering \u2014 Ten Methods That Make an Agent Harness Good",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "community": 133,
+      "norm_label": "harness engineering \u2014 ten methods that make an agent harness good"
+    },
+    {
+      "label": "Executive summary",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_executive_summary",
+      "community": 133,
+      "norm_label": "executive summary"
+    },
+    {
+      "label": "The ten methods",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_the_ten_methods",
+      "community": 133,
+      "norm_label": "the ten methods"
+    },
+    {
+      "label": "Best repo per method",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_best_repo_per_method",
+      "community": 133,
+      "norm_label": "best repo per method"
+    },
+    {
+      "label": "Master comparison",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_master_comparison",
+      "community": 133,
+      "norm_label": "master comparison"
+    },
+    {
+      "label": "By method",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_by_method",
+      "community": 133,
+      "norm_label": "by method"
+    },
+    {
+      "label": "1. Minimal loop first",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_1_minimal_loop_first",
+      "community": 133,
+      "norm_label": "1. minimal loop first"
+    },
+    {
+      "label": "2. Small instruction budget",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_2_small_instruction_budget",
+      "community": 133,
+      "norm_label": "2. small instruction budget"
+    },
+    {
+      "label": "3. Context engineering",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_3_context_engineering",
+      "community": 133,
+      "norm_label": "3. context engineering"
+    },
+    {
+      "label": "4. Lean action space",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_4_lean_action_space",
+      "community": 133,
+      "norm_label": "4. lean action space"
+    },
+    {
+      "label": "5. External verification",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L177",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_5_external_verification",
+      "community": 133,
+      "norm_label": "5. external verification"
+    },
+    {
+      "label": "6. State on disk",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_6_state_on_disk",
+      "community": 133,
+      "norm_label": "6. state on disk"
+    },
+    {
+      "label": "7. Sub-agents for isolation",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_7_sub_agents_for_isolation",
+      "community": 133,
+      "norm_label": "7. sub-agents for isolation"
+    },
+    {
+      "label": "8. Guards & sandboxes",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_8_guards_sandboxes",
+      "community": 133,
+      "norm_label": "8. guards & sandboxes"
+    },
+    {
+      "label": "9. Durable runs & approvals",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L250",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_9_durable_runs_approvals",
+      "community": 133,
+      "norm_label": "9. durable runs & approvals"
+    },
+    {
+      "label": "10. Observe & eval the harness",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_10_observe_eval_the_harness",
+      "community": 133,
+      "norm_label": "10. observe & eval the harness"
+    },
+    {
+      "label": "What the evidence says does *not* work",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_what_the_evidence_says_does_not_work",
+      "community": 133,
+      "norm_label": "what the evidence says does *not* work"
+    },
+    {
+      "label": "Harness scorecard",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_harness_scorecard",
+      "community": 133,
+      "norm_label": "harness scorecard"
+    },
+    {
+      "label": "Graph analysis \u2014 how they relate",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L315",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_graph_analysis_how_they_relate",
+      "community": 133,
+      "norm_label": "graph analysis \u2014 how they relate"
+    },
+    {
+      "label": "Maintenance & risk signal",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L356",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_maintenance_risk_signal",
+      "community": 133,
+      "norm_label": "maintenance & risk signal"
+    },
+    {
+      "label": "Where should you start?",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L403",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_where_should_you_start",
+      "community": 133,
+      "norm_label": "where should you start?"
+    },
+    {
+      "label": "Adjacent (deliberately not listed)",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L416",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_adjacent_deliberately_not_listed",
+      "community": 133,
+      "norm_label": "adjacent (deliberately not listed)"
+    },
+    {
+      "label": "Methodology & sources",
+      "file_type": "document",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "reports_harness_engineering_methodology_sources",
+      "community": 133,
+      "norm_label": "methodology & sources"
     },
     {
       "label": "hermes-vs-openclaw.md",
@@ -23839,7 +24419,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L169",
+      "source_location": "L170",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_build",
@@ -23849,7 +24429,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L102",
+      "source_location": "L103",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_created_date",
@@ -23859,7 +24439,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L151",
+      "source_location": "L152",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_inject_charts",
@@ -23869,7 +24449,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L120",
+      "source_location": "L121",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_make_charts",
@@ -23879,7 +24459,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L60",
+      "source_location": "L61",
       "weight": 1.0,
       "source": "scripts_reports_build_index",
       "target": "scripts_reports_build_index_run_generators",
@@ -23889,9 +24469,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_61",
+      "source": "scripts_reports_build_index_rationale_62",
       "target": "scripts_reports_build_index_run_generators",
       "confidence_score": 1.0
     },
@@ -23900,7 +24480,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L182",
+      "source_location": "L183",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_created_date",
@@ -23910,9 +24490,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L103",
+      "source_location": "L104",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_103",
+      "source": "scripts_reports_build_index_rationale_104",
       "target": "scripts_reports_build_index_created_date",
       "confidence_score": 1.0
     },
@@ -23921,7 +24501,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_make_charts",
@@ -23933,7 +24513,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L134",
+      "source_location": "L135",
       "weight": 1.0,
       "source": "scripts_reports_build_index_make_charts",
       "target": "scripts_reports_lib_svg_hbar"
@@ -23942,9 +24522,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L121",
+      "source_location": "L122",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_121",
+      "source": "scripts_reports_build_index_rationale_122",
       "target": "scripts_reports_build_index_make_charts",
       "confidence_score": 1.0
     },
@@ -23953,7 +24533,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0,
       "source": "scripts_reports_build_index_build",
       "target": "scripts_reports_build_index_inject_charts",
@@ -23963,9 +24543,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/build_index.py",
-      "source_location": "L152",
+      "source_location": "L153",
       "weight": 1.0,
-      "source": "scripts_reports_build_index_rationale_152",
+      "source": "scripts_reports_build_index_rationale_153",
       "target": "scripts_reports_build_index_inject_charts",
       "confidence_score": 1.0
     },
@@ -24052,6 +24632,37 @@
       "weight": 1.0,
       "source": "scripts_reports_finetuning_stack",
       "target": "scripts_reports_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_reports_harness_engineering",
+      "target": "scripts_reports_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L274",
+      "weight": 1.0,
+      "source": "scripts_reports_harness_engineering",
+      "target": "scripts_reports_harness_engineering_short",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/harness_engineering.py",
+      "source_location": "L278",
+      "weight": 1.0,
+      "source": "scripts_reports_harness_engineering",
+      "target": "scripts_reports_harness_engineering_stale_note",
       "confidence_score": 1.0
     },
     {
@@ -28521,6 +29132,66 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_1_what_changed_upstream_checked_2026_09_29",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_2_decision_classifiers_changes_scripts_reports_decision_classifiers_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_3_lessons",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_4_open_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-09-29.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_09_29_handoff_2026_09_29",
+      "target": "docs_handoff_2026_09_29_tl_dr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/notes/2026-09-25-gliclass-relevance-pilot.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -32616,6 +33287,236 @@
       "weight": 1.0,
       "source": "public_reports_finetuning_stack_by_category",
       "target": "public_reports_finetuning_stack_rl_post_training_for_agents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering",
+      "target": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L416",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_adjacent_deliberately_not_listed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_best_repo_per_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_by_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_graph_analysis_how_they_relate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_harness_scorecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L356",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_maintenance_risk_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_master_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_methodology_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_the_ten_methods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_what_the_evidence_says_does_not_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L403",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "public_reports_harness_engineering_where_should_you_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_10_observe_eval_the_harness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_1_minimal_loop_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_2_small_instruction_budget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_3_context_engineering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_4_lean_action_space",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_5_external_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_6_state_on_disk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_7_sub_agents_for_isolation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_8_guards_sandboxes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/reports/harness-engineering.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "public_reports_harness_engineering_by_method",
+      "target": "public_reports_harness_engineering_9_durable_runs_approvals",
       "confidence_score": 1.0
     },
     {
@@ -37691,6 +38592,236 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_harness_engineering",
+      "target": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L416",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_adjacent_deliberately_not_listed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_best_repo_per_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_by_method",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_executive_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L315",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_graph_analysis_how_they_relate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_harness_scorecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L356",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_maintenance_risk_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_master_comparison",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_methodology_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_the_ten_methods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_what_the_evidence_says_does_not_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L403",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_harness_engineering_ten_methods_that_make_an_agent_harness_good",
+      "target": "reports_harness_engineering_where_should_you_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_10_observe_eval_the_harness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_1_minimal_loop_first",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_2_small_instruction_budget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_3_context_engineering",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_4_lean_action_space",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_5_external_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_6_state_on_disk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_7_sub_agents_for_isolation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_8_guards_sandboxes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/harness-engineering.md",
+      "source_location": "L250",
+      "weight": 1.0,
+      "source": "reports_harness_engineering_by_method",
+      "target": "reports_harness_engineering_9_durable_runs_approvals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "reports/hermes-vs-openclaw.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -40040,5 +41171,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ca100a833da44048cb9d1a18fbdc8fcdf30ab713"
+  "built_at_commit": "4890c28a6c81c6e2f4c7f1adb1dd72b72e705014"
 }

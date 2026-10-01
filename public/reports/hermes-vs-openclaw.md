@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`), cross-referenced with the repo-similarity graph.
 >
-> Generated 2026-09-29 by `scripts/reports/hermes_vs_openclaw.py` (regenerate any time — no API cost).
+> Generated 2026-10-01 by `scripts/reports/hermes_vs_openclaw.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/hermes-vs-openclaw-top-tools.svg)
 

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="315" viewBox="0 0 680 315" role="img" aria-label="Tools per category">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="314" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Tools per category</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">1. Minimal loop first</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">2. Small instruction budget</text>
+<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="76.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">3. Context engineering</text>
+<path d="M244,94 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="103.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">4. Lean action space</text>
+<path d="M244,121 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="130.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">5. External verification</text>
+<path d="M244,148 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="157.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
+<path d="M244,175 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="184.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<path d="M244,202 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="211.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
+<path d="M244,229 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="238.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">7. Sub-agents for isolation</text>
+<path d="M244,256 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="265.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">9. Durable runs &amp; approvals</text>
+<path d="M244,283 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="292.0" class="val" dominant-baseline="central">3</text>
+</svg>

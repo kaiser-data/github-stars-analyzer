@@ -55,6 +55,7 @@ GENERATORS = [
     "charting_stack.py",
     "printing_stack.py",
     "decision_classifiers.py",
+    "harness_engineering.py",
 ]
 
 def run_generators():

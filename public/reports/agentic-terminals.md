@@ -2,7 +2,7 @@
 
 > Derived from **kaiser-data**'s 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`), cross-referenced with the repo-similarity graph (2,263 nodes / 7,463 edges, 38 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
 >
-> Generated 2026-09-29 by `scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).
+> Generated 2026-10-01 by `scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/agentic-terminals-top-tools.svg)
 

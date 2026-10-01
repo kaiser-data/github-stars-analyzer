@@ -1,0 +1,666 @@
+<title>Harness Engineering</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --ground:#f7f8fa; --panel:#ffffff; --rule:#dde2ea; --hair:#e9edf3;
+  --ink:#12161c; --ink-2:#4a5462; --ink-3:#727c8b;
+  --accent:#2a78d6; --accent-soft:#e8f0fb;
+  --good:#1a7f4b; --good-bg:#e6f4ec;
+  --warn:#8a5a00; --warn-bg:#fbf0da;
+  --crit:#a52f2f; --crit-bg:#fbe9e9;
+  --hot:#1f5fa8; --hot-bg:#e4eefb;
+  --display:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0e1116; --panel:#161b22; --rule:#2b333e; --hair:#222a34;
+    --ink:#eef2f7; --ink-2:#b3bdca; --ink-3:#8592a2;
+    --accent:#3987e5; --accent-soft:#16283f;
+    --good:#5fd39a; --good-bg:#13291f;
+    --warn:#e0b25f; --warn-bg:#2c2416;
+    --crit:#f08b8b; --crit-bg:#2e1a1a;
+    --hot:#7fb2f0; --hot-bg:#152438;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0e1116; --panel:#161b22; --rule:#2b333e; --hair:#222a34;
+  --ink:#eef2f7; --ink-2:#b3bdca; --ink-3:#8592a2;
+  --accent:#3987e5; --accent-soft:#16283f;
+  --good:#5fd39a; --good-bg:#13291f;
+  --warn:#e0b25f; --warn-bg:#2c2416;
+  --crit:#f08b8b; --crit-bg:#2e1a1a;
+  --hot:#7fb2f0; --hot-bg:#152438;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--body); font-size:16px; line-height:1.65;
+  /* graph-paper ground: the subject's own material */
+  background-image:linear-gradient(var(--hair) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--hair) 1px,transparent 1px);
+  background-size:28px 28px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+header.hero{padding:72px 0 40px;border-bottom:2px solid var(--ink);margin-bottom:8px}
+.eyebrow{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 18px
+}
+h1{
+  font-family:var(--display);font-weight:600;line-height:1.04;
+  font-size:clamp(2.9rem,7vw,5.1rem);letter-spacing:-.022em;
+  margin:0 0 6px;text-wrap:balance
+}
+.sub{
+  font-family:var(--display);font-style:italic;color:var(--ink-2);
+  font-size:clamp(1.05rem,2.2vw,1.4rem);margin:0 0 28px;max-width:62ch
+}
+.intro{color:var(--ink-2);font-size:14.5px;max-width:78ch;margin:0}
+.intro code{font-size:12.5px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 40px;margin:30px 0 0;padding:0;list-style:none}
+.stats div{display:flex;flex-direction:column}
+.stats b{
+  font-family:var(--display);font-size:1.9rem;font-weight:600;
+  font-variant-numeric:tabular-nums;line-height:1.1
+}
+.stats span{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--ink-3)
+}
+h2{
+  font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3vw,2.05rem);
+  letter-spacing:-.014em;margin:64px 0 4px;padding-top:16px;
+  border-top:1px solid var(--rule);position:relative;text-wrap:balance
+}
+/* tick mark on the section axis — a plotting device, not decoration */
+h2::before{content:"";position:absolute;top:-1px;left:0;width:52px;height:3px;background:var(--accent)}
+h3{
+  font-family:var(--body);font-weight:650;font-size:.85rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--accent);margin:40px 0 10px
+}
+p{margin:0 0 14px;max-width:82ch}
+ul{margin:0 0 16px;padding:0;list-style:none;max-width:84ch}
+li{position:relative;padding-left:18px;margin-bottom:7px;color:var(--ink-2)}
+li::before{content:"";position:absolute;left:2px;top:.68em;width:6px;height:1.5px;background:var(--accent)}
+li.d1{margin-left:22px;font-size:14.6px}
+li.d2{margin-left:44px;font-size:14.2px}
+li strong,p strong{color:var(--ink);font-weight:640}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+code{
+  font-family:var(--mono);font-size:.855em;background:var(--accent-soft);
+  color:var(--ink);padding:.1em .34em;border-radius:3px
+}
+.tw{
+  overflow-x:auto;margin:0 0 26px;border:1px solid var(--rule);border-radius:6px;
+  background:var(--panel)
+}
+table{border-collapse:collapse;width:100%;font-size:13.4px;min-width:640px}
+thead th{
+  position:sticky;top:0;z-index:1;background:var(--panel);
+  text-align:left;vertical-align:bottom;padding:11px 13px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.075em;text-transform:uppercase;
+  color:var(--ink-3);border-bottom:1.5px solid var(--ink);white-space:nowrap
+}
+tbody td{
+  padding:11px 13px;border-bottom:1px solid var(--hair);
+  vertical-align:top;color:var(--ink-2);font-variant-numeric:tabular-nums
+}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:var(--accent-soft)}
+td strong{color:var(--ink)}
+td:first-child{min-width:150px}
+.pill{
+  display:inline-block;padding:2px 8px;border-radius:11px;
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.045em;white-space:nowrap
+}
+.s-good{background:var(--good-bg);color:var(--good)}
+.s-warn{background:var(--warn-bg);color:var(--warn)}
+.s-crit{background:var(--crit-bg);color:var(--crit)}
+.s-hot{background:var(--hot-bg);color:var(--hot)}
+.s-mute{background:var(--hair);color:var(--ink-3)}
+.chart{
+  margin:22px 0 30px;padding:16px;background:var(--panel);
+  border:1px solid var(--rule);border-radius:6px;overflow-x:auto
+}
+.chart svg{max-width:100%;height:auto;display:block}
+.fine{
+  font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  margin-top:36px;padding-top:14px;border-top:1px solid var(--rule)
+}
+@media (max-width:640px){
+  header.hero{padding:44px 0 30px}
+  .wrap{padding:0 16px 64px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<div class="wrap">
+<header class="hero">
+  <p class="eyebrow">Landscape report · github-stars-analyzer</p>
+  <h1>Harness Engineering</h1>
+  <p class="sub">Harness Engineering — Ten Methods That Make an Agent Harness Good</p>
+  <p class="intro">Derived from <strong>kaiser-data</strong>'s 2,263 starred repos (snapshot <code>2026-09-29T15:12:50.430Z</code>), cross-referenced with the repo-similarity graph (2,263 nodes / 7,463 edges, 38 communities). Evidence frozen 2026-10-01. Generated 2026-10-01 by <code>scripts/reports/harness_engineering.py</code> (regenerate any time — no API cost).</p>
+  <div class="stats"><div><b>38</b><span>tools compared</span></div><div><b>1,761,546</b><span>combined stars</span></div><div><b>10</b><span>layers</span></div><div><b>2026-09-29</b><span>data vintage</span></div></div>
+</header>
+<figure class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Top tools by stars</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">obra/superpowers</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">291,377</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">multica-ai/andrej-karpathy-skil…</text>
+<path d="M244,67 h249.9 q4,0 4,4 v10 q0,4 -4,4 h-249.9 z" class="bar"/>
+<text x="503.9" y="76.0" class="val" dominant-baseline="central">215,056</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">anthropics/skills</text>
+<path d="M244,94 h206.2 q4,0 4,4 v10 q0,4 -4,4 h-206.2 z" class="bar"/>
+<text x="460.2" y="103.0" class="val" dominant-baseline="central">178,045</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">github/spec-kit</text>
+<path d="M244,121 h159.9 q4,0 4,4 v10 q0,4 -4,4 h-159.9 z" class="bar"/>
+<text x="413.9" y="130.0" class="val" dominant-baseline="central">138,825</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
+<path d="M244,148 h125.0 q4,0 4,4 v10 q0,4 -4,4 h-125.0 z" class="bar"/>
+<text x="379.0" y="157.0" class="val" dominant-baseline="central">109,259</text>
+</svg></figure>
+<figure class="chart"><svg xmlns="http://www.w3.org/2000/svg" width="680" height="315" viewBox="0 0 680 315" role="img" aria-label="Tools per category">
+<style>
+text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
+.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
+.bar{fill:#2a78d6}
+@media(prefers-color-scheme:dark){
+.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
+.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+}
+</style>
+<rect x="0.5" y="0.5" width="679" height="314" rx="8" class="srf"/>
+<text x="14" y="25" class="ttl">Tools per category</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">1. Minimal loop first</text>
+<path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">2. Small instruction budget</text>
+<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="76.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">3. Context engineering</text>
+<path d="M244,94 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="103.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">4. Lean action space</text>
+<path d="M244,121 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="130.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">5. External verification</text>
+<path d="M244,148 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="157.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
+<path d="M244,175 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="184.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<path d="M244,202 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="211.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
+<path d="M244,229 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="238.0" class="val" dominant-baseline="central">4</text>
+<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">7. Sub-agents for isolation</text>
+<path d="M244,256 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="265.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">9. Durable runs &amp; approvals</text>
+<path d="M244,283 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="292.0" class="val" dominant-baseline="central">3</text>
+</svg></figure>
+<h2>Executive summary</h2>
+<ul>
+<li class="d0">The <strong>agent-harnesses</strong> report asks <em>which</em> harness approach to pick. This one asks <em>how to make any harness good</em> — ten methods, in the order you'd apply them, each backed by published evidence and mapped to <strong>38 repos</strong> in your stars (<strong>1,761,546★</strong>) that implement it.</li>
+<li class="d0"><strong>The through-line: the harness should do less, and verify more.</strong> The 2026 evidence consistently rewards <em>subtraction</em> (fewer tools, shorter instructions, elided context) and <em>external ground truth</em> (tests, browsers, hooks), and punishes self-assessment and unenforced prose.</li>
+<li class="d0"><strong>Three highest-leverage moves</strong>, if you do nothing else:</li>
+</ul>
+<p>  1. <strong>External verification</strong> — self-grading loops claimed progress 100% of the time while 56% of cycles made none (Park &amp; Choi, 2026).</p>
+<p>  2. <strong>Lean action space</strong> — code-against-tools cut one workflow from ~150k to ~2k tokens (Anthropic); removing 80% of tools took one agent from 80% to 100% success (Vercel).</p>
+<p>  3. <strong>Context management</strong> — the single most important component as budgets shrink, mostly by preventing overflow failures (Fan et al., 176 configs).</p>
+<ul>
+<li class="d0"><strong>Measure your own harness.</strong> Component effects are model- and budget-dependent, and almost no public harness repos log whether their rules fire.</li>
+</ul>
+<h2>The ten methods</h2>
+<div class="tw"><table><thead><tr><th>#</th><th>Method</th><th>The rule</th><th>Evidence</th></tr></thead><tbody>
+<tr><td>1</td><td><strong>Minimal loop first</strong></td><td>Start from the smallest loop that works, and add a harness component only in response to an observed failure — never on the assumption the model can't cope.</td><td>Practitioner consensus in 2026 (HumanLayer, marmelab survey). Fan et al. (176 configurations, 4 models) found a bash-only action space gives capable models <em>substantially lower cost</em> at equal performance; heavy scaffolding mostly helps weaker models.</td></tr>
+<tr><td>2</td><td><strong>Small instruction budget</strong></td><td>Keep the always-loaded instruction file short and hand-written (~60–100 lines); push everything else into skills or docs that load on demand.</td><td>HumanLayer recommends &lt;60 lines; OpenAI's harness write-up (via marmelab) lists context crowding, importance dilution, decay and untestability as failure modes of large instruction files. marmelab reports machine-generated context files <em>reduced</em> success and raised cost 20%+; human-written ones gained only ~4%.</td></tr>
+<tr><td>3</td><td><strong>Context engineering</strong></td><td>Treat the context window as the scarcest resource: keep the prefix stable for KV-cache hits, make history append-only, elide bulky tool output with rules <em>before</em> resorting to LLM summarization, and make compression restorable.</td><td>Fan et al.: context management matters most as budgets shrink, and rule-based elision before summarization works best — mainly by preventing overflow failures. Manus: KV-cache hit rate is the key production metric (cached input ~10× cheaper); keep URLs/paths so dropped content can be re-fetched.</td></tr>
+<tr><td>4</td><td><strong>Lean action space</strong></td><td>Fewer, sharper tools. Prefer CLIs the model already knows over wide MCP surfaces, load tool definitions on demand, and let the agent write code against tools so intermediate data never enters context.</td><td>Anthropic's <em>code execution with MCP</em> (Nov 2025): a Drive→Salesforce workflow fell from ~150k to ~2k tokens (−98.7%). Vercel (as reported by marmelab) removed 80% of an agent's tools: success 80%→100%, latency 724s→141s. HumanLayer swapped the Linear MCP server for a small CLI + examples.</td></tr>
+<tr><td>5</td><td><strong>External verification</strong></td><td>Give the agent back-pressure it cannot talk its way past: type checks, tests, linters, a browser on the real app. Swallow success output; surface only errors, with the fix written into the message.</td><td>Park &amp; Choi (2026): self-evaluating loops claimed improvement 100% of the time while 56% of cycles made zero or negative progress (the 'progress mirage'); LLM judges accepted 44% of real regressions. The mirage vanished on tasks with an externally verifiable boundary.</td></tr>
+<tr><td>6</td><td><strong>State on disk</strong></td><td>Persist the plan, feature list and progress to files (JSON beats markdown for anything the agent must not rewrite), commit often, and let each fresh session re-orient from those artifacts.</td><td>Anthropic's long-running harness (Nov 2025): an initializer agent writes a feature list + progress file + git repo; each coding session picks one item, verifies it, updates the files. JSON was edited inappropriately less often than markdown. Manus keeps a live todo.md to hold goals in recent attention.</td></tr>
+<tr><td>7</td><td><strong>Sub-agents for isolation</strong></td><td>Use sub-agents to <em>isolate context</em>, not to role-play: give them a bounded task (explore, trace, research) and have them return a condensed answer with <code>file:line</code> citations. Keep handoff chains short.</td><td>HumanLayer: sub-agents keep the parent in the 'smart zone' and can run on cheaper models. marmelab collects counter-evidence on <em>reviewer</em> agents (one study: −8pp on a 41% baseline) and Microsoft's finding that &gt;4 handoffs almost always failed.</td></tr>
+<tr><td>8</td><td><strong>Guards &amp; sandboxes</strong></td><td>Enforce rules with code, not prose: pre-execution hooks, permission gates, and an isolated sandbox per agent. Scan third-party skills and MCP servers before trust.</td><td>marmelab cites an analysis of 481 public CLAUDE.md files where only 4–16% of written security rules had any detectable enforcement, and reports action-by-action approval beating pre-written permission rules by 20+pp at blocking bad actions. HumanLayer warns skill registries have shipped malicious skills.</td></tr>
+<tr><td>9</td><td><strong>Durable runs &amp; approvals</strong></td><td>Make long runs survivable: checkpoint, retry and resume instead of restarting; put human approval at the plan and at irreversible actions rather than everywhere.</td><td>Follows from methods 6 and 8: durable state lets a crashed or rate-limited run resume, and approval at the irreversible step is where action-by-action review pays off. Evidence here is architectural rather than benchmarked.</td></tr>
+<tr><td>10</td><td><strong>Observe &amp; eval the harness</strong></td><td>Trace what the harness actually does (which rules fire, hook blocks, iterations, tokens), evaluate harness changes on a frozen task set with both should-fire and should-not-fire cases, and record why every control exists so it can be removed when models improve.</td><td>marmelab's survey: only 5 of 391 harness repos logged skill activations or blocks, and only one published before/after measurements for its rules. Fan et al. show component effects are model- and budget-dependent — so measure on <em>your</em> model.</td></tr>
+</tbody></table></div>
+<h2>Best repo per method</h2>
+<p>Top three from your stars for applying each method. ⚠ marks picks the snapshot reads as declining/abandoned.</p>
+<div class="tw"><table><thead><tr><th>Method</th><th>🥇 First pick</th><th>🥈 Second</th><th>🥉 Third</th></tr></thead><tbody>
+<tr><td><strong>1. Minimal loop first</strong></td><td><code>pi</code> — smallest complete loop to fork</td><td><code>claude-code-system-prompts</code> — read a mature harness's prompts</td><td><code>SWE-agent</code> — ACI design as a research reference</td></tr>
+<tr><td><strong>2. Small instruction budget</strong></td><td><code>agents.md</code> — the portable short contract <em>(⚠ declining)</em></td><td><code>skills</code> — canonical progressive-disclosure format</td><td><code>superpowers</code> — methodology packaged as skills</td></tr>
+<tr><td><strong>3. Context engineering</strong></td><td><code>context-mode</code> — keeps raw tool output out of context</td><td><code>rtk</code> — drop-in shell-output filter</td><td><code>headroom</code> — compresses logs/files/RAG chunks</td></tr>
+<tr><td><strong>4. Lean action space</strong></td><td><code>jcodemunch-mcp</code> — symbol-level reads, not whole files</td><td><code>serena</code> — LSP-backed retrieval + edits</td><td><code>agent-browser</code> — compact agent-first CLI</td></tr>
+<tr><td><strong>5. External verification</strong></td><td><code>playwright-mcp</code> — agent checks the running app</td><td><code>ultracite</code> — fast deterministic lint gate</td><td><code>open-code-review</code> — review pass on every diff</td></tr>
+<tr><td><strong>6. State on disk</strong></td><td><code>planning-with-files</code> — plan/progress files out of the box</td><td><code>spec-kit</code> — spec as the durable source of truth</td><td><code>ralph</code> — fresh-context loop over a PRD <em>(⚠ declining)</em></td></tr>
+<tr><td><strong>7. Sub-agents for isolation</strong></td><td><code>deepagents</code> — isolation built into the SDK</td><td><code>awesome-claude-code-subagents</code> — patterns to copy</td><td><code>oh-my-claudecode</code> — delegation inside Claude Code</td></tr>
+<tr><td><strong>8. Guards &amp; sandboxes</strong></td><td><code>cc-safety-net</code> — blocks destructive commands pre-exec</td><td><code>container-use</code> — one container per agent</td><td><code>SkillSpector</code> — vet skills before loading</td></tr>
+<tr><td><strong>9. Durable runs &amp; approvals</strong></td><td><code>open-multi-agent</code> — durable approvals + run records</td><td><code>trigger.dev</code> — retries/resume for long jobs</td><td><code>plannotator</code> — human approves the plan</td></tr>
+<tr><td><strong>10. Observe &amp; eval the harness</strong></td><td><code>langfuse</code> — traces + evals, self-hostable</td><td><code>harbor</code> — frozen task-set evals</td><td><code>codeburn</code> — token/cost per agent, local</td></tr>
+</tbody></table></div>
+<h2>Master comparison</h2>
+<p>Sorted by stars. <code>Health</code>/<code>Lifecycle</code> are the dataset's computed metrics; <code>Activity</code> is derived from days-since-push + 90-day commits.</p>
+<div class="tw"><table><thead><tr><th>Tool</th><th>Method</th><th>Lang</th><th>License</th><th>★ Stars</th><th>Lifecycle</th><th>Health</th><th>Activity</th><th>Last push</th><th>Age</th><th>Contrib(90d)</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></td><td>2. Small instruction budget</td><td>Shell</td><td>MIT</td><td>291,377 (▼977)</td><td><span class="pill s-hot">Hot</span></td><td>75</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>11mo</td><td>6</td></tr>
+<tr><td><a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank" rel="noopener">multica-ai/andrej-karpathy-skills</a></td><td>2. Small instruction budget</td><td>—</td><td>—</td><td>215,056 (▼575)</td><td><span class="pill s-warn">Declining</span></td><td>21</td><td><span class="pill s-warn">slowing</span></td><td>5mo ago</td><td>8mo</td><td>0</td></tr>
+<tr><td><a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a></td><td>2. Small instruction budget</td><td>Python</td><td>—</td><td>178,045 (▼695)</td><td><span class="pill s-good">Mature</span></td><td>50</td><td><span class="pill s-good">active</span></td><td>5d ago</td><td>1.0y</td><td>5</td></tr>
+<tr><td><a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">github/spec-kit</a></td><td>6. State on disk</td><td>Python</td><td>MIT</td><td>138,825 (▼395)</td><td><span class="pill s-hot">Hot</span></td><td>84</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>1.1y</td><td>27</td></tr>
+<tr><td><a href="https://github.com/earendil-works/pi" target="_blank" rel="noopener">earendil-works/pi</a></td><td>1. Minimal loop first</td><td>TypeScript</td><td>MIT</td><td>109,259 (▼729)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>1.1y</td><td>10</td></tr>
+<tr><td><a href="https://github.com/rtk-ai/rtk" target="_blank" rel="noopener">rtk-ai/rtk</a></td><td>3. Context engineering</td><td>Rust</td><td>Apache-2.0</td><td>81,687 (▼190)</td><td><span class="pill s-hot">Hot</span></td><td>75</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>8mo</td><td>12</td></tr>
+<tr><td><a href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noopener">headroomlabs-ai/headroom</a></td><td>3. Context engineering</td><td>Python</td><td>Apache-2.0</td><td>73,757 (▼239)</td><td><span class="pill s-hot">Hot</span></td><td>97</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>8mo</td><td>37</td></tr>
+<tr><td><a href="https://github.com/daytonaio/daytona" target="_blank" rel="noopener">daytonaio/daytona</a></td><td>8. Guards &amp; sandboxes</td><td>—</td><td>—</td><td>71,713 (▲16)</td><td><span class="pill s-good">Mature</span></td><td>47</td><td><span class="pill s-warn">slowing</span></td><td>2mo ago</td><td>2.6y</td><td>0</td></tr>
+<tr><td><a href="https://github.com/upstash/context7" target="_blank" rel="noopener">upstash/context7</a></td><td>4. Lean action space</td><td>TypeScript</td><td>MIT</td><td>62,414 (▼78)</td><td><span class="pill s-hot">Hot</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>1.5y</td><td>10</td></tr>
+<tr><td><a href="https://github.com/vercel-labs/agent-browser" target="_blank" rel="noopener">vercel-labs/agent-browser</a></td><td>4. Lean action space</td><td>Rust</td><td>Apache-2.0</td><td>43,178 (▼128)</td><td><span class="pill s-hot">Hot</span></td><td>76</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>8mo</td><td>8</td></tr>
+<tr><td><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">alibaba/open-code-review</a></td><td>5. External verification</td><td>Go</td><td>Apache-2.0</td><td>41,030 (▼1,094)</td><td><span class="pill s-hot">Hot</span></td><td>98</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>4mo</td><td>47</td></tr>
+<tr><td><a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener">Yeachan-Heo/oh-my-claudecode</a></td><td>7. Sub-agents for isolation</td><td>TypeScript</td><td>MIT</td><td>39,348 (▼42)</td><td><span class="pill s-hot">Hot</span></td><td>85</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>8mo</td><td>10</td></tr>
+<tr><td><a href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener">microsoft/playwright-mcp</a></td><td>5. External verification</td><td>TypeScript</td><td>Apache-2.0</td><td>37,556 (▼90)</td><td><span class="pill s-hot">Hot</span></td><td>72</td><td><span class="pill s-good">very active</span></td><td>11d ago</td><td>1.5y</td><td>8</td></tr>
+<tr><td><a href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener">langfuse/langfuse</a></td><td>10. Observe &amp; eval the harness</td><td>TypeScript</td><td>NOASSERTION</td><td>35,033 (▼104)</td><td><span class="pill s-good">Classic</span></td><td>89</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>3.4y</td><td>21</td></tr>
+<tr><td><a href="https://github.com/oraios/serena" target="_blank" rel="noopener">oraios/serena</a></td><td>4. Lean action space</td><td>Python</td><td>NOASSERTION</td><td>29,788 (▼80)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>1.5y</td><td>16</td></tr>
+<tr><td><a href="https://github.com/langchain-ai/deepagents" target="_blank" rel="noopener">langchain-ai/deepagents</a></td><td>7. Sub-agents for isolation</td><td>Python</td><td>MIT</td><td>29,760 (▼73)</td><td><span class="pill s-hot">Hot</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>1.2y</td><td>12</td></tr>
+<tr><td><a href="https://github.com/OthmanAdi/planning-with-files" target="_blank" rel="noopener">OthmanAdi/planning-with-files</a></td><td>6. State on disk</td><td>Shell</td><td>MIT</td><td>27,112 (▼52)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>6d ago</td><td>8mo</td><td>5</td></tr>
+<tr><td><a href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo/promptfoo</a></td><td>10. Observe &amp; eval the harness</td><td>TypeScript</td><td>MIT</td><td>25,439 (▼87)</td><td><span class="pill s-good">Classic</span></td><td>89</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>3.4y</td><td>28</td></tr>
+<tr><td><a href="https://github.com/VoltAgent/awesome-claude-code-subagents" target="_blank" rel="noopener">VoltAgent/awesome-claude-code-subagents</a></td><td>7. Sub-agents for isolation</td><td>Shell</td><td>MIT</td><td>25,314 (▼59)</td><td><span class="pill s-hot">Hot</span></td><td>58</td><td><span class="pill s-good">very active</span></td><td>8d ago</td><td>1.2y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/agentsmd/agents.md" target="_blank" rel="noopener">agentsmd/agents.md</a></td><td>2. Small instruction budget</td><td>TypeScript</td><td>MIT</td><td>24,608 (▼46)</td><td><span class="pill s-warn">Declining</span></td><td>39</td><td><span class="pill s-good">active</span></td><td>19d ago</td><td>1.1y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/context-mode</a></td><td>3. Context engineering</td><td>TypeScript</td><td>NOASSERTION</td><td>24,051 (▼110)</td><td><span class="pill s-hot">Rising</span></td><td>77</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>7mo</td><td>1</td></tr>
+<tr><td><a href="https://github.com/snarktank/ralph" target="_blank" rel="noopener">snarktank/ralph</a></td><td>6. State on disk</td><td>TypeScript</td><td>MIT</td><td>21,855 (▼15)</td><td><span class="pill s-warn">Declining</span></td><td>13</td><td><span class="pill s-crit">stale</span></td><td>8mo ago</td><td>8mo</td><td>0</td></tr>
+<tr><td><a href="https://github.com/SWE-agent/SWE-agent" target="_blank" rel="noopener">SWE-agent/SWE-agent</a></td><td>1. Minimal loop first</td><td>Python</td><td>MIT</td><td>20,402 (▼31)</td><td><span class="pill s-good">Mature</span></td><td>58</td><td><span class="pill s-good">active</span></td><td>8d ago</td><td>2.5y</td><td>4</td></tr>
+<tr><td><a href="https://github.com/NVIDIA/SkillSpector" target="_blank" rel="noopener">NVIDIA/SkillSpector</a></td><td>8. Guards &amp; sandboxes</td><td>Python</td><td>Apache-2.0</td><td>18,256 (▼231)</td><td><span class="pill s-hot">Hot</span></td><td>92</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>6mo</td><td>24</td></tr>
+<tr><td><a href="https://github.com/triggerdotdev/trigger.dev" target="_blank" rel="noopener">triggerdotdev/trigger.dev</a></td><td>9. Durable runs &amp; approvals</td><td>TypeScript</td><td>Apache-2.0</td><td>16,404 (▼25)</td><td><span class="pill s-good">Classic</span></td><td>82</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>3.8y</td><td>14</td></tr>
+<tr><td><a href="https://github.com/Piebald-AI/claude-code-system-prompts" target="_blank" rel="noopener">Piebald-AI/claude-code-system-prompts</a></td><td>1. Minimal loop first</td><td>JavaScript</td><td>MIT</td><td>12,764 (▼30)</td><td><span class="pill s-hot">Rising</span></td><td>77</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>10mo</td><td>2</td></tr>
+<tr><td><a href="https://github.com/cobusgreyling/loop-engineering" target="_blank" rel="noopener">cobusgreyling/loop-engineering</a></td><td>6. State on disk</td><td>TypeScript</td><td>MIT</td><td>11,309 (▼21)</td><td><span class="pill s-hot">Hot</span></td><td>68</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>3mo</td><td>13</td></tr>
+<tr><td><a href="https://github.com/getagentseal/codeburn" target="_blank" rel="noopener">getagentseal/codeburn</a></td><td>10. Observe &amp; eval the harness</td><td>TypeScript</td><td>MIT</td><td>11,228 (▼37)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>5mo</td><td>11</td></tr>
+<tr><td><a href="https://github.com/modem-dev/hunk" target="_blank" rel="noopener">modem-dev/hunk</a></td><td>5. External verification</td><td>TypeScript</td><td>MIT</td><td>9,386 (▼35)</td><td><span class="pill s-hot">Hot</span></td><td>76</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>6mo</td><td>13</td></tr>
+<tr><td><a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener">backnotprop/plannotator</a></td><td>9. Durable runs &amp; approvals</td><td>TypeScript</td><td>Apache-2.0</td><td>8,914 (▼110)</td><td><span class="pill s-hot">Hot</span></td><td>78</td><td><span class="pill s-good">very active</span></td><td>5d ago</td><td>9mo</td><td>15</td></tr>
+<tr><td><a href="https://github.com/open-multi-agent/open-multi-agent" target="_blank" rel="noopener">open-multi-agent/open-multi-agent</a></td><td>9. Durable runs &amp; approvals</td><td>TypeScript</td><td>MIT</td><td>6,953 (▼8)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>6d ago</td><td>6mo</td><td>10</td></tr>
+<tr><td><a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">harbor-framework/harbor</a></td><td>10. Observe &amp; eval the harness</td><td>Python</td><td>Apache-2.0</td><td>5,596 (▼65)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>1.2y</td><td>31</td></tr>
+<tr><td><a href="https://github.com/dagger/container-use" target="_blank" rel="noopener">dagger/container-use</a></td><td>8. Guards &amp; sandboxes</td><td>Go</td><td>Apache-2.0</td><td>4,045 (▼2)</td><td><span class="pill s-good">Mature</span></td><td>46</td><td><span class="pill s-good">active</span></td><td>8d ago</td><td>1.4y</td><td>2</td></tr>
+<tr><td><a href="https://github.com/haydenbleasel/ultracite" target="_blank" rel="noopener">haydenbleasel/ultracite</a></td><td>5. External verification</td><td>TypeScript</td><td>MIT</td><td>3,296 (▼2)</td><td><span class="pill s-good">Classic</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>10d ago</td><td>4.5y</td><td>7</td></tr>
+<tr><td><a href="https://github.com/jgravelle/jcodemunch-mcp" target="_blank" rel="noopener">jgravelle/jcodemunch-mcp</a></td><td>4. Lean action space</td><td>Python</td><td>NOASSERTION</td><td>2,711 (▼6)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>7mo</td><td>3</td></tr>
+<tr><td><a href="https://github.com/alexgreensh/token-optimizer" target="_blank" rel="noopener">alexgreensh/token-optimizer</a></td><td>3. Context engineering</td><td>Python</td><td>NOASSERTION</td><td>2,369 (▼53)</td><td><span class="pill s-hot">Hot</span></td><td>80</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>7mo</td><td>3</td></tr>
+<tr><td><a href="https://github.com/kenryu42/cc-safety-net" target="_blank" rel="noopener">kenryu42/cc-safety-net</a></td><td>8. Guards &amp; sandboxes</td><td>TypeScript</td><td>MIT</td><td>1,555 (▼6)</td><td><span class="pill s-hot">Hot</span></td><td>79</td><td><span class="pill s-good">very active</span></td><td>4d ago</td><td>9mo</td><td>3</td></tr>
+<tr><td><a href="https://github.com/Nicolepcx/harness_engineering" target="_blank" rel="noopener">Nicolepcx/harness_engineering</a></td><td>1. Minimal loop first</td><td>Jupyter Notebook</td><td>—</td><td>153 (▼1)</td><td><span class="pill s-warn">Declining</span></td><td>40</td><td><span class="pill s-good">active</span></td><td>1mo ago</td><td>2mo</td><td>1</td></tr>
+</tbody></table></div>
+<h2>By method</h2>
+<h3>1. Minimal loop first</h3>
+<p><strong>Rule.</strong> Start from the smallest loop that works, and add a harness component only in response to an observed failure — never on the assumption the model can't cope.</p>
+<p><strong>Evidence.</strong> Practitioner consensus in 2026 (HumanLayer, marmelab survey). Fan et al. (176 configurations, 4 models) found a bash-only action space gives capable models <em>substantially lower cost</em> at equal performance; heavy scaffolding mostly helps weaker models.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/earendil-works/pi" target="_blank" rel="noopener">earendil-works/pi</a></strong> · 109,259★ · TypeScript · Hot</li>
+</ul>
+<p>  Unified LLM API + small agent loop + TUI — a readable baseline to grow a harness from.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/SWE-agent/SWE-agent" target="_blank" rel="noopener">SWE-agent/SWE-agent</a></strong> · 20,402★ · Python · Mature</li>
+</ul>
+<p>  The project that named the <em>agent-computer interface</em> — proof that interface design moves scores.  </p>
+<p class="fine">topics: agent, ai, developer-tools, llm, agent-based-model, lms, cybersecurity</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Piebald-AI/claude-code-system-prompts" target="_blank" rel="noopener">Piebald-AI/claude-code-system-prompts</a></strong> · 12,764★ · JavaScript · Rising</li>
+</ul>
+<p>  Every part of Claude Code's system prompt, tool descriptions and sub-agent prompts — a production harness to read.  </p>
+<p class="fine">topics: claude-code, claude-code-system-prompts, system-prompts</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Nicolepcx/harness_engineering" target="_blank" rel="noopener">Nicolepcx/harness_engineering</a></strong> · 153★ · Jupyter Notebook · Declining</li>
+</ul>
+<p>  Code for the O'Reilly <em>Harness Engineering</em> book — worked examples of each harness layer.  </p>
+<p class="fine">topics: ai, ai-agent, ai-agents, ai-governance, ai-security, harness, harness-ai, harness-design</p>
+<h3>2. Small instruction budget</h3>
+<p><strong>Rule.</strong> Keep the always-loaded instruction file short and hand-written (~60–100 lines); push everything else into skills or docs that load on demand.</p>
+<p><strong>Evidence.</strong> HumanLayer recommends &lt;60 lines; OpenAI's harness write-up (via marmelab) lists context crowding, importance dilution, decay and untestability as failure modes of large instruction files. marmelab reports machine-generated context files <em>reduced</em> success and raised cost 20%+; human-written ones gained only ~4%.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a></strong> · 291,377★ · Shell · Hot</li>
+</ul>
+<p>  Skills + methodology (TDD, plans, review) delivered as progressively-disclosed skills.  </p>
+<p class="fine">topics: ai, brainstorming, coding, obra, sdlc, skills, superpowers, subagent-driven-development</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/multica-ai/andrej-karpathy-skills" target="_blank" rel="noopener">multica-ai/andrej-karpathy-skills</a></strong> · 215,056★ · — · Declining</li>
+</ul>
+<p>  A single short CLAUDE.md of behavioural rules — the minimal-instructions end of the spectrum.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a></strong> · 178,045★ · Python · Mature</li>
+</ul>
+<p>  Reference Agent Skills: knowledge loaded on demand, not pinned in every turn.  </p>
+<p class="fine">topics: agent-skills</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/agentsmd/agents.md" target="_blank" rel="noopener">agentsmd/agents.md</a></strong> · 24,608★ · TypeScript · Declining</li>
+</ul>
+<p>  AGENTS.md — one short, portable repo contract instead of a sprawling prompt.  </p>
+<p class="fine">topics: —</p>
+<h3>3. Context engineering</h3>
+<p><strong>Rule.</strong> Treat the context window as the scarcest resource: keep the prefix stable for KV-cache hits, make history append-only, elide bulky tool output with rules <em>before</em> resorting to LLM summarization, and make compression restorable.</p>
+<p><strong>Evidence.</strong> Fan et al.: context management matters most as budgets shrink, and rule-based elision before summarization works best — mainly by preventing overflow failures. Manus: KV-cache hit rate is the key production metric (cached input ~10× cheaper); keep URLs/paths so dropped content can be re-fetched.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/rtk-ai/rtk" target="_blank" rel="noopener">rtk-ai/rtk</a></strong> · 81,687★ · Rust · Hot</li>
+</ul>
+<p>  CLI proxy that filters and condenses shell output for coding agents.  </p>
+<p class="fine">topics: agentic-coding, ai-coding, anthropic, claude-code, cli, command-line-tool, cost-reduction, developer-tools</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/headroomlabs-ai/headroom" target="_blank" rel="noopener">headroomlabs-ai/headroom</a></strong> · 73,757★ · Python · Hot</li>
+</ul>
+<p>  Compresses tool outputs, logs, files and RAG chunks before they reach the model.  </p>
+<p class="fine">topics: agent, ai, anthropic, compression, context-engineering, context-window, fastapi, langchain</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/context-mode</a></strong> · 24,051★ · TypeScript · Rising</li>
+</ul>
+<p>  Sandboxes tool output out of the context window (claims ~98% reduction).  </p>
+<p class="fine">topics: claude, claude-code, claude-code-plugins, mcp, skills, codex, copilot, opencode</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/alexgreensh/token-optimizer" target="_blank" rel="noopener">alexgreensh/token-optimizer</a></strong> · 2,369★ · Python · Hot</li>
+</ul>
+<p>  Finds 'ghost tokens' and helps sessions survive compaction without quality decay.  </p>
+<p class="fine">topics: agentskills, claude-code, token-optimization, claude-code-skill, context-window, token-usage, ghost-tokens, context-engineering</p>
+<h3>4. Lean action space</h3>
+<p><strong>Rule.</strong> Fewer, sharper tools. Prefer CLIs the model already knows over wide MCP surfaces, load tool definitions on demand, and let the agent write code against tools so intermediate data never enters context.</p>
+<p><strong>Evidence.</strong> Anthropic's <em>code execution with MCP</em> (Nov 2025): a Drive→Salesforce workflow fell from ~150k to ~2k tokens (−98.7%). Vercel (as reported by marmelab) removed 80% of an agent's tools: success 80%→100%, latency 724s→141s. HumanLayer swapped the Linear MCP server for a small CLI + examples.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/upstash/context7" target="_blank" rel="noopener">upstash/context7</a></strong> · 62,414★ · TypeScript · Hot</li>
+</ul>
+<p>  Fetches current, version-specific docs on demand instead of stuffing them into prompts.  </p>
+<p class="fine">topics: llm, mcp, mcp-server, vibe-coding</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/vercel-labs/agent-browser" target="_blank" rel="noopener">vercel-labs/agent-browser</a></strong> · 43,178★ · Rust · Hot</li>
+</ul>
+<p>  Browser automation as a compact CLI built for agents rather than a large MCP surface.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/oraios/serena" target="_blank" rel="noopener">oraios/serena</a></strong> · 29,788★ · Python · Hot</li>
+</ul>
+<p>  Semantic (LSP-backed) retrieval and editing tools — fewer, sharper code tools.  </p>
+<p class="fine">topics: agent, ai, vibe-coding, mcp-server, ai-coding, language-server, programming, claude</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/jgravelle/jcodemunch-mcp" target="_blank" rel="noopener">jgravelle/jcodemunch-mcp</a></strong> · 2,711★ · Python · Hot</li>
+</ul>
+<p>  Symbol-level code retrieval — return the function, not the file.  </p>
+<p class="fine">topics: claude, claude-code, ai-coding, ast, code-intelligence, context-window, cursor, developer-tools</p>
+<h3>5. External verification</h3>
+<p><strong>Rule.</strong> Give the agent back-pressure it cannot talk its way past: type checks, tests, linters, a browser on the real app. Swallow success output; surface only errors, with the fix written into the message.</p>
+<p><strong>Evidence.</strong> Park &amp; Choi (2026): self-evaluating loops claimed improvement 100% of the time while 56% of cycles made zero or negative progress (the 'progress mirage'); LLM judges accepted 44% of real regressions. The mirage vanished on tasks with an externally verifiable boundary.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/alibaba/open-code-review" target="_blank" rel="noopener">alibaba/open-code-review</a></strong> · 41,030★ · Go · Hot</li>
+</ul>
+<p>  Hybrid deterministic + LLM code review run against the agent's diff.  </p>
+<p class="fine">topics: agent, code-review, code-review-assistant, harness, repository-level-context, agent-skills</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/microsoft/playwright-mcp" target="_blank" rel="noopener">microsoft/playwright-mcp</a></strong> · 37,556★ · TypeScript · Hot</li>
+</ul>
+<p>  Lets the agent drive the real app and check its own UI changes.  </p>
+<p class="fine">topics: mcp, playwright</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/modem-dev/hunk" target="_blank" rel="noopener">modem-dev/hunk</a></strong> · 9,386★ · TypeScript · Hot</li>
+</ul>
+<p>  Review-first terminal diff viewer — keeps a human verifying what the agent changed.  </p>
+<p class="fine">topics: cli, code-review, diff, git, tui, agents, jj, jujutsu</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/haydenbleasel/ultracite" target="_blank" rel="noopener">haydenbleasel/ultracite</a></strong> · 3,296★ · TypeScript · Classic</li>
+</ul>
+<p>  Zero-config lint/format — cheap, deterministic back-pressure inside the loop.  </p>
+<p class="fine">topics: biome, formatter, linter, cursor, mcp, vscode, windsurf, zed</p>
+<h3>6. State on disk</h3>
+<p><strong>Rule.</strong> Persist the plan, feature list and progress to files (JSON beats markdown for anything the agent must not rewrite), commit often, and let each fresh session re-orient from those artifacts.</p>
+<p><strong>Evidence.</strong> Anthropic's long-running harness (Nov 2025): an initializer agent writes a feature list + progress file + git repo; each coding session picks one item, verifies it, updates the files. JSON was edited inappropriately less often than markdown. Manus keeps a live todo.md to hold goals in recent attention.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/github/spec-kit" target="_blank" rel="noopener">github/spec-kit</a></strong> · 138,825★ · Python · Hot</li>
+</ul>
+<p>  Spec-driven development: the spec on disk steers each session.  </p>
+<p class="fine">topics: ai, copilot, development, engineering, prd, spec, spec-driven</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/OthmanAdi/planning-with-files" target="_blank" rel="noopener">OthmanAdi/planning-with-files</a></strong> · 27,112★ · Shell · Hot</li>
+</ul>
+<p>  Plans and progress persisted to files — crash-proof, resumable long tasks.  </p>
+<p class="fine">topics: claude, claude-code, claude-skills, manus, agent-skills, planning, autonomous-agents, codex</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/snarktank/ralph" target="_blank" rel="noopener">snarktank/ralph</a></strong> · 21,855★ · TypeScript · Declining</li>
+</ul>
+<p>  Fresh-context loop that re-reads a PRD and progress file until every item is done.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/cobusgreyling/loop-engineering" target="_blank" rel="noopener">cobusgreyling/loop-engineering</a></strong> · 11,309★ · TypeScript · Hot</li>
+</ul>
+<p>  Patterns and starters for designing the iteration itself.  </p>
+<p class="fine">topics: agentic-ai, ai-agents, claude-code, codex, devops-automation, github-actions, grok, llm</p>
+<h3>7. Sub-agents for isolation</h3>
+<p><strong>Rule.</strong> Use sub-agents to <em>isolate context</em>, not to role-play: give them a bounded task (explore, trace, research) and have them return a condensed answer with <code>file:line</code> citations. Keep handoff chains short.</p>
+<p><strong>Evidence.</strong> HumanLayer: sub-agents keep the parent in the 'smart zone' and can run on cheaper models. marmelab collects counter-evidence on <em>reviewer</em> agents (one study: −8pp on a 41% baseline) and Microsoft's finding that &gt;4 handoffs almost always failed.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/Yeachan-Heo/oh-my-claudecode" target="_blank" rel="noopener">Yeachan-Heo/oh-my-claudecode</a></strong> · 39,348★ · TypeScript · Hot</li>
+</ul>
+<p>  Multi-agent orchestration inside Claude Code — delegation via sub-agents.  </p>
+<p class="fine">topics: agentic-coding, ai-agents, claude, claude-code, oh-my-opencode, opencode, vibe-coding, automation</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/langchain-ai/deepagents" target="_blank" rel="noopener">langchain-ai/deepagents</a></strong> · 29,760★ · Python · Hot</li>
+</ul>
+<p>  Planning + filesystem + sub-agents with isolated context windows, as a library.  </p>
+<p class="fine">topics: deepagents, langchain, langgraph, ai, python, typescript, harness, harness-engineering</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/VoltAgent/awesome-claude-code-subagents" target="_blank" rel="noopener">VoltAgent/awesome-claude-code-subagents</a></strong> · 25,314★ · Shell · Hot</li>
+</ul>
+<p>  100+ sub-agent definitions — useful as patterns for scoped, condensed returns.  </p>
+<p class="fine">topics: ai-agents, claude, claude-ai, claude-subagents, subagents, ai-agent-framework, ai-agent-tools, claude-code-subagents</p>
+<h3>8. Guards &amp; sandboxes</h3>
+<p><strong>Rule.</strong> Enforce rules with code, not prose: pre-execution hooks, permission gates, and an isolated sandbox per agent. Scan third-party skills and MCP servers before trust.</p>
+<p><strong>Evidence.</strong> marmelab cites an analysis of 481 public CLAUDE.md files where only 4–16% of written security rules had any detectable enforcement, and reports action-by-action approval beating pre-written permission rules by 20+pp at blocking bad actions. HumanLayer warns skill registries have shipped malicious skills.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/daytonaio/daytona" target="_blank" rel="noopener">daytonaio/daytona</a></strong> · 71,713★ · — · Mature</li>
+</ul>
+<p>  Secure, elastic sandboxes for running AI-generated code.  </p>
+<p class="fine">topics: developer-tools, agentic-workflow, ai, ai-agents, ai-runtime, code-execution, code-interpreter, ai-sandboxes</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/NVIDIA/SkillSpector" target="_blank" rel="noopener">NVIDIA/SkillSpector</a></strong> · 18,256★ · Python · Hot</li>
+</ul>
+<p>  Scans agent skills for malicious or vulnerable patterns before you load them.  </p>
+<p class="fine">topics: agent-security, agent-skills, agentic-ai, ai-security, claude-code, mcp, prompt-injection, security-scanner</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/dagger/container-use" target="_blank" rel="noopener">dagger/container-use</a></strong> · 4,045★ · Go · Mature</li>
+</ul>
+<p>  Per-agent containerized environments so agents can't trample each other or the host.  </p>
+<p class="fine">topics: —</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/kenryu42/cc-safety-net" target="_blank" rel="noopener">kenryu42/cc-safety-net</a></strong> · 1,555★ · TypeScript · Hot</li>
+</ul>
+<p>  Pre-execution hook that blocks destructive git and filesystem commands.  </p>
+<p class="fine">topics: claude, claude-code, claude-code-plugin, security, codex, pi-extension, ai-agents, ai-safety</p>
+<h3>9. Durable runs &amp; approvals</h3>
+<p><strong>Rule.</strong> Make long runs survivable: checkpoint, retry and resume instead of restarting; put human approval at the plan and at irreversible actions rather than everywhere.</p>
+<p><strong>Evidence.</strong> Follows from methods 6 and 8: durable state lets a crashed or rate-limited run resume, and approval at the irreversible step is where action-by-action review pays off. Evidence here is architectural rather than benchmarked.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/triggerdotdev/trigger.dev" target="_blank" rel="noopener">triggerdotdev/trigger.dev</a></strong> · 16,404★ · TypeScript · Classic</li>
+</ul>
+<p>  Durable execution for agents and workflows — retries, resumes, long waits.  </p>
+<p class="fine">topics: automation, orchestration, scheduler, background-jobs, nextjs, serverless, ai, ai-agents</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/backnotprop/plannotator" target="_blank" rel="noopener">backnotprop/plannotator</a></strong> · 8,914★ · TypeScript · Hot</li>
+</ul>
+<p>  Annotate and approve agent plans and diffs before execution continues.  </p>
+<p class="fine">topics: claude-code, opencode, obsidian, pi-mono, plan-mode, codex, agents, code-review</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/open-multi-agent/open-multi-agent" target="_blank" rel="noopener">open-multi-agent/open-multi-agent</a></strong> · 6,953★ · TypeScript · Hot</li>
+</ul>
+<p>  Agent runtime with durable approvals and verifiable run records.  </p>
+<p class="fine">topics: agent-framework, ai-agents, claude, llm, multi-agent, openai, typescript, anthropic</p>
+<h3>10. Observe &amp; eval the harness</h3>
+<p><strong>Rule.</strong> Trace what the harness actually does (which rules fire, hook blocks, iterations, tokens), evaluate harness changes on a frozen task set with both should-fire and should-not-fire cases, and record why every control exists so it can be removed when models improve.</p>
+<p><strong>Evidence.</strong> marmelab's survey: only 5 of 391 harness repos logged skill activations or blocks, and only one published before/after measurements for its rules. Fan et al. show component effects are model- and budget-dependent — so measure on <em>your</em> model.</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener">langfuse/langfuse</a></strong> · 35,033★ · TypeScript · Classic</li>
+</ul>
+<p>  Open-source tracing + evals — see which steps, tools and rules actually fire.  </p>
+<p class="fine">topics: analytics, llm, llmops, large-language-models, openai, self-hosted, ycombinator, monitoring</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/promptfoo/promptfoo" target="_blank" rel="noopener">promptfoo/promptfoo</a></strong> · 25,439★ · TypeScript · Classic</li>
+</ul>
+<p>  Regression tests and red-teaming for prompts and agents in CI.  </p>
+<p class="fine">topics: llm, prompt-engineering, prompts, llmops, prompt-testing, testing, rag, evaluation</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/getagentseal/codeburn" target="_blank" rel="noopener">getagentseal/codeburn</a></strong> · 11,228★ · TypeScript · Hot</li>
+</ul>
+<p>  Local token/cost tracking across 37 coding agents — measure harness overhead.  </p>
+<p class="fine">topics: ai-coding, claude-code, cli, codex, cost-tracking, developer-tools, observability, terminal-ui</p>
+<ul>
+<li class="d0"><strong><a href="https://github.com/harbor-framework/harbor" target="_blank" rel="noopener">harbor-framework/harbor</a></strong> · 5,596★ · Python · Hot</li>
+</ul>
+<p>  Framework for evaluating and improving agents on frozen task sets.  </p>
+<p class="fine">topics: evals, rl-environments, terminal-bench</p>
+<h2>What the evidence says does <em>not</em> work</h2>
+<div class="tw"><table><thead><tr><th>Anti-pattern</th><th>Why</th></tr></thead><tbody>
+<tr><td>Auto-generated CLAUDE.md / AGENTS.md</td><td>Lowered task success vs. no file and raised cost 20%+ (marmelab survey).</td></tr>
+<tr><td>Prose security rules without enforcement</td><td>4–16% of written rules had detectable enforcement across 481 CLAUDE.md files.</td></tr>
+<tr><td>Letting the agent grade its own progress</td><td>100% claimed improvement vs. 56% no-or-negative progress (Park &amp; Choi).</td></tr>
+<tr><td>Adding a reviewer agent by default</td><td>One reported study: −8pp on a 41% baseline; separate generator/evaluator only with external signal.</td></tr>
+<tr><td>Long specialist handoff chains</td><td>&gt;4 handoffs almost always failed in Microsoft's Azure ops agent (via marmelab).</td></tr>
+<tr><td>Exposing every tool you have</td><td>Removing 80% of tools raised success to 100% and cut latency ~5× (Vercel, via marmelab).</td></tr>
+<tr><td>Timestamps / mutable history in the prompt prefix</td><td>Invalidates the KV-cache from that token on — ~10× input cost (Manus).</td></tr>
+<tr><td>Irreversible summarization</td><td>Lost detail can't be recovered; prefer elision that keeps a path/URL (Manus, Fan et al.).</td></tr>
+</tbody></table></div>
+<h2>Harness scorecard</h2>
+<p>Ten yes/no checks, one per method. A "no" is where to work next.</p>
+<div class="tw"><table><thead><tr><th>#</th><th>Check</th></tr></thead><tbody>
+<tr><td>1</td><td>Can you name the failure each harness component was added to fix?</td></tr>
+<tr><td>2</td><td>Is the always-loaded instruction file under ~100 hand-written lines?</td></tr>
+<tr><td>3</td><td>Is the prompt prefix byte-stable across turns, and is bulky tool output elided before it lands?</td></tr>
+<tr><td>4</td><td>Could you delete a third of the tools without losing a task? (Try it.)</td></tr>
+<tr><td>5</td><td>Does every 'done' claim pass a check the model can't fake — tests, types, a browser?</td></tr>
+<tr><td>6</td><td>If the process dies now, can a fresh session resume from files alone?</td></tr>
+<tr><td>7</td><td>Do sub-agents return condensed answers with <code>file:line</code> refs, in ≤4 hops?</td></tr>
+<tr><td>8</td><td>Is every safety rule enforced by a hook or sandbox, not just written down?</td></tr>
+<tr><td>9</td><td>Is human approval placed at the plan and at irreversible actions?</td></tr>
+<tr><td>10</td><td>Do you have a frozen task set, and before/after numbers for your last harness change?</td></tr>
+</tbody></table></div>
+<h2>Graph analysis — how they relate</h2>
+<p><strong>Community clustering.</strong> These 38 tools span <strong>15 of the graph's 38 communities</strong> — harness methods draw on very different corners of the ecosystem (context tooling, sandboxes, observability, skills).</p>
+<ul>
+<li class="d0"><strong>Community 15</strong> (7): <code>Nicolepcx/harness_engineering</code>, <code>obra/superpowers</code>, <code>headroomlabs-ai/headroom</code>, <code>langchain-ai/deepagents</code>, <code>VoltAgent/awesome-claude-code-subagents</code>, <code>daytonaio/daytona</code>, <code>open-multi-agent/open-multi-agent</code></li>
+<li class="d0"><strong>Community 2</strong> (4): <code>earendil-works/pi</code>, <code>agentsmd/agents.md</code>, <code>microsoft/playwright-mcp</code>, <code>snarktank/ralph</code></li>
+<li class="d0"><strong>Community 16</strong> (4): <code>rtk-ai/rtk</code>, <code>alexgreensh/token-optimizer</code>, <code>oraios/serena</code>, <code>Yeachan-Heo/oh-my-claudecode</code></li>
+<li class="d0"><strong>Community 4</strong> (3): <code>Piebald-AI/claude-code-system-prompts</code>, <code>anthropics/skills</code>, <code>triggerdotdev/trigger.dev</code></li>
+<li class="d0"><strong>Community 20</strong> (3): <code>mksglu/context-mode</code>, <code>jgravelle/jcodemunch-mcp</code>, <code>kenryu42/cc-safety-net</code></li>
+<li class="d0"><strong>Community 26</strong> (3): <code>haydenbleasel/ultracite</code>, <code>modem-dev/hunk</code>, <code>cobusgreyling/loop-engineering</code></li>
+<li class="d0"><strong>Community 12</strong> (3): <code>langfuse/langfuse</code>, <code>harbor-framework/harbor</code>, <code>promptfoo/promptfoo</code></li>
+<li class="d0"><strong>Community 13</strong> (2): <code>SWE-agent/SWE-agent</code>, <code>dagger/container-use</code></li>
+<li class="d0"><strong>Community 18</strong> (2): <code>upstash/context7</code>, <code>github/spec-kit</code></li>
+<li class="d0"><strong>Community 5</strong> (2): <code>backnotprop/plannotator</code>, <code>getagentseal/codeburn</code></li>
+</ul>
+<p><strong>Centrality (PageRank in the full 2,263-repo graph)</strong>:</p>
+<ul>
+<li class="d0"><code>mksglu/context-mode</code> — PageRank 0.0040</li>
+<li class="d0"><code>microsoft/playwright-mcp</code> — PageRank 0.0016</li>
+<li class="d0"><code>multica-ai/andrej-karpathy-skills</code> — PageRank 0.0014</li>
+<li class="d0"><code>kenryu42/cc-safety-net</code> — PageRank 0.0012</li>
+<li class="d0"><code>langchain-ai/deepagents</code> — PageRank 0.0011</li>
+<li class="d0"><code>SWE-agent/SWE-agent</code> — PageRank 0.0011</li>
+<li class="d0"><code>jgravelle/jcodemunch-mcp</code> — PageRank 0.0009</li>
+<li class="d0"><code>NVIDIA/SkillSpector</code> — PageRank 0.0007</li>
+<li class="d0"><code>open-multi-agent/open-multi-agent</code> — PageRank 0.0007</li>
+<li class="d0"><code>headroomlabs-ai/headroom</code> — PageRank 0.0006</li>
+</ul>
+<p><strong>Direct links between repos in this report</strong> (top similarity edges):</p>
+<ul>
+<li class="d0"><code>mksglu/context-mode</code> ⇄ <code>kenryu42/cc-safety-net</code> (w=0.929) — topics: claude, claude-code, codex, opencode; authors: github-actions[bot]</li>
+<li class="d0"><code>jgravelle/jcodemunch-mcp</code> ⇄ <code>mksglu/context-mode</code> (w=0.879) — topics: claude, claude-code, mcp, mcp-server; authors: github-actions[bot]</li>
+<li class="d0"><code>SWE-agent/SWE-agent</code> ⇄ <code>dagger/container-use</code> (w=0.400) — authors: anxkhn</li>
+<li class="d0"><code>open-multi-agent/open-multi-agent</code> ⇄ <code>cobusgreyling/loop-engineering</code> (w=0.382) — topics: ai-agents, claude, llm, anthropic; authors: Iams4kura</li>
+<li class="d0"><code>getagentseal/codeburn</code> ⇄ <code>rtk-ai/rtk</code> (w=0.281) — topics: ai-coding, claude-code, cli, developer-tools; authors: iliaal</li>
+<li class="d0"><code>cobusgreyling/loop-engineering</code> ⇄ <code>Yeachan-Heo/oh-my-claudecode</code> (w=0.224) — topics: ai-agents, claude-code, automation, claude</li>
+<li class="d0"><code>promptfoo/promptfoo</code> ⇄ <code>langfuse/langfuse</code> (w=0.206) — topics: llm, prompt-engineering, llmops, evaluation</li>
+<li class="d0"><code>Nicolepcx/harness_engineering</code> ⇄ <code>langchain-ai/deepagents</code> (w=0.200) — topics: ai, harness, harness-engineering</li>
+<li class="d0"><code>jgravelle/jcodemunch-mcp</code> ⇄ <code>alexgreensh/token-optimizer</code> (w=0.171) — topics: claude-code, context-window, token-optimization, codex</li>
+<li class="d0"><code>alexgreensh/token-optimizer</code> ⇄ <code>headroomlabs-ai/headroom</code> (w=0.171) — topics: claude-code, token-optimization, context-window, context-engineering</li>
+</ul>
+<h2>Maintenance &amp; risk signal</h2>
+<p>Bus factor = commit concentration (1 = single-maintainer risk). Methods outlive tools — if a pick goes stale, the method still applies; swap the repo.</p>
+<div class="tw"><table><thead><tr><th>Tool</th><th>Health</th><th>Lifecycle</th><th>Activity</th><th>Bus factor</th><th>Top-author share</th><th>Releases</th></tr></thead><tbody>
+<tr><td>alibaba/open-code-review</td><td>98</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>6</td><td>15%</td><td>133</td></tr>
+<tr><td>headroomlabs-ai/headroom</td><td>97</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>5</td><td>22%</td><td>170</td></tr>
+<tr><td>NVIDIA/SkillSpector</td><td>92</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>4</td><td>20%</td><td>17</td></tr>
+<tr><td>langfuse/langfuse</td><td>89</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>3</td><td>23%</td><td>700</td></tr>
+<tr><td>promptfoo/promptfoo</td><td>89</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>3</td><td>29%</td><td>426</td></tr>
+<tr><td>Yeachan-Heo/oh-my-claudecode</td><td>85</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>43%</td><td>252</td></tr>
+<tr><td>github/spec-kit</td><td>84</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>28%</td><td>225</td></tr>
+<tr><td>triggerdotdev/trigger.dev</td><td>82</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>34%</td><td>682</td></tr>
+<tr><td>alexgreensh/token-optimizer</td><td>80</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>88%</td><td>264</td></tr>
+<tr><td>earendil-works/pi</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>54%</td><td>263</td></tr>
+<tr><td>jgravelle/jcodemunch-mcp</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>97%</td><td>644</td></tr>
+<tr><td>oraios/serena</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>70%</td><td>16</td></tr>
+<tr><td>haydenbleasel/ultracite</td><td>79</td><td><span class="pill s-good">Classic</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>76%</td><td>387</td></tr>
+<tr><td>OthmanAdi/planning-with-files</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>73%</td><td>112</td></tr>
+<tr><td>kenryu42/cc-safety-net</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>92%</td><td>52</td></tr>
+<tr><td>open-multi-agent/open-multi-agent</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>85%</td><td>26</td></tr>
+<tr><td>getagentseal/codeburn</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>62%</td><td>71</td></tr>
+<tr><td>harbor-framework/harbor</td><td>79</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>35%</td><td>28</td></tr>
+<tr><td>upstash/context7</td><td>78</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>57%</td><td>127</td></tr>
+<tr><td>langchain-ai/deepagents</td><td>78</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>51%</td><td>296</td></tr>
+<tr><td>backnotprop/plannotator</td><td>78</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>72%</td><td>160</td></tr>
+<tr><td>Piebald-AI/claude-code-system-prompts</td><td>77</td><td><span class="pill s-hot">Rising</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>99%</td><td>247</td></tr>
+<tr><td>mksglu/context-mode</td><td>77</td><td><span class="pill s-hot">Rising</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>100%</td><td>195</td></tr>
+<tr><td>vercel-labs/agent-browser</td><td>76</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>2</td><td>47%</td><td>110</td></tr>
+<tr><td>modem-dev/hunk</td><td>76</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>79%</td><td>71</td></tr>
+<tr><td>obra/superpowers</td><td>75</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>79%</td><td>13</td></tr>
+<tr><td>rtk-ai/rtk</td><td>75</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>73%</td><td>357</td></tr>
+<tr><td>microsoft/playwright-mcp</td><td>72</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>53%</td><td>72</td></tr>
+<tr><td>cobusgreyling/loop-engineering</td><td>68</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>68%</td><td>2</td></tr>
+<tr><td>SWE-agent/SWE-agent</td><td>58</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>2</td><td>43%</td><td>10</td></tr>
+<tr><td>VoltAgent/awesome-claude-code-subagents</td><td>58</td><td><span class="pill s-hot">Hot</span></td><td><span class="pill s-good">very active</span></td><td>1</td><td>74%</td><td>0</td></tr>
+<tr><td>anthropics/skills</td><td>50</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>2</td><td>33%</td><td>0</td></tr>
+<tr><td>daytonaio/daytona</td><td>47</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>205</td></tr>
+<tr><td>dagger/container-use</td><td>46</td><td><span class="pill s-good">Mature</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>86%</td><td>14</td></tr>
+<tr><td>Nicolepcx/harness_engineering</td><td>40</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>100%</td><td>0</td></tr>
+<tr><td>agentsmd/agents.md</td><td>39</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-good">active</span></td><td>1</td><td>67%</td><td>0</td></tr>
+<tr><td>multica-ai/andrej-karpathy-skills</td><td>21</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-warn">slowing</span></td><td>0</td><td>0%</td><td>0</td></tr>
+<tr><td>snarktank/ralph</td><td>13</td><td><span class="pill s-warn">Declining</span></td><td><span class="pill s-crit">stale</span></td><td>0</td><td>0%</td><td>0</td></tr>
+</tbody></table></div>
+<p><strong>Watch items</strong> (snapshot reads declining/abandoned): <code>Nicolepcx/harness_engineering</code>, <code>agentsmd/agents.md</code>, <code>multica-ai/andrej-karpathy-skills</code>, <code>snarktank/ralph</code>.</p>
+<h2>Where should you start?</h2>
+<div class="tw"><table><thead><tr><th>If your harness…</th><th>Apply method</th><th>Start with</th></tr></thead><tbody>
+<tr><td>declares success on work that's broken</td><td>5. External verification</td><td><code>microsoft/playwright-mcp</code> + tests behind a hook</td></tr>
+<tr><td>burns tokens / hits context limits</td><td>3. Context engineering</td><td><code>mksglu/context-mode</code> or <code>rtk-ai/rtk</code></td></tr>
+<tr><td>picks the wrong tool or loops on tool calls</td><td>4. Lean action space</td><td>cut tools; <code>jgravelle/jcodemunch-mcp</code> for code reads</td></tr>
+<tr><td>ignores its CLAUDE.md</td><td>2. Small instruction budget</td><td>shrink it; move detail into <code>anthropics/skills</code>-style skills</td></tr>
+<tr><td>loses the thread on multi-hour tasks</td><td>6. State on disk</td><td><code>OthmanAdi/planning-with-files</code></td></tr>
+<tr><td>has done something destructive</td><td>8. Guards &amp; sandboxes</td><td><code>kenryu42/cc-safety-net</code> + <code>dagger/container-use</code></td></tr>
+<tr><td>changed and you can't tell if it got better</td><td>10. Observe &amp; eval</td><td><code>harbor-framework/harbor</code> + <code>langfuse/langfuse</code></td></tr>
+<tr><td>is being designed from scratch</td><td>1. Minimal loop first</td><td>fork <code>earendil-works/pi</code>; read <code>Piebald-AI/claude-code-system-prompts</code></td></tr>
+</tbody></table></div>
+<h2>Adjacent (deliberately not listed)</h2>
+<ul>
+<li class="d0"><strong>affaan-m/ECC</strong> (267,158★) — a full meta-harness <em>product</em> — compared in the agent-harnesses report</li>
+<li class="d0"><strong>ruvnet/ruflo</strong> (73,238★) — swarm meta-harness — agent-harnesses / agent-orchestration reports</li>
+<li class="d0"><strong>dair-ai/Prompt-Engineering-Guide</strong> (78,613★) — prompt-level, not harness-level — see the ai-engineer-stack report</li>
+<li class="d0"><strong>guardrails-ai/guardrails</strong> (7,447★) — output guardrails for LLM apps, not agent-loop enforcement — decision-classifiers report</li>
+<li class="d0"><strong>topoteretes/cognee</strong> (30,973★) — long-term memory platform — agent-memory / memory-frameworks reports</li>
+<li class="d0"><strong>openai/codex</strong> (126,387★) — a coding agent (the thing being harnessed) — ai-coding-tuis report</li>
+</ul>
+<h2>Methodology &amp; sources</h2>
+<ul>
+<li class="d0"><strong>Repo data</strong>: <code>data/classified.json</code> + <code>public/data/graph.json</code>; deterministic, no API calls at generation time. Selection: keyword scan (context / compaction / tool / sandbox / guard / hook / verification / planning / durable / tracing / eval / harness) then manual curation by <em>the method a repo helps you apply</em>. Several repos also appear in the agent-harnesses report under an approach lens.</li>
+<li class="d0"><strong>Evidence</strong> was gathered by web research on 2026-10-01 and is frozen in the generator — it does not refresh on rebuild. Numbers are point-in-time; several are vendor- or practitioner-reported, and some (Vercel, Microsoft, the 481-file and reviewer-agent studies, OpenAI's harness write-up) are cited <strong>second-hand via the marmelab survey</strong>, not from the primary source. Re-verify before quoting.</li>
+<li class="d0"><strong>Sources:</strong></li>
+<li class="d1">Fan et al., <em>An Empirical Study of Harness Design for Coding Agents</em>, arXiv:2609.20804 (2026-09-17) — https://arxiv.org/abs/2609.20804</li>
+<li class="d1">Park &amp; Choi, <em>When Do Agent Loops Mistake Stagnation for Progress?</em>, arXiv:2607.25152 (2026-07-27, rev. 2026-09-29) — https://arxiv.org/abs/2607.25152</li>
+<li class="d1">marmelab, <em>The State of AI Harness Engineering 2026</em> (2026-09-24) — https://marmelab.com/blog/2026/09/24/the-state-of-ai-harness-engineering-2026.html</li>
+<li class="d1">HumanLayer, <em>Skill Issue: Harness Engineering for Coding Agents</em> (2026-03-12) — https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents</li>
+<li class="d1">Anthropic Engineering, <em>Code execution with MCP</em> (Nov 2025) — summarized at https://www.marktechpost.com/2025/11/08/anthropic-turns-mcp-agents-into-code-first-systems-with-code-execution-with-mcp-approach/</li>
+<li class="d1">Anthropic Engineering, <em>Effective harnesses for long-running agents</em> (Nov 2025) — summarized at https://www.zenml.io/llmops-database/long-running-agent-harness-for-multi-context-software-development</li>
+<li class="d1">Peak Ji (Manus), <em>Context Engineering for AI Agents: Lessons from Building Manus</em> (Jul 2025) — https://medium.com/@peakji/context-engineering-for-ai-agents-lessons-from-building-manus-71883f0a67f2</li>
+<li class="d0"><strong>Metrics</strong> (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.</li>
+</ul>
+<p class="fine">Tools covered: 38 · Snapshot: 2026-09-29T15:12:50.430Z</p>
+</div>

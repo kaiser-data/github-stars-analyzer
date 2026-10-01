@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-09-29)
+# Graph Report - github-stars-analyzer  (2026-10-01)
 
 ## Corpus Check
-- 225 files · ~3,779,344 words
+- 230 files · ~3,803,410 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1957 nodes · 2022 edges · 131 communities (114 shown, 17 thin omitted)
+- 2015 nodes · 2077 edges · 135 communities (118 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ca100a83`
+- Built from commit: `4890c28a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -140,6 +140,9 @@
 - [[_COMMUNITY_GLiClass as a discovery relevance signal — pilot, 2026-09-25|GLiClass as a discovery relevance signal — pilot, 2026-09-25]]
 - [[_COMMUNITY_gliclass_score.py|gliclass_score.py]]
 - [[_COMMUNITY_Handoff — 2026-09-26|Handoff — 2026-09-26]]
+- [[_COMMUNITY_Handoff — 2026-09-29|Handoff — 2026-09-29]]
+- [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
+- [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -168,7 +171,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (131 total, 17 thin omitted)
+## Communities (135 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -602,8 +605,20 @@ Nodes (6): GLiClass as a discovery relevance signal — pilot, 2026-09-25, Live 
 Cohesion: 0.25
 Nodes (7): 1. Merging PR #3, 2. Discovery changes (`scripts/discover.mjs`, `scripts/lib/discover/`), 3. What the GLiClass evaluation found, 4. Lessons from this session, 5. Open items, Handoff — 2026-09-26, TL;DR
 
+### Community 131 - "Handoff — 2026-09-29"
+Cohesion: 0.29
+Nodes (6): 1. What changed upstream (checked 2026-09-29), 2. `decision-classifiers` changes (`scripts/reports/decision_classifiers.py`), 3. Lessons, 4. Open items, Handoff — 2026-09-29, TL;DR
+
+### Community 132 - "Harness Engineering — Ten Methods That Make an Agent Harness Good"
+Cohesion: 0.08
+Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small instruction budget, 3. Context engineering, 4. Lean action space, 5. External verification, 6. State on disk, 7. Sub-agents for isolation (+15 more)
+
+### Community 133 - "Harness Engineering — Ten Methods That Make an Agent Harness Good"
+Cohesion: 0.08
+Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small instruction budget, 3. Context engineering, 4. Lean action space, 5. External verification, 6. State on disk, 7. Sub-agents for isolation (+15 more)
+
 ## Knowledge Gaps
-- **1315 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1310 more)
+- **1362 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1357 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -611,7 +626,7 @@ Nodes (7): 1. Merging PR #3, 2. Discovery changes (`scripts/discover.mjs`, `scri
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1359 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1406 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
