@@ -3,9 +3,9 @@
   "title": "Decision Classifiers & Guard Models \u2014 Landscape Report",
   "file": "decision-classifiers.md",
   "category": "AI / Evaluation",
-  "summary": "23 tools (65,936\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
+  "summary": "23 tools (66,623\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
   "tool_count": 23,
-  "total_stars": 65936,
+  "total_stars": 66623,
   "categories": {
     "Typed decision API": 2,
     "Open decision model": 2,
@@ -20,27 +20,27 @@
   "top_tools": [
     {
       "name": "BoundaryML/baml",
-      "stars": 9284
+      "stars": 9381
     },
     {
       "name": "guardrails-ai/guardrails",
-      "stars": 7447
+      "stars": 7486
     },
     {
       "name": "NVIDIA-NeMo/Guardrails",
-      "stars": 7190
+      "stars": 7244
     },
     {
       "name": "katanemo/plano",
-      "stars": 7066
+      "stars": 7075
     },
     {
       "name": "BlockRunAI/ClawRouter",
-      "stars": 6614
+      "stars": 6612
     }
   ],
-  "snapshot": "2026-09-29T15:12:50.430Z",
-  "generated": "2026-10-01",
+  "snapshot": "2026-10-05T13:01:39.533Z",
+  "generated": "2026-10-05",
   "generator": "scripts/reports/decision_classifiers.py",
-  "created": "2026-09-25"
+  "created": "2026-10-01"
 }

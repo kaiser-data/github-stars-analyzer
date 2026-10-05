@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 18 data vintages: the 8-day movers, relative breakouts, sustained climbers, 54 new entrants, and what has gone flat.",
+  "summary": "Measured star momentum across 19 data vintages: the 7-day movers, relative breakouts, sustained climbers, 56 new entrants, and what has gone flat.",
   "tool_count": 119,
-  "total_stars": 5541427,
+  "total_stars": 6090267,
   "categories": {
-    "Risers": 1594,
-    "Breakouts": 1520,
-    "New entrants": 54,
-    "Cooling": 396
+    "Risers": 1647,
+    "Breakouts": 1556,
+    "New entrants": 56,
+    "Cooling": 165
   },
   "top_tools": [
     {
-      "name": "browser-use/jev-ultrafast",
-      "stars": 19977
+      "name": "debpalash/VoiceStudio",
+      "stars": 53440
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "stars": 155543
     },
     {
       "name": "vectorize-io/hindsight",
-      "stars": 28400
+      "stars": 45723
     },
     {
-      "name": "stablyai/orca",
-      "stars": 77810
+      "name": "paperclipai/paperclip",
+      "stars": 97398
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "stars": 235536
-    },
-    {
-      "name": "cloudflare/security-audit-skill",
-      "stars": 21428
+      "stars": 243747
     }
   ],
   "chart_top_series": [
     {
-      "name": "browser-use/jev-ultrafast",
-      "value": 6076
+      "name": "debpalash/VoiceStudio",
+      "value": 11755
+    },
+    {
+      "name": "DietrichGebert/ponytail",
+      "value": 8341
     },
     {
       "name": "vectorize-io/hindsight",
-      "value": 4233
+      "value": 6216
     },
     {
-      "name": "stablyai/orca",
-      "value": 3659
+      "name": "paperclipai/paperclip",
+      "value": 5823
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 3641
+      "value": 5354
     },
     {
-      "name": "cloudflare/security-audit-skill",
-      "value": 2885
+      "name": "stablyai/orca",
+      "value": 5207
     },
     {
       "name": "affaan-m/ECC",
-      "value": 2868
+      "value": 4632
     },
     {
-      "name": "rocketride-org/rocketride-server",
-      "value": 2786
-    },
-    {
-      "name": "farion1231/cc-switch",
-      "value": 2755
+      "name": "ifixai-ai/iFixAi",
+      "value": 4542
     }
   ],
-  "chart_top_title": "Biggest star gains (8d)",
+  "chart_top_title": "Biggest star gains (7d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-09-29T15:12:50.430Z",
-  "generated": "2026-10-01",
+  "snapshot": "2026-10-05T13:01:39.533Z",
+  "generated": "2026-10-05",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-08-08"
+  "created": "2026-10-01"
 }

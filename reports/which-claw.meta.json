@@ -3,9 +3,9 @@
   "title": "Which Claw Should I Use? \u2014 A Decision Report",
   "file": "which-claw.md",
   "category": "AI / Comparison",
-  "summary": "Decision report ranking 13 standalone OpenClaw-family claws (incl. functional ones like Hermes) on a transparent composite (health, adoption, resilience, maturity, momentum). Winner: openclaw \u2014 robust across 6 weight profiles. Adds weight-sensitivity, Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table.",
+  "summary": "Decision report ranking 13 standalone OpenClaw-family claws (incl. functional ones like Hermes) on a transparent composite (health, adoption, resilience, maturity, momentum). Winner: hermes-agent \u2014 robust across 6 weight profiles. Adds weight-sensitivity, Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table.",
   "tool_count": 13,
-  "total_stars": 1127238,
+  "total_stars": 1131497,
   "categories": {
     "General assistant": 8,
     "Secure runtime": 3,
@@ -13,28 +13,28 @@
   },
   "top_tools": [
     {
-      "name": "openclaw/openclaw",
-      "stars": 390467
+      "name": "NousResearch/hermes-agent",
+      "stars": 251309
     },
     {
-      "name": "NousResearch/hermes-agent",
-      "stars": 248814
+      "name": "openclaw/openclaw",
+      "stars": 391416
     },
     {
       "name": "zeroclaw-labs/zeroclaw",
-      "stars": 32878
-    },
-    {
-      "name": "HKUDS/nanobot",
-      "stars": 48561
+      "stars": 32931
     },
     {
       "name": "code-yeongyu/oh-my-openagent",
-      "stars": 69395
+      "stars": 69807
+    },
+    {
+      "name": "nearai/ironclaw",
+      "stars": 12639
     }
   ],
-  "snapshot": "2026-09-29T15:12:50.430Z",
-  "generated": "2026-10-01",
+  "snapshot": "2026-10-05T13:01:39.533Z",
+  "generated": "2026-10-05",
   "generator": "scripts/reports/which_claw.py",
-  "created": "2026-06-03"
+  "created": "2026-10-01"
 }

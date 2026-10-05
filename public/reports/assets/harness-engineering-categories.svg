@@ -29,13 +29,13 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
 <path d="M244,175 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
 <text x="594.0" y="184.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
 <path d="M244,202 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
 <text x="594.0" y="211.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
-<path d="M244,229 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="238.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">7. Sub-agents for isolation</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">7. Sub-agents for isolation</text>
+<path d="M244,229 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
+<text x="508.0" y="238.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
 <path d="M244,256 h254.0 q4,0 4,4 v10 q0,4 -4,4 h-254.0 z" class="bar"/>
 <text x="508.0" y="265.0" class="val" dominant-baseline="central">3</text>
 <text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">9. Durable runs &amp; approvals</text>

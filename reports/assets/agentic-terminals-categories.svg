@@ -24,8 +24,8 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <path d="M244,121 h214.9 q4,0 4,4 v10 q0,4 -4,4 h-214.9 z" class="bar"/>
 <text x="468.9" y="130.0" class="val" dominant-baseline="central">7</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">Parallel-agent orchestration</text>
-<path d="M244,148 h152.4 q4,0 4,4 v10 q0,4 -4,4 h-152.4 z" class="bar"/>
-<text x="406.4" y="157.0" class="val" dominant-baseline="central">5</text>
+<path d="M244,148 h121.1 q4,0 4,4 v10 q0,4 -4,4 h-121.1 z" class="bar"/>
+<text x="375.1" y="157.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">Terminal capability / reference</text>
 <path d="M244,175 h121.1 q4,0 4,4 v10 q0,4 -4,4 h-121.1 z" class="bar"/>
 <text x="375.1" y="184.0" class="val" dominant-baseline="central">4</text>
