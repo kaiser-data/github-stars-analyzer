@@ -47,6 +47,7 @@ TAXONOMY = {
     "bytedance/deer-flow": ("Harness / coding agent", "Long-horizon SuperAgent harness that researches, codes, and writes — multi-step autonomy."),
     "ruvnet/ruflo": ("Harness / coding agent", "Agent meta-harness for Claude — deploys multi-agent swarms with coordination."),
     "Yeachan-Heo/oh-my-claudecode": ("Harness / coding agent", "Teams-first multi-agent orchestration layer for Claude Code."),
+    "shareAI-lab/learn-claude-code": ("Harness / coding agent", "Builds a nano Claude Code-like harness from zero — the best teaching walkthrough of how the loop works."),
 
     # Skills frameworks — on-demand expertise (the modern superpower)
     "obra/superpowers": ("Skills framework", "Agentic skills framework + dev methodology — the headline 'give your agent superpowers' skill collection."),
@@ -55,6 +56,7 @@ TAXONOMY = {
     "ComposioHQ/awesome-claude-skills": ("Skills framework", "Curated index of Claude Skills + tooling — the discovery hub for what's worth installing."),
     "wshobson/agents": ("Skills framework", "Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor) — subagents & commands."),
     "K-Dense-AI/scientific-agent-skills": ("Skills framework", "Domain skill pack that turns an agent into a research scientist — example of vertical skills."),
+    "alirezarezvani/claude-skills": ("Skills framework", "Very large skill/agent/command collection (380+ skills) — browse it for patterns, don't install it wholesale."),
 
     # Config / setup kits — shape behavior up front
     "multica-ai/andrej-karpathy-skills": ("Config / setup kit", "A single CLAUDE.md derived from Karpathy's habits — the 'one good config file' approach."),

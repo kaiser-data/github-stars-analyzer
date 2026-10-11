@@ -3,13 +3,13 @@
   "title": "LLM Evaluation Tooling \u2014 Landscape Report",
   "file": "llm-evaluation-tooling.md",
   "category": "AI / Evaluation",
-  "summary": "26 LLM evaluation tools (217,209\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
-  "tool_count": 26,
-  "total_stars": 217209,
+  "summary": "28 LLM evaluation tools (219,695\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+  "tool_count": 28,
+  "total_stars": 219695,
   "categories": {
     "Observability + eval platform": 6,
     "Evaluation framework": 9,
-    "Benchmark / leaderboard": 7,
+    "Benchmark / leaderboard": 9,
     "Safety / red-team": 4
   },
   "top_tools": [
@@ -34,8 +34,8 @@
       "stars": 19583
     }
   ],
-  "snapshot": "2026-10-10T15:21:10.911Z",
-  "generated": "2026-10-10",
+  "snapshot": "2026-10-11T13:10:52.436Z",
+  "generated": "2026-10-11",
   "generator": "scripts/reports/llm_evaluation.py",
   "created": "2026-05-31"
 }

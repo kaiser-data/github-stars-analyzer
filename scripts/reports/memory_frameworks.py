@@ -38,11 +38,13 @@ TAXONOMY = {
     "supermemoryai/openclaw-supermemory": ("General memory layer", "Long-term memory & recall, packaged for OpenClaw agents."),
     "Einsia/OpenChronicle": ("General memory layer", "Local-first memory for any tool-capable LLM agent."),
     "ActiveMemory/ctx": ("General memory layer", "Single-binary, local-first 'convergent' memory for humans + machines."),
+    "MemTensor/memmy-agent": ("General memory layer", "Personal agent and local memory hub from the MemOS team — one shared memory any AI client can read."),
 
     # Tier 2 — Coding-agent / session memory (Claude Code & co.)
     "thedotmack/claude-mem": ("Coding-agent memory", "Persistent context across sessions; captures everything an agent does and re-injects it."),
     "gastownhall/beads": ("Coding-agent memory", "Distributed graph issue-tracker as durable agent memory (Dolt-backed)."),
     "andrewyng/context-hub": ("Coding-agent memory", "Curated, versioned docs so agents stop hallucinating APIs / forgetting."),
+    "Asymptote-Labs/agent-beacon": ("Coding-agent memory", "Cross-harness, self-improving memory layer — one memory shared by Claude Code, Codex and other agents."),
 
     # Tier 3 — Knowledge-graph / context-graph memory frameworks
     "trustgraph-ai/trustgraph": ("Knowledge-graph memory", "Agent runtime platform powered by context graphs + ontology."),

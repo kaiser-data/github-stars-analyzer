@@ -1,7 +1,7 @@
 # Graph Report - github-stars-analyzer  (2026-10-11)
 
 ## Corpus Check
-- 231 files · ~3,909,110 words
+- 231 files · ~3,955,985 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d186fc5c`
+- Built from commit: `4e756b37`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -408,7 +408,7 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-10, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-11, 12d), Frontier models on hardware you already own (+10 more)
 
 ### Community 67 - "snapshot.py"
 Cohesion: 0.06
@@ -416,7 +416,7 @@ Nodes (34): Adjacent (deliberately not listed as charting tools), Advantages, di
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-10, 11d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-11, 12d), Frontier models on hardware you already own (+10 more)
 
 ### Community 69 - "Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases"
 Cohesion: 0.06

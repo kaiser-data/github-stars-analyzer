@@ -37,6 +37,10 @@ TAXONOMY = {
     "SAIL-Research-Lab/cheetahclaws": ("Harness-as-SDK", "Fast, easy agent-harness infrastructure aimed at long-horizon, multi-model runs."),
     "pydantic/pydantic-ai-harness": ("Harness-as-SDK", "'Batteries for your Pydantic AI agent' — the harness as a thin add-on to a typed agent framework."),
     "1jehuang/jcode": ("Harness-as-SDK", "Rust-built coding-agent harness — CLI agent loop with MCP support and multi-model wiring."),
+    "tinyhumansai/openhuman": ("Harness-as-SDK", "Lean open-source harness built for density — claims 500+ agents on a $10 VPS; the cost-floor end of the field."),
+    "yologdev/yoagent": ("Harness-as-SDK", "The agent loop as a Rust crate — streams from seven LLM protocols, runs tools, loops until done."),
+    "tinyhumansai/tinyagents": ("Harness-as-SDK", "Small, provider-neutral harness in Rust — a readable minimal loop from the openhuman team."),
+    "truffle-ai/dexto": ("Harness-as-SDK", "Harness and toolkit for building agent apps — CLI plus SDKs, configured rather than coded."),
 
     # 2. Meta-harness over existing coding agents
     "obra/superpowers": ("Meta-harness over coding agents", "Skills framework + development methodology layered onto the agent you already run."),
@@ -45,6 +49,7 @@ TAXONOMY = {
     "ruvnet/ruflo": ("Meta-harness over coding agents", "The leading agent *meta*-harness — swarms, coordination, and autonomy on top of existing agents."),
     "Yeachan-Heo/oh-my-claudecode": ("Meta-harness over coding agents", "Teams-first multi-agent orchestration living entirely inside Claude Code."),
     "coleam00/Archon": ("Meta-harness over coding agents", "'Harness builder' — make AI coding deterministic and repeatable by generating the harness itself."),
+    "HarnessMD/munder-difflin": ("Meta-harness over coding agents", "Runs an 'office' of Claude Code / Codex agents with roles — an open alternative to hosted agent-team products."),
 
     # 3. Fleet / parallel orchestration
     "multica-ai/multica": ("Fleet / parallel orchestration", "Managed-agents platform: assign tasks to coding agents like teammates and supervise them."),
@@ -67,6 +72,8 @@ TAXONOMY = {
     "trycua/cua": ("Sandbox substrate", "Sandboxes, SDKs, and benchmarks for computer-use agents — full-desktop harnessing."),
     "opensandbox-group/OpenSandbox": ("Sandbox substrate", "Secure, fast, extensible sandbox runtime purpose-built for AI agents."),
     "deeplethe/forkd": ("Sandbox substrate", "fork() for agent microVMs — spawn 100 children in ~100ms; branch a live VM mid-run."),
+    "NVIDIA/OpenShell": ("Sandbox substrate", "NVIDIA's safe, private runtime for autonomous agents — the substrate NemoClaw runs on."),
+    "strands-agents/shell": ("Sandbox substrate", "A shell for the agent without the keys to your machine — scoped command execution as a library."),
 
     # 6. Autonomous long-horizon loops
     "bytedance/deer-flow": ("Autonomous long-horizon", "Long-horizon SuperAgent harness that researches, codes, and creates with sub-agents in sandboxes."),

@@ -43,6 +43,7 @@ TAXONOMY = {
     "code-yeongyu/oh-my-openagent": ("Terminal coding agent", "omo/lazycodex — token-obsessed harness layered on Codex/OpenCode for complex codebases."),
     "CodebuffAI/freebuff": ("Terminal coding agent", "Codegen from the terminal — smaller, focused alternative."),
     "rsrohan99/tig": ("Terminal coding agent", "Multi-LLM Claude-Code-alike — abandoned; listed as a cautionary tale of the category's churn."),
+    "codewhale-hq/Codewhale": ("Terminal coding agent", "Rust agent engine and terminal client with provider choice, tools and approvals; large and fast-growing."),
 
     # Session, token & cost ops
     "rtk-ai/rtk": ("Session / token ops", "CLI proxy that cuts LLM token use 60–90% on common dev commands — single Rust binary."),

@@ -1,8 +1,8 @@
 # LLM-Driven 3D Modelling for 3D Printing — Landscape Report
 
-> Derived from **kaiser-data**'s 2,322 starred repos (snapshot `2026-10-10T15:21:10.911Z`), cross-referenced with the repo-similarity graph (2,322 nodes / 7,718 edges, 43 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
 >
-> Generated 2026-10-10 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
+> Generated 2026-10-11 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/3d-printing-stack-top-tools.svg)
 
@@ -44,39 +44,39 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Generative 3D (image→mesh) | Python | GPL-3.0 | 136,754 (▲1,848) | Classic | 85 | very active | 0d ago | 3.7y | 17 |
-| [FreeCAD/FreeCAD](https://github.com/FreeCAD/FreeCAD) | Code-CAD authoring | C++ | LGPL-2.1 | 34,113 | Classic | 97 | very active | 0d ago | 14.1y | 32 |
-| [ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | Agent bridge / viewer | Python | MIT | 30,387 (▲1,073) | Hot | 61 | very active | 4d ago | 1.6y | 21 |
-| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Generative 3D (image→mesh) | Python | Apache-2.0 | 17,852 (▲1,126) | Hot | 68 | very active | 2d ago | 2mo | 3 |
-| [OrcaSlicer/OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 15,910 (▲140) | Classic | 92 | very active | 0d ago | 4.2y | 20 |
-| [Tencent-Hunyuan/Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) | Generative 3D (image→mesh) | Python | NOASSERTION | 15,047 (▲82) | Declining | 4 | stale | 11mo ago | 1.7y | 0 |
-| [isl-org/Open3D](https://github.com/isl-org/Open3D) | Mesh validation & repair | C++ | NOASSERTION | 14,061 (▲66) | Classic | 60 | very active | 10d ago | 9.9y | 15 |
-| [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | Generative 3D (image→mesh) | Python | MIT | 11,738 (▲379) | Declining | 24 | slowing | 3mo ago | 10mo | 0 |
-| [openscad/openscad](https://github.com/openscad/openscad) | Code-CAD authoring | C++ | NOASSERTION | 10,405 (▲113) | Classic | 68 | very active | 2d ago | 15.9y | 13 |
-| [prusa3d/PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 9,394 (▲28) | Classic | 88 | very active | 19d ago | 10.6y | 11 |
-| [NVIDIA/warp](https://github.com/NVIDIA/warp) | Implicit / SDF modelling | Python | Apache-2.0 | 7,181 (▲35) | Classic | 78 | very active | 0d ago | 4.6y | 15 |
-| [wjakob/instant-meshes](https://github.com/wjakob/instant-meshes) | Mesh validation & repair | C++ | NOASSERTION | 6,244 (▲17) | Abandoned | 4 | stale | 4.8y ago | 11.1y | 0 |
-| [CadQuery/cadquery](https://github.com/CadQuery/cadquery) | Code-CAD authoring | Python | NOASSERTION | 5,910 (▲79) | Classic | 58 | active | 1d ago | 8.0y | 5 |
-| [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,859 (▲15) | Mature | 41 | active | 1mo ago | 9.9y | 1 |
-| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 (▲27) | Classic | 83 | very active | 0d ago | 6.6y | 16 |
-| [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh) | Generative 3D (image→mesh) | Python | Apache-2.0 | 4,555 (▲19) | Abandoned | 4 | stale | 1.8y ago | 2.5y | 0 |
-| [mikedh/trimesh](https://github.com/mikedh/trimesh) | Mesh validation & repair | Python | MIT | 3,694 (▲7) | Classic | 74 | very active | 8d ago | 13.2y | 15 |
-| [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,360 (▲159) | Classic | 72 | very active | 1d ago | 4.3y | 7 |
-| [neka-nat/freecad-mcp](https://github.com/neka-nat/freecad-mcp) | Agent bridge / viewer | Python | MIT | 2,778 (▲313) | Mature | 60 | very active | 3d ago | 2.9y | 14 |
-| [TencentARC/Pixal3D](https://github.com/TencentARC/Pixal3D) | Generative 3D (image→mesh) | Python | MIT | 2,443 (▲90) | Declining | 36 | active | 1mo ago | 5mo | 1 |
-| [BelfrySCAD/BOSL2](https://github.com/BelfrySCAD/BOSL2) | Parametric component library | OpenSCAD | BSD-2-Clause | 2,395 (▲18) | Classic | 79 | very active | 1d ago | 7.5y | 5 |
-| [elalish/manifold](https://github.com/elalish/manifold) | Mesh validation & repair | C++ | Apache-2.0 | 2,345 (▲52) | Classic | 86 | very active | 0d ago | 7.6y | 21 |
-| [fogleman/sdf](https://github.com/fogleman/sdf) | Implicit / SDF modelling | Python | MIT | 2,011 (▲5) | Mature | 33 | active | 10d ago | 5.7y | 0 |
-| [Ultimaker/CuraEngine](https://github.com/Ultimaker/CuraEngine) | Print prep & slicing | C++ | AGPL-3.0 | 1,857 (▲5) | Classic | 63 | very active | 1d ago | 13.6y | 4 |
-| [libfive/libfive](https://github.com/libfive/libfive) | Implicit / SDF modelling | C++ | — | 1,667 (▲1) | Declining | 9 | stale | 11mo ago | 10.8y | 0 |
-| [nophead/NopSCADlib](https://github.com/nophead/NopSCADlib) | Parametric component library | OpenSCAD | GPL-3.0 | 1,651 (▲15) | Mature | 45 | active | 16d ago | 7.3y | 1 |
-| [KittyCAD/modeling-app](https://github.com/KittyCAD/modeling-app) | Code-CAD authoring | TypeScript | MIT | 1,314 (▲11) | Classic | 92 | very active | 0d ago | 3.7y | 18 |
-| [cnr-isti-vclab/PyMeshLab](https://github.com/cnr-isti-vclab/PyMeshLab) | Mesh validation & repair | C++ | GPL-3.0 | 981 (▲3) | Declining | 19 | stale | 8mo ago | 6.3y | 0 |
-| [BOMWiki/partmode](https://github.com/BOMWiki/partmode) | Code-CAD authoring | JavaScript | AGPL-3.0 | 512 (▲1) | Declining | 36 | active | 1mo ago | 2mo | 1 |
-| [pyvista/pymeshfix](https://github.com/pyvista/pymeshfix) | Mesh validation & repair | C++ | GPL-3.0 | 404 (▲3) | Mature | 56 | active | 4d ago | 10.1y | 3 |
-| [3MFConsortium/lib3mf](https://github.com/3MFConsortium/lib3mf) | Print prep & slicing | C | BSD-2-Clause | 314 (▲3) | Mature | 41 | active | 3d ago | 11.5y | 0 |
-| [gumyr/cq_warehouse](https://github.com/gumyr/cq_warehouse) | Parametric component library | Python | Apache-2.0 | 153 (▲1) | Abandoned | 6 | stale | 2.7y ago | 5.3y | 0 |
-| [meshy-dev/meshy-3d-agent](https://github.com/meshy-dev/meshy-3d-agent) | Agent bridge / viewer | JavaScript | MIT | 97 (▲2) | Rising | 58 | active | 17d ago | 6mo | 5 |
+| [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI) | Generative 3D (image→mesh) | Python | GPL-3.0 | 136,754 | Classic | 85 | very active | 1d ago | 3.7y | 17 |
+| [FreeCAD/FreeCAD](https://github.com/FreeCAD/FreeCAD) | Code-CAD authoring | C++ | LGPL-2.1 | 34,113 | Classic | 97 | very active | 1d ago | 14.1y | 32 |
+| [ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | Agent bridge / viewer | Python | MIT | 30,387 | Hot | 61 | very active | 5d ago | 1.6y | 21 |
+| [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Generative 3D (image→mesh) | Python | Apache-2.0 | 17,852 | Hot | 68 | very active | 3d ago | 2mo | 3 |
+| [OrcaSlicer/OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 15,910 | Classic | 92 | very active | 1d ago | 4.2y | 20 |
+| [Tencent-Hunyuan/Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) | Generative 3D (image→mesh) | Python | NOASSERTION | 15,047 | Declining | 4 | stale | 11mo ago | 1.7y | 0 |
+| [isl-org/Open3D](https://github.com/isl-org/Open3D) | Mesh validation & repair | C++ | NOASSERTION | 14,061 | Classic | 60 | very active | 11d ago | 9.9y | 15 |
+| [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2) | Generative 3D (image→mesh) | Python | MIT | 11,738 | Declining | 24 | slowing | 3mo ago | 10mo | 0 |
+| [openscad/openscad](https://github.com/openscad/openscad) | Code-CAD authoring | C++ | NOASSERTION | 10,405 | Classic | 68 | very active | 3d ago | 15.9y | 13 |
+| [prusa3d/PrusaSlicer](https://github.com/prusa3d/PrusaSlicer) | Print prep & slicing | C++ | AGPL-3.0 | 9,394 | Classic | 88 | very active | 20d ago | 10.6y | 11 |
+| [NVIDIA/warp](https://github.com/NVIDIA/warp) | Implicit / SDF modelling | Python | Apache-2.0 | 7,181 | Classic | 78 | very active | 1d ago | 4.6y | 15 |
+| [wjakob/instant-meshes](https://github.com/wjakob/instant-meshes) | Mesh validation & repair | C++ | NOASSERTION | 6,244 | Abandoned | 4 | stale | 4.8y ago | 11.1y | 0 |
+| [CadQuery/cadquery](https://github.com/CadQuery/cadquery) | Code-CAD authoring | Python | NOASSERTION | 5,910 | Classic | 58 | active | 2d ago | 8.0y | 5 |
+| [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,859 | Mature | 41 | active | 1mo ago | 9.9y | 1 |
+| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 | Classic | 82 | very active | 1d ago | 6.7y | 16 |
+| [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh) | Generative 3D (image→mesh) | Python | Apache-2.0 | 4,555 | Abandoned | 4 | stale | 1.8y ago | 2.5y | 0 |
+| [mikedh/trimesh](https://github.com/mikedh/trimesh) | Mesh validation & repair | Python | MIT | 3,694 | Classic | 74 | very active | 9d ago | 13.2y | 15 |
+| [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,360 | Classic | 72 | very active | 2d ago | 4.3y | 7 |
+| [neka-nat/freecad-mcp](https://github.com/neka-nat/freecad-mcp) | Agent bridge / viewer | Python | MIT | 2,778 | Mature | 60 | very active | 4d ago | 2.9y | 14 |
+| [TencentARC/Pixal3D](https://github.com/TencentARC/Pixal3D) | Generative 3D (image→mesh) | Python | MIT | 2,443 | Declining | 36 | active | 1mo ago | 5mo | 1 |
+| [BelfrySCAD/BOSL2](https://github.com/BelfrySCAD/BOSL2) | Parametric component library | OpenSCAD | BSD-2-Clause | 2,395 | Classic | 79 | very active | 2d ago | 7.5y | 5 |
+| [elalish/manifold](https://github.com/elalish/manifold) | Mesh validation & repair | C++ | Apache-2.0 | 2,345 | Classic | 85 | very active | 1d ago | 7.6y | 21 |
+| [fogleman/sdf](https://github.com/fogleman/sdf) | Implicit / SDF modelling | Python | MIT | 2,011 | Mature | 33 | active | 11d ago | 5.7y | 0 |
+| [Ultimaker/CuraEngine](https://github.com/Ultimaker/CuraEngine) | Print prep & slicing | C++ | AGPL-3.0 | 1,857 | Classic | 62 | very active | 2d ago | 13.6y | 4 |
+| [libfive/libfive](https://github.com/libfive/libfive) | Implicit / SDF modelling | C++ | — | 1,667 | Declining | 9 | stale | 11mo ago | 10.8y | 0 |
+| [nophead/NopSCADlib](https://github.com/nophead/NopSCADlib) | Parametric component library | OpenSCAD | GPL-3.0 | 1,651 | Mature | 45 | active | 17d ago | 7.3y | 1 |
+| [KittyCAD/modeling-app](https://github.com/KittyCAD/modeling-app) | Code-CAD authoring | TypeScript | MIT | 1,314 | Classic | 92 | very active | 1d ago | 3.8y | 18 |
+| [cnr-isti-vclab/PyMeshLab](https://github.com/cnr-isti-vclab/PyMeshLab) | Mesh validation & repair | C++ | GPL-3.0 | 981 | Declining | 19 | stale | 8mo ago | 6.3y | 0 |
+| [BOMWiki/partmode](https://github.com/BOMWiki/partmode) | Code-CAD authoring | JavaScript | AGPL-3.0 | 512 | Declining | 36 | active | 1mo ago | 2mo | 1 |
+| [pyvista/pymeshfix](https://github.com/pyvista/pymeshfix) | Mesh validation & repair | C++ | GPL-3.0 | 404 | Mature | 56 | active | 5d ago | 10.1y | 3 |
+| [3MFConsortium/lib3mf](https://github.com/3MFConsortium/lib3mf) | Print prep & slicing | C | BSD-2-Clause | 314 | Mature | 41 | active | 4d ago | 11.5y | 0 |
+| [gumyr/cq_warehouse](https://github.com/gumyr/cq_warehouse) | Parametric component library | Python | Apache-2.0 | 153 | Abandoned | 6 | stale | 2.7y ago | 5.3y | 0 |
+| [meshy-dev/meshy-3d-agent](https://github.com/meshy-dev/meshy-3d-agent) | Agent bridge / viewer | JavaScript | MIT | 97 | Rising | 58 | active | 18d ago | 6mo | 5 |
 
 ## Best tool per task
 
@@ -264,27 +264,29 @@ No repair layer, because the class of defect cannot occur. The trade is that for
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **10 of the graph's 43 communities**.
+**Community clustering.** These 33 tools span **12 of the graph's 46 communities**.
 
-- **Community 0** (16): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `isl-org/Open3D`, `OrcaSlicer/OrcaSlicer`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
-- **Community 10** (4): `Tencent-Hunyuan/Hunyuan3D-2`, `TencentARC/Pixal3D`, `TencentARC/InstantMesh`, `meshy-dev/meshy-3d-agent`
-- **Community 14** (3): `KittyCAD/modeling-app`, `microsoft/TRELLIS.2`, `Ultimaker/CuraEngine`
-- **Community 16** (2): `BelfrySCAD/BOSL2`, `img2threejs/img2threejs`
-- **Community 15** (2): `elalish/manifold`, `pyvista/pymeshfix`
-- **Community 2** (2): `ahujasid/mcp-for-blender`, `neka-nat/freecad-mcp`
+- **Community 1** (13): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `OrcaSlicer/OrcaSlicer`
+- **Community 19** (3): `KittyCAD/modeling-app`, `microsoft/TRELLIS.2`, `Ultimaker/CuraEngine`
+- **Community 23** (3): `isl-org/Open3D`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
+- **Community 4** (2): `BelfrySCAD/BOSL2`, `img2threejs/img2threejs`
+- **Community 2** (2): `Tencent-Hunyuan/Hunyuan3D-2`, `meshy-dev/meshy-3d-agent`
+- **Community 36** (2): `TencentARC/Pixal3D`, `TencentARC/InstantMesh`
+- **Community 22** (2): `elalish/manifold`, `pyvista/pymeshfix`
+- **Community 9** (2): `ahujasid/mcp-for-blender`, `neka-nat/freecad-mcp`
 
 **Centrality (PageRank in the full graph)** — the most hub-like tools of this set:
 
-- `NVIDIA/warp` — PageRank 0.0015
+- `NVIDIA/warp` — PageRank 0.0011
 - `pyvista/pymeshfix` — PageRank 0.0008
 - `FreeCAD/FreeCAD` — PageRank 0.0007
 - `gumyr/build123d` — PageRank 0.0006
 - `openscad/openscad` — PageRank 0.0006
 - `fogleman/sdf` — PageRank 0.0006
-- `TencentARC/Pixal3D` — PageRank 0.0005
-- `TencentARC/InstantMesh` — PageRank 0.0005
-- `mikedh/trimesh` — PageRank 0.0004
+- `TencentARC/Pixal3D` — PageRank 0.0004
+- `TencentARC/InstantMesh` — PageRank 0.0004
 - `microsoft/TRELLIS.2` — PageRank 0.0004
+- `Ultimaker/CuraEngine` — PageRank 0.0004
 
 **Direct links** (similarity edges where both endpoints are in this report):
 
@@ -303,7 +305,7 @@ No repair layer, because the class of defect cannot occur. The trade is that for
 - `openscad/openscad` ⇄ `gumyr/build123d` (w=0.200) — topics: 3d-models, 3d-printing, 3d, cad
 - `FreeCAD/FreeCAD` ⇄ `gumyr/build123d` (w=0.190) — topics: opencascade, cad, 3d, 3d-printing
 - `CadQuery/cadquery` ⇄ `BOMWiki/partmode` (w=0.185) — topics: parametric, cad, 3d, brep
-- …and 20 more.
+- …and 19 more.
 
 ## Maintenance & risk signal
 
@@ -330,16 +332,16 @@ Bus factor = commit concentration (1 = single-maintainer risk).
 | KittyCAD/modeling-app | 92 | Classic | very active | 4 | 16% | 347 |
 | OrcaSlicer/OrcaSlicer | 92 | Classic | very active | 4 | 28% | 79 |
 | prusa3d/PrusaSlicer | 88 | Classic | very active | 3 | 19% | 186 |
-| elalish/manifold | 86 | Classic | very active | 3 | 25% | 27 |
 | Comfy-Org/ComfyUI | 85 | Classic | very active | 3 | 25% | 159 |
-| f3d-app/f3d | 83 | Classic | very active | 2 | 44% | 70 |
+| elalish/manifold | 85 | Classic | very active | 3 | 25% | 27 |
+| f3d-app/f3d | 82 | Classic | very active | 2 | 44% | 70 |
 | BelfrySCAD/BOSL2 | 79 | Classic | very active | 1 | 55% | 24 |
 | NVIDIA/warp | 78 | Classic | very active | 1 | 66% | 55 |
 | mikedh/trimesh | 74 | Classic | very active | 1 | 71% | 494 |
 | gumyr/build123d | 72 | Classic | very active | 1 | 88% | 16 |
 | openscad/openscad | 68 | Classic | very active | 2 | 48% | 11 |
 | img2threejs/img2threejs | 68 | Hot | very active | 1 | 68% | 7 |
-| Ultimaker/CuraEngine | 63 | Classic | very active | 1 | 61% | 5 |
+| Ultimaker/CuraEngine | 62 | Classic | very active | 1 | 61% | 5 |
 | ahujasid/mcp-for-blender | 61 | Hot | very active | 1 | 75% | 0 |
 | isl-org/Open3D | 60 | Classic | very active | 2 | 29% | 24 |
 | neka-nat/freecad-mcp | 60 | Mature | very active | 1 | 73% | 0 |
@@ -416,4 +418,4 @@ Ready-to-paste build prompts generated from this report's stack — the tools ab
 - **Printing figures** are conventional starting points for FDM at 0.4 mm, not measurements from your printer. Calibrate with test coupons before trusting a tolerance.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and lag GitHub's current state. In this set especially, low health frequently means *finished* — see above.
 
-<sub>Tools covered: 33 · Snapshot: 2026-10-10T15:21:10.911Z</sub>
+<sub>Tools covered: 33 · Snapshot: 2026-10-11T13:10:52.436Z</sub>

@@ -15,8 +15,8 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
 <text x="594.0" y="49.0" class="val" dominant-baseline="central">11</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">Vector DB / search</text>
-<path d="M244,67 h308.7 q4,0 4,4 v10 q0,4 -4,4 h-308.7 z" class="bar"/>
-<text x="562.7" y="76.0" class="val" dominant-baseline="central">10</text>
+<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
+<text x="594.0" y="76.0" class="val" dominant-baseline="central">11</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">Ingestion / parsing / chunking</text>
 <path d="M244,94 h121.1 q4,0 4,4 v10 q0,4 -4,4 h-121.1 z" class="bar"/>
 <text x="375.1" y="103.0" class="val" dominant-baseline="central">4</text>

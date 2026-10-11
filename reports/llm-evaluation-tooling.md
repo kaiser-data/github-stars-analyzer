@@ -1,8 +1,8 @@
 # LLM Evaluation Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,322 starred repos (snapshot `2026-10-10T15:21:10.911Z`), cross-referenced with the repo-similarity graph (2,322 nodes / 7,718 edges, 43 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
 >
-> Generated 2026-10-10 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
+> Generated 2026-10-11 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/llm-evaluation-tooling-top-tools.svg)
 
@@ -11,14 +11,14 @@
 
 ## Executive summary
 
-- **26 evaluation-focused tools** found in your stars (**217,209★** combined), spanning four categories:
+- **28 evaluation-focused tools** found in your stars (**219,695★** combined), spanning four categories:
   - **Observability + eval platform** (6): `langfuse`, `mlflow`, `opik`, `openllmetry`, `langwatch`, `opik-openclaw`
   - **Evaluation framework** (9): `promptfoo`, `evals`, `deepeval`, `phoenix`, `trulens`, `openevals`, `agentevals`, `rhesis`, `evals`
-  - **Benchmark / leaderboard** (7): `lm-evaluation-harness`, `lighteval`, `guidellm`, `skill`, `LiveBench`, `Open-Financial-LLMs-Leaderboard`, `RACE`
+  - **Benchmark / leaderboard** (9): `lm-evaluation-harness`, `lighteval`, `AssetOpsBench`, `guidellm`, `skill`, `LiveBench`, `evals`, `Open-Financial-LLMs-Leaderboard`, `RACE`
   - **Safety / red-team** (4): `garak`, `deepteam`, `uqlm`, `LettuceDetect`
 - The field splits cleanly into **online** evaluation (tracing/observability in production) and **offline** evaluation (datasets, metrics, benchmarks before ship). Platforms increasingly do both.
 - Evaluation method has converged on **LLM-as-a-judge** (deepeval, openevals) alongside classic reference metrics, plus a fast-growing **safety/red-team** wing (garak, deepteam) and **hallucination detection** (uqlm, LettuceDetect).
-- Python dominates (21/26); the lone TypeScript-first platform is Langfuse.
+- Python dominates (22/28); the lone TypeScript-first platform is Langfuse.
 
 ## Master comparison
 
@@ -26,32 +26,34 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,600 (▲567) | Classic | 94 | very active | 0d ago | 3.4y | 19 |
-| [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 28,336 (▲203) | Classic | 82 | very active | 0d ago | 8.4y | 21 |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 25,869 (▲430) | Classic | 79 | very active | 0d ago | 3.5y | 20 |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability + eval platform | Python | Apache-2.0 | 22,487 (▲257) | Classic | 89 | very active | 1d ago | 3.4y | 18 |
-| [openai/evals](https://github.com/openai/evals) | Evaluation framework | Python | NOASSERTION | 19,583 (▲78) | Mature | 19 | slowing | 5mo ago | 3.7y | 0 |
-| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Evaluation framework | Python | Apache-2.0 | 18,731 (▲294) | Classic | 76 | very active | 1d ago | 3.2y | 7 |
-| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Benchmark / leaderboard | Python | MIT | 14,176 (▲103) | Classic | 87 | very active | 26d ago | 6.1y | 54 |
-| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Evaluation framework | Python | NOASSERTION | 11,774 (▲165) | Classic | 84 | very active | 0d ago | 3.9y | 22 |
-| [NVIDIA/garak](https://github.com/NVIDIA/garak) | Safety / red-team | Python | Apache-2.0 | 9,518 (▲167) | Classic | 82 | very active | 0d ago | 3.4y | 25 |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,481 (▲34) | Classic | 71 | active | 4d ago | 3.1y | 8 |
-| [langwatch/langwatch](https://github.com/langwatch/langwatch) | Observability + eval platform | TypeScript | Apache-2.0 | 4,933 | Classic | 85 | very active | 0d ago | 3.1y | 7 |
-| [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,596 (▲25) | Classic | 89 | very active | 1d ago | 5.9y | 26 |
-| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 3,005 (▲56) | Hot | 55 | very active | 9d ago | 1.6y | 5 |
-| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,553 (▲4) | Mature | 60 | active | 4d ago | 2.7y | 5 |
-| [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,679 (▲37) | Mature | 88 | very active | 0d ago | 2.4y | 23 |
-| [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,359 (▲9) | Declining | 46 | slowing | 3mo ago | 8mo | 0 |
-| [LiveBench/LiveBench](https://github.com/LiveBench/LiveBench) | Benchmark / leaderboard | Python | NOASSERTION | 1,341 (▲12) | Mature | 65 | very active | 3d ago | 2.3y | 4 |
-| [langchain-ai/openevals](https://github.com/langchain-ai/openevals) | Evaluation framework | Python | MIT | 1,216 (▲9) | Hot | 77 | very active | 8d ago | 1.7y | 5 |
-| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Safety / red-team | Python | Apache-2.0 | 1,207 (▲5) | Hot | 76 | very active | 2d ago | 1.5y | 7 |
-| [langchain-ai/agentevals](https://github.com/langchain-ai/agentevals) | Evaluation framework | Python | MIT | 742 (▲10) | Declining | 34 | slowing | 2mo ago | 1.6y | 1 |
-| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability + eval platform | TypeScript | Apache-2.0 | 724 | Rising | 64 | active | 5d ago | 7mo | 4 |
-| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 615 (▲4) | Mature | 59 | very active | 1d ago | 1.7y | 8 |
-| [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis) | Evaluation framework | Python | NOASSERTION | 397 (▲2) | Mature | 79 | very active | 2d ago | 2.0y | 8 |
-| [strands-agents/evals](https://github.com/strands-agents/evals) | Evaluation framework | Python | Apache-2.0 | 235 | Hot | 79 | very active | 2d ago | 1.2y | 16 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 1d ago | 3.4y | 19 |
+| [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 28,336 | Classic | 82 | very active | 1d ago | 8.4y | 21 |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 25,869 | Classic | 79 | very active | 1d ago | 3.5y | 20 |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability + eval platform | Python | Apache-2.0 | 22,487 | Classic | 89 | very active | 1d ago | 3.4y | 18 |
+| [openai/evals](https://github.com/openai/evals) | Evaluation framework | Python | NOASSERTION | 19,583 | Mature | 19 | slowing | 6mo ago | 3.7y | 0 |
+| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Evaluation framework | Python | Apache-2.0 | 18,731 | Classic | 76 | very active | 2d ago | 3.2y | 7 |
+| [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | Benchmark / leaderboard | Python | MIT | 14,176 | Classic | 87 | very active | 27d ago | 6.1y | 54 |
+| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Evaluation framework | Python | NOASSERTION | 11,774 | Classic | 83 | very active | 1d ago | 3.9y | 22 |
+| [NVIDIA/garak](https://github.com/NVIDIA/garak) | Safety / red-team | Python | Apache-2.0 | 9,518 | Classic | 82 | very active | 1d ago | 3.4y | 25 |
+| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability + eval platform | Python | Apache-2.0 | 7,481 | Classic | 71 | active | 5d ago | 3.1y | 8 |
+| [langwatch/langwatch](https://github.com/langwatch/langwatch) | Observability + eval platform | TypeScript | Apache-2.0 | 4,933 | Classic | 85 | very active | 1d ago | 3.1y | 7 |
+| [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,596 | Classic | 89 | very active | 2d ago | 5.9y | 26 |
+| [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 3,005 | Hot | 55 | very active | 10d ago | 1.6y | 5 |
+| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,553 | Mature | 60 | active | 5d ago | 2.7y | 5 |
+| [IBM/AssetOpsBench](https://github.com/IBM/AssetOpsBench) | Benchmark / leaderboard | Python | Apache-2.0 | 2,341 | Hot | 69 | very active | 3d ago | 1.4y | 7 |
+| [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,679 | Mature | 88 | very active | 1d ago | 2.4y | 23 |
+| [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,359 | Declining | 46 | slowing | 3mo ago | 8mo | 0 |
+| [LiveBench/LiveBench](https://github.com/LiveBench/LiveBench) | Benchmark / leaderboard | Python | NOASSERTION | 1,341 | Mature | 65 | very active | 4d ago | 2.3y | 4 |
+| [langchain-ai/openevals](https://github.com/langchain-ai/openevals) | Evaluation framework | Python | MIT | 1,216 | Hot | 77 | very active | 9d ago | 1.7y | 5 |
+| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Safety / red-team | Python | Apache-2.0 | 1,207 | Hot | 76 | very active | 3d ago | 1.5y | 7 |
+| [langchain-ai/agentevals](https://github.com/langchain-ai/agentevals) | Evaluation framework | Python | MIT | 742 | Declining | 34 | slowing | 2mo ago | 1.6y | 1 |
+| [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability + eval platform | TypeScript | Apache-2.0 | 724 | Rising | 64 | active | 6d ago | 7mo | 4 |
+| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 615 | Mature | 59 | very active | 2d ago | 1.7y | 8 |
+| [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis) | Evaluation framework | Python | NOASSERTION | 397 | Mature | 79 | very active | 3d ago | 2.0y | 8 |
+| [strands-agents/evals](https://github.com/strands-agents/evals) | Evaluation framework | Python | Apache-2.0 | 235 | Hot | 79 | very active | 3d ago | 1.2y | 16 |
+| [supabase/evals](https://github.com/supabase/evals) | Benchmark / leaderboard | TypeScript | Apache-2.0 | 145 | Hot | 67 | very active | 1d ago | 5mo | 12 |
 | [finos-labs/Open-Financial-LLMs-Leaderboard](https://github.com/finos-labs/Open-Financial-LLMs-Leaderboard) | Benchmark / leaderboard | JavaScript | — | 37 | Declining | 5 | stale | 10mo ago | 2.1y | 0 |
-| [jszheng21/RACE](https://github.com/jszheng21/RACE) | Benchmark / leaderboard | Python | Apache-2.0 | 15 (▲1) | Abandoned | 10 | stale | 2.0y ago | 2.2y | 0 |
+| [jszheng21/RACE](https://github.com/jszheng21/RACE) | Benchmark / leaderboard | Python | Apache-2.0 | 15 | Abandoned | 10 | stale | 2.0y ago | 2.2y | 0 |
 
 ## By category
 
@@ -120,6 +122,9 @@ _Fixed task sets that rank models/agents. Watch for contamination (LiveBench is 
 - **[huggingface/lighteval](https://github.com/huggingface/lighteval)** · 2,553★ · Python · Mature  
   Hugging Face's lightweight, all-in-one eval suite for fast benchmark runs.  
   <sub>topics: evaluation, evaluation-framework, evaluation-metrics, huggingface</sub>
+- **[IBM/AssetOpsBench](https://github.com/IBM/AssetOpsBench)** · 2,341★ · Python · Hot  
+  IBM's Industry 4.0 benchmark for multi-agent asset-operations tasks — a domain benchmark with its own agent framework.  
+  <sub>topics: llm-agents, model-context-protocol, time-series-forecasting, condition-based-maintenance, hvac-maintenance, iot, predictive-maintenance, ai-for-physical-assets</sub>
 - **[vllm-project/guidellm](https://github.com/vllm-project/guidellm)** · 1,679★ · Python · Mature  
   Performance/inference benchmark: evaluate LLM *deployments* for real-world throughput/latency.  
   <sub>topics: —</sub>
@@ -128,6 +133,9 @@ _Fixed task sets that rank models/agents. Watch for contamination (LiveBench is 
   <sub>topics: —</sub>
 - **[LiveBench/LiveBench](https://github.com/LiveBench/LiveBench)** · 1,341★ · Python · Mature  
   Challenging, contamination-free benchmark refreshed over time to resist training-set leakage.  
+  <sub>topics: —</sub>
+- **[supabase/evals](https://github.com/supabase/evals)** · 145★ · TypeScript · Hot  
+  Supabase's evals of coding agents doing Supabase work — a vendor benchmark of agent competence on one platform.  
   <sub>topics: —</sub>
 - **[finos-labs/Open-Financial-LLMs-Leaderboard](https://github.com/finos-labs/Open-Financial-LLMs-Leaderboard)** · 37★ · JavaScript · Declining  
   Domain leaderboard ranking LLMs on financial tasks.  
@@ -164,24 +172,23 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 26 tools span **13 of the graph's 43 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
+**Community clustering.** These 28 tools span **16 of the graph's 46 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
 
-- **Community 18** (7): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
-- **Community 17** (4): `confident-ai/deepeval`, `langchain-ai/openevals`, `langchain-ai/agentevals`, `confident-ai/deepteam`
-- **Community 3** (3): `LiveBench/LiveBench`, `pinchbench/skill`, `NVIDIA/garak`
-- **Community 1** (2): `langwatch/langwatch`, `finos-labs/Open-Financial-LLMs-Leaderboard`
-- **Community 8** (2): `rhesis-ai/rhesis`, `EleutherAI/lm-evaluation-harness`
+- **Community 11** (8): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `langwatch/langwatch`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
+- **Community 10** (4): `confident-ai/deepeval`, `openai/evals`, `confident-ai/deepteam`, `KRLabsOrg/LettuceDetect`
+- **Community 26** (2): `langchain-ai/openevals`, `langchain-ai/agentevals`
+- **Community 2** (2): `LiveBench/LiveBench`, `pinchbench/skill`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — how 'hub-like' each tool is within your starred ecosystem:
 
-- `langwatch/langwatch` — PageRank 0.0020
 - `huggingface/lighteval` — PageRank 0.0011
-- `strands-agents/evals` — PageRank 0.0010
+- `strands-agents/evals` — PageRank 0.0008
 - `comet-ml/opik` — PageRank 0.0007
-- `langfuse/langfuse` — PageRank 0.0006
-- `NVIDIA/garak` — PageRank 0.0006
+- `IBM/AssetOpsBench` — PageRank 0.0006
+- `langfuse/langfuse` — PageRank 0.0005
 - `vllm-project/guidellm` — PageRank 0.0005
 - `langchain-ai/openevals` — PageRank 0.0005
+- `NVIDIA/garak` — PageRank 0.0005
 
 **Direct links between eval tools** (similarity edges where both endpoints are in this report):
 
@@ -214,7 +221,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | vllm-project/guidellm | 88 | Mature | very active | 3 | 22% | 20 |
 | EleutherAI/lm-evaluation-harness | 87 | Classic | very active | 11 | 10% | 19 |
 | langwatch/langwatch | 85 | Classic | very active | 2 | 35% | 409 |
-| Arize-ai/phoenix | 84 | Classic | very active | 2 | 48% | 861 |
+| Arize-ai/phoenix | 83 | Classic | very active | 2 | 48% | 861 |
 | mlflow/mlflow | 82 | Classic | very active | 2 | 47% | 178 |
 | NVIDIA/garak | 82 | Classic | very active | 2 | 42% | 33 |
 | rhesis-ai/rhesis | 79 | Mature | very active | 1 | 64% | 177 |
@@ -224,6 +231,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | confident-ai/deepeval | 76 | Classic | very active | 1 | 50% | 63 |
 | cvs-health/uqlm | 76 | Hot | very active | 1 | 63% | 46 |
 | traceloop/openllmetry | 71 | Classic | active | 2 | 29% | 263 |
+| IBM/AssetOpsBench | 69 | Hot | very active | 2 | 46% | 0 |
+| supabase/evals | 67 | Hot | very active | 2 | 38% | 0 |
 | LiveBench/LiveBench | 65 | Mature | very active | 2 | 48% | 0 |
 | comet-ml/opik-openclaw | 64 | Rising | active | 1 | 60% | 26 |
 | huggingface/lighteval | 60 | Mature | active | 2 | 38% | 15 |
@@ -262,4 +271,4 @@ Several widely-used evaluation tools are **not** in this dataset — worth knowi
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 26 · Snapshot: 2026-10-10T15:21:10.911Z</sub>
+<sub>Tools covered: 28 · Snapshot: 2026-10-11T13:10:52.436Z</sub>

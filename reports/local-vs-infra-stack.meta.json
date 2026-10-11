@@ -3,11 +3,11 @@
   "title": "Local vs High-Infra AI Stack \u2014 A Deployment-Tier Comparison",
   "file": "local-vs-infra-stack.md",
   "category": "AI / Infrastructure",
-  "summary": "39 stack tools (1,852,331\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 15 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
-  "tool_count": 39,
-  "total_stars": 1852331,
+  "summary": "41 stack tools (1,855,446\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 17 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
+  "tool_count": 41,
+  "total_stars": 1855446,
   "categories": {
-    "Inference runtime": 11,
+    "Inference runtime": 13,
     "Scaling / serving infra": 2,
     "Model gateway & UI": 5,
     "Vector store": 11,
@@ -16,7 +16,7 @@
     "Observability & eval": 3
   },
   "tiers": {
-    "local": 15,
+    "local": 17,
     "both": 16,
     "infra": 8
   },
@@ -42,8 +42,8 @@
       "stars": 93508
     }
   ],
-  "snapshot": "2026-10-10T15:21:10.911Z",
-  "generated": "2026-10-10",
+  "snapshot": "2026-10-11T13:10:52.436Z",
+  "generated": "2026-10-11",
   "generator": "scripts/reports/local_vs_infra_stack.py",
   "created": "2026-06-05"
 }

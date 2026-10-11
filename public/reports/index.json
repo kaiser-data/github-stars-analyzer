@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-10-11",
   "count": 29,
   "reports": [
     {
@@ -7,14 +7,14 @@
       "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
       "file": "trending-now.md",
       "category": "AI / Trends",
-      "summary": "Measured star momentum across 19 data vintages: the 11-day movers, relative breakouts, sustained climbers, 77 new entrants, and what has gone flat.",
-      "tool_count": 140,
-      "total_stars": 6423153,
+      "summary": "Measured star momentum across 20 data vintages: the 12-day movers, relative breakouts, sustained climbers, 101 new entrants, and what has gone flat.",
+      "tool_count": 164,
+      "total_stars": 6764534,
       "categories": {
         "Risers": 1798,
         "Breakouts": 1652,
-        "New entrants": 77,
-        "Cooling": 75
+        "New entrants": 101,
+        "Cooling": 81
       },
       "top_tools": [
         {
@@ -72,10 +72,10 @@
           "value": 9135
         }
       ],
-      "chart_top_title": "Biggest star gains (11d)",
+      "chart_top_title": "Biggest star gains (12d)",
       "chart_cat_title": "Repos by movement type",
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
     },
@@ -121,8 +121,8 @@
           "stars": 67731
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
     },
@@ -131,12 +131,12 @@
       "title": "Claude Code Superpowers \u2014 Setup Strategies from Your Stars",
       "file": "claude-code-setups.md",
       "category": "AI / Agents",
-      "summary": "59 Claude-Code 'superpower' projects (5,094,386\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
-      "tool_count": 59,
-      "total_stars": 5094386,
+      "summary": "61 Claude-Code 'superpower' projects (5,200,735\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
+      "tool_count": 61,
+      "total_stars": 5200735,
       "categories": {
-        "Harness / coding agent": 12,
-        "Skills framework": 6,
+        "Harness / coding agent": 13,
+        "Skills framework": 7,
         "Config / setup kit": 11,
         "Memory / context": 7,
         "Token-saver / compression": 7,
@@ -167,8 +167,8 @@
           "stars": 217948
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
     },
@@ -207,8 +207,8 @@
           "stars": 167058
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
     },
@@ -253,8 +253,8 @@
           "stars": 65924
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/agentic_terminals.py",
       "created": "2026-08-23"
     },
@@ -263,20 +263,20 @@
       "title": "Harness Engineering \u2014 Ten Methods That Make an Agent Harness Good",
       "file": "harness-engineering.md",
       "category": "AI / Agents",
-      "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 40 repos (1,729,399\u2605).",
-      "tool_count": 40,
-      "total_stars": 1729399,
+      "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 45 repos (1,736,624\u2605).",
+      "tool_count": 45,
+      "total_stars": 1736624,
       "categories": {
         "1. Minimal loop first": 4,
         "2. Small instruction budget": 4,
-        "3. Context engineering": 5,
+        "3. Context engineering": 6,
         "4. Lean action space": 4,
-        "5. External verification": 4,
+        "5. External verification": 5,
         "6. State on disk": 4,
         "7. Sub-agents for isolation": 3,
         "8. Guards & sandboxes": 5,
-        "9. Durable runs & approvals": 3,
-        "10. Observe & eval the harness": 4
+        "9. Durable runs & approvals": 4,
+        "10. Observe & eval the harness": 6
       },
       "top_tools": [
         {
@@ -300,21 +300,64 @@
           "stars": 114040
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/harness_engineering.py",
       "created": "2026-10-01"
+    },
+    {
+      "slug": "agent-harnesses",
+      "title": "Agent Harnesses \u2014 Six Approaches to Running Autonomous Agents",
+      "file": "agent-harnesses.md",
+      "category": "AI / Agents",
+      "summary": "42 harness projects (1,570,570\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
+      "tool_count": 42,
+      "total_stars": 1570570,
+      "categories": {
+        "Harness-as-SDK": 12,
+        "Meta-harness over coding agents": 7,
+        "Fleet / parallel orchestration": 7,
+        "Determinism & spec-driven": 4,
+        "Sandbox substrate": 7,
+        "Autonomous long-horizon": 5
+      },
+      "top_tools": [
+        {
+          "name": "obra/superpowers",
+          "stars": 297121
+        },
+        {
+          "name": "affaan-m/ECC",
+          "stars": 276293
+        },
+        {
+          "name": "github/spec-kit",
+          "stars": 140681
+        },
+        {
+          "name": "earendil-works/pi",
+          "stars": 114040
+        },
+        {
+          "name": "bytedance/deer-flow",
+          "stars": 83646
+        }
+      ],
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
+      "generator": "scripts/reports/agent_harnesses.py",
+      "created": "2026-07-19"
     },
     {
       "slug": "local-vs-infra-stack",
       "title": "Local vs High-Infra AI Stack \u2014 A Deployment-Tier Comparison",
       "file": "local-vs-infra-stack.md",
       "category": "AI / Infrastructure",
-      "summary": "39 stack tools (1,852,331\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 15 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
-      "tool_count": 39,
-      "total_stars": 1852331,
+      "summary": "41 stack tools (1,855,446\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 17 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
+      "tool_count": 41,
+      "total_stars": 1855446,
       "categories": {
-        "Inference runtime": 11,
+        "Inference runtime": 13,
         "Scaling / serving infra": 2,
         "Model gateway & UI": 5,
         "Vector store": 11,
@@ -323,7 +366,7 @@
         "Observability & eval": 3
       },
       "tiers": {
-        "local": 15,
+        "local": 17,
         "both": 16,
         "infra": 8
       },
@@ -349,8 +392,8 @@
           "stars": 93508
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
     },
@@ -391,8 +434,8 @@
           "stars": 33489
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/mcp_tooling.py",
       "created": "2026-05-31"
     },
@@ -433,8 +476,8 @@
           "stars": 83646
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
     },
@@ -477,8 +520,8 @@
           "stars": 40054
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/agent_memory.py",
       "created": "2026-08-12"
     },
@@ -527,53 +570,10 @@
           "stars": 25755
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
-    },
-    {
-      "slug": "agent-harnesses",
-      "title": "Agent Harnesses \u2014 Six Approaches to Running Autonomous Agents",
-      "file": "agent-harnesses.md",
-      "category": "AI / Agents",
-      "summary": "35 harness projects (1,503,095\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
-      "tool_count": 35,
-      "total_stars": 1503095,
-      "categories": {
-        "Harness-as-SDK": 8,
-        "Meta-harness over coding agents": 6,
-        "Fleet / parallel orchestration": 7,
-        "Determinism & spec-driven": 4,
-        "Sandbox substrate": 5,
-        "Autonomous long-horizon": 5
-      },
-      "top_tools": [
-        {
-          "name": "obra/superpowers",
-          "stars": 297121
-        },
-        {
-          "name": "affaan-m/ECC",
-          "stars": 276293
-        },
-        {
-          "name": "github/spec-kit",
-          "stars": 140681
-        },
-        {
-          "name": "earendil-works/pi",
-          "stars": 114040
-        },
-        {
-          "name": "bytedance/deer-flow",
-          "stars": 83646
-        }
-      ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
-      "generator": "scripts/reports/agent_harnesses.py",
-      "created": "2026-07-19"
     },
     {
       "slug": "3d-printing-stack",
@@ -614,8 +614,8 @@
           "stars": 15910
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/printing_stack.py",
       "created": "2026-09-12"
     },
@@ -657,8 +657,8 @@
           "stars": 24453
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
     },
@@ -702,8 +702,8 @@
           "stars": 81407
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
     },
@@ -712,11 +712,11 @@
       "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
       "file": "ai-coding-tuis.md",
       "category": "AI / Comparison",
-      "summary": "31 terminal AI coding tools (1,361,958\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
-      "tool_count": 31,
-      "total_stars": 1361958,
+      "summary": "32 terminal AI coding tools (1,403,035\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
+      "tool_count": 32,
+      "total_stars": 1403035,
       "categories": {
-        "Terminal coding agent": 13,
+        "Terminal coding agent": 14,
         "Session / token ops": 7,
         "Safety / isolation": 4,
         "Multi-CLI glue": 5,
@@ -744,22 +744,68 @@
           "stars": 114040
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/ai_coding_tuis.py",
       "created": "2026-07-19"
+    },
+    {
+      "slug": "decision-classifiers",
+      "title": "Decision Classifiers & Guard Models \u2014 Landscape Report",
+      "file": "decision-classifiers.md",
+      "category": "AI / Evaluation",
+      "summary": "32 tools (81,969\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
+      "tool_count": 32,
+      "total_stars": 81969,
+      "categories": {
+        "Typed decision API": 6,
+        "Open decision model": 6,
+        "Zero-shot encoder": 3,
+        "Few-shot classifier": 2,
+        "Guard model / guardrails": 4,
+        "Deterministic policy": 1,
+        "Decision router": 5,
+        "Calibration / uncertainty": 2,
+        "LLM as classifier": 3
+      },
+      "top_tools": [
+        {
+          "name": "BoundaryML/baml",
+          "stars": 9389
+        },
+        {
+          "name": "guardrails-ai/guardrails",
+          "stars": 7504
+        },
+        {
+          "name": "NVIDIA-NeMo/Guardrails",
+          "stars": 7273
+        },
+        {
+          "name": "katanemo/plano",
+          "stars": 7083
+        },
+        {
+          "name": "mizorewww/laya-mlx",
+          "stars": 6870
+        }
+      ],
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
+      "generator": "scripts/reports/decision_classifiers.py",
+      "created": "2026-09-25"
     },
     {
       "slug": "rag-tooling",
       "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
       "file": "rag-tooling.md",
       "category": "AI / RAG",
-      "summary": "31 RAG tools (739,865\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
-      "tool_count": 31,
-      "total_stars": 739865,
+      "summary": "32 RAG tools (751,914\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
+      "tool_count": 32,
+      "total_stars": 751914,
       "categories": {
         "RAG framework / engine": 11,
-        "Vector DB / search": 10,
+        "Vector DB / search": 11,
         "Ingestion / parsing / chunking": 4,
         "Embeddings / rerankers": 3,
         "Novel retrieval approach": 3
@@ -786,8 +832,8 @@
           "stars": 41124
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
     },
@@ -796,12 +842,12 @@
       "title": "Voice AI Agents \u2014 Landscape Report",
       "file": "voice-agents.md",
       "category": "AI / Voice",
-      "summary": "29 voice-AI projects (688,713\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
-      "tool_count": 29,
-      "total_stars": 688713,
+      "summary": "30 voice-AI projects (689,815\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+      "tool_count": 30,
+      "total_stars": 689815,
       "categories": {
         "Realtime voice-agent framework": 5,
-        "Speech-to-text / ASR": 6,
+        "Speech-to-text / ASR": 7,
         "Text-to-speech / TTS": 9,
         "Voice cloning / studio": 3,
         "Speech-LLM / omni model": 1,
@@ -829,8 +875,8 @@
           "stars": 54266
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/voice_agents.py",
       "created": "2026-06-04"
     },
@@ -839,9 +885,9 @@
       "title": "OpenClaw Ecosystem \u2014 What to Use Now",
       "file": "openclaw-ecosystem.md",
       "category": "AI / OpenClaw",
-      "summary": "28 OpenClaw (\ud83e\udd9e) ecosystem projects (1,201,679\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
-      "tool_count": 28,
-      "total_stars": 1201679,
+      "summary": "29 OpenClaw (\ud83e\udd9e) ecosystem projects (1,232,448\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
+      "tool_count": 29,
+      "total_stars": 1232448,
       "categories": {
         "Alternatives": 5,
         "Hosting": 3,
@@ -871,9 +917,50 @@
           "stars": 48924
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/openclaw_ecosystem.py",
+      "created": "2026-05-31"
+    },
+    {
+      "slug": "llm-evaluation-tooling",
+      "title": "LLM Evaluation Tooling \u2014 Landscape Report",
+      "file": "llm-evaluation-tooling.md",
+      "category": "AI / Evaluation",
+      "summary": "28 LLM evaluation tools (219,695\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+      "tool_count": 28,
+      "total_stars": 219695,
+      "categories": {
+        "Observability + eval platform": 6,
+        "Evaluation framework": 9,
+        "Benchmark / leaderboard": 9,
+        "Safety / red-team": 4
+      },
+      "top_tools": [
+        {
+          "name": "langfuse/langfuse",
+          "stars": 35600
+        },
+        {
+          "name": "mlflow/mlflow",
+          "stars": 28336
+        },
+        {
+          "name": "promptfoo/promptfoo",
+          "stars": 25869
+        },
+        {
+          "name": "comet-ml/opik",
+          "stars": 22487
+        },
+        {
+          "name": "openai/evals",
+          "stars": 19583
+        }
+      ],
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
+      "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
     },
     {
@@ -914,8 +1001,8 @@
           "stars": 67547
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
     },
@@ -958,8 +1045,8 @@
           "stars": 54266
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/jetson_inference.py",
       "created": "2026-08-23"
     },
@@ -1000,109 +1087,22 @@
           "stars": 68634
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
-    },
-    {
-      "slug": "llm-evaluation-tooling",
-      "title": "LLM Evaluation Tooling \u2014 Landscape Report",
-      "file": "llm-evaluation-tooling.md",
-      "category": "AI / Evaluation",
-      "summary": "26 LLM evaluation tools (217,209\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
-      "tool_count": 26,
-      "total_stars": 217209,
-      "categories": {
-        "Observability + eval platform": 6,
-        "Evaluation framework": 9,
-        "Benchmark / leaderboard": 7,
-        "Safety / red-team": 4
-      },
-      "top_tools": [
-        {
-          "name": "langfuse/langfuse",
-          "stars": 35600
-        },
-        {
-          "name": "mlflow/mlflow",
-          "stars": 28336
-        },
-        {
-          "name": "promptfoo/promptfoo",
-          "stars": 25869
-        },
-        {
-          "name": "comet-ml/opik",
-          "stars": 22487
-        },
-        {
-          "name": "openai/evals",
-          "stars": 19583
-        }
-      ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
-      "generator": "scripts/reports/llm_evaluation.py",
-      "created": "2026-05-31"
-    },
-    {
-      "slug": "decision-classifiers",
-      "title": "Decision Classifiers & Guard Models \u2014 Landscape Report",
-      "file": "decision-classifiers.md",
-      "category": "AI / Evaluation",
-      "summary": "23 tools (66,822\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
-      "tool_count": 23,
-      "total_stars": 66822,
-      "categories": {
-        "Typed decision API": 2,
-        "Open decision model": 2,
-        "Zero-shot encoder": 3,
-        "Few-shot classifier": 2,
-        "Guard model / guardrails": 4,
-        "Deterministic policy": 1,
-        "Decision router": 4,
-        "Calibration / uncertainty": 2,
-        "LLM as classifier": 3
-      },
-      "top_tools": [
-        {
-          "name": "BoundaryML/baml",
-          "stars": 9389
-        },
-        {
-          "name": "guardrails-ai/guardrails",
-          "stars": 7504
-        },
-        {
-          "name": "NVIDIA-NeMo/Guardrails",
-          "stars": 7273
-        },
-        {
-          "name": "katanemo/plano",
-          "stars": 7083
-        },
-        {
-          "name": "BlockRunAI/ClawRouter",
-          "stars": 6622
-        }
-      ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
-      "generator": "scripts/reports/decision_classifiers.py",
-      "created": "2026-09-25"
     },
     {
       "slug": "memory-frameworks-for-llm-agents",
       "title": "Memory Frameworks for LLMs & Agents \u2014 Comparative Report",
       "file": "memory-frameworks-for-llm-agents.md",
       "category": "AI / Agents",
-      "summary": "21 LLM/agent memory frameworks (450,600\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
-      "tool_count": 21,
-      "total_stars": 450600,
+      "summary": "23 LLM/agent memory frameworks (454,501\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
+      "tool_count": 23,
+      "total_stars": 454501,
       "categories": {
-        "General memory layer": 13,
-        "Coding-agent memory": 3,
+        "General memory layer": 14,
+        "Coding-agent memory": 4,
         "Knowledge-graph memory": 4,
         "LLM framework w/ memory": 1
       },
@@ -1128,8 +1128,8 @@
           "stars": 31613
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
     },
@@ -1171,8 +1171,8 @@
           "stars": 91115
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
     },
@@ -1213,8 +1213,8 @@
           "stars": 26103
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
     },
@@ -1253,8 +1253,8 @@
           "stars": 12647
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
     },
@@ -1292,8 +1292,8 @@
           "stars": 48924
         }
       ],
-      "snapshot": "2026-10-10T15:21:10.911Z",
-      "generated": "2026-10-10",
+      "snapshot": "2026-10-11T13:10:52.436Z",
+      "generated": "2026-10-11",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"
     }

@@ -37,10 +37,18 @@ TAXONOMY = {
     # Typed decision APIs ("System One" models)
     "FrancoisChastel/jev-code": ("Typed decision API", "Jev (TypeSafe's System One model) as classify / check / score / rank / ask tools inside Claude Code, Codex, Pi, OpenCode; reaches Jev through TypeSafe, OpenRouter or Vercel AI Gateway (v0.2)."),
     "Kevthetech143/super-jev": ("Typed decision API", "Small, extensible decision-to-action harness for hosted Jev — typed answer in, action out."),
+    "dzhng/jevgrep": ("Typed decision API", "Code search by intent for coding agents — Jev picks the relevant files and symbols instead of a regex."),
+    "realZachi/pg-jev": ("Typed decision API", "PostgreSQL extension that answers plain-language questions over tables via hosted Jev — the decision model inside the database."),
+    "AbdelStark/awesome-typesafe-jev": ("Typed decision API", "Source-backed field guide to Jev: SDKs, demos, agent tools and benchmarks in one index."),
+    "cobanov/awesome-jev": ("Typed decision API", "Curated, source-backed list of projects built on Jev — the second community index; overlaps the TypeSafe guide."),
 
     # Open decision models (local System One-style)
     "PsiACE/dohnuts": ("Open decision model", "Open System One-style multimodal decision models (0.8B): choose / judge / score with probabilities in one forward pass."),
     "DreamBlooms/dohnuts.cpp": ("Open decision model", "llama.cpp inference for Dohnuts on CPU, no GPU — serves a Jev-like `/v1/systemone` endpoint."),
+    "strands-labs/strands-decider": ("Open decision model", "Small, fast System One-style model from Strands Labs — pick between options or rate on a scale inside agent workflows."),
+    "mizorewww/laya-mlx": ("Open decision model", "Native MLX runtime for the open Laya typed-decision models — on-device decisions on Apple silicon, no API."),
+    "ollaya-dev/ollaya": ("Open decision model", "Ollama-style local server for open decision models — pull and serve Laya, NLI and GLiClass behind one endpoint."),
+    "AnotiaWang/awesome-decision-models": ("Open decision model", "Curated list of decision models — hosted APIs, open weights and runtimes; the vendor-neutral index for this landscape."),
 
     # Zero-shot encoder classifiers & extractors
     "Knowledgator/GLiClass": ("Zero-shot encoder", "GLiNER-family zero-shot text classifier — labels supplied at runtime, CPU-friendly; closest open analogue to Jev."),
@@ -65,6 +73,7 @@ TAXONOMY = {
     "vllm-project/semantic-router": ("Decision router", "Mixture-of-Models router for vLLM: classifies each request to pick a model, with safety filters."),
     "katanemo/plano": ("Decision router", "AI-native proxy (formerly archgw) with small built-in router and guard models at the data plane."),
     "BlockRunAI/ClawRouter": ("Decision router", "Agent-native LLM router with <1 ms local routing across frontier models."),
+    "angel291592/Intent-Router": ("Decision router", "Intent compiler: turns a vague request into a typed IntentSpec, and decides whether to probe, ask, or halt before acting."),
 
     # Calibration & uncertainty
     "scikit-learn-contrib/MAPIE": ("Calibration / uncertainty", "Conformal prediction and risk control — wraps any classifier's scores in coverage guarantees."),

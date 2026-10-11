@@ -72,10 +72,10 @@ console.log('\n== Task 3: landscape ==');
   ok('vocabulary drops stopwords', !vocab.includes('for') && !vocab.includes('and'));
 
   const ls = loadLandscape('agentic-terminals');
-  // 59 comes from the report markdown and is stable until the report is rewritten.
+  // 60 comes from the report markdown and is stable until the report is rewritten.
   // The held/gap split moves as repos get starred, so assert the invariant and
   // print the current vintage rather than pinning yesterday's numbers.
-  ok('agentic-terminals links 59 repos', ls.covered.size === 59, `${ls.covered.size}`);
+  ok('agentic-terminals links 60 repos', ls.covered.size === 60, `${ls.covered.size}`);
   ok('held + gaps accounts for every covered repo',
      ls.held.length + ls.knownGaps.length === ls.covered.size,
      `${ls.held.length} held + ${ls.knownGaps.length} gaps = ${ls.covered.size}`);

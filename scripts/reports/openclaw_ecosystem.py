@@ -63,6 +63,7 @@ TAXONOMY = {
     # Memory (cross-referenced with the Memory report)
     "supermemoryai/openclaw-supermemory": ("Memory", "Long-term memory & recall packaged specifically for OpenClaw agents."),
     "TencentCloud/TencentDB-Agent-Memory": ("Memory", "Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin."),
+    "garrytan/gbrain": ("Memory", "Garry Tan's opinionated 'brain' for OpenClaw and Hermes agents — memory plus working conventions, packaged as one setup."),
 
     # Observability / evaluation
     "vivekchand/clawmetry": ("Observability", "Real-time observability dashboard — 'see your agent think' (OpenTelemetry)."),

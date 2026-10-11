@@ -3,11 +3,11 @@
   "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
   "file": "ai-coding-tuis.md",
   "category": "AI / Comparison",
-  "summary": "31 terminal AI coding tools (1,361,958\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
-  "tool_count": 31,
-  "total_stars": 1361958,
+  "summary": "32 terminal AI coding tools (1,403,035\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
+  "tool_count": 32,
+  "total_stars": 1403035,
   "categories": {
-    "Terminal coding agent": 13,
+    "Terminal coding agent": 14,
     "Session / token ops": 7,
     "Safety / isolation": 4,
     "Multi-CLI glue": 5,
@@ -35,8 +35,8 @@
       "stars": 114040
     }
   ],
-  "snapshot": "2026-10-10T15:21:10.911Z",
-  "generated": "2026-10-10",
+  "snapshot": "2026-10-11T13:10:52.436Z",
+  "generated": "2026-10-11",
   "generator": "scripts/reports/ai_coding_tuis.py",
   "created": "2026-07-19"
 }

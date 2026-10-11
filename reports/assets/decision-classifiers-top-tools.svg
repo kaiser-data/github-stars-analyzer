@@ -23,7 +23,7 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">katanemo/plano</text>
 <path d="M244,121 h255.5 q4,0 4,4 v10 q0,4 -4,4 h-255.5 z" class="bar"/>
 <text x="509.5" y="130.0" class="val" dominant-baseline="central">7,083</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">BlockRunAI/ClawRouter</text>
-<path d="M244,148 h238.6 q4,0 4,4 v10 q0,4 -4,4 h-238.6 z" class="bar"/>
-<text x="492.6" y="157.0" class="val" dominant-baseline="central">6,622</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">mizorewww/laya-mlx</text>
+<path d="M244,148 h247.7 q4,0 4,4 v10 q0,4 -4,4 h-247.7 z" class="bar"/>
+<text x="501.7" y="157.0" class="val" dominant-baseline="central">6,870</text>
 </svg>

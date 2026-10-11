@@ -54,6 +54,7 @@ TAXONOMY = {
     "m-bain/whisperX": ("Speech-to-text / ASR", "Whisper + word-level timestamps + speaker diarization — adds the 'who said what, when' a transcript agent needs."),
     "KoljaB/RealtimeSTT": ("Speech-to-text / ASR", "Low-latency streaming STT with built-in voice-activity detection and wake-word — purpose-built for live voice agents."),
     "Macoron/whisper.unity": ("Speech-to-text / ASR", "whisper.cpp bindings for Unity — on-device speech-to-text inside games/XR."),
+    "Kieirra/murmure": ("Speech-to-text / ASR", "Fully local cross-platform dictation with LLM post-processing — private speech-to-text as a desktop app."),
 
     # Text-to-speech / TTS — the voice
     "coqui-ai/TTS": ("Text-to-speech / TTS", "Battle-tested deep-learning TTS toolkit — many models, voice cloning, 1000+ languages; the OSS TTS staple."),

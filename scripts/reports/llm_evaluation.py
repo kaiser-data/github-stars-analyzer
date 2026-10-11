@@ -52,6 +52,8 @@ TAXONOMY = {
     "jszheng21/RACE": ("Benchmark / leaderboard", "Multi-dimensional code-generation benchmark (Readability, Maintainability, Correctness, Efficiency)."),
     "EleutherAI/lm-evaluation-harness": ("Benchmark / leaderboard", "The de-facto academic harness — 100+ standardized benchmarks behind the HF leaderboard."),
     "huggingface/lighteval": ("Benchmark / leaderboard", "Hugging Face's lightweight, all-in-one eval suite for fast benchmark runs."),
+    "IBM/AssetOpsBench": ("Benchmark / leaderboard", "IBM's Industry 4.0 benchmark for multi-agent asset-operations tasks — a domain benchmark with its own agent framework."),
+    "supabase/evals": ("Benchmark / leaderboard", "Supabase's evals of coding agents doing Supabase work — a vendor benchmark of agent competence on one platform."),
 
     # Safety / red-teaming / hallucination detection
     "NVIDIA/garak": ("Safety / red-team", "LLM vulnerability scanner — probes for jailbreaks, prompt injection, toxicity, data leakage."),

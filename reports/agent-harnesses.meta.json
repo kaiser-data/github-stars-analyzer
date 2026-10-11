@@ -3,15 +3,15 @@
   "title": "Agent Harnesses \u2014 Six Approaches to Running Autonomous Agents",
   "file": "agent-harnesses.md",
   "category": "AI / Agents",
-  "summary": "35 harness projects (1,503,095\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
-  "tool_count": 35,
-  "total_stars": 1503095,
+  "summary": "42 harness projects (1,570,570\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
+  "tool_count": 42,
+  "total_stars": 1570570,
   "categories": {
-    "Harness-as-SDK": 8,
-    "Meta-harness over coding agents": 6,
+    "Harness-as-SDK": 12,
+    "Meta-harness over coding agents": 7,
     "Fleet / parallel orchestration": 7,
     "Determinism & spec-driven": 4,
-    "Sandbox substrate": 5,
+    "Sandbox substrate": 7,
     "Autonomous long-horizon": 5
   },
   "top_tools": [
@@ -36,8 +36,8 @@
       "stars": 83646
     }
   ],
-  "snapshot": "2026-10-10T15:21:10.911Z",
-  "generated": "2026-10-10",
+  "snapshot": "2026-10-11T13:10:52.436Z",
+  "generated": "2026-10-11",
   "generator": "scripts/reports/agent_harnesses.py",
   "created": "2026-07-19"
 }

@@ -3,12 +3,12 @@
   "title": "Claude Code Superpowers \u2014 Setup Strategies from Your Stars",
   "file": "claude-code-setups.md",
   "category": "AI / Agents",
-  "summary": "59 Claude-Code 'superpower' projects (5,094,386\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
-  "tool_count": 59,
-  "total_stars": 5094386,
+  "summary": "61 Claude-Code 'superpower' projects (5,200,735\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
+  "tool_count": 61,
+  "total_stars": 5200735,
   "categories": {
-    "Harness / coding agent": 12,
-    "Skills framework": 6,
+    "Harness / coding agent": 13,
+    "Skills framework": 7,
     "Config / setup kit": 11,
     "Memory / context": 7,
     "Token-saver / compression": 7,
@@ -39,8 +39,8 @@
       "stars": 217948
     }
   ],
-  "snapshot": "2026-10-10T15:21:10.911Z",
-  "generated": "2026-10-10",
+  "snapshot": "2026-10-11T13:10:52.436Z",
+  "generated": "2026-10-11",
   "generator": "scripts/reports/claude_code_setups.py",
   "created": "2026-06-13"
 }

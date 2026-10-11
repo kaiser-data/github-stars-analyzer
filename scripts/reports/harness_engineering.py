@@ -47,6 +47,7 @@ TAXONOMY = {
     "rtk-ai/rtk": ("3. Context engineering", "CLI proxy that filters and condenses shell output for coding agents."),
     "alexgreensh/token-optimizer": ("3. Context engineering", "Finds 'ghost tokens' and helps sessions survive compaction without quality decay."),
     "repoprompt/repoprompt-ce": ("3. Context engineering", "Community edition of RepoPrompt — hand-pick files and code maps into a precise context bundle instead of letting the agent grep blindly."),
+    "chunkhound/chunkhound": ("3. Context engineering", "Local code-aware indexing (semantic + regex) served over MCP — give the agent a map of the codebase instead of raw greps."),
 
     # 4. Lean action space / tool design
     "jgravelle/jcodemunch-mcp": ("4. Lean action space", "Symbol-level code retrieval — return the function, not the file."),
@@ -59,6 +60,7 @@ TAXONOMY = {
     "haydenbleasel/ultracite": ("5. External verification", "Zero-config lint/format — cheap, deterministic back-pressure inside the loop."),
     "alibaba/open-code-review": ("5. External verification", "Hybrid deterministic + LLM code review run against the agent's diff."),
     "modem-dev/hunk": ("5. External verification", "Review-first terminal diff viewer — keeps a human verifying what the agent changed."),
+    "VibiumDev/vibium": ("5. External verification", "Verification layer for coding agents — browser-driven checks that the change actually works, outside the model."),
 
     # 6. State on disk
     "OthmanAdi/planning-with-files": ("6. State on disk", "Plans and progress persisted to files — crash-proof, resumable long tasks."),
@@ -82,12 +84,15 @@ TAXONOMY = {
     "open-multi-agent/open-multi-agent": ("9. Durable runs & approvals", "Agent runtime with durable approvals and verifiable run records."),
     "triggerdotdev/trigger.dev": ("9. Durable runs & approvals", "Durable execution for agents and workflows — retries, resumes, long waits."),
     "backnotprop/plannotator": ("9. Durable runs & approvals", "Annotate and approve agent plans and diffs before execution continues."),
+    "petergyang/human-review": ("9. Durable runs & approvals", "Google-Doc-style commenting on the agent's HTML/Markdown output, sent back as feedback — a human checkpoint with a real UI."),
 
     # 10. Observe and evaluate the harness itself
     "langfuse/langfuse": ("10. Observe & eval the harness", "Open-source tracing + evals — see which steps, tools and rules actually fire."),
     "getagentseal/codeburn": ("10. Observe & eval the harness", "Local token/cost tracking across 37 coding agents — measure harness overhead."),
     "harbor-framework/harbor": ("10. Observe & eval the harness", "Framework for evaluating and improving agents on frozen task sets."),
     "promptfoo/promptfoo": ("10. Observe & eval the harness", "Regression tests and red-teaming for prompts and agents in CI."),
+    "microsoft/waza": ("10. Observe & eval the harness", "CLI and framework for creating, testing and measuring Agent Skills — evals aimed at the skill layer, not the model."),
+    "strands-labs/harness-optimizer": ("10. Observe & eval the harness", "Tunes harness 'formulas' against evals — early, research-grade, but the right idea: optimize the harness, not the prompt."),
 }
 
 ORDER = [

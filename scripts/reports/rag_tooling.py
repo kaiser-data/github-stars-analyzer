@@ -61,6 +61,7 @@ TAXONOMY = {
     "microsoft/graphrag": ("RAG framework / engine", "Microsoft's reference GraphRAG — LLM-built entity graph + community summaries over a corpus."),
     "neuml/txtai": ("RAG framework / engine", "All-in-one embeddings DB + RAG + workflows in one package."),
     "marqo-ai/marqo": ("Vector DB / search", "End-to-end vector search that bundles embedding inference (text + image)."),
+    "manticoresoftware/manticoresearch": ("Vector DB / search", "Full-text, vector and hybrid search in one SQL-speaking engine — a lighter Elasticsearch alternative with real-time indexing."),
 
     # Ingestion / parsing / chunking
     "Unstructured-IO/unstructured": ("Ingestion / parsing / chunking", "ETL that turns PDFs/docs/HTML into clean, chunk-ready structured elements."),
