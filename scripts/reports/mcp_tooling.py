@@ -70,7 +70,7 @@ TAXONOMY = {
 
     # Dev-tooling / quality / observability servers
     "github/github-mcp-server": ("Server · dev-tooling", "GitHub's official MCP server — issues, PRs, repos as agent tools."),
-    "getsentry/sentry-mcp": ("Server · dev-tooling", "Interact with Sentry (errors/issues) via LLMs."),
+    "getsentry/toolkit": ("Server · dev-tooling", "Sentry's agentic toolkit (formerly `sentry-mcp`) — query errors and issues from an LLM."),
     "SonarSource/sonarqube-mcp-server": ("Server · dev-tooling", "Official SonarQube MCP server — code quality & security in agents."),
     "czlonkowski/n8n-mcp": ("Server · dev-tooling", "MCP server that helps agents build n8n workflows."),
 
@@ -258,7 +258,7 @@ A("")
 official = {
     "github/github-mcp-server": "GitHub", "microsoft/playwright-mcp": "Microsoft",
     "googleapis/mcp-toolbox": "Google", "neo4j/mcp": "Neo4j",
-    "getsentry/sentry-mcp": "Sentry", "SonarSource/sonarqube-mcp-server": "SonarSource",
+    "getsentry/toolkit": "Sentry", "SonarSource/sonarqube-mcp-server": "SonarSource",
     "storybookjs/mcp": "Storybook", "upstash/context7": "Upstash",
     "microsoft/mcp-for-beginners": "Microsoft (edu)",
 }

@@ -59,7 +59,7 @@ TAXONOMY = {
     # Where the agents actually live
     "tmux/tmux": ("Multiplexer / session", "The 2007 multiplexer that became agent infrastructure — process isolation, detach/reattach, and a stable `send-keys` API orchestrators target. Runs anywhere POSIX."),
     "herdrdev/herdr": ("Multiplexer / session", "A background server the terminals live inside: agents survive a closed lid, a dropped network, and a reboot, and reattach from any terminal or over SSH. Marks every pane working/blocked/idle, and its socket API is the same surface agents drive. One Rust binary, macOS/Linux with Windows in beta."),
-    "Untrivial-ai/agent-orchestrator": ("Parallel-agent orchestration", "Agent IDE over tmux + git worktrees — plans tasks, spawns fleets, handles CI fixes and merge conflicts autonomously."),
+    "OrchestratorInc/agent-orchestrator": ("Parallel-agent orchestration", "Agent IDE over tmux + git worktrees — plans tasks, spawns fleets, handles CI fixes and merge conflicts autonomously."),
 
     # Hardening the shell the agent drives
     "sheeki03/tirith": ("Terminal hardening", "Terminal security for devs and agents — intercepts homograph URLs, pipe-to-shell, ANSI injection, and exfiltration before execution."),
@@ -104,6 +104,7 @@ TAXONOMY = {
     "omnara-ai/omnara": ("Parallel-agent orchestration", "Command-centre view over agents running elsewhere, including from a phone — the answer to 'which agent is stuck' when you're away from the machine."),
     "pvolok/dekit": ("Parallel-agent orchestration", "Runs many commands in parallel with per-process panes — the generic, OS-portable version of agent multiplexing."),
     "nimbalyst/nimbalyst": ("Parallel-agent orchestration", "Visual workspace for Claude Code/Codex/OpenCode: an agent kanban where each card is a task, branch, or running session showing active / blocked / awaiting-review / ready-to-merge — plus a native iPhone app for reviewing and resuming."),
+    "generalaction/emdash": ("Parallel-agent orchestration", "Open-source agentic development environment (YC W26): runs many coding agents side by side, each in its own git worktree, with diff review and merge from one window."),
 
     # ===== Remote & web sessions — promoted from the gap table once starred =====
     "xtermjs/xterm.js": ("Remote & web sessions", "The terminal component inside browsers and Electron apps — what you'd build on to give an agent fleet a web UI."),
@@ -342,7 +343,7 @@ TASK_RANKINGS = [
 ADJACENT = [
     ("anthropics/claude-code", "The agent, not the terminal — see the `ai-coding-tuis` report."),
     ("openai/codex", "Same: agent layer. This report is about what it runs inside."),
-    ("Untrivial-ai/agent-orchestrator", "Also covered by `agent-orchestration` and `agent-harnesses`; listed here for its tmux dependency."),
+    ("OrchestratorInc/agent-orchestrator", "Also covered by `agent-orchestration` and `agent-harnesses`; listed here for its tmux dependency."),
     ("sheeki03/tirith", "Also in `ai-coding-tuis` as a safety tool; kept here because the attack surface is the terminal itself."),
     ("BloopAI/vibe-kanban", "Parallel-agent management, but a web UI rather than a terminal surface."),
     ("getagentseal/codeburn", "Token/cost tracking — `token-savings` and `ai-coding-tuis` cover it."),

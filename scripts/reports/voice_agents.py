@@ -45,6 +45,7 @@ TAXONOMY = {
     "livekit/agents": ("Realtime voice-agent framework", "Realtime voice-AI agent framework on LiveKit's WebRTC transport — turn detection, telephony (SIP), and tool calling built in."),
     "TEN-framework/ten-framework": ("Realtime voice-agent framework", "Low-latency framework for conversational voice-AI agents; graph of multimodal extensions for real-time pipelines."),
     "gradio-app/fastrtc": ("Realtime voice-agent framework", "Python real-time audio/video (WebRTC) library — the browser transport layer that turns a model into a live voice app."),
+    "QwenAudio/qwen-audio-agent": ("Realtime voice-agent framework", "Qwen's realtime voice runtime — keeps an agent talking while it works, with interruption and tool calls in the loop."),
 
     # Speech-to-text / ASR — the ears
     "openai/whisper": ("Speech-to-text / ASR", "The reference open ASR model — robust multilingual transcription via large-scale weak supervision."),
@@ -63,6 +64,7 @@ TAXONOMY = {
     "neuphonic/neutts": ("Text-to-speech / TTS", "Compact on-device TTS model focused on natural, low-footprint speech."),
     "DigitalPhonetics/IMS-Toucan": ("Text-to-speech / TTS", "Controllable, fast TTS covering 7000+ languages — breadth-first multilingual synthesis."),
     "lucidrains/voicebox-pytorch": ("Text-to-speech / TTS", "Clean PyTorch implementation of Meta's Voicebox — non-autoregressive flow-matching TTS research base."),
+    "KoljaB/RealtimeTTS": ("Text-to-speech / TTS", "Streaming TTS wrapper over many engines (Coqui, Kokoro, OpenAI, Azure, …) — starts speaking from the first LLM tokens."),
 
     # Voice cloning / studios
     "CorentinJ/Real-Time-Voice-Cloning": ("Voice cloning / studio", "The classic 5-second voice-cloning demo (SV2TTS) — the repo that popularized OSS voice cloning."),

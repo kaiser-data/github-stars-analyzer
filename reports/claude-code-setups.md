@@ -1,8 +1,8 @@
 # Claude Code Superpowers — Setup Strategies from Your Stars
 
-> Derived from **kaiser-data**'s 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`), cross-referenced with the repo-similarity graph (2,263 nodes / 7,463 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,322 starred repos (snapshot `2026-10-10T15:21:10.911Z`), cross-referenced with the repo-similarity graph (2,322 nodes / 7,718 edges, 43 communities).
 >
-> Generated 2026-10-01 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
+> Generated 2026-10-10 by `scripts/reports/claude_code_setups.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/claude-code-setups-top-tools.svg)
 
@@ -31,11 +31,11 @@ A modern Claude Code setup is **layered**, and the 2026 superpower is *on-demand
 
 ## Executive summary
 
-- **58 Claude-Code 'superpower' projects** in your stars (**5,010,819★** combined), spanning 9 setup layers:
+- **59 Claude-Code 'superpower' projects** in your stars (**5,094,386★** combined), spanning 9 setup layers:
   - **Harness / coding agent** (12): `openclaw`, `hermes-agent`, `opencode`, `claude-code`, `codex`, `pi`, `gemini-cli`, `deer-flow`, `ruflo`, `cline`, `goose`, `oh-my-claudecode`
   - **Skills framework** (6): `superpowers`, `ECC`, `skills`, `awesome-claude-skills`, `scientific-agent-skills`, `agents`
   - **Config / setup kit** (11): `andrej-karpathy-skills`, `system-prompts-and-models-of-ai-tools`, `cc-switch`, `gstack`, `claude-code-best-practice`, `awesome-claude-code`, `claude-cookbooks`, `claude-howto`, `claude-code-templates`, `claude-code-system-prompts`, `my-claude-code-setup`
-  - **Memory / context** (6): `claude-mem`, `mem0`, `mempalace`, `memvid`, `engram`, `Acontext`
+  - **Memory / context** (7): `claude-mem`, `mem0`, `mempalace`, `memvid`, `engram`, `basic-memory`, `Acontext`
   - **Token-saver / compression** (7): `caveman`, `rtk`, `headroom`, `oh-my-openagent`, `toon`, `codeburn`, `semble`
   - **Code-graph / retrieval** (5): `graphify`, `Understand-Anything`, `codegraph`, `GitNexus`, `codebase-memory-mcp`
   - **MCP ecosystem** (3): `awesome-mcp-servers`, `servers`, `context7`
@@ -52,7 +52,7 @@ A modern Claude Code setup is **layered**, and the 2026 superpower is *on-demand
 | **Harness / coding agent** | The agent loop itself | `openclaw`, `hermes-agent`, `opencode`, `claude-code`, `codex`, `pi` |
 | **Skills framework** | On-demand expertise (the modern superpower) | `superpowers`, `ECC`, `skills`, `awesome-claude-skills`, `scientific-agent-skills`, `agents` |
 | **Config / setup kit** | Shape behavior up front, cheaply | `andrej-karpathy-skills`, `system-prompts-and-models-of-ai-tools`, `cc-switch`, `gstack`, `claude-code-best-practice`, `awesome-claude-code` |
-| **Memory / context** | Persist context across sessions | `claude-mem`, `mem0`, `mempalace`, `memvid`, `engram`, `Acontext` |
+| **Memory / context** | Persist context across sessions | `claude-mem`, `mem0`, `mempalace`, `memvid`, `engram`, `basic-memory` |
 | **Token-saver / compression** | Shrink what the model has to read | `caveman`, `rtk`, `headroom`, `oh-my-openagent`, `toon`, `codeburn` |
 | **Code-graph / retrieval** | Feed the *right* code, not all of it | `graphify`, `Understand-Anything`, `codegraph`, `GitNexus`, `codebase-memory-mcp` |
 | **MCP ecosystem** | External reach (docs, tools, data) | `awesome-mcp-servers`, `servers`, `context7` |
@@ -65,64 +65,65 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Layer | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Harness / coding agent | TypeScript | NOASSERTION | 390,467 (▼234) | Hot | 84 | very active | 4d ago | 10mo | 14 |
-| [obra/superpowers](https://github.com/obra/superpowers) | Skills framework | Shell | MIT | 291,377 (▼977) | Hot | 75 | very active | 4d ago | 11mo | 6 |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Skills framework | JavaScript | MIT | 267,158 (▼1,506) | Hot | 79 | very active | 5d ago | 8mo | 26 |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Harness / coding agent | Python | MIT | 248,814 (▼855) | Hot | 80 | very active | 4d ago | 1.2y | 11 |
-| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | Config / setup kit | — | — | 215,056 (▼575) | Declining | 21 | slowing | 5mo ago | 8mo | 0 |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | Harness / coding agent | TypeScript | MIT | 209,940 (▼595) | Hot | 83 | very active | 4d ago | 1.4y | 17 |
-| [ollama/ollama](https://github.com/ollama/ollama) | Local runtime | Go | MIT | 181,673 (▼175) | Classic | 82 | very active | 5d ago | 3.3y | 9 |
-| [anthropics/skills](https://github.com/anthropics/skills) | Skills framework | Python | — | 178,045 (▼695) | Mature | 50 | active | 5d ago | 1.0y | 5 |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Harness / coding agent | TypeScript | — | 148,017 (▼416) | Hot | 78 | very active | 5d ago | 1.6y | 5 |
-| [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | Config / setup kit | — | GPL-3.0 | 143,855 (▼65) | Mature | 47 | active | 1mo ago | 1.6y | 3 |
-| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Config / setup kit | Rust | MIT | 136,676 (▼1,326) | Hot | 81 | very active | 4d ago | 1.2y | 39 |
-| [garrytan/gstack](https://github.com/garrytan/gstack) | Config / setup kit | TypeScript | MIT | 134,161 (▼213) | Hot | 58 | very active | 4d ago | 6mo | 5 |
-| [openai/codex](https://github.com/openai/codex) | Harness / coding agent | Rust | Apache-2.0 | 126,387 (▼518) | Hot | 93 | very active | 4d ago | 1.5y | 37 |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Code-graph / retrieval | Python | Apache-2.0 | 121,287 (▼715) | Hot | 81 | very active | 6d ago | 5mo | 15 |
-| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness / coding agent | TypeScript | MIT | 109,259 (▼729) | Hot | 79 | very active | 4d ago | 1.1y | 10 |
-| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Token-saver / compression | Go | NOASSERTION | 107,770 (▼370) | Hot | 78 | very active | 4d ago | 5mo | 12 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Harness / coding agent | TypeScript | Apache-2.0 | 107,159 (▼9) | Hot | 94 | very active | 5d ago | 1.5y | 18 |
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | MCP ecosystem | — | MIT | 95,504 (▼119) | Hot | 59 | very active | 6d ago | 1.8y | 32 |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Memory / context | TypeScript | Apache-2.0 | 94,658 (▼161) | Hot | 79 | very active | 5d ago | 1.1y | 16 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP ecosystem | TypeScript | NOASSERTION | 90,584 (▼58) | Hot | 89 | very active | 7d ago | 1.9y | 35 |
-| [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Code-graph / retrieval | TypeScript | MIT | 84,129 (▼311) | Hot | 74 | very active | 17d ago | 6mo | 11 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Harness / coding agent | Python | MIT | 82,962 (▼177) | Hot | 86 | very active | 4d ago | 1.4y | 51 |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Token-saver / compression | Rust | Apache-2.0 | 81,687 (▼190) | Hot | 75 | very active | 4d ago | 8mo | 12 |
-| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Skills framework | Python | — | 75,611 (▼163) | Declining | 38 | active | 11d ago | 11mo | 1 |
-| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Token-saver / compression | Python | Apache-2.0 | 73,757 (▼239) | Hot | 97 | very active | 4d ago | 8mo | 37 |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Harness / coding agent | TypeScript | MIT | 73,238 (▼183) | Hot | 76 | very active | 5d ago | 1.3y | 8 |
-| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | Code-graph / retrieval | C | MIT | 72,059 (▼188) | Hot | 77 | very active | 6d ago | 8mo | 5 |
-| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Token-saver / compression | TypeScript | NOASSERTION | 69,395 (▼222) | Hot | 78 | very active | 5d ago | 10mo | 3 |
-| [cline/cline](https://github.com/cline/cline) | Harness / coding agent | TypeScript | Apache-2.0 | 69,273 (▼203) | Mature | 78 | very active | 4d ago | 2.2y | 10 |
-| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | Config / setup kit | HTML | MIT | 66,321 (▼164) | Rising | 64 | very active | 4d ago | 11mo | 1 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Memory / context | Python | Apache-2.0 | 65,976 (▼211) | Classic | 83 | very active | 4d ago | 3.3y | 28 |
-| [upstash/context7](https://github.com/upstash/context7) | MCP ecosystem | TypeScript | MIT | 62,414 (▼78) | Hot | 78 | very active | 5d ago | 1.5y | 10 |
-| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Local runtime | Python | NOASSERTION | 59,598 (▼177) | Classic | 78 | very active | 4d ago | 3.2y | 10 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Memory / context | Python | MIT | 59,268 (▼60) | Hot | 81 | very active | 4d ago | 5mo | 22 |
-| [aaif-goose/goose](https://github.com/aaif-goose/goose) | Harness / coding agent | Rust | Apache-2.0 | 54,634 (▼95) | Mature | 99 | very active | 4d ago | 2.1y | 37 |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Config / setup kit | Python | NOASSERTION | 54,587 (▼149) | Mature | 60 | very active | 4d ago | 1.4y | 1 |
-| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | Config / setup kit | Jupyter Notebook | MIT | 52,974 (▼52) | Classic | 61 | very active | 5d ago | 3.1y | 11 |
-| [abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus) | Code-graph / retrieval | TypeScript | NOASSERTION | 47,564 (▼64) | Hot | 83 | very active | 4d ago | 1.2y | 26 |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Skills framework | Python | MIT | 46,617 (▼321) | Hot | 79 | very active | 8d ago | 11mo | 17 |
-| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | Code-graph / retrieval | C | MIT | 44,864 (▼372) | Hot | 75 | very active | 6d ago | 7mo | 10 |
-| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | Config / setup kit | Python | MIT | 41,659 (▼40) | Rising | 67 | very active | 10d ago | 10mo | 3 |
-| [wshobson/agents](https://github.com/wshobson/agents) | Skills framework | Python | MIT | 39,933 (▼118) | Hot | 65 | very active | 9d ago | 1.2y | 17 |
-| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Harness / coding agent | TypeScript | MIT | 39,348 (▼42) | Hot | 85 | very active | 4d ago | 8mo | 10 |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability / evals | TypeScript | NOASSERTION | 35,033 (▼104) | Classic | 89 | very active | 4d ago | 3.4y | 21 |
-| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | Config / setup kit | Python | MIT | 31,758 (▼280) | Hot | 80 | very active | 5d ago | 1.2y | 14 |
-| [toon-format/toon](https://github.com/toon-format/toon) | Token-saver / compression | TypeScript | MIT | 25,421 (▼15) | Hot | 78 | very active | 26d ago | 11mo | 4 |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability / evals | Python | Apache-2.0 | 22,230 (▼41) | Classic | 93 | very active | 4d ago | 3.4y | 22 |
-| [memvid/memvid](https://github.com/memvid/memvid) | Memory / context | Rust | Apache-2.0 | 16,554 (▼11) | Declining | 55 | slowing | 2mo ago | 1.3y | 1 |
-| [Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts) | Config / setup kit | JavaScript | MIT | 12,764 (▼30) | Rising | 77 | very active | 5d ago | 10mo | 2 |
-| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Observability / evals | Python | NOASSERTION | 11,609 (▼34) | Classic | 78 | very active | 4d ago | 3.9y | 17 |
-| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | Token-saver / compression | TypeScript | MIT | 11,228 (▼37) | Hot | 79 | very active | 4d ago | 5mo | 11 |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability / evals | Python | Apache-2.0 | 7,447 (▼8) | Classic | 70 | active | 5d ago | 3.1y | 7 |
-| [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram) | Memory / context | Go | MIT | 6,822 (▼85) | Hot | 79 | very active | 4d ago | 7mo | 10 |
-| [MinishLab/semble](https://github.com/MinishLab/semble) | Token-saver / compression | Python | MIT | 6,142 (▼8) | Hot | 72 | very active | 4d ago | 5mo | 5 |
-| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | Memory / context | JavaScript | Apache-2.0 | 3,696 (▲1) | Declining | 47 | slowing | 2mo ago | 1.2y | 0 |
-| [centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup) | Config / setup kit | Python | MIT | 2,644 (▼5) | Mature | 50 | active | 4d ago | 1.2y | 1 |
-| [patoles/agent-flow](https://github.com/patoles/agent-flow) | Observability / evals | TypeScript | Apache-2.0 | 1,656 (▼8) | Mature | 46 | slowing | 2mo ago | 6mo | 2 |
-| [ingo-eichhorst/Irrlicht](https://github.com/ingo-eichhorst/Irrlicht) | Observability / evals | Go | MIT | 100 | Hot | 79 | very active | 5d ago | 1.1y | 5 |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Harness / coding agent | TypeScript | MIT | 391,581 (▲1,114) | Hot | 79 | very active | 0d ago | 10mo | 20 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Skills framework | Shell | MIT | 297,121 (▲5,744) | Hot | 74 | very active | 1d ago | 1.0y | 5 |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | Skills framework | JavaScript | MIT | 276,293 (▲9,135) | Hot | 79 | very active | 1d ago | 8mo | 18 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | Harness / coding agent | Python | MIT | 252,453 (▲3,639) | Hot | 81 | very active | 0d ago | 1.2y | 26 |
+| [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | Config / setup kit | — | — | 217,948 (▲2,892) | Declining | 21 | slowing | 5mo ago | 8mo | 0 |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | Harness / coding agent | TypeScript | MIT | 212,497 (▲2,557) | Hot | 88 | very active | 0d ago | 1.4y | 21 |
+| [ollama/ollama](https://github.com/ollama/ollama) | Local runtime | Go | MIT | 182,613 (▲940) | Classic | 83 | very active | 0d ago | 3.3y | 15 |
+| [anthropics/skills](https://github.com/anthropics/skills) | Skills framework | Python | — | 180,291 (▲2,246) | Mature | 51 | active | 1d ago | 1.0y | 5 |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Harness / coding agent | TypeScript | — | 150,006 (▲1,989) | Hot | 79 | very active | 1d ago | 1.6y | 8 |
+| [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | Config / setup kit | — | GPL-3.0 | 143,942 (▲87) | Mature | 43 | active | 2mo ago | 1.6y | 1 |
+| [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Config / setup kit | Rust | MIT | 142,363 (▲5,687) | Hot | 78 | very active | 0d ago | 1.2y | 19 |
+| [garrytan/gstack](https://github.com/garrytan/gstack) | Config / setup kit | TypeScript | MIT | 135,801 (▲1,640) | Hot | 62 | very active | 1d ago | 7mo | 4 |
+| [openai/codex](https://github.com/openai/codex) | Harness / coding agent | Rust | Apache-2.0 | 128,516 (▲2,129) | Hot | 94 | very active | 0d ago | 1.5y | 42 |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Code-graph / retrieval | Python | Apache-2.0 | 125,191 (▲3,904) | Hot | 91 | very active | 0d ago | 6mo | 32 |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | Harness / coding agent | TypeScript | MIT | 114,040 (▲4,781) | Hot | 85 | very active | 0d ago | 1.2y | 8 |
+| [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Token-saver / compression | Go | Apache-2.0 | 110,877 (▲3,107) | Rising | 79 | very active | 0d ago | 6mo | 2 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Harness / coding agent | TypeScript | Apache-2.0 | 107,275 (▲116) | Hot | 95 | very active | 1d ago | 1.5y | 13 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Memory / context | TypeScript | Apache-2.0 | 99,136 (▲4,478) | Hot | 85 | very active | 1d ago | 1.1y | 8 |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | MCP ecosystem | — | MIT | 96,042 (▲538) | Hot | 60 | very active | 1d ago | 1.9y | 9 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP ecosystem | TypeScript | NOASSERTION | 91,115 (▲531) | Hot | 89 | very active | 0d ago | 1.9y | 31 |
+| [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Code-graph / retrieval | TypeScript | MIT | 85,824 (▲1,695) | Hot | 76 | very active | 0d ago | 7mo | 12 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Harness / coding agent | Python | MIT | 83,646 (▲684) | Hot | 87 | very active | 0d ago | 1.4y | 45 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Token-saver / compression | Rust | Apache-2.0 | 82,837 (▲1,150) | Hot | 75 | very active | 1d ago | 8mo | 11 |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Skills framework | Python | — | 76,791 (▲1,180) | Declining | 37 | active | 22d ago | 11mo | 1 |
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Token-saver / compression | Python | Apache-2.0 | 74,886 (▲1,129) | Hot | 98 | very active | 0d ago | 9mo | 43 |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | Harness / coding agent | TypeScript | MIT | 74,252 (▲1,014) | Hot | 81 | very active | 0d ago | 1.4y | 5 |
+| [colbymchenry/codegraph](https://github.com/colbymchenry/codegraph) | Code-graph / retrieval | C | MIT | 73,659 (▲1,600) | Rising | 78 | very active | 0d ago | 8mo | 2 |
+| [cline/cline](https://github.com/cline/cline) | Harness / coding agent | TypeScript | Apache-2.0 | 70,110 (▲837) | Mature | 83 | very active | 0d ago | 2.3y | 19 |
+| [code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Token-saver / compression | TypeScript | NOASSERTION | 69,937 (▲542) | Hot | 78 | very active | 0d ago | 10mo | 3 |
+| [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | Config / setup kit | HTML | MIT | 67,340 (▲1,019) | Rising | 64 | very active | 0d ago | 11mo | 1 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Memory / context | Python | Apache-2.0 | 66,942 (▲966) | Classic | 83 | very active | 1d ago | 3.3y | 30 |
+| [upstash/context7](https://github.com/upstash/context7) | MCP ecosystem | TypeScript | MIT | 62,855 (▲441) | Hot | 85 | very active | 1d ago | 1.5y | 13 |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Local runtime | Python | NOASSERTION | 60,879 (▲1,281) | Classic | 84 | very active | 0d ago | 3.2y | 20 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Memory / context | Python | MIT | 59,492 (▲224) | Hot | 76 | very active | 0d ago | 6mo | 12 |
+| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Config / setup kit | Python | NOASSERTION | 55,355 (▲768) | Mature | 61 | very active | 0d ago | 1.5y | 2 |
+| [aaif-goose/goose](https://github.com/aaif-goose/goose) | Harness / coding agent | Rust | Apache-2.0 | 55,129 (▲495) | Mature | 99 | very active | 1d ago | 2.1y | 36 |
+| [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | Config / setup kit | Jupyter Notebook | MIT | 53,326 (▲352) | Classic | 60 | very active | 0d ago | 3.2y | 8 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Skills framework | Python | MIT | 48,276 (▲1,659) | Hot | 79 | very active | 5d ago | 11mo | 17 |
+| [abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus) | Code-graph / retrieval | TypeScript | NOASSERTION | 47,825 (▲261) | Hot | 83 | very active | 0d ago | 1.2y | 20 |
+| [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | Code-graph / retrieval | C | MIT | 46,283 (▲1,419) | Rising | 76 | very active | 0d ago | 7mo | 1 |
+| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | Config / setup kit | Python | MIT | 41,789 (▲130) | Rising | 67 | very active | 10d ago | 11mo | 2 |
+| [wshobson/agents](https://github.com/wshobson/agents) | Skills framework | Python | MIT | 40,321 (▲388) | Hot | 62 | very active | 6d ago | 1.2y | 17 |
+| [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Harness / coding agent | TypeScript | MIT | 39,763 (▲415) | Hot | 80 | very active | 2d ago | 9mo | 6 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability / evals | TypeScript | NOASSERTION | 35,600 (▲567) | Classic | 94 | very active | 0d ago | 3.4y | 19 |
+| [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | Config / setup kit | Python | MIT | 32,530 (▲772) | Hot | 75 | very active | 0d ago | 1.3y | 6 |
+| [toon-format/toon](https://github.com/toon-format/toon) | Token-saver / compression | TypeScript | MIT | 25,481 (▲60) | Hot | 80 | very active | 1d ago | 11mo | 6 |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Observability / evals | Python | Apache-2.0 | 22,487 (▲257) | Classic | 89 | very active | 1d ago | 3.4y | 18 |
+| [memvid/memvid](https://github.com/memvid/memvid) | Memory / context | Rust | Apache-2.0 | 16,585 (▲31) | Declining | 53 | slowing | 2mo ago | 1.4y | 1 |
+| [Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts) | Config / setup kit | JavaScript | MIT | 12,872 (▲108) | Rising | 77 | very active | 1d ago | 10mo | 1 |
+| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Observability / evals | Python | NOASSERTION | 11,774 (▲165) | Classic | 84 | very active | 0d ago | 3.9y | 22 |
+| [getagentseal/codeburn](https://github.com/getagentseal/codeburn) | Token-saver / compression | TypeScript | MIT | 11,373 (▲145) | Hot | 80 | very active | 0d ago | 6mo | 8 |
+| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | Observability / evals | Python | Apache-2.0 | 7,481 (▲34) | Classic | 71 | active | 4d ago | 3.1y | 8 |
+| [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram) | Memory / context | Go | MIT | 7,121 (▲299) | Hot | 79 | very active | 0d ago | 7mo | 10 |
+| [MinishLab/semble](https://github.com/MinishLab/semble) | Token-saver / compression | Python | MIT | 6,191 (▲49) | Hot | 73 | very active | 2d ago | 6mo | 5 |
+| [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | Memory / context | Python | AGPL-3.0 | 4,129 | Hot | 79 | very active | 0d ago | 1.9y | 5 |
+| [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | Memory / context | JavaScript | Apache-2.0 | 3,693 (▼3) | Declining | 46 | slowing | 2mo ago | 1.2y | 0 |
+| [centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup) | Config / setup kit | Python | MIT | 2,659 (▲15) | Mature | 49 | active | 3d ago | 1.3y | 1 |
+| [patoles/agent-flow](https://github.com/patoles/agent-flow) | Observability / evals | TypeScript | Apache-2.0 | 1,692 (▲36) | Mature | 55 | active | 0d ago | 6mo | 2 |
+| [ingo-eichhorst/Irrlicht](https://github.com/ingo-eichhorst/Irrlicht) | Observability / evals | Go | MIT | 100 | Hot | 80 | very active | 0d ago | 1.1y | 4 |
 
 ## By layer
 
@@ -130,40 +131,40 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 _The loop that reads, plans, edits, and runs. Pick one as your daily driver; keep a second installed to diff behavior and model-shop._
 
-- **[openclaw/openclaw](https://github.com/openclaw/openclaw)** · 390,467★ · TypeScript · Hot  
+- **[openclaw/openclaw](https://github.com/openclaw/openclaw)** · 391,581★ · TypeScript · Hot  
   Cross-platform personal-assistant harness — an 'any OS, any platform' agent runtime.  
   <sub>topics: ai, assistant, own-your-data, personal, crustacean, molty, openclaw</sub>
-- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** · 248,814★ · Python · Hot  
+- **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)** · 252,453★ · Python · Hot  
   Long-lived 'agent that grows with you' harness — persistent, personalized agent loop.  
   <sub>topics: ai, ai-agent, ai-agents, llm, anthropic, chatgpt, claude, claude-code</sub>
-- **[anomalyco/opencode](https://github.com/anomalyco/opencode)** · 209,940★ · TypeScript · Hot  
+- **[anomalyco/opencode](https://github.com/anomalyco/opencode)** · 212,497★ · TypeScript · Hot  
   Open-source terminal coding agent — a provider-agnostic alternative harness.  
   <sub>topics: —</sub>
-- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 148,017★ · TypeScript · Hot  
+- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 150,006★ · TypeScript · Hot  
   Claude Code itself — the agentic CLI that lives in your terminal; the baseline every setup here extends.  
   <sub>topics: —</sub>
-- **[openai/codex](https://github.com/openai/codex)** · 126,387★ · Rust · Hot  
+- **[openai/codex](https://github.com/openai/codex)** · 128,516★ · Rust · Hot  
   OpenAI's lightweight terminal coding agent — useful as a second harness to diff behavior against Claude Code.  
   <sub>topics: —</sub>
-- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 109,259★ · TypeScript · Hot  
+- **[earendil-works/pi](https://github.com/earendil-works/pi)** · 114,040★ · TypeScript · Hot  
   Unified LLM-API + agent-loop + TUI toolkit — a kit for rolling your own coding agent.  
   <sub>topics: —</sub>
-- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · 107,159★ · TypeScript · Hot  
+- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · 107,275★ · TypeScript · Hot  
   Gemini's open-source terminal agent — the third major CLI harness; handy for model-shopping.  
   <sub>topics: gemini, gemini-api, ai, ai-agents, cli, mcp-client, mcp-server</sub>
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 82,962★ · Python · Hot  
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 83,646★ · Python · Hot  
   Long-horizon SuperAgent harness that researches, codes, and writes — multi-step autonomy.  
   <sub>topics: agent, agentic, agentic-framework, agentic-workflow, ai, ai-agents, deep-research, langchain</sub>
-- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 73,238★ · TypeScript · Hot  
+- **[ruvnet/ruflo](https://github.com/ruvnet/ruflo)** · 74,252★ · TypeScript · Hot  
   Agent meta-harness for Claude — deploys multi-agent swarms with coordination.  
-  <sub>topics: claude-code, swarm, agentic-ai, agentic-framework, agentic-workflow, autonomous-agents, codex, mcp-server</sub>
-- **[cline/cline](https://github.com/cline/cline)** · 69,273★ · TypeScript · Mature  
+  <sub>topics: swarm, agentic-ai, agentic-framework, agentic-workflow, autonomous-agents, codex, mcp-server, multi-agent</sub>
+- **[cline/cline](https://github.com/cline/cline)** · 70,110★ · TypeScript · Mature  
   Autonomous coding agent as SDK / IDE extension / CLI — strong for in-editor agentic workflows.  
   <sub>topics: —</sub>
-- **[aaif-goose/goose](https://github.com/aaif-goose/goose)** · 54,634★ · Rust · Mature  
+- **[aaif-goose/goose](https://github.com/aaif-goose/goose)** · 55,129★ · Rust · Mature  
   Extensible open agent that installs and runs tools, not just suggestions — MCP-native.  
   <sub>topics: mcp, acp, ai, ai-agents</sub>
-- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · 39,348★ · TypeScript · Hot  
+- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · 39,763★ · TypeScript · Hot  
   Teams-first multi-agent orchestration layer for Claude Code.  
   <sub>topics: agentic-coding, ai-agents, claude, claude-code, oh-my-opencode, opencode, vibe-coding, automation</sub>
 
@@ -171,22 +172,22 @@ _The loop that reads, plans, edits, and runs. Pick one as your daily driver; kee
 
 _The biggest 2026 upgrade. Skills load only when triggered, so they add capability without taxing every session — the opposite of a big always-on CLAUDE.md._
 
-- **[obra/superpowers](https://github.com/obra/superpowers)** · 291,377★ · Shell · Hot  
+- **[obra/superpowers](https://github.com/obra/superpowers)** · 297,121★ · Shell · Hot  
   Agentic skills framework + dev methodology — the headline 'give your agent superpowers' skill collection.  
   <sub>topics: ai, brainstorming, coding, obra, sdlc, skills, superpowers, subagent-driven-development</sub>
-- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 267,158★ · JavaScript · Hot  
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** · 276,293★ · JavaScript · Hot  
   Agent-harness performance system bundling skills, instincts, and memory into one optimization layer.  
   <sub>topics: ai-agents, anthropic, claude, claude-code, developer-tools, llm, mcp, productivity</sub>
-- **[anthropics/skills](https://github.com/anthropics/skills)** · 178,045★ · Python · Mature  
+- **[anthropics/skills](https://github.com/anthropics/skills)** · 180,291★ · Python · Mature  
   Anthropic's official Agent Skills repo — canonical examples of the skills format.  
   <sub>topics: agent-skills</sub>
-- **[ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** · 75,611★ · Python · Declining  
+- **[ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** · 76,791★ · Python · Declining  
   Curated index of Claude Skills + tooling — the discovery hub for what's worth installing.  
   <sub>topics: claude, claude-code, agent-skills, ai-agents, antigravity, automation, codex, composio</sub>
-- **[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)** · 46,617★ · Python · Hot  
+- **[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)** · 48,276★ · Python · Hot  
   Domain skill pack that turns an agent into a research scientist — example of vertical skills.  
   <sub>topics: ai-scientist, bioinformatics, chemoinformatics, claude, claude-skills, claudecode, clinical-research, computational-biology</sub>
-- **[wshobson/agents](https://github.com/wshobson/agents)** · 39,933★ · Python · Hot  
+- **[wshobson/agents](https://github.com/wshobson/agents)** · 40,321★ · Python · Hot  
   Multi-harness agentic plugin marketplace (Claude Code, Codex, Cursor) — subagents & commands.  
   <sub>topics: anthropic, agent-skills, agentic-ai, ai-agents, cursor, cursor-rules, mcp, multi-agent</sub>
 
@@ -194,37 +195,37 @@ _The biggest 2026 upgrade. Skills load only when triggered, so they add capabili
 
 _Turnkey CLAUDE.md / command / hook bundles. Steal a good one, then trim to what you actually use — bloat here is paid on every prompt._
 
-- **[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)** · 215,056★ · — · Declining  
+- **[multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills)** · 217,948★ · — · Declining  
   A single CLAUDE.md derived from Karpathy's habits — the 'one good config file' approach.  
   <sub>topics: —</sub>
-- **[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)** · 143,855★ · — · Mature  
+- **[x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)** · 143,942★ · — · Mature  
   Leaked/collected system prompts of major AI coding tools — prompt-engineering reference.  
   <sub>topics: ai, cursor, lovable, system-prompts, v0, cursorai, devin, replit</sub>
-- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** · 136,676★ · Rust · Hot  
+- **[farion1231/cc-switch](https://github.com/farion1231/cc-switch)** · 142,363★ · Rust · Hot  
   Desktop all-in-one for managing Claude Code/Codex/OpenClaw — swap providers & configs fast.  
   <sub>topics: ai-tools, claude-code, desktop-app, open-source, rust, tauri, codex, mcp</sub>
-- **[garrytan/gstack](https://github.com/garrytan/gstack)** · 134,161★ · TypeScript · Hot  
+- **[garrytan/gstack](https://github.com/garrytan/gstack)** · 135,801★ · TypeScript · Hot  
   Garry Tan's exact Claude Code setup — 23 opinionated tools as a turnkey starting point.  
   <sub>topics: —</sub>
-- **[shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** · 66,321★ · HTML · Rising  
+- **[shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)** · 67,340★ · HTML · Rising  
   Best-practices collection: vibe-coding → agentic engineering.  
   <sub>topics: claude-ai, claude-code, best-practices, claude, claude-code-best-practices, agentic-engineering, anthropic, claude-code-agents</sub>
-- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · 54,587★ · Python · Mature  
+- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · 55,355★ · Python · Mature  
   The awesome-list for Claude Code skills, hooks, slash-commands, and orchestrators.  
   <sub>topics: anthropic, anthropic-claude, awesome, awesome-list, awesome-lists, awesome-resources, claude, claude-code</sub>
-- **[anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks)** · 52,974★ · Jupyter Notebook · Classic  
+- **[anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks)** · 53,326★ · Jupyter Notebook · Classic  
   Official recipes/notebooks for effective Claude usage patterns.  
   <sub>topics: —</sub>
-- **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)** · 41,659★ · Python · Rising  
+- **[luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)** · 41,789★ · Python · Rising  
   Visual, example-driven guide to Claude Code from basics to advanced — the learning path.  
   <sub>topics: claude-code, guide, tutorial</sub>
-- **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates)** · 31,758★ · Python · Hot  
+- **[davila7/claude-code-templates](https://github.com/davila7/claude-code-templates)** · 32,530★ · Python · Hot  
   CLI to configure AND monitor Claude Code — installs commands/agents/hooks and watches usage.  
   <sub>topics: anthropic, anthropic-claude, claude, claude-code</sub>
-- **[Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts)** · 12,764★ · JavaScript · Rising  
+- **[Piebald-AI/claude-code-system-prompts](https://github.com/Piebald-AI/claude-code-system-prompts)** · 12,872★ · JavaScript · Rising  
   Claude Code's full system prompt + 27 builtin tool descriptions — know what you're configuring.  
   <sub>topics: claude-code, claude-code-system-prompts, system-prompts</sub>
-- **[centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup)** · 2,644★ · Python · Mature  
+- **[centminmod/my-claude-code-setup](https://github.com/centminmod/my-claude-code-setup)** · 2,659★ · Python · Mature  
   A shared starter CLAUDE.md + memory-bank configuration template you can fork.  
   <sub>topics: claude, claude-ai, claude-code, subagents, claudecode-config, claudecode-hooks, claudecode-subagents</sub>
 
@@ -232,22 +233,25 @@ _Turnkey CLAUDE.md / command / hook bundles. Steal a good one, then trim to what
 
 _Persist decisions and context across sessions so the agent doesn't re-derive what it already learned. The backend is swappable._
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 94,658★ · TypeScript · Hot  
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · 99,136★ · TypeScript · Hot  
   Persistent context across sessions for every agent — captures work and re-injects it (you run this).  
   <sub>topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence, claude, claude-agent-sdk, claude-agents</sub>
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 65,976★ · Python · Classic  
+- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 66,942★ · Python · Classic  
   Universal memory layer for AI agents — the most-adopted general memory backend.  
   <sub>topics: ai, chatgpt, llm, python, rag, long-term-memory, memory, memory-management</sub>
-- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,268★ · Python · Hot  
+- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,492★ · Python · Hot  
   Best-benchmarked open-source AI memory system — drop-in long-term memory.  
   <sub>topics: ai, chromadb, llm, mcp, memory, python</sub>
-- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,554★ · Rust · Declining  
+- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,585★ · Rust · Declining  
   Memory layer that replaces RAG pipelines with a compact server — novel storage approach.  
   <sub>topics: ai, context, embedded, faiss, knowledge-base, knowledge-graph, llm, machine-learning</sub>
-- **[Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram)** · 6,822★ · Go · Hot  
+- **[Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram)** · 7,121★ · Go · Hot  
   Agent-agnostic Go binary giving coding agents persistent memory.  
   <sub>topics: —</sub>
-- **[memodb-io/Acontext](https://github.com/memodb-io/Acontext)** · 3,696★ · JavaScript · Declining  
+- **[basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory)** · 4,129★ · Python · Hot  
+  Local Markdown knowledge base exposed over MCP — the agent reads and writes plain notes you can also edit by hand.  
+  <sub>topics: ai, claude, llm, mcp, open-source, python, obsidian, obsidian-md</sub>
+- **[memodb-io/Acontext](https://github.com/memodb-io/Acontext)** · 3,693★ · JavaScript · Declining  
   Treats Agent Skills as a memory layer — skills-as-memory hybrid.  
   <sub>topics: agent, context-engineering, data-platform, self-learning, agent-development-kit, ai-agent, llm, memory</sub>
 
@@ -255,25 +259,25 @@ _Persist decisions and context across sessions so the agent doesn't re-derive wh
 
 _Measure first (`codeburn`), then compress: leaner code search, output trimming, and a front proxy stack to 60–90% on common loops._
 
-- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 107,770★ · Go · Hot  
+- **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)** · 110,877★ · Go · Rising  
   'Why use many token when few token do trick' — a Claude Code skill that aggressively trims tokens.  
   <sub>topics: ai, anthropic, caveman, claude, claude-code, llm, meme, prompt-engineering</sub>
-- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 81,687★ · Rust · Hot  
+- **[rtk-ai/rtk](https://github.com/rtk-ai/rtk)** · 82,837★ · Rust · Hot  
   CLI proxy that cuts LLM token consumption 60–90% on common dev commands — sits in front of the agent.  
   <sub>topics: agentic-coding, ai-coding, anthropic, claude-code, cli, command-line-tool, cost-reduction, developer-tools</sub>
-- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · 73,757★ · Python · Hot  
+- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · 74,886★ · Python · Hot  
   Compresses tool outputs, logs, files, and RAG chunks before they hit the model's context.  
   <sub>topics: agent, ai, anthropic, compression, context-engineering, context-window, fastapi, langchain</sub>
-- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 69,395★ · TypeScript · Hot  
+- **[code-yeongyu/oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)** · 69,937★ · TypeScript · Hot  
   omo/lazycodex — a coding agent built for 'tokenmaxxers'; efficiency-first harness.  
   <sub>topics: opencode, ai, anthropic, claude, claude-skills, cursor, gemini, ide</sub>
-- **[toon-format/toon](https://github.com/toon-format/toon)** · 25,421★ · TypeScript · Hot  
+- **[toon-format/toon](https://github.com/toon-format/toon)** · 25,481★ · TypeScript · Hot  
   Token-Oriented Object Notation — compact schema-aware encoding to shrink structured payloads.  
   <sub>topics: data-format, llm, serialization, tokenization</sub>
-- **[getagentseal/codeburn](https://github.com/getagentseal/codeburn)** · 11,228★ · TypeScript · Hot  
+- **[getagentseal/codeburn](https://github.com/getagentseal/codeburn)** · 11,373★ · TypeScript · Hot  
   TUI dashboard showing where your AI coding tokens go — measure before you optimize.  
   <sub>topics: ai-coding, claude-code, cli, codex, cost-tracking, developer-tools, observability, terminal-ui</sub>
-- **[MinishLab/semble](https://github.com/MinishLab/semble)** · 6,142★ · Python · Hot  
+- **[MinishLab/semble](https://github.com/MinishLab/semble)** · 6,191★ · Python · Hot  
   Fast, accurate code search for agents using ~98% fewer tokens than reading files.  
   <sub>topics: agents, code-search, embeddings, mcp, mcp-server, model-context-protocol, retrieval</sub>
 
@@ -281,19 +285,19 @@ _Measure first (`codeburn`), then compress: leaner code search, output trimming,
 
 _Give the agent structure instead of raw files — graphs and indexes answer 'how does X relate to Y' without scanning the repo._
 
-- **[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)** · 121,287★ · Python · Hot  
+- **[Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify)** · 125,191★ · Python · Hot  
   Coding-assistant skill that turns a repo into a knowledge graph (you use this on this project).  
   <sub>topics: claude-code, graphrag, knowledge-graph, codex, openclaw, skills, antigravity, gemini</sub>
-- **[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything)** · 84,129★ · TypeScript · Hot  
+- **[Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything)** · 85,824★ · TypeScript · Hot  
   Turns any code into an interactive teaching graph — comprehension over impression.  
   <sub>topics: claude-code, claude-skills, understandcode, codex, codex-skills, knowledge-graph, opencode-skills, antigravity-skills</sub>
-- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 72,059★ · C · Hot  
+- **[colbymchenry/codegraph](https://github.com/colbymchenry/codegraph)** · 73,659★ · C · Rising  
   Pre-indexed code knowledge graph for Claude Code/Codex/Cursor — structural retrieval.  
   <sub>topics: —</sub>
-- **[abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus)** · 47,564★ · TypeScript · Hot  
+- **[abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus)** · 47,825★ · TypeScript · Hot  
   Zero-server code-intelligence engine — client-side code graph.  
   <sub>topics: —</sub>
-- **[DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)** · 44,864★ · C · Hot  
+- **[DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp)** · 46,283★ · C · Rising  
   High-performance code-intelligence MCP server — indexes codebases for retrieval.  
   <sub>topics: claude-code, code-analysis, code-intelligence, developer-tools, knowledge-graph, mcp, mcp-server, model-context-protocol</sub>
 
@@ -301,13 +305,13 @@ _Give the agent structure instead of raw files — graphs and indexes answer 'ho
 
 _External capabilities via a standard protocol. Each connected server costs context, so connect deliberately — `context7` (live docs) is the highest-ROI default._
 
-- **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 95,504★ · — · Hot  
+- **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 96,042★ · — · Hot  
   The big community index of MCP servers — discovery for what to connect.  
   <sub>topics: ai, mcp</sub>
-- **[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** · 90,584★ · TypeScript · Hot  
+- **[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** · 91,115★ · TypeScript · Hot  
   The official reference MCP servers — the canonical catalog of capabilities to plug in.  
   <sub>topics: —</sub>
-- **[upstash/context7](https://github.com/upstash/context7)** · 62,414★ · TypeScript · Hot  
+- **[upstash/context7](https://github.com/upstash/context7)** · 62,855★ · TypeScript · Hot  
   Up-to-date library docs for LLMs via MCP — kills 'hallucinated API' errors (you have this wired).  
   <sub>topics: llm, mcp, mcp-server, vibe-coding</sub>
 
@@ -315,19 +319,19 @@ _External capabilities via a standard protocol. Each connected server costs cont
 
 _You can't optimize what you can't see. Trace runs, watch spend, and score outputs before trusting an autonomous setup._
 
-- **[langfuse/langfuse](https://github.com/langfuse/langfuse)** · 35,033★ · TypeScript · Classic  
+- **[langfuse/langfuse](https://github.com/langfuse/langfuse)** · 35,600★ · TypeScript · Classic  
   Open-source LLM engineering platform: traces, evals, metrics, prompts (you trace Claude Code into this).  
   <sub>topics: analytics, llm, llmops, large-language-models, openai, self-hosted, ycombinator, monitoring</sub>
-- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,230★ · Python · Classic  
+- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,487★ · Python · Classic  
   Debug/evaluate/monitor LLM apps, RAG, and agents — eval-first observability.  
   <sub>topics: open-source, langchain, openai, playground, prompt-engineering, llama-index, llm, llm-evaluation</sub>
-- **[Arize-ai/phoenix](https://github.com/Arize-ai/phoenix)** · 11,609★ · Python · Classic  
+- **[Arize-ai/phoenix](https://github.com/Arize-ai/phoenix)** · 11,774★ · Python · Classic  
   AI observability & evaluation — OpenTelemetry-based tracing for agents.  
   <sub>topics: llmops, ai-monitoring, ai-observability, llm-eval, aiengineering, datasets, agents, llms</sub>
-- **[traceloop/openllmetry](https://github.com/traceloop/openllmetry)** · 7,447★ · Python · Classic  
+- **[traceloop/openllmetry](https://github.com/traceloop/openllmetry)** · 7,481★ · Python · Classic  
   Open-source OpenTelemetry-based observability for LLM apps — standards-based traces.  
   <sub>topics: llmops, observability, open-telemetry, metrics, monitoring, opentelemetry, datascience, ml</sub>
-- **[patoles/agent-flow](https://github.com/patoles/agent-flow)** · 1,656★ · TypeScript · Mature  
+- **[patoles/agent-flow](https://github.com/patoles/agent-flow)** · 1,692★ · TypeScript · Mature  
   Real-time visualization of Claude Code agent orchestration — watch agents think, branch, coordinate.  
   <sub>topics: agent-visualization, ai-agents, claude-code, developer-tools, llm, vscode-extension</sub>
 - **[ingo-eichhorst/Irrlicht](https://github.com/ingo-eichhorst/Irrlicht)** · 100★ · Go · Hot  
@@ -338,60 +342,57 @@ _You can't optimize what you can't see. Trace runs, watch spend, and score outpu
 
 _Run open models locally or proxy many models behind one endpoint — the cost floor for grunt work and the fallback when the cloud is down._
 
-- **[ollama/ollama](https://github.com/ollama/ollama)** · 181,673★ · Go · Classic  
+- **[ollama/ollama](https://github.com/ollama/ollama)** · 182,613★ · Go · Classic  
   Run open models locally with one command — point an agent at it to slash API cost or go offline.  
   <sub>topics: llama, llm, llms, go, golang, ollama, mistral, gemma</sub>
-- **[BerriAI/litellm](https://github.com/BerriAI/litellm)** · 59,598★ · Python · Classic  
+- **[BerriAI/litellm](https://github.com/BerriAI/litellm)** · 60,879★ · Python · Classic  
   OpenAI-compatible proxy/gateway to 100+ LLMs — swap models under any harness from one endpoint.  
   <sub>topics: anthropic, langchain, llm, llmops, openai, ai-gateway, azure-openai, bedrock</sub>
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 58 tools span **19 of the graph's 38 communities** — the Claude-Code ecosystem is spread across agent-framework, memory, retrieval, and observability neighborhoods rather than forming one tidy cluster.
+**Community clustering.** These 59 tools span **15 of the graph's 43 communities** — the Claude-Code ecosystem is spread across agent-framework, memory, retrieval, and observability neighborhoods rather than forming one tidy cluster.
 
-- **Community 16** (13): `NousResearch/hermes-agent`, `Yeachan-Heo/oh-my-claudecode`, `affaan-m/ECC`, `centminmod/my-claude-code-setup`, `davila7/claude-code-templates`, `x1xhlol/system-prompts-and-models-of-ai-tools`, `thedotmack/claude-mem`, `mem0ai/mem0`, `JuliusBrussee/caveman`, `rtk-ai/rtk`, `Graphify-Labs/graphify`, `DeusData/codebase-memory-mcp`, `patoles/agent-flow`
-- **Community 15** (8): `google-gemini/gemini-cli`, `aaif-goose/goose`, `obra/superpowers`, `MemPalace/mempalace`, `Gentleman-Programming/engram`, `memodb-io/Acontext`, `headroomlabs-ai/headroom`, `punkpeye/awesome-mcp-servers`
-- **Community 4** (6): `anthropics/claude-code`, `anthropics/skills`, `luongnv89/claude-howto`, `shanraisshan/claude-code-best-practice`, `Piebald-AI/claude-code-system-prompts`, `anthropics/claude-cookbooks`
-- **Community 20** (4): `farion1231/cc-switch`, `hesreallyhim/awesome-claude-code`, `code-yeongyu/oh-my-openagent`, `traceloop/openllmetry`
-- **Community 12** (4): `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`, `BerriAI/litellm`
-- **Community 5** (3): `ruvnet/ruflo`, `getagentseal/codeburn`, `Egonex-AI/Understand-Anything`
-- **Community 18** (3): `MinishLab/semble`, `modelcontextprotocol/servers`, `upstash/context7`
-- **Community 30** (2): `openclaw/openclaw`, `garrytan/gstack`
-- **Community 7** (2): `anomalyco/opencode`, `colbymchenry/codegraph`
-- **Community 2** (2): `cline/cline`, `earendil-works/pi`
-- **Community 3** (2): `ComposioHQ/awesome-claude-skills`, `wshobson/agents`
-- **Community 8** (2): `abhigyanpatwari/GitNexus`, `ingo-eichhorst/Irrlicht`
+- **Community 29** (10): `anthropics/claude-code`, `ruvnet/ruflo`, `anthropics/skills`, `centminmod/my-claude-code-setup`, `davila7/claude-code-templates`, `luongnv89/claude-howto`, `shanraisshan/claude-code-best-practice`, `Piebald-AI/claude-code-system-prompts`, `anthropics/claude-cookbooks`, `thedotmack/claude-mem`
+- **Community 1** (9): `anomalyco/opencode`, `NousResearch/hermes-agent`, `Yeachan-Heo/oh-my-claudecode`, `K-Dense-AI/scientific-agent-skills`, `multica-ai/andrej-karpathy-skills`, `rtk-ai/rtk`, `code-yeongyu/oh-my-openagent`, `getagentseal/codeburn`, `Egonex-AI/Understand-Anything`
+- **Community 16** (8): `earendil-works/pi`, `garrytan/gstack`, `farion1231/cc-switch`, `hesreallyhim/awesome-claude-code`, `JuliusBrussee/caveman`, `Graphify-Labs/graphify`, `colbymchenry/codegraph`, `DeusData/codebase-memory-mcp`
+- **Community 2** (7): `google-gemini/gemini-cli`, `aaif-goose/goose`, `obra/superpowers`, `mem0ai/mem0`, `MemPalace/mempalace`, `Gentleman-Programming/engram`, `punkpeye/awesome-mcp-servers`
+- **Community 4** (7): `affaan-m/ECC`, `ComposioHQ/awesome-claude-skills`, `wshobson/agents`, `toon-format/toon`, `upstash/context7`, `traceloop/openllmetry`, `patoles/agent-flow`
+- **Community 17** (4): `bytedance/deer-flow`, `memvid/memvid`, `memodb-io/Acontext`, `headroomlabs-ai/headroom`
+- **Community 18** (4): `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`, `BerriAI/litellm`
+- **Community 21** (2): `MinishLab/semble`, `modelcontextprotocol/servers`
+- **Community 15** (2): `abhigyanpatwari/GitNexus`, `ingo-eichhorst/Irrlicht`
 
-**Centrality (PageRank in the full 2,263-repo graph)** — the most 'hub-like' setup tools in your ecosystem:
+**Centrality (PageRank in the full 2,322-repo graph)** — the most 'hub-like' setup tools in your ecosystem:
 
-- `hesreallyhim/awesome-claude-code` — PageRank 0.0037
-- `multica-ai/andrej-karpathy-skills` — PageRank 0.0014
-- `shanraisshan/claude-code-best-practice` — PageRank 0.0012
-- `affaan-m/ECC` — PageRank 0.0011
-- `code-yeongyu/oh-my-openagent` — PageRank 0.0011
-- `MemPalace/mempalace` — PageRank 0.0009
+- `basicmachines-co/basic-memory` — PageRank 0.0045
+- `multica-ai/andrej-karpathy-skills` — PageRank 0.0012
+- `MemPalace/mempalace` — PageRank 0.0012
+- `affaan-m/ECC` — PageRank 0.0012
+- `shanraisshan/claude-code-best-practice` — PageRank 0.0011
 - `davila7/claude-code-templates` — PageRank 0.0009
-- `comet-ml/opik` — PageRank 0.0009
-- `punkpeye/awesome-mcp-servers` — PageRank 0.0008
-- `NousResearch/hermes-agent` — PageRank 0.0007
+- `JuliusBrussee/caveman` — PageRank 0.0009
+- `hesreallyhim/awesome-claude-code` — PageRank 0.0008
+- `upstash/context7` — PageRank 0.0008
+- `ruvnet/ruflo` — PageRank 0.0008
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
-- `hesreallyhim/awesome-claude-code` ⇄ `code-yeongyu/oh-my-openagent` (w=0.729) — topics: anthropic, claude; authors: github-actions[bot]
-- `anthropics/claude-cookbooks` ⇄ `anthropics/skills` (w=0.633) — authors: cj-ant
+- `anthropics/claude-cookbooks` ⇄ `anthropics/skills` (w=0.667) — authors: cj-ant
+- `JuliusBrussee/caveman` ⇄ `davila7/claude-code-templates` (w=0.558) — topics: anthropic, claude, claude-code; authors: github-actions[bot]
+- `hesreallyhim/awesome-claude-code` ⇄ `davila7/claude-code-templates` (w=0.546) — topics: anthropic, anthropic-claude, claude, claude-code; authors: github-actions[bot]
 - `langfuse/langfuse` ⇄ `comet-ml/opik` (w=0.524) — topics: llm, llmops, openai, open-source
+- `shanraisshan/claude-code-best-practice` ⇄ `ruvnet/ruflo` (w=0.511) — topics: claude, agentic-ai, agentic-workflow, ai-agents; authors: claude
 - `aaif-goose/goose` ⇄ `punkpeye/awesome-mcp-servers` (w=0.500) — topics: mcp, ai
-- `JuliusBrussee/caveman` ⇄ `davila7/claude-code-templates` (w=0.439) — topics: anthropic, claude, claude-code; authors: claude, github-actions[bot]
-- `hesreallyhim/awesome-claude-code` ⇄ `davila7/claude-code-templates` (w=0.403) — topics: anthropic, anthropic-claude, claude, claude-code; authors: github-actions[bot]
+- `getagentseal/codeburn` ⇄ `rtk-ai/rtk` (w=0.426) — topics: ai-coding, claude-code, cli, developer-tools; authors: dependabot[bot], mvanhorn
+- `MemPalace/mempalace` ⇄ `upstash/context7` (w=0.424) — topics: llm, mcp; authors: dependabot[bot], L4XB
 - `patoles/agent-flow` ⇄ `affaan-m/ECC` (w=0.400) — topics: ai-agents, claude-code, developer-tools, llm
-- `hesreallyhim/awesome-claude-code` ⇄ `traceloop/openllmetry` (w=0.363) — topics: llm; authors: github-actions[bot]
+- `rtk-ai/rtk` ⇄ `affaan-m/ECC` (w=0.384) — topics: anthropic, claude-code, developer-tools, llm; authors: dependabot[bot]
+- `NousResearch/hermes-agent` ⇄ `code-yeongyu/oh-my-openagent` (w=0.333) — topics: ai, ai-agents, anthropic, chatgpt
 - `wshobson/agents` ⇄ `ComposioHQ/awesome-claude-skills` (w=0.326) — topics: agent-skills, ai-agents, cursor, mcp
-- `rtk-ai/rtk` ⇄ `affaan-m/ECC` (w=0.313) — topics: anthropic, claude-code, developer-tools, llm
-- `headroomlabs-ai/headroom` ⇄ `MemPalace/mempalace` (w=0.302) — topics: ai, llm, mcp, python; authors: dependabot[bot], sxh313
-- `DeusData/codebase-memory-mcp` ⇄ `Graphify-Labs/graphify` (w=0.300) — topics: claude-code, code-analysis, developer-tools, knowledge-graph
-- `getagentseal/codeburn` ⇄ `rtk-ai/rtk` (w=0.281) — topics: ai-coding, claude-code, cli, developer-tools; authors: iliaal
-- `davila7/claude-code-templates` ⇄ `centminmod/my-claude-code-setup` (w=0.272) — topics: claude, claude-code
-- `Arize-ai/phoenix` ⇄ `comet-ml/opik` (w=0.258) — topics: llmops, prompt-engineering, llm-evaluation, openai
+- `toon-format/toon` ⇄ `upstash/context7` (w=0.304) — topics: llm; authors: Iams4kura
+- `DeusData/codebase-memory-mcp` ⇄ `Graphify-Labs/graphify` (w=0.290) — topics: claude-code, code-analysis, developer-tools, knowledge-graph
+- `basicmachines-co/basic-memory` ⇄ `MemPalace/mempalace` (w=0.285) — topics: ai, llm, mcp, python
 - …and 6 more.
 
 ## Maintenance & risk signal
@@ -400,73 +401,75 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| aaif-goose/goose | 99 | Mature | very active | 5 | 14% | 153 |
-| headroomlabs-ai/headroom | 97 | Hot | very active | 5 | 22% | 170 |
-| google-gemini/gemini-cli | 94 | Hot | very active | 4 | 19% | 639 |
-| openai/codex | 93 | Hot | very active | 7 | 16% | 1144 |
-| comet-ml/opik | 93 | Classic | very active | 4 | 21% | 597 |
-| modelcontextprotocol/servers | 89 | Hot | very active | 4 | 19% | 28 |
-| langfuse/langfuse | 89 | Classic | very active | 3 | 23% | 700 |
-| bytedance/deer-flow | 86 | Hot | very active | 12 | 6% | 2 |
-| Yeachan-Heo/oh-my-claudecode | 85 | Hot | very active | 2 | 43% | 252 |
-| openclaw/openclaw | 84 | Hot | very active | 2 | 42% | 247 |
-| anomalyco/opencode | 83 | Hot | very active | 2 | 33% | 874 |
-| mem0ai/mem0 | 83 | Classic | very active | 2 | 48% | 414 |
-| abhigyanpatwari/GitNexus | 83 | Hot | very active | 2 | 46% | 898 |
-| ollama/ollama | 82 | Classic | very active | 2 | 32% | 256 |
-| farion1231/cc-switch | 81 | Hot | very active | 2 | 42% | 55 |
-| MemPalace/mempalace | 81 | Hot | very active | 2 | 47% | 18 |
-| Graphify-Labs/graphify | 81 | Hot | very active | 2 | 38% | 213 |
-| NousResearch/hermes-agent | 80 | Hot | very active | 2 | 31% | 36 |
-| davila7/claude-code-templates | 80 | Hot | very active | 2 | 37% | 21 |
-| earendil-works/pi | 79 | Hot | very active | 1 | 54% | 263 |
-| affaan-m/ECC | 79 | Hot | very active | 1 | 54% | 17 |
-| K-Dense-AI/scientific-agent-skills | 79 | Hot | very active | 1 | 70% | 106 |
-| thedotmack/claude-mem | 79 | Hot | very active | 1 | 78% | 345 |
-| Gentleman-Programming/engram | 79 | Hot | very active | 1 | 78% | 112 |
-| getagentseal/codeburn | 79 | Hot | very active | 1 | 62% | 71 |
-| ingo-eichhorst/Irrlicht | 79 | Hot | very active | 1 | 90% | 45 |
-| anthropics/claude-code | 78 | Hot | very active | 1 | 80% | 227 |
-| cline/cline | 78 | Mature | very active | 1 | 50% | 431 |
-| JuliusBrussee/caveman | 78 | Hot | very active | 1 | 58% | 35 |
-| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 98% | 307 |
-| toon-format/toon | 78 | Hot | very active | 1 | 97% | 31 |
-| upstash/context7 | 78 | Hot | very active | 1 | 57% | 127 |
-| Arize-ai/phoenix | 78 | Classic | very active | 1 | 57% | 845 |
-| BerriAI/litellm | 78 | Classic | very active | 1 | 80% | 1477 |
-| Piebald-AI/claude-code-system-prompts | 77 | Rising | very active | 1 | 99% | 247 |
-| colbymchenry/codegraph | 77 | Hot | very active | 1 | 93% | 31 |
-| ruvnet/ruflo | 76 | Hot | very active | 1 | 87% | 1654 |
-| obra/superpowers | 75 | Hot | very active | 1 | 79% | 13 |
-| rtk-ai/rtk | 75 | Hot | very active | 1 | 73% | 357 |
-| DeusData/codebase-memory-mcp | 75 | Hot | very active | 1 | 84% | 47 |
-| Egonex-AI/Understand-Anything | 74 | Hot | very active | 1 | 80% | 8 |
-| MinishLab/semble | 72 | Hot | very active | 1 | 69% | 29 |
-| traceloop/openllmetry | 70 | Classic | active | 2 | 33% | 262 |
-| luongnv89/claude-howto | 67 | Rising | very active | 1 | 87% | 10 |
-| wshobson/agents | 65 | Hot | very active | 2 | 47% | 0 |
+| aaif-goose/goose | 99 | Mature | very active | 5 | 17% | 155 |
+| headroomlabs-ai/headroom | 98 | Hot | very active | 8 | 16% | 173 |
+| google-gemini/gemini-cli | 95 | Hot | very active | 4 | 21% | 656 |
+| openai/codex | 94 | Hot | very active | 8 | 16% | 1221 |
+| langfuse/langfuse | 94 | Classic | very active | 4 | 24% | 711 |
+| Graphify-Labs/graphify | 91 | Hot | very active | 4 | 22% | 230 |
+| modelcontextprotocol/servers | 89 | Hot | very active | 4 | 18% | 28 |
+| comet-ml/opik | 89 | Classic | very active | 3 | 26% | 613 |
+| anomalyco/opencode | 88 | Hot | very active | 3 | 24% | 877 |
+| bytedance/deer-flow | 87 | Hot | very active | 9 | 11% | 2 |
+| earendil-works/pi | 85 | Hot | very active | 2 | 38% | 272 |
+| thedotmack/claude-mem | 85 | Hot | very active | 2 | 48% | 361 |
+| upstash/context7 | 85 | Hot | very active | 2 | 33% | 144 |
+| Arize-ai/phoenix | 84 | Classic | very active | 2 | 48% | 861 |
+| BerriAI/litellm | 84 | Classic | very active | 2 | 48% | 1504 |
+| cline/cline | 83 | Mature | very active | 2 | 46% | 453 |
+| mem0ai/mem0 | 83 | Classic | very active | 2 | 46% | 416 |
+| abhigyanpatwari/GitNexus | 83 | Hot | very active | 2 | 42% | 961 |
+| ollama/ollama | 83 | Classic | very active | 2 | 42% | 260 |
+| NousResearch/hermes-agent | 81 | Hot | very active | 2 | 28% | 37 |
+| ruvnet/ruflo | 81 | Hot | very active | 2 | 44% | 1673 |
+| Yeachan-Heo/oh-my-claudecode | 80 | Hot | very active | 1 | 52% | 255 |
+| toon-format/toon | 80 | Hot | very active | 1 | 93% | 32 |
+| getagentseal/codeburn | 80 | Hot | very active | 1 | 68% | 71 |
+| ingo-eichhorst/Irrlicht | 80 | Hot | very active | 1 | 91% | 46 |
+| anthropics/claude-code | 79 | Hot | very active | 1 | 54% | 241 |
+| openclaw/openclaw | 79 | Hot | very active | 1 | 67% | 255 |
+| affaan-m/ECC | 79 | Hot | very active | 1 | 59% | 19 |
+| K-Dense-AI/scientific-agent-skills | 79 | Hot | very active | 1 | 70% | 109 |
+| Gentleman-Programming/engram | 79 | Hot | very active | 1 | 76% | 121 |
+| basicmachines-co/basic-memory | 79 | Hot | very active | 1 | 90% | 90 |
+| JuliusBrussee/caveman | 79 | Rising | very active | 1 | 99% | 47 |
+| farion1231/cc-switch | 78 | Hot | very active | 1 | 65% | 63 |
+| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 98% | 337 |
+| colbymchenry/codegraph | 78 | Rising | very active | 1 | 99% | 33 |
+| Piebald-AI/claude-code-system-prompts | 77 | Rising | very active | 1 | 100% | 261 |
+| MemPalace/mempalace | 76 | Hot | very active | 1 | 72% | 18 |
+| Egonex-AI/Understand-Anything | 76 | Hot | very active | 1 | 85% | 8 |
+| DeusData/codebase-memory-mcp | 76 | Rising | very active | 1 | 100% | 47 |
+| davila7/claude-code-templates | 75 | Hot | very active | 1 | 53% | 22 |
+| rtk-ai/rtk | 75 | Hot | very active | 1 | 76% | 407 |
+| obra/superpowers | 74 | Hot | very active | 1 | 91% | 15 |
+| MinishLab/semble | 73 | Hot | very active | 1 | 75% | 30 |
+| traceloop/openllmetry | 71 | Classic | active | 2 | 29% | 263 |
+| luongnv89/claude-howto | 67 | Rising | very active | 1 | 90% | 10 |
 | shanraisshan/claude-code-best-practice | 64 | Rising | very active | 1 | 100% | 0 |
-| anthropics/claude-cookbooks | 61 | Classic | very active | 2 | 35% | 0 |
-| hesreallyhim/awesome-claude-code | 60 | Mature | very active | 1 | 100% | 0 |
-| punkpeye/awesome-mcp-servers | 59 | Hot | very active | 1 | 58% | 0 |
-| garrytan/gstack | 58 | Hot | very active | 1 | 60% | 0 |
-| memvid/memvid | 55 | Declining | slowing | 1 | 100% | 12 |
-| anthropics/skills | 50 | Mature | active | 2 | 33% | 0 |
-| centminmod/my-claude-code-setup | 50 | Mature | active | 1 | 100% | 0 |
-| x1xhlol/system-prompts-and-models-of-ai-tools | 47 | Mature | active | 1 | 65% | 0 |
-| memodb-io/Acontext | 47 | Declining | slowing | 0 | 0% | 279 |
-| patoles/agent-flow | 46 | Mature | slowing | 1 | 71% | 3 |
-| ComposioHQ/awesome-claude-skills | 38 | Declining | active | 1 | 100% | 0 |
+| wshobson/agents | 62 | Hot | very active | 1 | 53% | 0 |
+| garrytan/gstack | 62 | Hot | very active | 1 | 84% | 0 |
+| hesreallyhim/awesome-claude-code | 61 | Mature | very active | 1 | 95% | 0 |
+| anthropics/claude-cookbooks | 60 | Classic | very active | 2 | 41% | 0 |
+| punkpeye/awesome-mcp-servers | 60 | Hot | very active | 1 | 91% | 0 |
+| patoles/agent-flow | 55 | Mature | active | 1 | 80% | 4 |
+| memvid/memvid | 53 | Declining | slowing | 1 | 100% | 12 |
+| anthropics/skills | 51 | Mature | active | 2 | 41% | 0 |
+| centminmod/my-claude-code-setup | 49 | Mature | active | 1 | 100% | 0 |
+| memodb-io/Acontext | 46 | Declining | slowing | 0 | 0% | 279 |
+| x1xhlol/system-prompts-and-models-of-ai-tools | 43 | Mature | active | 1 | 100% | 0 |
+| ComposioHQ/awesome-claude-skills | 37 | Declining | active | 1 | 100% | 0 |
 | multica-ai/andrej-karpathy-skills | 21 | Declining | slowing | 0 | 0% | 0 |
 
 ## Adjacent (deliberately not listed here)
 
-- **n8n-io/n8n** (205,912★) — workflow-automation platform — orchestrates agents but isn't a Claude-Code setup layer
-- **langgenius/dify** (157,170★) — agentic-workflow platform — covered by the agent-orchestration report
-- **langchain-ai/langchain** (147,034★) — agent-engineering library — app framework, not a CC setup tool
-- **open-webui/open-webui** (153,123★) — chat UI for local models — a frontend, not an agent setup
-- **ultraworkers/claw-code** (195,282★) — art/exhibit harness — not a practical setup layer
-- **multica-ai/multica** (51,323★) — managed-agents platform — team product, see agent-orchestration report
+- **campfirein/byterover-cli** — archived upstream — the portable `brv` memory layer is no longer maintained
+- **n8n-io/n8n** (206,900★) — workflow-automation platform — orchestrates agents but isn't a Claude-Code setup layer
+- **langgenius/dify** (158,081★) — agentic-workflow platform — covered by the agent-orchestration report
+- **langchain-ai/langchain** (147,557★) — agent-engineering library — app framework, not a CC setup tool
+- **open-webui/open-webui** (154,191★) — chat UI for local models — a frontend, not an agent setup
+- **ultraworkers/claw-code** (194,982★) — art/exhibit harness — not a practical setup layer
+- **multica-ai/multica** (52,396★) — managed-agents platform — team product, see agent-orchestration report
 
 ## Methodology & caveats
 
@@ -475,4 +478,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 - **The three-strategy table is opinionated**, built only from repos in your stars — it is a starting point, not a benchmark. Validate model-tier and token-saver claims against your own `langfuse`/`codeburn` traces.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Tools covered: 58 · Snapshot: 2026-09-29T15:12:50.430Z</sub>
+<sub>Tools covered: 59 · Snapshot: 2026-10-10T15:21:10.911Z</sub>

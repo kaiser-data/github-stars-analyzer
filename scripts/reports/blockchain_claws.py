@@ -72,7 +72,7 @@ SKILLS = {
          "straight into a claw."),
     ],
     "Valuation, market data & quant": [
-        ("OpenBB-finance/OpenBB",
+        ("openbq-org/OpenBB",
          "Financial data platform explicitly 'for analysts, quants and **AI agents**' — crypto + "
          "derivatives coverage to price and value positions."),
     ],
@@ -108,14 +108,14 @@ SKILLS = {
 # ---- Recommended stacks ------------------------------------------------------
 STACKS = [
     ("Analyze / monitor DeFi positions (read & reason)",
-     ["openclaw/openclaw", "blockscout/blockscout", "OpenBB-finance/OpenBB"],
+     ["openclaw/openclaw", "blockscout/blockscout", "openbq-org/OpenBB"],
      "Read-and-reason job. openclaw (MCP) pulls on-chain state via a blockscout MCP, OpenBB values "
      "it. Add `ClawRouter` if you want agent spend settled in USDC."),
     ("Crypto-native agent that acts on-chain",
      ["elizaOS/eliza", "blockscout/blockscout"],
      "eliza is purpose-built for web3 — wallet/chain plugins to execute, blockscout to verify."),
     ("Autonomous trading on positions",
-     ["openclaw/openclaw", "TauricResearch/TradingAgents", "OpenBB-finance/OpenBB"],
+     ["openclaw/openclaw", "TauricResearch/TradingAgents", "openbq-org/OpenBB"],
      "Claw orchestrates a dedicated trading framework; OpenBB supplies market/quant data."),
     ("Agentic payments / x402 settlement",
      ["openclaw/openclaw", "BlockRunAI/ClawRouter", "Merit-Systems/x402scan"],

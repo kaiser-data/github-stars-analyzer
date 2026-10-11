@@ -52,18 +52,17 @@ TAXONOMY = {
     "gastownhall/gastown": ("Fleet / parallel orchestration", "Multi-agent workspace manager — the 'town' where a fleet of agents live and work."),
     "AndyMik90/Aperant": ("Fleet / parallel orchestration", "Autonomous multi-session AI coding — sessions as the unit of parallelism."),
     "automazeio/ccpm": ("Fleet / parallel orchestration", "GitHub Issues + git worktrees as the coordination fabric for parallel agents."),
-    "Untrivial-ai/agent-orchestrator": ("Fleet / parallel orchestration", "Plans tasks, spawns parallel coding agents in worktrees, merges autonomously."),
+    "OrchestratorInc/agent-orchestrator": ("Fleet / parallel orchestration", "Plans tasks, spawns parallel coding agents in worktrees, merges autonomously."),
     "dagger/container-use": ("Fleet / parallel orchestration", "Containerized dev environments so multiple agents work safely and independently."),
 
     # 4. Determinism & spec-driven control
     "github/spec-kit": ("Determinism & spec-driven", "Spec-Driven Development toolkit — the spec, not the prompt, steers the agent."),
     "OthmanAdi/planning-with-files": ("Determinism & spec-driven", "Persistent file-based planning — crash-proof, resumable long-running agent tasks."),
     "agentsmd/agents.md": ("Determinism & spec-driven", "The open AGENTS.md standard — a portable contract telling any harness how to behave in a repo."),
-    "gsd-build/gsd-2": ("Determinism & spec-driven", "Meta-prompting + context engineering + spec-driven system for dependable outcomes."),
     "cobusgreyling/loop-engineering": ("Determinism & spec-driven", "Patterns and starters for *loop engineering* — designing the iteration, not just the prompt."),
 
     # 5. Sandbox substrate
-    "daytonaio/daytona": ("Sandbox substrate", "Secure, elastic infrastructure for running AI-generated code — the harness's execution floor."),
+    "e2b-dev/runtime": ("Sandbox substrate", "The runtime behind E2B's cloud and self-hosted sandboxes — isolated microVMs for AI-generated code; the harness's execution floor."),
     "NVIDIA/NemoClaw": ("Sandbox substrate", "Run harnesses (Hermes, Deep Agents, OpenClaw) inside hardened NVIDIA sandboxes."),
     "trycua/cua": ("Sandbox substrate", "Sandboxes, SDKs, and benchmarks for computer-use agents — full-desktop harnessing."),
     "opensandbox-group/OpenSandbox": ("Sandbox substrate", "Secure, fast, extensible sandbox runtime purpose-built for AI agents."),
@@ -95,6 +94,8 @@ APPROACHES = [
 
 # Adjacent but deliberately excluded (kept honest in the report)
 ADJACENT = [
+    ("daytonaio/daytona", "archived upstream (2026-10) — replaced by `e2b-dev/runtime` as the sandbox substrate"),
+    ("gsd-build/gsd-2", "archived upstream (2026-10) — spec-driven control is still covered by `github/spec-kit`"),
     ("langchain-ai/langgraph", "agent *framework* (graphs, not harnesses) — see the agent-orchestration report"),
     ("crewAIInc/crewAI", "role-playing agent framework — agent-orchestration report"),
     ("microsoft/autogen", "multi-agent conversation framework — agent-orchestration report"),
@@ -327,8 +328,8 @@ guide = [
      "Spec-driven development plus the portable AGENTS.md behavior contract."),
     ("Crash-proof long tasks", "`OthmanAdi/planning-with-files`",
      "Plans persisted to disk — resume after any failure."),
-    ("Safe execution for untrusted agent code", "`daytonaio/daytona`",
-     "Purpose-built elastic sandbox infra; `forkd` when you need 100 microVMs in 100ms."),
+    ("Safe execution for untrusted agent code", "`e2b-dev/runtime`",
+     "Purpose-built sandbox runtime (cloud or self-hosted); `forkd` when you need 100 microVMs in 100ms."),
     ("A 24/7 resident agent", "`stakpak/agent` (or `aniketkarne/ClaudeNightsWatch`)",
      "Daemon-style autonomy; NightsWatch exploits idle Claude usage windows overnight."),
     ("Research-grade long-horizon autonomy", "`bytedance/deer-flow`",

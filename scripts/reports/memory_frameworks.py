@@ -41,7 +41,6 @@ TAXONOMY = {
 
     # Tier 2 — Coding-agent / session memory (Claude Code & co.)
     "thedotmack/claude-mem": ("Coding-agent memory", "Persistent context across sessions; captures everything an agent does and re-injects it."),
-    "campfirein/byterover-cli": ("Coding-agent memory", "Portable memory layer for autonomous coding agents (formerly Cipher)."),
     "gastownhall/beads": ("Coding-agent memory", "Distributed graph issue-tracker as durable agent memory (Dolt-backed)."),
     "andrewyng/context-hub": ("Coding-agent memory", "Curated, versioned docs so agents stop hallucinating APIs / forgetting."),
 

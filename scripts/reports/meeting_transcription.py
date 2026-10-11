@@ -56,6 +56,7 @@ TAXONOMY = {
     "kaldi-asr/kaldi": ("ASR engine / model", "The classic ASR research toolkit — the foundation Vosk and a generation of speech systems were built on."),
     "espnet/espnet": ("ASR engine / model", "End-to-end speech toolkit (ASR/TTS/translation/diarization) — research breadth across 100+ recipes."),
     "speechbrain/speechbrain": ("ASR engine / model", "PyTorch conversational-AI toolkit — ASR, speaker ID, diarization, enhancement; strong for custom pipelines."),
+    "0xShug0/audio.cpp": ("ASR engine / model", "Pure C++ ggml engine for audio models — STT, TTS and VAD in one runtime; whisper.cpp's design applied to the wider audio-model zoo."),
 
     # Diarization & alignment — who said what, when
     "pyannote/pyannote-audio": ("Diarization & alignment", "THE open speaker-diarization toolkit — state-of-the-art pipelines for 'who spoke when'; the de-facto standard."),

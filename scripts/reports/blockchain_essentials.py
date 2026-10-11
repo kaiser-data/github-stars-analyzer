@@ -91,7 +91,7 @@ LAYERS = [
         ("TauricResearch/TradingAgents", "Multi-agent LLM trading framework."),
         ("HKUDS/AI-Trader", "Fully-automated agent-native trading."),
         ("elizaOS/eliza", "Crypto-native agent OS (wallet/chain plugins)."),
-        ("OpenBB-finance/OpenBB", "Financial data platform 'for analysts, quants & AI agents'."),
+        ("openbq-org/OpenBB", "Financial data platform 'for analysts, quants & AI agents'."),
     ]),
 ]
 

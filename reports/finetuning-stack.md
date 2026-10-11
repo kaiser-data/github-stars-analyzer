@@ -1,8 +1,8 @@
 # Fine-Tuning & Post-Training Stack — Which Trainer for Which Task
 
-> Derived from **kaiser-data**'s 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`), cross-referenced with the repo-similarity graph (2,263 nodes / 7,463 edges, 38 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
+> Derived from **kaiser-data**'s 2,322 starred repos (snapshot `2026-10-10T15:21:10.911Z`), cross-referenced with the repo-similarity graph (2,322 nodes / 7,718 edges, 43 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
 >
-> Generated 2026-10-01 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
+> Generated 2026-10-10 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/finetuning-stack-top-tools.svg)
 
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-- **27 fine-tuning / post-training tools** in your stars (**792,374★** combined), organized along the training ladder:
+- **27 fine-tuning / post-training tools** in your stars (**797,417★** combined), organized along the training ladder:
   - **Full-stack fine-tuning framework** (6): `transformers`, `unsloth`, `LlamaFactory`, `pytorch-lightning`, `PaddleNLP`, `axolotl`
   - **PEFT & alignment library** (2): `peft`, `trl`
   - **RL post-training for agents** (4): `ART`, `OpenClaw-RL`, `OpenEnv`, `Memento`
@@ -41,33 +41,33 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [huggingface/transformers](https://github.com/huggingface/transformers) | Full-stack fine-tuning framework | Python | Apache-2.0 | 166,629 (▼125) | Classic | 99 | very active | 4d ago | 7.9y | 56 |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Learn-by-building | Jupyter Notebook | NOASSERTION | 105,546 (▼154) | Classic | 54 | active | 7d ago | 3.2y | 8 |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Full-stack fine-tuning framework | Python | Apache-2.0 | 76,743 (▼152) | Mature | 78 | very active | 4d ago | 2.8y | 11 |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Full-stack fine-tuning framework | Python | Apache-2.0 | 75,006 (▼134) | Classic | 81 | very active | 15d ago | 3.3y | 25 |
-| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Learn-by-building | Python | MIT | 67,505 | Declining | 17 | stale | 8mo ago | 6.1y | 0 |
-| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | Learn-by-building | Python | MIT | 63,366 (▼59) | Declining | 6 | stale | 10mo ago | 3.8y | 0 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Hardware fit & serving | Rust | MIT | 37,138 (▼93) | Hot | 98 | very active | 5d ago | 7mo | 51 |
-| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Hardware fit & serving | Jupyter Notebook | Apache-2.0 | 34,784 (▼361) | Mature | 70 | very active | 4d ago | 3.3y | 1 |
-| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Full-stack fine-tuning framework | Python | Apache-2.0 | 31,360 (▼7) | Classic | 69 | very active | 8d ago | 7.5y | 12 |
-| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,726 (▼5) | Classic | 96 | very active | 5d ago | 3.8y | 37 |
-| [huggingface/trl](https://github.com/huggingface/trl) | PEFT & alignment library | Python | Apache-2.0 | 19,387 (▼19) | Classic | 79 | very active | 4d ago | 6.5y | 11 |
-| [PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,977 (▼2) | Mature | 29 | slowing | 4mo ago | 5.6y | 0 |
-| [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,500 (▼10) | Classic | 84 | very active | 5d ago | 3.5y | 20 |
-| [OpenPipe/ART](https://github.com/OpenPipe/ART) | RL post-training for agents | Python | Apache-2.0 | 10,770 (▼13) | Hot | 75 | very active | 4d ago | 1.6y | 4 |
-| [roboflow/rf-detr](https://github.com/roboflow/rf-detr) | Domain & on-device tuning | Python | Apache-2.0 | 9,590 (▼37) | Hot | 84 | very active | 4d ago | 1.5y | 17 |
-| [yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL) | Learn-by-building | Jupyter Notebook | Unlicense | 6,581 (▲3) | Declining | 23 | stale | 6mo ago | 9.7y | 0 |
-| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | RL post-training for agents | Python | Apache-2.0 | 5,699 (▼8) | Declining | 21 | slowing | 4mo ago | 7mo | 0 |
-| [unslothai/notebooks](https://github.com/unslothai/notebooks) | Learn-by-building | Jupyter Notebook | LGPL-3.0 | 5,693 (▼9) | Hot | 54 | very active | 6d ago | 1.8y | 3 |
-| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | Domain & on-device tuning | Python | MIT | 5,534 (▼13) | Mature | 83 | very active | 5d ago | 2.5y | 16 |
-| [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) | Hardware fit & serving | Python | AGPL-3.0 | 5,190 (▼7) | Mature | 78 | very active | 11d ago | 2.8y | 3 |
-| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,035 (▼1) | Abandoned | 5 | stale | 1.1y ago | 1.9y | 0 |
-| [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | Domain & on-device tuning | Python | MIT | 4,117 (▼1) | Abandoned | 4 | stale | 1.7y ago | 2.9y | 0 |
-| [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,835 (▲1) | Mature | 24 | slowing | 4mo ago | 2.9y | 0 |
-| [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | RL post-training for agents | Python | BSD-3-Clause | 2,611 (▼10) | Hot | 85 | very active | 4d ago | 12mo | 20 |
-| [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,581 | Declining | 5 | stale | 11mo ago | 1.3y | 0 |
-| [pico-lm/pico-train](https://github.com/pico-lm/pico-train) | Learn-by-building | Python | Apache-2.0 | 321 | Declining | 19 | stale | 7mo ago | 2.0y | 0 |
-| [VectorInstitute/fed-rag](https://github.com/VectorInstitute/fed-rag) | Domain & on-device tuning | Python | Apache-2.0 | 150 | Declining | 29 | slowing | 3mo ago | 1.7y | 0 |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | Full-stack fine-tuning framework | Python | Apache-2.0 | 167,058 (▲429) | Classic | 100 | very active | 1d ago | 8.0y | 37 |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Learn-by-building | Jupyter Notebook | NOASSERTION | 106,320 (▲774) | Classic | 55 | very active | 8d ago | 3.2y | 8 |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Full-stack fine-tuning framework | Python | Apache-2.0 | 77,697 (▲954) | Mature | 79 | very active | 0d ago | 2.9y | 17 |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Full-stack fine-tuning framework | Python | Apache-2.0 | 75,400 (▲394) | Classic | 82 | very active | 0d ago | 3.4y | 21 |
+| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Learn-by-building | Python | MIT | 67,547 (▲42) | Declining | 16 | stale | 8mo ago | 6.1y | 0 |
+| [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) | Learn-by-building | Python | MIT | 63,691 (▲325) | Declining | 6 | stale | 11mo ago | 3.8y | 0 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Hardware fit & serving | Rust | MIT | 37,777 (▲639) | Hot | 99 | very active | 0d ago | 7mo | 48 |
+| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Hardware fit & serving | Jupyter Notebook | Apache-2.0 | 35,630 (▲846) | Mature | 70 | very active | 0d ago | 3.3y | 1 |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Full-stack fine-tuning framework | Python | Apache-2.0 | 31,395 (▲35) | Classic | 69 | very active | 3d ago | 7.5y | 11 |
+| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,778 (▲52) | Classic | 94 | very active | 1d ago | 3.9y | 36 |
+| [huggingface/trl](https://github.com/huggingface/trl) | PEFT & alignment library | Python | Apache-2.0 | 19,483 (▲96) | Classic | 80 | very active | 1d ago | 6.5y | 15 |
+| [PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,979 (▲2) | Mature | 28 | slowing | 4mo ago | 5.7y | 0 |
+| [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,551 (▲51) | Classic | 79 | very active | 1d ago | 3.5y | 19 |
+| [OpenPipe/ART](https://github.com/OpenPipe/ART) | RL post-training for agents | Python | Apache-2.0 | 10,792 (▲22) | Mature | 75 | very active | 0d ago | 1.6y | 2 |
+| [roboflow/rf-detr](https://github.com/roboflow/rf-detr) | Domain & on-device tuning | Python | Apache-2.0 | 9,758 (▲168) | Hot | 84 | very active | 0d ago | 1.6y | 20 |
+| [yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL) | Learn-by-building | Jupyter Notebook | Unlicense | 6,590 (▲9) | Declining | 22 | stale | 6mo ago | 9.7y | 0 |
+| [unslothai/notebooks](https://github.com/unslothai/notebooks) | Learn-by-building | Jupyter Notebook | LGPL-3.0 | 5,730 (▲37) | Hot | 55 | very active | 0d ago | 1.8y | 4 |
+| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | RL post-training for agents | Python | Apache-2.0 | 5,717 (▲18) | Declining | 20 | slowing | 4mo ago | 7mo | 0 |
+| [Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm) | Domain & on-device tuning | Python | MIT | 5,595 (▲61) | Mature | 84 | very active | 0d ago | 2.5y | 13 |
+| [transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app) | Hardware fit & serving | Python | AGPL-3.0 | 5,192 (▲2) | Mature | 76 | very active | 7d ago | 2.8y | 3 |
+| [SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook) | Learn-by-building | — | MIT | 5,041 (▲6) | Abandoned | 5 | stale | 1.1y ago | 1.9y | 0 |
+| [huggingface/distil-whisper](https://github.com/huggingface/distil-whisper) | Domain & on-device tuning | Python | MIT | 4,116 (▼1) | Abandoned | 4 | stale | 1.8y ago | 2.9y | 0 |
+| [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,837 (▲2) | Mature | 23 | slowing | 4mo ago | 3.0y | 0 |
+| [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | RL post-training for agents | Python | BSD-3-Clause | 2,685 (▲74) | Hot | 75 | very active | 0d ago | 1.0y | 3 |
+| [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,587 (▲6) | Abandoned | 5 | stale | 1.0y ago | 1.3y | 0 |
+| [pico-lm/pico-train](https://github.com/pico-lm/pico-train) | Learn-by-building | Python | Apache-2.0 | 321 | Declining | 18 | stale | 7mo ago | 2.1y | 0 |
+| [VectorInstitute/fed-rag](https://github.com/VectorInstitute/fed-rag) | Domain & on-device tuning | Python | Apache-2.0 | 150 | Declining | 28 | slowing | 3mo ago | 1.7y | 0 |
 
 ## Task rankings — which stack for which job
 
@@ -90,22 +90,22 @@ Ranked picks per task. Dataset metrics say who's *healthy*; external comparisons
 
 _End-to-end trainers: data in, tuned weights out. Feature parity is near-total in 2026 (LoRA/QLoRA/DPO/GRPO/vision everywhere) — pick by workflow: speed (`unsloth`), zero-code (`LlamaFactory`), YAML reproducibility (`axolotl`)._
 
-- **[huggingface/transformers](https://github.com/huggingface/transformers)** · 166,629★ · Python · Classic  
+- **[huggingface/transformers](https://github.com/huggingface/transformers)** · 167,058★ · Python · Classic  
   The model-definition layer everything above builds on; `Trainer` remains the vanilla baseline.  
   <sub>topics: nlp, natural-language-processing, pytorch, pytorch-transformers, transformer, model-hub, pretrained-models, speech-recognition</sub>
-- **[unslothai/unsloth](https://github.com/unslothai/unsloth)** · 76,743★ · Python · Mature  
+- **[unslothai/unsloth](https://github.com/unslothai/unsloth)** · 77,697★ · Python · Mature  
   The single-GPU speed king — custom Triton kernels give ~2× faster training and ~70% less VRAM than stock HF.  
   <sub>topics: fine-tuning, llama, llms, gemma, unsloth, llm, deepseek, text-to-speech</sub>
-- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** · 75,006★ · Python · Classic  
+- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** · 75,400★ · Python · Classic  
   Unified efficient fine-tuning of 100+ LLMs & VLMs — the zero-code pick (LlamaBoard web UI, CLI, ACL 2024).  
   <sub>topics: fine-tuning, llama, llm, peft, transformers, rlhf, qlora, quantization</sub>
-- **[Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)** · 31,360★ · Python · Classic  
+- **[Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)** · 31,395★ · Python · Classic  
   Generic training orchestration — pretrain/finetune any model on 1 or 10,000 GPUs with zero code changes.  
   <sub>topics: python, deep-learning, artificial-intelligence, ai, pytorch, data-science, machine-learning</sub>
-- **[PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP)** · 12,977★ · Python · Mature  
+- **[PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP)** · 12,979★ · Python · Mature  
   Baidu's LLM/SLM training & serving library — the pick inside the Paddle ecosystem.  
   <sub>topics: nlp, embedding, bert, ernie, paddlenlp, pretrained-models, transformers, information-extraction</sub>
-- **[axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl)** · 12,500★ · Python · Classic  
+- **[axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl)** · 12,551★ · Python · Classic  
   YAML-driven, reproducible post-training with FSDP & DeepSpeed out of the box — the team/multi-GPU pick.  
   <sub>topics: fine-tuning, llm</sub>
 
@@ -113,10 +113,10 @@ _End-to-end trainers: data in, tuned weights out. Feature parity is near-total i
 
 _The Hugging Face layer the frameworks wrap: `peft` for adapter methods, `trl` for the SFT→DPO→GRPO trainer stack. Use directly when you want control, via a framework when you want convenience._
 
-- **[huggingface/peft](https://github.com/huggingface/peft)** · 21,726★ · Python · Classic  
+- **[huggingface/peft](https://github.com/huggingface/peft)** · 21,778★ · Python · Classic  
   State-of-the-art parameter-efficient fine-tuning: LoRA, QLoRA, DoRA, IA³ — the adapter layer under most trainers.  
   <sub>topics: adapter, diffusion, llm, parameter-efficient-learning, python, pytorch, transformers, lora</sub>
-- **[huggingface/trl](https://github.com/huggingface/trl)** · 19,387★ · Python · Classic  
+- **[huggingface/trl](https://github.com/huggingface/trl)** · 19,483★ · Python · Classic  
   The post-training reference: SFT, reward modeling, DPO and GRPO unified in one library (v1.0, 2026).  
   <sub>topics: —</sub>
 
@@ -124,16 +124,16 @@ _The Hugging Face layer the frameworks wrap: `peft` for adapter methods, `trl` f
 
 _The 2026 frontier: reward multi-step *agent behavior*, not single responses. GRPO made it tractable; the fight is now over rollout infrastructure and environment interfaces._
 
-- **[OpenPipe/ART](https://github.com/OpenPipe/ART)** · 10,770★ · Python · Hot  
+- **[OpenPipe/ART](https://github.com/OpenPipe/ART)** · 10,792★ · Python · Mature  
   Agent Reinforcement Trainer — GRPO for *multi-turn* tool-using agents; vLLM rollouts + TRL/Unsloth training under the hood.  
   <sub>topics: llms, lora, reinforcement-learning, agent, agentic-ai, grpo, rl, qwen</sub>
-- **[Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL)** · 5,699★ · Python · Declining  
+- **[Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL)** · 5,717★ · Python · Declining  
   'Train any agent simply by talking' — natural-language-driven agent RL on top of the OpenClaw ecosystem.  
   <sub>topics: async, memory-systems, open-claw, openclaw-skills, rlhf, sglang, skill-learning, slime</sub>
-- **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** · 2,611★ · Python · Hot  
+- **[huggingface/OpenEnv](https://github.com/huggingface/OpenEnv)** · 2,685★ · Python · Hot  
   Interface library for RL post-training environments — the emerging standard for plugging envs into trainers.  
   <sub>topics: —</sub>
-- **[Memento-Teams/Memento](https://github.com/Memento-Teams/Memento)** · 2,581★ · Python · Declining  
+- **[Memento-Teams/Memento](https://github.com/Memento-Teams/Memento)** · 2,587★ · Python · Abandoned  
   The counterpoint: fine-tune LLM *agents* without fine-tuning LLMs — case-based memory instead of weight updates.  
   <sub>topics: —</sub>
 
@@ -141,22 +141,22 @@ _The 2026 frontier: reward multi-step *agent behavior*, not single responses. GR
 
 _Repos whose product is understanding: from-scratch GPTs, annotated papers, RL courses. Several are intentionally frozen — fine for learning, wrong as dependencies._
 
-- **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** · 105,546★ · Jupyter Notebook · Classic  
+- **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** · 106,320★ · Jupyter Notebook · Classic  
   Implement a ChatGPT-like LLM in PyTorch step by step — the book-quality path from zero to pretraining + finetuning.  
   <sub>topics: gpt, large-language-models, llm, python, pytorch, ai, artificial-intelligence, language-model</sub>
-- **[labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)** · 67,505★ · Python · Declining  
+- **[labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)** · 67,547★ · Python · Declining  
   60+ paper implementations with side-by-side notes — transformers, LoRA, RLHF internals, readable.  
   <sub>topics: deep-learning, deep-learning-tutorial, pytorch, gan, transformers, reinforcement-learning, optimizers, neural-networks</sub>
-- **[karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)** · 63,366★ · Python · Declining  
+- **[karpathy/nanoGPT](https://github.com/karpathy/nanoGPT)** · 63,691★ · Python · Declining  
   The simplest, fastest repo for training/finetuning mid-sized GPTs — frozen by design, still the canonical teaching codebase.  
   <sub>topics: —</sub>
-- **[yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL)** · 6,581★ · Jupyter Notebook · Declining  
+- **[yandexdataschool/Practical_RL](https://github.com/yandexdataschool/Practical_RL)** · 6,590★ · Jupyter Notebook · Declining  
   A course in reinforcement learning in the wild — the RL foundations under DPO/GRPO.  
   <sub>topics: reinforcement-learning, course-materials, deep-learning, deep-reinforcement-learning, git-course, mooc, tensorflow, pytorch</sub>
-- **[unslothai/notebooks](https://github.com/unslothai/notebooks)** · 5,693★ · Jupyter Notebook · Hot  
+- **[unslothai/notebooks](https://github.com/unslothai/notebooks)** · 5,730★ · Jupyter Notebook · Hot  
   250+ ready-to-run fine-tuning & RL notebooks (text, vision, audio, TTS, embeddings) — the recipe box.  
   <sub>topics: unsloth</sub>
-- **[SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook)** · 5,035★ · — · Abandoned  
+- **[SylphAI-Inc/LLM-engineer-handbook](https://github.com/SylphAI-Inc/LLM-engineer-handbook)** · 5,041★ · — · Abandoned  
   Curated map of training/serving/fine-tuning resources — orientation, not code.  
   <sub>topics: —</sub>
 - **[pico-lm/pico-train](https://github.com/pico-lm/pico-train)** · 321★ · Python · Declining  
@@ -167,13 +167,13 @@ _Repos whose product is understanding: from-scratch GPTs, annotated papers, RL c
 
 _Fine-tuning beyond cloud-GPU text LLMs: vision models, speech distillation, RAG systems, and Apple-Silicon-native training._
 
-- **[roboflow/rf-detr](https://github.com/roboflow/rf-detr)** · 9,590★ · Python · Hot  
+- **[roboflow/rf-detr](https://github.com/roboflow/rf-detr)** · 9,758★ · Python · Hot  
   Real-time detection/segmentation architecture built to be fine-tuned on custom vision datasets.  
   <sub>topics: computer-vision, detr, machine-learning, object-detection, rf-detr, instance-segmentation, sota</sub>
-- **[Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm)** · 5,534★ · Python · Mature  
+- **[Blaizzy/mlx-vlm](https://github.com/Blaizzy/mlx-vlm)** · 5,595★ · Python · Mature  
   Fine-tune and run vision-language models natively on Apple Silicon via MLX — unified memory instead of CUDA.  
   <sub>topics: llava, llm, mlx, vision-transformer, apple-silicon, idefics, local-ai, paligemma</sub>
-- **[huggingface/distil-whisper](https://github.com/huggingface/distil-whisper)** · 4,117★ · Python · Abandoned  
+- **[huggingface/distil-whisper](https://github.com/huggingface/distil-whisper)** · 4,116★ · Python · Abandoned  
   Knowledge distillation applied: Whisper 6× faster / 50% smaller within 1% WER — the distillation reference recipe.  
   <sub>topics: audio, speech-recognition, whisper</sub>
 - **[VectorInstitute/fed-rag](https://github.com/VectorInstitute/fed-rag)** · 150★ · Python · Declining  
@@ -184,16 +184,16 @@ _Fine-tuning beyond cloud-GPU text LLMs: vision models, speech distillation, RAG
 
 _Before and after the training run: planning what fits, and serving the tuned adapters/weights — including the many-adapters and tiny-GPU cases._
 
-- **[AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)** · 37,138★ · Rust · Hot  
+- **[AlexsJones/llmfit](https://github.com/AlexsJones/llmfit)** · 37,777★ · Rust · Hot  
   One command to find which models your hardware can run or train — the planning step before any tuning run.  
   <sub>topics: llm, skill, localai, gguf, mlx, unsloth</sub>
-- **[lyogavin/airllm](https://github.com/lyogavin/airllm)** · 34,784★ · Jupyter Notebook · Mature  
+- **[lyogavin/airllm](https://github.com/lyogavin/airllm)** · 35,630★ · Jupyter Notebook · Mature  
   Layer-by-layer offloading: 70B-class inference on a single 4GB GPU — run what you tuned on tiny hardware.  
   <sub>topics: chinese-nlp, finetune, generative-ai, instruct-gpt, instruction-set, llama, llm, lora</sub>
-- **[transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app)** · 5,190★ · Python · Mature  
+- **[transformerlab/transformerlab-app](https://github.com/transformerlab/transformerlab-app)** · 5,192★ · Python · Mature  
   Open research workbench GUI: train, tune, evaluate and chat with models locally (CUDA + MLX backends).  
   <sub>topics: electron, llama, llms, lora, rlhf, transformers, mlx, diffusion</sub>
-- **[predibase/lorax](https://github.com/predibase/lorax)** · 3,835★ · Python · Mature  
+- **[predibase/lorax](https://github.com/predibase/lorax)** · 3,837★ · Python · Mature  
   Multi-LoRA inference server — dynamically batch 1000s of fine-tuned adapters on one GPU.  
   <sub>topics: fine-tuning, gpt, llama, llm, llm-inference, llm-serving, llmops, lora</sub>
 
@@ -209,40 +209,41 @@ Fine-tuning in 2024 meant one thing: LoRA on instruction data. The 2026 stack is
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 27 tools span **10 of the graph's 38 communities**.
+**Community clustering.** These 27 tools span **11 of the graph's 43 communities**.
 
-- **Community 11** (11): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `unslothai/notebooks`, `huggingface/distil-whisper`, `lyogavin/airllm`, `predibase/lorax`
-- **Community 13** (5): `Lightning-AI/pytorch-lightning`, `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `roboflow/rf-detr`
-- **Community 15** (2): `Gen-Verse/OpenClaw-RL`, `VectorInstitute/fed-rag`
-- **Community 0** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
-- **Community 30** (2): `Blaizzy/mlx-vlm`, `AlexsJones/llmfit`
+- **Community 8** (8): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `unslothai/notebooks`, `Blaizzy/mlx-vlm`, `AlexsJones/llmfit`, `lyogavin/airllm`, `predibase/lorax`
+- **Community 19** (5): `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `huggingface/distil-whisper`
+- **Community 11** (4): `Lightning-AI/pytorch-lightning`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `roboflow/rf-detr`
+- **Community 3** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
+- **Community 2** (2): `SylphAI-Inc/LLM-engineer-handbook`, `VectorInstitute/fed-rag`
 
-**Centrality (PageRank in the full 2,263-repo graph)** — most 'hub-like' training tools in your ecosystem:
+**Centrality (PageRank in the full 2,322-repo graph)** — most 'hub-like' training tools in your ecosystem:
 
-- `Lightning-AI/pytorch-lightning` — PageRank 0.0016
-- `axolotl-ai-cloud/axolotl` — PageRank 0.0010
-- `huggingface/transformers` — PageRank 0.0009
-- `huggingface/trl` — PageRank 0.0008
-- `huggingface/peft` — PageRank 0.0008
-- `unslothai/unsloth` — PageRank 0.0007
+- `Lightning-AI/pytorch-lightning` — PageRank 0.0017
+- `axolotl-ai-cloud/axolotl` — PageRank 0.0008
+- `huggingface/peft` — PageRank 0.0007
+- `huggingface/transformers` — PageRank 0.0007
+- `unslothai/unsloth` — PageRank 0.0006
 - `roboflow/rf-detr` — PageRank 0.0006
+- `huggingface/OpenEnv` — PageRank 0.0006
 - `predibase/lorax` — PageRank 0.0005
-- `huggingface/OpenEnv` — PageRank 0.0005
+- `PaddlePaddle/PaddleNLP` — PageRank 0.0005
 - `huggingface/distil-whisper` — PageRank 0.0005
 
 **Direct links between training tools** (top similarity edges where both endpoints are in this report):
 
-- `unslothai/notebooks` ⇄ `unslothai/unsloth` (w=1.095) — topics: unsloth; authors: danielhanchen, Etherll, Imagineer99
-- `huggingface/peft` ⇄ `huggingface/transformers` (w=0.828) — topics: llm, python, pytorch; authors: qgallouedec, michaelbenayoun, albertvillanova
-- `huggingface/peft` ⇄ `huggingface/trl` (w=0.732) — authors: qgallouedec, albertvillanova, dependabot[bot]
+- `unslothai/notebooks` ⇄ `unslothai/unsloth` (w=1.021) — topics: unsloth; authors: danielhanchen, Etherll, NilayYadav
+- `huggingface/peft` ⇄ `huggingface/transformers` (w=0.693) — topics: llm, python, pytorch; authors: sywangyi
+- `huggingface/peft` ⇄ `huggingface/trl` (w=0.675) — authors: albertvillanova, behroozazarkhalili, akshansh47
+- `huggingface/trl` ⇄ `huggingface/OpenEnv` (w=0.668) — authors: sergiopaniego
 - `huggingface/distil-whisper` ⇄ `huggingface/transformers` (w=0.650) — topics: audio, speech-recognition
+- `huggingface/trl` ⇄ `huggingface/transformers` (w=0.630) — authors: qgallouedec, paulinebm
+- `huggingface/peft` ⇄ `axolotl-ai-cloud/axolotl` (w=0.365) — topics: llm, fine-tuning; authors: dependabot[bot], li-lizhe, simpleqt
 - `huggingface/peft` ⇄ `predibase/lorax` (w=0.362) — topics: llm, pytorch, transformers, lora
-- `huggingface/peft` ⇄ `axolotl-ai-cloud/axolotl` (w=0.323) — topics: llm, fine-tuning; authors: dependabot[bot], simpleqt
 - `hiyouga/LlamaFactory` ⇄ `unslothai/unsloth` (w=0.300) — topics: fine-tuning, llama, llm, qwen
 - `rasbt/LLMs-from-scratch` ⇄ `Lightning-AI/pytorch-lightning` (w=0.300) — topics: python, pytorch, ai, artificial-intelligence
 - `hiyouga/LlamaFactory` ⇄ `predibase/lorax` (w=0.290) — topics: fine-tuning, llama, llm, transformers
 - `huggingface/peft` ⇄ `hiyouga/LlamaFactory` (w=0.250) — topics: llm, transformers, lora, fine-tuning
-- `AlexsJones/llmfit` ⇄ `axolotl-ai-cloud/axolotl` (w=0.171) — topics: llm; authors: dependabot[bot]
 - `AlexsJones/llmfit` ⇄ `unslothai/notebooks` (w=0.167) — topics: unsloth
 - `lyogavin/airllm` ⇄ `predibase/lorax` (w=0.143) — topics: llama, llm, lora
 - `lyogavin/airllm` ⇄ `hiyouga/LlamaFactory` (w=0.138) — topics: llama, llm, lora, qlora
@@ -253,31 +254,31 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| huggingface/transformers | 99 | Classic | very active | 14 | 7% | 273 |
-| AlexsJones/llmfit | 98 | Hot | very active | 7 | 25% | 134 |
-| huggingface/peft | 96 | Classic | very active | 6 | 20% | 34 |
-| huggingface/OpenEnv | 85 | Hot | very active | 3 | 28% | 10 |
-| axolotl-ai-cloud/axolotl | 84 | Classic | very active | 2 | 27% | 33 |
-| roboflow/rf-detr | 84 | Hot | very active | 2 | 39% | 31 |
-| Blaizzy/mlx-vlm | 83 | Mature | very active | 2 | 35% | 85 |
-| hiyouga/LlamaFactory | 81 | Classic | very active | 6 | 13% | 36 |
-| huggingface/trl | 79 | Classic | very active | 1 | 64% | 97 |
-| unslothai/unsloth | 78 | Mature | very active | 1 | 52% | 69 |
-| transformerlab/transformerlab-app | 78 | Mature | very active | 1 | 83% | 114 |
-| OpenPipe/ART | 75 | Hot | very active | 1 | 87% | 59 |
+| huggingface/transformers | 100 | Classic | very active | 7 | 14% | 275 |
+| AlexsJones/llmfit | 99 | Hot | very active | 6 | 24% | 135 |
+| huggingface/peft | 94 | Classic | very active | 4 | 23% | 36 |
+| Blaizzy/mlx-vlm | 84 | Mature | very active | 2 | 37% | 88 |
+| roboflow/rf-detr | 84 | Hot | very active | 2 | 28% | 33 |
+| hiyouga/LlamaFactory | 82 | Classic | very active | 5 | 22% | 36 |
+| huggingface/trl | 80 | Classic | very active | 1 | 55% | 100 |
+| unslothai/unsloth | 79 | Mature | very active | 1 | 59% | 75 |
+| axolotl-ai-cloud/axolotl | 79 | Classic | very active | 1 | 59% | 34 |
+| transformerlab/transformerlab-app | 76 | Mature | very active | 1 | 82% | 114 |
+| OpenPipe/ART | 75 | Mature | very active | 1 | 99% | 59 |
+| huggingface/OpenEnv | 75 | Hot | very active | 1 | 83% | 12 |
 | lyogavin/airllm | 70 | Mature | very active | 1 | 100% | 6 |
-| Lightning-AI/pytorch-lightning | 69 | Classic | very active | 1 | 51% | 175 |
-| rasbt/LLMs-from-scratch | 54 | Classic | active | 1 | 53% | 0 |
-| unslothai/notebooks | 54 | Hot | very active | 1 | 88% | 0 |
-| PaddlePaddle/PaddleNLP | 29 | Mature | slowing | 0 | 0% | 49 |
-| VectorInstitute/fed-rag | 29 | Declining | slowing | 0 | 0% | 35 |
-| predibase/lorax | 24 | Mature | slowing | 0 | 0% | 21 |
-| yandexdataschool/Practical_RL | 23 | Declining | stale | 0 | 0% | 2 |
-| Gen-Verse/OpenClaw-RL | 21 | Declining | slowing | 0 | 0% | 0 |
-| pico-lm/pico-train | 19 | Declining | stale | 0 | 0% | 1 |
-| labmlai/annotated_deep_learning_paper_implementations | 17 | Declining | stale | 0 | 0% | 0 |
+| Lightning-AI/pytorch-lightning | 69 | Classic | very active | 1 | 58% | 175 |
+| rasbt/LLMs-from-scratch | 55 | Classic | very active | 1 | 65% | 0 |
+| unslothai/notebooks | 55 | Hot | very active | 1 | 87% | 0 |
+| PaddlePaddle/PaddleNLP | 28 | Mature | slowing | 0 | 0% | 49 |
+| VectorInstitute/fed-rag | 28 | Declining | slowing | 0 | 0% | 35 |
+| predibase/lorax | 23 | Mature | slowing | 0 | 0% | 21 |
+| yandexdataschool/Practical_RL | 22 | Declining | stale | 0 | 0% | 2 |
+| Gen-Verse/OpenClaw-RL | 20 | Declining | slowing | 0 | 0% | 0 |
+| pico-lm/pico-train | 18 | Declining | stale | 0 | 0% | 1 |
+| labmlai/annotated_deep_learning_paper_implementations | 16 | Declining | stale | 0 | 0% | 0 |
 | karpathy/nanoGPT | 6 | Declining | stale | 0 | 0% | 0 |
-| Memento-Teams/Memento | 5 | Declining | stale | 0 | 0% | 0 |
+| Memento-Teams/Memento | 5 | Abandoned | stale | 0 | 0% | 0 |
 | SylphAI-Inc/LLM-engineer-handbook | 5 | Abandoned | stale | 0 | 0% | 0 |
 | huggingface/distil-whisper | 4 | Abandoned | stale | 0 | 0% | 0 |
 
@@ -296,15 +297,15 @@ Watch items: `nanoGPT` and most learn-by-building repos read as frozen — expec
 
 ## Adjacent (deliberately not listed as training tools)
 
-- **vllm-project/vllm** (92,661★) — the serving standard for *finished* models — covered in the local-vs-infra-stack report
-- **ollama/ollama** (181,673★) — local inference runtime, not a trainer — see local-vs-infra-stack
-- **flyteorg/flyte** (7,565★) — general ML/data orchestration — schedules training, doesn't implement it
-- **beam-cloud/beta9** (1,787★) — serverless GPU substrate *where* you train, not *how*
-- **zai-org/GLM-V** (2,392★) — open model weights trained with scalable RL — a result of this stack, not a tool in it
-- **openai/CLIP** (34,366★) — landmark pretraining research, effectively frozen — read it, don't build on the repo
-- **NVIDIA/physicsnemo** (3,289★) — training framework for physics/simulation models, out of LLM post-training scope
-- **facebookresearch/BenchMARL** (666★) — multi-agent RL *benchmarking* research, not LLM post-training
-- **microsoft/generative-ai-for-beginners** (120,515★) — general GenAI curriculum — broader than training
+- **vllm-project/vllm** (93,508★) — the serving standard for *finished* models — covered in the local-vs-infra-stack report
+- **ollama/ollama** (182,613★) — local inference runtime, not a trainer — see local-vs-infra-stack
+- **flyteorg/flyte** (7,669★) — general ML/data orchestration — schedules training, doesn't implement it
+- **beam-cloud/beta9** (1,808★) — serverless GPU substrate *where* you train, not *how*
+- **zai-org/GLM-V** (2,396★) — open model weights trained with scalable RL — a result of this stack, not a tool in it
+- **openai/CLIP** (34,435★) — landmark pretraining research, effectively frozen — read it, don't build on the repo
+- **NVIDIA/physicsnemo** (3,333★) — training framework for physics/simulation models, out of LLM post-training scope
+- **facebookresearch/BenchMARL** (670★) — multi-agent RL *benchmarking* research, not LLM post-training
+- **microsoft/generative-ai-for-beginners** (121,111★) — general GenAI curriculum — broader than training
 
 ## Methodology & caveats
 
@@ -314,4 +315,4 @@ Watch items: `nanoGPT` and most learn-by-building repos read as frozen — expec
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; benchmark citations are frozen text and need manual review when major releases land.
 
-<sub>Tools covered: 27 · Snapshot: 2026-09-29T15:12:50.430Z</sub>
+<sub>Tools covered: 27 · Snapshot: 2026-10-10T15:21:10.911Z</sub>

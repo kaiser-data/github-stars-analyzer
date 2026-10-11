@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-10-01)
+# Graph Report - github-stars-analyzer  (2026-10-11)
 
 ## Corpus Check
-- 230 files · ~3,803,410 words
+- 231 files · ~3,909,110 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2015 nodes · 2077 edges · 135 communities (118 shown, 17 thin omitted)
+- 2023 nodes · 2084 edges · 136 communities (119 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4890c28a`
+- Built from commit: `d186fc5c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -143,6 +143,7 @@
 - [[_COMMUNITY_Handoff — 2026-09-29|Handoff — 2026-09-29]]
 - [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
 - [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
+- [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `useGraph()` - 20 edges
@@ -171,7 +172,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (135 total, 17 thin omitted)
+## Communities (136 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -407,7 +408,7 @@ Nodes (18): Adjacent (deliberately not listed as training tools), By category, D
 
 ### Community 66 - "load_data"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-21 → 2026-09-29, 8d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-10, 11d), Frontier models on hardware you already own (+10 more)
 
 ### Community 67 - "snapshot.py"
 Cohesion: 0.06
@@ -415,7 +416,7 @@ Nodes (34): Adjacent (deliberately not listed as charting tools), Advantages, di
 
 ### Community 68 - "Trending Now — What's Actually Moving in Your Stars"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-21 → 2026-09-29, 8d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-10, 11d), Frontier models on hardware you already own (+10 more)
 
 ### Community 69 - "Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases"
 Cohesion: 0.06
@@ -617,8 +618,12 @@ Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small inst
 Cohesion: 0.08
 Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small instruction budget, 3. Context engineering, 4. Lean action space, 5. External verification, 6. State on disk, 7. Sub-agents for isolation (+15 more)
 
+### Community 135 - "Handoff — 2026-10-01"
+Cohesion: 0.25
+Nodes (7): 1. The new report (`scripts/reports/harness_engineering.py`), 2. Verification, 3. Lessons, 4. Open items, Evidence (frozen 2026-10-01, does not refresh on rebuild), Handoff — 2026-10-01, TL;DR
+
 ## Knowledge Gaps
-- **1362 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1357 more)
+- **1367 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1362 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -626,7 +631,7 @@ Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small inst
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1406 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1411 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">109,572</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">110,273</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">CorentinJ/Real-Time-Voice-Cloni…</text>
-<path d="M244,67 h184.9 q4,0 4,4 v10 q0,4 -4,4 h-184.9 z" class="bar"/>
-<text x="438.9" y="76.0" class="val" dominant-baseline="central">60,154</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">jamiepine/voicebox</text>
-<path d="M244,94 h170.7 q4,0 4,4 v10 q0,4 -4,4 h-170.7 z" class="bar"/>
-<text x="424.7" y="103.0" class="val" dominant-baseline="central">55,653</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
-<path d="M244,121 h165.3 q4,0 4,4 v10 q0,4 -4,4 h-165.3 z" class="bar"/>
-<text x="419.3" y="130.0" class="val" dominant-baseline="central">53,917</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">mudler/LocalAI</text>
-<path d="M244,148 h150.7 q4,0 4,4 v10 q0,4 -4,4 h-150.7 z" class="bar"/>
-<text x="404.7" y="157.0" class="val" dominant-baseline="central">49,262</text>
+<path d="M244,67 h183.7 q4,0 4,4 v10 q0,4 -4,4 h-183.7 z" class="bar"/>
+<text x="437.7" y="76.0" class="val" dominant-baseline="central">60,173</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
+<path d="M244,94 h173.5 q4,0 4,4 v10 q0,4 -4,4 h-173.5 z" class="bar"/>
+<text x="427.5" y="103.0" class="val" dominant-baseline="central">56,902</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">jamiepine/voicebox</text>
+<path d="M244,121 h173.2 q4,0 4,4 v10 q0,4 -4,4 h-173.2 z" class="bar"/>
+<text x="427.2" y="130.0" class="val" dominant-baseline="central">56,793</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
+<path d="M244,148 h165.3 q4,0 4,4 v10 q0,4 -4,4 h-165.3 z" class="bar"/>
+<text x="419.3" y="157.0" class="val" dominant-baseline="central">54,266</text>
 </svg>

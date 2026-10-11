@@ -46,6 +46,7 @@ TAXONOMY = {
     "headroomlabs-ai/headroom": ("3. Context engineering", "Compresses tool outputs, logs, files and RAG chunks before they reach the model."),
     "rtk-ai/rtk": ("3. Context engineering", "CLI proxy that filters and condenses shell output for coding agents."),
     "alexgreensh/token-optimizer": ("3. Context engineering", "Finds 'ghost tokens' and helps sessions survive compaction without quality decay."),
+    "repoprompt/repoprompt-ce": ("3. Context engineering", "Community edition of RepoPrompt — hand-pick files and code maps into a precise context bundle instead of letting the agent grep blindly."),
 
     # 4. Lean action space / tool design
     "jgravelle/jcodemunch-mcp": ("4. Lean action space", "Symbol-level code retrieval — return the function, not the file."),
@@ -73,7 +74,8 @@ TAXONOMY = {
     # 8. Executable guards & sandboxes
     "kenryu42/cc-safety-net": ("8. Guards & sandboxes", "Pre-execution hook that blocks destructive git and filesystem commands."),
     "dagger/container-use": ("8. Guards & sandboxes", "Per-agent containerized environments so agents can't trample each other or the host."),
-    "daytonaio/daytona": ("8. Guards & sandboxes", "Secure, elastic sandboxes for running AI-generated code."),
+    "e2b-dev/runtime": ("8. Guards & sandboxes", "E2B's sandbox runtime — isolated microVMs for AI-generated code, cloud or self-hosted (replaces the now-archived Daytona)."),
+    "Infisical/agent-vault": ("8. Guards & sandboxes", "HTTP credential proxy for agents — the agent calls APIs through the vault and never holds the raw secret."),
     "NVIDIA/SkillSpector": ("8. Guards & sandboxes", "Scans agent skills for malicious or vulnerable patterns before you load them."),
 
     # 9. Durable runs & human checkpoints

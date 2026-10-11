@@ -3,14 +3,14 @@
   "title": "Terminals for Agentic Programming \u2014 Which Terminal App, on Which OS, for How Many Sessions?",
   "file": "agentic-terminals.md",
   "category": "AI / Comparison",
-  "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 52 present.",
-  "tool_count": 52,
-  "total_stars": 1425017,
+  "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 53 present.",
+  "tool_count": 53,
+  "total_stars": 1439473,
   "categories": {
     "Agent-aware terminal": 3,
     "Emulator": 11,
     "Multiplexer / session": 7,
-    "Parallel-agent orchestration": 5,
+    "Parallel-agent orchestration": 6,
     "Remote & web sessions": 8,
     "Windows & shells": 2,
     "Shell & history": 10,
@@ -20,27 +20,27 @@
   "top_tools": [
     {
       "name": "ohmyzsh/ohmyzsh",
-      "stars": 189923
+      "stars": 190069
     },
     {
       "name": "microsoft/terminal",
-      "stars": 104988
+      "stars": 105124
     },
     {
       "name": "junegunn/fzf",
-      "stars": 83244
+      "stars": 83522
     },
     {
       "name": "Eugeny/tabby",
-      "stars": 74675
+      "stars": 74899
     },
     {
       "name": "alacritty/alacritty",
-      "stars": 65812
+      "stars": 65924
     }
   ],
-  "snapshot": "2026-09-29T15:12:50.430Z",
-  "generated": "2026-10-01",
+  "snapshot": "2026-10-10T15:21:10.911Z",
+  "generated": "2026-10-10",
   "generator": "scripts/reports/agentic_terminals.py",
   "created": "2026-08-23"
 }

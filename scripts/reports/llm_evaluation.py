@@ -31,6 +31,7 @@ TAXONOMY = {
     "comet-ml/opik": ("Observability + eval platform", "Debug / evaluate / monitor LLM, RAG & agentic apps with tracing + automated scoring."),
     "traceloop/openllmetry": ("Observability + eval platform", "OpenTelemetry-native GenAI observability; standards-based traces & metrics."),
     "comet-ml/opik-openclaw": ("Observability + eval platform", "Opik plugin that exports OpenClaw agent traces (cost/tokens/errors) for monitoring."),
+    "langwatch/langwatch": ("Observability + eval platform", "Agent observability plus evals, simulations and guardrails — OTel-based tracing with an agent-testing focus."),
 
     # Evaluation frameworks (offline scoring, LLM-as-judge, metric libraries)
     "confident-ai/deepeval": ("Evaluation framework", "'The LLM eval framework' — pytest-style unit tests with metrics (faithfulness, relevancy, G-Eval/LLM-as-judge)."),
@@ -41,6 +42,7 @@ TAXONOMY = {
     "openai/evals": ("Evaluation framework", "OpenAI's eval registry/framework — write & share evals against a standard harness."),
     "Arize-ai/phoenix": ("Evaluation framework", "Open-source LLM tracing + eval; notebook-friendly, OTel-based."),
     "truera/trulens": ("Evaluation framework", "Feedback-function evaluation — programmatic scorers for groundedness/relevance."),
+    "strands-agents/evals": ("Evaluation framework", "Strands' eval framework for agents and LLM apps — output and trajectory evaluators plus simulated users."),
 
     # Benchmarks & leaderboards (fixed task sets, model ranking)
     "LiveBench/LiveBench": ("Benchmark / leaderboard", "Challenging, contamination-free benchmark refreshed over time to resist training-set leakage."),

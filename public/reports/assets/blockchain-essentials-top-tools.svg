@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">108,540</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">OpenBB-finance/OpenBB</text>
-<path d="M244,67 h228.8 q4,0 4,4 v10 q0,4 -4,4 h-228.8 z" class="bar"/>
-<text x="482.8" y="76.0" class="val" dominant-baseline="central">73,453</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">110,471</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">openbq-org/OpenBB</text>
+<path d="M244,67 h226.6 q4,0 4,4 v10 q0,4 -4,4 h-226.6 z" class="bar"/>
+<text x="480.6" y="76.0" class="val" dominant-baseline="central">74,069</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ethereum/go-ethereum</text>
-<path d="M244,94 h158.8 q4,0 4,4 v10 q0,4 -4,4 h-158.8 z" class="bar"/>
-<text x="412.8" y="103.0" class="val" dominant-baseline="central">51,369</text>
+<path d="M244,94 h156.0 q4,0 4,4 v10 q0,4 -4,4 h-156.0 z" class="bar"/>
+<text x="410.0" y="103.0" class="val" dominant-baseline="central">51,387</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">OpenZeppelin/openzeppelin-contr…</text>
-<path d="M244,121 h82.4 q4,0 4,4 v10 q0,4 -4,4 h-82.4 z" class="bar"/>
-<text x="336.4" y="130.0" class="val" dominant-baseline="central">27,256</text>
+<path d="M244,121 h80.9 q4,0 4,4 v10 q0,4 -4,4 h-80.9 z" class="bar"/>
+<text x="334.9" y="130.0" class="val" dominant-baseline="central">27,268</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">argotorg/solidity</text>
-<path d="M244,148 h77.6 q4,0 4,4 v10 q0,4 -4,4 h-77.6 z" class="bar"/>
-<text x="331.6" y="157.0" class="val" dominant-baseline="central">25,741</text>
+<path d="M244,148 h76.2 q4,0 4,4 v10 q0,4 -4,4 h-76.2 z" class="bar"/>
+<text x="330.2" y="157.0" class="val" dominant-baseline="central">25,755</text>
 </svg>

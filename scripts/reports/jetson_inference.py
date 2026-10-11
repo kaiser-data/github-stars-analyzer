@@ -92,6 +92,11 @@ TAXONOMY = {
     "microsoft/onnxruntime": ("Compiler & substrate", "The actual runtime behind the ONNX format you already star, with CUDA and TensorRT execution providers. Everything small on this box — STT, TTS, embeddings — can run here."),
     "ggml-org/ggml": ("Compiler & substrate", "The tensor library underneath llama.cpp and whisper.cpp, both of which you star. Where quantization formats and CUDA kernels actually land."),
     "apache/tvm": ("Compiler & substrate", "The compiler MLC-LLM is built on — relevant if you want to understand or tune what MLC produces for SM 8.7."),
+
+    # ===== Promoted from discovery, 2026-10 =====
+    "NVIDIA/TensorRT-Edge-LLM": ("NVIDIA / Jetson path", "NVIDIA's lightweight C++ LLM/VLM runtime for physical-AI devices — the TensorRT path that targets Jetson-class hardware directly, unlike the AGX-only TensorRT-LLM branch."),
+    "pytorch/executorch": ("Compiler & substrate", "PyTorch's on-device runtime — very active, aimed more at mobile NPUs than CUDA Jetsons, but the direction of travel for exporting PyTorch models to the edge."),
+    "alibaba/MNN": ("Edge-viable LLM runtime", "Alibaba's lightweight inference engine (MNN-LLM) — battle-tested on phones; CUDA backend exists, but Jetson is not its primary target, so benchmark before trusting."),
 }
 
 CAT_ORDER = [
@@ -213,9 +218,6 @@ MISSING = [
     gap("dusty-nv/jetson-inference", 8967, "C++", "MIT", "⚠ pushed 2025-10-16 — ~10mo",
         "The classic Jetson vision tutorial stack (detection, segmentation, TensorRT). Still the best on-ramp for the vision half, but no longer actively pushed.",
         "Star for reference; note the staleness."),
-    gap("pytorch/executorch", 4941, "Python", "NOASSERTION", "pushed same-day",
-        "PyTorch's edge runtime — very active, aimed more at mobile NPUs than CUDA Jetsons, but the direction of travel for on-device PyTorch.",
-        "Watch."),
     gap("NVIDIA-AI-IOT/torch2trt", 4877, "Python", "MIT", "⚠ pushed 2024-08-17 — ~2y stale",
         "PyTorch→TensorRT converter that was the standard Jetson shortcut. Two years without a push is disqualifying for new work.",
         "**Skip** — use TensorRT or ONNX Runtime directly."),

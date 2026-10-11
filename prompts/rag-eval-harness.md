@@ -1,6 +1,6 @@
 # Retrieval-evaluation harness
 
-> Built from the **rag-tooling** report, against 2,263 starred repos (snapshot `2026-09-29T15:12:50.430Z`). Regenerate any time — no API cost.
+> Built from the **rag-tooling** report, against 2,322 starred repos (snapshot `2026-10-10T15:21:10.911Z`). Regenerate any time — no API cost.
 
 A home-made RAG eval is the easiest place in the whole stack to fool yourself: it is trivial to get a single number out, and almost as trivial for that number to be meaningless because it blends retrieval and generation into one score. This harness keeps the two apart on purpose and gives retrieval a keyword-only floor to be read against, so a change in generation prompt can never masquerade as better retrieval.
 
@@ -8,10 +8,10 @@ A home-made RAG eval is the easiest place in the whole stack to fool yourself: i
 
 | Stage | Tool | Stars | Health | Lifecycle |
 |---|---|---|---|---|
-| Retrieve | [`deepset-ai/haystack`](https://github.com/deepset-ai/haystack) | 26,594 | 94 | Classic |
-| Index | [`qdrant/qdrant`](https://github.com/qdrant/qdrant) | 34,809 | 92 | Classic |
-| Embed | [`huggingface/sentence-transformers`](https://github.com/huggingface/sentence-transformers) | 19,121 | 80 | Classic |
-| Judge | [`KRLabsOrg/LettuceDetect`](https://github.com/KRLabsOrg/LettuceDetect) | 611 | 59 | Mature |
+| Retrieve | [`deepset-ai/haystack`](https://github.com/deepset-ai/haystack) | 26,714 | 90 | Classic |
+| Index | [`qdrant/qdrant`](https://github.com/qdrant/qdrant) | 35,008 | 88 | Classic |
+| Embed | [`huggingface/sentence-transformers`](https://github.com/huggingface/sentence-transformers) | 19,160 | 95 | Classic |
+| Judge | [`KRLabsOrg/LettuceDetect`](https://github.com/KRLabsOrg/LettuceDetect) | 615 | 59 | Mature |
 
 Metrics are live from the dataset.
 

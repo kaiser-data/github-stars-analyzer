@@ -44,6 +44,7 @@ TAXONOMY = {
     "gumyr/build123d": (C_CAD, "The cleaner successor API to CadQuery — same OCCT kernel, builder + algebra modes, far more Pythonic to generate."),
     "KittyCAD/modeling-app": (C_CAD, "Zoo Design Studio: the KCL language, a native text-to-CAD ML API and the Zookeeper conversational agent on a purpose-built B-rep engine."),
     "BOMWiki/partmode": (C_CAD, "Local-first parametric CAD running in the browser on OpenCascade — a good human review surface for agent-authored geometry."),
+    "FreeCAD/FreeCAD": (C_CAD, "The full open-source parametric modeller on OCCT. Its Python console and macro API make it scriptable by an agent, and its GUI is the place a human checks the result."),
 
     # --- Component libraries: grounding, so the model stops inventing dimensions
     "BelfrySCAD/BOSL2": (C_LIB, "Threads, gears, rounding, joiners and attachments for OpenSCAD. The single biggest quality jump available to an LLM authoring loop."),
