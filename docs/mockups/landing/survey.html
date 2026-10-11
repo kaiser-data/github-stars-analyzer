@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Astrolab Survey</title>
+<style>
+/* Layout: night-sky single theme (deliberate). Wide 72rem frame, generous section rhythm,
+   product accents swap per page through --accent; brass is the umbrella colour. */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1528;
+  --surface: #131b31;
+  --ink: #ebe6d8;
+  --muted: #9099ae;
+  --faint: #5b6580;
+  --line: #24304b;
+  --brass: #c9a35b;
+  --atlas: #8bbbd9;
+  --almanac: #e3866a;
+  --survey: #93c4a0;
+  --good: #8fcf9f;
+  --warn: #e3c06a;
+  --bad: #ec8a7c;
+  --accent: var(--brass);
+  --font-display: "Didot", "Bodoni 72", "Bodoni MT", "Iowan Old Style", Georgia, serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font-body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+img { max-width: 100%; display: block; }
+
+.mock-strip { background: var(--accent); color: var(--bg); font: 600 12px/1.4 var(--font-mono); letter-spacing: .04em; text-align: center; padding: 6px 16px; }
+.frame { max-width: 72rem; margin: 0 auto; padding-inline: 24px; }
+
+/* Nav */
+.nav { border-bottom: 1px solid var(--line); }
+.nav .frame { display: flex; align-items: center; gap: 28px; padding-block: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 500 22px/1 var(--font-display); letter-spacing: .02em; }
+.brand svg { width: 28px; height: 28px; color: var(--brass); }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0 0 0 auto; padding: 0; flex-wrap: wrap; }
+.nav li a { text-decoration: none; font-size: 14px; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
+.nav li a:hover, .nav li a[aria-current] { color: var(--ink); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; display: inline-block; }
+.nav li a .dot { color: var(--c); }
+
+/* Type */
+.eyebrow { font: 600 12px/1.2 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1, h2, h3 { text-wrap: balance; font-weight: 400; margin: 0; }
+h1 { font: 400 clamp(42px, 7vw, 84px)/1.02 var(--font-display); letter-spacing: -.01em; }
+h1 em, h2 em { font-style: italic; color: var(--accent); }
+h2 { font: 400 clamp(30px, 4.2vw, 46px)/1.1 var(--font-display); }
+h3 { font: 600 18px/1.3 var(--font-body); }
+p { margin: 0; max-width: 64ch; }
+.lede { font-size: 20px; line-height: 1.55; color: var(--muted); max-width: 46ch; }
+.small { font-size: 14px; color: var(--muted); }
+.mono { font-family: var(--font-mono); }
+code { font: .86em var(--font-mono); color: var(--accent); }
+.star { color: var(--accent); font-weight: 700; }
+
+/* Sections */
+section { padding-block: 88px; border-bottom: 1px solid var(--line); }
+section.tight { padding-block: 56px; }
+.sec-head { display: grid; gap: 14px; margin-bottom: 44px; max-width: 46rem; }
+
+/* Hero */
+.hero { padding-block: 72px 88px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.hero-copy { display: grid; gap: 24px; min-width: 0; }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+
+/* Buttons */
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; font: 600 15px/1 var(--font-body); text-decoration: none; border: 1px solid var(--accent); color: var(--bg); background: var(--accent); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost:hover { border-color: var(--accent); }
+
+/* Stats */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.stat { border-top: 1px solid var(--accent); padding-top: 12px; display: grid; gap: 4px; }
+.stat b { font: 400 44px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 14px; color: var(--muted); }
+@media (max-width: 720px) { .stats { grid-template-columns: 1fr 1fr; } }
+
+/* Grids and cards */
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 860px) { .grid-3 { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 24px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.cols { display: grid; gap: 10px; }
+
+/* Terminal */
+.term { background: #070a14; border: 1px solid var(--line); font: 13.5px/1.6 var(--font-mono); overflow-x: auto; min-width: 0; }
+.term-bar { display: flex; gap: 7px; padding: 10px 14px; border-bottom: 1px solid var(--line); align-items: center; }
+.term-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: block; }
+.term-bar span { margin-left: 8px; color: var(--faint); font-size: 12px; }
+.term pre { margin: 0; padding: 18px 20px; white-space: pre; color: var(--ink); }
+.t-dim { color: var(--faint); } .t-acc { color: var(--accent); } .t-good { color: var(--good); } .t-bad { color: var(--bad); } .t-warn { color: var(--warn); } .t-user { color: var(--atlas); }
+
+/* Tables */
+.tbl { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font: 600 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--bg-2); }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+td .repo { font-family: var(--font-mono); font-size: 13.5px; }
+
+.pill { display: inline-block; font: 600 11px/1 var(--font-mono); letter-spacing: .04em; padding: 4px 8px; border: 1px solid currentColor; border-radius: 99px; white-space: nowrap; }
+.pill.good { color: var(--good); } .pill.warn { color: var(--warn); } .pill.bad { color: var(--bad); } .pill.acc { color: var(--accent); }
+
+/* Pricing */
+.tier { display: grid; gap: 14px; align-content: start; }
+.tier .price { font: 400 46px/1 var(--font-display); }
+.tier .price small { font: 14px var(--font-body); color: var(--muted); }
+.tier ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 15px; }
+.tier.featured { border-color: var(--accent); }
+
+/* Form */
+.signup { display: flex; gap: 10px; flex-wrap: wrap; max-width: 30rem; }
+.signup input { flex: 1 1 14rem; min-width: 0; background: var(--bg); color: var(--ink); border: 1px solid var(--line); padding: 12px 14px; font: 15px var(--font-body); }
+.signup .ok { flex-basis: 100%; font-size: 14px; color: var(--good); }
+
+/* Footer */
+footer { padding-block: 48px 64px; }
+footer .frame { display: grid; gap: 18px; }
+footer .row { display: flex; gap: 28px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+footer .row a { text-decoration: none; }
+footer .row a:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+:root { --accent: var(--survey); }
+</style>
+</head>
+<body>
+<div class="mock-strip">MOCKUP · the example uses the 37 tools of the Agent Memory report as a stand-in stack · prices are placeholders</div>
+<nav class="nav"><div class="frame"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="16" cy="17" r="12"/><circle cx="16" cy="17" r="7.5"/><path d="M16 2v3M6 27l20-20" stroke-linecap="round"/><circle cx="16" cy="17" r="1.6" fill="currentColor"/></svg>Astrolab</a><ul><li><a href="picker.html" style="--c:var(--brass)"><span class="dot"></span>Picker</a></li><li><a href="atlas.html" style="--c:var(--atlas)"><span class="dot"></span>Atlas</a></li><li><a href="almanac.html" style="--c:var(--almanac)"><span class="dot"></span>Almanac</a></li><li><a href="survey.html" style="--c:var(--survey)" aria-current="page"><span class="dot"></span>Survey</a></li></ul></div></nav>
+
+<style>
+.bar { display: flex; height: 22px; gap: 2px; }
+.bar div { min-width: 6px; }
+.blegend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+.blegend i { display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: 0; }
+.blegend b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.steps > div { border-top: 1px solid var(--accent); padding-top: 14px; display: grid; gap: 8px; min-width: 0; }
+.steps .n { font: 400 40px/1 var(--font-display); color: var(--accent); }
+.steps p { color: var(--muted); font-size: 15px; }
+@media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+.report-card { display: grid; gap: 22px; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 640px) { .kpis { grid-template-columns: 1fr; } }
+.apply { display: grid; gap: 12px; max-width: 34rem; }
+.apply label { font-size: 14px; color: var(--muted); }
+.apply input, .apply select { background: var(--bg); color: var(--ink); border: 1px solid var(--line); padding: 12px 14px; font: 15px var(--font-body); width: 100%; }
+</style>
+
+<section class="hero">
+  <div class="frame hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Astrolab Survey · for teams</div>
+      <h1>Is <em>your</em> stack going stale?</h1>
+      <p class="lede">Send us your lockfiles. You get a private landscape of what you depend on: what's declining, what rests on a single maintainer, and the curated alternative for each. Refreshed every month.</p>
+      <div class="ctas"><a class="btn" href="#apply">Apply as a design partner</a><a class="btn ghost" href="#example">See an example</a></div>
+    </div>
+    <div class="panel">
+      <div class="eyebrow">Design partner terms*</div>
+      <p style="font:400 40px/1 var(--font-display)">50% off <span class="small" style="font-family:var(--font-body)">the first six months</span></p>
+      <p class="small">Target price $300–800 per month by repo count. In return: a monthly feedback call and a case study you approve. 3–5 places.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="sec-head"><div class="eyebrow">How it works</div><h2>Three steps, then a monthly refresh.</h2></div>
+    <div class="steps">
+      <div><span class="n">1</span><h3>Send lockfiles</h3><p>package-lock, poetry.lock, go.sum, Cargo.lock. Or a list of repos. Nothing else leaves your side.</p></div>
+      <div><span class="n">2</span><h3>We map it</h3><p>Each dependency is scored for lifecycle, health and bus factor, and matched to our curated reports for alternatives.</p></div>
+      <div><span class="n">3</span><h3>You get the landscape</h3><p>A private report and a Picker MCP scoped to your stack, so your agents see the same picks your team does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="example">
+  <div class="frame report-card">
+    <div class="sec-head" style="margin:0">
+      <div class="eyebrow">Example landscape</div>
+      <h2>Stand-in stack: 37 agent-memory tools.</h2>
+      <p class="small">A real team's report has the same shape. Here the input is the Agent Memory report's tool list, with live health data from 2026-10-11.</p>
+    </div>
+    <div class="kpis">
+      <div class="stat"><b>37</b><span>dependencies mapped</span></div>
+      <div class="stat"><b>23</b><span>with bus factor 1 or less</span></div>
+      <div class="stat"><b>3</b><span>slowing or stale</span></div>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="bar"><div style="flex:1;background:var(--brass)" title="Rising: 1"></div><div style="flex:11;background:var(--warn)" title="Hot: 11"></div><div style="flex:10;background:var(--atlas)" title="Mature: 10"></div><div style="flex:12;background:var(--good)" title="Classic: 12"></div><div style="flex:3;background:var(--almanac)" title="Declining: 3"></div></div>
+      <div class="blegend"><span><i style="background:var(--brass)"></i>Rising <b>1</b></span><span><i style="background:var(--warn)"></i>Hot <b>11</b></span><span><i style="background:var(--atlas)"></i>Mature <b>10</b></span><span><i style="background:var(--good)"></i>Classic <b>12</b></span><span><i style="background:var(--almanac)"></i>Declining <b>3</b></span></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:12px">Lowest health first</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Repo</th><th>Category</th><th style="text-align:right">Health</th><th>Stage</th><th style="text-align:right">Last push</th><th style="text-align:right">Top author</th></tr></thead>
+        <tbody><tr><td><span class="repo">HKUDS/MGP</span></td><td>Graph-native memory</td><td class="num">25</td><td><span class="pill bad">Declining</span></td><td class="num">2mo ago</td><td class="num">0%</td></tr><tr><td><span class="repo">shaneholloman/mcp-knowledge-graph</span></td><td>Graph-native memory</td><td class="num">39</td><td><span class="pill bad">Declining</span></td><td class="num">4mo ago</td><td class="num">0%</td></tr><tr><td><span class="repo">memvid/memvid</span></td><td>Vector-first memory</td><td class="num">53</td><td><span class="pill bad">Declining</span></td><td class="num">2mo ago</td><td class="num">100%</td></tr><tr><td><span class="repo">trustgraph-ai/trustgraph</span></td><td>Graph-native memory</td><td class="num">63</td><td><span class="pill good">Mature</span></td><td class="num">4d ago</td><td class="num">65%</td></tr><tr><td><span class="repo">MemoriLabs/Memori</span></td><td>Vector-first memory</td><td class="num">63</td><td><span class="pill good">Mature</span></td><td class="num">8d ago</td><td class="num">100%</td></tr><tr><td><span class="repo">pgvector/pgvector</span></td><td>Vector & graph stores</td><td class="num">64</td><td><span class="pill good">Classic</span></td><td class="num">3d ago</td><td class="num">98%</td></tr></tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="frame grid-2">
+    <div class="sec-head" style="margin:0"><div class="eyebrow">Apply</div><h2>Three to five teams this quarter.</h2><p class="small">Good fit: 5–50 engineers, agents adding dependencies, at least one service in production on open-source AI tooling.</p></div>
+    <form class="apply" id="ap">
+      <label for="ap-email">Work email</label><input id="ap-email" type="email" required placeholder="you@company.com">
+      <label for="ap-size">Engineering team size</label>
+      <select id="ap-size"><option>5–15</option><option>16–50</option><option>51–200</option><option>200+</option></select>
+      <button class="btn" type="submit">Apply</button>
+      <span class="ok small" id="ap-ok" hidden style="color:var(--good)">Mockup only: nothing was sent.</span>
+    </form>
+  </div>
+</section>
+
+<footer><div class="frame"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="16" cy="17" r="12"/><circle cx="16" cy="17" r="7.5"/><path d="M16 2v3M6 27l20-20" stroke-linecap="round"/><circle cx="16" cy="17" r="1.6" fill="currentColor"/></svg>Astrolab</a><div class="row"><a href="picker.html">Picker</a><a href="atlas.html">Atlas</a><a href="almanac.html">Almanac</a><a href="survey.html">Survey</a><a href="index.html#trust">Trust policy</a><a href="index.html#method">Method</a></div><p class="small">Mockup built 2026-10-11 from the github-stars-analyzer dataset (snapshot 2026-10-11). Product names, prices and the package name are placeholders. Every repo figure is real.</p></div></footer>
+
+<script>
+document.getElementById('ap').addEventListener('submit', e => { e.preventDefault(); document.getElementById('ap-ok').hidden = false; });
+</script>
+
+</body>
+</html>

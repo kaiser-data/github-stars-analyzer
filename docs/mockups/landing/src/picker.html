@@ -1,0 +1,171 @@
+<div class="mock-strip">MOCKUP · price, package name and launch domains are placeholders · picks and health figures are real ({{SNAP}})</div>
+{{NAV}}
+
+<style>
+.vs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.vs > div { background: var(--bg); padding: 26px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.vs .q { font: 400 24px/1.2 var(--font-display); }
+.vs .who { font: 12px var(--font-mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.vs > div.us { background: var(--surface); }
+.vs > div.us .q { color: var(--accent); }
+@media (max-width: 860px) { .vs { grid-template-columns: 1fr; } }
+.tools { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.tools > div { display: grid; grid-template-columns: 16rem 1fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.tools code { font-size: 16px; }
+.tools p { color: var(--muted); }
+@media (max-width: 680px) { .tools > div { grid-template-columns: 1fr; gap: 6px; } }
+.bench { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.bench ol { margin: 0; padding-left: 20px; display: grid; gap: 8px; color: var(--muted); }
+.pending { border: 1px dashed var(--accent); padding: 28px; display: grid; gap: 12px; text-align: left; }
+.pending b { font: 400 30px/1.1 var(--font-display); }
+@media (max-width: 760px) { .bench { grid-template-columns: 1fr; } }
+.install { display: grid; gap: 10px; max-width: 40rem; }
+.copyline { display: flex; align-items: stretch; border: 1px solid var(--line); background: #070a14; }
+.copyline code { flex: 1; padding: 14px 16px; color: var(--ink); overflow-x: auto; white-space: nowrap; min-width: 0; }
+.copyline button { background: transparent; color: var(--accent); border: 0; border-left: 1px solid var(--line); padding: 0 16px; font: 600 13px var(--font-body); cursor: pointer; }
+.domains { display: flex; gap: 10px; flex-wrap: wrap; }
+.domains span { border: 1px solid var(--line); padding: 7px 12px; font-size: 14px; }
+.domains span.live { border-color: var(--accent); color: var(--accent); }
+</style>
+
+<section class="hero">
+  <div class="frame hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Astrolab Picker · MCP server</div>
+      <h1>Your agent knows the docs. Now it knows <em>which</em> library.</h1>
+      <p class="lede">Context7 tells your agent how to use a library. Picker tells it which one to use for the job, and which options are dying, with a reason and a date on every answer.</p>
+      <div class="ctas">
+        <a class="btn" href="#install">Install free</a>
+        <a class="btn ghost" href="#pricing">Pro · $10/seat*</a>
+      </div>
+      <p class="small">Works in Claude Code, Cursor and any MCP client. Runs next to Context7.</p>
+    </div>
+    <div class="term" aria-label="Example Claude Code session using Picker">
+      <div class="term-bar"><i></i><i></i><i></i><span>claude · slack-memory-agent</span></div>
+<pre><span class="t-user">› add long-term memory to our Slack agent</span>
+
+<span class="t-dim">● picker.pick(</span>job=<span class="t-acc">"agent memory over Slack"</span><span class="t-dim">)</span>
+<span class="t-dim">  agent-memory report · snapshot {{SNAP}}</span>
+
+  <span class="t-good">1</span>  topoteretes/cognee      health {{COGNEE_HEALTH}}  {{COGNEE_STAGE}}
+     ontology-shaped extraction, Slack connector
+  <span class="t-good">2</span>  qdrant/qdrant           health {{QDRANT_HEALTH}}  {{QDRANT_STAGE}}
+     payload filters for per-channel scoping
+  <span class="t-good">3</span>  getzep/graphiti         health {{GRAPHITI_HEALTH}}  {{GRAPHITI_STAGE}}
+     only if "what did we know, when" matters
+
+  <span class="t-bad">avoid</span>  memvid/memvid          health {{MEMVID_HEALTH}}  <span class="t-bad">{{MEMVID_STAGE}}</span>
+         one maintainer, {{MEMVID_PUSH}} days since last push
+  <span class="t-bad">avoid</span>  shaneholloman/mcp-knowledge-graph
+         health {{MCP_KNOWLEDGE_GRAPH_HEALTH}}  <span class="t-bad">{{MCP_KNOWLEDGE_GRAPH_STAGE}}</span>
+
+<span class="t-dim">● Going with cognee + qdrant. Adding both to pyproject.toml…</span></pre>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="sec-head">
+      <div class="eyebrow">Where it fits</div>
+      <h2>Three questions an agent asks. Picker answers the one nobody else does.</h2>
+    </div>
+    <div class="vs">
+      <div><span class="who">Context7, DeepWiki, GitMCP</span><span class="q">“How do I use library X?”</span><p class="small">Current docs and code examples for a library you already chose.</p></div>
+      <div><span class="who">Socket, Snyk, OSV</span><span class="q">“Is package X dangerous?”</span><p class="small">Malware, vulnerabilities and supply-chain risk.</p></div>
+      <div class="us"><span class="who">Astrolab Picker</span><span class="q">“Which library for this job, and which to avoid?”</span><p class="small">Curated picks per job, with maintenance risk on top. Use it before the other two.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="sec-head">
+      <div class="eyebrow">Three tools</div>
+      <h2>Small surface, answers from data.</h2>
+      <p class="lede">No language model sits behind these calls. Each answer is precomputed from a curated report and the latest weekly snapshot.</p>
+    </div>
+    <div class="tools">
+      <div><code>pick(job, constraints?)</code><p>Top three for the job with why each fits and where it falls short, plus repos to avoid and why. Constraints: language, licence, self-hosted, minimum health.</p></div>
+      <div><code>check(owner/repo)</code><p>Lifecycle stage, health score, bus factor, days since last push. If a curated alternative exists, it names it.</p></div>
+      <div><code>landscape(topic)</code><p>The report's categories, its decision table, and how many repos it covers. For when the agent needs to explain a choice to you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame bench">
+    <div class="sec-head" style="margin:0">
+      <div class="eyebrow">Benchmark</div>
+      <h2>Does it change what agents pick?</h2>
+      <p>We give coding agents 20 real jobs from the launch domains, three runs each, under three setups: no tool, Context7 only, Context7 plus Picker. Each choice is scored as one of:</p>
+      <ol>
+        <li>picked a Declining or Abandoned repo</li>
+        <li>picked a package that doesn't exist</li>
+        <li>picked the most popular option where a better fit existed</li>
+        <li>picked well</li>
+      </ol>
+      <p class="small">Prompts, transcripts and scoring are published with the results.</p>
+    </div>
+    <div class="pending">
+      <span class="eyebrow">Not yet measured</span>
+      <b>Results publish before launch.</b>
+      <p class="small">This block is a placeholder in the mockup. The launch page shows the measured result here, whatever it is.</p>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="frame grid-2">
+    <div class="install">
+      <div class="eyebrow">Install</div>
+      <h2>One line in Claude Code.</h2>
+      <div class="copyline"><code id="cmd">claude mcp add picker -- npx -y @astrolab/picker-mcp</code><button type="button" id="copy">Copy</button></div>
+      <p class="small">Package name is a placeholder*. Free tier needs no account.</p>
+    </div>
+    <div class="install">
+      <div class="eyebrow">Domains</div>
+      <h2>Two at launch, eight by year-end.</h2>
+      <div class="domains">
+        <span class="live">Agent memory</span><span class="live">Charting</span>
+        <span>Agent harnesses</span><span>MCP tooling</span><span>RAG</span><span>Document extraction</span><span>LLM evaluation</span><span>Voice agents</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="frame">
+    <div class="sec-head">
+      <div class="eyebrow">Pricing*</div>
+      <h2>Free to try. Paid when it's in the loop every day.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="panel tier"><h3>Free</h3><div class="price">$0</div>
+        <ul><li><code>check()</code> unlimited</li><li><code>pick()</code> in 3 domains</li><li>All reports on the Atlas</li></ul></div>
+      <div class="panel tier featured"><h3>Pro</h3><div class="price">$10 <small>per seat / month</small></div>
+        <ul><li>Every domain</li><li>Weekly alert when a pick you use slips to Declining</li><li>Higher rate limits</li></ul>
+        <a class="btn" href="#waitlist">Join the Pro waitlist</a></div>
+      <div class="panel tier"><h3>Agents without an account</h3><div class="price">~$0.02 <small>per call</small></div>
+        <ul><li>Pay per call over x402</li><li>No signup, no key</li><li>Same data as Pro</li></ul></div>
+    </div>
+    <p class="small" style="margin-top:16px">*Mockup prices, set from the go-to-market plan. Final pricing follows the waitlist.</p>
+  </div>
+</section>
+
+<section id="waitlist" class="tight">
+  <div class="frame" style="display:grid;gap:16px">
+    <h2>Get Pro when it opens.</h2>
+    <form class="signup" id="wl"><label class="small" for="wl-email" style="flex-basis:100%">Work email</label><input id="wl-email" type="email" required placeholder="you@company.com"><button class="btn" type="submit">Join waitlist</button><span class="ok" id="wl-ok" hidden>Mockup only: nothing was sent.</span></form>
+  </div>
+</section>
+
+{{FOOTER}}
+
+<script>
+document.getElementById('copy').addEventListener('click', e => {
+  const t = document.getElementById('cmd').textContent;
+  navigator.clipboard.writeText(t).then(() => { e.target.textContent = 'Copied'; }).catch(() => { getSelection().selectAllChildren(document.getElementById('cmd')); });
+});
+document.getElementById('wl').addEventListener('submit', e => { e.preventDefault(); document.getElementById('wl-ok').hidden = false; });
+</script>

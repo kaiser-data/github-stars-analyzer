@@ -1,0 +1,93 @@
+<div class="mock-strip">MOCKUP · the example uses the {{MEM_N}} tools of the Agent Memory report as a stand-in stack · prices are placeholders</div>
+{{NAV}}
+
+<style>
+.bar { display: flex; height: 22px; gap: 2px; }
+.bar div { min-width: 6px; }
+.blegend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+.blegend i { display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: 0; }
+.blegend b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.steps > div { border-top: 1px solid var(--accent); padding-top: 14px; display: grid; gap: 8px; min-width: 0; }
+.steps .n { font: 400 40px/1 var(--font-display); color: var(--accent); }
+.steps p { color: var(--muted); font-size: 15px; }
+@media (max-width: 760px) { .steps { grid-template-columns: 1fr; } }
+.report-card { display: grid; gap: 22px; }
+.kpis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 640px) { .kpis { grid-template-columns: 1fr; } }
+.apply { display: grid; gap: 12px; max-width: 34rem; }
+.apply label { font-size: 14px; color: var(--muted); }
+.apply input, .apply select { background: var(--bg); color: var(--ink); border: 1px solid var(--line); padding: 12px 14px; font: 15px var(--font-body); width: 100%; }
+</style>
+
+<section class="hero">
+  <div class="frame hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Astrolab Survey · for teams</div>
+      <h1>Is <em>your</em> stack going stale?</h1>
+      <p class="lede">Send us your lockfiles. You get a private landscape of what you depend on: what's declining, what rests on a single maintainer, and the curated alternative for each. Refreshed every month.</p>
+      <div class="ctas"><a class="btn" href="#apply">Apply as a design partner</a><a class="btn ghost" href="#example">See an example</a></div>
+    </div>
+    <div class="panel">
+      <div class="eyebrow">Design partner terms*</div>
+      <p style="font:400 40px/1 var(--font-display)">50% off <span class="small" style="font-family:var(--font-body)">the first six months</span></p>
+      <p class="small">Target price $300–800 per month by repo count. In return: a monthly feedback call and a case study you approve. 3–5 places.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="sec-head"><div class="eyebrow">How it works</div><h2>Three steps, then a monthly refresh.</h2></div>
+    <div class="steps">
+      <div><span class="n">1</span><h3>Send lockfiles</h3><p>package-lock, poetry.lock, go.sum, Cargo.lock. Or a list of repos. Nothing else leaves your side.</p></div>
+      <div><span class="n">2</span><h3>We map it</h3><p>Each dependency is scored for lifecycle, health and bus factor, and matched to our curated reports for alternatives.</p></div>
+      <div><span class="n">3</span><h3>You get the landscape</h3><p>A private report and a Picker MCP scoped to your stack, so your agents see the same picks your team does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="example">
+  <div class="frame report-card">
+    <div class="sec-head" style="margin:0">
+      <div class="eyebrow">Example landscape</div>
+      <h2>Stand-in stack: {{MEM_N}} agent-memory tools.</h2>
+      <p class="small">A real team's report has the same shape. Here the input is the Agent Memory report's tool list, with live health data from {{SNAP}}.</p>
+    </div>
+    <div class="kpis">
+      <div class="stat"><b>{{MEM_N}}</b><span>dependencies mapped</span></div>
+      <div class="stat"><b>{{MEM_SINGLE}}</b><span>with bus factor 1 or less</span></div>
+      <div class="stat"><b>3</b><span>slowing or stale</span></div>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="bar">{{MEM_BAR}}</div>
+      <div class="blegend">{{MEM_LEGEND}}</div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:12px">Lowest health first</h3>
+      <div class="tbl"><table>
+        <thead><tr><th>Repo</th><th>Category</th><th style="text-align:right">Health</th><th>Stage</th><th style="text-align:right">Last push</th><th style="text-align:right">Top author</th></tr></thead>
+        <tbody>{{MEM_RISK_ROWS}}</tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<section id="apply">
+  <div class="frame grid-2">
+    <div class="sec-head" style="margin:0"><div class="eyebrow">Apply</div><h2>Three to five teams this quarter.</h2><p class="small">Good fit: 5–50 engineers, agents adding dependencies, at least one service in production on open-source AI tooling.</p></div>
+    <form class="apply" id="ap">
+      <label for="ap-email">Work email</label><input id="ap-email" type="email" required placeholder="you@company.com">
+      <label for="ap-size">Engineering team size</label>
+      <select id="ap-size"><option>5–15</option><option>16–50</option><option>51–200</option><option>200+</option></select>
+      <button class="btn" type="submit">Apply</button>
+      <span class="ok small" id="ap-ok" hidden style="color:var(--good)">Mockup only: nothing was sent.</span>
+    </form>
+  </div>
+</section>
+
+{{FOOTER}}
+
+<script>
+document.getElementById('ap').addEventListener('submit', e => { e.preventDefault(); document.getElementById('ap-ok').hidden = false; });
+</script>

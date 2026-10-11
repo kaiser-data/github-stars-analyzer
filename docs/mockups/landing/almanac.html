@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Astrolab Almanac</title>
+<style>
+/* Layout: night-sky single theme (deliberate). Wide 72rem frame, generous section rhythm,
+   product accents swap per page through --accent; brass is the umbrella colour. */
+:root {
+  --bg: #0b1020;
+  --bg-2: #0f1528;
+  --surface: #131b31;
+  --ink: #ebe6d8;
+  --muted: #9099ae;
+  --faint: #5b6580;
+  --line: #24304b;
+  --brass: #c9a35b;
+  --atlas: #8bbbd9;
+  --almanac: #e3866a;
+  --survey: #93c4a0;
+  --good: #8fcf9f;
+  --warn: #e3c06a;
+  --bad: #ec8a7c;
+  --accent: var(--brass);
+  --font-display: "Didot", "Bodoni 72", "Bodoni MT", "Iowan Old Style", Georgia, serif;
+  --font-body: "Avenir Next", Avenir, "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font-body); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+img { max-width: 100%; display: block; }
+
+.mock-strip { background: var(--accent); color: var(--bg); font: 600 12px/1.4 var(--font-mono); letter-spacing: .04em; text-align: center; padding: 6px 16px; }
+.frame { max-width: 72rem; margin: 0 auto; padding-inline: 24px; }
+
+/* Nav */
+.nav { border-bottom: 1px solid var(--line); }
+.nav .frame { display: flex; align-items: center; gap: 28px; padding-block: 16px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 500 22px/1 var(--font-display); letter-spacing: .02em; }
+.brand svg { width: 28px; height: 28px; color: var(--brass); }
+.nav ul { display: flex; gap: 22px; list-style: none; margin: 0 0 0 auto; padding: 0; flex-wrap: wrap; }
+.nav li a { text-decoration: none; font-size: 14px; color: var(--muted); display: inline-flex; align-items: center; gap: 7px; }
+.nav li a:hover, .nav li a[aria-current] { color: var(--ink); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; display: inline-block; }
+.nav li a .dot { color: var(--c); }
+
+/* Type */
+.eyebrow { font: 600 12px/1.2 var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+h1, h2, h3 { text-wrap: balance; font-weight: 400; margin: 0; }
+h1 { font: 400 clamp(42px, 7vw, 84px)/1.02 var(--font-display); letter-spacing: -.01em; }
+h1 em, h2 em { font-style: italic; color: var(--accent); }
+h2 { font: 400 clamp(30px, 4.2vw, 46px)/1.1 var(--font-display); }
+h3 { font: 600 18px/1.3 var(--font-body); }
+p { margin: 0; max-width: 64ch; }
+.lede { font-size: 20px; line-height: 1.55; color: var(--muted); max-width: 46ch; }
+.small { font-size: 14px; color: var(--muted); }
+.mono { font-family: var(--font-mono); }
+code { font: .86em var(--font-mono); color: var(--accent); }
+.star { color: var(--accent); font-weight: 700; }
+
+/* Sections */
+section { padding-block: 88px; border-bottom: 1px solid var(--line); }
+section.tight { padding-block: 56px; }
+.sec-head { display: grid; gap: 14px; margin-bottom: 44px; max-width: 46rem; }
+
+/* Hero */
+.hero { padding-block: 72px 88px; }
+.hero-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.hero-copy { display: grid; gap: 24px; min-width: 0; }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } }
+
+/* Buttons */
+.ctas { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; font: 600 15px/1 var(--font-body); text-decoration: none; border: 1px solid var(--accent); color: var(--bg); background: var(--accent); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn:hover { filter: brightness(1.08); }
+.btn.ghost:hover { border-color: var(--accent); }
+
+/* Stats */
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.stat { border-top: 1px solid var(--accent); padding-top: 12px; display: grid; gap: 4px; }
+.stat b { font: 400 44px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 14px; color: var(--muted); }
+@media (max-width: 720px) { .stats { grid-template-columns: 1fr 1fr; } }
+
+/* Grids and cards */
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+@media (max-width: 860px) { .grid-3 { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { .grid-2 { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 24px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.cols { display: grid; gap: 10px; }
+
+/* Terminal */
+.term { background: #070a14; border: 1px solid var(--line); font: 13.5px/1.6 var(--font-mono); overflow-x: auto; min-width: 0; }
+.term-bar { display: flex; gap: 7px; padding: 10px 14px; border-bottom: 1px solid var(--line); align-items: center; }
+.term-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: block; }
+.term-bar span { margin-left: 8px; color: var(--faint); font-size: 12px; }
+.term pre { margin: 0; padding: 18px 20px; white-space: pre; color: var(--ink); }
+.t-dim { color: var(--faint); } .t-acc { color: var(--accent); } .t-good { color: var(--good); } .t-bad { color: var(--bad); } .t-warn { color: var(--warn); } .t-user { color: var(--atlas); }
+
+/* Tables */
+.tbl { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+th { font: 600 11px/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--bg-2); }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+td .repo { font-family: var(--font-mono); font-size: 13.5px; }
+
+.pill { display: inline-block; font: 600 11px/1 var(--font-mono); letter-spacing: .04em; padding: 4px 8px; border: 1px solid currentColor; border-radius: 99px; white-space: nowrap; }
+.pill.good { color: var(--good); } .pill.warn { color: var(--warn); } .pill.bad { color: var(--bad); } .pill.acc { color: var(--accent); }
+
+/* Pricing */
+.tier { display: grid; gap: 14px; align-content: start; }
+.tier .price { font: 400 46px/1 var(--font-display); }
+.tier .price small { font: 14px var(--font-body); color: var(--muted); }
+.tier ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 15px; }
+.tier.featured { border-color: var(--accent); }
+
+/* Form */
+.signup { display: flex; gap: 10px; flex-wrap: wrap; max-width: 30rem; }
+.signup input { flex: 1 1 14rem; min-width: 0; background: var(--bg); color: var(--ink); border: 1px solid var(--line); padding: 12px 14px; font: 15px var(--font-body); }
+.signup .ok { flex-basis: 100%; font-size: 14px; color: var(--good); }
+
+/* Footer */
+footer { padding-block: 48px 64px; }
+footer .frame { display: grid; gap: 18px; }
+footer .row { display: flex; gap: 28px; flex-wrap: wrap; font-size: 14px; color: var(--muted); }
+footer .row a { text-decoration: none; }
+footer .row a:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+:root { --accent: var(--almanac); }
+</style>
+</head>
+<body>
+<div class="mock-strip">MOCKUP · sample issue built from real snapshots (2026-09-14 → 2026-10-11) · Pro price is a placeholder</div>
+<nav class="nav"><div class="frame"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="16" cy="17" r="12"/><circle cx="16" cy="17" r="7.5"/><path d="M16 2v3M6 27l20-20" stroke-linecap="round"/><circle cx="16" cy="17" r="1.6" fill="currentColor"/></svg>Astrolab</a><ul><li><a href="picker.html" style="--c:var(--brass)"><span class="dot"></span>Picker</a></li><li><a href="atlas.html" style="--c:var(--atlas)"><span class="dot"></span>Atlas</a></li><li><a href="almanac.html" style="--c:var(--almanac)" aria-current="page"><span class="dot"></span>Almanac</a></li><li><a href="survey.html" style="--c:var(--survey)"><span class="dot"></span>Survey</a></li></ul></div></nav>
+
+<style>
+.issue { background: var(--surface); border: 1px solid var(--line); }
+.issue-head { padding: 28px 32px; border-bottom: 1px solid var(--line); display: grid; gap: 8px; }
+.issue-head .masthead { font: 400 40px/1 var(--font-display); }
+.issue-head .masthead em { color: var(--accent); }
+.issue-body { padding: 8px 32px 32px; display: grid; gap: 32px; }
+.issue-body > div { min-width: 0; }
+.issue h3 { font: 400 28px/1.15 var(--font-display); margin-top: 20px; }
+.issue h3 small { display: block; font: 13px var(--font-body); color: var(--muted); margin-top: 6px; }
+.issue .tbl { background: var(--bg); }
+@media (max-width: 600px) { .issue-head, .issue-body { padding-inline: 18px; } }
+</style>
+
+<section class="hero">
+  <div class="frame hero-grid" style="align-items:start">
+    <div class="hero-copy">
+      <div class="eyebrow">Astrolab Almanac · every Monday</div>
+      <h1>Risings &amp; <em>settings</em>.</h1>
+      <p class="lede">An almanac lists when stars rise and set. Ours does the same for open source: what gained fastest this week, and what slipped into decline. Five minutes to read.</p>
+      <form class="signup" id="sub"><label class="small" for="sub-email" style="flex-basis:100%">Email</label><input id="sub-email" type="email" required placeholder="you@example.com"><button class="btn" type="submit">Subscribe free</button><span class="ok" id="sub-ok" hidden>Mockup only: nothing was sent.</span></form>
+      <p class="small">Free: the weekly issue. <b>Pro $6/month*:</b> filter to your own stack and your domains, plus the full list instead of the top eight.</p>
+    </div>
+    <div class="panel" style="gap:14px">
+      <div class="eyebrow">Last month in numbers</div>
+      <div class="stats" style="grid-template-columns:1fr 1fr">
+        <div class="stat"><b>48</b><span>repos slipped to Declining or Abandoned</span></div>
+        <div class="stat"><b>2,346</b><span>repos watched</span></div>
+      </div>
+      <p class="small">Compared: snapshot 2026-09-14 against 2026-10-11.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="sec-head"><div class="eyebrow">Sample issue</div><h2>This is what lands on Monday.</h2></div>
+    <article class="issue">
+      <header class="issue-head">
+        <span class="eyebrow">Almanac · issue sample · 2026-10-11</span>
+        <span class="masthead">Risings &amp; <em>settings</em></span>
+        <span class="small">Changes between 2026-09-14 and 2026-10-11 across 2,346 tracked repos.</span>
+      </header>
+      <div class="issue-body">
+        <div>
+          <h3>Settings <small>Repos that moved into Declining or Abandoned. Largest first.</small></h3>
+          <div class="tbl"><table>
+            <thead><tr><th>Repo</th><th style="text-align:right">Stars</th><th>Stage</th><th style="text-align:right">Health</th><th style="text-align:right">Last push</th></tr></thead>
+            <tbody><tr><td><span class="repo">karpathy/nanochat</span></td><td class="num">58,542</td><td>Rising → <span class="pill bad">Declining</span></td><td class="num">54 → 35</td><td class="num">34 d</td></tr><tr><td><span class="repo">openai/CLIP</span></td><td class="num">34,435</td><td>Mature → <span class="pill bad">Declining</span></td><td class="num">20 → 18</td><td class="num">200 d</td></tr><tr><td><span class="repo">sipeed/picoclaw</span></td><td class="num">30,018</td><td>Hot → <span class="pill bad">Declining</span></td><td class="num">83 → 63</td><td class="num">2 d</td></tr><tr><td><span class="repo">cloudflare/security-audit-skill</span></td><td class="num">27,267</td><td>Rising → <span class="pill bad">Declining</span></td><td class="num">46 → 38</td><td class="num">27 d</td></tr><tr><td><span class="repo">guofei9987/blind_watermark</span></td><td class="num">14,802</td><td>Mature → <span class="pill bad">Declining</span></td><td class="num">22 → 20</td><td class="num">200 d</td></tr><tr><td><span class="repo">mobile-shell/mosh</span></td><td class="num">14,557</td><td>Mature → <span class="pill bad">Declining</span></td><td class="num">24 → 21</td><td class="num">203 d</td></tr><tr><td><span class="repo">g-truc/glm</span></td><td class="num">11,261</td><td>Mature → <span class="pill bad">Declining</span></td><td class="num">29 → 27</td><td class="num">187 d</td></tr><tr><td><span class="repo">smtg-ai/claude-squad</span></td><td class="num">8,588</td><td>Mature → <span class="pill bad">Declining</span></td><td class="num">59 → 60</td><td class="num">52 d</td></tr></tbody>
+          </table></div>
+        </div>
+        <div>
+          <h3>Risings <small>Largest star gains over the same period.</small></h3>
+          <div class="tbl"><table>
+            <thead><tr><th>Repo</th><th style="text-align:right">Gained</th><th style="text-align:right">Stars now</th><th>Stage</th></tr></thead>
+            <tbody><tr><td><span class="repo">debpalash/VoiceStudio</span></td><td class="num">+28,892</td><td class="num">56,902</td><td><span class="pill acc">Rising</span></td></tr><tr><td><span class="repo">vectorize-io/hindsight</span></td><td class="num">+24,372</td><td class="num">47,962</td><td><span class="pill acc">Hot</span></td></tr><tr><td><span class="repo">cloudflare/security-audit-skill</span></td><td class="num">+23,981</td><td class="num">27,267</td><td><span class="pill bad">Declining</span></td></tr><tr><td><span class="repo">deepseek-ai/deepseek-harness</span></td><td class="num">+23,493</td><td class="num">246,839</td><td><span class="pill acc">Hot</span></td></tr><tr><td><span class="repo">DietrichGebert/ponytail</span></td><td class="num">+22,366</td><td class="num">160,190</td><td><span class="pill acc">Hot</span></td></tr><tr><td><span class="repo">alibaba/open-code-review</span></td><td class="num">+21,592</td><td class="num">45,776</td><td><span class="pill acc">Hot</span></td></tr><tr><td><span class="repo">stablyai/orca</span></td><td class="num">+20,731</td><td class="num">88,994</td><td><span class="pill acc">Hot</span></td></tr><tr><td><span class="repo">paperclipai/paperclip</span></td><td class="num">+18,877</td><td class="num">99,522</td><td><span class="pill acc">Hot</span></td></tr></tbody>
+          </table></div>
+          <p class="small" style="margin-top:10px">Star gains are not yet filtered for bought or fake stars. That filter ships before momentum data goes into any paid tier.</p>
+        </div>
+        <div>
+          <h3>Curator's note</h3>
+          <p>Written each week by hand: one paragraph on what the movement means for a field. In the launch issue this covers agent memory, where 3 of 37 tools are already Declining.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer><div class="frame"><a class="brand" href="index.html"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="16" cy="17" r="12"/><circle cx="16" cy="17" r="7.5"/><path d="M16 2v3M6 27l20-20" stroke-linecap="round"/><circle cx="16" cy="17" r="1.6" fill="currentColor"/></svg>Astrolab</a><div class="row"><a href="picker.html">Picker</a><a href="atlas.html">Atlas</a><a href="almanac.html">Almanac</a><a href="survey.html">Survey</a><a href="index.html#trust">Trust policy</a><a href="index.html#method">Method</a></div><p class="small">Mockup built 2026-10-11 from the github-stars-analyzer dataset (snapshot 2026-10-11). Product names, prices and the package name are placeholders. Every repo figure is real.</p></div></footer>
+
+<script>
+document.getElementById('sub').addEventListener('submit', e => { e.preventDefault(); document.getElementById('sub-ok').hidden = false; });
+</script>
+
+</body>
+</html>

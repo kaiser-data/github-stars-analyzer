@@ -1,0 +1,70 @@
+<div class="mock-strip">MOCKUP · the Atlas exists today at star-astrolab.netlify.app · screenshots from the current app</div>
+{{NAV}}
+
+<style>
+.shot { border: 1px solid var(--line); background: var(--surface); }
+.shot img { width: 100%; }
+.shot figcaption { padding: 12px 16px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); }
+.feature { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 40px; align-items: center; padding-block: 40px; border-top: 1px solid var(--line); }
+.feature:first-of-type { border-top: 0; }
+.feature .txt { display: grid; gap: 12px; min-width: 0; }
+.feature.flip .txt { order: 2; }
+@media (max-width: 820px) { .feature { grid-template-columns: 1fr; } .feature.flip .txt { order: 0; } }
+.hero-shot { margin-top: 48px; }
+.reports { columns: 3 14rem; column-gap: 24px; font-size: 15px; color: var(--muted); }
+.reports div { break-inside: avoid; padding: 8px 0; border-bottom: 1px solid var(--line); }
+</style>
+
+<section class="hero">
+  <div class="frame">
+    <div class="hero-copy" style="max-width:48rem">
+      <div class="eyebrow">Astrolab Atlas · free</div>
+      <h1>The whole <em>landscape</em>, open to read.</h1>
+      <p class="lede">{{N_REPOS}} repositories as a 3D map you can fly through, grouped into {{N_COMM}} communities, with landscape reports, risk views and side-by-side comparisons. No account needed.</p>
+      <div class="ctas">
+        <a class="btn" href="https://star-astrolab.netlify.app" target="_blank" rel="noopener">Open the Atlas</a>
+        <a class="btn ghost" href="#reports">Browse reports</a>
+      </div>
+    </div>
+    <figure class="shot hero-shot" style="margin-inline:0"><img src="{{IMG_01}}" alt="The Atlas 3D map: repositories as coloured nodes grouped by community"><figcaption>Map view. Colour is community; size is stars plus PageRank. Positions are computed once at build time, so it loads instantly.</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="frame">
+    <div class="feature">
+      <div class="txt"><div class="eyebrow">Reports</div><h2>{{N_REPORTS}} landscapes, curated by hand.</h2><p class="small">Each report sorts a field into categories, compares every tool on one table, ranks picks by job, and lists what's quietly dying. Rebuilt every week from the same data, so they never drift out of date.</p></div>
+      <figure class="shot" style="margin:0"><img src="{{IMG_07}}" alt="Reports tab listing landscape reports"></figure>
+    </div>
+    <div class="feature flip">
+      <div class="txt"><div class="eyebrow">Risk</div><h2>See the decline before you adopt.</h2><p class="small">Lifecycle stage, health score, bus factor and top-author share side by side. {{N_DYING}} of {{N_REPOS}} tracked repos are Declining or Abandoned right now.</p></div>
+      <figure class="shot" style="margin:0"><img src="{{IMG_04}}" alt="Risk view with health scores and bus factor"></figure>
+    </div>
+    <div class="feature">
+      <div class="txt"><div class="eyebrow">Compare</div><h2>Two repos, and the path between them.</h2><p class="small">Every metric side by side, plus the shortest path through the graph: which topics, authors or projects connect them.</p></div>
+      <figure class="shot" style="margin:0"><img src="{{IMG_06}}" alt="Compare view of two repositories"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reports">
+  <div class="frame">
+    <div class="sec-head"><div class="eyebrow">In the Atlas now</div><h2>A sample of the reports.</h2></div>
+    <div class="reports">
+      <div>Agent memory &amp; knowledge graphs</div><div>Agent harnesses</div><div>Agent orchestration</div><div>Agentic terminals</div>
+      <div>AI coding TUIs</div><div>AI engineer stack</div><div>Charting stack</div><div>Claude Code setups</div>
+      <div>Decision classifiers</div><div>Document extraction</div><div>Fine-tuning stack</div><div>Harness engineering</div>
+      <div>LLM evaluation</div><div>MCP tooling</div><div>Meeting transcription</div><div>RAG tooling</div>
+      <div>Token savings</div><div>Trending now</div><div>Voice agents</div><div>3D printing stack</div>
+    </div>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="frame grid-2" style="align-items:center">
+    <h2>Reading is free. Want answers inside your agent?</h2>
+    <div class="ctas" style="justify-content:flex-end"><a class="btn" href="picker.html">See Picker</a><a class="btn ghost" href="almanac.html">Get the Almanac</a></div>
+  </div>
+</section>
+
+{{FOOTER}}
