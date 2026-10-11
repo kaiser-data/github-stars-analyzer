@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-10-12)
 
 ## Corpus Check
-- 233 files · ~3,974,024 words
+- 232 files · ~3,974,035 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2039 nodes · 2105 edges · 138 communities (121 shown, 17 thin omitted)
+- 2030 nodes · 2090 edges · 137 communities (120 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6a8531fc`
+- Built from commit: `473fc262`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -144,7 +144,6 @@
 - [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
 - [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
 - [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
-- [[_COMMUNITY_build.py|build.py]]
 - [[_COMMUNITY_Handoff — 2026-10-11|Handoff — 2026-10-11]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -174,7 +173,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (138 total, 17 thin omitted)
+## Communities (137 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -623,10 +622,6 @@ Nodes (23): 10. Observe & eval the harness, 1. Minimal loop first, 2. Small inst
 ### Community 135 - "Handoff — 2026-10-01"
 Cohesion: 0.25
 Nodes (7): 1. The new report (`scripts/reports/harness_engineering.py`), 2. Verification, 3. Lessons, 4. Open items, Evidence (frozen 2026-10-01, does not refresh on rebuild), Handoff — 2026-10-01, TL;DR
-
-### Community 136 - "build.py"
-Cohesion: 0.42
-Nodes (8): compute(), fmt(), img(), load(), main(), nav(), pill(), tokens()
 
 ### Community 137 - "Handoff — 2026-10-11"
 Cohesion: 0.29
