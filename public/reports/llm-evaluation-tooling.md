@@ -208,6 +208,7 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 - `rhesis-ai/rhesis` ⇄ `cvs-health/uqlm` (w=0.193) — authors: feiiiiii5
 - `promptfoo/promptfoo` ⇄ `comet-ml/opik` (w=0.192) — topics: llm, prompt-engineering, llmops, evaluation
 - `EleutherAI/lm-evaluation-harness` ⇄ `confident-ai/deepeval` (w=0.175) — topics: evaluation-framework
+- `rhesis-ai/rhesis` ⇄ `comet-ml/opik` (w=0.175) — topics: llmops; authors: feiiiiii5
 
 ## Maintenance & risk signal
 

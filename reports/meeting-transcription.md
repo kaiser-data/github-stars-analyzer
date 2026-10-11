@@ -277,6 +277,7 @@ mic/system audio → silero-vad → WhisperLive or RealtimeSTT (streaming ASR)
 - `transcriptionstream/transcriptionstream` ⇄ `MahmoudAshraf97/whisper-diarization` (w=0.231) — topics: speaker-diarization, speech-recognition, whisper
 - `ahmetoner/whisper-asr-webservice` ⇄ `kaldi-asr/kaldi` (w=0.231) — topics: speech-recognition, speech-to-text, speech
 - `modelscope/FunASR` ⇄ `speechbrain/speechbrain` (w=0.226) — topics: pytorch, speech-recognition, speaker-diarization, asr
+- `modelscope/FunASR` ⇄ `snakers4/silero-vad` (w=0.212) — topics: pytorch, voice-activity-detection; authors: MohammadHijjawi97
 - `transcriptionstream/transcriptionstream` ⇄ `m-bain/whisperX` (w=0.204) — topics: speech-recognition, whisper
 - `kaixxx/noScribe` ⇄ `speaches-ai/speaches` (w=0.204) — topics: transcription, faster-whisper
 - …and 13 more.

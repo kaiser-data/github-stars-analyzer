@@ -231,6 +231,7 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 - `sgl-project/sglang` ⇄ `ollama/ollama` (w=0.269) — topics: llama, llm, deepseek, gpt-oss
 - `lancedb/lancedb` ⇄ `alibaba/zvec` (w=0.257) — topics: search-engine, semantic-search, similarity-search, vector-database; authors: dependabot[bot]
 - `unslothai/unsloth` ⇄ `open-webui/open-webui` (w=0.257) — topics: llms, llm, openai, self-hosted
+- `lancedb/lancedb` ⇄ `alibaba/zvec` (w=0.255) — topics: search-engine, semantic-search, similarity-search, vector-database; authors: dependabot[bot]
 - `lancedb/lancedb` ⇄ `pgvector/pgvector` (w=0.250) — topics: approximate-nearest-neighbor-search, nearest-neighbor-search
 - `promptfoo/promptfoo` ⇄ `langfuse/langfuse` (w=0.206) — topics: llm, prompt-engineering, llmops, evaluation
 - …and 4 more.

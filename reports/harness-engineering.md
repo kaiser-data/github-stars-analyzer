@@ -382,7 +382,6 @@ Ten yes/no checks, one per method. A "no" is where to work next.
 - `mksglu/context-mode` ⇄ `earendil-works/pi` (w=0.300) — authors: github-actions[bot]
 - `chunkhound/chunkhound` ⇄ `oraios/serena` (w=0.289) — topics: agent, ai, mcp-server; authors: AmirF194
 - `cobusgreyling/loop-engineering` ⇄ `Yeachan-Heo/oh-my-claudecode` (w=0.224) — topics: ai-agents, claude-code, automation, claude
-- `promptfoo/promptfoo` ⇄ `langfuse/langfuse` (w=0.206) — topics: llm, prompt-engineering, llmops, evaluation
 - `Nicolepcx/harness_engineering` ⇄ `langchain-ai/deepagents` (w=0.200) — topics: ai, harness, harness-engineering
 
 ## Maintenance & risk signal

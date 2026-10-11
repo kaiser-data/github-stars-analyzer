@@ -28,7 +28,7 @@
 | **SDK / framework** | Build servers/clients | `fastmcp`, `mcp-use`, `fastapi_mcp` |
 | **Client / host** | Apps that consume servers | `mcphub.nvim`, `witsy` |
 | **Gateway / control plane** | Route, secure & govern servers | `klavis`, `gate22`, `mcp-toolbox` |
-| **Servers** | Expose a capability to agents | 24 across browser, DB, dev-tools, code-intel, docs, game engines |
+| **Servers** | Expose a capability to agents | 23 across browser, DB, dev-tools, code-intel, docs, game engines |
 | **Learning** | Lists & curricula | `awesome-mcp-servers` (×2), `mcp-for-beginners` |
 
 ## Master comparison

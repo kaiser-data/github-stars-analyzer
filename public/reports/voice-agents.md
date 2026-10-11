@@ -234,9 +234,9 @@ These are the projects that make something a *voice agent* rather than a model. 
 
 - `KoljaB/RealtimeTTS` ⇄ `KoljaB/RealtimeSTT` (w=1.350) — topics: python, realtime; authors: KoljaB
 - `ggml-org/whisper.cpp` ⇄ `SYSTRAN/faster-whisper` (w=0.750) — topics: openai, speech-to-text, transformer, whisper
-- `livekit/agents` ⇄ `TEN-framework/ten-framework` (w=0.651) — topics: ai, real-time, voice, video; authors: harshitajain165
+- `livekit/agents` ⇄ `TEN-framework/ten-framework` (w=0.650) — topics: ai, real-time, voice, video; authors: harshitajain165
 - `m-bain/whisperX` ⇄ `Macoron/whisper.unity` (w=0.500) — topics: asr, speech-recognition, speech-to-text, whisper
-- `ggml-org/whisper.cpp` ⇄ `Macoron/whisper.unity` (w=0.444) — topics: openai, speech-to-text, whisper, speech-recognition
+- `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.479) — topics: ai, real-time, voice; authors: avionicharshit-byte, dhruvladia-sarvam, DeepanshuPal
 - `TEN-framework/ten-framework` ⇄ `pipecat-ai/pipecat` (w=0.425) — topics: ai, real-time, voice
 - `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.418) — topics: ai, real-time, voice; authors: dlange-aai
 - `OpenBMB/VoxCPM` ⇄ `coqui-ai/TTS` (w=0.370) — topics: python, pytorch, speech, speech-synthesis

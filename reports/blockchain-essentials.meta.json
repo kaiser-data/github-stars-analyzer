@@ -19,7 +19,7 @@
     "Solana": 3,
     "Zero-knowledge": 3,
     "\ud83d\udd25 Agentic payments (x402)": 3,
-    "\ud83d\udd25 AI \u00d7 finance / trading": 4
+    "\ud83d\udd25 AI \u00d7 finance / trading": 3
   },
   "top_tools": [
     {
@@ -46,5 +46,5 @@
   "snapshot": "2026-10-11T13:10:52.436Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/blockchain_essentials.py",
-  "created": "2026-06-03"
+  "created": "2026-10-01"
 }

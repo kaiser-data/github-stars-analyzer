@@ -236,6 +236,7 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 - `VectifyAI/PageIndex` ⇄ `deepset-ai/haystack` (w=0.441) — topics: agentic-ai, agents, ai, ai-agents
 - `weaviate/weaviate` ⇄ `qdrant/qdrant` (w=0.429) — topics: search-engine, vector-search, vector-search-engine, vector-database
 - `lancedb/lancedb` ⇄ `weaviate/weaviate` (w=0.400) — topics: approximate-nearest-neighbor-search, image-search, nearest-neighbor-search, recommender-system
+- `neuml/txtai` ⇄ `StarTrail-org/LEANN` (w=0.391) — topics: python, vector-search, llm, vector-database; authors: serhiizghama, Lesereingrape
 - `neuml/txtai` ⇄ `VectifyAI/PageIndex` (w=0.383) — topics: llm, vector-database, information-retrieval, retrieval-augmented-generation
 - `neuml/txtai` ⇄ `StarTrail-org/LEANN` (w=0.376) — topics: python, vector-search, llm, vector-database; authors: serhiizghama, Lesereingrape
 - `lancedb/lancedb` ⇄ `qdrant/qdrant` (w=0.369) — topics: image-search, nearest-neighbor-search, recommender-system, search-engine; authors: dependabot[bot]

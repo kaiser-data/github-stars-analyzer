@@ -218,7 +218,7 @@ _Structure-first memory: extract entities and relationships, store them as a gra
 - **[shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph)** · 888★ · JavaScript · Declining  
   Persistent memory for MCP clients as a local knowledge graph — the minimal, hackable end of graph memory.  
   <sub>topics: ai-memory, claude-ai, knowledge-graph, mcp, memory-server, typescript</sub>
-- **[HKUDS/MGP](https://github.com/HKUDS/MGP)** · 60★ · Python · Declining  
+- **[HKUDS/MGP](https://github.com/HKUDS/MGP)** · 59★ · Python · Declining  
   Memory Governance Protocol — early work on *rules* for memory (what is retained, promoted, forgotten) rather than storage.  
   <sub>topics: —</sub>
 
@@ -383,6 +383,7 @@ _Thin, and general-purpose rather than memory-specific. The category's weakest l
 - `MemMachine/MemMachine` ⇄ `plastic-labs/honcho` (w=0.279) — topics: ai, memory, ai-agents, llm; authors: mikemikimike
 - `onyx-dot-app/onyx` ⇄ `mem0ai/mem0` (w=0.267) — topics: rag, chatgpt, python, ai
 - `lancedb/lancedb` ⇄ `pgvector/pgvector` (w=0.250) — topics: approximate-nearest-neighbor-search, nearest-neighbor-search
+- `promptfoo/promptfoo` ⇄ `comet-ml/opik` (w=0.249) — topics: llm, prompt-engineering, llmops, evaluation; authors: dependabot[bot]
 - `zilliztech/memsearch` ⇄ `MemoriLabs/Memori` (w=0.237) — topics: agent-memory, claude-code, memory, openclaw
 - …and 9 more.
 

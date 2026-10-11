@@ -175,7 +175,7 @@ _Utilities and wrappers: format-native readers/writers, redaction, and API/MCP l
 - **[python-openxml/python-docx](https://github.com/python-openxml/python-docx)** · 5,739★ · Python · Mature  
   The standard library for reading and writing Word .docx programmatically.  
   <sub>topics: —</sub>
-- **[adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api)** · 984★ · Python · Abandoned  
+- **[adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api)** · 983★ · Python · Abandoned  
   Deployable REST API wrapping marker — PDF→markdown as a service.  
   <sub>topics: fastapi, marker, pdf-converter, pdf-files, pdf-parser, pdf-parsing, api, rest-api</sub>
 - **[docling-project/docling-mcp](https://github.com/docling-project/docling-mcp)** · 769★ · Python · Hot  

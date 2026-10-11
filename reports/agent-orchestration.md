@@ -16,7 +16,7 @@
 - **38 agent-orchestration tools** in your stars (**1,600,990★**), organized by *how you express coordination*:
   - **Code-first agent frameworks** (17): `MetaGPT`, `autogen`, `crewAI`, `langgraph`, `agno`, `dspy`, `agentscope`, `openai-agents-python`, `smolagents`, `semantic-kernel`, `adk-python`, `camel`, `agent-framework`, `voltagent`, `harness-sdk`, `beeai-framework`, `AutoAgents`
   - **Visual / low-code platforms** (4): `n8n`, `dify`, `langflow`, `sim`
-  - **Coding-agent orchestration** (9): `deer-flow`, `ruflo`, `oh-my-openagent`, `agents`, `oh-my-claudecode`, `paseo`, `eigent`, `agent-orchestrator`, `coding-agent-template`
+  - **Coding-agent orchestration** (8): `deer-flow`, `ruflo`, `oh-my-openagent`, `agents`, `oh-my-claudecode`, `paseo`, `eigent`, `coding-agent-template`
   - **Agent OS / long-horizon harness** (1): `eliza`
   - **Durable / production infra** (2): `flyte`, `agent-kit`
   - **Vertical / domain systems** (2): `TradingAgents`, `gpt-researcher`

@@ -384,6 +384,7 @@ _All-open, self-hosted models; managed API spend optional. The anti-cloud pitch 
 - `m-bain/whisperX` — PageRank 0.0012
 - `opendatalab/MinerU` — PageRank 0.0010
 - `VectifyAI/PageIndex` — PageRank 0.0010
+- `opendatalab/MinerU` — PageRank 0.0010
 - `microsoft/graphrag` — PageRank 0.0009
 - `HKUDS/LightRAG` — PageRank 0.0007
 - `run-llama/llama_index` — PageRank 0.0006

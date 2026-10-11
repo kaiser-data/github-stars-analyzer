@@ -291,7 +291,7 @@ _General-purpose JS/TS chart engines. The choice here is mostly bundle size vs. 
 - **[highcharts/highcharts](https://github.com/highcharts/highcharts)** · 12,494★ · TypeScript · Classic  
   The long-running commercial charting suite — extremely complete, with accessibility and export modules that most open-source libraries lack.  
   <sub>topics: —</sub>
-- **[c3js/c3](https://github.com/c3js/c3)** · 9,351★ · JavaScript · Classic  
+- **[c3js/c3](https://github.com/c3js/c3)** · 9,350★ · JavaScript · Classic  
   A D3-based reusable chart wrapper — the 2015-era way to get D3 output without writing D3.  
   <sub>topics: chart, d3, graphics, data-visualization, svg, graph, interactive-visualizations</sub>
 - **[observablehq/plot](https://github.com/observablehq/plot)** · 5,403★ · HTML · Mature  
@@ -371,7 +371,7 @@ _The notebook and scientific-computing side: static publication figures, interac
 - **[plotly/plotly.py](https://github.com/plotly/plotly.py)** · 18,828★ · Python · Classic  
   Interactive charts from Python, rendering through plotly.js — Plotly Express makes most charts one line.  
   <sub>topics: python, d3, plotly, plotlyjs, webgl, dashboard, visualization, graph-library</sub>
-- **[Kanaries/pygwalker](https://github.com/Kanaries/pygwalker)** · 15,983★ · Python · Mature  
+- **[Kanaries/pygwalker](https://github.com/Kanaries/pygwalker)** · 15,980★ · Python · Mature  
   Turns a DataFrame into a drag-and-drop Tableau-style exploration UI with one line in a notebook.  
   <sub>topics: data-analysis, pandas, tableau, tableau-alternative, visualization, data-exploration, dataframe, matplotlib</sub>
 - **[holoviz/panel](https://github.com/holoviz/panel)** · 5,793★ · Python · Classic  
@@ -492,7 +492,7 @@ _Plotting inside desktop and systems applications, where a browser runtime isn't
 - **[AAChartModel/AAChartKit](https://github.com/AAChartModel/AAChartKit)** · 4,765★ · Objective-C · Mature  
   Declarative charts for iOS/iPadOS/macOS — an Objective-C/Swift wrapper around Highcharts rendered in a web view.  
   <sub>topics: chart, column-chart, line-charts, pie-chart, bubble-chart, area-chart, radar-chart, polar-chart</sub>
-- **[gonum/plot](https://github.com/gonum/plot)** · 2,968★ · Go · Mature  
+- **[gonum/plot](https://github.com/gonum/plot)** · 2,969★ · Go · Mature  
   Plotting for Go, part of the Gonum numerical stack — generate chart images from a Go service.  
   <sub>topics: —</sub>
 - **[core-plot/core-plot](https://github.com/core-plot/core-plot)** · 2,758★ · Objective-C · Mature  
