@@ -45,7 +45,7 @@
 
 ## Ecosystem & graph signal
 
-- **Communities:** OpenClaw is in community 0, Hermes in 8 (different clusters). PageRank — OpenClaw 0.0006 vs Hermes 0.0007.
+- **Communities:** OpenClaw is in community 34, Hermes in 8 (different clusters). PageRank — OpenClaw 0.0006 vs Hermes 0.0007.
 - **No direct similarity edge** between them in the graph.
 - **Hermes explicitly tags the OpenClaw ecosystem** — its topics include  — i.e. it positions in/around the same space (interop or competition), not as an unrelated project.
 - **The accessory ecosystem orbits OpenClaw**, not Hermes: your stars already include `nanoclaw`, `clawhub`, `ClawRouter`, `opik-openclaw`, `openclaw-supermemory`, `NemoClaw`, `moltworker` — all OpenClaw-specific. That network effect is a real switching cost in OpenClaw's favour.

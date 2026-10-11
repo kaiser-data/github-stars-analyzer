@@ -5,10 +5,10 @@
   "category": "AI / Trends",
   "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 101 new entrants, and what has gone flat.",
   "tool_count": 164,
-  "total_stars": 6764533,
+  "total_stars": 6764534,
   "categories": {
-    "Risers": 1804,
-    "Breakouts": 1656,
+    "Risers": 1798,
+    "Breakouts": 1652,
     "New entrants": 101,
     "Cooling": 81
   },

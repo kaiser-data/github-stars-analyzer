@@ -1,6 +1,6 @@
 # Memory Frameworks for LLMs & Agents — Comparative Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
@@ -30,7 +30,7 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 27,887 | Hot | 84 | very active | 1d ago | 6mo | 25 |
 | [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 27,780 | Hot | 76 | very active | 1d ago | 12mo | 7 |
 | [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | — | Apache-2.0 | 25,095 | Mature | 64 | active | 1mo ago | 3.0y | 2 |
-| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 17,148 | Mature | 64 | active | 8d ago | 1.2y | 1 |
+| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 17,148 | Mature | 63 | active | 8d ago | 1.2y | 1 |
 | [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,585 | Declining | 53 | slowing | 2mo ago | 1.4y | 1 |
 | [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,973 | Declining | 26 | slowing | 4mo ago | 11mo | 0 |
 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 13,901 | Hot | 89 | very active | 1d ago | 1.3y | 24 |
@@ -139,12 +139,13 @@ _Broader LLMOps toolkits that ship memory as one module._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** The 23 frameworks fall into **8 of the graph's 46 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
+**Community clustering.** The 23 frameworks fall into **9 of the graph's 42 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
 
-- **Community 9** (10): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `getzep/graphiti`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `memodb-io/Acontext`, `MemPalace/mempalace`, `gastownhall/beads`
-- **Community 14** (4): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`, `needle-ai/needle-mcp`
-- **Community 11** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
-- **Community 2** (2): `Einsia/OpenChronicle`, `andrewyng/context-hub`
+- **Community 10** (7): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `gastownhall/beads`
+- **Community 2** (4): `MemPalace/mempalace`, `Einsia/OpenChronicle`, `andrewyng/context-hub`, `needle-ai/needle-mcp`
+- **Community 18** (3): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`
+- **Community 9** (2): `getzep/graphiti`, `memodb-io/Acontext`
+- **Community 12** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
 - **Community 5** (2): `thedotmack/claude-mem`, `Asymptote-Labs/agent-beacon`
 
 **Centrality (PageRank in the full 1,071-repo graph).** Higher = more connected to the rest of your starred ecosystem (a proxy for how 'hub-like' the project is):
@@ -179,13 +180,13 @@ Bus factor = how concentrated commits are in one author (1 = single-maintainer r
 | Asymptote-Labs/agent-beacon | 80 | Rising | very active | 1 | 91% | 149 |
 | topoteretes/cognee | 77 | Classic | very active | 1 | 86% | 152 |
 | ActiveMemory/ctx | 77 | Hot | very active | 1 | 80% | 7 |
-| getzep/graphiti | 76 | Mature | very active | 1 | 54% | 200 |
+| getzep/graphiti | 76 | Mature | very active | 1 | 55% | 200 |
 | MemPalace/mempalace | 76 | Hot | very active | 1 | 72% | 18 |
 | gastownhall/beads | 76 | Hot | very active | 1 | 62% | 105 |
 | plastic-labs/honcho | 70 | Classic | very active | 2 | 29% | 2 |
 | letta-ai/letta | 64 | Mature | active | 1 | 57% | 177 |
-| MemoriLabs/Memori | 64 | Mature | active | 1 | 100% | 38 |
-| trustgraph-ai/trustgraph | 63 | Mature | very active | 1 | 63% | 1 |
+| MemoriLabs/Memori | 63 | Mature | active | 1 | 100% | 38 |
+| trustgraph-ai/trustgraph | 63 | Mature | very active | 1 | 65% | 1 |
 | memvid/memvid | 53 | Declining | slowing | 1 | 100% | 12 |
 | supermemoryai/openclaw-supermemory | 49 | Rising | active | 1 | 70% | 0 |
 | zmedelis/bosquet | 49 | Mature | active | 1 | 67% | 14 |

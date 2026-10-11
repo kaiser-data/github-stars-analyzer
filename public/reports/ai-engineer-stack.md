@@ -1,6 +1,6 @@
 # The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities) and the 2026 AI-engineering landscape.
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities) and the 2026 AI-engineering landscape.
 >
 > Generated 2026-10-11 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
@@ -228,7 +228,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [ollama/ollama](https://github.com/ollama/ollama) | Must-have | Inference & serving | Go | 182,613 | Classic | 83 | very active | 1d ago | 3.3y |
 | [anthropics/skills](https://github.com/anthropics/skills) | Trending | Coding agents & MCP | Python | 180,291 | Mature | 51 | active | 2d ago | 1.1y |
 | [huggingface/transformers](https://github.com/huggingface/transformers) | Fundamental | Base & training | Python | 167,058 | Classic | 100 | very active | 1d ago | 8.0y |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | TypeScript | 150,006 | Hot | 79 | very active | 2d ago | 1.6y |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | TypeScript | 150,006 | Hot | 78 | very active | 2d ago | 1.6y |
 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Must-have | Orchestration & agents | Python | 147,557 | Classic | 79 | very active | 1d ago | 4.0y |
 | [github/spec-kit](https://github.com/github/spec-kit) | Trending | Coding agents & MCP | Python | 140,681 | Hot | 84 | very active | 1d ago | 1.1y |
 | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Fundamental | Inference & serving | C++ | 130,734 | Classic | 99 | very active | 1d ago | 3.6y |
@@ -241,9 +241,9 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | Coding agents & MCP | — | 96,042 | Hot | 60 | very active | 2d ago | 1.9y |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | Must-have | Inference & serving | Python | 93,508 | Classic | 99 | very active | 1d ago | 3.7y |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Must-have | RAG & retrieval | Go | 91,955 | Mature | 99 | very active | 1d ago | 2.8y |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 91,115 | Hot | 94 | very active | 1d ago | 1.9y |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 91,115 | Hot | 89 | very active | 1d ago | 1.9y |
 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | Trending | Coding agents & MCP | TypeScript | 90,483 | Mature | 79 | very active | 1d ago | 2.6y |
-| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 85,137 | Mature | 80 | very active | 6d ago | 2.4y |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 85,137 | Mature | 79 | very active | 6d ago | 2.4y |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | Orchestration & agents | Python | 83,646 | Hot | 87 | very active | 1d ago | 1.4y |
 | [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamental | Learning | — | 83,418 | Declining | 13 | stale | 8mo ago | 3.3y |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Fundamental | Learning | MDX | 78,978 | Declining | 15 | stale | 7mo ago | 3.8y |
@@ -259,7 +259,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [Aider-AI/aider](https://github.com/Aider-AI/aider) | Trending | Coding agents & MCP | Python | 49,457 | Mature | 25 | slowing | 4mo ago | 3.4y |
 | [milvus-io/milvus](https://github.com/milvus-io/milvus) | Must-have | Vector store | Go | 46,347 | Classic | 99 | very active | 1d ago | 7.1y |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 43,763 | Hot | 77 | very active | 1d ago | 9mo |
-| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,218 | Classic | 97 | very active | 1d ago | 6.7y |
+| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,218 | Classic | 96 | very active | 1d ago | 6.7y |
 | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 43,015 | Classic | 77 | very active | 1d ago | 3.2y |
 | [agno-agi/agno](https://github.com/agno-agi/agno) | Trending | Orchestration & agents | Python | 42,650 | Classic | 97 | very active | 1d ago | 4.4y |
 | [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 41,124 | Classic | 99 | very active | 1d ago | 9.7y |
@@ -272,7 +272,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 36,284 | Mature | 76 | very active | 3d ago | 2.5y |
 | [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 35,600 | Classic | 94 | very active | 1d ago | 3.4y |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 35,008 | Classic | 88 | very active | 1d ago | 6.4y |
-| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,395 | Classic | 68 | very active | 4d ago | 7.5y |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,395 | Classic | 69 | very active | 4d ago | 7.5y |
 | [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 31,132 | Abandoned | 4 | stale | 1.3y ago | 2.5y |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | Must-have | Orchestration & agents | Python | 29,767 | Mature | 60 | active | 5d ago | 1.8y |
 | [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Fundamental | RAG & retrieval | Jupyter Notebook | 29,755 | Mature | 58 | very active | 20d ago | 2.2y |
@@ -282,16 +282,18 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 56 repos span **21 of the graph's 46 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
+**Community clustering.** These 56 repos span **21 of the graph's 42 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
 
-- **Community 9** (11): `firecrawl/firecrawl`, `browser-use/browser-use`, `google-gemini/gemini-cli`, `punkpeye/awesome-mcp-servers`, `unclecode/crawl4ai`, `mem0ai/mem0`, `crewAIInc/crewAI`, `MemPalace/mempalace`, `Aider-AI/aider`, `agno-agi/agno`
-- **Community 26** (5): `langchain-ai/langchain`, `bytedance/deer-flow`, `dair-ai/Prompt-Engineering-Guide`, `run-llama/llama_index`, `langchain-ai/langgraph`
-- **Community 15** (4): `ggml-org/llama.cpp`, `mlabonne/llm-course`, `unslothai/unsloth`, `hiyouga/LlamaFactory`
-- **Community 18** (4): `rasbt/LLMs-from-scratch`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
-- **Community 24** (4): `ollama/ollama`, `TauricResearch/TradingAgents`, `vllm-project/vllm`, `sgl-project/sglang`
-- **Community 11** (4): `BerriAI/litellm`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
-- **Community 14** (3): `infiniflow/ragflow`, `VectifyAI/PageIndex`, `NirDiamant/RAG_Techniques`
+- **Community 25** (6): `ollama/ollama`, `TauricResearch/TradingAgents`, `vllm-project/vllm`, `unslothai/unsloth`, `hiyouga/LlamaFactory`, `sgl-project/sglang`
+- **Community 10** (6): `obra/superpowers`, `browser-use/browser-use`, `mem0ai/mem0`, `crewAIInc/crewAI`, `agno-agi/agno`, `chroma-core/chroma`
+- **Community 9** (5): `langchain-ai/langchain`, `rasbt/LLMs-from-scratch`, `bytedance/deer-flow`, `dair-ai/Prompt-Engineering-Guide`, `langchain-ai/langgraph`
+- **Community 13** (4): `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
+- **Community 12** (4): `BerriAI/litellm`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
+- **Community 20** (4): `github/spec-kit`, `google-gemini/gemini-cli`, `punkpeye/awesome-mcp-servers`, `modelcontextprotocol/servers`
 - **Community 19** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
+- **Community 28** (3): `infiniflow/ragflow`, `milvus-io/milvus`, `qdrant/qdrant`
+- **Community 2** (3): `firecrawl/firecrawl`, `unclecode/crawl4ai`, `MemPalace/mempalace`
+- **Community 5** (3): `anthropics/skills`, `anthropics/claude-code`, `Aider-AI/aider`
 
 **Centrality (PageRank in the full 2,346-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
 
@@ -320,12 +322,12 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 | milvus-io/milvus | Must-have | 99 | Classic | very active | 8 | 10% |
 | infiniflow/ragflow | Must-have | 99 | Mature | very active | 9 | 8% |
 | run-llama/llama_index | Must-have | 98 | Classic | very active | 12 | 14% |
-| deepspeedai/DeepSpeed | Fundamental | 97 | Classic | very active | 5 | 15% |
 | agno-agi/agno | Trending | 97 | Classic | very active | 6 | 16% |
+| deepspeedai/DeepSpeed | Fundamental | 96 | Classic | very active | 5 | 15% |
 | google-gemini/gemini-cli | Trending | 95 | Hot | very active | 4 | 21% |
 | langfuse/langfuse | Must-have | 94 | Classic | very active | 4 | 24% |
-| modelcontextprotocol/servers | Trending | 94 | Hot | very active | 4 | 18% |
 | crewAIInc/crewAI | Must-have | 89 | Mature | very active | 3 | 28% |
+| modelcontextprotocol/servers | Trending | 89 | Hot | very active | 4 | 18% |
 | comet-ml/opik | Trending | 89 | Classic | very active | 3 | 26% |
 | qdrant/qdrant | Must-have | 88 | Classic | very active | 3 | 30% |
 | bytedance/deer-flow | Trending | 87 | Hot | very active | 9 | 11% |
@@ -338,14 +340,14 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 | Arize-ai/phoenix | Trending | 83 | Classic | very active | 2 | 48% |
 | chroma-core/chroma | Must-have | 82 | Classic | very active | 2 | 36% |
 | hiyouga/LlamaFactory | Must-have | 82 | Classic | very active | 5 | 22% |
-| unclecode/crawl4ai | Must-have | 80 | Mature | very active | 1 | 61% |
 | langchain-ai/langchain | Must-have | 79 | Classic | very active | 1 | 62% |
 | mudler/LocalAI | Must-have | 79 | Classic | very active | 1 | 60% |
 | unslothai/unsloth | Must-have | 79 | Mature | very active | 1 | 59% |
-| anthropics/claude-code | Trending | 79 | Hot | very active | 1 | 54% |
+| unclecode/crawl4ai | Must-have | 79 | Mature | very active | 1 | 61% |
 | browser-use/browser-use | Trending | 79 | Hot | very active | 1 | 54% |
 | OpenHands/OpenHands | Trending | 79 | Mature | very active | 1 | 64% |
 | TauricResearch/TradingAgents | Trending | 79 | Hot | very active | 1 | 96% |
+| anthropics/claude-code | Trending | 78 | Hot | very active | 1 | 54% |
 | HKUDS/LightRAG | Trending | 78 | Mature | very active | 1 | 60% |
 | langchain-ai/langgraph | Must-have | 77 | Classic | very active | 1 | 50% |
 | vercel-labs/agent-browser | Trending | 77 | Hot | very active | 2 | 42% |
@@ -355,7 +357,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 | obra/superpowers | Trending | 74 | Hot | very active | 1 | 91% |
 | microsoft/playwright-mcp | Trending | 73 | Hot | very active | 1 | 50% |
 | microsoft/generative-ai-for-beginners | Fundamental | 70 | Classic | very active | 2 | 36% |
-| Lightning-AI/pytorch-lightning | Fundamental | 68 | Classic | very active | 1 | 58% |
+| Lightning-AI/pytorch-lightning | Fundamental | 69 | Classic | very active | 1 | 58% |
 | google/langextract | Trending | 68 | Mature | very active | 1 | 78% |
 | huggingface/smolagents | Must-have | 60 | Mature | active | 2 | 43% |
 | punkpeye/awesome-mcp-servers | Trending | 60 | Hot | very active | 1 | 91% |

@@ -1218,7 +1218,7 @@
       "full_name": "run-llama/llama-parse-py",
       "owner": "run-llama",
       "name": "llama-parse-py",
-      "stargazers_count": 62,
+      "stargazers_count": 63,
       "starred_at": "2026-09-24T18:58:53Z",
       "archived": false,
       "stratum": "all"
@@ -2178,7 +2178,7 @@
       "full_name": "fabio-sim/LightGlue-ONNX",
       "owner": "fabio-sim",
       "name": "LightGlue-ONNX",
-      "stargazers_count": 814,
+      "stargazers_count": 813,
       "starred_at": "2026-09-12T16:27:17Z",
       "archived": false,
       "stratum": "all"
@@ -2648,7 +2648,7 @@
       "full_name": "groktopus/groktocrawl",
       "owner": "groktopus",
       "name": "groktocrawl",
-      "stargazers_count": 83,
+      "stargazers_count": 85,
       "starred_at": "2026-09-07T14:06:20Z",
       "archived": false,
       "stratum": "all"
@@ -2768,7 +2768,7 @@
       "full_name": "hushicai/ETF",
       "owner": "hushicai",
       "name": "ETF",
-      "stargazers_count": 214,
+      "stargazers_count": 213,
       "starred_at": "2026-09-07T08:46:40Z",
       "archived": false,
       "stratum": "all"
@@ -3618,7 +3618,7 @@
       "full_name": "victoresque/pytorch-template",
       "owner": "victoresque",
       "name": "pytorch-template",
-      "stargazers_count": 5125,
+      "stargazers_count": 5124,
       "starred_at": "2026-09-05T20:54:06Z",
       "archived": false,
       "stratum": "all"
@@ -3698,7 +3698,7 @@
       "full_name": "c4spar/cliffy",
       "owner": "c4spar",
       "name": "cliffy",
-      "stargazers_count": 1181,
+      "stargazers_count": 1183,
       "starred_at": "2026-09-05T16:25:29Z",
       "archived": false,
       "stratum": "all"
@@ -3838,7 +3838,7 @@
       "full_name": "jonmosco/kube-ps1",
       "owner": "jonmosco",
       "name": "kube-ps1",
-      "stargazers_count": 3811,
+      "stargazers_count": 3812,
       "starred_at": "2026-09-05T16:25:04Z",
       "archived": false,
       "stratum": "all"
@@ -4048,7 +4048,7 @@
       "full_name": "plexe-ai/plexe",
       "owner": "plexe-ai",
       "name": "plexe",
-      "stargazers_count": 2646,
+      "stargazers_count": 2645,
       "starred_at": "2026-09-05T15:11:10Z",
       "archived": false,
       "stratum": "all"
@@ -4928,7 +4928,7 @@
       "full_name": "deifos/AI-avatar-generator",
       "owner": "deifos",
       "name": "AI-avatar-generator",
-      "stargazers_count": 23,
+      "stargazers_count": 24,
       "starred_at": "2026-08-30T10:31:51Z",
       "archived": false,
       "stratum": "all"
@@ -5548,7 +5548,7 @@
       "full_name": "oumi-ai/oumi",
       "owner": "oumi-ai",
       "name": "oumi",
-      "stargazers_count": 9389,
+      "stargazers_count": 9391,
       "starred_at": "2026-08-28T10:43:38Z",
       "archived": false,
       "stratum": "all"
@@ -5578,7 +5578,7 @@
       "full_name": "PaddlePaddle/FastDeploy",
       "owner": "PaddlePaddle",
       "name": "FastDeploy",
-      "stargazers_count": 3717,
+      "stargazers_count": 3718,
       "starred_at": "2026-08-28T10:43:36Z",
       "archived": false,
       "stratum": "all"
@@ -5718,7 +5718,7 @@
       "full_name": "potpie-ai/potpie",
       "owner": "potpie-ai",
       "name": "potpie",
-      "stargazers_count": 5733,
+      "stargazers_count": 5739,
       "starred_at": "2026-08-28T10:43:28Z",
       "archived": false,
       "stratum": "all"
@@ -7408,7 +7408,7 @@
       "full_name": "typedef-ai/fenic",
       "owner": "typedef-ai",
       "name": "fenic",
-      "stargazers_count": 673,
+      "stargazers_count": 672,
       "starred_at": "2026-08-15T22:17:44Z",
       "archived": false,
       "stratum": "all"
@@ -7488,7 +7488,7 @@
       "full_name": "jd-opensource/JoyAI-Image",
       "owner": "jd-opensource",
       "name": "JoyAI-Image",
-      "stargazers_count": 2162,
+      "stargazers_count": 2161,
       "starred_at": "2026-08-13T18:28:21Z",
       "archived": false,
       "stratum": "all"
@@ -7808,7 +7808,7 @@
       "full_name": "Kanaries/pygwalker",
       "owner": "Kanaries",
       "name": "pygwalker",
-      "stargazers_count": 15980,
+      "stargazers_count": 15983,
       "starred_at": "2026-08-11T18:57:01Z",
       "archived": false,
       "stratum": "all"
@@ -7888,7 +7888,7 @@
       "full_name": "holoviz/holoviews",
       "owner": "holoviz",
       "name": "holoviews",
-      "stargazers_count": 2909,
+      "stargazers_count": 2911,
       "starred_at": "2026-08-11T18:56:58Z",
       "archived": false,
       "stratum": "all"
@@ -8028,7 +8028,7 @@
       "full_name": "amcharts/amcharts5",
       "owner": "amcharts",
       "name": "amcharts5",
-      "stargazers_count": 445,
+      "stargazers_count": 446,
       "starred_at": "2026-08-11T18:50:25Z",
       "archived": false,
       "stratum": "all"
@@ -8068,7 +8068,7 @@
       "full_name": "ecomfe/awesome-echarts",
       "owner": "ecomfe",
       "name": "awesome-echarts",
-      "stargazers_count": 1578,
+      "stargazers_count": 1577,
       "starred_at": "2026-08-11T18:47:39Z",
       "archived": false,
       "stratum": "all"
@@ -8118,7 +8118,7 @@
       "full_name": "highcharts/highcharts-react",
       "owner": "highcharts",
       "name": "highcharts-react",
-      "stargazers_count": 1172,
+      "stargazers_count": 1173,
       "starred_at": "2026-08-11T18:43:06Z",
       "archived": false,
       "stratum": "all"
@@ -8328,7 +8328,7 @@
       "full_name": "gonum/plot",
       "owner": "gonum",
       "name": "plot",
-      "stargazers_count": 2969,
+      "stargazers_count": 2968,
       "starred_at": "2026-08-07T23:09:32Z",
       "archived": false,
       "stratum": "all"
@@ -8418,7 +8418,7 @@
       "full_name": "hexops/mach",
       "owner": "hexops",
       "name": "mach",
-      "stargazers_count": 4845,
+      "stargazers_count": 4846,
       "starred_at": "2026-08-07T23:08:22Z",
       "archived": false,
       "stratum": "all"
@@ -9368,7 +9368,7 @@
       "full_name": "the3deer/android-3D-model-viewer",
       "owner": "the3deer",
       "name": "android-3D-model-viewer",
-      "stargazers_count": 1551,
+      "stargazers_count": 1552,
       "starred_at": "2026-08-02T16:10:08Z",
       "archived": false,
       "stratum": "all"
@@ -10048,7 +10048,7 @@
       "full_name": "suptejas/fleet",
       "owner": "suptejas",
       "name": "fleet",
-      "stargazers_count": 2425,
+      "stargazers_count": 2423,
       "starred_at": "2026-07-21T18:07:30Z",
       "archived": false,
       "stratum": "all"
@@ -10218,7 +10218,7 @@
       "full_name": "NVIDIA/FasterTransformer",
       "owner": "NVIDIA",
       "name": "FasterTransformer",
-      "stargazers_count": 6457,
+      "stargazers_count": 6454,
       "starred_at": "2026-07-19T23:13:23Z",
       "archived": false,
       "stratum": "all"
@@ -10928,7 +10928,7 @@
       "full_name": "HKUDS/MGP",
       "owner": "HKUDS",
       "name": "MGP",
-      "stargazers_count": 59,
+      "stargazers_count": 60,
       "starred_at": "2026-06-20T18:29:06Z",
       "archived": false,
       "stratum": "all"
@@ -10938,7 +10938,7 @@
       "full_name": "HKUDS/CatchMe",
       "owner": "HKUDS",
       "name": "CatchMe",
-      "stargazers_count": 508,
+      "stargazers_count": 509,
       "starred_at": "2026-06-20T18:28:53Z",
       "archived": false,
       "stratum": "all"
@@ -11558,7 +11558,7 @@
       "full_name": "DrDroidLab/voicesummary",
       "owner": "DrDroidLab",
       "name": "voicesummary",
-      "stargazers_count": 35,
+      "stargazers_count": 36,
       "starred_at": "2026-06-11T10:48:54Z",
       "archived": false,
       "stratum": "all"
@@ -12198,7 +12198,7 @@
       "full_name": "ethers-io/ethers.js",
       "owner": "ethers-io",
       "name": "ethers.js",
-      "stargazers_count": 8709,
+      "stargazers_count": 8711,
       "starred_at": "2026-06-02T22:54:28Z",
       "archived": false,
       "stratum": "all"
@@ -12258,7 +12258,7 @@
       "full_name": "brobertsaz/claude-os",
       "owner": "brobertsaz",
       "name": "claude-os",
-      "stargazers_count": 429,
+      "stargazers_count": 430,
       "starred_at": "2026-06-02T22:52:47Z",
       "archived": false,
       "stratum": "all"
@@ -13238,7 +13238,7 @@
       "full_name": "landing-ai/ade-python",
       "owner": "landing-ai",
       "name": "ade-python",
-      "stargazers_count": 1035,
+      "stargazers_count": 1034,
       "starred_at": "2026-05-08T01:24:52Z",
       "archived": false,
       "stratum": "all"
@@ -14278,7 +14278,7 @@
       "full_name": "hydro13/tandem-browser",
       "owner": "hydro13",
       "name": "tandem-browser",
-      "stargazers_count": 615,
+      "stargazers_count": 616,
       "starred_at": "2026-03-18T17:58:32Z",
       "archived": false,
       "stratum": "all"
@@ -14798,7 +14798,7 @@
       "full_name": "supermemoryai/openclaw-supermemory",
       "owner": "supermemoryai",
       "name": "openclaw-supermemory",
-      "stargazers_count": 797,
+      "stargazers_count": 796,
       "starred_at": "2026-02-28T18:13:06Z",
       "archived": false,
       "stratum": "all"
@@ -16958,7 +16958,7 @@
       "full_name": "UI5/openui5",
       "owner": "UI5",
       "name": "openui5",
-      "stargazers_count": 3318,
+      "stargazers_count": 3319,
       "starred_at": "2025-11-26T09:25:33Z",
       "archived": false,
       "stratum": "all"
@@ -18148,7 +18148,7 @@
       "full_name": "Azure-Samples/active-directory-aspnetcore-webapp-openidconnect-v2",
       "owner": "Azure-Samples",
       "name": "active-directory-aspnetcore-webapp-openidconnect-v2",
-      "stargazers_count": 1438,
+      "stargazers_count": 1439,
       "starred_at": "2025-10-25T23:39:55Z",
       "archived": false,
       "stratum": "all"
@@ -18558,7 +18558,7 @@
       "full_name": "aws-samples/aws-serverless-airline-booking",
       "owner": "aws-samples",
       "name": "aws-serverless-airline-booking",
-      "stargazers_count": 2337,
+      "stargazers_count": 2338,
       "starred_at": "2025-10-18T03:24:16Z",
       "archived": false,
       "stratum": "all"
@@ -18568,7 +18568,7 @@
       "full_name": "aws-samples/aws-machine-learning-university-accelerated-nlp",
       "owner": "aws-samples",
       "name": "aws-machine-learning-university-accelerated-nlp",
-      "stargazers_count": 2436,
+      "stargazers_count": 2434,
       "starred_at": "2025-10-18T03:24:10Z",
       "archived": false,
       "stratum": "all"
@@ -18608,7 +18608,7 @@
       "full_name": "Azure/azure-quickstart-templates",
       "owner": "Azure",
       "name": "azure-quickstart-templates",
-      "stargazers_count": 14886,
+      "stargazers_count": 14884,
       "starred_at": "2025-10-18T03:23:29Z",
       "archived": false,
       "stratum": "all"
@@ -18918,7 +18918,7 @@
       "full_name": "Yuliang-Liu/Monkey",
       "owner": "Yuliang-Liu",
       "name": "Monkey",
-      "stargazers_count": 1956,
+      "stargazers_count": 1954,
       "starred_at": "2025-10-11T02:22:46Z",
       "archived": false,
       "stratum": "all"
@@ -18968,7 +18968,7 @@
       "full_name": "facebookresearch/nougat",
       "owner": "facebookresearch",
       "name": "nougat",
-      "stargazers_count": 10081,
+      "stargazers_count": 10079,
       "starred_at": "2025-10-11T02:18:51Z",
       "archived": false,
       "stratum": "all"
@@ -19428,7 +19428,7 @@
       "full_name": "serverless/aws-ai-stack",
       "owner": "serverless",
       "name": "aws-ai-stack",
-      "stargazers_count": 1007,
+      "stargazers_count": 1006,
       "starred_at": "2025-10-05T14:56:51Z",
       "archived": false,
       "stratum": "all"
@@ -19588,7 +19588,7 @@
       "full_name": "Synaptiv-AI/awesome-n8n",
       "owner": "Synaptiv-AI",
       "name": "awesome-n8n",
-      "stargazers_count": 194,
+      "stargazers_count": 193,
       "starred_at": "2025-10-05T14:55:29Z",
       "archived": false,
       "stratum": "all"
@@ -19718,7 +19718,7 @@
       "full_name": "sentient-agi/ROMA",
       "owner": "sentient-agi",
       "name": "ROMA",
-      "stargazers_count": 5176,
+      "stargazers_count": 5180,
       "starred_at": "2025-10-04T00:10:29Z",
       "archived": false,
       "stratum": "all"
@@ -19768,7 +19768,7 @@
       "full_name": "yayasoumah/pocket-server",
       "owner": "yayasoumah",
       "name": "pocket-server",
-      "stargazers_count": 837,
+      "stargazers_count": 838,
       "starred_at": "2025-10-02T00:18:34Z",
       "archived": false,
       "stratum": "all"
@@ -19928,7 +19928,7 @@
       "full_name": "landing-ai/vision-agent",
       "owner": "landing-ai",
       "name": "vision-agent",
-      "stargazers_count": 5305,
+      "stargazers_count": 5304,
       "starred_at": "2025-09-30T18:43:34Z",
       "archived": false,
       "stratum": "all"
@@ -20458,7 +20458,7 @@
       "full_name": "neo4j/mcp",
       "owner": "neo4j",
       "name": "mcp",
-      "stargazers_count": 296,
+      "stargazers_count": 297,
       "starred_at": "2025-09-25T15:46:37Z",
       "archived": false,
       "stratum": "all"
@@ -20608,7 +20608,7 @@
       "full_name": "promptise-com/Foundry",
       "owner": "promptise-com",
       "name": "Foundry",
-      "stargazers_count": 872,
+      "stargazers_count": 873,
       "starred_at": "2025-09-22T03:14:30Z",
       "archived": false,
       "stratum": "all"
@@ -21808,7 +21808,7 @@
       "full_name": "MiniMax-AI/MiniMax-M1",
       "owner": "MiniMax-AI",
       "name": "MiniMax-M1",
-      "stargazers_count": 3184,
+      "stargazers_count": 3186,
       "starred_at": "2025-06-19T08:31:44Z",
       "archived": false,
       "stratum": "all"
@@ -22368,7 +22368,7 @@
       "full_name": "meta-llama/prompt-ops",
       "owner": "meta-llama",
       "name": "prompt-ops",
-      "stargazers_count": 1035,
+      "stargazers_count": 1036,
       "starred_at": "2025-05-05T01:18:51Z",
       "archived": false,
       "stratum": "all"
@@ -22458,7 +22458,7 @@
       "full_name": "tjmlabs/ColiVara",
       "owner": "tjmlabs",
       "name": "ColiVara",
-      "stargazers_count": 1484,
+      "stargazers_count": 1485,
       "starred_at": "2025-04-29T11:13:41Z",
       "archived": false,
       "stratum": "all"
@@ -22788,7 +22788,7 @@
       "full_name": "andrewkchan/deepseek.cpp",
       "owner": "andrewkchan",
       "name": "deepseek.cpp",
-      "stargazers_count": 326,
+      "stargazers_count": 325,
       "starred_at": "2025-04-10T18:32:38Z",
       "archived": false,
       "stratum": "all"
@@ -22908,7 +22908,7 @@
       "full_name": "pingan8787/awesome-ai-tools",
       "owner": "pingan8787",
       "name": "awesome-ai-tools",
-      "stargazers_count": 367,
+      "stargazers_count": 369,
       "starred_at": "2025-04-05T21:27:07Z",
       "archived": false,
       "stratum": "all"

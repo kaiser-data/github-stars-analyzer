@@ -1,6 +1,6 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
@@ -52,11 +52,11 @@
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 29,951 | Python | 80 | very active | Hot | 1 |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | 29,767 | Python | 60 | active | Mature | 2 |
 | [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28,639 | C# | 81 | very active | Classic | 2 |
-| [google/adk-python](https://github.com/google/adk-python) | 21,767 | Python | 99 | very active | Hot | 3 |
+| [google/adk-python](https://github.com/google/adk-python) | 21,767 | Python | 89 | very active | Hot | 3 |
 | [camel-ai/camel](https://github.com/camel-ai/camel) | 17,850 | Python | 83 | very active | Classic | 3 |
-| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 14,046 | Python | 93 | very active | Hot | 6 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 14,046 | Python | 98 | very active | Hot | 6 |
 | [VoltAgent/voltagent](https://github.com/VoltAgent/voltagent) | 10,764 | TypeScript | 72 | active | Mature | 2 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,753 | Python | 92 | very active | Hot | 5 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,753 | Python | 96 | very active | Hot | 5 |
 | [i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 3,429 | Python | 98 | very active | Mature | 6 |
 | [liquidos-ai/AutoAgents](https://github.com/liquidos-ai/AutoAgents) | 761 | Rust | 59 | active | Mature | 1 |
 
@@ -147,19 +147,19 @@ _SDKs you write agents in — maximum control over routing, state and hand-offs;
 - **[microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)** · 28,639★ · C# · Classic · health 81  
   Microsoft's enterprise SDK (C#/Python) for plugging LLMs + planning into apps.  
   <sub>topics: ai, artificial-intelligence, llm, openai, sdk</sub>
-- **[google/adk-python](https://github.com/google/adk-python)** · 21,767★ · Python · Hot · health 99  
+- **[google/adk-python](https://github.com/google/adk-python)** · 21,767★ · Python · Hot · health 89  
   Google's code-first Agent Development Kit — build, evaluate & deploy agents.  
   <sub>topics: agent, agents, agents-sdk, ai, ai-agents, multi-agent-systems</sub>
 - **[camel-ai/camel](https://github.com/camel-ai/camel)** · 17,850★ · Python · Classic · health 83  
   Large multi-agent 'society' framework for studying agent cooperation at scale.  
   <sub>topics: ai-societies, artificial-intelligence, deep-learning, large-language-models, multi-agent-systems, natural-language-processing</sub>
-- **[microsoft/agent-framework](https://github.com/microsoft/agent-framework)** · 14,046★ · Python · Hot · health 93  
+- **[microsoft/agent-framework](https://github.com/microsoft/agent-framework)** · 14,046★ · Python · Hot · health 98  
   Microsoft's framework to build, orchestrate & deploy multi-agent workflows (health 92).  
   <sub>topics: agent-framework, agentic-ai, agents, ai, multi-agent, orchestration</sub>
 - **[VoltAgent/voltagent](https://github.com/VoltAgent/voltagent)** · 10,764★ · TypeScript · Mature · health 72  
   TypeScript agent-engineering platform + open-source framework.  
   <sub>topics: agents, ai, chatbots, llm, mcp, nodejs</sub>
-- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 8,753★ · Python · Hot · health 92  
+- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 8,753★ · Python · Hot · health 96  
   Model-driven agents in a few lines; very high health (96) and bus factor 7.  
   <sub>topics: agentic, agentic-ai, agents, ai, autonomous-agents, llm</sub>
 - **[i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework)** · 3,429★ · Python · Mature · health 98  
@@ -264,15 +264,18 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 38 tools span **16 of the graph's 46 communities**.
+**Community clustering.** These 38 tools span **19 of the graph's 42 communities**.
 
-- **Community 9** (7): `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `assafelovic/gpt-researcher`, `n8n-io/n8n`, `flyteorg/flyte`, `inngest/agent-kit`
-- **Community 26** (6): `langchain-ai/langgraph`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `langflow-ai/langflow`, `bytedance/deer-flow`, `veegee82/agent-workflow-protocol`
-- **Community 8** (5): `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `eigent-ai/eigent`, `OrchestratorInc/agent-orchestrator`, `getpaseo/paseo`
-- **Community 0** (4): `langgenius/dify`, `vercel-labs/coding-agent-template`, `elizaOS/eliza`, `TinyAGI/tinyagi`
+- **Community 10** (6): `VoltAgent/voltagent`, `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `n8n-io/n8n`, `inngest/agent-kit`
+- **Community 9** (4): `langchain-ai/langgraph`, `i-am-bee/beeai-framework`, `langflow-ai/langflow`, `bytedance/deer-flow`
+- **Community 8** (4): `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `OrchestratorInc/agent-orchestrator`, `getpaseo/paseo`
 - **Community 19** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 24** (2): `FoundationAgents/MetaGPT`, `TauricResearch/TradingAgents`
+- **Community 11** (2): `openai/openai-agents-python`, `flyteorg/flyte`
+- **Community 25** (2): `FoundationAgents/MetaGPT`, `TauricResearch/TradingAgents`
 - **Community 3** (2): `stanfordnlp/dspy`, `wshobson/agents`
+- **Community 2** (2): `assafelovic/gpt-researcher`, `sentient-agi/ROMA`
+- **Community 0** (2): `langgenius/dify`, `TinyAGI/tinyagi`
+- **Community 34** (2): `vercel-labs/coding-agent-template`, `elizaOS/eliza`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
@@ -312,12 +315,12 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 | Tool | Approach | Health | Lifecycle | Activity | Bus factor |
 |---|---|---|---|---|---|
 | n8n-io/n8n | Visual / low-code platforms | 100 | Classic | very active | 9 |
-| google/adk-python | Code-first agent frameworks | 99 | Hot | very active | 3 |
+| microsoft/agent-framework | Code-first agent frameworks | 98 | Hot | very active | 6 |
 | i-am-bee/beeai-framework | Code-first agent frameworks | 98 | Mature | very active | 6 |
 | agentscope-ai/agentscope | Code-first agent frameworks | 97 | Mature | very active | 9 |
 | agno-agi/agno | Code-first agent frameworks | 97 | Classic | very active | 6 |
-| microsoft/agent-framework | Code-first agent frameworks | 93 | Hot | very active | 6 |
-| strands-agents/harness-sdk | Code-first agent frameworks | 92 | Hot | very active | 5 |
+| strands-agents/harness-sdk | Code-first agent frameworks | 96 | Hot | very active | 5 |
+| google/adk-python | Code-first agent frameworks | 89 | Hot | very active | 3 |
 | crewAIInc/crewAI | Code-first agent frameworks | 89 | Mature | very active | 3 |
 | OrchestratorInc/agent-orchestrator | Coding-agent orchestration | 88 | Hot | very active | 3 |
 | bytedance/deer-flow | Coding-agent orchestration | 87 | Hot | very active | 9 |

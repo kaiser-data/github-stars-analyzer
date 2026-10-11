@@ -1,6 +1,6 @@
 # RAG (Retrieval-Augmented Generation) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
@@ -65,7 +65,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [marqo-ai/marqo](https://github.com/marqo-ai/marqo) | Vector DB / search | Python | Apache-2.0 | 5,028 | Mature | 46 | active | 1mo ago | 4.2y | 0 |
 | [feyninc/chonkie](https://github.com/feyninc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,787 | Mature | 67 | active | 8d ago | 1.5y | 4 |
 | [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,223 | Mature | 25 | slowing | 4mo ago | 2.5y | 0 |
-| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 3,375 | Mature | 74 | very active | 1d ago | 2.9y | 8 |
+| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 3,375 | Mature | 81 | very active | 1d ago | 2.9y | 8 |
 | [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,828 | Mature | 62 | active | 20d ago | 2.3y | 3 |
 | [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 1,009 | Mature | 77 | very active | 3d ago | 2.7y | 4 |
 | [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 672 | Mature | 58 | active | 1mo ago | 1.8y | 1 |
@@ -205,14 +205,15 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **13 of the graph's 46 communities**.
+**Community clustering.** These 32 tools span **14 of the graph's 42 communities**.
 
-- **Community 14** (10): `infiniflow/ragflow`, `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 28** (5): `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
-- **Community 9** (3): `chroma-core/chroma`, `feyninc/chonkie`, `feyninc/chonkiejs`
-- **Community 18** (3): `facebookresearch/faiss`, `Unstructured-IO/unstructured`, `superlinked/sie`
+- **Community 18** (9): `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 28** (6): `infiniflow/ragflow`, `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
 - **Community 31** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
 - **Community 1** (2): `alibaba/zvec`, `manticoresoftware/manticoresearch`
+- **Community 13** (2): `facebookresearch/faiss`, `superlinked/sie`
+- **Community 22** (2): `Unstructured-IO/unstructured`, `illuin-tech/colpali`
+- **Community 9** (2): `feyninc/chonkie`, `feyninc/chonkiejs`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' RAG tools in your ecosystem:
 
@@ -269,11 +270,11 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | StarTrail-org/LEANN | 83 | Hot | very active | 5 | 17% | 30 |
 | chroma-core/chroma | 82 | Classic | very active | 2 | 36% | 137 |
 | FalkorDB/FalkorDB | 81 | Classic | very active | 2 | 42% | 88 |
+| superlinked/sie | 81 | Mature | very active | 2 | 42% | 54 |
 | HKUDS/LightRAG | 78 | Mature | very active | 1 | 60% | 83 |
 | FalkorDB/GraphRAG-SDK | 77 | Mature | very active | 1 | 70% | 31 |
 | VectifyAI/PageIndex | 77 | Hot | very active | 1 | 53% | 20 |
 | microsoft/graphrag | 76 | Mature | very active | 2 | 46% | 44 |
-| superlinked/sie | 74 | Mature | very active | 2 | 42% | 54 |
 | feyninc/chonkie | 67 | Mature | active | 1 | 78% | 45 |
 | pgvector/pgvector | 64 | Classic | very active | 1 | 98% | 0 |
 | PaddlePaddle/PaddleOCR | 62 | Mature | active | 1 | 50% | 33 |

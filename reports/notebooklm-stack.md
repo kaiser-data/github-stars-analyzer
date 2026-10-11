@@ -1,6 +1,6 @@
 # Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
 
@@ -55,7 +55,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Grounded retrieval & citations | Python | MIT | 40,054 | Mature | 78 | very active | 3d ago | 2.0y | 11 |
 | [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) | Clone / reference app | TypeScript | MIT | 40,021 | Hot | 82 | very active | 6d ago | 2.0y | 24 |
 | [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Grounded retrieval & citations | Python | MIT | 39,044 | Hot | 77 | very active | 1d ago | 1.5y | 3 |
-| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 38,503 | Mature | 62 | very active | 3d ago | 1.1y | 4 |
+| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 38,503 | Mature | 62 | very active | 3d ago | 1.1y | 5 |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | Mind map / knowledge graph | Python | MIT | 36,284 | Mature | 76 | very active | 3d ago | 2.5y | 4 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | Mind map / knowledge graph | Python | Apache-2.0 | 31,948 | Classic | 77 | very active | 2d ago | 3.2y | 9 |
 | [getzep/graphiti](https://github.com/getzep/graphiti) | Mind map / knowledge graph | Python | Apache-2.0 | 31,613 | Mature | 76 | very active | 1d ago | 2.2y | 21 |
@@ -64,7 +64,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [m-bain/whisperX](https://github.com/m-bain/whisperX) | Audio/video understanding (STT) | Python | BSD-2-Clause | 24,453 | Mature | 66 | active | 15d ago | 3.8y | 3 |
 | [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Wow-factor add-on | Rust | NOASSERTION | 21,897 | Mature | 80 | very active | 1d ago | 2.3y | 4 |
 | [teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py) | Clone / reference app | Python | MIT | 19,678 | Hot | 80 | very active | 2d ago | 9mo | 3 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Interactive voice mode | Python | BSD-2-Clause | 16,332 | Mature | 79 | very active | 1d ago | 2.8y | 9 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Interactive voice mode | Python | BSD-2-Clause | 16,332 | Mature | 84 | very active | 1d ago | 2.8y | 9 |
 | [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Source ingestion & parsing | HTML | Apache-2.0 | 15,557 | Classic | 88 | very active | 1d ago | 4.0y | 21 |
 | [livekit/agents](https://github.com/livekit/agents) | Interactive voice mode | Python | Apache-2.0 | 14,681 | Mature | 99 | very active | 1d ago | 3.0y | 50 |
 | [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 13,718 | Declining | 22 | stale | 6mo ago | 8mo | 0 |
@@ -367,17 +367,18 @@ _All-open, self-hosted models; managed API spend optional. The anti-cloud pitch 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **17 of the graph's 46 communities**.
+**Community clustering.** These 33 tools span **19 of the graph's 42 communities**.
 
-- **Community 9** (5): `feyninc/chonkie`, `pipecat-ai/pipecat`, `livekit/agents`, `getzep/graphiti`, `topoteretes/cognee`
-- **Community 15** (4): `alexpinel/Dot`, `jina-ai/reader`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`
-- **Community 14** (3): `Mintplex-Labs/anything-llm`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 18** (3): `Unstructured-IO/unstructured`, `OpenBMB/VoxCPM`, `coqui-ai/TTS`
+- **Community 22** (3): `teng-lin/notebooklm-py`, `docling-project/docling`, `Unstructured-IO/unstructured`
+- **Community 18** (3): `alexpinel/Dot`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 9** (3): `feyninc/chonkie`, `getzep/graphiti`, `bytedance/deer-flow`
+- **Community 10** (3): `pipecat-ai/pipecat`, `livekit/agents`, `topoteretes/cognee`
+- **Community 3** (2): `Mintplex-Labs/anything-llm`, `gradio-app/fastrtc`
 - **Community 31** (2): `HKUDS/DeepTutor`, `HKUDS/LightRAG`
-- **Community 22** (2): `teng-lin/notebooklm-py`, `docling-project/docling`
 - **Community 19** (2): `microsoft/markitdown`, `microsoft/graphrag`
-- **Community 26** (2): `run-llama/llama_index`, `bytedance/deer-flow`
-- **Community 10** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
+- **Community 13** (2): `OpenBMB/VoxCPM`, `coqui-ai/TTS`
+- **Community 11** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
+- **Community 16** (2): `SYSTRAN/faster-whisper`, `m-bain/whisperX`
 
 **Centrality (PageRank in the full 2,346-repo graph)** — most 'hub-like' picks in your ecosystem:
 
@@ -420,17 +421,17 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | bytedance/deer-flow | 87 | Hot | very active | 9 | 11% | 2 |
 | Mintplex-Labs/anything-llm | 84 | Classic | very active | 2 | 39% | 37 |
 | HKUDS/DeepTutor | 84 | Hot | very active | 2 | 43% | 86 |
+| pipecat-ai/pipecat | 84 | Mature | very active | 2 | 29% | 122 |
 | StarTrail-org/LEANN | 83 | Hot | very active | 5 | 17% | 30 |
 | lfnovo/open-notebook | 82 | Hot | very active | 2 | 48% | 43 |
 | teng-lin/notebooklm-py | 80 | Hot | very active | 1 | 87% | 31 |
 | opendatalab/MinerU | 80 | Mature | very active | 1 | 91% | 198 |
 | screenpipe/screenpipe | 80 | Mature | very active | 1 | 55% | 495 |
 | yt-dlp/yt-dlp | 79 | Classic | very active | 2 | 40% | 136 |
-| pipecat-ai/pipecat | 79 | Mature | very active | 2 | 29% | 122 |
 | HKUDS/LightRAG | 78 | Mature | very active | 1 | 60% | 83 |
 | VectifyAI/PageIndex | 77 | Hot | very active | 1 | 53% | 20 |
 | topoteretes/cognee | 77 | Classic | very active | 1 | 86% | 152 |
-| getzep/graphiti | 76 | Mature | very active | 1 | 54% | 200 |
+| getzep/graphiti | 76 | Mature | very active | 1 | 55% | 200 |
 | microsoft/graphrag | 76 | Mature | very active | 2 | 46% | 44 |
 | feyninc/chonkie | 67 | Mature | active | 1 | 78% | 45 |
 | m-bain/whisperX | 66 | Mature | active | 2 | 33% | 44 |

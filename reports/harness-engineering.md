@@ -1,6 +1,6 @@
 # Harness Engineering — Ten Methods That Make an Agent Harness Good
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities). Evidence frozen 2026-10-01.
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities). Evidence frozen 2026-10-01.
 >
 > Generated 2026-10-11 by `scripts/reports/harness_engineering.py` (regenerate any time — no API cost).
 
@@ -342,18 +342,18 @@ Ten yes/no checks, one per method. A "no" is where to work next.
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 45 tools span **17 of the graph's 46 communities** — harness methods draw on very different corners of the ecosystem (context tooling, sandboxes, observability, skills).
+**Community clustering.** These 45 tools span **17 of the graph's 42 communities** — harness methods draw on very different corners of the ecosystem (context tooling, sandboxes, observability, skills).
 
+- **Community 10** (7): `SWE-agent/SWE-agent`, `obra/superpowers`, `VoltAgent/awesome-claude-code-subagents`, `dagger/container-use`, `e2b-dev/runtime`, `Infisical/agent-vault`, `open-multi-agent/open-multi-agent`
 - **Community 3** (7): `repoprompt/repoprompt-ce`, `upstash/context7`, `haydenbleasel/ultracite`, `VibiumDev/vibium`, `OthmanAdi/planning-with-files`, `cobusgreyling/loop-engineering`, `triggerdotdev/trigger.dev`
 - **Community 8** (6): `multica-ai/andrej-karpathy-skills`, `rtk-ai/rtk`, `Yeachan-Heo/oh-my-claudecode`, `backnotprop/plannotator`, `petergyang/human-review`, `getagentseal/codeburn`
 - **Community 4** (5): `earendil-works/pi`, `mksglu/context-mode`, `alexgreensh/token-optimizer`, `jgravelle/jcodemunch-mcp`, `kenryu42/cc-safety-net`
-- **Community 9** (5): `SWE-agent/SWE-agent`, `headroomlabs-ai/headroom`, `oraios/serena`, `dagger/container-use`, `Infisical/agent-vault`
-- **Community 26** (4): `Nicolepcx/harness_engineering`, `langchain-ai/deepagents`, `VoltAgent/awesome-claude-code-subagents`, `open-multi-agent/open-multi-agent`
-- **Community 0** (3): `agentsmd/agents.md`, `vercel-labs/agent-browser`, `snarktank/ralph`
+- **Community 9** (3): `Nicolepcx/harness_engineering`, `headroomlabs-ai/headroom`, `langchain-ai/deepagents`
 - **Community 5** (2): `Piebald-AI/claude-code-system-prompts`, `anthropics/skills`
+- **Community 0** (2): `agentsmd/agents.md`, `snarktank/ralph`
+- **Community 2** (2): `chunkhound/chunkhound`, `oraios/serena`
 - **Community 19** (2): `microsoft/playwright-mcp`, `microsoft/waza`
-- **Community 1** (2): `alibaba/open-code-review`, `e2b-dev/runtime`
-- **Community 11** (2): `langfuse/langfuse`, `promptfoo/promptfoo`
+- **Community 12** (2): `langfuse/langfuse`, `promptfoo/promptfoo`
 
 **Centrality (PageRank in the full 2,346-repo graph)**:
 

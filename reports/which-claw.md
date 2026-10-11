@@ -113,7 +113,7 @@ Ignoring fit and weights entirely: a claw is **dominated** if another claw match
 
 ### Graph signal: centrality, clustering & the *real* network effect
 
-In the repo-similarity graph (1,138 nodes / 7,792 edges), the claws **don't form one cluster** — they scatter across **7 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
+In the repo-similarity graph (1,138 nodes / 7,792 edges), the claws **don't form one cluster** — they scatter across **8 of 25 communities**. There is no single 'claw' neighbourhood; these are genuinely different projects that happen to share a role.
 
 - **Centrality (PageRank).** Most hub-like claws: `hermes-agent` (0.0007), `openfang` (0.0006), `oh-my-openagent` (0.0006). Note PageRank tracks *similarity* connectivity, not quality — a claw is central when many neighbours resemble it.
 - **Closest claw pair:** `claw-code` ⇄ `oh-my-openagent` (w=0.50) — near-substitutes. The `zeroclaw` ⇄ `openclaw` edge confirms they compete for the same slot.

@@ -1,6 +1,6 @@
 # OpenClaw Ecosystem — What to Use Now
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
@@ -21,9 +21,9 @@ Opinionated picks — filtered for **healthy + actively maintained** (high healt
 | Secure runtime | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | 30,911 | 77 | Lightweight OpenClaw alternative that runs in containers for security; WhatsApp/Telegram/Slack connectors. |
 | Serverless host | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 9,948 | 22 | Run OpenClaw on Cloudflare Workers (serverless edge). |
 | Skills directory | [openclaw/clawhub](https://github.com/openclaw/clawhub) | 9,499 | 80 | The official skill directory for OpenClaw. |
-| LLM router | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,622 | 80 | Agent-native LLM router for OpenClaw — 41+ models, <1ms routing, on-chain payments. |
+| LLM router | [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,622 | 79 | Agent-native LLM router for OpenClaw — 41+ models, <1ms routing, on-chain payments. |
 | Memory | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 27,887 | 84 | Fully-local long-term memory (4-tier pipeline); ships as an OpenClaw plugin. |
-| Observability | [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | 426 | 80 | Real-time observability dashboard — 'see your agent think' (OpenTelemetry). |
+| Observability | [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | 426 | 79 | Real-time observability dashboard — 'see your agent think' (OpenTelemetry). |
 | Desktop hub | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | 142,363 | 77 | Cross-platform desktop hub for OpenClaw + Claude Code + Codex + Gemini CLI + Hermes. |
 
 **One-liner:** keep `openclaw/openclaw` as the core; run it via **nanoclaw** (security) or **moltworker** (serverless); add **clawhub** skills, **ClawRouter** routing, and **clawmetry** observability. Want a fresh start? **zeroclaw-labs/zeroclaw** is the highest-health alternative you've starred.
@@ -53,16 +53,16 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | Hosting / secure runtime | TypeScript | 9,948 | Declining | 22 | slowing | 5mo ago | 0 |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Skills / directory | TypeScript | 9,499 | Hot | 80 | very active | 2d ago | 1 |
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | Specialized agent | Python | 8,551 | Declining | 14 | stale | 7mo ago | 0 |
-| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Routing | TypeScript | 6,622 | Hot | 80 | very active | 6d ago | 1 |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Routing | TypeScript | 6,622 | Hot | 79 | very active | 6d ago | 1 |
 | [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Specialized agent | Python | 5,717 | Declining | 20 | slowing | 4mo ago | 0 |
 | [crshdn/mission-control](https://github.com/crshdn/mission-control) | Desktop / orchestration | TypeScript | 2,149 | Declining | 51 | active | 25d ago | 0 |
 | [pinchbench/skill](https://github.com/pinchbench/skill) | Observability | Python | 1,359 | Declining | 46 | slowing | 3mo ago | 0 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | Memory | TypeScript | 796 | Rising | 49 | active | 2d ago | 1 |
 | [SAIL-Research-Lab/cheetahclaws](https://github.com/SAIL-Research-Lab/cheetahclaws) | Specialized agent | Python | 784 | Rising | 66 | very active | 21d ago | 1 |
 | [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 724 | Rising | 64 | active | 6d ago | 1 |
-| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 616 | Rising | 68 | very active | 9d ago | 1 |
+| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 616 | Rising | 67 | very active | 9d ago | 1 |
 | [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | Skills / directory | Python | 561 | Declining | 21 | slowing | 4mo ago | 0 |
-| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 426 | Hot | 80 | very active | 3d ago | 1 |
+| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 426 | Hot | 79 | very active | 3d ago | 1 |
 
 ## By category
 
@@ -126,7 +126,7 @@ _Extend capabilities; find what others have built._
 
 _Send each request to the right/cheapest model._
 
-- **[BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,622★ · TypeScript · Hot · health 80  
+- **[BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,622★ · TypeScript · Hot · health 79  
   Agent-native LLM router for OpenClaw — 41+ models, <1ms routing, on-chain payments.  
   <sub>topics: ai, ai-agents, anthropic, cost-optimization, deepseek, gemini, llm, llm-router</sub>
 
@@ -154,7 +154,7 @@ _See, measure & benchmark what your agent is doing._
 - **[comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw)** · 724★ · TypeScript · Rising · health 64  
   Official plugin exporting OpenClaw agent traces (cost/tokens/errors) to Opik.  
   <sub>topics: clawdbot, evaluation, moltbot, observability, openclaw, testing, ai-agents, llm-observability</sub>
-- **[vivekchand/clawmetry](https://github.com/vivekchand/clawmetry)** · 426★ · Python · Hot · health 80  
+- **[vivekchand/clawmetry](https://github.com/vivekchand/clawmetry)** · 426★ · Python · Hot · health 79  
   Real-time observability dashboard — 'see your agent think' (OpenTelemetry).  
   <sub>topics: ai-agent, monitoring, observability, openclaw, opentelemetry, python, clawmetry, agent-monitoring</sub>
 
@@ -194,7 +194,7 @@ _Purpose-built agents on top of OpenClaw (research, tutoring, coding, browser…
 - **[SAIL-Research-Lab/cheetahclaws](https://github.com/SAIL-Research-Lab/cheetahclaws)** · 784★ · Python · Rising · health 66  
   Fast, production-ready Python-native personal assistant inspired by OpenClaw.  
   <sub>topics: agentic-ai, claude, claude-code, memory, python, skills, openclaw</sub>
-- **[hydro13/tandem-browser](https://github.com/hydro13/tandem-browser)** · 616★ · TypeScript · Rising · health 68  
+- **[hydro13/tandem-browser](https://github.com/hydro13/tandem-browser)** · 616★ · TypeScript · Rising · health 67  
   AI-human symbiotic browser with OpenClaw integration.  
   <sub>topics: ai, browser, chromium, electron, human-ai-collaboration, local-first, openclaw, typescript</sub>
 
@@ -219,15 +219,14 @@ Low health and/or not pushed recently — verify before wiring into anything you
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 29 projects span **12 of the graph's 46 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
+**Community clustering.** These 29 projects span **16 of the graph's 42 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
 
-- **Community 3** (5): `nearai/ironclaw`, `RightNow-AI/openfang`, `cloudflare/moltworker`, `vivekchand/clawmetry`, `farion1231/cc-switch`
-- **Community 8** (5): `NousResearch/hermes-agent`, `rohitg00/awesome-openclaw`, `iOfficeAI/AionUi`, `CherryHQ/cherry-studio`, `hydro13/tandem-browser`
-- **Community 0** (3): `openclaw/openclaw`, `openclaw/clawhub`, `garrytan/gbrain`
-- **Community 9** (3): `zeroclaw-labs/zeroclaw`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
+- **Community 3** (4): `nearai/ironclaw`, `RightNow-AI/openfang`, `vivekchand/clawmetry`, `farion1231/cc-switch`
+- **Community 8** (4): `NousResearch/hermes-agent`, `rohitg00/awesome-openclaw`, `iOfficeAI/AionUi`, `hydro13/tandem-browser`
 - **Community 31** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
-- **Community 11** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
-- **Community 5** (2): `crshdn/mission-control`, `SAIL-Research-Lab/cheetahclaws`
+- **Community 10** (3): `cloudflare/moltworker`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
+- **Community 12** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
+- **Community 34** (2): `openclaw/openclaw`, `openclaw/clawhub`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' OpenClaw projects in your ecosystem:
 

@@ -1,6 +1,6 @@
 # Local vs High-Infra AI Stack — A Deployment-Tier Comparison
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/local_vs_infra_stack.py` (regenerate any time — no API cost).
 
@@ -156,7 +156,7 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 | [LocalAI](https://github.com/mudler/LocalAI) | Inference runtime | Local | Go | MIT | 49,457 | Classic | 79 | very active | 1d ago | 12 |
 | [jan](https://github.com/janhq/jan) | Model gateway & UI | Local | Rust | NOASSERTION | 44,876 | Classic | 79 | very active | 1d ago | 5 |
 | [faiss](https://github.com/facebookresearch/faiss) | Vector store | Local | C++ | MIT | 41,124 | Classic | 99 | very active | 1d ago | 41 |
-| [llamafile](https://github.com/mozilla-ai/llamafile) | Inference runtime | Local | C++ | NOASSERTION | 26,216 | Classic | 67 | very active | 3d ago | 7 |
+| [llamafile](https://github.com/mozilla-ai/llamafile) | Inference runtime | Local | C++ | NOASSERTION | 26,216 | Classic | 67 | very active | 3d ago | 8 |
 | [promptfoo](https://github.com/promptfoo/promptfoo) | Observability & eval | Local | TypeScript | MIT | 25,869 | Classic | 79 | very active | 1d ago | 20 |
 | [zvec](https://github.com/alibaba/zvec) | Vector store | Local | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 2d ago | 17 |
 | [txtai](https://github.com/neuml/txtai) | Vector store | Local | Python | Apache-2.0 | 13,003 | Classic | 90 | very active | 1d ago | 31 |
@@ -185,23 +185,22 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 | [sglang](https://github.com/sgl-project/sglang) | Inference runtime | Infra | Python | Apache-2.0 | 36,962 | Mature | 99 | very active | 1d ago | 55 |
 | [weaviate](https://github.com/weaviate/weaviate) | Vector store | Infra | Go | NOASSERTION | 16,878 | Classic | 83 | very active | 2d ago | 7 |
 | [axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Fine-tuning | Infra | Python | Apache-2.0 | 12,551 | Classic | 79 | very active | 2d ago | 19 |
-| [skypilot](https://github.com/skypilot-org/skypilot) | Scaling / serving infra | Infra | Python | Apache-2.0 | 10,690 | Classic | 95 | very active | 2d ago | 21 |
+| [skypilot](https://github.com/skypilot-org/skypilot) | Scaling / serving infra | Infra | Python | Apache-2.0 | 10,690 | Classic | 94 | very active | 2d ago | 21 |
 | [lmdeploy](https://github.com/InternLM/lmdeploy) | Inference runtime | Infra | Python | Apache-2.0 | 8,103 | Classic | 92 | very active | 2d ago | 25 |
 | [llm-compressor](https://github.com/vllm-project/llm-compressor) | Scaling / serving infra | Infra | Python | Apache-2.0 | 3,863 | Mature | 84 | very active | 2d ago | 30 |
 
 ## Graph analysis — how the stack hangs together
 
-**Community clustering.** These 41 tools span **16 of the graph's 46 communities** — the stack cuts across the inference, RAG/vector, and agent neighborhoods rather than forming one cluster.
+**Community clustering.** These 41 tools span **18 of the graph's 42 communities** — the stack cuts across the inference, RAG/vector, and agent neighborhoods rather than forming one cluster.
 
-- **Community 15** (9): `ggml-org/llama.cpp`, `nomic-ai/gpt4all`, `StayLameBro/backburner`, `InternLM/lmdeploy`, `open-webui/open-webui`, `janhq/jan`, `marqo-ai/marqo`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`
-- **Community 11** (5): `BerriAI/litellm`, `Portkey-AI/gateway`, `langfuse/langfuse`, `Arize-ai/phoenix`, `promptfoo/promptfoo`
+- **Community 25** (9): `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `vllm-project/llm-compressor`, `open-webui/open-webui`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`
+- **Community 12** (5): `BerriAI/litellm`, `Portkey-AI/gateway`, `langfuse/langfuse`, `Arize-ai/phoenix`, `promptfoo/promptfoo`
 - **Community 28** (5): `lancedb/lancedb`, `pgvector/pgvector`, `qdrant/qdrant`, `weaviate/weaviate`, `milvus-io/milvus`
-- **Community 24** (4): `ollama/ollama`, `vllm-project/vllm`, `sgl-project/sglang`, `vllm-project/llm-compressor`
-- **Community 26** (3): `langchain-ai/langgraph`, `run-llama/llama_index`, `pydantic/pydantic-ai`
-- **Community 18** (2): `mozilla-ai/llamafile`, `facebookresearch/faiss`
-- **Community 25** (2): `huggingface/transformers`, `huggingface/peft`
-- **Community 14** (2): `Mintplex-Labs/anything-llm`, `neuml/txtai`
-- **Community 9** (2): `chroma-core/chroma`, `crewAIInc/crewAI`
+- **Community 16** (4): `ggml-org/llama.cpp`, `StayLameBro/backburner`, `janhq/jan`, `marqo-ai/marqo`
+- **Community 13** (2): `mozilla-ai/llamafile`, `facebookresearch/faiss`
+- **Community 26** (2): `huggingface/transformers`, `huggingface/peft`
+- **Community 10** (2): `chroma-core/chroma`, `crewAIInc/crewAI`
+- **Community 9** (2): `langchain-ai/langgraph`, `pydantic/pydantic-ai`
 
 **Centrality (PageRank in the full 2,346-repo graph)** — the 'hub' tools your other stars cluster around:
 
@@ -249,11 +248,11 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 | milvus | Infra | 99 | Classic | very active | 8 | 10% | 176 |
 | llama_index | Both | 98 | Classic | very active | 12 | 14% | 497 |
 | redis | Both | 97 | Classic | very active | 7 | 18% | 155 |
-| skypilot | Infra | 95 | Classic | very active | 4 | 18% | 45 |
+| skypilot | Infra | 94 | Classic | very active | 4 | 18% | 45 |
 | peft | Both | 94 | Classic | very active | 4 | 23% | 36 |
 | langfuse | Both | 94 | Classic | very active | 4 | 24% | 711 |
 | zvec | Local | 93 | Hot | very active | 4 | 17% | 11 |
-| lmdeploy | Infra | 92 | Classic | very active | 4 | 24% | 71 |
+| lmdeploy | Infra | 92 | Classic | very active | 4 | 23% | 71 |
 | lancedb | Local | 92 | Classic | very active | 4 | 33% | 522 |
 | txtai | Local | 90 | Classic | very active | 3 | 37% | 68 |
 | crewAI | Both | 89 | Mature | very active | 3 | 28% | 241 |

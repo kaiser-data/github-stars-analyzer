@@ -1,6 +1,6 @@
 # Agent Harnesses — Six Approaches to Running Autonomous Agents
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
 
@@ -49,11 +49,11 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman) | Harness-as-SDK | Rust | GPL-3.0 | 41,775 | Rising | 79 | very active | 1d ago | 7mo | 1 |
 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Meta-harness over coding agents | TypeScript | MIT | 39,763 | Hot | 80 | very active | 3d ago | 9mo | 6 |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | Harness-as-SDK | Python | MIT | 30,103 | Hot | 84 | very active | 1d ago | 1.2y | 9 |
-| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | Rust | MIT | 29,257 | Hot | 81 | very active | 1d ago | 1.7y | 11 |
+| [trycua/cua](https://github.com/trycua/cua) | Sandbox substrate | Rust | MIT | 29,257 | Hot | 75 | very active | 1d ago | 1.7y | 11 |
 | [BloopAI/vibe-kanban](https://github.com/BloopAI/vibe-kanban) | Fleet / parallel orchestration | Rust | Apache-2.0 | 28,317 | Mature | 61 | active | 22d ago | 1.3y | 4 |
 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | Determinism & spec-driven | Python | MIT | 27,373 | Hot | 80 | very active | 1d ago | 9mo | 10 |
 | [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | Determinism & spec-driven | TypeScript | MIT | 24,855 | Declining | 38 | active | 1mo ago | 1.1y | 2 |
-| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 23,657 | Hot | 79 | very active | 1d ago | 1.7y | 3 |
+| [coleam00/Archon](https://github.com/coleam00/Archon) | Meta-harness over coding agents | TypeScript | MIT | 23,657 | Hot | 78 | very active | 1d ago | 1.7y | 3 |
 | [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Sandbox substrate | TypeScript | Apache-2.0 | 22,698 | Hot | 76 | very active | 1d ago | 7mo | 17 |
 | [1jehuang/jcode](https://github.com/1jehuang/jcode) | Harness-as-SDK | Rust | MIT | 20,378 | Hot | 76 | very active | 1d ago | 9mo | 9 |
 | [agent0ai/agent-zero](https://github.com/agent0ai/agent-zero) | Autonomous long-horizon | Python | NOASSERTION | 19,411 | Mature | 79 | very active | 1d ago | 2.3y | 3 |
@@ -64,7 +64,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [AndyMik90/Aperant](https://github.com/AndyMik90/Aperant) | Fleet / parallel orchestration | TypeScript | AGPL-3.0 | 14,578 | Declining | 45 | slowing | 3mo ago | 10mo | 0 |
 | [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | Fleet / parallel orchestration | Go | Apache-2.0 | 13,034 | Hot | 88 | very active | 1d ago | 8mo | 21 |
 | [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering) | Determinism & spec-driven | TypeScript | MIT | 11,462 | Hot | 68 | very active | 1d ago | 4mo | 8 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 8,753 | Hot | 92 | very active | 2d ago | 1.4y | 39 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | Harness-as-SDK | Python | Apache-2.0 | 8,753 | Hot | 96 | very active | 2d ago | 1.4y | 39 |
 | [HarnessMD/munder-difflin](https://github.com/HarnessMD/munder-difflin) | Meta-harness over coding agents | TypeScript | MIT | 8,633 | Rising | 75 | very active | 1d ago | 4mo | 2 |
 | [automazeio/ccpm](https://github.com/automazeio/ccpm) | Fleet / parallel orchestration | Shell | MIT | 8,407 | Declining | 23 | stale | 6mo ago | 1.1y | 0 |
 | [vercel/eve](https://github.com/vercel/eve) | Harness-as-SDK | TypeScript | Apache-2.0 | 5,513 | Hot | 86 | very active | 1d ago | 3mo | 17 |
@@ -241,18 +241,17 @@ _Maximum autonomy: agents that run for hours or days, planning and re-planning, 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 42 tools span **19 of the graph's 46 communities**.
+**Community clustering.** These 42 tools span **18 of the graph's 42 communities**.
 
 - **Community 8** (7): `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `HarnessMD/munder-difflin`, `multica-ai/multica`, `automazeio/ccpm`, `OrchestratorInc/agent-orchestrator`, `stakpak/agent`
+- **Community 10** (6): `obra/superpowers`, `BloopAI/vibe-kanban`, `gastownhall/gastown`, `dagger/container-use`, `e2b-dev/runtime`, `opensandbox-group/OpenSandbox`
 - **Community 3** (5): `tinyhumansai/openhuman`, `tinyhumansai/tinyagents`, `affaan-m/ECC`, `OthmanAdi/planning-with-files`, `cobusgreyling/loop-engineering`
-- **Community 9** (4): `BloopAI/vibe-kanban`, `gastownhall/gastown`, `dagger/container-use`, `opensandbox-group/OpenSandbox`
-- **Community 26** (3): `langchain-ai/deepagents`, `pydantic/pydantic-ai-harness`, `bytedance/deer-flow`
-- **Community 20** (3): `1jehuang/jcode`, `yologdev/yoagent`, `coleam00/Archon`
-- **Community 0** (3): `AndyMik90/Aperant`, `agentsmd/agents.md`, `agent0ai/agent-zero`
+- **Community 9** (3): `langchain-ai/deepagents`, `pydantic/pydantic-ai-harness`, `bytedance/deer-flow`
+- **Community 15** (3): `strands-agents/harness-sdk`, `SAIL-Research-Lab/cheetahclaws`, `strands-agents/shell`
+- **Community 21** (3): `1jehuang/jcode`, `yologdev/yoagent`, `coleam00/Archon`
 - **Community 4** (2): `earendil-works/pi`, `truffle-ai/dexto`
-- **Community 16** (2): `strands-agents/harness-sdk`, `strands-agents/shell`
-- **Community 5** (2): `SAIL-Research-Lab/cheetahclaws`, `ruvnet/ruflo`
-- **Community 12** (2): `NVIDIA/NemoClaw`, `NVIDIA/OpenShell`
+- **Community 0** (2): `AndyMik90/Aperant`, `agentsmd/agents.md`
+- **Community 13** (2): `NVIDIA/NemoClaw`, `NVIDIA/OpenShell`
 
 **Centrality (PageRank in the full 2,346-repo graph)** — most 'hub-like' harnesses in your ecosystem:
 
@@ -288,8 +287,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
 | NVIDIA/OpenShell | 97 | Hot | very active | 6 | 12% | 100 |
+| strands-agents/harness-sdk | 96 | Hot | very active | 5 | 22% | 118 |
 | e2b-dev/runtime | 96 | Classic | very active | 7 | 12% | 52 |
-| strands-agents/harness-sdk | 92 | Hot | very active | 5 | 22% | 118 |
 | OrchestratorInc/agent-orchestrator | 88 | Hot | very active | 3 | 23% | 263 |
 | bytedance/deer-flow | 87 | Hot | very active | 9 | 11% | 2 |
 | vercel/eve | 86 | Hot | very active | 3 | 18% | 255 |
@@ -299,7 +298,6 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 | github/spec-kit | 84 | Hot | very active | 2 | 33% | 231 |
 | opensandbox-group/OpenSandbox | 84 | Hot | very active | 2 | 46% | 180 |
 | ruvnet/ruflo | 81 | Hot | very active | 2 | 44% | 1673 |
-| trycua/cua | 81 | Hot | very active | 1 | 61% | 764 |
 | Yeachan-Heo/oh-my-claudecode | 80 | Hot | very active | 1 | 52% | 255 |
 | OthmanAdi/planning-with-files | 80 | Hot | very active | 1 | 68% | 117 |
 | pydantic/pydantic-ai-harness | 79 | Hot | very active | 1 | 54% | 42 |
@@ -307,13 +305,14 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 | yologdev/yoagent | 79 | Rising | very active | 1 | 100% | 55 |
 | truffle-ai/dexto | 79 | Hot | very active | 2 | 46% | 1598 |
 | affaan-m/ECC | 79 | Hot | very active | 1 | 59% | 19 |
-| coleam00/Archon | 79 | Hot | very active | 1 | 96% | 24 |
 | agent0ai/agent-zero | 79 | Mature | very active | 1 | 78% | 75 |
-| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 82% | 337 |
+| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 98% | 337 |
+| coleam00/Archon | 78 | Hot | very active | 1 | 96% | 24 |
 | deeplethe/forkd | 77 | Hot | very active | 1 | 66% | 24 |
 | 1jehuang/jcode | 76 | Hot | very active | 1 | 87% | 190 |
 | NVIDIA/NemoClaw | 76 | Hot | very active | 3 | 37% | 1 |
 | HarnessMD/munder-difflin | 75 | Rising | very active | 1 | 99% | 42 |
+| trycua/cua | 75 | Hot | very active | 1 | 61% | 764 |
 | obra/superpowers | 74 | Hot | very active | 1 | 91% | 15 |
 | gastownhall/gastown | 71 | Hot | very active | 1 | 57% | 14 |
 | strands-agents/shell | 69 | Hot | very active | 1 | 70% | 7 |

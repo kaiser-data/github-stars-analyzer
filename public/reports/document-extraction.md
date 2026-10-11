@@ -1,6 +1,6 @@
 # Document Extraction Frameworks — Landscape & Task Rankings
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
 
@@ -42,7 +42,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | Conversion framework | Python | MIT | 189,353 | Hot | 94 | very active | 7d ago | 1.9y | 49 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | OCR / layout model | Python | Apache-2.0 | 90,885 | Mature | 62 | active | 25d ago | 6.4y | 2 |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Conversion framework | Python | NOASSERTION | 81,407 | Mature | 80 | very active | 3d ago | 2.6y | 2 |
-| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 76,891 | Classic | 65 | very active | 1d ago | 12.2y | 13 |
+| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 76,891 | Classic | 65 | very active | 1d ago | 12.2y | 14 |
 | [docling-project/docling](https://github.com/docling-project/docling) | Conversion framework | Python | MIT | 68,634 | Mature | 96 | very active | 1d ago | 2.3y | 43 |
 | [datalab-to/marker](https://github.com/datalab-to/marker) | Conversion framework | Python | Apache-2.0 | 40,352 | Mature | 55 | very active | 9d ago | 3.0y | 2 |
 | [google/langextract](https://github.com/google/langextract) | Structured field extraction | Python | Apache-2.0 | 38,934 | Mature | 68 | very active | 2d ago | 1.3y | 5 |
@@ -59,7 +59,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [deepseek-ai/DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | VLM document parser | Python | Apache-2.0 | 3,461 | Declining | 10 | stale | 8mo ago | 8mo | 0 |
 | [opendatalab/DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) | OCR / layout model | Python | AGPL-3.0 | 2,291 | Abandoned | 7 | stale | 1.5y ago | 2.0y | 0 |
 | [run-llama/semtools](https://github.com/run-llama/semtools) | Conversion framework | Rust | MIT | 1,873 | Declining | 31 | stale | 7mo ago | 1.1y | 0 |
-| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,034 | Hot | 74 | very active | 9d ago | 1.1y | 6 |
+| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,034 | Hot | 74 | very active | 9d ago | 1.1y | 5 |
 | [adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api) | Format-specific / serving | Python | GPL-3.0 | 984 | Abandoned | 2 | stale | 2.0y ago | 2.4y | 0 |
 | [567-labs/instructor-js](https://github.com/567-labs/instructor-js) | Structured field extraction | TypeScript | MIT | 802 | Abandoned | 7 | stale | 1.7y ago | 2.8y | 0 |
 | [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 769 | Hot | 70 | very active | 5d ago | 1.6y | 6 |
@@ -199,15 +199,14 @@ Two years ago document extraction meant a *pipeline of specialist models* (layou
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 26 tools span **11 of the graph's 46 communities**.
+**Community clustering.** These 26 tools span **11 of the graph's 42 communities**.
 
-- **Community 26** (5): `run-llama/semtools`, `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`, `adithya-s-k/marker-api`
+- **Community 27** (5): `run-llama/semtools`, `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`, `adithya-s-k/marker-api`
 - **Community 2** (5): `allenai/olmocr`, `studio-dots-ai/dots.ocr`, `Yuliang-Liu/MonkeyOCR`, `python-openxml/python-docx`, `JoshData/pdf-redactor`
 - **Community 19** (3): `microsoft/markitdown`, `xberg-io/xberg`, `tesseract-ocr/tesseract`
 - **Community 4** (3): `opendatalab/MinerU`, `datalab-to/marker`, `opendatalab/DocLayout-YOLO`
-- **Community 22** (2): `docling-project/docling`, `docling-project/docling-mcp`
-- **Community 18** (2): `Unstructured-IO/unstructured`, `facebookresearch/nougat`
-- **Community 37** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
+- **Community 22** (3): `docling-project/docling`, `Unstructured-IO/unstructured`, `docling-project/docling-mcp`
+- **Community 23** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
 
 **Centrality (PageRank in the full 2,346-repo graph)** — most 'hub-like' extraction tools in your ecosystem:
 

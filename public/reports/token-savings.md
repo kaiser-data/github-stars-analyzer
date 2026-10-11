@@ -1,6 +1,6 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
@@ -187,7 +187,7 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **10 of the graph's 46 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **10 of the graph's 42 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
 - **Community 4** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
 - **Community 8** (2): `rtk-ai/rtk`, `getagentseal/codeburn`

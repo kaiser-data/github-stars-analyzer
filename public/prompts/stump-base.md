@@ -9,7 +9,7 @@ A stump base is the textbook case for the implicit/SDF route: the form is organi
 | Stage | Tool | Stars | Health | Lifecycle |
 |---|---|---|---|---|
 | Author | [`fogleman/sdf`](https://github.com/fogleman/sdf) | 2,011 | 33 | Mature |
-| See | [`f3d-app/f3d`](https://github.com/f3d-app/f3d) | 4,749 | 83 | Classic |
+| See | [`f3d-app/f3d`](https://github.com/f3d-app/f3d) | 4,749 | 82 | Classic |
 | Validate | [`mikedh/trimesh`](https://github.com/mikedh/trimesh) | 3,694 | 74 | Classic |
 | Slice | [`OrcaSlicer/OrcaSlicer`](https://github.com/OrcaSlicer/OrcaSlicer) | 15,910 | 92 | Classic |
 

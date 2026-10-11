@@ -1,6 +1,6 @@
 # LLM-Driven 3D Modelling for 3D Printing — Landscape Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 46 communities).
+> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
 
@@ -58,7 +58,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [wjakob/instant-meshes](https://github.com/wjakob/instant-meshes) | Mesh validation & repair | C++ | NOASSERTION | 6,244 | Abandoned | 4 | stale | 4.8y ago | 11.1y | 0 |
 | [CadQuery/cadquery](https://github.com/CadQuery/cadquery) | Code-CAD authoring | Python | NOASSERTION | 5,910 | Classic | 58 | active | 2d ago | 8.0y | 5 |
 | [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,859 | Mature | 41 | active | 1mo ago | 9.9y | 1 |
-| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 | Classic | 83 | very active | 1d ago | 6.7y | 16 |
+| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 | Classic | 82 | very active | 1d ago | 6.7y | 16 |
 | [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh) | Generative 3D (image→mesh) | Python | Apache-2.0 | 4,555 | Abandoned | 4 | stale | 1.8y ago | 2.5y | 0 |
 | [mikedh/trimesh](https://github.com/mikedh/trimesh) | Mesh validation & repair | Python | MIT | 3,694 | Classic | 74 | very active | 9d ago | 13.2y | 15 |
 | [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,360 | Classic | 72 | very active | 2d ago | 4.3y | 7 |
@@ -264,16 +264,15 @@ No repair layer, because the class of defect cannot occur. The trade is that for
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **12 of the graph's 46 communities**.
+**Community clustering.** These 33 tools span **10 of the graph's 42 communities**.
 
-- **Community 1** (13): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `OrcaSlicer/OrcaSlicer`
+- **Community 1** (15): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `TencentARC/Pixal3D`, `TencentARC/InstantMesh`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `OrcaSlicer/OrcaSlicer`
 - **Community 19** (3): `KittyCAD/modeling-app`, `microsoft/TRELLIS.2`, `Ultimaker/CuraEngine`
-- **Community 23** (3): `isl-org/Open3D`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
+- **Community 2** (3): `Tencent-Hunyuan/Hunyuan3D-2`, `ahujasid/mcp-for-blender`, `meshy-dev/meshy-3d-agent`
+- **Community 24** (3): `isl-org/Open3D`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
 - **Community 4** (2): `BelfrySCAD/BOSL2`, `img2threejs/img2threejs`
-- **Community 2** (2): `Tencent-Hunyuan/Hunyuan3D-2`, `meshy-dev/meshy-3d-agent`
-- **Community 36** (2): `TencentARC/Pixal3D`, `TencentARC/InstantMesh`
+- **Community 13** (2): `NVIDIA/warp`, `Comfy-Org/ComfyUI`
 - **Community 22** (2): `elalish/manifold`, `pyvista/pymeshfix`
-- **Community 9** (2): `ahujasid/mcp-for-blender`, `neka-nat/freecad-mcp`
 
 **Centrality (PageRank in the full graph)** — the most hub-like tools of this set:
 
@@ -334,7 +333,7 @@ Bus factor = commit concentration (1 = single-maintainer risk).
 | prusa3d/PrusaSlicer | 88 | Classic | very active | 3 | 19% | 186 |
 | Comfy-Org/ComfyUI | 85 | Classic | very active | 3 | 25% | 159 |
 | elalish/manifold | 85 | Classic | very active | 3 | 25% | 27 |
-| f3d-app/f3d | 83 | Classic | very active | 2 | 44% | 70 |
+| f3d-app/f3d | 82 | Classic | very active | 2 | 44% | 70 |
 | BelfrySCAD/BOSL2 | 79 | Classic | very active | 1 | 55% | 24 |
 | NVIDIA/warp | 78 | Classic | very active | 1 | 66% | 55 |
 | mikedh/trimesh | 74 | Classic | very active | 1 | 71% | 494 |
@@ -347,7 +346,7 @@ Bus factor = commit concentration (1 = single-maintainer risk).
 | neka-nat/freecad-mcp | 60 | Mature | very active | 1 | 73% | 0 |
 | CadQuery/cadquery | 58 | Classic | active | 1 | 63% | 18 |
 | meshy-dev/meshy-3d-agent | 58 | Rising | active | 2 | 38% | 3 |
-| pyvista/pymeshfix | 56 | Mature | active | 1 | 60% | 9 |
+| pyvista/pymeshfix | 56 | Mature | active | 1 | 50% | 9 |
 | nophead/NopSCADlib | 45 | Mature | active | 1 | 100% | 0 |
 | cnr-isti-vclab/meshlab | 41 | Mature | active | 1 | 100% | 27 |
 | 3MFConsortium/lib3mf | 41 | Mature | active | 0 | 0% | 20 |
