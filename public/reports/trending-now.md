@@ -14,7 +14,7 @@
 - **This is the only report here that measures *change* rather than describing a landscape.** Every other report curates a taxonomy and renders it against the current vintage; this one diffs archived snapshots to show what actually moved.
 - **Window**: `2026-09-29` → `2026-10-11` (**12 days**), covering the **2,245 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-10-11` (**122 days**).
   - The immediately preceding snapshot (`2026-10-10`) is only 1 day before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
-- **1,798 repos gained stars** in the recent window, adding **559,481★** between them.
+- **1,804 repos gained stars** in the recent window, adding **559,488★** between them.
 - **101 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
@@ -94,7 +94,7 @@ Averaged over the full snapshot history, so a single viral week doesn't dominate
 | 4 | [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | **480.2** | +58,589 | 190,116 | TypeScript | 84 |
 | 5 | [earendil-works/pi](https://github.com/earendil-works/pi) | **428.4** | +52,262 | 114,040 | TypeScript | 85 |
 | 6 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | **386.9** | +47,206 | 158,659 | Shell | 61 |
-| 7 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **379.6** | +46,310 | 487,171 | Python | 64 |
+| 7 | [public-apis/public-apis](https://github.com/public-apis/public-apis) | **379.6** | +46,310 | 487,171 | Python | 65 |
 | 8 | [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | **364.5** | +44,468 | 217,948 | — | 20 |
 | 9 | [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | **360.4** | +43,973 | 134,411 | Python | 95 |
 | 10 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | **359.7** | +43,884 | 142,363 | Rust | 77 |
@@ -105,7 +105,7 @@ Averaged over the full snapshot history, so a single viral week doesn't dominate
 | 15 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | **322.6** | +39,362 | 110,877 | Go | 79 |
 | 16 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | **322.1** | +39,297 | 212,497 | TypeScript | 88 |
 | 17 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | **313.2** | +38,210 | 189,353 | Python | 94 |
-| 18 | [openai/codex](https://github.com/openai/codex) | **312.0** | +38,058 | 128,516 | Rust | 93 |
+| 18 | [openai/codex](https://github.com/openai/codex) | **312.0** | +38,058 | 128,516 | Rust | 84 |
 | 19 | [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) | **310.8** | +37,920 | 552,349 | Markdown | 37 |
 | 20 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | **302.4** | +36,897 | 100,351 | TypeScript | 87 |
 
@@ -333,9 +333,9 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 2.9 | -0.3 | **-12%** of prior pace | 7mo ago | Declining |
 | [Mega4alik/ollm](https://github.com/Mega4alik/ollm) | 1.1 | -0.1 | **-8%** of prior pace | 2mo ago | Declining |
 | [Avaiga/taipy](https://github.com/Avaiga/taipy) | 1.6 | -0.1 | **-5%** of prior pace | 2mo ago | Mature |
+| [meta-llama/prompt-ops](https://github.com/meta-llama/prompt-ops) | 1.8 | -0.1 | **-5%** of prior pace | 5mo ago | Declining |
 | [OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) | 28.1 | -0.2 | **-1%** of prior pace | 13d ago | Mature |
 | [OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification) | 1.8 | 0.0 | **0%** of prior pace | 2d ago | Classic |
-| [meta-llama/prompt-ops](https://github.com/meta-llama/prompt-ops) | 1.8 | 0.0 | **0%** of prior pace | 5mo ago | Declining |
 | [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | 5.3 | 0.1 | **2%** of prior pace | 14d ago | Declining |
 | [hexo-ai/sia](https://github.com/hexo-ai/sia) | 7.7 | 0.2 | **3%** of prior pace | 1mo ago | Mature |
 | [andrewyng/aisuite](https://github.com/andrewyng/aisuite) | 20.6 | 1.4 | **7%** of prior pace | 23d ago | Mature |
@@ -378,7 +378,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 ## Methodology & caveats
 
 - **Source**: `data/snapshots/*.json` diffed against `data/classified.json` + `public/data/graph.json`. No external calls; fully reproducible.
-- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31, 2026-09-06, 2026-09-07, 2026-09-12, 2026-09-14, 2026-09-21, 2026-09-25, 2026-09-28, 2026-09-29, 2026-10-10, 2026-10-11 (20 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
+- **Snapshots available**: 2026-06-11, 2026-07-13, 2026-07-19, 2026-07-20, 2026-07-27, 2026-08-07, 2026-08-11, 2026-08-28, 2026-08-29, 2026-08-31, 2026-09-06, 2026-09-07, 2026-09-12, 2026-09-14, 2026-09-21, 2026-09-25, 2026-09-28, 2026-09-29, 2026-10-05, 2026-10-10, 2026-10-11 (21 vintages). `build_index.py` archives one per refresh, keyed by the dataset's `generatedAt` date.
 - **Windows are uneven.** Snapshots are taken when the data is refreshed, not on a fixed cadence — consecutive vintages here range from 1 day to several weeks apart. The recent window therefore does not always use the immediately preceding snapshot: it uses the newest one at least 7 days back, because a 1-day window amplifies noise far more than it reveals movement. Per-day normalization keeps the boards comparable across refreshes either way.
 - **Star counts are a popularity signal, not a quality one.** A launch post, a conference talk, or a newsletter mention moves stars without anything changing in the code.
 - **Only repos present in both snapshots are diffed.** Newly starred repos appear under *New entrants* with no growth figure; unstarred repos silently drop out.

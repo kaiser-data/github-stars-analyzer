@@ -58,7 +58,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [wjakob/instant-meshes](https://github.com/wjakob/instant-meshes) | Mesh validation & repair | C++ | NOASSERTION | 6,244 | Abandoned | 4 | stale | 4.8y ago | 11.1y | 0 |
 | [CadQuery/cadquery](https://github.com/CadQuery/cadquery) | Code-CAD authoring | Python | NOASSERTION | 5,910 | Classic | 58 | active | 2d ago | 8.0y | 5 |
 | [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) | Mesh validation & repair | C++ | GPL-3.0 | 5,859 | Mature | 41 | active | 1mo ago | 9.9y | 1 |
-| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 | Classic | 82 | very active | 1d ago | 6.7y | 16 |
+| [f3d-app/f3d](https://github.com/f3d-app/f3d) | Agent bridge / viewer | C++ | BSD-3-Clause | 4,749 | Classic | 83 | very active | 1d ago | 6.7y | 16 |
 | [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh) | Generative 3D (image→mesh) | Python | Apache-2.0 | 4,555 | Abandoned | 4 | stale | 1.8y ago | 2.5y | 0 |
 | [mikedh/trimesh](https://github.com/mikedh/trimesh) | Mesh validation & repair | Python | MIT | 3,694 | Classic | 74 | very active | 9d ago | 13.2y | 15 |
 | [gumyr/build123d](https://github.com/gumyr/build123d) | Code-CAD authoring | Python | Apache-2.0 | 3,360 | Classic | 72 | very active | 2d ago | 4.3y | 7 |
@@ -334,7 +334,7 @@ Bus factor = commit concentration (1 = single-maintainer risk).
 | prusa3d/PrusaSlicer | 88 | Classic | very active | 3 | 19% | 186 |
 | Comfy-Org/ComfyUI | 85 | Classic | very active | 3 | 25% | 159 |
 | elalish/manifold | 85 | Classic | very active | 3 | 25% | 27 |
-| f3d-app/f3d | 82 | Classic | very active | 2 | 44% | 70 |
+| f3d-app/f3d | 83 | Classic | very active | 2 | 44% | 70 |
 | BelfrySCAD/BOSL2 | 79 | Classic | very active | 1 | 55% | 24 |
 | NVIDIA/warp | 78 | Classic | very active | 1 | 66% | 55 |
 | mikedh/trimesh | 74 | Classic | very active | 1 | 71% | 494 |
@@ -347,7 +347,7 @@ Bus factor = commit concentration (1 = single-maintainer risk).
 | neka-nat/freecad-mcp | 60 | Mature | very active | 1 | 73% | 0 |
 | CadQuery/cadquery | 58 | Classic | active | 1 | 63% | 18 |
 | meshy-dev/meshy-3d-agent | 58 | Rising | active | 2 | 38% | 3 |
-| pyvista/pymeshfix | 56 | Mature | active | 1 | 50% | 9 |
+| pyvista/pymeshfix | 56 | Mature | active | 1 | 60% | 9 |
 | nophead/NopSCADlib | 45 | Mature | active | 1 | 100% | 0 |
 | cnr-isti-vclab/meshlab | 41 | Mature | active | 1 | 100% | 27 |
 | 3MFConsortium/lib3mf | 41 | Mature | active | 0 | 0% | 20 |

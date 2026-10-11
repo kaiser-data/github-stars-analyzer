@@ -16,7 +16,7 @@
 - **38 agent-orchestration tools** in your stars (**1,600,990★**), organized by *how you express coordination*:
   - **Code-first agent frameworks** (17): `MetaGPT`, `autogen`, `crewAI`, `langgraph`, `agno`, `dspy`, `agentscope`, `openai-agents-python`, `smolagents`, `semantic-kernel`, `adk-python`, `camel`, `agent-framework`, `voltagent`, `harness-sdk`, `beeai-framework`, `AutoAgents`
   - **Visual / low-code platforms** (4): `n8n`, `dify`, `langflow`, `sim`
-  - **Coding-agent orchestration** (8): `deer-flow`, `ruflo`, `oh-my-openagent`, `agents`, `oh-my-claudecode`, `paseo`, `eigent`, `coding-agent-template`
+  - **Coding-agent orchestration** (9): `deer-flow`, `ruflo`, `oh-my-openagent`, `agents`, `oh-my-claudecode`, `paseo`, `eigent`, `agent-orchestrator`, `coding-agent-template`
   - **Agent OS / long-horizon harness** (1): `eliza`
   - **Durable / production infra** (2): `flyte`, `agent-kit`
   - **Vertical / domain systems** (2): `TradingAgents`, `gpt-researcher`
@@ -52,11 +52,11 @@
 | [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 29,951 | Python | 80 | very active | Hot | 1 |
 | [huggingface/smolagents](https://github.com/huggingface/smolagents) | 29,767 | Python | 60 | active | Mature | 2 |
 | [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28,639 | C# | 81 | very active | Classic | 2 |
-| [google/adk-python](https://github.com/google/adk-python) | 21,767 | Python | 89 | very active | Hot | 3 |
+| [google/adk-python](https://github.com/google/adk-python) | 21,767 | Python | 99 | very active | Hot | 3 |
 | [camel-ai/camel](https://github.com/camel-ai/camel) | 17,850 | Python | 83 | very active | Classic | 3 |
-| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 14,046 | Python | 98 | very active | Hot | 6 |
+| [microsoft/agent-framework](https://github.com/microsoft/agent-framework) | 14,046 | Python | 93 | very active | Hot | 6 |
 | [VoltAgent/voltagent](https://github.com/VoltAgent/voltagent) | 10,764 | TypeScript | 72 | active | Mature | 2 |
-| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,753 | Python | 96 | very active | Hot | 5 |
+| [strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk) | 8,753 | Python | 92 | very active | Hot | 5 |
 | [i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework) | 3,429 | Python | 98 | very active | Mature | 6 |
 | [liquidos-ai/AutoAgents](https://github.com/liquidos-ai/AutoAgents) | 761 | Rust | 59 | active | Mature | 1 |
 
@@ -147,19 +147,19 @@ _SDKs you write agents in — maximum control over routing, state and hand-offs;
 - **[microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)** · 28,639★ · C# · Classic · health 81  
   Microsoft's enterprise SDK (C#/Python) for plugging LLMs + planning into apps.  
   <sub>topics: ai, artificial-intelligence, llm, openai, sdk</sub>
-- **[google/adk-python](https://github.com/google/adk-python)** · 21,767★ · Python · Hot · health 89  
+- **[google/adk-python](https://github.com/google/adk-python)** · 21,767★ · Python · Hot · health 99  
   Google's code-first Agent Development Kit — build, evaluate & deploy agents.  
   <sub>topics: agent, agents, agents-sdk, ai, ai-agents, multi-agent-systems</sub>
 - **[camel-ai/camel](https://github.com/camel-ai/camel)** · 17,850★ · Python · Classic · health 83  
   Large multi-agent 'society' framework for studying agent cooperation at scale.  
   <sub>topics: ai-societies, artificial-intelligence, deep-learning, large-language-models, multi-agent-systems, natural-language-processing</sub>
-- **[microsoft/agent-framework](https://github.com/microsoft/agent-framework)** · 14,046★ · Python · Hot · health 98  
+- **[microsoft/agent-framework](https://github.com/microsoft/agent-framework)** · 14,046★ · Python · Hot · health 93  
   Microsoft's framework to build, orchestrate & deploy multi-agent workflows (health 92).  
   <sub>topics: agent-framework, agentic-ai, agents, ai, multi-agent, orchestration</sub>
 - **[VoltAgent/voltagent](https://github.com/VoltAgent/voltagent)** · 10,764★ · TypeScript · Mature · health 72  
   TypeScript agent-engineering platform + open-source framework.  
   <sub>topics: agents, ai, chatbots, llm, mcp, nodejs</sub>
-- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 8,753★ · Python · Hot · health 96  
+- **[strands-agents/harness-sdk](https://github.com/strands-agents/harness-sdk)** · 8,753★ · Python · Hot · health 92  
   Model-driven agents in a few lines; very high health (96) and bus factor 7.  
   <sub>topics: agentic, agentic-ai, agents, ai, autonomous-agents, llm</sub>
 - **[i-am-bee/beeai-framework](https://github.com/i-am-bee/beeai-framework)** · 3,429★ · Python · Mature · health 98  
@@ -312,12 +312,12 @@ Bus factor = commit concentration (1 = single-maintainer risk). Orchestration is
 | Tool | Approach | Health | Lifecycle | Activity | Bus factor |
 |---|---|---|---|---|---|
 | n8n-io/n8n | Visual / low-code platforms | 100 | Classic | very active | 9 |
-| microsoft/agent-framework | Code-first agent frameworks | 98 | Hot | very active | 6 |
+| google/adk-python | Code-first agent frameworks | 99 | Hot | very active | 3 |
 | i-am-bee/beeai-framework | Code-first agent frameworks | 98 | Mature | very active | 6 |
 | agentscope-ai/agentscope | Code-first agent frameworks | 97 | Mature | very active | 9 |
 | agno-agi/agno | Code-first agent frameworks | 97 | Classic | very active | 6 |
-| strands-agents/harness-sdk | Code-first agent frameworks | 96 | Hot | very active | 5 |
-| google/adk-python | Code-first agent frameworks | 89 | Hot | very active | 3 |
+| microsoft/agent-framework | Code-first agent frameworks | 93 | Hot | very active | 6 |
+| strands-agents/harness-sdk | Code-first agent frameworks | 92 | Hot | very active | 5 |
 | crewAIInc/crewAI | Code-first agent frameworks | 89 | Mature | very active | 3 |
 | OrchestratorInc/agent-orchestrator | Coding-agent orchestration | 88 | Hot | very active | 3 |
 | bytedance/deer-flow | Coding-agent orchestration | 87 | Hot | very active | 9 |

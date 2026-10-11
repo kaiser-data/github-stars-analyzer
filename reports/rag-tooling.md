@@ -65,7 +65,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [marqo-ai/marqo](https://github.com/marqo-ai/marqo) | Vector DB / search | Python | Apache-2.0 | 5,028 | Mature | 46 | active | 1mo ago | 4.2y | 0 |
 | [feyninc/chonkie](https://github.com/feyninc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,787 | Mature | 67 | active | 8d ago | 1.5y | 4 |
 | [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,223 | Mature | 25 | slowing | 4mo ago | 2.5y | 0 |
-| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 3,375 | Mature | 81 | very active | 1d ago | 2.9y | 8 |
+| [superlinked/sie](https://github.com/superlinked/sie) | Embeddings / rerankers | Python | Apache-2.0 | 3,375 | Mature | 74 | very active | 1d ago | 2.9y | 8 |
 | [illuin-tech/colpali](https://github.com/illuin-tech/colpali) | Embeddings / rerankers | Python | MIT | 2,828 | Mature | 62 | active | 20d ago | 2.3y | 3 |
 | [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | RAG framework / engine | Python | Apache-2.0 | 1,009 | Mature | 77 | very active | 3d ago | 2.7y | 4 |
 | [Bessouat40/RAGLight](https://github.com/Bessouat40/RAGLight) | RAG framework / engine | Python | MIT | 672 | Mature | 58 | active | 1mo ago | 1.8y | 1 |
@@ -236,7 +236,6 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 - `VectifyAI/PageIndex` ⇄ `deepset-ai/haystack` (w=0.441) — topics: agentic-ai, agents, ai, ai-agents
 - `weaviate/weaviate` ⇄ `qdrant/qdrant` (w=0.429) — topics: search-engine, vector-search, vector-search-engine, vector-database
 - `lancedb/lancedb` ⇄ `weaviate/weaviate` (w=0.400) — topics: approximate-nearest-neighbor-search, image-search, nearest-neighbor-search, recommender-system
-- `neuml/txtai` ⇄ `StarTrail-org/LEANN` (w=0.391) — topics: python, vector-search, llm, vector-database; authors: serhiizghama, Lesereingrape
 - `neuml/txtai` ⇄ `VectifyAI/PageIndex` (w=0.383) — topics: llm, vector-database, information-retrieval, retrieval-augmented-generation
 - `neuml/txtai` ⇄ `StarTrail-org/LEANN` (w=0.376) — topics: python, vector-search, llm, vector-database; authors: serhiizghama, Lesereingrape
 - `lancedb/lancedb` ⇄ `qdrant/qdrant` (w=0.369) — topics: image-search, nearest-neighbor-search, recommender-system, search-engine; authors: dependabot[bot]
@@ -270,11 +269,11 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | StarTrail-org/LEANN | 83 | Hot | very active | 5 | 17% | 30 |
 | chroma-core/chroma | 82 | Classic | very active | 2 | 36% | 137 |
 | FalkorDB/FalkorDB | 81 | Classic | very active | 2 | 42% | 88 |
-| superlinked/sie | 81 | Mature | very active | 2 | 42% | 54 |
 | HKUDS/LightRAG | 78 | Mature | very active | 1 | 60% | 83 |
 | FalkorDB/GraphRAG-SDK | 77 | Mature | very active | 1 | 70% | 31 |
 | VectifyAI/PageIndex | 77 | Hot | very active | 1 | 53% | 20 |
 | microsoft/graphrag | 76 | Mature | very active | 2 | 46% | 44 |
+| superlinked/sie | 74 | Mature | very active | 2 | 42% | 54 |
 | feyninc/chonkie | 67 | Mature | active | 1 | 78% | 45 |
 | pgvector/pgvector | 64 | Classic | very active | 1 | 98% | 0 |
 | PaddlePaddle/PaddleOCR | 62 | Mature | active | 1 | 50% | 33 |

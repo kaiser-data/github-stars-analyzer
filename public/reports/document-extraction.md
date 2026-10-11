@@ -42,7 +42,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | Conversion framework | Python | MIT | 189,353 | Hot | 94 | very active | 7d ago | 1.9y | 49 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | OCR / layout model | Python | Apache-2.0 | 90,885 | Mature | 62 | active | 25d ago | 6.4y | 2 |
 | [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Conversion framework | Python | NOASSERTION | 81,407 | Mature | 80 | very active | 3d ago | 2.6y | 2 |
-| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 76,891 | Classic | 65 | very active | 1d ago | 12.2y | 14 |
+| [tesseract-ocr/tesseract](https://github.com/tesseract-ocr/tesseract) | OCR / layout model | C++ | Apache-2.0 | 76,891 | Classic | 65 | very active | 1d ago | 12.2y | 13 |
 | [docling-project/docling](https://github.com/docling-project/docling) | Conversion framework | Python | MIT | 68,634 | Mature | 96 | very active | 1d ago | 2.3y | 43 |
 | [datalab-to/marker](https://github.com/datalab-to/marker) | Conversion framework | Python | Apache-2.0 | 40,352 | Mature | 55 | very active | 9d ago | 3.0y | 2 |
 | [google/langextract](https://github.com/google/langextract) | Structured field extraction | Python | Apache-2.0 | 38,934 | Mature | 68 | very active | 2d ago | 1.3y | 5 |
@@ -59,7 +59,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [deepseek-ai/DeepSeek-OCR-2](https://github.com/deepseek-ai/DeepSeek-OCR-2) | VLM document parser | Python | Apache-2.0 | 3,461 | Declining | 10 | stale | 8mo ago | 8mo | 0 |
 | [opendatalab/DocLayout-YOLO](https://github.com/opendatalab/DocLayout-YOLO) | OCR / layout model | Python | AGPL-3.0 | 2,291 | Abandoned | 7 | stale | 1.5y ago | 2.0y | 0 |
 | [run-llama/semtools](https://github.com/run-llama/semtools) | Conversion framework | Rust | MIT | 1,873 | Declining | 31 | stale | 7mo ago | 1.1y | 0 |
-| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,034 | Hot | 74 | very active | 9d ago | 1.1y | 5 |
+| [landing-ai/ade-python](https://github.com/landing-ai/ade-python) | Structured field extraction | Python | Apache-2.0 | 1,034 | Hot | 74 | very active | 9d ago | 1.1y | 6 |
 | [adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api) | Format-specific / serving | Python | GPL-3.0 | 984 | Abandoned | 2 | stale | 2.0y ago | 2.4y | 0 |
 | [567-labs/instructor-js](https://github.com/567-labs/instructor-js) | Structured field extraction | TypeScript | MIT | 802 | Abandoned | 7 | stale | 1.7y ago | 2.8y | 0 |
 | [docling-project/docling-mcp](https://github.com/docling-project/docling-mcp) | Format-specific / serving | Python | MIT | 769 | Hot | 70 | very active | 5d ago | 1.6y | 6 |
@@ -175,7 +175,7 @@ _Utilities and wrappers: format-native readers/writers, redaction, and API/MCP l
 - **[python-openxml/python-docx](https://github.com/python-openxml/python-docx)** · 5,739★ · Python · Mature  
   The standard library for reading and writing Word .docx programmatically.  
   <sub>topics: —</sub>
-- **[adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api)** · 983★ · Python · Abandoned  
+- **[adithya-s-k/marker-api](https://github.com/adithya-s-k/marker-api)** · 984★ · Python · Abandoned  
   Deployable REST API wrapping marker — PDF→markdown as a service.  
   <sub>topics: fastapi, marker, pdf-converter, pdf-files, pdf-parser, pdf-parsing, api, rest-api</sub>
 - **[docling-project/docling-mcp](https://github.com/docling-project/docling-mcp)** · 769★ · Python · Hot  

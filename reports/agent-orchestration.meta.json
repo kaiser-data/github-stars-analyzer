@@ -9,7 +9,7 @@
   "categories": {
     "Code-first": 17,
     "Visual": 4,
-    "Coding-agent": 8,
+    "Coding-agent": 9,
     "Agent OS": 1,
     "Infra": 2
   },
@@ -38,5 +38,5 @@
   "snapshot": "2026-10-11T13:10:52.436Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/agent_orchestration.py",
-  "created": "2026-10-01"
+  "created": "2026-05-31"
 }

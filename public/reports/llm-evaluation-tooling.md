@@ -39,7 +39,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [langwatch/langwatch](https://github.com/langwatch/langwatch) | Observability + eval platform | TypeScript | Apache-2.0 | 4,933 | Classic | 85 | very active | 1d ago | 3.1y | 7 |
 | [truera/trulens](https://github.com/truera/trulens) | Evaluation framework | Python | MIT | 3,596 | Classic | 89 | very active | 2d ago | 5.9y | 26 |
 | [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | Safety / red-team | Python | Apache-2.0 | 3,005 | Hot | 55 | very active | 10d ago | 1.6y | 5 |
-| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,553 | Mature | 60 | active | 5d ago | 2.7y | 5 |
+| [huggingface/lighteval](https://github.com/huggingface/lighteval) | Benchmark / leaderboard | Python | MIT | 2,553 | Mature | 60 | active | 5d ago | 2.7y | 4 |
 | [IBM/AssetOpsBench](https://github.com/IBM/AssetOpsBench) | Benchmark / leaderboard | Python | Apache-2.0 | 2,341 | Hot | 69 | very active | 3d ago | 1.4y | 7 |
 | [vllm-project/guidellm](https://github.com/vllm-project/guidellm) | Benchmark / leaderboard | Python | Apache-2.0 | 1,679 | Mature | 88 | very active | 1d ago | 2.4y | 23 |
 | [pinchbench/skill](https://github.com/pinchbench/skill) | Benchmark / leaderboard | Python | MIT | 1,359 | Declining | 46 | slowing | 3mo ago | 8mo | 0 |
@@ -48,7 +48,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Safety / red-team | Python | Apache-2.0 | 1,207 | Hot | 76 | very active | 3d ago | 1.5y | 7 |
 | [langchain-ai/agentevals](https://github.com/langchain-ai/agentevals) | Evaluation framework | Python | MIT | 742 | Declining | 34 | slowing | 2mo ago | 1.6y | 1 |
 | [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability + eval platform | TypeScript | Apache-2.0 | 724 | Rising | 64 | active | 6d ago | 7mo | 4 |
-| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 615 | Mature | 59 | very active | 2d ago | 1.7y | 8 |
+| [KRLabsOrg/LettuceDetect](https://github.com/KRLabsOrg/LettuceDetect) | Safety / red-team | Python | MIT | 615 | Mature | 57 | very active | 2d ago | 1.7y | 7 |
 | [rhesis-ai/rhesis](https://github.com/rhesis-ai/rhesis) | Evaluation framework | Python | NOASSERTION | 397 | Mature | 79 | very active | 3d ago | 2.0y | 8 |
 | [strands-agents/evals](https://github.com/strands-agents/evals) | Evaluation framework | Python | Apache-2.0 | 235 | Hot | 79 | very active | 3d ago | 1.2y | 16 |
 | [supabase/evals](https://github.com/supabase/evals) | Benchmark / leaderboard | TypeScript | Apache-2.0 | 145 | Hot | 67 | very active | 1d ago | 5mo | 12 |
@@ -208,7 +208,6 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 - `rhesis-ai/rhesis` ⇄ `cvs-health/uqlm` (w=0.193) — authors: feiiiiii5
 - `promptfoo/promptfoo` ⇄ `comet-ml/opik` (w=0.192) — topics: llm, prompt-engineering, llmops, evaluation
 - `EleutherAI/lm-evaluation-harness` ⇄ `confident-ai/deepeval` (w=0.175) — topics: evaluation-framework
-- `rhesis-ai/rhesis` ⇄ `comet-ml/opik` (w=0.175) — topics: llmops; authors: feiiiiii5
 
 ## Maintenance & risk signal
 
@@ -237,7 +236,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | LiveBench/LiveBench | 65 | Mature | very active | 2 | 48% | 0 |
 | comet-ml/opik-openclaw | 64 | Rising | active | 1 | 60% | 26 |
 | huggingface/lighteval | 60 | Mature | active | 2 | 38% | 15 |
-| KRLabsOrg/LettuceDetect | 59 | Mature | very active | 1 | 64% | 13 |
+| KRLabsOrg/LettuceDetect | 57 | Mature | very active | 1 | 64% | 13 |
 | confident-ai/deepteam | 55 | Hot | very active | 1 | 84% | 3 |
 | pinchbench/skill | 46 | Declining | slowing | 0 | 0% | 14 |
 | langchain-ai/agentevals | 34 | Declining | slowing | 1 | 100% | 12 |

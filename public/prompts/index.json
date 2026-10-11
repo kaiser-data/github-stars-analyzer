@@ -34,7 +34,7 @@
           "stage": "Judge",
           "name": "KRLabsOrg/LettuceDetect",
           "stars": 615,
-          "health": 59,
+          "health": 57,
           "lifecycle": "Mature"
         }
       ],
@@ -60,7 +60,7 @@
           "stage": "See",
           "name": "f3d-app/f3d",
           "stars": 4749,
-          "health": 82,
+          "health": 83,
           "lifecycle": "Classic"
         },
         {

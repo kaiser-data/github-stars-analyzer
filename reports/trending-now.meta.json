@@ -3,12 +3,12 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 20 data vintages: the 12-day movers, relative breakouts, sustained climbers, 101 new entrants, and what has gone flat.",
+  "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 101 new entrants, and what has gone flat.",
   "tool_count": 164,
-  "total_stars": 6764534,
+  "total_stars": 6764533,
   "categories": {
-    "Risers": 1798,
-    "Breakouts": 1652,
+    "Risers": 1804,
+    "Breakouts": 1656,
     "New entrants": 101,
     "Cooling": 81
   },
@@ -73,5 +73,5 @@
   "snapshot": "2026-10-11T13:10:52.436Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-10-01"
+  "created": "2026-08-08"
 }

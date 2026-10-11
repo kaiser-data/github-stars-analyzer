@@ -120,14 +120,14 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 37,777 | Hot | 99 | very active | 1d ago | 48 |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 36,962 | Mature | 99 | very active | 1d ago | 55 |
 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 35,630 | Mature | 70 | very active | 1d ago | 1 |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 26,216 | Classic | 67 | very active | 3d ago | 8 |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 26,216 | Classic | 67 | very active | 3d ago | 7 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,798 | Mature | 63 | active | 1d ago | 6 |
 | [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,227 | Classic | 53 | active | 5d ago | 3 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,046 | Classic | 99 | very active | 1d ago | 35 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,046 | Classic | 94 | very active | 1d ago | 35 |
 | [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,575 | Classic | 98 | very active | 1d ago | 40 |
 | [alibaba/MNN](https://github.com/alibaba/MNN) | Edge-viable LLM runtime | C++ | Apache  2.0 | 16,206 | Classic | 94 | very active | 1d ago | 25 |
 | [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,462 | Classic | 94 | very active | 6d ago | 51 |
-| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 15,201 | Classic | 76 | very active | 2d ago | 32 |
+| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 15,201 | Classic | 75 | very active | 2d ago | 32 |
 | [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,785 | Classic | 98 | very active | 1d ago | 55 |
 | [apache/tvm](https://github.com/apache/tvm) | Compiler & substrate | Python | Apache  2.0 | 13,822 | Classic | 79 | very active | 1d ago | 12 |
 | [NVIDIA/TensorRT](https://github.com/NVIDIA/TensorRT) | NVIDIA / Jetson path | C++ | Apache  2.0 | 13,395 | Mature | 64 | active | 2d ago | 3 |
@@ -276,17 +276,17 @@ What are you running?
 | sgl-project/sglang | 99 | Mature | very active | 10 | 12% | 62 |
 | ggml-org/whisper.cpp | 99 | Classic | very active | 10 | 11% | 45 |
 | AlexsJones/llmfit | 99 | Hot | very active | 6 | 24% | 135 |
-| microsoft/onnxruntime | 99 | Classic | very active | 7 | 13% | 87 |
 | NVIDIA/TensorRT-LLM | 98 | Classic | very active | 13 | 9% | 92 |
 | onnx/onnx | 98 | Classic | very active | 6 | 19% | 41 |
 | pytorch/executorch | 97 | Classic | very active | 5 | 22% | 22 |
+| microsoft/onnxruntime | 94 | Classic | very active | 7 | 13% | 87 |
 | ggml-org/ggml | 94 | Classic | very active | 10 | 12% | 41 |
 | alibaba/MNN | 94 | Classic | very active | 4 | 19% | 63 |
-| InternLM/lmdeploy | 92 | Classic | very active | 4 | 23% | 71 |
+| InternLM/lmdeploy | 92 | Classic | very active | 4 | 24% | 71 |
 | LostRuins/koboldcpp | 87 | Classic | very active | 3 | 38% | 135 |
 | ollama/ollama | 83 | Classic | very active | 2 | 42% | 260 |
 | apache/tvm | 79 | Classic | very active | 1 | 80% | 35 |
-| k2-fsa/sherpa-onnx | 76 | Classic | very active | 1 | 51% | 192 |
+| k2-fsa/sherpa-onnx | 75 | Classic | very active | 1 | 51% | 192 |
 | OpenNMT/CTranslate2 | 75 | Classic | active | 3 | 30% | 131 |
 | lyogavin/airllm | 70 | Mature | very active | 1 | 100% | 6 |
 | NVIDIA/TensorRT-Edge-LLM | 68 | Mature | active | 2 | 38% | 12 |

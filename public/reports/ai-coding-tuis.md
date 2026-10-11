@@ -38,9 +38,9 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | Terminal coding agent | TypeScript | MIT | 212,497 | Hot | 88 | very active | 1d ago | 1.4y | 21 |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Terminal coding agent | TypeScript | — | 150,006 | Hot | 78 | very active | 2d ago | 1.6y | 8 |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Terminal coding agent | TypeScript | — | 150,006 | Hot | 79 | very active | 2d ago | 1.6y | 8 |
 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Multi-CLI glue | Rust | MIT | 142,363 | Hot | 77 | very active | 1d ago | 1.2y | 19 |
-| [openai/codex](https://github.com/openai/codex) | Terminal coding agent | Rust | Apache-2.0 | 128,516 | Hot | 93 | very active | 1d ago | 1.5y | 42 |
+| [openai/codex](https://github.com/openai/codex) | Terminal coding agent | Rust | Apache-2.0 | 128,516 | Hot | 84 | very active | 1d ago | 1.5y | 42 |
 | [earendil-works/pi](https://github.com/earendil-works/pi) | Terminal coding agent | TypeScript | MIT | 114,040 | Hot | 85 | very active | 1d ago | 1.2y | 8 |
 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Terminal coding agent | TypeScript | Apache-2.0 | 107,275 | Hot | 95 | very active | 1d ago | 1.5y | 13 |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Session / token ops | Rust | Apache-2.0 | 82,837 | Hot | 75 | very active | 2d ago | 8mo | 11 |
@@ -62,11 +62,11 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [sheeki03/tirith](https://github.com/sheeki03/tirith) | Safety / isolation | Rust | AGPL-3.0 | 2,750 | Rising | 79 | very active | 1d ago | 8mo | 2 |
 | [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Safety / isolation | TypeScript | MIT | 1,583 | Rising | 80 | very active | 1d ago | 9mo | 2 |
 | [affaan-m/agentshield](https://github.com/affaan-m/agentshield) | Safety / isolation | TypeScript | MIT | 1,271 | Hot | 64 | active | 1mo ago | 8mo | 7 |
-| [ctxrs/ctx](https://github.com/ctxrs/ctx) | Session / token ops | Rust | Apache-2.0 | 1,152 | Hot | 79 | very active | 6d ago | 7mo | 7 |
+| [ctxrs/ctx](https://github.com/ctxrs/ctx) | Session / token ops | Rust | Apache-2.0 | 1,152 | Hot | 80 | very active | 6d ago | 7mo | 7 |
 | [terryso/claude-auto-resume](https://github.com/terryso/claude-auto-resume) | Session / token ops | Shell | MIT | 820 | Declining | 22 | slowing | 5mo ago | 1.3y | 0 |
 | [zamalali/langchain-code](https://github.com/zamalali/langchain-code) | Multi-CLI glue | Python | Apache-2.0 | 439 | Declining | 6 | stale | 10mo ago | 1.2y | 0 |
 | [aniketkarne/ClaudeNightsWatch](https://github.com/aniketkarne/ClaudeNightsWatch) | Session / token ops | Shell | MIT | 369 | Declining | 41 | active | 1mo ago | 1.2y | 1 |
-| [opalinehq/cli](https://github.com/opalinehq/cli) | Session / token ops | TypeScript | MIT | 304 | Rising | 75 | very active | 7d ago | 7mo | 2 |
+| [opalinehq/cli](https://github.com/opalinehq/cli) | Session / token ops | TypeScript | MIT | 304 | Rising | 76 | very active | 7d ago | 7mo | 2 |
 | [rsrohan99/tig](https://github.com/rsrohan99/tig) | Terminal coding agent | Python | — | 152 | Abandoned | 5 | stale | 1.4y ago | 1.5y | 0 |
 | [BA-CalderonMorales/terminal-jarvis](https://github.com/BA-CalderonMorales/terminal-jarvis) | Multi-CLI glue | Rust | MIT | 137 | Hot | 77 | active | 1mo ago | 1.2y | 4 |
 
@@ -281,26 +281,26 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 |---|---|---|---|---|---|---|
 | aaif-goose/goose | 99 | Mature | very active | 5 | 17% | 155 |
 | google-gemini/gemini-cli | 95 | Hot | very active | 4 | 21% | 656 |
-| openai/codex | 93 | Hot | very active | 8 | 16% | 1221 |
 | anomalyco/opencode | 88 | Hot | very active | 3 | 24% | 877 |
 | charmbracelet/bubbletea | 88 | Classic | very active | 5 | 33% | 82 |
 | earendil-works/pi | 85 | Hot | very active | 2 | 38% | 272 |
+| openai/codex | 84 | Hot | very active | 8 | 16% | 1221 |
 | QwenLM/qwen-code | 82 | Hot | very active | 2 | 34% | 757 |
 | charmbracelet/crush | 81 | Hot | very active | 2 | 34% | 195 |
 | getagentseal/codeburn | 80 | Hot | very active | 1 | 68% | 71 |
+| ctxrs/ctx | 80 | Hot | very active | 1 | 93% | 73 |
 | kenryu42/cc-safety-net | 80 | Rising | very active | 1 | 92% | 72 |
+| anthropics/claude-code | 79 | Hot | very active | 1 | 54% | 241 |
 | codewhale-hq/Codewhale | 79 | Hot | very active | 1 | 84% | 139 |
-| ctxrs/ctx | 79 | Hot | very active | 1 | 93% | 73 |
 | sheeki03/tirith | 79 | Rising | very active | 1 | 51% | 90 |
-| anthropics/claude-code | 78 | Hot | very active | 1 | 54% | 241 |
-| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 98% | 337 |
+| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 82% | 337 |
 | CodebuffAI/freebuff | 77 | Mature | very active | 1 | 100% | 9 |
 | mksglu/context-mode | 77 | Rising | very active | 1 | 100% | 195 |
 | farion1231/cc-switch | 77 | Hot | very active | 1 | 65% | 63 |
 | Alishahryar1/free-claude-code | 77 | Hot | very active | 1 | 85% | 51 |
 | BA-CalderonMorales/terminal-jarvis | 77 | Hot | active | 1 | 73% | 53 |
+| opalinehq/cli | 76 | Rising | very active | 1 | 99% | 25 |
 | rtk-ai/rtk | 75 | Hot | very active | 1 | 76% | 407 |
-| opalinehq/cli | 75 | Rising | very active | 1 | 99% | 25 |
 | github/copilot-cli | 69 | Classic | very active | 1 | 62% | 487 |
 | charmbracelet/bubbles | 69 | Classic | active | 2 | 38% | 38 |
 | UfoMiao/zcf | 66 | Mature | active | 1 | 79% | 96 |

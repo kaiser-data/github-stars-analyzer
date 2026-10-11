@@ -41,7 +41,7 @@ The capability layer a claw orchestrates. Pick per job; most stacks combine 2–
 
 ### Valuation, market data & quant
 
-- **[OpenBB](https://github.com/openbq-org/OpenBB)** · 74,069★ · Python · health 65 — Financial data platform explicitly 'for analysts, quants and **AI agents**' — crypto + derivatives coverage to price and value positions.
+- **[OpenBB](https://github.com/openbq-org/OpenBB)** · 74,069★ · Python · health 66 — Financial data platform explicitly 'for analysts, quants and **AI agents**' — crypto + derivatives coverage to price and value positions.
 
 ### Autonomous trading agents
 
@@ -51,12 +51,12 @@ The capability layer a claw orchestrates. Pick per job; most stacks combine 2–
 
 ### Agentic payments & settlement
 
-- **[ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,622★ · TypeScript · health 79 — Agent-native LLM router with **USDC payments on Base & Solana via x402** — settle agent spend on-chain. Built for OpenClaw.
+- **[ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,622★ · TypeScript · health 80 — Agent-native LLM router with **USDC payments on Base & Solana via x402** — settle agent spend on-chain. Built for OpenClaw.
 - **[x402scan](https://github.com/Merit-Systems/x402scan)** · 397★ · TypeScript · health 75 — x402 ecosystem explorer — inspect agentic stablecoin payment flows.
 
 ### MCP infrastructure (wire any chain in)
 
-- **[servers](https://github.com/modelcontextprotocol/servers)** · 91,115★ · TypeScript · health 89 — Official MCP server collection — the integration layer for chain-data tools.
+- **[servers](https://github.com/modelcontextprotocol/servers)** · 91,115★ · TypeScript · health 94 — Official MCP server collection — the integration layer for chain-data tools.
 - **[awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 96,042★ · — · health 60 — Directory of MCP servers (incl. blockchain/explorer servers).
 - **[awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)** · 76,791★ · Python · health 37 — Curated Claude skills — reusable capabilities to bolt onto a claw.
 

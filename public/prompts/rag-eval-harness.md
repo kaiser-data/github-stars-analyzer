@@ -11,7 +11,7 @@ A home-made RAG eval is the easiest place in the whole stack to fool yourself: i
 | Retrieve | [`deepset-ai/haystack`](https://github.com/deepset-ai/haystack) | 26,714 | 90 | Classic |
 | Index | [`qdrant/qdrant`](https://github.com/qdrant/qdrant) | 35,008 | 88 | Classic |
 | Embed | [`huggingface/sentence-transformers`](https://github.com/huggingface/sentence-transformers) | 19,160 | 95 | Classic |
-| Judge | [`KRLabsOrg/LettuceDetect`](https://github.com/KRLabsOrg/LettuceDetect) | 615 | 59 | Mature |
+| Judge | [`KRLabsOrg/LettuceDetect`](https://github.com/KRLabsOrg/LettuceDetect) | 615 | 57 | Mature |
 
 Metrics are live from the dataset.
 

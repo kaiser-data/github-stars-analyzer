@@ -209,23 +209,23 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [chartjs/Chart.js](https://github.com/chartjs/Chart.js) | Web charting library | JavaScript | MIT | 67,731 | Classic | 54 | active | 7d ago | 13.6y | 5 |
 | [apache/echarts](https://github.com/apache/echarts) | Web charting library | TypeScript | Apache-2.0 | 67,468 | Classic | 66 | very active | 7d ago | 13.5y | 4 |
 | [jgraph/drawio-desktop](https://github.com/jgraph/drawio-desktop) | Diagrams & AI charts | JavaScript | GPL-3.0 | 63,452 | Classic | 80 | very active | 3d ago | 9.4y | 4 |
-| [metabase/metabase](https://github.com/metabase/metabase) | BI & dashboard platform | Clojure | NOASSERTION | 49,605 | Classic | 98 | very active | 1d ago | 11.7y | 33 |
+| [metabase/metabase](https://github.com/metabase/metabase) | BI & dashboard platform | Clojure | NOASSERTION | 49,605 | Classic | 99 | very active | 1d ago | 11.7y | 33 |
 | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Data-app framework | Python | Apache-2.0 | 45,932 | Classic | 83 | very active | 1d ago | 7.1y | 6 |
 | [gradio-app/gradio](https://github.com/gradio-app/gradio) | Data-app framework | Python | Apache-2.0 | 43,705 | Classic | 85 | very active | 2d ago | 7.8y | 8 |
 | [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) | BI & dashboard platform | HTML | AGPL-3.0 | 41,068 | Classic | 79 | very active | 1d ago | 5.5y | 11 |
 | [reflex-dev/reflex](https://github.com/reflex-dev/reflex) | Data-app framework | Python | Apache-2.0 | 28,942 | Classic | 84 | very active | 1d ago | 4.0y | 14 |
-| [getredash/redash](https://github.com/getredash/redash) | BI & dashboard platform | Python | BSD-2-Clause | 28,830 | Classic | 59 | very active | 3d ago | 13.0y | 8 |
+| [getredash/redash](https://github.com/getredash/redash) | BI & dashboard platform | Python | BSD-2-Clause | 28,830 | Classic | 60 | very active | 3d ago | 13.0y | 8 |
 | [recharts/recharts](https://github.com/recharts/recharts) | React charting library | TypeScript | MIT | 27,619 | Classic | 79 | very active | 1d ago | 11.2y | 14 |
 | [plotly/dash](https://github.com/plotly/dash) | Data-app framework | Python | MIT | 24,446 | Classic | 78 | very active | 2d ago | 11.5y | 12 |
-| [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) | Python plotting | Python | — | 23,349 | Classic | 88 | very active | 2d ago | 15.7y | 15 |
+| [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) | Python plotting | Python | — | 23,349 | Classic | 88 | very active | 2d ago | 15.7y | 16 |
 | [openobserve/openobserve](https://github.com/openobserve/openobserve) | BI & dashboard platform | TypeScript | AGPL-3.0 | 22,313 | Classic | 99 | very active | 1d ago | 3.7y | 23 |
 | [elastic/kibana](https://github.com/elastic/kibana) | BI & dashboard platform | TypeScript | NOASSERTION | 21,309 | Classic | 99 | very active | 1d ago | 13.7y | 68 |
 | [airbnb/visx](https://github.com/airbnb/visx) | React charting library | TypeScript | MIT | 21,075 | Mature | 31 | slowing | 3mo ago | 9.6y | 0 |
-| [bokeh/bokeh](https://github.com/bokeh/bokeh) | Python plotting | TypeScript | BSD-3-Clause | 20,455 | Classic | 64 | very active | 1d ago | 14.6y | 20 |
+| [bokeh/bokeh](https://github.com/bokeh/bokeh) | Python plotting | TypeScript | BSD-3-Clause | 20,455 | Classic | 64 | very active | 1d ago | 14.6y | 21 |
 | [Avaiga/taipy](https://github.com/Avaiga/taipy) | Data-app framework | Python | Apache-2.0 | 19,431 | Mature | 48 | slowing | 2mo ago | 4.6y | 0 |
 | [plotly/plotly.py](https://github.com/plotly/plotly.py) | Python plotting | Python | MIT | 18,828 | Classic | 78 | very active | 2d ago | 12.9y | 10 |
 | [plotly/plotly.js](https://github.com/plotly/plotly.js) | Web charting library | JavaScript | MIT | 18,355 | Classic | 78 | very active | 3d ago | 10.9y | 8 |
-| [Canner/WrenAI](https://github.com/Canner/WrenAI) | BI & dashboard platform | Python | NOASSERTION | 17,835 | Mature | 86 | very active | 2d ago | 2.6y | 20 |
+| [Canner/WrenAI](https://github.com/Canner/WrenAI) | BI & dashboard platform | Python | NOASSERTION | 17,835 | Mature | 86 | very active | 2d ago | 2.6y | 21 |
 | [tradingview/lightweight-charts](https://github.com/tradingview/lightweight-charts) | Low-level / high-performance | TypeScript | Apache-2.0 | 17,526 | Classic | 72 | very active | 2d ago | 7.4y | 7 |
 | [Kanaries/pygwalker](https://github.com/Kanaries/pygwalker) | Python plotting | Python | Apache-2.0 | 15,983 | Mature | 45 | active | 1mo ago | 3.7y | 1 |
 | [apexcharts/apexcharts.js](https://github.com/apexcharts/apexcharts.js) | Web charting library | JavaScript | NOASSERTION | 15,174 | Classic | 79 | very active | 2d ago | 8.2y | 6 |
@@ -291,7 +291,7 @@ _General-purpose JS/TS chart engines. The choice here is mostly bundle size vs. 
 - **[highcharts/highcharts](https://github.com/highcharts/highcharts)** · 12,494★ · TypeScript · Classic  
   The long-running commercial charting suite — extremely complete, with accessibility and export modules that most open-source libraries lack.  
   <sub>topics: —</sub>
-- **[c3js/c3](https://github.com/c3js/c3)** · 9,350★ · JavaScript · Classic  
+- **[c3js/c3](https://github.com/c3js/c3)** · 9,351★ · JavaScript · Classic  
   A D3-based reusable chart wrapper — the 2015-era way to get D3 output without writing D3.  
   <sub>topics: chart, d3, graphics, data-visualization, svg, graph, interactive-visualizations</sub>
 - **[observablehq/plot](https://github.com/observablehq/plot)** · 5,403★ · HTML · Mature  
@@ -371,7 +371,7 @@ _The notebook and scientific-computing side: static publication figures, interac
 - **[plotly/plotly.py](https://github.com/plotly/plotly.py)** · 18,828★ · Python · Classic  
   Interactive charts from Python, rendering through plotly.js — Plotly Express makes most charts one line.  
   <sub>topics: python, d3, plotly, plotlyjs, webgl, dashboard, visualization, graph-library</sub>
-- **[Kanaries/pygwalker](https://github.com/Kanaries/pygwalker)** · 15,980★ · Python · Mature  
+- **[Kanaries/pygwalker](https://github.com/Kanaries/pygwalker)** · 15,983★ · Python · Mature  
   Turns a DataFrame into a drag-and-drop Tableau-style exploration UI with one line in a notebook.  
   <sub>topics: data-analysis, pandas, tableau, tableau-alternative, visualization, data-exploration, dataframe, matplotlib</sub>
 - **[holoviz/panel](https://github.com/holoviz/panel)** · 5,793★ · Python · Classic  
@@ -492,7 +492,7 @@ _Plotting inside desktop and systems applications, where a browser runtime isn't
 - **[AAChartModel/AAChartKit](https://github.com/AAChartModel/AAChartKit)** · 4,765★ · Objective-C · Mature  
   Declarative charts for iOS/iPadOS/macOS — an Objective-C/Swift wrapper around Highcharts rendered in a web view.  
   <sub>topics: chart, column-chart, line-charts, pie-chart, bubble-chart, area-chart, radar-chart, polar-chart</sub>
-- **[gonum/plot](https://github.com/gonum/plot)** · 2,969★ · Go · Mature  
+- **[gonum/plot](https://github.com/gonum/plot)** · 2,968★ · Go · Mature  
   Plotting for Go, part of the Gonum numerical stack — generate chart images from a Go service.  
   <sub>topics: —</sub>
 - **[core-plot/core-plot](https://github.com/core-plot/core-plot)** · 2,758★ · Objective-C · Mature  
@@ -561,9 +561,9 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
 | grafana/grafana | 99 | Classic | very active | 11 | 8% | 652 |
+| metabase/metabase | 99 | Classic | very active | 8 | 14% | 841 |
 | elastic/kibana | 99 | Classic | very active | 18 | 9% | 271 |
 | openobserve/openobserve | 99 | Classic | very active | 5 | 18% | 230 |
-| metabase/metabase | 98 | Classic | very active | 8 | 14% | 841 |
 | matplotlib/matplotlib | 88 | Classic | very active | 3 | 34% | 103 |
 | Canner/WrenAI | 86 | Mature | very active | 3 | 18% | 206 |
 | apache/superset | 85 | Classic | very active | 2 | 37% | 269 |
@@ -596,8 +596,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | vega/vega-lite | 64 | Classic | very active | 1 | 52% | 215 |
 | bokeh/bokeh | 64 | Classic | very active | 1 | 52% | 0 |
 | leeoniya/uPlot | 62 | Mature | very active | 1 | 100% | 63 |
+| getredash/redash | 60 | Classic | very active | 1 | 67% | 102 |
 | excalidraw/excalidraw | 60 | Classic | very active | 1 | 67% | 15 |
-| getredash/redash | 59 | Classic | very active | 1 | 67% | 102 |
 | grafana/grafana-foundation-sdk | 56 | Mature | very active | 1 | 52% | 0 |
 | chartjs/Chart.js | 54 | Classic | active | 1 | 50% | 117 |
 | ScottPlot/ScottPlot | 50 | Mature | active | 1 | 75% | 179 |

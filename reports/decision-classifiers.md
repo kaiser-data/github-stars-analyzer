@@ -44,13 +44,13 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [BoundaryML/baml](https://github.com/BoundaryML/baml) | LLM as classifier | Rust | Apache-2.0 | 9,389 | Classic | 82 | very active | 1d ago | 3.0y | 9 |
-| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,504 | Classic | 72 | very active | 2d ago | 3.7y | 3 |
+| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,504 | Classic | 73 | very active | 2d ago | 3.7y | 3 |
 | [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Guard model / guardrails | Python | NOASSERTION | 7,273 | Classic | 82 | very active | 2d ago | 3.5y | 10 |
 | [katanemo/plano](https://github.com/katanemo/plano) | Decision router | Rust | Apache-2.0 | 7,083 | Mature | 67 | very active | 4d ago | 2.3y | 11 |
 | [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) | Open decision model | Python | Apache-2.0 | 6,870 | Rising | 57 | active | 1d ago | 22d | 1 |
-| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,622 | Hot | 79 | very active | 6d ago | 8mo | 8 |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,622 | Hot | 80 | very active | 6d ago | 8mo | 8 |
 | [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router) | Decision router | Go | Apache-2.0 | 6,073 | Hot | 81 | very active | 1d ago | 1.1y | 28 |
-| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 4,074 | Mature | 73 | very active | 6d ago | 2.9y | 8 |
+| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 4,074 | Mature | 73 | very active | 6d ago | 2.9y | 7 |
 | [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router) | Decision router | Python | MIT | 3,942 | Mature | 70 | very active | 12d ago | 3.0y | 10 |
 | [huggingface/setfit](https://github.com/huggingface/setfit) | Few-shot classifier | Jupyter Notebook | Apache-2.0 | 2,835 | Classic | 55 | active | 5d ago | 4.3y | 5 |
 | [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | Typed decision API | TypeScript | MIT | 2,535 | Hot | 74 | very active | 9d ago | 15d | 8 |
@@ -299,14 +299,14 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | BoundaryML/baml | 82 | Classic | very active | 2 | 27% | 662 |
 | vllm-project/semantic-router | 81 | Hot | very active | 3 | 41% | 4 |
 | kenryu42/cc-safety-net | 80 | Rising | very active | 1 | 92% | 72 |
+| BlockRunAI/ClawRouter | 80 | Hot | very active | 1 | 60% | 150 |
 | ollaya-dev/ollaya | 79 | Hot | very active | 1 | 84% | 21 |
-| BlockRunAI/ClawRouter | 79 | Hot | very active | 1 | 60% | 150 |
 | cvs-health/uqlm | 76 | Hot | very active | 1 | 63% | 46 |
 | Kevthetech143/super-jev | 75 | Hot | very active | 1 | 89% | 21 |
 | dzhng/jevgrep | 74 | Hot | very active | 1 | 90% | 9 |
 | fastino-ai/GLiNER2 | 73 | Hot | very active | 1 | 52% | 13 |
 | urchade/GLiNER | 73 | Mature | very active | 1 | 85% | 42 |
-| guardrails-ai/guardrails | 72 | Classic | very active | 1 | 59% | 69 |
+| guardrails-ai/guardrails | 73 | Classic | very active | 1 | 59% | 69 |
 | AbdelStark/awesome-typesafe-jev | 70 | Hot | very active | 2 | 46% | 1 |
 | aurelio-labs/semantic-router | 70 | Mature | very active | 1 | 71% | 96 |
 | angel291592/Intent-Router | 69 | Rising | very active | 1 | 100% | 9 |

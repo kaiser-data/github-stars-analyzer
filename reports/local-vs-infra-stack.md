@@ -156,7 +156,7 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 | [LocalAI](https://github.com/mudler/LocalAI) | Inference runtime | Local | Go | MIT | 49,457 | Classic | 79 | very active | 1d ago | 12 |
 | [jan](https://github.com/janhq/jan) | Model gateway & UI | Local | Rust | NOASSERTION | 44,876 | Classic | 79 | very active | 1d ago | 5 |
 | [faiss](https://github.com/facebookresearch/faiss) | Vector store | Local | C++ | MIT | 41,124 | Classic | 99 | very active | 1d ago | 41 |
-| [llamafile](https://github.com/mozilla-ai/llamafile) | Inference runtime | Local | C++ | NOASSERTION | 26,216 | Classic | 67 | very active | 3d ago | 8 |
+| [llamafile](https://github.com/mozilla-ai/llamafile) | Inference runtime | Local | C++ | NOASSERTION | 26,216 | Classic | 67 | very active | 3d ago | 7 |
 | [promptfoo](https://github.com/promptfoo/promptfoo) | Observability & eval | Local | TypeScript | MIT | 25,869 | Classic | 79 | very active | 1d ago | 20 |
 | [zvec](https://github.com/alibaba/zvec) | Vector store | Local | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 2d ago | 17 |
 | [txtai](https://github.com/neuml/txtai) | Vector store | Local | Python | Apache-2.0 | 13,003 | Classic | 90 | very active | 1d ago | 31 |
@@ -185,7 +185,7 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 | [sglang](https://github.com/sgl-project/sglang) | Inference runtime | Infra | Python | Apache-2.0 | 36,962 | Mature | 99 | very active | 1d ago | 55 |
 | [weaviate](https://github.com/weaviate/weaviate) | Vector store | Infra | Go | NOASSERTION | 16,878 | Classic | 83 | very active | 2d ago | 7 |
 | [axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Fine-tuning | Infra | Python | Apache-2.0 | 12,551 | Classic | 79 | very active | 2d ago | 19 |
-| [skypilot](https://github.com/skypilot-org/skypilot) | Scaling / serving infra | Infra | Python | Apache-2.0 | 10,690 | Classic | 94 | very active | 2d ago | 21 |
+| [skypilot](https://github.com/skypilot-org/skypilot) | Scaling / serving infra | Infra | Python | Apache-2.0 | 10,690 | Classic | 95 | very active | 2d ago | 21 |
 | [lmdeploy](https://github.com/InternLM/lmdeploy) | Inference runtime | Infra | Python | Apache-2.0 | 8,103 | Classic | 92 | very active | 2d ago | 25 |
 | [llm-compressor](https://github.com/vllm-project/llm-compressor) | Scaling / serving infra | Infra | Python | Apache-2.0 | 3,863 | Mature | 84 | very active | 2d ago | 30 |
 
@@ -231,7 +231,6 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 - `sgl-project/sglang` ⇄ `ollama/ollama` (w=0.269) — topics: llama, llm, deepseek, gpt-oss
 - `lancedb/lancedb` ⇄ `alibaba/zvec` (w=0.257) — topics: search-engine, semantic-search, similarity-search, vector-database; authors: dependabot[bot]
 - `unslothai/unsloth` ⇄ `open-webui/open-webui` (w=0.257) — topics: llms, llm, openai, self-hosted
-- `lancedb/lancedb` ⇄ `alibaba/zvec` (w=0.255) — topics: search-engine, semantic-search, similarity-search, vector-database; authors: dependabot[bot]
 - `lancedb/lancedb` ⇄ `pgvector/pgvector` (w=0.250) — topics: approximate-nearest-neighbor-search, nearest-neighbor-search
 - `promptfoo/promptfoo` ⇄ `langfuse/langfuse` (w=0.206) — topics: llm, prompt-engineering, llmops, evaluation
 - …and 4 more.
@@ -250,11 +249,11 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 | milvus | Infra | 99 | Classic | very active | 8 | 10% | 176 |
 | llama_index | Both | 98 | Classic | very active | 12 | 14% | 497 |
 | redis | Both | 97 | Classic | very active | 7 | 18% | 155 |
-| skypilot | Infra | 94 | Classic | very active | 4 | 18% | 45 |
+| skypilot | Infra | 95 | Classic | very active | 4 | 18% | 45 |
 | peft | Both | 94 | Classic | very active | 4 | 23% | 36 |
 | langfuse | Both | 94 | Classic | very active | 4 | 24% | 711 |
 | zvec | Local | 93 | Hot | very active | 4 | 17% | 11 |
-| lmdeploy | Infra | 92 | Classic | very active | 4 | 23% | 71 |
+| lmdeploy | Infra | 92 | Classic | very active | 4 | 24% | 71 |
 | lancedb | Local | 92 | Classic | very active | 4 | 33% | 522 |
 | txtai | Local | 90 | Classic | very active | 3 | 37% | 68 |
 | crewAI | Both | 89 | Mature | very active | 3 | 28% | 241 |

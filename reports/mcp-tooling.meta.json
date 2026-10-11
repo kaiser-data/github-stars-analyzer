@@ -10,7 +10,7 @@
     "SDK/framework": 5,
     "Client/host": 3,
     "Gateway": 4,
-    "Servers": 23,
+    "Servers": 24,
     "Learning": 3
   },
   "top_tools": [
@@ -38,5 +38,5 @@
   "snapshot": "2026-10-11T13:10:52.436Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/mcp_tooling.py",
-  "created": "2026-10-01"
+  "created": "2026-05-31"
 }

@@ -84,7 +84,7 @@ _The chain itself._
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
 | [go-ethereum](https://github.com/ethereum/go-ethereum) | 51,387 | 🔵 Classic | 100 | Go | geth — the reference Ethereum node (Go). |
-| [reth](https://github.com/paradigmxyz/reth) | 5,816 | 🔵 Classic | 85 | Rust | Modern, fast Rust client (rising alternative). |
+| [reth](https://github.com/paradigmxyz/reth) | 5,816 | 🔵 Classic | 80 | Rust | Modern, fast Rust client (rising alternative). |
 | [nethermind](https://github.com/NethermindEth/nethermind) | 1,616 | 🔵 Classic | 89 | C# | High-perf .NET client, strong on tooling. |
 
 ### Oracles, AA & wallets
@@ -136,7 +136,7 @@ _AI agents settling on-chain — the breakout trend._
 
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,622 | 🔥 Hot | 79 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,622 | 🔥 Hot | 80 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
 | [x402scan](https://github.com/Merit-Systems/x402scan) | 397 | 🔥 Hot | 75 | TypeScript | x402 ecosystem explorer. |
 | [x402](https://github.com/coinbase/x402) | 163 | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
 
@@ -146,7 +146,7 @@ _Where crypto meets the agent stack._
 | Repo | ★ | Lifecycle | Health | Lang | Role |
 |---|---|---|---|---|---|
 | [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 110,471 | 🔥 Hot | 79 | Python | Multi-agent LLM trading framework. |
-| [OpenBB](https://github.com/openbq-org/OpenBB) | 74,069 | 🟢 Mature | 65 | Python | Financial data platform 'for analysts, quants & AI agents'. |
+| [OpenBB](https://github.com/openbq-org/OpenBB) | 74,069 | 🟢 Mature | 66 | Python | Financial data platform 'for analysts, quants & AI agents'. |
 | [AI-Trader](https://github.com/HKUDS/AI-Trader) | 22,726 | 🟠 Declining | 26 | Python | Fully-automated agent-native trading. |
 | [eliza](https://github.com/elizaOS/eliza) | 19,566 | 🟢 Mature | 80 | TypeScript | Crypto-native agent OS (wallet/chain plugins). |
 

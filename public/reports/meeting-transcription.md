@@ -61,9 +61,9 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [m-bain/whisperX](https://github.com/m-bain/whisperX) | Diarization & alignment | Python | BSD-2-Clause | 24,453 | Mature | 66 | active | 15d ago | 3.8y | 3 |
 | [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Meeting assistant (end-to-end) | Rust | NOASSERTION | 21,897 | Mature | 80 | very active | 1d ago | 2.3y | 4 |
 | [modelscope/FunASR](https://github.com/modelscope/FunASR) | ASR engine / model | Python | MIT | 20,632 | Classic | 80 | very active | 1d ago | 3.9y | 16 |
-| [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | ASR engine / model | Python | Apache-2.0 | 18,568 | Classic | 99 | very active | 1d ago | 7.2y | 37 |
+| [NVIDIA-NeMo/Speech](https://github.com/NVIDIA-NeMo/Speech) | ASR engine / model | Python | Apache-2.0 | 18,568 | Classic | 100 | very active | 1d ago | 7.2y | 38 |
 | [kaldi-asr/kaldi](https://github.com/kaldi-asr/kaldi) | ASR engine / model | Shell | NOASSERTION | 15,491 | Abandoned | 9 | stale | 1.1y ago | 11.5y | 0 |
-| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Streaming / live capture | C++ | Apache-2.0 | 15,201 | Classic | 76 | very active | 2d ago | 4.1y | 32 |
+| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Streaming / live capture | C++ | Apache-2.0 | 15,201 | Classic | 75 | very active | 2d ago | 4.1y | 32 |
 | [alphacep/vosk-api](https://github.com/alphacep/vosk-api) | ASR engine / model | Jupyter Notebook | Apache-2.0 | 15,168 | Mature | 38 | slowing | 2mo ago | 7.1y | 1 |
 | [speechbrain/speechbrain](https://github.com/speechbrain/speechbrain) | ASR engine / model | Python | Apache-2.0 | 11,862 | Classic | 58 | active | 1mo ago | 6.5y | 8 |
 | [moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine) | ASR engine / model | C++ | NOASSERTION | 11,202 | Mature | 78 | very active | 9d ago | 2.0y | 2 |
@@ -277,7 +277,6 @@ mic/system audio → silero-vad → WhisperLive or RealtimeSTT (streaming ASR)
 - `transcriptionstream/transcriptionstream` ⇄ `MahmoudAshraf97/whisper-diarization` (w=0.231) — topics: speaker-diarization, speech-recognition, whisper
 - `ahmetoner/whisper-asr-webservice` ⇄ `kaldi-asr/kaldi` (w=0.231) — topics: speech-recognition, speech-to-text, speech
 - `modelscope/FunASR` ⇄ `speechbrain/speechbrain` (w=0.226) — topics: pytorch, speech-recognition, speaker-diarization, asr
-- `modelscope/FunASR` ⇄ `snakers4/silero-vad` (w=0.212) — topics: pytorch, voice-activity-detection; authors: MohammadHijjawi97
 - `transcriptionstream/transcriptionstream` ⇄ `m-bain/whisperX` (w=0.204) — topics: speech-recognition, whisper
 - `kaixxx/noScribe` ⇄ `speaches-ai/speaches` (w=0.204) — topics: transcription, faster-whisper
 - …and 13 more.
@@ -288,19 +287,19 @@ Bus factor = commit concentration (1 = single-maintainer risk). Several of the d
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
+| NVIDIA-NeMo/Speech | 100 | Classic | very active | 5 | 19% | 87 |
 | ggml-org/whisper.cpp | 99 | Classic | very active | 10 | 11% | 45 |
-| NVIDIA-NeMo/Speech | 99 | Classic | very active | 5 | 19% | 87 |
 | espnet/espnet | 84 | Classic | very active | 2 | 39% | 64 |
 | screenpipe/screenpipe | 80 | Mature | very active | 1 | 55% | 495 |
 | modelscope/FunASR | 80 | Classic | very active | 1 | 78% | 65 |
 | 0xShug0/audio.cpp | 80 | Hot | very active | 1 | 53% | 21 |
 | thewh1teagle/vibe | 78 | Mature | very active | 1 | 98% | 98 |
 | moonshine-ai/moonshine | 78 | Mature | very active | 1 | 99% | 23 |
-| k2-fsa/sherpa-onnx | 76 | Classic | very active | 1 | 51% | 192 |
+| k2-fsa/sherpa-onnx | 75 | Classic | very active | 1 | 51% | 192 |
 | Zackriya-Solutions/meetily | 73 | Hot | very active | 2 | 44% | 12 |
 | QwenAudio/SenseVoice | 72 | Mature | very active | 1 | 91% | 7 |
 | collabora/WhisperLive | 70 | Classic | very active | 2 | 47% | 21 |
-| kaixxx/noScribe | 66 | Classic | very active | 1 | 51% | 9 |
+| kaixxx/noScribe | 66 | Classic | very active | 1 | 50% | 9 |
 | m-bain/whisperX | 66 | Mature | active | 2 | 33% | 44 |
 | snakers4/silero-vad | 65 | Classic | very active | 1 | 54% | 14 |
 | KoljaB/RealtimeSTT | 64 | Classic | very active | 1 | 93% | 47 |

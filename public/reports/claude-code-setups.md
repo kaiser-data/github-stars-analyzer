@@ -73,18 +73,18 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | Harness / coding agent | TypeScript | MIT | 212,497 | Hot | 88 | very active | 1d ago | 1.4y | 21 |
 | [ollama/ollama](https://github.com/ollama/ollama) | Local runtime | Go | MIT | 182,613 | Classic | 83 | very active | 1d ago | 3.3y | 15 |
 | [anthropics/skills](https://github.com/anthropics/skills) | Skills framework | Python | — | 180,291 | Mature | 51 | active | 2d ago | 1.1y | 5 |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Harness / coding agent | TypeScript | — | 150,006 | Hot | 78 | very active | 2d ago | 1.6y | 8 |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Harness / coding agent | TypeScript | — | 150,006 | Hot | 79 | very active | 2d ago | 1.6y | 8 |
 | [x1xhlol/system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | Config / setup kit | — | GPL-3.0 | 143,942 | Mature | 42 | slowing | 2mo ago | 1.6y | 1 |
 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Config / setup kit | Rust | MIT | 142,363 | Hot | 77 | very active | 1d ago | 1.2y | 19 |
 | [garrytan/gstack](https://github.com/garrytan/gstack) | Config / setup kit | TypeScript | MIT | 135,801 | Hot | 62 | very active | 2d ago | 7mo | 4 |
-| [openai/codex](https://github.com/openai/codex) | Harness / coding agent | Rust | Apache-2.0 | 128,516 | Hot | 93 | very active | 1d ago | 1.5y | 42 |
+| [openai/codex](https://github.com/openai/codex) | Harness / coding agent | Rust | Apache-2.0 | 128,516 | Hot | 84 | very active | 1d ago | 1.5y | 42 |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | Code-graph / retrieval | Python | Apache-2.0 | 125,191 | Hot | 91 | very active | 1d ago | 6mo | 32 |
 | [earendil-works/pi](https://github.com/earendil-works/pi) | Harness / coding agent | TypeScript | MIT | 114,040 | Hot | 85 | very active | 1d ago | 1.2y | 8 |
 | [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | Token-saver / compression | Go | Apache-2.0 | 110,877 | Rising | 79 | very active | 1d ago | 6mo | 2 |
 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Harness / coding agent | TypeScript | Apache-2.0 | 107,275 | Hot | 95 | very active | 1d ago | 1.5y | 13 |
 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Memory / context | TypeScript | Apache-2.0 | 99,136 | Hot | 85 | very active | 2d ago | 1.1y | 8 |
 | [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | MCP ecosystem | — | MIT | 96,042 | Hot | 60 | very active | 2d ago | 1.9y | 9 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP ecosystem | TypeScript | NOASSERTION | 91,115 | Hot | 89 | very active | 1d ago | 1.9y | 31 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | MCP ecosystem | TypeScript | NOASSERTION | 91,115 | Hot | 94 | very active | 1d ago | 1.9y | 31 |
 | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Code-graph / retrieval | TypeScript | MIT | 85,824 | Hot | 75 | very active | 1d ago | 7mo | 12 |
 | [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Harness / coding agent | Python | MIT | 83,646 | Hot | 87 | very active | 1d ago | 1.4y | 45 |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Token-saver / compression | Rust | Apache-2.0 | 82,837 | Hot | 75 | very active | 2d ago | 8mo | 11 |
@@ -103,11 +103,11 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | Config / setup kit | Python | NOASSERTION | 55,355 | Mature | 61 | very active | 1d ago | 1.5y | 2 |
 | [aaif-goose/goose](https://github.com/aaif-goose/goose) | Harness / coding agent | Rust | Apache-2.0 | 55,129 | Mature | 99 | very active | 2d ago | 2.1y | 36 |
 | [anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks) | Config / setup kit | Jupyter Notebook | MIT | 53,326 | Classic | 60 | very active | 1d ago | 3.2y | 8 |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Skills framework | Python | MIT | 48,276 | Hot | 79 | very active | 6d ago | 11mo | 17 |
+| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | Skills framework | Python | MIT | 48,276 | Hot | 80 | very active | 6d ago | 11mo | 17 |
 | [abhigyanpatwari/GitNexus](https://github.com/abhigyanpatwari/GitNexus) | Code-graph / retrieval | TypeScript | NOASSERTION | 47,825 | Hot | 83 | very active | 1d ago | 1.2y | 20 |
 | [DeusData/codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | Code-graph / retrieval | C | MIT | 46,283 | Rising | 76 | very active | 1d ago | 7mo | 1 |
-| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | Config / setup kit | Python | MIT | 41,789 | Rising | 67 | very active | 11d ago | 11mo | 2 |
-| [wshobson/agents](https://github.com/wshobson/agents) | Skills framework | Python | MIT | 40,321 | Hot | 62 | very active | 7d ago | 1.2y | 17 |
+| [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | Config / setup kit | Python | MIT | 41,789 | Rising | 68 | very active | 11d ago | 11mo | 2 |
+| [wshobson/agents](https://github.com/wshobson/agents) | Skills framework | Python | MIT | 40,321 | Hot | 62 | very active | 7d ago | 1.2y | 21 |
 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | Harness / coding agent | TypeScript | MIT | 39,763 | Hot | 80 | very active | 3d ago | 9mo | 6 |
 | [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability / evals | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 1d ago | 3.4y | 19 |
 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | Config / setup kit | Python | MIT | 32,530 | Hot | 75 | very active | 1d ago | 1.3y | 6 |
@@ -414,16 +414,16 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 | aaif-goose/goose | 99 | Mature | very active | 5 | 17% | 155 |
 | headroomlabs-ai/headroom | 98 | Hot | very active | 8 | 16% | 173 |
 | google-gemini/gemini-cli | 95 | Hot | very active | 4 | 21% | 656 |
+| modelcontextprotocol/servers | 94 | Hot | very active | 4 | 18% | 28 |
 | langfuse/langfuse | 94 | Classic | very active | 4 | 24% | 711 |
-| openai/codex | 93 | Hot | very active | 8 | 16% | 1221 |
 | Graphify-Labs/graphify | 91 | Hot | very active | 4 | 22% | 230 |
-| modelcontextprotocol/servers | 89 | Hot | very active | 4 | 18% | 28 |
 | comet-ml/opik | 89 | Classic | very active | 3 | 26% | 613 |
 | anomalyco/opencode | 88 | Hot | very active | 3 | 24% | 877 |
 | bytedance/deer-flow | 87 | Hot | very active | 9 | 11% | 2 |
 | earendil-works/pi | 85 | Hot | very active | 2 | 38% | 272 |
 | thedotmack/claude-mem | 85 | Hot | very active | 2 | 48% | 361 |
 | upstash/context7 | 85 | Hot | very active | 2 | 33% | 144 |
+| openai/codex | 84 | Hot | very active | 8 | 16% | 1221 |
 | BerriAI/litellm | 84 | Classic | very active | 2 | 48% | 1504 |
 | cline/cline | 83 | Mature | very active | 2 | 46% | 453 |
 | mem0ai/mem0 | 83 | Classic | very active | 2 | 46% | 416 |
@@ -433,17 +433,17 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 | NousResearch/hermes-agent | 81 | Hot | very active | 2 | 28% | 37 |
 | ruvnet/ruflo | 81 | Hot | very active | 2 | 44% | 1673 |
 | Yeachan-Heo/oh-my-claudecode | 80 | Hot | very active | 1 | 52% | 255 |
+| K-Dense-AI/scientific-agent-skills | 80 | Hot | very active | 1 | 70% | 109 |
 | toon-format/toon | 80 | Hot | very active | 1 | 93% | 32 |
 | getagentseal/codeburn | 80 | Hot | very active | 1 | 68% | 71 |
 | ingo-eichhorst/Irrlicht | 80 | Hot | very active | 1 | 91% | 46 |
+| anthropics/claude-code | 79 | Hot | very active | 1 | 54% | 241 |
 | openclaw/openclaw | 79 | Hot | very active | 1 | 67% | 255 |
 | affaan-m/ECC | 79 | Hot | very active | 1 | 59% | 19 |
-| K-Dense-AI/scientific-agent-skills | 79 | Hot | very active | 1 | 70% | 109 |
 | Gentleman-Programming/engram | 79 | Hot | very active | 1 | 76% | 121 |
 | basicmachines-co/basic-memory | 79 | Hot | very active | 1 | 90% | 90 |
 | JuliusBrussee/caveman | 79 | Rising | very active | 1 | 99% | 47 |
-| anthropics/claude-code | 78 | Hot | very active | 1 | 54% | 241 |
-| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 98% | 337 |
+| code-yeongyu/oh-my-openagent | 78 | Hot | very active | 1 | 82% | 337 |
 | colbymchenry/codegraph | 78 | Rising | very active | 1 | 99% | 33 |
 | farion1231/cc-switch | 77 | Hot | very active | 1 | 65% | 63 |
 | Piebald-AI/claude-code-system-prompts | 77 | Rising | very active | 1 | 100% | 261 |
@@ -456,7 +456,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). This ecosystem m
 | alirezarezvani/claude-skills | 73 | Hot | active | 1 | 57% | 6 |
 | MinishLab/semble | 73 | Hot | very active | 1 | 75% | 30 |
 | traceloop/openllmetry | 71 | Classic | active | 2 | 29% | 263 |
-| luongnv89/claude-howto | 67 | Rising | very active | 1 | 90% | 10 |
+| luongnv89/claude-howto | 68 | Rising | very active | 1 | 90% | 10 |
 | shanraisshan/claude-code-best-practice | 64 | Rising | very active | 1 | 100% | 0 |
 | wshobson/agents | 62 | Hot | very active | 1 | 53% | 0 |
 | garrytan/gstack | 62 | Hot | very active | 1 | 84% | 0 |

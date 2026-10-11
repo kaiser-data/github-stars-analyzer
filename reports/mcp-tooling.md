@@ -28,7 +28,7 @@
 | **SDK / framework** | Build servers/clients | `fastmcp`, `mcp-use`, `fastapi_mcp` |
 | **Client / host** | Apps that consume servers | `mcphub.nvim`, `witsy` |
 | **Gateway / control plane** | Route, secure & govern servers | `klavis`, `gate22`, `mcp-toolbox` |
-| **Servers** | Expose a capability to agents | 23 across browser, DB, dev-tools, code-intel, docs, game engines |
+| **Servers** | Expose a capability to agents | 24 across browser, DB, dev-tools, code-intel, docs, game engines |
 | **Learning** | Lists & curricula | `awesome-mcp-servers` (×2), `mcp-for-beginners` |
 
 ## Master comparison
@@ -38,7 +38,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Learning / reference | — | MIT | 96,042 | Hot | 60 | very active | 2d ago | 1.9y | 9 |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | SDK / framework | TypeScript | NOASSERTION | 91,115 | Hot | 89 | very active | 1d ago | 1.9y | 31 |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | SDK / framework | TypeScript | NOASSERTION | 91,115 | Hot | 94 | very active | 1d ago | 1.9y | 31 |
 | [upstash/context7](https://github.com/upstash/context7) | Server · code intelligence | TypeScript | MIT | 62,855 | Hot | 85 | very active | 1d ago | 1.5y | 13 |
 | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Server · browser/web | TypeScript | Apache-2.0 | 37,994 | Hot | 73 | very active | 3d ago | 1.6y | 7 |
 | [github/github-mcp-server](https://github.com/github/github-mcp-server) | Server · dev-tooling | Go | MIT | 33,489 | Hot | 78 | very active | 3d ago | 1.6y | 23 |
@@ -46,14 +46,14 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | SDK / framework | Python | Apache-2.0 | 28,029 | Hot | 83 | very active | 1d ago | 1.9y | 33 |
 | [mksglu/context-mode](https://github.com/mksglu/context-mode) | Server · code intelligence | TypeScript | NOASSERTION | 26,103 | Rising | 77 | very active | 1d ago | 7mo | 1 |
 | [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | Server · dev-tooling | TypeScript | MIT | 23,052 | Mature | 79 | very active | 5d ago | 1.3y | 2 |
-| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Learning / reference | Jupyter Notebook | MIT | 17,423 | Hot | 65 | very active | 2d ago | 1.5y | 4 |
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | Learning / reference | Jupyter Notebook | MIT | 17,423 | Hot | 65 | very active | 2d ago | 1.5y | 3 |
 | [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) | Gateway / control plane | Go | Apache-2.0 | 16,637 | Mature | 98 | very active | 3d ago | 2.3y | 30 |
 | [modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk) | SDK / framework | TypeScript | NOASSERTION | 13,547 | Mature | 80 | very active | 3d ago | 2.0y | 29 |
 | [hangwin/mcp-chrome](https://github.com/hangwin/mcp-chrome) | Server · browser/web | TypeScript | MIT | 12,481 | Declining | 12 | stale | 9mo ago | 1.3y | 0 |
 | [tadata-org/fastapi_mcp](https://github.com/tadata-org/fastapi_mcp) | SDK / framework | Python | MIT | 12,018 | Declining | 7 | stale | 10mo ago | 1.6y | 0 |
 | [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector) | Client / host | TypeScript | NOASSERTION | 11,049 | Mature | 79 | very active | 3d ago | 2.0y | 2 |
 | [mcp-use/mcp-use](https://github.com/mcp-use/mcp-use) | SDK / framework | TypeScript | MIT | 10,740 | Hot | 89 | very active | 2d ago | 1.5y | 17 |
-| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | Server · game/platform | TypeScript | Apache-2.0 | 8,874 | Hot | 76 | very active | 2d ago | 1.5y | 8 |
+| [mobile-next/mobile-mcp](https://github.com/mobile-next/mobile-mcp) | Server · game/platform | TypeScript | Apache-2.0 | 8,874 | Hot | 77 | very active | 2d ago | 1.5y | 8 |
 | [Coding-Solo/godot-mcp](https://github.com/Coding-Solo/godot-mcp) | Server · game/platform | JavaScript | MIT | 5,995 | Declining | 20 | slowing | 5mo ago | 1.6y | 0 |
 | [oomol-lab/open-connector](https://github.com/oomol-lab/open-connector) | Gateway / control plane | TypeScript | Apache-2.0 | 5,979 | Hot | 95 | very active | 1d ago | 3mo | 27 |
 | [Klavis-AI/klavis](https://github.com/Klavis-AI/klavis) | Gateway / control plane | Python | Apache-2.0 | 5,808 | Declining | 39 | slowing | 4mo ago | 1.5y | 0 |
@@ -74,7 +74,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [reading-plus-ai/mcp-server-data-exploration](https://github.com/reading-plus-ai/mcp-server-data-exploration) | Server · database/data | Python | MIT | 545 | Abandoned | 1 | stale | 1.6y ago | 1.8y | 0 |
 | [tugcantopaloglu/godot-mcp](https://github.com/tugcantopaloglu/godot-mcp) | Server · game/platform | TypeScript | MIT | 474 | Mature | 53 | active | 2d ago | 8mo | 1 |
 | [VectifyAI/pageindex-mcp](https://github.com/VectifyAI/pageindex-mcp) | Server · docs/research | TypeScript | MIT | 400 | Mature | 58 | slowing | 2mo ago | 1.1y | 2 |
-| [neo4j/mcp](https://github.com/neo4j/mcp) | Server · database/data | Go | NOASSERTION | 297 | Hot | 77 | very active | 6d ago | 1.1y | 5 |
+| [neo4j/mcp](https://github.com/neo4j/mcp) | Server · database/data | Go | NOASSERTION | 297 | Hot | 78 | very active | 6d ago | 1.1y | 5 |
 | [aipotheosis-labs/gate22](https://github.com/aipotheosis-labs/gate22) | Gateway / control plane | TypeScript | Apache-2.0 | 180 | Declining | 17 | stale | 10mo ago | 1.1y | 0 |
 
 ## By category
@@ -257,7 +257,7 @@ A maturity signal — major vendors shipping **first-party** MCP servers in your
 - **Google** — [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) · 16,637★ · health 98
 - **Sentry** — [getsentry/toolkit](https://github.com/getsentry/toolkit) · 921★ · health 77
 - **SonarSource** — [SonarSource/sonarqube-mcp-server](https://github.com/SonarSource/sonarqube-mcp-server) · 659★ · health 83
-- **Neo4j** — [neo4j/mcp](https://github.com/neo4j/mcp) · 297★ · health 77
+- **Neo4j** — [neo4j/mcp](https://github.com/neo4j/mcp) · 297★ · health 78
 
 ## Graph analysis — how they relate
 
@@ -311,8 +311,8 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 |---|---|---|---|---|---|---|
 | googleapis/mcp-toolbox | 98 | Mature | very active | 6 | 13% | 54 |
 | oomol-lab/open-connector | 95 | Hot | very active | 4 | 16% | 23 |
+| modelcontextprotocol/servers | 94 | Hot | very active | 4 | 18% | 28 |
 | mcp-use/mcp-use | 89 | Hot | very active | 3 | 26% | 1612 |
-| modelcontextprotocol/servers | 89 | Hot | very active | 4 | 18% | 28 |
 | upstash/context7 | 85 | Hot | very active | 2 | 33% | 144 |
 | oraios/serena | 84 | Hot | very active | 2 | 48% | 16 |
 | PrefectHQ/fastmcp | 83 | Hot | very active | 2 | 49% | 130 |
@@ -323,12 +323,12 @@ Bus factor = commit concentration (1 = single-maintainer risk). MCP servers are 
 | czlonkowski/n8n-mcp | 79 | Mature | very active | 1 | 99% | 294 |
 | modelcontextprotocol/inspector | 79 | Mature | very active | 1 | 91% | 69 |
 | bytebase/dbhub | 78 | Hot | very active | 1 | 69% | 15 |
+| neo4j/mcp | 78 | Hot | very active | 2 | 43% | 29 |
 | github/github-mcp-server | 78 | Hot | very active | 1 | 52% | 85 |
 | blazickjp/arxiv-mcp-server | 78 | Hot | very active | 1 | 95% | 14 |
-| neo4j/mcp | 77 | Hot | very active | 2 | 43% | 29 |
 | getsentry/toolkit | 77 | Hot | very active | 1 | 57% | 48 |
 | mksglu/context-mode | 77 | Rising | very active | 1 | 100% | 195 |
-| mobile-next/mobile-mcp | 76 | Hot | very active | 1 | 92% | 59 |
+| mobile-next/mobile-mcp | 77 | Hot | very active | 1 | 93% | 59 |
 | microsoft/playwright-mcp | 73 | Hot | very active | 1 | 50% | 73 |
 | brightdata/brightdata-mcp | 70 | Mature | very active | 1 | 75% | 15 |
 | youichi-uda/godot-mcp-pro | 65 | Rising | active | 1 | 80% | 21 |
