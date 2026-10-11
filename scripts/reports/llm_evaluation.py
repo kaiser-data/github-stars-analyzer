@@ -43,6 +43,7 @@ TAXONOMY = {
     "Arize-ai/phoenix": ("Evaluation framework", "Open-source LLM tracing + eval; notebook-friendly, OTel-based."),
     "truera/trulens": ("Evaluation framework", "Feedback-function evaluation — programmatic scorers for groundedness/relevance."),
     "strands-agents/evals": ("Evaluation framework", "Strands' eval framework for agents and LLM apps — output and trajectory evaluators plus simulated users."),
+    "UKGovernmentBEIS/inspect_ai": ("Evaluation framework", "UK AI Security Institute's eval framework — composable tasks, solvers and scorers with sandboxed agent evals; widely used for safety and capability evals."),
 
     # Benchmarks & leaderboards (fixed task sets, model ranking)
     "LiveBench/LiveBench": ("Benchmark / leaderboard", "Challenging, contamination-free benchmark refreshed over time to resist training-set leakage."),

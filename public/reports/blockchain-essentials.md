@@ -1,6 +1,6 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges).
 >
 > Generated 2026-10-11 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
@@ -18,11 +18,11 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 | Repo | Layer-fit | ★ | Lifecycle | Momentum (★/30d) | Commits (90d) |
 |---|---|---|---|---|---|
 | [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,566 | 🟢 Mature | 1,246 | 20,491 |
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 110,471 | 🔥 Hot | 6,909 | 231 |
-| [foundry](https://github.com/foundry-rs/foundry) | Dev toolkits | 10,651 | 🔵 Classic | 215 | 1,373 |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 110,471 | 🔥 Hot | 6,905 | 231 |
 | [agave](https://github.com/anza-xyz/agave) | Solana | 1,938 | 🟢 Mature | 103 | 1,194 |
+| [foundry](https://github.com/foundry-rs/foundry) | Dev toolkits | 10,651 | 🔵 Classic | 215 | 1,373 |
 | [nethermind](https://github.com/NethermindEth/nethermind) | Execution clients (nodes) | 1,616 | 🔵 Classic | 18 | 1,312 |
-| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,622 | 🔥 Hot | 1,988 | 188 |
+| [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 🔥 Agentic payments (x402) | 6,622 | 🔥 Hot | 1,985 | 188 |
 | [hardhat](https://github.com/NomicFoundation/hardhat) | Dev toolkits | 8,511 | 🔵 Classic | 103 | 758 |
 | [reth](https://github.com/paradigmxyz/reth) | Execution clients (nodes) | 5,816 | 🔵 Classic | 147 | 743 |
 
@@ -76,7 +76,7 @@ _Talk to chains from apps._
 | [ethers.js](https://github.com/ethers-io/ethers.js) | 8,710 | 🟢 Mature | 33 | TypeScript | The long-time standard JS/TS library. |
 | [wagmi](https://github.com/wevm/wagmi) | 6,759 | 🔵 Classic | 71 | TypeScript | React hooks for Ethereum (pairs with viem). |
 | [viem](https://github.com/wevm/viem) | 3,577 | 🔵 Classic | 85 | TypeScript | Modern, type-safe Ethereum client — default for new TS apps. |
-| [rainbowkit](https://github.com/rainbow-me/rainbowkit) | 2,835 | 🟢 Mature | 54 | MDX | Drop-in wallet-connection UX for dApps. |
+| [rainbowkit](https://github.com/rainbow-me/rainbowkit) | 2,835 | 🟢 Mature | 53 | MDX | Drop-in wallet-connection UX for dApps. |
 
 ### Execution clients (nodes)
 _The chain itself._
@@ -138,7 +138,7 @@ _AI agents settling on-chain — the breakout trend._
 |---|---|---|---|---|---|
 | [ClawRouter](https://github.com/BlockRunAI/ClawRouter) | 6,622 | 🔥 Hot | 79 | TypeScript | Agent LLM router with USDC payments on Base & Solana via x402. |
 | [x402scan](https://github.com/Merit-Systems/x402scan) | 397 | 🔥 Hot | 75 | TypeScript | x402 ecosystem explorer. |
-| [x402](https://github.com/coinbase/x402) | 163 | 🟠 Declining | 35 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
+| [x402](https://github.com/coinbase/x402) | 163 | 🟠 Declining | 34 | TypeScript | The payments-over-HTTP protocol everyone's building on. |
 
 ### 🔥 AI × finance / trading
 _Where crypto meets the agent stack._
@@ -175,4 +175,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-10-11T13:10:52.436Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-10-11T22:14:20.246Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

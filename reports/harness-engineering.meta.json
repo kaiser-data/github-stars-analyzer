@@ -3,11 +3,11 @@
   "title": "Harness Engineering \u2014 Ten Methods That Make an Agent Harness Good",
   "file": "harness-engineering.md",
   "category": "AI / Agents",
-  "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 45 repos (1,736,624\u2605).",
-  "tool_count": 45,
-  "total_stars": 1736624,
+  "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 47 repos (1,748,011\u2605).",
+  "tool_count": 47,
+  "total_stars": 1748011,
   "categories": {
-    "1. Minimal loop first": 4,
+    "1. Minimal loop first": 5,
     "2. Small instruction budget": 4,
     "3. Context engineering": 6,
     "4. Lean action space": 4,
@@ -16,7 +16,7 @@
     "7. Sub-agents for isolation": 3,
     "8. Guards & sandboxes": 5,
     "9. Durable runs & approvals": 4,
-    "10. Observe & eval the harness": 6
+    "10. Observe & eval the harness": 7
   },
   "top_tools": [
     {
@@ -40,7 +40,7 @@
       "stars": 114040
     }
   ],
-  "snapshot": "2026-10-11T13:10:52.436Z",
+  "snapshot": "2026-10-11T22:14:20.246Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/harness_engineering.py",
   "created": "2026-10-01"

@@ -1,6 +1,6 @@
 # OpenClaw Ecosystem — What to Use Now
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
@@ -39,14 +39,14 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [farion1231/cc-switch](https://github.com/farion1231/cc-switch) | Desktop / orchestration | Rust | 142,363 | Hot | 77 | very active | 1d ago | 1 |
 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | Desktop / orchestration | TypeScript | 52,518 | Mature | 94 | very active | 1d ago | 4 |
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | Alternative agent / OS | Python | 48,924 | Hot | 79 | very active | 1d ago | 1 |
-| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 41,081 | Hot | 84 | very active | 3d ago | 2 |
+| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Specialized agent | Python | 41,081 | Hot | 84 | very active | 4d ago | 2 |
 | [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | Desktop / orchestration | TypeScript | 33,416 | Hot | 78 | active | 1mo ago | 2 |
-| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Alternative agent / OS | Rust | 32,949 | Hot | 78 | very active | 1d ago | 1 |
+| [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | Alternative agent / OS | Rust | 32,949 | Hot | 78 | very active | 2d ago | 1 |
 | [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | Skills / directory | — | 31,669 | Declining | 18 | stale | 6mo ago | 0 |
 | [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Hosting / secure runtime | TypeScript | 30,911 | Hot | 77 | very active | 1d ago | 1 |
-| [garrytan/gbrain](https://github.com/garrytan/gbrain) | Memory | TypeScript | 30,769 | Hot | 79 | very active | 0d ago | 1 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Memory | TypeScript | 27,887 | Hot | 84 | very active | 1d ago | 4 |
-| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Hosting / secure runtime | TypeScript | 22,698 | Hot | 76 | very active | 1d ago | 3 |
+| [garrytan/gbrain](https://github.com/garrytan/gbrain) | Memory | TypeScript | 30,769 | Hot | 79 | very active | 1d ago | 1 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Memory | TypeScript | 27,887 | Hot | 84 | very active | 2d ago | 4 |
+| [NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw) | Hosting / secure runtime | TypeScript | 22,698 | Hot | 75 | very active | 1d ago | 3 |
 | [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | Alternative agent / OS | Rust | 18,217 | Declining | 46 | slowing | 3mo ago | 0 |
 | [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | Specialized agent | Python | 14,613 | Hot | 67 | active | 1mo ago | 1 |
 | [nearai/ironclaw](https://github.com/nearai/ironclaw) | Alternative agent / OS | Rust | 12,647 | Hot | 80 | very active | 4d ago | 2 |
@@ -60,9 +60,9 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | Memory | TypeScript | 796 | Rising | 49 | active | 2d ago | 1 |
 | [SAIL-Research-Lab/cheetahclaws](https://github.com/SAIL-Research-Lab/cheetahclaws) | Specialized agent | Python | 784 | Rising | 66 | very active | 21d ago | 1 |
 | [comet-ml/opik-openclaw](https://github.com/comet-ml/opik-openclaw) | Observability | TypeScript | 724 | Rising | 64 | active | 6d ago | 1 |
-| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 616 | Rising | 67 | very active | 9d ago | 1 |
+| [hydro13/tandem-browser](https://github.com/hydro13/tandem-browser) | Specialized agent | TypeScript | 616 | Rising | 67 | very active | 10d ago | 1 |
 | [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | Skills / directory | Python | 561 | Declining | 21 | slowing | 4mo ago | 0 |
-| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 426 | Hot | 79 | very active | 3d ago | 1 |
+| [vivekchand/clawmetry](https://github.com/vivekchand/clawmetry) | Observability | Python | 426 | Hot | 79 | very active | 4d ago | 1 |
 
 ## By category
 
@@ -101,7 +101,7 @@ _Where & how to run it safely — containers, edge, managed GPU._
 - **[nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw)** · 30,911★ · TypeScript · Hot · health 77  
   Lightweight OpenClaw alternative that runs in containers for security; WhatsApp/Telegram/Slack connectors.  
   <sub>topics: ai-agents, ai-assistant, claude-code, claude-skills, openclaw</sub>
-- **[NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw)** · 22,698★ · TypeScript · Hot · health 76  
+- **[NVIDIA/NemoClaw](https://github.com/NVIDIA/NemoClaw)** · 22,698★ · TypeScript · Hot · health 75  
   Run OpenClaw more securely inside NVIDIA OpenShell with managed inference.  
   <sub>topics: ai-agents, nvidia, openclaw, openshell, sandboxing, typescript, hermes, deep-agents</sub>
 - **[cloudflare/moltworker](https://github.com/cloudflare/moltworker)** · 9,948★ · TypeScript · Declining · health 22  
@@ -206,31 +206,32 @@ Low health and/or not pushed recently — verify before wiring into anything you
 |---|---|---|---|---|
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 14 | Declining | 7mo ago | 222d stale; low health; declining |
 | [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases) | 18 | Declining | 6mo ago | 201d stale; low health; declining |
-| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | 20 | Declining | 4mo ago | 141d stale; low health; declining |
-| [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | 21 | Declining | 4mo ago | 121d stale; low health; declining |
-| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 22 | Declining | 5mo ago | 155d stale; low health; declining |
-| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 46 | Declining | 3mo ago | 101d stale; low health; declining |
-| [pinchbench/skill](https://github.com/pinchbench/skill) | 46 | Declining | 3mo ago | 101d stale; low health; declining |
+| [Gen-Verse/OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | 20 | Declining | 4mo ago | 142d stale; low health; declining |
+| [rohitg00/awesome-openclaw](https://github.com/rohitg00/awesome-openclaw) | 21 | Declining | 4mo ago | 122d stale; low health; declining |
+| [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 22 | Declining | 5mo ago | 156d stale; low health; declining |
+| [RightNow-AI/openfang](https://github.com/RightNow-AI/openfang) | 46 | Declining | 3mo ago | 102d stale; low health; declining |
+| [pinchbench/skill](https://github.com/pinchbench/skill) | 46 | Declining | 3mo ago | 102d stale; low health; declining |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | 49 | Rising | 2d ago | low health |
 | [crshdn/mission-control](https://github.com/crshdn/mission-control) | 51 | Declining | 25d ago | declining |
-| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 67 | Hot | 1mo ago | 53d stale |
+| [aiming-lab/AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | 67 | Hot | 1mo ago | 54d stale |
 
 > Note: `openagen/zeroclaw` (1.9k★, 70d stale) is a *different, older* project than the healthy **`zeroclaw-labs/zeroclaw`** (h93) recommended above — don't confuse them.
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 29 projects span **16 of the graph's 42 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
+**Community clustering.** These 29 projects span **15 of the graph's 38 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
 
 - **Community 3** (4): `nearai/ironclaw`, `RightNow-AI/openfang`, `vivekchand/clawmetry`, `farion1231/cc-switch`
-- **Community 8** (4): `NousResearch/hermes-agent`, `rohitg00/awesome-openclaw`, `iOfficeAI/AionUi`, `hydro13/tandem-browser`
-- **Community 31** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
-- **Community 10** (3): `cloudflare/moltworker`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
-- **Community 12** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
-- **Community 34** (2): `openclaw/openclaw`, `openclaw/clawhub`
+- **Community 1** (4): `NousResearch/hermes-agent`, `garrytan/gbrain`, `iOfficeAI/AionUi`, `hydro13/tandem-browser`
+- **Community 27** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
+- **Community 10** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
+- **Community 8** (3): `rohitg00/awesome-openclaw`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
+- **Community 30** (2): `openclaw/openclaw`, `openclaw/clawhub`
+- **Community 5** (2): `crshdn/mission-control`, `SAIL-Research-Lab/cheetahclaws`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' OpenClaw projects in your ecosystem:
 
-- `vivekchand/clawmetry` — PageRank 0.0023
+- `vivekchand/clawmetry` — PageRank 0.0022
 - `garrytan/gbrain` — PageRank 0.0018
 - `NousResearch/hermes-agent` — PageRank 0.0007
 - `RightNow-AI/openfang` — PageRank 0.0006
@@ -272,4 +273,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`abhi1693/openclaw-mission-control`](https://github.com/abhi1693/openclaw-mission-control) | Desktop / orchestration | Archived upstream; last in the dataset 2026-07-27. Agent-orchestration dashboard for OpenClaw (assign tasks, coordinate agents). | 2026-07-27 |
 
-<sub>Projects covered: 29 · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Projects covered: 29 · Snapshot: 2026-10-11T22:14:20.246Z</sub>

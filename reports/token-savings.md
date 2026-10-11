@@ -1,6 +1,6 @@
 # Token-Savings & Context-Efficiency Tooling
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/token_savings.py` (regenerate any time — no API cost).
 
@@ -187,18 +187,18 @@ Low health and/or stale — verify before relying on:
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 15 tools span **10 of the graph's 42 communities** — token-savings is a cross-cutting concern, not a single cluster.
+**Community clustering.** These 15 tools span **10 of the graph's 38 communities** — token-savings is a cross-cutting concern, not a single cluster.
 
 - **Community 4** (3): `colbymchenry/codegraph`, `mksglu/context-mode`, `JuliusBrussee/caveman`
-- **Community 8** (2): `rtk-ai/rtk`, `getagentseal/codeburn`
+- **Community 1** (2): `rtk-ai/rtk`, `getagentseal/codeburn`
 - **Community 5** (2): `bytebase/dbhub`, `thedotmack/claude-mem`
-- **Community 2** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
+- **Community 0** (2): `iternal-technologies-partners/blockify-agentic-data-optimization`, `jasontang-ai/Context-Engineering`
 
 **Centrality (PageRank in the full 1,071-repo graph):**
 
-- `mksglu/context-mode` — PageRank 0.0037
+- `mksglu/context-mode` — PageRank 0.0036
 - `yvgude/lean-ctx` — PageRank 0.0013
-- `JuliusBrussee/caveman` — PageRank 0.0010
+- `JuliusBrussee/caveman` — PageRank 0.0009
 - `colbymchenry/codegraph` — PageRank 0.0006
 - `getagentseal/codeburn` — PageRank 0.0005
 - `vllm-project/llm-compressor` — PageRank 0.0004
@@ -219,4 +219,4 @@ Low health and/or stale — verify before relying on:
 - **% savings are vendor-claimed**, measured on the projects' own workloads — not verified here. Real savings depend heavily on *your* usage pattern.
 - **Metrics** (health, lifecycle, days_since_push) are precomputed at snapshot time and may lag GitHub. Re-run after a fresh `classified.json` to refresh.
 
-<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Tools covered: 15 across 6 workloads · Snapshot: 2026-10-11T22:14:20.246Z</sub>

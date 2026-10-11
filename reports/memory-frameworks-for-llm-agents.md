@@ -1,6 +1,6 @@
 # Memory Frameworks for LLMs & Agents — Comparative Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
@@ -23,14 +23,14 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | TypeScript | Apache-2.0 | 99,136 | Hot | 85 | very active | 2d ago | 1.1y | 8 |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 66,942 | Classic | 83 | very active | 2d ago | 3.3y | 30 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 59,492 | Hot | 76 | very active | 1d ago | 6mo | 12 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 66,942 | Classic | 83 | very active | 3d ago | 3.3y | 30 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 59,492 | Hot | 76 | very active | 2d ago | 6mo | 12 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 31,948 | Classic | 77 | very active | 2d ago | 3.2y | 9 |
 | [getzep/graphiti](https://github.com/getzep/graphiti) | General memory layer | Python | Apache-2.0 | 31,613 | Mature | 76 | very active | 1d ago | 2.2y | 21 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 27,887 | Hot | 84 | very active | 1d ago | 6mo | 25 |
-| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 27,780 | Hot | 76 | very active | 1d ago | 12mo | 7 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | General memory layer | TypeScript | NOASSERTION | 27,887 | Hot | 84 | very active | 2d ago | 6mo | 25 |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | Coding-agent memory | Go | MIT | 27,780 | Hot | 76 | very active | 1d ago | 1.0y | 7 |
 | [letta-ai/letta](https://github.com/letta-ai/letta) | General memory layer | — | Apache-2.0 | 25,095 | Mature | 64 | active | 1mo ago | 3.0y | 2 |
-| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 17,148 | Mature | 63 | active | 8d ago | 1.2y | 1 |
+| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | General memory layer | Python | NOASSERTION | 17,148 | Mature | 63 | active | 9d ago | 1.2y | 1 |
 | [memvid/memvid](https://github.com/memvid/memvid) | General memory layer | Rust | Apache-2.0 | 16,585 | Declining | 53 | slowing | 2mo ago | 1.4y | 1 |
 | [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | Coding-agent memory | JavaScript | MIT | 13,973 | Declining | 26 | slowing | 4mo ago | 11mo | 0 |
 | [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Knowledge-graph memory | Python | MIT | 13,901 | Hot | 89 | very active | 1d ago | 1.3y | 24 |
@@ -38,13 +38,13 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 | [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | General memory layer | JavaScript | Apache-2.0 | 3,693 | Declining | 46 | slowing | 2mo ago | 1.2y | 0 |
 | [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,816 | Declining | 19 | slowing | 5mo ago | 5mo | 0 |
 | [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,790 | Mature | 63 | very active | 4d ago | 2.3y | 9 |
-| [MemTensor/memmy-agent](https://github.com/MemTensor/memmy-agent) | General memory layer | TypeScript | MIT | 2,088 | Hot | 82 | very active | 1d ago | 2mo | 10 |
+| [MemTensor/memmy-agent](https://github.com/MemTensor/memmy-agent) | General memory layer | TypeScript | MIT | 2,088 | Hot | 82 | very active | 2d ago | 2mo | 10 |
 | [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | Coding-agent memory | Go | MIT | 1,813 | Rising | 80 | very active | 0d ago | 5mo | 2 |
 | [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Knowledge-graph memory | JavaScript | MIT | 888 | Declining | 39 | slowing | 4mo ago | 1.8y | 0 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | General memory layer | TypeScript | — | 796 | Rising | 49 | active | 2d ago | 8mo | 2 |
-| [zmedelis/bosquet](https://github.com/zmedelis/bosquet) | LLM framework w/ memory | Clojure | EPL-1.0 | 381 | Mature | 49 | active | 11d ago | 3.8y | 2 |
+| [zmedelis/bosquet](https://github.com/zmedelis/bosquet) | LLM framework w/ memory | Clojure | EPL-1.0 | 381 | Mature | 49 | active | 12d ago | 3.8y | 2 |
 | [needle-ai/needle-mcp](https://github.com/needle-ai/needle-mcp) | Knowledge-graph memory | Python | MIT | 103 | Abandoned | 10 | stale | 1.2y ago | 1.8y | 0 |
-| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 79 | Hot | 77 | very active | 5d ago | 8mo | 6 |
+| [ActiveMemory/ctx](https://github.com/ActiveMemory/ctx) | General memory layer | HTML | NOASSERTION | 79 | Hot | 77 | very active | 6d ago | 8mo | 6 |
 
 ## By category
 
@@ -139,13 +139,12 @@ _Broader LLMOps toolkits that ship memory as one module._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** The 23 frameworks fall into **9 of the graph's 42 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
+**Community clustering.** The 23 frameworks fall into **9 of the graph's 38 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
 
-- **Community 10** (7): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `gastownhall/beads`
-- **Community 2** (4): `MemPalace/mempalace`, `Einsia/OpenChronicle`, `andrewyng/context-hub`, `needle-ai/needle-mcp`
-- **Community 18** (3): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`
-- **Community 9** (2): `getzep/graphiti`, `memodb-io/Acontext`
-- **Community 12** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
+- **Community 8** (10): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `getzep/graphiti`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `MemPalace/mempalace`, `gastownhall/beads`, `needle-ai/needle-mcp`
+- **Community 16** (3): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`
+- **Community 10** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
+- **Community 0** (2): `Einsia/OpenChronicle`, `andrewyng/context-hub`
 - **Community 5** (2): `thedotmack/claude-mem`, `Asymptote-Labs/agent-beacon`
 
 **Centrality (PageRank in the full 1,071-repo graph).** Higher = more connected to the rest of your starred ecosystem (a proxy for how 'hub-like' the project is):
@@ -227,4 +226,4 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 - **Metrics** (health, momentum, lifecycle, bus_factor) are precomputed by the analyzer pipeline at snapshot time and may lag GitHub's current state.
 - **The market is young**: many of these launched in the last 12 months; star counts and activity shift fast. Re-run this script after a fresh `classified.json` to refresh.
 
-<sub>Frameworks covered: 23 · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Frameworks covered: 23 · Snapshot: 2026-10-11T22:14:20.246Z</sub>

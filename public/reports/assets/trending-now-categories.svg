@@ -18,8 +18,8 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <path d="M244,67 h312.1 q4,0 4,4 v10 q0,4 -4,4 h-312.1 z" class="bar"/>
 <text x="566.1" y="76.0" class="val" dominant-baseline="central">1,652</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">New entrants</text>
-<path d="M244,94 h15.3 q4,0 4,4 v10 q0,4 -4,4 h-15.3 z" class="bar"/>
-<text x="269.3" y="103.0" class="val" dominant-baseline="central">101</text>
+<path d="M244,94 h15.7 q4,0 4,4 v10 q0,4 -4,4 h-15.7 z" class="bar"/>
+<text x="269.7" y="103.0" class="val" dominant-baseline="central">103</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">Cooling</text>
 <path d="M244,121 h11.5 q4,0 4,4 v10 q0,4 -4,4 h-11.5 z" class="bar"/>
 <text x="265.5" y="130.0" class="val" dominant-baseline="central">81</text>

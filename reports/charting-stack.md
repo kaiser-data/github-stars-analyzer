@@ -1,6 +1,6 @@
 # Charting & Data-Visualization Tools — Advantages, Disadvantages & Use Cases
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities). The advantages/disadvantages column is editorial judgement grounded in the dataset's own health metrics plus external comparisons — see Methodology.
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). The advantages/disadvantages column is editorial judgement grounded in the dataset's own health metrics plus external comparisons — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/charting_stack.py` (regenerate any time — no API cost).
 
@@ -213,12 +213,12 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [streamlit/streamlit](https://github.com/streamlit/streamlit) | Data-app framework | Python | Apache-2.0 | 45,932 | Classic | 83 | very active | 1d ago | 7.1y | 6 |
 | [gradio-app/gradio](https://github.com/gradio-app/gradio) | Data-app framework | Python | Apache-2.0 | 43,705 | Classic | 85 | very active | 2d ago | 7.8y | 8 |
 | [ToolJet/ToolJet](https://github.com/ToolJet/ToolJet) | BI & dashboard platform | HTML | AGPL-3.0 | 41,068 | Classic | 79 | very active | 1d ago | 5.5y | 11 |
-| [reflex-dev/reflex](https://github.com/reflex-dev/reflex) | Data-app framework | Python | Apache-2.0 | 28,942 | Classic | 84 | very active | 1d ago | 4.0y | 14 |
+| [reflex-dev/reflex](https://github.com/reflex-dev/reflex) | Data-app framework | Python | Apache-2.0 | 28,942 | Classic | 84 | very active | 2d ago | 4.0y | 14 |
 | [getredash/redash](https://github.com/getredash/redash) | BI & dashboard platform | Python | BSD-2-Clause | 28,830 | Classic | 59 | very active | 3d ago | 13.0y | 8 |
 | [recharts/recharts](https://github.com/recharts/recharts) | React charting library | TypeScript | MIT | 27,619 | Classic | 79 | very active | 1d ago | 11.2y | 14 |
 | [plotly/dash](https://github.com/plotly/dash) | Data-app framework | Python | MIT | 24,446 | Classic | 78 | very active | 2d ago | 11.5y | 12 |
 | [matplotlib/matplotlib](https://github.com/matplotlib/matplotlib) | Python plotting | Python | — | 23,349 | Classic | 88 | very active | 2d ago | 15.7y | 15 |
-| [openobserve/openobserve](https://github.com/openobserve/openobserve) | BI & dashboard platform | TypeScript | AGPL-3.0 | 22,313 | Classic | 99 | very active | 1d ago | 3.7y | 23 |
+| [openobserve/openobserve](https://github.com/openobserve/openobserve) | BI & dashboard platform | TypeScript | AGPL-3.0 | 22,313 | Classic | 99 | very active | 2d ago | 3.7y | 23 |
 | [elastic/kibana](https://github.com/elastic/kibana) | BI & dashboard platform | TypeScript | NOASSERTION | 21,309 | Classic | 99 | very active | 1d ago | 13.7y | 68 |
 | [airbnb/visx](https://github.com/airbnb/visx) | React charting library | TypeScript | MIT | 21,075 | Mature | 31 | slowing | 3mo ago | 9.6y | 0 |
 | [bokeh/bokeh](https://github.com/bokeh/bokeh) | Python plotting | TypeScript | BSD-3-Clause | 20,455 | Classic | 64 | very active | 1d ago | 14.6y | 20 |
@@ -229,7 +229,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [tradingview/lightweight-charts](https://github.com/tradingview/lightweight-charts) | Low-level / high-performance | TypeScript | Apache-2.0 | 17,526 | Classic | 72 | very active | 2d ago | 7.4y | 7 |
 | [Kanaries/pygwalker](https://github.com/Kanaries/pygwalker) | Python plotting | Python | Apache-2.0 | 15,983 | Mature | 45 | active | 1mo ago | 3.7y | 1 |
 | [apexcharts/apexcharts.js](https://github.com/apexcharts/apexcharts.js) | Web charting library | JavaScript | NOASSERTION | 15,174 | Classic | 79 | very active | 2d ago | 8.2y | 6 |
-| [frappe/charts](https://github.com/frappe/charts) | Web charting library | JavaScript | MIT | 15,084 | Mature | 35 | active | 2d ago | 9.0y | 0 |
+| [frappe/charts](https://github.com/frappe/charts) | Web charting library | JavaScript | MIT | 15,084 | Mature | 35 | active | 3d ago | 9.0y | 0 |
 | [visgl/deck.gl](https://github.com/visgl/deck.gl) | Low-level / high-performance | TypeScript | MIT | 14,642 | Classic | 84 | very active | 1d ago | 10.8y | 14 |
 | [plouc/nivo](https://github.com/plouc/nivo) | React charting library | TypeScript | MIT | 14,108 | Mature | 41 | slowing | 2mo ago | 10.5y | 2 |
 | [antvis/G2](https://github.com/antvis/G2) | Web charting library | TypeScript | MIT | 12,632 | Classic | 66 | active | 2d ago | 10.4y | 4 |
@@ -238,11 +238,11 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [vega/vega](https://github.com/vega/vega) | Grammar of graphics | JavaScript | BSD-3-Clause | 12,015 | Classic | 78 | very active | 6d ago | 13.7y | 14 |
 | [perspective-dev/perspective](https://github.com/perspective-dev/perspective) | Low-level / high-performance | Rust | Apache-2.0 | 11,283 | Classic | 79 | very active | 4d ago | 8.9y | 3 |
 | [lukilabs/beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) | Diagrams & AI charts | TypeScript | MIT | 11,182 | Declining | 32 | slowing | 5mo ago | 8mo | 0 |
-| [leeoniya/uPlot](https://github.com/leeoniya/uPlot) | Low-level / high-performance | JavaScript | MIT | 10,554 | Mature | 62 | very active | 1d ago | 7.0y | 1 |
-| [vega/altair](https://github.com/vega/altair) | Grammar of graphics | Python | BSD-3-Clause | 10,495 | Classic | 75 | very active | 1d ago | 11.1y | 14 |
-| [c3js/c3](https://github.com/c3js/c3) | Web charting library | JavaScript | MIT | 9,351 | Classic | 49 | active | 27d ago | 13.2y | 2 |
+| [leeoniya/uPlot](https://github.com/leeoniya/uPlot) | Low-level / high-performance | JavaScript | MIT | 10,554 | Mature | 62 | very active | 2d ago | 7.0y | 1 |
+| [vega/altair](https://github.com/vega/altair) | Grammar of graphics | Python | BSD-3-Clause | 10,495 | Classic | 75 | very active | 2d ago | 11.1y | 14 |
+| [c3js/c3](https://github.com/c3js/c3) | Web charting library | JavaScript | MIT | 9,351 | Classic | 49 | active | 28d ago | 13.2y | 2 |
 | [evidence-dev/evidence](https://github.com/evidence-dev/evidence) | BI & dashboard platform | TypeScript | MIT | 6,998 | Classic | 77 | very active | 2d ago | 5.4y | 4 |
-| [ScottPlot/ScottPlot](https://github.com/ScottPlot/ScottPlot) | Native / systems charting | C# | MIT | 6,772 | Mature | 50 | active | 1mo ago | 8.8y | 2 |
+| [ScottPlot/ScottPlot](https://github.com/ScottPlot/ScottPlot) | Native / systems charting | C# | MIT | 6,772 | Mature | 48 | active | 1mo ago | 8.8y | 2 |
 | [holoviz/panel](https://github.com/holoviz/panel) | Python plotting | Python | BSD-3-Clause | 5,793 | Classic | 82 | very active | 2d ago | 8.1y | 22 |
 | [vega/vega-lite](https://github.com/vega/vega-lite) | Grammar of graphics | TypeScript | BSD-3-Clause | 5,511 | Classic | 64 | very active | 3d ago | 11.9y | 6 |
 | [observablehq/plot](https://github.com/observablehq/plot) | Web charting library | HTML | ISC | 5,403 | Mature | 41 | active | 1mo ago | 6.0y | 1 |
@@ -252,17 +252,17 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [AAChartModel/AAChartKit](https://github.com/AAChartModel/AAChartKit) | Native / systems charting | Objective-C | MIT | 4,765 | Mature | 27 | slowing | 5mo ago | 9.6y | 0 |
 | [tremorlabs/tremor](https://github.com/tremorlabs/tremor) | React charting library | TypeScript | Apache-2.0 | 3,651 | Abandoned | 7 | stale | 1.0y ago | 2.5y | 0 |
 | [gonum/plot](https://github.com/gonum/plot) | Native / systems charting | Go | BSD-3-Clause | 2,968 | Mature | 24 | slowing | 5mo ago | 13.2y | 0 |
-| [rilldata/rill](https://github.com/rilldata/rill) | BI & dashboard platform | Go | Apache-2.0 | 2,937 | Classic | 79 | very active | 1d ago | 4.8y | 13 |
+| [rilldata/rill](https://github.com/rilldata/rill) | BI & dashboard platform | Go | Apache-2.0 | 2,937 | Classic | 79 | very active | 2d ago | 4.8y | 13 |
 | [holoviz/holoviews](https://github.com/holoviz/holoviews) | Python plotting | Python | BSD-3-Clause | 2,911 | Classic | 72 | very active | 2d ago | 12.4y | 5 |
 | [posit-dev/great-tables](https://github.com/posit-dev/great-tables) | Python plotting | Python | MIT | 2,896 | Classic | 75 | very active | 2d ago | 4.4y | 3 |
-| [core-plot/core-plot](https://github.com/core-plot/core-plot) | Native / systems charting | Objective-C | BSD-3-Clause | 2,758 | Mature | 26 | slowing | 5mo ago | 12.8y | 0 |
+| [core-plot/core-plot](https://github.com/core-plot/core-plot) | Native / systems charting | Objective-C | BSD-3-Clause | 2,758 | Mature | 25 | slowing | 5mo ago | 12.8y | 0 |
 | [weaveworks/grafanalib](https://github.com/weaveworks/grafanalib) | Dashboards as code | Python | Apache-2.0 | 1,979 | Declining | 11 | stale | 10mo ago | 9.9y | 0 |
 | [reflex-dev/xy](https://github.com/reflex-dev/xy) | Python plotting | Python | Apache-2.0 | 1,874 | Hot | 79 | very active | 10d ago | 3mo | 11 |
 | [JetBrains/lets-plot](https://github.com/JetBrains/lets-plot) | Grammar of graphics | Kotlin | MIT | 1,783 | Mature | 45 | slowing | 3mo ago | 7.6y | 0 |
 | [K-Phoen/grabana](https://github.com/K-Phoen/grabana) | Dashboards as code | Go | MIT | 729 | Abandoned | 6 | stale | 1.4y ago | 6.7y | 0 |
 | [hustcc/mcp-mermaid](https://github.com/hustcc/mcp-mermaid) | Diagrams & AI charts | TypeScript | MIT | 642 | Declining | 30 | slowing | 4mo ago | 1.4y | 0 |
 | [grafana/grafana-foundation-sdk](https://github.com/grafana/grafana-foundation-sdk) | Dashboards as code | PHP | Apache-2.0 | 263 | Mature | 56 | very active | 1d ago | 2.9y | 4 |
-| [deliveryhero/grafyaml](https://github.com/deliveryhero/grafyaml) | Dashboards as code | Python | Apache-2.0 | 44 | Mature | 48 | active | 26d ago | 6.2y | 2 |
+| [deliveryhero/grafyaml](https://github.com/deliveryhero/grafyaml) | Dashboards as code | Python | Apache-2.0 | 44 | Mature | 48 | active | 27d ago | 6.2y | 2 |
 
 ## By layer
 
@@ -511,20 +511,20 @@ The practical rule: **decide the data volume before the library.** Retrofitting 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 61 tools span **13 of the graph's 42 communities** — a wide spread, because charting cuts across the frontend, Python-data, and observability clusters rather than forming one of its own.
+**Community clustering.** These 61 tools span **12 of the graph's 38 communities** — a wide spread, because charting cuts across the frontend, Python-data, and observability clusters rather than forming one of its own.
 
-- **Community 14** (25): `apache/echarts`, `plotly/plotly.js`, `apexcharts/apexcharts.js`, `observablehq/plot`, `plouc/nivo`, `airbnb/visx`, `d3/d3`, `leeoniya/uPlot`, `tradingview/lightweight-charts`, `perspective-dev/perspective`, `visgl/deck.gl`, `keplergl/kepler.gl`, `vega/vega-lite`, `vega/vega`, `vega/altair`, `JetBrains/lets-plot`, `plotly/plotly.py`, `Kanaries/pygwalker`, `man-group/dtale`, `apache/superset`, `evidence-dev/evidence`, `plotly/dash`, `ScottPlot/ScottPlot`, `AAChartModel/AAChartKit`, `alandefreitas/matplotplusplus`
-- **Community 3** (14): `matplotlib/matplotlib`, `bokeh/bokeh`, `holoviz/holoviews`, `holoviz/panel`, `reflex-dev/xy`, `getredash/redash`, `Canner/WrenAI`, `streamlit/streamlit`, `gradio-app/gradio`, `reflex-dev/reflex`, `Avaiga/taipy`, `weaveworks/grafanalib`, `K-Phoen/grabana`, `jgraph/drawio-desktop`
-- **Community 35** (6): `grafana/grafana`, `metabase/metabase`, `elastic/kibana`, `openobserve/openobserve`, `rilldata/rill`, `grafana/grafana-foundation-sdk`
-- **Community 22** (3): `chartjs/Chart.js`, `c3js/c3`, `frappe/charts`
-- **Community 28** (3): `recharts/recharts`, `tremorlabs/tremor`, `ToolJet/ToolJet`
-- **Community 19** (2): `antvis/G2`, `excalidraw/excalidraw`
-- **Community 11** (2): `has2k1/plotnine`, `posit-dev/great-tables`
+- **Community 12** (28): `apache/echarts`, `plotly/plotly.js`, `apexcharts/apexcharts.js`, `observablehq/plot`, `plouc/nivo`, `airbnb/visx`, `d3/d3`, `leeoniya/uPlot`, `tradingview/lightweight-charts`, `perspective-dev/perspective`, `visgl/deck.gl`, `keplergl/kepler.gl`, `vega/vega-lite`, `vega/vega`, `vega/altair`, `JetBrains/lets-plot`, `plotly/plotly.py`, `bokeh/bokeh`, `holoviz/holoviews`, `holoviz/panel`, `Kanaries/pygwalker`, `man-group/dtale`, `apache/superset`, `evidence-dev/evidence`, `plotly/dash`, `ScottPlot/ScottPlot`, `AAChartModel/AAChartKit`, `alandefreitas/matplotplusplus`
+- **Community 3** (11): `matplotlib/matplotlib`, `reflex-dev/xy`, `getredash/redash`, `Canner/WrenAI`, `streamlit/streamlit`, `gradio-app/gradio`, `reflex-dev/reflex`, `Avaiga/taipy`, `weaveworks/grafanalib`, `K-Phoen/grabana`, `jgraph/drawio-desktop`
+- **Community 33** (6): `grafana/grafana`, `metabase/metabase`, `elastic/kibana`, `openobserve/openobserve`, `rilldata/rill`, `grafana/grafana-foundation-sdk`
+- **Community 20** (3): `chartjs/Chart.js`, `c3js/c3`, `frappe/charts`
+- **Community 21** (3): `highcharts/highcharts`, `antvis/G2`, `excalidraw/excalidraw`
+- **Community 9** (3): `recharts/recharts`, `tremorlabs/tremor`, `ToolJet/ToolJet`
+- **Community 2** (2): `has2k1/plotnine`, `posit-dev/great-tables`
 
-**Centrality (PageRank in the full 2,346-repo graph)** — most 'hub-like' visualization tools in your ecosystem:
+**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' visualization tools in your ecosystem:
 
 - `c3js/c3` — PageRank 0.0012
-- `streamlit/streamlit` — PageRank 0.0011
+- `streamlit/streamlit` — PageRank 0.0012
 - `antvis/G2` — PageRank 0.0010
 - `apache/echarts` — PageRank 0.0010
 - `apexcharts/apexcharts.js` — PageRank 0.0009
@@ -599,10 +599,10 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | getredash/redash | 59 | Classic | very active | 1 | 67% | 102 |
 | grafana/grafana-foundation-sdk | 56 | Mature | very active | 1 | 52% | 0 |
 | chartjs/Chart.js | 54 | Classic | active | 1 | 50% | 117 |
-| ScottPlot/ScottPlot | 50 | Mature | active | 1 | 75% | 179 |
 | c3js/c3 | 49 | Classic | active | 1 | 67% | 94 |
 | Avaiga/taipy | 48 | Mature | slowing | 0 | 0% | 127 |
 | deliveryhero/grafyaml | 48 | Mature | active | 1 | 50% | 8 |
+| ScottPlot/ScottPlot | 48 | Mature | active | 1 | 75% | 179 |
 | JetBrains/lets-plot | 45 | Mature | slowing | 0 | 0% | 109 |
 | Kanaries/pygwalker | 45 | Mature | active | 1 | 100% | 66 |
 | observablehq/plot | 41 | Mature | active | 1 | 100% | 39 |
@@ -614,7 +614,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | hustcc/mcp-mermaid | 30 | Declining | slowing | 0 | 0% | 6 |
 | d3/d3 | 29 | Mature | slowing | 0 | 0% | 194 |
 | AAChartModel/AAChartKit | 27 | Mature | slowing | 0 | 0% | 18 |
-| core-plot/core-plot | 26 | Mature | slowing | 0 | 0% | 19 |
+| core-plot/core-plot | 25 | Mature | slowing | 0 | 0% | 19 |
 | gonum/plot | 24 | Mature | slowing | 0 | 0% | 8 |
 | alandefreitas/matplotplusplus | 19 | Declining | stale | 0 | 0% | 6 |
 | weaveworks/grafanalib | 11 | Declining | stale | 0 | 0% | 16 |
@@ -670,4 +670,4 @@ Ready-to-paste build prompts generated from this report's stack — the tools ab
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; the editorial columns are frozen text and need manual review when major versions land.
 
-<sub>Tools covered: 61 · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Tools covered: 61 · Snapshot: 2026-10-11T22:14:20.246Z</sub>

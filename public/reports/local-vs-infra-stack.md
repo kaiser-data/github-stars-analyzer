@@ -1,6 +1,6 @@
 # Local vs High-Infra AI Stack — A Deployment-Tier Comparison
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/local_vs_infra_stack.py` (regenerate any time — no API cost).
 
@@ -147,37 +147,37 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 
 | Tool | Layer | Tier | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [ollama](https://github.com/ollama/ollama) | Inference runtime | Local | Go | MIT | 182,613 | Classic | 83 | very active | 1d ago | 15 |
+| [ollama](https://github.com/ollama/ollama) | Inference runtime | Local | Go | MIT | 182,613 | Classic | 83 | very active | 2d ago | 15 |
 | [open-webui](https://github.com/open-webui/open-webui) | Model gateway & UI | Local | Python | NOASSERTION | 154,191 | Classic | 85 | very active | 1d ago | 6 |
 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | Inference runtime | Local | C++ | MIT | 130,734 | Classic | 99 | very active | 1d ago | 68 |
 | [unsloth](https://github.com/unslothai/unsloth) | Fine-tuning | Local | Python | Apache-2.0 | 77,697 | Mature | 79 | very active | 1d ago | 17 |
 | [gpt4all](https://github.com/nomic-ai/gpt4all) | Inference runtime | Local | C++ | MIT | 77,368 | Abandoned | 7 | stale | 1.4y ago | 0 |
 | [anything-llm](https://github.com/Mintplex-Labs/anything-llm) | Model gateway & UI | Local | JavaScript | MIT | 66,887 | Classic | 84 | very active | 2d ago | 24 |
 | [LocalAI](https://github.com/mudler/LocalAI) | Inference runtime | Local | Go | MIT | 49,457 | Classic | 79 | very active | 1d ago | 12 |
-| [jan](https://github.com/janhq/jan) | Model gateway & UI | Local | Rust | NOASSERTION | 44,876 | Classic | 79 | very active | 1d ago | 5 |
-| [faiss](https://github.com/facebookresearch/faiss) | Vector store | Local | C++ | MIT | 41,124 | Classic | 99 | very active | 1d ago | 41 |
+| [jan](https://github.com/janhq/jan) | Model gateway & UI | Local | Rust | NOASSERTION | 44,876 | Classic | 79 | very active | 2d ago | 5 |
+| [faiss](https://github.com/facebookresearch/faiss) | Vector store | Local | C++ | MIT | 41,124 | Classic | 99 | very active | 2d ago | 41 |
 | [llamafile](https://github.com/mozilla-ai/llamafile) | Inference runtime | Local | C++ | NOASSERTION | 26,216 | Classic | 67 | very active | 3d ago | 8 |
 | [promptfoo](https://github.com/promptfoo/promptfoo) | Observability & eval | Local | TypeScript | MIT | 25,869 | Classic | 79 | very active | 1d ago | 20 |
-| [zvec](https://github.com/alibaba/zvec) | Vector store | Local | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 2d ago | 17 |
+| [zvec](https://github.com/alibaba/zvec) | Vector store | Local | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 3d ago | 17 |
 | [txtai](https://github.com/neuml/txtai) | Vector store | Local | Python | Apache-2.0 | 13,003 | Classic | 90 | very active | 1d ago | 31 |
 | [lancedb](https://github.com/lancedb/lancedb) | Vector store | Local | Rust | Apache-2.0 | 11,632 | Classic | 92 | very active | 1d ago | 27 |
-| [foundry-local](https://github.com/microsoft/foundry-local) | Inference runtime | Local | C++ | NOASSERTION | 2,578 | Hot | 83 | very active | 1d ago | 19 |
+| [foundry-local](https://github.com/microsoft/foundry-local) | Inference runtime | Local | C++ | NOASSERTION | 2,578 | Hot | 83 | very active | 2d ago | 19 |
 | [node-llama-cpp](https://github.com/withcatai/node-llama-cpp) | Inference runtime | Local | TypeScript | MIT | 2,189 | Classic | 67 | active | 8d ago | 2 |
-| [backburner](https://github.com/StayLameBro/backburner) | Inference runtime | Local | Python | MIT | 926 | Hot | 61 | very active | 2d ago | 5 |
-| [transformers](https://github.com/huggingface/transformers) | Inference runtime | Both | Python | Apache-2.0 | 167,058 | Classic | 100 | very active | 1d ago | 37 |
-| [redis](https://github.com/redis/redis) | Vector store | Both | C | NOASSERTION | 76,695 | Classic | 97 | very active | 1d ago | 41 |
+| [backburner](https://github.com/StayLameBro/backburner) | Inference runtime | Local | Python | MIT | 926 | Hot | 61 | very active | 3d ago | 5 |
+| [transformers](https://github.com/huggingface/transformers) | Inference runtime | Both | Python | Apache-2.0 | 167,058 | Classic | 99 | very active | 2d ago | 37 |
+| [redis](https://github.com/redis/redis) | Vector store | Both | C | NOASSERTION | 76,695 | Classic | 97 | very active | 2d ago | 41 |
 | [litellm](https://github.com/BerriAI/litellm) | Model gateway & UI | Both | Python | NOASSERTION | 60,879 | Classic | 84 | very active | 1d ago | 20 |
 | [crewAI](https://github.com/crewAIInc/crewAI) | Agent framework | Both | Python | MIT | 59,529 | Mature | 89 | very active | 2d ago | 31 |
 | [llama_index](https://github.com/run-llama/llama_index) | Agent framework | Both | Python | MIT | 52,457 | Classic | 98 | very active | 3d ago | 58 |
-| [exo](https://github.com/exo-explore/exo) | Inference runtime | Both | Python | Apache-2.0 | 47,813 | Mature | 59 | active | 5d ago | 1 |
-| [langgraph](https://github.com/langchain-ai/langgraph) | Agent framework | Both | Python | MIT | 43,015 | Classic | 77 | very active | 1d ago | 14 |
+| [exo](https://github.com/exo-explore/exo) | Inference runtime | Both | Python | Apache-2.0 | 47,813 | Mature | 59 | active | 6d ago | 1 |
+| [langgraph](https://github.com/langchain-ai/langgraph) | Agent framework | Both | Python | MIT | 43,015 | Classic | 76 | very active | 1d ago | 14 |
 | [langfuse](https://github.com/langfuse/langfuse) | Observability & eval | Both | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 1d ago | 19 |
 | [qdrant](https://github.com/qdrant/qdrant) | Vector store | Both | Rust | Apache-2.0 | 35,008 | Classic | 88 | very active | 1d ago | 17 |
-| [chroma](https://github.com/chroma-core/chroma) | Vector store | Both | Rust | Apache-2.0 | 29,472 | Classic | 82 | very active | 1d ago | 9 |
-| [pgvector](https://github.com/pgvector/pgvector) | Vector store | Both | C | NOASSERTION | 23,294 | Classic | 64 | very active | 3d ago | 3 |
+| [chroma](https://github.com/chroma-core/chroma) | Vector store | Both | Rust | Apache-2.0 | 29,472 | Classic | 82 | very active | 2d ago | 9 |
+| [pgvector](https://github.com/pgvector/pgvector) | Vector store | Both | C | NOASSERTION | 23,294 | Classic | 64 | very active | 4d ago | 3 |
 | [peft](https://github.com/huggingface/peft) | Fine-tuning | Both | Python | Apache-2.0 | 21,778 | Classic | 94 | very active | 2d ago | 36 |
 | [pydantic-ai](https://github.com/pydantic/pydantic-ai) | Agent framework | Both | Python | MIT | 20,531 | Mature | 82 | very active | 1d ago | 16 |
-| [gateway](https://github.com/Portkey-AI/gateway) | Model gateway & UI | Both | TypeScript | MIT | 13,161 | Mature | 42 | slowing | 4mo ago | 0 |
+| [gateway](https://github.com/Portkey-AI/gateway) | Model gateway & UI | Both | TypeScript | MIT | 13,161 | Mature | 41 | slowing | 4mo ago | 0 |
 | [phoenix](https://github.com/Arize-ai/phoenix) | Observability & eval | Both | Python | NOASSERTION | 11,774 | Classic | 83 | very active | 1d ago | 22 |
 | [marqo](https://github.com/marqo-ai/marqo) | Vector store | Both | Python | Apache-2.0 | 5,028 | Mature | 46 | active | 1mo ago | 0 |
 | [vllm](https://github.com/vllm-project/vllm) | Inference runtime | Infra | Python | Apache-2.0 | 93,508 | Classic | 99 | very active | 1d ago | 78 |
@@ -186,23 +186,23 @@ Sorted by tier then stars. `Health`/`Lifecycle` are the dataset's computed metri
 | [weaviate](https://github.com/weaviate/weaviate) | Vector store | Infra | Go | NOASSERTION | 16,878 | Classic | 83 | very active | 2d ago | 7 |
 | [axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Fine-tuning | Infra | Python | Apache-2.0 | 12,551 | Classic | 79 | very active | 2d ago | 19 |
 | [skypilot](https://github.com/skypilot-org/skypilot) | Scaling / serving infra | Infra | Python | Apache-2.0 | 10,690 | Classic | 94 | very active | 2d ago | 21 |
-| [lmdeploy](https://github.com/InternLM/lmdeploy) | Inference runtime | Infra | Python | Apache-2.0 | 8,103 | Classic | 92 | very active | 2d ago | 25 |
+| [lmdeploy](https://github.com/InternLM/lmdeploy) | Inference runtime | Infra | Python | Apache-2.0 | 8,103 | Classic | 92 | very active | 3d ago | 25 |
 | [llm-compressor](https://github.com/vllm-project/llm-compressor) | Scaling / serving infra | Infra | Python | Apache-2.0 | 3,863 | Mature | 84 | very active | 2d ago | 30 |
 
 ## Graph analysis — how the stack hangs together
 
-**Community clustering.** These 41 tools span **18 of the graph's 42 communities** — the stack cuts across the inference, RAG/vector, and agent neighborhoods rather than forming one cluster.
+**Community clustering.** These 41 tools span **18 of the graph's 38 communities** — the stack cuts across the inference, RAG/vector, and agent neighborhoods rather than forming one cluster.
 
-- **Community 25** (9): `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `vllm-project/llm-compressor`, `open-webui/open-webui`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`
-- **Community 12** (5): `BerriAI/litellm`, `Portkey-AI/gateway`, `langfuse/langfuse`, `Arize-ai/phoenix`, `promptfoo/promptfoo`
-- **Community 28** (5): `lancedb/lancedb`, `pgvector/pgvector`, `qdrant/qdrant`, `weaviate/weaviate`, `milvus-io/milvus`
-- **Community 16** (4): `ggml-org/llama.cpp`, `StayLameBro/backburner`, `janhq/jan`, `marqo-ai/marqo`
-- **Community 13** (2): `mozilla-ai/llamafile`, `facebookresearch/faiss`
-- **Community 26** (2): `huggingface/transformers`, `huggingface/peft`
-- **Community 10** (2): `chroma-core/chroma`, `crewAIInc/crewAI`
-- **Community 9** (2): `langchain-ai/langgraph`, `pydantic/pydantic-ai`
+- **Community 23** (10): `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `vllm-project/llm-compressor`, `open-webui/open-webui`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `langchain-ai/langgraph`
+- **Community 10** (5): `BerriAI/litellm`, `Portkey-AI/gateway`, `langfuse/langfuse`, `Arize-ai/phoenix`, `promptfoo/promptfoo`
+- **Community 9** (5): `lancedb/lancedb`, `pgvector/pgvector`, `qdrant/qdrant`, `weaviate/weaviate`, `milvus-io/milvus`
+- **Community 2** (3): `alibaba/zvec`, `redis/redis`, `pydantic/pydantic-ai`
+- **Community 5** (2): `ggml-org/llama.cpp`, `marqo-ai/marqo`
+- **Community 11** (2): `mozilla-ai/llamafile`, `facebookresearch/faiss`
+- **Community 24** (2): `huggingface/transformers`, `huggingface/peft`
+- **Community 8** (2): `chroma-core/chroma`, `crewAIInc/crewAI`
 
-**Centrality (PageRank in the full 2,346-repo graph)** — the 'hub' tools your other stars cluster around:
+**Centrality (PageRank in the full 2,348-repo graph)** — the 'hub' tools your other stars cluster around:
 
 - `withcatai/node-llama-cpp` — PageRank 0.0020 (🟢 Local)
 - `langchain-ai/langgraph` — PageRank 0.0013 (🟡 Both)
@@ -240,10 +240,10 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 
 | Tool | Tier | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|---|
-| transformers | Both | 100 | Classic | very active | 7 | 14% | 275 |
 | llama.cpp | Local | 99 | Classic | very active | 20 | 6% | 7618 |
 | vllm | Infra | 99 | Classic | very active | 28 | 4% | 107 |
 | sglang | Infra | 99 | Mature | very active | 10 | 12% | 62 |
+| transformers | Both | 99 | Classic | very active | 7 | 14% | 275 |
 | faiss | Local | 99 | Classic | very active | 5 | 22% | 29 |
 | milvus | Infra | 99 | Classic | very active | 8 | 10% | 176 |
 | llama_index | Both | 98 | Classic | very active | 12 | 14% | 497 |
@@ -272,14 +272,14 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 | unsloth | Local | 79 | Mature | very active | 1 | 59% | 75 |
 | axolotl | Infra | 79 | Classic | very active | 1 | 59% | 34 |
 | promptfoo | Local | 79 | Classic | very active | 1 | 69% | 430 |
-| langgraph | Both | 77 | Classic | very active | 1 | 50% | 569 |
+| langgraph | Both | 76 | Classic | very active | 1 | 50% | 569 |
 | llamafile | Local | 67 | Classic | very active | 1 | 58% | 43 |
 | node-llama-cpp | Local | 67 | Classic | active | 1 | 93% | 141 |
 | pgvector | Both | 64 | Classic | very active | 1 | 98% | 0 |
 | backburner | Local | 61 | Hot | very active | 1 | 76% | 4 |
 | exo | Both | 59 | Mature | active | 1 | 100% | 16 |
 | marqo | Both | 46 | Mature | active | 0 | 0% | 113 |
-| gateway | Both | 42 | Mature | slowing | 0 | 0% | 81 |
+| gateway | Both | 41 | Mature | slowing | 0 | 0% | 81 |
 | gpt4all | Local | 7 | Abandoned | stale | 0 | 0% | 38 |
 
 ## Adjacent (covered elsewhere)
@@ -298,4 +298,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). For infra you'll
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 41 · Tiers: 17 local / 16 both / 8 infra · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Tools covered: 41 · Tiers: 17 local / 16 both / 8 infra · Snapshot: 2026-10-11T22:14:20.246Z</sub>

@@ -1,6 +1,6 @@
 # Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).
 
@@ -92,53 +92,53 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | Shell & history | Shell | MIT | 190,069 | Classic | 85 | very active | 2d ago | 17.1y | 52 |
 | [microsoft/terminal](https://github.com/microsoft/terminal) | Emulator | C++ | MIT | 105,124 | Classic | 87 | very active | 2d ago | 9.2y | 32 |
 | [junegunn/fzf](https://github.com/junegunn/fzf) | Shell & history | Go | MIT | 83,522 | Classic | 76 | very active | 1d ago | 13.0y | 6 |
-| [Eugeny/tabby](https://github.com/Eugeny/tabby) | Emulator | TypeScript | MIT | 74,899 | Classic | 88 | very active | 2d ago | 9.8y | 35 |
+| [Eugeny/tabby](https://github.com/Eugeny/tabby) | Emulator | TypeScript | MIT | 74,899 | Classic | 88 | very active | 3d ago | 9.8y | 35 |
 | [alacritty/alacritty](https://github.com/alacritty/alacritty) | Emulator | Rust | Apache  2.0 | 65,924 | Mature | 65 | active | 6d ago | 10.7y | 5 |
 | [warpdotdev/warp](https://github.com/warpdotdev/warp) | Agent-aware terminal | Rust | GNU Affero General Public  v3.0 | 65,409 | Classic | 76 | very active | 1d ago | 5.3y | 23 |
 | [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty) | Emulator | Zig | MIT | 62,029 | Classic | 74 | very active | 1d ago | 4.5y | 17 |
-| [starship/starship](https://github.com/starship/starship) | Shell & history | Rust | ISC | 60,199 | Classic | 72 | very active | 1d ago | 7.5y | 16 |
+| [starship/starship](https://github.com/starship/starship) | Shell & history | Rust | ISC | 60,199 | Classic | 72 | very active | 2d ago | 7.5y | 16 |
 | [tmux/tmux](https://github.com/tmux/tmux) | Multiplexer / session | C | ISC | 49,879 | Classic | 80 | very active | 1d ago | 11.4y | 3 |
 | [herdrdev/herdr](https://github.com/herdrdev/herdr) | Multiplexer / session | Rust | Apache  2.0 | 43,204 | Hot | 83 | very active | 3d ago | 6mo | 13 |
 | [nushell/nushell](https://github.com/nushell/nushell) | Shell & history | Rust | MIT | 40,642 | Classic | 93 | very active | 1d ago | 7.4y | 33 |
 | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide) | Shell & history | Rust | MIT | 40,008 | Classic | 58 | very active | 8d ago | 6.6y | 5 |
 | [zellij-org/zellij](https://github.com/zellij-org/zellij) | Multiplexer / session | Rust | MIT | 35,691 | Classic | 70 | very active | 1d ago | 6.1y | 33 |
-| [kovidgoyal/kitty](https://github.com/kovidgoyal/kitty) | Emulator | Python | GNU General Public  v3.0 | 35,221 | Classic | 80 | very active | 1d ago | 10.0y | 9 |
+| [kovidgoyal/kitty](https://github.com/kovidgoyal/kitty) | Emulator | Python | GNU General Public  v3.0 | 35,221 | Classic | 80 | very active | 2d ago | 10.0y | 9 |
 | [fish-shell/fish-shell](https://github.com/fish-shell/fish-shell) | Shell & history | Rust | Other | 34,282 | Classic | 79 | very active | 5d ago | 14.4y | 25 |
-| [microsoft/WSL](https://github.com/microsoft/WSL) | Windows & shells | C++ | MIT | 34,026 | Classic | 84 | very active | 1d ago | 10.5y | 15 |
-| [atuinsh/atuin](https://github.com/atuinsh/atuin) | Shell & history | Rust | MIT | 31,962 | Classic | 83 | very active | 1d ago | 6.0y | 12 |
-| [wezterm/wezterm](https://github.com/wezterm/wezterm) | Emulator | Rust | Other | 29,183 | Classic | 65 | very active | 1d ago | 8.7y | 32 |
+| [microsoft/WSL](https://github.com/microsoft/WSL) | Windows & shells | C++ | MIT | 34,026 | Classic | 84 | very active | 2d ago | 10.5y | 15 |
+| [atuinsh/atuin](https://github.com/atuinsh/atuin) | Shell & history | Rust | MIT | 31,962 | Classic | 83 | very active | 2d ago | 6.0y | 12 |
+| [wezterm/wezterm](https://github.com/wezterm/wezterm) | Emulator | Rust | Other | 29,183 | Classic | 65 | very active | 2d ago | 8.7y | 32 |
 | [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | Agent-aware terminal | Swift | Other | 28,084 | Hot | 81 | very active | 1d ago | 8mo | 5 |
-| [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) | Terminal capability / reference | Shell | Other | 27,248 | Classic | 80 | very active | 1d ago | 15.5y | 2 |
+| [mbadolato/iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) | Terminal capability / reference | Shell | Other | 27,248 | Classic | 80 | very active | 2d ago | 15.5y | 2 |
 | [cmderdev/cmder](https://github.com/cmderdev/cmder) | Windows & shells | PowerShell | MIT | 27,009 | Mature | 48 | active | 5d ago | 13.3y | 2 |
 | [gpakosz/.tmux](https://github.com/gpakosz/.tmux) | Multiplexer / session | Shell | MIT | 25,428 | Classic | 59 | slowing | 2mo ago | 14.1y | 4 |
 | [pranshuparmar/witr](https://github.com/pranshuparmar/witr) | Shell & history | Go | Apache  2.0 | 22,642 | Hot | 77 | very active | 7d ago | 9mo | 13 |
 | [wavetermdev/waveterm](https://github.com/wavetermdev/waveterm) | Agent-aware terminal | Go | Apache  2.0 | 22,465 | Classic | 68 | very active | 2d ago | 4.3y | 6 |
-| [xtermjs/xterm.js](https://github.com/xtermjs/xterm.js) | Remote & web sessions | TypeScript | MIT | 21,257 | Classic | 64 | very active | 28d ago | 12.6y | 16 |
+| [xtermjs/xterm.js](https://github.com/xtermjs/xterm.js) | Remote & web sessions | TypeScript | MIT | 21,257 | Classic | 64 | very active | 29d ago | 12.6y | 16 |
 | [rothgar/awesome-tuis](https://github.com/rothgar/awesome-tuis) | Terminal capability / reference | — | — | 20,851 | Classic | 76 | very active | 6d ago | 7.5y | 55 |
-| [gnachman/iTerm2](https://github.com/gnachman/iTerm2) | Emulator | Swift | GNU General Public  v2.0 | 18,139 | Classic | 60 | very active | 1d ago | 15.5y | 8 |
+| [gnachman/iTerm2](https://github.com/gnachman/iTerm2) | Emulator | Swift | GNU General Public  v2.0 | 18,139 | Classic | 60 | very active | 2d ago | 15.5y | 8 |
 | [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm) | Multiplexer / session | Shell | MIT | 15,121 | Mature | 23 | slowing | 4mo ago | 12.4y | 0 |
 | [mobile-shell/mosh](https://github.com/mobile-shell/mosh) | Remote & web sessions | C++ | GNU General Public  v3.0 | 14,557 | Declining | 21 | stale | 6mo ago | 15.8y | 0 |
 | [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | Parallel-agent orchestration | Go | Apache  2.0 | 13,034 | Hot | 88 | very active | 1d ago | 8mo | 21 |
-| [tsl0922/ttyd](https://github.com/tsl0922/ttyd) | Remote & web sessions | C | MIT | 12,486 | Mature | 41 | active | 2mo ago | 10.1y | 2 |
+| [tsl0922/ttyd](https://github.com/tsl0922/ttyd) | Remote & web sessions | C | MIT | 12,486 | Mature | 41 | slowing | 2mo ago | 10.1y | 2 |
 | [smtg-ai/claude-squad](https://github.com/smtg-ai/claude-squad) | Parallel-agent orchestration | Go | GNU Affero General Public  v3.0 | 8,588 | Declining | 60 | active | 1mo ago | 1.6y | 3 |
 | [raphamorim/rio](https://github.com/raphamorim/rio) | Emulator | Rust | MIT | 7,595 | Classic | 77 | very active | 8d ago | 4.0y | 4 |
 | [blinksh/blink](https://github.com/blinksh/blink) | Remote & web sessions | Swift | GNU General Public  v3.0 | 6,968 | Mature | 29 | slowing | 3mo ago | 10.5y | 0 |
 | [tmate-io/tmate](https://github.com/tmate-io/tmate) | Remote & web sessions | C | Other | 6,135 | Mature | 43 | active | 5d ago | 13.3y | 2 |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | Parallel-agent orchestration | TypeScript | Apache  2.0 | 5,950 | Hot | 79 | very active | 1d ago | 1.1y | 7 |
+| [generalaction/emdash](https://github.com/generalaction/emdash) | Parallel-agent orchestration | TypeScript | Apache  2.0 | 5,950 | Hot | 79 | very active | 2d ago | 1.1y | 7 |
 | [gnunn1/tilix](https://github.com/gnunn1/tilix) | Emulator | D | Mozilla Public  2.0 | 5,729 | Mature | 29 | slowing | 3mo ago | 10.8y | 0 |
-| [butlerx/wetty](https://github.com/butlerx/wetty) | Remote & web sessions | TypeScript | MIT | 5,460 | Classic | 75 | very active | 6d ago | 12.5y | 7 |
+| [butlerx/wetty](https://github.com/butlerx/wetty) | Remote & web sessions | TypeScript | MIT | 5,460 | Classic | 75 | very active | 7d ago | 12.5y | 7 |
 | [hpjansson/chafa](https://github.com/hpjansson/chafa) | Terminal capability / reference | C | GNU Lesser General Public  v3.0 | 5,310 | Mature | 70 | very active | 5d ago | 8.5y | 1 |
 | [x-cmd/x-cmd](https://github.com/x-cmd/x-cmd) | Shell & history | Awk | Apache  2.0 | 4,705 | Classic | 73 | very active | 3d ago | 4.0y | 4 |
 | [hackerb9/lsix](https://github.com/hackerb9/lsix) | Terminal capability / reference | Shell | GNU General Public  v3.0 | 4,176 | Abandoned | 5 | stale | 2.3y ago | 9.4y | 0 |
 | [dagger/container-use](https://github.com/dagger/container-use) | Terminal hardening | Go | Apache  2.0 | 4,066 | Mature | 45 | active | 20d ago | 1.4y | 2 |
-| [MisterTea/EternalTerminal](https://github.com/MisterTea/EternalTerminal) | Remote & web sessions | C++ | Apache  2.0 | 3,917 | Classic | 63 | very active | 4d ago | 9.9y | 15 |
-| [contour-terminal/contour](https://github.com/contour-terminal/contour) | Emulator | C++ | Apache  2.0 | 3,042 | Classic | 69 | very active | 1d ago | 7.2y | 5 |
-| [omnara-ai/omnara](https://github.com/omnara-ai/omnara) | Parallel-agent orchestration | Go | Apache  2.0 | 2,903 | Hot | 84 | very active | 1d ago | 1.3y | 10 |
-| [joshmedeski/sesh](https://github.com/joshmedeski/sesh) | Multiplexer / session | Go | MIT | 2,863 | Mature | 75 | very active | 5d ago | 2.8y | 12 |
-| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Terminal hardening | Rust | GNU Affero General Public  v3.0 | 2,750 | Rising | 79 | very active | 1d ago | 8mo | 2 |
+| [MisterTea/EternalTerminal](https://github.com/MisterTea/EternalTerminal) | Remote & web sessions | C++ | Apache  2.0 | 3,917 | Classic | 63 | very active | 5d ago | 9.9y | 15 |
+| [contour-terminal/contour](https://github.com/contour-terminal/contour) | Emulator | C++ | Apache  2.0 | 3,042 | Classic | 69 | very active | 2d ago | 7.2y | 5 |
+| [omnara-ai/omnara](https://github.com/omnara-ai/omnara) | Parallel-agent orchestration | Go | Apache  2.0 | 2,903 | Hot | 84 | very active | 2d ago | 1.3y | 10 |
+| [joshmedeski/sesh](https://github.com/joshmedeski/sesh) | Multiplexer / session | Go | MIT | 2,863 | Mature | 74 | very active | 5d ago | 2.8y | 12 |
+| [sheeki03/tirith](https://github.com/sheeki03/tirith) | Terminal hardening | Rust | GNU Affero General Public  v3.0 | 2,750 | Rising | 79 | very active | 2d ago | 8mo | 2 |
 | [pvolok/dekit](https://github.com/pvolok/dekit) | Parallel-agent orchestration | Rust | MIT | 2,747 | Classic | 72 | very active | 2d ago | 5.1y | 4 |
 | [sorenisanerd/gotty](https://github.com/sorenisanerd/gotty) | Remote & web sessions | Go | MIT | 2,555 | Classic | 71 | very active | 1d ago | 5.5y | 4 |
-| [nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | Parallel-agent orchestration | TypeScript | MIT | 1,863 | Rising | 75 | very active | 2d ago | 11mo | 1 |
+| [nimbalyst/nimbalyst](https://github.com/nimbalyst/nimbalyst) | Parallel-agent orchestration | TypeScript | MIT | 1,863 | Rising | 75 | very active | 3d ago | 11mo | 1 |
 | [tmux-python/libtmux](https://github.com/tmux-python/libtmux) | Multiplexer / session | Python | MIT | 1,214 | Mature | 73 | very active | 1d ago | 10.4y | 1 |
 | [ghostty-org/ghostling](https://github.com/ghostty-org/ghostling) | Emulator | C | MIT | 1,123 | Declining | 39 | slowing | 2mo ago | 6mo | 2 |
 | [caarlos0/dotfiles](https://github.com/caarlos0/dotfiles) | Shell & history | Shell | MIT | 220 | Mature | 80 | very active | 3d ago | 3.6y | 1 |
@@ -324,22 +324,22 @@ Read the scorecard as a shape, not a total. `Ghostty` and `tmux` are near-opposi
 
 ## Graph analysis — how the terminal layer sits in your ecosystem
 
-**Community clustering.** These 53 tools span **12 of the graph's 42 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
+**Community clustering.** These 53 tools span **12 of the graph's 38 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
 
-- **Community 17** (23): `gnachman/iTerm2`, `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `mbadolato/iTerm2-Color-Schemes`, `warpdotdev/warp`, `wavetermdev/waveterm`, `Eugeny/tabby`, `alacritty/alacritty`, `kovidgoyal/kitty`, `wezterm/wezterm`, `gnunn1/tilix`, `zellij-org/zellij`, `gpakosz/.tmux`, `tmux-python/libtmux`, `pvolok/dekit`, `xtermjs/xterm.js`, `tsl0922/ttyd`, `ohmyzsh/ohmyzsh`, `starship/starship`, `nushell/nushell`, `fish-shell/fish-shell`, `atuinsh/atuin`
-- **Community 8** (6): `herdrdev/herdr`, `OrchestratorInc/agent-orchestrator`, `manaflow-ai/cmux`, `smtg-ai/claude-squad`, `nimbalyst/nimbalyst`, `generalaction/emdash`
-- **Community 22** (6): `joshmedeski/sesh`, `omnara-ai/omnara`, `sorenisanerd/gotty`, `cmderdev/cmder`, `junegunn/fzf`, `ajeetdsouza/zoxide`
-- **Community 19** (5): `microsoft/terminal`, `contour-terminal/contour`, `butlerx/wetty`, `MisterTea/EternalTerminal`, `microsoft/WSL`
-- **Community 24** (3): `ghostty-org/ghostling`, `ghostty-org/ghostty`, `tmate-io/tmate`
+- **Community 17** (17): `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `warpdotdev/warp`, `wavetermdev/waveterm`, `Eugeny/tabby`, `alacritty/alacritty`, `wezterm/wezterm`, `gnunn1/tilix`, `zellij-org/zellij`, `pvolok/dekit`, `xtermjs/xterm.js`, `tsl0922/ttyd`, `starship/starship`, `nushell/nushell`, `fish-shell/fish-shell`, `atuinsh/atuin`
+- **Community 29** (6): `gnachman/iTerm2`, `mbadolato/iTerm2-Color-Schemes`, `kovidgoyal/kitty`, `gpakosz/.tmux`, `tmux-python/libtmux`, `ohmyzsh/ohmyzsh`
+- **Community 1** (6): `herdrdev/herdr`, `OrchestratorInc/agent-orchestrator`, `manaflow-ai/cmux`, `smtg-ai/claude-squad`, `nimbalyst/nimbalyst`, `generalaction/emdash`
+- **Community 21** (6): `microsoft/terminal`, `contour-terminal/contour`, `tmux-plugins/tpm`, `butlerx/wetty`, `MisterTea/EternalTerminal`, `microsoft/WSL`
+- **Community 20** (6): `joshmedeski/sesh`, `omnara-ai/omnara`, `sorenisanerd/gotty`, `cmderdev/cmder`, `junegunn/fzf`, `ajeetdsouza/zoxide`
+- **Community 14** (4): `ghostty-org/ghostling`, `ghostty-org/ghostty`, `blinksh/blink`, `tmate-io/tmate`
 - **Community 4** (2): `sheeki03/tirith`, `raphamorim/rio`
-- **Community 10** (2): `dagger/container-use`, `rothgar/awesome-tuis`
 - **Community 3** (2): `pranshuparmar/witr`, `caarlos0/dotfiles`
 
-**Centrality (PageRank in the full 2,346-repo graph)** — the most hub-like terminal-layer repos you hold:
+**Centrality (PageRank in the full 2,348-repo graph)** — the most hub-like terminal-layer repos you hold:
 
-- `wavetermdev/waveterm` — PageRank 0.0010
+- `wavetermdev/waveterm` — PageRank 0.0011
 - `pvolok/dekit` — PageRank 0.0010
-- `atuinsh/atuin` — PageRank 0.0007
+- `atuinsh/atuin` — PageRank 0.0008
 - `warpdotdev/warp` — PageRank 0.0007
 - `herdrdev/herdr` — PageRank 0.0007
 - `sheeki03/tirith` — PageRank 0.0007
@@ -395,10 +395,10 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | rothgar/awesome-tuis | 76 | Classic | very active | 25 | 5% | 0 |
 | warpdotdev/warp | 76 | Classic | very active | 1 | 54% | 55 |
 | junegunn/fzf | 76 | Classic | very active | 1 | 76% | 85 |
-| joshmedeski/sesh | 75 | Mature | very active | 1 | 76% | 83 |
 | nimbalyst/nimbalyst | 75 | Rising | very active | 1 | 100% | 116 |
 | butlerx/wetty | 75 | Classic | very active | 1 | 77% | 39 |
 | ghostty-org/ghostty | 74 | Classic | very active | 3 | 31% | 1 |
+| joshmedeski/sesh | 74 | Mature | very active | 1 | 76% | 83 |
 | x-cmd/x-cmd | 73 | Classic | very active | 1 | 85% | 149 |
 | tmux-python/libtmux | 73 | Mature | very active | 1 | 100% | 141 |
 | pvolok/dekit | 72 | Classic | very active | 1 | 95% | 33 |
@@ -419,7 +419,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | cmderdev/cmder | 48 | Mature | active | 1 | 67% | 34 |
 | dagger/container-use | 45 | Mature | active | 1 | 86% | 14 |
 | tmate-io/tmate | 43 | Mature | active | 1 | 50% | 5 |
-| tsl0922/ttyd | 41 | Mature | active | 1 | 50% | 29 |
+| tsl0922/ttyd | 41 | Mature | slowing | 1 | 50% | 29 |
 | ghostty-org/ghostling | 39 | Declining | slowing | 1 | 50% | 0 |
 | gnunn1/tilix | 29 | Mature | slowing | 0 | 0% | 72 |
 | blinksh/blink | 29 | Mature | slowing | 0 | 0% | 0 |
@@ -487,4 +487,4 @@ Watch items:
 - **The gap table does not refresh.** Re-running the pipeline updates every in-dataset metric; the missing-repo stars and the frozen citations need a manual pass. Re-verify after any major terminal release.
 - **`cmux` is very young** (created 2026-01-28; 1,751 open issues and 2,668 open PRs at check time — GitHub's `open_issues_count` of 4,419 conflates the two, and several published write-ups repeat it as an issue count). It is the top recommendation for the parallel-agent case on merit, not on stability — weigh that if you'd rather not be an early adopter.
 
-<sub>In-dataset tools: 53 · Missing tools catalogued: 7 · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>In-dataset tools: 53 · Missing tools catalogued: 7 · Snapshot: 2026-10-11T22:14:20.246Z</sub>

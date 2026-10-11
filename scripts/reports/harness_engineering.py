@@ -34,6 +34,7 @@ TAXONOMY = {
     "SWE-agent/SWE-agent": ("1. Minimal loop first", "The project that named the *agent-computer interface* — proof that interface design moves scores."),
     "Piebald-AI/claude-code-system-prompts": ("1. Minimal loop first", "Every part of Claude Code's system prompt, tool descriptions and sub-agent prompts — a production harness to read."),
     "Nicolepcx/harness_engineering": ("1. Minimal loop first", "Code for the O'Reilly *Harness Engineering* book — worked examples of each harness layer."),
+    "SWE-agent/mini-swe-agent": ("1. Minimal loop first", "The SWE-agent team's ~100-line agent — bash as the only tool, no config sprawl — and it still scores >74% on SWE-bench Verified. The strongest evidence that a minimal loop is enough."),
 
     # 2. Small instruction budget, progressive disclosure
     "agentsmd/agents.md": ("2. Small instruction budget", "AGENTS.md — one short, portable repo contract instead of a sprawling prompt."),
@@ -93,6 +94,7 @@ TAXONOMY = {
     "promptfoo/promptfoo": ("10. Observe & eval the harness", "Regression tests and red-teaming for prompts and agents in CI."),
     "microsoft/waza": ("10. Observe & eval the harness", "CLI and framework for creating, testing and measuring Agent Skills — evals aimed at the skill layer, not the model."),
     "strands-labs/harness-optimizer": ("10. Observe & eval the harness", "Tunes harness 'formulas' against evals — early, research-grade, but the right idea: optimize the harness, not the prompt."),
+    "UKGovernmentBEIS/inspect_ai": ("10. Observe & eval the harness", "The UK AI Security Institute's eval framework — tasks, solvers, scorers and sandboxed tool use; the standard way to put a harness under repeatable test."),
 }
 
 ORDER = [

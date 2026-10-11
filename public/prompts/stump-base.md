@@ -1,6 +1,6 @@
 # Tree-stump base for a Pokal
 
-> Built from the **3d-printing-stack** report, against 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`). Regenerate any time — no API cost.
+> Built from the **3d-printing-stack** report, against 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`). Regenerate any time — no API cost.
 
 A stump base is the textbook case for the implicit/SDF route: the form is organic and irregular (where code-CAD is painful), it needs no support (it is its own flat base), and SDF output is watertight by construction — so the repair layer never runs.
 

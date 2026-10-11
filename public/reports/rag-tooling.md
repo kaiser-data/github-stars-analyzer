@@ -1,6 +1,6 @@
 # RAG (Retrieval-Augmented Generation) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
@@ -39,29 +39,29 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | RAG framework / engine | Go | Apache-2.0 | 91,955 | Mature | 99 | very active | 1d ago | 2.8y | 42 |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Ingestion / parsing / chunking | Python | Apache-2.0 | 90,885 | Mature | 62 | active | 25d ago | 6.4y | 2 |
+| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | Ingestion / parsing / chunking | Python | Apache-2.0 | 90,885 | Mature | 62 | active | 26d ago | 6.4y | 2 |
 | [run-llama/llama_index](https://github.com/run-llama/llama_index) | RAG framework / engine | Python | MIT | 52,457 | Classic | 98 | very active | 3d ago | 3.9y | 58 |
 | [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector DB / search | Go | Apache-2.0 | 46,347 | Classic | 99 | very active | 1d ago | 7.1y | 36 |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Vector DB / search | C++ | MIT | 41,124 | Classic | 99 | very active | 1d ago | 9.7y | 41 |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Vector DB / search | C++ | MIT | 41,124 | Classic | 99 | very active | 2d ago | 9.7y | 41 |
 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | RAG framework / engine | Python | MIT | 40,054 | Mature | 78 | very active | 3d ago | 2.0y | 11 |
 | [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Novel retrieval approach | Python | MIT | 39,044 | Hot | 77 | very active | 1d ago | 1.5y | 3 |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | RAG framework / engine | Python | MIT | 36,284 | Mature | 76 | very active | 3d ago | 2.5y | 4 |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector DB / search | Rust | Apache-2.0 | 35,008 | Classic | 88 | very active | 1d ago | 6.4y | 17 |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Vector DB / search | Rust | Apache-2.0 | 29,472 | Classic | 82 | very active | 1d ago | 4.0y | 9 |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Vector DB / search | Rust | Apache-2.0 | 29,472 | Classic | 82 | very active | 2d ago | 4.0y | 9 |
 | [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,714 | Classic | 90 | very active | 1d ago | 6.9y | 29 |
-| [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 23,512 | Hot | 83 | very active | 5d ago | 1.3y | 19 |
-| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 23,294 | Classic | 64 | very active | 3d ago | 5.5y | 3 |
+| [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 23,512 | Hot | 83 | very active | 5d ago | 1.4y | 19 |
+| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 23,294 | Classic | 64 | very active | 4d ago | 5.5y | 3 |
 | [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 19,160 | Classic | 95 | very active | 3d ago | 7.2y | 45 |
 | [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector DB / search | Go | NOASSERTION | 16,878 | Classic | 83 | very active | 2d ago | 10.5y | 7 |
-| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 2d ago | 10mo | 17 |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Ingestion / parsing / chunking | HTML | Apache-2.0 | 15,557 | Classic | 88 | very active | 1d ago | 4.0y | 21 |
+| [alibaba/zvec](https://github.com/alibaba/zvec) | Vector DB / search | C++ | Apache-2.0 | 16,092 | Hot | 93 | very active | 3d ago | 10mo | 17 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Ingestion / parsing / chunking | HTML | Apache-2.0 | 15,557 | Classic | 88 | very active | 2d ago | 4.0y | 21 |
 | [llmware-ai/llmware](https://github.com/llmware-ai/llmware) | RAG framework / engine | Python | Apache-2.0 | 14,820 | Mature | 56 | active | 10d ago | 3.0y | 1 |
-| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Novel retrieval approach | Python | MIT | 13,015 | Hot | 83 | very active | 2d ago | 1.3y | 18 |
+| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Novel retrieval approach | Python | MIT | 13,015 | Hot | 83 | very active | 3d ago | 1.3y | 18 |
 | [neuml/txtai](https://github.com/neuml/txtai) | RAG framework / engine | Python | Apache-2.0 | 13,003 | Classic | 90 | very active | 1d ago | 6.2y | 31 |
-| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | Novel retrieval approach | TypeScript | MIT | 12,597 | Declining | 36 | slowing | 2mo ago | 1.3y | 2 |
+| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | Novel retrieval approach | TypeScript | MIT | 12,597 | Declining | 36 | slowing | 2mo ago | 1.4y | 2 |
 | [manticoresoftware/manticoresearch](https://github.com/manticoresoftware/manticoresearch) | Vector DB / search | C++ | GPL-3.0 | 12,049 | Classic | 83 | very active | 1d ago | 9.3y | 10 |
 | [lancedb/lancedb](https://github.com/lancedb/lancedb) | Vector DB / search | Rust | Apache-2.0 | 11,632 | Classic | 92 | very active | 1d ago | 3.6y | 27 |
-| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector DB / search | Rust | NOASSERTION | 8,671 | Classic | 81 | very active | 2d ago | 3.2y | 10 |
+| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector DB / search | Rust | NOASSERTION | 8,671 | Classic | 81 | very active | 3d ago | 3.2y | 10 |
 | [marqo-ai/marqo](https://github.com/marqo-ai/marqo) | Vector DB / search | Python | Apache-2.0 | 5,028 | Mature | 46 | active | 1mo ago | 4.2y | 0 |
 | [feyninc/chonkie](https://github.com/feyninc/chonkie) | Ingestion / parsing / chunking | Python | MIT | 4,787 | Mature | 67 | active | 8d ago | 1.5y | 4 |
 | [SylphAI-Inc/AdalFlow](https://github.com/SylphAI-Inc/AdalFlow) | RAG framework / engine | Python | MIT | 4,223 | Mature | 25 | slowing | 4mo ago | 2.5y | 0 |
@@ -205,15 +205,14 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **14 of the graph's 42 communities**.
+**Community clustering.** These 32 tools span **13 of the graph's 38 communities**.
 
-- **Community 18** (9): `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 28** (6): `infiniflow/ragflow`, `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
-- **Community 31** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
-- **Community 1** (2): `alibaba/zvec`, `manticoresoftware/manticoresearch`
-- **Community 13** (2): `facebookresearch/faiss`, `superlinked/sie`
-- **Community 22** (2): `Unstructured-IO/unstructured`, `illuin-tech/colpali`
-- **Community 9** (2): `feyninc/chonkie`, `feyninc/chonkiejs`
+- **Community 16** (8): `deepset-ai/haystack`, `llmware-ai/llmware`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 9** (6): `infiniflow/ragflow`, `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
+- **Community 11** (4): `SylphAI-Inc/AdalFlow`, `facebookresearch/faiss`, `Unstructured-IO/unstructured`, `superlinked/sie`
+- **Community 8** (3): `chroma-core/chroma`, `feyninc/chonkie`, `feyninc/chonkiejs`
+- **Community 27** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
+- **Community 2** (2): `alibaba/zvec`, `manticoresoftware/manticoresearch`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' RAG tools in your ecosystem:
 
@@ -224,8 +223,8 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 - `neuml/txtai` — PageRank 0.0007
 - `chroma-core/chroma` — PageRank 0.0007
 - `HKUDS/LightRAG` — PageRank 0.0007
-- `manticoresoftware/manticoresearch` — PageRank 0.0006
 - `FalkorDB/GraphRAG-SDK` — PageRank 0.0006
+- `manticoresoftware/manticoresearch` — PageRank 0.0006
 - `run-llama/llama_index` — PageRank 0.0006
 
 **Direct links between RAG tools** (top similarity edges where both endpoints are in this report):
@@ -330,4 +329,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`airweave-ai/airweave`](https://github.com/airweave-ai/airweave) | RAG framework / engine | Archived upstream; last in the dataset 2026-08-28. Context-retrieval layer that syncs apps/DBs into agent-queryable knowledge. | 2026-08-28 |
 
-<sub>Tools covered: 32 · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:14:20.246Z</sub>

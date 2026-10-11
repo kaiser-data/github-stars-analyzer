@@ -1,6 +1,6 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 2,346 starred repos (snapshot `2026-10-11T13:10:52.436Z`), cross-referenced with the repo-similarity graph (2,346 nodes / 7,792 edges, 42 communities).
+> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
@@ -15,7 +15,7 @@
 - **Window**: `2026-09-29` → `2026-10-11` (**12 days**), covering the **2,245 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-10-11` (**122 days**).
   - The immediately preceding snapshot (`2026-10-10`) is only 1 day before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
 - **1,798 repos gained stars** in the recent window, adding **559,481★** between them.
-- **101 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **103 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -302,6 +302,7 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [storytold/pdfcraft](https://github.com/storytold/pdfcraft) | 8,717 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust |
 | [HarnessMD/munder-difflin](https://github.com/HarnessMD/munder-difflin) | 8,633 | TypeScript | Rising | an open-source alternative to the dots, bots and muses of the world, run an office o… |
 | [storytold/lightcraft](https://github.com/storytold/lightcraft) | 8,501 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Lightroom in pure Rust. |
+| [SWE-agent/mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | 8,403 | Python | Mature | The 100 line AI agent that solves GitHub issues or helps you in your command line. R… |
 | [supabase/realtime](https://github.com/supabase/realtime) | 7,647 | Elixir | Classic | Broadcast, Presence, and Postgres Changes via WebSockets |
 | [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) | 6,870 | Python | Rising | Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Ma… |
 | [microsoft/aspire](https://github.com/microsoft/aspire) | 6,356 | C# | Classic | Aspire is the tool for code-first, extensible, observable dev and deploy. |
@@ -315,8 +316,7 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | 4,129 | Python | Hot | AI conversations that actually remember. Never re-explain your project to your AI ag… |
 | [KoljaB/RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 4,043 | Python | Classic | Converts text to speech in realtime |
 | [cs341-illinois/coursebook](https://github.com/cs341-illinois/coursebook) | 3,806 | TeX | Classic | Open Source Introductory Systems Programming Textbook for the University of Illinois |
-| [NVIDIA/cuda-rust](https://github.com/NVIDIA/cuda-rust) | 3,691 | Rust | Hot | NVIDIA's CUDA platform for Rust. Host runtime crates plus Tile (cutile-rs) and SIMT … |
-| _…and 61 more_ | | | | |
+| _…and 63 more_ | | | | |
 
 ## Cooling off
 
@@ -324,7 +324,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 
 | Repo | Long-run ★/day | Recent ★/day | Now at | Last push | Lifecycle |
 |---|---|---|---|---|---|
-| [hexabot-ai/Hexabot](https://github.com/hexabot-ai/Hexabot) | 1.5 | -8.8 | **-603%** of prior pace | 18d ago | Mature |
+| [hexabot-ai/Hexabot](https://github.com/hexabot-ai/Hexabot) | 1.5 | -8.8 | **-603%** of prior pace | 19d ago | Mature |
 | [ultraworkers/claw-code](https://github.com/ultraworkers/claw-code) | 11.0 | -25.0 | **-227%** of prior pace | 1mo ago | Mature |
 | [ValueCell-ai/valuecell](https://github.com/ValueCell-ai/valuecell) | 1.8 | -0.7 | **-36%** of prior pace | 7mo ago | Declining |
 | [andrewyng/context-hub](https://github.com/andrewyng/context-hub) | 3.4 | -0.8 | **-24%** of prior pace | 4mo ago | Declining |
@@ -334,7 +334,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 | [Mega4alik/ollm](https://github.com/Mega4alik/ollm) | 1.1 | -0.1 | **-8%** of prior pace | 2mo ago | Declining |
 | [Avaiga/taipy](https://github.com/Avaiga/taipy) | 1.6 | -0.1 | **-5%** of prior pace | 2mo ago | Mature |
 | [OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) | 28.1 | -0.2 | **-1%** of prior pace | 13d ago | Mature |
-| [OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification) | 1.8 | 0.0 | **0%** of prior pace | 2d ago | Classic |
+| [OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification) | 1.8 | 0.0 | **0%** of prior pace | 3d ago | Classic |
 | [meta-llama/prompt-ops](https://github.com/meta-llama/prompt-ops) | 1.8 | 0.0 | **0%** of prior pace | 5mo ago | Declining |
 | [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | 5.3 | 0.1 | **2%** of prior pace | 14d ago | Declining |
 | [hexo-ai/sia](https://github.com/hexo-ai/sia) | 7.7 | 0.2 | **3%** of prior pace | 1mo ago | Mature |
@@ -342,16 +342,16 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **15 of the graph's 42 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **15 of the graph's 38 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
 - **Community 3** (7): `paperclipai/paperclip`, `DietrichGebert/ponytail`, `affaan-m/ECC`, `farion1231/cc-switch`, `ayghri/i-have-adhd`, `diegosouzapw/OmniRoute`, `awesome-selfhosted/awesome-selfhosted`
-- **Community 23** (5): `deepseek-ai/deepseek-harness`, `sindresorhus/awesome`, `cathrynlavery/diagram-design`, `addyosmani/agent-skills`, `public-apis/public-apis`
+- **Community 8** (6): `rohitg00/ai-engineering-from-scratch`, `rocketride-org/rocketride-server`, `obra/superpowers`, `firecrawl/firecrawl`, `calesthio/OpenMontage`, `D4Vinci/Scrapling`
 - **Community 4** (5): `ifixai-ai/iFixAi`, `earendil-works/pi`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `JuliusBrussee/caveman`
 - **Community 5** (4): `vectorize-io/hindsight`, `thedotmack/claude-mem`, `msitarzewski/agency-agents`, `JustVugg/colibri`
-- **Community 8** (4): `stablyai/orca`, `rohitg00/ai-engineering-from-scratch`, `heygen-com/hyperframes`, `NousResearch/hermes-agent`
-- **Community 2** (4): `rocketride-org/rocketride-server`, `firecrawl/firecrawl`, `NandhaKishorM/laya`, `D4Vinci/Scrapling`
-- **Community 18** (2): `debpalash/VoiceStudio`, `VectifyAI/PageIndex`
-- **Community 10** (2): `cloudflare/security-audit-skill`, `obra/superpowers`
+- **Community 22** (4): `sindresorhus/awesome`, `cathrynlavery/diagram-design`, `addyosmani/agent-skills`, `public-apis/public-apis`
+- **Community 1** (3): `stablyai/orca`, `heygen-com/hyperframes`, `NousResearch/hermes-agent`
+- **Community 16** (2): `debpalash/VoiceStudio`, `VectifyAI/PageIndex`
+- **Community 34** (2): `deepseek-ai/deepseek-harness`, `cloudflare/security-audit-skill`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
@@ -386,4 +386,4 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 2,245 · Window: 2026-09-29 → 2026-10-11 (12d) · Snapshot: 2026-10-11T13:10:52.436Z</sub>
+<sub>Repos tracked: 2,245 · Window: 2026-09-29 → 2026-10-11 (12d) · Snapshot: 2026-10-11T22:14:20.246Z</sub>

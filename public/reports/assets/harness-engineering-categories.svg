@@ -11,34 +11,34 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 </style>
 <rect x="0.5" y="0.5" width="679" height="314" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Tools per category</text>
-<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">3. Context engineering</text>
+<text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">10. Observe &amp; eval the harness</text>
-<path d="M244,67 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="76.0" class="val" dominant-baseline="central">6</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">5. External verification</text>
-<path d="M244,94 h282.7 q4,0 4,4 v10 q0,4 -4,4 h-282.7 z" class="bar"/>
-<text x="536.7" y="103.0" class="val" dominant-baseline="central">5</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
-<path d="M244,121 h282.7 q4,0 4,4 v10 q0,4 -4,4 h-282.7 z" class="bar"/>
-<text x="536.7" y="130.0" class="val" dominant-baseline="central">5</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">1. Minimal loop first</text>
-<path d="M244,148 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
-<text x="479.3" y="157.0" class="val" dominant-baseline="central">4</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">7</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">3. Context engineering</text>
+<path d="M244,67 h290.9 q4,0 4,4 v10 q0,4 -4,4 h-290.9 z" class="bar"/>
+<text x="544.9" y="76.0" class="val" dominant-baseline="central">6</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">1. Minimal loop first</text>
+<path d="M244,94 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
+<text x="495.7" y="103.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">5. External verification</text>
+<path d="M244,121 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
+<text x="495.7" y="130.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<path d="M244,148 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
+<text x="495.7" y="157.0" class="val" dominant-baseline="central">5</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">2. Small instruction budget</text>
-<path d="M244,175 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
-<text x="479.3" y="184.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,175 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
+<text x="446.6" y="184.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">4. Lean action space</text>
-<path d="M244,202 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
-<text x="479.3" y="211.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,202 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
+<text x="446.6" y="211.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
-<path d="M244,229 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
-<text x="479.3" y="238.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,229 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
+<text x="446.6" y="238.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">9. Durable runs &amp; approvals</text>
-<path d="M244,256 h225.3 q4,0 4,4 v10 q0,4 -4,4 h-225.3 z" class="bar"/>
-<text x="479.3" y="265.0" class="val" dominant-baseline="central">4</text>
+<path d="M244,256 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
+<text x="446.6" y="265.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">7. Sub-agents for isolation</text>
-<path d="M244,283 h168.0 q4,0 4,4 v10 q0,4 -4,4 h-168.0 z" class="bar"/>
-<text x="422.0" y="292.0" class="val" dominant-baseline="central">3</text>
+<path d="M244,283 h143.4 q4,0 4,4 v10 q0,4 -4,4 h-143.4 z" class="bar"/>
+<text x="397.4" y="292.0" class="val" dominant-baseline="central">3</text>
 </svg>
