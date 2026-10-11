@@ -1,6 +1,6 @@
 # Blockchain Repos You Need to Know — A Field Guide
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges).
 >
 > Generated 2026-10-11 by `scripts/reports/blockchain_essentials.py` (regenerate any time — no API cost).
 
@@ -18,7 +18,7 @@ Ranked by a composite of momentum, 90-day commit velocity, lifecycle stage and r
 | Repo | Layer-fit | ★ | Lifecycle | Momentum (★/30d) | Commits (90d) |
 |---|---|---|---|---|---|
 | [eliza](https://github.com/elizaOS/eliza) | 🔥 AI × finance / trading | 19,566 | 🟢 Mature | 1,246 | 20,491 |
-| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 110,471 | 🔥 Hot | 6,905 | 231 |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | 🔥 AI × finance / trading | 110,471 | 🔥 Hot | 6,904 | 231 |
 | [agave](https://github.com/anza-xyz/agave) | Solana | 1,938 | 🟢 Mature | 103 | 1,194 |
 | [foundry](https://github.com/foundry-rs/foundry) | Dev toolkits | 10,651 | 🔵 Classic | 215 | 1,373 |
 | [nethermind](https://github.com/NethermindEth/nethermind) | Execution clients (nodes) | 1,616 | 🔵 Classic | 18 | 1,312 |
@@ -175,4 +175,4 @@ If you're ramping on EVM/DeFi development, in order:
 - **Curation is editorial** — the layer map is hand-built; inclusion means 'worth knowing', not 'exhaustive'. Repo names reflect post-redirect owners (e.g. `argotorg/solidity`, `otter-sec/anchor`, `safe-fndn/...`).
 - **Stars ≠ endorsement to run in production**, especially anything touching funds — audit first.
 
-<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-10-11T22:14:20.246Z · regenerate via scripts/reports/blockchain_essentials.py</sub>
+<sub>Essential repos mapped: 37 across 13 layers · Snapshot: 2026-10-11T22:37:35.881Z · regenerate via scripts/reports/blockchain_essentials.py</sub>

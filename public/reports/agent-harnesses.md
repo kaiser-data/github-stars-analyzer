@@ -1,6 +1,6 @@
 # Agent Harnesses — Six Approaches to Running Autonomous Agents
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/agent_harnesses.py` (regenerate any time — no API cost).
 
@@ -241,33 +241,32 @@ _Maximum autonomy: agents that run for hours or days, planning and re-planning, 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 42 tools span **17 of the graph's 38 communities**.
+**Community clustering.** These 42 tools span **20 of the graph's 40 communities**.
 
-- **Community 1** (9): `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `HarnessMD/munder-difflin`, `multica-ai/multica`, `AndyMik90/Aperant`, `automazeio/ccpm`, `OrchestratorInc/agent-orchestrator`, `agentsmd/agents.md`, `stakpak/agent`
-- **Community 3** (4): `tinyhumansai/openhuman`, `tinyhumansai/tinyagents`, `affaan-m/ECC`, `cobusgreyling/loop-engineering`
-- **Community 8** (4): `obra/superpowers`, `BloopAI/vibe-kanban`, `gastownhall/gastown`, `opensandbox-group/OpenSandbox`
-- **Community 23** (3): `langchain-ai/deepagents`, `emcie-co/parlant`, `bytedance/deer-flow`
-- **Community 19** (3): `1jehuang/jcode`, `yologdev/yoagent`, `coleam00/Archon`
-- **Community 4** (2): `earendil-works/pi`, `truffle-ai/dexto`
-- **Community 15** (2): `strands-agents/harness-sdk`, `strands-agents/shell`
-- **Community 9** (2): `vercel/eve`, `e2b-dev/runtime`
-- **Community 5** (2): `SAIL-Research-Lab/cheetahclaws`, `ruvnet/ruflo`
-- **Community 0** (2): `dagger/container-use`, `hexo-ai/sia`
-- **Community 11** (2): `NVIDIA/NemoClaw`, `NVIDIA/OpenShell`
-- **Community 21** (2): `trycua/cua`, `aniketkarne/ClaudeNightsWatch`
+- **Community 8** (7): `Yeachan-Heo/oh-my-claudecode`, `HarnessMD/munder-difflin`, `multica-ai/multica`, `automazeio/ccpm`, `OrchestratorInc/agent-orchestrator`, `OthmanAdi/planning-with-files`, `stakpak/agent`
+- **Community 13** (5): `affaan-m/ECC`, `code-yeongyu/oh-my-openagent`, `BloopAI/vibe-kanban`, `gastownhall/gastown`, `opensandbox-group/OpenSandbox`
+- **Community 4** (4): `tinyhumansai/openhuman`, `tinyhumansai/tinyagents`, `cobusgreyling/loop-engineering`, `e2b-dev/runtime`
+- **Community 23** (3): `1jehuang/jcode`, `yologdev/yoagent`, `coleam00/Archon`
+- **Community 11** (2): `earendil-works/pi`, `truffle-ai/dexto`
+- **Community 29** (2): `langchain-ai/deepagents`, `bytedance/deer-flow`
+- **Community 20** (2): `strands-agents/harness-sdk`, `strands-agents/shell`
+- **Community 14** (2): `SAIL-Research-Lab/cheetahclaws`, `ruvnet/ruflo`
+- **Community 0** (2): `AndyMik90/Aperant`, `agentsmd/agents.md`
+- **Community 3** (2): `dagger/container-use`, `hexo-ai/sia`
+- **Community 18** (2): `NVIDIA/NemoClaw`, `NVIDIA/OpenShell`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' harnesses in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' harnesses in your ecosystem:
 
-- `affaan-m/ECC` — PageRank 0.0012
+- `affaan-m/ECC` — PageRank 0.0011
 - `langchain-ai/deepagents` — PageRank 0.0011
 - `cobusgreyling/loop-engineering` — PageRank 0.0008
 - `tinyhumansai/tinyagents` — PageRank 0.0008
-- `ruvnet/ruflo` — PageRank 0.0007
 - `multica-ai/multica` — PageRank 0.0007
 - `tinyhumansai/openhuman` — PageRank 0.0007
 - `strands-agents/harness-sdk` — PageRank 0.0007
-- `truffle-ai/dexto` — PageRank 0.0007
-- `1jehuang/jcode` — PageRank 0.0007
+- `ruvnet/ruflo` — PageRank 0.0007
+- `1jehuang/jcode` — PageRank 0.0006
+- `truffle-ai/dexto` — PageRank 0.0006
 
 **Direct links between harness projects** (top similarity edges where both endpoints are in this report):
 
@@ -366,4 +365,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Harnesses are a 
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 42 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 42 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

@@ -1,6 +1,6 @@
 # Agent Memory & Conversational Knowledge Graphs
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). The primitive-coverage matrix is additionally backed by documentation and source-code evidence gathered 2026-08-12 — see Methodology.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). The primitive-coverage matrix is additionally backed by documentation and source-code evidence gathered 2026-08-12 — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/agent_memory.py` (regenerate any time — no API cost).
 
@@ -344,24 +344,24 @@ _Thin, and general-purpose rather than memory-specific. The category's weakest l
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 37 tools span **13 of the graph's 38 communities** — a wide spread for one report, which is itself the finding: 'agent memory' is not one community in your stars, it is a theme cutting across several.
+**Community clustering.** These 37 tools span **12 of the graph's 40 communities** — a wide spread for one report, which is itself the finding: 'agent memory' is not one community in your stars, it is a theme cutting across several.
 
-- **Community 8** (11): `topoteretes/cognee`, `getzep/graphiti`, `MemMachine/MemMachine`, `mem0ai/mem0`, `MemPalace/mempalace`, `letta-ai/letta`, `TencentCloud/TencentDB-Agent-Memory`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `HelixDB/helix-db`, `onyx-dot-app/onyx`
-- **Community 16** (6): `trustgraph-ai/trustgraph`, `semantica-agi/semantica`, `memvid/memvid`, `FalkorDB/FalkorDB`, `FalkorDB/GraphRAG-SDK`, `cocoindex-io/cocoindex`
-- **Community 9** (5): `qdrant/qdrant`, `milvus-io/milvus`, `weaviate/weaviate`, `pgvector/pgvector`, `lancedb/lancedb`
-- **Community 1** (3): `zilliztech/memsearch`, `cyrusagents/cyrus`, `Vexa-ai/vexa`
-- **Community 27** (2): `HKUDS/MGP`, `HKUDS/LightRAG`
-- **Community 5** (2): `vectorize-io/hindsight`, `fabio-rovai/open-ontologies`
-- **Community 10** (2): `promptfoo/promptfoo`, `comet-ml/opik`
+- **Community 13** (13): `topoteretes/cognee`, `getzep/graphiti`, `MemMachine/MemMachine`, `mem0ai/mem0`, `MemPalace/mempalace`, `letta-ai/letta`, `TencentCloud/TencentDB-Agent-Memory`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `zilliztech/memsearch`, `HelixDB/helix-db`, `onyx-dot-app/onyx`, `cyrusagents/cyrus`
+- **Community 12** (6): `trustgraph-ai/trustgraph`, `semantica-agi/semantica`, `memvid/memvid`, `FalkorDB/FalkorDB`, `FalkorDB/GraphRAG-SDK`, `cocoindex-io/cocoindex`
+- **Community 2** (5): `qdrant/qdrant`, `milvus-io/milvus`, `weaviate/weaviate`, `pgvector/pgvector`, `lancedb/lancedb`
+- **Community 26** (2): `HKUDS/MGP`, `HKUDS/LightRAG`
+- **Community 14** (2): `vectorize-io/hindsight`, `fabio-rovai/open-ontologies`
+- **Community 8** (2): `Vexa-ai/vexa`, `screenpipe/screenpipe`
+- **Community 17** (2): `promptfoo/promptfoo`, `comet-ml/opik`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — the most hub-like memory tools in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — the most hub-like memory tools in your ecosystem:
 
-- `MemPalace/mempalace` — PageRank 0.0012
+- `MemPalace/mempalace` — PageRank 0.0011
 - `qdrant/qdrant` — PageRank 0.0009
 - `microsoft/graphrag` — PageRank 0.0009
 - `HKUDS/MGP` — PageRank 0.0008
 - `HKUDS/LightRAG` — PageRank 0.0007
-- `comet-ml/opik` — PageRank 0.0007
+- `comet-ml/opik` — PageRank 0.0006
 - `FalkorDB/GraphRAG-SDK` — PageRank 0.0006
 - `letta-ai/letta` — PageRank 0.0006
 - `vectorize-io/hindsight` — PageRank 0.0006
@@ -555,4 +555,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`airweave-ai/airweave`](https://github.com/airweave-ai/airweave) | Chat & workspace connectors | Archived upstream; last in the dataset 2026-08-28. Context retrieval layer with typed per-source entity schemas; the only tool in the set whose message entities carry reaction payloads (Teams, ClickUp). Still scored in the primitives matrix below. | 2026-08-28 |
 
-<sub>Tools covered: 37 · Matrix rows: 16 · Evidence date: 2026-08-12 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 37 · Matrix rows: 16 · Evidence date: 2026-08-12 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

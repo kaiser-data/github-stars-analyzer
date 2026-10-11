@@ -1,6 +1,6 @@
 # RAG (Retrieval-Augmented Generation) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/rag_tooling.py` (regenerate any time — no API cost).
 
@@ -48,7 +48,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | RAG framework / engine | Python | MIT | 36,284 | Mature | 76 | very active | 3d ago | 2.5y | 4 |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector DB / search | Rust | Apache-2.0 | 35,008 | Classic | 88 | very active | 1d ago | 6.4y | 17 |
 | [chroma-core/chroma](https://github.com/chroma-core/chroma) | Vector DB / search | Rust | Apache-2.0 | 29,472 | Classic | 82 | very active | 2d ago | 4.0y | 9 |
-| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,714 | Classic | 90 | very active | 1d ago | 6.9y | 29 |
+| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | RAG framework / engine | Python | Apache-2.0 | 26,714 | Classic | 90 | very active | 2d ago | 6.9y | 29 |
 | [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | RAG framework / engine | Python | MIT | 23,512 | Hot | 83 | very active | 5d ago | 1.4y | 19 |
 | [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector DB / search | C | NOASSERTION | 23,294 | Classic | 64 | very active | 4d ago | 5.5y | 3 |
 | [huggingface/sentence-transformers](https://github.com/huggingface/sentence-transformers) | Embeddings / rerankers | Python | Apache-2.0 | 19,160 | Classic | 95 | very active | 3d ago | 7.2y | 45 |
@@ -205,18 +205,19 @@ A cross-cutting trend — instead of a flat vector store, build a **knowledge gr
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **13 of the graph's 38 communities**.
+**Community clustering.** These 32 tools span **11 of the graph's 40 communities**.
 
-- **Community 16** (8): `deepset-ai/haystack`, `llmware-ai/llmware`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 9** (6): `infiniflow/ragflow`, `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
-- **Community 11** (4): `SylphAI-Inc/AdalFlow`, `facebookresearch/faiss`, `Unstructured-IO/unstructured`, `superlinked/sie`
-- **Community 8** (3): `chroma-core/chroma`, `feyninc/chonkie`, `feyninc/chonkiejs`
-- **Community 27** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
-- **Community 2** (2): `alibaba/zvec`, `manticoresoftware/manticoresearch`
+- **Community 12** (10): `deepset-ai/haystack`, `llmware-ai/llmware`, `SylphAI-Inc/AdalFlow`, `Bessouat40/RAGLight`, `FalkorDB/GraphRAG-SDK`, `FalkorDB/FalkorDB`, `neuml/txtai`, `superlinked/sie`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 2** (6): `infiniflow/ragflow`, `qdrant/qdrant`, `weaviate/weaviate`, `pgvector/pgvector`, `milvus-io/milvus`, `lancedb/lancedb`
+- **Community 13** (4): `chroma-core/chroma`, `feyninc/chonkie`, `feyninc/chonkiejs`, `zilliztech/claude-context`
+- **Community 26** (2): `HKUDS/LightRAG`, `HKUDS/RAG-Anything`
+- **Community 10** (2): `alibaba/zvec`, `manticoresoftware/manticoresearch`
+- **Community 21** (2): `facebookresearch/faiss`, `Unstructured-IO/unstructured`
+- **Community 28** (2): `marqo-ai/marqo`, `PaddlePaddle/PaddleOCR`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' RAG tools in your ecosystem:
 
-- `VectifyAI/PageIndex` — PageRank 0.0010
+- `VectifyAI/PageIndex` — PageRank 0.0009
 - `qdrant/qdrant` — PageRank 0.0009
 - `microsoft/graphrag` — PageRank 0.0009
 - `deepset-ai/haystack` — PageRank 0.0008
@@ -329,4 +330,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`airweave-ai/airweave`](https://github.com/airweave-ai/airweave) | RAG framework / engine | Archived upstream; last in the dataset 2026-08-28. Context-retrieval layer that syncs apps/DBs into agent-queryable knowledge. | 2026-08-28 |
 
-<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

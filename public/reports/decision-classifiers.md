@@ -1,6 +1,6 @@
 # Decision Classifiers & Guard Models — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/decision_classifiers.py` (regenerate any time — no API cost).
 
@@ -247,21 +247,22 @@ Jev's advantage is volume × closed labels × a tunable threshold, with humans o
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **15 of the graph's 38 communities** — decision tooling is scattered across the agent, gateway and NLP neighbourhoods rather than forming its own cluster.
+**Community clustering.** These 32 tools span **14 of the graph's 40 communities** — decision tooling is scattered across the agent, gateway and NLP neighbourhoods rather than forming its own cluster.
 
-- **Community 6** (7): `AbdelStark/awesome-typesafe-jev`, `cobanov/awesome-jev`, `PsiACE/dohnuts`, `DreamBlooms/dohnuts.cpp`, `mizorewww/laya-mlx`, `ollaya-dev/ollaya`, `AnotiaWang/awesome-decision-models`
-- **Community 7** (5): `realZachi/pg-jev`, `Knowledgator/GLiClass`, `fastino-ai/GLiNER2`, `urchade/GLiNER`, `fastino-ai/GLiGuard`
-- **Community 20** (3): `FrancoisChastel/jev-code`, `Kevthetech143/super-jev`, `cvs-health/uqlm`
-- **Community 11** (3): `pemistahl/lingua-py`, `aurelio-labs/semantic-router`, `explosion/spacy-llm`
-- **Community 23** (3): `guardrails-ai/guardrails`, `vllm-project/semantic-router`, `BoundaryML/baml`
-- **Community 18** (2): `ibm-granite/granite-guardian`, `scikit-learn-contrib/MAPIE`
+- **Community 15** (7): `AbdelStark/awesome-typesafe-jev`, `cobanov/awesome-jev`, `PsiACE/dohnuts`, `DreamBlooms/dohnuts.cpp`, `mizorewww/laya-mlx`, `ollaya-dev/ollaya`, `AnotiaWang/awesome-decision-models`
+- **Community 16** (5): `realZachi/pg-jev`, `Knowledgator/GLiClass`, `fastino-ai/GLiNER2`, `urchade/GLiNER`, `fastino-ai/GLiGuard`
+- **Community 25** (4): `FrancoisChastel/jev-code`, `Kevthetech143/super-jev`, `guardrails-ai/guardrails`, `cvs-health/uqlm`
+- **Community 21** (3): `pemistahl/lingua-py`, `aurelio-labs/semantic-router`, `explosion/spacy-llm`
+- **Community 8** (2): `dzhng/jevgrep`, `angel291592/Intent-Router`
+- **Community 22** (2): `ibm-granite/granite-guardian`, `scikit-learn-contrib/MAPIE`
+- **Community 28** (2): `vllm-project/semantic-router`, `BoundaryML/baml`
 
-**Centrality (PageRank in the full 2,348-repo graph):**
+**Centrality (PageRank in the full 2,365-repo graph):**
 
 - `FrancoisChastel/jev-code` — PageRank 0.0013
-- `kenryu42/cc-safety-net` — PageRank 0.0011
 - `ibm-granite/granite-guardian` — PageRank 0.0011
-- `scikit-learn-contrib/MAPIE` — PageRank 0.0011
+- `kenryu42/cc-safety-net` — PageRank 0.0010
+- `scikit-learn-contrib/MAPIE` — PageRank 0.0010
 - `huggingface/setfit` — PageRank 0.0009
 - `realZachi/pg-jev` — PageRank 0.0008
 - `guardrails-ai/guardrails` — PageRank 0.0008
@@ -366,4 +367,4 @@ Watch items: `jev-code` (v0.2.1 on npm, three hosts) and `super-jev` are wrapper
 - Frozen evidence does **not** refresh with `build_index.py`; re-verify when a new Jev version ships (`jev-latest` → `jev-1.13-20260917` as of 2026-09-29) or new guard models land.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

@@ -1,6 +1,6 @@
 # Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
 
@@ -367,31 +367,29 @@ _All-open, self-hosted models; managed API spend optional. The anti-cloud pitch 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **17 of the graph's 38 communities**.
+**Community clustering.** These 33 tools span **16 of the graph's 40 communities**.
 
-- **Community 8** (6): `lfnovo/open-notebook`, `feyninc/chonkie`, `pipecat-ai/pipecat`, `livekit/agents`, `getzep/graphiti`, `topoteretes/cognee`
-- **Community 16** (3): `alexpinel/Dot`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 11** (3): `Unstructured-IO/unstructured`, `OpenBMB/VoxCPM`, `coqui-ai/TTS`
-- **Community 3** (2): `Mintplex-Labs/anything-llm`, `gradio-app/fastrtc`
-- **Community 27** (2): `HKUDS/DeepTutor`, `HKUDS/LightRAG`
-- **Community 20** (2): `teng-lin/notebooklm-py`, `docling-project/docling`
-- **Community 21** (2): `microsoft/markitdown`, `microsoft/graphrag`
-- **Community 23** (2): `jina-ai/reader`, `bytedance/deer-flow`
-- **Community 2** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
-- **Community 5** (2): `SYSTRAN/faster-whisper`, `m-bain/whisperX`
+- **Community 13** (7): `lfnovo/open-notebook`, `Mintplex-Labs/anything-llm`, `feyninc/chonkie`, `pipecat-ai/pipecat`, `livekit/agents`, `getzep/graphiti`, `topoteretes/cognee`
+- **Community 21** (4): `Unstructured-IO/unstructured`, `OpenBMB/VoxCPM`, `coqui-ai/TTS`, `gradio-app/fastrtc`
+- **Community 12** (3): `alexpinel/Dot`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
+- **Community 28** (3): `jina-ai/reader`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`
+- **Community 26** (2): `HKUDS/DeepTutor`, `HKUDS/LightRAG`
+- **Community 25** (2): `teng-lin/notebooklm-py`, `docling-project/docling`
+- **Community 22** (2): `microsoft/markitdown`, `microsoft/graphrag`
+- **Community 10** (2): `openai/whisper`, `KoljaB/RealtimeSTT`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' picks in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' picks in your ecosystem:
 
-- `m-bain/whisperX` — PageRank 0.0012
+- `m-bain/whisperX` — PageRank 0.0011
 - `opendatalab/MinerU` — PageRank 0.0010
-- `VectifyAI/PageIndex` — PageRank 0.0010
+- `VectifyAI/PageIndex` — PageRank 0.0009
 - `microsoft/graphrag` — PageRank 0.0009
 - `HKUDS/LightRAG` — PageRank 0.0007
 - `run-llama/llama_index` — PageRank 0.0006
 - `jina-ai/reader` — PageRank 0.0005
-- `StarTrail-org/LEANN` — PageRank 0.0005
 - `lancedb/lancedb` — PageRank 0.0005
 - `KoljaB/RealtimeSTT` — PageRank 0.0005
+- `StarTrail-org/LEANN` — PageRank 0.0005
 
 **Direct links between stack picks** (top similarity edges where both endpoints are in this report):
 
@@ -487,4 +485,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`supertone-inc/supertonic`](https://github.com/supertone-inc/supertonic) | Audio Overview (TTS / podcast) | Archived upstream 2026-09 and renamed to `supertone-oss-archive/supertonic`; last in the dataset 2026-09-06. On-device ONNX TTS — still usable, no longer developed. | 2026-09-06 |
 
-<sub>Tools covered: 33 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 33 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

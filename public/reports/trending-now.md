@@ -1,6 +1,6 @@
 # Trending Now — What's Actually Moving in Your Stars
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/trending_now.py` (regenerate any time — no API cost).
 
@@ -15,7 +15,7 @@
 - **Window**: `2026-09-29` → `2026-10-11` (**12 days**), covering the **2,245 repos** present in both snapshots. Long-run comparisons use `2026-06-11` → `2026-10-11` (**122 days**).
   - The immediately preceding snapshot (`2026-10-10`) is only 1 day before this one — too short to separate signal from noise — so the baseline was widened to the newest snapshot at least 7 days back.
 - **1,798 repos gained stars** in the recent window, adding **559,481★** between them.
-- **103 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
+- **120 repos are new to the dataset** since the last refresh — newly starred, so they have no baseline to diff and are listed separately.
 - **Measured, not estimated.** `classified.json` carries a `momentum` field, but it is a lifetime-stars/day proxy (its own source comment calls it "a serviceable proxy"). Everything below is observed snapshot-to-snapshot movement over a known number of days.
 
 ## How to read this
@@ -280,43 +280,43 @@ These joined the dataset during this window, so they have no baseline to diff. T
 | [666ghj/MiroFish](https://github.com/666ghj/MiroFish) | 78,024 | Python | Hot | A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预… |
 | [openbq-org/OpenBB](https://github.com/openbq-org/OpenBB) | 74,069 | Python | Mature | Open Data Platform for analysts, quants and AI agents. |
 | [morluto/rea](https://github.com/morluto/rea) | 63,358 | TypeScript | Hot | Reverse engineer anything with agents, from app behavior down to native binaries. |
+| [calcom/cal.diy](https://github.com/calcom/cal.diy) | 48,954 | TypeScript | Classic | Scheduling infrastructure for absolutely everyone. |
 | [storytold/photocraft](https://github.com/storytold/photocraft) | 44,932 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust |
 | [tinyhumansai/openhuman](https://github.com/tinyhumansai/openhuman) | 41,775 | Rust | Rising | The fastest, cheapest, most efficient open-source agent harness. Run more than 500 a… |
 | [codewhale-hq/Codewhale](https://github.com/codewhale-hq/Codewhale) | 41,077 | Rust | Hot | Open-source Rust agent engine and terminal client for Codewhale, with provider choic… |
+| [PostHog/posthog](https://github.com/PostHog/posthog) | 40,221 | Python | Classic | :hedgehog: PostHog is the leading platform for building self-driving products. Our d… |
+| [umami-software/umami](https://github.com/umami-software/umami) | 39,309 | TypeScript | Classic | Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversio… |
+| [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | 37,040 | TypeScript | Classic | 📨 The ultimate agentic social media scheduling tool 🤖 |
 | [FreeCAD/FreeCAD](https://github.com/FreeCAD/FreeCAD) | 34,113 | C++ | Classic | Official source code of FreeCAD, a free and opensource multiplatform 3D parametric m… |
 | [dandavison/delta](https://github.com/dandavison/delta) | 32,473 | Rust | Classic | A syntax-highlighting pager for git, diff, grep, rg --json, and blame output |
 | [garrytan/gbrain](https://github.com/garrytan/gbrain) | 30,769 | TypeScript | Hot | Garry's Opinionated OpenClaw/Hermes Agent Brain |
 | [Infisical/infisical](https://github.com/Infisical/infisical) | 29,688 | TypeScript | Classic | Infisical is the open-source platform for secrets, certificates, and privileged acce… |
 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | 27,998 | Python | Hot | 380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 38… |
+| [dubinc/dub](https://github.com/dubinc/dub) | 24,874 | TypeScript | Classic | The modern link attribution platform. Loved by world-class marketing teams like Fram… |
+| [knadh/listmonk](https://github.com/knadh/listmonk) | 23,753 | Go | Classic | High performance, self-hosted, newsletter and mailing list manager with a modern das… |
+| [resend/react-email](https://github.com/resend/react-email) | 19,829 | TypeScript | Classic | 💌 Build and send emails using React |
 | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | 17,909 | — | Declining | A skill file for removing AI tells from prose |
 | [alibaba/MNN](https://github.com/alibaba/MNN) | 16,206 | C++ | Classic | MNN: A blazing-fast, lightweight inference engine battle-tested by Alibaba, powering… |
 | [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) | 15,678 | Rust | Hot | OpenShell is the safe, private runtime for autonomous AI agents. |
+| [formbricks/formbricks](https://github.com/formbricks/formbricks) | 13,080 | TypeScript | Classic | Open Source Qualtrics Alternative |
 | [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | 13,034 | Go | Hot | Run and supervise teams of coding agents from planning to merge. Any harness (Claude… |
 | [IBM/sarama](https://github.com/IBM/sarama) | 12,524 | Go | Classic | Sarama is a Go library for Apache Kafka. |
 | [manticoresoftware/manticoresearch](https://github.com/manticoresoftware/manticoresearch) | 12,049 | C++ | Classic | Open-source search database for full-text, vector, and hybrid search with real-time … |
 | [IBM/plex](https://github.com/IBM/plex) | 11,685 | CSS | Mature | The package of IBM’s typeface, IBM Plex. |
+| [getlago/lago](https://github.com/getlago/lago) | 10,672 | Go | Classic | Open Source Metering and Usage Based Billing API ⭐️ Consumption tracking, Subscripti… |
+| [polarsource/polar](https://github.com/polarsource/polar) | 10,357 | Python | Classic | Polar — A billing platform for the intelligence era |
 | [microsoft/fast](https://github.com/microsoft/fast) | 9,675 | TypeScript | Classic | The adaptive interface system for modern web experiences. |
+| [withastro/starlight](https://github.com/withastro/starlight) | 9,396 | TypeScript | Classic | 🌟 Build beautiful, accessible, high-performance documentation websites with Astro |
 | [Open-Shell/Open-Shell-Menu](https://github.com/Open-Shell/Open-Shell-Menu) | 9,391 | C++ | Classic | Classic Shell Reborn. |
 | [storytold/filmcraft](https://github.com/storytold/filmcraft) | 9,334 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Premiere Pro built in pure Rust… |
+| [openstatusHQ/openstatus](https://github.com/openstatusHQ/openstatus) | 9,178 | TypeScript | Classic | Open-source status page, incident response and uptime monitoring |
 | [delta-io/delta](https://github.com/delta-io/delta) | 9,040 | Scala | Classic | An open-source storage framework that enables building a Lakehouse architecture with… |
 | [storytold/pdfcraft](https://github.com/storytold/pdfcraft) | 8,717 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Acrobat built in pure Rust |
 | [HarnessMD/munder-difflin](https://github.com/HarnessMD/munder-difflin) | 8,633 | TypeScript | Rising | an open-source alternative to the dots, bots and muses of the world, run an office o… |
 | [storytold/lightcraft](https://github.com/storytold/lightcraft) | 8,501 | Rust | Hot | An open-source, clean-room reimplementation of Adobe Lightroom in pure Rust. |
 | [SWE-agent/mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | 8,403 | Python | Mature | The 100 line AI agent that solves GitHub issues or helps you in your command line. R… |
 | [supabase/realtime](https://github.com/supabase/realtime) | 7,647 | Elixir | Classic | Broadcast, Presence, and Postgres Changes via WebSockets |
-| [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) | 6,870 | Python | Rising | Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Ma… |
-| [microsoft/aspire](https://github.com/microsoft/aspire) | 6,356 | C# | Classic | Aspire is the tool for code-first, extensible, observable dev and deploy. |
-| [rileytestut/Delta](https://github.com/rileytestut/Delta) | 6,148 | Swift | Mature | Delta is an all-in-one classic video game emulator for non-jailbroken iOS devices. |
-| [generalaction/emdash](https://github.com/generalaction/emdash) | 5,950 | TypeScript | Hot | Emdash is the Open-Source Agentic Development Environment (🧡 YC W26). Run multiple c… |
-| [dmmulroy/anti-slop](https://github.com/dmmulroy/anti-slop) | 5,425 | TypeScript | Hot | Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patter… |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | 5,087 | Python | Classic | On-device AI across mobile, embedded and edge for PyTorch |
-| [langwatch/langwatch](https://github.com/langwatch/langwatch) | 4,933 | TypeScript | Classic | Open-Source Agent Observability & Evals for AI Platform teams. Trace, test, route an… |
-| [Louis-CFM/coucou](https://github.com/Louis-CFM/coucou) | 4,757 | Swift | Hot | A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI co… |
-| [supabase/supabase-js](https://github.com/supabase/supabase-js) | 4,574 | TypeScript | Classic | An isomorphic Javascript client for Supabase. Query your Supabase database, subscrib… |
-| [basicmachines-co/basic-memory](https://github.com/basicmachines-co/basic-memory) | 4,129 | Python | Hot | AI conversations that actually remember. Never re-explain your project to your AI ag… |
-| [KoljaB/RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 4,043 | Python | Classic | Converts text to speech in realtime |
-| [cs341-illinois/coursebook](https://github.com/cs341-illinois/coursebook) | 3,806 | TeX | Classic | Open Source Introductory Systems Programming Textbook for the University of Illinois |
-| _…and 63 more_ | | | | |
+| _…and 80 more_ | | | | |
 
 ## Cooling off
 
@@ -333,7 +333,7 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 2.9 | -0.3 | **-12%** of prior pace | 7mo ago | Declining |
 | [Mega4alik/ollm](https://github.com/Mega4alik/ollm) | 1.1 | -0.1 | **-8%** of prior pace | 2mo ago | Declining |
 | [Avaiga/taipy](https://github.com/Avaiga/taipy) | 1.6 | -0.1 | **-5%** of prior pace | 2mo ago | Mature |
-| [OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) | 28.1 | -0.2 | **-1%** of prior pace | 13d ago | Mature |
+| [OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) | 28.1 | -0.2 | **-1%** of prior pace | 14d ago | Mature |
 | [OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification) | 1.8 | 0.0 | **0%** of prior pace | 3d ago | Classic |
 | [meta-llama/prompt-ops](https://github.com/meta-llama/prompt-ops) | 1.8 | 0.0 | **0%** of prior pace | 5mo ago | Declining |
 | [SuperClaude-Org/SuperClaude_Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | 5.3 | 0.1 | **2%** of prior pace | 14d ago | Declining |
@@ -342,16 +342,15 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 
 ## Graph analysis — where the movement clusters
 
-**Community clustering.** The top 40 risers span **15 of the graph's 38 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
+**Community clustering.** The top 40 risers span **15 of the graph's 40 communities** — the more concentrated they are, the more this looks like one trend rather than broad drift.
 
-- **Community 3** (7): `paperclipai/paperclip`, `DietrichGebert/ponytail`, `affaan-m/ECC`, `farion1231/cc-switch`, `ayghri/i-have-adhd`, `diegosouzapw/OmniRoute`, `awesome-selfhosted/awesome-selfhosted`
-- **Community 8** (6): `rohitg00/ai-engineering-from-scratch`, `rocketride-org/rocketride-server`, `obra/superpowers`, `firecrawl/firecrawl`, `calesthio/OpenMontage`, `D4Vinci/Scrapling`
-- **Community 4** (5): `ifixai-ai/iFixAi`, `earendil-works/pi`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `JuliusBrussee/caveman`
-- **Community 5** (4): `vectorize-io/hindsight`, `thedotmack/claude-mem`, `msitarzewski/agency-agents`, `JustVugg/colibri`
-- **Community 22** (4): `sindresorhus/awesome`, `cathrynlavery/diagram-design`, `addyosmani/agent-skills`, `public-apis/public-apis`
-- **Community 1** (3): `stablyai/orca`, `heygen-com/hyperframes`, `NousResearch/hermes-agent`
-- **Community 16** (2): `debpalash/VoiceStudio`, `VectifyAI/PageIndex`
-- **Community 34** (2): `deepseek-ai/deepseek-harness`, `cloudflare/security-audit-skill`
+- **Community 13** (8): `DietrichGebert/ponytail`, `rohitg00/ai-engineering-from-scratch`, `affaan-m/ECC`, `firecrawl/firecrawl`, `ayghri/i-have-adhd`, `diegosouzapw/OmniRoute`, `NousResearch/hermes-agent`, `D4Vinci/Scrapling`
+- **Community 8** (6): `stablyai/orca`, `heygen-com/hyperframes`, `sindresorhus/awesome`, `cathrynlavery/diagram-design`, `addyosmani/agent-skills`, `public-apis/public-apis`
+- **Community 11** (5): `ifixai-ai/iFixAi`, `earendil-works/pi`, `Graphify-Labs/graphify`, `nextlevelbuilder/ui-ux-pro-max-skill`, `JuliusBrussee/caveman`
+- **Community 4** (4): `debpalash/VoiceStudio`, `paperclipai/paperclip`, `farion1231/cc-switch`, `awesome-selfhosted/awesome-selfhosted`
+- **Community 14** (4): `vectorize-io/hindsight`, `thedotmack/claude-mem`, `msitarzewski/agency-agents`, `JustVugg/colibri`
+- **Community 12** (3): `rocketride-org/rocketride-server`, `VectifyAI/PageIndex`, `Tencent/WeKnora`
+- **Community 7** (2): `deepseek-ai/deepseek-harness`, `cloudflare/security-audit-skill`
 
 **Direct links between risers** (similarity edges where both endpoints are climbing) — co-movement suggests a shared driver:
 
@@ -386,4 +385,4 @@ Deceleration, not decline. These averaged ≥1★/day across the 122-day long wi
 - **The theme layer is hand-written** against the computed boards and does not refresh itself. Re-curate it when the movers change shape.
 - Re-run after a fresh `classified.json` to refresh every board.
 
-<sub>Repos tracked: 2,245 · Window: 2026-09-29 → 2026-10-11 (12d) · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Repos tracked: 2,245 · Window: 2026-09-29 → 2026-10-11 (12d) · Snapshot: 2026-10-11T22:37:35.881Z</sub>

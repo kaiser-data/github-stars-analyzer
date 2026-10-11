@@ -1,6 +1,6 @@
 # LLM-Driven 3D Modelling for 3D Printing — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/printing_stack.py` (regenerate any time — no API cost).
 
@@ -264,15 +264,15 @@ No repair layer, because the class of defect cannot occur. The trade is that for
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **8 of the graph's 38 communities**.
+**Community clustering.** These 33 tools span **12 of the graph's 40 communities**.
 
-- **Community 2** (16): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `TencentARC/Pixal3D`, `TencentARC/InstantMesh`, `mikedh/trimesh`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `OrcaSlicer/OrcaSlicer`
-- **Community 0** (4): `Tencent-Hunyuan/Hunyuan3D-2`, `elalish/manifold`, `pyvista/pymeshfix`, `meshy-dev/meshy-3d-agent`
-- **Community 21** (3): `KittyCAD/modeling-app`, `microsoft/TRELLIS.2`, `Ultimaker/CuraEngine`
-- **Community 14** (3): `isl-org/Open3D`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
-- **Community 4** (2): `BelfrySCAD/BOSL2`, `img2threejs/img2threejs`
-- **Community 11** (2): `NVIDIA/warp`, `Comfy-Org/ComfyUI`
-- **Community 8** (2): `ahujasid/mcp-for-blender`, `neka-nat/freecad-mcp`
+- **Community 10** (14): `openscad/openscad`, `CadQuery/cadquery`, `gumyr/build123d`, `BOMWiki/partmode`, `FreeCAD/FreeCAD`, `nophead/NopSCADlib`, `gumyr/cq_warehouse`, `fogleman/sdf`, `libfive/libfive`, `mikedh/trimesh`, `cnr-isti-vclab/meshlab`, `cnr-isti-vclab/PyMeshLab`, `wjakob/instant-meshes`, `OrcaSlicer/OrcaSlicer`
+- **Community 22** (3): `KittyCAD/modeling-app`, `microsoft/TRELLIS.2`, `Ultimaker/CuraEngine`
+- **Community 19** (3): `isl-org/Open3D`, `3MFConsortium/lib3mf`, `f3d-app/f3d`
+- **Community 11** (2): `BelfrySCAD/BOSL2`, `img2threejs/img2threejs`
+- **Community 12** (2): `Tencent-Hunyuan/Hunyuan3D-2`, `meshy-dev/meshy-3d-agent`
+- **Community 31** (2): `TencentARC/Pixal3D`, `TencentARC/InstantMesh`
+- **Community 3** (2): `elalish/manifold`, `pyvista/pymeshfix`
 
 **Centrality (PageRank in the full graph)** — the most hub-like tools of this set:
 
@@ -417,4 +417,4 @@ Ready-to-paste build prompts generated from this report's stack — the tools ab
 - **Printing figures** are conventional starting points for FDM at 0.4 mm, not measurements from your printer. Calibrate with test coupons before trusting a tolerance.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and lag GitHub's current state. In this set especially, low health frequently means *finished* — see above.
 
-<sub>Tools covered: 33 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 33 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

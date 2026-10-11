@@ -1,6 +1,6 @@
 # Fine-Tuning & Post-Training Stack — Which Trainer for Which Task
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). Task rankings are additionally backed by external 2026 framework comparisons and agent-RL surveys — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/finetuning_stack.py` (regenerate any time — no API cost).
 
@@ -50,7 +50,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Hardware fit & serving | Rust | MIT | 37,777 | Hot | 99 | very active | 2d ago | 7mo | 48 |
 | [lyogavin/airllm](https://github.com/lyogavin/airllm) | Hardware fit & serving | Jupyter Notebook | Apache-2.0 | 35,630 | Mature | 70 | very active | 2d ago | 3.3y | 1 |
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Full-stack fine-tuning framework | Python | Apache-2.0 | 31,395 | Classic | 68 | very active | 4d ago | 7.5y | 11 |
-| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,778 | Classic | 94 | very active | 2d ago | 3.9y | 36 |
+| [huggingface/peft](https://github.com/huggingface/peft) | PEFT & alignment library | Python | Apache-2.0 | 21,778 | Classic | 94 | very active | 3d ago | 3.9y | 36 |
 | [huggingface/trl](https://github.com/huggingface/trl) | PEFT & alignment library | Python | Apache-2.0 | 19,483 | Classic | 79 | very active | 2d ago | 6.5y | 15 |
 | [PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,979 | Mature | 28 | slowing | 4mo ago | 5.7y | 0 |
 | [axolotl-ai-cloud/axolotl](https://github.com/axolotl-ai-cloud/axolotl) | Full-stack fine-tuning framework | Python | Apache-2.0 | 12,551 | Classic | 79 | very active | 2d ago | 3.5y | 19 |
@@ -66,7 +66,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [predibase/lorax](https://github.com/predibase/lorax) | Hardware fit & serving | Python | Apache-2.0 | 3,837 | Mature | 23 | slowing | 4mo ago | 3.0y | 0 |
 | [huggingface/OpenEnv](https://github.com/huggingface/OpenEnv) | RL post-training for agents | Python | BSD-3-Clause | 2,685 | Hot | 75 | very active | 1d ago | 1.0y | 3 |
 | [Memento-Teams/Memento](https://github.com/Memento-Teams/Memento) | RL post-training for agents | Python | MIT | 2,587 | Abandoned | 5 | stale | 1.0y ago | 1.3y | 0 |
-| [pico-lm/pico-train](https://github.com/pico-lm/pico-train) | Learn-by-building | Python | Apache-2.0 | 321 | Declining | 18 | stale | 7mo ago | 2.1y | 0 |
+| [pico-lm/pico-train](https://github.com/pico-lm/pico-train) | Learn-by-building | Python | Apache-2.0 | 321 | Declining | 17 | stale | 7mo ago | 2.1y | 0 |
 | [VectorInstitute/fed-rag](https://github.com/VectorInstitute/fed-rag) | Domain & on-device tuning | Python | Apache-2.0 | 150 | Declining | 28 | slowing | 3mo ago | 1.7y | 0 |
 
 ## Task rankings — which stack for which job
@@ -209,15 +209,14 @@ Fine-tuning in 2024 meant one thing: LoRA on instruction data. The 2026 stack is
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 27 tools span **10 of the graph's 38 communities**.
+**Community clustering.** These 27 tools span **10 of the graph's 40 communities**.
 
-- **Community 23** (8): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `PaddlePaddle/PaddleNLP`, `rasbt/LLMs-from-scratch`, `unslothai/notebooks`, `lyogavin/airllm`, `predibase/lorax`
-- **Community 24** (5): `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `huggingface/distil-whisper`
-- **Community 11** (5): `Lightning-AI/pytorch-lightning`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `SylphAI-Inc/LLM-engineer-handbook`, `roboflow/rf-detr`
-- **Community 0** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
-- **Community 27** (2): `Blaizzy/mlx-vlm`, `AlexsJones/llmfit`
+- **Community 28** (9): `hiyouga/LlamaFactory`, `unslothai/unsloth`, `axolotl-ai-cloud/axolotl`, `PaddlePaddle/PaddleNLP`, `unslothai/notebooks`, `Blaizzy/mlx-vlm`, `AlexsJones/llmfit`, `lyogavin/airllm`, `predibase/lorax`
+- **Community 27** (5): `huggingface/transformers`, `huggingface/peft`, `huggingface/trl`, `huggingface/OpenEnv`, `huggingface/distil-whisper`
+- **Community 21** (5): `Lightning-AI/pytorch-lightning`, `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `yandexdataschool/Practical_RL`, `roboflow/rf-detr`
+- **Community 3** (2): `Memento-Teams/Memento`, `pico-lm/pico-train`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' training tools in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' training tools in your ecosystem:
 
 - `Lightning-AI/pytorch-lightning` — PageRank 0.0017
 - `axolotl-ai-cloud/axolotl` — PageRank 0.0008
@@ -275,7 +274,7 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | predibase/lorax | 23 | Mature | slowing | 0 | 0% | 21 |
 | yandexdataschool/Practical_RL | 22 | Declining | stale | 0 | 0% | 2 |
 | Gen-Verse/OpenClaw-RL | 20 | Declining | slowing | 0 | 0% | 0 |
-| pico-lm/pico-train | 18 | Declining | stale | 0 | 0% | 1 |
+| pico-lm/pico-train | 17 | Declining | stale | 0 | 0% | 1 |
 | labmlai/annotated_deep_learning_paper_implementations | 16 | Declining | stale | 0 | 0% | 0 |
 | Memento-Teams/Memento | 5 | Abandoned | stale | 0 | 0% | 0 |
 | karpathy/nanoGPT | 5 | Declining | stale | 0 | 0% | 0 |
@@ -315,4 +314,4 @@ Watch items: `nanoGPT` and most learn-by-building repos read as frozen — expec
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; benchmark citations are frozen text and need manual review when major releases land.
 
-<sub>Tools covered: 27 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 27 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

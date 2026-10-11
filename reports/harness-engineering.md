@@ -1,6 +1,6 @@
 # Harness Engineering — Ten Methods That Make an Agent Harness Good
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). Evidence frozen 2026-10-01.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). Evidence frozen 2026-10-01.
 >
 > Generated 2026-10-11 by `scripts/reports/harness_engineering.py` (regenerate any time — no API cost).
 
@@ -69,7 +69,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | 4. Lean action space | Rust | Apache-2.0 | 43,763 | Hot | 77 | very active | 2d ago | 9mo | 8 |
 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 7. Sub-agents for isolation | TypeScript | MIT | 39,763 | Hot | 80 | very active | 3d ago | 9mo | 6 |
 | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 5. External verification | TypeScript | Apache-2.0 | 37,994 | Hot | 73 | very active | 3d ago | 1.6y | 7 |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | 10. Observe & eval the harness | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 1d ago | 3.4y | 19 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | 10. Observe & eval the harness | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 2d ago | 3.4y | 19 |
 | [oraios/serena](https://github.com/oraios/serena) | 4. Lean action space | Python | NOASSERTION | 30,157 | Hot | 84 | very active | 2d ago | 1.6y | 27 |
 | [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) | 7. Sub-agents for isolation | Python | MIT | 30,103 | Hot | 84 | very active | 1d ago | 1.2y | 9 |
 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | 6. State on disk | Python | MIT | 27,373 | Hot | 80 | very active | 2d ago | 9mo | 10 |
@@ -350,30 +350,32 @@ Ten yes/no checks, one per method. A "no" is where to work next.
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 47 tools span **18 of the graph's 38 communities** — harness methods draw on very different corners of the ecosystem (context tooling, sandboxes, observability, skills).
+**Community clustering.** These 47 tools span **20 of the graph's 40 communities** — harness methods draw on very different corners of the ecosystem (context tooling, sandboxes, observability, skills).
 
-- **Community 1** (8): `agentsmd/agents.md`, `multica-ai/andrej-karpathy-skills`, `rtk-ai/rtk`, `snarktank/ralph`, `Yeachan-Heo/oh-my-claudecode`, `backnotprop/plannotator`, `petergyang/human-review`, `getagentseal/codeburn`
-- **Community 3** (7): `repoprompt/repoprompt-ce`, `upstash/context7`, `haydenbleasel/ultracite`, `VibiumDev/vibium`, `cobusgreyling/loop-engineering`, `open-multi-agent/open-multi-agent`, `triggerdotdev/trigger.dev`
-- **Community 4** (5): `earendil-works/pi`, `mksglu/context-mode`, `alexgreensh/token-optimizer`, `jgravelle/jcodemunch-mcp`, `kenryu42/cc-safety-net`
-- **Community 0** (5): `SWE-agent/SWE-agent`, `SWE-agent/mini-swe-agent`, `chunkhound/chunkhound`, `dagger/container-use`, `UKGovernmentBEIS/inspect_ai`
-- **Community 23** (4): `Nicolepcx/harness_engineering`, `headroomlabs-ai/headroom`, `langchain-ai/deepagents`, `VoltAgent/awesome-claude-code-subagents`
-- **Community 8** (3): `obra/superpowers`, `oraios/serena`, `Infisical/agent-vault`
-- **Community 5** (2): `Piebald-AI/claude-code-system-prompts`, `anthropics/skills`
-- **Community 21** (2): `microsoft/playwright-mcp`, `microsoft/waza`
-- **Community 10** (2): `langfuse/langfuse`, `promptfoo/promptfoo`
+- **Community 4** (7): `repoprompt/repoprompt-ce`, `upstash/context7`, `haydenbleasel/ultracite`, `VibiumDev/vibium`, `cobusgreyling/loop-engineering`, `e2b-dev/runtime`, `triggerdotdev/trigger.dev`
+- **Community 11** (5): `earendil-works/pi`, `mksglu/context-mode`, `alexgreensh/token-optimizer`, `jgravelle/jcodemunch-mcp`, `kenryu42/cc-safety-net`
+- **Community 8** (5): `multica-ai/andrej-karpathy-skills`, `OthmanAdi/planning-with-files`, `Yeachan-Heo/oh-my-claudecode`, `backnotprop/plannotator`, `petergyang/human-review`
+- **Community 3** (4): `SWE-agent/SWE-agent`, `SWE-agent/mini-swe-agent`, `dagger/container-use`, `UKGovernmentBEIS/inspect_ai`
+- **Community 29** (3): `Nicolepcx/harness_engineering`, `langchain-ai/deepagents`, `VoltAgent/awesome-claude-code-subagents`
+- **Community 25** (3): `headroomlabs-ai/headroom`, `rtk-ai/rtk`, `getagentseal/codeburn`
+- **Community 13** (3): `oraios/serena`, `Infisical/agent-vault`, `open-multi-agent/open-multi-agent`
+- **Community 14** (2): `Piebald-AI/claude-code-system-prompts`, `anthropics/skills`
+- **Community 0** (2): `agentsmd/agents.md`, `snarktank/ralph`
+- **Community 22** (2): `microsoft/playwright-mcp`, `microsoft/waza`
+- **Community 17** (2): `langfuse/langfuse`, `promptfoo/promptfoo`
 
-**Centrality (PageRank in the full 2,348-repo graph)**:
+**Centrality (PageRank in the full 2,365-repo graph)**:
 
-- `SWE-agent/mini-swe-agent` — PageRank 0.0053
-- `chunkhound/chunkhound` — PageRank 0.0044
-- `UKGovernmentBEIS/inspect_ai` — PageRank 0.0043
-- `mksglu/context-mode` — PageRank 0.0036
+- `SWE-agent/mini-swe-agent` — PageRank 0.0052
+- `UKGovernmentBEIS/inspect_ai` — PageRank 0.0037
+- `mksglu/context-mode` — PageRank 0.0034
 - `multica-ai/andrej-karpathy-skills` — PageRank 0.0014
 - `microsoft/playwright-mcp` — PageRank 0.0013
-- `kenryu42/cc-safety-net` — PageRank 0.0011
 - `langchain-ai/deepagents` — PageRank 0.0011
+- `kenryu42/cc-safety-net` — PageRank 0.0010
 - `microsoft/waza` — PageRank 0.0010
 - `cobusgreyling/loop-engineering` — PageRank 0.0008
+- `upstash/context7` — PageRank 0.0008
 
 **Direct links between repos in this report** (top similarity edges):
 
@@ -485,4 +487,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). Methods outlive 
   - Peak Ji (Manus), *Context Engineering for AI Agents: Lessons from Building Manus* (Jul 2025) — https://medium.com/@peakji/context-engineering-for-ai-agents-lessons-from-building-manus-71883f0a67f2
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Tools covered: 47 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 47 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

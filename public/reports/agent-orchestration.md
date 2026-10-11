@@ -1,6 +1,6 @@
 # AI Agent Orchestration — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/agent_orchestration.py` (regenerate any time — no API cost).
 
@@ -264,29 +264,29 @@ _Standards and meta-layers above any single framework._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 38 tools span **16 of the graph's 38 communities**.
+**Community clustering.** These 38 tools span **16 of the graph's 40 communities**.
 
-- **Community 23** (7): `langchain-ai/langgraph`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `FoundationAgents/MetaGPT`, `langflow-ai/langflow`, `bytedance/deer-flow`, `TauricResearch/TradingAgents`
-- **Community 8** (6): `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `assafelovic/gpt-researcher`, `n8n-io/n8n`, `inngest/agent-kit`
-- **Community 1** (6): `langgenius/dify`, `code-yeongyu/oh-my-openagent`, `Yeachan-Heo/oh-my-claudecode`, `OrchestratorInc/agent-orchestrator`, `getpaseo/paseo`, `TinyAGI/tinyagi`
-- **Community 21** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
-- **Community 2** (2): `openai/openai-agents-python`, `flyteorg/flyte`
-- **Community 15** (2): `strands-agents/harness-sdk`, `veegee82/agent-workflow-protocol`
-- **Community 22** (2): `wshobson/agents`, `eigent-ai/eigent`
-- **Community 30** (2): `vercel-labs/coding-agent-template`, `elizaOS/eliza`
+- **Community 13** (7): `liquidos-ai/AutoAgents`, `crewAIInc/crewAI`, `agno-agi/agno`, `assafelovic/gpt-researcher`, `n8n-io/n8n`, `code-yeongyu/oh-my-openagent`, `inngest/agent-kit`
+- **Community 29** (5): `langchain-ai/langgraph`, `VoltAgent/voltagent`, `i-am-bee/beeai-framework`, `langflow-ai/langflow`, `bytedance/deer-flow`
+- **Community 8** (5): `wshobson/agents`, `Yeachan-Heo/oh-my-claudecode`, `eigent-ai/eigent`, `OrchestratorInc/agent-orchestrator`, `getpaseo/paseo`
+- **Community 22** (3): `microsoft/semantic-kernel`, `microsoft/agent-framework`, `microsoft/autogen`
+- **Community 26** (3): `agentscope-ai/agentscope`, `FoundationAgents/MetaGPT`, `TauricResearch/TradingAgents`
+- **Community 5** (3): `langgenius/dify`, `vercel-labs/coding-agent-template`, `elizaOS/eliza`
+- **Community 10** (2): `openai/openai-agents-python`, `flyteorg/flyte`
+- **Community 20** (2): `strands-agents/harness-sdk`, `veegee82/agent-workflow-protocol`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' orchestration tools in your ecosystem:
 
 - `openai/openai-agents-python` — PageRank 0.0013
 - `langchain-ai/langgraph` — PageRank 0.0013
-- `agno-agi/agno` — PageRank 0.0012
+- `agno-agi/agno` — PageRank 0.0011
 - `huggingface/smolagents` — PageRank 0.0011
 - `liquidos-ai/AutoAgents` — PageRank 0.0011
 - `microsoft/semantic-kernel` — PageRank 0.0009
 - `microsoft/agent-framework` — PageRank 0.0008
 - `crewAIInc/crewAI` — PageRank 0.0008
-- `ruvnet/ruflo` — PageRank 0.0007
 - `inngest/agent-kit` — PageRank 0.0007
+- `strands-agents/harness-sdk` — PageRank 0.0007
 
 **Direct links between orchestration tools** (top similarity edges where both endpoints are in this report):
 
@@ -371,4 +371,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`FlowiseAI/Flowise`](https://github.com/FlowiseAI/Flowise) | Visual / low-code platforms | Archived upstream; last in the dataset 2026-08-11. Build AI agents visually; popular drag-and-drop builder. | 2026-08-11 |
 
-<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 38 across 7 approaches · Snapshot: 2026-10-11T22:37:35.881Z</sub>

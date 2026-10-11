@@ -1,6 +1,6 @@
 # Retrieval-evaluation harness
 
-> Built from the **rag-tooling** report, against 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`). Regenerate any time — no API cost.
+> Built from the **rag-tooling** report, against 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`). Regenerate any time — no API cost.
 
 A home-made RAG eval is the easiest place in the whole stack to fool yourself: it is trivial to get a single number out, and almost as trivial for that number to be meaningless because it blends retrieval and generation into one score. This harness keeps the two apart on purpose and gives retrieval a keyword-only floor to be read against, so a change in generation prompt can never masquerade as better retrieval.
 

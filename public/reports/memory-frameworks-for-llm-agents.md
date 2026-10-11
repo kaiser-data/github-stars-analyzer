@@ -1,6 +1,6 @@
 # Memory Frameworks for LLMs & Agents — Comparative Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/memory_frameworks.py` (regenerate any time — no API cost).
 
@@ -22,7 +22,7 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 
 | Project | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | TypeScript | Apache-2.0 | 99,136 | Hot | 85 | very active | 2d ago | 1.1y | 8 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | Coding-agent memory | TypeScript | Apache-2.0 | 99,136 | Hot | 85 | very active | 3d ago | 1.1y | 8 |
 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | General memory layer | Python | Apache-2.0 | 66,942 | Classic | 83 | very active | 3d ago | 3.3y | 30 |
 | [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | General memory layer | Python | MIT | 59,492 | Hot | 76 | very active | 2d ago | 6mo | 12 |
 | [topoteretes/cognee](https://github.com/topoteretes/cognee) | General memory layer | Python | Apache-2.0 | 31,948 | Classic | 77 | very active | 2d ago | 3.2y | 9 |
@@ -39,7 +39,7 @@ Sorted by stars. `Health` and `Momentum` come from the dataset's computed metric
 | [Einsia/OpenChronicle](https://github.com/Einsia/OpenChronicle) | General memory layer | Python | MIT | 2,816 | Declining | 19 | slowing | 5mo ago | 5mo | 0 |
 | [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Knowledge-graph memory | Python | Apache-2.0 | 2,790 | Mature | 63 | very active | 4d ago | 2.3y | 9 |
 | [MemTensor/memmy-agent](https://github.com/MemTensor/memmy-agent) | General memory layer | TypeScript | MIT | 2,088 | Hot | 82 | very active | 2d ago | 2mo | 10 |
-| [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | Coding-agent memory | Go | MIT | 1,813 | Rising | 80 | very active | 0d ago | 5mo | 2 |
+| [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | Coding-agent memory | Go | MIT | 1,813 | Rising | 80 | very active | 1d ago | 5mo | 2 |
 | [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Knowledge-graph memory | JavaScript | MIT | 888 | Declining | 39 | slowing | 4mo ago | 1.8y | 0 |
 | [supermemoryai/openclaw-supermemory](https://github.com/supermemoryai/openclaw-supermemory) | General memory layer | TypeScript | — | 796 | Rising | 49 | active | 2d ago | 8mo | 2 |
 | [zmedelis/bosquet](https://github.com/zmedelis/bosquet) | LLM framework w/ memory | Clojure | EPL-1.0 | 381 | Mature | 49 | active | 12d ago | 3.8y | 2 |
@@ -139,24 +139,24 @@ _Broader LLMOps toolkits that ship memory as one module._
 
 ## Graph analysis — how they relate
 
-**Community clustering.** The 23 frameworks fall into **9 of the graph's 38 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
+**Community clustering.** The 23 frameworks fall into **8 of the graph's 40 communities** — meaning memory tooling does *not* form one tight cluster but is spread across the AI-infra landscape (each tends to cluster with its neighbors: vector DBs, agent frameworks, or MCP tooling).
 
-- **Community 8** (10): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `getzep/graphiti`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `MemPalace/mempalace`, `gastownhall/beads`, `needle-ai/needle-mcp`
-- **Community 16** (3): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`
-- **Community 10** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
-- **Community 0** (2): `Einsia/OpenChronicle`, `andrewyng/context-hub`
-- **Community 5** (2): `thedotmack/claude-mem`, `Asymptote-Labs/agent-beacon`
+- **Community 13** (10): `mem0ai/mem0`, `letta-ai/letta`, `topoteretes/cognee`, `getzep/graphiti`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `TencentCloud/TencentDB-Agent-Memory`, `MemPalace/mempalace`, `MemTensor/memmy-agent`, `gastownhall/beads`
+- **Community 12** (4): `memvid/memvid`, `trustgraph-ai/trustgraph`, `semantica-agi/semantica`, `needle-ai/needle-mcp`
+- **Community 17** (2): `supermemoryai/openclaw-supermemory`, `zmedelis/bosquet`
+- **Community 3** (2): `Einsia/OpenChronicle`, `andrewyng/context-hub`
+- **Community 14** (2): `thedotmack/claude-mem`, `Asymptote-Labs/agent-beacon`
 
 **Centrality (PageRank in the full 1,071-repo graph).** Higher = more connected to the rest of your starred ecosystem (a proxy for how 'hub-like' the project is):
 
-- `MemTensor/memmy-agent` — PageRank 0.0018
-- `Asymptote-Labs/agent-beacon` — PageRank 0.0012
-- `MemPalace/mempalace` — PageRank 0.0012
+- `MemPalace/mempalace` — PageRank 0.0011
+- `Asymptote-Labs/agent-beacon` — PageRank 0.0007
 - `letta-ai/letta` — PageRank 0.0006
 - `mem0ai/mem0` — PageRank 0.0005
 - `plastic-labs/honcho` — PageRank 0.0005
-- `needle-ai/needle-mcp` — PageRank 0.0005
 - `getzep/graphiti` — PageRank 0.0004
+- `supermemoryai/openclaw-supermemory` — PageRank 0.0004
+- `topoteretes/cognee` — PageRank 0.0004
 
 **Direct links between memory frameworks** (similarity edges where both endpoints are in this report):
 
@@ -226,4 +226,4 @@ Not memory *frameworks*, but the databases these layers typically sit on. Severa
 - **Metrics** (health, momentum, lifecycle, bus_factor) are precomputed by the analyzer pipeline at snapshot time and may lag GitHub's current state.
 - **The market is young**: many of these launched in the last 12 months; star counts and activity shift fast. Re-run this script after a fresh `classified.json` to refresh.
 
-<sub>Frameworks covered: 23 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Frameworks covered: 23 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

@@ -1,6 +1,6 @@
 # Document Extraction Frameworks — Landscape & Task Rankings
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). Task rankings are additionally backed by external benchmarks (OmniDocBench, opendataloader-bench) — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/document_extraction.py` (regenerate any time — no API cost).
 
@@ -199,22 +199,22 @@ Two years ago document extraction meant a *pipeline of specialist models* (layou
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 26 tools span **11 of the graph's 38 communities**.
+**Community clustering.** These 26 tools span **12 of the graph's 40 communities**.
 
-- **Community 0** (6): `allenai/olmocr`, `studio-dots-ai/dots.ocr`, `Yuliang-Liu/MonkeyOCR`, `python-openxml/python-docx`, `JoshData/pdf-redactor`, `adithya-s-k/marker-api`
-- **Community 23** (4): `PaddlePaddle/PaddleOCR`, `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`
-- **Community 21** (3): `microsoft/markitdown`, `xberg-io/xberg`, `tesseract-ocr/tesseract`
-- **Community 4** (3): `opendatalab/MinerU`, `datalab-to/marker`, `opendatalab/DocLayout-YOLO`
-- **Community 20** (2): `docling-project/docling`, `docling-project/docling-mcp`
-- **Community 11** (2): `Unstructured-IO/unstructured`, `facebookresearch/nougat`
-- **Community 34** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
+- **Community 3** (6): `allenai/olmocr`, `studio-dots-ai/dots.ocr`, `Yuliang-Liu/MonkeyOCR`, `python-openxml/python-docx`, `JoshData/pdf-redactor`, `adithya-s-k/marker-api`
+- **Community 22** (3): `microsoft/markitdown`, `xberg-io/xberg`, `tesseract-ocr/tesseract`
+- **Community 11** (3): `opendatalab/MinerU`, `datalab-to/marker`, `opendatalab/DocLayout-YOLO`
+- **Community 29** (3): `getomni-ai/zerox`, `bytedance/Dolphin`, `landing-ai/ade-python`
+- **Community 25** (2): `docling-project/docling`, `docling-project/docling-mcp`
+- **Community 21** (2): `Unstructured-IO/unstructured`, `facebookresearch/nougat`
+- **Community 7** (2): `deepseek-ai/DeepSeek-OCR`, `deepseek-ai/DeepSeek-OCR-2`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' extraction tools in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' extraction tools in your ecosystem:
 
 - `opendatalab/MinerU` — PageRank 0.0010
 - `Yuliang-Liu/MonkeyOCR` — PageRank 0.0006
-- `datalab-to/marker` — PageRank 0.0006
 - `deepseek-ai/DeepSeek-OCR-2` — PageRank 0.0006
+- `datalab-to/marker` — PageRank 0.0006
 - `google/langextract` — PageRank 0.0004
 - `run-llama/semtools` — PageRank 0.0004
 - `microsoft/markitdown` — PageRank 0.0004
@@ -289,4 +289,4 @@ Watch items: `nougat` is effectively frozen (use `MinerU`/`marker` instead); `ze
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; benchmark citations are frozen text and need manual review on major model releases.
 
-<sub>Tools covered: 26 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 26 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

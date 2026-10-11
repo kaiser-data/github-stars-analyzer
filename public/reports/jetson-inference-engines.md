@@ -1,6 +1,6 @@
 # Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps
 
-> Engine roster derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Engine roster derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > **The throughput numbers in this report are measured, not quoted** — benchmark runs against a real Jetson Orin Nano Super 8GB in **MAXN_SUPER** (25W) mode on 2026-08-23, with the desktop and a voice stack running. Engine verdicts are argued against those numbers. See Methodology.
 >
@@ -123,7 +123,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 26,216 | Classic | 67 | very active | 3d ago | 8 |
 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 25,798 | Mature | 63 | active | 2d ago | 6 |
 | [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,227 | Classic | 53 | active | 5d ago | 3 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,046 | Classic | 99 | very active | 1d ago | 35 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,046 | Classic | 99 | very active | 2d ago | 35 |
 | [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,575 | Classic | 98 | very active | 2d ago | 40 |
 | [alibaba/MNN](https://github.com/alibaba/MNN) | Edge-viable LLM runtime | C++ | Apache  2.0 | 16,206 | Classic | 94 | very active | 2d ago | 25 |
 | [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,462 | Classic | 94 | very active | 6d ago | 51 |
@@ -229,19 +229,19 @@ What are you running?
 
 ## Graph analysis
 
-**Community clustering.** These 27 engines span **9 of the graph's 38 communities**.
+**Community clustering.** These 27 engines span **8 of the graph's 40 communities**.
 
-- **Community 23** (7): `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `lyogavin/airllm`, `mlc-ai/mlc-llm`
-- **Community 11** (6): `mozilla-ai/llamafile`, `NVIDIA/TensorRT-LLM`, `onnx/onnx`, `NVIDIA/TensorRT`, `OpenNMT/CTranslate2`, `NVIDIA/TensorRT-Edge-LLM`
-- **Community 5** (5): `ggml-org/llama.cpp`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `LostRuins/koboldcpp`, `ggml-org/ggml`
-- **Community 21** (3): `dusty-nv/jetson-containers`, `microsoft/BitNet`, `microsoft/onnxruntime`
-- **Community 12** (2): `apache/tvm`, `pytorch/executorch`
+- **Community 28** (13): `ggml-org/llama.cpp`, `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `AlexsJones/llmfit`, `lyogavin/airllm`, `mlc-ai/mlc-llm`, `LostRuins/koboldcpp`, `ggml-org/ggml`
+- **Community 21** (3): `mozilla-ai/llamafile`, `onnx/onnx`, `OpenNMT/CTranslate2`
+- **Community 18** (3): `NVIDIA/TensorRT-LLM`, `NVIDIA/TensorRT`, `NVIDIA/TensorRT-Edge-LLM`
+- **Community 22** (3): `dusty-nv/jetson-containers`, `microsoft/BitNet`, `microsoft/onnxruntime`
+- **Community 6** (2): `apache/tvm`, `pytorch/executorch`
 
-**Centrality (PageRank in the full 2,348-repo graph)**:
+**Centrality (PageRank in the full 2,365-repo graph)**:
 
 - `ggml-org/ggml` — PageRank 0.0010
-- `ggml-org/whisper.cpp` — PageRank 0.0009
 - `NVIDIA/TensorRT-Edge-LLM` — PageRank 0.0009
+- `ggml-org/whisper.cpp` — PageRank 0.0009
 - `microsoft/onnxruntime` — PageRank 0.0008
 - `alibaba/MNN` — PageRank 0.0007
 - `vllm-project/vllm` — PageRank 0.0007
@@ -321,4 +321,4 @@ Watch items: `nomic-ai/gpt4all` is Declining and adds nothing here. Outside the 
 - **Board identification.** Specs for the Super (67 TOPS, 102 GB/s, 7W/15W/25W) are NVIDIA's published figures for the Orin Nano Super Developer Kit; the uplift from 40 TOPS / 68 GB/s is a software unlock on identical hardware, not a new board.
 - **The gap table does not refresh** with the pipeline; its metrics and the frozen citations need a manual pass.
 
-<sub>Engines covered: 27 · Missing catalogued: 3 · Measurements: 2026-08-23 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Engines covered: 27 · Missing catalogued: 3 · Measurements: 2026-08-23 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

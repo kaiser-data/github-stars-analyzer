@@ -1,6 +1,6 @@
 # The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities) and the 2026 AI-engineering landscape.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities) and the 2026 AI-engineering landscape.
 >
 > Generated 2026-10-11 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
@@ -270,7 +270,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 37,994 | Hot | 73 | very active | 3d ago | 1.6y |
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | Must-have | Inference & serving | Python | 36,962 | Mature | 99 | very active | 1d ago | 2.8y |
 | [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 36,284 | Mature | 76 | very active | 3d ago | 2.5y |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 35,600 | Classic | 94 | very active | 1d ago | 3.4y |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 35,600 | Classic | 94 | very active | 2d ago | 3.4y |
 | [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 35,008 | Classic | 88 | very active | 1d ago | 6.4y |
 | [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,395 | Classic | 68 | very active | 4d ago | 7.5y |
 | [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 31,132 | Abandoned | 4 | stale | 1.3y ago | 2.5y |
@@ -282,27 +282,29 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 56 repos span **18 of the graph's 38 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
+**Community clustering.** These 56 repos span **20 of the graph's 40 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
 
-- **Community 23** (13): `ollama/ollama`, `langchain-ai/langchain`, `TauricResearch/TradingAgents`, `rasbt/LLMs-from-scratch`, `vllm-project/vllm`, `bytedance/deer-flow`, `mlabonne/llm-course`, `dair-ai/Prompt-Engineering-Guide`, `unslothai/unsloth`, `hiyouga/LlamaFactory`
-- **Community 8** (11): `obra/superpowers`, `firecrawl/firecrawl`, `browser-use/browser-use`, `google-gemini/gemini-cli`, `punkpeye/awesome-mcp-servers`, `unclecode/crawl4ai`, `mem0ai/mem0`, `crewAIInc/crewAI`, `MemPalace/mempalace`, `agno-agi/agno`
-- **Community 11** (4): `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
-- **Community 10** (4): `BerriAI/litellm`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
-- **Community 5** (3): `anthropics/skills`, `anthropics/claude-code`, `ggml-org/llama.cpp`
-- **Community 21** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
-- **Community 9** (3): `infiniflow/ragflow`, `milvus-io/milvus`, `qdrant/qdrant`
+- **Community 13** (8): `firecrawl/firecrawl`, `browser-use/browser-use`, `unclecode/crawl4ai`, `mem0ai/mem0`, `crewAIInc/crewAI`, `MemPalace/mempalace`, `agno-agi/agno`, `chroma-core/chroma`
+- **Community 28** (7): `ollama/ollama`, `ggml-org/llama.cpp`, `vllm-project/vllm`, `mlabonne/llm-course`, `unslothai/unsloth`, `hiyouga/LlamaFactory`, `sgl-project/sglang`
+- **Community 21** (5): `rasbt/LLMs-from-scratch`, `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
+- **Community 29** (4): `langchain-ai/langchain`, `bytedance/deer-flow`, `dair-ai/Prompt-Engineering-Guide`, `langchain-ai/langgraph`
+- **Community 17** (4): `BerriAI/litellm`, `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
+- **Community 1** (4): `github/spec-kit`, `google-gemini/gemini-cli`, `punkpeye/awesome-mcp-servers`, `modelcontextprotocol/servers`
+- **Community 22** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
+- **Community 2** (3): `infiniflow/ragflow`, `milvus-io/milvus`, `qdrant/qdrant`
+- **Community 14** (3): `anthropics/skills`, `anthropics/claude-code`, `Aider-AI/aider`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
+**Centrality (PageRank in the full 2,365-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
 
 - `Lightning-AI/pytorch-lightning` — PageRank 0.0017 (Fundamental)
 - `microsoft/generative-ai-for-beginners` — PageRank 0.0015 (Fundamental)
-- `langchain-ai/langchain` — PageRank 0.0014 (Must-have)
+- `langchain-ai/langchain` — PageRank 0.0013 (Must-have)
 - `microsoft/playwright-mcp` — PageRank 0.0013 (Trending)
 - `langchain-ai/langgraph` — PageRank 0.0013 (Must-have)
-- `agno-agi/agno` — PageRank 0.0012 (Trending)
-- `MemPalace/mempalace` — PageRank 0.0012 (Trending)
+- `agno-agi/agno` — PageRank 0.0011 (Trending)
 - `huggingface/smolagents` — PageRank 0.0011 (Must-have)
-- `VectifyAI/PageIndex` — PageRank 0.0010 (Trending)
+- `MemPalace/mempalace` — PageRank 0.0011 (Trending)
+- `VectifyAI/PageIndex` — PageRank 0.0009 (Trending)
 - `qdrant/qdrant` — PageRank 0.0009 (Must-have)
 
 ## Maintenance & risk signal
@@ -383,4 +385,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 - **Selection** favors recognizable, broadly-applicable AI-engineering tooling. The coding-agent/harness ecosystem and voice stack are summarized here but detailed in the Claude-Code-setups and voice-agents reports respectively.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Repos covered: 56 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Repos covered: 56 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

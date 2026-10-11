@@ -1,6 +1,6 @@
 # Voice AI Agents — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/voice_agents.py` (regenerate any time — no API cost).
 
@@ -206,30 +206,29 @@ These are the projects that make something a *voice agent* rather than a model. 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 30 tools span **12 of the graph's 38 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
+**Community clustering.** These 30 tools span **12 of the graph's 40 communities** — voice work is spread across the speech-model, agent-framework, and local-runtime neighborhoods rather than forming one tidy cluster.
 
-- **Community 11** (5): `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
-- **Community 5** (4): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`
-- **Community 8** (3): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`
-- **Community 2** (3): `openai/whisper`, `KoljaB/RealtimeSTT`, `KoljaB/RealtimeTTS`
-- **Community 19** (3): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`, `mudler/LocalAI`
-- **Community 16** (3): `jamiepine/voicebox`, `debpalash/VoiceStudio`, `alexpinel/Dot`
-- **Community 1** (2): `QwenAudio/qwen-audio-agent`, `Kieirra/murmure`
-- **Community 0** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
-- **Community 21** (2): `microsoft/foundry-local`, `Azure-Samples/cognitive-services-speech-sdk`
+- **Community 21** (6): `gradio-app/fastrtc`, `coqui-ai/TTS`, `OpenBMB/VoxCPM`, `DigitalPhonetics/IMS-Toucan`, `lucidrains/voicebox-pytorch`, `CorentinJ/Real-Time-Voice-Cloning`
+- **Community 28** (4): `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `Macoron/whisper.unity`
+- **Community 13** (3): `pipecat-ai/pipecat`, `livekit/agents`, `TEN-framework/ten-framework`
+- **Community 10** (3): `openai/whisper`, `KoljaB/RealtimeSTT`, `KoljaB/RealtimeTTS`
+- **Community 22** (3): `suno-ai/bark`, `microsoft/foundry-local`, `Azure-Samples/cognitive-services-speech-sdk`
+- **Community 23** (3): `QwenLM/Qwen3-TTS`, `QwenLM/Qwen3-Omni`, `mudler/LocalAI`
+- **Community 3** (2): `resemble-ai/chatterbox`, `neuphonic/neutts`
+- **Community 4** (2): `jamiepine/voicebox`, `debpalash/VoiceStudio`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' voice tools in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' voice tools in your ecosystem:
 
-- `Kieirra/murmure` — PageRank 0.0018
-- `m-bain/whisperX` — PageRank 0.0012
-- `QwenAudio/qwen-audio-agent` — PageRank 0.0009
+- `m-bain/whisperX` — PageRank 0.0011
 - `ggml-org/whisper.cpp` — PageRank 0.0009
-- `Picovoice/picollm` — PageRank 0.0008
+- `QwenAudio/qwen-audio-agent` — PageRank 0.0009
+- `Picovoice/picollm` — PageRank 0.0009
 - `CorentinJ/Real-Time-Voice-Cloning` — PageRank 0.0007
 - `Macoron/whisper.unity` — PageRank 0.0007
 - `microsoft/foundry-local` — PageRank 0.0007
 - `DigitalPhonetics/IMS-Toucan` — PageRank 0.0006
 - `mudler/LocalAI` — PageRank 0.0005
+- `KoljaB/RealtimeTTS` — PageRank 0.0005
 
 **Direct links between voice tools** (top similarity edges where both endpoints are in this report):
 
@@ -326,4 +325,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`supertone-inc/supertonic`](https://github.com/supertone-inc/supertonic) | Text-to-speech / TTS | Archived upstream 2026-09 and renamed to `supertone-oss-archive/supertonic`; last in the dataset 2026-09-06. Lightning-fast on-device multilingual TTS via ONNX — still usable, no longer developed. | 2026-09-06 |
 
-<sub>Tools covered: 30 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 30 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

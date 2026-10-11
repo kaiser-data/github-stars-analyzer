@@ -1,6 +1,6 @@
 # Terminal AI Coding Agents (TUIs) — Best Picks, Advantages & Disadvantages
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). Pros/cons and task rankings are additionally backed by external evidence (Terminal-Bench 2.1, 2026 head-to-head comparisons) — see Methodology.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). Pros/cons and task rankings are additionally backed by external evidence (Terminal-Bench 2.1, 2026 head-to-head comparisons) — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/ai_coding_tuis.py` (regenerate any time — no API cost).
 
@@ -236,28 +236,26 @@ The June 2026 Terminal-Bench 2.1 snapshot makes one thing unambiguous — the ag
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **14 of the graph's 38 communities**.
+**Community clustering.** These 32 tools span **15 of the graph's 40 communities**.
 
-- **Community 1** (6): `anomalyco/opencode`, `code-yeongyu/oh-my-openagent`, `rtk-ai/rtk`, `getagentseal/codeburn`, `opalinehq/cli`, `UfoMiao/zcf`
-- **Community 4** (5): `earendil-works/pi`, `CodebuffAI/freebuff`, `mksglu/context-mode`, `sheeki03/tirith`, `kenryu42/cc-safety-net`
-- **Community 17** (3): `charmbracelet/crush`, `charmbracelet/bubbletea`, `charmbracelet/bubbles`
-- **Community 5** (2): `anthropics/claude-code`, `terryso/claude-auto-resume`
-- **Community 8** (2): `google-gemini/gemini-cli`, `aaif-goose/goose`
-- **Community 23** (2): `Aider-AI/aider`, `zamalali/langchain-code`
-- **Community 0** (2): `rsrohan99/tig`, `dagger/container-use`
-- **Community 20** (2): `codewhale-hq/Codewhale`, `Alishahryar1/free-claude-code`
-- **Community 21** (2): `aniketkarne/ClaudeNightsWatch`, `BA-CalderonMorales/terminal-jarvis`
-- **Community 3** (2): `affaan-m/agentshield`, `farion1231/cc-switch`
+- **Community 11** (5): `earendil-works/pi`, `CodebuffAI/freebuff`, `mksglu/context-mode`, `sheeki03/tirith`, `kenryu42/cc-safety-net`
+- **Community 25** (4): `codewhale-hq/Codewhale`, `rtk-ai/rtk`, `getagentseal/codeburn`, `Alishahryar1/free-claude-code`
+- **Community 14** (3): `anthropics/claude-code`, `Aider-AI/aider`, `terryso/claude-auto-resume`
+- **Community 1** (3): `google-gemini/gemini-cli`, `aaif-goose/goose`, `github/copilot-cli`
+- **Community 9** (3): `charmbracelet/crush`, `charmbracelet/bubbletea`, `charmbracelet/bubbles`
+- **Community 8** (3): `ctxrs/ctx`, `opalinehq/cli`, `UfoMiao/zcf`
+- **Community 13** (2): `code-yeongyu/oh-my-openagent`, `affaan-m/agentshield`
+- **Community 3** (2): `rsrohan99/tig`, `dagger/container-use`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — most 'hub-like' terminal-coding tools in your ecosystem:
+**Centrality (PageRank in the full 2,365-repo graph)** — most 'hub-like' terminal-coding tools in your ecosystem:
 
-- `mksglu/context-mode` — PageRank 0.0036
-- `CodebuffAI/freebuff` — PageRank 0.0025
-- `kenryu42/cc-safety-net` — PageRank 0.0011
+- `mksglu/context-mode` — PageRank 0.0034
+- `CodebuffAI/freebuff` — PageRank 0.0024
+- `kenryu42/cc-safety-net` — PageRank 0.0010
 - `charmbracelet/bubbles` — PageRank 0.0009
-- `QwenLM/qwen-code` — PageRank 0.0009
-- `UfoMiao/zcf` — PageRank 0.0008
-- `codewhale-hq/Codewhale` — PageRank 0.0008
+- `QwenLM/qwen-code` — PageRank 0.0008
+- `codewhale-hq/Codewhale` — PageRank 0.0007
+- `UfoMiao/zcf` — PageRank 0.0007
 - `sheeki03/tirith` — PageRank 0.0007
 - `code-yeongyu/oh-my-openagent` — PageRank 0.0006
 - `aaif-goose/goose` — PageRank 0.0006
@@ -339,4 +337,4 @@ Watch items: `gemini-cli` is deprecated upstream (Antigravity CLI replaced it, J
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity; frozen benchmark citations need manual review as new models/agents ship.
 
-<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

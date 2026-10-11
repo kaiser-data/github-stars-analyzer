@@ -1,6 +1,6 @@
 # OpenClaw Ecosystem — What to Use Now
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/openclaw_ecosystem.py` (regenerate any time — no API cost).
 
@@ -219,28 +219,29 @@ Low health and/or not pushed recently — verify before wiring into anything you
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 29 projects span **15 of the graph's 38 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
+**Community clustering.** These 29 projects span **14 of the graph's 40 communities** — the OpenClaw ecosystem is spread across agent-infra rather than forming one isolated cluster.
 
-- **Community 3** (4): `nearai/ironclaw`, `RightNow-AI/openfang`, `vivekchand/clawmetry`, `farion1231/cc-switch`
-- **Community 1** (4): `NousResearch/hermes-agent`, `garrytan/gbrain`, `iOfficeAI/AionUi`, `hydro13/tandem-browser`
-- **Community 27** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
-- **Community 10** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
-- **Community 8** (3): `rohitg00/awesome-openclaw`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
-- **Community 30** (2): `openclaw/openclaw`, `openclaw/clawhub`
-- **Community 5** (2): `crshdn/mission-control`, `SAIL-Research-Lab/cheetahclaws`
+- **Community 13** (5): `NousResearch/hermes-agent`, `rohitg00/awesome-openclaw`, `BlockRunAI/ClawRouter`, `TencentCloud/TencentDB-Agent-Memory`, `aiming-lab/AutoResearchClaw`
+- **Community 4** (3): `RightNow-AI/openfang`, `vivekchand/clawmetry`, `farion1231/cc-switch`
+- **Community 26** (3): `HKUDS/nanobot`, `HKUDS/DeepTutor`, `HKUDS/ClawWork`
+- **Community 17** (3): `hesamsheikh/awesome-openclaw-usecases`, `supermemoryai/openclaw-supermemory`, `comet-ml/opik-openclaw`
+- **Community 8** (3): `iOfficeAI/AionUi`, `CherryHQ/cherry-studio`, `hydro13/tandem-browser`
+- **Community 5** (2): `openclaw/openclaw`, `openclaw/clawhub`
+- **Community 25** (2): `zeroclaw-labs/zeroclaw`, `nanocoai/nanoclaw`
+- **Community 14** (2): `crshdn/mission-control`, `SAIL-Research-Lab/cheetahclaws`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' OpenClaw projects in your ecosystem:
 
-- `vivekchand/clawmetry` — PageRank 0.0022
-- `garrytan/gbrain` — PageRank 0.0018
+- `vivekchand/clawmetry` — PageRank 0.0020
 - `NousResearch/hermes-agent` — PageRank 0.0007
 - `RightNow-AI/openfang` — PageRank 0.0006
-- `openclaw/openclaw` — PageRank 0.0006
-- `cloudflare/moltworker` — PageRank 0.0005
+- `cloudflare/moltworker` — PageRank 0.0006
+- `openclaw/openclaw` — PageRank 0.0005
 - `CherryHQ/cherry-studio` — PageRank 0.0005
 - `HKUDS/nanobot` — PageRank 0.0004
 - `supermemoryai/openclaw-supermemory` — PageRank 0.0004
 - `HKUDS/DeepTutor` — PageRank 0.0004
+- `nanocoai/nanoclaw` — PageRank 0.0004
 
 **Direct links between OpenClaw projects** (top similarity edges where both endpoints are in this report):
 
@@ -273,4 +274,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`abhi1693/openclaw-mission-control`](https://github.com/abhi1693/openclaw-mission-control) | Desktop / orchestration | Archived upstream; last in the dataset 2026-07-27. Agent-orchestration dashboard for OpenClaw (assign tasks, coordinate agents). | 2026-07-27 |
 
-<sub>Projects covered: 29 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Projects covered: 29 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

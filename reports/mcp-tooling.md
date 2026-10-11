@@ -1,6 +1,6 @@
 # MCP (Model Context Protocol) Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/mcp_tooling.py` (regenerate any time — no API cost).
 
@@ -261,25 +261,24 @@ A maturity signal — major vendors shipping **first-party** MCP servers in your
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 39 projects span **12 of the graph's 38 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
+**Community clustering.** These 39 projects span **13 of the graph's 40 communities** — MCP tooling is woven through the whole agent-infra landscape rather than sitting in one bucket.
 
-- **Community 25** (11): `PrefectHQ/fastmcp`, `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `github/github-mcp-server`, `getsentry/toolkit`, `czlonkowski/n8n-mcp`, `shaneholloman/mcp-knowledge-graph`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`, `hustcc/mcp-mermaid`
-- **Community 8** (9): `Klavis-AI/klavis`, `aipotheosis-labs/gate22`, `brightdata/brightdata-mcp`, `oraios/serena`, `Coding-Solo/godot-mcp`, `hi-godot/godot-ai`, `youichi-uda/godot-mcp-pro`, `tugcantopaloglu/godot-mcp`, `punkpeye/awesome-mcp-servers`
-- **Community 3** (5): `Kochava-Studios/witsy`, `oomol-lab/open-connector`, `SonarSource/sonarqube-mcp-server`, `upstash/context7`, `blazickjp/arxiv-mcp-server`
-- **Community 1** (3): `hangwin/mcp-chrome`, `mobile-next/mobile-mcp`, `wong2/awesome-mcp-servers`
-- **Community 9** (2): `tadata-org/fastapi_mcp`, `neo4j/mcp`
-- **Community 21** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
-- **Community 4** (2): `mksglu/context-mode`, `CoderGamester/mcp-unity`
+- **Community 1** (16): `PrefectHQ/fastmcp`, `mcp-use/mcp-use`, `ravitemer/mcphub.nvim`, `github/github-mcp-server`, `getsentry/toolkit`, `czlonkowski/n8n-mcp`, `shaneholloman/mcp-knowledge-graph`, `modelcontextprotocol/servers`, `modelcontextprotocol/typescript-sdk`, `modelcontextprotocol/inspector`, `hustcc/mcp-mermaid`, `Coding-Solo/godot-mcp`, `hi-godot/godot-ai`, `youichi-uda/godot-mcp-pro`, `tugcantopaloglu/godot-mcp`, `punkpeye/awesome-mcp-servers`
+- **Community 13** (5): `Kochava-Studios/witsy`, `Klavis-AI/klavis`, `aipotheosis-labs/gate22`, `brightdata/brightdata-mcp`, `oraios/serena`
+- **Community 4** (5): `oomol-lab/open-connector`, `neo4j/mcp`, `SonarSource/sonarqube-mcp-server`, `upstash/context7`, `blazickjp/arxiv-mcp-server`
+- **Community 22** (2): `microsoft/playwright-mcp`, `microsoft/mcp-for-beginners`
+- **Community 11** (2): `mksglu/context-mode`, `CoderGamester/mcp-unity`
+- **Community 8** (2): `mobile-next/mobile-mcp`, `wong2/awesome-mcp-servers`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — most 'hub-like' MCP projects in your ecosystem:
 
-- `mksglu/context-mode` — PageRank 0.0036
+- `mksglu/context-mode` — PageRank 0.0034
 - `microsoft/mcp-for-beginners` — PageRank 0.0019
-- `modelcontextprotocol/typescript-sdk` — PageRank 0.0015
+- `modelcontextprotocol/typescript-sdk` — PageRank 0.0016
 - `microsoft/playwright-mcp` — PageRank 0.0013
 - `yvgude/lean-ctx` — PageRank 0.0013
 - `upstash/context7` — PageRank 0.0008
-- `punkpeye/awesome-mcp-servers` — PageRank 0.0008
+- `punkpeye/awesome-mcp-servers` — PageRank 0.0007
 - `github/github-mcp-server` — PageRank 0.0007
 - `SonarSource/sonarqube-mcp-server` — PageRank 0.0007
 - `czlonkowski/n8n-mcp` — PageRank 0.0006
@@ -381,4 +380,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 | [`browserbase/mcp-server-browserbase`](https://github.com/browserbase/mcp-server-browserbase) | Server · browser/web | Archived upstream; last in the dataset 2026-07-20. Let LLMs control a cloud browser via Browserbase + Stagehand. | 2026-07-20 |
 | [`storybookjs/mcp`](https://github.com/storybookjs/mcp) | Server · dev-tooling | Archived upstream 2026-09; last in the dataset 2026-09-06. Storybook's MCP server for component-driven workflows. | 2026-09-06 |
 
-<sub>Projects covered: 39 (24 servers) · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Projects covered: 39 (24 servers) · Snapshot: 2026-10-11T22:37:35.881Z</sub>

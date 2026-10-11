@@ -1,6 +1,6 @@
 # Terminals for Agentic Programming — Which Terminal App, on Which OS, for How Many Sessions?
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities). The OS matrix, gap table, and scorecard are backed by external evidence gathered 2026-08-23 (GitHub API + 2026 head-to-head comparisons) — see Methodology.
 >
 > Generated 2026-10-11 by `scripts/reports/agentic_terminals.py` (regenerate any time — no API cost).
 
@@ -324,29 +324,29 @@ Read the scorecard as a shape, not a total. `Ghostty` and `tmux` are near-opposi
 
 ## Graph analysis — how the terminal layer sits in your ecosystem
 
-**Community clustering.** These 53 tools span **12 of the graph's 38 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
+**Community clustering.** These 53 tools span **13 of the graph's 40 communities** — a scatter, not a cluster, which is itself the finding: the terminal layer has no centre of gravity in your stars the way the agent layer does.
 
-- **Community 17** (17): `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `warpdotdev/warp`, `wavetermdev/waveterm`, `Eugeny/tabby`, `alacritty/alacritty`, `wezterm/wezterm`, `gnunn1/tilix`, `zellij-org/zellij`, `pvolok/dekit`, `xtermjs/xterm.js`, `tsl0922/ttyd`, `starship/starship`, `nushell/nushell`, `fish-shell/fish-shell`, `atuinsh/atuin`
-- **Community 29** (6): `gnachman/iTerm2`, `mbadolato/iTerm2-Color-Schemes`, `kovidgoyal/kitty`, `gpakosz/.tmux`, `tmux-python/libtmux`, `ohmyzsh/ohmyzsh`
-- **Community 1** (6): `herdrdev/herdr`, `OrchestratorInc/agent-orchestrator`, `manaflow-ai/cmux`, `smtg-ai/claude-squad`, `nimbalyst/nimbalyst`, `generalaction/emdash`
-- **Community 21** (6): `microsoft/terminal`, `contour-terminal/contour`, `tmux-plugins/tpm`, `butlerx/wetty`, `MisterTea/EternalTerminal`, `microsoft/WSL`
-- **Community 20** (6): `joshmedeski/sesh`, `omnara-ai/omnara`, `sorenisanerd/gotty`, `cmderdev/cmder`, `junegunn/fzf`, `ajeetdsouza/zoxide`
-- **Community 14** (4): `ghostty-org/ghostling`, `ghostty-org/ghostty`, `blinksh/blink`, `tmate-io/tmate`
-- **Community 4** (2): `sheeki03/tirith`, `raphamorim/rio`
-- **Community 3** (2): `pranshuparmar/witr`, `caarlos0/dotfiles`
+- **Community 9** (21): `x-cmd/x-cmd`, `hpjansson/chafa`, `hackerb9/lsix`, `mbadolato/iTerm2-Color-Schemes`, `warpdotdev/warp`, `wavetermdev/waveterm`, `Eugeny/tabby`, `alacritty/alacritty`, `wezterm/wezterm`, `gnunn1/tilix`, `contour-terminal/contour`, `zellij-org/zellij`, `gpakosz/.tmux`, `pvolok/dekit`, `xtermjs/xterm.js`, `tsl0922/ttyd`, `ohmyzsh/ohmyzsh`, `starship/starship`, `nushell/nushell`, `fish-shell/fish-shell`, `atuinsh/atuin`
+- **Community 8** (6): `herdrdev/herdr`, `OrchestratorInc/agent-orchestrator`, `manaflow-ai/cmux`, `smtg-ai/claude-squad`, `nimbalyst/nimbalyst`, `generalaction/emdash`
+- **Community 25** (6): `joshmedeski/sesh`, `omnara-ai/omnara`, `sorenisanerd/gotty`, `cmderdev/cmder`, `junegunn/fzf`, `ajeetdsouza/zoxide`
+- **Community 19** (4): `ghostty-org/ghostling`, `ghostty-org/ghostty`, `blinksh/blink`, `tmate-io/tmate`
+- **Community 22** (4): `microsoft/terminal`, `butlerx/wetty`, `MisterTea/EternalTerminal`, `microsoft/WSL`
+- **Community 33** (3): `gnachman/iTerm2`, `kovidgoyal/kitty`, `tmux-python/libtmux`
+- **Community 11** (2): `sheeki03/tirith`, `raphamorim/rio`
+- **Community 4** (2): `pranshuparmar/witr`, `caarlos0/dotfiles`
 
-**Centrality (PageRank in the full 2,348-repo graph)** — the most hub-like terminal-layer repos you hold:
+**Centrality (PageRank in the full 2,365-repo graph)** — the most hub-like terminal-layer repos you hold:
 
-- `wavetermdev/waveterm` — PageRank 0.0011
-- `pvolok/dekit` — PageRank 0.0010
-- `atuinsh/atuin` — PageRank 0.0008
+- `wavetermdev/waveterm` — PageRank 0.0010
+- `pvolok/dekit` — PageRank 0.0009
+- `atuinsh/atuin` — PageRank 0.0007
 - `warpdotdev/warp` — PageRank 0.0007
 - `herdrdev/herdr` — PageRank 0.0007
-- `sheeki03/tirith` — PageRank 0.0007
 - `fish-shell/fish-shell` — PageRank 0.0007
+- `sheeki03/tirith` — PageRank 0.0007
 - `cmderdev/cmder` — PageRank 0.0006
 - `microsoft/terminal` — PageRank 0.0006
-- `alacritty/alacritty` — PageRank 0.0006
+- `alacritty/alacritty` — PageRank 0.0005
 
 **Direct links between these tools** (similarity edges where both endpoints are in this report):
 
@@ -487,4 +487,4 @@ Watch items:
 - **The gap table does not refresh.** Re-running the pipeline updates every in-dataset metric; the missing-repo stars and the frozen citations need a manual pass. Re-verify after any major terminal release.
 - **`cmux` is very young** (created 2026-01-28; 1,751 open issues and 2,668 open PRs at check time — GitHub's `open_issues_count` of 4,419 conflates the two, and several published write-ups repeat it as an issue count). It is the top recommendation for the parallel-agent case on merit, not on stability — weigh that if you'd rather not be an early adopter.
 
-<sub>In-dataset tools: 53 · Missing tools catalogued: 7 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>In-dataset tools: 53 · Missing tools catalogued: 7 · Snapshot: 2026-10-11T22:37:35.881Z</sub>

@@ -1,6 +1,6 @@
 # OHLC trading dashboard
 
-> Built from the **charting-stack** report, against 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`). Regenerate any time — no API cost.
+> Built from the **charting-stack** report, against 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`). Regenerate any time — no API cost.
 
 Financial charts fail in ways that are easy to miss in a demo and expensive to miss in front of a trader: a line quietly drawn across a weekend implies trading that never happened, and a candle whose only up/down signal is red-vs-green is unreadable to a meaningful share of viewers. This prompt makes both failure modes explicit requirements rather than things to notice later.
 

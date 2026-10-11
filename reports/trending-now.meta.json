@@ -3,13 +3,13 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 103 new entrants, and what has gone flat.",
-  "tool_count": 166,
-  "total_stars": 6775921,
+  "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 120 new entrants, and what has gone flat.",
+  "tool_count": 183,
+  "total_stars": 7095077,
   "categories": {
     "Risers": 1798,
     "Breakouts": 1652,
-    "New entrants": 103,
+    "New entrants": 120,
     "Cooling": 81
   },
   "top_tools": [
@@ -70,7 +70,7 @@
   ],
   "chart_top_title": "Biggest star gains (12d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-10-11T22:14:20.246Z",
+  "snapshot": "2026-10-11T22:37:35.881Z",
   "generated": "2026-10-11",
   "generator": "scripts/reports/trending_now.py",
   "created": "2026-08-08"

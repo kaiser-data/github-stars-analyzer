@@ -7,13 +7,13 @@
       "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
       "file": "trending-now.md",
       "category": "AI / Trends",
-      "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 103 new entrants, and what has gone flat.",
-      "tool_count": 166,
-      "total_stars": 6775921,
+      "summary": "Measured star momentum across 21 data vintages: the 12-day movers, relative breakouts, sustained climbers, 120 new entrants, and what has gone flat.",
+      "tool_count": 183,
+      "total_stars": 7095077,
       "categories": {
         "Risers": 1798,
         "Breakouts": 1652,
-        "New entrants": 103,
+        "New entrants": 120,
         "Cooling": 81
       },
       "top_tools": [
@@ -74,7 +74,7 @@
       ],
       "chart_top_title": "Biggest star gains (12d)",
       "chart_cat_title": "Repos by movement type",
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/trending_now.py",
       "created": "2026-08-08"
@@ -121,7 +121,7 @@
           "stars": 67731
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/charting_stack.py",
       "created": "2026-08-11"
@@ -167,7 +167,7 @@
           "stars": 217948
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/claude_code_setups.py",
       "created": "2026-06-13"
@@ -207,7 +207,7 @@
           "stars": 167058
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/ai_engineer_stack.py",
       "created": "2026-06-29"
@@ -253,7 +253,7 @@
           "stars": 65924
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/agentic_terminals.py",
       "created": "2026-08-23"
@@ -300,7 +300,7 @@
           "stars": 114040
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/harness_engineering.py",
       "created": "2026-10-01"
@@ -343,7 +343,7 @@
           "stars": 83646
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/agent_harnesses.py",
       "created": "2026-07-19"
@@ -392,7 +392,7 @@
           "stars": 93508
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/local_vs_infra_stack.py",
       "created": "2026-06-05"
@@ -434,7 +434,7 @@
           "stars": 33489
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/mcp_tooling.py",
       "created": "2026-05-31"
@@ -476,7 +476,7 @@
           "stars": 83646
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/agent_orchestration.py",
       "created": "2026-05-31"
@@ -520,7 +520,7 @@
           "stars": 40054
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/agent_memory.py",
       "created": "2026-08-12"
@@ -570,7 +570,7 @@
           "stars": 25755
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/blockchain_essentials.py",
       "created": "2026-06-03"
@@ -614,7 +614,7 @@
           "stars": 15910
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/printing_stack.py",
       "created": "2026-09-12"
@@ -657,7 +657,7 @@
           "stars": 24453
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/meeting_transcription.py",
       "created": "2026-06-12"
@@ -702,7 +702,7 @@
           "stars": 81407
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/notebooklm_stack.py",
       "created": "2026-07-19"
@@ -744,7 +744,7 @@
           "stars": 114040
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/ai_coding_tuis.py",
       "created": "2026-07-19"
@@ -790,7 +790,7 @@
           "stars": 6870
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/decision_classifiers.py",
       "created": "2026-09-25"
@@ -832,7 +832,7 @@
           "stars": 41124
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/rag_tooling.py",
       "created": "2026-05-31"
@@ -875,7 +875,7 @@
           "stars": 54266
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/voice_agents.py",
       "created": "2026-06-04"
@@ -916,7 +916,7 @@
           "stars": 19583
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/llm_evaluation.py",
       "created": "2026-05-31"
@@ -958,7 +958,7 @@
           "stars": 48924
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/openclaw_ecosystem.py",
       "created": "2026-05-31"
@@ -1001,7 +1001,7 @@
           "stars": 67547
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/finetuning_stack.py",
       "created": "2026-07-20"
@@ -1045,7 +1045,7 @@
           "stars": 54266
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/jetson_inference.py",
       "created": "2026-08-23"
@@ -1087,7 +1087,7 @@
           "stars": 68634
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/document_extraction.py",
       "created": "2026-07-19"
@@ -1128,7 +1128,7 @@
           "stars": 31613
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/memory_frameworks.py",
       "created": "2026-05-31"
@@ -1171,7 +1171,7 @@
           "stars": 91115
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/blockchain_claws.py",
       "created": "2026-06-03"
@@ -1213,7 +1213,7 @@
           "stars": 26103
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/token_savings.py",
       "created": "2026-05-31"
@@ -1253,7 +1253,7 @@
           "stars": 12647
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/which_claw.py",
       "created": "2026-06-03"
@@ -1292,7 +1292,7 @@
           "stars": 48924
         }
       ],
-      "snapshot": "2026-10-11T22:14:20.246Z",
+      "snapshot": "2026-10-11T22:37:35.881Z",
       "generated": "2026-10-11",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
       "created": "2026-06-02"

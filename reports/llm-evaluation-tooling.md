@@ -1,6 +1,6 @@
 # LLM Evaluation Tooling — Landscape Report
 
-> Derived from **kaiser-data**'s 2,348 starred repos (snapshot `2026-10-11T22:14:20.246Z`), cross-referenced with the repo-similarity graph (2,348 nodes / 7,797 edges, 38 communities).
+> Derived from **kaiser-data**'s 2,365 starred repos (snapshot `2026-10-11T22:37:35.881Z`), cross-referenced with the repo-similarity graph (2,365 nodes / 7,846 edges, 40 communities).
 >
 > Generated 2026-10-11 by `scripts/reports/llm_evaluation.py` (regenerate any time — no API cost).
 
@@ -26,7 +26,7 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 1d ago | 3.4y | 19 |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Observability + eval platform | TypeScript | NOASSERTION | 35,600 | Classic | 94 | very active | 2d ago | 3.4y | 19 |
 | [mlflow/mlflow](https://github.com/mlflow/mlflow) | Observability + eval platform | Python | Apache-2.0 | 28,336 | Classic | 82 | very active | 1d ago | 8.4y | 21 |
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Evaluation framework | TypeScript | MIT | 25,869 | Classic | 79 | very active | 1d ago | 3.5y | 20 |
 | [comet-ml/opik](https://github.com/comet-ml/opik) | Observability + eval platform | Python | Apache-2.0 | 22,487 | Classic | 89 | very active | 2d ago | 3.4y | 18 |
@@ -176,20 +176,22 @@ _Adversarial testing, vulnerability scanning, and hallucination / uncertainty de
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 29 tools span **11 of the graph's 38 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
+**Community clustering.** These 29 tools span **13 of the graph's 40 communities** — evaluation tooling co-locates with the broader LLM-app / agent-infra clusters rather than forming an isolated island.
 
-- **Community 10** (8): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `langwatch/langwatch`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
-- **Community 23** (8): `confident-ai/deepeval`, `langchain-ai/openevals`, `langchain-ai/agentevals`, `rhesis-ai/rhesis`, `vllm-project/guidellm`, `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`, `confident-ai/deepteam`
-- **Community 0** (3): `UKGovernmentBEIS/inspect_ai`, `LiveBench/LiveBench`, `pinchbench/skill`
-- **Community 3** (2): `traceloop/openllmetry`, `IBM/AssetOpsBench`
-- **Community 11** (2): `NVIDIA/garak`, `KRLabsOrg/LettuceDetect`
+- **Community 17** (8): `langfuse/langfuse`, `mlflow/mlflow`, `comet-ml/opik`, `comet-ml/opik-openclaw`, `langwatch/langwatch`, `promptfoo/promptfoo`, `Arize-ai/phoenix`, `truera/trulens`
+- **Community 10** (3): `confident-ai/deepeval`, `openai/evals`, `confident-ai/deepteam`
+- **Community 3** (3): `UKGovernmentBEIS/inspect_ai`, `LiveBench/LiveBench`, `pinchbench/skill`
+- **Community 28** (3): `vllm-project/guidellm`, `jszheng21/RACE`, `EleutherAI/lm-evaluation-harness`
+- **Community 4** (2): `traceloop/openllmetry`, `IBM/AssetOpsBench`
+- **Community 29** (2): `langchain-ai/openevals`, `langchain-ai/agentevals`
+- **Community 21** (2): `rhesis-ai/rhesis`, `KRLabsOrg/LettuceDetect`
 
 **Centrality (PageRank in the full 1,071-repo graph)** — how 'hub-like' each tool is within your starred ecosystem:
 
-- `UKGovernmentBEIS/inspect_ai` — PageRank 0.0043
+- `UKGovernmentBEIS/inspect_ai` — PageRank 0.0037
 - `huggingface/lighteval` — PageRank 0.0011
 - `strands-agents/evals` — PageRank 0.0008
-- `comet-ml/opik` — PageRank 0.0007
+- `comet-ml/opik` — PageRank 0.0006
 - `IBM/AssetOpsBench` — PageRank 0.0006
 - `langfuse/langfuse` — PageRank 0.0005
 - `vllm-project/guidellm` — PageRank 0.0005
@@ -280,4 +282,4 @@ Several widely-used evaluation tools are **not** in this dataset — worth knowi
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 - Re-run after a fresh `classified.json` to refresh stars/activity.
 
-<sub>Tools covered: 29 · Snapshot: 2026-10-11T22:14:20.246Z</sub>
+<sub>Tools covered: 29 · Snapshot: 2026-10-11T22:37:35.881Z</sub>
