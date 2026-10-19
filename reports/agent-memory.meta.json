@@ -3,9 +3,9 @@
   "title": "Agent Memory & Conversational Knowledge Graphs",
   "file": "agent-memory.md",
   "category": "AI / RAG",
-  "summary": "37 agent-memory and conversational-knowledge-graph tools (782,102\u2605): graph-native vs vector-first memory, the stores underneath, chat connectors and meeting capture \u2014 plus a primitive-coverage matrix of which chat signals each tool actually consumes, and a ranked analysis of the ones nobody consumes at all.",
+  "summary": "37 agent-memory and conversational-knowledge-graph tools (793,427\u2605): graph-native vs vector-first memory, the stores underneath, chat connectors and meeting capture \u2014 plus a primitive-coverage matrix of which chat signals each tool actually consumes, and a ranked analysis of the ones nobody consumes at all.",
   "tool_count": 37,
-  "total_stars": 782102,
+  "total_stars": 793427,
   "categories": {
     "Graph-native memory": 7,
     "Vector-first memory": 9,
@@ -18,27 +18,27 @@
   "top_tools": [
     {
       "name": "mem0ai/mem0",
-      "stars": 66942
+      "stars": 67434
     },
     {
       "name": "MemPalace/mempalace",
-      "stars": 59492
+      "stars": 59634
     },
     {
       "name": "vectorize-io/hindsight",
-      "stars": 47962
+      "stars": 51446
     },
     {
       "name": "milvus-io/milvus",
-      "stars": 46347
+      "stars": 46427
     },
     {
       "name": "HKUDS/LightRAG",
-      "stars": 40054
+      "stars": 40209
     }
   ],
-  "snapshot": "2026-10-11T22:37:35.881Z",
-  "generated": "2026-10-11",
+  "snapshot": "2026-10-19T11:27:31.266Z",
+  "generated": "2026-10-19",
   "generator": "scripts/reports/agent_memory.py",
-  "created": "2026-08-12"
+  "created": "2026-10-12"
 }
