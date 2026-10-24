@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "src/lab/RiskQuadrant.jsx": {
-    "mtime": 1783520828.676891,
-    "ast_hash": "c3e7fbd61c5a191650e90c9af1da7595",
+    "mtime": 1792860157.6848376,
+    "ast_hash": "8169ea8815916a2ba79fee100a8e4b76",
     "semantic_hash": ""
   },
   ".github/workflows/refresh-data.yml": {

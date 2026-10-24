@@ -87,6 +87,40 @@ export default function RiskQuadrant({ onSelect }) {
 
   return (
     <div>
+      {/* name search: lists matching repos once the query narrows to a handful */}
+      <div className="mb-3">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search repos by name…"
+          className="w-full sm:w-80 bg-gray-800 border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-blue-500"
+        />
+        {q && (
+          <div className="mt-2 text-xs">
+            {matches.length === 0 && <span className="text-gray-500">No repos match “{query.trim()}”.</span>}
+            {matches.length >= MAX_MATCHES && (
+              <span className="text-gray-500">{matches.length} repos match — keep typing to narrow it down.</span>
+            )}
+            {showMatches && (
+              <div className="flex flex-wrap gap-2">
+                {matches.map((n) => (
+                  <button
+                    key={n.id}
+                    onClick={() => onSelect?.(n.full_name)}
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-600 bg-gray-800 hover:border-blue-500 text-gray-200"
+                  >
+                    <span className="w-2 h-2 rounded-full" style={{ background: STAGE_COLOR[n.lifecycle_stage] || '#6b7280' }} />
+                    {n.full_name}
+                    <span className={n.health_score < HEALTH_RISK ? 'text-red-400' : 'text-gray-500'}>{n.health_score}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
       <div className="mb-3">
         <h2 className="text-xl font-bold text-white">Risk quadrant</h2>
         <p className="text-gray-400 text-sm">
@@ -115,40 +149,6 @@ export default function RiskQuadrant({ onSelect }) {
           <button onClick={() => setHidden(new Set())} className="px-2.5 py-1 text-blue-400 hover:text-blue-300 underline">
             show all
           </button>
-        )}
-      </div>
-
-      {/* name search: lists matching repos once the query narrows to a handful */}
-      <div className="mb-3">
-        <input
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search repo name…"
-          className="w-full sm:w-80 bg-gray-800 border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-blue-500"
-        />
-        {q && (
-          <div className="mt-2 text-xs">
-            {matches.length === 0 && <span className="text-gray-500">No repos match “{query.trim()}”.</span>}
-            {matches.length >= MAX_MATCHES && (
-              <span className="text-gray-500">{matches.length} repos match — keep typing to narrow it down.</span>
-            )}
-            {showMatches && (
-              <div className="flex flex-wrap gap-2">
-                {matches.map((n) => (
-                  <button
-                    key={n.id}
-                    onClick={() => onSelect?.(n.full_name)}
-                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-600 bg-gray-800 hover:border-blue-500 text-gray-200"
-                  >
-                    <span className="w-2 h-2 rounded-full" style={{ background: STAGE_COLOR[n.lifecycle_stage] || '#6b7280' }} />
-                    {n.full_name}
-                    <span className={n.health_score < HEALTH_RISK ? 'text-red-400' : 'text-gray-500'}>{n.health_score}</span>
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
         )}
       </div>
 

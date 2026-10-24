@@ -1,7 +1,7 @@
 # Graph Report - github-stars-analyzer  (2026-10-24)
 
 ## Corpus Check
-- 232 files · ~3,974,244 words
+- 232 files · ~4,037,663 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5b7ce142`
+- Built from commit: `e74dbd7d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -147,7 +147,7 @@
 - [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `True if the repo is archived now but wasn't in the baseline snapshot.` - 32 edges
+1. `Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume` - 32 edges
 2. `useGraph()` - 20 edges
 3. `scripts` - 19 edges
 4. `The field guide, by layer` - 15 edges
@@ -321,7 +321,7 @@ Nodes (18): Adjacent (deliberately not listed as RAG tools), Build something wit
 
 ### Community 39 - "Community 39"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-11, 12d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-19, 8d), Frontier models on hardware you already own (+10 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.11
@@ -345,7 +345,7 @@ Nodes (12): abandoned, added, authorSets, classic, data, g, hot, keepKeys (+4 mo
 
 ### Community 45 - "Community 45"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-09-29 → 2026-10-11, 12d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-19, 8d), Frontier models on hardware you already own (+10 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.11
@@ -627,10 +627,10 @@ Nodes (3): Current scores, Scoring review request, What to return
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `True if the repo is archived now but wasn't in the baseline snapshot.` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `Handoff — 2026-09-25`?**
+- **Why does `Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `Handoff — 2026-09-25`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1414 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1413 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
