@@ -9,6 +9,7 @@ const W = 960;
 const H = 560;
 const M = { top: 24, right: 24, bottom: 46, left: 64 };
 const HEALTH_RISK = 40; // below this we call a repo "at risk"
+const MAX_MATCHES = 10; // only list search matches when fewer than this
 
 const fmt = (n) => (typeof n === 'number' ? n.toLocaleString() : '—');
 
@@ -21,6 +22,7 @@ export default function RiskQuadrant({ onSelect }) {
   const { status, nodes } = useGraph();
   const [hidden, setHidden] = useState(new Set()); // lifecycle stages toggled off
   const [hover, setHover] = useState(null); // { node, x, y } in wrapper coords
+  const [query, setQuery] = useState('');
   const wrapRef = useRef(null);
 
   const model = useMemo(() => {
@@ -54,6 +56,14 @@ export default function RiskQuadrant({ onSelect }) {
       .slice(0, 8);
     return { dots, yTicks, xTicks, counts, atRisk, sx, plotH };
   }, [status, nodes]);
+
+  const q = query.trim().toLowerCase();
+  const matches = useMemo(() => {
+    if (!model || !q) return [];
+    return model.dots.map((d) => d.n).filter((n) => n.full_name?.toLowerCase().includes(q));
+  }, [model, q]);
+  const showMatches = matches.length > 0 && matches.length < MAX_MATCHES;
+  const matchIds = useMemo(() => new Set(showMatches ? matches.map((n) => n.id) : []), [showMatches, matches]);
 
   if (!model) {
     return <div className="bg-gray-800/40 border border-gray-700 rounded-lg p-6 text-gray-400 text-sm">Loading risk view…</div>;
@@ -108,6 +118,40 @@ export default function RiskQuadrant({ onSelect }) {
         )}
       </div>
 
+      {/* name search: lists matching repos once the query narrows to a handful */}
+      <div className="mb-3">
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search repo name…"
+          className="w-full sm:w-80 bg-gray-800 border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-blue-500"
+        />
+        {q && (
+          <div className="mt-2 text-xs">
+            {matches.length === 0 && <span className="text-gray-500">No repos match “{query.trim()}”.</span>}
+            {matches.length >= MAX_MATCHES && (
+              <span className="text-gray-500">{matches.length} repos match — keep typing to narrow it down.</span>
+            )}
+            {showMatches && (
+              <div className="flex flex-wrap gap-2">
+                {matches.map((n) => (
+                  <button
+                    key={n.id}
+                    onClick={() => onSelect?.(n.full_name)}
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-600 bg-gray-800 hover:border-blue-500 text-gray-200"
+                  >
+                    <span className="w-2 h-2 rounded-full" style={{ background: STAGE_COLOR[n.lifecycle_stage] || '#6b7280' }} />
+                    {n.full_name}
+                    <span className={n.health_score < HEALTH_RISK ? 'text-red-400' : 'text-gray-500'}>{n.health_score}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+      </div>
+
       <div ref={wrapRef} className="relative bg-gray-800/40 border border-gray-700 rounded-lg overflow-hidden">
         <svg viewBox={`0 0 ${W} ${H}`} className="w-full block" role="img" aria-label="Scatter of repo health vs momentum">
           {/* at-risk zone */}
@@ -144,9 +188,9 @@ export default function RiskQuadrant({ onSelect }) {
                 cy={y}
                 r={r}
                 fill={STAGE_COLOR[n.lifecycle_stage] || '#6b7280'}
-                fillOpacity="0.75"
-                stroke="#111827"
-                strokeWidth="1"
+                fillOpacity={matchIds.size === 0 || matchIds.has(n.id) ? 0.75 : 0.12}
+                stroke={matchIds.has(n.id) ? '#f9fafb' : '#111827'}
+                strokeWidth={matchIds.has(n.id) ? 2 : 1}
                 className="cursor-pointer"
                 onMouseEnter={(e) => showTip(e, n)}
                 onMouseMove={(e) => showTip(e, n)}
