@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">JuliusBrussee/caveman</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">113,569</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">114,780</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">thedotmack/claude-mem</text>
-<path d="M244,67 h304.1 q4,0 4,4 v10 q0,4 -4,4 h-304.1 z" class="bar"/>
-<text x="558.1" y="76.0" class="val" dominant-baseline="central">101,710</text>
+<path d="M244,67 h304.0 q4,0 4,4 v10 q0,4 -4,4 h-304.0 z" class="bar"/>
+<text x="558.0" y="76.0" class="val" dominant-baseline="central">102,756</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">rtk-ai/rtk</text>
-<path d="M244,94 h250.2 q4,0 4,4 v10 q0,4 -4,4 h-250.2 z" class="bar"/>
-<text x="504.2" y="103.0" class="val" dominant-baseline="central">83,933</text>
+<path d="M244,94 h249.1 q4,0 4,4 v10 q0,4 -4,4 h-249.1 z" class="bar"/>
+<text x="503.1" y="103.0" class="val" dominant-baseline="central">84,451</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">colbymchenry/codegraph</text>
 <path d="M244,121 h221.4 q4,0 4,4 v10 q0,4 -4,4 h-221.4 z" class="bar"/>
-<text x="475.4" y="130.0" class="val" dominant-baseline="central">74,420</text>
+<text x="475.4" y="130.0" class="val" dominant-baseline="central">75,207</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">mksglu/context-mode</text>
-<path d="M244,148 h89.6 q4,0 4,4 v10 q0,4 -4,4 h-89.6 z" class="bar"/>
-<text x="343.6" y="157.0" class="val" dominant-baseline="central">30,914</text>
+<path d="M244,148 h92.2 q4,0 4,4 v10 q0,4 -4,4 h-92.2 z" class="bar"/>
+<text x="346.2" y="157.0" class="val" dominant-baseline="central">32,107</text>
 </svg>

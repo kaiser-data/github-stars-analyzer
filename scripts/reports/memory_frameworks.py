@@ -33,7 +33,6 @@ TAXONOMY = {
     "memvid/memvid": ("General memory layer", "Serverless single-file memory layer; replaces RAG pipelines with a portable artifact."),
     "plastic-labs/honcho": ("General memory layer", "Memory library for stateful agents; user-modeling / theory-of-mind oriented."),
     "TencentCloud/TencentDB-Agent-Memory": ("General memory layer", "Fully-local long-term memory via a 4-tier progressive pipeline."),
-    "memodb-io/Acontext": ("General memory layer", "Treats agent 'skills' as a memory layer."),
     "MemPalace/mempalace": ("General memory layer", "Benchmark-focused open-source memory system."),
     "supermemoryai/openclaw-supermemory": ("General memory layer", "Long-term memory & recall, packaged for OpenClaw agents."),
     "Einsia/OpenChronicle": ("General memory layer", "Local-first memory for any tool-capable LLM agent."),

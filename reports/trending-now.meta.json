@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 22 data vintages: the 8-day movers, relative breakouts, sustained climbers, 40 new entrants, and what has gone flat.",
-  "tool_count": 100,
-  "total_stars": 6642743,
+  "summary": "Measured star momentum across 23 data vintages: the 13-day movers, relative breakouts, sustained climbers, 59 new entrants, and what has gone flat.",
+  "tool_count": 120,
+  "total_stars": 6905049,
   "categories": {
-    "Risers": 1840,
-    "Breakouts": 1721,
-    "New entrants": 40,
-    "Cooling": 77
+    "Risers": 1880,
+    "Breakouts": 1746,
+    "New entrants": 59,
+    "Cooling": 68
   },
   "top_tools": [
     {
       "name": "morluto/rea",
-      "stars": 329615
-    },
-    {
-      "name": "storytold/photocraft",
-      "stars": 67962
+      "stars": 377090
     },
     {
       "name": "debpalash/VoiceStudio",
-      "stars": 76580
+      "stars": 84573
     },
     {
-      "name": "MadsLorentzen/ai-job-search",
-      "stars": 55081
+      "name": "storytold/photocraft",
+      "stars": 72284
     },
     {
-      "name": "cathrynlavery/diagram-design",
-      "stars": 58076
+      "name": "cloudflare/security-audit-skill",
+      "stars": 43764
+    },
+    {
+      "name": "stablyai/orca",
+      "stars": 104720
     }
   ],
   "chart_top_series": [
     {
       "name": "morluto/rea",
-      "value": 266257
-    },
-    {
-      "name": "storytold/photocraft",
-      "value": 23030
+      "value": 313732
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 19678
+      "value": 27671
     },
     {
-      "name": "MadsLorentzen/ai-job-search",
-      "value": 9545
+      "name": "storytold/photocraft",
+      "value": 27352
     },
     {
-      "name": "cathrynlavery/diagram-design",
-      "value": 9502
+      "name": "cloudflare/security-audit-skill",
+      "value": 16497
     },
     {
       "name": "stablyai/orca",
-      "value": 8444
+      "value": 15726
     },
     {
-      "name": "storytold/pdfcraft",
-      "value": 7365
+      "name": "DietrichGebert/ponytail",
+      "value": 15184
     },
     {
-      "name": "affaan-m/ECC",
-      "value": 7323
+      "name": "deepseek-ai/deepseek-harness",
+      "value": 13507
+    },
+    {
+      "name": "cathrynlavery/diagram-design",
+      "value": 12061
     }
   ],
-  "chart_top_title": "Biggest star gains (8d)",
+  "chart_top_title": "Biggest star gains (13d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-10-19T11:27:31.266Z",
-  "generated": "2026-10-19",
+  "snapshot": "2026-10-24T18:18:45.023Z",
+  "generated": "2026-10-24",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-10-12"
+  "created": "2026-08-08"
 }

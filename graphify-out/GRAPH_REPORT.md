@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-10-24)
 
 ## Corpus Check
-- 232 files · ~4,037,663 words
+- 232 files · ~4,058,158 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2030 nodes · 2090 edges · 137 communities (118 shown, 19 thin omitted)
+- 2030 nodes · 2090 edges · 136 communities (119 shown, 17 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e74dbd7d`
+- Built from commit: `81115402`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -135,7 +135,6 @@
 - [[_COMMUNITY_task-5-brief|task-5-brief.md]]
 - [[_COMMUNITY___init__.py|__init__.py]]
 - [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
-- [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
 - [[_COMMUNITY_decision_classifiers.py|decision_classifiers.py]]
 - [[_COMMUNITY_GLiClass as a discovery relevance signal — pilot, 2026-09-25|GLiClass as a discovery relevance signal — pilot, 2026-09-25]]
 - [[_COMMUNITY_gliclass_score.py|gliclass_score.py]]
@@ -147,7 +146,7 @@
 - [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume` - 32 edges
+1. `Shared helpers for the report generators in scripts/reports/.  Every generator r` - 32 edges
 2. `useGraph()` - 20 edges
 3. `scripts` - 19 edges
 4. `The field guide, by layer` - 15 edges
@@ -173,7 +172,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (137 total, 19 thin omitted)
+## Communities (136 total, 17 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -295,6 +294,10 @@ Nodes (20): Architecture, Ask AI — natural language over the graph, Ask AI set
 Cohesion: 0.10
 Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Superpowers — Setup Strategies from Your Stars, Code-graph / retrieval, Config / setup kit, Executive summary, Graph analysis — how they relate, Harness / coding agent (+12 more)
 
+### Community 32 - "Community 32"
+Cohesion: 0.08
+Nodes (3): Dataset-derived momentum signal., trend_score(), Shared helpers for the report generators in scripts/reports/.  Every generator r
+
 ### Community 33 - "Community 33"
 Cohesion: 0.10
 Nodes (19): 🔥 Agentic payments (x402), 🔥 AI × finance / trading, Blockchain Repos You Need to Know — A Field Guide, Caveats, Client libraries (TS/JS), Contract libraries & standards, DeFi protocol references, Dev toolkits (+11 more)
@@ -305,7 +308,7 @@ Nodes (19): 🔥 Agentic payments (x402), 🔥 AI × finance / trading, Blockcha
 
 ### Community 35 - "Community 35"
 Cohesion: 0.13
-Nodes (18): baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), load_data(), make_node_for(), newly_archived(), Shared helpers for the report generators in scripts/reports/.  Every generator r (+10 more)
+Nodes (18): baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), load_data(), make_node_for(), newly_archived(), Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume (+10 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.11
@@ -321,7 +324,7 @@ Nodes (18): Adjacent (deliberately not listed as RAG tools), Build something wit
 
 ### Community 39 - "Community 39"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-19, 8d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-24, 13d), Frontier models on hardware you already own (+10 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.11
@@ -345,7 +348,7 @@ Nodes (12): abandoned, added, authorSets, classic, data, g, hot, keepKeys (+4 mo
 
 ### Community 45 - "Community 45"
 Cohesion: 0.11
-Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-19, 8d), Frontier models on hardware you already own (+10 more)
+Nodes (18): Agents are leaving the terminal for specific jobs, Breakouts — fastest relative growth (≥300★ baseline), Cooling off, Design and spec as agent-readable artifacts, Emerging themes, Executive summary, Fastest risers — absolute (2026-10-11 → 2026-10-24, 13d), Frontier models on hardware you already own (+10 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.11
@@ -622,15 +625,15 @@ Nodes (3): Current scores, Scoring review request, What to return
 ## Knowledge Gaps
 - **1372 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1367 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `Handoff — 2026-09-25`?**
+- **Why does `Shared helpers for the report generators in scripts/reports/.  Every generator r` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1413 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1415 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

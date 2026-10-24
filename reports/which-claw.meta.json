@@ -5,7 +5,7 @@
   "category": "AI / Comparison",
   "summary": "Decision report ranking 13 standalone OpenClaw-family claws (incl. functional ones like Hermes) on a transparent composite (health, adoption, resilience, maturity, momentum). Winner: zeroclaw \u2014 robust across 6 weight profiles. Adds weight-sensitivity, Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table.",
   "tool_count": 13,
-  "total_stars": 1137253,
+  "total_stars": 1140011,
   "categories": {
     "General assistant": 8,
     "Secure runtime": 3,
@@ -14,27 +14,27 @@
   "top_tools": [
     {
       "name": "zeroclaw-labs/zeroclaw",
-      "stars": 32998
+      "stars": 33039
     },
     {
       "name": "openclaw/openclaw",
-      "stars": 392443
+      "stars": 392940
     },
     {
       "name": "ultraworkers/claw-code",
-      "stars": 194908
-    },
-    {
-      "name": "HKUDS/nanobot",
-      "stars": 49173
+      "stars": 195066
     },
     {
       "name": "NousResearch/hermes-agent",
-      "stars": 255102
+      "stars": 256743
+    },
+    {
+      "name": "code-yeongyu/oh-my-openagent",
+      "stars": 70309
     }
   ],
-  "snapshot": "2026-10-19T11:27:31.266Z",
-  "generated": "2026-10-19",
+  "snapshot": "2026-10-24T18:18:45.023Z",
+  "generated": "2026-10-24",
   "generator": "scripts/reports/which_claw.py",
-  "created": "2026-10-12"
+  "created": "2026-06-03"
 }

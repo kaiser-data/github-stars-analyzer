@@ -23,16 +23,16 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">5. External verification</text>
 <path d="M244,121 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
 <text x="495.7" y="130.0" class="val" dominant-baseline="central">5</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
 <path d="M244,148 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
 <text x="495.7" y="157.0" class="val" dominant-baseline="central">5</text>
-<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">2. Small instruction budget</text>
-<path d="M244,175 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
-<text x="446.6" y="184.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">4. Lean action space</text>
+<text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">8. Guards &amp; sandboxes</text>
+<path d="M244,175 h241.7 q4,0 4,4 v10 q0,4 -4,4 h-241.7 z" class="bar"/>
+<text x="495.7" y="184.0" class="val" dominant-baseline="central">5</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">2. Small instruction budget</text>
 <path d="M244,202 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
 <text x="446.6" y="211.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">6. State on disk</text>
+<text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">4. Lean action space</text>
 <path d="M244,229 h192.6 q4,0 4,4 v10 q0,4 -4,4 h-192.6 z" class="bar"/>
 <text x="446.6" y="238.0" class="val" dominant-baseline="central">4</text>
 <text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">9. Durable runs &amp; approvals</text>

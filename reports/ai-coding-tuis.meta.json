@@ -3,9 +3,9 @@
   "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
   "file": "ai-coding-tuis.md",
   "category": "AI / Comparison",
-  "summary": "32 terminal AI coding tools (1,429,660\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
+  "summary": "32 terminal AI coding tools (1,443,210\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
   "tool_count": 32,
-  "total_stars": 1429660,
+  "total_stars": 1443210,
   "categories": {
     "Terminal coding agent": 14,
     "Session / token ops": 7,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "anomalyco/opencode",
-      "stars": 217135
+      "stars": 221010
     },
     {
       "name": "anthropics/claude-code",
-      "stars": 152343
+      "stars": 153265
     },
     {
       "name": "farion1231/cc-switch",
-      "stars": 146191
+      "stars": 148302
     },
     {
       "name": "openai/codex",
-      "stars": 129879
+      "stars": 130791
     },
     {
       "name": "earendil-works/pi",
-      "stars": 116324
+      "stars": 117581
     }
   ],
-  "snapshot": "2026-10-19T11:27:31.266Z",
-  "generated": "2026-10-19",
+  "snapshot": "2026-10-24T18:18:45.023Z",
+  "generated": "2026-10-24",
   "generator": "scripts/reports/ai_coding_tuis.py",
-  "created": "2026-10-12"
+  "created": "2026-07-19"
 }

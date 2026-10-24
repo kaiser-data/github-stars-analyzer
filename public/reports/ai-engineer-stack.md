@@ -1,8 +1,8 @@
 # The AI Engineer's Stack — What's Fundamental, Must-Have, and Trending
 
-> Derived from **kaiser-data**'s 2,398 starred repos (snapshot `2026-10-19T11:27:31.266Z`), cross-referenced with the repo-similarity graph (2,398 nodes / 8,025 edges, 39 communities) and the 2026 AI-engineering landscape.
+> Derived from **kaiser-data**'s 2,408 starred repos (snapshot `2026-10-24T18:18:45.023Z`), cross-referenced with the repo-similarity graph (2,408 nodes / 7,966 edges, 39 communities) and the 2026 AI-engineering landscape.
 >
-> Generated 2026-10-19 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
+> Generated 2026-10-24 by `scripts/reports/ai_engineer_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/ai-engineer-stack-top-tools.svg)
 
@@ -21,127 +21,129 @@ In 2026 the **model layer is commoditizing** — model differences matter less e
 
 **Bedrock you must understand.** Long-lived base libraries and learning resources. Tools change; these don't. If you can't explain these, you're assembling black boxes.
 
-- **[huggingface/transformers](https://github.com/huggingface/transformers)** · 167,850★ · _Base & training_  
+- **[huggingface/transformers](https://github.com/huggingface/transformers)** · 168,075★ · _Base & training_  
   The model-definition framework — the de-facto way to load/run almost any open model. Know it cold.
-- **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** · 131,681★ · _Inference & serving_  
+- **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** · 132,228★ · _Inference & serving_  
   Inference in C/C++ — the primitive behind on-device/edge LLMs; teaches you what quantization actually costs.
-- **[microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)** · 121,620★ · _Learning_  
+- **[microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners)** · 122,077★ · _Learning_  
   21-lesson on-ramp to building with generative AI — the gentle starting point.
-- **[openai/whisper](https://github.com/openai/whisper)** · 110,850★ · _Voice & multimodal_  
+- **[openai/whisper](https://github.com/openai/whisper)** · 111,192★ · _Voice & multimodal_  
   The reference open ASR model — the baseline for any speech-in pipeline.
-- **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** · 106,842★ · _Learning_  
+- **[rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)** · 107,214★ · _Learning_  
   Build a GPT in PyTorch step by step — the single best way to actually understand what you're orchestrating.
-- **[mlabonne/llm-course](https://github.com/mlabonne/llm-course)** · 84,319★ · _Learning_  
+- **[mlabonne/llm-course](https://github.com/mlabonne/llm-course)** · 84,660★ · _Learning_  
   Roadmap + notebooks from fundamentals to deployment — the structured curriculum.
-- **[dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)** · 79,328★ · _Learning_  
+- **[dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)** · 79,492★ · _Learning_  
   The canonical prompt-engineering reference — still load-bearing in an agentic world.
-- **[labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)** · 67,579★ · _Learning_  
+- **[labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations)** · 67,596★ · _Learning_  
   60+ annotated paper implementations — read the architectures, don't just import them.
-- **[deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed)** · 43,242★ · _Base & training_  
+- **[deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed)** · 43,264★ · _Base & training_  
   Training-optimization library (ZeRO, offload) — how large models actually get trained on real hardware.
-- **[facebookresearch/faiss](https://github.com/facebookresearch/faiss)** · 41,166★ · _Vector store_  
+- **[facebookresearch/faiss](https://github.com/facebookresearch/faiss)** · 41,200★ · _Vector store_  
   The original similarity-search library — the math under every vector DB; understand it before reaching for one.
-- **[Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)** · 31,416★ · _Base & training_  
+- **[Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning)** · 31,428★ · _Base & training_  
   Structured PyTorch training — the bridge between research code and reproducible training runs.
-- **[karpathy/llm.c](https://github.com/karpathy/llm.c)** · 31,177★ · _Learning_  
+- **[karpathy/llm.c](https://github.com/karpathy/llm.c)** · 31,210★ · _Learning_  
   LLM training in raw C/CUDA — strips away the framework to show the actual compute.
-- **[NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)** · 29,913★ · _RAG & retrieval_  
+- **[NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)** · 29,993★ · _RAG & retrieval_  
   A catalog of advanced RAG techniques with code — the reference when naive RAG isn't enough.
 
 ### Must-have (20)
 
 **Your default production toolkit.** The repos you reach for on basically every project — the boring, load-bearing choices. Master integration, not novelty.
 
-- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** · 192,930★ · _Data & ingestion_  
+- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** · 194,925★ · _Data & ingestion_  
   Search/scrape/crawl the web into LLM-ready data — the ingestion default for RAG & agents.
-- **[ollama/ollama](https://github.com/ollama/ollama)** · 183,801★ · _Inference & serving_  
+- **[ollama/ollama](https://github.com/ollama/ollama)** · 184,639★ · _Inference & serving_  
   One command to run open models locally — the dev-loop and prototyping default.
-- **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** · 148,069★ · _Orchestration & agents_  
+- **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** · 148,369★ · _Orchestration & agents_  
   The most-deployed agent/LLM framework — the lingua franca; you'll read code that uses it even if you don't.
-- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · 94,123★ · _Inference & serving_  
+- **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · 95,322★ · _Inference & serving_  
   High-throughput serving engine (PagedAttention) — the production answer for self-hosting at scale.
-- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** · 92,459★ · _RAG & retrieval_  
+- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** · 92,807★ · _RAG & retrieval_  
   Batteries-included RAG engine with deep document understanding — RAG as a deployable product.
-- **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai)** · 85,818★ · _Data & ingestion_  
+- **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai)** · 86,173★ · _Data & ingestion_  
   LLM-friendly open crawler/scraper — self-hosted ingestion when you don't want an API.
-- **[unslothai/unsloth](https://github.com/unslothai/unsloth)** · 78,244★ · _Fine-tuning_  
+- **[unslothai/unsloth](https://github.com/unslothai/unsloth)** · 78,519★ · _Fine-tuning_  
   2× faster, lower-memory LoRA/QLoRA fine-tuning — the practical fine-tuning default.
-- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** · 75,582★ · _Fine-tuning_  
+- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** · 75,710★ · _Fine-tuning_  
   Unified fine-tuning UI/CLI for 100+ models — the no-code-ish path to a tuned model.
-- **[BerriAI/litellm](https://github.com/BerriAI/litellm)** · 61,553★ · _Inference & serving_  
+- **[BerriAI/litellm](https://github.com/BerriAI/litellm)** · 61,967★ · _Inference & serving_  
   OpenAI-compatible gateway to 100+ LLMs — swap/route/budget models from one endpoint. Non-negotiable glue.
-- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · 59,863★ · _Orchestration & agents_  
+- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · 60,064★ · _Orchestration & agents_  
   Role-playing multi-agent orchestration — the popular 'team of agents' framework.
-- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** · 52,566★ · _RAG & retrieval_  
+- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** · 52,642★ · _RAG & retrieval_  
   The leading data/RAG framework — connectors, indexing, query engines; the RAG default alongside LangChain.
-- **[mudler/LocalAI](https://github.com/mudler/LocalAI)** · 49,635★ · _Inference & serving_  
+- **[mudler/LocalAI](https://github.com/mudler/LocalAI)** · 49,920★ · _Inference & serving_  
   OpenAI-compatible local engine (LLM/vision/voice) — self-host the whole API surface.
-- **[milvus-io/milvus](https://github.com/milvus-io/milvus)** · 46,427★ · _Vector store_  
+- **[milvus-io/milvus](https://github.com/milvus-io/milvus)** · 46,466★ · _Vector store_  
   Cloud-native vector DB built for massive scale — when you outgrow a single box.
-- **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** · 43,496★ · _Orchestration & agents_  
+- **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** · 43,831★ · _Orchestration & agents_  
   Explicit graphs over implicit chains — the 2026 standard for *production-grade* agent control flow.
-- **[stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)** · 38,692★ · _Orchestration & agents_  
+- **[stanfordnlp/dspy](https://github.com/stanfordnlp/dspy)** · 38,769★ · _Orchestration & agents_  
   Program — don't prompt — LLMs; compile prompts against metrics. The antidote to prompt-spaghetti.
-- **[sgl-project/sglang](https://github.com/sgl-project/sglang)** · 37,364★ · _Inference & serving_  
+- **[sgl-project/sglang](https://github.com/sgl-project/sglang)** · 37,723★ · _Inference & serving_  
   Fast serving with structured-output + prefix-cache wins — vLLM's main rival; learn both.
-- **[langfuse/langfuse](https://github.com/langfuse/langfuse)** · 36,015★ · _Eval & observability_  
+- **[langfuse/langfuse](https://github.com/langfuse/langfuse)** · 36,348★ · _Eval & observability_  
   Open-source LLM tracing/evals/prompts — you can't ship what you can't see (you run this).
-- **[qdrant/qdrant](https://github.com/qdrant/qdrant)** · 35,136★ · _Vector store_  
+- **[qdrant/qdrant](https://github.com/qdrant/qdrant)** · 35,228★ · _Vector store_  
   High-performance Rust vector DB — the popular standalone choice; great filtering.
-- **[huggingface/smolagents](https://github.com/huggingface/smolagents)** · 29,922★ · _Orchestration & agents_  
+- **[huggingface/smolagents](https://github.com/huggingface/smolagents)** · 30,029★ · _Orchestration & agents_  
   Barebones code-writing agents — the minimal mental model of what an agent loop *is*.
-- **[chroma-core/chroma](https://github.com/chroma-core/chroma)** · 29,531★ · _Vector store_  
+- **[chroma-core/chroma](https://github.com/chroma-core/chroma)** · 29,570★ · _Vector store_  
   The 'just works' embedded vector store — fastest path from zero to a working RAG.
 
-### Trending (23)
+### Trending (24)
 
 **Where the energy is right now (2026).** Fast-moving, high-upside, often unstable. Learn these to stay current and to find differentiated things to build.
 
-- **[obra/superpowers](https://github.com/obra/superpowers)** · 301,862★ · _Coding agents & MCP_  
+- **[obra/superpowers](https://github.com/obra/superpowers)** · 304,562★ · _Coding agents & MCP_  
   The headline agentic-skills framework — the most-starred repo in this whole set.
-- **[anthropics/skills](https://github.com/anthropics/skills)** · 182,118★ · _Coding agents & MCP_  
+- **[anthropics/skills](https://github.com/anthropics/skills)** · 183,465★ · _Coding agents & MCP_  
   Agent Skills — on-demand capability that's displacing always-on prompt bloat.
-- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 152,343★ · _Coding agents & MCP_  
+- **[anthropics/claude-code](https://github.com/anthropics/claude-code)** · 153,265★ · _Coding agents & MCP_  
   The agentic coding CLI — the flagship of the coding-agent wave (full ecosystem in the cc-setups report).
-- **[github/spec-kit](https://github.com/github/spec-kit)** · 141,882★ · _Coding agents & MCP_  
+- **[github/spec-kit](https://github.com/github/spec-kit)** · 142,703★ · _Coding agents & MCP_  
   Spec-driven development toolkit — the 'write the spec, let the agent build' workflow.
-- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** · 118,472★ · _Orchestration & agents_  
+- **[browser-use/browser-use](https://github.com/browser-use/browser-use)** · 119,047★ · _Orchestration & agents_  
   Let agents drive real browsers — the computer-use frontier; high promise, still flaky.
-- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 112,007★ · _Orchestration & agents_  
+- **[TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents)** · 113,591★ · _Orchestration & agents_  
   Multi-agent trading framework — the template for *vertical* agent systems with real domain logic.
-- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · 107,450★ · _Coding agents & MCP_  
+- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · 107,854★ · _Coding agents & MCP_  
   Gemini's terminal agent — the third major CLI harness; useful for model-shopping.
-- **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 96,599★ · _Coding agents & MCP_  
+- **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · 96,825★ · _Coding agents & MCP_  
   The community MCP index — discovery for the fastest-growing integration ecosystem.
-- **[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** · 91,368★ · _Coding agents & MCP_  
-  Reference MCP servers — MCP is the emerging standard for wiring tools/data into any agent.
-- **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** · 91,252★ · _Coding agents & MCP_  
+- **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)** · 91,733★ · _Coding agents & MCP_  
   Open autonomous software-engineering agent — the OSS face of the SWE-agent race.
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 84,120★ · _Orchestration & agents_  
+- **[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** · 91,544★ · _Coding agents & MCP_  
+  Reference MCP servers — MCP is the emerging standard for wiring tools/data into any agent.
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 84,378★ · _Orchestration & agents_  
   Long-horizon research+code SuperAgent — the 'deep research' pattern as a harness.
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 67,434★ · _Memory_  
+- **[Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec)** · 72,893★ · _Coding agents & MCP_  
+  Lighter-weight spec-driven development — agree on a change spec with the agent before it writes code.
+- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 67,748★ · _Memory_  
   Universal memory layer for agents — the most-adopted bet on the unsolved memory problem.
-- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,634★ · _Memory_  
+- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,726★ · _Memory_  
   Best-benchmarked open memory system — a strong contender in a still-open race.
-- **[Aider-AI/aider](https://github.com/Aider-AI/aider)** · 49,630★ · _Coding agents & MCP_  
+- **[Aider-AI/aider](https://github.com/Aider-AI/aider)** · 49,736★ · _Coding agents & MCP_  
   AI pair-programming in the terminal with tight git integration — a beloved daily driver.
-- **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)** · 44,233★ · _Orchestration & agents_  
+- **[vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser)** · 44,529★ · _Orchestration & agents_  
   Browser-automation CLI for agents — the lighter, scriptable take on web agents.
-- **[agno-agi/agno](https://github.com/agno-agi/agno)** · 42,806★ · _Orchestration & agents_  
+- **[agno-agi/agno](https://github.com/agno-agi/agno)** · 42,878★ · _Orchestration & agents_  
   Build/run/manage agent platforms — a fast-rising full-stack agent framework.
-- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,209★ · _RAG & retrieval_  
+- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,311★ · _RAG & retrieval_  
   Graph-augmented RAG that's simple and fast — the practical face of 'RAG beyond chunks'.
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · 39,276★ · _RAG & retrieval_  
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · 39,614★ · _RAG & retrieval_  
   Vectorless, reasoning-based retrieval — a bet that reasoning can replace embeddings.
-- **[google/langextract](https://github.com/google/langextract)** · 38,975★ · _Data & ingestion_  
+- **[google/langextract](https://github.com/google/langextract)** · 39,030★ · _Data & ingestion_  
   Structured extraction from unstructured text — turning documents into typed data.
-- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** · 38,360★ · _Coding agents & MCP_  
+- **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** · 38,585★ · _Coding agents & MCP_  
   Playwright as an MCP server — reliable, structured web control for agents.
-- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,384★ · _RAG & retrieval_  
+- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,432★ · _RAG & retrieval_  
   Graph-based RAG — structure-aware retrieval for global/whole-corpus questions.
-- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,734★ · _Eval & observability_  
+- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,882★ · _Eval & observability_  
   Eval-first LLM/agent observability — measuring agents, not just logging them.
-- **[Arize-ai/phoenix](https://github.com/Arize-ai/phoenix)** · 11,907★ · _Eval & observability_  
+- **[Arize-ai/phoenix](https://github.com/Arize-ai/phoenix)** · 11,985★ · _Eval & observability_  
   OpenTelemetry-based AI observability & eval — standards-based tracing for agents.
 
 ## What's solved vs. what's still frontier
@@ -185,21 +187,21 @@ Ranked by a momentum signal (Hot/Rising lifecycle + recent age + 90-day commit v
 
 | Repo | Tier | ★ Stars | Age | 90d commits | Last push | Momentum |
 |---|---|---|---|---|---|---|
-| [obra/superpowers](https://github.com/obra/superpowers) | Trending | 301,862 | 1.0y | 56 | 9d ago | 7 |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | 44,233 | 9mo | 87 | 1d ago | 7 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | 59,634 | 6mo | 944 | 1d ago | 6 |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | 152,343 | 1.7y | 225 | 1d ago | 5 |
-| [github/spec-kit](https://github.com/github/spec-kit) | Trending | 141,882 | 1.2y | 758 | 3d ago | 5 |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | 118,472 | 2.0y | 542 | 2d ago | 5 |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | 112,007 | 1.8y | 236 | 3d ago | 5 |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | 107,450 | 1.5y | 202 | 0d ago | 5 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | 84,120 | 1.5y | 1542 | 0d ago | 5 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | 39,276 | 1.6y | 190 | 0d ago | 5 |
-| [google/langextract](https://github.com/google/langextract) | Trending | 38,975 | 1.3y | 30 | 2d ago | 4 |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | 38,360 | 1.6y | 33 | 3d ago | 4 |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | 192,930 | 2.5y | 641 | 0d ago | 2 |
-| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | 183,801 | 3.3y | 361 | 1d ago | 2 |
-| [anthropics/skills](https://github.com/anthropics/skills) | Trending | 182,118 | 1.1y | 16 | 10d ago | 2 |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | 44,529 | 9mo | 96 | 1d ago | 7 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | 59,726 | 6mo | 936 | 1d ago | 6 |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | 153,265 | 1.7y | 230 | 1d ago | 5 |
+| [github/spec-kit](https://github.com/github/spec-kit) | Trending | 142,703 | 1.2y | 685 | 1d ago | 5 |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | 119,047 | 2.0y | 496 | 0d ago | 5 |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | 113,591 | 1.8y | 236 | 8d ago | 5 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | 107,854 | 1.5y | 215 | 1d ago | 5 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | 84,378 | 1.5y | 1637 | 0d ago | 5 |
+| [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | Trending | 72,893 | 1.2y | 314 | 1d ago | 5 |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | 39,614 | 1.6y | 219 | 0d ago | 5 |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | 38,585 | 1.6y | 35 | 2d ago | 4 |
+| [obra/superpowers](https://github.com/obra/superpowers) | Trending | 304,562 | 1.0y | 7 | 2d ago | 2 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | 194,925 | 2.5y | 717 | 0d ago | 2 |
+| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | 184,639 | 3.3y | 370 | 0d ago | 2 |
+| [anthropics/skills](https://github.com/anthropics/skills) | Trending | 183,465 | 1.1y | 14 | 15d ago | 2 |
 
 ## Projects to build (with the repos)
 
@@ -223,89 +225,91 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Repo | Tier | Layer | Lang | ★ Stars | Lifecycle | Health | Activity | Last push | Age |
 |---|---|---|---|---|---|---|---|---|---|
-| [obra/superpowers](https://github.com/obra/superpowers) | Trending | Coding agents & MCP | Shell | 301,862 (▲4,741) | Hot | 73 | very active | 9d ago | 1.0y |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | Data & ingestion | TypeScript | 192,930 (▲2,814) | Mature | 83 | very active | 0d ago | 2.5y |
-| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | Inference & serving | Go | 183,801 (▲1,188) | Classic | 88 | very active | 1d ago | 3.3y |
-| [anthropics/skills](https://github.com/anthropics/skills) | Trending | Coding agents & MCP | Python | 182,118 (▲1,827) | Mature | 50 | active | 10d ago | 1.1y |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | Fundamental | Base & training | Python | 167,850 (▲792) | Classic | 100 | very active | 0d ago | 8.0y |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | TypeScript | 152,343 (▲2,337) | Hot | 84 | very active | 1d ago | 1.7y |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Must-have | Orchestration & agents | Python | 148,069 (▲512) | Classic | 84 | very active | 0d ago | 4.0y |
-| [github/spec-kit](https://github.com/github/spec-kit) | Trending | Coding agents & MCP | Python | 141,882 (▲1,201) | Hot | 84 | very active | 3d ago | 1.2y |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Fundamental | Inference & serving | C++ | 131,681 (▲947) | Classic | 99 | very active | 0d ago | 3.6y |
-| [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | Fundamental | Learning | Jupyter Notebook | 121,620 (▲509) | Classic | 69 | very active | 0d ago | 3.3y |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | Orchestration & agents | Python | 118,472 (▲948) | Hot | 79 | very active | 2d ago | 2.0y |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | Orchestration & agents | Python | 112,007 (▲1,536) | Hot | 79 | very active | 3d ago | 1.8y |
-| [openai/whisper](https://github.com/openai/whisper) | Fundamental | Voice & multimodal | Python | 110,850 (▲577) | Mature | 45 | active | 1mo ago | 4.1y |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | Coding agents & MCP | TypeScript | 107,450 (▲175) | Hot | 95 | very active | 0d ago | 1.5y |
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Fundamental | Learning | Jupyter Notebook | 106,842 (▲522) | Classic | 54 | very active | 17d ago | 3.2y |
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | Coding agents & MCP | — | 96,599 (▲557) | Mature | 60 | very active | 1d ago | 1.9y |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Must-have | Inference & serving | Python | 94,123 (▲615) | Classic | 99 | very active | 0d ago | 3.7y |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Must-have | RAG & retrieval | Go | 92,459 (▲504) | Mature | 99 | very active | 0d ago | 2.9y |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 91,368 (▲253) | Mature | 78 | very active | 0d ago | 1.9y |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | Trending | Coding agents & MCP | TypeScript | 91,252 (▲769) | Mature | 79 | very active | 0d ago | 2.6y |
-| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 85,818 (▲681) | Mature | 80 | very active | 0d ago | 2.4y |
-| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamental | Learning | — | 84,319 (▲901) | Declining | 12 | stale | 8mo ago | 3.3y |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | Orchestration & agents | Python | 84,120 (▲474) | Hot | 87 | very active | 0d ago | 1.5y |
-| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Fundamental | Learning | MDX | 79,328 (▲350) | Declining | 14 | stale | 7mo ago | 3.8y |
-| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Must-have | Fine-tuning | Python | 78,244 (▲547) | Mature | 85 | very active | 0d ago | 2.9y |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Must-have | Fine-tuning | Python | 75,582 (▲182) | Classic | 75 | very active | 9d ago | 3.4y |
-| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Fundamental | Learning | Python | 67,579 (▲32) | Declining | 15 | stale | 9mo ago | 6.2y |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Trending | Memory | Python | 67,434 (▲492) | Classic | 83 | very active | 2d ago | 3.3y |
-| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Must-have | Inference & serving | Python | 61,553 (▲674) | Classic | 94 | very active | 0d ago | 3.2y |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Must-have | Orchestration & agents | Python | 59,863 (▲334) | Mature | 84 | very active | 0d ago | 3.0y |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | Memory | Python | 59,634 (▲142) | Rising | 76 | very active | 1d ago | 6mo |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Must-have | RAG & retrieval | Python | 52,566 (▲109) | Classic | 97 | very active | 5d ago | 4.0y |
-| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Must-have | Inference & serving | Go | 49,635 (▲178) | Classic | 84 | very active | 0d ago | 3.6y |
-| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Trending | Coding agents & MCP | Python | 49,630 (▲173) | Mature | 24 | slowing | 5mo ago | 3.4y |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Must-have | Vector store | Go | 46,427 (▲80) | Classic | 99 | very active | 0d ago | 7.1y |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 44,233 (▲470) | Hot | 73 | very active | 1d ago | 9mo |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 43,496 (▲481) | Classic | 83 | very active | 0d ago | 3.2y |
-| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,242 (▲24) | Classic | 92 | very active | 0d ago | 6.7y |
-| [agno-agi/agno](https://github.com/agno-agi/agno) | Trending | Orchestration & agents | Python | 42,806 (▲156) | Classic | 82 | very active | 0d ago | 4.5y |
-| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 41,166 (▲42) | Classic | 99 | very active | 1d ago | 9.7y |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 40,209 (▲155) | Mature | 78 | very active | 4d ago | 2.0y |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | RAG & retrieval | Python | 39,276 (▲232) | Hot | 77 | very active | 0d ago | 1.6y |
-| [google/langextract](https://github.com/google/langextract) | Trending | Data & ingestion | Python | 38,975 (▲41) | Hot | 69 | very active | 2d ago | 1.3y |
-| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | Must-have | Orchestration & agents | Python | 38,692 (▲109) | Classic | 83 | very active | 1d ago | 3.8y |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 38,360 (▲366) | Hot | 73 | very active | 3d ago | 1.6y |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Must-have | Inference & serving | Python | 37,364 (▲402) | Mature | 99 | very active | 0d ago | 2.8y |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 36,384 (▲100) | Mature | 70 | active | 0d ago | 2.6y |
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 36,015 (▲415) | Classic | 94 | very active | 0d ago | 3.4y |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 35,136 (▲128) | Classic | 88 | very active | 0d ago | 6.4y |
-| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,416 (▲21) | Classic | 66 | active | 7d ago | 7.6y |
-| [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 31,177 (▲45) | Abandoned | 4 | stale | 1.3y ago | 2.5y |
-| [huggingface/smolagents](https://github.com/huggingface/smolagents) | Must-have | Orchestration & agents | Python | 29,922 (▲155) | Mature | 59 | active | 13d ago | 1.9y |
-| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Fundamental | RAG & retrieval | Jupyter Notebook | 29,913 (▲158) | Mature | 60 | very active | 2d ago | 2.3y |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Must-have | Vector store | Rust | 29,531 (▲59) | Classic | 82 | very active | 2d ago | 4.0y |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Trending | Eval & observability | Python | 22,734 (▲247) | Classic | 94 | very active | 0d ago | 3.4y |
-| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Trending | Eval & observability | Python | 11,907 (▲133) | Classic | 84 | very active | 0d ago | 3.9y |
+| [obra/superpowers](https://github.com/obra/superpowers) | Trending | Coding agents & MCP | Shell | 304,562 (▲2,700) | Mature | 64 | active | 2d ago | 1.0y |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | Must-have | Data & ingestion | TypeScript | 194,925 (▲1,995) | Mature | 83 | very active | 0d ago | 2.5y |
+| [ollama/ollama](https://github.com/ollama/ollama) | Must-have | Inference & serving | Go | 184,639 (▲838) | Classic | 88 | very active | 0d ago | 3.3y |
+| [anthropics/skills](https://github.com/anthropics/skills) | Trending | Coding agents & MCP | Python | 183,465 (▲1,347) | Mature | 44 | active | 15d ago | 1.1y |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | Fundamental | Base & training | Python | 168,075 (▲225) | Classic | 100 | very active | 0d ago | 8.0y |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | Trending | Coding agents & MCP | TypeScript | 153,265 (▲922) | Hot | 78 | very active | 1d ago | 1.7y |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Must-have | Orchestration & agents | Python | 148,369 (▲300) | Classic | 79 | very active | 0d ago | 4.0y |
+| [github/spec-kit](https://github.com/github/spec-kit) | Trending | Coding agents & MCP | Python | 142,703 (▲821) | Hot | 84 | very active | 1d ago | 1.2y |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Fundamental | Inference & serving | C++ | 132,228 (▲547) | Classic | 99 | very active | 0d ago | 3.6y |
+| [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | Fundamental | Learning | Jupyter Notebook | 122,077 (▲457) | Classic | 70 | very active | 1d ago | 3.4y |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Trending | Orchestration & agents | Python | 119,047 (▲575) | Hot | 79 | very active | 0d ago | 2.0y |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | Trending | Orchestration & agents | Python | 113,591 (▲1,584) | Hot | 79 | very active | 8d ago | 1.8y |
+| [openai/whisper](https://github.com/openai/whisper) | Fundamental | Voice & multimodal | Python | 111,192 (▲342) | Mature | 44 | active | 1mo ago | 4.1y |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | Trending | Coding agents & MCP | TypeScript | 107,854 (▲404) | Hot | 95 | very active | 1d ago | 1.5y |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | Fundamental | Learning | Jupyter Notebook | 107,214 (▲372) | Classic | 54 | very active | 22d ago | 3.3y |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Trending | Coding agents & MCP | — | 96,825 (▲226) | Mature | 60 | very active | 1d ago | 1.9y |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Must-have | Inference & serving | Python | 95,322 (▲1,199) | Classic | 99 | very active | 0d ago | 3.7y |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | Must-have | RAG & retrieval | Go | 92,807 (▲348) | Mature | 94 | very active | 0d ago | 2.9y |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | Trending | Coding agents & MCP | TypeScript | 91,733 (▲481) | Mature | 94 | very active | 0d ago | 2.6y |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Trending | Coding agents & MCP | TypeScript | 91,544 (▲176) | Mature | 79 | very active | 2d ago | 1.9y |
+| [unclecode/crawl4ai](https://github.com/unclecode/crawl4ai) | Must-have | Data & ingestion | Python | 86,173 (▲355) | Mature | 79 | very active | 2d ago | 2.5y |
+| [mlabonne/llm-course](https://github.com/mlabonne/llm-course) | Fundamental | Learning | — | 84,660 (▲341) | Declining | 12 | stale | 8mo ago | 3.4y |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Trending | Orchestration & agents | Python | 84,378 (▲258) | Hot | 87 | very active | 0d ago | 1.5y |
+| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Fundamental | Learning | MDX | 79,492 (▲164) | Declining | 14 | stale | 7mo ago | 3.9y |
+| [unslothai/unsloth](https://github.com/unslothai/unsloth) | Must-have | Fine-tuning | Python | 78,519 (▲275) | Mature | 80 | very active | 0d ago | 2.9y |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | Must-have | Fine-tuning | Python | 75,710 (▲128) | Classic | 81 | very active | 3d ago | 3.4y |
+| [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | Trending | Coding agents & MCP | TypeScript | 72,893 | Hot | 88 | very active | 1d ago | 1.2y |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Trending | Memory | Python | 67,748 (▲314) | Classic | 83 | very active | 1d ago | 3.3y |
+| [labmlai/annotated_deep_learning_paper_implementations](https://github.com/labmlai/annotated_deep_learning_paper_implementations) | Fundamental | Learning | Python | 67,596 (▲17) | Declining | 15 | stale | 9mo ago | 6.2y |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | Must-have | Inference & serving | Python | 61,967 (▲414) | Classic | 99 | very active | 0d ago | 3.2y |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | Must-have | Orchestration & agents | Python | 60,064 (▲201) | Mature | 89 | very active | 1d ago | 3.0y |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Trending | Memory | Python | 59,726 (▲92) | Rising | 76 | very active | 1d ago | 6mo |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Must-have | RAG & retrieval | Python | 52,642 (▲76) | Classic | 97 | very active | 1d ago | 4.0y |
+| [mudler/LocalAI](https://github.com/mudler/LocalAI) | Must-have | Inference & serving | Go | 49,920 (▲285) | Classic | 79 | very active | 0d ago | 3.6y |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | Trending | Coding agents & MCP | Python | 49,736 (▲106) | Mature | 24 | slowing | 5mo ago | 3.5y |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Must-have | Vector store | Go | 46,466 (▲39) | Classic | 99 | very active | 1d ago | 7.1y |
+| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Trending | Orchestration & agents | Rust | 44,529 (▲296) | Hot | 79 | very active | 1d ago | 9mo |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Must-have | Orchestration & agents | Python | 43,831 (▲335) | Classic | 83 | very active | 1d ago | 3.2y |
+| [deepspeedai/DeepSpeed](https://github.com/deepspeedai/DeepSpeed) | Fundamental | Base & training | Python | 43,264 (▲22) | Classic | 97 | very active | 0d ago | 6.8y |
+| [agno-agi/agno](https://github.com/agno-agi/agno) | Trending | Orchestration & agents | Python | 42,878 (▲72) | Classic | 82 | very active | 0d ago | 4.5y |
+| [facebookresearch/faiss](https://github.com/facebookresearch/faiss) | Fundamental | Vector store | C++ | 41,200 (▲34) | Classic | 94 | very active | 1d ago | 9.7y |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Trending | RAG & retrieval | Python | 40,311 (▲102) | Mature | 78 | very active | 2d ago | 2.1y |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Trending | RAG & retrieval | Python | 39,614 (▲338) | Hot | 76 | very active | 0d ago | 1.6y |
+| [google/langextract](https://github.com/google/langextract) | Trending | Data & ingestion | Python | 39,030 (▲55) | Mature | 67 | very active | 7d ago | 1.3y |
+| [stanfordnlp/dspy](https://github.com/stanfordnlp/dspy) | Must-have | Orchestration & agents | Python | 38,769 (▲77) | Classic | 78 | very active | 1d ago | 3.8y |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Trending | Coding agents & MCP | TypeScript | 38,585 (▲225) | Hot | 78 | very active | 2d ago | 1.6y |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Must-have | Inference & serving | Python | 37,723 (▲359) | Mature | 89 | very active | 0d ago | 2.8y |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Trending | RAG & retrieval | Python | 36,432 (▲48) | Mature | 70 | very active | 4d ago | 2.6y |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Must-have | Eval & observability | TypeScript | 36,348 (▲333) | Classic | 89 | very active | 0d ago | 3.4y |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Must-have | Vector store | Rust | 35,228 (▲92) | Classic | 83 | very active | 1d ago | 6.4y |
+| [Lightning-AI/pytorch-lightning](https://github.com/Lightning-AI/pytorch-lightning) | Fundamental | Base & training | Python | 31,428 (▲12) | Classic | 65 | active | 12d ago | 7.6y |
+| [karpathy/llm.c](https://github.com/karpathy/llm.c) | Fundamental | Learning | Cuda | 31,210 (▲33) | Abandoned | 4 | stale | 1.3y ago | 2.5y |
+| [huggingface/smolagents](https://github.com/huggingface/smolagents) | Must-have | Orchestration & agents | Python | 30,029 (▲107) | Mature | 60 | active | 2d ago | 1.9y |
+| [NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques) | Fundamental | RAG & retrieval | Jupyter Notebook | 29,993 (▲80) | Mature | 59 | very active | 2d ago | 2.3y |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Must-have | Vector store | Rust | 29,570 (▲39) | Classic | 81 | very active | 1d ago | 4.1y |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Trending | Eval & observability | Python | 22,882 (▲148) | Classic | 94 | very active | 1d ago | 3.5y |
+| [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) | Trending | Eval & observability | Python | 11,985 (▲78) | Classic | 78 | very active | 0d ago | 4.0y |
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 56 repos span **22 of the graph's 39 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
+**Community clustering.** These 57 repos span **20 of the graph's 39 communities** — the AI-engineering stack is genuinely cross-cutting, not one tidy neighborhood.
 
-- **Community 15** (8): `obra/superpowers`, `mem0ai/mem0`, `crewAIInc/crewAI`, `MemPalace/mempalace`, `agno-agi/agno`, `VectifyAI/PageIndex`, `NirDiamant/RAG_Techniques`, `chroma-core/chroma`
-- **Community 20** (7): `ollama/ollama`, `ggml-org/llama.cpp`, `TauricResearch/TradingAgents`, `vllm-project/vllm`, `mlabonne/llm-course`, `unslothai/unsloth`, `sgl-project/sglang`
-- **Community 9** (5): `rasbt/LLMs-from-scratch`, `Aider-AI/aider`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
-- **Community 11** (5): `firecrawl/firecrawl`, `github/spec-kit`, `google-gemini/gemini-cli`, `punkpeye/awesome-mcp-servers`, `unclecode/crawl4ai`
-- **Community 25** (3): `huggingface/transformers`, `hiyouga/LlamaFactory`, `huggingface/smolagents`
-- **Community 24** (3): `langchain-ai/langchain`, `dair-ai/Prompt-Engineering-Guide`, `langchain-ai/langgraph`
-- **Community 1** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
-- **Community 18** (3): `infiniflow/ragflow`, `milvus-io/milvus`, `qdrant/qdrant`
-- **Community 17** (3): `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
+- **Community 13** (8): `rasbt/LLMs-from-scratch`, `infiniflow/ragflow`, `crewAIInc/crewAI`, `MemPalace/mempalace`, `agno-agi/agno`, `VectifyAI/PageIndex`, `NirDiamant/RAG_Techniques`, `chroma-core/chroma`
+- **Community 0** (8): `langchain-ai/langchain`, `punkpeye/awesome-mcp-servers`, `dair-ai/Prompt-Engineering-Guide`, `Fission-AI/OpenSpec`, `mem0ai/mem0`, `BerriAI/litellm`, `Aider-AI/aider`, `langchain-ai/langgraph`
+- **Community 3** (6): `ollama/ollama`, `ggml-org/llama.cpp`, `TauricResearch/TradingAgents`, `vllm-project/vllm`, `mlabonne/llm-course`, `sgl-project/sglang`
+- **Community 27** (4): `huggingface/transformers`, `unslothai/unsloth`, `hiyouga/LlamaFactory`, `huggingface/smolagents`
+- **Community 4** (4): `labmlai/annotated_deep_learning_paper_implementations`, `deepspeedai/DeepSpeed`, `facebookresearch/faiss`, `Lightning-AI/pytorch-lightning`
+- **Community 11** (3): `microsoft/generative-ai-for-beginners`, `microsoft/playwright-mcp`, `microsoft/graphrag`
+- **Community 15** (3): `github/spec-kit`, `milvus-io/milvus`, `qdrant/qdrant`
+- **Community 20** (3): `langfuse/langfuse`, `comet-ml/opik`, `Arize-ai/phoenix`
+- **Community 6** (3): `anthropics/skills`, `anthropics/claude-code`, `stanfordnlp/dspy`
+- **Community 16** (3): `firecrawl/firecrawl`, `browser-use/browser-use`, `unclecode/crawl4ai`
 
-**Centrality (PageRank in the full 2,398-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
+**Centrality (PageRank in the full 2,408-repo graph)** — the most 'hub-like' AI-eng repos in your stars (good signal for *foundational*):
 
-- `microsoft/playwright-mcp` — PageRank 0.0018 (Trending)
-- `Lightning-AI/pytorch-lightning` — PageRank 0.0017 (Fundamental)
-- `microsoft/generative-ai-for-beginners` — PageRank 0.0014 (Fundamental)
+- `Fission-AI/OpenSpec` — PageRank 0.0021 (Trending)
+- `Lightning-AI/pytorch-lightning` — PageRank 0.0016 (Fundamental)
+- `microsoft/playwright-mcp` — PageRank 0.0015 (Trending)
 - `langchain-ai/langgraph` — PageRank 0.0013 (Must-have)
-- `langchain-ai/langchain` — PageRank 0.0012 (Must-have)
-- `microsoft/graphrag` — PageRank 0.0012 (Trending)
+- `langchain-ai/langchain` — PageRank 0.0013 (Must-have)
 - `huggingface/smolagents` — PageRank 0.0012 (Must-have)
 - `agno-agi/agno` — PageRank 0.0011 (Trending)
+- `microsoft/generative-ai-for-beginners` — PageRank 0.0010 (Fundamental)
+- `microsoft/graphrag` — PageRank 0.0010 (Trending)
 - `VectifyAI/PageIndex` — PageRank 0.0009 (Trending)
-- `qdrant/qdrant` — PageRank 0.0008 (Must-have)
 
 ## Maintenance & risk signal
 
@@ -313,57 +317,58 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 
 | Repo | Tier | Health | Lifecycle | Activity | Bus factor | Top-author share |
 |---|---|---|---|---|---|---|
-| huggingface/transformers | Fundamental | 100 | Classic | very active | 9 | 9% |
-| ggml-org/llama.cpp | Fundamental | 99 | Classic | very active | 15 | 9% |
-| facebookresearch/faiss | Fundamental | 99 | Classic | very active | 5 | 18% |
-| vllm-project/vllm | Must-have | 99 | Classic | very active | 18 | 8% |
-| sgl-project/sglang | Must-have | 99 | Mature | very active | 10 | 16% |
-| milvus-io/milvus | Must-have | 99 | Classic | very active | 5 | 17% |
-| infiniflow/ragflow | Must-have | 99 | Mature | very active | 7 | 11% |
-| run-llama/llama_index | Must-have | 97 | Classic | very active | 11 | 15% |
-| google-gemini/gemini-cli | Trending | 95 | Hot | very active | 4 | 16% |
-| BerriAI/litellm | Must-have | 94 | Classic | very active | 4 | 18% |
-| langfuse/langfuse | Must-have | 94 | Classic | very active | 4 | 24% |
-| comet-ml/opik | Trending | 94 | Classic | very active | 4 | 24% |
-| deepspeedai/DeepSpeed | Fundamental | 92 | Classic | very active | 4 | 19% |
+| huggingface/transformers | Fundamental | 100 | Classic | very active | 10 | 9% |
+| ggml-org/llama.cpp | Fundamental | 99 | Classic | very active | 13 | 10% |
+| vllm-project/vllm | Must-have | 99 | Classic | very active | 18 | 11% |
+| BerriAI/litellm | Must-have | 99 | Classic | very active | 5 | 14% |
+| milvus-io/milvus | Must-have | 99 | Classic | very active | 6 | 16% |
+| deepspeedai/DeepSpeed | Fundamental | 97 | Classic | very active | 5 | 17% |
+| run-llama/llama_index | Must-have | 97 | Classic | very active | 10 | 15% |
+| google-gemini/gemini-cli | Trending | 95 | Hot | very active | 4 | 17% |
+| facebookresearch/faiss | Fundamental | 94 | Classic | very active | 4 | 21% |
+| infiniflow/ragflow | Must-have | 94 | Mature | very active | 4 | 19% |
+| OpenHands/OpenHands | Trending | 94 | Mature | very active | 4 | 27% |
+| comet-ml/opik | Trending | 94 | Classic | very active | 4 | 17% |
+| sgl-project/sglang | Must-have | 89 | Mature | very active | 3 | 40% |
+| langfuse/langfuse | Must-have | 89 | Classic | very active | 3 | 24% |
+| crewAIInc/crewAI | Must-have | 89 | Mature | very active | 3 | 28% |
 | ollama/ollama | Must-have | 88 | Classic | very active | 3 | 31% |
-| qdrant/qdrant | Must-have | 88 | Classic | very active | 3 | 30% |
-| bytedance/deer-flow | Trending | 87 | Hot | very active | 15 | 5% |
-| unslothai/unsloth | Must-have | 85 | Mature | very active | 2 | 48% |
-| langchain-ai/langchain | Must-have | 84 | Classic | very active | 2 | 49% |
-| mudler/LocalAI | Must-have | 84 | Classic | very active | 2 | 44% |
-| crewAIInc/crewAI | Must-have | 84 | Mature | very active | 2 | 38% |
-| anthropics/claude-code | Trending | 84 | Hot | very active | 2 | 46% |
-| github/spec-kit | Trending | 84 | Hot | very active | 2 | 36% |
-| Arize-ai/phoenix | Trending | 84 | Classic | very active | 2 | 48% |
-| langchain-ai/langgraph | Must-have | 83 | Classic | very active | 2 | 38% |
-| stanfordnlp/dspy | Must-have | 83 | Classic | very active | 2 | 48% |
+| Fission-AI/OpenSpec | Trending | 88 | Hot | very active | 3 | 38% |
+| bytedance/deer-flow | Trending | 87 | Hot | very active | 14 | 8% |
+| github/spec-kit | Trending | 84 | Hot | very active | 2 | 30% |
+| langchain-ai/langgraph | Must-have | 83 | Classic | very active | 2 | 41% |
+| qdrant/qdrant | Must-have | 83 | Classic | very active | 2 | 41% |
 | firecrawl/firecrawl | Must-have | 83 | Mature | very active | 2 | 29% |
-| mem0ai/mem0 | Trending | 83 | Classic | very active | 2 | 46% |
-| chroma-core/chroma | Must-have | 82 | Classic | very active | 2 | 36% |
-| agno-agi/agno | Trending | 82 | Classic | very active | 2 | 27% |
-| unclecode/crawl4ai | Must-have | 80 | Mature | very active | 1 | 58% |
-| browser-use/browser-use | Trending | 79 | Hot | very active | 1 | 65% |
-| OpenHands/OpenHands | Trending | 79 | Mature | very active | 1 | 68% |
+| mem0ai/mem0 | Trending | 83 | Classic | very active | 2 | 45% |
+| agno-agi/agno | Trending | 82 | Classic | very active | 2 | 39% |
+| chroma-core/chroma | Must-have | 81 | Classic | very active | 2 | 33% |
+| hiyouga/LlamaFactory | Must-have | 81 | Classic | very active | 5 | 24% |
+| unslothai/unsloth | Must-have | 80 | Mature | very active | 1 | 81% |
+| langchain-ai/langchain | Must-have | 79 | Classic | very active | 1 | 52% |
+| mudler/LocalAI | Must-have | 79 | Classic | very active | 1 | 51% |
+| unclecode/crawl4ai | Must-have | 79 | Mature | very active | 1 | 54% |
+| modelcontextprotocol/servers | Trending | 79 | Mature | very active | 1 | 99% |
+| browser-use/browser-use | Trending | 79 | Hot | very active | 1 | 66% |
+| vercel-labs/agent-browser | Trending | 79 | Hot | very active | 2 | 40% |
 | TauricResearch/TradingAgents | Trending | 79 | Hot | very active | 1 | 95% |
-| modelcontextprotocol/servers | Trending | 78 | Mature | very active | 1 | 99% |
+| stanfordnlp/dspy | Must-have | 78 | Classic | very active | 1 | 55% |
+| anthropics/claude-code | Trending | 78 | Hot | very active | 1 | 57% |
+| microsoft/playwright-mcp | Trending | 78 | Hot | very active | 2 | 49% |
 | HKUDS/LightRAG | Trending | 78 | Mature | very active | 1 | 63% |
-| VectifyAI/PageIndex | Trending | 77 | Hot | very active | 1 | 62% |
-| MemPalace/mempalace | Trending | 76 | Rising | very active | 1 | 100% |
-| hiyouga/LlamaFactory | Must-have | 75 | Classic | very active | 4 | 24% |
-| obra/superpowers | Trending | 73 | Hot | very active | 1 | 91% |
-| vercel-labs/agent-browser | Trending | 73 | Hot | very active | 1 | 51% |
-| microsoft/playwright-mcp | Trending | 73 | Hot | very active | 1 | 52% |
-| microsoft/graphrag | Trending | 70 | Mature | active | 1 | 58% |
-| microsoft/generative-ai-for-beginners | Fundamental | 69 | Classic | very active | 2 | 41% |
-| google/langextract | Trending | 69 | Hot | very active | 1 | 77% |
-| Lightning-AI/pytorch-lightning | Fundamental | 66 | Classic | active | 1 | 53% |
-| NirDiamant/RAG_Techniques | Fundamental | 60 | Mature | very active | 1 | 88% |
-| punkpeye/awesome-mcp-servers | Trending | 60 | Mature | very active | 1 | 100% |
-| huggingface/smolagents | Must-have | 59 | Mature | active | 2 | 43% |
+| Arize-ai/phoenix | Trending | 78 | Classic | very active | 1 | 53% |
+| MemPalace/mempalace | Trending | 76 | Rising | very active | 1 | 99% |
+| VectifyAI/PageIndex | Trending | 76 | Hot | very active | 1 | 59% |
+| microsoft/generative-ai-for-beginners | Fundamental | 70 | Classic | very active | 2 | 43% |
+| microsoft/graphrag | Trending | 70 | Mature | very active | 1 | 60% |
+| google/langextract | Trending | 67 | Mature | very active | 1 | 70% |
+| Lightning-AI/pytorch-lightning | Fundamental | 65 | Classic | active | 1 | 53% |
+| obra/superpowers | Trending | 64 | Mature | active | 1 | 100% |
+| huggingface/smolagents | Must-have | 60 | Mature | active | 2 | 43% |
+| punkpeye/awesome-mcp-servers | Trending | 60 | Mature | very active | 1 | 99% |
+| NirDiamant/RAG_Techniques | Fundamental | 59 | Mature | very active | 1 | 87% |
 | rasbt/LLMs-from-scratch | Fundamental | 54 | Classic | very active | 1 | 65% |
-| anthropics/skills | Trending | 50 | Mature | active | 2 | 44% |
-| openai/whisper | Fundamental | 45 | Mature | active | 2 | 33% |
+| openai/whisper | Fundamental | 44 | Mature | active | 2 | 33% |
+| anthropics/skills | Trending | 44 | Mature | active | 1 | 50% |
 | Aider-AI/aider | Trending | 24 | Mature | slowing | 0 | 0% |
 | labmlai/annotated_deep_learning_paper_implementations | Fundamental | 15 | Declining | stale | 0 | 0% |
 | dair-ai/Prompt-Engineering-Guide | Fundamental | 14 | Declining | stale | 0 | 0% |
@@ -372,11 +377,11 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 
 ## Adjacent (deliberately not in the core list)
 
-- **Comfy-Org/ComfyUI** (139,117★) — image/diffusion tooling — a different (creative) AI discipline, out of scope here
-- **PaddlePaddle/PaddleOCR** (91,363★) — OCR engine — a data-ingestion building block, folded into 'Data & ingestion'
-- **n8n-io/n8n** (207,987★) — workflow automation — orchestrates agents but isn't core AI-eng tooling (see agent-orchestration report)
-- **microsoft/autogen** (61,478★) — multi-agent framework — slipping in activity; crewAI/langgraph lead the must-have slot now
-- **nomic-ai/gpt4all** (77,350★) — local-LLM app — superseded for most by ollama; kept off the must-have list
+- **Comfy-Org/ComfyUI** (142,580★) — image/diffusion tooling — a different (creative) AI discipline, out of scope here
+- **PaddlePaddle/PaddleOCR** (91,616★) — OCR engine — a data-ingestion building block, folded into 'Data & ingestion'
+- **n8n-io/n8n** (208,492★) — workflow automation — orchestrates agents but isn't core AI-eng tooling (see agent-orchestration report)
+- **microsoft/autogen** (61,548★) — multi-agent framework — slipping in activity; crewAI/langgraph lead the must-have slot now
+- **nomic-ai/gpt4all** (77,355★) — local-LLM app — superseded for most by ollama; kept off the must-have list
 
 ## Methodology & caveats
 
@@ -385,4 +390,4 @@ Bus factor = commit concentration (1 = single-maintainer risk). For *production*
 - **Selection** favors recognizable, broadly-applicable AI-engineering tooling. The coding-agent/harness ecosystem and voice stack are summarized here but detailed in the Claude-Code-setups and voice-agents reports respectively.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Repos covered: 56 · Snapshot: 2026-10-19T11:27:31.266Z</sub>
+<sub>Repos covered: 57 · Snapshot: 2026-10-24T18:18:45.023Z</sub>

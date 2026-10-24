@@ -62,6 +62,7 @@ TAXONOMY = {
 
     # 4. Determinism & spec-driven control
     "github/spec-kit": ("Determinism & spec-driven", "Spec-Driven Development toolkit — the spec, not the prompt, steers the agent."),
+    "Fission-AI/OpenSpec": ("Determinism & spec-driven", "Lightweight spec-driven development — change proposals and specs in the repo that humans and agents agree on before code is written."),
     "OthmanAdi/planning-with-files": ("Determinism & spec-driven", "Persistent file-based planning — crash-proof, resumable long-running agent tasks."),
     "agentsmd/agents.md": ("Determinism & spec-driven", "The open AGENTS.md standard — a portable contract telling any harness how to behave in a repo."),
     "cobusgreyling/loop-engineering": ("Determinism & spec-driven", "Patterns and starters for *loop engineering* — designing the iteration, not just the prompt."),
@@ -332,7 +333,7 @@ guide = [
     ("A team of agents working a backlog", "`BloopAI/vibe-kanban`",
      "Kanban-shaped orchestration over Claude Code/Codex; `ccpm` if you prefer GitHub Issues + worktrees."),
     ("Reproducible, auditable agent output", "`github/spec-kit` + `agentsmd/agents.md`",
-     "Spec-driven development plus the portable AGENTS.md behavior contract."),
+     "Spec-driven development plus the portable AGENTS.md behavior contract; `Fission-AI/OpenSpec` if you want a lighter, change-by-change spec workflow."),
     ("Crash-proof long tasks", "`OthmanAdi/planning-with-files`",
      "Plans persisted to disk — resume after any failure."),
     ("Safe execution for untrusted agent code", "`e2b-dev/runtime`",

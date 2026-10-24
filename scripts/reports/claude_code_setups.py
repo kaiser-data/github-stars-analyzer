@@ -77,7 +77,6 @@ TAXONOMY = {
     "MemPalace/mempalace": ("Memory / context", "Best-benchmarked open-source AI memory system — drop-in long-term memory."),
     "memvid/memvid": ("Memory / context", "Memory layer that replaces RAG pipelines with a compact server — novel storage approach."),
     "Gentleman-Programming/engram": ("Memory / context", "Agent-agnostic Go binary giving coding agents persistent memory."),
-    "memodb-io/Acontext": ("Memory / context", "Treats Agent Skills as a memory layer — skills-as-memory hybrid."),
     "basicmachines-co/basic-memory": ("Memory / context", "Local Markdown knowledge base exposed over MCP — the agent reads and writes plain notes you can also edit by hand."),
 
     # Token-savers / context compression
@@ -117,6 +116,7 @@ TAXONOMY = {
 # Adjacent but deliberately excluded (kept honest in the report)
 ADJACENT = [
     ("campfirein/byterover-cli", "archived upstream — the portable `brv` memory layer is no longer maintained"),
+    ("memodb-io/Acontext", "archived upstream (2026-10) — the skills-as-memory hybrid is no longer maintained"),
     ("n8n-io/n8n", "workflow-automation platform — orchestrates agents but isn't a Claude-Code setup layer"),
     ("langgenius/dify", "agentic-workflow platform — covered by the agent-orchestration report"),
     ("langchain-ai/langchain", "agent-engineering library — app framework, not a CC setup tool"),

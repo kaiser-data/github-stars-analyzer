@@ -67,6 +67,7 @@ TAXONOMY = {
     "OthmanAdi/planning-with-files": ("6. State on disk", "Plans and progress persisted to files — crash-proof, resumable long tasks."),
     "snarktank/ralph": ("6. State on disk", "Fresh-context loop that re-reads a PRD and progress file until every item is done."),
     "github/spec-kit": ("6. State on disk", "Spec-driven development: the spec on disk steers each session."),
+    "Fission-AI/OpenSpec": ("6. State on disk", "Lightweight spec-driven workflow: change proposals and living specs in the repo carry intent across sessions."),
     "cobusgreyling/loop-engineering": ("6. State on disk", "Patterns and starters for designing the iteration itself."),
 
     # 7. Sub-agents for context isolation

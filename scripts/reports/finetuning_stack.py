@@ -45,7 +45,7 @@ TAXONOMY = {
     # RL post-training for agents
     "OpenPipe/ART": ("RL post-training for agents", "Agent Reinforcement Trainer — GRPO for *multi-turn* tool-using agents; vLLM rollouts + TRL/Unsloth training under the hood."),
     "Gen-Verse/OpenClaw-RL": ("RL post-training for agents", "'Train any agent simply by talking' — natural-language-driven agent RL on top of the OpenClaw ecosystem."),
-    "huggingface/OpenEnv": ("RL post-training for agents", "Interface library for RL post-training environments — the emerging standard for plugging envs into trainers."),
+    "openenv/OpenEnv": ("RL post-training for agents", "Interface library for RL post-training environments — the emerging standard for plugging envs into trainers."),
     "Memento-Teams/Memento": ("RL post-training for agents", "The counterpoint: fine-tune LLM *agents* without fine-tuning LLMs — case-based memory instead of weight updates."),
 
     # Learn-by-building (from-scratch training)
@@ -108,7 +108,7 @@ TASK_RANKINGS = [
     ("RL post-training for tool-using agents (GRPO)",
      [("OpenPipe/ART", "built for multi-turn agent rollouts; vLLM + TRL/Unsloth inside"),
       ("huggingface/trl", "most accessible GRPOTrainer — single GPU, synchronous loop"),
-      ("huggingface/OpenEnv", "the environment interface to plug tasks into either")],
+      ("openenv/OpenEnv", "the environment interface to plug tasks into either")],
      "2026 agent-RL surveys: ART/Unsloth for accessible GRPO; verl/OpenRLHF (not starred) for datacenter-scale async RL."),
     ("Understanding LLM training from first principles",
      [("rasbt/LLMs-from-scratch", "the structured, book-quality path"),

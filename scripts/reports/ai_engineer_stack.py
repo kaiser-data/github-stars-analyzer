@@ -86,6 +86,7 @@ TAXONOMY = {
     "vercel-labs/agent-browser": (T, "Orchestration & agents", "Browser-automation CLI for agents — the lighter, scriptable take on web agents."),
     "microsoft/playwright-mcp": (T, "Coding agents & MCP", "Playwright as an MCP server — reliable, structured web control for agents."),
     "github/spec-kit": (T, "Coding agents & MCP", "Spec-driven development toolkit — the 'write the spec, let the agent build' workflow."),
+    "Fission-AI/OpenSpec": (T, "Coding agents & MCP", "Lighter-weight spec-driven development — agree on a change spec with the agent before it writes code."),
     "OpenHands/OpenHands": (T, "Coding agents & MCP", "Open autonomous software-engineering agent — the OSS face of the SWE-agent race."),
     "google-gemini/gemini-cli": (T, "Coding agents & MCP", "Gemini's terminal agent — the third major CLI harness; useful for model-shopping."),
     "Aider-AI/aider": (T, "Coding agents & MCP", "AI pair-programming in the terminal with tight git integration — a beloved daily driver."),
