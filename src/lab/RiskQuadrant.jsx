@@ -65,6 +65,29 @@ export default function RiskQuadrant({ onSelect }) {
   const showMatches = matches.length > 0 && matches.length < MAX_MATCHES;
   const matchIds = useMemo(() => new Set(showMatches ? matches.map((n) => n.id) : []), [showMatches, matches]);
 
+  // The 2k+ circles are built once per filter change, not on every mousemove:
+  // hover only updates the tooltip, and one delegated listener on the group
+  // replaces three closures per dot.
+  const dotLayer = useMemo(() => {
+    if (!model) return null;
+    return model.dots.map(({ n, x, y, r }, i) =>
+      hidden.has(n.lifecycle_stage) ? null : (
+        <circle
+          key={n.id}
+          data-i={i}
+          cx={x}
+          cy={y}
+          r={r}
+          fill={STAGE_COLOR[n.lifecycle_stage] || '#7d7d7d'}
+          fillOpacity={matchIds.size === 0 || matchIds.has(n.id) ? 0.75 : 0.12}
+          stroke={matchIds.has(n.id) ? '#f9fafb' : '#0a0a0a'}
+          strokeWidth={matchIds.has(n.id) ? 2 : 1}
+          className="cursor-pointer"
+        />
+      )
+    );
+  }, [model, hidden, matchIds]);
+
   if (!model) {
     return <div className="bg-gray-800/40 border border-gray-700 rounded-lg p-6 text-gray-400 text-sm">Loading risk view…</div>;
   }
@@ -77,9 +100,12 @@ export default function RiskQuadrant({ onSelect }) {
     });
   };
 
-  const showTip = (e, n) => {
+  const dotAt = (e) => model.dots[e.target.dataset?.i]?.n;
+
+  const showTip = (e) => {
+    const n = dotAt(e);
     const box = wrapRef.current?.getBoundingClientRect();
-    if (!box) return;
+    if (!n || !box) return setHover(null);
     setHover({ n, x: e.clientX - box.left, y: e.clientY - box.top });
   };
 
@@ -180,25 +206,13 @@ export default function RiskQuadrant({ onSelect }) {
           </text>
 
           {/* dots */}
-          {model.dots.map(({ n, x, y, r }) =>
-            hidden.has(n.lifecycle_stage) ? null : (
-              <circle
-                key={n.id}
-                cx={x}
-                cy={y}
-                r={r}
-                fill={STAGE_COLOR[n.lifecycle_stage] || '#7d7d7d'}
-                fillOpacity={matchIds.size === 0 || matchIds.has(n.id) ? 0.75 : 0.12}
-                stroke={matchIds.has(n.id) ? '#f9fafb' : '#0a0a0a'}
-                strokeWidth={matchIds.has(n.id) ? 2 : 1}
-                className="cursor-pointer"
-                onMouseEnter={(e) => showTip(e, n)}
-                onMouseMove={(e) => showTip(e, n)}
-                onMouseLeave={() => setHover(null)}
-                onClick={() => onSelect?.(n.full_name)}
-              />
-            )
-          )}
+          <g
+            onMouseMove={showTip}
+            onMouseLeave={() => setHover(null)}
+            onClick={(e) => { const n = dotAt(e); if (n) onSelect?.(n.full_name); }}
+          >
+            {dotLayer}
+          </g>
         </svg>
 
         {hover && (

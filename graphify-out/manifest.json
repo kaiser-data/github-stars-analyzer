@@ -295,13 +295,13 @@
     "semantic_hash": ""
   },
   "src/lab/LabApp.jsx": {
-    "mtime": 1792870176.2580793,
-    "ast_hash": "161056dfd83750cd2ca3742bc71f8441",
+    "mtime": 1792953838.2621088,
+    "ast_hash": "c33dc35338e8d116df5b629a74559298",
     "semantic_hash": ""
   },
   "src/lab/MapView.jsx": {
-    "mtime": 1792870196.8009732,
-    "ast_hash": "aa20e003dc96f8ffc3519db82b2c5467",
+    "mtime": 1792953838.261151,
+    "ast_hash": "41fb6ddc84c42890ab90e4b3f914aaf0",
     "semantic_hash": ""
   },
   "src/lab/RepoDetail.jsx": {
@@ -315,8 +315,8 @@
     "semantic_hash": ""
   },
   "src/lab/TopicMap.jsx": {
-    "mtime": 1792870196.8016186,
-    "ast_hash": "91bf949ce20daeb1083d4548993328be",
+    "mtime": 1792953838.2614553,
+    "ast_hash": "ea8d7eaade15fb418288e2833997c5f4",
     "semantic_hash": ""
   },
   "src/lab/queries.js": {
@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "src/lab/RiskQuadrant.jsx": {
-    "mtime": 1792870176.273509,
-    "ast_hash": "a5144f70a57567163dda64d35508ef1f",
+    "mtime": 1792953861.003026,
+    "ast_hash": "be77ca2d17f194de2d36b922c645b766",
     "semantic_hash": ""
   },
   ".github/workflows/refresh-data.yml": {

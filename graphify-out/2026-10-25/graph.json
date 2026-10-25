@@ -6,6 +6,136 @@
     {
       "label": "ask.mjs",
       "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_ask",
+      "community": 2,
+      "norm_label": "ask.mjs"
+    },
+    {
+      "label": "LLM_BASE_URL",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "api_ask_llm_base_url",
+      "community": 2,
+      "norm_label": "llm_base_url"
+    },
+    {
+      "label": "rateLog",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "api_ask_ratelog",
+      "community": 2,
+      "norm_label": "ratelog"
+    },
+    {
+      "label": "clientIp()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "api_ask_clientip",
+      "community": 2,
+      "norm_label": "clientip()"
+    },
+    {
+      "label": "rateCheck()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "api_ask_ratecheck",
+      "community": 2,
+      "norm_label": "ratecheck()"
+    },
+    {
+      "label": "PROVIDER_HOSTS",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "api_ask_provider_hosts",
+      "community": 2,
+      "norm_label": "provider_hosts"
+    },
+    {
+      "label": "providerLabel()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "api_ask_providerlabel",
+      "community": 2,
+      "norm_label": "providerlabel()"
+    },
+    {
+      "label": "PROVIDER",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "api_ask_provider",
+      "community": 2,
+      "norm_label": "provider"
+    },
+    {
+      "label": "getContext()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "api_ask_getcontext",
+      "community": 2,
+      "norm_label": "getcontext()"
+    },
+    {
+      "label": "extractErrorMessage()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "api_ask_extracterrormessage",
+      "community": 2,
+      "norm_label": "extracterrormessage()"
+    },
+    {
+      "label": "jsonResponse()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "api_ask_jsonresponse",
+      "community": 2,
+      "norm_label": "jsonresponse()"
+    },
+    {
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "api_ask_handler",
+      "community": 2,
+      "norm_label": "handler()"
+    },
+    {
+      "label": "streamCompletion()",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "api_ask_streamcompletion",
+      "community": 2,
+      "norm_label": "streamcompletion()"
+    },
+    {
+      "label": "ask.mjs",
+      "file_type": "code",
       "source_file": "netlify/functions/ask.mjs",
       "source_location": "L1",
       "_origin": "ast",
@@ -14,130 +144,10 @@
       "norm_label": "ask.mjs"
     },
     {
-      "label": "LLM_BASE_URL",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_llm_base_url",
-      "community": 2,
-      "norm_label": "llm_base_url"
-    },
-    {
-      "label": "rateLog",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L34",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_ratelog",
-      "community": 2,
-      "norm_label": "ratelog"
-    },
-    {
-      "label": "clientIp()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L35",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_clientip",
-      "community": 2,
-      "norm_label": "clientip()"
-    },
-    {
-      "label": "rateCheck()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_ratecheck",
-      "community": 2,
-      "norm_label": "ratecheck()"
-    },
-    {
-      "label": "PROVIDER_HOSTS",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L65",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_provider_hosts",
-      "community": 2,
-      "norm_label": "provider_hosts"
-    },
-    {
-      "label": "providerLabel()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L78",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_providerlabel",
-      "community": 2,
-      "norm_label": "providerlabel()"
-    },
-    {
-      "label": "PROVIDER",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L85",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_provider",
-      "community": 2,
-      "norm_label": "provider"
-    },
-    {
-      "label": "getContext()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L92",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_getcontext",
-      "community": 2,
-      "norm_label": "getcontext()"
-    },
-    {
-      "label": "extractErrorMessage()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L104",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_extracterrormessage",
-      "community": 2,
-      "norm_label": "extracterrormessage()"
-    },
-    {
-      "label": "jsonResponse()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L118",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_jsonresponse",
-      "community": 2,
-      "norm_label": "jsonresponse()"
-    },
-    {
-      "label": "handler()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L125",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_handler",
-      "community": 2,
-      "norm_label": "handler()"
-    },
-    {
-      "label": "streamCompletion()",
-      "file_type": "code",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L212",
-      "_origin": "ast",
-      "id": "netlify_functions_ask_streamcompletion",
-      "community": 2,
-      "norm_label": "streamcompletion()"
-    },
-    {
       "label": "config",
       "file_type": "code",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L263",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "netlify_functions_ask_config",
       "community": 2,
@@ -149,7 +159,7 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_json",
+      "id": "package",
       "community": 1,
       "norm_label": "package.json"
     },
@@ -159,7 +169,7 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_name",
+      "id": "package_name",
       "community": 1,
       "norm_label": "name"
     },
@@ -169,7 +179,7 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_version",
+      "id": "package_version",
       "community": 1,
       "norm_label": "version"
     },
@@ -179,7 +189,7 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_description",
+      "id": "package_description",
       "community": 1,
       "norm_label": "description"
     },
@@ -189,7 +199,7 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_private",
+      "id": "package_private",
       "community": 1,
       "norm_label": "private"
     },
@@ -199,17 +209,37 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
+      "id": "package_dependencies",
       "community": 1,
       "norm_label": "dependencies"
+    },
+    {
+      "label": "@fontsource-variable/geist",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "package_dependencies_fontsource_variable_geist",
+      "community": 1,
+      "norm_label": "@fontsource-variable/geist"
+    },
+    {
+      "label": "@fontsource-variable/geist-mono",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "package_dependencies_fontsource_variable_geist_mono",
+      "community": 1,
+      "norm_label": "@fontsource-variable/geist-mono"
     },
     {
       "label": "dexie",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L7",
+      "source_location": "L9",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_dexie",
+      "id": "package_dependencies_dexie",
       "community": 1,
       "norm_label": "dexie"
     },
@@ -217,9 +247,9 @@
       "label": "graphology",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L8",
+      "source_location": "L10",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology",
+      "id": "package_dependencies_graphology",
       "community": 1,
       "norm_label": "graphology"
     },
@@ -227,9 +257,9 @@
       "label": "graphology-communities-louvain",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_communities_louvain",
+      "id": "package_dependencies_graphology_communities_louvain",
       "community": 1,
       "norm_label": "graphology-communities-louvain"
     },
@@ -237,9 +267,9 @@
       "label": "graphology-metrics",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L10",
+      "source_location": "L12",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_metrics",
+      "id": "package_dependencies_graphology_metrics",
       "community": 1,
       "norm_label": "graphology-metrics"
     },
@@ -247,9 +277,9 @@
       "label": "graphology-shortest-path",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L11",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_shortest_path",
+      "id": "package_dependencies_graphology_shortest_path",
       "community": 1,
       "norm_label": "graphology-shortest-path"
     },
@@ -257,9 +287,9 @@
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_lucide_react",
+      "id": "package_dependencies_lucide_react",
       "community": 1,
       "norm_label": "lucide-react"
     },
@@ -267,9 +297,9 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L15",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react",
+      "id": "package_dependencies_react",
       "community": 1,
       "norm_label": "react"
     },
@@ -277,9 +307,9 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L14",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_dom",
+      "id": "package_dependencies_react_dom",
       "community": 1,
       "norm_label": "react-dom"
     },
@@ -287,9 +317,9 @@
       "label": "react-force-graph-3d",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L15",
+      "source_location": "L17",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_force_graph_3d",
+      "id": "package_dependencies_react_force_graph_3d",
       "community": 1,
       "norm_label": "react-force-graph-3d"
     },
@@ -297,9 +327,9 @@
       "label": "react-markdown",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L18",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_markdown",
+      "id": "package_dependencies_react_markdown",
       "community": 1,
       "norm_label": "react-markdown"
     },
@@ -307,9 +337,9 @@
       "label": "react-router-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_router_dom",
+      "id": "package_dependencies_react_router_dom",
       "community": 1,
       "norm_label": "react-router-dom"
     },
@@ -317,9 +347,9 @@
       "label": "remark-gfm",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L20",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_remark_gfm",
+      "id": "package_dependencies_remark_gfm",
       "community": 1,
       "norm_label": "remark-gfm"
     },
@@ -327,9 +357,9 @@
       "label": "three",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_three",
+      "id": "package_dependencies_three",
       "community": 1,
       "norm_label": "three"
     },
@@ -337,9 +367,9 @@
       "label": "three-spritetext",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L22",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_three_spritetext",
+      "id": "package_dependencies_three_spritetext",
       "community": 1,
       "norm_label": "three-spritetext"
     },
@@ -347,9 +377,9 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L24",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
+      "id": "package_devdependencies",
       "community": 1,
       "norm_label": "devdependencies"
     },
@@ -357,9 +387,9 @@
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L25",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_vitejs_plugin_react",
+      "id": "package_devdependencies_vitejs_plugin_react",
       "community": 1,
       "norm_label": "@vitejs/plugin-react"
     },
@@ -367,9 +397,9 @@
       "label": "autoprefixer",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L26",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_autoprefixer",
+      "id": "package_devdependencies_autoprefixer",
       "community": 1,
       "norm_label": "autoprefixer"
     },
@@ -377,9 +407,9 @@
       "label": "postcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L27",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_postcss",
+      "id": "package_devdependencies_postcss",
       "community": 1,
       "norm_label": "postcss"
     },
@@ -387,9 +417,9 @@
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L28",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_tailwindcss",
+      "id": "package_devdependencies_tailwindcss",
       "community": 1,
       "norm_label": "tailwindcss"
     },
@@ -397,9 +427,9 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_vite",
+      "id": "package_devdependencies_vite",
       "community": 1,
       "norm_label": "vite"
     },
@@ -407,9 +437,9 @@
       "label": "scripts",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L31",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
+      "id": "package_scripts",
       "community": 1,
       "norm_label": "scripts"
     },
@@ -417,9 +447,9 @@
       "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_dev",
+      "id": "package_scripts_dev",
       "community": 1,
       "norm_label": "dev"
     },
@@ -427,9 +457,9 @@
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L33",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_build",
+      "id": "package_scripts_build",
       "community": 1,
       "norm_label": "build"
     },
@@ -437,9 +467,9 @@
       "label": "preview",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_preview",
+      "id": "package_scripts_preview",
       "community": 1,
       "norm_label": "preview"
     },
@@ -447,9 +477,9 @@
       "label": "test:graph",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L35",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_graph",
+      "id": "package_scripts_test_graph",
       "community": 1,
       "norm_label": "test:graph"
     },
@@ -457,9 +487,9 @@
       "label": "test:discover",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L36",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_discover",
+      "id": "package_scripts_test_discover",
       "community": 1,
       "norm_label": "test:discover"
     },
@@ -467,9 +497,9 @@
       "label": "discover",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L37",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_discover",
+      "id": "package_scripts_discover",
       "community": 1,
       "norm_label": "discover"
     },
@@ -477,9 +507,9 @@
       "label": "discover:summary",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L38",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_discover_summary",
+      "id": "package_scripts_discover_summary",
       "community": 1,
       "norm_label": "discover:summary"
     },
@@ -487,9 +517,9 @@
       "label": "refresh:sample",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L39",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_sample",
+      "id": "package_scripts_refresh_sample",
       "community": 1,
       "norm_label": "refresh:sample"
     },
@@ -497,9 +527,9 @@
       "label": "refresh:ingest",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L40",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_ingest",
+      "id": "package_scripts_refresh_ingest",
       "community": 1,
       "norm_label": "refresh:ingest"
     },
@@ -507,9 +537,9 @@
       "label": "refresh:classify",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L41",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_classify",
+      "id": "package_scripts_refresh_classify",
       "community": 1,
       "norm_label": "refresh:classify"
     },
@@ -517,9 +547,9 @@
       "label": "check:dataset",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L42",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_check_dataset",
+      "id": "package_scripts_check_dataset",
       "community": 1,
       "norm_label": "check:dataset"
     },
@@ -527,9 +557,9 @@
       "label": "check:coverage",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L43",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_check_coverage",
+      "id": "package_scripts_check_coverage",
       "community": 1,
       "norm_label": "check:coverage"
     },
@@ -537,9 +567,9 @@
       "label": "precompute",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_precompute",
+      "id": "package_scripts_precompute",
       "community": 1,
       "norm_label": "precompute"
     },
@@ -547,9 +577,9 @@
       "label": "precompute:questions",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L45",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_precompute_questions",
+      "id": "package_scripts_precompute_questions",
       "community": 1,
       "norm_label": "precompute:questions"
     },
@@ -557,9 +587,9 @@
       "label": "reports",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L46",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_reports",
+      "id": "package_scripts_reports",
       "community": 1,
       "norm_label": "reports"
     },
@@ -567,9 +597,9 @@
       "label": "prebuild",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L47",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_prebuild",
+      "id": "package_scripts_prebuild",
       "community": 1,
       "norm_label": "prebuild"
     },
@@ -577,9 +607,9 @@
       "label": "refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L48",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh",
+      "id": "package_scripts_refresh",
       "community": 1,
       "norm_label": "refresh"
     },
@@ -587,9 +617,9 @@
       "label": "test:prompts",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L47",
+      "source_location": "L49",
       "_origin": "ast",
-      "id": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_prompts",
+      "id": "package_scripts_test_prompts",
       "community": 1,
       "norm_label": "test:prompts"
     },
@@ -3120,7 +3150,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_reports_ai_engineer_stack",
-      "community": 32,
+      "community": 127,
       "norm_label": "ai_engineer_stack.py"
     },
     {
@@ -3130,7 +3160,7 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "scripts_reports_ai_engineer_stack_trend_score",
-      "community": 32,
+      "community": 127,
       "norm_label": "trend_score()"
     },
     {
@@ -3140,7 +3170,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "scripts_reports_ai_engineer_stack_rationale_176",
-      "community": 32,
+      "community": 127,
       "norm_label": "dataset-derived momentum signal."
     },
     {
@@ -3150,7 +3180,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_py",
-      "community": 125,
+      "community": 35,
       "norm_label": "blockchain_claws.py"
     },
     {
@@ -3160,7 +3190,7 @@
       "source_location": "L130",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_meta_bits",
-      "community": 125,
+      "community": 35,
       "norm_label": "meta_bits()"
     },
     {
@@ -3170,7 +3200,7 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_yn",
-      "community": 125,
+      "community": 35,
       "norm_label": "yn()"
     },
     {
@@ -3600,7 +3630,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "community": 35,
+      "community": 32,
       "norm_label": "svg_hbar()"
     },
     {
@@ -3650,7 +3680,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "community": 32,
+      "community": 35,
       "norm_label": "shared helpers for the report generators in scripts/reports/.  every generator r"
     },
     {
@@ -3710,7 +3740,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_102",
-      "community": 35,
+      "community": 32,
       "norm_label": "dependency-free horizontal bar chart as an svg string.      items: [(label, nume"
     },
     {
@@ -4737,7 +4767,7 @@
       "label": "LabApp()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L417",
+      "source_location": "L419",
       "_origin": "ast",
       "id": "src_lab_labapp_labapp",
       "community": 0,
@@ -5414,6 +5444,136 @@
       "norm_label": "inputs=none must render no 'measure these first' section."
     },
     {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "vercel",
+      "community": 125,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "vercel_schema",
+      "community": 125,
+      "norm_label": "$schema"
+    },
+    {
+      "label": "framework",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "vercel_framework",
+      "community": 125,
+      "norm_label": "framework"
+    },
+    {
+      "label": "buildCommand",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "vercel_buildcommand",
+      "community": 125,
+      "norm_label": "buildcommand"
+    },
+    {
+      "label": "outputDirectory",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "vercel_outputdirectory",
+      "community": 125,
+      "norm_label": "outputdirectory"
+    },
+    {
+      "label": "cleanUrls",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "vercel_cleanurls",
+      "community": 125,
+      "norm_label": "cleanurls"
+    },
+    {
+      "label": "trailingSlash",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "vercel_trailingslash",
+      "community": 125,
+      "norm_label": "trailingslash"
+    },
+    {
+      "label": "functions",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "vercel_functions",
+      "community": 125,
+      "norm_label": "functions"
+    },
+    {
+      "label": "api/ask.mjs",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "vercel_functions_api_ask_mjs",
+      "community": 125,
+      "norm_label": "api/ask.mjs"
+    },
+    {
+      "label": "includeFiles",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "vercel_api_ask_mjs_includefiles",
+      "community": 125,
+      "norm_label": "includefiles"
+    },
+    {
+      "label": "maxDuration",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "vercel_api_ask_mjs_maxduration",
+      "community": 125,
+      "norm_label": "maxduration"
+    },
+    {
+      "label": "rewrites",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "vercel_rewrites",
+      "community": 125,
+      "norm_label": "rewrites"
+    },
+    {
+      "label": "headers",
+      "file_type": "code",
+      "source_file": "vercel.json",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "vercel_headers",
+      "community": 125,
+      "norm_label": "headers"
+    },
+    {
       "label": "vite.config.js",
       "file_type": "code",
       "source_file": "vite.config.js",
@@ -5444,10 +5604,20 @@
       "norm_label": "preloadthreechunk()"
     },
     {
+      "label": "inlineCriticalCss()",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "vite_config_inlinecriticalcss",
+      "community": 59,
+      "norm_label": "inlinecriticalcss()"
+    },
+    {
       "label": "THREE_CHUNK",
       "file_type": "code",
       "source_file": "vite.config.js",
-      "source_location": "L49",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "vite_config_three_chunk",
       "community": 59,
@@ -5457,7 +5627,7 @@
       "label": "REACT_CHUNK",
       "file_type": "code",
       "source_file": "vite.config.js",
-      "source_location": "L62",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "vite_config_react_chunk",
       "community": 59,
@@ -5467,7 +5637,7 @@
       "label": "manualChunks()",
       "file_type": "code",
       "source_file": "vite.config.js",
-      "source_location": "L89",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "vite_config_manualchunks",
       "community": 59,
@@ -20302,24 +20472,265 @@
       "id": "reports_which_claw_methodology_caveats",
       "community": 75,
       "norm_label": "methodology & caveats"
+    },
+    {
+      "label": "POST",
+      "file_type": "code",
+      "source_file": "api/ask.mjs",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "api_ask_post",
+      "community": 137,
+      "norm_label": "post"
     }
   ],
   "links": [
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
+      "source_file": "api/ask.mjs",
       "source_location": "L35",
       "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_clientip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_extracterrormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_getcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_jsonresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_llm_base_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_provider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_provider_hosts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_providerlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_ratecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_ratelog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "api_ask_streamcompletion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "scripts_lib_ask_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "scripts_lib_ask_prompt_buildsystemprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "export",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
       "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_clientip",
+      "target": "api_ask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_clientip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_ratecheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_getcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_extracterrormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_jsonresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "api_ask_streamcompletion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "scripts_lib_ask_prompt_buildsystemprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "re_exports",
+      "context": "re-export",
+      "confidence": "EXTRACTED",
+      "source_file": "netlify/functions/ask.mjs",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "netlify_functions_ask",
+      "target": "api_ask_handler",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L263",
+      "source_location": "L5",
       "weight": 1.0,
       "source": "netlify_functions_ask",
       "target": "netlify_functions_ask_config",
@@ -20328,220 +20739,11 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L104",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_extracterrormessage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L92",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_getcontext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L125",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_handler",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L118",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_jsonresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_llm_base_url",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L85",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_provider",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L65",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_provider_hosts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L78",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_providerlabel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_ratecheck",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_ratelog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L212",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "netlify_functions_ask_streamcompletion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "scripts_lib_ask_prompt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "netlify_functions_ask",
-      "target": "scripts_lib_ask_prompt_buildsystemprompt",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_clientip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_ratecheck",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L147",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_getcontext",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L167",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_extracterrormessage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L130",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_jsonresponse",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L192",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "netlify_functions_ask_streamcompletion",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "netlify/functions/ask.mjs",
-      "source_location": "L159",
-      "weight": 1.0,
-      "source": "netlify_functions_ask_handler",
-      "target": "scripts_lib_ask_prompt_buildsystemprompt"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
+      "source": "package",
+      "target": "package_dependencies",
       "confidence_score": 1.0
     },
     {
@@ -20550,198 +20752,8 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_description",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_name",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_private",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_json",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_version",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_dexie",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_communities_louvain",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_metrics",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_graphology_shortest_path",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_lucide_react",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_dom",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_force_graph_3d",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_markdown",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L17",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_react_router_dom",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_remark_gfm",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_three",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_dependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_dependencies_three_spritetext",
+      "source": "package",
+      "target": "package_description",
       "confidence_score": 1.0
     },
     {
@@ -20750,48 +20762,28 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_autoprefixer",
+      "source": "package",
+      "target": "package_devdependencies",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L2",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_postcss",
+      "source": "package",
+      "target": "package_name",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L5",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_tailwindcss",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L27",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_vite",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_devdependencies_vitejs_plugin_react",
+      "source": "package",
+      "target": "package_private",
       "confidence_score": 1.0
     },
     {
@@ -20800,158 +20792,228 @@
       "source_file": "package.json",
       "source_location": "L31",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_build",
+      "source": "package",
+      "target": "package_scripts",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L3",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_check_coverage",
+      "source": "package",
+      "target": "package_version",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L9",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_check_dataset",
+      "source": "package_dependencies",
+      "target": "package_dependencies_dexie",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L7",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_dev",
+      "source": "package_dependencies",
+      "target": "package_dependencies_fontsource_variable_geist",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L8",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_discover",
+      "source": "package_dependencies",
+      "target": "package_dependencies_fontsource_variable_geist_mono",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L10",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_discover_summary",
+      "source": "package_dependencies",
+      "target": "package_dependencies_graphology",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L11",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_prebuild",
+      "source": "package_dependencies",
+      "target": "package_dependencies_graphology_communities_louvain",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L12",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_precompute",
+      "source": "package_dependencies",
+      "target": "package_dependencies_graphology_metrics",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L13",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_precompute_questions",
+      "source": "package_dependencies",
+      "target": "package_dependencies_graphology_shortest_path",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L14",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_preview",
+      "source": "package_dependencies",
+      "target": "package_dependencies_lucide_react",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L15",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L16",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_classify",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L17",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_ingest",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_force_graph_3d",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L18",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_refresh_sample",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_markdown",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L19",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_reports",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_router_dom",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L20",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_discover",
+      "source": "package_dependencies",
+      "target": "package_dependencies_remark_gfm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_three",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_three_spritetext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_autoprefixer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_postcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitejs_plugin_react",
       "confidence_score": 1.0
     },
     {
@@ -20960,8 +21022,58 @@
       "source_file": "package.json",
       "source_location": "L33",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_graph",
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_check_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_check_dataset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_discover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_discover_summary",
       "confidence_score": 1.0
     },
     {
@@ -20970,8 +21082,118 @@
       "source_file": "package.json",
       "source_location": "L47",
       "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_package_scripts",
-      "target": "users_marty_claude_projects_github_stars_analyzer_package_scripts_test_prompts",
+      "source": "package_scripts",
+      "target": "package_scripts_prebuild",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_precompute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_precompute_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_refresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_refresh_classify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_refresh_ingest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_refresh_sample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_reports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test_discover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test_prompts",
       "confidence_score": 1.0
     },
     {
@@ -23773,7 +23995,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
       "confidence_score": 1.0
     },
     {
@@ -23849,6 +24071,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/build_index.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_load_metas",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -23870,17 +24103,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/build_index.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_inject_cross_links",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/prompts/build_prompts.py",
@@ -23898,7 +24120,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -23973,6 +24195,17 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/rag_eval_harness.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -23984,6 +24217,17 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/stump_base.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -23993,6 +24237,28 @@
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_main",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/trading_dashboard.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_prompt_lib.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -24103,50 +24369,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/rag_eval_harness.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/stump_base.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/trading_dashboard.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_prompt_lib.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -24228,7 +24450,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "scripts_reports_agent_harnesses",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24239,7 +24461,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_memory_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24332,7 +24554,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_orchestration_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24385,7 +24607,7 @@
       "source_location": "L30",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agentic_terminals_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24426,7 +24648,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_ai_coding_tuis_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24437,7 +24659,7 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "scripts_reports_ai_engineer_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24468,7 +24690,7 @@
       "source_location": "L24",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24510,7 +24732,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_essentials_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24562,7 +24784,7 @@
       "source_location": "L18",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24707,7 +24929,7 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_charting_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24728,7 +24950,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_claude_code_setups",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24739,7 +24961,7 @@
       "source_location": "L27",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_decision_classifiers_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24770,7 +24992,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_document_extraction_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24781,7 +25003,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "scripts_reports_finetuning_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24792,7 +25014,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_harness_engineering",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24823,7 +25045,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_hermes_vs_openclaw_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -24874,7 +25096,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_jetson_inference_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
     {
@@ -25154,12 +25376,155 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/memory_frameworks.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_reports_memory_frameworks",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/lib.py",
       "source_location": "L102",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_102",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/llm_evaluation.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_llm_evaluation_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_local_vs_infra_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_mcp_tooling_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_meeting_transcription_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/notebooklm_stack.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_notebooklm_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/openclaw_ecosystem.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_openclaw_ecosystem_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/printing_stack.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_printing_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/rag_tooling.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_rag_tooling_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/snapshot.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_snapshot_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/trending_now.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_voice_agents_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_which_claw_py",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
@@ -25193,149 +25558,6 @@
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_row_meta",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_activity_label"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/memory_frameworks.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "scripts_reports_memory_frameworks",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/llm_evaluation.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_llm_evaluation_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/local_vs_infra_stack.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_local_vs_infra_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/mcp_tooling.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_mcp_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/meeting_transcription.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_meeting_transcription_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/notebooklm_stack.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_notebooklm_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/openclaw_ecosystem.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_openclaw_ecosystem_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/printing_stack.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_printing_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/rag_tooling.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_rag_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/snapshot.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_snapshot_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/trending_now.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/voice_agents.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_voice_agents_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/which_claw.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_which_claw_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_1",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -26692,7 +26914,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L417",
+      "source_location": "L419",
       "weight": 1.0,
       "source": "src_lab_labapp",
       "target": "src_lab_labapp_labapp",
@@ -27552,8 +27774,138 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_buildcommand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_cleanurls",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_functions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_headers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_outputdirectory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_rewrites",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "vercel",
+      "target": "vercel_trailingslash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "vercel_functions",
+      "target": "vercel_functions_api_ask_mjs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "vercel_functions_api_ask_mjs",
+      "target": "vercel_api_ask_mjs_includefiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vercel.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "vercel_functions_api_ask_mjs",
+      "target": "vercel_api_ask_mjs_maxduration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "vite.config.js",
-      "source_location": "L89",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "vite_config",
+      "target": "vite_config_inlinecriticalcss",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "vite.config.js",
+      "source_location": "L119",
       "weight": 1.0,
       "source": "vite_config",
       "target": "vite_config_manualchunks",
@@ -27583,7 +27935,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vite.config.js",
-      "source_location": "L62",
+      "source_location": "L92",
       "weight": 1.0,
       "source": "vite_config",
       "target": "vite_config_react_chunk",
@@ -27593,7 +27945,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "vite.config.js",
-      "source_location": "L49",
+      "source_location": "L79",
       "weight": 1.0,
       "source": "vite_config",
       "target": "vite_config_three_chunk",
@@ -41451,5 +41803,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "81115402ed8a4e1af6d7528699f41aaac5db568e"
+  "built_at_commit": "a60de6eb04d5f329cb7c33789d72927f20c502fe"
 }

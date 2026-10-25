@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { forceManyBody, forceLink } from 'd3-force-3d';
 import Graph from 'graphology';
 import louvain from 'graphology-communities-louvain';
@@ -100,6 +100,8 @@ function ReposByTopic({ topic, repos, onSelect }) {
   );
 }
 
+const PARTICLE_COLOR = () => 'rgba(34,211,238,1)';
+
 function ControlPanel({ settings, setSettings, onRecenter }) {
   const upd = (k, v) => setSettings((s) => ({ ...s, [k]: v }));
   const Row = ({ label, children }) => (
@@ -109,7 +111,7 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
     </div>
   );
   return (
-    <div className="absolute top-3 right-3 z-10 bg-gray-900/90 backdrop-blur border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[240px]">
+    <div className="absolute top-3 right-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[240px]">
       <button
         onClick={onRecenter}
         className="w-full mb-2 px-3 py-1.5 bg-white hover:bg-gray-200 rounded-md text-black font-medium"
@@ -210,19 +212,15 @@ export default function TopicMap({ onSelect }) {
     setHighlight({ nodes, links });
   }, [selected, fgData]);
 
-  const materialCache = new Map();
-  const getMaterial = (color, dim) => {
-    const key = `${color}-${dim ? 1 : 0}`;
-    if (!materialCache.has(key)) {
-      materialCache.set(key, new THREE.MeshLambertMaterial({
-        color, transparent: true, opacity: dim ? 0.18 : 0.95,
-        emissive: color, emissiveIntensity: dim ? 0.05 : 0.4,
-      }));
-    }
-    return materialCache.get(key);
-  };
+  // Pixel ratio capped like the repo map: 2× buffers cost 4× fill for no gain.
+  useEffect(() => {
+    const r = fgRef.current?.renderer?.();
+    if (r?.setPixelRatio) r.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+  }, [fgData]);
 
-  const nodeThreeObject = (node) => {
+  // Memoised accessors: a new nodeThreeObject identity rebuilds every label
+  // texture, so hover state must not change it.
+  const nodeThreeObject = useCallback((node) => {
     const showLabel = settings.alwaysLabels || node.val >= settings.labelDensity;
     const isHighlight = highlight.nodes.size === 0 || highlight.nodes.has(node.id);
     if (!showLabel || !isHighlight) return new THREE.Object3D();
@@ -233,8 +231,22 @@ export default function TopicMap({ onSelect }) {
     sprite.borderRadius = 4;
     sprite.textHeight = 5;
     sprite.position.set(0, Math.cbrt(node.val) * 1.6 + 5, 0);
+    sprite.raycast = () => {};
     return sprite;
-  };
+  }, [settings.alwaysLabels, settings.labelDensity, highlight]);
+
+  const nodeColor = useCallback((n) => {
+    if (highlight.nodes.size > 0 && !highlight.nodes.has(n.id)) return 'rgba(75,85,99,0.3)';
+    return COMMUNITY_PALETTE[n.community % COMMUNITY_PALETTE.length];
+  }, [highlight]);
+  const linkColor = useCallback((l) => {
+    if (highlight.links.size > 0) return highlight.links.has(l) ? 'rgba(34,211,238,0.85)' : 'rgba(75,85,99,0.04)';
+    return 'rgba(148,163,184,0.16)';
+  }, [highlight]);
+  const linkParticles = useCallback((l) => (highlight.links.has(l) ? 3 : 0), [highlight]);
+  const handleHover = useCallback((n) => setHovered(n || null), []);
+  const handleClick = useCallback((n) => setSelected((cur) => (n.id === cur ? null : n.id)), []);
+  const handleBackground = useCallback(() => setSelected(null), []);
 
   if (status !== 'ready') return <div className="text-gray-400 p-4">Waiting for graph…</div>;
   const stats = topicGraph ? { topics: topicGraph.order, edges: topicGraph.size } : { topics: 0, edges: 0 };
@@ -243,7 +255,7 @@ export default function TopicMap({ onSelect }) {
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
       <div className="lg:col-span-3">
         <div className="relative">
-          <div className="absolute top-3 left-3 z-10 bg-gray-900/85 backdrop-blur border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
+          <div className="absolute top-3 left-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
             <div>{stats.topics} topics · {stats.edges} co-occurrences</div>
             <div className="text-gray-500 mt-1">Edge weight = repos sharing both topics</div>
             <div className="mt-2">
@@ -255,12 +267,12 @@ export default function TopicMap({ onSelect }) {
           </div>
           <ControlPanel settings={settings} setSettings={setSettings} onRecenter={recenter} />
           {hovered && !selected && (
-            <div className="absolute bottom-3 left-3 z-10 bg-gray-900/95 backdrop-blur border border-gray-700 rounded-lg p-3 text-sm text-gray-100 pointer-events-none shadow-xl">
+            <div className="absolute bottom-3 left-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-3 text-sm text-gray-100 pointer-events-none shadow-xl">
               <div className="font-bold text-cyan-300">#{hovered.label}</div>
               <div className="text-xs text-gray-400 mt-1">{hovered.freq} repos</div>
             </div>
           )}
-          <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(circle at 70% 30%, #1e293b 0%, #020617 70%)', borderRadius: 12, overflow: 'hidden' }}>
+          <div ref={containerRef} style={{ width: '100%', height: '78vh', background: '#050505', borderRadius: 12, overflow: 'hidden' }}>
             {topicGraph && topicGraph.order === 0 ? (
               <div className="p-12 text-center text-gray-500">No topics meet the minimum frequency. Lower the threshold.</div>
             ) : (
@@ -269,36 +281,31 @@ export default function TopicMap({ onSelect }) {
                 width={size.w}
                 height={size.h}
                 graphData={fgData}
-                backgroundColor="rgba(0,0,0,0)"
+                backgroundColor="#050505"
                 showNavInfo={false}
                 nodeRelSize={6}
-                nodeVal={(n) => n.val}
+                nodeVal="val"
                 nodeLabel=""
-                nodeColor={(n) => {
-                  if (highlight.nodes.size > 0 && !highlight.nodes.has(n.id)) return 'rgba(75,85,99,0.3)';
-                  return COMMUNITY_PALETTE[n.community % COMMUNITY_PALETTE.length];
-                }}
+                nodeColor={nodeColor}
                 nodeOpacity={0.95}
                 nodeThreeObject={nodeThreeObject}
                 nodeThreeObjectExtend={true}
-                linkColor={(l) => {
-                  if (highlight.links.size > 0) return highlight.links.has(l) ? 'rgba(34,211,238,0.85)' : 'rgba(75,85,99,0.04)';
-                  return 'rgba(148,163,184,0.16)';
-                }}
-                linkWidth={(l) => 0.3 + Math.min(2, l.weight * 0.4)}
+                linkColor={linkColor}
+                // 0 = THREE.Line per link instead of a cylinder mesh per link
+                linkWidth={0}
                 linkOpacity={0.5}
-                linkDirectionalParticles={(l) => (highlight.links.has(l) ? 3 : 0)}
+                linkDirectionalParticles={linkParticles}
                 linkDirectionalParticleSpeed={0.006}
-                linkDirectionalParticleColor={() => 'rgba(34,211,238,1)'}
+                linkDirectionalParticleColor={PARTICLE_COLOR}
                 linkDirectionalParticleWidth={2.5}
                 d3AlphaDecay={0.025}
                 d3VelocityDecay={0.4}
                 cooldownTicks={100}
                 warmupTicks={20}
                 enableNodeDrag={settings.drag}
-                onNodeClick={(n) => setSelected(n.id === selected ? null : n.id)}
-                onBackgroundClick={() => setSelected(null)}
-                onNodeHover={(n) => setHovered(n || null)}
+                onNodeClick={handleClick}
+                onBackgroundClick={handleBackground}
+                onNodeHover={handleHover}
               />
             )}
           </div>

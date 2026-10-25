@@ -371,7 +371,7 @@ function LabContent() {
     <div>
       <StatusBanner />
       <HealthHistogram />
-      <div className="sticky top-0 z-30 -mx-4 px-4 mb-6 bg-black/80 backdrop-blur-md border-b border-gray-700 flex flex-wrap gap-1">
+      <div className="sticky top-0 z-30 -mx-4 px-4 mb-6 bg-black/95 border-b border-gray-700 flex flex-wrap gap-1">
         {TABS.map((t) => (
           <button
             key={t.key}

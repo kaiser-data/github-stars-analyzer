@@ -1,9 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import ForceGraph3D from 'react-force-graph-3d';
 import * as THREE from 'three';
 import SpriteText from 'three-spritetext';
 import { forceManyBody, forceLink } from 'd3-force-3d';
 import { useGraph } from './GraphProvider';
+
+const RENDERER_CONFIG = { powerPreference: 'high-performance', antialias: true };
+const PARTICLE_COLOR = () => 'rgba(96,165,250,1)';
 
 function ControlPanel({ settings, setSettings, onRecenter }) {
   const upd = (k, v) => setSettings((s) => ({ ...s, [k]: v }));
@@ -14,7 +17,7 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
     </div>
   );
   return (
-    <div className="absolute top-3 right-3 z-10 bg-gray-900/90 backdrop-blur border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[260px]">
+    <div className="absolute top-3 right-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[260px]">
       <button onClick={onRecenter} className="w-full mb-2 px-3 py-1.5 bg-white hover:bg-gray-200 rounded-md text-black font-medium">Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
       <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
@@ -156,10 +159,10 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
     }
   }, [focusedRepoName, nodes, links]);
 
-  if (status === 'loading') return <div className="text-gray-400 p-6">Loading graph…</div>;
-  if (status === 'error') return <div className="text-red-400 p-6">Failed: {error}</div>;
-
-  const nodeThreeObject = (node) => {
+  // Accessors are memoised: react-force-graph re-applies any accessor whose
+  // identity changes, and a fresh nodeThreeObject rebuilds every label texture.
+  // Without this, each hover (a state change) re-created ~400 canvas sprites.
+  const nodeThreeObject = useCallback((node) => {
     if (!settings.alwaysLabels && node.val < settings.labelDensity) return null;
     if (highlightNodes.size > 0 && !highlightNodes.has(node.id)) return null;
     const name = node.full_name?.split('/')[1] ?? node.full_name ?? '';
@@ -171,12 +174,32 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
     sprite.borderRadius = 4;
     sprite.textHeight = 5;
     sprite.position.set(0, Math.cbrt(node.val) * 1.6 + 5, 0);
+    sprite.raycast = () => {}; // labels never take hover/click; skip them in picking
     return sprite;
-  };
+  }, [settings.alwaysLabels, settings.labelDensity, highlightNodes]);
+
+  const nodeColor = useCallback((n) => {
+    const isHighlight = highlightNodes.size === 0 || highlightNodes.has(n.id);
+    return isHighlight ? (n.color ?? '#3b82f6') : 'rgba(75,85,99,0.3)';
+  }, [highlightNodes]);
+
+  const linkColor = useCallback((l) => {
+    if (highlightLinks.size > 0) return highlightLinks.has(l) ? 'rgba(96,165,250,0.9)' : 'rgba(75,85,99,0.04)';
+    return 'rgba(148,163,184,0.16)';
+  }, [highlightLinks]);
+
+  const linkParticles = useCallback((l) => (highlightLinks.has(l) ? 3 : 0), [highlightLinks]);
+  const linkWidth = useCallback((l) => 0.3 + Math.min(2, l.weight * 0.5), []);
+  const handleHover = useCallback((node) => setHovered(node || null), []);
+  const handleClick = useCallback((node) => onSelectNode && onSelectNode({ full_name: node.full_name }), [onSelectNode]);
+  const handleBackground = useCallback(() => onSelectNode && onSelectNode(null), [onSelectNode]);
+
+  if (status === 'loading') return <div className="text-gray-400 p-6">Loading graph…</div>;
+  if (status === 'error') return <div className="text-red-400 p-6">Failed: {error}</div>;
 
   return (
     <div className="relative">
-      <div className="absolute top-3 left-3 z-10 bg-gray-900/85 backdrop-blur border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
+      <div className="absolute top-3 left-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
         <div>
           {view.nodes.length.toLocaleString()} repos · {view.links.length.toLocaleString()} edges · {stats?.communityCount} communities
           {view.nodes.length < (stats?.nodeCount ?? 0) && (
@@ -188,7 +211,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
       </div>
       <ControlPanel settings={settings} setSettings={setSettings} onRecenter={recenter} />
       {hovered && (
-        <div className="absolute bottom-3 left-3 z-10 bg-gray-900/95 backdrop-blur border border-gray-700 rounded-lg p-4 text-sm text-gray-100 max-w-md shadow-xl pointer-events-none">
+        <div className="absolute bottom-3 left-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-4 text-sm text-gray-100 max-w-md shadow-xl pointer-events-none">
           <div className="font-bold text-blue-400">{hovered.full_name}</div>
           <div className="text-xs text-gray-400 mt-1">{hovered.description?.slice(0, 200)}</div>
           <div className="flex flex-wrap gap-3 mt-3 text-xs">
@@ -199,7 +222,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
           </div>
         </div>
       )}
-      <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(circle at 30% 20%, #1e293b 0%, #020617 70%)', borderRadius: 12, overflow: 'hidden' }}>
+      <div ref={containerRef} style={{ width: '100%', height: '78vh', background: '#050505', borderRadius: 12, overflow: 'hidden' }}>
         {nodes.length === 0 && <div className="flex items-center justify-center h-full text-gray-500">Building graph…</div>}
         {nodes.length > 0 && (
           <ForceGraph3D
@@ -207,30 +230,27 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             width={size.w}
             height={size.h}
             graphData={view}
-            backgroundColor="rgba(0,0,0,0)"
+            // Opaque clear colour: a transparent canvas is re-blended with the
+            // page on every frame.
+            backgroundColor="#050505"
+            rendererConfig={RENDERER_CONFIG}
             showNavInfo={false}
             nodeRelSize={6}
-            nodeVal={(n) => n.val}
+            nodeVal="val"
             nodeLabel=""
-            nodeColor={(n) => {
-              const isHighlight = highlightNodes.size === 0 || highlightNodes.has(n.id);
-              return isHighlight ? (n.color ?? '#3b82f6') : 'rgba(75,85,99,0.3)';
-            }}
+            nodeColor={nodeColor}
             nodeOpacity={0.95}
             nodeThreeObject={nodeThreeObject}
             nodeThreeObjectExtend={true}
-            linkColor={(l) => {
-              if (highlightLinks.size > 0) return highlightLinks.has(l) ? 'rgba(96,165,250,0.9)' : 'rgba(75,85,99,0.04)';
-              return 'rgba(148,163,184,0.16)';
-            }}
+            linkColor={linkColor}
             // A non-zero linkWidth makes react-force-graph build a CylinderGeometry
             // *mesh* per link; at ~5k links that alone cost ~60% of the frame budget.
             // 0 renders them as THREE.Line instead. "Thick links" opts back in.
-            linkWidth={settings.thickLinks ? (l) => 0.3 + Math.min(2, l.weight * 0.5) : 0}
+            linkWidth={settings.thickLinks ? linkWidth : 0}
             linkOpacity={0.5}
-            linkDirectionalParticles={(l) => (highlightLinks.has(l) ? 3 : 0)}
+            linkDirectionalParticles={linkParticles}
             linkDirectionalParticleSpeed={0.005}
-            linkDirectionalParticleColor={() => 'rgba(96,165,250,1)'}
+            linkDirectionalParticleColor={PARTICLE_COLOR}
             linkDirectionalParticleWidth={2.5}
             d3AlphaDecay={0.02}
             d3VelocityDecay={0.35}
@@ -240,9 +260,9 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             cooldownTicks={simTicks}
             onEngineStop={() => simTicks !== 0 && setSimTicks(0)}
             enableNodeDrag={settings.drag}
-            onNodeClick={(node) => onSelectNode && onSelectNode({ full_name: node.full_name })}
-            onBackgroundClick={() => onSelectNode && onSelectNode(null)}
-            onNodeHover={(node) => setHovered(node || null)}
+            onNodeClick={handleClick}
+            onBackgroundClick={handleBackground}
+            onNodeHover={handleHover}
           />
         )}
       </div>
