@@ -231,7 +231,7 @@ function AskView() {
         <button
           onClick={() => q.trim() && askMaybeCached(q)}
           disabled={loading || !q.trim()}
-          className="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg font-medium text-white transition-colors"
+          className="px-5 py-2.5 bg-white hover:bg-gray-200 disabled:bg-gray-700 disabled:text-gray-500 disabled:cursor-not-allowed rounded-md font-medium text-black transition-colors"
         >{loading ? '…' : 'Ask'}</button>
       </div>
 
@@ -371,13 +371,15 @@ function LabContent() {
     <div>
       <StatusBanner />
       <HealthHistogram />
-      <div className="flex flex-wrap gap-2 mb-5">
+      <div className="sticky top-0 z-30 -mx-4 px-4 mb-6 bg-black/80 backdrop-blur-md border-b border-gray-700 flex flex-wrap gap-1">
         {TABS.map((t) => (
           <button
             key={t.key}
             onClick={() => setTab(t.key)}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-              tab === t.key ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+            className={`relative px-3 py-3 text-sm transition-colors ${
+              tab === t.key
+                ? 'text-white after:absolute after:inset-x-2 after:bottom-[-1px] after:h-0.5 after:bg-white'
+                : 'text-gray-400 hover:text-white'
             }`}
           >
             {t.label}
@@ -416,11 +418,11 @@ function LabContent() {
 
 export default function LabApp() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white py-6 px-4">
+    <div className="min-h-screen bg-black text-white py-8 px-4">
       <div className="max-w-[1920px] mx-auto">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold">Stars Lab</h1>
-          <p className="text-gray-400 text-sm">Knowledge graph view of your starred repos — relationships, communities, lifecycle.</p>
+          <h1 className="text-3xl font-semibold tracking-tight">Stars Lab</h1>
+          <p className="text-gray-400 text-sm mt-1">Knowledge graph view of your starred repos — relationships, communities, lifecycle.</p>
         </div>
         <GraphProvider>
           <LabContent />

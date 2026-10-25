@@ -1,0 +1,15 @@
+# Upload only what the build needs; secrets and local working data stay home
+.env
+.env.*
+!.env.example
+node_modules
+dist
+src/data
+graphify-out
+docs
+.netlify
+.claude
+reports/*.candidates.*
+reports/*.err
+**/__pycache__
+.pytest_cache

@@ -5,7 +5,7 @@ function StageBadge({ stage }) {
   return (
     <span
       className="px-2 py-0.5 rounded-full text-xs font-bold"
-      style={{ backgroundColor: STAGE_COLOR[stage] ?? '#6b7280', color: '#0a0a0a' }}
+      style={{ backgroundColor: STAGE_COLOR[stage] ?? '#7d7d7d', color: '#0a0a0a' }}
     >
       {stage}
     </span>
@@ -63,7 +63,7 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
   const otherRepoNames = nodes.filter(n => n.full_name !== repoFullName).map(n => n.full_name).sort();
 
   return (
-    <div className="fixed inset-y-0 right-0 w-full md:w-[600px] bg-gray-900 border-l border-gray-700 shadow-2xl overflow-y-auto z-50">
+    <div className="layer fixed inset-y-0 right-0 w-full md:w-[600px] bg-gray-900 border-l border-gray-700 shadow-2xl overflow-y-auto overscroll-contain z-50">
       <div className="sticky top-0 bg-gray-900 border-b border-gray-800 p-4 flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-2 flex-wrap">
@@ -193,7 +193,7 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
               <button
                 onClick={() => compareTarget && onCompareWith(repoFullName, compareTarget)}
                 disabled={!compareTarget}
-                className="px-3 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed rounded-lg text-sm font-medium text-white"
+                className="px-3 py-2 bg-white hover:bg-gray-200 disabled:bg-gray-700 text-black disabled:cursor-not-allowed rounded-md text-sm font-medium"
               >Compare</button>
             </div>
           </div>

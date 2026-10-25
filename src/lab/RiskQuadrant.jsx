@@ -110,7 +110,7 @@ export default function RiskQuadrant({ onSelect }) {
                     onClick={() => onSelect?.(n.full_name)}
                     className="flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-gray-600 bg-gray-800 hover:border-blue-500 text-gray-200"
                   >
-                    <span className="w-2 h-2 rounded-full" style={{ background: STAGE_COLOR[n.lifecycle_stage] || '#6b7280' }} />
+                    <span className="w-2 h-2 rounded-full" style={{ background: STAGE_COLOR[n.lifecycle_stage] || '#7d7d7d' }} />
                     {n.full_name}
                     <span className={n.health_score < HEALTH_RISK ? 'text-red-400' : 'text-gray-500'}>{n.health_score}</span>
                   </button>
@@ -141,7 +141,7 @@ export default function RiskQuadrant({ onSelect }) {
                 : 'border-gray-600 text-gray-200 bg-gray-800'
             }`}
           >
-            <span className="w-2.5 h-2.5 rounded-full" style={{ background: hidden.has(stage) ? '#4b5563' : color }} />
+            <span className="w-2.5 h-2.5 rounded-full" style={{ background: hidden.has(stage) ? '#454545' : color }} />
             {stage} <span className="text-gray-500">{model.counts[stage] || 0}</span>
           </button>
         ))}
@@ -164,17 +164,17 @@ export default function RiskQuadrant({ onSelect }) {
           {/* recessive grid + axes */}
           {model.yTicks.map(({ v, y }) => (
             <g key={`y${v}`}>
-              <line x1={M.left} y1={y} x2={W - M.right} y2={y} stroke="#374151" strokeOpacity="0.4" />
-              <text x={M.left - 8} y={y + 3.5} textAnchor="end" fill="#9ca3af" fontSize="11">{yTickLabel(v)}</text>
+              <line x1={M.left} y1={y} x2={W - M.right} y2={y} stroke="#2e2e2e" strokeOpacity="0.4" />
+              <text x={M.left - 8} y={y + 3.5} textAnchor="end" fill="#a1a1a1" fontSize="11">{yTickLabel(v)}</text>
             </g>
           ))}
           {model.xTicks.map(({ v, x }) => (
-            <text key={`x${v}`} x={x} y={H - M.bottom + 18} textAnchor="middle" fill="#9ca3af" fontSize="11">{v}</text>
+            <text key={`x${v}`} x={x} y={H - M.bottom + 18} textAnchor="middle" fill="#a1a1a1" fontSize="11">{v}</text>
           ))}
-          <text x={M.left + (W - M.left - M.right) / 2} y={H - 8} textAnchor="middle" fill="#6b7280" fontSize="11.5">
+          <text x={M.left + (W - M.left - M.right) / 2} y={H - 8} textAnchor="middle" fill="#7d7d7d" fontSize="11.5">
             Health score →
           </text>
-          <text x={16} y={M.top + model.plotH / 2} textAnchor="middle" fill="#6b7280" fontSize="11.5"
+          <text x={16} y={M.top + model.plotH / 2} textAnchor="middle" fill="#7d7d7d" fontSize="11.5"
             transform={`rotate(-90 16 ${M.top + model.plotH / 2})`}>
             Momentum (est. +stars / 30d) →
           </text>
@@ -187,9 +187,9 @@ export default function RiskQuadrant({ onSelect }) {
                 cx={x}
                 cy={y}
                 r={r}
-                fill={STAGE_COLOR[n.lifecycle_stage] || '#6b7280'}
+                fill={STAGE_COLOR[n.lifecycle_stage] || '#7d7d7d'}
                 fillOpacity={matchIds.size === 0 || matchIds.has(n.id) ? 0.75 : 0.12}
-                stroke={matchIds.has(n.id) ? '#f9fafb' : '#111827'}
+                stroke={matchIds.has(n.id) ? '#f9fafb' : '#0a0a0a'}
                 strokeWidth={matchIds.has(n.id) ? 2 : 1}
                 className="cursor-pointer"
                 onMouseEnter={(e) => showTip(e, n)}

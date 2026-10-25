@@ -107,12 +107,12 @@ export default function AllRepos({ onSelect }) {
         {filtered.length} of {repos.length} repos · click any to open detail
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[60vh] overflow-y-auto pr-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[60vh] overflow-y-auto overscroll-contain pr-2 layer">
         {filtered.map((r) => (
           <button
             key={r.id}
             onClick={() => onSelect && onSelect(r.full_name)}
-            className="text-left bg-gray-900 hover:bg-gray-700 transition-colors rounded-lg p-3 border border-gray-700"
+            className="cv-auto text-left bg-gray-900 hover:bg-gray-800 transition-colors rounded-lg p-3 border border-gray-700 hover:border-gray-600"
           >
             <div className="flex items-center justify-between gap-2">
               <span className="text-blue-400 font-semibold truncate">{r.full_name}</span>

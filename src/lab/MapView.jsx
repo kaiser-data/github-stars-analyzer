@@ -15,7 +15,7 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
   );
   return (
     <div className="absolute top-3 right-3 z-10 bg-gray-900/90 backdrop-blur border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[260px]">
-      <button onClick={onRecenter} className="w-full mb-2 px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded text-white font-medium">Recenter view</button>
+      <button onClick={onRecenter} className="w-full mb-2 px-3 py-1.5 bg-white hover:bg-gray-200 rounded-md text-black font-medium">Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
       <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
       <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
@@ -166,7 +166,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
     const label = name.length > 22 ? name.slice(0, 22) + '…' : name;
     const sprite = new SpriteText(label);
     sprite.color = '#f1f5f9';
-    sprite.backgroundColor = 'rgba(15,23,42,0.85)';
+    sprite.backgroundColor = 'rgba(10,10,10,0.85)';
     sprite.padding = 3;
     sprite.borderRadius = 4;
     sprite.textHeight = 5;

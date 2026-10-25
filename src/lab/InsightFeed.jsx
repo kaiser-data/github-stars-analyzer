@@ -97,7 +97,7 @@ export default function InsightFeed({ onSelect }) {
               key={key}
               onClick={() => setActiveKey(key)}
               className={`text-left px-3 py-2 rounded-lg text-sm transition-colors ${
-                activeKey === key ? 'bg-blue-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
+                activeKey === key ? 'bg-white text-black' : 'bg-gray-900 border border-gray-700 text-gray-300 hover:text-white hover:border-gray-600'
               }`}
             >
               {q.title}

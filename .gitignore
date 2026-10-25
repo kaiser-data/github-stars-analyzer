@@ -51,3 +51,6 @@ reports/*.candidates.json
 
 # Reviewer stderr logs — transient tool output, not deliverables
 reports/*.err
+
+# Local Vercel link
+.vercel

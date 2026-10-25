@@ -4,6 +4,8 @@
   "description": "Analyze GitHub starred repositories with comprehensive analytics",
   "private": true,
   "dependencies": {
+    "@fontsource-variable/geist": "^5.2.8",
+    "@fontsource-variable/geist-mono": "^5.2.7",
     "dexie": "^4.4.2",
     "graphology": "^0.26.0",
     "graphology-communities-louvain": "^2.0.2",

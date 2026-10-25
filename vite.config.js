@@ -44,6 +44,36 @@ function preloadThreeChunk() {
   };
 }
 
+// Inline the (small, Tailwind-purged) stylesheet into the HTML so first paint
+// doesn't wait on a second request, and preload the Latin Geist face so text
+// renders in the final font without a swap. Both names carry build hashes.
+function inlineCriticalCss() {
+  return {
+    name: 'inline-critical-css',
+    enforce: 'post',
+    transformIndexHtml: {
+      order: 'post',
+      handler(html, ctx) {
+        if (!ctx.bundle) return html;
+        let out = html;
+        for (const [file, chunk] of Object.entries(ctx.bundle)) {
+          if (chunk.type !== 'asset' || !/^assets\/index-.*\.css$/.test(file)) continue;
+          const link = new RegExp(`<link rel="stylesheet"[^>]*href="/${file.replace(/[.]/g, '\\.')}"[^>]*>`);
+          if (link.test(out)) out = out.replace(link, () => `<style>${chunk.source}</style>`);
+        }
+        const font = Object.keys(ctx.bundle).find((k) => /geist-latin-wght-normal.*\.woff2$/.test(k));
+        if (font) {
+          out = out.replace(
+            '</head>',
+            `  <link rel="preload" href="/${font}" as="font" type="font/woff2" crossorigin>\n  </head>`
+          );
+        }
+        return out;
+      },
+    },
+  };
+}
+
 // Heavy 3D / force-graph deps split off LabApp so the initial route can
 // stream + parse the React shell first; the 3D chunk loads in parallel.
 const THREE_CHUNK = new Set([
@@ -68,7 +98,7 @@ const REACT_CHUNK = new Set([
 ]);
 
 export default defineConfig({
-  plugins: [react(), patchThreeForcegraph(), preloadThreeChunk()],
+  plugins: [react(), patchThreeForcegraph(), preloadThreeChunk(), inlineCriticalCss()],
   resolve: {
     dedupe: ['three'],
   },

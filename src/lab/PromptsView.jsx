@@ -47,7 +47,7 @@ function CopyBriefButton({ brief }) {
     <>
       <button
         onClick={copy}
-        className="text-sm bg-blue-600 hover:bg-blue-500 text-white rounded-lg px-4 py-2 transition-colors"
+        className="text-sm bg-white hover:bg-gray-200 text-black rounded-md px-4 py-2 transition-colors"
       >
         {label}
       </button>

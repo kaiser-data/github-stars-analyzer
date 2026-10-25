@@ -89,7 +89,7 @@ function ReportReader({ report, onBack }) {
         </div>
       )}
       {md && (
-        <article className="max-w-none bg-gray-900/40 border border-gray-800 rounded-xl p-6">
+        <article className="cv-children max-w-none bg-gray-900 border border-gray-700 rounded-xl p-6">
           <ReactMarkdown remarkPlugins={[remarkGfm]} components={MD_COMPONENTS}>
             {md}
           </ReactMarkdown>

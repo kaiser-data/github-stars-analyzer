@@ -1,12 +1,44 @@
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  html {
+    background: #000;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    margin: 0;
+    background: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  ::selection {
+    background: rgba(82, 168, 255, 0.35);
+  }
+}
+
+@layer utilities {
+  /* Skip layout and paint for off-screen rows and report sections until they
+     scroll near the viewport; `auto` remembers the measured size afterwards. */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 96px;
+  }
+  .cv-children > * {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 120px;
+  }
+  /* Own compositor layer for panels that slide or scroll on their own */
+  .layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
 }

@@ -4,7 +4,7 @@ const GraphContext = createContext(null);
 
 export const STAGE_COLOR = {
   Hot: '#ef4444', Rising: '#f59e0b', Classic: '#10b981',
-  Mature: '#3b82f6', Declining: '#a78bfa', Abandoned: '#6b7280',
+  Mature: '#3b82f6', Declining: '#a78bfa', Abandoned: '#7d7d7d',
 };
 
 export function GraphProvider({ children }) {

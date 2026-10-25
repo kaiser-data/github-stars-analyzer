@@ -1,16 +1,16 @@
-# Graph Report - github-stars-analyzer  (2026-10-24)
+# Graph Report - github-stars-analyzer  (2026-10-25)
 
 ## Corpus Check
-- 232 files · ~4,058,158 words
+- 234 files · ~4,058,518 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2030 nodes · 2090 edges · 136 communities (119 shown, 17 thin omitted)
+- 2048 nodes · 2107 edges · 138 communities (119 shown, 19 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `81115402`
+- Built from commit: `a60de6eb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -136,6 +136,7 @@
 - [[_COMMUNITY___init__.py|__init__.py]]
 - [[_COMMUNITY_Decision Classifiers & Guard Models — Landscape Report|Decision Classifiers & Guard Models — Landscape Report]]
 - [[_COMMUNITY_decision_classifiers.py|decision_classifiers.py]]
+- [[_COMMUNITY_ai_engineer_stack.py|ai_engineer_stack.py]]
 - [[_COMMUNITY_GLiClass as a discovery relevance signal — pilot, 2026-09-25|GLiClass as a discovery relevance signal — pilot, 2026-09-25]]
 - [[_COMMUNITY_gliclass_score.py|gliclass_score.py]]
 - [[_COMMUNITY_Handoff — 2026-09-26|Handoff — 2026-09-26]]
@@ -144,9 +145,10 @@
 - [[_COMMUNITY_Harness Engineering — Ten Methods That Make an Agent Harness Good|Harness Engineering — Ten Methods That Make an Agent Harness Good]]
 - [[_COMMUNITY_harness_engineering.py|harness_engineering.py]]
 - [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
+- [[_COMMUNITY_POST|POST]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Shared helpers for the report generators in scripts/reports/.  Every generator r` - 32 edges
+1. `svg_hbar()` - 36 edges
 2. `useGraph()` - 20 edges
 3. `scripts` - 19 edges
 4. `The field guide, by layer` - 15 edges
@@ -172,7 +174,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (136 total, 17 thin omitted)
+## Communities (138 total, 19 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -180,11 +182,11 @@ Nodes (28): ALL_STAGES, AllRepos(), Comparator(), GraphContext, GraphProvider(),
 
 ### Community 1 - "Community 1"
 Cohesion: 0.04
-Nodes (44): dependencies, dexie, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path, lucide-react, react (+36 more)
+Nodes (46): dependencies, dexie, @fontsource-variable/geist, @fontsource-variable/geist-mono, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path (+38 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.09
-Nodes (24): clientIp(), config, extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER (+16 more)
+Nodes (24): clientIp(), extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER, PROVIDER_HOSTS (+16 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.05
@@ -294,10 +296,6 @@ Nodes (20): Architecture, Ask AI — natural language over the graph, Ask AI set
 Cohesion: 0.10
 Nodes (20): Adjacent (deliberately not listed here), By layer, Claude Code Superpowers — Setup Strategies from Your Stars, Code-graph / retrieval, Config / setup kit, Executive summary, Graph analysis — how they relate, Harness / coding agent (+12 more)
 
-### Community 32 - "Community 32"
-Cohesion: 0.08
-Nodes (3): Dataset-derived momentum signal., trend_score(), Shared helpers for the report generators in scripts/reports/.  Every generator r
-
 ### Community 33 - "Community 33"
 Cohesion: 0.10
 Nodes (19): 🔥 Agentic payments (x402), 🔥 AI × finance / trading, Blockchain Repos You Need to Know — A Field Guide, Caveats, Client libraries (TS/JS), Contract libraries & standards, DeFi protocol references, Dev toolkits (+11 more)
@@ -307,8 +305,8 @@ Cohesion: 0.10
 Nodes (19): 🔥 Agentic payments (x402), 🔥 AI × finance / trading, Blockchain Repos You Need to Know — A Field Guide, Caveats, Client libraries (TS/JS), Contract libraries & standards, DeFi protocol references, Dev toolkits (+11 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.13
-Nodes (18): baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), load_data(), make_node_for(), newly_archived(), Dependency-free horizontal bar chart as an SVG string.      items: [(label, nume (+10 more)
+Cohesion: 0.11
+Nodes (18): meta_bits(), baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), load_data(), make_node_for(), newly_archived() (+10 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.11
@@ -622,25 +620,29 @@ Nodes (5): Anything that surprised me, Self-review findings, Task 1 report: Prom
 Cohesion: 0.50
 Nodes (3): Current scores, Scoring review request, What to return
 
+### Community 125 - "Decision Classifiers & Guard Models — Landscape Report"
+Cohesion: 0.15
+Nodes (12): includeFiles, maxDuration, buildCommand, cleanUrls, framework, functions, api/ask.mjs, headers (+4 more)
+
 ## Knowledge Gaps
-- **1372 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1367 more)
+- **1385 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1380 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Shared helpers for the report generators in scripts/reports/.  Every generator r` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `svg_hbar()` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `ai_engineer_stack.py`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **Why does `fmt_stars()` connect `Community 35` to `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1415 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1429 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.060496067755595885 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.044444444444444446 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.0896551724137931 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08817204301075268 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.05310734463276836 - nodes in this community are weakly interconnected._
-- **Should `Community 4` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
