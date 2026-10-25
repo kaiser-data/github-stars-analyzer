@@ -1,7 +1,7 @@
-# Graph Report - github-stars-analyzer  (2026-10-25)
+# Graph Report - github-stars-analyzer  (2026-10-26)
 
 ## Corpus Check
-- 236 files · ~4,060,928 words
+- 236 files · ~4,061,294 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `501f4238`
+- Built from commit: `b913cbed`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -149,7 +149,7 @@
 - [[_COMMUNITY_Handoff — 2026-10-25|Handoff — 2026-10-25]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Return (classified, graph) dicts — the two inputs every report uses.` - 32 edges
+1. `load_data()` - 33 edges
 2. `useGraph()` - 20 edges
 3. `scripts` - 19 edges
 4. `The field guide, by layer` - 15 edges
@@ -306,8 +306,8 @@ Cohesion: 0.10
 Nodes (19): 🔥 Agentic payments (x402), 🔥 AI × finance / trading, Blockchain Repos You Need to Know — A Field Guide, Caveats, Client libraries (TS/JS), Contract libraries & standards, DeFi protocol references, Dev toolkits (+11 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.11
-Nodes (19): meta_bits(), baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), load_data(), make_node_for(), newly_archived() (+11 more)
+Cohesion: 0.12
+Nodes (18): meta_bits(), baseline_snapshot(), _esc(), fmt_int(), fmt_stars(), make_node_for(), newly_archived(), Shared helpers for the report generators in scripts/reports/.  Every generator r (+10 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.11
@@ -637,10 +637,8 @@ Nodes (8): 1. Commits this session, 2. Hosting: Netlify → Vercel, 3. Styling a
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Return (classified, graph) dicts — the two inputs every report uses.` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `ai_engineer_stack.py`?**
+- **Why does `load_data()` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `ai_engineer_stack.py`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `load_data()` connect `Community 35` to `Community 32`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
   _1441 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
@@ -651,3 +649,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.06464646464646465 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.05310734463276836 - nodes in this community are weakly interconnected._
+- **Should `Community 4` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

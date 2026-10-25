@@ -545,8 +545,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/refresh-data.yml": {
-    "mtime": 1788047128.878227,
-    "ast_hash": "65387bac9dadd0044ef108bea7ba1ac3",
+    "mtime": 1792970378.0813136,
+    "ast_hash": "c3acdb43d2985b9a3a249a95e27afbbf",
     "semantic_hash": ""
   },
   "public/reports/assets/agent-orchestration-categories.svg": {
@@ -1900,8 +1900,13 @@
     "semantic_hash": ""
   },
   "docs/HANDOFF-2026-10-25.md": {
-    "mtime": 1792965958.246532,
-    "ast_hash": "32f54ba75a8d1175ce8250e25fda6da4",
+    "mtime": 1792970023.6459768,
+    "ast_hash": "761912e96ee5406566bb573fbf215032",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy.yml": {
+    "mtime": 1792970369.0743375,
+    "ast_hash": "95d6123077a7d82f684da970e044dffd",
     "semantic_hash": ""
   }
 }
