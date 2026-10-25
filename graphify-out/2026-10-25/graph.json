@@ -3630,7 +3630,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "community": 32,
+      "community": 35,
       "norm_label": "svg_hbar()"
     },
     {
@@ -3740,7 +3740,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_102",
-      "community": 32,
+      "community": 35,
       "norm_label": "dependency-free horizontal bar chart as an svg string.      items: [(label, nume"
     },
     {
@@ -3760,7 +3760,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
-      "community": 35,
+      "community": 32,
       "norm_label": "markdown for curated entries that have left the dataset.      `sample.mjs` drops"
     },
     {
@@ -4784,10 +4784,30 @@
       "norm_label": "mapview.jsx"
     },
     {
-      "label": "ControlPanel()",
+      "label": "RENDERER_CONFIG",
       "file_type": "code",
       "source_file": "src/lab/MapView.jsx",
       "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_lab_mapview_renderer_config",
+      "community": 0,
+      "norm_label": "renderer_config"
+    },
+    {
+      "label": "PARTICLE_COLOR()",
+      "file_type": "code",
+      "source_file": "src/lab/MapView.jsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_lab_mapview_particle_color",
+      "community": 0,
+      "norm_label": "particle_color()"
+    },
+    {
+      "label": "ControlPanel()",
+      "file_type": "code",
+      "source_file": "src/lab/MapView.jsx",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_lab_mapview_controlpanel",
       "community": 0,
@@ -4797,7 +4817,7 @@
       "label": "MapView()",
       "file_type": "code",
       "source_file": "src/lab/MapView.jsx",
-      "source_location": "L40",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "src_lab_mapview_mapview",
       "community": 0,
@@ -5074,10 +5094,20 @@
       "norm_label": "reposbytopic()"
     },
     {
-      "label": "ControlPanel()",
+      "label": "PARTICLE_COLOR()",
       "file_type": "code",
       "source_file": "src/lab/TopicMap.jsx",
       "source_location": "L103",
+      "_origin": "ast",
+      "id": "src_lab_topicmap_particle_color",
+      "community": 0,
+      "norm_label": "particle_color()"
+    },
+    {
+      "label": "ControlPanel()",
+      "file_type": "code",
+      "source_file": "src/lab/TopicMap.jsx",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "src_lab_topicmap_controlpanel",
       "community": 0,
@@ -5087,7 +5117,7 @@
       "label": "TopicMap()",
       "file_type": "code",
       "source_file": "src/lab/TopicMap.jsx",
-      "source_location": "L133",
+      "source_location": "L135",
       "_origin": "ast",
       "id": "src_lab_topicmap_topicmap",
       "community": 0,
@@ -23995,7 +24025,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
       "confidence_score": 1.0
     },
     {
@@ -24120,7 +24150,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24195,17 +24225,6 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/rag_eval_harness.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -24217,17 +24236,6 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/stump_base.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -24237,28 +24245,6 @@
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_main",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/trading_dashboard.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_prompt_lib.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_resolve_stack",
-      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -24413,6 +24399,50 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/rag_eval_harness.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/stump_base.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/trading_dashboard.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_prompt_lib.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/prompts/rag_eval_harness.py",
@@ -24450,7 +24480,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "scripts_reports_agent_harnesses",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24461,7 +24491,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_memory_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24554,7 +24584,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_orchestration_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24607,7 +24637,7 @@
       "source_location": "L30",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agentic_terminals_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24648,7 +24678,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_ai_coding_tuis_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24659,7 +24689,7 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "scripts_reports_ai_engineer_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24690,7 +24720,7 @@
       "source_location": "L24",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24732,7 +24762,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_essentials_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24784,7 +24814,7 @@
       "source_location": "L18",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24929,7 +24959,7 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_charting_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24950,7 +24980,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_claude_code_setups",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24961,7 +24991,7 @@
       "source_location": "L27",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_decision_classifiers_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -24992,7 +25022,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_document_extraction_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -25003,7 +25033,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "scripts_reports_finetuning_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -25014,7 +25044,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_harness_engineering",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -25045,7 +25075,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_hermes_vs_openclaw_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -25096,7 +25126,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_jetson_inference_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
       "confidence_score": 1.0
     },
     {
@@ -25376,155 +25406,12 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/memory_frameworks.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "scripts_reports_memory_frameworks",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/reports/lib.py",
       "source_location": "L102",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_102",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/llm_evaluation.py",
-      "source_location": "L20",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_llm_evaluation_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/local_vs_infra_stack.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_local_vs_infra_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/mcp_tooling.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_mcp_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/meeting_transcription.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_meeting_transcription_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/notebooklm_stack.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_notebooklm_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/openclaw_ecosystem.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_openclaw_ecosystem_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/printing_stack.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_printing_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/rag_tooling.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_rag_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/snapshot.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_snapshot_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/trending_now.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/voice_agents.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_voice_agents_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/which_claw.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_which_claw_py",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_svg_hbar",
       "confidence_score": 1.0
     },
@@ -25558,6 +25445,149 @@
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_row_meta",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_activity_label"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/memory_frameworks.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_reports_memory_frameworks",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/llm_evaluation.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_llm_evaluation_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/local_vs_infra_stack.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_local_vs_infra_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/mcp_tooling.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_mcp_tooling_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/meeting_transcription.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_meeting_transcription_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/notebooklm_stack.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_notebooklm_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/openclaw_ecosystem.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_openclaw_ecosystem_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/printing_stack.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_printing_stack_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/rag_tooling.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_rag_tooling_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/snapshot.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_snapshot_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/trending_now.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/voice_agents.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_voice_agents_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/which_claw.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_which_claw_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -26693,7 +26723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lab/MapView.jsx",
-      "source_location": "L43",
+      "source_location": "L46",
       "weight": 1.0,
       "source": "src_lab_mapview_mapview",
       "target": "src_lab_graphprovider_usegraph"
@@ -26759,7 +26789,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/lab/TopicMap.jsx",
-      "source_location": "L136",
+      "source_location": "L138",
       "weight": 1.0,
       "source": "src_lab_topicmap_topicmap",
       "target": "src_lab_graphprovider_usegraph"
@@ -27048,7 +27078,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/MapView.jsx",
-      "source_location": "L8",
+      "source_location": "L11",
       "weight": 1.0,
       "source": "src_lab_mapview",
       "target": "src_lab_mapview_controlpanel",
@@ -27058,10 +27088,30 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/MapView.jsx",
-      "source_location": "L40",
+      "source_location": "L43",
       "weight": 1.0,
       "source": "src_lab_mapview",
       "target": "src_lab_mapview_mapview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lab/MapView.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_lab_mapview",
+      "target": "src_lab_mapview_particle_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lab/MapView.jsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_lab_mapview",
+      "target": "src_lab_mapview_renderer_config",
       "confidence_score": 1.0
     },
     {
@@ -27315,7 +27365,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/RiskQuadrant.jsx",
-      "source_location": "L219",
+      "source_location": "L233",
       "weight": 1.0,
       "source": "src_lab_riskquadrant_riskquadrant",
       "target": "src_lab_riskquadrant_fmt",
@@ -27345,10 +27395,20 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/TopicMap.jsx",
-      "source_location": "L103",
+      "source_location": "L105",
       "weight": 1.0,
       "source": "src_lab_topicmap",
       "target": "src_lab_topicmap_controlpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lab/TopicMap.jsx",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "src_lab_topicmap",
+      "target": "src_lab_topicmap_particle_color",
       "confidence_score": 1.0
     },
     {
@@ -27375,7 +27435,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/TopicMap.jsx",
-      "source_location": "L133",
+      "source_location": "L135",
       "weight": 1.0,
       "source": "src_lab_topicmap",
       "target": "src_lab_topicmap_topicmap",
@@ -41803,5 +41863,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a60de6eb04d5f329cb7c33789d72927f20c502fe"
+  "built_at_commit": "8e73495fb4c2a237cedbf4970e87f4e3269906ce"
 }

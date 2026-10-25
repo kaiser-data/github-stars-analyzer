@@ -295,8 +295,8 @@
     "semantic_hash": ""
   },
   "src/lab/LabApp.jsx": {
-    "mtime": 1792953838.2621088,
-    "ast_hash": "c33dc35338e8d116df5b629a74559298",
+    "mtime": 1792965820.3993099,
+    "ast_hash": "5212da3b09428f75c5b58621afd55c06",
     "semantic_hash": ""
   },
   "src/lab/MapView.jsx": {
@@ -1885,13 +1885,23 @@
     "semantic_hash": ""
   },
   "api/ask.mjs": {
-    "mtime": 1792952104.9689949,
-    "ast_hash": "000e1bf2d6099ad63ec98ed500b38138",
+    "mtime": 1792965803.8532972,
+    "ast_hash": "69253a7045114dd03ef80f59866a8ace",
     "semantic_hash": ""
   },
   "vercel.json": {
     "mtime": 1792870140.804311,
     "ast_hash": "f03063ba62cd7a9b2a1469f45dbe9201",
+    "semantic_hash": ""
+  },
+  "scripts/lib/spend-budget.mjs": {
+    "mtime": 1792965785.3909435,
+    "ast_hash": "05a51d735770f62faf6af76a11504960",
+    "semantic_hash": ""
+  },
+  "docs/HANDOFF-2026-10-25.md": {
+    "mtime": 1792965958.246532,
+    "ast_hash": "32f54ba75a8d1175ce8250e25fda6da4",
     "semantic_hash": ""
   }
 }

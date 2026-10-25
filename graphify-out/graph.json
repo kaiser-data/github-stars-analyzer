@@ -17,7 +17,7 @@
       "label": "LLM_BASE_URL",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L20",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "api_ask_llm_base_url",
       "community": 2,
@@ -27,7 +27,7 @@
       "label": "rateLog",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L34",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "api_ask_ratelog",
       "community": 2,
@@ -37,7 +37,7 @@
       "label": "clientIp()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L35",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "api_ask_clientip",
       "community": 2,
@@ -47,7 +47,7 @@
       "label": "rateCheck()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L44",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "api_ask_ratecheck",
       "community": 2,
@@ -57,7 +57,7 @@
       "label": "PROVIDER_HOSTS",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L66",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "api_ask_provider_hosts",
       "community": 2,
@@ -67,7 +67,7 @@
       "label": "providerLabel()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L79",
+      "source_location": "L83",
       "_origin": "ast",
       "id": "api_ask_providerlabel",
       "community": 2,
@@ -77,7 +77,7 @@
       "label": "PROVIDER",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L86",
+      "source_location": "L90",
       "_origin": "ast",
       "id": "api_ask_provider",
       "community": 2,
@@ -87,7 +87,7 @@
       "label": "getContext()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L93",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "api_ask_getcontext",
       "community": 2,
@@ -97,7 +97,7 @@
       "label": "extractErrorMessage()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L105",
+      "source_location": "L109",
       "_origin": "ast",
       "id": "api_ask_extracterrormessage",
       "community": 2,
@@ -107,7 +107,7 @@
       "label": "jsonResponse()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L119",
+      "source_location": "L123",
       "_origin": "ast",
       "id": "api_ask_jsonresponse",
       "community": 2,
@@ -117,7 +117,7 @@
       "label": "handler()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L126",
+      "source_location": "L130",
       "_origin": "ast",
       "id": "api_ask_handler",
       "community": 2,
@@ -127,7 +127,7 @@
       "label": "streamCompletion()",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L213",
+      "source_location": "L229",
       "_origin": "ast",
       "id": "api_ask_streamcompletion",
       "community": 2,
@@ -2294,6 +2294,146 @@
       "norm_label": "loadignored()"
     },
     {
+      "label": "spend-budget.mjs",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget",
+      "community": 2,
+      "norm_label": "spend-budget.mjs"
+    },
+    {
+      "label": "num()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_num",
+      "community": 2,
+      "norm_label": "num()"
+    },
+    {
+      "label": "DAILY_USD",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_daily_usd",
+      "community": 2,
+      "norm_label": "daily_usd"
+    },
+    {
+      "label": "WEEKLY_USD",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_weekly_usd",
+      "community": 2,
+      "norm_label": "weekly_usd"
+    },
+    {
+      "label": "PRICE_IN",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_price_in",
+      "community": 2,
+      "norm_label": "price_in"
+    },
+    {
+      "label": "PRICE_OUT",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_price_out",
+      "community": 2,
+      "norm_label": "price_out"
+    },
+    {
+      "label": "REDIS_URL",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_redis_url",
+      "community": 2,
+      "norm_label": "redis_url"
+    },
+    {
+      "label": "estimateTokens()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_estimatetokens",
+      "community": 2,
+      "norm_label": "estimatetokens()"
+    },
+    {
+      "label": "costMicros()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_costmicros",
+      "community": 2,
+      "norm_label": "costmicros()"
+    },
+    {
+      "label": "periodKeys()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_periodkeys",
+      "community": 2,
+      "norm_label": "periodkeys()"
+    },
+    {
+      "label": "redis()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_redis",
+      "community": 2,
+      "norm_label": "redis()"
+    },
+    {
+      "label": "add()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_add",
+      "community": 2,
+      "norm_label": "add()"
+    },
+    {
+      "label": "usd()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_usd",
+      "community": 2,
+      "norm_label": "usd()"
+    },
+    {
+      "label": "reserve()",
+      "file_type": "code",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "scripts_lib_spend_budget_reserve",
+      "community": 2,
+      "norm_label": "reserve()"
+    },
+    {
       "label": "precompute-questions.mjs",
       "file_type": "code",
       "source_file": "scripts/precompute-questions.mjs",
@@ -3690,7 +3830,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
-      "community": 35,
+      "community": 32,
       "norm_label": "return (classified, graph) dicts \u2014 the two inputs every report uses."
     },
     {
@@ -3760,7 +3900,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
-      "community": 32,
+      "community": 35,
       "norm_label": "markdown for curated entries that have left the dataset.      `sample.mjs` drops"
     },
     {
@@ -4747,7 +4887,7 @@
       "label": "StatusBanner()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L310",
+      "source_location": "L316",
       "_origin": "ast",
       "id": "src_lab_labapp_statusbanner",
       "community": 0,
@@ -4757,7 +4897,7 @@
       "label": "LabContent()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L334",
+      "source_location": "L340",
       "_origin": "ast",
       "id": "src_lab_labapp_labcontent",
       "community": 0,
@@ -4767,7 +4907,7 @@
       "label": "LabApp()",
       "file_type": "code",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L419",
+      "source_location": "L425",
       "_origin": "ast",
       "id": "src_lab_labapp_labapp",
       "community": 0,
@@ -7792,6 +7932,96 @@
       "id": "users_marty_claude_projects_github_stars_analyzer_docs_handoff_2026_10_11_4_open_items",
       "community": 102,
       "norm_label": "4. open items"
+    },
+    {
+      "label": "HANDOFF-2026-10-25.md",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25",
+      "community": 138,
+      "norm_label": "handoff-2026-10-25.md"
+    },
+    {
+      "label": "Handoff \u2014 2026-10-25",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "community": 138,
+      "norm_label": "handoff \u2014 2026-10-25"
+    },
+    {
+      "label": "TL;DR",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_tl_dr",
+      "community": 138,
+      "norm_label": "tl;dr"
+    },
+    {
+      "label": "1. Commits this session",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_1_commits_this_session",
+      "community": 138,
+      "norm_label": "1. commits this session"
+    },
+    {
+      "label": "2. Hosting: Netlify \u2192 Vercel",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_2_hosting_netlify_vercel",
+      "community": 138,
+      "norm_label": "2. hosting: netlify \u2192 vercel"
+    },
+    {
+      "label": "3. Styling and performance",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_3_styling_and_performance",
+      "community": 138,
+      "norm_label": "3. styling and performance"
+    },
+    {
+      "label": "4. Data and reports",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_4_data_and_reports",
+      "community": 138,
+      "norm_label": "4. data and reports"
+    },
+    {
+      "label": "5. Open items",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_5_open_items",
+      "community": 138,
+      "norm_label": "5. open items"
+    },
+    {
+      "label": "6. Ask AI on Nebius, with a spend cap",
+      "file_type": "document",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "docs_handoff_2026_10_25_6_ask_ai_on_nebius_with_a_spend_cap",
+      "community": 138,
+      "norm_label": "6. ask ai on nebius, with a spend cap"
     },
     {
       "label": "2026-09-25-gliclass-relevance-pilot.md",
@@ -20507,7 +20737,7 @@
       "label": "POST",
       "file_type": "code",
       "source_file": "api/ask.mjs",
-      "source_location": "L266",
+      "source_location": "L287",
       "_origin": "ast",
       "id": "api_ask_post",
       "community": 137,
@@ -20519,7 +20749,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L35",
+      "source_location": "L39",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_clientip",
@@ -20529,7 +20759,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L105",
+      "source_location": "L109",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_extracterrormessage",
@@ -20539,7 +20769,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L93",
+      "source_location": "L97",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_getcontext",
@@ -20549,7 +20779,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L126",
+      "source_location": "L130",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_handler",
@@ -20559,7 +20789,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L119",
+      "source_location": "L123",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_jsonresponse",
@@ -20569,7 +20799,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L20",
+      "source_location": "L24",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_llm_base_url",
@@ -20579,7 +20809,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L86",
+      "source_location": "L90",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_provider",
@@ -20589,7 +20819,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L66",
+      "source_location": "L70",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_provider_hosts",
@@ -20599,7 +20829,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L79",
+      "source_location": "L83",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_providerlabel",
@@ -20609,7 +20839,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L44",
+      "source_location": "L48",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_ratecheck",
@@ -20619,7 +20849,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L34",
+      "source_location": "L38",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_ratelog",
@@ -20629,7 +20859,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L213",
+      "source_location": "L229",
       "weight": 1.0,
       "source": "api_ask",
       "target": "api_ask_streamcompletion",
@@ -20640,7 +20870,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L17",
+      "source_location": "L20",
       "weight": 1.0,
       "source": "api_ask",
       "target": "scripts_lib_ask_prompt",
@@ -20651,10 +20881,43 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L17",
+      "source_location": "L20",
       "weight": 1.0,
       "source": "api_ask",
       "target": "scripts_lib_ask_prompt_buildsystemprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "scripts_lib_spend_budget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "scripts_lib_spend_budget_estimatetokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "api_ask",
+      "target": "scripts_lib_spend_budget_reserve",
       "confidence_score": 1.0
     },
     {
@@ -20673,7 +20936,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L134",
+      "source_location": "L138",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_clientip",
@@ -20684,7 +20947,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L134",
+      "source_location": "L138",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_ratecheck",
@@ -20695,7 +20958,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L148",
+      "source_location": "L151",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_getcontext",
@@ -20706,7 +20969,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L168",
+      "source_location": "L180",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_extracterrormessage",
@@ -20717,7 +20980,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L131",
+      "source_location": "L135",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_jsonresponse",
@@ -20728,7 +20991,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L193",
+      "source_location": "L205",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "api_ask_streamcompletion",
@@ -20739,10 +21002,32 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/ask.mjs",
-      "source_location": "L160",
+      "source_location": "L151",
       "weight": 1.0,
       "source": "api_ask_handler",
       "target": "scripts_lib_ask_prompt_buildsystemprompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "scripts_lib_spend_budget_estimatetokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/ask.mjs",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "api_ask_handler",
+      "target": "scripts_lib_spend_budget_reserve",
       "confidence_score": 1.0
     },
     {
@@ -23590,6 +23875,191 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_costmicros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_daily_usd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_estimatetokens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_num",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_periodkeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_price_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_price_out",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_redis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_redis_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_reserve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_usd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget",
+      "target": "scripts_lib_spend_budget_weekly_usd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget_reserve",
+      "target": "scripts_lib_spend_budget_costmicros",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget_reserve",
+      "target": "scripts_lib_spend_budget_periodkeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget_add",
+      "target": "scripts_lib_spend_budget_redis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget_reserve",
+      "target": "scripts_lib_spend_budget_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/lib/spend-budget.mjs",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "scripts_lib_spend_budget_reserve",
+      "target": "scripts_lib_spend_budget_usd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/precompute-questions.mjs",
       "source_location": "L47",
       "weight": 1.0,
@@ -24025,7 +24495,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
       "confidence_score": 1.0
     },
     {
@@ -24101,17 +24571,6 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/reports/build_index.py",
-      "source_location": "L23",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_load_metas",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -24133,6 +24592,17 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/reports/build_index.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_build_prompts_inject_cross_links",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "scripts/prompts/build_prompts.py",
@@ -24150,7 +24620,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24200,6 +24670,50 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_25",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/rag_eval_harness.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/stump_base.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/prompts/trading_dashboard.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_prompt_lib.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_py",
       "confidence_score": 1.0
     },
@@ -24399,50 +24913,6 @@
       "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_inject_prompt_links"
     },
     {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/rag_eval_harness.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_rag_eval_harness_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/stump_base.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_stump_base_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/prompts/trading_dashboard.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_trading_dashboard_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/test_prompt_lib.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "users_marty_claude_projects_github_stars_analyzer_tests_test_prompt_lib_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_prompts_promptlib_rationale_32",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/prompts/rag_eval_harness.py",
@@ -24480,7 +24950,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "scripts_reports_agent_harnesses",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24491,7 +24961,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_memory_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24584,7 +25054,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agent_orchestration_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24637,7 +25107,7 @@
       "source_location": "L30",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_agentic_terminals_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24678,7 +25148,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_ai_coding_tuis_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24689,7 +25159,7 @@
       "source_location": "L29",
       "weight": 1.0,
       "source": "scripts_reports_ai_engineer_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24720,7 +25190,7 @@
       "source_location": "L24",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_claws_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24762,7 +25232,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_blockchain_essentials_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24814,7 +25284,7 @@
       "source_location": "L18",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_build_index_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24959,7 +25429,7 @@
       "source_location": "L25",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_charting_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24980,7 +25450,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_claude_code_setups",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -24991,7 +25461,7 @@
       "source_location": "L27",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_decision_classifiers_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25022,7 +25492,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_document_extraction_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25033,7 +25503,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "scripts_reports_finetuning_stack",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25044,7 +25514,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "scripts_reports_harness_engineering",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25075,7 +25545,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_hermes_vs_openclaw_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25126,7 +25596,7 @@
       "source_location": "L35",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_jetson_inference_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25454,7 +25924,7 @@
       "source_location": "L19",
       "weight": 1.0,
       "source": "scripts_reports_memory_frameworks",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25465,7 +25935,7 @@
       "source_location": "L20",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_llm_evaluation_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25476,7 +25946,7 @@
       "source_location": "L23",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_local_vs_infra_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25487,7 +25957,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_mcp_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25498,7 +25968,7 @@
       "source_location": "L22",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_meeting_transcription_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25509,7 +25979,7 @@
       "source_location": "L24",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_notebooklm_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25520,7 +25990,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_openclaw_ecosystem_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25531,7 +26001,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_printing_stack_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25542,7 +26012,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_rag_tooling_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25553,7 +26023,7 @@
       "source_location": "L15",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_snapshot_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25564,7 +26034,7 @@
       "source_location": "L31",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_trending_now_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25575,7 +26045,7 @@
       "source_location": "L21",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_voice_agents_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -25586,7 +26056,7 @@
       "source_location": "L24",
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_which_claw_py",
-      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_159",
+      "target": "users_marty_claude_projects_github_stars_analyzer_scripts_reports_lib_rationale_25",
       "confidence_score": 1.0
     },
     {
@@ -26700,7 +27170,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L311",
+      "source_location": "L317",
       "weight": 1.0,
       "source": "src_lab_labapp_statusbanner",
       "target": "src_lab_graphprovider_usegraph",
@@ -26944,7 +27414,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L419",
+      "source_location": "L425",
       "weight": 1.0,
       "source": "src_lab_labapp",
       "target": "src_lab_labapp_labapp",
@@ -26954,7 +27424,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L334",
+      "source_location": "L340",
       "weight": 1.0,
       "source": "src_lab_labapp",
       "target": "src_lab_labapp_labcontent",
@@ -26994,7 +27464,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/lab/LabApp.jsx",
-      "source_location": "L310",
+      "source_location": "L316",
       "weight": 1.0,
       "source": "src_lab_labapp",
       "target": "src_lab_labapp_statusbanner",
@@ -29879,6 +30349,86 @@
       "weight": 1.0,
       "source": "users_marty_claude_projects_github_stars_analyzer_docs_handoff_2026_10_11_handoff_2026_10_11",
       "target": "users_marty_claude_projects_github_stars_analyzer_docs_handoff_2026_10_11_tl_dr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_1_commits_this_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_2_hosting_netlify_vercel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_3_styling_and_performance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_4_data_and_reports",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_5_open_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_6_ask_ai_on_nebius_with_a_spend_cap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/HANDOFF-2026-10-25.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_handoff_2026_10_25_handoff_2026_10_25",
+      "target": "docs_handoff_2026_10_25_tl_dr",
       "confidence_score": 1.0
     },
     {
@@ -41863,5 +42413,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8e73495fb4c2a237cedbf4970e87f4e3269906ce"
+  "built_at_commit": "501f4238919e4faff85817bf8b1301683be6e28b"
 }

@@ -11,10 +11,14 @@
 //
 // Defaults target the Z.AI GLM Coding Plan. Legacy ZAI_* env vars are honored
 // as fallbacks for backward compatibility.
+//
+// Spend is capped per day and per week across all instances; see
+// scripts/lib/spend-budget.mjs for the env vars and the reserve/settle flow.
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { buildSystemPrompt } from '../scripts/lib/ask-prompt.mjs';
+import { reserve, estimateTokens } from '../scripts/lib/spend-budget.mjs';
 
 const LLM_API_KEY  = process.env.LLM_API_KEY  || process.env.ZAI_API_KEY;
 const LLM_BASE_URL = (process.env.LLM_BASE_URL || process.env.ZAI_BASE_URL || 'https://api.z.ai/api/coding/paas/v4').replace(/\/+$/, '');
@@ -144,8 +148,12 @@ async function handler(req) {
     return jsonResponse({ error: 'LLM_API_KEY (or ZAI_API_KEY) not configured', code: 'no_key' }, 503);
   }
 
+  const systemPrompt = buildSystemPrompt(getContext());
+  const inTokEstimate = estimateTokens(systemPrompt) + estimateTokens(question);
+  const budget = await reserve(inTokEstimate, LLM_MAX_TOKENS);
+  if (!budget.ok) return jsonResponse(budget.body, budget.status);
+
   try {
-    const ctx = getContext();
     const res = await fetch(`${LLM_BASE_URL}/chat/completions`, {
       method: 'POST',
       headers: {
@@ -156,14 +164,18 @@ async function handler(req) {
         model: LLM_MODEL,
         max_tokens: LLM_MAX_TOKENS,
         stream: true,
+        // Real token counts in the final chunk, so the budget settles on
+        // actual usage rather than the character estimate.
+        stream_options: { include_usage: true },
         messages: [
-          { role: 'system', content: buildSystemPrompt(ctx) },
+          { role: 'system', content: systemPrompt },
           { role: 'user', content: question },
         ],
       }),
     });
 
     if (!res.ok || !res.body) {
+      await budget.settle(0, 0); // nothing was generated; release the hold
       const raw = await res.text().catch(() => '');
       const msg = extractErrorMessage(raw).slice(0, 400);
       // Treat 402/403 + matching keyword, or 429 + billing keyword, as a
@@ -190,7 +202,8 @@ async function handler(req) {
     // visible answer tokens (delta.content) and emit `:` heartbeat comments
     // during the model's reasoning phase so the gateway never sees an idle
     // connection (the cause of the "Inactivity Timeout" 504).
-    const stream = streamCompletion(res.body);
+    const stream = streamCompletion(res.body, (usage, outChars) =>
+      budget.settle(usage?.prompt_tokens ?? inTokEstimate, usage?.completion_tokens ?? Math.ceil(outChars / 4)));
     return new Response(stream, {
       status: 200,
       headers: {
@@ -203,6 +216,7 @@ async function handler(req) {
       },
     });
   } catch (err) {
+    await budget.settle(0, 0);
     return jsonResponse({ error: err.message, code: 'fetch_error', provider: PROVIDER }, 500);
   }
 }
@@ -210,7 +224,9 @@ async function handler(req) {
 // Transform an upstream OpenAI-compatible SSE body into our own SSE stream.
 // Emits: `data: {"v":"<token>"}` for content, `:` heartbeats during reasoning,
 // `data: {"done":true}` at the end, `data: {"error":...}` on mid-stream failure.
-function streamCompletion(upstreamBody) {
+// onEnd(usage, outChars) runs once before the stream closes; outChars counts
+// answer and reasoning text, the fallback when the provider sends no usage.
+function streamCompletion(upstreamBody, onEnd) {
   const encoder = new TextEncoder();
   const decoder = new TextDecoder();
   const send = (ctrl, obj) => ctrl.enqueue(encoder.encode(`data: ${JSON.stringify(obj)}\n\n`));
@@ -223,6 +239,8 @@ function streamCompletion(upstreamBody) {
       const reader = upstreamBody.getReader();
       let buffer = '';
       let sawContent = false;
+      let usage = null;
+      let outChars = 0;
       try {
         while (true) {
           const { done, value } = await reader.read();
@@ -240,7 +258,9 @@ function streamCompletion(upstreamBody) {
               if (!payload || payload === '[DONE]') continue;
               let json;
               try { json = JSON.parse(payload); } catch { continue; }
+              if (json?.usage) usage = json.usage;
               const delta = json?.choices?.[0]?.delta ?? {};
+              outChars += (delta.content?.length || 0) + (delta.reasoning_content?.length || 0);
               if (typeof delta.content === 'string' && delta.content.length) {
                 sawContent = true;
                 send(ctrl, { v: delta.content });
@@ -255,6 +275,7 @@ function streamCompletion(upstreamBody) {
       } catch (err) {
         send(ctrl, { error: err.message, code: 'stream_error' });
       } finally {
+        await onEnd?.(usage, outChars);
         ctrl.close();
       }
     },

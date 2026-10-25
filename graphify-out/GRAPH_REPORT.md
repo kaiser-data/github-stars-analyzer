@@ -1,16 +1,16 @@
 # Graph Report - github-stars-analyzer  (2026-10-25)
 
 ## Corpus Check
-- 234 files · ~4,058,728 words
+- 236 files · ~4,060,928 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2051 nodes · 2110 edges · 138 communities (119 shown, 19 thin omitted)
+- 2074 nodes · 2141 edges · 139 communities (120 shown, 19 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8e73495f`
+- Built from commit: `501f4238`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -146,9 +146,10 @@
 - [[_COMMUNITY_harness_engineering.py|harness_engineering.py]]
 - [[_COMMUNITY_Handoff — 2026-10-01|Handoff — 2026-10-01]]
 - [[_COMMUNITY_POST|POST]]
+- [[_COMMUNITY_Handoff — 2026-10-25|Handoff — 2026-10-25]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Markdown for curated entries that have left the dataset.      `sample.mjs` drops` - 32 edges
+1. `Return (classified, graph) dicts — the two inputs every report uses.` - 32 edges
 2. `useGraph()` - 20 edges
 3. `scripts` - 19 edges
 4. `The field guide, by layer` - 15 edges
@@ -174,7 +175,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (138 total, 19 thin omitted)
+## Communities (139 total, 19 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
@@ -185,8 +186,8 @@ Cohesion: 0.04
 Nodes (46): dependencies, dexie, @fontsource-variable/geist, @fontsource-variable/geist-mono, graphology, graphology-communities-louvain, graphology-metrics, graphology-shortest-path (+38 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.09
-Nodes (24): clientIp(), extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER, PROVIDER_HOSTS (+16 more)
+Cohesion: 0.06
+Nodes (36): clientIp(), extractErrorMessage(), getContext(), handler(), jsonResponse(), LLM_BASE_URL, PROVIDER, PROVIDER_HOSTS (+28 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.05
@@ -624,25 +625,29 @@ Nodes (3): Current scores, Scoring review request, What to return
 Cohesion: 0.15
 Nodes (12): includeFiles, maxDuration, buildCommand, cleanUrls, framework, functions, api/ask.mjs, headers (+4 more)
 
+### Community 138 - "Handoff — 2026-10-25"
+Cohesion: 0.22
+Nodes (8): 1. Commits this session, 2. Hosting: Netlify → Vercel, 3. Styling and performance, 4. Data and reports, 5. Open items, 6. Ask AI on Nebius, with a spend cap, Handoff — 2026-10-25, TL;DR
+
 ## Knowledge Gaps
-- **1386 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1381 more)
+- **1398 isolated node(s):** `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS`, `PROVIDER`, `config` (+1393 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Markdown for curated entries that have left the dataset.      `sample.mjs` drops` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `ai_engineer_stack.py`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `retired_rows()` connect `Community 35` to `Community 32`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `fmt_stars()` connect `Community 35` to `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `Return (classified, graph) dicts — the two inputs every report uses.` connect `Community 32` to `task-5-brief.md`, `Community 35`, `Community 9`, `test_build_prompts.py`, `Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps`, `task-1-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `task-3-brief.md`, `task-4-brief.md`, `LLM-Driven 3D Modelling for 3D Printing — Landscape Report`, `Decision Classifiers & Guard Models — Landscape Report`, `decision_classifiers.py`, `ai_engineer_stack.py`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
+- **Why does `load_data()` connect `Community 35` to `Community 32`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `LLM_BASE_URL`, `rateLog`, `PROVIDER_HOSTS` to the rest of the system?**
-  _1428 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1441 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.05628415300546448 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.08817204301075268 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06464646464646465 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05310734463276836 - nodes in this community are weakly interconnected._

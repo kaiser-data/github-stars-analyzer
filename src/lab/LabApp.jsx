@@ -272,7 +272,13 @@ function AskView() {
           <p>Set <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_API_KEY</code> in your environment (and optionally <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_BASE_URL</code> / <code className="bg-amber-950/60 px-1.5 py-0.5 rounded">LLM_MODEL</code>) to enable this tab.</p>
         </div>
       )}
-      {error && errorCode !== 'billing' && errorCode !== 'no_key' && (
+      {error && errorCode === 'budget' && (
+        <div className="bg-gray-900 border border-gray-700 rounded-lg p-4 text-gray-300 text-sm">
+          <div className="font-semibold text-white mb-1">Ask AI is paused for now</div>
+          <p>{error} The cached questions above still answer instantly.</p>
+        </div>
+      )}
+      {error && !['billing', 'no_key', 'budget'].includes(errorCode) && (
         <div className="bg-red-900/30 border border-red-700 rounded-lg p-4 text-red-300 text-sm">{error}</div>
       )}
       {loading && !answer && !error && (
