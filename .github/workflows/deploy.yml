@@ -60,8 +60,15 @@ jobs:
 
       # Build locally on the runner (vercel.json's buildCommand) and upload the
       # prebuilt output, so the deploy uses exactly this commit's files.
+      # Names the account and teams the token can see, so a token made under
+      # the wrong scope fails with something readable.
+      - name: Check token scope
+        run: |
+          npx --yes vercel@64.7.0 whoami --token="$VERCEL_TOKEN"
+          npx --yes vercel@64.7.0 teams ls --token="$VERCEL_TOKEN"
+
       - name: Pull project settings
-        run: npx --yes vercel@64.7.0 pull --yes --environment=production --token="$VERCEL_TOKEN"
+        run: npx --yes vercel@64.7.0 pull --yes --environment=production --token="$VERCEL_TOKEN" --scope="$VERCEL_ORG_ID"
 
       - name: Build
         run: npx --yes vercel@64.7.0 build --prod --token="$VERCEL_TOKEN"
