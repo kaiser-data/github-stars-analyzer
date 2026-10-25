@@ -1,6 +1,7 @@
 # Weekly data refresh: re-fetch starred repos, reclassify, rebuild the graph,
-# snapshot the dataset, regenerate all reports, and push. Netlify redeploys on
-# push, so the site picks the new data up automatically.
+# snapshot the dataset, regenerate all reports, and push. deploy.yml then ships
+# it to Vercel (via workflow_run: pushes made with GITHUB_TOKEN don't trigger
+# the push event).
 #
 # Requires one repo secret:
 #   GH_STARS_TOKEN — a personal access token (no scopes needed; public data

@@ -1,0 +1,70 @@
+# Production deploy to Vercel on every push to main, and after each weekly
+# data refresh. The refresh pushes with the built-in GITHUB_TOKEN, and such
+# pushes never trigger other workflows, so it needs the workflow_run trigger.
+#
+# Requires three repo secrets:
+#   VERCEL_TOKEN       — a Vercel access token (create at vercel.com/account/tokens,
+#                        scoped to the team that owns the project)
+#   VERCEL_ORG_ID      — team id, from .vercel/project.json "orgId"
+#   VERCEL_PROJECT_ID  — project id, from .vercel/project.json "projectId"
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Weekly data refresh"]
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # After a refresh, deploy only if it succeeded (a failed one pushed nothing)
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - name: Check secrets
+        run: |
+          for v in VERCEL_TOKEN VERCEL_ORG_ID VERCEL_PROJECT_ID; do
+            if [ -z "${!v}" ]; then
+              echo "::error::$v is not set. See the header of .github/workflows/deploy.yml."
+              exit 1
+            fi
+          done
+
+      # workflow_run checks out the default branch by default, which is what
+      # we want: HEAD of main including the refresh commit.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: npm ci
+
+      # Build locally on the runner (vercel.json's buildCommand) and upload the
+      # prebuilt output, so the deploy uses exactly this commit's files.
+      - name: Pull project settings
+        run: npx --yes vercel@64.7.0 pull --yes --environment=production --token="$VERCEL_TOKEN"
+
+      - name: Build
+        run: npx --yes vercel@64.7.0 build --prod --token="$VERCEL_TOKEN"
+
+      - name: Deploy
+        run: npx --yes vercel@64.7.0 deploy --prebuilt --prod --token="$VERCEL_TOKEN"
