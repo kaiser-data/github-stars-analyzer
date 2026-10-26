@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">111,192</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">111,291</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
-<path d="M244,67 h257.6 q4,0 4,4 v10 q0,4 -4,4 h-257.6 z" class="bar"/>
-<text x="511.6" y="76.0" class="val" dominant-baseline="central">84,573</text>
+<path d="M244,67 h267.6 q4,0 4,4 v10 q0,4 -4,4 h-267.6 z" class="bar"/>
+<text x="521.6" y="76.0" class="val" dominant-baseline="central">87,868</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">CorentinJ/Real-Time-Voice-Cloni…</text>
-<path d="M244,94 h182.3 q4,0 4,4 v10 q0,4 -4,4 h-182.3 z" class="bar"/>
-<text x="436.3" y="103.0" class="val" dominant-baseline="central">60,208</text>
+<path d="M244,94 h182.1 q4,0 4,4 v10 q0,4 -4,4 h-182.1 z" class="bar"/>
+<text x="436.1" y="103.0" class="val" dominant-baseline="central">60,212</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">jamiepine/voicebox</text>
-<path d="M244,121 h176.8 q4,0 4,4 v10 q0,4 -4,4 h-176.8 z" class="bar"/>
-<text x="430.8" y="130.0" class="val" dominant-baseline="central">58,448</text>
+<path d="M244,121 h177.0 q4,0 4,4 v10 q0,4 -4,4 h-177.0 z" class="bar"/>
+<text x="431.0" y="130.0" class="val" dominant-baseline="central">58,573</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
 <path d="M244,148 h165.0 q4,0 4,4 v10 q0,4 -4,4 h-165.0 z" class="bar"/>
-<text x="419.0" y="157.0" class="val" dominant-baseline="central">54,625</text>
+<text x="419.0" y="157.0" class="val" dominant-baseline="central">54,681</text>
 </svg>

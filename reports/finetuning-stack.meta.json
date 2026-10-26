@@ -3,9 +3,9 @@
   "title": "Fine-Tuning & Post-Training Stack \u2014 Which Trainer for Which Task",
   "file": "finetuning-stack.md",
   "category": "AI / Engineering",
-  "summary": "26 fine-tuning & post-training tools (803,179\u2605) compared and ranked per task: full-stack trainers, PEFT/alignment libraries, agent RL (GRPO), learn-by-building repos, on-device tuning, and the adapter-serving layer \u2014 with 2026 benchmark-backed task rankings.",
+  "summary": "26 fine-tuning & post-training tools (803,832\u2605) compared and ranked per task: full-stack trainers, PEFT/alignment libraries, agent RL (GRPO), learn-by-building repos, on-device tuning, and the adapter-serving layer \u2014 with 2026 benchmark-backed task rankings.",
   "tool_count": 26,
-  "total_stars": 803179,
+  "total_stars": 803832,
   "categories": {
     "Full-stack fine-tuning framework": 6,
     "PEFT & alignment library": 2,
@@ -17,27 +17,27 @@
   "top_tools": [
     {
       "name": "huggingface/transformers",
-      "stars": 168075
+      "stars": 168183
     },
     {
       "name": "rasbt/LLMs-from-scratch",
-      "stars": 107214
+      "stars": 107311
     },
     {
       "name": "unslothai/unsloth",
-      "stars": 78519
+      "stars": 78581
     },
     {
       "name": "hiyouga/LlamaFactory",
-      "stars": 75710
+      "stars": 75741
     },
     {
       "name": "labmlai/annotated_deep_learning_paper_implementations",
-      "stars": 67596
+      "stars": 67600
     }
   ],
-  "snapshot": "2026-10-24T18:18:45.023Z",
-  "generated": "2026-10-24",
+  "snapshot": "2026-10-26T11:46:04.025Z",
+  "generated": "2026-10-26",
   "generator": "scripts/reports/finetuning_stack.py",
-  "created": "2026-07-20"
+  "created": "2026-10-26"
 }

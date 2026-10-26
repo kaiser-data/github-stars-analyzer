@@ -5,7 +5,7 @@
   "category": "AI / Comparison",
   "summary": "A layered field guide to the 37 essential blockchain/web3/DeFi repos in the dataset \u2014 languages, toolchains, libraries, clients, DeFi protocols, ZK, Solana \u2014 plus the hottest AI\u00d7crypto trends (x402 agentic payments, autonomous trading) and a where-to-start learning path.",
   "tool_count": 37,
-  "total_stars": 457251,
+  "total_stars": 459072,
   "categories": {
     "Languages & compilers": 2,
     "Dev toolkits": 2,
@@ -24,27 +24,27 @@
   "top_tools": [
     {
       "name": "TauricResearch/TradingAgents",
-      "stars": 113591
+      "stars": 115250
     },
     {
       "name": "openbq-org/OpenBB",
-      "stars": 74622
+      "stars": 74729
     },
     {
       "name": "ethereum/go-ethereum",
-      "stars": 51410
+      "stars": 51416
     },
     {
       "name": "OpenZeppelin/openzeppelin-contracts",
-      "stars": 27301
+      "stars": 27304
     },
     {
       "name": "argotorg/solidity",
-      "stars": 25760
+      "stars": 25759
     }
   ],
-  "snapshot": "2026-10-24T18:18:45.023Z",
-  "generated": "2026-10-24",
+  "snapshot": "2026-10-26T11:46:04.025Z",
+  "generated": "2026-10-26",
   "generator": "scripts/reports/blockchain_essentials.py",
-  "created": "2026-06-03"
+  "created": "2026-10-26"
 }

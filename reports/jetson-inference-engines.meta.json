@@ -5,7 +5,7 @@
   "category": "AI / Infrastructure",
   "summary": "Which inference engine to run on a Jetson Orin Nano 8GB, argued against first-party measurements (36.8 tok/s at 0.8B, 14.3 at 4.7B): llama.cpp is the answer, TensorRT-LLM does not target this SKU, the datacenter tier is the wrong machine class \u2014 and the three biggest throughput levers are not engine swaps at all. Covers 27 engines in the dataset plus 3 missing (18,455\u2605).",
   "tool_count": 27,
-  "total_stars": 994655,
+  "total_stars": 996243,
   "categories": {
     "Edge-viable LLM runtime": 7,
     "NVIDIA / Jetson path": 4,
@@ -18,27 +18,27 @@
   "top_tools": [
     {
       "name": "ollama/ollama",
-      "stars": 184639
+      "stars": 184829
     },
     {
       "name": "ggml-org/llama.cpp",
-      "stars": 132228
+      "stars": 132400
     },
     {
       "name": "vllm-project/vllm",
-      "stars": 95322
+      "stars": 95582
     },
     {
       "name": "nomic-ai/gpt4all",
-      "stars": 77355
+      "stars": 77356
     },
     {
       "name": "ggml-org/whisper.cpp",
-      "stars": 54625
+      "stars": 54681
     }
   ],
-  "snapshot": "2026-10-24T18:18:45.023Z",
-  "generated": "2026-10-24",
+  "snapshot": "2026-10-26T11:46:04.025Z",
+  "generated": "2026-10-26",
   "generator": "scripts/reports/jetson_inference.py",
-  "created": "2026-08-23"
+  "created": "2026-10-26"
 }

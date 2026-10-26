@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24",
+  "generated": "2026-10-26",
   "count": 29,
   "reports": [
     {
@@ -7,86 +7,86 @@
       "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
       "file": "trending-now.md",
       "category": "AI / Trends",
-      "summary": "Measured star momentum across 23 data vintages: the 13-day movers, relative breakouts, sustained climbers, 59 new entrants, and what has gone flat.",
-      "tool_count": 120,
-      "total_stars": 6905049,
+      "summary": "Measured star momentum across 24 data vintages: the 7-day movers, relative breakouts, sustained climbers, 28 new entrants, and what has gone flat.",
+      "tool_count": 90,
+      "total_stars": 6950288,
       "categories": {
-        "Risers": 1880,
-        "Breakouts": 1746,
-        "New entrants": 59,
-        "Cooling": 68
+        "Risers": 1811,
+        "Breakouts": 1711,
+        "New entrants": 28,
+        "Cooling": 92
       },
       "top_tools": [
         {
           "name": "morluto/rea",
-          "stars": 377090
-        },
-        {
-          "name": "debpalash/VoiceStudio",
-          "stars": 84573
-        },
-        {
-          "name": "storytold/photocraft",
-          "stars": 72284
+          "stars": 387891
         },
         {
           "name": "cloudflare/security-audit-skill",
-          "stars": 43764
+          "stars": 47762
+        },
+        {
+          "name": "debpalash/VoiceStudio",
+          "stars": 87868
+        },
+        {
+          "name": "DietrichGebert/ponytail",
+          "stars": 176581
         },
         {
           "name": "stablyai/orca",
-          "stars": 104720
+          "stars": 106461
         }
       ],
       "chart_top_series": [
         {
           "name": "morluto/rea",
-          "value": 313732
-        },
-        {
-          "name": "debpalash/VoiceStudio",
-          "value": 27671
-        },
-        {
-          "name": "storytold/photocraft",
-          "value": 27352
+          "value": 58276
         },
         {
           "name": "cloudflare/security-audit-skill",
-          "value": 16497
+          "value": 16392
         },
         {
-          "name": "stablyai/orca",
-          "value": 15726
+          "name": "debpalash/VoiceStudio",
+          "value": 11288
         },
         {
           "name": "DietrichGebert/ponytail",
-          "value": 15184
+          "value": 9088
+        },
+        {
+          "name": "stablyai/orca",
+          "value": 9023
         },
         {
           "name": "deepseek-ai/deepseek-harness",
-          "value": 13507
+          "value": 8079
         },
         {
-          "name": "cathrynlavery/diagram-design",
-          "value": 12061
+          "name": "Graphify-Labs/graphify",
+          "value": 6974
+        },
+        {
+          "name": "affaan-m/ECC",
+          "value": 5593
         }
       ],
-      "chart_top_title": "Biggest star gains (13d)",
+      "chart_top_title": "Biggest star gains (7d)",
       "chart_cat_title": "Repos by movement type",
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/trending_now.py",
-      "created": "2026-08-08"
+      "created": "2026-10-26"
     },
     {
       "slug": "charting-stack",
       "title": "Charting & Data-Visualization Tools \u2014 Advantages, Disadvantages & Use Cases",
       "file": "charting-stack.md",
       "category": "AI / Apps",
-      "summary": "61 charting and data-visualization tools (1,345,071\u2605) compared head-to-head on advantages, disadvantages, and use cases: web and React chart libraries, high-performance renderers, grammar-of-graphics stacks, Python plotting, BI platforms, data-app frameworks, dashboards-as-code, and native/desktop plotting.",
+      "summary": "61 charting and data-visualization tools (1,345,476\u2605) compared head-to-head on advantages, disadvantages, and use cases: web and React chart libraries, high-performance renderers, grammar-of-graphics stacks, Python plotting, BI platforms, data-app frameworks, dashboards-as-code, and native/desktop plotting.",
       "tool_count": 61,
-      "total_stars": 1345071,
+      "total_stars": 1345476,
       "categories": {
         "Web charting library": 9,
         "React charting library": 4,
@@ -102,38 +102,38 @@
       "top_tools": [
         {
           "name": "excalidraw/excalidraw",
-          "stars": 134481
+          "stars": 134576
         },
         {
           "name": "d3/d3",
-          "stars": 113797
+          "stars": 113798
         },
         {
           "name": "grafana/grafana",
-          "stars": 77477
+          "stars": 77512
         },
         {
           "name": "apache/superset",
-          "stars": 75287
+          "stars": 75313
         },
         {
           "name": "chartjs/Chart.js",
           "stars": 67760
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/charting_stack.py",
-      "created": "2026-08-11"
+      "created": "2026-10-26"
     },
     {
       "slug": "claude-code-setups",
       "title": "Claude Code Superpowers \u2014 Setup Strategies from Your Stars",
       "file": "claude-code-setups.md",
       "category": "AI / Agents",
-      "summary": "60 Claude-Code 'superpower' projects (5,313,581\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
+      "summary": "60 Claude-Code 'superpower' projects (5,327,272\u2605) organized into 9 setup layers \u2014 harnesses, skills, memory, token-savers, code-graph, MCP, observability, config kits, local runtimes \u2014 plus three ready-to-run setup strategies (token-saver / balanced / max-performance).",
       "tool_count": 60,
-      "total_stars": 5313581,
+      "total_stars": 5327272,
       "categories": {
         "Harness / coding agent": 13,
         "Skills framework": 7,
@@ -148,38 +148,38 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 392940
+          "stars": 393115
         },
         {
           "name": "obra/superpowers",
-          "stars": 304562
+          "stars": 305321
         },
         {
           "name": "affaan-m/ECC",
-          "stars": 287887
+          "stars": 289209
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 256743
+          "stars": 257226
         },
         {
           "name": "multica-ai/andrej-karpathy-skills",
-          "stars": 223272
+          "stars": 224127
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/claude_code_setups.py",
-      "created": "2026-06-13"
+      "created": "2026-10-26"
     },
     {
       "slug": "ai-engineer-stack",
       "title": "The AI Engineer's Stack \u2014 What's Fundamental, Must-Have, and Trending",
       "file": "ai-engineer-stack.md",
       "category": "AI / Engineering",
-      "summary": "57 repos every AI engineer should know (4,583,966\u2605), sorted into Fundamental / Must-have / Trending \u2014 plus a map of what's already solved (integrate, don't build) vs. still frontier, and 9 buildable project ideas.",
+      "summary": "57 repos every AI engineer should know (4,592,118\u2605), sorted into Fundamental / Must-have / Trending \u2014 plus a map of what's already solved (integrate, don't build) vs. still frontier, and 9 buildable project ideas.",
       "tool_count": 57,
-      "total_stars": 4583966,
+      "total_stars": 4592118,
       "categories": {
         "Fundamental": 13,
         "Must-have": 20,
@@ -188,29 +188,29 @@
       "top_tools": [
         {
           "name": "obra/superpowers",
-          "stars": 304562
+          "stars": 305321
         },
         {
           "name": "firecrawl/firecrawl",
-          "stars": 194925
+          "stars": 195479
         },
         {
           "name": "ollama/ollama",
-          "stars": 184639
+          "stars": 184829
         },
         {
           "name": "anthropics/skills",
-          "stars": 183465
+          "stars": 183877
         },
         {
           "name": "huggingface/transformers",
-          "stars": 168075
+          "stars": 168183
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/ai_engineer_stack.py",
-      "created": "2026-06-29"
+      "created": "2026-10-26"
     },
     {
       "slug": "agentic-terminals",
@@ -219,7 +219,7 @@
       "category": "AI / Comparison",
       "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 53 present.",
       "tool_count": 53,
-      "total_stars": 1447281,
+      "total_stars": 1448391,
       "categories": {
         "Agent-aware terminal": 3,
         "Emulator": 11,
@@ -234,38 +234,38 @@
       "top_tools": [
         {
           "name": "ohmyzsh/ohmyzsh",
-          "stars": 190144
+          "stars": 190168
         },
         {
           "name": "microsoft/terminal",
-          "stars": 105220
+          "stars": 105244
         },
         {
           "name": "junegunn/fzf",
-          "stars": 83754
+          "stars": 83794
         },
         {
           "name": "Eugeny/tabby",
-          "stars": 75102
+          "stars": 75128
         },
         {
           "name": "alacritty/alacritty",
-          "stars": 66033
+          "stars": 66052
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/agentic_terminals.py",
-      "created": "2026-08-23"
+      "created": "2026-10-26"
     },
     {
       "slug": "harness-engineering",
       "title": "Harness Engineering \u2014 Ten Methods That Make an Agent Harness Good",
       "file": "harness-engineering.md",
       "category": "AI / Agents",
-      "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 48 repos (1,865,182\u2605).",
+      "summary": "Ten evidence-backed methods for building a good agent harness \u2014 minimal loops, small instruction budgets, context engineering, lean tools, external verification, state on disk, sub-agent isolation, guards, durable runs, and harness evals \u2014 mapped to 48 repos (1,870,168\u2605).",
       "tool_count": 48,
-      "total_stars": 1865182,
+      "total_stars": 1870168,
       "categories": {
         "1. Minimal loop first": 5,
         "2. Small instruction budget": 4,
@@ -281,38 +281,38 @@
       "top_tools": [
         {
           "name": "obra/superpowers",
-          "stars": 304562
+          "stars": 305321
         },
         {
           "name": "multica-ai/andrej-karpathy-skills",
-          "stars": 223272
+          "stars": 224127
         },
         {
           "name": "anthropics/skills",
-          "stars": 183465
+          "stars": 183877
         },
         {
           "name": "github/spec-kit",
-          "stars": 142703
+          "stars": 142957
         },
         {
           "name": "earendil-works/pi",
-          "stars": 117581
+          "stars": 117920
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/harness_engineering.py",
-      "created": "2026-10-01"
+      "created": "2026-10-26"
     },
     {
       "slug": "agent-harnesses",
       "title": "Agent Harnesses \u2014 Six Approaches to Running Autonomous Agents",
       "file": "agent-harnesses.md",
       "category": "AI / Agents",
-      "summary": "42 harness projects (1,684,797\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
+      "summary": "42 harness projects (1,689,679\u2605) across six approaches: harness-as-SDK, meta-harnesses over coding agents, fleet orchestration, spec-driven determinism, sandbox substrates, and long-horizon autonomy.",
       "tool_count": 42,
-      "total_stars": 1684797,
+      "total_stars": 1689679,
       "categories": {
         "Harness-as-SDK": 11,
         "Meta-harness over coding agents": 7,
@@ -324,38 +324,38 @@
       "top_tools": [
         {
           "name": "obra/superpowers",
-          "stars": 304562
+          "stars": 305321
         },
         {
           "name": "affaan-m/ECC",
-          "stars": 287887
+          "stars": 289209
         },
         {
           "name": "github/spec-kit",
-          "stars": 142703
+          "stars": 142957
         },
         {
           "name": "earendil-works/pi",
-          "stars": 117581
+          "stars": 117920
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 84378
+          "stars": 84439
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/agent_harnesses.py",
-      "created": "2026-07-19"
+      "created": "2026-10-26"
     },
     {
       "slug": "local-vs-infra-stack",
       "title": "Local vs High-Infra AI Stack \u2014 A Deployment-Tier Comparison",
       "file": "local-vs-infra-stack.md",
       "category": "AI / Infrastructure",
-      "summary": "41 stack tools (1,873,844\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 17 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
+      "summary": "41 stack tools (1,876,203\u2605) mapped to every layer (runtime, serving, gateway, vector store, fine-tuning, agents, observability) and tagged by deployment tier \u2014 17 local / 16 both / 8 high-infra \u2014 with two ready-to-use reference stacks.",
       "tool_count": 41,
-      "total_stars": 1873844,
+      "total_stars": 1876203,
       "categories": {
         "Inference runtime": 13,
         "Scaling / serving infra": 2,
@@ -373,38 +373,38 @@
       "top_tools": [
         {
           "name": "ollama/ollama",
-          "stars": 184639
+          "stars": 184829
         },
         {
           "name": "huggingface/transformers",
-          "stars": 168075
+          "stars": 168183
         },
         {
           "name": "open-webui/open-webui",
-          "stars": 156647
+          "stars": 156796
         },
         {
           "name": "ggml-org/llama.cpp",
-          "stars": 132228
+          "stars": 132400
         },
         {
           "name": "vllm-project/vllm",
-          "stars": 95322
+          "stars": 95582
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/local_vs_infra_stack.py",
-      "created": "2026-06-05"
+      "created": "2026-10-26"
     },
     {
       "slug": "mcp-tooling",
       "title": "MCP (Model Context Protocol) Tooling \u2014 Landscape Report",
       "file": "mcp-tooling.md",
       "category": "AI / MCP",
-      "summary": "39 MCP projects (593,701\u2605): SDKs/frameworks, clients, gateways, and 24 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
+      "summary": "39 MCP projects (594,576\u2605): SDKs/frameworks, clients, gateways, and 24 domain servers (browser, DB, dev-tools, code-intel, docs, game engines) \u2014 incl. official GitHub/Microsoft/Google servers.",
       "tool_count": 39,
-      "total_stars": 593701,
+      "total_stars": 594576,
       "categories": {
         "SDK/framework": 5,
         "Client/host": 3,
@@ -415,38 +415,38 @@
       "top_tools": [
         {
           "name": "punkpeye/awesome-mcp-servers",
-          "stars": 96825
+          "stars": 96884
         },
         {
           "name": "modelcontextprotocol/servers",
-          "stars": 91544
+          "stars": 91575
         },
         {
           "name": "upstash/context7",
-          "stars": 63597
+          "stars": 63707
         },
         {
           "name": "microsoft/playwright-mcp",
-          "stars": 38585
+          "stars": 38644
         },
         {
           "name": "github/github-mcp-server",
-          "stars": 33922
+          "stars": 33968
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/mcp_tooling.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "agent-orchestration",
       "title": "AI Agent Orchestration \u2014 Landscape Report",
       "file": "agent-orchestration.md",
       "category": "AI / Agents",
-      "summary": "38 agent-orchestration tools (1,622,440\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
+      "summary": "38 agent-orchestration tools (1,626,196\u2605) by approach: code-first frameworks (langgraph, openai-agents, semantic-kernel), visual platforms (n8n, dify), coding-agent swarms (ruflo), agent OS, and durable infra (flyte).",
       "tool_count": 38,
-      "total_stars": 1622440,
+      "total_stars": 1626196,
       "categories": {
         "Code-first": 17,
         "Visual": 4,
@@ -457,38 +457,38 @@
       "top_tools": [
         {
           "name": "n8n-io/n8n",
-          "stars": 208492
+          "stars": 208626
         },
         {
           "name": "langgenius/dify",
-          "stars": 159429
+          "stars": 159587
         },
         {
           "name": "langflow-ai/langflow",
-          "stars": 155982
+          "stars": 156031
         },
         {
           "name": "TauricResearch/TradingAgents",
-          "stars": 113591
+          "stars": 115250
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 84378
+          "stars": 84439
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/agent_orchestration.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "agent-memory",
       "title": "Agent Memory & Conversational Knowledge Graphs",
       "file": "agent-memory.md",
       "category": "AI / RAG",
-      "summary": "37 agent-memory and conversational-knowledge-graph tools (798,466\u2605): graph-native vs vector-first memory, the stores underneath, chat connectors and meeting capture \u2014 plus a primitive-coverage matrix of which chat signals each tool actually consumes, and a ranked analysis of the ones nobody consumes at all.",
+      "summary": "37 agent-memory and conversational-knowledge-graph tools (799,885\u2605): graph-native vs vector-first memory, the stores underneath, chat connectors and meeting capture \u2014 plus a primitive-coverage matrix of which chat signals each tool actually consumes, and a ranked analysis of the ones nobody consumes at all.",
       "tool_count": 37,
-      "total_stars": 798466,
+      "total_stars": 799885,
       "categories": {
         "Graph-native memory": 7,
         "Vector-first memory": 9,
@@ -501,29 +501,29 @@
       "top_tools": [
         {
           "name": "mem0ai/mem0",
-          "stars": 67748
+          "stars": 67839
         },
         {
           "name": "MemPalace/mempalace",
-          "stars": 59726
+          "stars": 59744
         },
         {
           "name": "vectorize-io/hindsight",
-          "stars": 53392
+          "stars": 53963
         },
         {
           "name": "milvus-io/milvus",
-          "stars": 46466
+          "stars": 46483
         },
         {
           "name": "HKUDS/LightRAG",
-          "stars": 40311
+          "stars": 40340
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/agent_memory.py",
-      "created": "2026-08-12"
+      "created": "2026-10-26"
     },
     {
       "slug": "blockchain-essentials",
@@ -532,7 +532,7 @@
       "category": "AI / Comparison",
       "summary": "A layered field guide to the 37 essential blockchain/web3/DeFi repos in the dataset \u2014 languages, toolchains, libraries, clients, DeFi protocols, ZK, Solana \u2014 plus the hottest AI\u00d7crypto trends (x402 agentic payments, autonomous trading) and a where-to-start learning path.",
       "tool_count": 37,
-      "total_stars": 457251,
+      "total_stars": 459072,
       "categories": {
         "Languages & compilers": 2,
         "Dev toolkits": 2,
@@ -551,38 +551,38 @@
       "top_tools": [
         {
           "name": "TauricResearch/TradingAgents",
-          "stars": 113591
+          "stars": 115250
         },
         {
           "name": "openbq-org/OpenBB",
-          "stars": 74622
+          "stars": 74729
         },
         {
           "name": "ethereum/go-ethereum",
-          "stars": 51410
+          "stars": 51416
         },
         {
           "name": "OpenZeppelin/openzeppelin-contracts",
-          "stars": 27301
+          "stars": 27304
         },
         {
           "name": "argotorg/solidity",
-          "stars": 25760
+          "stars": 25759
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/blockchain_essentials.py",
-      "created": "2026-06-03"
+      "created": "2026-10-26"
     },
     {
       "slug": "3d-printing-stack",
       "title": "LLM-Driven 3D Modelling for 3D Printing \u2014 Landscape Report",
       "file": "3d-printing-stack.md",
       "category": "Engineering",
-      "summary": "33 tools (369,931\u2605) for driving 3D modelling with LLMs: code-CAD authoring, parametric libraries, implicit/SDF modelling, generative image-to-3D, mesh validation & repair, and print prep & slicing.",
+      "summary": "33 tools (371,031\u2605) for driving 3D modelling with LLMs: code-CAD authoring, parametric libraries, implicit/SDF modelling, generative image-to-3D, mesh validation & repair, and print prep & slicing.",
       "tool_count": 33,
-      "total_stars": 369931,
+      "total_stars": 371031,
       "categories": {
         "Code-CAD authoring": 6,
         "Parametric component library": 3,
@@ -595,38 +595,38 @@
       "top_tools": [
         {
           "name": "Comfy-Org/ComfyUI",
-          "stars": 142580
+          "stars": 143114
         },
         {
           "name": "FreeCAD/FreeCAD",
-          "stars": 34735
+          "stars": 34797
         },
         {
           "name": "ahujasid/mcp-for-blender",
-          "stars": 32224
+          "stars": 32389
         },
         {
           "name": "img2threejs/img2threejs",
-          "stars": 19147
+          "stars": 19292
         },
         {
           "name": "OrcaSlicer/OrcaSlicer",
-          "stars": 16110
+          "stars": 16137
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/printing_stack.py",
-      "created": "2026-09-12"
+      "created": "2026-10-26"
     },
     {
       "slug": "meeting-transcription",
       "title": "Meeting Transcription & Conversation Analysis \u2014 Field Guide",
       "file": "meeting-transcription.md",
       "category": "AI / Voice",
-      "summary": "33 meeting-transcription & conversation-analysis projects (484,039\u2605) across the pipeline: end-to-end notetakers, ASR engines, diarization, live streaming, servers, and transcript analytics \u2014 with a verdict per use case.",
+      "summary": "33 meeting-transcription & conversation-analysis projects (484,559\u2605) across the pipeline: end-to-end notetakers, ASR engines, diarization, live streaming, servers, and transcript analytics \u2014 with a verdict per use case.",
       "tool_count": 33,
-      "total_stars": 484039,
+      "total_stars": 484559,
       "categories": {
         "Meeting assistant (end-to-end)": 8,
         "ASR engine / model": 14,
@@ -638,38 +638,38 @@
       "top_tools": [
         {
           "name": "openai/whisper",
-          "stars": 111192
+          "stars": 111291
         },
         {
           "name": "ggml-org/whisper.cpp",
-          "stars": 54625
+          "stars": 54681
         },
         {
           "name": "Zackriya-Solutions/meetily",
-          "stars": 32119
+          "stars": 32177
         },
         {
           "name": "SYSTRAN/faster-whisper",
-          "stars": 26109
+          "stars": 26157
         },
         {
           "name": "m-bain/whisperX",
-          "stars": 24820
+          "stars": 24855
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/meeting_transcription.py",
-      "created": "2026-06-12"
+      "created": "2026-10-26"
     },
     {
       "slug": "notebooklm-stack",
       "title": "Build Your Own NotebookLM \u2014 The Repo Stack for a Source-Grounded Notebook Clone",
       "file": "notebooklm-stack.md",
       "category": "AI / Apps",
-      "summary": "33 repos (1,451,935\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
+      "summary": "33 repos (1,455,185\u2605) to build a NotebookLM clone \u2014 reference apps, source ingestion, cited retrieval, Audio Overview TTS, live voice mode, mind maps \u2014 plus a free-vs-paid managed-service menu (LLM/embeddings/vector/STT/TTS/hosting) and three low-cost payable stacks (from $0 to a ~$15\u201325/mo commercial build).",
       "tool_count": 33,
-      "total_stars": 1451935,
+      "total_stars": 1455185,
       "categories": {
         "Clone / reference app": 5,
         "Source ingestion & parsing": 6,
@@ -683,38 +683,38 @@
       "top_tools": [
         {
           "name": "yt-dlp/yt-dlp",
-          "stars": 201444
+          "stars": 202349
         },
         {
           "name": "microsoft/markitdown",
-          "stars": 191947
+          "stars": 192282
         },
         {
           "name": "openai/whisper",
-          "stars": 111192
+          "stars": 111291
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 84378
+          "stars": 84439
         },
         {
           "name": "opendatalab/MinerU",
-          "stars": 82417
+          "stars": 82513
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/notebooklm_stack.py",
-      "created": "2026-07-19"
+      "created": "2026-10-26"
     },
     {
       "slug": "ai-coding-tuis",
       "title": "Terminal AI Coding Agents (TUIs) \u2014 Best Picks, Advantages & Disadvantages",
       "file": "ai-coding-tuis.md",
       "category": "AI / Comparison",
-      "summary": "32 terminal AI coding tools (1,443,210\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
+      "summary": "32 terminal AI coding tools (1,446,954\u2605): the TUI agents themselves with per-agent advantages/disadvantages and Terminal-Bench-backed task rankings, plus the token-ops, safety, and launcher ecosystem around them.",
       "tool_count": 32,
-      "total_stars": 1443210,
+      "total_stars": 1446954,
       "categories": {
         "Terminal coding agent": 14,
         "Session / token ops": 7,
@@ -725,38 +725,38 @@
       "top_tools": [
         {
           "name": "anomalyco/opencode",
-          "stars": 221010
+          "stars": 221732
         },
         {
           "name": "anthropics/claude-code",
-          "stars": 153265
+          "stars": 153420
         },
         {
           "name": "farion1231/cc-switch",
-          "stars": 148302
+          "stars": 148850
         },
         {
           "name": "openai/codex",
-          "stars": 130791
+          "stars": 130982
         },
         {
           "name": "earendil-works/pi",
-          "stars": 117581
+          "stars": 117920
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/ai_coding_tuis.py",
-      "created": "2026-07-19"
+      "created": "2026-10-26"
     },
     {
       "slug": "decision-classifiers",
       "title": "Decision Classifiers & Guard Models \u2014 Landscape Report",
       "file": "decision-classifiers.md",
       "category": "AI / Evaluation",
-      "summary": "32 tools (82,768\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
+      "summary": "32 tools (82,906\u2605) that turn text into typed decisions: Jev and open System One copies, zero-shot and few-shot classifiers, guard models, policy, routers, calibration \u2014 ranked by task with sprint evidence.",
       "tool_count": 32,
-      "total_stars": 82768,
+      "total_stars": 82906,
       "categories": {
         "Typed decision API": 6,
         "Open decision model": 6,
@@ -771,15 +771,15 @@
       "top_tools": [
         {
           "name": "BoundaryML/baml",
-          "stars": 9431
+          "stars": 9444
         },
         {
           "name": "guardrails-ai/guardrails",
-          "stars": 7558
+          "stars": 7559
         },
         {
           "name": "NVIDIA-NeMo/Guardrails",
-          "stars": 7360
+          "stars": 7367
         },
         {
           "name": "katanemo/plano",
@@ -787,22 +787,22 @@
         },
         {
           "name": "mizorewww/laya-mlx",
-          "stars": 7019
+          "stars": 7026
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/decision_classifiers.py",
-      "created": "2026-09-25"
+      "created": "2026-10-26"
     },
     {
       "slug": "rag-tooling",
       "title": "RAG (Retrieval-Augmented Generation) Tooling \u2014 Landscape Report",
       "file": "rag-tooling.md",
       "category": "AI / RAG",
-      "summary": "32 RAG tools (758,477\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
+      "summary": "32 RAG tools (759,094\u2605) across the pipeline: frameworks/engines, vector DBs, ingestion/chunking, embeddings/rerankers, and novel retrieval approaches.",
       "tool_count": 32,
-      "total_stars": 758477,
+      "total_stars": 759094,
       "categories": {
         "RAG framework / engine": 11,
         "Vector DB / search": 11,
@@ -813,38 +813,38 @@
       "top_tools": [
         {
           "name": "infiniflow/ragflow",
-          "stars": 92807
+          "stars": 92892
         },
         {
           "name": "PaddlePaddle/PaddleOCR",
-          "stars": 91616
+          "stars": 91698
         },
         {
           "name": "run-llama/llama_index",
-          "stars": 52642
+          "stars": 52669
         },
         {
           "name": "milvus-io/milvus",
-          "stars": 46466
+          "stars": 46483
         },
         {
           "name": "facebookresearch/faiss",
-          "stars": 41200
+          "stars": 41214
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/rag_tooling.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "voice-agents",
       "title": "Voice AI Agents \u2014 Landscape Report",
       "file": "voice-agents.md",
       "category": "AI / Voice",
-      "summary": "30 voice-AI projects (725,265\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
+      "summary": "30 voice-AI projects (729,337\u2605) across the voice-agent loop: realtime frameworks, STT/ASR, TTS, voice cloning, speech-LLM/omni models, and voice-capable runtimes.",
       "tool_count": 30,
-      "total_stars": 725265,
+      "total_stars": 729337,
       "categories": {
         "Realtime voice-agent framework": 5,
         "Speech-to-text / ASR": 7,
@@ -856,38 +856,38 @@
       "top_tools": [
         {
           "name": "openai/whisper",
-          "stars": 111192
+          "stars": 111291
         },
         {
           "name": "debpalash/VoiceStudio",
-          "stars": 84573
+          "stars": 87868
         },
         {
           "name": "CorentinJ/Real-Time-Voice-Cloning",
-          "stars": 60208
+          "stars": 60212
         },
         {
           "name": "jamiepine/voicebox",
-          "stars": 58448
+          "stars": 58573
         },
         {
           "name": "ggml-org/whisper.cpp",
-          "stars": 54625
+          "stars": 54681
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/voice_agents.py",
-      "created": "2026-06-04"
+      "created": "2026-10-26"
     },
     {
       "slug": "llm-evaluation-tooling",
       "title": "LLM Evaluation Tooling \u2014 Landscape Report",
       "file": "llm-evaluation-tooling.md",
       "category": "AI / Evaluation",
-      "summary": "29 LLM evaluation tools (225,815\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
+      "summary": "29 LLM evaluation tools (226,277\u2605): observability+eval platforms, eval frameworks, benchmarks/leaderboards, and safety/red-team \u2014 framed online vs. offline.",
       "tool_count": 29,
-      "total_stars": 225815,
+      "total_stars": 226277,
       "categories": {
         "Observability + eval platform": 6,
         "Evaluation framework": 10,
@@ -897,38 +897,38 @@
       "top_tools": [
         {
           "name": "langfuse/langfuse",
-          "stars": 36348
+          "stars": 36512
         },
         {
           "name": "mlflow/mlflow",
-          "stars": 28517
+          "stars": 28537
         },
         {
           "name": "promptfoo/promptfoo",
-          "stars": 26378
+          "stars": 26448
         },
         {
           "name": "comet-ml/opik",
-          "stars": 22882
+          "stars": 22932
         },
         {
           "name": "openai/evals",
-          "stars": 19644
+          "stars": 19658
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/llm_evaluation.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "openclaw-ecosystem",
       "title": "OpenClaw Ecosystem \u2014 What to Use Now",
       "file": "openclaw-ecosystem.md",
       "category": "AI / OpenClaw",
-      "summary": "29 OpenClaw (\ud83e\udd9e) ecosystem projects (1,249,582\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
+      "summary": "29 OpenClaw (\ud83e\udd9e) ecosystem projects (1,251,789\u2605): the core assistant, alternative agent-OSes, secure runtimes, skills, routing, memory, observability, UIs & specialized agents \u2014 with an opinionated 'use now' stack and risk flags.",
       "tool_count": 29,
-      "total_stars": 1249582,
+      "total_stars": 1251789,
       "categories": {
         "Alternatives": 5,
         "Hosting": 3,
@@ -939,29 +939,29 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 392940
+          "stars": 393115
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 256743
+          "stars": 257226
         },
         {
           "name": "farion1231/cc-switch",
-          "stars": 148302
+          "stars": 148850
         },
         {
           "name": "CherryHQ/cherry-studio",
-          "stars": 52948
+          "stars": 52994
         },
         {
           "name": "HKUDS/nanobot",
-          "stars": 49328
+          "stars": 49362
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/openclaw_ecosystem.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "jetson-inference-engines",
@@ -970,7 +970,7 @@
       "category": "AI / Infrastructure",
       "summary": "Which inference engine to run on a Jetson Orin Nano 8GB, argued against first-party measurements (36.8 tok/s at 0.8B, 14.3 at 4.7B): llama.cpp is the answer, TensorRT-LLM does not target this SKU, the datacenter tier is the wrong machine class \u2014 and the three biggest throughput levers are not engine swaps at all. Covers 27 engines in the dataset plus 3 missing (18,455\u2605).",
       "tool_count": 27,
-      "total_stars": 994655,
+      "total_stars": 996243,
       "categories": {
         "Edge-viable LLM runtime": 7,
         "NVIDIA / Jetson path": 4,
@@ -983,38 +983,38 @@
       "top_tools": [
         {
           "name": "ollama/ollama",
-          "stars": 184639
+          "stars": 184829
         },
         {
           "name": "ggml-org/llama.cpp",
-          "stars": 132228
+          "stars": 132400
         },
         {
           "name": "vllm-project/vllm",
-          "stars": 95322
+          "stars": 95582
         },
         {
           "name": "nomic-ai/gpt4all",
-          "stars": 77355
+          "stars": 77356
         },
         {
           "name": "ggml-org/whisper.cpp",
-          "stars": 54625
+          "stars": 54681
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/jetson_inference.py",
-      "created": "2026-08-23"
+      "created": "2026-10-26"
     },
     {
       "slug": "document-extraction",
       "title": "Document Extraction Frameworks \u2014 Landscape & Task Rankings",
       "file": "document-extraction.md",
       "category": "AI / Documents",
-      "summary": "26 document-extraction tools (725,906\u2605) compared and ranked per task: conversion frameworks, OCR/layout models, VLM parsers, field extractors, and serving glue \u2014 with OmniDocBench-backed task rankings.",
+      "summary": "26 document-extraction tools (726,626\u2605) compared and ranked per task: conversion frameworks, OCR/layout models, VLM parsers, field extractors, and serving glue \u2014 with OmniDocBench-backed task rankings.",
       "tool_count": 26,
-      "total_stars": 725906,
+      "total_stars": 726626,
       "categories": {
         "Conversion framework": 7,
         "OCR / layout model": 3,
@@ -1025,38 +1025,38 @@
       "top_tools": [
         {
           "name": "microsoft/markitdown",
-          "stars": 191947
+          "stars": 192282
         },
         {
           "name": "PaddlePaddle/PaddleOCR",
-          "stars": 91616
+          "stars": 91698
         },
         {
           "name": "opendatalab/MinerU",
-          "stars": 82417
+          "stars": 82513
         },
         {
           "name": "tesseract-ocr/tesseract",
-          "stars": 77151
+          "stars": 77171
         },
         {
           "name": "docling-project/docling",
-          "stars": 69507
+          "stars": 69606
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/document_extraction.py",
-      "created": "2026-07-19"
+      "created": "2026-10-26"
     },
     {
       "slug": "finetuning-stack",
       "title": "Fine-Tuning & Post-Training Stack \u2014 Which Trainer for Which Task",
       "file": "finetuning-stack.md",
       "category": "AI / Engineering",
-      "summary": "26 fine-tuning & post-training tools (803,179\u2605) compared and ranked per task: full-stack trainers, PEFT/alignment libraries, agent RL (GRPO), learn-by-building repos, on-device tuning, and the adapter-serving layer \u2014 with 2026 benchmark-backed task rankings.",
+      "summary": "26 fine-tuning & post-training tools (803,832\u2605) compared and ranked per task: full-stack trainers, PEFT/alignment libraries, agent RL (GRPO), learn-by-building repos, on-device tuning, and the adapter-serving layer \u2014 with 2026 benchmark-backed task rankings.",
       "tool_count": 26,
-      "total_stars": 803179,
+      "total_stars": 803832,
       "categories": {
         "Full-stack fine-tuning framework": 6,
         "PEFT & alignment library": 2,
@@ -1068,38 +1068,38 @@
       "top_tools": [
         {
           "name": "huggingface/transformers",
-          "stars": 168075
+          "stars": 168183
         },
         {
           "name": "rasbt/LLMs-from-scratch",
-          "stars": 107214
+          "stars": 107311
         },
         {
           "name": "unslothai/unsloth",
-          "stars": 78519
+          "stars": 78581
         },
         {
           "name": "hiyouga/LlamaFactory",
-          "stars": 75710
+          "stars": 75741
         },
         {
           "name": "labmlai/annotated_deep_learning_paper_implementations",
-          "stars": 67596
+          "stars": 67600
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/finetuning_stack.py",
-      "created": "2026-07-20"
+      "created": "2026-10-26"
     },
     {
       "slug": "memory-frameworks-for-llm-agents",
       "title": "Memory Frameworks for LLMs & Agents \u2014 Comparative Report",
       "file": "memory-frameworks-for-llm-agents.md",
       "category": "AI / Agents",
-      "summary": "22 LLM/agent memory frameworks (460,879\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
+      "summary": "22 LLM/agent memory frameworks (461,895\u2605) across general memory layers, coding-agent memory, knowledge-graph memory, and framework-bundled memory \u2014 plus storage substrates.",
       "tool_count": 22,
-      "total_stars": 460879,
+      "total_stars": 461895,
       "categories": {
         "General memory layer": 13,
         "Coding-agent memory": 4,
@@ -1109,29 +1109,29 @@
       "top_tools": [
         {
           "name": "thedotmack/claude-mem",
-          "stars": 102756
+          "stars": 103258
         },
         {
           "name": "mem0ai/mem0",
-          "stars": 67748
+          "stars": 67839
         },
         {
           "name": "MemPalace/mempalace",
-          "stars": 59726
+          "stars": 59744
         },
         {
           "name": "topoteretes/cognee",
-          "stars": 32718
+          "stars": 32768
         },
         {
           "name": "getzep/graphiti",
-          "stars": 32180
+          "stars": 32230
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/memory_frameworks.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "blockchain-claws",
@@ -1140,7 +1140,7 @@
       "category": "AI / Comparison",
       "summary": "Which claw is best for blockchain/web3/DeFi (eliza = crypto-native; openclaw = MCP + on-chain-payments analysis hub) plus a skills-by-purpose map \u2014 on-chain data (blockscout), valuation (OpenBB), trading (TradingAgents), payments (ClawRouter/x402) \u2014 and ready-made stacks for analyzing DeFi positions.",
       "tool_count": 18,
-      "total_stars": 1271622,
+      "total_stars": 1274343,
       "categories": {
         "On-chain data & explorer": 1,
         "Valuation, market data & quant": 1,
@@ -1152,38 +1152,38 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 392940
+          "stars": 393115
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 256743
+          "stars": 257226
         },
         {
           "name": "TauricResearch/TradingAgents",
-          "stars": 113591
+          "stars": 115250
         },
         {
           "name": "punkpeye/awesome-mcp-servers",
-          "stars": 96825
+          "stars": 96884
         },
         {
           "name": "modelcontextprotocol/servers",
-          "stars": 91544
+          "stars": 91575
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/blockchain_claws.py",
-      "created": "2026-06-03"
+      "created": "2026-10-26"
     },
     {
       "slug": "token-savings",
       "title": "Token-Savings & Context-Efficiency Tooling",
       "file": "token-savings.md",
       "category": "AI / Efficiency",
-      "summary": "15 token-savings tools (500,152\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
+      "summary": "15 token-savings tools (501,670\u2605), organized by workload \u2014 coding agents/codebases, generation/prompting, retrieval/RAG, long-running memory, and model-level. Includes a stacking guide and risk flags.",
       "tool_count": 15,
-      "total_stars": 500152,
+      "total_stars": 501670,
       "categories": {
         "Coding": 8,
         "Generation": 1,
@@ -1194,29 +1194,29 @@
       "top_tools": [
         {
           "name": "JuliusBrussee/caveman",
-          "stars": 114780
+          "stars": 115162
         },
         {
           "name": "thedotmack/claude-mem",
-          "stars": 102756
+          "stars": 103258
         },
         {
           "name": "rtk-ai/rtk",
-          "stars": 84451
+          "stars": 84595
         },
         {
           "name": "colbymchenry/codegraph",
-          "stars": 75207
+          "stars": 75383
         },
         {
           "name": "mksglu/context-mode",
-          "stars": 32107
+          "stars": 32355
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/token_savings.py",
-      "created": "2026-05-31"
+      "created": "2026-10-26"
     },
     {
       "slug": "which-claw",
@@ -1225,7 +1225,7 @@
       "category": "AI / Comparison",
       "summary": "Decision report ranking 13 standalone OpenClaw-family claws (incl. functional ones like Hermes) on a transparent composite (health, adoption, resilience, maturity, momentum). Winner: zeroclaw \u2014 robust across 6 weight profiles. Adds weight-sensitivity, Pareto-dominance & graph analysis, plus a per-claw 'where each shines' table.",
       "tool_count": 13,
-      "total_stars": 1140011,
+      "total_stars": 1140710,
       "categories": {
         "General assistant": 8,
         "Secure runtime": 3,
@@ -1234,38 +1234,38 @@
       "top_tools": [
         {
           "name": "zeroclaw-labs/zeroclaw",
-          "stars": 33039
+          "stars": 33042
         },
         {
           "name": "openclaw/openclaw",
-          "stars": 392940
+          "stars": 393115
         },
         {
           "name": "ultraworkers/claw-code",
-          "stars": 195066
+          "stars": 194988
+        },
+        {
+          "name": "NVIDIA/NemoClaw",
+          "stars": 22846
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 256743
-        },
-        {
-          "name": "code-yeongyu/oh-my-openagent",
-          "stars": 70309
+          "stars": 257226
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/which_claw.py",
-      "created": "2026-06-03"
+      "created": "2026-10-26"
     },
     {
       "slug": "hermes-vs-openclaw",
       "title": "Hermes Agent vs OpenClaw \u2014 Head-to-Head",
       "file": "hermes-vs-openclaw.md",
       "category": "AI / Comparison",
-      "summary": "Head-to-head: OpenClaw (392,940\u2605) vs Hermes Agent (256,743\u2605) on adoption, velocity, health, maintenance & ecosystem, plus the broader field of personal-assistant agents. Verdict: default OpenClaw; Hermes if Python-first.",
+      "summary": "Head-to-head: OpenClaw (393,115\u2605) vs Hermes Agent (257,226\u2605) on adoption, velocity, health, maintenance & ecosystem, plus the broader field of personal-assistant agents. Verdict: default OpenClaw; Hermes if Python-first.",
       "tool_count": 10,
-      "total_stars": 968283,
+      "total_stars": 969104,
       "categories": {
         "Principals": 2,
         "Field": 8
@@ -1273,29 +1273,29 @@
       "top_tools": [
         {
           "name": "openclaw/openclaw",
-          "stars": 392940
+          "stars": 393115
         },
         {
           "name": "NousResearch/hermes-agent",
-          "stars": 256743
+          "stars": 257226
         },
         {
           "name": "bytedance/deer-flow",
-          "stars": 84378
+          "stars": 84439
         },
         {
           "name": "code-yeongyu/oh-my-openagent",
-          "stars": 70309
+          "stars": 70345
         },
         {
           "name": "HKUDS/nanobot",
-          "stars": 49328
+          "stars": 49362
         }
       ],
-      "snapshot": "2026-10-24T18:18:45.023Z",
-      "generated": "2026-10-24",
+      "snapshot": "2026-10-26T11:46:04.025Z",
+      "generated": "2026-10-26",
       "generator": "scripts/reports/hermes_vs_openclaw.py",
-      "created": "2026-06-02"
+      "created": "2026-10-26"
     }
   ]
 }

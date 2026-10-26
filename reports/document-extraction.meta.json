@@ -3,9 +3,9 @@
   "title": "Document Extraction Frameworks \u2014 Landscape & Task Rankings",
   "file": "document-extraction.md",
   "category": "AI / Documents",
-  "summary": "26 document-extraction tools (725,906\u2605) compared and ranked per task: conversion frameworks, OCR/layout models, VLM parsers, field extractors, and serving glue \u2014 with OmniDocBench-backed task rankings.",
+  "summary": "26 document-extraction tools (726,626\u2605) compared and ranked per task: conversion frameworks, OCR/layout models, VLM parsers, field extractors, and serving glue \u2014 with OmniDocBench-backed task rankings.",
   "tool_count": 26,
-  "total_stars": 725906,
+  "total_stars": 726626,
   "categories": {
     "Conversion framework": 7,
     "OCR / layout model": 3,
@@ -16,27 +16,27 @@
   "top_tools": [
     {
       "name": "microsoft/markitdown",
-      "stars": 191947
+      "stars": 192282
     },
     {
       "name": "PaddlePaddle/PaddleOCR",
-      "stars": 91616
+      "stars": 91698
     },
     {
       "name": "opendatalab/MinerU",
-      "stars": 82417
+      "stars": 82513
     },
     {
       "name": "tesseract-ocr/tesseract",
-      "stars": 77151
+      "stars": 77171
     },
     {
       "name": "docling-project/docling",
-      "stars": 69507
+      "stars": 69606
     }
   ],
-  "snapshot": "2026-10-24T18:18:45.023Z",
-  "generated": "2026-10-24",
+  "snapshot": "2026-10-26T11:46:04.025Z",
+  "generated": "2026-10-26",
   "generator": "scripts/reports/document_extraction.py",
-  "created": "2026-07-19"
+  "created": "2026-10-26"
 }

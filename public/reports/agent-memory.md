@@ -1,8 +1,8 @@
 # Agent Memory & Conversational Knowledge Graphs
 
-> Derived from **kaiser-data**'s 2,408 starred repos (snapshot `2026-10-24T18:18:45.023Z`), cross-referenced with the repo-similarity graph (2,408 nodes / 7,966 edges, 39 communities). The primitive-coverage matrix is additionally backed by documentation and source-code evidence gathered 2026-08-12 — see Methodology.
+> Derived from **kaiser-data**'s 2,415 starred repos (snapshot `2026-10-26T11:46:04.025Z`), cross-referenced with the repo-similarity graph (2,415 nodes / 8,024 edges, 43 communities). The primitive-coverage matrix is additionally backed by documentation and source-code evidence gathered 2026-08-12 — see Methodology.
 >
-> Generated 2026-10-24 by `scripts/reports/agent_memory.py` (regenerate any time — no API cost).
+> Generated 2026-10-26 by `scripts/reports/agent_memory.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/agent-memory-top-tools.svg)
 
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-- **37 tools** across the memory stack (**798,466★** combined):
+- **37 tools** across the memory stack (**799,885★** combined):
   - **Graph-native memory** (7): `cognee`, `graphiti`, `semantica`, `MemMachine`, `trustgraph`, `mcp-knowledge-graph`, `MGP`
   - **Vector-first memory** (9): `mem0`, `mempalace`, `hindsight`, `TencentDB-Agent-Memory`, `letta`, `Memori`, `memvid`, `honcho`, `memsearch`
   - **Vector & graph stores** (7): `milvus`, `qdrant`, `pgvector`, `weaviate`, `lancedb`, `FalkorDB`, `helix-db`
@@ -45,42 +45,42 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Vector-first memory | Python | Apache-2.0 | 67,748 (▲314) | Classic | 83 | very active | 1d ago | 3.3y | 30 |
-| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Vector-first memory | Python | MIT | 59,726 (▲92) | Rising | 76 | very active | 1d ago | 6mo | 2 |
-| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | Vector-first memory | Python | MIT | 53,392 (▲1,946) | Hot | 79 | very active | 0d ago | 11mo | 3 |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector & graph stores | Go | Apache-2.0 | 46,466 (▲39) | Classic | 99 | very active | 1d ago | 7.1y | 30 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Extraction & ontology | Python | MIT | 40,311 (▲102) | Mature | 78 | very active | 2d ago | 2.1y | 14 |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Extraction & ontology | Python | MIT | 36,432 (▲48) | Mature | 70 | very active | 4d ago | 2.6y | 3 |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector & graph stores | Rust | Apache-2.0 | 35,228 (▲92) | Classic | 83 | very active | 1d ago | 6.4y | 20 |
-| [onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx) | Chat & workspace connectors | Python | NOASSERTION | 32,945 (▲368) | Classic | 89 | very active | 0d ago | 3.5y | 10 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | Graph-native memory | Python | Apache-2.0 | 32,718 (▲188) | Classic | 81 | very active | 1d ago | 3.2y | 8 |
-| [getzep/graphiti](https://github.com/getzep/graphiti) | Graph-native memory | Python | Apache-2.0 | 32,180 (▲157) | Mature | 76 | very active | 1d ago | 2.2y | 13 |
-| [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | Meeting & transcript capture | Rust | MIT | 32,119 (▲193) | Hot | 73 | very active | 0d ago | 1.8y | 7 |
-| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Chat & workspace connectors | TypeScript | MIT | 31,007 (▲38) | Hot | 77 | very active | 0d ago | 8mo | 12 |
-| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Vector-first memory | TypeScript | NOASSERTION | 29,888 (▲274) | Hot | 90 | very active | 4d ago | 6mo | 33 |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Memory evaluation | TypeScript | MIT | 26,378 (▲243) | Classic | 79 | very active | 0d ago | 3.5y | 13 |
-| [letta-ai/letta](https://github.com/letta-ai/letta) | Vector-first memory | — | Apache-2.0 | 25,241 (▲54) | Mature | 67 | active | 6d ago | 3.0y | 3 |
-| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector & graph stores | C | NOASSERTION | 23,466 (▲58) | Classic | 65 | very active | 0d ago | 5.5y | 3 |
-| [comet-ml/opik](https://github.com/comet-ml/opik) | Memory evaluation | Python | Apache-2.0 | 22,882 (▲148) | Classic | 94 | very active | 1d ago | 3.5y | 28 |
-| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Meeting & transcript capture | Rust | NOASSERTION | 22,054 (▲69) | Mature | 80 | very active | 1d ago | 2.3y | 4 |
-| [elizaOS/eliza](https://github.com/elizaOS/eliza) | Chat & workspace connectors | TypeScript | MIT | 19,645 (▲23) | Mature | 80 | very active | 0d ago | 2.3y | 4 |
-| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | Vector-first memory | Python | NOASSERTION | 17,142 (▼7) | Mature | 62 | active | 22d ago | 1.3y | 1 |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector & graph stores | Go | NOASSERTION | 16,907 (▲16) | Classic | 83 | very active | 0d ago | 10.6y | 9 |
-| [memvid/memvid](https://github.com/memvid/memvid) | Vector-first memory | Rust | Apache-2.0 | 16,605 (▲2) | Declining | 45 | slowing | 3mo ago | 1.4y | 0 |
-| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Graph-native memory | Python | MIT | 14,214 (▲81) | Hot | 94 | very active | 1d ago | 1.3y | 29 |
-| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Vector & graph stores | Rust | Apache-2.0 | 11,761 (▲60) | Classic | 97 | very active | 0d ago | 3.7y | 42 |
-| [cocoindex-io/cocoindex](https://github.com/cocoindex-io/cocoindex) | Extraction & ontology | Rust | Apache-2.0 | 11,747 (▲26) | Hot | 78 | very active | 0d ago | 1.6y | 6 |
-| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector & graph stores | Rust | NOASSERTION | 10,493 (▼4) | Classic | 76 | very active | 0d ago | 3.3y | 7 |
-| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | Vector-first memory | Python | AGPL-3.0 | 7,760 (▲76) | Classic | 75 | very active | 1d ago | 3.1y | 21 |
-| [HelixDB/helix-db](https://github.com/HelixDB/helix-db) | Vector & graph stores | Rust | Apache-2.0 | 6,236 (▲22) | Hot | 80 | very active | 1d ago | 1.9y | 3 |
-| [MemMachine/MemMachine](https://github.com/MemMachine/MemMachine) | Graph-native memory | Python | Apache-2.0 | 3,077 (▲3) | Hot | 77 | very active | 2d ago | 1.2y | 10 |
-| [Vexa-ai/vexa](https://github.com/Vexa-ai/vexa) | Meeting & transcript capture | Python | Apache-2.0 | 2,906 (▲16) | Hot | 74 | very active | 0d ago | 1.7y | 7 |
-| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Graph-native memory | Python | Apache-2.0 | 2,831 (▲15) | Mature | 62 | very active | 1d ago | 2.3y | 8 |
-| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | Vector-first memory | Python | MIT | 2,787 (▲27) | Hot | 74 | very active | 1d ago | 8mo | 16 |
-| [fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies) | Extraction & ontology | Rust | MIT | 1,333 (▲245) | Hot | 80 | very active | 1d ago | 7mo | 3 |
-| [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | Extraction & ontology | Python | Apache-2.0 | 1,026 (▲4) | Mature | 76 | very active | 2d ago | 2.8y | 2 |
-| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Graph-native memory | JavaScript | MIT | 886 (▲1) | Declining | 38 | slowing | 4mo ago | 1.9y | 0 |
-| [cyrusagents/cyrus](https://github.com/cyrusagents/cyrus) | Chat & workspace connectors | TypeScript | Apache-2.0 | 867 (▲10) | Hot | 72 | very active | 0d ago | 1.5y | 11 |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | Vector-first memory | Python | Apache-2.0 | 67,839 (▲91) | Classic | 83 | very active | 3d ago | 3.4y | 30 |
+| [MemPalace/mempalace](https://github.com/MemPalace/mempalace) | Vector-first memory | Python | MIT | 59,744 (▲18) | Rising | 76 | very active | 1d ago | 6mo | 2 |
+| [vectorize-io/hindsight](https://github.com/vectorize-io/hindsight) | Vector-first memory | Python | MIT | 53,963 (▲571) | Rising | 79 | very active | 0d ago | 12mo | 2 |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Vector & graph stores | Go | Apache-2.0 | 46,483 (▲17) | Classic | 99 | very active | 0d ago | 7.1y | 34 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Extraction & ontology | Python | MIT | 40,340 (▲29) | Mature | 78 | very active | 4d ago | 2.1y | 14 |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Extraction & ontology | Python | MIT | 36,449 (▲17) | Mature | 70 | very active | 0d ago | 2.6y | 3 |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector & graph stores | Rust | Apache-2.0 | 35,258 (▲30) | Classic | 83 | very active | 0d ago | 6.4y | 20 |
+| [onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx) | Chat & workspace connectors | Python | NOASSERTION | 32,993 (▲48) | Classic | 89 | very active | 0d ago | 3.5y | 10 |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | Graph-native memory | Python | Apache-2.0 | 32,768 (▲50) | Classic | 81 | very active | 0d ago | 3.2y | 8 |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | Graph-native memory | Python | Apache-2.0 | 32,230 (▲50) | Mature | 75 | very active | 0d ago | 2.2y | 13 |
+| [Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily) | Meeting & transcript capture | Rust | MIT | 32,177 (▲58) | Hot | 72 | very active | 2d ago | 1.8y | 7 |
+| [nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw) | Chat & workspace connectors | TypeScript | MIT | 31,019 (▲12) | Hot | 77 | very active | 0d ago | 8mo | 12 |
+| [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | Vector-first memory | TypeScript | NOASSERTION | 29,966 (▲78) | Hot | 90 | very active | 0d ago | 6mo | 33 |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | Memory evaluation | TypeScript | MIT | 26,448 (▲70) | Classic | 79 | very active | 0d ago | 3.5y | 13 |
+| [letta-ai/letta](https://github.com/letta-ai/letta) | Vector-first memory | — | Apache-2.0 | 25,260 (▲19) | Mature | 67 | active | 8d ago | 3.0y | 3 |
+| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector & graph stores | C | NOASSERTION | 23,483 (▲17) | Classic | 64 | very active | 1d ago | 5.5y | 3 |
+| [comet-ml/opik](https://github.com/comet-ml/opik) | Memory evaluation | Python | Apache-2.0 | 22,932 (▲50) | Classic | 89 | very active | 0d ago | 3.5y | 27 |
+| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Meeting & transcript capture | Rust | NOASSERTION | 22,074 (▲20) | Mature | 80 | very active | 0d ago | 2.4y | 4 |
+| [elizaOS/eliza](https://github.com/elizaOS/eliza) | Chat & workspace connectors | TypeScript | MIT | 19,652 (▲7) | Mature | 80 | very active | 0d ago | 2.3y | 2 |
+| [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | Vector-first memory | Python | NOASSERTION | 17,141 (▼1) | Mature | 62 | active | 23d ago | 1.3y | 1 |
+| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Vector & graph stores | Go | NOASSERTION | 16,915 (▲8) | Classic | 83 | very active | 0d ago | 10.6y | 9 |
+| [memvid/memvid](https://github.com/memvid/memvid) | Vector-first memory | Rust | Apache-2.0 | 16,610 (▲5) | Declining | 45 | slowing | 3mo ago | 1.4y | 0 |
+| [semantica-agi/semantica](https://github.com/semantica-agi/semantica) | Graph-native memory | Python | MIT | 14,253 (▲39) | Hot | 99 | very active | 0d ago | 1.3y | 30 |
+| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Vector & graph stores | Rust | Apache-2.0 | 11,775 (▲14) | Classic | 97 | very active | 0d ago | 3.7y | 40 |
+| [cocoindex-io/cocoindex](https://github.com/cocoindex-io/cocoindex) | Extraction & ontology | Rust | Apache-2.0 | 11,754 (▲7) | Hot | 78 | very active | 1d ago | 1.6y | 6 |
+| [FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB) | Vector & graph stores | Rust | NOASSERTION | 10,492 (▼1) | Classic | 77 | very active | 0d ago | 3.3y | 7 |
+| [plastic-labs/honcho](https://github.com/plastic-labs/honcho) | Vector-first memory | Python | AGPL-3.0 | 7,777 (▲17) | Classic | 75 | very active | 0d ago | 3.1y | 21 |
+| [HelixDB/helix-db](https://github.com/HelixDB/helix-db) | Vector & graph stores | Rust | Apache-2.0 | 6,239 (▲3) | Hot | 80 | very active | 1d ago | 1.9y | 4 |
+| [MemMachine/MemMachine](https://github.com/MemMachine/MemMachine) | Graph-native memory | Python | Apache-2.0 | 3,076 (▼1) | Hot | 77 | very active | 0d ago | 1.2y | 9 |
+| [Vexa-ai/vexa](https://github.com/Vexa-ai/vexa) | Meeting & transcript capture | Python | Apache-2.0 | 2,908 (▲2) | Hot | 74 | very active | 0d ago | 1.7y | 7 |
+| [trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph) | Graph-native memory | Python | Apache-2.0 | 2,834 (▲3) | Mature | 61 | very active | 3d ago | 2.3y | 8 |
+| [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | Vector-first memory | Python | MIT | 2,795 (▲8) | Hot | 74 | very active | 0d ago | 8mo | 17 |
+| [fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies) | Extraction & ontology | Rust | MIT | 1,390 (▲57) | Hot | 80 | very active | 3d ago | 7mo | 3 |
+| [FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK) | Extraction & ontology | Python | Apache-2.0 | 1,027 (▲1) | Mature | 76 | very active | 0d ago | 2.8y | 2 |
+| [shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph) | Graph-native memory | JavaScript | MIT | 886 | Declining | 38 | slowing | 5mo ago | 1.9y | 0 |
+| [cyrusagents/cyrus](https://github.com/cyrusagents/cyrus) | Chat & workspace connectors | TypeScript | Apache-2.0 | 873 (▲6) | Hot | 72 | very active | 0d ago | 1.5y | 11 |
 | [HKUDS/MGP](https://github.com/HKUDS/MGP) | Graph-native memory | Python | MIT | 62 | Declining | 24 | slowing | 3mo ago | 6mo | 0 |
 
 ## Primitive coverage matrix
@@ -200,19 +200,19 @@ The honest framing for a demo: items 1–3 are *overlooked*, so the story is "th
 
 _Structure-first memory: extract entities and relationships, store them as a graph, and answer relational questions. Costs more to build, pays off when the question is 'how do these connect' rather than 'what did we say'._
 
-- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 32,718★ · Python · Classic  
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 32,768★ · Python · Classic  
   ECL pipelines (extract → cognify → load) turning documents and chats into a queryable graph+vector memory; 30+ connectors, custom ontologies, permission controls.  
   <sub>topics: ai, cognitive-architecture, vector-database, ai-agents, graph-database, ai-memory, cognitive-memory, knowledge</sub>
-- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 32,180★ · Python · Mature  
+- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 32,230★ · Python · Mature  
   Zep's bi-temporal knowledge graph — episodes carry both event time and ingestion time, so the graph can answer 'what did we believe, when'. The strongest temporal model in the set.  
   <sub>topics: agents, graph, llms, rag</sub>
-- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 14,214★ · Python · Hot  
+- **[semantica-agi/semantica](https://github.com/semantica-agi/semantica)** · 14,253★ · Python · Hot  
   Graph-native infrastructure for context and accountable AI; ontology-first, provenance as a first-class concern.  
   <sub>topics: ai, ai-governance, artificial-intelligence, context-engineering, context-graphs, decision-intelligence, explainable-ai, generative-ai</sub>
-- **[MemMachine/MemMachine](https://github.com/MemMachine/MemMachine)** · 3,077★ · Python · Hot  
+- **[MemMachine/MemMachine](https://github.com/MemMachine/MemMachine)** · 3,076★ · Python · Hot  
   Universal memory layer with graph-backed storage and profile memory; positions on interoperability across agent frameworks.  
   <sub>topics: ai, memory, memory-management, python, agent, agentic-ai, agents, agents-sdk</sub>
-- **[trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph)** · 2,831★ · Python · Mature  
+- **[trustgraph-ai/trustgraph](https://github.com/trustgraph-ai/trustgraph)** · 2,834★ · Python · Mature  
   Deterministic context engineering — ontology-driven context graphs rather than similarity search, aimed at auditability.  
   <sub>topics: open-source, ontology, agent, graph, rdf, knowledge-graph, owl, context-graph</sub>
 - **[shaneholloman/mcp-knowledge-graph](https://github.com/shaneholloman/mcp-knowledge-graph)** · 886★ · JavaScript · Declining  
@@ -226,31 +226,31 @@ _Structure-first memory: extract entities and relationships, store them as a gra
 
 _Recall-first memory: embed, store, retrieve the top-k. Simpler to operate and hard to beat on latency; weak whenever the answer is a path rather than a passage._
 
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 67,748★ · Python · Classic  
+- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · 67,839★ · Python · Classic  
   The most deployed memory layer: message lists in, extracted facts out, with add/search/update/delete semantics over a vector store.  
   <sub>topics: ai, chatgpt, llm, python, rag, long-term-memory, memory, memory-management</sub>
-- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,726★ · Python · Rising  
+- **[MemPalace/mempalace](https://github.com/MemPalace/mempalace)** · 59,744★ · Python · Rising  
   Benchmark-led open memory system — competes explicitly on published memory-benchmark scores.  
   <sub>topics: ai, chromadb, llm, mcp, memory, python</sub>
-- **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** · 53,392★ · Python · Hot  
+- **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** · 53,963★ · Python · Rising  
   Agent memory framed as *learning* — distilling repeated experience into reusable guidance rather than storing transcripts.  
   <sub>topics: agentic-ai, memory, agents, ai-memory</sub>
-- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 29,888★ · TypeScript · Hot  
+- **[TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** · 29,966★ · TypeScript · Hot  
   Team-level memory hub turning conversations, docs and code into reusable memory types — one of the few explicitly org-scoped rather than user-scoped.  
   <sub>topics: agent, llm, memory, openclaw-plugin, ai-agent, embedding, local-first, long-term-memory</sub>
-- **[letta-ai/letta](https://github.com/letta-ai/letta)** · 25,241★ · — · Mature  
+- **[letta-ai/letta](https://github.com/letta-ai/letta)** · 25,260★ · — · Mature  
   The MemGPT lineage: stateful agents with self-editing memory blocks and an explicit context-window manager.  
   <sub>topics: llm, llm-agent, ai, ai-agents</sub>
-- **[MemoriLabs/Memori](https://github.com/MemoriLabs/Memori)** · 17,142★ · Python · Mature  
+- **[MemoriLabs/Memori](https://github.com/MemoriLabs/Memori)** · 17,141★ · Python · Mature  
   LLM-agnostic memory infrastructure that turns agent execution and conversation into structured, queryable state.  
   <sub>topics: agent, ai, long-short-term-memory, memory, python, rag, state-management, memory-management</sub>
-- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,605★ · Rust · Declining  
+- **[memvid/memvid](https://github.com/memvid/memvid)** · 16,610★ · Rust · Declining  
   Serverless single-file memory layer — trades pipeline complexity for a portable artifact.  
   <sub>topics: ai, context, embedded, faiss, knowledge-base, knowledge-graph, llm, machine-learning</sub>
-- **[plastic-labs/honcho](https://github.com/plastic-labs/honcho)** · 7,760★ · Python · Classic  
+- **[plastic-labs/honcho](https://github.com/plastic-labs/honcho)** · 7,777★ · Python · Classic  
   Memory as *user modelling* — builds a theory-of-mind representation of each peer from dialogue, not just a fact store.  
   <sub>topics: ai, llm, memory, agent-memory, ai-agents, ai-memory, context-engineering, continual-learning</sub>
-- **[zilliztech/memsearch](https://github.com/zilliztech/memsearch)** · 2,787★ · Python · Hot  
+- **[zilliztech/memsearch](https://github.com/zilliztech/memsearch)** · 2,795★ · Python · Hot  
   Unified memory across coding agents, backed by Markdown + Milvus — plain-text substrate, vector recall.  
   <sub>topics: agent-memory, claude-code, claude-code-plugin, memory, openclaw, rag, agent, embeddings</sub>
 
@@ -258,25 +258,25 @@ _Recall-first memory: embed, store, retrieve the top-k. Simpler to operate and h
 
 _The substrate. Note `helix-db` and `FalkorDB` betting that the graph/vector split is an implementation artifact rather than a real architectural boundary._
 
-- **[milvus-io/milvus](https://github.com/milvus-io/milvus)** · 46,466★ · Go · Classic  
+- **[milvus-io/milvus](https://github.com/milvus-io/milvus)** · 46,483★ · Go · Classic  
   Cloud-native vector database built for scale; the heavyweight of the category.  
   <sub>topics: anns, nearest-neighbor-search, faiss, vector-search, image-search, hnsw, vector-database, embedding-database</sub>
-- **[qdrant/qdrant](https://github.com/qdrant/qdrant)** · 35,228★ · Rust · Classic  
+- **[qdrant/qdrant](https://github.com/qdrant/qdrant)** · 35,258★ · Rust · Classic  
   High-performance vector database with rich payload filtering — the default self-hosted choice when metadata filters matter as much as similarity.  
   <sub>topics: neural-network, search-engine, knn-algorithm, hnsw, vector-search, nearest-neighbor-search, image-search, embeddings-similarity</sub>
-- **[pgvector/pgvector](https://github.com/pgvector/pgvector)** · 23,466★ · C · Classic  
+- **[pgvector/pgvector](https://github.com/pgvector/pgvector)** · 23,483★ · C · Classic  
   Vector similarity inside Postgres — the pragmatic pick when the relational data already lives there.  
   <sub>topics: nearest-neighbor-search, approximate-nearest-neighbor-search</sub>
-- **[weaviate/weaviate](https://github.com/weaviate/weaviate)** · 16,907★ · Go · Classic  
+- **[weaviate/weaviate](https://github.com/weaviate/weaviate)** · 16,915★ · Go · Classic  
   Vector database storing objects *and* vectors, with hybrid search and a schema/class model.  
   <sub>topics: search-engine, semantic-search, semantic-search-engine, vector-search, vector-search-engine, vector-database, approximate-nearest-neighbor-search, image-search</sub>
-- **[lancedb/lancedb](https://github.com/lancedb/lancedb)** · 11,761★ · Rust · Classic  
+- **[lancedb/lancedb](https://github.com/lancedb/lancedb)** · 11,775★ · Rust · Classic  
   Embedded, developer-friendly multimodal retrieval library — no server to operate.  
   <sub>topics: approximate-nearest-neighbor-search, image-search, nearest-neighbor-search, recommender-system, search-engine, semantic-search, similarity-search, vector-database</sub>
-- **[FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB)** · 10,493★ · Rust · Classic  
+- **[FalkorDB/FalkorDB](https://github.com/FalkorDB/FalkorDB)** · 10,492★ · Rust · Classic  
   Sparse-matrix (GraphBLAS) graph database marketed directly at GraphRAG workloads.  
   <sub>topics: graph-database, knowledge-graph, database-as-a-service, cloud-database, database, developer-tools, devtools, realtime-database</sub>
-- **[HelixDB/helix-db](https://github.com/HelixDB/helix-db)** · 6,236★ · Rust · Hot  
+- **[HelixDB/helix-db](https://github.com/HelixDB/helix-db)** · 6,239★ · Rust · Hot  
   OLTP graph *and* vector database in one engine — the architectural bet that the graph/vector split is an artifact, not a requirement.  
   <sub>topics: ai, cli, database, databases, graph-database, helix, rag, rust</sub>
 
@@ -284,19 +284,19 @@ _The substrate. Note `helix-db` and `FalkorDB` betting that the graph/vector spl
 
 _The layer that turns unstructured conversation into typed structure — the step that actually determines what your graph can answer._
 
-- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,311★ · Python · Mature  
+- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,340★ · Python · Mature  
   Simple, fast graph-augmented retrieval — the lightweight answer to GraphRAG's indexing cost.  
   <sub>topics: knowledge-graph, large-language-models, retrieval-augmented-generation, genai, graphrag, llm, rag, gpt</sub>
-- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,432★ · Python · Mature  
+- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,449★ · Python · Mature  
   The reference graph-RAG implementation: entity/relationship extraction plus community summarisation over a corpus.  
   <sub>topics: graphrag, rag, llm, llms, gpt, gpt-4, gpt4</sub>
-- **[cocoindex-io/cocoindex](https://github.com/cocoindex-io/cocoindex)** · 11,747★ · Rust · Hot  
+- **[cocoindex-io/cocoindex](https://github.com/cocoindex-io/cocoindex)** · 11,754★ · Rust · Hot  
   Incremental indexing engine — recomputes only what changed, which is the right shape for continuously-arriving chat.  
   <sub>topics: ai, change-data-capture, data-indexing, etl, indexing, python, rag, real-time</sub>
-- **[fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies)** · 1,333★ · Rust · Hot  
+- **[fabio-rovai/open-ontologies](https://github.com/fabio-rovai/open-ontologies)** · 1,390★ · Rust · Hot  
   Rust MCP server for building, validating and reasoning over RDF/OWL ontologies — formal semantics as agent tooling.  
   <sub>topics: ai-native, description-logics, knowledge-graph, mcp, mcp-server, ontology, owl, owl2</sub>
-- **[FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK)** · 1,026★ · Python · Mature  
+- **[FalkorDB/GraphRAG-SDK](https://github.com/FalkorDB/GraphRAG-SDK)** · 1,027★ · Python · Mature  
   Ontology-driven GraphRAG toolkit — schema first, extraction second.  
   <sub>topics: falkordb, graphrag, knowledge-graph, rag, graph-database, open-source, sdk, genai</sub>
 
@@ -304,16 +304,16 @@ _The layer that turns unstructured conversation into typed structure — the ste
 
 _The tier that touches Slack. Mature on content and permissions, indifferent to social metadata — which is precisely where this report's gap analysis lives._
 
-- **[onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx)** · 32,945★ · Python · Classic  
+- **[onyx-dot-app/onyx](https://github.com/onyx-dot-app/onyx)** · 32,993★ · Python · Classic  
   Enterprise search over 40+ sources with a mature Slack connector — notably syncs Slack *permissions*, not just content.  
   <sub>topics: enterprise-search, rag, ai-chat, chatgpt, gen-ai, nextjs, python, information-retrieval</sub>
-- **[nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw)** · 31,007★ · TypeScript · Hot  
+- **[nanocoai/nanoclaw](https://github.com/nanocoai/nanoclaw)** · 31,019★ · TypeScript · Hot  
   Containerised personal agent that connects to WhatsApp, Telegram, Slack and Discord — chat as the agent's primary surface.  
   <sub>topics: ai-agents, ai-assistant, claude-code, claude-skills, openclaw</sub>
-- **[elizaOS/eliza](https://github.com/elizaOS/eliza)** · 19,645★ · TypeScript · Mature  
+- **[elizaOS/eliza](https://github.com/elizaOS/eliza)** · 19,652★ · TypeScript · Mature  
   Agent OS with first-class Discord/Slack/Telegram clients — built to *live in* chat rather than index it.  
   <sub>topics: agent, agentic, ai, autonomous, chatbot, crypto, discord, eliza</sub>
-- **[cyrusagents/cyrus](https://github.com/cyrusagents/cyrus)** · 867★ · TypeScript · Hot  
+- **[cyrusagents/cyrus](https://github.com/cyrusagents/cyrus)** · 873★ · TypeScript · Hot  
   Background coding agent driven from Linear/Slack/GitHub threads — chat as the task queue.  
   <sub>topics: agent, ai, claude, linear, engineer, claudecode, codex, cursor</sub>
 
@@ -321,13 +321,13 @@ _The tier that touches Slack. Mature on content and permissions, indifferent to 
 
 _Conversation that never passes through a chat API: meetings, calls, screens. Different acquisition problem, same memory problem downstream._
 
-- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** · 32,119★ · Rust · Hot  
+- **[Zackriya-Solutions/meetily](https://github.com/Zackriya-Solutions/meetily)** · 32,177★ · Rust · Hot  
   Privacy-first meeting assistant: live Parakeet/Whisper transcription with speaker diarization, fully local.  
   <sub>topics: meeting-minutes, meeting-notes, llm, mac, windows, rust, whisper, whisper-cpp</sub>
-- **[screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)** · 22,054★ · Rust · Mature  
+- **[screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)** · 22,074★ · Rust · Mature  
   24/7 screen and audio capture piped into agents — captures conversation as *pixels*, sidestepping every platform API.  
   <sub>topics: ai, computer-vision, llm, machine-learning, multimodal, agents, agi, audio-recording</sub>
-- **[Vexa-ai/vexa](https://github.com/Vexa-ai/vexa)** · 2,906★ · Python · Hot  
+- **[Vexa-ai/vexa](https://github.com/Vexa-ai/vexa)** · 2,908★ · Python · Hot  
   Meeting transcription API with auto-join bots for Meet/Teams/Zoom and real-time WebSocket streams.  
   <sub>topics: google-meet, meeting-assistant, meeting-minutes, meeting-notes, ms-teams, notetaker, zoom, api</sub>
 
@@ -335,38 +335,37 @@ _Conversation that never passes through a chat API: meetings, calls, screens. Di
 
 _Thin, and general-purpose rather than memory-specific. The category's weakest link._
 
-- **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** · 26,378★ · TypeScript · Classic  
+- **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** · 26,448★ · TypeScript · Classic  
   Prompt/agent/RAG testing and red-teaming — the closest thing here to a harness for regression-testing recall.  
   <sub>topics: llm, prompt-engineering, prompts, llmops, prompt-testing, testing, rag, evaluation</sub>
-- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,882★ · Python · Classic  
+- **[comet-ml/opik](https://github.com/comet-ml/opik)** · 22,932★ · Python · Classic  
   Tracing and evaluation for LLM and agentic workflows, including RAG-quality metrics.  
   <sub>topics: open-source, langchain, openai, playground, prompt-engineering, llama-index, llm, llm-evaluation</sub>
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 37 tools span **14 of the graph's 39 communities** — a wide spread for one report, which is itself the finding: 'agent memory' is not one community in your stars, it is a theme cutting across several.
+**Community clustering.** These 37 tools span **14 of the graph's 43 communities** — a wide spread for one report, which is itself the finding: 'agent memory' is not one community in your stars, it is a theme cutting across several.
 
-- **Community 0** (7): `topoteretes/cognee`, `MemMachine/MemMachine`, `mem0ai/mem0`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `zilliztech/memsearch`, `cyrusagents/cyrus`
-- **Community 15** (6): `shaneholloman/mcp-knowledge-graph`, `qdrant/qdrant`, `milvus-io/milvus`, `weaviate/weaviate`, `pgvector/pgvector`, `lancedb/lancedb`
-- **Community 13** (5): `semantica-agi/semantica`, `MemPalace/mempalace`, `letta-ai/letta`, `TencentCloud/TencentDB-Agent-Memory`, `memvid/memvid`
-- **Community 29** (4): `HKUDS/MGP`, `FalkorDB/FalkorDB`, `HKUDS/LightRAG`, `FalkorDB/GraphRAG-SDK`
-- **Community 8** (3): `HelixDB/helix-db`, `cocoindex-io/cocoindex`, `nanocoai/nanoclaw`
-- **Community 2** (2): `getzep/graphiti`, `fabio-rovai/open-ontologies`
-- **Community 3** (2): `Zackriya-Solutions/meetily`, `Vexa-ai/vexa`
-- **Community 20** (2): `promptfoo/promptfoo`, `comet-ml/opik`
+- **Community 11** (13): `topoteretes/cognee`, `getzep/graphiti`, `MemMachine/MemMachine`, `semantica-agi/semantica`, `mem0ai/mem0`, `MemPalace/mempalace`, `letta-ai/letta`, `TencentCloud/TencentDB-Agent-Memory`, `memvid/memvid`, `MemoriLabs/Memori`, `plastic-labs/honcho`, `zilliztech/memsearch`, `cyrusagents/cyrus`
+- **Community 8** (6): `shaneholloman/mcp-knowledge-graph`, `qdrant/qdrant`, `milvus-io/milvus`, `weaviate/weaviate`, `pgvector/pgvector`, `lancedb/lancedb`
+- **Community 13** (3): `HelixDB/helix-db`, `cocoindex-io/cocoindex`, `nanocoai/nanoclaw`
+- **Community 35** (2): `HKUDS/MGP`, `HKUDS/LightRAG`
+- **Community 0** (2): `FalkorDB/FalkorDB`, `FalkorDB/GraphRAG-SDK`
+- **Community 22** (2): `Zackriya-Solutions/meetily`, `Vexa-ai/vexa`
+- **Community 25** (2): `promptfoo/promptfoo`, `comet-ml/opik`
 
-**Centrality (PageRank in the full 2,408-repo graph)** — the most hub-like memory tools in your ecosystem:
+**Centrality (PageRank in the full 2,415-repo graph)** — the most hub-like memory tools in your ecosystem:
 
 - `microsoft/graphrag` — PageRank 0.0010
 - `HKUDS/MGP` — PageRank 0.0008
 - `qdrant/qdrant` — PageRank 0.0007
-- `MemPalace/mempalace` — PageRank 0.0007
 - `fabio-rovai/open-ontologies` — PageRank 0.0007
+- `MemPalace/mempalace` — PageRank 0.0007
 - `HKUDS/LightRAG` — PageRank 0.0007
-- `letta-ai/letta` — PageRank 0.0006
 - `comet-ml/opik` — PageRank 0.0006
-- `HelixDB/helix-db` — PageRank 0.0005
-- `weaviate/weaviate` — PageRank 0.0005
+- `letta-ai/letta` — PageRank 0.0006
+- `HelixDB/helix-db` — PageRank 0.0006
+- `mem0ai/mem0` — PageRank 0.0005
 
 **Direct links between these tools** (top similarity edges where both endpoints are in this report):
 
@@ -379,27 +378,27 @@ _Thin, and general-purpose rather than memory-specific. The category's weakest l
 - `lancedb/lancedb` ⇄ `qdrant/qdrant` (w=0.323) — topics: image-search, nearest-neighbor-search, recommender-system, search-engine
 - `MemMachine/MemMachine` ⇄ `MemoriLabs/Memori` (w=0.283) — topics: ai, memory, memory-management, python
 - `MemPalace/mempalace` ⇄ `plastic-labs/honcho` (w=0.281) — topics: ai, llm, memory
-- `semantica-agi/semantica` ⇄ `cocoindex-io/cocoindex` (w=0.271) — topics: ai, context-engineering, knowledge-graph, llm; authors: dependabot[bot]
+- `semantica-agi/semantica` ⇄ `cocoindex-io/cocoindex` (w=0.269) — topics: ai, context-engineering, knowledge-graph, llm; authors: dependabot[bot]
 - `onyx-dot-app/onyx` ⇄ `mem0ai/mem0` (w=0.267) — topics: rag, chatgpt, python, ai
 - `plastic-labs/honcho` ⇄ `topoteretes/cognee` (w=0.258) — topics: ai, agent-memory, ai-agents, ai-memory
 - `lancedb/lancedb` ⇄ `pgvector/pgvector` (w=0.250) — topics: approximate-nearest-neighbor-search, nearest-neighbor-search
 - `zilliztech/memsearch` ⇄ `MemoriLabs/Memori` (w=0.237) — topics: agent-memory, claude-code, memory, openclaw
-- `promptfoo/promptfoo` ⇄ `HKUDS/LightRAG` (w=0.234) — topics: llm, rag; authors: Shizoqua, dependabot[bot]
+- `promptfoo/promptfoo` ⇄ `HKUDS/LightRAG` (w=0.234) — topics: llm, rag; authors: dependabot[bot], Shizoqua
 - …and 7 more.
 
 **Isolation.** 11 of 37 tools have *no* similarity edge to any other tool in this report. Isolation is only meaningful in the tiers that are supposed to cluster — a database sharing no vocabulary with a memory framework says nothing, so the stores tier is discounted below. For the rest, the call is mine, based on isolation × activity:
 
 | Isolated tool | ★ | Tier | Activity | Edges in full graph | Read |
 |---|---|---|---|---|---|
-| `vectorize-io/hindsight` | 53,392 | Vector-first memory | very active | 7 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `microsoft/graphrag` | 36,432 | Extraction & ontology | very active | 15 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `getzep/graphiti` | 32,180 | Graph-native memory | very active | 5 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `nanocoai/nanoclaw` | 31,007 | Chat & workspace connectors | very active | 8 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `TencentCloud/TencentDB-Agent-Memory` | 29,888 | Vector-first memory | very active | 5 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `letta-ai/letta` | 25,241 | Vector-first memory | active | 9 | **Watch** — connected elsewhere, but its own activity is fading. The risk is maintenance, not obscurity. |
-| `comet-ml/opik` | 22,882 | Memory evaluation | very active | 7 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `HelixDB/helix-db` | 6,236 | Vector & graph stores | very active | 8 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
-| `fabio-rovai/open-ontologies` | 1,333 | Extraction & ontology | very active | 10 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `vectorize-io/hindsight` | 53,963 | Vector-first memory | very active | 7 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `microsoft/graphrag` | 36,449 | Extraction & ontology | very active | 15 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `getzep/graphiti` | 32,230 | Graph-native memory | very active | 5 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `nanocoai/nanoclaw` | 31,019 | Chat & workspace connectors | very active | 7 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `TencentCloud/TencentDB-Agent-Memory` | 29,966 | Vector-first memory | very active | 5 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `letta-ai/letta` | 25,260 | Vector-first memory | active | 9 | **Watch** — connected elsewhere, but its own activity is fading. The risk is maintenance, not obscurity. |
+| `comet-ml/opik` | 22,932 | Memory evaluation | very active | 8 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `HelixDB/helix-db` | 6,239 | Vector & graph stores | very active | 10 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
+| `fabio-rovai/open-ontologies` | 1,390 | Extraction & ontology | very active | 10 | **Artifact, not a signal** — well connected in the wider graph, just not to these 38. Different neighbourhood, not a dead end. |
 | `shaneholloman/mcp-knowledge-graph` | 886 | Graph-native memory | slowing | 6 | **Watch** — connected elsewhere, but its own activity is fading. The risk is maintenance, not obscurity. |
 | `HKUDS/MGP` | 62 | Graph-native memory | slowing | 11 | **Watch** — connected elsewhere, but its own activity is fading. The risk is maintenance, not obscurity. |
 
@@ -414,42 +413,42 @@ A memory tool that stopped shipping is a warning about the category, not just th
 | Tool | Category | Health | Lifecycle | Activity | Last push | Bus factor | Top-author share |
 |---|---|---|---|---|---|---|---|
 | `HKUDS/MGP` | Graph-native memory | 24 | Declining | slowing | 3mo ago | 0 | 0% |
-| `shaneholloman/mcp-knowledge-graph` | Graph-native memory | 38 | Declining | slowing | 4mo ago | 0 | 0% |
+| `shaneholloman/mcp-knowledge-graph` | Graph-native memory | 38 | Declining | slowing | 5mo ago | 0 | 0% |
 | `memvid/memvid` | Vector-first memory | 45 | Declining | slowing | 3mo ago | 0 | 0% |
-| `trustgraph-ai/trustgraph` | Graph-native memory | 62 | Mature | very active | 1d ago | 1 | 59% |
-| `MemoriLabs/Memori` | Vector-first memory | 62 | Mature | active | 22d ago | 1 | 100% |
-| `pgvector/pgvector` | Vector & graph stores | 65 | Classic | very active | 0d ago | 1 | 98% |
-| `letta-ai/letta` | Vector-first memory | 67 | Mature | active | 6d ago | 1 | 56% |
-| `microsoft/graphrag` | Extraction & ontology | 70 | Mature | very active | 4d ago | 1 | 60% |
-| `cyrusagents/cyrus` | Chat & workspace connectors | 72 | Hot | very active | 0d ago | 1 | 73% |
-| `Zackriya-Solutions/meetily` | Meeting & transcript capture | 73 | Hot | very active | 0d ago | 2 | 44% |
-| `zilliztech/memsearch` | Vector-first memory | 74 | Hot | very active | 1d ago | 1 | 69% |
+| `trustgraph-ai/trustgraph` | Graph-native memory | 61 | Mature | very active | 3d ago | 1 | 56% |
+| `MemoriLabs/Memori` | Vector-first memory | 62 | Mature | active | 23d ago | 1 | 100% |
+| `pgvector/pgvector` | Vector & graph stores | 64 | Classic | very active | 1d ago | 1 | 98% |
+| `letta-ai/letta` | Vector-first memory | 67 | Mature | active | 8d ago | 1 | 56% |
+| `microsoft/graphrag` | Extraction & ontology | 70 | Mature | very active | 0d ago | 1 | 60% |
+| `cyrusagents/cyrus` | Chat & workspace connectors | 72 | Hot | very active | 0d ago | 1 | 72% |
+| `Zackriya-Solutions/meetily` | Meeting & transcript capture | 72 | Hot | very active | 2d ago | 2 | 44% |
+| `zilliztech/memsearch` | Vector-first memory | 74 | Hot | very active | 0d ago | 1 | 70% |
 | `Vexa-ai/vexa` | Meeting & transcript capture | 74 | Hot | very active | 0d ago | 1 | 92% |
-| `plastic-labs/honcho` | Vector-first memory | 75 | Classic | very active | 1d ago | 2 | 34% |
-| `FalkorDB/GraphRAG-SDK` | Extraction & ontology | 76 | Mature | very active | 2d ago | 1 | 82% |
-| `FalkorDB/FalkorDB` | Vector & graph stores | 76 | Classic | very active | 0d ago | 1 | 74% |
-| `getzep/graphiti` | Graph-native memory | 76 | Mature | very active | 1d ago | 1 | 50% |
+| `plastic-labs/honcho` | Vector-first memory | 75 | Classic | very active | 0d ago | 2 | 35% |
+| `getzep/graphiti` | Graph-native memory | 75 | Mature | very active | 0d ago | 1 | 50% |
+| `FalkorDB/GraphRAG-SDK` | Extraction & ontology | 76 | Mature | very active | 0d ago | 1 | 82% |
 | `MemPalace/mempalace` | Vector-first memory | 76 | Rising | very active | 1d ago | 1 | 99% |
-| `MemMachine/MemMachine` | Graph-native memory | 77 | Hot | very active | 2d ago | 2 | 33% |
+| `MemMachine/MemMachine` | Graph-native memory | 77 | Hot | very active | 0d ago | 2 | 33% |
+| `FalkorDB/FalkorDB` | Vector & graph stores | 77 | Classic | very active | 0d ago | 1 | 73% |
 | `nanocoai/nanoclaw` | Chat & workspace connectors | 77 | Hot | very active | 0d ago | 1 | 76% |
-| `cocoindex-io/cocoindex` | Extraction & ontology | 78 | Hot | very active | 0d ago | 1 | 51% |
-| `HKUDS/LightRAG` | Extraction & ontology | 78 | Mature | very active | 2d ago | 1 | 63% |
-| `promptfoo/promptfoo` | Memory evaluation | 79 | Classic | very active | 0d ago | 1 | 57% |
-| `vectorize-io/hindsight` | Vector-first memory | 79 | Hot | very active | 0d ago | 1 | 62% |
-| `fabio-rovai/open-ontologies` | Extraction & ontology | 80 | Hot | very active | 1d ago | 1 | 51% |
-| `HelixDB/helix-db` | Vector & graph stores | 80 | Hot | very active | 1d ago | 1 | 77% |
-| `elizaOS/eliza` | Chat & workspace connectors | 80 | Mature | very active | 0d ago | 1 | 91% |
-| `screenpipe/screenpipe` | Meeting & transcript capture | 80 | Mature | very active | 1d ago | 1 | 65% |
-| `topoteretes/cognee` | Graph-native memory | 81 | Classic | very active | 1d ago | 2 | 34% |
+| `cocoindex-io/cocoindex` | Extraction & ontology | 78 | Hot | very active | 1d ago | 1 | 51% |
+| `HKUDS/LightRAG` | Extraction & ontology | 78 | Mature | very active | 4d ago | 1 | 63% |
+| `promptfoo/promptfoo` | Memory evaluation | 79 | Classic | very active | 0d ago | 1 | 56% |
+| `vectorize-io/hindsight` | Vector-first memory | 79 | Rising | very active | 0d ago | 1 | 61% |
+| `fabio-rovai/open-ontologies` | Extraction & ontology | 80 | Hot | very active | 3d ago | 1 | 51% |
+| `HelixDB/helix-db` | Vector & graph stores | 80 | Hot | very active | 1d ago | 1 | 73% |
+| `elizaOS/eliza` | Chat & workspace connectors | 80 | Mature | very active | 0d ago | 1 | 84% |
+| `screenpipe/screenpipe` | Meeting & transcript capture | 80 | Mature | very active | 0d ago | 1 | 65% |
+| `topoteretes/cognee` | Graph-native memory | 81 | Classic | very active | 0d ago | 2 | 34% |
 | `weaviate/weaviate` | Vector & graph stores | 83 | Classic | very active | 0d ago | 2 | 37% |
-| `qdrant/qdrant` | Vector & graph stores | 83 | Classic | very active | 1d ago | 2 | 41% |
-| `mem0ai/mem0` | Vector-first memory | 83 | Classic | very active | 1d ago | 2 | 45% |
+| `qdrant/qdrant` | Vector & graph stores | 83 | Classic | very active | 0d ago | 2 | 41% |
+| `mem0ai/mem0` | Vector-first memory | 83 | Classic | very active | 3d ago | 2 | 45% |
+| `comet-ml/opik` | Memory evaluation | 89 | Classic | very active | 0d ago | 3 | 20% |
 | `onyx-dot-app/onyx` | Chat & workspace connectors | 89 | Classic | very active | 0d ago | 3 | 20% |
-| `TencentCloud/TencentDB-Agent-Memory` | Vector-first memory | 90 | Hot | very active | 4d ago | 6 | 20% |
-| `semantica-agi/semantica` | Graph-native memory | 94 | Hot | very active | 1d ago | 4 | 16% |
-| `comet-ml/opik` | Memory evaluation | 94 | Classic | very active | 1d ago | 4 | 17% |
-| `lancedb/lancedb` | Vector & graph stores | 97 | Classic | very active | 0d ago | 6 | 13% |
-| `milvus-io/milvus` | Vector & graph stores | 99 | Classic | very active | 1d ago | 6 | 16% |
+| `TencentCloud/TencentDB-Agent-Memory` | Vector-first memory | 90 | Hot | very active | 0d ago | 6 | 21% |
+| `lancedb/lancedb` | Vector & graph stores | 97 | Classic | very active | 0d ago | 5 | 13% |
+| `semantica-agi/semantica` | Graph-native memory | 99 | Hot | very active | 0d ago | 5 | 14% |
+| `milvus-io/milvus` | Vector & graph stores | 99 | Classic | very active | 0d ago | 6 | 16% |
 
 **Slowing or stale (3):** `HKUDS/MGP`, `memvid/memvid`, `shaneholloman/mcp-knowledge-graph`. 
 **Single-maintainer risk (20 above 1k★):** `FalkorDB/FalkorDB`, `FalkorDB/GraphRAG-SDK`, `HKUDS/LightRAG`, `HelixDB/helix-db`, `MemPalace/mempalace`, `MemoriLabs/Memori`, `Vexa-ai/vexa`, `cocoindex-io/cocoindex`, `elizaOS/eliza`, `fabio-rovai/open-ontologies`, `getzep/graphiti`, `letta-ai/letta`, `microsoft/graphrag`, `nanocoai/nanoclaw`, `pgvector/pgvector`, `promptfoo/promptfoo`, `screenpipe/screenpipe`, `trustgraph-ai/trustgraph`, `vectorize-io/hindsight`, `zilliztech/memsearch`.
@@ -513,26 +512,26 @@ _— · unverified_
 
 ## Adjacent (deliberately not listed as memory tools)
 
-- **vllm-project/vllm** (95,322★) — 'memory-efficient' inference — a pure keyword collision, nothing to do with agent memory
-- **redis/redis** (77,078★) — a general datastore frequently used *as* a memory backend, but not itself a memory system
-- **Memento-Teams/Memento** (2,611★) — 'teams' here means agent teams, not Microsoft Teams — collision
-- **infiniflow/ragflow** (92,807★) — general-purpose RAG engine — covered by the RAG tooling report
-- **deepset-ai/haystack** (26,826★) — orchestration framework; memory is one component among many — see RAG tooling
-- **run-llama/llama_index** (52,642★) — document/RAG platform rather than a conversational memory layer
-- **thedotmack/claude-mem** (102,756★) — coding-agent *session* memory — see the Memory Frameworks report
-- **gastownhall/beads** (28,173★) — coding-agent memory upgrade, not conversational
-- **ctxrs/ctx** (1,165★) — searches local coding-agent history — adjacent, but the corpus is agent transcripts, not human chat
-- **colbymchenry/codegraph** (75,207★) — code knowledge graph — same technique, entirely different corpus
-- **vitali87/code-graph-rag** (5,280★) — GraphRAG over monorepos, not conversations
-- **DeusData/codebase-memory-mcp** (47,397★) — codebase intelligence graph, not chat
-- **Graphify-Labs/graphify** (134,297★) — codebase → knowledge graph (and the tooling this very repo is indexed with)
-- **usememos/memos** (64,038★) — human note-taking, no agent memory API
-- **eugeniughelbur/obsidian-second-brain** (4,872★) — PKM-backed agent memory over an Obsidian vault — close, but the substrate is notes, not conversation
-- **agentscope-ai/ReMe** (3,680★) — memory management kit; overlaps the vector-first tier without adding a distinct conversational angle
+- **vllm-project/vllm** (95,582★) — 'memory-efficient' inference — a pure keyword collision, nothing to do with agent memory
+- **redis/redis** (77,109★) — a general datastore frequently used *as* a memory backend, but not itself a memory system
+- **Memento-Teams/Memento** (2,646★) — 'teams' here means agent teams, not Microsoft Teams — collision
+- **infiniflow/ragflow** (92,892★) — general-purpose RAG engine — covered by the RAG tooling report
+- **deepset-ai/haystack** (26,846★) — orchestration framework; memory is one component among many — see RAG tooling
+- **run-llama/llama_index** (52,669★) — document/RAG platform rather than a conversational memory layer
+- **thedotmack/claude-mem** (103,258★) — coding-agent *session* memory — see the Memory Frameworks report
+- **gastownhall/beads** (28,218★) — coding-agent memory upgrade, not conversational
+- **ctxrs/ctx** (1,167★) — searches local coding-agent history — adjacent, but the corpus is agent transcripts, not human chat
+- **colbymchenry/codegraph** (75,383★) — code knowledge graph — same technique, entirely different corpus
+- **vitali87/code-graph-rag** (5,284★) — GraphRAG over monorepos, not conversations
+- **DeusData/codebase-memory-mcp** (47,517★) — codebase intelligence graph, not chat
+- **Graphify-Labs/graphify** (135,698★) — codebase → knowledge graph (and the tooling this very repo is indexed with)
+- **usememos/memos** (64,085★) — human note-taking, no agent memory API
+- **eugeniughelbur/obsidian-second-brain** (4,927★) — PKM-backed agent memory over an Obsidian vault — close, but the substrate is notes, not conversation
+- **agentscope-ai/ReMe** (3,692★) — memory management kit; overlaps the vector-first tier without adding a distinct conversational angle
 - **mudler/LocalRecall** (982★) — local memory/knowledge base for agents — generic document recall rather than chat-native
 - **HKUDS/CatchMe** (517★) — agent personalisation; memory is implicit rather than the product
-- **matrixorigin/memoria** (615★) — secure memory management — security framing, thin conversational story
-- **supermemoryai/openclaw-supermemory** (797★) — long-term memory for one specific agent harness
+- **matrixorigin/memoria** (616★) — secure memory management — security framing, thin conversational story
+- **supermemoryai/openclaw-supermemory** (796★) — long-term memory for one specific agent harness
 - **rishikanthc/Scriberr** (3,114★) — self-hosted transcription — see the Meeting Transcription report
 - **gleanwork/glean-agent-toolkit** (67★) — client toolkit for the closed-source Glean platform — the platform itself is off-dataset (see Competitors)
 
@@ -557,4 +556,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`airweave-ai/airweave`](https://github.com/airweave-ai/airweave) | Chat & workspace connectors | Archived upstream; last in the dataset 2026-08-28. Context retrieval layer with typed per-source entity schemas; the only tool in the set whose message entities carry reaction payloads (Teams, ClickUp). Still scored in the primitives matrix below. | 2026-08-28 |
 
-<sub>Tools covered: 37 · Matrix rows: 16 · Evidence date: 2026-08-12 · Snapshot: 2026-10-24T18:18:45.023Z</sub>
+<sub>Tools covered: 37 · Matrix rows: 16 · Evidence date: 2026-08-12 · Snapshot: 2026-10-26T11:46:04.025Z</sub>

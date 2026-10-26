@@ -1,10 +1,10 @@
 # Inference Engines for the Jetson Orin Nano Super 8GB — What Actually Runs, and What Actually Helps
 
-> Engine roster derived from **kaiser-data**'s 2,408 starred repos (snapshot `2026-10-24T18:18:45.023Z`), cross-referenced with the repo-similarity graph (2,408 nodes / 7,966 edges, 39 communities).
+> Engine roster derived from **kaiser-data**'s 2,415 starred repos (snapshot `2026-10-26T11:46:04.025Z`), cross-referenced with the repo-similarity graph (2,415 nodes / 8,024 edges, 43 communities).
 >
 > **The throughput numbers in this report are measured, not quoted** — benchmark runs against a real Jetson Orin Nano Super 8GB in **MAXN_SUPER** (25W) mode on 2026-08-23, with the desktop and a voice stack running. Engine verdicts are argued against those numbers. See Methodology.
 >
-> Generated 2026-10-24 by `scripts/reports/jetson_inference.py` (regenerate any time — no API cost).
+> Generated 2026-10-26 by `scripts/reports/jetson_inference.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/jetson-inference-engines-top-tools.svg)
 
@@ -21,7 +21,7 @@
 - **`vLLM`, `SGLang` and `LMDeploy` are the wrong machine class.** PagedAttention and continuous batching optimize for many concurrent sequences against plentiful VRAM. Serving one user from an 8 GB unified pool inverts every one of those assumptions.
 - **`MLC-LLM` is the one engine genuinely worth benchmarking, and it is now in your stars.** TVM-compiled, architecture-specialized INT4 kernels are the only credible claim to beating llama.cpp on this SKU. The numbers below are the baseline it has to beat — running that benchmark is the open action here, not starring it.
 - **Measured ceiling on this box:** **36.8 tok/s** at 0.8B, **18 tok/s** at 3.8B, **14.3 tok/s** at 4.7B. Embedding prefill saturates at **~8.6k tok/s**, but only at batch ≥ 32.
-- **Engine coverage is now good at both layers.** 27 engines present (994,655★), with only 3 relevant projects still missing (18,455★). The substrate gap earlier editions flagged is closed: `onnxruntime` (the engine under the ONNX *format*), `ggml` (the substrate of `llama.cpp` and `whisper.cpp`), `tvm` (what MLC compiles through) and `CTranslate2` (the engine under `faster-whisper`) are all held now. What remains missing is stale or off-target rather than structural — see the gap table.
+- **Engine coverage is now good at both layers.** 27 engines present (996,243★), with only 3 relevant projects still missing (18,455★). The substrate gap earlier editions flagged is closed: `onnxruntime` (the engine under the ONNX *format*), `ggml` (the substrate of `llama.cpp` and `whisper.cpp`), `tvm` (what MLC compiles through) and `CTranslate2` (the engine under `faster-whisper`) are all held now. What remains missing is stale or off-target rather than structural — see the gap table.
 
 ## The constraint that decides everything
 
@@ -110,81 +110,81 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Engine | Class | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|
-| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 184,639 (▲838) | Classic | 88 | very active | 0d ago | 12 |
-| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 132,228 (▲547) | Classic | 99 | very active | 0d ago | 60 |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 95,322 (▲1,199) | Classic | 99 | very active | 0d ago | 68 |
-| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,355 (▲5) | Abandoned | 7 | stale | 1.4y ago | 0 |
-| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 54,625 (▲144) | Classic | 99 | very active | 5d ago | 63 |
-| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 48,026 (▲72) | Mature | 75 | very active | 11d ago | 2 |
-| [microsoft/BitNet](https://github.com/microsoft/BitNet) | Format & quantization | C++ | MIT | 41,230 (▲27) | Mature | 32 | slowing | 3mo ago | 1 |
-| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 40,547 (▲1,136) | Classic | 72 | very active | 0d ago | 8 |
-| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 38,337 (▲226) | Hot | 94 | very active | 0d ago | 42 |
-| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 37,723 (▲359) | Mature | 89 | very active | 0d ago | 33 |
-| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 26,480 (▲49) | Classic | 70 | active | 13d ago | 8 |
-| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 26,109 (▲142) | Classic | 60 | active | 1d ago | 7 |
-| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,271 (▲16) | Mature | 51 | active | 18d ago | 1 |
-| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,161 (▲46) | Classic | 99 | very active | 0d ago | 35 |
-| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,612 (▲9) | Classic | 93 | very active | 0d ago | 37 |
-| [alibaba/MNN](https://github.com/alibaba/MNN) | Edge-viable LLM runtime | C++ | Apache  2.0 | 16,274 (▲31) | Classic | 92 | very active | 1d ago | 24 |
-| [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,524 (▲21) | Classic | 94 | very active | 4d ago | 58 |
-| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 15,484 (▲112) | Classic | 91 | very active | 0d ago | 39 |
-| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,937 (▲79) | Classic | 98 | very active | 0d ago | 58 |
-| [apache/tvm](https://github.com/apache/tvm) | Compiler & substrate | Python | Apache  2.0 | 13,861 (▲14) | Classic | 79 | very active | 0d ago | 7 |
-| [NVIDIA/TensorRT](https://github.com/NVIDIA/TensorRT) | NVIDIA / Jetson path | C++ | Apache  2.0 | 13,413 (▲3) | Mature | 63 | active | 15d ago | 3 |
-| [LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp) | Edge-viable LLM runtime | C++ | GNU Affero General Public  v3.0 | 12,056 (▲25) | Classic | 77 | very active | 0d ago | 33 |
-| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) | Datacenter-oriented runtime | Python | Apache  2.0 | 8,114 (▲5) | Classic | 98 | very active | 0d ago | 25 |
-| [pytorch/executorch](https://github.com/pytorch/executorch) | Compiler & substrate | Python | Other | 5,120 (▲16) | Classic | 92 | very active | 0d ago | 33 |
-| [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers) | NVIDIA / Jetson path | Jupyter Notebook | Other | 4,890 (▲3) | Mature | 45 | active | 5d ago | 2 |
-| [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) | Speech & non-LLM runtime | C++ | MIT | 4,717 (▲5) | Classic | 74 | very active | 1d ago | 14 |
-| [NVIDIA/TensorRT-Edge-LLM](https://github.com/NVIDIA/TensorRT-Edge-LLM) | NVIDIA / Jetson path | Python | Apache  2.0 | 600 (▲3) | Mature | 68 | active | 1d ago | 4 |
+| [ollama/ollama](https://github.com/ollama/ollama) | Edge-viable LLM runtime | Go | MIT | 184,829 (▲190) | Classic | 88 | very active | 0d ago | 12 |
+| [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp) | Edge-viable LLM runtime | C++ | MIT | 132,400 (▲172) | Classic | 99 | very active | 0d ago | 58 |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | Datacenter-oriented runtime | Python | Apache  2.0 | 95,582 (▲260) | Classic | 99 | very active | 0d ago | 70 |
+| [nomic-ai/gpt4all](https://github.com/nomic-ai/gpt4all) | Edge-viable LLM runtime | C++ | MIT | 77,356 (▲1) | Abandoned | 7 | stale | 1.4y ago | 0 |
+| [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | Speech & non-LLM runtime | C++ | MIT | 54,681 (▲56) | Classic | 99 | very active | 7d ago | 63 |
+| [exo-explore/exo](https://github.com/exo-explore/exo) | Sizing & fit | Python | Apache  2.0 | 48,056 (▲30) | Mature | 75 | very active | 13d ago | 2 |
+| [microsoft/BitNet](https://github.com/microsoft/BitNet) | Format & quantization | C++ | MIT | 41,231 (▲1) | Mature | 26 | slowing | 3mo ago | 0 |
+| [lyogavin/airllm](https://github.com/lyogavin/airllm) | Sizing & fit | Jupyter Notebook | Apache  2.0 | 40,711 (▲164) | Classic | 72 | very active | 0d ago | 8 |
+| [AlexsJones/llmfit](https://github.com/AlexsJones/llmfit) | Sizing & fit | Rust | MIT | 38,390 (▲53) | Hot | 99 | very active | 0d ago | 42 |
+| [sgl-project/sglang](https://github.com/sgl-project/sglang) | Datacenter-oriented runtime | Python | Apache  2.0 | 38,194 (▲471) | Mature | 99 | very active | 0d ago | 47 |
+| [mozilla-ai/llamafile](https://github.com/mozilla-ai/llamafile) | Edge-viable LLM runtime | C++ | Other | 26,489 (▲9) | Classic | 64 | active | 14d ago | 7 |
+| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Speech & non-LLM runtime | Python | MIT | 26,157 (▲48) | Classic | 60 | active | 1d ago | 7 |
+| [mlc-ai/mlc-llm](https://github.com/mlc-ai/mlc-llm) | Edge-viable LLM runtime | Python | Apache  2.0 | 23,274 (▲3) | Mature | 53 | active | 1d ago | 1 |
+| [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | Compiler & substrate | C++ | MIT | 22,175 (▲14) | Classic | 99 | very active | 0d ago | 34 |
+| [onnx/onnx](https://github.com/onnx/onnx) | Format & quantization | Python | Apache  2.0 | 21,617 (▲5) | Classic | 93 | very active | 1d ago | 37 |
+| [alibaba/MNN](https://github.com/alibaba/MNN) | Edge-viable LLM runtime | C++ | Apache  2.0 | 16,282 (▲8) | Classic | 92 | very active | 0d ago | 24 |
+| [ggml-org/ggml](https://github.com/ggml-org/ggml) | Compiler & substrate | C++ | MIT | 15,537 (▲13) | Classic | 94 | very active | 6d ago | 58 |
+| [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | Speech & non-LLM runtime | C++ | Apache  2.0 | 15,525 (▲41) | Classic | 87 | very active | 0d ago | 39 |
+| [NVIDIA/TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | NVIDIA / Jetson path | Python | Other | 14,952 (▲15) | Classic | 98 | very active | 0d ago | 48 |
+| [apache/tvm](https://github.com/apache/tvm) | Compiler & substrate | Python | Apache  2.0 | 13,862 (▲1) | Classic | 79 | very active | 2d ago | 7 |
+| [NVIDIA/TensorRT](https://github.com/NVIDIA/TensorRT) | NVIDIA / Jetson path | C++ | Apache  2.0 | 13,419 (▲6) | Mature | 63 | active | 17d ago | 3 |
+| [LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp) | Edge-viable LLM runtime | C++ | GNU Affero General Public  v3.0 | 12,066 (▲10) | Classic | 77 | very active | 1d ago | 33 |
+| [InternLM/lmdeploy](https://github.com/InternLM/lmdeploy) | Datacenter-oriented runtime | Python | Apache  2.0 | 8,117 (▲3) | Classic | 97 | very active | 2d ago | 25 |
+| [pytorch/executorch](https://github.com/pytorch/executorch) | Compiler & substrate | Python | Other | 5,128 (▲8) | Classic | 92 | very active | 0d ago | 33 |
+| [dusty-nv/jetson-containers](https://github.com/dusty-nv/jetson-containers) | NVIDIA / Jetson path | Jupyter Notebook | Other | 4,891 (▲1) | Mature | 46 | active | 0d ago | 2 |
+| [OpenNMT/CTranslate2](https://github.com/OpenNMT/CTranslate2) | Speech & non-LLM runtime | C++ | MIT | 4,719 (▲2) | Classic | 69 | very active | 1d ago | 14 |
+| [NVIDIA/TensorRT-Edge-LLM](https://github.com/NVIDIA/TensorRT-Edge-LLM) | NVIDIA / Jetson path | Python | Apache  2.0 | 603 (▲3) | Mature | 68 | active | 2d ago | 4 |
 
 **Edge-viable LLM runtime**
 
-- **ollama/ollama** (184,639★) — A management layer over llama.cpp: model pulls, keep-alive, an HTTP API, and quantized KV cache. Costs a little throughput for a lot of operational convenience.
-- **ggml-org/llama.cpp** (132,228★) — The engine that actually matters on this box — GGUF, CUDA on SM 8.7, aggressive quantization, and a memory model that degrades gracefully instead of aborting.
-- **nomic-ai/gpt4all** (77,355★) — Desktop-oriented local runtime; Declining upstream and adds nothing llama.cpp doesn't already do here.
-- **mozilla-ai/llamafile** (26,480★) — Single-file distribution of llama.cpp — useful for shipping a fixed model to a device, less so for a box you already administer.
-- **mlc-ai/mlc-llm** (23,271★) — TVM-compiled, arch-specialized kernels with INT4 — the one engine with a credible claim to beating llama.cpp on Orin Nano, and the NVIDIA-quoted path for Jetson LLM figures.
-- **alibaba/MNN** (16,274★) — Alibaba's lightweight inference engine (MNN-LLM) — battle-tested on phones; CUDA backend exists, but Jetson is not its primary target, so benchmark before trusting.
-- **LostRuins/koboldcpp** (12,056★) — A llama.cpp distribution with a wider sampler and format range in one binary; occasionally ships Jetson-relevant fixes earlier.
+- **ollama/ollama** (184,829★) — A management layer over llama.cpp: model pulls, keep-alive, an HTTP API, and quantized KV cache. Costs a little throughput for a lot of operational convenience.
+- **ggml-org/llama.cpp** (132,400★) — The engine that actually matters on this box — GGUF, CUDA on SM 8.7, aggressive quantization, and a memory model that degrades gracefully instead of aborting.
+- **nomic-ai/gpt4all** (77,356★) — Desktop-oriented local runtime; Declining upstream and adds nothing llama.cpp doesn't already do here.
+- **mozilla-ai/llamafile** (26,489★) — Single-file distribution of llama.cpp — useful for shipping a fixed model to a device, less so for a box you already administer.
+- **mlc-ai/mlc-llm** (23,274★) — TVM-compiled, arch-specialized kernels with INT4 — the one engine with a credible claim to beating llama.cpp on Orin Nano, and the NVIDIA-quoted path for Jetson LLM figures.
+- **alibaba/MNN** (16,282★) — Alibaba's lightweight inference engine (MNN-LLM) — battle-tested on phones; CUDA backend exists, but Jetson is not its primary target, so benchmark before trusting.
+- **LostRuins/koboldcpp** (12,066★) — A llama.cpp distribution with a wider sampler and format range in one binary; occasionally ships Jetson-relevant fixes earlier.
 
 **NVIDIA / Jetson path**
 
-- **NVIDIA/TensorRT-LLM** (14,937★) — The fastest NVIDIA LLM path on supported hardware — but Jetson support lives in a separate branch aimed at AGX Orin, not this SKU. See the verdict table.
-- **NVIDIA/TensorRT** (13,413★) — The core inference compiler. On Jetson this is the reliable big win for vision models, and the base of the TensorRT Edge-LLM path that does reach Orin Nano.
-- **dusty-nv/jetson-containers** (4,890★) — The single most Jetson-relevant repo in your stars: prebuilt ARM64/CUDA container images that solve the dependency problem which otherwise dominates a JetPack install.
-- **NVIDIA/TensorRT-Edge-LLM** (600★) — NVIDIA's lightweight C++ LLM/VLM runtime for physical-AI devices — the TensorRT path that targets Jetson-class hardware directly, unlike the AGX-only TensorRT-LLM branch.
+- **NVIDIA/TensorRT-LLM** (14,952★) — The fastest NVIDIA LLM path on supported hardware — but Jetson support lives in a separate branch aimed at AGX Orin, not this SKU. See the verdict table.
+- **NVIDIA/TensorRT** (13,419★) — The core inference compiler. On Jetson this is the reliable big win for vision models, and the base of the TensorRT Edge-LLM path that does reach Orin Nano.
+- **dusty-nv/jetson-containers** (4,891★) — The single most Jetson-relevant repo in your stars: prebuilt ARM64/CUDA container images that solve the dependency problem which otherwise dominates a JetPack install.
+- **NVIDIA/TensorRT-Edge-LLM** (603★) — NVIDIA's lightweight C++ LLM/VLM runtime for physical-AI devices — the TensorRT path that targets Jetson-class hardware directly, unlike the AGX-only TensorRT-LLM branch.
 
 **Compiler & substrate**
 
-- **microsoft/onnxruntime** (22,161★) — The actual runtime behind the ONNX format you already star, with CUDA and TensorRT execution providers. Everything small on this box — STT, TTS, embeddings — can run here.
-- **ggml-org/ggml** (15,524★) — The tensor library underneath llama.cpp and whisper.cpp, both of which you star. Where quantization formats and CUDA kernels actually land.
-- **apache/tvm** (13,861★) — The compiler MLC-LLM is built on — relevant if you want to understand or tune what MLC produces for SM 8.7.
-- **pytorch/executorch** (5,120★) — PyTorch's on-device runtime — very active, aimed more at mobile NPUs than CUDA Jetsons, but the direction of travel for exporting PyTorch models to the edge.
+- **microsoft/onnxruntime** (22,175★) — The actual runtime behind the ONNX format you already star, with CUDA and TensorRT execution providers. Everything small on this box — STT, TTS, embeddings — can run here.
+- **ggml-org/ggml** (15,537★) — The tensor library underneath llama.cpp and whisper.cpp, both of which you star. Where quantization formats and CUDA kernels actually land.
+- **apache/tvm** (13,862★) — The compiler MLC-LLM is built on — relevant if you want to understand or tune what MLC produces for SM 8.7.
+- **pytorch/executorch** (5,128★) — PyTorch's on-device runtime — very active, aimed more at mobile NPUs than CUDA Jetsons, but the direction of travel for exporting PyTorch models to the edge.
 
 **Datacenter-oriented runtime**
 
-- **vllm-project/vllm** (95,322★) — PagedAttention and continuous batching win when VRAM is plentiful and concurrency is high — the opposite of this box's profile.
-- **sgl-project/sglang** (37,723★) — RadixAttention and structured generation at serving scale; same headroom assumptions as vLLM.
-- **InternLM/lmdeploy** (8,114★) — TurboMind engine with strong quantized serving, but targets discrete datacenter GPUs.
+- **vllm-project/vllm** (95,582★) — PagedAttention and continuous batching win when VRAM is plentiful and concurrency is high — the opposite of this box's profile.
+- **sgl-project/sglang** (38,194★) — RadixAttention and structured generation at serving scale; same headroom assumptions as vLLM.
+- **InternLM/lmdeploy** (8,117★) — TurboMind engine with strong quantized serving, but targets discrete datacenter GPUs.
 
 **Speech & non-LLM runtime**
 
-- **ggml-org/whisper.cpp** (54,625★) — GGML Whisper — the STT half of an edge pipeline, and a direct competitor for the same unified memory.
-- **SYSTRAN/faster-whisper** (26,109★) — Whisper on CTranslate2; typically faster than whisper.cpp on CUDA, at the cost of a heavier Python dependency chain.
-- **k2-fsa/sherpa-onnx** (15,484★) — ONNX Runtime STT/TTS with genuinely small footprints — the right shape for a box where every 300 MB is contested.
-- **OpenNMT/CTranslate2** (4,717★) — The engine underneath `faster-whisper`, which you already star — quantized transformer inference with a small footprint.
+- **ggml-org/whisper.cpp** (54,681★) — GGML Whisper — the STT half of an edge pipeline, and a direct competitor for the same unified memory.
+- **SYSTRAN/faster-whisper** (26,157★) — Whisper on CTranslate2; typically faster than whisper.cpp on CUDA, at the cost of a heavier Python dependency chain.
+- **k2-fsa/sherpa-onnx** (15,525★) — ONNX Runtime STT/TTS with genuinely small footprints — the right shape for a box where every 300 MB is contested.
+- **OpenNMT/CTranslate2** (4,719★) — The engine underneath `faster-whisper`, which you already star — quantized transformer inference with a small footprint.
 
 **Format & quantization**
 
-- **microsoft/BitNet** (41,230★) — 1-bit LLM inference. The most interesting long-shot for 8 GB: if a useful model fits in ternary weights, the memory constraint changes shape entirely.
-- **onnx/onnx** (21,612★) — The interchange format underneath the ONNX Runtime path; a format, not an engine.
+- **microsoft/BitNet** (41,231★) — 1-bit LLM inference. The most interesting long-shot for 8 GB: if a useful model fits in ternary weights, the memory constraint changes shape entirely.
+- **onnx/onnx** (21,617★) — The interchange format underneath the ONNX Runtime path; a format, not an engine.
 
 **Sizing & fit**
 
-- **exo-explore/exo** (48,026★) — Cluster several devices into one pool — the escape hatch when 8 GB is simply the wrong number.
-- **lyogavin/airllm** (40,547★) — Layer-streaming to run 70B on 4 GB. Technically remarkable, and far too slow to be a serving answer here.
-- **AlexsJones/llmfit** (38,337★) — 'One command to find what runs on your hardware' — the fit question this report exists to answer, as a tool.
+- **exo-explore/exo** (48,056★) — Cluster several devices into one pool — the escape hatch when 8 GB is simply the wrong number.
+- **lyogavin/airllm** (40,711★) — Layer-streaming to run 70B on 4 GB. Technically remarkable, and far too slow to be a serving answer here.
+- **AlexsJones/llmfit** (38,390★) — 'One command to find what runs on your hardware' — the fit question this report exists to answer, as a tool.
 
 ## The gap — inference projects missing from your stars
 
@@ -229,84 +229,86 @@ What are you running?
 
 ## Graph analysis
 
-**Community clustering.** These 27 engines span **11 of the graph's 39 communities**.
+**Community clustering.** These 27 engines span **12 of the graph's 43 communities**.
 
-- **Community 3** (12): `ggml-org/llama.cpp`, `ollama/ollama`, `nomic-ai/gpt4all`, `vllm-project/vllm`, `sgl-project/sglang`, `InternLM/lmdeploy`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `AlexsJones/llmfit`, `mlc-ai/mlc-llm`, `LostRuins/koboldcpp`, `ggml-org/ggml`
-- **Community 22** (4): `NVIDIA/TensorRT-LLM`, `NVIDIA/TensorRT`, `OpenNMT/CTranslate2`, `NVIDIA/TensorRT-Edge-LLM`
-- **Community 11** (2): `microsoft/BitNet`, `microsoft/onnxruntime`
-- **Community 14** (2): `apache/tvm`, `pytorch/executorch`
+- **Community 22** (6): `ggml-org/llama.cpp`, `ggml-org/whisper.cpp`, `SYSTRAN/faster-whisper`, `AlexsJones/llmfit`, `LostRuins/koboldcpp`, `ggml-org/ggml`
+- **Community 12** (4): `nomic-ai/gpt4all`, `InternLM/lmdeploy`, `microsoft/BitNet`, `microsoft/onnxruntime`
+- **Community 26** (4): `NVIDIA/TensorRT-LLM`, `NVIDIA/TensorRT`, `OpenNMT/CTranslate2`, `NVIDIA/TensorRT-Edge-LLM`
+- **Community 6** (3): `ollama/ollama`, `vllm-project/vllm`, `sgl-project/sglang`
+- **Community 7** (2): `mozilla-ai/llamafile`, `onnx/onnx`
+- **Community 17** (2): `apache/tvm`, `pytorch/executorch`
 
-**Centrality (PageRank in the full 2,408-repo graph)**:
+**Centrality (PageRank in the full 2,415-repo graph)**:
 
 - `ggml-org/ggml` — PageRank 0.0010
 - `dusty-nv/jetson-containers` — PageRank 0.0008
 - `ggml-org/whisper.cpp` — PageRank 0.0008
 - `vllm-project/vllm` — PageRank 0.0007
+- `NVIDIA/TensorRT` — PageRank 0.0007
 - `NVIDIA/TensorRT-Edge-LLM` — PageRank 0.0007
 - `NVIDIA/TensorRT-LLM` — PageRank 0.0007
-- `NVIDIA/TensorRT` — PageRank 0.0007
+- `onnx/onnx` — PageRank 0.0006
 - `apache/tvm` — PageRank 0.0006
 - `microsoft/onnxruntime` — PageRank 0.0006
-- `onnx/onnx` — PageRank 0.0006
 
 **Direct links between these engines:**
 
 - `ggml-org/ggml` ⇄ `ggml-org/whisper.cpp` (w=2.391)
-- `ggml-org/whisper.cpp` ⇄ `ggml-org/llama.cpp` (w=0.766)
-- `ggml-org/ggml` ⇄ `ggml-org/llama.cpp` (w=0.756)
+- `ggml-org/whisper.cpp` ⇄ `ggml-org/llama.cpp` (w=0.791)
+- `ggml-org/ggml` ⇄ `ggml-org/llama.cpp` (w=0.781)
 - `ggml-org/whisper.cpp` ⇄ `SYSTRAN/faster-whisper` (w=0.750) — topics: openai, speech-to-text, transformer, whisper
 - `LostRuins/koboldcpp` ⇄ `ggml-org/ggml` (w=0.688)
 - `LostRuins/koboldcpp` ⇄ `ggml-org/whisper.cpp` (w=0.645)
 - `NVIDIA/TensorRT-Edge-LLM` ⇄ `NVIDIA/TensorRT-LLM` (w=0.550)
 - `microsoft/onnxruntime` ⇄ `microsoft/BitNet` (w=0.550)
-- `microsoft/onnxruntime` ⇄ `onnx/onnx` (w=0.493) — topics: deep-learning, onnx, machine-learning, pytorch
+- `microsoft/onnxruntime` ⇄ `onnx/onnx` (w=0.463) — topics: deep-learning, onnx, machine-learning, pytorch
 - `vllm-project/vllm` ⇄ `sgl-project/sglang` (w=0.407) — topics: llm, transformer, inference, llama
 - `apache/tvm` ⇄ `mlc-ai/mlc-llm` (w=0.398) — topics: tvm
-- `LostRuins/koboldcpp` ⇄ `ggml-org/llama.cpp` (w=0.364) — topics: ggml
+- `LostRuins/koboldcpp` ⇄ `ggml-org/llama.cpp` (w=0.370) — topics: ggml
 - …and 4 more.
 
 ## Maintenance & risk signal
 
 | Engine | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| ggml-org/llama.cpp | 99 | Classic | very active | 13 | 10% | 7816 |
-| vllm-project/vllm | 99 | Classic | very active | 18 | 11% | 108 |
+| ggml-org/llama.cpp | 99 | Classic | very active | 11 | 15% | 7847 |
+| vllm-project/vllm | 99 | Classic | very active | 20 | 5% | 108 |
+| sgl-project/sglang | 99 | Mature | very active | 7 | 21% | 63 |
 | ggml-org/whisper.cpp | 99 | Classic | very active | 15 | 9% | 45 |
-| microsoft/onnxruntime | 99 | Classic | very active | 9 | 11% | 87 |
-| InternLM/lmdeploy | 98 | Classic | very active | 5 | 15% | 71 |
-| NVIDIA/TensorRT-LLM | 98 | Classic | very active | 14 | 16% | 94 |
-| AlexsJones/llmfit | 94 | Hot | very active | 4 | 18% | 135 |
+| AlexsJones/llmfit | 99 | Hot | very active | 5 | 20% | 135 |
+| microsoft/onnxruntime | 99 | Classic | very active | 8 | 12% | 87 |
+| NVIDIA/TensorRT-LLM | 98 | Classic | very active | 12 | 17% | 94 |
+| InternLM/lmdeploy | 97 | Classic | very active | 5 | 15% | 71 |
 | ggml-org/ggml | 94 | Classic | very active | 12 | 13% | 42 |
-| onnx/onnx | 93 | Classic | very active | 4 | 26% | 41 |
+| onnx/onnx | 93 | Classic | very active | 4 | 27% | 41 |
 | pytorch/executorch | 92 | Classic | very active | 4 | 17% | 22 |
 | alibaba/MNN | 92 | Classic | very active | 4 | 21% | 63 |
-| k2-fsa/sherpa-onnx | 91 | Classic | very active | 4 | 36% | 193 |
-| sgl-project/sglang | 89 | Mature | very active | 3 | 40% | 63 |
 | ollama/ollama | 88 | Classic | very active | 3 | 31% | 269 |
+| k2-fsa/sherpa-onnx | 87 | Classic | very active | 3 | 37% | 193 |
 | apache/tvm | 79 | Classic | very active | 1 | 83% | 35 |
 | LostRuins/koboldcpp | 77 | Classic | very active | 1 | 51% | 136 |
 | exo-explore/exo | 75 | Mature | very active | 1 | 99% | 16 |
-| OpenNMT/CTranslate2 | 74 | Classic | very active | 2 | 46% | 132 |
 | lyogavin/airllm | 72 | Classic | very active | 1 | 91% | 6 |
-| mozilla-ai/llamafile | 70 | Classic | active | 2 | 41% | 43 |
+| OpenNMT/CTranslate2 | 69 | Classic | very active | 1 | 50% | 133 |
 | NVIDIA/TensorRT-Edge-LLM | 68 | Mature | active | 2 | 46% | 12 |
+| mozilla-ai/llamafile | 64 | Classic | active | 1 | 50% | 43 |
 | NVIDIA/TensorRT | 63 | Mature | active | 1 | 50% | 73 |
 | SYSTRAN/faster-whisper | 60 | Classic | active | 2 | 45% | 21 |
-| mlc-ai/mlc-llm | 51 | Mature | active | 1 | 100% | 1 |
-| dusty-nv/jetson-containers | 45 | Mature | active | 1 | 50% | 0 |
-| microsoft/BitNet | 32 | Mature | slowing | 1 | 100% | 0 |
+| mlc-ai/mlc-llm | 53 | Mature | active | 1 | 100% | 1 |
+| dusty-nv/jetson-containers | 46 | Mature | active | 1 | 50% | 0 |
+| microsoft/BitNet | 26 | Mature | slowing | 0 | 0% | 0 |
 | nomic-ai/gpt4all | 7 | Abandoned | stale | 0 | 0% | 38 |
 
 Watch items: `nomic-ai/gpt4all` is Declining and adds nothing here. Outside the dataset, `NVIDIA-AI-IOT/torch2trt` (~2 years without a push) and `dusty-nv/jetson-inference` (~10 months) are both widely-cited Jetson resources that have gone quiet — treat tutorials built on them as dated. `turboderp-org/exllamav2` is also slowing, though it was never a Jetson target.
 
 ## Adjacent (deliberately not counted as inference engines)
 
-- **huggingface/transformers** (168,075★) — The reference implementation, not a serving engine — too heavy to serve from on 8 GB.
-- **deepspeedai/DeepSpeed** (43,264★) — Training-scale optimization; irrelevant to single-board inference.
-- **openvinotoolkit/openvino** (11,062★) — Excellent engine, wrong vendor — Intel CPU/GPU/NPU, not Tegra CUDA.
-- **ultralytics/yolov5** (58,214★) — A model family, not an engine; it is however the classic TensorRT-on-Jetson workload.
-- **hiyouga/LlamaFactory** (75,710★) — Fine-tuning — see the `finetuning-stack` report.
-- **BerriAI/litellm** (61,967★) — A gateway in front of engines, covered by `ai-engineer-stack`.
+- **huggingface/transformers** (168,183★) — The reference implementation, not a serving engine — too heavy to serve from on 8 GB.
+- **deepspeedai/DeepSpeed** (43,275★) — Training-scale optimization; irrelevant to single-board inference.
+- **openvinotoolkit/openvino** (11,070★) — Excellent engine, wrong vendor — Intel CPU/GPU/NPU, not Tegra CUDA.
+- **ultralytics/yolov5** (58,224★) — A model family, not an engine; it is however the classic TensorRT-on-Jetson workload.
+- **hiyouga/LlamaFactory** (75,741★) — Fine-tuning — see the `finetuning-stack` report.
+- **BerriAI/litellm** (62,055★) — A gateway in front of engines, covered by `ai-engineer-stack`.
 
 ## Methodology & caveats
 
@@ -320,4 +322,4 @@ Watch items: `nomic-ai/gpt4all` is Declining and adds nothing here. Outside the 
 - **Board identification.** Specs for the Super (67 TOPS, 102 GB/s, 7W/15W/25W) are NVIDIA's published figures for the Orin Nano Super Developer Kit; the uplift from 40 TOPS / 68 GB/s is a software unlock on identical hardware, not a new board.
 - **The gap table does not refresh** with the pipeline; its metrics and the frozen citations need a manual pass.
 
-<sub>Engines covered: 27 · Missing catalogued: 3 · Measurements: 2026-08-23 · Snapshot: 2026-10-24T18:18:45.023Z</sub>
+<sub>Engines covered: 27 · Missing catalogued: 3 · Measurements: 2026-08-23 · Snapshot: 2026-10-26T11:46:04.025Z</sub>

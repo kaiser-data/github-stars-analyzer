@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">ollama/ollama</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">184,639</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">184,829</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/llama.cpp</text>
 <path d="M244,67 h242.4 q4,0 4,4 v10 q0,4 -4,4 h-242.4 z" class="bar"/>
-<text x="496.4" y="76.0" class="val" dominant-baseline="central">132,228</text>
+<text x="496.4" y="76.0" class="val" dominant-baseline="central">132,400</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">vllm-project/vllm</text>
-<path d="M244,94 h173.6 q4,0 4,4 v10 q0,4 -4,4 h-173.6 z" class="bar"/>
-<text x="427.6" y="103.0" class="val" dominant-baseline="central">95,322</text>
+<path d="M244,94 h173.9 q4,0 4,4 v10 q0,4 -4,4 h-173.9 z" class="bar"/>
+<text x="427.9" y="103.0" class="val" dominant-baseline="central">95,582</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">nomic-ai/gpt4all</text>
-<path d="M244,121 h140.1 q4,0 4,4 v10 q0,4 -4,4 h-140.1 z" class="bar"/>
-<text x="394.1" y="130.0" class="val" dominant-baseline="central">77,355</text>
+<path d="M244,121 h140.0 q4,0 4,4 v10 q0,4 -4,4 h-140.0 z" class="bar"/>
+<text x="394.0" y="130.0" class="val" dominant-baseline="central">77,356</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ggml-org/whisper.cpp</text>
 <path d="M244,148 h97.8 q4,0 4,4 v10 q0,4 -4,4 h-97.8 z" class="bar"/>
-<text x="351.8" y="157.0" class="val" dominant-baseline="central">54,625</text>
+<text x="351.8" y="157.0" class="val" dominant-baseline="central">54,681</text>
 </svg>
