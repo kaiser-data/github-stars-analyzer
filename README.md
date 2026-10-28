@@ -1,12 +1,13 @@
-# GitHub Stars Analyzer
+# GitHub Astrolab
 
-Turn a pile of GitHub stars into a navigable map: a 3D knowledge graph of your
-starred repositories with communities, lifecycle scoring, risk signals, curated
-landscape reports, and natural-language search.
+**Your GitHub stars, turned into a decision tool.** Astrolab maps every repo you
+have starred into a 3D knowledge graph, scores each one's health and lifecycle, and
+writes curated landscape reports that answer *"which tool should I use for X?"*,
+using only repos you have already vetted.
 
-**Live:** [star-astrolab.netlify.app](https://star-astrolab.netlify.app)
+**[→ Open the live app](https://star-astrolab.vercel.app)** · no sign-up, no install
 
-Currently mapping **1,596 starred repos** · 5,170 similarity edges · 31 communities · 23 landscape reports.
+Currently mapping **2,408 starred repos** · 7,966 similarity edges · 39 communities · 29 landscape reports · refreshed weekly.
 
 ![The 3D map](docs/screenshots/01-map.jpg)
 
@@ -14,12 +15,21 @@ Currently mapping **1,596 starred repos** · 5,170 similarity edges · 31 commun
 
 ## Why
 
-Star counts on your own account are write-only memory. After a thousand stars you
-can't answer basic questions: *what did I actually save about RAG? which of these
-is dead? if I need a chart library today, which one do I already know about?*
+Stars are write-only memory. After a thousand of them you can't answer basic
+questions: *what did I actually save about RAG? which of these is dead? if I need a
+chart library today, which one do I already know about?*
 
-This builds the answer offline — no LLM in the hot path — and serves it as a graph
-you can fly through, a set of reports you can read, and a search box you can ask.
+Astrolab answers them. It does all the work offline at build time, with no LLM in
+the hot path. You get a graph you can fly through, reports you can read, and a
+search box you can ask.
+
+| You want to… | Astrolab gives you |
+|---|---|
+| Pick a library for a new project | A landscape report ranking the candidates per task, with advantages, drawbacks and "best for" |
+| Avoid adopting a dying dependency | Lifecycle stage, health score and bus factor side by side in **Risk** |
+| See what's gaining momentum | Week-over-week star deltas and the *Trending Now* report |
+| Find what you're missing | A discovery pass that searches GitHub for repos that belong in a report but aren't in your stars |
+| Feed your tools and agents | Plain JSON and Markdown outputs that other projects and skills build on (see below) |
 
 ---
 
@@ -71,7 +81,7 @@ which shared topics, authors, or intermediaries connect two projects.
 
 ![Compare](docs/screenshots/06-compare.jpg)
 
-### Reports — 23 curated landscape reports
+### Reports — 29 curated landscape reports
 
 The largest feature. Each report is a **deterministic Python generator** over the
 local dataset — hand-curated taxonomies, master comparison tables, per-task
@@ -93,6 +103,48 @@ any OpenAI-compatible endpoint. Optional — every other tab works without a key
 
 ---
 
+## Built with Astrolab
+
+The dataset and reports are plain files (`data/classified.json`,
+`public/data/graph.json`, `reports/*.md`), so other projects can build on them.
+These are the ones that did.
+
+### New projects built on its data or engine
+
+- **hoshi** *(private)*: a self-hosted graph-vector index answering *"what existing
+  repos solve this problem?"*, with the license on every hit. It was seeded from
+  Astrolab's `classified.json` and similarity graph and now indexes 1,873 repos.
+- **hf-models-analyzer** *(in progress)*: the same engine pointed at Hugging Face.
+  It answers *"given this task, this VRAM budget and this license, what should I
+  run?"* across 1,131 models and 1,198 datasets. It reuses the build-time
+  precompute, the Python report orchestrator and the hard-won GitHub-client
+  lessons.
+- **Repo-picker skills** *(private)*: Claude Code skills that turn a landscape
+  report into a reusable "which tool for X" advisor. Each one routes a use case
+  into the report's curated prose, then adds live health data (Active / Stable /
+  Slowing / Stalled). `scripts/build_viz_skill.py` in this repo generates the
+  chart-library picker and re-generates it after every data refresh.
+
+### Other repos and workflows it improved
+
+- **[kogitsune](https://github.com/kaiser-data/kogitsune)**: a launcher for lean
+  Claude Code sessions. It came out of reading the *Claude Code setups* report,
+  which showed that per-session skill selection was the gap no starred tool
+  filled. The repo was started the same day (2026-06-15).
+- **Stack decisions in new projects**: reports get copied into other projects
+  as their tool-choice reference. For example, the *NotebookLM stack* report
+  (33 tools in 8 categories) became the design doc for one project's ingestion,
+  retrieval and TTS picks.
+- **Chart-library choice everywhere**: the picker skill answers "what should I
+  chart this with?" from the *Charting stack* report while working in any other
+  repo.
+- **Keeping the stars themselves useful**: `scripts/discover.mjs` searches
+  GitHub for repos that belong in a report but are missing from the stars, and
+  approved ones get starred. One pass added 14. The weekly refresh warns about
+  any curated repo that was renamed or deleted upstream.
+
+---
+
 ## Architecture
 
 The whole design principle: **do the expensive work at build time, ship a static file.**
@@ -110,7 +162,7 @@ public/data/
   graph.json             # ~1.8 MB — nodes/links ready for the browser
   graph-context.json     # compact community summary for LLM grounding
     ↓
-scripts/reports/*.py     # 23 generators → reports/*.md + meta sidecars
+scripts/reports/*.py     # 29 generators → reports/*.md + meta sidecars
 scripts/reports/build_index.py
                          # snapshots the vintage, regenerates every report,
                          # injects chart SVGs, writes public/reports/index.json
@@ -118,8 +170,9 @@ scripts/reports/build_index.py
 Browser (React + Three.js)
   → loads graph.json and renders immediately (zero graph math in the browser)
 
-Netlify Function /api/ask
-  → loads graph-context.json, calls any OpenAI-compatible endpoint
+Vercel Function /api/ask
+  → loads graph-context.json, calls any OpenAI-compatible endpoint,
+    behind a daily/weekly spend cap kept in Upstash Redis
 ```
 
 Snapshots in `data/snapshots/` (one per vintage) power the ▲/▼ star-trend deltas
@@ -146,7 +199,7 @@ The repo ships with committed data, so `npm run dev` works before you ever run
 ```bash
 npm run refresh               # full chain: sample → ingest → classify → precompute
 npm run precompute            # rebuild graph.json from existing classified.json
-npm run reports               # regenerate all 23 reports + index
+npm run reports               # regenerate all 29 reports + index
 ```
 
 `refresh` needs `GITHUB_TOKEN` in `.env` (a classic PAT with no scopes is enough —
@@ -162,8 +215,8 @@ downstream of `ingest` runs entirely offline.
 | `scripts/reports/build_index.py` | classified + graph | `reports/*.md` + `public/reports/index.json` |
 
 A GitHub Action (`.github/workflows/refresh-data.yml`) runs the whole chain weekly
-and pushes the result, which triggers a Netlify redeploy. It needs one repo secret,
-`GH_STARS_TOKEN`.
+and pushes the result; `.github/workflows/deploy.yml` then ships it to Vercel. The
+refresh needs one repo secret, `GH_STARS_TOKEN` (deploy secrets: see [Deploy](#deploy)).
 
 ---
 
@@ -188,8 +241,9 @@ HTML page (CSS and chart SVGs embedded, works offline).
 
 ## Ask AI setup
 
-Provider-agnostic: the Netlify Function talks to any **OpenAI-compatible**
-chat-completions endpoint.
+Provider-agnostic: the Vercel Function (`api/ask.mjs`) talks to any
+**OpenAI-compatible** chat-completions endpoint. The live site runs Nebius Token
+Factory with `Qwen/Qwen3-235B-A22B-Instruct-2507`.
 
 | Var            | Required | Default                                      |
 |----------------|----------|----------------------------------------------|
@@ -197,8 +251,20 @@ chat-completions endpoint.
 | `LLM_BASE_URL` | no       | `https://api.z.ai/api/coding/paas/v4`        |
 | `LLM_MODEL`    | no       | `glm-4.6`                                    |
 
-In Netlify: **Site settings → Environment variables → Add**, then redeploy.
-Locally, drop them into `.env`. Legacy `ZAI_*` names still work as fallbacks.
+**Spend cap.** Every request reserves its estimated cost against a daily and a
+weekly budget held in Redis, so the cap holds across serverless instances. With a
+cap set but no reachable store, requests are refused (fails closed).
+
+| Var                                  | Default | Purpose                                   |
+|--------------------------------------|---------|-------------------------------------------|
+| `BUDGET_DAILY_USD`                   | `1`     | daily cap (`0` disables)                  |
+| `BUDGET_WEEKLY_USD`                  | `5`     | weekly cap (`0` disables)                 |
+| `LLM_PRICE_IN_PER_M` / `_OUT_PER_M`  | `1` / `3` | USD per million tokens — keep in step with the model |
+| `KV_REST_API_URL` + `KV_REST_API_TOKEN` | —    | Upstash Redis (or the `UPSTASH_REDIS_REST_*` names) |
+
+On Vercel: `vercel env add <NAME> production`, then redeploy — env changes only
+take effect on the next deploy. Locally, drop them into `.env`. Legacy `ZAI_*`
+names still work as fallbacks.
 
 <details>
 <summary>Provider recipes</summary>
@@ -225,13 +291,20 @@ normally. Quota and billing errors are surfaced as a friendly notice, not a stac
 
 ## Deploy
 
-1. Push to GitHub
-2. Connect the repo in Netlify — it auto-detects `netlify.toml`
-3. Build: `npm run build` · Publish: `dist`
-4. Add `LLM_API_KEY` for Ask AI (optional)
+Hosted on Vercel; `vercel.json` holds the build command, rewrites, cache headers
+and function config.
 
-`graph.json` and the reports are committed, so Netlify serves them without running
-the pipeline at build time.
+```bash
+vercel link                   # once
+vercel deploy --prod --yes    # manual production deploy
+```
+
+`.github/workflows/deploy.yml` deploys on every push to `main` and after each
+weekly refresh. It needs three repo secrets: `VERCEL_TOKEN`, `VERCEL_ORG_ID` and
+`VERCEL_PROJECT_ID` (the last two from `.vercel/project.json`).
+
+`graph.json` and the reports are committed, so the build serves them without
+running the pipeline.
 
 ---
 
@@ -245,7 +318,7 @@ the pipeline at build time.
 | Data pipeline | Node.js ESM scripts, GitHub REST API |
 | Reports | Python 3.12 (stdlib only — no dependencies) |
 | LLM | Any OpenAI-compatible API |
-| Hosting | Netlify (static + Functions) |
+| Hosting | Vercel (static + Functions), Upstash Redis for the spend cap |
 
 ---
 
@@ -261,7 +334,7 @@ scripts/
     lib.py            shared formatting + snapshot/trend helpers
     build_index.py    orchestrator: snapshot → generate → charts → index
     render_html.py    markdown report → standalone HTML page
-    *.py              23 report generators (one per landscape)
+    *.py              29 report generators (one per landscape)
 
 data/
   classified.json     classified dataset (committed)
@@ -281,8 +354,11 @@ src/lab/
   ReportsView.jsx     landscape report reader
   LabApp.jsx          tab routing + Ask AI UI
 
-netlify/functions/
+api/
   ask.mjs             POST /api/ask → any OpenAI-compatible endpoint
+
+scripts/lib/
+  spend-budget.mjs    daily/weekly spend cap backed by Upstash Redis
 ```
 
 ---
