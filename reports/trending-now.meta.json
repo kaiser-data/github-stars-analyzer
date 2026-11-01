@@ -3,75 +3,75 @@
   "title": "Trending Now \u2014 What's Actually Moving in Your Stars",
   "file": "trending-now.md",
   "category": "AI / Trends",
-  "summary": "Measured star momentum across 24 data vintages: the 7-day movers, relative breakouts, sustained climbers, 28 new entrants, and what has gone flat.",
-  "tool_count": 90,
-  "total_stars": 6950288,
+  "summary": "Measured star momentum across 25 data vintages: the 8-day movers, relative breakouts, sustained climbers, 190 new entrants, and what has gone flat.",
+  "tool_count": 252,
+  "total_stars": 10176216,
   "categories": {
-    "Risers": 1811,
-    "Breakouts": 1711,
-    "New entrants": 28,
-    "Cooling": 92
+    "Risers": 1857,
+    "Breakouts": 1750,
+    "New entrants": 190,
+    "Cooling": 76
   },
   "top_tools": [
     {
       "name": "morluto/rea",
-      "stars": 387891
-    },
-    {
-      "name": "cloudflare/security-audit-skill",
-      "stars": 47762
+      "stars": 416986
     },
     {
       "name": "debpalash/VoiceStudio",
-      "stars": 87868
+      "stars": 97339
     },
     {
-      "name": "DietrichGebert/ponytail",
-      "stars": 176581
+      "name": "cloudflare/security-audit-skill",
+      "stars": 55860
     },
     {
-      "name": "stablyai/orca",
-      "stars": 106461
+      "name": "HKUDS/DeepTutor",
+      "stars": 53326
+    },
+    {
+      "name": "ifixai-ai/iFixAi",
+      "stars": 42009
     }
   ],
   "chart_top_series": [
     {
       "name": "morluto/rea",
-      "value": 58276
-    },
-    {
-      "name": "cloudflare/security-audit-skill",
-      "value": 16392
+      "value": 39896
     },
     {
       "name": "debpalash/VoiceStudio",
-      "value": 11288
+      "value": 12766
     },
     {
-      "name": "DietrichGebert/ponytail",
-      "value": 9088
+      "name": "cloudflare/security-audit-skill",
+      "value": 12096
     },
     {
-      "name": "stablyai/orca",
-      "value": 9023
+      "name": "HKUDS/DeepTutor",
+      "value": 10812
+    },
+    {
+      "name": "ifixai-ai/iFixAi",
+      "value": 8059
     },
     {
       "name": "deepseek-ai/deepseek-harness",
-      "value": 8079
+      "value": 7584
     },
     {
-      "name": "Graphify-Labs/graphify",
-      "value": 6974
+      "name": "stablyai/orca",
+      "value": 7350
     },
     {
       "name": "affaan-m/ECC",
-      "value": 5593
+      "value": 6514
     }
   ],
-  "chart_top_title": "Biggest star gains (7d)",
+  "chart_top_title": "Biggest star gains (8d)",
   "chart_cat_title": "Repos by movement type",
-  "snapshot": "2026-10-26T11:46:04.025Z",
-  "generated": "2026-10-26",
+  "snapshot": "2026-11-01T12:41:55.392Z",
+  "generated": "2026-11-01",
   "generator": "scripts/reports/trending_now.py",
-  "created": "2026-10-26"
+  "created": "2026-08-08"
 }

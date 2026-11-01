@@ -1,8 +1,8 @@
 # Decision Classifiers & Guard Models — Landscape Report
 
-> Derived from **kaiser-data**'s 2,415 starred repos (snapshot `2026-10-26T11:46:04.025Z`), cross-referenced with the repo-similarity graph (2,415 nodes / 8,024 edges, 43 communities).
+> Derived from **kaiser-data**'s 2,585 starred repos (snapshot `2026-11-01T12:41:55.392Z`), cross-referenced with the repo-similarity graph (2,585 nodes / 8,670 edges, 45 communities).
 >
-> Generated 2026-10-26 by `scripts/reports/decision_classifiers.py` (regenerate any time — no API cost).
+> Generated 2026-11-01 by `scripts/reports/decision_classifiers.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/decision-classifiers-top-tools.svg)
 
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-- **32 tools** (**82,906★** combined) that turn text into a decision software can act on — a label, a yes/no, a score, a route — instead of prose:
+- **32 tools** (**83,691★** combined) that turn text into a decision software can act on — a label, a yes/no, a score, a route — instead of prose:
   - **Typed decision API** (6): `jevgrep`, `pg-jev`, `awesome-typesafe-jev`, `awesome-jev`, `jev-code`, `super-jev`
   - **Open decision model** (6): `laya-mlx`, `ollaya`, `strands-decider`, `awesome-decision-models`, `dohnuts`, `dohnuts.cpp`
   - **Zero-shot encoder** (3): `GLiNER`, `GLiNER2`, `GLiClass`
@@ -43,38 +43,38 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [BoundaryML/baml](https://github.com/BoundaryML/baml) | LLM as classifier | Rust | Apache-2.0 | 9,444 (▲13) | Classic | 87 | very active | 0d ago | 3.1y | 12 |
-| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,559 (▲1) | Classic | 69 | active | 1d ago | 3.7y | 2 |
-| [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Guard model / guardrails | Python | NOASSERTION | 7,367 (▲7) | Classic | 82 | very active | 2d ago | 3.5y | 9 |
-| [katanemo/plano](https://github.com/katanemo/plano) | Decision router | Rust | Apache-2.0 | 7,099 | Mature | 67 | very active | 2d ago | 2.3y | 9 |
-| [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) | Open decision model | Python | Apache-2.0 | 7,026 (▲7) | Rising | 61 | very active | 6d ago | 1mo | 1 |
-| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,632 (▼1) | Hot | 85 | very active | 0d ago | 8mo | 7 |
-| [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router) | Decision router | Go | Apache-2.0 | 6,263 (▲11) | Hot | 91 | very active | 0d ago | 1.2y | 43 |
-| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 4,161 (▲8) | Mature | 71 | very active | 2d ago | 3.0y | 5 |
-| [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router) | Decision router | Python | MIT | 3,977 (▲3) | Mature | 74 | very active | 4d ago | 3.0y | 9 |
-| [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | Typed decision API | TypeScript | MIT | 2,906 (▲18) | Hot | 76 | very active | 5d ago | 1mo | 11 |
-| [huggingface/setfit](https://github.com/huggingface/setfit) | Few-shot classifier | Jupyter Notebook | Apache-2.0 | 2,854 (▲1) | Classic | 54 | active | 20d ago | 4.3y | 5 |
-| [fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2) | Zero-shot encoder | Python | Apache-2.0 | 2,406 (▲3) | Hot | 76 | very active | 6d ago | 1.3y | 13 |
-| [pemistahl/lingua-py](https://github.com/pemistahl/lingua-py) | Few-shot classifier | Python | Apache-2.0 | 1,811 | Mature | 31 | slowing | 3mo ago | 5.3y | 0 |
-| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Deterministic policy | TypeScript | MIT | 1,791 (▲19) | Rising | 80 | very active | 0d ago | 10mo | 2 |
-| [scikit-learn-contrib/MAPIE](https://github.com/scikit-learn-contrib/MAPIE) | Calibration / uncertainty | Jupyter Notebook | BSD-3-Clause | 1,644 (▲11) | Classic | 76 | very active | 3d ago | 5.6y | 12 |
-| [explosion/spacy-llm](https://github.com/explosion/spacy-llm) | LLM as classifier | Python | MIT | 1,399 | Mature | 49 | active | 3d ago | 3.6y | 1 |
-| [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) | Open decision model | Rust | Apache-2.0 | 1,397 (▲7) | Hot | 79 | very active | 0d ago | 1mo | 4 |
-| [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | Typed decision API | Shell | NOASSERTION | 1,222 (▲8) | Rising | 50 | active | 20d ago | 1mo | 2 |
-| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Calibration / uncertainty | Python | Apache-2.0 | 1,213 | Hot | 73 | very active | 13d ago | 1.5y | 6 |
+| [BoundaryML/baml](https://github.com/BoundaryML/baml) | LLM as classifier | Rust | Apache-2.0 | 9,465 (▲21) | Classic | 87 | very active | 1d ago | 3.1y | 11 |
+| [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Guard model / guardrails | Python | Apache-2.0 | 7,576 (▲17) | Classic | 69 | active | 1d ago | 3.8y | 2 |
+| [NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails) | Guard model / guardrails | Python | NOASSERTION | 7,405 (▲38) | Classic | 82 | very active | 0d ago | 3.5y | 11 |
+| [katanemo/plano](https://github.com/katanemo/plano) | Decision router | Rust | Apache-2.0 | 7,103 (▲4) | Mature | 65 | very active | 8d ago | 2.3y | 8 |
+| [mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx) | Open decision model | Python | Apache-2.0 | 7,055 (▲29) | Hot | 65 | very active | 3d ago | 1mo | 3 |
+| [BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter) | Decision router | TypeScript | MIT | 6,649 (▲17) | Hot | 85 | very active | 4d ago | 9mo | 7 |
+| [vllm-project/semantic-router](https://github.com/vllm-project/semantic-router) | Decision router | Go | Apache-2.0 | 6,360 (▲97) | Hot | 86 | very active | 0d ago | 1.2y | 37 |
+| [urchade/GLiNER](https://github.com/urchade/GLiNER) | Zero-shot encoder | Python | Apache-2.0 | 4,189 (▲28) | Mature | 72 | very active | 1d ago | 3.0y | 5 |
+| [aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router) | Decision router | Python | MIT | 4,001 (▲24) | Classic | 74 | very active | 10d ago | 3.0y | 9 |
+| [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | Typed decision API | TypeScript | MIT | 3,123 (▲217) | Hot | 77 | very active | 0d ago | 1mo | 10 |
+| [huggingface/setfit](https://github.com/huggingface/setfit) | Few-shot classifier | Jupyter Notebook | Apache-2.0 | 2,858 (▲4) | Classic | 53 | active | 26d ago | 4.3y | 5 |
+| [fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2) | Zero-shot encoder | Python | Apache-2.0 | 2,432 (▲26) | Hot | 76 | very active | 12d ago | 1.3y | 13 |
+| [kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net) | Deterministic policy | TypeScript | MIT | 1,878 (▲87) | Hot | 80 | very active | 0d ago | 10mo | 3 |
+| [pemistahl/lingua-py](https://github.com/pemistahl/lingua-py) | Few-shot classifier | Python | Apache-2.0 | 1,815 (▲4) | Mature | 30 | slowing | 3mo ago | 5.3y | 0 |
+| [scikit-learn-contrib/MAPIE](https://github.com/scikit-learn-contrib/MAPIE) | Calibration / uncertainty | Jupyter Notebook | BSD-3-Clause | 1,662 (▲18) | Classic | 75 | very active | 4d ago | 5.6y | 11 |
+| [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) | Open decision model | Rust | Apache-2.0 | 1,431 (▲34) | Hot | 79 | very active | 2d ago | 1mo | 5 |
+| [explosion/spacy-llm](https://github.com/explosion/spacy-llm) | LLM as classifier | Python | MIT | 1,399 | Mature | 49 | active | 9d ago | 3.6y | 1 |
+| [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | Typed decision API | Shell | NOASSERTION | 1,243 (▲21) | Rising | 49 | active | 26d ago | 1mo | 2 |
+| [cvs-health/uqlm](https://github.com/cvs-health/uqlm) | Calibration / uncertainty | Python | Apache-2.0 | 1,215 (▲2) | Hot | 72 | very active | 19d ago | 1.5y | 5 |
 | [davidfowl/tally](https://github.com/davidfowl/tally) | LLM as classifier | Python | MIT | 1,168 | Declining | 39 | slowing | 5mo ago | 10mo | 0 |
-| [strands-labs/strands-decider](https://github.com/strands-labs/strands-decider) | Open decision model | Python | Apache-2.0 | 711 (▲8) | Hot | 55 | very active | 3d ago | 27d | 8 |
-| [AnotiaWang/awesome-decision-models](https://github.com/AnotiaWang/awesome-decision-models) | Open decision model | Python | CC0-1.0 | 665 (▲3) | Hot | 83 | very active | 0d ago | 1mo | 73 |
-| [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | Typed decision API | HTML | MIT | 606 (▲1) | Hot | 65 | very active | 7d ago | 1mo | 34 |
-| [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) | Typed decision API | — | CC0-1.0 | 580 (▲3) | Hot | 85 | very active | 0d ago | 1mo | 49 |
-| [Knowledgator/GLiClass](https://github.com/Knowledgator/GLiClass) | Zero-shot encoder | Python | Apache-2.0 | 573 (▲1) | Mature | 56 | very active | 2d ago | 2.4y | 3 |
-| [ibm-granite/granite-guardian](https://github.com/ibm-granite/granite-guardian) | Guard model / guardrails | Jupyter Notebook | Apache-2.0 | 187 | Mature | 51 | active | 10d ago | 2.0y | 6 |
+| [strands-labs/strands-decider](https://github.com/strands-labs/strands-decider) | Open decision model | Python | Apache-2.0 | 744 (▲33) | Hot | 55 | very active | 2d ago | 1mo | 8 |
+| [AnotiaWang/awesome-decision-models](https://github.com/AnotiaWang/awesome-decision-models) | Open decision model | Python | CC0-1.0 | 680 (▲15) | Hot | 83 | very active | 3d ago | 1mo | 71 |
+| [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | Typed decision API | HTML | MIT | 613 (▲7) | Hot | 64 | very active | 13d ago | 1mo | 34 |
+| [cobanov/awesome-jev](https://github.com/cobanov/awesome-jev) | Typed decision API | — | CC0-1.0 | 588 (▲8) | Hot | 85 | very active | 2d ago | 1mo | 51 |
+| [Knowledgator/GLiClass](https://github.com/Knowledgator/GLiClass) | Zero-shot encoder | Python | Apache-2.0 | 576 (▲3) | Mature | 57 | very active | 1d ago | 2.4y | 3 |
+| [ibm-granite/granite-guardian](https://github.com/ibm-granite/granite-guardian) | Guard model / guardrails | Jupyter Notebook | Apache-2.0 | 188 (▲1) | Mature | 50 | active | 16d ago | 2.1y | 6 |
+| [angel291592/Intent-Router](https://github.com/angel291592/Intent-Router) | Decision router | Python | MIT | 89 (▲28) | Rising | 69 | very active | 11d ago | 1mo | 1 |
 | [fastino-ai/GLiGuard](https://github.com/fastino-ai/GLiGuard) | Guard model / guardrails | — | Apache-2.0 | 68 | Declining | 16 | slowing | 5mo ago | 5mo | 0 |
-| [angel291592/Intent-Router](https://github.com/angel291592/Intent-Router) | Decision router | Python | MIT | 61 (▲6) | Rising | 69 | very active | 5d ago | 1mo | 1 |
-| [FrancoisChastel/jev-code](https://github.com/FrancoisChastel/jev-code) | Typed decision API | TypeScript | MIT | 54 | Rising | 66 | very active | 2d ago | 1mo | 2 |
-| [PsiACE/dohnuts](https://github.com/PsiACE/dohnuts) | Open decision model | Python | Apache-2.0 | 37 | Mature | 45 | active | 20d ago | 1mo | 1 |
-| [Kevthetech143/super-jev](https://github.com/Kevthetech143/super-jev) | Typed decision API | Python | MIT | 14 | Hot | 74 | very active | 10d ago | 1mo | 3 |
-| [DreamBlooms/dohnuts.cpp](https://github.com/DreamBlooms/dohnuts.cpp) | Open decision model | C++ | Apache-2.0 | 11 | Hot | 53 | very active | 14d ago | 1mo | 3 |
+| [FrancoisChastel/jev-code](https://github.com/FrancoisChastel/jev-code) | Typed decision API | TypeScript | MIT | 55 (▲1) | Rising | 66 | very active | 1d ago | 1mo | 2 |
+| [PsiACE/dohnuts](https://github.com/PsiACE/dohnuts) | Open decision model | Python | Apache-2.0 | 38 (▲1) | Mature | 44 | active | 26d ago | 1mo | 1 |
+| [Kevthetech143/super-jev](https://github.com/Kevthetech143/super-jev) | Typed decision API | Python | MIT | 14 | Hot | 74 | very active | 16d ago | 1mo | 3 |
+| [DreamBlooms/dohnuts.cpp](https://github.com/DreamBlooms/dohnuts.cpp) | Open decision model | C++ | Apache-2.0 | 11 | Hot | 52 | very active | 20d ago | 1mo | 3 |
 
 ## Ranked by task
 
@@ -95,19 +95,19 @@ Evidence frozen 2026-09-25; hosted-Jev and open-encoder figures updated 2026-09-
 
 _Hosted models built for decisions rather than text: typed questions in, probabilities out, many questions per pass. Early access; 32k-token context (per review)._
 
-- **[dzhng/jevgrep](https://github.com/dzhng/jevgrep)** · 2,906★ · TypeScript · Hot  
+- **[dzhng/jevgrep](https://github.com/dzhng/jevgrep)** · 3,123★ · TypeScript · Hot  
   Code search by intent for coding agents — Jev picks the relevant files and symbols instead of a regex.  
   <sub>topics: ai-sdk, claude-code, cli, code-search, codex, coding-agents, context-retrieval, developer-tools</sub>
-- **[realZachi/pg-jev](https://github.com/realZachi/pg-jev)** · 1,222★ · Shell · Rising  
+- **[realZachi/pg-jev](https://github.com/realZachi/pg-jev)** · 1,243★ · Shell · Rising  
   PostgreSQL extension that answers plain-language questions over tables via hosted Jev — the decision model inside the database.  
   <sub>topics: —</sub>
-- **[AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev)** · 606★ · HTML · Hot  
+- **[AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev)** · 613★ · HTML · Hot  
   Source-backed field guide to Jev: SDKs, demos, agent tools and benchmarks in one index.  
   <sub>topics: ai-agents, awesome-list, jev, llm, machine-learning, structured-output, typesafe, system-one-models</sub>
-- **[cobanov/awesome-jev](https://github.com/cobanov/awesome-jev)** · 580★ · — · Hot  
+- **[cobanov/awesome-jev](https://github.com/cobanov/awesome-jev)** · 588★ · — · Hot  
   Curated, source-backed list of projects built on Jev — the second community index; overlaps the TypeSafe guide.  
   <sub>topics: ai-agents, awesome, awesome-list, confidence-aware-ai, decision-intelligence, jev, llm-guardrails, model-routing</sub>
-- **[FrancoisChastel/jev-code](https://github.com/FrancoisChastel/jev-code)** · 54★ · TypeScript · Rising  
+- **[FrancoisChastel/jev-code](https://github.com/FrancoisChastel/jev-code)** · 55★ · TypeScript · Rising  
   Jev (TypeSafe's System One model) as classify / check / score / rank / ask tools inside Claude Code, Codex, Pi, OpenCode; reaches Jev through TypeSafe, OpenRouter or Vercel AI Gateway (v0.2).  
   <sub>topics: agent-skills, classifier, claude-code, codex, coding-agents, jev, mcp, opencode</sub>
 - **[Kevthetech143/super-jev](https://github.com/Kevthetech143/super-jev)** · 14★ · Python · Hot  
@@ -118,19 +118,19 @@ _Hosted models built for decisions rather than text: typed questions in, probabi
 
 _Open-weight models built to the same System One shape — typed questions, probabilities, one forward pass — small enough for a laptop CPU. Days old and not yet measured here._
 
-- **[mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx)** · 7,026★ · Python · Rising  
+- **[mizorewww/laya-mlx](https://github.com/mizorewww/laya-mlx)** · 7,055★ · Python · Hot  
   Native MLX runtime for the open Laya typed-decision models — on-device decisions on Apple silicon, no API.  
   <sub>topics: apple-silicon, inference, machine-learning, mlx, modernbert, decision-model, laya, local-ai</sub>
-- **[ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya)** · 1,397★ · Rust · Hot  
+- **[ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya)** · 1,431★ · Rust · Hot  
   Ollama-style local server for open decision models — pull and serve Laya, NLI and GLiClass behind one endpoint.  
   <sub>topics: decision-models, jev, laya, local-inference, ollama, rust, typesafe, calibration</sub>
-- **[strands-labs/strands-decider](https://github.com/strands-labs/strands-decider)** · 711★ · Python · Hot  
+- **[strands-labs/strands-decider](https://github.com/strands-labs/strands-decider)** · 744★ · Python · Hot  
   Small, fast System One-style model from Strands Labs — pick between options or rate on a scale inside agent workflows.  
   <sub>topics: ai, machine-learning, natural-language-understanding, python, strands-agents, strands-labs, system-one, system-one-models</sub>
-- **[AnotiaWang/awesome-decision-models](https://github.com/AnotiaWang/awesome-decision-models)** · 665★ · Python · Hot  
+- **[AnotiaWang/awesome-decision-models](https://github.com/AnotiaWang/awesome-decision-models)** · 680★ · Python · Hot  
   Curated list of decision models — hosted APIs, open weights and runtimes; the vendor-neutral index for this landscape.  
   <sub>topics: awesome, awesome-list, jev, system-one, typesafe, ai-agents, decision-models, llm</sub>
-- **[PsiACE/dohnuts](https://github.com/PsiACE/dohnuts)** · 37★ · Python · Mature  
+- **[PsiACE/dohnuts](https://github.com/PsiACE/dohnuts)** · 38★ · Python · Mature  
   Open System One-style multimodal decision models (0.8B): choose / judge / score with probabilities in one forward pass.  
   <sub>topics: jev, laya, llm, lora, system-one, rlcd, decision-model, typesafe</sub>
 - **[DreamBlooms/dohnuts.cpp](https://github.com/DreamBlooms/dohnuts.cpp)** · 11★ · C++ · Hot  
@@ -141,13 +141,13 @@ _Open-weight models built to the same System One shape — typed questions, prob
 
 _Small bidirectional encoders that take label or entity names at runtime. Local, cheap, fast — but they read surface form, so intent-level distinctions slip._
 
-- **[urchade/GLiNER](https://github.com/urchade/GLiNER)** · 4,161★ · Python · Mature  
+- **[urchade/GLiNER](https://github.com/urchade/GLiNER)** · 4,189★ · Python · Mature  
   Generalist lightweight NER — any entity type named at runtime; the GLiNER family's origin.  
   <sub>topics: information-extraction, large-language-models, named-entity-recognition, natural-language-processing, prompt-tuning</sub>
-- **[fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2)** · 2,406★ · Python · Hot  
+- **[fastino-ai/GLiNER2](https://github.com/fastino-ai/GLiNER2)** · 2,432★ · Python · Hot  
   Unified schema-based extraction (entities, classification, structure) in one small encoder.  
   <sub>topics: —</sub>
-- **[Knowledgator/GLiClass](https://github.com/Knowledgator/GLiClass)** · 573★ · Python · Mature  
+- **[Knowledgator/GLiClass](https://github.com/Knowledgator/GLiClass)** · 576★ · Python · Mature  
   GLiNER-family zero-shot text classifier — labels supplied at runtime, CPU-friendly; closest open analogue to Jev.  
   <sub>topics: —</sub>
 
@@ -155,10 +155,10 @@ _Small bidirectional encoders that take label or entity names at runtime. Local,
 
 _Train on a handful of your own labels. The baseline any hosted model has to beat once labelled data exists._
 
-- **[huggingface/setfit](https://github.com/huggingface/setfit)** · 2,854★ · Jupyter Notebook · Classic  
+- **[huggingface/setfit](https://github.com/huggingface/setfit)** · 2,858★ · Jupyter Notebook · Classic  
   Few-shot classification on Sentence Transformers — 8–64 labelled examples, no prompts, fast CPU inference.  
   <sub>topics: few-shot-learning, nlp, sentence-transformers</sub>
-- **[pemistahl/lingua-py](https://github.com/pemistahl/lingua-py)** · 1,811★ · Python · Mature  
+- **[pemistahl/lingua-py](https://github.com/pemistahl/lingua-py)** · 1,815★ · Python · Mature  
   Language detection that stays accurate on short and mixed-language text — a narrow, dependable classifier.  
   <sub>topics: nlp, natural-language-processing, language-detection, language-recognition, language-identification, language-classification, python-library</sub>
 
@@ -166,13 +166,13 @@ _Train on a handful of your own labels. The baseline any hosted model has to bea
 
 _Models that flag risk, and the frameworks that wire checks around an LLM app. Frameworks are model-agnostic: any classifier here can be the check._
 
-- **[guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails)** · 7,559★ · Python · Classic  
+- **[guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails)** · 7,576★ · Python · Classic  
   Validator framework for LLM I/O — a hub of checks composed into input/output guards.  
   <sub>topics: ai, foundation-model, gpt-3, llm, openai</sub>
-- **[NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails)** · 7,367★ · Python · Classic  
+- **[NVIDIA-NeMo/Guardrails](https://github.com/NVIDIA-NeMo/Guardrails)** · 7,405★ · Python · Classic  
   Programmable rails (Colang) around LLM apps; calls a model or classifier to do each check.  
   <sub>topics: agents, guardrails, python, safety, generative-ai, llms, nvidia, llm-safety</sub>
-- **[ibm-granite/granite-guardian](https://github.com/ibm-granite/granite-guardian)** · 187★ · Jupyter Notebook · Mature  
+- **[ibm-granite/granite-guardian](https://github.com/ibm-granite/granite-guardian)** · 188★ · Jupyter Notebook · Mature  
   Open risk-detection models for prompts, responses, RAG groundedness and function calls, with probabilities.  
   <sub>topics: —</sub>
 - **[fastino-ai/GLiGuard](https://github.com/fastino-ai/GLiGuard)** · 68★ · — · Declining  
@@ -183,7 +183,7 @@ _Models that flag risk, and the frameworks that wire checks around an LLM app. F
 
 _Rules over resolved facts. Exact where the facts are available, blind where they are not._
 
-- **[kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net)** · 1,791★ · TypeScript · Rising  
+- **[kenryu42/cc-safety-net](https://github.com/kenryu42/cc-safety-net)** · 1,878★ · TypeScript · Hot  
   Pre-execution guard for coding agents: blocks destructive git/filesystem commands by rule, before they run.  
   <sub>topics: claude, claude-code, claude-code-plugin, security, codex, pi-extension, ai-agents, ai-safety</sub>
 
@@ -191,19 +191,19 @@ _Rules over resolved facts. Exact where the facts are available, blind where the
 
 _Choose the model, agent or path for a request — by embedding similarity, a routing classifier, or a proxy-level model._
 
-- **[katanemo/plano](https://github.com/katanemo/plano)** · 7,099★ · Rust · Mature  
+- **[katanemo/plano](https://github.com/katanemo/plano)** · 7,103★ · Rust · Mature  
   AI-native proxy (formerly archgw) with small built-in router and guard models at the data plane.  
   <sub>topics: gateway, generative-ai, llm-inference, llms, prompt, proxy, proxy-server, llmops</sub>
-- **[BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,632★ · TypeScript · Hot  
+- **[BlockRunAI/ClawRouter](https://github.com/BlockRunAI/ClawRouter)** · 6,649★ · TypeScript · Hot  
   Agent-native LLM router with <1 ms local routing across frontier models.  
   <sub>topics: ai, ai-agents, anthropic, cost-optimization, deepseek, gemini, llm, llm-router</sub>
-- **[vllm-project/semantic-router](https://github.com/vllm-project/semantic-router)** · 6,263★ · Go · Hot  
+- **[vllm-project/semantic-router](https://github.com/vllm-project/semantic-router)** · 6,360★ · Go · Hot  
   Mixture-of-Models router for vLLM: classifies each request to pick a model, with safety filters.  
   <sub>topics: mixture-of-models, semantic-router, vllm, ai-gateway, kubernetes, llmrouter, llm, guardrails</sub>
-- **[aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router)** · 3,977★ · Python · Mature  
+- **[aurelio-labs/semantic-router](https://github.com/aurelio-labs/semantic-router)** · 4,001★ · Python · Classic  
   Embedding-based decision layer — route by utterance similarity instead of an LLM call.  
   <sub>topics: ai, artificial-intelligence, chatbot, computer-vision, generative-ai, machine-learning, nlp</sub>
-- **[angel291592/Intent-Router](https://github.com/angel291592/Intent-Router)** · 61★ · Python · Rising  
+- **[angel291592/Intent-Router](https://github.com/angel291592/Intent-Router)** · 89★ · Python · Rising  
   Intent compiler: turns a vague request into a typed IntentSpec, and decides whether to probe, ask, or halt before acting.  
   <sub>topics: agent-skills, clarification, claude-code, intent, llm-routing, skill, agentic, ai-agents</sub>
 
@@ -211,10 +211,10 @@ _Choose the model, agent or path for a request — by embedding similarity, a ro
 
 _Make scores mean something: coverage guarantees, reliability, and confidence for LLM outputs._
 
-- **[scikit-learn-contrib/MAPIE](https://github.com/scikit-learn-contrib/MAPIE)** · 1,644★ · Jupyter Notebook · Classic  
+- **[scikit-learn-contrib/MAPIE](https://github.com/scikit-learn-contrib/MAPIE)** · 1,662★ · Jupyter Notebook · Classic  
   Conformal prediction and risk control — wraps any classifier's scores in coverage guarantees.  
   <sub>topics: regression, confidence-intervals, data-science, python, sklearn, classification, conformal-prediction, risk-control</sub>
-- **[cvs-health/uqlm](https://github.com/cvs-health/uqlm)** · 1,213★ · Python · Hot  
+- **[cvs-health/uqlm](https://github.com/cvs-health/uqlm)** · 1,215★ · Python · Hot  
   Uncertainty quantification for LLM outputs — confidence scores for hallucination detection.  
   <sub>topics: ai-evaluation, ai-safety, hallucination, hallucination-detection, hallucination-evaluation, hallucination-mitigation, llm, llm-evaluation</sub>
 
@@ -222,7 +222,7 @@ _Make scores mean something: coverage guarantees, reliability, and confidence fo
 
 _The incumbent: prompt a general LLM into a typed answer. Flexible and strong on intent, but slower, costlier and less self-consistent._
 
-- **[BoundaryML/baml](https://github.com/BoundaryML/baml)** · 9,444★ · Rust · Classic  
+- **[BoundaryML/baml](https://github.com/BoundaryML/baml)** · 9,465★ · Rust · Classic  
   Typed prompt functions — the cleanest way to force an LLM into an enum/bool/score answer.  
   <sub>topics: llm, boundaryml, guardrails, structured-data, programming-language</sub>
 - **[explosion/spacy-llm](https://github.com/explosion/spacy-llm)** · 1,399★ · Python · Mature  
@@ -247,35 +247,33 @@ Jev's advantage is volume × closed labels × a tunable threshold, with humans o
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 32 tools span **14 of the graph's 43 communities** — decision tooling is scattered across the agent, gateway and NLP neighbourhoods rather than forming its own cluster.
+**Community clustering.** These 32 tools span **14 of the graph's 45 communities** — decision tooling is scattered across the agent, gateway and NLP neighbourhoods rather than forming its own cluster.
 
-- **Community 15** (7): `AbdelStark/awesome-typesafe-jev`, `cobanov/awesome-jev`, `PsiACE/dohnuts`, `DreamBlooms/dohnuts.cpp`, `mizorewww/laya-mlx`, `ollaya-dev/ollaya`, `AnotiaWang/awesome-decision-models`
+- **Community 23** (7): `AbdelStark/awesome-typesafe-jev`, `cobanov/awesome-jev`, `PsiACE/dohnuts`, `DreamBlooms/dohnuts.cpp`, `mizorewww/laya-mlx`, `ollaya-dev/ollaya`, `AnotiaWang/awesome-decision-models`
 - **Community 13** (4): `FrancoisChastel/jev-code`, `Kevthetech143/super-jev`, `BlockRunAI/ClawRouter`, `cvs-health/uqlm`
-- **Community 5** (3): `realZachi/pg-jev`, `Knowledgator/GLiClass`, `urchade/GLiNER`
+- **Community 15** (4): `realZachi/pg-jev`, `Knowledgator/GLiClass`, `urchade/GLiNER`, `angel291592/Intent-Router`
+- **Community 24** (4): `pemistahl/lingua-py`, `aurelio-labs/semantic-router`, `scikit-learn-contrib/MAPIE`, `explosion/spacy-llm`
 - **Community 0** (3): `fastino-ai/GLiNER2`, `fastino-ai/GLiGuard`, `davidfowl/tally`
-- **Community 7** (3): `pemistahl/lingua-py`, `katanemo/plano`, `explosion/spacy-llm`
-- **Community 2** (2): `dzhng/jevgrep`, `angel291592/Intent-Router`
-- **Community 10** (2): `ibm-granite/granite-guardian`, `scikit-learn-contrib/MAPIE`
-- **Community 12** (2): `guardrails-ai/guardrails`, `aurelio-labs/semantic-router`
+- **Community 5** (2): `dzhng/jevgrep`, `kenryu42/cc-safety-net`
 
-**Centrality (PageRank in the full 2,415-repo graph):**
+**Centrality (PageRank in the full 2,585-repo graph):**
 
-- `FrancoisChastel/jev-code` — PageRank 0.0011
-- `huggingface/setfit` — PageRank 0.0010
-- `kenryu42/cc-safety-net` — PageRank 0.0008
-- `realZachi/pg-jev` — PageRank 0.0007
+- `kenryu42/cc-safety-net` — PageRank 0.0011
+- `FrancoisChastel/jev-code` — PageRank 0.0010
+- `huggingface/setfit` — PageRank 0.0009
+- `realZachi/pg-jev` — PageRank 0.0009
 - `Knowledgator/GLiClass` — PageRank 0.0007
-- `mizorewww/laya-mlx` — PageRank 0.0006
-- `aurelio-labs/semantic-router` — PageRank 0.0006
-- `urchade/GLiNER` — PageRank 0.0006
-- `AnotiaWang/awesome-decision-models` — PageRank 0.0006
+- `AnotiaWang/awesome-decision-models` — PageRank 0.0005
+- `mizorewww/laya-mlx` — PageRank 0.0005
+- `urchade/GLiNER` — PageRank 0.0005
+- `aurelio-labs/semantic-router` — PageRank 0.0005
 - `NVIDIA-NeMo/Guardrails` — PageRank 0.0005
 
 **Direct links between tools in this report:**
 
-- `AbdelStark/awesome-typesafe-jev` ⇄ `cobanov/awesome-jev` (w=0.733) — topics: ai-agents, awesome-list, jev, structured-output; authors: cwdx, agairola, gasvn
+- `AnotiaWang/awesome-decision-models` ⇄ `AbdelStark/awesome-typesafe-jev` (w=0.720) — topics: awesome, awesome-list, jev, typesafe; authors: cwdx, vicfei, gasvn
+- `AbdelStark/awesome-typesafe-jev` ⇄ `cobanov/awesome-jev` (w=0.720) — topics: ai-agents, awesome-list, jev, structured-output; authors: cwdx, agairola, gasvn
 - `Knowledgator/GLiClass` ⇄ `urchade/GLiNER` (w=0.717) — authors: Ingvarstep, dajiaohuang
-- `AnotiaWang/awesome-decision-models` ⇄ `AbdelStark/awesome-typesafe-jev` (w=0.711) — topics: awesome, awesome-list, jev, typesafe; authors: cwdx, vicfei, gasvn
 - `AnotiaWang/awesome-decision-models` ⇄ `cobanov/awesome-jev` (w=0.651) — topics: awesome, awesome-list, jev, ai-agents; authors: cwdx, vicfei, gasvn
 - `realZachi/pg-jev` ⇄ `Knowledgator/GLiClass` (w=0.500) — authors: dajiaohuang
 - `fastino-ai/GLiNER2` ⇄ `fastino-ai/GLiGuard` (w=0.500)
@@ -287,7 +285,6 @@ Jev's advantage is volume × closed labels × a tunable threshold, with humans o
 - `ollaya-dev/ollaya` ⇄ `AnotiaWang/awesome-decision-models` (w=0.208) — topics: decision-models, jev, typesafe, system-one
 - `AnotiaWang/awesome-decision-models` ⇄ `angel291592/Intent-Router` (w=0.200) — topics: system-one, ai-agents, typed-decisions
 - `ollaya-dev/ollaya` ⇄ `DreamBlooms/dohnuts.cpp` (w=0.167) — topics: jev, laya, llama-cpp, system-one
-- `AnotiaWang/awesome-decision-models` ⇄ `DreamBlooms/dohnuts.cpp` (w=0.133) — topics: jev, system-one
 
 ## Maintenance & risk signal
 
@@ -295,37 +292,37 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
-| vllm-project/semantic-router | 91 | Hot | very active | 8 | 15% | 4 |
-| BoundaryML/baml | 87 | Classic | very active | 3 | 26% | 678 |
-| cobanov/awesome-jev | 85 | Hot | very active | 5 | 41% | 0 |
-| BlockRunAI/ClawRouter | 85 | Hot | very active | 2 | 48% | 169 |
-| AnotiaWang/awesome-decision-models | 83 | Hot | very active | 23 | 8% | 0 |
-| NVIDIA-NeMo/Guardrails | 82 | Classic | very active | 2 | 40% | 34 |
-| kenryu42/cc-safety-net | 80 | Rising | very active | 1 | 91% | 84 |
-| ollaya-dev/ollaya | 79 | Hot | very active | 1 | 97% | 27 |
-| dzhng/jevgrep | 76 | Hot | very active | 1 | 75% | 9 |
-| fastino-ai/GLiNER2 | 76 | Hot | very active | 2 | 42% | 13 |
-| scikit-learn-contrib/MAPIE | 76 | Classic | very active | 2 | 44% | 40 |
+| BoundaryML/baml | 87 | Classic | very active | 3 | 26% | 683 |
+| vllm-project/semantic-router | 86 | Hot | very active | 4 | 18% | 4 |
+| cobanov/awesome-jev | 85 | Hot | very active | 7 | 38% | 0 |
+| BlockRunAI/ClawRouter | 85 | Hot | very active | 2 | 42% | 169 |
+| AnotiaWang/awesome-decision-models | 83 | Hot | very active | 21 | 8% | 0 |
+| NVIDIA-NeMo/Guardrails | 82 | Classic | very active | 2 | 39% | 34 |
+| kenryu42/cc-safety-net | 80 | Hot | very active | 1 | 92% | 86 |
+| ollaya-dev/ollaya | 79 | Hot | very active | 1 | 96% | 27 |
+| dzhng/jevgrep | 77 | Hot | very active | 1 | 76% | 9 |
+| fastino-ai/GLiNER2 | 76 | Hot | very active | 2 | 40% | 13 |
+| scikit-learn-contrib/MAPIE | 75 | Classic | very active | 2 | 31% | 40 |
 | Kevthetech143/super-jev | 74 | Hot | very active | 1 | 89% | 21 |
-| aurelio-labs/semantic-router | 74 | Mature | very active | 1 | 86% | 106 |
-| cvs-health/uqlm | 73 | Hot | very active | 1 | 68% | 46 |
-| urchade/GLiNER | 71 | Mature | very active | 1 | 85% | 42 |
+| aurelio-labs/semantic-router | 74 | Classic | very active | 1 | 86% | 106 |
+| urchade/GLiNER | 72 | Mature | very active | 1 | 89% | 42 |
+| cvs-health/uqlm | 72 | Hot | very active | 1 | 70% | 46 |
 | guardrails-ai/guardrails | 69 | Classic | active | 1 | 75% | 69 |
 | angel291592/Intent-Router | 69 | Rising | very active | 1 | 100% | 10 |
-| katanemo/plano | 67 | Mature | very active | 1 | 68% | 82 |
 | FrancoisChastel/jev-code | 66 | Rising | very active | 1 | 86% | 6 |
-| AbdelStark/awesome-typesafe-jev | 65 | Hot | very active | 1 | 58% | 1 |
-| mizorewww/laya-mlx | 61 | Rising | very active | 1 | 100% | 3 |
-| Knowledgator/GLiClass | 56 | Mature | very active | 1 | 76% | 3 |
-| strands-labs/strands-decider | 55 | Hot | very active | 1 | 53% | 2 |
-| huggingface/setfit | 54 | Classic | active | 2 | 40% | 18 |
-| DreamBlooms/dohnuts.cpp | 53 | Hot | very active | 1 | 80% | 2 |
-| ibm-granite/granite-guardian | 51 | Mature | active | 2 | 31% | 0 |
-| realZachi/pg-jev | 50 | Rising | active | 1 | 92% | 1 |
+| mizorewww/laya-mlx | 65 | Hot | very active | 1 | 90% | 4 |
+| katanemo/plano | 65 | Mature | very active | 1 | 67% | 82 |
+| AbdelStark/awesome-typesafe-jev | 64 | Hot | very active | 1 | 58% | 1 |
+| Knowledgator/GLiClass | 57 | Mature | very active | 1 | 79% | 3 |
+| strands-labs/strands-decider | 55 | Hot | very active | 1 | 50% | 2 |
+| huggingface/setfit | 53 | Classic | active | 2 | 40% | 18 |
+| DreamBlooms/dohnuts.cpp | 52 | Hot | very active | 1 | 80% | 2 |
+| ibm-granite/granite-guardian | 50 | Mature | active | 2 | 31% | 0 |
+| realZachi/pg-jev | 49 | Rising | active | 1 | 92% | 1 |
 | explosion/spacy-llm | 49 | Mature | active | 1 | 100% | 28 |
-| PsiACE/dohnuts | 45 | Mature | active | 1 | 100% | 0 |
+| PsiACE/dohnuts | 44 | Mature | active | 1 | 100% | 0 |
 | davidfowl/tally | 39 | Declining | slowing | 0 | 0% | 23 |
-| pemistahl/lingua-py | 31 | Mature | slowing | 0 | 0% | 23 |
+| pemistahl/lingua-py | 30 | Mature | slowing | 0 | 0% | 23 |
 | fastino-ai/GLiGuard | 16 | Declining | slowing | 0 | 0% | 0 |
 
 Watch items: `jev-code` (v0.2.1 on npm, three hosts) and `super-jev` are wrappers around a closed, early-access API — the repos' health says little about the model. `dohnuts` and `dohnuts.cpp` are about a week old. `GLiGuard` and `spacy-llm` read as Declining.
@@ -346,18 +343,18 @@ Watch items: `jev-code` (v0.2.1 on npm, three hosts) and `super-jev` are wrapper
 ## Adjacent (deliberately not listed)
 
 - **daftAI2026/awesome-jev** (14★) — curated list of Jev projects and open alternatives — a discovery source, not a tool
-- **BerriAI/litellm** (62,055★) — gateway; can pass through to Jev but routes by config, not by decision — see *local-vs-infra-stack*
-- **Portkey-AI/gateway** (13,274★) — gateway with guardrail hooks — see *local-vs-infra-stack*
-- **maximhq/bifrost** (9,108★) — gateway with guardrails; infrastructure rather than a decision model
-- **confident-ai/deepteam** (3,053★) — red-teaming framework that *attacks* guards — see *llm-evaluation-tooling*
-- **KRLabsOrg/LettuceDetect** (617★) — grounding verification for RAG outputs — see *llm-evaluation-tooling*
-- **NVIDIA/SkillSpector** (21,688★) — static scanner for agent skills — audits configuration, makes no runtime decisions
-- **affaan-m/agentshield** (1,327★) — static scanner for agent configs / MCP permissions — see *ai-coding-tuis*
-- **huggingface/sentence-transformers** (19,223★) — the encoder under SetFit and semantic-router — see *rag-tooling*
-- **catboost/catboost** (9,174★) — tabular classifier — decisions over features, not over text
-- **google-research/tabfm** (2,798★) — tabular foundation model — same reason
-- **explosion/spaCy** (33,995★) — general NLP framework; its textcat is one component among many
-- **haizelabs/verdict** (349★) — LLM-as-judge scaling; evaluation rather than runtime decisions
+- **BerriAI/litellm** (62,484★) — gateway; can pass through to Jev but routes by config, not by decision — see *local-vs-infra-stack*
+- **Portkey-AI/gateway** (13,300★) — gateway with guardrail hooks — see *local-vs-infra-stack*
+- **maximhq/bifrost** (9,265★) — gateway with guardrails; infrastructure rather than a decision model
+- **confident-ai/deepteam** (3,080★) — red-teaming framework that *attacks* guards — see *llm-evaluation-tooling*
+- **KRLabsOrg/LettuceDetect** (619★) — grounding verification for RAG outputs — see *llm-evaluation-tooling*
+- **NVIDIA/SkillSpector** (23,774★) — static scanner for agent skills — audits configuration, makes no runtime decisions
+- **affaan-m/agentshield** (1,344★) — static scanner for agent configs / MCP permissions — see *ai-coding-tuis*
+- **huggingface/sentence-transformers** (19,244★) — the encoder under SetFit and semantic-router — see *rag-tooling*
+- **catboost/catboost** (9,186★) — tabular classifier — decisions over features, not over text
+- **google-research/tabfm** (2,826★) — tabular foundation model — same reason
+- **explosion/spaCy** (34,007★) — general NLP framework; its textcat is one component among many
+- **haizelabs/verdict** (352★) — LLM-as-judge scaling; evaluation rather than runtime decisions
 
 ## Methodology & caveats
 
@@ -367,4 +364,4 @@ Watch items: `jev-code` (v0.2.1 on npm, three hosts) and `super-jev` are wrapper
 - Frozen evidence does **not** refresh with `build_index.py`; re-verify when a new Jev version ships (`jev-latest` → `jev-1.13-20260917` as of 2026-09-29) or new guard models land.
 - **Metrics** (health, lifecycle, bus_factor) are precomputed at snapshot time and may lag GitHub's current state.
 
-<sub>Tools covered: 32 · Snapshot: 2026-10-26T11:46:04.025Z</sub>
+<sub>Tools covered: 32 · Snapshot: 2026-11-01T12:41:55.392Z</sub>
