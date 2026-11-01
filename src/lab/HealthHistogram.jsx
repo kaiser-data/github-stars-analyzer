@@ -21,7 +21,7 @@ export default function HealthHistogram() {
 
   return (
     <div className="bg-gray-800/50 border border-gray-700 px-4 py-3 rounded-lg mb-4">
-      <div className="text-xs uppercase tracking-wider text-gray-500 mb-2">Lifecycle distribution · avg health</div>
+      <div className="text-xs uppercase tracking-wider text-gray-500 mb-2">Where the projects are in their life · average health score</div>
       <div className="flex flex-wrap gap-3">
         {STAGE_ORDER.map((stage) => {
           const s = stats.get(stage);
@@ -29,11 +29,11 @@ export default function HealthHistogram() {
           const avg = Math.round(s.healthSum / s.count);
           const pct = (s.count / total) * 100;
           return (
-            <div key={stage} className="flex items-center gap-2 min-w-[140px]">
+            <div key={stage} className="flex items-center gap-2 min-w-[160px]">
               <div className="flex-1">
-                <div className="flex items-center justify-between text-xs">
+                <div className="flex items-center justify-between gap-2 text-xs">
                   <span className="font-bold" style={{ color: STAGE_COLOR[stage] }}>{stage}</span>
-                  <span className="text-gray-400">{s.count} · h{avg}</span>
+                  <span className="text-gray-400">{s.count} · health {avg}</span>
                 </div>
                 <div className="h-1.5 bg-gray-700 rounded-full mt-1 overflow-hidden">
                   <div style={{ width: `${pct}%`, backgroundColor: STAGE_COLOR[stage] }} className="h-full" />

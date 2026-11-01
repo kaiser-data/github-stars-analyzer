@@ -9,7 +9,7 @@ function repoNodes(nodes) { return nodes; }
 export const QUERIES = {
   whereDevsWork: {
     title: 'Where developers actually work',
-    description: 'Top repos by unique authors active in the last 90 days.',
+    description: 'Projects with the most different people working on them in the last three months.',
     run: (graph) => {
       return repoNodes(graph)
         .filter((r) => r.unique_authors_90d > 0)
@@ -26,8 +26,8 @@ export const QUERIES = {
   },
 
   classicCore: {
-    title: 'The classic core of your stars',
-    description: 'Old, still healthy, sustained activity — the standards everyone keeps coming back to.',
+    title: 'The classics',
+    description: 'Old, still healthy, still worked on: the standards everyone keeps coming back to.',
     run: (graph) => {
       return repoNodes(graph)
         .filter((r) => r.lifecycle_stage === 'Classic')
@@ -44,8 +44,8 @@ export const QUERIES = {
   },
 
   hotRepos: {
-    title: 'Hot repos in your stars',
-    description: 'Recent, very active, multi-author. These are the ones moving fastest right now.',
+    title: 'Hot right now',
+    description: 'Young, very active, built by many people. These are moving fastest.',
     run: (graph) => {
       return repoNodes(graph)
         .filter((r) => r.lifecycle_stage === 'Hot' || r.lifecycle_stage === 'Rising')
@@ -63,8 +63,8 @@ export const QUERIES = {
   },
 
   busFactorRisks: {
-    title: 'Bus-factor risks',
-    description: 'Active repos where one person owns the lions share of recent commits.',
+    title: 'Resting on one person',
+    description: 'Busy projects where one person does most of the work. If they leave, the project may stall.',
     run: (graph) => {
       return repoNodes(graph)
         .filter((r) => r.commits_90d >= 10 && r.bus_factor === 1 && r.lifecycle_stage !== 'Abandoned')
@@ -82,8 +82,8 @@ export const QUERIES = {
   },
 
   decliningFormerlyHot: {
-    title: 'Declining repos that may need replacing',
-    description: 'High stars but cold lately. Candidates to look for modern alternatives.',
+    title: 'Fading favourites',
+    description: 'Many stars, but little work lately. Worth looking for a newer alternative.',
     run: (graph) => {
       return repoNodes(graph)
         .filter((r) => (r.lifecycle_stage === 'Declining' || r.lifecycle_stage === 'Abandoned') && r.stars > 1000)
@@ -99,8 +99,8 @@ export const QUERIES = {
   },
 
   hiddenClusterLeaders: {
-    title: 'Cluster leaders (PageRank-central in your graph)',
-    description: 'Repos most structurally important in your starred network. PageRank weights connections through other influential repos higher than raw degree.',
+    title: 'Leaders of each constellation',
+    description: 'The projects others in their family lean on most. Being linked to by important projects counts for more than simply having many links.',
     run: (graph) => {
       return repoNodes(graph)
         .sort((a, b) => (b.pagerank ?? 0) - (a.pagerank ?? 0))
@@ -117,8 +117,8 @@ export const QUERIES = {
   },
 
   ownerHotspots: {
-    title: 'Owners with the most repos in your stars',
-    description: 'Which orgs/users dominate your starred set.',
+    title: 'Who built the most of these',
+    description: 'The people and companies behind the most projects on the map.',
     run: (graph) => {
       const counts = new Map();
       for (const r of repoNodes(graph)) {
@@ -134,8 +134,8 @@ export const QUERIES = {
   },
 
   communityBreakdown: {
-    title: 'Communities in your starred graph',
-    description: 'Louvain-detected clusters: which themes hold your stars together.',
+    title: 'The constellations',
+    description: 'Families of related projects, found automatically, and the themes that hold each together.',
     run: (graph) => {
       const buckets = new Map();
       for (const r of repoNodes(graph)) {

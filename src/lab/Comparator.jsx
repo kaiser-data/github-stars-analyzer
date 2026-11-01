@@ -75,52 +75,52 @@ export default function Comparator({ initialA, initialB }) {
 
   return (
     <div className="bg-gray-800 rounded-lg p-5">
-      <h2 className="text-xl font-bold text-white mb-3">Compare two repos</h2>
+      <h2 className="text-xl font-bold text-white mb-3">Compare two projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-5">
         <select value={a} onChange={(e) => setA(e.target.value)} className="px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600">
-          <option value="">Select first repo…</option>
+          <option value="">Pick the first project…</option>
           {repoOptions.map((n) => <option key={n} value={n}>{n}</option>)}
         </select>
         <select value={b} onChange={(e) => setB(e.target.value)} className="px-3 py-2 bg-gray-700 text-white rounded-lg border border-gray-600">
-          <option value="">Select second repo…</option>
+          <option value="">Pick the second project…</option>
           {repoOptions.map((n) => <option key={n} value={n}>{n}</option>)}
         </select>
       </div>
-      {!result && <div className="text-gray-500 text-sm">Pick two different repos to compare.</div>}
+      {!result && <div className="text-gray-500 text-sm">Pick two different projects to compare.</div>}
       {result && (
         <div className="space-y-4">
           <div className="grid grid-cols-3 gap-3 pb-2 border-b border-gray-700">
-            <div className="text-gray-400 text-xs uppercase tracking-wide">Metric</div>
+            <div className="text-gray-400 text-xs uppercase tracking-wide">Measure</div>
             <div className="text-blue-400 font-bold">{result.a.full_name}</div>
             <div className="text-blue-400 font-bold">{result.b.full_name}</div>
           </div>
           <MetricRow label="Stars" a={result.a.stars} b={result.b.stars} fmt={(x) => x?.toLocaleString()} />
-          <MetricRow label="Lifecycle" a={result.a.lifecycle_stage} b={result.b.lifecycle_stage} />
-          <MetricRow label="Health score" a={result.a.health_score} b={result.b.health_score} />
+          <MetricRow label="Stage of life" a={result.a.lifecycle_stage} b={result.b.lifecycle_stage} />
+          <MetricRow label="Health" a={result.a.health_score} b={result.b.health_score} />
           <MetricRow label="Age (days)" a={result.a.age_days} b={result.b.age_days} fmt={(x) => x?.toLocaleString()} />
-          <MetricRow label="Days since push" a={result.a.days_since_push} b={result.b.days_since_push} />
-          <MetricRow label="Commits last 90d" a={result.a.commits_90d} b={result.b.commits_90d} />
-          <MetricRow label="Authors last 90d" a={result.a.unique_authors_90d} b={result.b.unique_authors_90d} />
-          <MetricRow label="Bus factor" a={result.a.bus_factor} b={result.b.bus_factor} />
-          <MetricRow label="Primary language" a={result.a.primary_language ?? '—'} b={result.b.primary_language ?? '—'} />
-          <MetricRow label="Topics" a={(result.a.topics ?? []).join(', ') || '—'} b={(result.b.topics ?? []).join(', ') || '—'} />
+          <MetricRow label="Days since last update" a={result.a.days_since_push} b={result.b.days_since_push} />
+          <MetricRow label="Changes, last 3 months" a={result.a.commits_90d} b={result.b.commits_90d} />
+          <MetricRow label="People, last 3 months" a={result.a.unique_authors_90d} b={result.b.unique_authors_90d} />
+          <MetricRow label="Key people" a={result.a.bus_factor} b={result.b.bus_factor} />
+          <MetricRow label="Written in" a={result.a.primary_language ?? '—'} b={result.b.primary_language ?? '—'} />
+          <MetricRow label="Subjects" a={(result.a.topics ?? []).join(', ') || '—'} b={(result.b.topics ?? []).join(', ') || '—'} />
           <div className="bg-gray-900 rounded-lg p-4 mt-4">
-            <h3 className="text-sm uppercase tracking-wide text-gray-400 mb-2">Relationship</h3>
+            <h3 className="text-sm uppercase tracking-wide text-gray-400 mb-2">Connection</h3>
             <div className="text-sm text-gray-200">
               {result.same_community ? <span className="text-green-400">Same community ({result.a.community})</span> : <span className="text-gray-400">Different communities ({result.a.community} vs {result.b.community})</span>}
             </div>
             {result.edge ? (
               <>
                 <div className="text-sm text-gray-200 mt-2">Direct edge weight: {result.edge.weight.toFixed(2)}</div>
-                {result.edge.shared_topics?.length > 0 && <div className="text-sm text-gray-300 mt-1">Shared topics: <span className="text-cyan-300">{result.edge.shared_topics.join(', ')}</span></div>}
-                {result.edge.shared_authors?.length > 0 && <div className="text-sm text-gray-300 mt-1">Shared authors: <span className="text-yellow-300">{result.edge.shared_authors.join(', ')}</span></div>}
+                {result.edge.shared_topics?.length > 0 && <div className="text-sm text-gray-300 mt-1">Shared subjects: <span className="text-cyan-300">{result.edge.shared_topics.join(', ')}</span></div>}
+                {result.edge.shared_authors?.length > 0 && <div className="text-sm text-gray-300 mt-1">Shared builders: <span className="text-yellow-300">{result.edge.shared_authors.join(', ')}</span></div>}
               </>
-            ) : <div className="text-sm text-gray-500 mt-2">No direct edge.</div>}
+            ) : <div className="text-sm text-gray-500 mt-2">Not directly linked.</div>}
           </div>
           {path && (
             <div className="bg-gray-900 rounded-lg p-4">
-              <h3 className="text-sm uppercase tracking-wide text-gray-400 mb-2">Shortest path through the graph</h3>
-              {!path.found && <div className="text-sm text-gray-500">No path found.</div>}
+              <h3 className="text-sm uppercase tracking-wide text-gray-400 mb-2">How they are linked</h3>
+              {!path.found && <div className="text-sm text-gray-500">No link found.</div>}
               {path.found && (
                 <>
                   <div className="text-sm text-gray-300 mb-3">{path.length} hop{path.length === 1 ? '' : 's'}</div>

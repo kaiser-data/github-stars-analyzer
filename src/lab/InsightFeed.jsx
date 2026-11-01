@@ -85,12 +85,12 @@ export default function InsightFeed({ onSelect }) {
     return q.run(nodes);
   }, [status, nodes, activeKey]);
 
-  if (status !== 'ready') return <div className="text-gray-400 p-4">Waiting for graph…</div>;
+  if (status !== 'ready') return <div className="text-gray-400 p-4">Loading the map…</div>;
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
       <div className="lg:col-span-1">
-        <h3 className="text-sm font-bold text-gray-300 mb-3 uppercase tracking-wide">Insights</h3>
+        <h3 className="text-sm font-bold text-gray-300 mb-3 uppercase tracking-wide">Quick answers</h3>
         <div className="flex flex-col gap-1">
           {Object.entries(QUERIES).map(([key, q]) => (
             <button
@@ -125,7 +125,7 @@ export default function InsightFeed({ onSelect }) {
           )}
         </div>
         <ResultTable rows={result} onSelect={onSelect} />
-        <div className="text-xs text-gray-500 mt-3">Click a row with a repo name to open detail panel.</div>
+        <div className="text-xs text-gray-500 mt-3">Click any project name to see its details.</div>
       </div>
     </div>
   );

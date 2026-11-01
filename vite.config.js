@@ -103,8 +103,10 @@ function siteMeta() {
       COMMUNITIES: fmt(graph.stats?.communityCount ?? Object.keys(graph.communities).length),
       REPORTS: fmt(index.reports.length),
       REPORT_CATEGORIES: fmt(new Set(index.reports.map((r) => r.category)).size),
-      DESCRIPTION: `${fmt(nodes)} starred GitHub repositories as a navigable 3D knowledge graph, `
-        + `with lifecycle and risk scoring, ${index.reports.length} curated landscape reports, and natural-language search.`,
+      DATA_DATE: String(graph.computed_at ?? '').slice(0, 10) || 'the latest refresh',
+      DESCRIPTION: `${fmt(nodes)} hand-picked free software projects, mapped like a night sky: `
+        + `see which tools belong together, which are thriving, and which to build on. `
+        + `With ${index.reports.length} plain-language guides and an AI you can ask.`,
     }
   }
   const fill = (text, v) => text.replace(/%([A-Z_]+)%/g, (m, k) => (k in v ? v[k] : m))

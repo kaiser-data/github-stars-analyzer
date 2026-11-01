@@ -59,7 +59,7 @@ export default function AllRepos({ onSelect }) {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Search names, descriptions, topics, concepts…"
+          placeholder="Search by name, description or subject…"
           className="flex-1 min-w-[260px] px-3 py-2 bg-gray-900 text-white rounded-lg border border-gray-700 focus:outline-none focus:border-blue-500"
         />
         <select
@@ -67,13 +67,13 @@ export default function AllRepos({ onSelect }) {
           onChange={(e) => setSortKey(e.target.value)}
           className="px-3 py-2 bg-gray-900 text-white rounded-lg border border-gray-700"
         >
-          <option value="stars">Sort: stars</option>
-          <option value="pagerank">Sort: PageRank (graph-central)</option>
-          <option value="health">Sort: health score</option>
-          <option value="authors90">Sort: authors 90d</option>
-          <option value="commits90">Sort: commits 90d</option>
-          <option value="age">Sort: youngest first</option>
-          <option value="pushed">Sort: most recently pushed</option>
+          <option value="stars">Sort: most stars</option>
+          <option value="pagerank">Sort: most influential</option>
+          <option value="health">Sort: healthiest</option>
+          <option value="authors90">Sort: most people working on it</option>
+          <option value="commits90">Sort: most changes lately</option>
+          <option value="age">Sort: newest first</option>
+          <option value="pushed">Sort: most recently updated</option>
         </select>
       </div>
 

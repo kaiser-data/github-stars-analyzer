@@ -37,15 +37,15 @@ function TabFallback({ label = 'content' }) {
 }
 
 const TABS = [
-  { key: 'map', label: 'Map' },
-  { key: 'topics', label: 'Topics' },
-  { key: 'insights', label: 'Insights' },
-  { key: 'risk', label: 'Risk' },
-  { key: 'all', label: 'Browse' },
-  { key: 'compare', label: 'Compare' },
-  { key: 'reports', label: 'Reports' },
-  { key: 'prompts', label: 'Prompts' },
-  { key: 'ask', label: 'Ask AI' },
+  { key: 'map', label: 'Map', hint: 'Each dot is a software project. Related projects cluster into constellations; bigger stars are the ones others rely on. Drag to turn, click a star to open it.' },
+  { key: 'topics', label: 'Topics', hint: 'The subjects projects are tagged with, and which subjects tend to go together.' },
+  { key: 'insights', label: 'Quick answers', hint: 'Ready-made answers: where people are working now, the classics, and projects that hang on one person.' },
+  { key: 'risk', label: 'Health', hint: 'Same stars, different futures: which projects are thriving and which are quietly fading.' },
+  { key: 'all', label: 'Browse', hint: 'Every project in one table. Search, sort and filter.' },
+  { key: 'compare', label: 'Compare', hint: 'Put two projects side by side and see what links them.' },
+  { key: 'reports', label: 'Guides', hint: 'Readable guides to one field at a time, with the best project for each job.' },
+  { key: 'prompts', label: 'Recipes', hint: 'Step-by-step recipes you can hand to an AI assistant to build something new from these projects.' },
+  { key: 'ask', label: 'Ask AI', hint: 'Ask a question in your own words; the answer comes from this map.' },
 ];
 
 function AskView() {
@@ -328,11 +328,11 @@ function StatusBanner() {
   return (
     <div className="bg-gray-800/50 border border-gray-700 px-4 py-2 rounded-lg text-sm mb-4 flex items-center justify-between">
       <span className="text-gray-300">
-        Graph ready: <strong className="text-white">{stats.nodeCount}</strong> repos · <strong className="text-white">{stats.edgeCount}</strong> edges · <strong className="text-white">{stats.communityCount}</strong> communities
+        <strong className="text-white">{stats.nodeCount.toLocaleString('en-US')}</strong> projects · <strong className="text-white">{stats.edgeCount.toLocaleString('en-US')}</strong> connections · <strong className="text-white">{stats.communityCount}</strong> constellations
       </span>
       <span className="text-xs">
         {hasEnrichment ? (
-          <span className="text-green-400">+ enriched (LLM summaries available)</span>
+          <span className="text-green-400">+ plain-English summaries</span>
         ) : import.meta.env.DEV ? (
           // pipeline status for the maintainer; visitors don't need it
           <span className="text-yellow-400">no enriched-100.json yet — runs without LLM data</span>
@@ -397,6 +397,7 @@ function LabContent() {
           </button>
         ))}
       </div>
+      <p className="-mt-3 mb-5 text-sm text-gray-400">{TABS.find((t) => t.key === tab)?.hint}</p>
       {tab === 'insights' && <InsightFeed onSelect={select} />}
       {tab === 'risk' && <RiskQuadrant onSelect={select} />}
       {tab === 'all' && <AllRepos onSelect={select} />}
@@ -432,10 +433,10 @@ export default function LabApp() {
     <div className="min-h-screen text-white py-8 px-4">
       <div className="max-w-[1920px] mx-auto">
         <div className="mb-6">
-          <div className="font-mono text-[11px] tracking-[0.35em] uppercase text-blue-400">An instrument for your stars</div>
+          <div className="font-mono text-[11px] tracking-[0.35em] uppercase text-blue-400">The best free software, mapped like a night sky</div>
           <h1 className="text-4xl md:text-5xl text-white mt-2">The Lab</h1>
           <p className="font-display italic text-blue-300 text-lg mt-1">Don't rebuild what already shines. Build on it.</p>
-          <p className="text-gray-400 text-sm mt-1">Your stars as a knowledge graph: relationships, communities, lifecycle, and which tool to reach for.</p>
+          <p className="text-gray-400 text-sm mt-1">Every project here is free software someone trusted enough to star. See how they connect, which are thriving, and which one to reach for.</p>
         </div>
         <GraphProvider>
           <LabContent />

@@ -117,17 +117,17 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
         className="w-full mb-2 px-3 py-1.5 bg-white hover:bg-gray-200 rounded-md text-black font-medium"
       >Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
-      <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
-      <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Spread"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Distance between linked"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Display</div>
       <Row label="Label density">
         <input type="range" min={1} max={10} step={0.5} value={settings.labelDensity}
           onChange={(e) => upd('labelDensity', Number(e.target.value))} className="w-full" />
       </Row>
       <Row label="Labels always"><input type="checkbox" checked={settings.alwaysLabels} onChange={(e) => upd('alwaysLabels', e.target.checked)} /></Row>
-      <Row label="Drag nodes"><input type="checkbox" checked={settings.drag} onChange={(e) => upd('drag', e.target.checked)} /></Row>
+      <Row label="Drag subjects"><input type="checkbox" checked={settings.drag} onChange={(e) => upd('drag', e.target.checked)} /></Row>
       <Row label="Auto-rotate"><input type="checkbox" checked={settings.autoRotate} onChange={(e) => upd('autoRotate', e.target.checked)} /></Row>
-      <div className="text-[10px] text-gray-500 mt-3 leading-snug">Left-drag: orbit · Right-drag: pan · Scroll: zoom</div>
+      <div className="text-[10px] text-gray-500 mt-3 leading-snug">Drag to turn · Right-drag to move · Scroll to zoom</div>
     </div>
   );
 }
@@ -257,9 +257,9 @@ export default function TopicMap({ onSelect }) {
         <div className="relative">
           <div className="absolute top-3 left-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg px-3 py-2 text-xs text-gray-300 shadow-xl">
             <div>{stats.topics} topics · {stats.edges} co-occurrences</div>
-            <div className="text-gray-500 mt-1">Edge weight = repos sharing both topics</div>
+            <div className="text-gray-500 mt-1">Thicker line = more projects share both subjects</div>
             <div className="mt-2">
-              <label className="text-gray-500">Min repos per topic: </label>
+              <label className="text-gray-500">Only subjects with at least this many projects: </label>
               <input type="number" min={2} max={10} value={minFreq}
                 onChange={(e) => setMinFreq(Math.max(2, Math.min(10, Number(e.target.value) || 2)))}
                 className="w-12 bg-gray-800 border border-gray-700 rounded px-1 text-gray-200" />
@@ -274,7 +274,7 @@ export default function TopicMap({ onSelect }) {
           )}
           <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(ellipse at 50% 40%, #131826 0%, #0b0e17 70%)', borderRadius: 12, overflow: 'hidden' }}>
             {topicGraph && topicGraph.order === 0 ? (
-              <div className="p-12 text-center text-gray-500">No topics meet the minimum frequency. Lower the threshold.</div>
+              <div className="p-12 text-center text-gray-500">No subject has that many projects. Lower the number.</div>
             ) : (
               <ForceGraph3D
                 ref={fgRef}

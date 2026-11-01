@@ -20,8 +20,8 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
     <div className="absolute top-3 right-3 z-10 bg-gray-900/95 border border-gray-700 rounded-lg p-3 text-xs text-gray-200 shadow-xl w-[260px]">
       <button onClick={onRecenter} className="w-full mb-2 px-3 py-1.5 bg-white hover:bg-gray-200 rounded-md text-black font-medium">Recenter view</button>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mb-2">Layout</div>
-      <Row label="Repulsion"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
-      <Row label="Link length"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Spread"><input type="range" min={-300} max={-30} step={5} value={settings.charge} onChange={(e) => upd('charge', Number(e.target.value))} className="w-full" /></Row>
+      <Row label="Distance between linked"><input type="range" min={20} max={200} step={5} value={settings.linkDistance} onChange={(e) => upd('linkDistance', Number(e.target.value))} className="w-full" /></Row>
       <div className="text-[10px] uppercase tracking-wider text-gray-500 mt-3 mb-1">Filter</div>
       <Row label={`Min stars (${settings.minStars.toLocaleString()})`}>
         <input type="range" min={0} max={2000} step={50} value={settings.minStars} onChange={(e) => upd('minStars', Number(e.target.value))} className="w-full" />
@@ -33,9 +33,9 @@ function ControlPanel({ settings, setSettings, onRecenter }) {
       <Row label="Label density"><input type="range" min={1} max={12} step={0.5} value={settings.labelDensity} onChange={(e) => upd('labelDensity', Number(e.target.value))} className="w-full" /></Row>
       <Row label="Labels always"><input type="checkbox" checked={settings.alwaysLabels} onChange={(e) => upd('alwaysLabels', e.target.checked)} /></Row>
       <Row label="Thick links"><input type="checkbox" checked={settings.thickLinks} onChange={(e) => upd('thickLinks', e.target.checked)} /></Row>
-      <Row label="Drag nodes"><input type="checkbox" checked={settings.drag} onChange={(e) => upd('drag', e.target.checked)} /></Row>
+      <Row label="Drag stars"><input type="checkbox" checked={settings.drag} onChange={(e) => upd('drag', e.target.checked)} /></Row>
       <Row label="Auto-rotate"><input type="checkbox" checked={settings.autoRotate} onChange={(e) => upd('autoRotate', e.target.checked)} /></Row>
-      <div className="text-[10px] text-gray-500 mt-3 leading-snug">Left-drag: orbit · Right-drag: pan · Scroll: zoom · Click: focus</div>
+      <div className="text-[10px] text-gray-500 mt-3 leading-snug">Drag to turn · Right-drag to move · Scroll to zoom · Click a star to open it</div>
     </div>
   );
 }
@@ -206,7 +206,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             <span className="text-gray-500"> (of {stats.nodeCount.toLocaleString()})</span>
           )}
         </div>
-        <div className="text-gray-500 mt-1">Color = community · Size = stars + PageRank</div>
+        <div className="text-gray-500 mt-1">Colour = constellation · Size = stars and how much other projects rely on it</div>
         {focusedRepoName && <div className="mt-1 text-blue-300">Focused: {focusedRepoName}</div>}
       </div>
       <ControlPanel settings={settings} setSettings={setSettings} onRecenter={recenter} />

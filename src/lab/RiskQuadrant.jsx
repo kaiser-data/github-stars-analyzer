@@ -119,7 +119,7 @@ export default function RiskQuadrant({ onSelect }) {
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search repos by name…"
+          placeholder="Find a project by name…"
           className="w-full sm:w-80 bg-gray-800 border border-gray-700 rounded-lg px-3 py-1.5 text-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:border-blue-500"
         />
         {q && (
@@ -148,10 +148,11 @@ export default function RiskQuadrant({ onSelect }) {
       </div>
 
       <div className="mb-3">
-        <h2 className="text-xl font-bold text-white">Risk quadrant</h2>
+        <h2 className="text-xl font-bold text-white">Thriving or fading?</h2>
         <p className="text-gray-400 text-sm">
-          Health score vs. star momentum (log). Dot size = stars, color = lifecycle stage.
-          Big dots left of the line are popular projects with weak health signals — check before you depend on them.
+          Right means healthier; higher means more people are discovering it this month. Bigger dots
+          have more stars; colour shows where a project is in its life. Watch the big dots in the red
+          zone on the left: popular, but showing signs of neglect. Check them before you rely on them.
         </p>
       </div>
 
@@ -179,12 +180,12 @@ export default function RiskQuadrant({ onSelect }) {
       </div>
 
       <div ref={wrapRef} className="relative bg-gray-800/40 border border-gray-700 rounded-lg overflow-hidden">
-        <svg viewBox={`0 0 ${W} ${H}`} className="w-full block" role="img" aria-label="Scatter of repo health vs momentum">
+        <svg viewBox={`0 0 ${W} ${H}`} className="w-full block" role="img" aria-label="Each project placed by health and by how fast it is gaining stars">
           {/* at-risk zone */}
           <rect x={M.left} y={M.top} width={riskX - M.left} height={model.plotH} fill="#ef4444" opacity="0.05" />
           <line x1={riskX} y1={M.top} x2={riskX} y2={M.top + model.plotH} stroke="#ef4444" strokeOpacity="0.35" strokeDasharray="4 4" />
           <text x={riskX - 8} y={M.top + 16} textAnchor="end" fill="#f87171" fontSize="11">
-            ⚠ health &lt; {HEALTH_RISK}
+            ⚠ weak health (under {HEALTH_RISK})
           </text>
 
           {/* recessive grid + axes */}
@@ -198,11 +199,11 @@ export default function RiskQuadrant({ onSelect }) {
             <text key={`x${v}`} x={x} y={H - M.bottom + 18} textAnchor="middle" fill="#a1a1a1" fontSize="11">{v}</text>
           ))}
           <text x={M.left + (W - M.left - M.right) / 2} y={H - 8} textAnchor="middle" fill="#7d7d7d" fontSize="11.5">
-            Health score →
+            Healthier →
           </text>
           <text x={16} y={M.top + model.plotH / 2} textAnchor="middle" fill="#7d7d7d" fontSize="11.5"
             transform={`rotate(-90 16 ${M.top + model.plotH / 2})`}>
-            Momentum (est. +stars / 30d) →
+            New stars this month →
           </text>
 
           {/* dots */}

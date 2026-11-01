@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>GitHub Astrolab — your GitHub stars as a knowledge graph</title>
+<title>GitHub Astrolab — the best free software, mapped like a night sky</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="%DESCRIPTION%">
 <link rel="canonical" href="%SITE_URL%/">
@@ -145,6 +145,25 @@ h1 .pre{
   background:var(--plate);box-shadow:0 18px 44px -22px var(--glow)}
 .shot img{display:block;width:100%;height:auto}
 
+/* ── four words: plain-language glossary for first-time visitors ───── */
+.words{padding:64px 0 70px;border-top:1px solid var(--hair);text-align:center}
+.words h2{
+  font-family:var(--display);font-weight:400;font-size:clamp(1.4rem,2.8vw,1.9rem);
+  margin:0 0 8px;letter-spacing:-.015em
+}
+.words > p{color:var(--ink-3);margin:0 auto 34px;max-width:52ch}
+.words dl{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;
+  margin:0;text-align:left
+}
+.words dl > div{
+  background:var(--plate);border:1px solid var(--hair);border-radius:6px;padding:20px 20px 18px
+}
+.words dt{
+  font-family:var(--display);font-size:1.2rem;color:var(--brass);margin:0 0 8px
+}
+.words dt small{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--ink-3);margin-left:6px}
+.words dd{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.6}
 /* ── closing ──────────────────────────────────────────────────────── */
 .end{
   margin-top:78px;padding-top:44px;border-top:1px solid var(--rule);text-align:center
@@ -154,6 +173,7 @@ h1 .pre{
   margin:0 0 14px;letter-spacing:-.015em
 }
 .end p{color:var(--ink-2);max-width:56ch;margin:0 auto 12px}
+.end p.for-devs{color:var(--ink-3);font-size:13.5px}
 .end code{
   font-family:var(--mono);font-size:.85em;background:var(--hair);
   color:var(--ink);padding:.16em .42em;border-radius:3px
@@ -203,104 +223,116 @@ a:focus-visible{outline:2px solid var(--brass-lit);outline-offset:3px;border-rad
     <circle cx="200" cy="200" r="127" transform="rotate(28 200 200) translate(38 0)" class="faint"/>
     <circle cx="200" cy="200" r="92" transform="rotate(-14 200 200) translate(-52 0)" class="faint"/>
   </svg>
-  <p class="eyebrow">An instrument for your stars</p>
+  <p class="eyebrow">The best free software, mapped like a night sky</p>
   <h1><span class="pre">GitHub</span>Astrolab</h1>
-  <p class="lede">A thousand stars is not a library. It is a pile.</p>
-  <p class="sub">This turns a GitHub star list into something you can navigate — a knowledge
-  graph with communities and lifecycle scoring, %REPORTS% curated landscape reports,
-  and search that understands the shape of what you saved.</p>
+  <p class="lede">%NODES% software projects, hand-picked one by one, and laid out like stars.</p>
+  <p class="sub">Each point of light is a real project that anyone can use for free. Projects
+  that do similar things drift together into constellations, so you can see whole families of
+  tools at a glance, and tell which ones are thriving and which are quietly fading.</p>
   <p class="cta-row">
     <a class="cta" href="/lab?tab=map">Enter the map<span aria-hidden="true"> →</span></a>
     <a class="cta cta-ghost" href="https://github.com/kaiser-data/github-stars-analyzer" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>View on GitHub</a>
   </p>
-  <div class="stats"><div><b>%NODES%</b><span>repositories mapped</span></div><div><b>%EDGES%</b><span>similarity edges</span></div><div><b>%COMMUNITIES%</b><span>communities</span></div><div><b>%REPORTS%</b><span>landscape reports</span></div></div>
+  <div class="stats"><div><b>%NODES%</b><span>software projects</span></div><div><b>%EDGES%</b><span>connections</span></div><div><b>%COMMUNITIES%</b><span>constellations</span></div><div><b>%REPORTS%</b><span>guides to read</span></div></div>
 </header>
+
+<section class="words" aria-labelledby="words-h">
+  <h2 id="words-h">Four words, and the sky makes sense</h2>
+  <p>You don't need to be a programmer to read this map. You only need these.</p>
+  <dl>
+    <div><dt>GitHub</dt><dd>The website where most of the world's free software is written and shared, in public, by people everywhere.</dd></div>
+    <div><dt>Repository <small>REPO</small></dt><dd>One software project's home on GitHub: its code, its full history, and the people building it. Think of one book in an enormous public library.</dd></div>
+    <div><dt>Star</dt><dd>A public vote of trust. When a developer stars a project, they are saying <em>this is good, I want to keep it</em>. Every dot here is a project that earned one.</dd></div>
+    <div><dt>Open source</dt><dd>Software whose code is open for anyone to read, use and build on, for free. Almost every app you use is built partly from it.</dd></div>
+  </dl>
+</section>
 
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Map</p>
-    <h2>The corpus as a sky</h2>
-    <p>Every starred repo is a node, placed by a force simulation that runs at build time rather than in your browser. Colour encodes the community Louvain found; size combines stars with PageRank, so structurally central projects read as bright regardless of popularity.</p>
-    <p class="meta">%NODES% nodes · %EDGES% edges · %COMMUNITIES% communities</p>
+    <h2>Every project, as a star</h2>
+    <p>Each dot is one software project. Related projects pull together into constellations: the voice tools in one corner, the 3D-printing tools in another. The bigger and brighter a star, the more other projects lean on it.</p>
+    <p class="meta">%NODES% projects · %EDGES% connections · %COMMUNITIES% constellations · Louvain communities, PageRank sizing</p>
   </div>
-  <figure class="shot"><img src="/screenshots/01-map.jpg" alt="Map — The corpus as a sky" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/01-map.jpg" alt="Map — Every project, as a star" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Topics</p>
     <h2>What the stars are about</h2>
-    <p>A co-occurrence graph of tags across the whole corpus. Where the Map shows which projects relate, this shows which *subjects* do — the shape of an interest rather than its instances.</p>
-    <p class="meta">co-occurrence across every tag in the set</p>
+    <p>Projects carry subject tags, like <em>speech</em> or <em>robotics</em>. This view joins the subjects that keep turning up together, so you see the shape of a whole field rather than a list of its parts.</p>
+    <p class="meta">tag co-occurrence across the whole set</p>
   </div>
   <figure class="shot"><img src="/screenshots/02-topics.jpg" alt="Topics — What the stars are about" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
-    <p class="tab">Insights</p>
+    <p class="tab">Quick answers</p>
     <h2>Questions, already asked</h2>
-    <p>Named analytical queries over the dataset: where developers actually work, measured by unique authors active in the last 90 days; the classic core; bus-factor risks; declining projects worth replacing; PageRank-central cluster leaders. Every view exports to JSON or CSV.</p>
+    <p>Ready-made answers to the questions people ask first. Where are the most people working right now? Which projects are the classics? Which depend on a single person? Which are fading and worth replacing? Every list can be downloaded.</p>
     <p class="meta">6 standing queries · JSON + CSV export</p>
   </div>
   <figure class="shot"><img src="/screenshots/03-insights.jpg" alt="Insights — Questions, already asked" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
-    <p class="tab">Risk</p>
-    <h2>What is quietly dying</h2>
-    <p>Lifecycle stage, health score, bus factor and top-author concentration in one view. A dependency with one maintainer and no pushes in a year looks identical to a healthy one on a star count — this is where the difference shows.</p>
-    <p class="meta">lifecycle · health · bus factor · author share</p>
+    <p class="tab">Health</p>
+    <h2>What is quietly fading</h2>
+    <p>Two projects can have the same number of stars while one is thriving and the other was abandoned a year ago. This view shows the difference: how recently people worked on it, how healthy it looks, and what happens if its one key person walks away.</p>
+    <p class="meta">lifecycle · health score · bus factor · author share</p>
   </div>
-  <figure class="shot"><img src="/screenshots/04-risk.jpg" alt="Risk — What is quietly dying" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/04-risk.jpg" alt="Risk — What is quietly fading" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Browse</p>
-    <h2>The whole corpus, filtered</h2>
-    <p>Search and sort across every metric the pipeline computes: stars, forks, language, lifecycle, health, activity. The unglamorous view that answers most questions.</p>
-    <p class="meta">45 metadata fields per repo</p>
+    <h2>Every project, searchable</h2>
+    <p>A plain table of all %NODES% projects. Search by name, sort by popularity, or filter by programming language and by how active a project is. The quiet view that answers most questions.</p>
+    <p class="meta">45 facts per project</p>
   </div>
-  <figure class="shot"><img src="/screenshots/05-browse.jpg" alt="Browse — The whole corpus, filtered" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/05-browse.jpg" alt="Browse — Every project, searchable" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Compare</p>
     <h2>Two projects, and what joins them</h2>
-    <p>Side-by-side metrics, plus the shortest path between the two through the graph — the shared topics, authors, or intermediate projects that connect them. The comparison most tools can't make, because they have no edges.</p>
-    <p class="meta">metric diff + shortest graph path</p>
+    <p>Pick any two projects and see them side by side. Astrolab also traces the chain that links them, through a shared subject, a shared author or a project in between, the way you might find out how two strangers know each other.</p>
+    <p class="meta">metric diff + shortest path through the graph</p>
   </div>
   <figure class="shot"><img src="/screenshots/06-compare.jpg" alt="Compare — Two projects, and what joins them" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
-    <p class="tab">Reports</p>
-    <h2>%REPORTS% curated landscapes</h2>
-    <p>The largest feature, and the most deliberate: each report is a deterministic Python generator over the local dataset. Hand-curated taxonomies, master comparison tables, per-task rankings, graph analysis, maintenance risk. No model writes them, no API is called at generation time — so they rebuild identically, for free, on every refresh.</p>
-    <p class="meta">%REPORTS% reports · %REPORT_CATEGORIES% categories · fully reproducible</p>
+    <p class="tab">Guides</p>
+    <h2>%REPORTS% guides, one field at a time</h2>
+    <p>Readable guides to a single area, such as voice assistants, reading documents, or 3D printing. Each ranks the leading projects for every task and flags the risky ones. They are built from the data itself, not written by an AI, so they come out the same way every time the data is refreshed.</p>
+    <p class="meta">%REPORTS% reports · %REPORT_CATEGORIES% categories · deterministic Python, no model</p>
   </div>
-  <figure class="shot"><img src="/screenshots/07-reports.jpg" alt="Reports — curated landscapes" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/07-reports.jpg" alt="Reports — guides, one field at a time" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Ask AI</p>
-    <h2>Natural language, grounded</h2>
-    <p>Questions answered against the graph's own community summary as context, through any OpenAI-compatible endpoint. Deliberately the last feature rather than the first: everything above works without a key, and the model reads the graph rather than replacing it.</p>
-    <p class="meta">provider-agnostic · optional</p>
+    <h2>Ask in your own words</h2>
+    <p>Type a question like <em>what should I use to transcribe meetings?</em> and get an answer drawn from this map, not from a model’s memory. It is optional: everything else on this site works without it.</p>
+    <p class="meta">any OpenAI-compatible model · grounded in the graph</p>
   </div>
-  <figure class="shot"><img src="/screenshots/08-ask-ai.jpg" alt="Ask AI — Natural language, grounded" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/08-ask-ai.jpg" alt="Ask AI — Ask in your own words" loading="lazy"></figure>
 </section>
 <section class="end">
-  <h2>Everything expensive happens before you open it</h2>
-  <p>The graph is built, clustered, ranked and force-simulated by the pipeline, then frozen
-  into a static file. The browser loads coordinates and draws them — no graph maths at
-  runtime, no model in the hot path, no API call needed to read a report.</p>
-  <p>Refresh the data with <code>npm run refresh</code>, rebuild every report with
-  <code>npm run reports</code>. Both are reproducible and cost nothing.</p>
+  <h2>Why this exists</h2>
+  <p>Most new software is built from free parts. Knowing which parts are good, alive and
+  trusted can save weeks. Astrolab is one developer's collection of the best of them,
+  mapped so anyone can find the right building block, and see what is worth building next.</p>
+  <p class="for-devs">For developers: layout, clustering and ranking all run ahead of time, so the
+  page only draws. Refresh with <code>npm run refresh</code>, rebuild every report with
+  <code>npm run reports</code>.</p>
   <div class="ask">
-    <p>The whole thing is open source under MIT — clone it and point it at your own stars.
-    <strong>If you like it, a star on the repo is the only thanks it costs.</strong></p>
+    <p>Astrolab is free and open source (MIT). Point it at your own stars.
+    <strong>If you like it, give it a star. Now you know what that means.</strong></p>
     <a class="cta" href="https://github.com/kaiser-data/github-stars-analyzer" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.1l2 4.15 4.5.63-3.26 3.2.78 4.52L8 11.47l-4.02 2.13.78-4.52L1.5 5.88 6 5.25 8 1.1Z"/></svg>Star the repo</a>
   </div>
-  <p class="fine">github-stars-analyzer · MIT · data vintage 2026-08-11</p>
+  <p class="fine">github-stars-analyzer · MIT · data from %DATA_DATE%</p>
 </section>
 </div>
 

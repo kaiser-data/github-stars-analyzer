@@ -25,9 +25,9 @@ function HealthBar({ score }) {
   );
 }
 
-function MetricCell({ label, value }) {
+function MetricCell({ label, value, hint }) {
   return (
-    <div className="bg-gray-900 rounded-md p-2">
+    <div className="bg-gray-900 rounded-md p-2" title={hint}>
       <div className="text-[10px] uppercase tracking-wider text-gray-500">{label}</div>
       <div className="text-sm font-semibold text-gray-100">{value}</div>
     </div>
@@ -90,30 +90,30 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
         </div>
 
         <div className="grid grid-cols-3 gap-2">
-          <MetricCell label="Stars" value={attrs.stars?.toLocaleString()} />
-          <MetricCell label="Age" value={`${Math.round(attrs.age_days / 365 * 10) / 10}y`} />
-          <MetricCell label="Last push" value={`${attrs.days_since_push}d ago`} />
-          <MetricCell label="Commits 90d" value={attrs.commits_90d?.toLocaleString()} />
-          <MetricCell label="Authors 90d" value={attrs.unique_authors_90d} />
-          <MetricCell label="Bus factor" value={attrs.bus_factor} />
-          <MetricCell label="Open issues" value={attrs.open_issues?.toLocaleString()} />
-          <MetricCell label="Closed issues" value={attrs.closed_issues?.toLocaleString()} />
-          <MetricCell label="Releases" value={attrs.releases_total} />
-          <MetricCell label="PageRank" value={Number(((attrs.pagerank ?? 0) * 1000).toFixed(2))} />
-          <MetricCell label="Degree" value={attrs.degree ?? 0} />
-          <MetricCell label="Community" value={attrs.community ?? 0} />
+          <MetricCell label="Stars" hint="Votes of trust from developers" value={attrs.stars?.toLocaleString()} />
+          <MetricCell label="Age" hint="Years since the project began" value={`${Math.round(attrs.age_days / 365 * 10) / 10}y`} />
+          <MetricCell label="Last update" hint="Days since someone last changed the code (last push)" value={`${attrs.days_since_push}d ago`} />
+          <MetricCell label="Changes, 3 mo" hint="Code changes saved in the last 90 days (commits)" value={attrs.commits_90d?.toLocaleString()} />
+          <MetricCell label="People, 3 mo" hint="Different people who changed the code in the last 90 days" value={attrs.unique_authors_90d} />
+          <MetricCell label="Key people" hint="How many people would have to leave before the project stalls (bus factor). 1 means it rests on one person." value={attrs.bus_factor} />
+          <MetricCell label="Open requests" hint="Bug reports and wishes still waiting (open issues)" value={attrs.open_issues?.toLocaleString()} />
+          <MetricCell label="Solved requests" hint="Bug reports and wishes already handled (closed issues)" value={attrs.closed_issues?.toLocaleString()} />
+          <MetricCell label="Versions" hint="Finished versions published (releases)" value={attrs.releases_total} />
+          <MetricCell label="Influence" hint="How much other important projects connect to this one (PageRank × 1000)" value={Number(((attrs.pagerank ?? 0) * 1000).toFixed(2))} />
+          <MetricCell label="Links" hint="Directly related projects on the map (degree)" value={attrs.degree ?? 0} />
+          <MetricCell label="Constellation" hint="Which cluster of related projects it belongs to (community number)" value={attrs.community ?? 0} />
         </div>
 
         {attrs.language && (
           <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Primary language</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Written in</div>
             <div className="text-gray-200 text-sm">{attrs.language}</div>
           </div>
         )}
 
         {attrs.topics?.length > 0 && (
           <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Topics</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Subjects</div>
             <div className="flex flex-wrap gap-1">
               {attrs.topics.map((t) => (
                 <span key={t} className="px-2 py-0.5 bg-blue-900/40 border border-blue-700/40 rounded text-xs text-blue-200">{t}</span>
@@ -124,7 +124,7 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
 
         {(attrs.category || attrs.audience || attrs.domain_tags) && (
           <div className="bg-gray-800 rounded-lg p-3 space-y-2">
-            <div className="text-xs uppercase tracking-wider text-gray-500">Enriched</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500">At a glance</div>
             {attrs.category && (
               <div className="text-sm"><span className="text-gray-400">Category: </span><span className="text-gray-100">{attrs.category}</span></div>
             )}
@@ -142,7 +142,7 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
               </div>
             )}
             {attrs.alternatives_mentioned?.length > 0 && (
-              <div className="text-xs text-gray-400">Alternatives mentioned in README: <span className="text-gray-200">{attrs.alternatives_mentioned.join(', ')}</span></div>
+              <div className="text-xs text-gray-400">Similar tools it mentions: <span className="text-gray-200">{attrs.alternatives_mentioned.join(', ')}</span></div>
             )}
             {attrs.key_concepts?.length > 0 && (
               <div className="text-xs text-gray-400">Concepts: <span className="text-gray-200">{attrs.key_concepts.join(' · ')}</span></div>
@@ -153,7 +153,7 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
 
         {neighbors.length > 0 && (
           <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Connected repos in your stars</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Related projects on the map</div>
             <div className="space-y-2">
               {neighbors.map((n) => (
                 <div key={n.full_name} className="bg-gray-800 rounded p-2">
@@ -180,14 +180,14 @@ export default function RepoDetail({ repoFullName, onClose, onCompareWith }) {
 
         {onCompareWith && (
           <div>
-            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">Find shortest path to…</div>
+            <div className="text-xs uppercase tracking-wider text-gray-500 mb-1">How is it linked to…</div>
             <div className="flex gap-2">
               <select
                 value={compareTarget}
                 onChange={(e) => setCompareTarget(e.target.value)}
                 className="flex-1 px-3 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 text-sm"
               >
-                <option value="">Pick a repo to compare…</option>
+                <option value="">Pick a project to compare…</option>
                 {otherRepoNames.map((n) => <option key={n} value={n}>{n}</option>)}
               </select>
               <button
