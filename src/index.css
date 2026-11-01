@@ -10,18 +10,31 @@
     color-scheme: dark;
   }
   html {
-    background: #000;
+    background: #0b0e17;
     text-rendering: optimizeLegibility;
   }
   body {
     margin: 0;
-    background: #000;
+    /* night sky: a faint brass glow at the top fading into navy */
+    background:
+      radial-gradient(1200px 600px at 50% -200px, rgba(217, 176, 74, 0.08), transparent 70%),
+      #0b0e17;
+    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'ss01', 'cv11';
   }
+  h1, h2, h3 {
+    font-family: theme('fontFamily.display');
+    font-weight: 500;
+    letter-spacing: 0;
+  }
   ::selection {
-    background: rgba(82, 168, 255, 0.35);
+    background: rgba(217, 176, 74, 0.35);
+  }
+  /* native sliders and checkboxes in brass instead of the browser's blue */
+  input[type='range'], input[type='checkbox'], input[type='radio'], progress {
+    accent-color: #d9b04a;
   }
 }
 

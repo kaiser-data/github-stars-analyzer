@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
-.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.srf{fill:#fbf9f3;stroke:#e2dccd}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
 .lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
-.bar{fill:#2a78d6}
+.bar{fill:#a8831f}
 @media(prefers-color-scheme:dark){
-.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
-.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+.srf{fill:#131826;stroke:#2a3145}.ttl{fill:#f2eee4}
+.lbl{fill:#a9a69c}.val{fill:#f2eee4}.bar{fill:#d9b04a}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">excalidraw/excalidraw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">134,576</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">134,964</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">d3/d3</text>
-<path d="M244,67 h286.9 q4,0 4,4 v10 q0,4 -4,4 h-286.9 z" class="bar"/>
-<text x="540.9" y="76.0" class="val" dominant-baseline="central">113,798</text>
+<path d="M244,67 h286.2 q4,0 4,4 v10 q0,4 -4,4 h-286.2 z" class="bar"/>
+<text x="540.2" y="76.0" class="val" dominant-baseline="central">113,840</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">grafana/grafana</text>
-<path d="M244,94 h194.1 q4,0 4,4 v10 q0,4 -4,4 h-194.1 z" class="bar"/>
-<text x="448.1" y="103.0" class="val" dominant-baseline="central">77,512</text>
+<path d="M244,94 h193.8 q4,0 4,4 v10 q0,4 -4,4 h-193.8 z" class="bar"/>
+<text x="447.8" y="103.0" class="val" dominant-baseline="central">77,610</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">apache/superset</text>
-<path d="M244,121 h188.5 q4,0 4,4 v10 q0,4 -4,4 h-188.5 z" class="bar"/>
-<text x="442.5" y="130.0" class="val" dominant-baseline="central">75,313</text>
+<path d="M244,121 h188.1 q4,0 4,4 v10 q0,4 -4,4 h-188.1 z" class="bar"/>
+<text x="442.1" y="130.0" class="val" dominant-baseline="central">75,385</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">chartjs/Chart.js</text>
-<path d="M244,148 h169.2 q4,0 4,4 v10 q0,4 -4,4 h-169.2 z" class="bar"/>
-<text x="423.2" y="157.0" class="val" dominant-baseline="central">67,760</text>
+<path d="M244,148 h168.7 q4,0 4,4 v10 q0,4 -4,4 h-168.7 z" class="bar"/>
+<text x="422.7" y="157.0" class="val" dominant-baseline="central">67,772</text>
 </svg>

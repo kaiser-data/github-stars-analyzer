@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
-.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.srf{fill:#fbf9f3;stroke:#e2dccd}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
 .lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
-.bar{fill:#2a78d6}
+.bar{fill:#a8831f}
 @media(prefers-color-scheme:dark){
-.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
-.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+.srf{fill:#131826;stroke:#2a3145}.ttl{fill:#f2eee4}
+.lbl{fill:#a9a69c}.val{fill:#f2eee4}.bar{fill:#d9b04a}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">yt-dlp/yt-dlp</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">202,349</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">204,372</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">microsoft/markitdown</text>
-<path d="M244,67 h322.9 q4,0 4,4 v10 q0,4 -4,4 h-322.9 z" class="bar"/>
-<text x="576.9" y="76.0" class="val" dominant-baseline="central">192,282</text>
+<path d="M244,67 h321.4 q4,0 4,4 v10 q0,4 -4,4 h-321.4 z" class="bar"/>
+<text x="575.4" y="76.0" class="val" dominant-baseline="central">193,328</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/whisper</text>
-<path d="M244,94 h185.2 q4,0 4,4 v10 q0,4 -4,4 h-185.2 z" class="bar"/>
-<text x="439.2" y="103.0" class="val" dominant-baseline="central">111,291</text>
+<path d="M244,94 h184.0 q4,0 4,4 v10 q0,4 -4,4 h-184.0 z" class="bar"/>
+<text x="438.0" y="103.0" class="val" dominant-baseline="central">111,694</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">bytedance/deer-flow</text>
-<path d="M244,121 h139.5 q4,0 4,4 v10 q0,4 -4,4 h-139.5 z" class="bar"/>
-<text x="393.5" y="130.0" class="val" dominant-baseline="central">84,439</text>
+<path d="M244,121 h138.8 q4,0 4,4 v10 q0,4 -4,4 h-138.8 z" class="bar"/>
+<text x="392.8" y="130.0" class="val" dominant-baseline="central">84,817</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">opendatalab/MinerU</text>
-<path d="M244,148 h136.3 q4,0 4,4 v10 q0,4 -4,4 h-136.3 z" class="bar"/>
-<text x="390.3" y="157.0" class="val" dominant-baseline="central">82,513</text>
+<path d="M244,148 h135.6 q4,0 4,4 v10 q0,4 -4,4 h-135.6 z" class="bar"/>
+<text x="389.6" y="157.0" class="val" dominant-baseline="central">82,926</text>
 </svg>

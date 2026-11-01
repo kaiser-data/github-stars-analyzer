@@ -1,5 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { readFileSync, writeFileSync, existsSync } from 'node:fs'
+import { resolve } from 'node:path'
+
+// The one place the public URL lives. Switching to a custom domain means
+// changing this (or setting SITE_URL in the build env) and redeploying.
+const SITE_URL = (process.env.SITE_URL || 'https://star-astrolab.vercel.app').replace(/\/+$/, '')
+const APP_TABS = ['map', 'topics', 'insights', 'risk', 'all', 'compare', 'reports', 'prompts', 'ask']
 
 // three-forcegraph's animation cycle calls tickFrame() BEFORE _update() processes
 // new prop changes. On the very first frame after mount, state.layout is undefined
@@ -35,10 +42,14 @@ function preloadThreeChunk() {
         if (!ctx.bundle) return html;
         const three = Object.keys(ctx.bundle).find((k) => /^assets\/three-.*\.js$/.test(k));
         if (!three) return html;
-        return html.replace(
-          '</head>',
-          `  <link rel="modulepreload" crossorigin href="/${three}">\n  </head>`
-        );
+        // Preload the ~1.35 MB 3D chunk only when the page opens on a 3D tab (map is the
+        // default). Reports, Ask, Risk… no longer pay for it up front; the chunk still
+        // loads lazily if the user switches to Map later.
+        const snippet =
+          `<script>(function(){var t=new URLSearchParams(location.search).get('tab');` +
+          `if(!t||t==='map'||t==='topics'){var l=document.createElement('link');` +
+          `l.rel='modulepreload';l.crossOrigin='';l.href='/${three}';document.head.appendChild(l);}})();</script>`;
+        return html.replace('</head>', `  ${snippet}\n  </head>`);
       },
     },
   };
@@ -74,6 +85,49 @@ function inlineCriticalCss() {
   };
 }
 
+// Fills %SITE_URL%, %DESCRIPTION% and the corpus counts (%NODES%, %REPORTS%…)
+// from the committed data, so the landing page and meta tags never go stale
+// after the weekly refresh. index.html is transformed in the pipeline; the
+// files copied verbatim from public/ are rewritten in dist after the bundle.
+// Writes sitemap.xml too.
+function siteMeta() {
+  const fmt = (n) => Number(n).toLocaleString('en-US')
+  const vars = () => {
+    const graph = JSON.parse(readFileSync(resolve('public/data/graph.json'), 'utf8'))
+    const index = JSON.parse(readFileSync(resolve('public/reports/index.json'), 'utf8'))
+    const nodes = graph.stats?.nodeCount ?? graph.nodes.length
+    return {
+      SITE_URL,
+      NODES: fmt(nodes),
+      EDGES: fmt(graph.stats?.edgeCount ?? graph.links.length),
+      COMMUNITIES: fmt(graph.stats?.communityCount ?? Object.keys(graph.communities).length),
+      REPORTS: fmt(index.reports.length),
+      REPORT_CATEGORIES: fmt(new Set(index.reports.map((r) => r.category)).size),
+      DESCRIPTION: `${fmt(nodes)} starred GitHub repositories as a navigable 3D knowledge graph, `
+        + `with lifecycle and risk scoring, ${index.reports.length} curated landscape reports, and natural-language search.`,
+    }
+  }
+  const fill = (text, v) => text.replace(/%([A-Z_]+)%/g, (m, k) => (k in v ? v[k] : m))
+  let outDir = 'dist'
+  return {
+    name: 'site-meta',
+    configResolved(config) { outDir = config.build.outDir },
+    transformIndexHtml: { order: 'pre', handler: (html) => fill(html, vars()) },
+    closeBundle() {
+      const v = vars()
+      for (const file of ['landing.html', 'robots.txt']) {
+        const p = resolve(outDir, file)
+        if (existsSync(p)) writeFileSync(p, fill(readFileSync(p, 'utf8'), v))
+      }
+      const urls = [`${SITE_URL}/`, ...APP_TABS.map((t) => `${SITE_URL}/lab?tab=${t}`)]
+      writeFileSync(resolve(outDir, 'sitemap.xml'),
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + urls.map((u) => `  <url><loc>${u.replace(/&/g, '&amp;')}</loc></url>`).join('\n')
+        + '\n</urlset>\n')
+    },
+  }
+}
+
 // Heavy 3D / force-graph deps split off LabApp so the initial route can
 // stream + parse the React shell first; the 3D chunk loads in parallel.
 const THREE_CHUNK = new Set([
@@ -98,7 +152,7 @@ const REACT_CHUNK = new Set([
 ]);
 
 export default defineConfig({
-  plugins: [react(), patchThreeForcegraph(), preloadThreeChunk(), inlineCriticalCss()],
+  plugins: [react(), patchThreeForcegraph(), preloadThreeChunk(), inlineCriticalCss(), siteMeta()],
   resolve: {
     dedupe: ['three'],
   },

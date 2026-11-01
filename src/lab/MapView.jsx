@@ -169,7 +169,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
     const label = name.length > 22 ? name.slice(0, 22) + '…' : name;
     const sprite = new SpriteText(label);
     sprite.color = '#f1f5f9';
-    sprite.backgroundColor = 'rgba(10,10,10,0.85)';
+    sprite.backgroundColor = 'rgba(11,14,23,0.85)';
     sprite.padding = 3;
     sprite.borderRadius = 4;
     sprite.textHeight = 5;
@@ -222,7 +222,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
           </div>
         </div>
       )}
-      <div ref={containerRef} style={{ width: '100%', height: '78vh', background: '#050505', borderRadius: 12, overflow: 'hidden' }}>
+      <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(ellipse at 50% 40%, #131826 0%, #0b0e17 70%)', borderRadius: 12, overflow: 'hidden' }}>
         {nodes.length === 0 && <div className="flex items-center justify-center h-full text-gray-500">Building graph…</div>}
         {nodes.length > 0 && (
           <ForceGraph3D
@@ -232,7 +232,7 @@ export default function MapView({ onSelectNode, focusedRepoName }) {
             graphData={view}
             // Opaque clear colour: a transparent canvas is re-blended with the
             // page on every frame.
-            backgroundColor="#050505"
+            backgroundColor="rgba(0,0,0,0)"
             rendererConfig={RENDERER_CONFIG}
             showNavInfo={false}
             nodeRelSize={6}

@@ -134,12 +134,12 @@ def svg_hbar(title, items, width=680):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{_esc(title)}">
 <style>
 text{{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}}
-.srf{{fill:#fcfcfb;stroke:#e4e4e0}}.ttl{{fill:#0b0b0b;font-size:13.5px;font-weight:600}}
+.srf{{fill:#fbf9f3;stroke:#e2dccd}}.ttl{{fill:#0b0b0b;font-size:13.5px;font-weight:600}}
 .lbl{{fill:#52514e;font-size:11.5px}}.val{{fill:#0b0b0b;font-size:11.5px;font-weight:600}}
-.bar{{fill:#2a78d6}}
+.bar{{fill:#a8831f}}
 @media(prefers-color-scheme:dark){{
-.srf{{fill:#1a1a19;stroke:#33332f}}.ttl{{fill:#ffffff}}
-.lbl{{fill:#c3c2b7}}.val{{fill:#ffffff}}.bar{{fill:#3987e5}}
+.srf{{fill:#131826;stroke:#2a3145}}.ttl{{fill:#f2eee4}}
+.lbl{{fill:#a9a69c}}.val{{fill:#f2eee4}}.bar{{fill:#d9b04a}}
 }}
 </style>
 <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="8" class="srf"/>

@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (7d)">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="261" viewBox="0 0 680 261" role="img" aria-label="Biggest star gains (8d)">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
-.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.srf{fill:#fbf9f3;stroke:#e2dccd}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
 .lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
-.bar{fill:#2a78d6}
+.bar{fill:#a8831f}
 @media(prefers-color-scheme:dark){
-.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
-.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+.srf{fill:#131826;stroke:#2a3145}.ttl{fill:#f2eee4}
+.lbl{fill:#a9a69c}.val{fill:#f2eee4}.bar{fill:#d9b04a}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="260" rx="8" class="srf"/>
-<text x="14" y="25" class="ttl">Biggest star gains (7d)</text>
+<text x="14" y="25" class="ttl">Biggest star gains (8d)</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">morluto/rea</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">58,276</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">cloudflare/security-audit-skill</text>
-<path d="M244,67 h92.8 q4,0 4,4 v10 q0,4 -4,4 h-92.8 z" class="bar"/>
-<text x="346.8" y="76.0" class="val" dominant-baseline="central">16,392</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
-<path d="M244,94 h62.6 q4,0 4,4 v10 q0,4 -4,4 h-62.6 z" class="bar"/>
-<text x="316.6" y="103.0" class="val" dominant-baseline="central">11,288</text>
-<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">DietrichGebert/ponytail</text>
-<path d="M244,121 h49.6 q4,0 4,4 v10 q0,4 -4,4 h-49.6 z" class="bar"/>
-<text x="303.6" y="130.0" class="val" dominant-baseline="central">9,088</text>
-<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">stablyai/orca</text>
-<path d="M244,148 h49.3 q4,0 4,4 v10 q0,4 -4,4 h-49.3 z" class="bar"/>
-<text x="303.3" y="157.0" class="val" dominant-baseline="central">9,023</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">39,896</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">debpalash/VoiceStudio</text>
+<path d="M244,67 h106.1 q4,0 4,4 v10 q0,4 -4,4 h-106.1 z" class="bar"/>
+<text x="360.1" y="76.0" class="val" dominant-baseline="central">12,766</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">cloudflare/security-audit-skill</text>
+<path d="M244,94 h100.3 q4,0 4,4 v10 q0,4 -4,4 h-100.3 z" class="bar"/>
+<text x="354.3" y="103.0" class="val" dominant-baseline="central">12,096</text>
+<text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/DeepTutor</text>
+<path d="M244,121 h89.2 q4,0 4,4 v10 q0,4 -4,4 h-89.2 z" class="bar"/>
+<text x="343.2" y="130.0" class="val" dominant-baseline="central">10,812</text>
+<text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">ifixai-ai/iFixAi</text>
+<path d="M244,148 h65.5 q4,0 4,4 v10 q0,4 -4,4 h-65.5 z" class="bar"/>
+<text x="319.5" y="157.0" class="val" dominant-baseline="central">8,059</text>
 <text x="236" y="184.0" class="lbl" text-anchor="end" dominant-baseline="central">deepseek-ai/deepseek-harness</text>
-<path d="M244,175 h43.7 q4,0 4,4 v10 q0,4 -4,4 h-43.7 z" class="bar"/>
-<text x="297.7" y="184.0" class="val" dominant-baseline="central">8,079</text>
-<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">Graphify-Labs/graphify</text>
-<path d="M244,202 h37.2 q4,0 4,4 v10 q0,4 -4,4 h-37.2 z" class="bar"/>
-<text x="291.2" y="211.0" class="val" dominant-baseline="central">6,974</text>
+<path d="M244,175 h61.4 q4,0 4,4 v10 q0,4 -4,4 h-61.4 z" class="bar"/>
+<text x="315.4" y="184.0" class="val" dominant-baseline="central">7,584</text>
+<text x="236" y="211.0" class="lbl" text-anchor="end" dominant-baseline="central">stablyai/orca</text>
+<path d="M244,202 h59.4 q4,0 4,4 v10 q0,4 -4,4 h-59.4 z" class="bar"/>
+<text x="313.4" y="211.0" class="val" dominant-baseline="central">7,350</text>
 <text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">affaan-m/ECC</text>
-<path d="M244,229 h29.0 q4,0 4,4 v10 q0,4 -4,4 h-29.0 z" class="bar"/>
-<text x="283.0" y="238.0" class="val" dominant-baseline="central">5,593</text>
+<path d="M244,229 h52.2 q4,0 4,4 v10 q0,4 -4,4 h-52.2 z" class="bar"/>
+<text x="306.2" y="238.0" class="val" dominant-baseline="central">6,514</text>
 </svg>
