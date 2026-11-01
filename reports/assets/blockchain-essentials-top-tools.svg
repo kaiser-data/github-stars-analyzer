@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
-.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.srf{fill:#fbf9f3;stroke:#e2dccd}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
 .lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
-.bar{fill:#2a78d6}
+.bar{fill:#a8831f}
 @media(prefers-color-scheme:dark){
-.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
-.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+.srf{fill:#131826;stroke:#2a3145}.ttl{fill:#f2eee4}
+.lbl{fill:#a9a69c}.val{fill:#f2eee4}.bar{fill:#d9b04a}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">TauricResearch/TradingAgents</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">115,250</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">119,283</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">openbq-org/OpenBB</text>
-<path d="M244,67 h219.1 q4,0 4,4 v10 q0,4 -4,4 h-219.1 z" class="bar"/>
-<text x="473.1" y="76.0" class="val" dominant-baseline="central">74,729</text>
+<path d="M244,67 h212.2 q4,0 4,4 v10 q0,4 -4,4 h-212.2 z" class="bar"/>
+<text x="466.2" y="76.0" class="val" dominant-baseline="central">74,978</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ethereum/go-ethereum</text>
-<path d="M244,94 h149.5 q4,0 4,4 v10 q0,4 -4,4 h-149.5 z" class="bar"/>
-<text x="403.5" y="103.0" class="val" dominant-baseline="central">51,416</text>
+<path d="M244,94 h144.4 q4,0 4,4 v10 q0,4 -4,4 h-144.4 z" class="bar"/>
+<text x="398.4" y="103.0" class="val" dominant-baseline="central">51,450</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">OpenZeppelin/openzeppelin-contr…</text>
-<path d="M244,121 h77.5 q4,0 4,4 v10 q0,4 -4,4 h-77.5 z" class="bar"/>
-<text x="331.5" y="130.0" class="val" dominant-baseline="central">27,304</text>
+<path d="M244,121 h74.8 q4,0 4,4 v10 q0,4 -4,4 h-74.8 z" class="bar"/>
+<text x="328.8" y="130.0" class="val" dominant-baseline="central">27,336</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">argotorg/solidity</text>
-<path d="M244,148 h72.9 q4,0 4,4 v10 q0,4 -4,4 h-72.9 z" class="bar"/>
-<text x="326.9" y="157.0" class="val" dominant-baseline="central">25,759</text>
+<path d="M244,148 h70.3 q4,0 4,4 v10 q0,4 -4,4 h-70.3 z" class="bar"/>
+<text x="324.3" y="157.0" class="val" dominant-baseline="central">25,767</text>
 </svg>

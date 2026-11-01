@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-label="Top tools by stars">
 <style>
 text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
-.srf{fill:#fcfcfb;stroke:#e4e4e0}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
+.srf{fill:#fbf9f3;stroke:#e2dccd}.ttl{fill:#0b0b0b;font-size:13.5px;font-weight:600}
 .lbl{fill:#52514e;font-size:11.5px}.val{fill:#0b0b0b;font-size:11.5px;font-weight:600}
-.bar{fill:#2a78d6}
+.bar{fill:#a8831f}
 @media(prefers-color-scheme:dark){
-.srf{fill:#1a1a19;stroke:#33332f}.ttl{fill:#ffffff}
-.lbl{fill:#c3c2b7}.val{fill:#ffffff}.bar{fill:#3987e5}
+.srf{fill:#131826;stroke:#2a3145}.ttl{fill:#f2eee4}
+.lbl{fill:#a9a69c}.val{fill:#f2eee4}.bar{fill:#d9b04a}
 }
 </style>
 <rect x="0.5" y="0.5" width="679" height="179" rx="8" class="srf"/>
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">anomalyco/opencode</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">221,732</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">223,717</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">anthropics/claude-code</text>
-<path d="M244,67 h234.0 q4,0 4,4 v10 q0,4 -4,4 h-234.0 z" class="bar"/>
-<text x="488.0" y="76.0" class="val" dominant-baseline="central">153,420</text>
+<path d="M244,67 h233.0 q4,0 4,4 v10 q0,4 -4,4 h-233.0 z" class="bar"/>
+<text x="487.0" y="76.0" class="val" dominant-baseline="central">154,131</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">farion1231/cc-switch</text>
-<path d="M244,94 h226.9 q4,0 4,4 v10 q0,4 -4,4 h-226.9 z" class="bar"/>
-<text x="480.9" y="103.0" class="val" dominant-baseline="central">148,850</text>
+<path d="M244,94 h227.8 q4,0 4,4 v10 q0,4 -4,4 h-227.8 z" class="bar"/>
+<text x="481.8" y="103.0" class="val" dominant-baseline="central">150,779</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/codex</text>
-<path d="M244,121 h199.2 q4,0 4,4 v10 q0,4 -4,4 h-199.2 z" class="bar"/>
-<text x="453.2" y="130.0" class="val" dominant-baseline="central">130,982</text>
+<path d="M244,121 h200.0 q4,0 4,4 v10 q0,4 -4,4 h-200.0 z" class="bar"/>
+<text x="454.0" y="130.0" class="val" dominant-baseline="central">132,657</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">earendil-works/pi</text>
-<path d="M244,148 h178.9 q4,0 4,4 v10 q0,4 -4,4 h-178.9 z" class="bar"/>
-<text x="432.9" y="157.0" class="val" dominant-baseline="central">117,920</text>
+<path d="M244,148 h179.4 q4,0 4,4 v10 q0,4 -4,4 h-179.4 z" class="bar"/>
+<text x="433.4" y="157.0" class="val" dominant-baseline="central">119,275</text>
 </svg>

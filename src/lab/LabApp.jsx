@@ -15,6 +15,8 @@ const TopicMap = lazy(() => import('./TopicMap'));
 // Lazy: pulls in react-markdown + remark-gfm; only loaded on the Reports tab.
 const ReportsView = lazy(() => import('./ReportsView'));
 const PromptsView = lazy(() => import('./PromptsView'));
+// Lazy: Ask answers render Markdown (shares the react-markdown chunk with Reports).
+const AskAnswer = lazy(() => import('./AskAnswer'));
 
 function GraphTabFallback({ label = 'graph' }) {
   return (
@@ -289,7 +291,9 @@ function AskView() {
       )}
       {answer && (
         <div className="bg-gray-800 border border-gray-700 rounded-lg p-5">
-          <div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}{loading && <span className="inline-block w-1.5 h-4 ml-0.5 -mb-0.5 bg-blue-400 animate-pulse" />}</div>
+          <Suspense fallback={<div className="text-gray-100 text-sm leading-relaxed whitespace-pre-wrap">{answer}</div>}>
+            <AskAnswer text={answer} streaming={loading} />
+          </Suspense>
           {!loading && (meta?.model || meta?.provider || meta?.cached) && (
             <div className="mt-4 pt-3 border-t border-gray-700/60 text-[11px] text-gray-500 flex items-center gap-2 flex-wrap">
               {meta.cached && (
@@ -329,9 +333,10 @@ function StatusBanner() {
       <span className="text-xs">
         {hasEnrichment ? (
           <span className="text-green-400">+ enriched (LLM summaries available)</span>
-        ) : (
+        ) : import.meta.env.DEV ? (
+          // pipeline status for the maintainer; visitors don't need it
           <span className="text-yellow-400">no enriched-100.json yet — runs without LLM data</span>
-        )}
+        ) : null}
       </span>
     </div>
   );
@@ -424,11 +429,13 @@ function LabContent() {
 
 export default function LabApp() {
   return (
-    <div className="min-h-screen bg-black text-white py-8 px-4">
+    <div className="min-h-screen text-white py-8 px-4">
       <div className="max-w-[1920px] mx-auto">
         <div className="mb-6">
-          <h1 className="text-3xl font-semibold tracking-tight">Stars Lab</h1>
-          <p className="text-gray-400 text-sm mt-1">Knowledge graph view of your starred repos — relationships, communities, lifecycle.</p>
+          <div className="font-mono text-[11px] tracking-[0.35em] uppercase text-blue-400">An instrument for your stars</div>
+          <h1 className="text-4xl md:text-5xl text-white mt-2">The Lab</h1>
+          <p className="font-display italic text-blue-300 text-lg mt-1">Don't rebuild what already shines. Build on it.</p>
+          <p className="text-gray-400 text-sm mt-1">Your stars as a knowledge graph: relationships, communities, lifecycle, and which tool to reach for.</p>
         </div>
         <GraphProvider>
           <LabContent />

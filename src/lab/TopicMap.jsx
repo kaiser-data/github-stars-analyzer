@@ -226,7 +226,7 @@ export default function TopicMap({ onSelect }) {
     if (!showLabel || !isHighlight) return new THREE.Object3D();
     const sprite = new SpriteText(node.label);
     sprite.color = '#f1f5f9';
-    sprite.backgroundColor = 'rgba(10,10,10,0.85)';
+    sprite.backgroundColor = 'rgba(11,14,23,0.85)';
     sprite.padding = 3;
     sprite.borderRadius = 4;
     sprite.textHeight = 5;
@@ -272,7 +272,7 @@ export default function TopicMap({ onSelect }) {
               <div className="text-xs text-gray-400 mt-1">{hovered.freq} repos</div>
             </div>
           )}
-          <div ref={containerRef} style={{ width: '100%', height: '78vh', background: '#050505', borderRadius: 12, overflow: 'hidden' }}>
+          <div ref={containerRef} style={{ width: '100%', height: '78vh', background: 'radial-gradient(ellipse at 50% 40%, #131826 0%, #0b0e17 70%)', borderRadius: 12, overflow: 'hidden' }}>
             {topicGraph && topicGraph.order === 0 ? (
               <div className="p-12 text-center text-gray-500">No topics meet the minimum frequency. Lower the threshold.</div>
             ) : (
@@ -281,7 +281,7 @@ export default function TopicMap({ onSelect }) {
                 width={size.w}
                 height={size.h}
                 graphData={fgData}
-                backgroundColor="#050505"
+                backgroundColor="rgba(0,0,0,0)"
                 showNavInfo={false}
                 nodeRelSize={6}
                 nodeVal="val"
