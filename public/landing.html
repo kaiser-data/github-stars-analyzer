@@ -1,6 +1,21 @@
 <meta charset="utf-8">
-<title>GitHub Astrolab</title>
+<title>GitHub Astrolab — your GitHub stars as a knowledge graph</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="%DESCRIPTION%">
+<link rel="canonical" href="%SITE_URL%/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="theme-color" content="#0b0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GitHub Astrolab">
+<meta property="og:title" content="GitHub Astrolab">
+<meta property="og:description" content="%DESCRIPTION%">
+<meta property="og:url" content="%SITE_URL%/">
+<meta property="og:image" content="%SITE_URL%/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="%SITE_URL%/og.jpg">
+<script defer src="/_vercel/insights/script.js"></script>
 <style>
 :root{
   --night:#f6f5f1; --plate:#ffffff; --rule:#ddd8cc; --hair:#eae6dc;
@@ -192,13 +207,13 @@ a:focus-visible{outline:2px solid var(--brass-lit);outline-offset:3px;border-rad
   <h1><span class="pre">GitHub</span>Astrolab</h1>
   <p class="lede">A thousand stars is not a library. It is a pile.</p>
   <p class="sub">This turns a GitHub star list into something you can navigate — a knowledge
-  graph with communities and lifecycle scoring, twenty-three curated landscape reports,
+  graph with communities and lifecycle scoring, %REPORTS% curated landscape reports,
   and search that understands the shape of what you saved.</p>
   <p class="cta-row">
     <a class="cta" href="/lab?tab=map">Enter the map<span aria-hidden="true"> →</span></a>
     <a class="cta cta-ghost" href="https://github.com/kaiser-data/github-stars-analyzer" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>View on GitHub</a>
   </p>
-  <div class="stats"><div><b>1,596</b><span>repositories mapped</span></div><div><b>5,170</b><span>similarity edges</span></div><div><b>31</b><span>communities</span></div><div><b>24</b><span>landscape reports</span></div></div>
+  <div class="stats"><div><b>%NODES%</b><span>repositories mapped</span></div><div><b>%EDGES%</b><span>similarity edges</span></div><div><b>%COMMUNITIES%</b><span>communities</span></div><div><b>%REPORTS%</b><span>landscape reports</span></div></div>
 </header>
 
 <section class="feat">
@@ -206,7 +221,7 @@ a:focus-visible{outline:2px solid var(--brass-lit);outline-offset:3px;border-rad
     <p class="tab">Map</p>
     <h2>The corpus as a sky</h2>
     <p>Every starred repo is a node, placed by a force simulation that runs at build time rather than in your browser. Colour encodes the community Louvain found; size combines stars with PageRank, so structurally central projects read as bright regardless of popularity.</p>
-    <p class="meta">1,596 nodes · 5,170 edges · 31 communities</p>
+    <p class="meta">%NODES% nodes · %EDGES% edges · %COMMUNITIES% communities</p>
   </div>
   <figure class="shot"><img src="/screenshots/01-map.jpg" alt="Map — The corpus as a sky" loading="lazy"></figure>
 </section>
@@ -258,11 +273,11 @@ a:focus-visible{outline:2px solid var(--brass-lit);outline-offset:3px;border-rad
 <section class="feat">
   <div class="feat-txt">
     <p class="tab">Reports</p>
-    <h2>Twenty-three curated landscapes</h2>
+    <h2>%REPORTS% curated landscapes</h2>
     <p>The largest feature, and the most deliberate: each report is a deterministic Python generator over the local dataset. Hand-curated taxonomies, master comparison tables, per-task rankings, graph analysis, maintenance risk. No model writes them, no API is called at generation time — so they rebuild identically, for free, on every refresh.</p>
-    <p class="meta">23 reports · 13 categories · fully reproducible</p>
+    <p class="meta">%REPORTS% reports · %REPORT_CATEGORIES% categories · fully reproducible</p>
   </div>
-  <figure class="shot"><img src="/screenshots/07-reports.jpg" alt="Reports — Twenty-three curated landscapes" loading="lazy"></figure>
+  <figure class="shot"><img src="/screenshots/07-reports.jpg" alt="Reports — curated landscapes" loading="lazy"></figure>
 </section>
 <section class="feat">
   <div class="feat-txt">
