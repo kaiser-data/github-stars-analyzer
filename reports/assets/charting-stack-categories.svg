@@ -35,10 +35,10 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="236" y="238.0" class="lbl" text-anchor="end" dominant-baseline="central">React charting library</text>
 <path d="M244,229 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
 <text x="387.6" y="238.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">Diagrams &amp; AI charts</text>
+<text x="236" y="265.0" class="lbl" text-anchor="end" dominant-baseline="central">Dashboards as code</text>
 <path d="M244,256 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
 <text x="387.6" y="265.0" class="val" dominant-baseline="central">4</text>
-<text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">Dashboards as code</text>
-<path d="M244,283 h99.2 q4,0 4,4 v10 q0,4 -4,4 h-99.2 z" class="bar"/>
-<text x="353.2" y="292.0" class="val" dominant-baseline="central">3</text>
+<text x="236" y="292.0" class="lbl" text-anchor="end" dominant-baseline="central">Diagrams &amp; AI charts</text>
+<path d="M244,283 h133.6 q4,0 4,4 v10 q0,4 -4,4 h-133.6 z" class="bar"/>
+<text x="387.6" y="292.0" class="val" dominant-baseline="central">4</text>
 </svg>

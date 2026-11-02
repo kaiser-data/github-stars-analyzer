@@ -1,8 +1,8 @@
 # Build Your Own NotebookLM — The Repo Stack for a Source-Grounded Notebook Clone
 
-> Derived from **kaiser-data**'s 2,585 starred repos (snapshot `2026-11-01T12:41:55.392Z`), cross-referenced with the repo-similarity graph (2,585 nodes / 8,670 edges, 45 communities).
+> Derived from **kaiser-data**'s 2,587 starred repos (snapshot `2026-11-02T14:17:38.270Z`), cross-referenced with the repo-similarity graph (2,587 nodes / 8,732 edges, 42 communities).
 >
-> Generated 2026-11-01 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
+> Generated 2026-11-02 by `scripts/reports/notebooklm_stack.py` (regenerate any time — no API cost).
 
 ![Top tools by stars](assets/notebooklm-stack-top-tools.svg)
 
@@ -11,7 +11,7 @@
 
 ## Executive summary
 
-- **Goal**: everything needed to build (and demo) your own NotebookLM — a source-grounded notebook with cited answers, an *Audio Overview* podcast generator, live voice interaction, and a mind-map view — from **33 repos already in your stars** (**1,473,867★** combined).
+- **Goal**: everything needed to build (and demo) your own NotebookLM — a source-grounded notebook with cited answers, an *Audio Overview* podcast generator, live voice interaction, and a mind-map view — from **33 repos already in your stars** (**1,475,995★** combined).
   - **Clone / reference app** (5): `anything-llm`, `DeepTutor`, `open-notebook`, `notebooklm-py`, `Dot`
   - **Source ingestion & parsing** (6): `yt-dlp`, `markitdown`, `MinerU`, `docling`, `unstructured`, `reader`
   - **Grounded retrieval & citations** (6): `llama_index`, `LightRAG`, `PageIndex`, `LEANN`, `lancedb`, `chonkie`
@@ -42,39 +42,39 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 | Tool | Category | Lang | License | ★ Stars | Lifecycle | Health | Activity | Last push | Age | Contrib(90d) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | Source ingestion & parsing | Python | Unlicense | 204,372 (▲2,023) | Classic | 81 | very active | 3d ago | 6.0y | 20 |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | Source ingestion & parsing | Python | MIT | 193,328 (▲1,046) | Hot | 89 | very active | 4d ago | 2.0y | 45 |
-| [openai/whisper](https://github.com/openai/whisper) | Audio/video understanding (STT) | Python | MIT | 111,694 (▲403) | Mature | 36 | slowing | 2mo ago | 4.1y | 1 |
-| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Wow-factor add-on | Python | MIT | 84,817 (▲378) | Hot | 87 | very active | 0d ago | 1.5y | 47 |
-| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Source ingestion & parsing | Python | NOASSERTION | 82,926 (▲413) | Mature | 80 | very active | 1d ago | 2.7y | 4 |
-| [docling-project/docling](https://github.com/docling-project/docling) | Source ingestion & parsing | Python | MIT | 69,945 (▲339) | Mature | 97 | very active | 0d ago | 2.3y | 49 |
-| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | Clone / reference app | JavaScript | MIT | 67,809 (▲234) | Classic | 99 | very active | 2d ago | 3.4y | 33 |
-| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Clone / reference app | Python | Apache-2.0 | 53,326 (▲10,123) | Rising | 78 | very active | 1d ago | 10mo | 1 |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Grounded retrieval & citations | Python | MIT | 52,767 (▲98) | Classic | 97 | very active | 6d ago | 4.0y | 50 |
-| [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Audio Overview (TTS / podcast) | Python | MPL-2.0 | 46,175 (▲32) | Abandoned | 10 | stale | 2.2y ago | 6.5y | 0 |
-| [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) | Clone / reference app | TypeScript | MIT | 41,229 (▲633) | Mature | 80 | very active | 7d ago | 2.0y | 21 |
-| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 40,929 (▲287) | Mature | 61 | very active | 24d ago | 1.1y | 5 |
-| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Grounded retrieval & citations | Python | MIT | 40,460 (▲120) | Mature | 78 | very active | 3d ago | 2.1y | 14 |
-| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Grounded retrieval & citations | Python | MIT | 39,937 (▲182) | Hot | 76 | very active | 3d ago | 1.6y | 4 |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Mind map / knowledge graph | Python | MIT | 36,512 (▲63) | Mature | 70 | very active | 3d ago | 2.6y | 3 |
-| [topoteretes/cognee](https://github.com/topoteretes/cognee) | Mind map / knowledge graph | Python | Apache-2.0 | 32,974 (▲206) | Classic | 76 | very active | 0d ago | 3.2y | 6 |
-| [getzep/graphiti](https://github.com/getzep/graphiti) | Mind map / knowledge graph | Python | Apache-2.0 | 32,406 (▲176) | Mature | 80 | very active | 0d ago | 2.2y | 12 |
-| [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Audio Overview (TTS / podcast) | Python | MIT | 27,487 (▲220) | Declining | 23 | slowing | 3mo ago | 1.5y | 0 |
-| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Audio/video understanding (STT) | Python | MIT | 26,364 (▲207) | Classic | 58 | active | 1d ago | 3.7y | 7 |
-| [m-bain/whisperX](https://github.com/m-bain/whisperX) | Audio/video understanding (STT) | Python | BSD-2-Clause | 24,990 (▲135) | Mature | 70 | active | 10d ago | 3.9y | 4 |
-| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Wow-factor add-on | Rust | NOASSERTION | 22,198 (▲124) | Mature | 80 | very active | 1d ago | 2.4y | 4 |
-| [teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py) | Clone / reference app | Python | MIT | 20,044 (▲122) | Hot | 80 | very active | 2d ago | 9mo | 6 |
-| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Interactive voice mode | Python | BSD-2-Clause | 16,972 (▲145) | Mature | 84 | very active | 1d ago | 2.8y | 10 |
-| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Source ingestion & parsing | HTML | Apache-2.0 | 15,656 (▲30) | Classic | 98 | very active | 2d ago | 4.1y | 43 |
-| [livekit/agents](https://github.com/livekit/agents) | Interactive voice mode | Python | Apache-2.0 | 15,036 (▲98) | Classic | 99 | very active | 0d ago | 3.0y | 62 |
-| [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 14,139 (▲117) | Declining | 20 | stale | 7mo ago | 9mo | 0 |
-| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Grounded retrieval & citations | Python | MIT | 13,740 (▲626) | Hot | 85 | very active | 2d ago | 1.4y | 24 |
-| [jina-ai/reader](https://github.com/jina-ai/reader) | Source ingestion & parsing | TypeScript | Apache-2.0 | 12,218 (▲21) | Mature | 25 | slowing | 5mo ago | 2.6y | 0 |
-| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Grounded retrieval & citations | Rust | Apache-2.0 | 11,823 (▲48) | Classic | 92 | very active | 0d ago | 3.7y | 38 |
-| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Interactive voice mode | Python | MIT | 10,224 (▲18) | Classic | 69 | very active | 2d ago | 3.2y | 6 |
-| [feyninc/chonkie](https://github.com/feyninc/chonkie) | Grounded retrieval & citations | Python | MIT | 4,817 (▲10) | Mature | 68 | active | 1d ago | 1.6y | 4 |
-| [gradio-app/fastrtc](https://github.com/gradio-app/fastrtc) | Interactive voice mode | JavaScript | MIT | 4,637 (▲5) | Mature | 44 | active | 11d ago | 2.1y | 1 |
-| [alexpinel/Dot](https://github.com/alexpinel/Dot) | Clone / reference app | JavaScript | GPL-3.0 | 1,916 | Abandoned | 1 | stale | 1.9y ago | 2.6y | 0 |
+| [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | Source ingestion & parsing | Python | Unlicense | 204,669 (▲297) | Classic | 81 | very active | 4d ago | 6.0y | 20 |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | Source ingestion & parsing | Python | MIT | 193,512 (▲184) | Hot | 89 | very active | 5d ago | 2.0y | 45 |
+| [openai/whisper](https://github.com/openai/whisper) | Audio/video understanding (STT) | Python | MIT | 111,770 (▲76) | Mature | 36 | slowing | 2mo ago | 4.1y | 1 |
+| [bytedance/deer-flow](https://github.com/bytedance/deer-flow) | Wow-factor add-on | Python | MIT | 84,879 (▲62) | Hot | 87 | very active | 0d ago | 1.5y | 45 |
+| [opendatalab/MinerU](https://github.com/opendatalab/MinerU) | Source ingestion & parsing | Python | NOASSERTION | 82,996 (▲70) | Mature | 80 | very active | 0d ago | 2.7y | 4 |
+| [docling-project/docling](https://github.com/docling-project/docling) | Source ingestion & parsing | Python | MIT | 70,009 (▲64) | Mature | 97 | very active | 1d ago | 2.3y | 49 |
+| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | Clone / reference app | JavaScript | MIT | 67,851 (▲42) | Classic | 99 | very active | 3d ago | 3.4y | 33 |
+| [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | Clone / reference app | Python | Apache-2.0 | 54,119 (▲793) | Rising | 78 | very active | 2d ago | 10mo | 1 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Grounded retrieval & citations | Python | MIT | 52,777 (▲10) | Classic | 97 | very active | 7d ago | 4.0y | 49 |
+| [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Audio Overview (TTS / podcast) | Python | MPL-2.0 | 46,175 | Abandoned | 10 | stale | 2.2y ago | 6.5y | 0 |
+| [lfnovo/open-notebook](https://github.com/lfnovo/open-notebook) | Clone / reference app | TypeScript | MIT | 41,353 (▲124) | Mature | 81 | very active | 1d ago | 2.0y | 21 |
+| [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 40,974 (▲45) | Mature | 61 | very active | 25d ago | 1.1y | 5 |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | Grounded retrieval & citations | Python | MIT | 40,485 (▲25) | Mature | 78 | very active | 4d ago | 2.1y | 14 |
+| [VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex) | Grounded retrieval & citations | Python | MIT | 39,955 (▲18) | Hot | 76 | very active | 4d ago | 1.6y | 4 |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | Mind map / knowledge graph | Python | MIT | 36,529 (▲17) | Mature | 71 | very active | 0d ago | 2.6y | 3 |
+| [topoteretes/cognee](https://github.com/topoteretes/cognee) | Mind map / knowledge graph | Python | Apache-2.0 | 33,003 (▲29) | Classic | 76 | very active | 0d ago | 3.2y | 6 |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | Mind map / knowledge graph | Python | Apache-2.0 | 32,442 (▲36) | Mature | 80 | very active | 2d ago | 2.2y | 12 |
+| [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Audio Overview (TTS / podcast) | Python | MIT | 27,510 (▲23) | Declining | 23 | slowing | 3mo ago | 1.5y | 0 |
+| [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | Audio/video understanding (STT) | Python | MIT | 26,403 (▲39) | Classic | 53 | active | 0d ago | 3.7y | 7 |
+| [m-bain/whisperX](https://github.com/m-bain/whisperX) | Audio/video understanding (STT) | Python | BSD-2-Clause | 25,011 (▲21) | Mature | 69 | active | 11d ago | 3.9y | 4 |
+| [screenpipe/screenpipe](https://github.com/screenpipe/screenpipe) | Wow-factor add-on | Rust | NOASSERTION | 22,209 (▲11) | Mature | 80 | very active | 0d ago | 2.4y | 4 |
+| [teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py) | Clone / reference app | Python | MIT | 20,068 (▲24) | Hot | 80 | very active | 1d ago | 9mo | 6 |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | Interactive voice mode | Python | BSD-2-Clause | 16,998 (▲26) | Mature | 84 | very active | 0d ago | 2.9y | 10 |
+| [Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured) | Source ingestion & parsing | HTML | Apache-2.0 | 15,670 (▲14) | Classic | 98 | very active | 0d ago | 4.1y | 44 |
+| [livekit/agents](https://github.com/livekit/agents) | Interactive voice mode | Python | Apache-2.0 | 15,057 (▲21) | Classic | 99 | very active | 0d ago | 3.0y | 64 |
+| [QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) | Audio Overview (TTS / podcast) | Python | Apache-2.0 | 14,168 (▲29) | Declining | 20 | stale | 7mo ago | 9mo | 0 |
+| [StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN) | Grounded retrieval & citations | Python | MIT | 13,750 (▲10) | Hot | 87 | very active | 0d ago | 1.4y | 24 |
+| [jina-ai/reader](https://github.com/jina-ai/reader) | Source ingestion & parsing | TypeScript | Apache-2.0 | 12,226 (▲8) | Mature | 25 | slowing | 5mo ago | 2.6y | 0 |
+| [lancedb/lancedb](https://github.com/lancedb/lancedb) | Grounded retrieval & citations | Rust | Apache-2.0 | 11,830 (▲7) | Classic | 97 | very active | 0d ago | 3.7y | 37 |
+| [KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT) | Interactive voice mode | Python | MIT | 10,227 (▲3) | Classic | 69 | very active | 3d ago | 3.2y | 6 |
+| [feyninc/chonkie](https://github.com/feyninc/chonkie) | Grounded retrieval & citations | Python | MIT | 4,818 (▲1) | Mature | 68 | active | 3d ago | 1.6y | 4 |
+| [gradio-app/fastrtc](https://github.com/gradio-app/fastrtc) | Interactive voice mode | JavaScript | MIT | 4,637 | Mature | 44 | active | 12d ago | 2.1y | 1 |
+| [alexpinel/Dot](https://github.com/alexpinel/Dot) | Clone / reference app | JavaScript | GPL-3.0 | 1,915 (▼1) | Abandoned | 1 | stale | 1.9y ago | 2.6y | 0 |
 
 ## By category
 
@@ -82,19 +82,19 @@ Sorted by stars. `Health`/`Lifecycle` are the dataset's computed metrics; `Activ
 
 _Working implementations of the notebook-LLM shape. Read their source before designing yours — `open-notebook` in particular is the map._
 
-- **[Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)** · 67,809★ · JavaScript · Classic  
+- **[Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)** · 67,851★ · JavaScript · Classic  
   All-in-one private 'chat with your documents' app — the closest mature product shape to a notebook LLM.  
   <sub>topics: rag, localai, vector-database, llm, ai-agents, multimodal, agent-harness, agentic-ai</sub>
-- **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)** · 53,326★ · Python · Rising  
+- **[HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor)** · 54,119★ · Python · Rising  
   Agent-native personalized tutoring over documents — a 'NotebookLM as teacher' angle worth stealing.  
   <sub>topics: ai-tutor, deepresearch, interactive-learning, multi-agent-systems, rag, ai-agents, cli-tool, clawbot</sub>
-- **[lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)** · 41,229★ · TypeScript · Mature  
+- **[lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)** · 41,353★ · TypeScript · Mature  
   An actual OSS NotebookLM implementation — notebooks, sources, podcast generation. Study it before writing a line.  
   <sub>topics: assistant, learning, note-taking, notebook, notes-app, self-learning</sub>
-- **[teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py)** · 20,044★ · Python · Hot  
+- **[teng-lin/notebooklm-py](https://github.com/teng-lin/notebooklm-py)** · 20,068★ · Python · Hot  
   Unofficial Python API for the real NotebookLM — benchmark your clone against the original programmatically.  
   <sub>topics: python, sdk, skills, google-notebooklm, notebooklm, notebooklm-api, python-api, agentic-skill</sub>
-- **[alexpinel/Dot](https://github.com/alexpinel/Dot)** · 1,916★ · JavaScript · Abandoned  
+- **[alexpinel/Dot](https://github.com/alexpinel/Dot)** · 1,915★ · JavaScript · Abandoned  
   Tiny fully-local docs+RAG+TTS desktop app — proof the whole loop runs on one laptop.  
   <sub>topics: embeddings, llm, local, rag, standalone, standalone-app, document-chat, faiss</sub>
 
@@ -102,22 +102,22 @@ _Working implementations of the notebook-LLM shape. Read their source before des
 
 _The 'add source' button. NotebookLM's magic starts with accepting *anything*; these tools normalize PDFs, Office docs, URLs, and media into clean text._
 
-- **[yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)** · 204,372★ · Python · Classic  
+- **[yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)** · 204,669★ · Python · Classic  
   The YouTube/audio/video downloader — feeds media sources into your STT stage.  
   <sub>topics: youtube-dl, python, sponsorblock, yt-dlp, youtube-downloader, cli, downloader</sub>
-- **[microsoft/markitdown](https://github.com/microsoft/markitdown)** · 193,328★ · Python · Hot  
+- **[microsoft/markitdown](https://github.com/microsoft/markitdown)** · 193,512★ · Python · Hot  
   One converter for Office/PDF/anything → Markdown; the fastest path to 'add any source'.  
   <sub>topics: langchain, openai, autogen-extension, autogen, markdown, microsoft-office, pdf</sub>
-- **[opendatalab/MinerU](https://github.com/opendatalab/MinerU)** · 82,926★ · Python · Mature  
+- **[opendatalab/MinerU](https://github.com/opendatalab/MinerU)** · 82,996★ · Python · Mature  
   Heavy-duty PDF/Office → LLM-ready markdown/JSON with layout understanding for hard documents.  
   <sub>topics: extract-data, layout-analysis, ocr, parser, pdf, pdf-converter, python, document-analysis</sub>
-- **[docling-project/docling](https://github.com/docling-project/docling)** · 69,945★ · Python · Mature  
+- **[docling-project/docling](https://github.com/docling-project/docling)** · 70,009★ · Python · Mature  
   IBM's document conversion for gen-AI — tables, layout, OCR; the quality choice for PDF sources.  
   <sub>topics: ai, convert, documents, pdf, tables, document-parser, document-parsing, docx</sub>
-- **[Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)** · 15,656★ · HTML · Classic  
+- **[Unstructured-IO/unstructured](https://github.com/Unstructured-IO/unstructured)** · 15,670★ · HTML · Classic  
   Production ETL for messy documents → clean, chunk-ready elements.  
   <sub>topics: deep-learning, document-parsing, machine-learning, nlp, ocr, information-retrieval, data-pipelines, ml</sub>
-- **[jina-ai/reader](https://github.com/jina-ai/reader)** · 12,218★ · TypeScript · Mature  
+- **[jina-ai/reader](https://github.com/jina-ai/reader)** · 12,226★ · TypeScript · Mature  
   Any URL → LLM-friendly text via r.jina.ai — instant 'add a website as source'.  
   <sub>topics: llm, proxy</sub>
 
@@ -125,22 +125,22 @@ _The 'add source' button. NotebookLM's magic starts with accepting *anything*; t
 
 _The core contract of a notebook LLM: answers cite the exact source passage. Retrieval must preserve provenance, not just find relevant chunks._
 
-- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** · 52,767★ · Python · Classic  
+- **[run-llama/llama_index](https://github.com/run-llama/llama_index)** · 52,777★ · Python · Classic  
   Document-agent framework with citation query engines — the reference toolkit for source-grounded answers.  
   <sub>topics: agents, application, data, fine-tuning, framework, llamaindex, llm, rag</sub>
-- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,460★ · Python · Mature  
+- **[HKUDS/LightRAG](https://github.com/HKUDS/LightRAG)** · 40,485★ · Python · Mature  
   Fast GraphRAG over chunks — multi-hop answers across sources, still simple to run.  
   <sub>topics: knowledge-graph, large-language-models, retrieval-augmented-generation, genai, graphrag, llm, rag, gpt</sub>
-- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · 39,937★ · Python · Hot  
+- **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · 39,955★ · Python · Hot  
   Vectorless reasoning-based retrieval over a document tree — page-level citations fall out naturally.  
   <sub>topics: agentic-ai, agents, ai, ai-agents, context-engineering, llm, rag, reasoning</sub>
-- **[StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN)** · 13,740★ · Python · Hot  
+- **[StarTrail-org/LEANN](https://github.com/StarTrail-org/LEANN)** · 13,750★ · Python · Hot  
   ~97% smaller index — the trick that makes a fully-local notebook on a laptop plausible.  
   <sub>topics: ai, faiss, langchain, llama-index, llm, localstorage, offline-first, ollama</sub>
-- **[lancedb/lancedb](https://github.com/lancedb/lancedb)** · 11,823★ · Rust · Classic  
+- **[lancedb/lancedb](https://github.com/lancedb/lancedb)** · 11,830★ · Rust · Classic  
   Embedded serverless vector DB — zero-ops storage that ships inside your app.  
   <sub>topics: approximate-nearest-neighbor-search, image-search, nearest-neighbor-search, recommender-system, search-engine, semantic-search, similarity-search, vector-database</sub>
-- **[feyninc/chonkie](https://github.com/feyninc/chonkie)** · 4,817★ · Python · Mature  
+- **[feyninc/chonkie](https://github.com/feyninc/chonkie)** · 4,818★ · Python · Mature  
   Lightweight chunking with many strategies — the quality lever for retrieval and citation granularity.  
   <sub>topics: rag, chonkie, chunker, chunking-algorithm, retrieval-systems, semantic-chunker, similarity-search, text-splitter</sub>
 
@@ -151,13 +151,13 @@ _The feature that made NotebookLM famous. An LLM writes a two-host dialogue from
 - **[coqui-ai/TTS](https://github.com/coqui-ai/TTS)** · 46,175★ · Python · Abandoned  
   Battle-tested TTS toolkit (XTTS voice cloning) — huge ecosystem, but check the maintenance signal below.  
   <sub>topics: python, text-to-speech, deep-learning, speech, pytorch, tts, vocoder, tacotron</sub>
-- **[OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)** · 40,929★ · Python · Mature  
+- **[OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM)** · 40,974★ · Python · Mature  
   Tokenizer-free multilingual TTS with creative voice design — distinctive hosts nobody else's demo has.  
   <sub>topics: audio, deeplearning, minicpm, python, pytorch, speech, speech-synthesis, text-to-speech</sub>
-- **[resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox)** · 27,487★ · Python · Declining  
+- **[resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox)** · 27,510★ · Python · Declining  
   SoTA open TTS with emotion control — the two-host podcast voice pair.  
   <sub>topics: —</sub>
-- **[QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)** · 14,139★ · Python · Declining  
+- **[QwenLM/Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)** · 14,168★ · Python · Declining  
   Open TTS model series from Qwen — strong multilingual coverage for non-English Audio Overviews.  
   <sub>topics: —</sub>
 
@@ -165,13 +165,13 @@ _The feature that made NotebookLM famous. An LLM writes a two-host dialogue from
 
 _Podcasts, lectures, and YouTube links as *input* sources — plus word-level timestamps so audio can be cited like a page number._
 
-- **[openai/whisper](https://github.com/openai/whisper)** · 111,694★ · Python · Mature  
+- **[openai/whisper](https://github.com/openai/whisper)** · 111,770★ · Python · Mature  
   The reference open speech recognition — turns audio/video sources into searchable text.  
   <sub>topics: —</sub>
-- **[SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)** · 26,364★ · Python · Classic  
+- **[SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper)** · 26,403★ · Python · Classic  
   CTranslate2 Whisper, ~4x faster — the practical engine for bulk source transcription.  
   <sub>topics: deep-learning, inference, quantization, speech-recognition, speech-to-text, transformer, whisper, openai</sub>
-- **[m-bain/whisperX](https://github.com/m-bain/whisperX)** · 24,990★ · Python · Mature  
+- **[m-bain/whisperX](https://github.com/m-bain/whisperX)** · 25,011★ · Python · Mature  
   Word-level timestamps + diarization — the ingredient for clickable, second-accurate audio citations.  
   <sub>topics: asr, speech, speech-recognition, speech-to-text, whisper</sub>
 
@@ -179,13 +179,13 @@ _Podcasts, lectures, and YouTube links as *input* sources — plus word-level ti
 
 _NotebookLM lets you 'join' the audio overview. These realtime voice frameworks make interruption and follow-up questions feel live._
 
-- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 16,972★ · Python · Mature  
+- **[pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat)** · 16,998★ · Python · Mature  
   Voice/multimodal conversation pipelines — the frame for 'interrupt the podcast and ask a question'.  
   <sub>topics: ai, real-time, voice, voice-assistant, chatbot-framework, chatbots</sub>
-- **[livekit/agents](https://github.com/livekit/agents)** · 15,036★ · Python · Classic  
+- **[livekit/agents](https://github.com/livekit/agents)** · 15,057★ · Python · Classic  
   Realtime voice agents on WebRTC — production-grade live rooms for your notebook.  
   <sub>topics: ai, real-time, voice, video, agents, openai</sub>
-- **[KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT)** · 10,224★ · Python · Classic  
+- **[KoljaB/RealtimeSTT](https://github.com/KoljaB/RealtimeSTT)** · 10,227★ · Python · Classic  
   Low-latency streaming STT with voice-activity detection — makes barge-in feel instant.  
   <sub>topics: python, realtime, speech-to-text</sub>
 - **[gradio-app/fastrtc](https://github.com/gradio-app/fastrtc)** · 4,637★ · JavaScript · Mature  
@@ -196,13 +196,13 @@ _NotebookLM lets you 'join' the audio overview. These realtime voice frameworks 
 
 _NotebookLM renders mind maps of your sources; a knowledge graph over extracted entities gives you the same view — and a navigable one._
 
-- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,512★ · Python · Mature  
+- **[microsoft/graphrag](https://github.com/microsoft/graphrag)** · 36,529★ · Python · Mature  
   Entity graph + community summaries over a corpus — auto-generated topic maps per notebook.  
   <sub>topics: graphrag, rag, llm, llms, gpt, gpt-4, gpt4</sub>
-- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 32,974★ · Python · Classic  
+- **[topoteretes/cognee](https://github.com/topoteretes/cognee)** · 33,003★ · Python · Classic  
   AI memory platform building a queryable graph — notebook memory that persists across sessions.  
   <sub>topics: ai, cognitive-architecture, vector-database, ai-agents, graph-database, ai-memory, cognitive-memory, knowledge</sub>
-- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 32,406★ · Python · Mature  
+- **[getzep/graphiti](https://github.com/getzep/graphiti)** · 32,442★ · Python · Mature  
   Real-time knowledge graphs over your sources — the live mind-map data structure.  
   <sub>topics: agents, graph, llms, rag</sub>
 
@@ -210,10 +210,10 @@ _NotebookLM renders mind maps of your sources; a knowledge graph over extracted 
 
 _Add-ons the original doesn't have — the reason a jury remembers *your* clone._
 
-- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 84,817★ · Python · Hot  
+- **[bytedance/deer-flow](https://github.com/bytedance/deer-flow)** · 84,879★ · Python · Hot  
   Deep-research superagent that already ships podcast creation — 'research the web, then generate the episode'.  
   <sub>topics: agent, agentic, agentic-framework, agentic-workflow, ai, ai-agents, deep-research, langchain</sub>
-- **[screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)** · 22,198★ · Rust · Mature  
+- **[screenpipe/screenpipe](https://github.com/screenpipe/screenpipe)** · 22,209★ · Rust · Mature  
   Records everything you see/say/hear — ambient auto-captured sources no cloud NotebookLM can offer.  
   <sub>topics: ai, computer-vision, llm, machine-learning, multimodal, agents, agi, audio-recording</sub>
 
@@ -367,39 +367,38 @@ _All-open, self-hosted models; managed API spend optional. The anti-cloud pitch 
 
 ## Graph analysis — how they relate
 
-**Community clustering.** These 33 tools span **15 of the graph's 45 communities**.
+**Community clustering.** These 33 tools span **16 of the graph's 42 communities**.
 
-- **Community 4** (4): `Mintplex-Labs/anything-llm`, `jina-ai/reader`, `VectifyAI/PageIndex`, `StarTrail-org/LEANN`
-- **Community 14** (4): `alexpinel/Dot`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `KoljaB/RealtimeSTT`
-- **Community 11** (3): `lfnovo/open-notebook`, `opendatalab/MinerU`, `topoteretes/cognee`
-- **Community 13** (3): `teng-lin/notebooklm-py`, `docling-project/docling`, `Unstructured-IO/unstructured`
-- **Community 5** (3): `yt-dlp/yt-dlp`, `pipecat-ai/pipecat`, `livekit/agents`
-- **Community 24** (3): `OpenBMB/VoxCPM`, `coqui-ai/TTS`, `gradio-app/fastrtc`
-- **Community 3** (2): `HKUDS/DeepTutor`, `HKUDS/LightRAG`
-- **Community 9** (2): `microsoft/markitdown`, `microsoft/graphrag`
-- **Community 36** (2): `run-llama/llama_index`, `bytedance/deer-flow`
-- **Community 28** (2): `feyninc/chonkie`, `getzep/graphiti`
+- **Community 5** (5): `Mintplex-Labs/anything-llm`, `jina-ai/reader`, `VectifyAI/PageIndex`, `feyninc/chonkie`, `getzep/graphiti`
+- **Community 15** (4): `alexpinel/Dot`, `SYSTRAN/faster-whisper`, `m-bain/whisperX`, `KoljaB/RealtimeSTT`
+- **Community 14** (3): `teng-lin/notebooklm-py`, `docling-project/docling`, `Unstructured-IO/unstructured`
+- **Community 32** (3): `opendatalab/MinerU`, `run-llama/llama_index`, `bytedance/deer-flow`
+- **Community 22** (3): `OpenBMB/VoxCPM`, `coqui-ai/TTS`, `gradio-app/fastrtc`
+- **Community 11** (2): `lfnovo/open-notebook`, `topoteretes/cognee`
+- **Community 4** (2): `HKUDS/DeepTutor`, `HKUDS/LightRAG`
+- **Community 2** (2): `microsoft/markitdown`, `microsoft/graphrag`
+- **Community 6** (2): `pipecat-ai/pipecat`, `livekit/agents`
 
-**Centrality (PageRank in the full 2,585-repo graph)** — most 'hub-like' picks in your ecosystem:
+**Centrality (PageRank in the full 2,587-repo graph)** — most 'hub-like' picks in your ecosystem:
 
-- `microsoft/graphrag` — PageRank 0.0013
 - `m-bain/whisperX` — PageRank 0.0012
+- `microsoft/graphrag` — PageRank 0.0009
 - `VectifyAI/PageIndex` — PageRank 0.0008
 - `KoljaB/RealtimeSTT` — PageRank 0.0006
 - `run-llama/llama_index` — PageRank 0.0006
 - `opendatalab/MinerU` — PageRank 0.0005
-- `HKUDS/LightRAG` — PageRank 0.0005
-- `jina-ai/reader` — PageRank 0.0005
 - `SYSTRAN/faster-whisper` — PageRank 0.0005
+- `jina-ai/reader` — PageRank 0.0005
 - `HKUDS/DeepTutor` — PageRank 0.0005
+- `HKUDS/LightRAG` — PageRank 0.0004
 
 **Direct links between stack picks** (top similarity edges where both endpoints are in this report):
 
 - `HKUDS/DeepTutor` ⇄ `HKUDS/LightRAG` (w=0.603) — topics: rag
-- `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.470) — topics: ai, real-time, voice; authors: github-actions[bot], Antonyesk601, ggarber
+- `livekit/agents` ⇄ `pipecat-ai/pipecat` (w=0.468) — topics: ai, real-time, voice; authors: github-actions[bot], Antonyesk601, ggarber
 - `OpenBMB/VoxCPM` ⇄ `coqui-ai/TTS` (w=0.370) — topics: python, pytorch, speech, speech-synthesis
 - `m-bain/whisperX` ⇄ `SYSTRAN/faster-whisper` (w=0.350) — topics: speech-recognition, speech-to-text, whisper
-- `Unstructured-IO/unstructured` ⇄ `docling-project/docling` (w=0.346) — topics: document-parsing, pdf-to-text, pdf, pdf-to-json; authors: tanishqbaweja, chrikrah, Eapp1e
+- `Unstructured-IO/unstructured` ⇄ `docling-project/docling` (w=0.345) — topics: document-parsing, pdf-to-text, pdf, pdf-to-json; authors: tanishqbaweja, chrikrah, Eapp1e
 - `VectifyAI/PageIndex` ⇄ `Mintplex-Labs/anything-llm` (w=0.227) — topics: agentic-ai, ai-agents, llm, rag
 - `KoljaB/RealtimeSTT` ⇄ `gradio-app/fastrtc` (w=0.222) — topics: python, speech-to-text
 - `StarTrail-org/LEANN` ⇄ `alexpinel/Dot` (w=0.148) — topics: faiss, langchain, llm, rag
@@ -412,31 +411,31 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 | Tool | Health | Lifecycle | Activity | Bus factor | Top-author share | Releases |
 |---|---|---|---|---|---|---|
 | Mintplex-Labs/anything-llm | 99 | Classic | very active | 5 | 24% | 39 |
-| livekit/agents | 99 | Classic | very active | 16 | 6% | 381 |
+| livekit/agents | 99 | Classic | very active | 17 | 5% | 381 |
 | Unstructured-IO/unstructured | 98 | Classic | very active | 8 | 14% | 255 |
 | docling-project/docling | 97 | Mature | very active | 7 | 16% | 234 |
-| run-llama/llama_index | 97 | Classic | very active | 10 | 14% | 497 |
-| lancedb/lancedb | 92 | Classic | very active | 4 | 24% | 537 |
+| run-llama/llama_index | 97 | Classic | very active | 10 | 15% | 497 |
+| lancedb/lancedb | 97 | Classic | very active | 5 | 18% | 537 |
 | microsoft/markitdown | 89 | Hot | very active | 4 | 35% | 24 |
-| bytedance/deer-flow | 87 | Hot | very active | 10 | 11% | 2 |
-| StarTrail-org/LEANN | 85 | Hot | very active | 5 | 16% | 30 |
+| StarTrail-org/LEANN | 87 | Hot | very active | 5 | 16% | 31 |
+| bytedance/deer-flow | 87 | Hot | very active | 10 | 12% | 2 |
 | pipecat-ai/pipecat | 84 | Mature | very active | 2 | 36% | 125 |
-| yt-dlp/yt-dlp | 81 | Classic | very active | 2 | 37% | 138 |
-| lfnovo/open-notebook | 80 | Mature | very active | 2 | 48% | 43 |
+| lfnovo/open-notebook | 81 | Mature | very active | 2 | 48% | 43 |
+| yt-dlp/yt-dlp | 81 | Classic | very active | 2 | 36% | 138 |
 | teng-lin/notebooklm-py | 80 | Hot | very active | 1 | 81% | 33 |
-| opendatalab/MinerU | 80 | Mature | very active | 1 | 94% | 203 |
+| opendatalab/MinerU | 80 | Mature | very active | 1 | 93% | 204 |
 | getzep/graphiti | 80 | Mature | very active | 2 | 48% | 203 |
 | screenpipe/screenpipe | 80 | Mature | very active | 1 | 52% | 501 |
 | HKUDS/DeepTutor | 78 | Rising | very active | 1 | 100% | 89 |
 | HKUDS/LightRAG | 78 | Mature | very active | 1 | 63% | 83 |
 | VectifyAI/PageIndex | 76 | Hot | very active | 1 | 50% | 29 |
 | topoteretes/cognee | 76 | Classic | very active | 1 | 50% | 158 |
-| m-bain/whisperX | 70 | Mature | active | 2 | 44% | 44 |
-| microsoft/graphrag | 70 | Mature | very active | 1 | 60% | 44 |
+| microsoft/graphrag | 71 | Mature | very active | 1 | 57% | 44 |
+| m-bain/whisperX | 69 | Mature | active | 2 | 44% | 44 |
 | KoljaB/RealtimeSTT | 69 | Classic | very active | 1 | 75% | 47 |
-| feyninc/chonkie | 68 | Mature | active | 1 | 78% | 45 |
+| feyninc/chonkie | 68 | Mature | active | 1 | 76% | 45 |
 | OpenBMB/VoxCPM | 61 | Mature | very active | 1 | 71% | 14 |
-| SYSTRAN/faster-whisper | 58 | Classic | active | 2 | 45% | 21 |
+| SYSTRAN/faster-whisper | 53 | Classic | active | 1 | 50% | 21 |
 | gradio-app/fastrtc | 44 | Mature | active | 1 | 100% | 22 |
 | openai/whisper | 36 | Mature | slowing | 1 | 100% | 13 |
 | jina-ai/reader | 25 | Mature | slowing | 0 | 0% | 0 |
@@ -462,13 +461,13 @@ Bus factor = commit concentration (1 = single-maintainer risk). Pair with lifecy
 
 ## Adjacent (deliberately not listed as stack picks)
 
-- **infiniflow/ragflow** (93,284★) — batteries-included RAG *engine* — covered in the RAG-tooling report; too opinionated to embed in your own app shell
-- **open-webui/open-webui** (157,449★) — general chat UI over Ollama/OpenAI — a chat product, not a source-grounded notebook
-- **qdrant/qdrant** (35,360★) — excellent vector DB, but a server to operate — `lancedb` keeps the demo self-contained (see RAG report for the full DB landscape)
-- **jamiepine/voicebox** (59,172★) — voice *studio* app — covered in the voice-agents report
-- **Zackriya-Solutions/meetily** (32,357★) — meeting assistant — covered in the meeting-transcription report
-- **suno-ai/bark** (39,288★) — generative audio pioneer, now largely superseded by the TTS picks above
-- **NirDiamant/RAG_Techniques** (30,167★) — tutorial collection — great study material, not a dependency
+- **infiniflow/ragflow** (93,361★) — batteries-included RAG *engine* — covered in the RAG-tooling report; too opinionated to embed in your own app shell
+- **open-webui/open-webui** (157,537★) — general chat UI over Ollama/OpenAI — a chat product, not a source-grounded notebook
+- **qdrant/qdrant** (35,385★) — excellent vector DB, but a server to operate — `lancedb` keeps the demo self-contained (see RAG report for the full DB landscape)
+- **jamiepine/voicebox** (59,255★) — voice *studio* app — covered in the voice-agents report
+- **Zackriya-Solutions/meetily** (32,381★) — meeting assistant — covered in the meeting-transcription report
+- **suno-ai/bark** (39,284★) — generative audio pioneer, now largely superseded by the TTS picks above
+- **NirDiamant/RAG_Techniques** (30,192★) — tutorial collection — great study material, not a dependency
 
 ## Methodology & caveats
 
@@ -486,4 +485,4 @@ Archived upstream, so they no longer appear in this report's tables — `sample.
 |---|---|---|---|
 | [`supertone-inc/supertonic`](https://github.com/supertone-inc/supertonic) | Audio Overview (TTS / podcast) | Archived upstream 2026-09 and renamed to `supertone-oss-archive/supertonic`; last in the dataset 2026-09-06. On-device ONNX TTS — still usable, no longer developed. | 2026-09-06 |
 
-<sub>Tools covered: 33 · Snapshot: 2026-11-01T12:41:55.392Z</sub>
+<sub>Tools covered: 33 · Snapshot: 2026-11-02T14:17:38.270Z</sub>

@@ -5,7 +5,7 @@
   "category": "AI / Comparison",
   "summary": "Which terminal to run coding agents in, decided by OS first and concurrent-session count second: a per-OS matrix (macOS/Linux/Windows/remote/mobile), a session-count ladder from 1 to 12+ agents, an 8-criterion scorecard across cmux/Warp/Ghostty/Kitty/WezTerm/tmux/Zellij/herdr, and a gap analysis showing 7 terminal apps (34,747\u2605) missing from the stars against 53 present.",
   "tool_count": 53,
-  "total_stars": 1452482,
+  "total_stars": 1453242,
   "categories": {
     "Agent-aware terminal": 3,
     "Emulator": 11,
@@ -20,27 +20,27 @@
   "top_tools": [
     {
       "name": "ohmyzsh/ohmyzsh",
-      "stars": 190280
+      "stars": 190287
     },
     {
       "name": "microsoft/terminal",
-      "stars": 105303
+      "stars": 105315
     },
     {
       "name": "junegunn/fzf",
-      "stars": 83894
+      "stars": 83937
     },
     {
       "name": "Eugeny/tabby",
-      "stars": 75240
+      "stars": 75261
     },
     {
       "name": "alacritty/alacritty",
-      "stars": 66096
+      "stars": 66105
     }
   ],
-  "snapshot": "2026-11-01T12:41:55.392Z",
-  "generated": "2026-11-01",
+  "snapshot": "2026-11-02T14:17:38.270Z",
+  "generated": "2026-11-02",
   "generator": "scripts/reports/agentic_terminals.py",
-  "created": "2026-08-23"
+  "created": "2026-11-01"
 }

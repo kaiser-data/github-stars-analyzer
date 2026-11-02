@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">infiniflow/ragflow</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,284</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">93,361</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">PaddlePaddle/PaddleOCR</text>
 <path d="M244,67 h335.5 q4,0 4,4 v10 q0,4 -4,4 h-335.5 z" class="bar"/>
-<text x="589.5" y="76.0" class="val" dominant-baseline="central">92,056</text>
+<text x="589.5" y="76.0" class="val" dominant-baseline="central">92,127</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">run-llama/llama_index</text>
-<path d="M244,94 h190.6 q4,0 4,4 v10 q0,4 -4,4 h-190.6 z" class="bar"/>
-<text x="444.6" y="103.0" class="val" dominant-baseline="central">52,767</text>
+<path d="M244,94 h190.5 q4,0 4,4 v10 q0,4 -4,4 h-190.5 z" class="bar"/>
+<text x="444.5" y="103.0" class="val" dominant-baseline="central">52,777</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">milvus-io/milvus</text>
-<path d="M244,121 h167.7 q4,0 4,4 v10 q0,4 -4,4 h-167.7 z" class="bar"/>
-<text x="421.7" y="130.0" class="val" dominant-baseline="central">46,548</text>
+<path d="M244,121 h167.6 q4,0 4,4 v10 q0,4 -4,4 h-167.6 z" class="bar"/>
+<text x="421.6" y="130.0" class="val" dominant-baseline="central">46,559</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">facebookresearch/faiss</text>
-<path d="M244,148 h148.1 q4,0 4,4 v10 q0,4 -4,4 h-148.1 z" class="bar"/>
-<text x="402.1" y="157.0" class="val" dominant-baseline="central">41,245</text>
+<path d="M244,148 h148.0 q4,0 4,4 v10 q0,4 -4,4 h-148.0 z" class="bar"/>
+<text x="402.0" y="157.0" class="val" dominant-baseline="central">41,250</text>
 </svg>

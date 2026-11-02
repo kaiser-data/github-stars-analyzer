@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">langfuse/langfuse</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">36,823</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">36,885</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">mlflow/mlflow</text>
-<path d="M244,67 h263.3 q4,0 4,4 v10 q0,4 -4,4 h-263.3 z" class="bar"/>
-<text x="517.3" y="76.0" class="val" dominant-baseline="central">28,613</text>
+<path d="M244,67 h263.0 q4,0 4,4 v10 q0,4 -4,4 h-263.0 z" class="bar"/>
+<text x="517.0" y="76.0" class="val" dominant-baseline="central">28,628</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">promptfoo/promptfoo</text>
-<path d="M244,94 h245.3 q4,0 4,4 v10 q0,4 -4,4 h-245.3 z" class="bar"/>
-<text x="499.3" y="103.0" class="val" dominant-baseline="central">26,688</text>
+<path d="M244,94 h245.4 q4,0 4,4 v10 q0,4 -4,4 h-245.4 z" class="bar"/>
+<text x="499.4" y="103.0" class="val" dominant-baseline="central">26,742</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">comet-ml/opik</text>
 <path d="M244,121 h211.6 q4,0 4,4 v10 q0,4 -4,4 h-211.6 z" class="bar"/>
-<text x="465.6" y="130.0" class="val" dominant-baseline="central">23,081</text>
+<text x="465.6" y="130.0" class="val" dominant-baseline="central">23,119</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">openai/evals</text>
-<path d="M244,148 h179.9 q4,0 4,4 v10 q0,4 -4,4 h-179.9 z" class="bar"/>
-<text x="433.9" y="157.0" class="val" dominant-baseline="central">19,683</text>
+<path d="M244,148 h179.6 q4,0 4,4 v10 q0,4 -4,4 h-179.6 z" class="bar"/>
+<text x="433.6" y="157.0" class="val" dominant-baseline="central">19,687</text>
 </svg>

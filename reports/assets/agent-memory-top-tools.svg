@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">mem0ai/mem0</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">68,212</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">68,277</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">MemPalace/mempalace</text>
-<path d="M244,67 h299.7 q4,0 4,4 v10 q0,4 -4,4 h-299.7 z" class="bar"/>
-<text x="553.7" y="76.0" class="val" dominant-baseline="central">60,213</text>
+<path d="M244,67 h299.5 q4,0 4,4 v10 q0,4 -4,4 h-299.5 z" class="bar"/>
+<text x="553.5" y="76.0" class="val" dominant-baseline="central">60,241</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">vectorize-io/hindsight</text>
-<path d="M244,94 h284.0 q4,0 4,4 v10 q0,4 -4,4 h-284.0 z" class="bar"/>
-<text x="538.0" y="103.0" class="val" dominant-baseline="central">57,106</text>
+<path d="M244,94 h288.0 q4,0 4,4 v10 q0,4 -4,4 h-288.0 z" class="bar"/>
+<text x="542.0" y="103.0" class="val" dominant-baseline="central">57,953</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">milvus-io/milvus</text>
-<path d="M244,121 h230.7 q4,0 4,4 v10 q0,4 -4,4 h-230.7 z" class="bar"/>
-<text x="484.7" y="130.0" class="val" dominant-baseline="central">46,548</text>
+<path d="M244,121 h230.6 q4,0 4,4 v10 q0,4 -4,4 h-230.6 z" class="bar"/>
+<text x="484.6" y="130.0" class="val" dominant-baseline="central">46,559</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/LightRAG</text>
 <path d="M244,148 h200.0 q4,0 4,4 v10 q0,4 -4,4 h-200.0 z" class="bar"/>
-<text x="454.0" y="157.0" class="val" dominant-baseline="central">40,460</text>
+<text x="454.0" y="157.0" class="val" dominant-baseline="central">40,485</text>
 </svg>

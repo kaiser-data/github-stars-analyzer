@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">393,610</text>
-<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">NVIDIA/NemoClaw</text>
-<path d="M244,67 h16.0 q4,0 4,4 v10 q0,4 -4,4 h-16.0 z" class="bar"/>
-<text x="270.0" y="76.0" class="val" dominant-baseline="central">22,905</text>
-<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">ultraworkers/claw-code</text>
-<path d="M244,94 h166.4 q4,0 4,4 v10 q0,4 -4,4 h-166.4 z" class="bar"/>
-<text x="420.4" y="103.0" class="val" dominant-baseline="central">194,992</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">393,709</text>
+<text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">ultraworkers/claw-code</text>
+<path d="M244,67 h166.4 q4,0 4,4 v10 q0,4 -4,4 h-166.4 z" class="bar"/>
+<text x="420.4" y="76.0" class="val" dominant-baseline="central">194,982</text>
+<text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">NVIDIA/NemoClaw</text>
+<path d="M244,94 h16.0 q4,0 4,4 v10 q0,4 -4,4 h-16.0 z" class="bar"/>
+<text x="270.0" y="103.0" class="val" dominant-baseline="central">22,918</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">zeroclaw-labs/zeroclaw</text>
 <path d="M244,121 h24.9 q4,0 4,4 v10 q0,4 -4,4 h-24.9 z" class="bar"/>
-<text x="278.9" y="130.0" class="val" dominant-baseline="central">33,085</text>
+<text x="278.9" y="130.0" class="val" dominant-baseline="central">33,098</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,148 h222.7 q4,0 4,4 v10 q0,4 -4,4 h-222.7 z" class="bar"/>
-<text x="476.7" y="157.0" class="val" dominant-baseline="central">259,350</text>
+<path d="M244,148 h222.9 q4,0 4,4 v10 q0,4 -4,4 h-222.9 z" class="bar"/>
+<text x="476.9" y="157.0" class="val" dominant-baseline="central">259,690</text>
 </svg>

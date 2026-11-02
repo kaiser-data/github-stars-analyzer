@@ -13,17 +13,17 @@ text{font-family:system-ui,-apple-system,'Segoe UI',sans-serif}
 <text x="14" y="25" class="ttl">Top tools by stars</text>
 <text x="236" y="49.0" class="lbl" text-anchor="end" dominant-baseline="central">openclaw/openclaw</text>
 <path d="M244,40 h340.0 q4,0 4,4 v10 q0,4 -4,4 h-340.0 z" class="bar"/>
-<text x="594.0" y="49.0" class="val" dominant-baseline="central">393,610</text>
+<text x="594.0" y="49.0" class="val" dominant-baseline="central">393,709</text>
 <text x="236" y="76.0" class="lbl" text-anchor="end" dominant-baseline="central">NousResearch/hermes-agent</text>
-<path d="M244,67 h222.7 q4,0 4,4 v10 q0,4 -4,4 h-222.7 z" class="bar"/>
-<text x="476.7" y="76.0" class="val" dominant-baseline="central">259,350</text>
+<path d="M244,67 h222.9 q4,0 4,4 v10 q0,4 -4,4 h-222.9 z" class="bar"/>
+<text x="476.9" y="76.0" class="val" dominant-baseline="central">259,690</text>
 <text x="236" y="103.0" class="lbl" text-anchor="end" dominant-baseline="central">farion1231/cc-switch</text>
-<path d="M244,94 h127.8 q4,0 4,4 v10 q0,4 -4,4 h-127.8 z" class="bar"/>
-<text x="381.8" y="103.0" class="val" dominant-baseline="central">150,779</text>
+<path d="M244,94 h128.1 q4,0 4,4 v10 q0,4 -4,4 h-128.1 z" class="bar"/>
+<text x="382.1" y="103.0" class="val" dominant-baseline="central">151,172</text>
 <text x="236" y="130.0" class="lbl" text-anchor="end" dominant-baseline="central">HKUDS/DeepTutor</text>
-<path d="M244,121 h42.6 q4,0 4,4 v10 q0,4 -4,4 h-42.6 z" class="bar"/>
-<text x="296.6" y="130.0" class="val" dominant-baseline="central">53,326</text>
+<path d="M244,121 h43.3 q4,0 4,4 v10 q0,4 -4,4 h-43.3 z" class="bar"/>
+<text x="297.3" y="130.0" class="val" dominant-baseline="central">54,119</text>
 <text x="236" y="157.0" class="lbl" text-anchor="end" dominant-baseline="central">CherryHQ/cherry-studio</text>
 <path d="M244,148 h42.5 q4,0 4,4 v10 q0,4 -4,4 h-42.5 z" class="bar"/>
-<text x="296.5" y="157.0" class="val" dominant-baseline="central">53,151</text>
+<text x="296.5" y="157.0" class="val" dominant-baseline="central">53,192</text>
 </svg>
