@@ -1,7 +1,7 @@
 {
-  "name": "github-stars-analyzer",
+  "name": "star-astrolab",
   "version": "1.0.0",
-  "description": "Analyze GitHub starred repositories with comprehensive analytics",
+  "description": "GitHub Astrolab: a map, health scores and landscape reports for a curated collection of starred GitHub repos",
   "private": true,
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.8",
@@ -22,11 +22,11 @@
     "three-spritetext": "^1.10.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react": "^5.2.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
-    "vite": "^4.4.5"
+    "vite": "^7.3.7"
   },
   "scripts": {
     "dev": "vite",

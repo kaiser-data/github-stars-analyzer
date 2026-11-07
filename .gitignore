@@ -21,7 +21,7 @@ dist-ssr
 src/data/raw-*.json
 src/data/classified-*.json
 src/data/.cache/
-# public/data/classified.json and graph.json are committed so Netlify can serve them
+# public/data/classified.json and graph.json are committed so Vercel can serve them
 
 # Graphify — keep the report + viewer + graph, drop the AST cache (rebuildable)
 graphify-out/cache/
@@ -54,3 +54,8 @@ reports/*.err
 
 # Local Vercel link
 .vercel
+
+# Session handoffs and internal notes — this repo is public; they live in the
+# private astrolab-products repo (docs/from-stars-analyzer/)
+docs/HANDOFF-*.md
+HANDOFF*.md
