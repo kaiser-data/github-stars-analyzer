@@ -58,6 +58,13 @@ jobs:
 
       - run: npm ci
 
+      # Don't ship a broken pipeline: graph invariants + prompt-library tests
+      - name: Test
+        run: |
+          python -m pip install --quiet pytest
+          npm run test:graph
+          npm run test:prompts
+
       # Build locally on the runner (vercel.json's buildCommand) and upload the
       # prebuilt output, so the deploy uses exactly this commit's files.
       # Names the account and teams the token can see, so a token made under

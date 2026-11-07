@@ -17,8 +17,9 @@ function patchThreeForcegraph() {
   return {
     name: 'patch-three-forcegraph-layout-guard',
     transform(code, id) {
-      // Match both the npm source file (prod Rollup) and the dev pre-bundle chunk
-      if (!id.includes('three-forcegraph') && !id.includes('chunk-YH5VU6GS')) return;
+      // Match both the npm source file (prod Rollup) and any dev pre-bundle chunk
+      // (chunk names are content hashes that change with deps — don't pin one)
+      if (!id.includes('three-forcegraph') && !id.includes('/.vite/deps/')) return;
       if (!code.includes('state.layout[isD3Sim')) return;
       // Source uses single quotes; pre-bundled chunk uses double quotes — handle both
       const patched = code

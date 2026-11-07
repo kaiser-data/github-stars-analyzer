@@ -235,7 +235,8 @@ if __name__ == "__main__":
         print("  Drift runs both ways — a curated entry that left the dataset "
               "(renamed, archived, unstarred), or a gap-table entry that has since "
               "been starred and now needs promoting into TAXONOMY.")
-        print("  See docs/HANDOFF-2026-08-28.md §3 on renames.")
+        print("  On a rename: update the full_name in the generator's TAXONOMY "
+              "or gap table to the repo's new owner/name.")
     if failed:
         raise SystemExit(
             f"\n✗ {len(failed)} generator(s) failed: {', '.join(failed)}\n"
